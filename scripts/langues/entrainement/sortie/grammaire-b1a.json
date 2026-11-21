@@ -1,0 +1,2465 @@
+{
+ "agrafes": [
+  {
+   "d": 1,
+   "q": "The teacher ___ teaches us maths is very kind.",
+   "o": [
+    "who",
+    "which",
+    "where"
+   ],
+   "io": {
+    "which": "« which » sert pour une chose ou un animal, jamais pour une personne.",
+    "where": "« where » renvoie à un lieu, or un professeur n'est pas un lieu."
+   },
+   "i": "Le professeur est une personne : quel relatif sert à parler d'une personne ?",
+   "e": "La bonne réponse est « who » : c'est l'agrafe qui rattache une information à une personne, ici le professeur."
+  },
+  {
+   "d": 1,
+   "q": "This is the car ___ my father bought last year.",
+   "o": [
+    "which",
+    "who",
+    "whose"
+   ],
+   "io": {
+    "who": "« who » s'emploie pour une personne, alors qu'une voiture est une chose.",
+    "whose": "« whose » exprime la possession (« dont »), ce qui n'est pas le cas dans cette phrase."
+   },
+   "i": "Une voiture est-elle une personne, une chose ou un lieu ?",
+   "e": "La bonne réponse est « which » : une voiture est une chose (« that » conviendrait aussi). « who » est réservé aux personnes."
+  },
+  {
+   "d": 1,
+   "q": "The village ___ my grandmother lives is very quiet.",
+   "o": [
+    "where",
+    "who",
+    "whose"
+   ],
+   "io": {
+    "who": "« who » s'emploie pour une personne, alors qu'un village est un lieu.",
+    "whose": "« whose » exprime la possession et serait suivi d'un nom."
+   },
+   "i": "Un village est un lieu : quel relatif renvoie à un lieu ?",
+   "e": "La bonne réponse est « where » : il renvoie à un lieu (the village where…) et remplace « dans lequel »."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'agrafe qui parle d'une personne.",
+   "p": "The boy *who won the race is my cousin.",
+   "i": "Cherche le petit mot qui relie « the boy » à ce qu'on dit de lui.",
+   "e": "« who » est l'agrafe qui attache l'information « won the race » à « the boy », une personne. Les autres mots de la phrase ne servent pas à relier."
+  },
+  {
+   "d": 1,
+   "q": "I know a woman ___ son is a famous singer.",
+   "o": [
+    "whose",
+    "who",
+    "which"
+   ],
+   "io": {
+    "who": "« who » remplace une personne mais n'exprime pas la possession ; il faudrait écrire « who has a son ».",
+    "which": "« which » s'emploie pour les choses, alors qu'ici on parle d'une femme."
+   },
+   "i": "On veut dire « dont le fils » : quel mot exprime la possession ?",
+   "e": "La bonne réponse est « whose » : « une femme dont le fils » se dit « a woman whose son », et « whose » est suivi directement du nom."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The man ___ lives upstairs plays the piano. »",
+   "r": [
+    "who",
+    "that"
+   ],
+   "i": "Le voisin est une personne : deux mots sont possibles.",
+   "e": "On peut écrire « who » ou « that » : pour une personne qui est le sujet du verbe « lives », ces deux relatifs conviennent, et « which » serait faux."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « La femme qui travaille ici est ma tante. »",
+   "r": [
+    "The woman who works here is my aunt",
+    "The woman that works here is my aunt"
+   ],
+   "i": "Pour une personne, choisis « who » (ou « that »), puis conjugue « works » avec -s.",
+   "e": "« The woman who works here is my aunt. » : « who » remplace « the woman », et le verbe reste à la troisième personne du singulier (works)."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "The book I borrowed was very interesting.",
+    "The book I borrowed it was very interesting.",
+    "The book who I borrowed was very interesting."
+   ],
+   "io": {
+    "The book I borrowed it was very interesting.": "« it » répète le livre alors que le relatif le remplace déjà : c'est un piège de francophone.",
+    "The book who I borrowed was very interesting.": "« who » est réservé aux personnes, et un livre est une chose."
+   },
+   "i": "Le relatif est complément : il peut disparaître, mais on ne répète jamais le nom.",
+   "e": "« The book I borrowed was very interesting. » est correcte : le relatif complément peut être omis, et il remplace déjà « the book »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "film",
+    "that",
+    "we",
+    "watched",
+    "yesterday",
+    "was",
+    "great"
+   ],
+   "fin": ".",
+   "i": "L'agrafe se place juste après le nom qu'elle précise.",
+   "e": "« The film that we watched yesterday was great. » : « that » rattache l'information « we watched yesterday » au nom « film »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The man which lives next door is a doctor.",
+   "r": [
+    "The man who lives next door is a doctor.",
+    "The man that lives next door is a doctor."
+   ],
+   "i": "Un voisin est-il une chose ou une personne ?",
+   "e": "La phrase correcte est « The man who lives next door is a doctor. » : pour une personne, on emploie « who » (ou « that »), jamais « which »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « This is the school ___ my sister studies. »",
+   "r": [
+    "where"
+   ],
+   "i": "L'école est un lieu : quel relatif ?",
+   "e": "La bonne réponse est « where » : cette agrafe renvoie à un lieu, ici l'école (the school where my sister studies)."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux agrafes.",
+   "p": "I like the shop *where we bought bread and the baker *who works there.",
+   "i": "Une agrafe parle d'un lieu, l'autre d'une personne.",
+   "e": "« where » rattache l'information au lieu (the shop), et « who » à la personne (the baker). Chaque agrafe s'accorde avec le nom qui précède."
+  },
+  {
+   "d": 2,
+   "q": "Is that the girl ___ bike was stolen?",
+   "o": [
+    "whose",
+    "who's",
+    "who"
+   ],
+   "io": {
+    "who's": "« who's » veut dire « who is » ou « who has », jamais « dont ».",
+    "who": "« who » ne peut pas être suivi d'un nom pour exprimer la possession."
+   },
+   "i": "On veut dire « dont le vélo » : c'est une possession.",
+   "e": "La bonne réponse est « whose » : il exprime la possession (« la fille dont le vélo ») et est suivi directement du nom."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Le livre que j'ai acheté est cher. »",
+   "r": [
+    "The book I bought is expensive",
+    "The book that I bought is expensive",
+    "The book which I bought is expensive"
+   ],
+   "i": "Ici, le relatif peut même disparaître, et on ne répète pas « le livre ».",
+   "e": "« The book I bought is expensive. » : on peut dire « that » ou « which », ou ne rien mettre, car le relatif est complément ; surtout, on ne répète pas le nom."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The cake that she made it was delicious.",
+   "r": [
+    "The cake that she made was delicious.",
+    "The cake she made was delicious.",
+    "The cake which she made was delicious."
+   ],
+   "i": "Le relatif remplace déjà « the cake » : que fait alors « it » ?",
+   "e": "« The cake that she made was delicious. » : le relatif remplace déjà « the cake », donc on ne le répète pas avec « it ». Le français n'a pas ce problème."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The girl who's bag was stolen called the police.",
+   "r": [
+    "The girl whose bag was stolen called the police."
+   ],
+   "i": "« who's » se prononce comme « whose » mais veut dire autre chose : lequel de ces sens convient ?",
+   "e": "« The girl whose bag was stolen called the police. » : la possession (« dont le sac ») se dit « whose » ; « who's » signifie « who is »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "met",
+    "a",
+    "man",
+    "whose",
+    "brother",
+    "works",
+    "at",
+    "the",
+    "airport"
+   ],
+   "fin": ".",
+   "i": "Le possesseur passe en premier, puis « whose », puis la chose possédée.",
+   "e": "« I met a man whose brother works at the airport. » : « whose » est suivi directement du nom possédé (brother), sans article."
+  },
+  {
+   "d": 3,
+   "q": "Dans quelle phrase ne peut-on PAS supprimer le relatif ?",
+   "o": [
+    "The woman who lives next door is a nurse.",
+    "The film (that) we saw was long.",
+    "The car (which) he bought is red."
+   ],
+   "io": {
+    "The film (that) we saw was long.": "Ici « we » suit le relatif : « that » est complément, on peut donc l'omettre.",
+    "The car (which) he bought is red.": "Ici « he » suit le relatif : « which » est complément, on peut donc l'omettre."
+   },
+   "i": "Regarde si le relatif est suivi d'un sujet ou directement d'un verbe.",
+   "e": "« The woman who lives next door is a nurse. » : ici « who » est le sujet de « lives », on ne peut donc pas l'omettre. On ne supprime que les relatifs complément, suivis d'un sujet."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « C'est l'hôtel où nous avons dormi. »",
+   "r": [
+    "This is the hotel where we slept",
+    "That is the hotel where we slept",
+    "It is the hotel where we slept",
+    "This is the hotel where we stayed",
+    "That is the hotel where we stayed",
+    "It is the hotel where we stayed"
+   ],
+   "i": "Un hôtel est un lieu : quelle agrafe ?",
+   "e": "« That's the hotel where we slept. » : « where » renvoie à un lieu, et on ne répète pas « there » à la fin."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui ne doit pas être là.",
+   "p": "The song that I heard *it on the radio is new.",
+   "i": "Le relatif remplace déjà le nom : que reste-t-il à enlever ?",
+   "e": "« it » est en trop : « that » remplace déjà « the song », donc on écrit « The song that I heard on the radio is new »."
+  },
+  {
+   "d": 3,
+   "q": "Relie avec « whose » : « I know a boy. His mother is a judge. » → I know a boy ___.",
+   "r": [
+    "whose mother is a judge"
+   ],
+   "i": "« His mother » devient quoi dans la relative ?",
+   "e": "« whose mother is a judge » : « whose » remplace « his » et reste devant le nom qu'il possède."
+  }
+ ],
+ "ing-ou-to": [
+  {
+   "d": 1,
+   "q": "My sister enjoys ___ pictures.",
+   "o": [
+    "taking",
+    "to take",
+    "take"
+   ],
+   "io": {
+    "to take": "« enjoy » n'est jamais suivi de « to » + base.",
+    "take": "Le verbe à la base seul est impossible après « enjoy »."
+   },
+   "i": "Le verbe « enjoy » décide de la forme du second verbe.",
+   "e": "La bonne réponse est « taking » : après « enjoy », le second verbe prend la forme en -ing."
+  },
+  {
+   "d": 1,
+   "q": "We hope ___ you soon.",
+   "o": [
+    "to see",
+    "seeing",
+    "see"
+   ],
+   "io": {
+    "seeing": "« hope » est suivi de « to » + base, et non de la forme en -ing.",
+    "see": "Il manque le « to » après « hope »."
+   },
+   "i": "« hope » regarde vers l'avenir : quelle forme suit ?",
+   "e": "La bonne réponse est « to see » : après « hope », on met « to » + base."
+  },
+  {
+   "d": 1,
+   "q": "She finished ___ her homework at nine.",
+   "o": [
+    "doing",
+    "to do",
+    "do"
+   ],
+   "io": {
+    "to do": "« finish » n'est pas suivi de « to » + base.",
+    "do": "Le verbe à la base seul est impossible après « finish »."
+   },
+   "i": "« finish » appartient à la famille des verbes suivis de -ing.",
+   "e": "La bonne réponse est « doing » : après « finish », le verbe prend -ing."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux formes en -ing qui suivent un verbe de la leçon.",
+   "p": "Léa avoids *eating late and suggests *walking after dinner.",
+   "i": "Cherche les verbes qui se terminent par -ing.",
+   "e": "« eating » (après avoid) et « walking » (après suggest) sont les deux formes en -ing : ces verbes veulent que le second verbe prenne -ing."
+  },
+  {
+   "d": 1,
+   "q": "I'd like ___ a glass of water, please.",
+   "o": [
+    "to have",
+    "having",
+    "have"
+   ],
+   "io": {
+    "having": "« would like » est suivi de « to » + base, pas de -ing.",
+    "have": "Il manque « to » après « would like »."
+   },
+   "i": "« would like » est de la même famille que « want ».",
+   "e": "La bonne réponse est « to have » : après « would like », on met « to » + base."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « He decided ___ early. » (leave)",
+   "r": [
+    "to leave"
+   ],
+   "i": "« decide » est de la famille de « want ».",
+   "e": "On écrit « to leave » : après « decide », le second verbe se met à « to » + base."
+  },
+  {
+   "d": 2,
+   "q": "Thanks for ___ me.",
+   "o": [
+    "helping",
+    "to help",
+    "help"
+   ],
+   "io": {
+    "to help": "Après une préposition, on n'emploie pas « to » + base.",
+    "help": "Après une préposition, le verbe ne reste pas à la base : il prend -ing."
+   },
+   "i": "« for » est une préposition : que devient le verbe qui la suit ?",
+   "e": "La bonne réponse est « helping » : après une préposition, le verbe prend toujours -ing."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle refuse de répondre. »",
+   "r": [
+    "She refuses to answer",
+    "She refuses to reply",
+    "She refuses to respond"
+   ],
+   "i": "« refuse » est de la famille de « want » : quelle structure ?",
+   "e": "« She refuses to answer. » : « refuse » est suivi de « to » + base, jamais de la forme en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "they",
+    "avoid",
+    "driving",
+    "in",
+    "the",
+    "city",
+    "centre"
+   ],
+   "fin": ".",
+   "i": "« avoid » est suivi d'un verbe en -ing.",
+   "e": "« They avoid driving in the city centre. » : après « avoid », le verbe prend -ing."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She suggested to go to the cinema.",
+   "r": [
+    "She suggested going to the cinema."
+   ],
+   "i": "« suggest » fait partie des verbes qui veulent -ing.",
+   "e": "« She suggested going to the cinema. » : après « suggest », on emploie la forme en -ing et jamais « to » + base, même si le français dit « suggérer d'aller »."
+  },
+  {
+   "d": 2,
+   "q": "Do you mind ___ the door?",
+   "o": [
+    "closing",
+    "to close",
+    "close"
+   ],
+   "io": {
+    "to close": "« mind » n'est pas suivi de « to » + base.",
+    "close": "Le verbe à la base seul est impossible après « mind »."
+   },
+   "i": "Le verbe « mind » se comporte comme « enjoy » : quelle forme du verbe le suit ?",
+   "e": "La bonne réponse est « closing » : après « mind », le second verbe prend la forme en -ing, comme après « enjoy »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « After ___ breakfast, he left. » (have)",
+   "r": [
+    "having"
+   ],
+   "i": "Le mot « after » est une préposition : quelle forme du verbe la suit toujours ?",
+   "e": "« having » est correct : après une préposition comme after, before ou without, le verbe se met toujours en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux verbes en -ing placés après une préposition.",
+   "p": "Omar is tired of *waiting and is thinking about *leaving.",
+   "i": "Cherche les petits mots « of » et « about » : ce sont des prépositions.",
+   "e": "« waiting » (après of) et « leaving » (après about) sont les bonnes formes : après une préposition, le verbe est toujours en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "plan",
+    "to",
+    "visit",
+    "my",
+    "aunt",
+    "next",
+    "month"
+   ],
+   "fin": ".",
+   "i": "« plan » est de la famille de « want ».",
+   "e": "« We plan to visit my aunt next month. » : après « plan », on met « to » + base.",
+   "alt": [
+    [
+     "next",
+     "month",
+     "we",
+     "plan",
+     "to",
+     "visit",
+     "my",
+     "aunt"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He refused ___ the money. » (take)",
+   "r": [
+    "to take"
+   ],
+   "i": "« refuse » est de la famille de « want ».",
+   "e": "On écrit « to take » : après « refuse », le second verbe est à « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I'm interested in to learn Japanese.",
+   "r": [
+    "I'm interested in learning Japanese."
+   ],
+   "i": "Que faut-il après la préposition « in » ?",
+   "e": "« I'm interested in learning Japanese. » : après une préposition, jamais « to » + base : on met la forme en -ing."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My parents promised buying me a bike.",
+   "r": [
+    "My parents promised to buy me a bike."
+   ],
+   "i": "Le verbe « promise » regarde vers l'avenir : quelle structure choisir ?",
+   "e": "La phrase correcte est « My parents promised to buy me a bike. » : « promise » est suivi de « to » + base, et non de la forme en -ing."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "He keeps forgetting his keys.",
+    "He keeps to forget his keys.",
+    "He keeps forget his keys."
+   ],
+   "io": {
+    "He keeps to forget his keys.": "« keep » n'est pas suivi de « to » + base.",
+    "He keeps forget his keys.": "Le verbe à la base seul est impossible après « keep »."
+   },
+   "i": "« keep » est sur la liste des verbes en -ing.",
+   "e": "La bonne réponse est « He keeps forgetting his keys. » : « keep » est suivi de -ing."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons fini de peindre la chambre. »",
+   "r": [
+    "We finished painting the room",
+    "We finished painting the bedroom",
+    "We have finished painting the room",
+    "We have finished painting the bedroom"
+   ],
+   "i": "« finish » est suivi de la forme en -ing.",
+   "e": "« We finished painting the room. » : après « finish », le verbe prend -ing (jamais « finished to paint »)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il a accepté de nous aider. »",
+   "r": [
+    "He agreed to help us",
+    "He has agreed to help us"
+   ],
+   "i": "Le verbe « agree » appartient à la même famille que « want ».",
+   "e": "« He agreed to help us. » : après « agree », on met « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Without to say a word, he left the room.",
+   "r": [
+    "Without saying a word, he left the room."
+   ],
+   "i": "Le mot « without » est une préposition : que devient le verbe qui la suit ?",
+   "e": "« Without saying a word, he left the room. » : après une préposition, le verbe se met en -ing, jamais en « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "You should avoid ___ too much sugar.",
+   "o": [
+    "eating",
+    "to eat",
+    "eat"
+   ],
+   "io": {
+    "to eat": "« avoid » n'est pas suivi de « to » + base.",
+    "eat": "Le verbe à la base seul est impossible après « avoid »."
+   },
+   "i": "« avoid » est de la même famille que « finish ».",
+   "e": "La bonne réponse est « eating » : après « avoid », le verbe prend -ing."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "is",
+    "thinking",
+    "about",
+    "moving",
+    "to",
+    "another",
+    "city"
+   ],
+   "fin": ".",
+   "i": "Après la préposition « about », que devient le verbe ?",
+   "e": "« She is thinking about moving to another city. » : « about » est une préposition, donc le verbe qui la suit prend -ing."
+  }
+ ],
+ "vouloir-que": [
+  {
+   "d": 1,
+   "q": "Mum wants ___ to tidy my room.",
+   "o": [
+    "me",
+    "I",
+    "my"
+   ],
+   "io": {
+    "I": "« I » est la forme sujet : après « wants », il faut la forme complément.",
+    "my": "« my » est un possessif : il faut ici un pronom complément."
+   },
+   "i": "Après « wants », la personne se met à la forme complément.",
+   "e": "La bonne réponse est « me » : après want, la personne prend la forme complément (me, him, her, us, them)."
+  },
+  {
+   "d": 1,
+   "q": "Lucas asked ___ to open the window.",
+   "o": [
+    "her",
+    "she",
+    "hers"
+   ],
+   "io": {
+    "she": "« she » est un pronom sujet ; après « asked », on met un pronom complément.",
+    "hers": "« hers » est un possessif (« à elle »), pas un pronom complément."
+   },
+   "i": "La personne se glisse entre « asked » et « to ».",
+   "e": "La bonne réponse est « her » : le pronom complément se place juste après « asked », avant « to »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I want you ___ here. » (stay)",
+   "r": [
+    "to stay"
+   ],
+   "i": "Après « want », on met la personne, puis un petit mot, puis la base.",
+   "e": "On écrit « to stay » : après « want + personne », le second verbe se met à « to » + base."
+  },
+  {
+   "d": 1,
+   "q": "Touche la personne placée entre « wants » et « to ».",
+   "p": "My coach wants *us to train every day.",
+   "i": "C'est le groupe que l'entraîneur veut voir s'entraîner.",
+   "e": "« us » est la personne placée entre « wants » et « to » : dans « want + personne + to + base », la personne est au milieu, en forme complément."
+  },
+  {
+   "d": 1,
+   "q": "They expect him ___ tomorrow.",
+   "o": [
+    "to arrive",
+    "arrive",
+    "arriving"
+   ],
+   "io": {
+    "arrive": "Il manque « to » après « expect him » : la base seule ne suffit pas.",
+    "arriving": "On n'emploie pas -ing dans cette construction : c'est « to » + base."
+   },
+   "i": "Après « expect » et la personne, quel petit mot précède le verbe ?",
+   "e": "La bonne réponse est « to arrive » : après « expect + personne », on met « to » + base."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She asked me ___ the window. » (close)",
+   "r": [
+    "to close"
+   ],
+   "i": "Après « ask » et la personne, le second verbe est précédé d'un petit mot.",
+   "e": "On écrit « to close » : après « ask + personne », le verbe se met à « to » + base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je veux que tu viennes à ma fête. »",
+   "r": [
+    "I want you to come to my party"
+   ],
+   "i": "En anglais, il n'y a pas de « que » : la personne se place directement après le verbe.",
+   "e": "« I want you to come to my party. » : on dit littéralement « je te veux venir » ; on ne dit jamais « I want that you come »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my",
+    "parents",
+    "want",
+    "me",
+    "to",
+    "study",
+    "law"
+   ],
+   "fin": ".",
+   "i": "La personne se place juste après le premier verbe.",
+   "e": "« My parents want me to study law. » : want + personne (me) + to + base, sans « that » ni subjonctif."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I want that you help me.",
+   "r": [
+    "I want you to help me."
+   ],
+   "i": "Après « want », y a-t-il un « that » en anglais ?",
+   "e": "« I want you to help me. » : après « want », on ne met jamais « that » ; on emploie personne + « to » + base."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "She told us not to wait.",
+    "She told us do not wait.",
+    "She told that we not wait."
+   ],
+   "io": {
+    "She told us do not wait.": "Il faut « not to » + base après la personne, et non « do not wait ».",
+    "She told that we not wait.": "Après « tell », on met la personne directement, sans « that »."
+   },
+   "i": "La négation se place juste devant « to ».",
+   "e": "La bonne réponse est « She told us not to wait. » : tell + personne + « not to » + base."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « The doctor advised him ___ more water. » (drink)",
+   "r": [
+    "to drink"
+   ],
+   "i": "Après « advise » et la personne, quelle structure vient ensuite ?",
+   "e": "On écrit « to drink » : après « advise + personne », le verbe se met à « to » + base."
+  },
+  {
+   "d": 2,
+   "q": "My mum asked ___ to be home early.",
+   "o": [
+    "me",
+    "I",
+    "to me"
+   ],
+   "io": {
+    "I": "Il faut la forme complément « me », pas la forme sujet.",
+    "to me": "« ask » ne prend pas de « to » devant la personne."
+   },
+   "i": "Après « ask », la personne se place directement, sans « to » devant elle.",
+   "e": "La bonne réponse est « me » : « ask » se construit directement avec la personne, sans « to » devant."
+  },
+  {
+   "d": 2,
+   "q": "Touche le pronom mal choisi.",
+   "p": "Our teacher wants *we to read this book.",
+   "i": "Après « wants », la personne est un complément.",
+   "e": "« we » est mal choisi : il faut « us », car la personne est le complément de « wants »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle voudrait que nous restions. »",
+   "r": [
+    "She'd like us to stay",
+    "She would like us to stay",
+    "She wants us to stay"
+   ],
+   "i": "Pour dire « voudrait que », utilise « would like » suivi de la personne.",
+   "e": "« She would like us to stay. » : après « would like », on place la personne (us) puis « to » + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "told",
+    "me",
+    "not",
+    "to",
+    "touch",
+    "the",
+    "machine"
+   ],
+   "fin": ".",
+   "i": "La négation « not » se place devant « to ».",
+   "e": "« He told me not to touch the machine. » : tell + personne + « not to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My parents want that I study medicine.",
+   "r": [
+    "My parents want me to study medicine."
+   ],
+   "i": "Après « want », on n'emploie pas « that ».",
+   "e": "« My parents want me to study medicine. » : want + personne + to + base ; le « que » français n'existe pas ici."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She asked to me to wait outside.",
+   "r": [
+    "She asked me to wait outside."
+   ],
+   "i": "Un petit mot est en trop devant la personne.",
+   "e": "« She asked me to wait outside. » : « ask » se construit directement avec la personne, sans « to » devant."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il nous a dit de ne pas nous inquiéter. »",
+   "r": [
+    "He told us not to worry"
+   ],
+   "i": "Pour « dire de ne pas », la négation se place devant « to ».",
+   "e": "« He told us not to worry. » : le « de ne pas » français devient « not to » + base après la personne."
+  },
+  {
+   "d": 3,
+   "q": "Quel verbe ne se construit PAS avec « personne + to + base » ?",
+   "o": [
+    "suggest",
+    "expect",
+    "remind"
+   ],
+   "io": {
+    "expect": "« expect » suit bien le schéma : « I expect him to come » est correct.",
+    "remind": "« remind » suit bien le schéma : « She reminded me to call » est correct."
+   },
+   "i": "Un seul verbe réclame « that » à la place.",
+   "e": "La bonne réponse est « suggest » : on dit « I suggest that you come », jamais « I suggest you to come »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "would",
+    "like",
+    "you",
+    "to",
+    "meet",
+    "my",
+    "brother"
+   ],
+   "fin": ".",
+   "i": "Pour souhaiter que quelqu'un fasse quelque chose, utilise « would like » et la personne.",
+   "e": "« I would like you to meet my brother. » : après « would like », on place la personne (you) puis « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mes parents s'attendent à ce que je réussisse mon examen. »",
+   "r": [
+    "My parents expect me to pass my exam",
+    "My parents expect me to pass the exam",
+    "My parents expect me to pass my exams"
+   ],
+   "i": "Le français « s'attendre à ce que » se traduit sans subjonctif.",
+   "e": "« My parents expect me to pass my exam. » : l'anglais n'a pas de subjonctif ici ; on dit expect + personne + to + base."
+  },
+  {
+   "d": 3,
+   "q": "I suggest ___ early.",
+   "o": [
+    "that you leave",
+    "you to leave",
+    "to you leave"
+   ],
+   "io": {
+    "you to leave": "« suggest » n'accepte pas le schéma « personne + to + base ».",
+    "to you leave": "Cette construction n'existe pas en anglais."
+   },
+   "i": "« suggest » refuse le schéma habituel.",
+   "e": "La bonne réponse est « that you leave » : après « suggest », on utilise « that » + sujet + verbe."
+  }
+ ],
+ "obliger-laisser": [
+  {
+   "d": 1,
+   "q": "The funny film made us ___.",
+   "o": [
+    "laugh",
+    "to laugh",
+    "laughing"
+   ],
+   "io": {
+    "to laugh": "Après make + personne, on ne met pas « to ».",
+    "laughing": "Il faut la base du verbe, pas la forme en -ing."
+   },
+   "i": "Après « made » et la personne, le verbe se met-il à « to » + base ?",
+   "e": "La bonne réponse est « laugh » : après « make + personne », le verbe est à la base, sans « to »."
+  },
+  {
+   "d": 1,
+   "q": "Her mother lets her ___ her friends after school.",
+   "o": [
+    "see",
+    "to see",
+    "seeing"
+   ],
+   "io": {
+    "to see": "Après let + personne, on ne met pas « to ».",
+    "seeing": "Il faut la base du verbe, pas la forme en -ing."
+   },
+   "i": "Après « lets » et la personne, le verbe se met-il à « to » + base ?",
+   "e": "La bonne réponse est « see » : après « let + personne », le verbe est à la base, sans « to »."
+  },
+  {
+   "d": 1,
+   "q": "The boss made them ___ late.",
+   "o": [
+    "work",
+    "to work",
+    "working"
+   ],
+   "io": {
+    "to work": "Après make + personne, le « to » disparaît.",
+    "working": "Il faut la base du verbe, pas la forme en -ing."
+   },
+   "i": "Le patron oblige les employés : quelle forme suit « made them » ?",
+   "e": "La bonne réponse est « work » : après « make + personne », le verbe est à la base, sans « to »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Let me ___ you! » (help)",
+   "r": [
+    "help"
+   ],
+   "i": "Après « let me », le verbe est tout nu, sans petit mot devant.",
+   "e": "On écrit « help » : après « let + personne », le verbe reste à la base, sans « to »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui suit « made » sans « to ».",
+   "p": "The coach made the team *run ten laps.",
+   "i": "Cherche le verbe à la base, juste après « the team ».",
+   "e": "« run » est le verbe qui suit « made » sans « to » : make + personne + base."
+  },
+  {
+   "d": 1,
+   "q": "On n'a pas le droit de prendre des photos ici : « We aren't ___ to take photos here. »",
+   "o": [
+    "allowed",
+    "let",
+    "made"
+   ],
+   "io": {
+    "let": "« let » n'a pas de passif : on dit be allowed to.",
+    "made": "« be made to » veut dire « être obligé de », pas « avoir le droit »."
+   },
+   "i": "Pour dire « avoir le droit de », on utilise un participe passé après « be ».",
+   "e": "La bonne réponse est « allowed » : « be allowed to » signifie « avoir le droit de »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Mes parents me laissent regarder la télé. »",
+   "r": [
+    "My parents let me watch TV",
+    "My parents let me watch television",
+    "My parents let me watch the TV"
+   ],
+   "i": "Pour « laisser quelqu'un faire », utilise « let » puis la personne.",
+   "e": "« My parents let me watch TV. » : après « let + personne », le verbe est à la base, sans « to »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "teacher",
+    "made",
+    "us",
+    "read",
+    "the",
+    "text",
+    "again"
+   ],
+   "fin": ".",
+   "i": "Pour « obliger quelqu'un à faire », utilise « make » puis la personne.",
+   "e": "« The teacher made us read the text again. » : après « make + personne », le verbe est à la base, sans « to »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Her story made me to cry.",
+   "r": [
+    "Her story made me cry."
+   ],
+   "i": "Après « made me », y a-t-il un « to » ?",
+   "e": "« Her story made me cry. » : après « make + personne », le verbe reste à la base, sans « to » (« made me to cry » est une erreur fréquente)."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "Please let me know.",
+    "Please let me to know.",
+    "Please let me knowing."
+   ],
+   "io": {
+    "Please let me to know.": "Après let, on ne met pas « to ».",
+    "Please let me knowing.": "Après let, on met la base, pas la forme en -ing."
+   },
+   "i": "Après « let me », le verbe est tout nu, sans « to » ni -ing.",
+   "e": "La bonne réponse est « Please let me know. » : après « let + personne », le verbe reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Complète avec « be allowed to » : « You ___ park here. » (interdit)",
+   "r": [
+    "aren't allowed to",
+    "are not allowed to"
+   ],
+   "i": "Interdiction : be allowed to à la forme négative.",
+   "e": "« aren't allowed to » (ou « are not allowed to ») : be allowed to, à la négative, veut dire « ne pas avoir le droit de »."
+  },
+  {
+   "d": 2,
+   "q": "Her brother helped her ___ the boxes.",
+   "o": [
+    "carry",
+    "carrying",
+    "carried"
+   ],
+   "io": {
+    "carrying": "Après help + personne, on ne met pas -ing.",
+    "carried": "Le verbe reste à la base : on ne le met pas au passé."
+   },
+   "i": "Après « help + personne », deux formes sont possibles, mais pas -ing.",
+   "e": "La bonne réponse est « carry » : après « help + personne », on met la base (« to carry » est aussi possible)."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui ne doit pas être là.",
+   "p": "My dad let me *to drive his car.",
+   "i": "Après « let + personne », le verbe est tout nu : y a-t-il un mot en trop ?",
+   "e": "« to » est en trop : après « let + personne », le verbe reste à la base, sans « to »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ce film m'a fait pleurer. »",
+   "r": [
+    "That film made me cry",
+    "This film made me cry",
+    "The film made me cry",
+    "That movie made me cry",
+    "This movie made me cry"
+   ],
+   "i": "Pour « faire pleurer », utilise « make » suivi de la personne et d'un verbe nu.",
+   "e": "« That film made me cry. » : après « make + personne », le verbe est à la base, sans « to »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We were let to leave early.",
+   "r": [
+    "We were allowed to leave early."
+   ],
+   "i": "« let » n'a pas de passif.",
+   "e": "« We were allowed to leave early. » : au passif, « let » est remplacé par « be allowed to »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Don't let him to go alone.",
+   "r": [
+    "Don't let him go alone."
+   ],
+   "i": "Un petit mot est en trop entre « him » et le verbe.",
+   "e": "« Don't let him go alone. » : après « let + personne », le verbe reste à la base, sans « to »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « On nous a fait attendre dehors. »",
+   "r": [
+    "We were made to wait outside",
+    "We were made to wait outdoors",
+    "They made us wait outside",
+    "They made us wait outdoors"
+   ],
+   "i": "Au passif, make redevient « be made to » + base.",
+   "e": "« We were made to wait outside. » : au passif de make, le « to » revient après « made ». À l'actif, on dirait « They made us wait outside », sans « to »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "was",
+    "made",
+    "to",
+    "say",
+    "sorry"
+   ],
+   "fin": ".",
+   "i": "Au passif, « make » redevient suivi de « to ».",
+   "e": "« She was made to say sorry. » : au passif, « be made to » est suivi de la base."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "The doctor helped him walk again.",
+    "The doctor made him to walk again.",
+    "The doctor let him to walk again."
+   ],
+   "io": {
+    "The doctor made him to walk again.": "Après make + personne, on ne met pas « to ».",
+    "The doctor let him to walk again.": "Après let + personne, on ne met pas « to »."
+   },
+   "i": "Une seule phrase respecte la règle des trois verbes.",
+   "e": "La bonne réponse est « The doctor helped him walk again. » : help + personne + base. Après make et let, on ne met pas « to »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Les élèves ont le droit de sortir à midi. »",
+   "r": [
+    "The students are allowed to go out at noon",
+    "Students are allowed to go out at noon",
+    "The pupils are allowed to go out at noon",
+    "The students are allowed to leave at noon",
+    "Students are allowed to leave at noon",
+    "Pupils are allowed to go out at noon",
+    "Pupils are allowed to leave at noon"
+   ],
+   "i": "Pour « avoir le droit de », utilise le verbe « be » suivi d'un participe passé et de « to ».",
+   "e": "« The students are allowed to go out at noon. » : on dit « be allowed to » + base pour « avoir le droit de »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He helps me to carrying the bags.",
+   "r": [
+    "He helps me carry the bags.",
+    "He helps me to carry the bags."
+   ],
+   "i": "Après help + personne, quelle forme du verbe ?",
+   "e": "« He helps me carry the bags. » : help + personne + base (ou to + base), jamais -ing."
+  }
+ ],
+ "pour-que": [
+  {
+   "d": 1,
+   "q": "I called my grandma ___ say hello.",
+   "o": [
+    "to",
+    "for",
+    "so"
+   ],
+   "io": {
+    "for": "Devant un verbe, on n'utilise pas « for ».",
+    "so": "« so » seul ne s'emploie pas devant un verbe à la base."
+   },
+   "i": "Le but devant un verbe se dit avec un tout petit mot.",
+   "e": "La bonne réponse est « to » : pour exprimer le but devant un verbe, on emploie « to » + base."
+  },
+  {
+   "d": 1,
+   "q": "We went to the park ___ a walk.",
+   "o": [
+    "for",
+    "to",
+    "so that"
+   ],
+   "io": {
+    "to": "« to a walk » serait faux : un nom suit, pas un verbe.",
+    "so that": "« so that » est suivi d'un sujet et d'un verbe."
+   },
+   "i": "Après le trou, il y a un nom (a walk).",
+   "e": "La bonne réponse est « for » : for + nom indique ce qu'on va chercher (for a walk)."
+  },
+  {
+   "d": 1,
+   "q": "She is saving money ___ buy a laptop.",
+   "o": [
+    "to",
+    "for",
+    "so that"
+   ],
+   "io": {
+    "for": "« for » + verbe est une erreur très courante chez les francophones.",
+    "so that": "« so that » est suivi d'un sujet, pas directement d'un verbe."
+   },
+   "i": "Un verbe suit le trou : quel petit mot exprime le but ?",
+   "e": "La bonne réponse est « to » : « to » + base exprime le but, comme « pour » + verbe en français."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I use this app ___ learn English. »",
+   "r": [
+    "to"
+   ],
+   "i": "Le but devant un verbe se dit avec un tout petit mot.",
+   "e": "On écrit « to » : « pour » + verbe se dit « to » + base en anglais."
+  },
+  {
+   "d": 1,
+   "q": "Touche le petit mot qui exprime le but.",
+   "p": "Inès went to the market *to buy fresh fruit.",
+   "i": "Cherche le « to » qui est suivi d'un verbe.",
+   "e": "Le deuxième « to » exprime le but (pour acheter) ; le premier « to » est une préposition de lieu."
+  },
+  {
+   "d": 1,
+   "q": "He studies hard ___ pass his exam.",
+   "o": [
+    "to",
+    "for",
+    "that"
+   ],
+   "io": {
+    "for": "« for » + base n'existe pas en anglais.",
+    "that": "« that » seul n'exprime pas le but."
+   },
+   "i": "« Pour » devant un verbe se traduit par un tout petit mot.",
+   "e": "La bonne réponse est « to » : « to » + base exprime le but, alors que « for » + base n'existe pas."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il est allé à Paris pour voir son frère. »",
+   "r": [
+    "He went to Paris to see his brother",
+    "He went to Paris in order to see his brother",
+    "He went to Paris so as to see his brother"
+   ],
+   "i": "Le but devant un verbe se dit avec un tout petit mot.",
+   "e": "« He went to Paris to see his brother. » : « to » + base exprime le but ; on n'emploie jamais « for » + base."
+  },
+  {
+   "d": 2,
+   "q": "Speak slowly ___ everyone understands.",
+   "o": [
+    "so that",
+    "for",
+    "to"
+   ],
+   "io": {
+    "for": "« for » ne s'emploie pas devant un sujet pour exprimer le but.",
+    "to": "« to » est suivi d'un verbe, pas d'un sujet."
+   },
+   "i": "Un sujet suit (everyone) : quelle locution ?",
+   "e": "La bonne réponse est « so that » : pour que + autre sujet = so that + sujet + verbe."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "left",
+    "early",
+    "so",
+    "as",
+    "not",
+    "to",
+    "miss",
+    "the",
+    "bus"
+   ],
+   "fin": ".",
+   "i": "Pour un but négatif, la négation se place avant « to ».",
+   "e": "« We left early so as not to miss the bus. » : pour exprimer un but négatif, on emploie « so as not to » + base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I use my phone for take photos.",
+   "r": [
+    "I use my phone to take photos.",
+    "I use my phone for taking photos."
+   ],
+   "i": "Après « for », quelle forme du verbe ? Ou remplace « for ».",
+   "e": "« I use my phone to take photos. » : pour le but, to + base ; on peut aussi dire « for taking » pour dire à quoi sert un objet."
+  },
+  {
+   "d": 2,
+   "q": "This machine is ___ making coffee.",
+   "o": [
+    "for",
+    "to",
+    "so that"
+   ],
+   "io": {
+    "to": "« to making » est impossible : après « to », on met la base.",
+    "so that": "« so that » est suivi d'un sujet, pas d'un verbe en -ing."
+   },
+   "i": "Cherche le mot qui dit à quoi sert l'objet, suivi d'un verbe en -ing.",
+   "e": "La bonne réponse est « for » : « for » + -ing dit à quoi sert un objet, comme « a machine for making coffee »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « I'll send the address ___ you can find us. »",
+   "r": [
+    "so that",
+    "so"
+   ],
+   "i": "Le sujet change (« you ») : quelle locution exprime « pour que » ?",
+   "e": "« so that » est correct : pour que + autre sujet, on emploie « so that » + sujet + can."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui ne doit pas être là.",
+   "p": "He came here *for to see me.",
+   "i": "Un petit mot est en trop devant « to » : « for to » n'existe pas.",
+   "e": "« for » est en trop : « to » suffit pour exprimer le but, car « for to » n'existe pas en anglais moderne."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle a écrit la liste pour ne pas oublier. »",
+   "r": [
+    "She wrote the list so as not to forget",
+    "She wrote the list in order not to forget",
+    "She wrote down the list so as not to forget",
+    "She wrote the list down so as not to forget",
+    "She wrote the list so that she wouldn't forget",
+    "She wrote the list so she wouldn't forget",
+    "She wrote the list down so that she wouldn't forget"
+   ],
+   "i": "But négatif : so as not to ou in order not to.",
+   "e": "« She wrote the list so as not to forget. » : pour un but négatif, on emploie « so as not to » (ou « in order not to ») + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I called you for that you know the time.",
+   "r": [
+    "I called you so that you know the time.",
+    "I called you so you know the time."
+   ],
+   "i": "Le sujet change dans la seconde partie : quelle locution exprime « pour que » ?",
+   "e": "« I called you so that you know the time. » : « pour que » + autre sujet se dit « so that » + sujet + verbe, et non « for that »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She works at night for earning money.",
+   "r": [
+    "She works at night to earn money.",
+    "She works at night in order to earn money.",
+    "She works at night so as to earn money."
+   ],
+   "i": "Le but devant un verbe se dit avec « to » + base.",
+   "e": "« She works at night to earn money. » : pour exprimer le but devant un verbe, on emploie « to » + base ; « for » + -ing sert plutôt à dire à quoi sert un objet."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Parle plus fort pour que nous puissions t'entendre. »",
+   "r": [
+    "Speak louder so that we can hear you",
+    "Speak up so that we can hear you",
+    "Speak louder so we can hear you",
+    "Speak up so we can hear you"
+   ],
+   "i": "Le sujet change (« we ») : utilise « so that » suivi d'un modal.",
+   "e": "« Speak louder so that we can hear you. » : « so that » + sujet + can exprime le but pour quelqu'un d'autre."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase exprime correctement un but négatif ?",
+   "o": [
+    "I wrote it down so as not to forget.",
+    "I wrote it down for not to forget.",
+    "I wrote it down so that not forget."
+   ],
+   "io": {
+    "I wrote it down for not to forget.": "« for to » n'existe pas en anglais.",
+    "I wrote it down so that not forget.": "« so that » est suivi d'un sujet et d'un verbe, et la négation est mal placée."
+   },
+   "i": "Pour un but négatif, la négation se place juste devant « to ».",
+   "e": "La bonne réponse est « I wrote it down so as not to forget. » : pour un but négatif, on emploie « so as not to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "left",
+    "a",
+    "note",
+    "so",
+    "that",
+    "you",
+    "would",
+    "know",
+    "where",
+    "I",
+    "was"
+   ],
+   "fin": ".",
+   "i": "Le sujet change (« you ») : utilise « so that » suivi du modal « would ».",
+   "e": "« I left a note so that you would know where I was. » : « so that » + sujet + would + base exprime le but pour quelqu'un d'autre."
+  },
+  {
+   "d": 3,
+   "q": "Dans quelle phrase « for » est-il correct ?",
+   "o": [
+    "This box is for storing old books.",
+    "I went there for see him.",
+    "She called for ask the time."
+   ],
+   "io": {
+    "I went there for see him.": "Pour le but, on emploie « to » + base, pas « for » + base.",
+    "She called for ask the time.": "Pour le but, on emploie « to » + base, pas « for » + base."
+   },
+   "i": "Cherche la phrase qui dit à quoi sert un objet (« for ») avec un verbe en -ing.",
+   "e": "La bonne réponse est « This box is for storing old books. » : « for » + -ing indique l'usage d'un objet ; pour un but, on emploierait « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « We went out ___ a pizza. »",
+   "r": [
+    "for"
+   ],
+   "i": "Un nom suit le trou : on parle de ce qu'on va chercher.",
+   "e": "« for » est correct : « for » + nom indique ce qu'on va chercher, comme « for a pizza »."
+  }
+ ],
+ "complement-to": [
+  {
+   "d": 1,
+   "q": "Tom was happy ___ see his friends again.",
+   "o": [
+    "to",
+    "for",
+    "of"
+   ],
+   "io": {
+    "for": "« for » ne s'emploie pas devant un verbe à la base dans cette construction.",
+    "of": "« of » n'introduit pas un verbe à la base."
+   },
+   "i": "Regarde quel petit mot vient entre l'adjectif « happy » et le verbe « see ».",
+   "e": "La bonne réponse est « to » : après un adjectif comme « happy », on met « to » + base (happy to see)."
+  },
+  {
+   "d": 1,
+   "q": "This bag is ___ heavy to carry.",
+   "o": [
+    "too",
+    "enough",
+    "very"
+   ],
+   "io": {
+    "enough": "« enough » se place après l'adjectif et veut dire « assez », ce qui change le sens.",
+    "very": "« very heavy to carry » ne dit pas que c'est trop lourd pour être porté."
+   },
+   "i": "Le sac est plus lourd que ce qu'on peut porter : on veut dire « trop… pour ».",
+   "e": "La bonne réponse est « too » : too + adjectif + to + base signifie « trop… pour »."
+  },
+  {
+   "d": 1,
+   "q": "There is nothing ___ watch on TV.",
+   "o": [
+    "to",
+    "for",
+    "that"
+   ],
+   "io": {
+    "for": "« nothing for watch » est une erreur de francophone : « for » ne s'emploie pas devant un verbe.",
+    "that": "« that » ne peut pas être suivi directement du verbe base dans cette phrase."
+   },
+   "i": "Pense à la structure « rien à regarder » : un pronom, puis un petit mot, puis le verbe.",
+   "e": "La bonne réponse est « to » : nothing + to + base se traduit par « rien à… »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Would you like something ___ drink? »",
+   "r": [
+    "to"
+   ],
+   "i": "Après « something », quel petit mot précède le verbe à la base ?",
+   "e": "On écrit « to » : something + to + base se traduit par « quelque chose à… » (something to drink = quelque chose à boire)."
+  },
+  {
+   "d": 1,
+   "q": "Touche le petit mot qui complète l'adjectif.",
+   "p": "It was nice *to meet you.",
+   "i": "Cherche le petit mot qui précède le verbe « meet ».",
+   "e": "« to » complète l'adjectif « nice » : adjectif + to + base (nice to meet you)."
+  },
+  {
+   "d": 1,
+   "q": "He's old ___ to drive a car.",
+   "o": [
+    "enough",
+    "too",
+    "very"
+   ],
+   "io": {
+    "too": "« too » se place devant l'adjectif (« too old to drive ») ; ici il viendrait après « old », ce qui est impossible.",
+    "very": "« very old to drive » ne forme pas la structure « assez… pour »."
+   },
+   "i": "Regarde où doit se placer le mot qui veut dire « assez » par rapport à l'adjectif.",
+   "e": "La bonne réponse est « enough » : on dit « old enough to drive », avec « enough » placé après l'adjectif."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Cette règle est facile à retenir. »",
+   "r": [
+    "This rule is easy to remember",
+    "That rule is easy to remember",
+    "The rule is easy to remember"
+   ],
+   "i": "Utilise adjectif + to + base, sans reprendre « it » à la fin.",
+   "e": "« This rule is easy to remember. » : adjectif + to + base ; on ne répète pas l'objet à la fin de la phrase."
+  },
+  {
+   "d": 2,
+   "q": "I need a book ___ on the train.",
+   "o": [
+    "to read",
+    "reading",
+    "for read"
+   ],
+   "io": {
+    "reading": "Après le nom, on met « to » + base, et non -ing, pour dire ce qu'on en fait.",
+    "for read": "« for » + base est impossible en anglais."
+   },
+   "i": "On veut dire « un livre à lire » : quel petit mot relie le nom au verbe ?",
+   "e": "La bonne réponse est « to read » : nom + to + base dit ce qu'on peut faire avec le nom (a book to read)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "soup",
+    "is",
+    "too",
+    "hot",
+    "to",
+    "eat"
+   ],
+   "fin": ".",
+   "i": "Cherche la structure « trop… pour » : un adverbe, un adjectif, puis « to ».",
+   "e": "« The soup is too hot to eat. » : too + adjectif + to + base se traduit par « trop… pour »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He isn't enough strong to lift the box.",
+   "r": [
+    "He isn't strong enough to lift the box."
+   ],
+   "i": "Regarde où se place « enough » par rapport à l'adjectif « strong ».",
+   "e": "« He isn't strong enough to lift the box. » : en anglais, « enough » se place après l'adjectif, jamais avant."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « She was the first ___ arrive. »",
+   "r": [
+    "to"
+   ],
+   "i": "Après « the first », le verbe est précédé d'un petit mot.",
+   "e": "On écrit « to » : après « the first », « the last » ou « the only », on met « to » + base (the first to arrive)."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui expriment « trop… pour ».",
+   "p": "The box is *too heavy *to lift.",
+   "i": "Cherche d'abord l'adverbe qui exprime l'excès, puis le petit mot devant le verbe.",
+   "e": "« too » et « to » expriment « trop… pour » : too + adjectif + to + base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je n'ai rien à lire. »",
+   "r": [
+    "I have nothing to read",
+    "I've got nothing to read",
+    "I don't have anything to read",
+    "I haven't got anything to read",
+    "I have got nothing to read"
+   ],
+   "i": "Pour « rien à lire », combine « nothing » avec un petit mot et un verbe.",
+   "e": "« I have nothing to read. » : nothing + to + base se traduit par « rien à lire »."
+  },
+  {
+   "d": 2,
+   "q": "Parle d'une machine à laver. Quelle phrase est correcte ?",
+   "o": [
+    "This machine is easy to use.",
+    "This machine is easy to use it.",
+    "This machine is easy for use."
+   ],
+   "io": {
+    "This machine is easy to use it.": "« This machine » est déjà l'objet de « use » : le reprendre avec « it » à la fin est un piège de francophone.",
+    "This machine is easy for use.": "Après un adjectif, on emploie « to » + base, et non « for » + nom."
+   },
+   "i": "Demande-toi si le sujet est déjà l'objet du verbe « use ».",
+   "e": "La bonne réponse est « This machine is easy to use. » : le sujet (this machine) est déjà l'objet de « use », donc on ne le reprend pas avec « it » en fin de phrase."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The question is difficult to answer it.",
+   "r": [
+    "The question is difficult to answer."
+   ],
+   "i": "Le sujet de la phrase est ce à quoi on répond : doit-on le répéter ?",
+   "e": "« The question is difficult to answer. » : on ne répète pas le sujet avec « it » à la fin de la phrase."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I have nothing for doing today.",
+   "r": [
+    "I have nothing to do today."
+   ],
+   "i": "Pour « rien à faire », quelle structure suit « nothing » ?",
+   "e": "« I have nothing to do today. » : nothing + to + base, jamais « for doing »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle est trop fatiguée pour conduire. »",
+   "r": [
+    "She is too tired to drive",
+    "She is too tired to drive a car"
+   ],
+   "i": "Pense à « trop… pour » : l'adjectif est précédé de « too » et suivi de « to ».",
+   "e": "« She is too tired to drive. » : too + adjectif + to + base se traduit par « trop… pour »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il est assez grand pour atteindre l'étagère. »",
+   "r": [
+    "He is tall enough to reach the shelf",
+    "He is big enough to reach the shelf"
+   ],
+   "i": "« assez » se place après l'adjectif en anglais.",
+   "e": "« He is tall enough to reach the shelf. » : adjectif + enough + to + base se traduit par « assez… pour »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "was",
+    "the",
+    "first",
+    "to",
+    "finish",
+    "the",
+    "race"
+   ],
+   "fin": ".",
+   "i": "Après « the first », quel petit mot précède le verbe ?",
+   "e": "« She was the first to finish the race. » : the first + to + base se traduit par « la première à… »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "I'm too busy to go out tonight.",
+    "I'm too busy for go out tonight.",
+    "I'm busy too to go out tonight."
+   ],
+   "io": {
+    "I'm too busy for go out tonight.": "On n'emploie pas « for » avant un verbe dans cette structure.",
+    "I'm busy too to go out tonight.": "« too » se place devant l'adjectif, jamais après."
+   },
+   "i": "Cherche la phrase où « too » précède l'adjectif et où « to » précède le verbe.",
+   "e": "La bonne réponse est « I'm too busy to go out tonight. » : too + adjectif + to + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It's too cold for swim today.",
+   "r": [
+    "It's too cold to swim today."
+   ],
+   "i": "On veut dire « trop froid pour nager » : quel petit mot précède « swim » ?",
+   "e": "« It's too cold to swim today. » : too + adjectif + to + base, sans « for »."
+  },
+  {
+   "d": 3,
+   "q": "Dans quelle phrase « enough » est-il bien placé ?",
+   "o": [
+    "She is clever enough to win.",
+    "She is enough clever to win.",
+    "She enough is clever to win."
+   ],
+   "io": {
+    "She is enough clever to win.": "« enough » se place après l'adjectif, pas avant.",
+    "She enough is clever to win.": "« enough » ne se place pas entre le sujet et le verbe."
+   },
+   "i": "Regarde où se place « enough » : avant ou après l'adjectif ?",
+   "e": "La bonne réponse est « She is clever enough to win. » : « enough » se place après l'adjectif."
+  }
+ ],
+ "un-peu": [
+  {
+   "d": 1,
+   "q": "I have ___ apples in my bag.",
+   "o": [
+    "a few",
+    "a little",
+    "much"
+   ],
+   "io": {
+    "a little": "« a little » va avec un nom qu'on ne compte pas.",
+    "much": "« much » ne s'emploie pas devant un nom pluriel."
+   },
+   "i": "Demande-toi si les pommes se comptent.",
+   "e": "La bonne réponse est « a few » : « apples » est un pluriel qu'on compte, donc on emploie « a few »."
+  },
+  {
+   "d": 1,
+   "q": "Can I have ___ sugar in my tea?",
+   "o": [
+    "a little",
+    "a few",
+    "few"
+   ],
+   "io": {
+    "a few": "« a few » s'emploie avec un pluriel qu'on compte.",
+    "few": "« few » s'emploie avec un pluriel qu'on compte."
+   },
+   "i": "Demande-toi si le sucre se compte.",
+   "e": "La bonne réponse est « a little » : « sugar » est un indénombrable, donc on emploie « a little »."
+  },
+  {
+   "d": 1,
+   "q": "Only ___ students came to the party: five out of thirty.",
+   "o": [
+    "a few",
+    "a little",
+    "little"
+   ],
+   "io": {
+    "a little": "« a little » va avec un nom qu'on ne compte pas.",
+    "little": "« little » va avec un nom qu'on ne compte pas."
+   },
+   "i": "Les élèves se comptent, et la phrase dit qu'ils étaient quand même quelques-uns.",
+   "e": "La bonne réponse est « a few » : « students » est un pluriel, et « a few » signifie « quelques »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Could I have ___ water, please? » (un peu de)",
+   "r": [
+    "a little"
+   ],
+   "i": "L'eau se compte-t-elle ? Choisis la quantité positive.",
+   "e": "On écrit « a little » : « water » est un indénombrable, et « a little » signifie « un peu de »."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui vont avec « apples », qu'on peut compter.",
+   "p": "She bought *a *few apples and a little cheese.",
+   "i": "Cherche les deux mots qui vont avec le nom qu'on peut compter.",
+   "e": "« a » et « few » vont avec « apples », qu'on peut compter ; « a little » irait avec « cheese », qu'on ne compte pas."
+  },
+  {
+   "d": 1,
+   "q": "I need ___ help with my homework.",
+   "o": [
+    "a little",
+    "a few",
+    "few"
+   ],
+   "io": {
+    "a few": "« a few » s'emploie avec un pluriel qu'on compte.",
+    "few": "« few » s'emploie avec un pluriel qu'on compte."
+   },
+   "i": "Demande-toi si on peut compter l'aide (« help »).",
+   "e": "La bonne réponse est « a little » : « help » est un indénombrable, et « a little » donne un sens positif."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « J'ai quelques livres anglais. »",
+   "r": [
+    "I have a few English books",
+    "I've got a few English books",
+    "I have a few books in English"
+   ],
+   "i": "« Quelques » devant un pluriel qu'on compte : quel mot utiliser ?",
+   "e": "« I have a few English books. » : « quelques » devant un pluriel qu'on compte se dit « a few » ; « a little » est réservé aux indénombrables."
+  },
+  {
+   "d": 2,
+   "q": "___ people came to the show, so it was nearly empty.",
+   "o": [
+    "Few",
+    "A few",
+    "A little"
+   ],
+   "io": {
+    "A few": "« A few » a un sens positif, alors que la salle était presque vide.",
+    "A little": "« A little » s'emploie avec un nom qu'on ne compte pas."
+   },
+   "i": "La salle était presque vide : la quantité est-elle suffisante ou insuffisante ?",
+   "e": "La bonne réponse est « Few » : sans le petit « a », la quantité est insuffisante, ce qui explique la salle presque vide."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "have",
+    "a",
+    "little",
+    "time",
+    "before",
+    "the",
+    "train"
+   ],
+   "fin": ".",
+   "i": "Le temps se compte-t-il ? Choisis le mot qui convient à un indénombrable.",
+   "e": "« We have a little time before the train. » : « time » est indénombrable, donc on emploie « a little »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She drank a few milk.",
+   "r": [
+    "She drank a little milk."
+   ],
+   "i": "Le lait se compte-t-il ?",
+   "e": "« She drank a little milk. » : « milk » est un indénombrable, donc « a little » et non « a few »."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est positive (il y a assez de temps) ?",
+   "o": [
+    "I have a little time.",
+    "I have little time.",
+    "I have few time."
+   ],
+   "io": {
+    "I have little time.": "Sans « a », le sens est négatif : on n'a presque pas de temps.",
+    "I have few time.": "« time » est indénombrable : on ne dit pas « few time »."
+   },
+   "i": "Cherche la phrase où la quantité est petite mais suffisante.",
+   "e": "La bonne réponse est « I have a little time. » : avec le petit « a », le sens est positif (j'ai un peu de temps)."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « There is very ___ sugar left. » (peu)",
+   "r": [
+    "little"
+   ],
+   "i": "Le sucre ne se compte pas, et la quantité est insuffisante.",
+   "e": "On écrit « little » : little + indénombrable donne un sens négatif (très peu de sucre)."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui ne va pas avec « bread ».",
+   "p": "We have *few bread, so let's buy more.",
+   "i": "Le pain se compte-t-il ?",
+   "e": "« few » est mal choisi : « bread » est un indénombrable, il faut donc « little »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Peu de gens connaissent cette histoire. »",
+   "r": [
+    "Few people know this story",
+    "Few people know that story"
+   ],
+   "i": "Peu de + nom qu'on compte, avec un sens négatif.",
+   "e": "« Few people know this story. » : few + pluriel, sans « a », donne le sens « peu de gens »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He has little friends, so he feels lonely.",
+   "r": [
+    "He has few friends, so he feels lonely.",
+    "He doesn't have many friends, so he feels lonely."
+   ],
+   "i": "Les amis se comptent ; la phrase suivante dit qu'il se sent seul.",
+   "e": "« He has few friends, so he feels lonely. » : « friends » se compte, donc on emploie « few » ; « little » va avec un indénombrable."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I'd like a few information, please.",
+   "r": [
+    "I'd like a little information, please.",
+    "I'd like some information, please."
+   ],
+   "i": "« information » est un nom qu'on ne compte pas.",
+   "e": "« I'd like a little information, please. » : « information » est un indénombrable, donc on dit « a little »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il reste un peu de café. »",
+   "r": [
+    "There is a little coffee left",
+    "There is a little coffee left over"
+   ],
+   "i": "Un peu de café : le café se compte-t-il ?",
+   "e": "« There is a little coffee left. » : « coffee » est indénombrable, et « a little » donne un sens positif."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est négative ?",
+   "o": [
+    "Few people agree with him.",
+    "A few people agree with him.",
+    "Quite a few people agree with him."
+   ],
+   "io": {
+    "A few people agree with him.": "Avec « a », le sens est positif : quelques personnes sont d'accord.",
+    "Quite a few people agree with him.": "« quite a few » veut dire « pas mal de » : c'est un sens positif."
+   },
+   "i": "Cherche la phrase sans le petit « a ».",
+   "e": "La bonne réponse est « Few people agree with him. » : sans « a », le sens est négatif, donc peu de gens sont d'accord."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "only",
+    "a",
+    "few",
+    "people",
+    "knew",
+    "the",
+    "answer"
+   ],
+   "fin": ".",
+   "i": "Un petit nombre de personnes, mais suffisant pour être positif.",
+   "e": "« Only a few people knew the answer. » : « a few » se place devant un nom pluriel qu'on compte, et « only » insiste sur le petit nombre."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "I have a little money.",
+    "I have a few money.",
+    "I have few moneys."
+   ],
+   "io": {
+    "I have a few money.": "« a few » s'emploie avec un pluriel qu'on compte.",
+    "I have few moneys.": "« money » n'a pas de pluriel dans ce sens."
+   },
+   "i": "Demande-toi si « money » se compte.",
+   "e": "La bonne réponse est « I have a little money. » : « money » est indénombrable, donc « a little »."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « There are ___ chairs, so some people must stand. » (peu)",
+   "r": [
+    "few",
+    "very few"
+   ],
+   "i": "Il n'y a pas assez de chaises : le sens est négatif.",
+   "e": "On écrit « few » : « chairs » est un pluriel qu'on compte, et « few » donne un sens négatif."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I speak little French, so I can order food.",
+   "r": [
+    "I speak a little French, so I can order food."
+   ],
+   "i": "Elle sait parler français et peut commander : le sens est-il positif ou négatif ?",
+   "e": "« I speak a little French, so I can order food. » : « a little » est positif et laisse entendre qu'on se débrouille ; « little » dirait presque rien."
+  }
+ ],
+ "tous-chacun": [
+  {
+   "d": 1,
+   "q": "I phone my mum ___ evening, after dinner.",
+   "o": [
+    "every",
+    "all",
+    "whole"
+   ],
+   "io": {
+    "all": "« all evening » voudrait dire « toute la soirée » : ce n'est pas une habitude régulière.",
+    "whole": "« whole » veut dire « entier » et se place après « the »."
+   },
+   "i": "Le verbe est au présent et on parle d'une habitude : chaque soir.",
+   "e": "La bonne réponse est « every » : every + nom singulier signifie « chaque » ou « tous les » (every evening = tous les soirs)."
+  },
+  {
+   "d": 1,
+   "q": "All the ___ are here.",
+   "o": [
+    "students",
+    "student"
+   ],
+   "io": {
+    "student": "Après « all the », on met un nom pluriel, pas le singulier."
+   },
+   "i": "Après « all the », le nom est au pluriel.",
+   "e": "La bonne réponse est « students » : all + the + pluriel signifie « tous les »."
+  },
+  {
+   "d": 1,
+   "q": "___ is ready for the party.",
+   "o": [
+    "Everything",
+    "Every",
+    "All thing"
+   ],
+   "io": {
+    "Every": "« every » doit être suivi d'un nom : on ne peut pas l'employer seul devant « is ».",
+    "All thing": "« all thing » n'existe pas : on dit « everything » ou « all the things »."
+   },
+   "i": "Le mot recherché est un mot composé qui veut dire « toutes les choses ».",
+   "e": "La bonne réponse est « Everything » : ce mot composé signifie « tout » et prend un verbe au singulier."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I read the ___ book in one night. » (entier)",
+   "r": [
+    "whole",
+    "entire"
+   ],
+   "i": "Un mot signifie « entier » et se place après « the ».",
+   "e": "On écrit « whole » : the whole + nom singulier signifie « tout entier » (the whole book)."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui veut dire « chaque ».",
+   "p": "*Each girl in the team has a number.",
+   "i": "Cherche le mot qui regarde chaque fille une par une.",
+   "e": "« Each » signifie « chaque » et regarde les éléments un par un, comme un professeur qui distribue des copies."
+  },
+  {
+   "d": 1,
+   "q": "From morning till night, she worked ___ day.",
+   "o": [
+    "all",
+    "the all",
+    "every"
+   ],
+   "io": {
+    "the all": "On ne dit pas « the all day » : « all » se place avant « the », jamais après.",
+    "every": "« every day » veut dire « chaque jour », pas « toute la journée »."
+   },
+   "i": "Elle a travaillé pendant toute la journée.",
+   "e": "La bonne réponse est « all » : « all day » veut dire « toute la journée », sans article."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tout le monde connaît Sarah. »",
+   "r": [
+    "Everybody knows Sarah",
+    "Everyone knows Sarah"
+   ],
+   "i": "Le mot composé « everybody » est suivi d'un verbe au singulier.",
+   "e": "« Everybody knows Sarah. » : « everybody » prend un verbe au singulier (knows), comme « tout le monde » en français."
+  },
+  {
+   "d": 2,
+   "q": "___ child got a present, one by one.",
+   "o": [
+    "Each",
+    "All",
+    "Whole"
+   ],
+   "io": {
+    "All": "« All » est suivi d'un pluriel, pas d'un nom singulier comme « child ».",
+    "Whole": "« Whole » veut dire « entier » et ne signifie pas « chaque »."
+   },
+   "i": "Un mot regarde les enfants un par un, l'autre en groupe.",
+   "e": "La bonne réponse est « Each » : il insiste sur chaque enfant pris un par un, comme dans « one by one »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "whole",
+    "family",
+    "came",
+    "to",
+    "the",
+    "wedding"
+   ],
+   "fin": ".",
+   "i": "« Tout » devant un nom singulier se dit avec « the whole ».",
+   "e": "« The whole family came to the wedding. » : the whole + nom singulier signifie « toute la famille »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I go to school every days.",
+   "r": [
+    "I go to school every day."
+   ],
+   "i": "Après « every », le nom est-il au singulier ou au pluriel ?",
+   "e": "« I go to school every day. » : « every » est toujours suivi d'un nom singulier, donc « day » et non « days »."
+  },
+  {
+   "d": 2,
+   "q": "Tom ate ___ cake in one go. (le gâteau entier)",
+   "o": [
+    "the whole",
+    "every",
+    "each"
+   ],
+   "io": {
+    "every": "« every cake » voudrait dire « chaque gâteau », pas « le gâteau entier ».",
+    "each": "« each cake » voudrait dire « chaque gâteau », pas « le gâteau entier »."
+   },
+   "i": "Il a mangé le gâteau entier.",
+   "e": "La bonne réponse est « the whole » : the whole + nom singulier signifie « tout entier »."
+  },
+  {
+   "d": 2,
+   "q": "Complète avec « be » au présent : « Everything ___ expensive in this shop. »",
+   "r": [
+    "is"
+   ],
+   "i": "Le mot « everything » est suivi d'un verbe au singulier.",
+   "e": "« is » est correct : « everything » prend un verbe au singulier, comme « tout » en français."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe mal accordé.",
+   "p": "Everybody *are ready for the trip.",
+   "i": "« Everybody » est suivi d'un verbe au singulier.",
+   "e": "« are » est mal accordé : « everybody » prend un verbe au singulier, donc il faut « is »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle a lu tous les livres. »",
+   "r": [
+    "She read all the books",
+    "She has read all the books",
+    "She read all of the books",
+    "She has read all of the books"
+   ],
+   "i": "Quand on parle de « tous les livres », le nom est au pluriel.",
+   "e": "« She has read all the books. » : all + the + nom pluriel signifie « tous les livres »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Everyone have a ticket.",
+   "r": [
+    "Everyone has a ticket."
+   ],
+   "i": "« Everyone » est suivi d'un verbe au singulier.",
+   "e": "« Everyone has a ticket. » : « everyone » prend un verbe au singulier, donc « has » et non « have »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I worked all the day yesterday.",
+   "r": [
+    "I worked all day yesterday.",
+    "I worked the whole day yesterday."
+   ],
+   "i": "Pour « toute la journée », on ne met pas « the » après « all ».",
+   "e": "« I worked all day yesterday. » : « all day » (ou « the whole day ») dit « toute la journée » ; on ne met pas « the » après « all » avec « day »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il a plu toute la semaine. »",
+   "r": [
+    "It rained all week",
+    "It rained the whole week",
+    "It has rained all week",
+    "It has rained the whole week"
+   ],
+   "i": "Pour une durée complète, on peut utiliser « all » ou « the whole ».",
+   "e": "« It rained all week. » : « all » + nom de durée signifie « toute la semaine » (ou « the whole week »)."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "Each of the players gets a medal.",
+    "Each of the players get a medal.",
+    "Each of the player gets a medal."
+   ],
+   "io": {
+    "Each of the players get a medal.": "« each » est singulier : il faut « gets », pas « get ».",
+    "Each of the player gets a medal.": "Après « of the », le nom reste au pluriel : « players »."
+   },
+   "i": "Le mot « each » est suivi d'un verbe au singulier, même devant « of the players ».",
+   "e": "La bonne réponse est « Each of the players gets a medal. » : « each » est singulier, donc « gets », et « players » reste au pluriel après « of the »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "every",
+    "child",
+    "in",
+    "the",
+    "class",
+    "has",
+    "a",
+    "book"
+   ],
+   "fin": ".",
+   "i": "Après « every », le nom est au singulier.",
+   "e": "« Every child in the class has a book. » : « every » + nom singulier, suivi d'un verbe au singulier."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase veut dire « tous les jours » ?",
+   "o": [
+    "I swim every day.",
+    "I swim all day.",
+    "I swim the whole day."
+   ],
+   "io": {
+    "I swim all day.": "« all day » veut dire « toute la journée », pas « tous les jours ».",
+    "I swim the whole day.": "« the whole day » veut dire « toute la journée », pas « tous les jours »."
+   },
+   "i": "« Tous les jours » veut dire « chaque jour ».",
+   "e": "La bonne réponse est « I swim every day. » : « every day » signifie « chaque jour », donc « tous les jours »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Every students has a book.",
+   "r": [
+    "Every student has a book.",
+    "All the students have a book.",
+    "All students have a book."
+   ],
+   "i": "Après « every », le nom est au singulier.",
+   "e": "« Every student has a book. » : « every » est suivi d'un nom singulier et d'un verbe au singulier ; « all the students have » est aussi correct."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Toute la famille est là. »",
+   "r": [
+    "The whole family is here",
+    "The whole family are here"
+   ],
+   "i": "Pour « toute la famille », « the whole » précède un nom singulier.",
+   "e": "« The whole family is here. » : the whole + nom singulier signifie « toute la famille »."
+  }
+ ],
+ "les-deux": [
+  {
+   "d": 1,
+   "q": "I have two cats. ___ of them are black.",
+   "o": [
+    "Both",
+    "Either",
+    "Neither"
+   ],
+   "io": {
+    "Either": "« Either » veut dire « l'un ou l'autre » et se construit avec un singulier.",
+    "Neither": "« Neither » veut dire « aucun des deux » et s'accompagne d'un verbe au singulier."
+   },
+   "i": "Il y a deux chats et on parle des deux à la fois.",
+   "e": "La bonne réponse est « Both » : il signifie « les deux » et s'emploie avec un pluriel."
+  },
+  {
+   "d": 1,
+   "q": "There are two roads to the beach. You can take ___ road.",
+   "o": [
+    "either",
+    "both",
+    "neither"
+   ],
+   "io": {
+    "both": "« both » est suivi d'un nom pluriel, ce qui ne marche pas avec « road ».",
+    "neither": "« neither » est négatif et ne convient pas à un choix possible."
+   },
+   "i": "On peut choisir une route ou l'autre : au choix.",
+   "e": "La bonne réponse est « either » : il signifie « l'un ou l'autre » et se construit avec un nom singulier."
+  },
+  {
+   "d": 1,
+   "q": "___ of my two parents speaks Spanish.",
+   "o": [
+    "Neither",
+    "None",
+    "Both"
+   ],
+   "io": {
+    "None": "« None » s'emploie pour plus de deux personnes.",
+    "Both": "« Both » voudrait dire que les deux parlent espagnol, et il demande un verbe au pluriel."
+   },
+   "i": "La phrase dit qu'aucun des deux parents ne parle espagnol.",
+   "e": "La bonne réponse est « Neither » : il signifie « ni l'un ni l'autre » et s'emploie pour deux personnes."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Both Tom ___ Anna are in my class. »",
+   "r": [
+    "and"
+   ],
+   "i": "Pense à la paire « both… ».",
+   "e": "On écrit « and » : la paire est « both… and », qui signifie « à la fois… et »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui veut dire « les deux ».",
+   "p": "*Both my sisters play tennis.",
+   "i": "Cherche le mot qui compte deux sœurs ensemble.",
+   "e": "« Both » signifie « les deux » : « both my sisters » parle des deux sœurs à la fois."
+  },
+  {
+   "d": 1,
+   "q": "He plays ___ the guitar and the piano.",
+   "o": [
+    "both",
+    "either",
+    "neither"
+   ],
+   "io": {
+    "either": "« either… or » va avec « or », et signifie « soit… soit ».",
+    "neither": "« neither… nor » va avec « nor », et signifie « ni… ni »."
+   },
+   "i": "Il joue de la guitare et du piano : les deux à la fois.",
+   "e": "La bonne réponse est « both » : both… and signifie « à la fois… et »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Les deux enfants dorment. »",
+   "r": [
+    "Both children are asleep",
+    "Both children are sleeping",
+    "Both the children are asleep",
+    "Both the children are sleeping",
+    "Both kids are asleep",
+    "Both kids are sleeping"
+   ],
+   "i": "Les deux enfants dorment : quel mot s'emploie avec un pluriel ?",
+   "e": "« Both children are asleep. » : both + pluriel signifie « les deux » et prend un verbe au pluriel."
+  },
+  {
+   "d": 2,
+   "q": "___ pasta nor rice is on the menu today.",
+   "o": [
+    "Neither",
+    "Either",
+    "Both"
+   ],
+   "io": {
+    "Either": "« Either » va avec « or » et signifie « soit… soit ».",
+    "Both": "« Both » va avec « and » et signifie « à la fois… et »."
+   },
+   "i": "La phrase dit qu'il n'y a ni pâtes ni riz.",
+   "e": "La bonne réponse est « Neither » : la paire neither… nor signifie « ni… ni »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "neither",
+    "of",
+    "my",
+    "brothers",
+    "plays",
+    "football"
+   ],
+   "fin": ".",
+   "i": "« neither » est suivi d'un verbe au singulier et reste affirmatif.",
+   "e": "« Neither of my brothers plays football. » : « neither » prend un verbe au singulier, sans négation supplémentaire."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Neither of my parents doesn't drive.",
+   "r": [
+    "Neither of my parents drives."
+   ],
+   "i": "« neither » est déjà négatif.",
+   "e": "« Neither of my parents drives. » : « neither » est déjà négatif, donc le verbe reste affirmatif."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « You can sit on ___ side. » (n'importe lequel des deux)",
+   "r": [
+    "either"
+   ],
+   "i": "On peut s'asseoir de l'un ou l'autre côté : quel mot ?",
+   "e": "« either » signifie « l'un ou l'autre » : on peut choisir n'importe lequel des deux côtés."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "Both books are interesting.",
+    "The both books are interesting.",
+    "Both the book are interesting."
+   ],
+   "io": {
+    "The both books are interesting.": "« both » se place avant l'article : « the both books » est faux.",
+    "Both the book are interesting.": "« both » est suivi d'un pluriel : « books », pas « book »."
+   },
+   "i": "« Both » se place avant l'article et il est suivi d'un pluriel.",
+   "e": "La bonne réponse est « Both books are interesting. » : « both » est suivi d'un pluriel, et ne se place jamais après l'article."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui forment la paire « soit… soit ».",
+   "p": "You can *either call me *or send a message.",
+   "i": "Cherche la paire de mots qui encadre le choix « soit… soit ».",
+   "e": "« either » et « or » forment la paire « either… or », qui signifie « soit… soit »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Les deux réponses sont fausses. »",
+   "r": [
+    "Both answers are wrong",
+    "Both the answers are wrong",
+    "Both of the answers are wrong",
+    "Both answers are incorrect",
+    "Both the answers are incorrect"
+   ],
+   "i": "Les deux réponses sont fausses : quel mot s'emploie avec un pluriel ?",
+   "e": "« Both answers are wrong. » : both + pluriel signifie « les deux » et prend un verbe au pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She doesn't know neither Paul nor Marie.",
+   "r": [
+    "She knows neither Paul nor Marie.",
+    "She doesn't know either Paul or Marie."
+   ],
+   "i": "« neither… nor » est déjà négatif : une seule négation suffit.",
+   "e": "« She knows neither Paul nor Marie. » : « neither… nor » est déjà négatif, donc on n'ajoute pas « doesn't »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "None of my two brothers lives here.",
+   "r": [
+    "Neither of my two brothers lives here.",
+    "Neither of my brothers lives here."
+   ],
+   "i": "Pour deux frères, quel mot signifie « aucun des deux » ?",
+   "e": "« Neither of my two brothers lives here. » : « neither » s'emploie pour deux ; « none » est réservé à plus de deux."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ni mon père ni ma mère ne parle espagnol. »",
+   "r": [
+    "Neither my father nor my mother speaks Spanish",
+    "Neither my mother nor my father speaks Spanish"
+   ],
+   "i": "Utilise la paire « ni… ni » avec un verbe affirmatif.",
+   "e": "« Neither my father nor my mother speaks Spanish. » : « neither… nor » est suivi d'un verbe affirmatif."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte pour plus de deux personnes ?",
+   "o": [
+    "None of my five cousins came.",
+    "Neither of my five cousins came.",
+    "Both of my five cousins came."
+   ],
+   "io": {
+    "Neither of my five cousins came.": "« Neither » s'emploie pour deux personnes seulement.",
+    "Both of my five cousins came.": "« Both » s'emploie pour deux personnes seulement."
+   },
+   "i": "Les cinq cousins : plus de deux personnes.",
+   "e": "La bonne réponse est « None of my five cousins came. » : « none » signifie « aucun » et s'emploie pour plus de deux personnes."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "speaks",
+    "both",
+    "Spanish",
+    "and",
+    "French"
+   ],
+   "fin": ".",
+   "i": "La paire « à la fois… et » se dit « both… and ».",
+   "e": "« She speaks both Spanish and French. » : « both… and » signifie « à la fois… et ».",
+   "alt": [
+    [
+     "she",
+     "speaks",
+     "both",
+     "French",
+     "and",
+     "Spanish"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase a le même sens que « I don't like either of them » ?",
+   "o": [
+    "I like neither of them.",
+    "I don't like neither of them.",
+    "I like none either."
+   ],
+   "io": {
+    "I don't like neither of them.": "Cette phrase contient une double négation : « don't » et « neither » en même temps.",
+    "I like none either.": "Cette phrase n'est pas naturelle en anglais."
+   },
+   "i": "Une seule négation suffit : « neither » est déjà négatif.",
+   "e": "La bonne réponse est « I like neither of them. » : « neither » est déjà négatif, donc il n'y a pas de seconde négation."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « I have three sisters. ___ of them lives in Paris. » (aucune)",
+   "r": [
+    "None"
+   ],
+   "i": "Trois sœurs : c'est plus de deux, donc quel mot signifie « aucune » ?",
+   "e": "« None » signifie « aucun » et s'emploie pour plus de deux personnes ; ici, aucune des trois sœurs n'habite à Paris."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The both players were tired.",
+   "r": [
+    "Both players were tired.",
+    "Both the players were tired."
+   ],
+   "i": "« Both » se place avant l'article, jamais après.",
+   "e": "« Both players were tired. » : « both » se place avant l'article ; on peut aussi dire « both the players »."
+  }
+ ]
+}

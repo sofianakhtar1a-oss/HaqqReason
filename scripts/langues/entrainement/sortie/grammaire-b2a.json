@@ -1,0 +1,1938 @@
+{
+ "entre-virgules": [
+  {
+   "d": 1,
+   "q": "Our teacher, ___ comes from Ghana, speaks three languages.",
+   "o": [
+    "who",
+    "that",
+    "which"
+   ],
+   "io": {
+    "that": "Entre virgules, on n'emploie jamais « that ».",
+    "which": "« which » est pour une chose, pas pour une personne."
+   },
+   "i": "On parle d'une personne (the teacher) : quel relatif choisir, sachant que « that » est interdit entre virgules ?",
+   "e": "« who » : la relative entre virgules ajoute une information sur une personne, donc on emploie « who », jamais « that »."
+  },
+  {
+   "d": 1,
+   "q": "The Nile, ___ is in Africa, is very long.",
+   "o": [
+    "which",
+    "who",
+    "that"
+   ],
+   "io": {
+    "who": "« who » est pour une personne.",
+    "that": "Entre virgules, on n'emploie jamais « that »."
+   },
+   "i": "Le Nil est une chose, et l'information est entre virgules.",
+   "e": "« which » : la relative entre virgules parle d'une chose, donc « which », jamais « that »."
+  },
+  {
+   "d": 1,
+   "q": "Rome, ___ I was born, is beautiful.",
+   "o": [
+    "where",
+    "which",
+    "that"
+   ],
+   "io": {
+    "which": "« which » ne convient pas ici : on ne dit pas « which I was born », il faut « where » pour dire « où ».",
+    "that": "« that » est interdit entre virgules."
+   },
+   "i": "On parle d'un lieu où quelqu'un est né : quel relatif veut dire « où » ?",
+   "e": "« where » : le relatif « where » reprend un lieu où se passe l'action (I was born in Rome)."
+  },
+  {
+   "d": 1,
+   "q": "Léa, ___ brother plays football, is my neighbour.",
+   "o": [
+    "whose",
+    "who",
+    "which"
+   ],
+   "io": {
+    "who": "Pour « dont le frère », on emploie « whose ».",
+    "which": "« which » est pour une chose."
+   },
+   "i": "« Dont le frère » exprime l'appartenance : quel relatif sert à cela ?",
+   "e": "« whose » : il exprime l'appartenance (le frère de Léa) et se place devant le nom."
+  },
+  {
+   "d": 1,
+   "q": "Touche le relatif de la relative entre virgules.",
+   "p": "My uncle, *who lives in Oslo, is a pilot.",
+   "i": "Cherche le relatif qui ouvre l'information en bonus, juste après la première virgule.",
+   "e": "« who » : c'est le relatif qui ouvre la relative entre virgules, et il reprend « my uncle »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Mount Everest, ___ is in Nepal, is the highest mountain. »",
+   "r": [
+    "which"
+   ],
+   "i": "Everest est une chose : choisis le relatif entre virgules qui convient.",
+   "e": "« which » : pour une chose, la relative entre virgules emploie « which », jamais « that »."
+  },
+  {
+   "d": 2,
+   "q": "The train was late, ___ annoyed everyone.",
+   "o": [
+    "which",
+    "what",
+    "that"
+   ],
+   "io": {
+    "what": "Pour reprendre toute la phrase (« ce qui »), on dit « which ».",
+    "that": "« that » est interdit après une virgule."
+   },
+   "i": "Le relatif reprend toute la phrase précédente, pas un seul nom : « ce qui ».",
+   "e": "« which » : après une virgule, « which » peut reprendre toute la phrase précédente et veut dire « ce qui »."
+  },
+  {
+   "d": 2,
+   "q": "My phone, ___ I bought last week, already has a crack.",
+   "o": [
+    "which",
+    "that",
+    "who"
+   ],
+   "io": {
+    "that": "Entre virgules, jamais « that ».",
+    "who": "« who » est pour une personne."
+   },
+   "i": "Le téléphone est une chose et l'information est entre virgules.",
+   "e": "« which » : pour une chose, la relative entre virgules emploie « which », jamais « that »."
+  },
+  {
+   "d": 2,
+   "q": "Our house, ___ was built in 1900, needs repairs.",
+   "o": [
+    "which",
+    "that",
+    "who"
+   ],
+   "io": {
+    "that": "Entre virgules, jamais « that ».",
+    "who": "« who » est pour une personne."
+   },
+   "i": "Une maison est une chose : quel relatif entre virgules ?",
+   "e": "« which » : la relative entre virgules parle d'une chose, donc « which »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Tom's parents, ___ live in Cardiff, are teachers. »",
+   "r": [
+    "who"
+   ],
+   "i": "Ce sont des personnes, et l'information est entre virgules.",
+   "e": "« who » : on parle de personnes (Tom's parents), donc « who »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my sister,",
+    "who",
+    "lives in Lille,",
+    "is",
+    "a nurse"
+   ],
+   "fin": ".",
+   "i": "L'information en bonus se met entre virgules, juste après le nom.",
+   "e": "« My sister, who lives in Lille, is a nurse. » : la relative entre virgules vient juste après le nom qu'elle complète."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My laptop, that is very old, still works.",
+   "r": [
+    "My laptop, which is very old, still works."
+   ],
+   "i": "Quel relatif est interdit entre virgules ?",
+   "e": "« My laptop, which is very old, still works. » : entre virgules, « that » est interdit, donc on emploie « which » pour une chose."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She forgot my birthday, what upset me.",
+   "r": [
+    "She forgot my birthday, which upset me."
+   ],
+   "i": "« Ce qui » se dit « which » quand il reprend toute une phrase. Qu'est-ce qui remplace « what » ?",
+   "e": "« She forgot my birthday, which upset me. » : « what » ne peut pas reprendre toute une phrase, on dit « which »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Mon frère, qui habite à Rome, est cuisinier. »",
+   "r": [
+    "My brother, who lives in Rome, is a chef.",
+    "My brother, who lives in Rome, is a cook.",
+    "My brother, who is living in Rome, is a chef."
+   ],
+   "i": "Mets des virgules autour de l'information en bonus.",
+   "e": "« My brother, who lives in Rome, is a chef. » : la relative qui donne l'information en bonus est entourée de virgules."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il a raté son train, ce qui l'a mis en colère. »",
+   "r": [
+    "He missed his train, which made him angry.",
+    "He missed his train, which angered him.",
+    "He missed the train, which made him angry.",
+    "He missed his train, which upset him."
+   ],
+   "i": "« Ce qui » reprend toute la phrase : quel relatif ?",
+   "e": "« He missed his train, which made him angry. » : « which » reprend toute la phrase précédente et veut dire « ce qui »."
+  },
+  {
+   "d": 3,
+   "q": "Dans « My brothers who live in Rome are chefs » (sans virgules), que comprend-on ?",
+   "o": [
+    "J'ai d'autres frères qui n'habitent pas à Rome.",
+    "Tous mes frères habitent à Rome.",
+    "Je n'ai pas de frère."
+   ],
+   "io": {
+    "Tous mes frères habitent à Rome.": "Ce serait le sens avec des virgules : l'information serait alors un bonus sur tous les frères.",
+    "Je n'ai pas de frère.": "La phrase parle bien de frères : il y a au moins ceux qui habitent à Rome."
+   },
+   "i": "Sans virgules, la relative sert à distinguer certains frères des autres.",
+   "e": "Sans virgules, la relative est déterminative : elle précise de quels frères on parle. On comprend donc qu'il en existe d'autres, qui n'habitent pas à Rome."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My cousin, who's car is red, lives in Leeds.",
+   "r": [
+    "My cousin, whose car is red, lives in Leeds."
+   ],
+   "i": "« Who's » veut dire « who is ». Quel mot exprime « dont la voiture » ?",
+   "e": "« whose » : il exprime l'appartenance (la voiture du cousin), alors que « who's » est la contraction de « who is »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Paris, where I love, is expensive.",
+   "r": [
+    "Paris, which I love, is expensive."
+   ],
+   "i": "« Love » est suivi de son objet : Paris est une chose. Quel relatif ?",
+   "e": "« which » : « I love Paris » ; Paris est une chose et l'objet de « love », donc « which I love ». On ne dit pas « where I love »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the museum,",
+    "which",
+    "opened in 1900,",
+    "is",
+    "closed today"
+   ],
+   "fin": ".",
+   "i": "L'information en bonus se met entre virgules, juste après le nom.",
+   "e": "« The museum, which opened in 1900, is closed today. » : la relative entre virgules vient juste après le nom."
+  },
+  {
+   "d": 3,
+   "q": "Touche le relatif qui reprend toute la phrase.",
+   "p": "She won the race, *which made her family proud.",
+   "i": "Le relatif qui reprend toute la phrase est après la virgule.",
+   "e": "« which » : il reprend toute la phrase précédente (elle a gagné la course) et veut dire « ce qui »."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « The Smiths, ___ daughter is a pilot, live next door. »",
+   "r": [
+    "whose"
+   ],
+   "i": "« Dont la fille » : quel relatif exprime l'appartenance ?",
+   "e": "« whose » : il exprime l'appartenance (la fille des Smith) et se place devant le nom."
+  }
+ ],
+ "article-zero": [
+  {
+   "d": 1,
+   "q": "In general, I love ___ music. (la musique, en général)",
+   "o": [
+    "(rien)",
+    "the",
+    "a"
+   ],
+   "io": {
+    "the": "On parle de la musique en général : pas d'article.",
+    "a": "« music » est indénombrable : on ne met pas « a »."
+   },
+   "i": "Tu parles de la musique en général, pas d'une musique précise.",
+   "e": "Il ne faut rien : pour une généralité avec un nom indénombrable, l'anglais n'a pas d'article. On dit « I love music », pas « the music »."
+  },
+  {
+   "d": 1,
+   "q": "___ dogs are loyal animals. (les chiens, en général)",
+   "o": [
+    "(rien)",
+    "The",
+    "A"
+   ],
+   "io": {
+    "The": "On parle des chiens en général, pas de chiens précis.",
+    "A": "« dogs » est un pluriel : on ne met pas « a »."
+   },
+   "i": "Tu parles de tous les chiens, en général.",
+   "e": "Il ne faut rien : pour une généralité avec un pluriel, l'anglais n'a pas d'article, alors que le français met « les »."
+  },
+  {
+   "d": 1,
+   "q": "We have ___ lunch at noon.",
+   "o": [
+    "(rien)",
+    "the",
+    "a"
+   ],
+   "io": {
+    "the": "Devant un repas, on ne met pas d'article.",
+    "a": "Devant un repas, on ne met pas d'article."
+   },
+   "i": "On parle d'un repas de la journée.",
+   "e": "Il ne faut rien : devant un repas, on n'emploie pas d'article (« have lunch », « have breakfast », « have dinner »)."
+  },
+  {
+   "d": 1,
+   "q": "He goes to school ___ bus.",
+   "o": [
+    "by",
+    "with",
+    "in"
+   ],
+   "io": {
+    "with": "On dit « by bus ».",
+    "in": "On dit « by bus », sans article."
+   },
+   "i": "Pour un moyen de transport, on emploie un petit mot de moyen, sans article.",
+   "e": "« by » : pour un moyen de transport, on dit « by bus », « by car », « by train », sans article."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'article en trop.",
+   "p": "*The honesty is important.",
+   "i": "On parle de l'honnêteté en général.",
+   "e": "« The » est en trop : on parle de l'honnêteté en général, donc on dit « Honesty is important »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She goes to school by ___. » (en voiture)",
+   "r": [
+    "car"
+   ],
+   "i": "Avec « by », on n'ajoute pas d'article.",
+   "e": "« car » : on dit « by car » (comme « by bus »), sans article."
+  },
+  {
+   "d": 2,
+   "q": "___ money on the table is mine.",
+   "o": [
+    "The",
+    "(rien)",
+    "A"
+   ],
+   "io": {
+    "(rien)": "On parle de l'argent précis qui est sur la table : il faut « the ».",
+    "A": "« money » est indénombrable : on ne met pas « a »."
+   },
+   "i": "Quel argent ? Celui qui est sur la table : il est précis.",
+   "e": "« The » : on parle d'un argent précis (celui qui est sur la table), donc « the » réapparaît."
+  },
+  {
+   "d": 2,
+   "q": "My brother plays ___ tennis every week.",
+   "o": [
+    "(rien)",
+    "the",
+    "a"
+   ],
+   "io": {
+    "the": "Devant un sport, pas d'article.",
+    "a": "Devant un sport, pas d'article."
+   },
+   "i": "Un sport se dit sans article.",
+   "e": "Il ne faut rien : devant un sport, l'anglais n'a pas d'article (« play tennis »)."
+  },
+  {
+   "d": 2,
+   "q": "She plays ___ piano beautifully.",
+   "o": [
+    "the",
+    "(rien)",
+    "a"
+   ],
+   "io": {
+    "(rien)": "Devant un instrument, on met « the ».",
+    "a": "Devant un instrument, on met « the »."
+   },
+   "i": "C'est un instrument de musique, pas un sport.",
+   "e": "« the » : devant un instrument, on met « the » (« play the piano »)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Les voitures sont chères. »",
+   "r": [
+    "Cars are expensive.",
+    "Cars are expensive",
+    "Cars are dear."
+   ],
+   "i": "Un nom pluriel employé en général se dit sans article.",
+   "e": "« Cars are expensive. » : on parle des voitures en général, donc sans article."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « La vie est belle. »",
+   "r": [
+    "Life is beautiful.",
+    "Life is lovely."
+   ],
+   "i": "Une idée générale se dit sans article.",
+   "e": "« Life is beautiful. » : la vie en général se dit sans article, alors que le français met « la »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous prenons le petit-déjeuner à sept heures. »",
+   "r": [
+    "We have breakfast at seven.",
+    "We have breakfast at 7.",
+    "We eat breakfast at seven.",
+    "We eat breakfast at 7.",
+    "We have breakfast at seven o'clock.",
+    "We have breakfast at 7 o'clock."
+   ],
+   "i": "Devant un repas, on n'emploie pas d'article.",
+   "e": "« We have breakfast at seven. » : devant un repas, pas d'article."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "children",
+    "need",
+    "sleep",
+    "and",
+    "exercise"
+   ],
+   "fin": ".",
+   "i": "Les enfants, le sommeil et l'exercice sont des généralités : aucun article.",
+   "e": "« Children need sleep and exercise. » : les trois noms sont des généralités, donc aucun article."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I hate the spiders.",
+   "r": [
+    "I hate spiders."
+   ],
+   "i": "Tu détestes toutes les araignées, pas des araignées précises.",
+   "e": "« I hate spiders. » : on parle des araignées en général, donc on supprime « the »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He plays the football on Saturdays.",
+   "r": [
+    "He plays football on Saturdays."
+   ],
+   "i": "Un sport se dit sans article.",
+   "e": "« He plays football on Saturdays. » : devant un sport, l'anglais n'a pas d'article."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a deux erreurs (deux articles en trop).",
+   "f": "She goes to the school by the bus every morning.",
+   "r": [
+    "She goes to school by bus every morning."
+   ],
+   "i": "Deux expressions toutes faites se disent sans article.",
+   "e": "« She goes to school by bus every morning. » : « go to school » et « by bus » s'emploient sans article."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a deux erreurs (deux articles en trop).",
+   "f": "The life in big cities is expensive, and the housing is a problem.",
+   "r": [
+    "Life in big cities is expensive, and housing is a problem."
+   ],
+   "i": "Les deux sujets sont des idées générales.",
+   "e": "« Life in big cities is expensive, and housing is a problem. » : on parle de généralités, donc sans article."
+  },
+  {
+   "d": 3,
+   "q": "I love ___ music of Mozart.",
+   "o": [
+    "the",
+    "(rien)",
+    "a"
+   ],
+   "io": {
+    "(rien)": "« of Mozart » rend la musique précise : il faut « the ».",
+    "a": "« music » est indénombrable."
+   },
+   "i": "Quelle musique ? Celle de Mozart : elle est précise.",
+   "e": "« the » : « of Mozart » rend la musique précise, donc on emploie « the »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the water",
+    "in this lake",
+    "is",
+    "very cold"
+   ],
+   "fin": ".",
+   "i": "Quelle eau ? Celle de ce lac : elle est précise.",
+   "e": "« The water in this lake is very cold. » : l'eau est précise, donc « the »."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux articles en trop.",
+   "p": "I think *the friendship is more important than *the money.",
+   "i": "Les deux noms sont des idées générales.",
+   "e": "« the friendship » et « the money » : on parle de ces idées en général, donc on supprime « the »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Les gens qui vivent dans cette rue sont sympathiques. »",
+   "r": [
+    "The people who live in this street are nice.",
+    "The people who live on this street are nice.",
+    "The people who live in this street are friendly.",
+    "The people who live on this street are friendly."
+   ],
+   "i": "De quelles personnes parle-t-on ? De celles de cette rue.",
+   "e": "« The people who live in this street are nice. » : les personnes sont précises, donc on garde « the »."
+  }
+ ],
+ "noms-pieges": [
+  {
+   "d": 1,
+   "q": "She gave me some good ___.",
+   "o": [
+    "advice",
+    "advices",
+    "an advice"
+   ],
+   "io": {
+    "advices": "« advice » est indénombrable : jamais de -s.",
+    "an advice": "« advice » est indénombrable : jamais de « a » ni « an »."
+   },
+   "i": "« Advice » se comporte comme « water » : une masse.",
+   "e": "« advice » : c'est un nom indénombrable, donc sans -s ni « a ». On dit « some advice » ou « a piece of advice »."
+  },
+  {
+   "d": 1,
+   "q": "The news ___ good today.",
+   "o": [
+    "is",
+    "are",
+    "be"
+   ],
+   "io": {
+    "are": "« news » est un singulier malgré son -s.",
+    "be": "Il faut un verbe conjugué."
+   },
+   "i": "« News » finit par -s, mais c'est un singulier.",
+   "e": "« is » : « news » est un nom indénombrable singulier malgré son -s, donc « The news is good »."
+  },
+  {
+   "d": 1,
+   "q": "My trousers ___ too long.",
+   "o": [
+    "are",
+    "is",
+    "was"
+   ],
+   "io": {
+    "is": "« trousers » est toujours pluriel.",
+    "was": "« trousers » est toujours pluriel, et le verbe est au présent."
+   },
+   "i": "« Trousers » ne s'emploie qu'au pluriel.",
+   "e": "« are » : « trousers » est toujours pluriel, donc le verbe est « are »."
+  },
+  {
+   "d": 1,
+   "q": "I need some ___ for my room.",
+   "o": [
+    "furniture",
+    "furnitures",
+    "a furniture"
+   ],
+   "io": {
+    "furnitures": "« furniture » est indénombrable : jamais de -s.",
+    "a furniture": "« furniture » est indénombrable : jamais de « a »."
+   },
+   "i": "Des meubles, comme une masse.",
+   "e": "« furniture » : c'est un nom indénombrable, donc sans -s ni « a ». On dit « some furniture »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le nom qui ne prend jamais de -s.",
+   "p": "We need more *information about the trip.",
+   "i": "Un nom indénombrable ne prend jamais de -s.",
+   "e": "« information » : c'est un nom indénombrable, donc jamais de -s."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I need a ___ of scissors. »",
+   "r": [
+    "pair"
+   ],
+   "i": "Un mot pour compter ce qui va par deux.",
+   "e": "« pair » : « a pair of scissors ». « Scissors » est toujours pluriel, donc on le compte avec « pair »."
+  },
+  {
+   "d": 2,
+   "q": "How much ___ do you have?",
+   "o": [
+    "homework",
+    "homeworks",
+    "a homework"
+   ],
+   "io": {
+    "homeworks": "« homework » est indénombrable : jamais de -s.",
+    "a homework": "« homework » est indénombrable : jamais de « a »."
+   },
+   "i": "Après « how much », on met un indénombrable.",
+   "e": "« homework » : c'est un nom indénombrable, donc sans -s ni « a »."
+  },
+  {
+   "d": 2,
+   "q": "He gave me a useful piece of ___.",
+   "o": [
+    "information",
+    "informations",
+    "an information"
+   ],
+   "io": {
+    "informations": "« information » est indénombrable : jamais de -s.",
+    "an information": "« information » est indénombrable : jamais de « an »."
+   },
+   "i": "Après « piece of », on met un indénombrable au singulier.",
+   "e": "« information » : on dit « a piece of information », car « information » est indénombrable."
+  },
+  {
+   "d": 2,
+   "q": "She has made great ___ in English.",
+   "o": [
+    "progress",
+    "progresses",
+    "a progress"
+   ],
+   "io": {
+    "progresses": "« progress » est indénombrable : jamais de -s.",
+    "a progress": "« progress » est indénombrable : jamais de « a »."
+   },
+   "i": "Des progrès, comme une masse.",
+   "e": "« progress » : c'est un nom indénombrable, donc sans -s ni « a »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « We bought two ___ of furniture. » (morceaux)",
+   "r": [
+    "pieces",
+    "items",
+    "bits"
+   ],
+   "i": "Un mot pour compter ce qu'on ne compte pas.",
+   "e": "« pieces » : « two pieces of furniture » ; au pluriel, c'est « pieces » qui prend le -s, pas « furniture »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « J'ai une bonne nouvelle. »",
+   "r": [
+    "I have some good news.",
+    "I've got some good news.",
+    "I have a piece of good news.",
+    "I've got a piece of good news.",
+    "I have good news.",
+    "I've got good news."
+   ],
+   "i": "« News » est singulier et indénombrable.",
+   "e": "« I have some good news. » : « news » n'a ni « a » ni -s ; on peut aussi dire « a piece of good news »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the news",
+    "is",
+    "very good"
+   ],
+   "fin": ".",
+   "i": "Le verbe est au singulier après « news ».",
+   "e": "« The news is very good. » : « news » est singulier, donc le verbe est « is »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I need some informations about trains.",
+   "r": [
+    "I need some information about trains."
+   ],
+   "i": "Un indénombrable ne prend pas de -s.",
+   "e": "« I need some information about trains. » : « information » est indénombrable, donc sans -s."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The furniture are very old.",
+   "r": [
+    "The furniture is very old."
+   ],
+   "i": "« Furniture » est une masse.",
+   "e": "« The furniture is very old. » : « furniture » est indénombrable, donc le verbe est au singulier."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Où sont mes lunettes ? »",
+   "r": [
+    "Where are my glasses?",
+    "Where are my spectacles?"
+   ],
+   "i": "« Glasses » est toujours au pluriel.",
+   "e": "« Where are my glasses? » : « glasses » est toujours pluriel, donc le verbe est « are »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a deux erreurs (le nom et le verbe).",
+   "f": "Her luggages are very heavy.",
+   "r": [
+    "Her luggage is very heavy."
+   ],
+   "i": "Un nom indénombrable : pas de -s, et le verbe au singulier.",
+   "e": "« Her luggage is very heavy. » : « luggage » est indénombrable, donc sans -s, et le verbe est au singulier."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I bought a scissor to cut paper.",
+   "r": [
+    "I bought a pair of scissors to cut paper.",
+    "I bought scissors to cut paper."
+   ],
+   "i": "« Scissors » est toujours pluriel.",
+   "e": "« I bought a pair of scissors to cut paper. » : « scissors » est toujours pluriel, donc « a pair of » ou « scissors » seul."
+  },
+  {
+   "d": 3,
+   "q": "We've done a lot of ___ on this topic.",
+   "o": [
+    "research",
+    "researches",
+    "a research"
+   ],
+   "io": {
+    "researches": "« research » est indénombrable : jamais de -s.",
+    "a research": "« research » est indénombrable : jamais de « a »."
+   },
+   "i": "Après « a lot of », on met un indénombrable.",
+   "e": "« research » : c'est un nom indénombrable, donc sans -s ni « a »."
+  },
+  {
+   "d": 3,
+   "q": "The news about the exams ___ surprising.",
+   "o": [
+    "was",
+    "were",
+    "are"
+   ],
+   "io": {
+    "were": "« news » est un singulier : il faut une forme du verbe au singulier.",
+    "are": "« news » est un singulier : il faut une forme du verbe au singulier."
+   },
+   "i": "« News » est singulier : quelle forme du verbe va avec un singulier ?",
+   "e": "« was » : « news » est un nom singulier, donc le verbe l'est aussi ; « were » et « are » sont des formes du pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "gave",
+    "me",
+    "a piece of",
+    "advice"
+   ],
+   "fin": ".",
+   "i": "On compte un indénombrable avec « a piece of ».",
+   "e": "« She gave me a piece of advice. » : « advice » est indénombrable, donc on compte avec « a piece of »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ils m'ont donné beaucoup d'informations. »",
+   "r": [
+    "They gave me a lot of information.",
+    "They gave me lots of information."
+   ],
+   "i": "« Information » est indénombrable : jamais de -s.",
+   "e": "« They gave me a lot of information. » : « information » est indénombrable, donc sans -s."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mon pantalon est neuf. »",
+   "r": [
+    "My trousers are new.",
+    "My pants are new.",
+    "My pair of trousers is new.",
+    "My pair of pants is new."
+   ],
+   "i": "« Trousers » est toujours au pluriel en anglais.",
+   "e": "« My trousers are new. » : « trousers » est pluriel ; avec « pair », le verbe est au singulier (« My pair of trousers is new »)."
+  },
+  {
+   "d": 3,
+   "q": "Touche le nom et le verbe qui s'accordent au pluriel.",
+   "p": "My new *trousers *are blue.",
+   "i": "Un nom toujours pluriel : le verbe aussi.",
+   "e": "« trousers » et « are » : « trousers » est toujours pluriel, donc le verbe est au pluriel."
+  }
+ ],
+ "accord": [
+  {
+   "d": 1,
+   "q": "Everyone ___ here.",
+   "o": [
+    "is",
+    "are",
+    "be"
+   ],
+   "io": {
+    "are": "« everyone » prend le singulier : on dit « Everyone is here », jamais « are ».",
+    "be": "Il faut un verbe conjugué au présent : « be » est la forme de base."
+   },
+   "i": "« Everyone » désigne beaucoup de gens, mais grammaticalement c'est un seul bloc : quel verbe va avec lui ?",
+   "e": "« is » : « everyone » désigne plusieurs personnes, mais il prend toujours le verbe au singulier, comme « everybody » et « nobody »."
+  },
+  {
+   "d": 1,
+   "q": "The police ___ outside.",
+   "o": [
+    "are",
+    "is",
+    "be"
+   ],
+   "io": {
+    "is": "« police » se comporte comme un pluriel en anglais : on dit « the police are ».",
+    "be": "Il faut un verbe conjugué au présent : « be » est la forme de base."
+   },
+   "i": "« Police » désigne un groupe de policiers : est-ce un singulier ou un pluriel en anglais ?",
+   "e": "« are » : en anglais, « the police » est un pluriel (ce sont des policiers), donc on dit « The police are outside »."
+  },
+  {
+   "d": 1,
+   "q": "Nobody ___ the answer.",
+   "o": [
+    "knows",
+    "know",
+    "knowing"
+   ],
+   "io": {
+    "know": "« nobody » est singulier : le verbe prend un -s.",
+    "knowing": "Il faut un verbe conjugué, pas une forme en -ing."
+   },
+   "i": "« Nobody » veut dire « personne », mais il se conjugue comme « he » ou « she » : quel verbe prend un -s ?",
+   "e": "« knows » : « nobody » est singulier, donc le verbe prend le -s de la troisième personne : « Nobody knows the answer »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui s'accorde avec « everybody ».",
+   "p": "Everybody *loves this song.",
+   "i": "Cherche le verbe qui vient juste après « everybody ».",
+   "e": "« loves » : « everybody » est singulier, donc le verbe prend un -s, comme avec « he » ou « she »."
+  },
+  {
+   "d": 1,
+   "q": "Complète au présent : « Each student ___ a book. » (avoir)",
+   "r": [
+    "has"
+   ],
+   "i": "« Each » veut dire « chaque » : il désigne un élément à la fois. Singulier ou pluriel ?",
+   "e": "« has » : « each student » est singulier, donc le verbe « have » devient « has »."
+  },
+  {
+   "d": 1,
+   "q": "People ___ very kind here.",
+   "o": [
+    "are",
+    "is",
+    "be"
+   ],
+   "io": {
+    "is": "« people » est un pluriel.",
+    "be": "Il faut un verbe conjugué."
+   },
+   "i": "« People » est le pluriel de « person » : quel verbe lui correspond ?",
+   "e": "« are » : « people » est toujours pluriel en anglais, donc on dit « People are very kind here »."
+  },
+  {
+   "d": 2,
+   "q": "A number of students ___ absent today.",
+   "o": [
+    "are",
+    "is",
+    "was"
+   ],
+   "io": {
+    "is": "« a number of » prend le pluriel.",
+    "was": "Le verbe doit être au pluriel."
+   },
+   "i": "« A number of » veut dire « plusieurs, beaucoup de » : le verbe suit le pluriel qui vient après.",
+   "e": "« are » : « a number of » + pluriel veut dire « plusieurs », et le verbe est au pluriel : « A number of students are absent »."
+  },
+  {
+   "d": 2,
+   "q": "The number of students ___ growing.",
+   "o": [
+    "is",
+    "are",
+    "were"
+   ],
+   "io": {
+    "are": "« the number of » est un singulier.",
+    "were": "« the number of » est un singulier."
+   },
+   "i": "Ici, c'est « le nombre » lui-même qui grandit : un seul chiffre.",
+   "e": "« is » : avec « the number of », on parle du nombre, une seule chose, donc le verbe est au singulier : « The number of students is growing »."
+  },
+  {
+   "d": 2,
+   "q": "Maths ___ my favourite subject.",
+   "o": [
+    "is",
+    "are",
+    "be"
+   ],
+   "io": {
+    "are": "« maths » prend un verbe au singulier.",
+    "be": "Il faut un verbe conjugué."
+   },
+   "i": "Le mot « maths » finit par -s, mais c'est le nom d'une matière : une seule chose.",
+   "e": "« is » : « maths » (comme « physics ») est singulier malgré son -s, donc on dit « Maths is my favourite subject »."
+  },
+  {
+   "d": 2,
+   "q": "Complète au present perfect : « The police ___ arrested two men. » (avoir)",
+   "r": [
+    "have"
+   ],
+   "i": "Le sujet « police » est pluriel. Quel auxiliaire du present perfect convient ?",
+   "e": "« have » : « the police » est pluriel, donc l'auxiliaire est « have » : « The police have arrested two men »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tout le monde est prêt. »",
+   "r": [
+    "Everyone is ready.",
+    "Everybody is ready.",
+    "Everyone's ready.",
+    "Everybody's ready."
+   ],
+   "i": "« Everyone » est un singulier, même si le mot « ready » peut faire penser à plusieurs personnes.",
+   "e": "« Everyone is ready. » : « everyone » (ou « everybody ») prend le verbe au singulier."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « La police est arrivée. »",
+   "r": [
+    "The police have arrived.",
+    "The police arrived.",
+    "The police have come."
+   ],
+   "i": "Pense à « police » : singulier ou pluriel en anglais ? Choisis ensuite l'auxiliaire.",
+   "e": "« The police have arrived. » : « police » est pluriel, donc « have » ; le prétérit « arrived » est aussi correct."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "a number of",
+    "people",
+    "have",
+    "complained"
+   ],
+   "fin": ".",
+   "i": "« A number of » + pluriel donne un verbe au pluriel.",
+   "e": "« A number of people have complained. » : « a number of people » veut dire « plusieurs personnes », donc le verbe est au pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The police is looking for a red car.",
+   "r": [
+    "The police are looking for a red car."
+   ],
+   "i": "Le sujet « the police » est-il singulier ou pluriel ?",
+   "e": "« The police are looking for a red car. » : « police » est un pluriel en anglais, donc le verbe est « are »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Everybody have a pencil.",
+   "r": [
+    "Everybody has a pencil."
+   ],
+   "i": "« Everybody » est singulier : regarde le verbe « have ».",
+   "e": "« Everybody has a pencil. » : « everybody » est singulier, donc « have » devient « has »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le sujet et le verbe qui s'accordent au singulier.",
+   "p": "*Everyone in my family *loves pasta.",
+   "i": "Les deux mots à toucher sont le sujet et le verbe qui le suit.",
+   "e": "« Everyone » et « loves » : « everyone » est singulier, donc le verbe prend un -s."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The number of cars are rising every year.",
+   "r": [
+    "The number of cars is rising every year."
+   ],
+   "i": "« The number of » désigne le nombre, une seule chose : singulier ou pluriel ?",
+   "e": "« The number of cars is rising every year. » : avec « the number of », c'est le nombre qui est le sujet, donc le verbe est au singulier."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "A number of tourists is waiting outside.",
+   "r": [
+    "A number of tourists are waiting outside."
+   ],
+   "i": "« A number of » veut dire « plusieurs » : cherche le bon accord.",
+   "e": "« A number of tourists are waiting outside. » : avec « a number of », le verbe s'accorde au pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Twenty pounds are too much for a scarf.",
+   "r": [
+    "Twenty pounds is too much for a scarf."
+   ],
+   "i": "Une somme d'argent est vue comme un tout, une seule quantité.",
+   "e": "« Twenty pounds is too much for a scarf. » : une somme d'argent se comporte comme un tout, donc le verbe est au singulier."
+  },
+  {
+   "d": 3,
+   "q": "Every seat in the hall ___ taken.",
+   "o": [
+    "is",
+    "are",
+    "be"
+   ],
+   "io": {
+    "are": "« every » + nom prend le verbe au singulier : on dit « every seat is ».",
+    "be": "Il faut un verbe conjugué au présent : « be » est la forme de base."
+   },
+   "i": "« Every » + nom désigne chaque élément, un par un : singulier ou pluriel ?",
+   "e": "« is » : « every » + nom (every seat) prend le verbe au singulier, même si la salle compte beaucoup de sièges."
+  },
+  {
+   "d": 3,
+   "q": "The cattle on this farm ___ fed twice a day.",
+   "o": [
+    "are",
+    "is",
+    "be"
+   ],
+   "io": {
+    "is": "« cattle » (le bétail) est toujours pluriel : on dit « the cattle are ».",
+    "be": "Il faut un verbe conjugué au présent : « be » est la forme de base."
+   },
+   "i": "« Cattle » désigne un troupeau de bêtes : est-ce un singulier ou un pluriel en anglais ?",
+   "e": "« are » : « cattle » est toujours pluriel, comme « police » et « people », donc le verbe est « are »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the number of",
+    "visitors",
+    "is",
+    "growing"
+   ],
+   "fin": ".",
+   "i": "« The number of » est un singulier : mets le verbe au singulier.",
+   "e": "« The number of visitors is growing. » : le sujet est « the number » (un seul nombre), donc le verbe est « is »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Le nombre de touristes augmente. »",
+   "r": [
+    "The number of tourists is increasing.",
+    "The number of tourists is growing.",
+    "The number of tourists is rising.",
+    "The number of tourists increases.",
+    "The number of tourists is going up."
+   ],
+   "i": "« Le nombre de » se dit « the number of » et prend un verbe au singulier.",
+   "e": "« The number of tourists is increasing. » : « the number of » est singulier, donc « is »."
+  }
+ ],
+ "concession": [
+  {
+   "d": 1,
+   "q": "___ it was cold, we went swimming.",
+   "o": [
+    "Although",
+    "Despite",
+    "However"
+   ],
+   "io": {
+    "Despite": "« despite » se met devant un nom ou un -ing, pas devant une phrase.",
+    "However": "« however » relie deux phrases, il ne les introduit pas."
+   },
+   "i": "Après le blanc, il y a une phrase complète avec sujet et verbe.",
+   "e": "« Although » : on emploie « although » devant une phrase complète (it was cold)."
+  },
+  {
+   "d": 1,
+   "q": "___ the cold, we went swimming.",
+   "o": [
+    "Despite",
+    "Although",
+    "Whereas"
+   ],
+   "io": {
+    "Although": "« although » demande une phrase complète.",
+    "Whereas": "« whereas » oppose deux faits."
+   },
+   "i": "Après le blanc, il y a un nom : « the cold ».",
+   "e": "« Despite » : on emploie « despite » devant un nom (the cold) ou un -ing."
+  },
+  {
+   "d": 1,
+   "q": "It was cheap. ___, it was good.",
+   "o": [
+    "However",
+    "Although",
+    "Despite"
+   ],
+   "io": {
+    "Although": "« although » ne commence pas une nouvelle phrase ici.",
+    "Despite": "« despite » demande un nom ou un -ing."
+   },
+   "i": "Un mot qui ouvre une nouvelle phrase, suivi d'une virgule.",
+   "e": "« However » : il ouvre la deuxième phrase et prend une virgule. « It was cheap. However, it was good. »"
+  },
+  {
+   "d": 1,
+   "q": "I love tea, ___ my wife prefers coffee.",
+   "o": [
+    "whereas",
+    "despite",
+    "however"
+   ],
+   "io": {
+    "despite": "« despite » ne relie pas deux phrases.",
+    "however": "« however » ouvre une nouvelle phrase, il ne se place pas ainsi."
+   },
+   "i": "Le contraste oppose deux personnes : lui aime le thé, elle le café.",
+   "e": "« whereas » : il oppose deux faits qui contrastent. « I love tea, whereas my wife prefers coffee. »"
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui annonce un contraste.",
+   "p": "Tom loves sport, *whereas Ben hates it.",
+   "i": "Il se trouve juste après la virgule.",
+   "e": "« whereas » : il oppose les deux faits (Tom aime le sport, Ben le déteste)."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ the rain, the match continued. »",
+   "r": [
+    "Despite",
+    "In spite of"
+   ],
+   "i": "Après le blanc, il y a un nom : « the rain ».",
+   "e": "« Despite » (ou « In spite of ») : on emploie ces mots devant un nom (the rain)."
+  },
+  {
+   "d": 2,
+   "q": "She went to school ___ she was ill.",
+   "o": [
+    "even though",
+    "despite",
+    "in spite of"
+   ],
+   "io": {
+    "despite": "« despite » demande un nom ou un -ing.",
+    "in spite of": "« in spite of » demande un nom ou un -ing."
+   },
+   "i": "Après le blanc, il y a une phrase complète (she was ill).",
+   "e": "« even though » : on l'emploie devant une phrase complète, alors que « despite » et « in spite of » demandent un nom ou un -ing."
+  },
+  {
+   "d": 2,
+   "q": "Despite ___ late, we caught the train.",
+   "o": [
+    "being",
+    "be",
+    "we were"
+   ],
+   "io": {
+    "be": "Après « despite », on met un nom ou un -ing.",
+    "we were": "« despite » ne s'emploie pas devant une phrase."
+   },
+   "i": "Après « despite », on met un nom ou une forme en -ing.",
+   "e": "« being » : « despite » est suivi d'un -ing (Despite being late…)."
+  },
+  {
+   "d": 2,
+   "q": "The hotel was nice. ___, the food was awful.",
+   "o": [
+    "However",
+    "Although",
+    "Despite"
+   ],
+   "io": {
+    "Although": "« although » n'ouvre pas une phrase isolée ici.",
+    "Despite": "« despite » demande un nom ou un -ing."
+   },
+   "i": "Un mot qui ouvre une nouvelle phrase, suivi d'une virgule.",
+   "e": "« However » : il ouvre la deuxième phrase pour exprimer une nuance."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "although",
+    "it was raining,",
+    "we",
+    "went out"
+   ],
+   "alt": [
+    [
+     "we",
+     "went out",
+     "although",
+     "it was raining,"
+    ]
+   ],
+   "fin": ".",
+   "i": "« Although » est suivi d'une phrase complète.",
+   "e": "« Although it was raining, we went out. » : « although » + sujet + verbe, puis une virgule."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "In spite the cold, the children played outside.",
+   "r": [
+    "In spite of the cold, the children played outside.",
+    "Despite the cold, the children played outside."
+   ],
+   "i": "Il manque un petit mot après « spite ».",
+   "e": "« In spite of the cold… » : « in spite of » prend « of » ; « despite » s'emploie sans « of »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Although the bad weather, we went for a walk.",
+   "r": [
+    "Despite the bad weather, we went for a walk.",
+    "In spite of the bad weather, we went for a walk."
+   ],
+   "i": "Après le blanc, il y a un nom (the bad weather), pas une phrase.",
+   "e": "« Despite the bad weather, we went for a walk. » : devant un nom, on emploie « despite » ou « in spite of », pas « although »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Malgré la pluie, nous avons joué dehors. »",
+   "r": [
+    "Despite the rain, we played outside.",
+    "In spite of the rain, we played outside.",
+    "Despite the rain, we played outdoors.",
+    "In spite of the rain, we played outdoors."
+   ],
+   "i": "Devant un nom, quel mot de concession choisir ?",
+   "e": "« Despite the rain, we played outside. » : « despite » (ou « in spite of ») + nom."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Léa adore la pluie, alors que sa sœur la déteste. »",
+   "r": [
+    "Léa loves the rain, whereas her sister hates it.",
+    "Léa loves the rain, while her sister hates it.",
+    "Léa loves rain, whereas her sister hates it.",
+    "Léa loves rain, while her sister hates it."
+   ],
+   "i": "Un contraste entre deux personnes.",
+   "e": "« whereas » : il oppose deux faits qui contrastent. « While » fonctionne aussi."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui est suivi d'un nom.",
+   "p": "*Despite the heavy snow, the train was on time.",
+   "i": "Il est en début de phrase, juste avant le nom.",
+   "e": "« Despite » : il se place devant un nom (the heavy snow)."
+  },
+  {
+   "d": 2,
+   "q": "Complète avec un mot de la leçon qui oppose : « She is clever, ___ her brother is lazy. »",
+   "r": [
+    "whereas",
+    "while"
+   ],
+   "i": "Un contraste entre deux personnes.",
+   "e": "« whereas » (ou « while ») : il oppose deux faits qui contrastent."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I was tired. Although, I kept working.",
+   "r": [
+    "I was tired. However, I kept working.",
+    "Although I was tired, I kept working.",
+    "Even though I was tired, I kept working.",
+    "Though I was tired, I kept working."
+   ],
+   "i": "Le deuxième mot ouvre une nouvelle phrase après un point : lequel convient, avec une virgule ?",
+   "e": "« I was tired. However, I kept working. » : « however » ouvre une nouvelle phrase et prend une virgule. « Although » doit être suivi directement de sa phrase : « Although I was tired, I kept working »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "In spite of he was ill, he played.",
+   "r": [
+    "Although he was ill, he played.",
+    "Even though he was ill, he played.",
+    "Though he was ill, he played.",
+    "In spite of being ill, he played.",
+    "Despite being ill, he played.",
+    "In spite of the fact that he was ill, he played.",
+    "Despite the fact that he was ill, he played."
+   ],
+   "i": "Après « in spite of », on met un nom ou un -ing, pas une phrase complète.",
+   "e": "« Although he was ill, he played. » : devant une phrase complète, on emploie « although ». « In spite of » veut un nom ou un -ing."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "despite the fact that",
+    "she was ill,",
+    "she",
+    "came to school"
+   ],
+   "fin": ".",
+   "i": "« Despite the fact that » est suivi d'une phrase complète.",
+   "e": "« Despite the fact that she was ill, she came to school. » : « the fact that » permet de mettre une phrase après « despite »."
+  },
+  {
+   "d": 3,
+   "q": "___ being rich, he lives in a small flat.",
+   "o": [
+    "Despite",
+    "However",
+    "Whereas"
+   ],
+   "io": {
+    "However": "« however » relie deux phrases.",
+    "Whereas": "« whereas » oppose deux faits."
+   },
+   "i": "Après le blanc, il y a une forme en -ing.",
+   "e": "« Despite » : on l'emploie devant un nom ou un -ing."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « ___ the fact that it was late, we stayed. »",
+   "r": [
+    "Despite",
+    "In spite of"
+   ],
+   "i": "Le blanc est suivi de « the fact that » + phrase.",
+   "e": "« Despite » (ou « In spite of ») : on ajoute « the fact that » pour mettre une phrase complète après ce mot."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Bien qu'il soit fatigué, il a continué à courir. »",
+   "r": [
+    "Although he was tired, he kept running.",
+    "Even though he was tired, he kept running.",
+    "Though he was tired, he kept running.",
+    "Although he was tired, he carried on running.",
+    "Even though he was tired, he carried on running.",
+    "Though he was tired, he carried on running.",
+    "Although he was tired, he continued running.",
+    "Even though he was tired, he continued running."
+   ],
+   "i": "« Bien que » + phrase : quel mot de concession ?",
+   "e": "« Although he was tired, he kept running. » : « although » (ou « even though ») + phrase complète."
+  }
+ ],
+ "whether-if": [
+  {
+   "d": 1,
+   "q": "I wonder ___ she is at home.",
+   "o": [
+    "if",
+    "that",
+    "what"
+   ],
+   "io": {
+    "that": "Pour une question oui ou non rapportée, on emploie « if » ou « whether », pas « that ».",
+    "what": "« what » veut dire « ce que » : il n'a pas le sens de « si » ici."
+   },
+   "i": "Tu te demandes « si » elle est chez elle : quel petit mot traduit « si » ?",
+   "e": "« if » : « I wonder if she is at home » est une question indirecte fermée, et « if » (ou « whether ») traduit « si »."
+  },
+  {
+   "d": 1,
+   "q": "___ it rains, we'll stay at home.",
+   "o": [
+    "If",
+    "Whether",
+    "That"
+   ],
+   "io": {
+    "Whether": "« Whether » exprime un doute ou un choix, pas une condition « si… alors ».",
+    "That": "« That » ne peut pas exprimer la condition."
+   },
+   "i": "C'est une vraie condition : « s'il pleut, alors… ».",
+   "e": "« If » : pour une condition (« si… alors »), seul « if » convient ; « whether » sert aux questions indirectes et aux choix."
+  },
+  {
+   "d": 1,
+   "q": "I can't decide ___ to go or stay.",
+   "o": [
+    "whether",
+    "if",
+    "that"
+   ],
+   "io": {
+    "if": "Devant « to » + verbe, « if » est impossible : on emploie « whether ».",
+    "that": "« that » ne s'emploie pas devant « to » + verbe."
+   },
+   "i": "Le blanc est juste avant « to go ».",
+   "e": "« whether » : devant « to » + verbe, seul « whether » est possible, jamais « if »."
+  },
+  {
+   "d": 1,
+   "q": "It depends on ___ we have time.",
+   "o": [
+    "whether",
+    "if",
+    "that"
+   ],
+   "io": {
+    "if": "Après une préposition (ici « on »), on n'emploie pas « if » mais « whether ».",
+    "that": "« that » ne convient pas après « depends on »."
+   },
+   "i": "Regarde le mot juste avant le blanc : c'est une préposition.",
+   "e": "« whether » : après une préposition comme « on », seul « whether » est possible."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui exprime la condition.",
+   "p": "*If you need help, call me.",
+   "i": "Cherche le petit mot qui veut dire « si » avant une conséquence.",
+   "e": "« If » exprime ici une condition (« si tu as besoin d'aide, alors appelle-moi »), et seul « if » peut le faire."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She isn't sure ___ to accept the job. »",
+   "r": [
+    "whether"
+   ],
+   "i": "Le blanc est suivi de « to » + verbe.",
+   "e": "« whether » : devant « to » + verbe, on emploie « whether », jamais « if »."
+  },
+  {
+   "d": 2,
+   "q": "Ask him ___ he wants some tea.",
+   "o": [
+    "if",
+    "that",
+    "what"
+   ],
+   "io": {
+    "that": "Pour poser la question « veut-il du thé ? » de façon indirecte, on ne peut pas employer « that ».",
+    "what": "« what » ne veut pas dire « si »."
+   },
+   "i": "Tu rapportes une question oui ou non.",
+   "e": "« if » : dans une question indirecte oui ou non, « if » (ou « whether ») introduit la question."
+  },
+  {
+   "d": 2,
+   "q": "___ you like it or not, we're going.",
+   "o": [
+    "Whether",
+    "If",
+    "Unless"
+   ],
+   "io": {
+    "If": "« If you like it or not » ne s'emploie pas : avec « or not », on dit « whether ».",
+    "Unless": "« unless » veut dire « à moins que » : le sens ne convient pas."
+   },
+   "i": "« Que tu aimes ça ou non » : un choix qui ne change rien.",
+   "e": "« Whether » : pour dire « que… ou non », on emploie « whether » avec « or not »."
+  },
+  {
+   "d": 2,
+   "q": "We argued about ___ to buy a new car.",
+   "o": [
+    "whether",
+    "if",
+    "that"
+   ],
+   "io": {
+    "if": "Après la préposition « about », on dit « whether », pas « if ».",
+    "that": "« that » ne peut pas introduire « to » + verbe."
+   },
+   "i": "Le blanc suit une préposition et précède « to ».",
+   "e": "« whether » : après une préposition et devant « to » + verbe, seul « whether » est possible."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je ne sais pas s'il viendra. »",
+   "r": [
+    "I don't know if he will come.",
+    "I don't know whether he will come.",
+    "I don't know if he'll come.",
+    "I don't know whether he'll come.",
+    "I don't know if he is coming.",
+    "I don't know whether he is coming.",
+    "I don't know if he's coming.",
+    "I don't know whether he's coming."
+   ],
+   "i": "« Si » devant une question indirecte se dit « if » ou « whether ».",
+   "e": "« I don't know if he will come. » : « if » ou « whether » traduit « si » dans une question indirecte, suivi de l'ordre sujet + verbe."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "can't",
+    "decide",
+    "whether",
+    "to",
+    "stay"
+   ],
+   "fin": ".",
+   "i": "Après « whether », on met « to » et le verbe.",
+   "e": "« I can't decide whether to stay. » : devant « to » + verbe, on emploie « whether »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She doesn't know if to say yes.",
+   "r": [
+    "She doesn't know whether to say yes."
+   ],
+   "i": "Quel mot remplace « if » devant « to » + verbe ?",
+   "e": "« She doesn't know whether to say yes. » : devant « to » + verbe, on dit « whether », jamais « if »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Success depends on if you work hard.",
+   "r": [
+    "Success depends on whether you work hard."
+   ],
+   "i": "Regarde le mot qui précède « if » : c'est une préposition.",
+   "e": "« Success depends on whether you work hard. » : après une préposition, on emploie « whether »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Whether it snows tomorrow, we'll stay home.",
+   "r": [
+    "If it snows tomorrow, we'll stay home."
+   ],
+   "i": "Il s'agit d'une condition : « s'il neige, alors… ».",
+   "e": "« If it snows tomorrow, we'll stay home. » : pour une condition, seul « if » convient."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui doit être « whether ».",
+   "p": "She is thinking about *if to move to Spain.",
+   "i": "Il se trouve après la préposition « about » et avant « to ».",
+   "e": "« if » doit devenir « whether » : après une préposition et devant « to » + verbe, seul « whether » est possible."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Que tu sois d'accord ou non, nous partons. »",
+   "r": [
+    "Whether you agree or not, we're leaving.",
+    "Whether you agree or not, we are leaving.",
+    "Whether or not you agree, we're leaving.",
+    "Whether or not you agree, we are leaving."
+   ],
+   "i": "« Que… ou non » se dit avec « whether ».",
+   "e": "« Whether you agree or not, we're leaving. » : « whether… or not » exprime « que… ou non », et « or not » peut aussi suivre « whether »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle se demande si elle doit accepter. »",
+   "r": [
+    "She is wondering whether to accept.",
+    "She's wondering whether to accept.",
+    "She wonders whether to accept.",
+    "She is wondering whether she should accept.",
+    "She's wondering whether she should accept.",
+    "She wonders whether she should accept.",
+    "She wonders if she should accept.",
+    "She is wondering if she should accept.",
+    "She's wondering if she should accept."
+   ],
+   "i": "« Se demander si » se dit « wonder whether » ou « wonder if ».",
+   "e": "« She is wondering whether to accept. » : « whether to » est la forme la plus naturelle ; avec une phrase complète, « if » ou « whether » conviennent."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it",
+    "depends",
+    "on",
+    "whether",
+    "it",
+    "rains"
+   ],
+   "fin": ".",
+   "i": "Après « on », on emploie « whether ».",
+   "e": "« It depends on whether it rains. » : après une préposition, seul « whether » est possible."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "whether",
+    "he",
+    "comes",
+    "or not",
+    "doesn't",
+    "matter"
+   ],
+   "fin": ".",
+   "i": "La phrase commence par « whether » comme sujet.",
+   "e": "« Whether he comes or not doesn't matter. » : « whether » peut commencer la phrase et servir de sujet, ce que « if » ne peut pas faire.",
+   "alt": [
+    [
+     "whether",
+     "or not",
+     "he",
+     "comes",
+     "doesn't",
+     "matter"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "The question is ___ to tell her the truth.",
+   "o": [
+    "whether",
+    "if",
+    "that"
+   ],
+   "io": {
+    "if": "Devant « to » + verbe, « if » est impossible.",
+    "that": "« that » ne s'emploie pas devant « to » + verbe."
+   },
+   "i": "Le blanc est suivi de « to » + verbe : quel mot s'impose ?",
+   "e": "« whether » : devant « to » + verbe, seul « whether » est possible, jamais « if »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If or not you agree, we're leaving.",
+   "r": [
+    "Whether or not you agree, we're leaving.",
+    "Whether you agree or not, we're leaving."
+   ],
+   "i": "Quel mot s'emploie avec « or not » ?",
+   "e": "« Whether or not you agree, we're leaving. » : avec « or not », on emploie « whether », jamais « if »."
+  }
+ ],
+ "faire-faire": [
+  {
+   "d": 1,
+   "q": "I'm having my hair ___ tomorrow.",
+   "o": [
+    "cut",
+    "cutting",
+    "to cut"
+   ],
+   "io": {
+    "cutting": "Dans le causatif, le verbe qui suit l'objet est un participe passé, pas un -ing.",
+    "to cut": "Dans le causatif, on n'emploie pas « to » : il faut le participe passé."
+   },
+   "i": "Après « my hair », on met le participe passé du verbe.",
+   "e": "« cut » : « have + objet + participe passé » (cut est invariable : cut, cut, cut)."
+  },
+  {
+   "d": 1,
+   "q": "She had her bike ___ last week.",
+   "o": [
+    "repaired",
+    "repair",
+    "repairing"
+   ],
+   "io": {
+    "repair": "Il faut le participe passé, pas la base du verbe.",
+    "repairing": "Il faut le participe passé, pas un -ing."
+   },
+   "i": "Quelqu'un d'autre a réparé le vélo : quelle forme du verbe ?",
+   "e": "« repaired » : « had + objet + participe passé » exprime qu'on fait faire quelque chose."
+  },
+  {
+   "d": 1,
+   "q": "We're having the windows ___.",
+   "o": [
+    "cleaned",
+    "clean",
+    "cleaning"
+   ],
+   "io": {
+    "clean": "Il faut le participe passé, pas la base du verbe.",
+    "cleaning": "Il faut le participe passé, pas un -ing."
+   },
+   "i": "Ce sont des professionnels qui lavent les vitres : quelle forme du verbe après l'objet ?",
+   "e": "« cleaned » : on emploie « have + objet + participe passé » pour dire que quelqu'un d'autre fait le travail."
+  },
+  {
+   "d": 1,
+   "q": "I need to ___ my eyes tested.",
+   "o": [
+    "have",
+    "make",
+    "do"
+   ],
+   "io": {
+    "make": "Pour « faire faire », on emploie « have » (ou « get »), pas « make ».",
+    "do": "Pour « faire faire », on emploie « have » (ou « get »), pas « do »."
+   },
+   "i": "Quel verbe sert à dire qu'on fait faire quelque chose par un autre ?",
+   "e": "« have » : « have + objet + participe passé » veut dire « faire faire » ; « make » et « do » ne servent pas ici."
+  },
+  {
+   "d": 1,
+   "q": "Touche le participe passé du causatif.",
+   "p": "Tom had his phone *repaired yesterday.",
+   "i": "C'est le verbe qui vient après « his phone ».",
+   "e": "« repaired » : après l'objet (his phone), on met le participe passé pour dire que quelqu'un l'a réparé."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She is having her teeth ___. » (check)",
+   "r": [
+    "checked"
+   ],
+   "i": "Il faut le participe passé de « check ».",
+   "e": "« checked » : « have + objet + participe passé » — c'est le dentiste qui contrôle."
+  },
+  {
+   "d": 2,
+   "q": "He had his wallet ___ on the bus.",
+   "o": [
+    "stolen",
+    "steal",
+    "stealing"
+   ],
+   "io": {
+    "steal": "Il faut le participe passé, pas la base du verbe.",
+    "stealing": "Il faut le participe passé, pas un -ing."
+   },
+   "i": "Une mésaventure : quelqu'un a pris son portefeuille.",
+   "e": "« stolen » : le causatif décrit aussi une mésaventure (« il s'est fait voler son portefeuille »)."
+  },
+  {
+   "d": 2,
+   "q": "We ___ the kitchen painted last month.",
+   "o": [
+    "had",
+    "made",
+    "did"
+   ],
+   "io": {
+    "made": "« made » ne forme pas le causatif.",
+    "did": "« did » ne forme pas le causatif."
+   },
+   "i": "Le verbe qui exprime « faire faire », au passé.",
+   "e": "« had » : « We had the kitchen painted » veut dire que quelqu'un d'autre l'a peinte."
+  },
+  {
+   "d": 2,
+   "q": "They're getting their house ___.",
+   "o": [
+    "painted",
+    "paint",
+    "painting"
+   ],
+   "io": {
+    "paint": "Il faut le participe passé, pas la base du verbe.",
+    "painting": "Il faut le participe passé, pas un -ing."
+   },
+   "i": "« Get » fonctionne comme « have » dans cette construction.",
+   "e": "« painted » : « get + objet + participe passé » a le même sens que « have », en plus familier."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Léa had her photo ___ at the station. » (take)",
+   "r": [
+    "taken"
+   ],
+   "i": "Il faut le participe passé irrégulier de « take ».",
+   "e": "« taken » : « had + objet + participe passé » ; le participe passé de « take » est « taken » (take, took, taken)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je me fais couper les cheveux demain. »",
+   "r": [
+    "I'm having my hair cut tomorrow.",
+    "I am having my hair cut tomorrow.",
+    "I'm getting my hair cut tomorrow.",
+    "I am getting my hair cut tomorrow.",
+    "I'll have my hair cut tomorrow.",
+    "I will have my hair cut tomorrow.",
+    "I'm going to have my hair cut tomorrow.",
+    "I am going to have my hair cut tomorrow."
+   ],
+   "i": "Le futur proche se dit avec « am having » ou « am getting ».",
+   "e": "« I'm having my hair cut tomorrow. » : « have + objet + participe passé », au temps voulu."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous avons fait réparer notre voiture. »",
+   "r": [
+    "We had our car repaired.",
+    "We have had our car repaired.",
+    "We got our car repaired.",
+    "We've had our car repaired.",
+    "We have got our car repaired.",
+    "We had our car fixed.",
+    "We got our car fixed.",
+    "We have had our car fixed."
+   ],
+   "i": "L'objet vient avant le participe passé.",
+   "e": "« We had our car repaired. » : « had + objet + participe passé » ; l'objet se place avant le participe."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "had",
+    "our windows",
+    "cleaned"
+   ],
+   "fin": ".",
+   "i": "L'objet se place avant le participe passé.",
+   "e": "« We had our windows cleaned. » : l'objet (our windows) précède le participe (cleaned)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I had my teeth to check yesterday.",
+   "r": [
+    "I had my teeth checked yesterday."
+   ],
+   "i": "Après l'objet, quelle forme du verbe faut-il ?",
+   "e": "« I had my teeth checked yesterday. » : après l'objet, on met le participe passé, sans « to »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Léa is having her nails do on Saturday.",
+   "r": [
+    "Léa is having her nails done on Saturday."
+   ],
+   "i": "Après « her nails », il faut un participe passé.",
+   "e": "« Léa is having her nails done on Saturday. » : le participe passé de « do » est « done »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Yusuf must have his bike to repair.",
+   "r": [
+    "Yusuf must have his bike repaired.",
+    "Yusuf must get his bike repaired.",
+    "Yusuf must have his bike fixed.",
+    "Yusuf must get his bike fixed."
+   ],
+   "i": "Après l'objet, quelle forme du verbe faut-il ?",
+   "e": "« Yusuf must have his bike repaired. » : on met le participe passé après l'objet, jamais « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She got repaired her phone yesterday.",
+   "r": [
+    "She got her phone repaired yesterday.",
+    "She had her phone repaired yesterday."
+   ],
+   "i": "L'objet se place avant le participe passé, jamais après.",
+   "e": "« She got her phone repaired yesterday. » : dans « get / have + objet + participe passé », l'objet (her phone) vient avant le participe (repaired)."
+  },
+  {
+   "d": 3,
+   "q": "Where did you ___ your hair done?",
+   "o": [
+    "get",
+    "make",
+    "do"
+   ],
+   "io": {
+    "make": "« make » ne forme pas le causatif.",
+    "do": "« do » ne forme pas le causatif."
+   },
+   "i": "Un verbe familier qui remplace « have » dans cette construction.",
+   "e": "« get » : « get + objet + participe passé » exprime le causatif, en plus familier que « have »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "are",
+    "having",
+    "a new kitchen",
+    "fitted"
+   ],
+   "fin": ".",
+   "i": "L'objet se place avant le participe passé.",
+   "e": "« We are having a new kitchen fitted. » : le professionnel installe la cuisine pour nous."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle s'est fait voler son sac. »",
+   "r": [
+    "She had her bag stolen.",
+    "She had her handbag stolen.",
+    "She got her bag stolen.",
+    "She got her handbag stolen."
+   ],
+   "i": "Le causatif décrit aussi une mésaventure.",
+   "e": "« She had her bag stolen. » : « had + objet + participe passé » dit aussi qu'on subit un événement."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Tu devrais faire contrôler ta vue. »",
+   "r": [
+    "You should have your eyes tested.",
+    "You should get your eyes tested.",
+    "You should have your eyes checked.",
+    "You should get your eyes checked."
+   ],
+   "i": "« Should » est suivi de la base : « have » ou « get ».",
+   "e": "« You should have your eyes tested. » : après « should », on met « have » (ou « get ») + objet + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Touche l'auxiliaire du causatif et le participe passé.",
+   "p": "We *had our roof *repaired last winter.",
+   "i": "Cherche le verbe avant l'objet et celui après.",
+   "e": "« had » et « repaired » : « had + objet + participe passé » signifie que des professionnels ont fait le travail."
+  }
+ ]
+}

@@ -12,6 +12,7 @@ export const MAGASINS = [
   "calame-bibliotheque",
   "calame-versions",
   "regles",
+  "regles-suivi",
   "langues-cartes",
   "langues-dictionnaire",
   "langues-journal",

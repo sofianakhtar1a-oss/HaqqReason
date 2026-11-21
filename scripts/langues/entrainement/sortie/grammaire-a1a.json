@@ -1,0 +1,1508 @@
+{
+ "train-des-mots": [
+  {
+   "d": 1,
+   "q": "Choisis la phrase bien construite.",
+   "o": [
+    "Anna reads books.",
+    "Anna books reads.",
+    "Reads Anna books."
+   ],
+   "io": {
+    "Anna books reads.": "Le verbe ne vient pas en dernier : il se place juste après le sujet.",
+    "Reads Anna books.": "On ne commence pas par le verbe : le sujet passe en premier."
+   },
+   "i": "Dans le train, la locomotive (le sujet) vient d'abord, puis le verbe.",
+   "e": "« Anna reads books. » : sujet (Anna), verbe (reads), complément (books). L'ordre des wagons ne change jamais."
+  },
+  {
+   "d": 1,
+   "q": "Choisis la phrase bien construite.",
+   "o": [
+    "We watch TV every evening.",
+    "We every evening watch TV.",
+    "Every evening watch we TV."
+   ],
+   "io": {
+    "We every evening watch TV.": "On ne glisse rien entre le sujet et le verbe, ni entre le verbe et son complément.",
+    "Every evening watch we TV.": "Après « every evening » en tête, il faut remettre le sujet avant le verbe : « Every evening, we watch TV »."
+   },
+   "i": "Le sujet et le verbe se suivent ; le moment arrive à la fin (ou tout au début).",
+   "e": "« We watch TV every evening. » : sujet, verbe, complément, puis le temps en fin de phrase."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "Emma",
+    "likes",
+    "music"
+   ],
+   "fin": ".",
+   "i": "Pense au train : la locomotive (qui fait l'action), puis le verbe, puis ce qui complète.",
+   "e": "« Emma likes music. » : l'ordre anglais est sujet (Emma), verbe (likes), complément (music), sans jamais changer l'ordre des wagons."
+  },
+  {
+   "d": 1,
+   "q": "Touche le sujet de la phrase.",
+   "p": "*Léa eats an apple.",
+   "i": "Le sujet est celui qui fait l'action : qui mange la pomme ?",
+   "e": "« Léa » est le sujet : c'est elle qui mange. En anglais, le sujet ouvre la phrase et il est obligatoire."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe de la phrase.",
+   "p": "Omar *drinks tea.",
+   "i": "Cherche le mot qui dit l'action, juste après celui qui la fait.",
+   "e": "« drinks » est le verbe : il vient juste après le sujet (Omar) et avant le complément (tea). Il prend un -s car Omar = he."
+  },
+  {
+   "d": 1,
+   "q": "Traduis en anglais : « Je mange une pomme. »",
+   "r": [
+    "I eat an apple",
+    "I'm eating an apple",
+    "I am eating an apple"
+   ],
+   "i": "Sujet, verbe, complément : trois wagons dans cet ordre.",
+   "e": "« I eat an apple. » : comme en français, on suit sujet (I), verbe (eat), complément (an apple). On peut aussi dire « I'm eating an apple »."
+  },
+  {
+   "d": 2,
+   "q": "« ___ is raining today. »",
+   "o": [
+    "It",
+    "Rain",
+    "Weather"
+   ],
+   "io": {
+    "Rain": "« Rain » est un nom : « Rain is raining » ne veut rien dire. Pour la météo, on met le sujet vide « it ».",
+    "Weather": "« Weather is raining » ne se dit pas : pour parler de la pluie, on met le sujet vide « it »."
+   },
+   "i": "En anglais, il faut un sujet, même quand on parle de la météo et que rien ne fait la pluie.",
+   "e": "« It is raining today. » : l'anglais exige toujours un sujet, ici le « it » vide. On dit de même « It's cold » ou « It's late »."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase juste.",
+   "o": [
+    "We play football on Sundays.",
+    "We play on Sundays football.",
+    "We on Sundays play football."
+   ],
+   "io": {
+    "We play on Sundays football.": "Le temps (« on Sundays ») ne se glisse pas entre le verbe et son complément.",
+    "We on Sundays play football.": "Le temps ne se met pas entre le sujet et le verbe."
+   },
+   "i": "Où range-t-on le moment (« on Sundays ») par rapport au complément ?",
+   "e": "« We play football on Sundays. » : le complément (football) reste collé au verbe, et le moment se range à la fin de la phrase."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase juste.",
+   "o": [
+    "I like chocolate very much.",
+    "I like very much chocolate.",
+    "Very much I like chocolate."
+   ],
+   "io": {
+    "I like very much chocolate.": "C'est le piège du français « j'aime beaucoup le chocolat » : en anglais, « very much » va après le complément.",
+    "Very much I like chocolate.": "On ne place pas « very much » en tête : il se range après le complément."
+   },
+   "i": "Que fait-on de « very much » ? On le met après le complément.",
+   "e": "« I like chocolate very much. » : on ne sépare pas le verbe de son complément, « very much » va à la fin."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il regarde la télévision le soir. »",
+   "r": [
+    "He watches TV in the evening",
+    "He watches television in the evening",
+    "He watches TV in the evenings",
+    "He watches television in the evenings",
+    "He watches TV every evening",
+    "He watches television every evening"
+   ],
+   "i": "Sujet, verbe, complément, puis le moment. N'oublie pas le -s de he.",
+   "e": "« He watches TV in the evening. » : sujet + verbe + complément, puis le temps à la fin ; avec he, « watch » devient « watches »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je le vois. » (tu parles de Tom)",
+   "r": [
+    "I see him"
+   ],
+   "i": "Où place-t-on le pronom complément en anglais, avant ou après le verbe ?",
+   "e": "« I see him. » : contrairement au français (« je le vois »), le pronom complément se place après le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "play",
+    "football",
+    "in the park",
+    "on Sundays"
+   ],
+   "fin": ".",
+   "i": "Après le complément, le lieu vient avant le temps.",
+   "e": "« We play football in the park on Sundays. » : sujet, verbe, complément, puis le lieu (in the park) et enfin le temps (on Sundays).",
+   "alt": [
+    [
+     "on Sundays",
+     "we",
+     "play",
+     "football",
+     "in the park"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I like very much music.",
+   "r": [
+    "I like music very much."
+   ],
+   "i": "Qu'est-ce qui sépare ici le verbe de son complément ?",
+   "e": "« I like music very much. » : on ne glisse rien entre le verbe et son complément, donc « very much » passe après « music »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I him see every day.",
+   "r": [
+    "I see him every day."
+   ],
+   "i": "En français on dit « je le vois ». En anglais, où va le pronom ?",
+   "e": "« I see him every day. » : le pronom complément se place après le verbe, jamais devant, puis vient le temps."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase la mieux construite.",
+   "o": [
+    "She plays the piano well at home every evening.",
+    "She plays well the piano at home every evening.",
+    "She plays the piano at home well every evening."
+   ],
+   "io": {
+    "She plays well the piano at home every evening.": "« well » ne se glisse pas entre le verbe et son complément.",
+    "She plays the piano at home well every evening.": "La manière (well) passe avant le lieu (at home)."
+   },
+   "i": "Complément, puis manière, lieu, temps.",
+   "e": "« She plays the piano well at home every evening. » : après le complément, l'ordre est manière (well), lieu (at home), temps (every evening)."
+  },
+  {
+   "d": 3,
+   "q": "« ___ is important to sleep well. »",
+   "o": [
+    "It",
+    "This",
+    "There"
+   ],
+   "io": {
+    "This": "« This » montre quelque chose de précis, ce n'est pas le sujet vide.",
+    "There": "« There » sert à dire « il y a » ; ici il faut le sujet vide « it »."
+   },
+   "i": "Cette phrase n'a personne qui agit : quel sujet vide faut-il quand même ?",
+   "e": "« It is important to sleep well. » : l'anglais veut un sujet même vide, ici « it ». « This » et « there » ne disent pas la même chose."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous mangeons des pizzas à la maison le vendredi. »",
+   "r": [
+    "We eat pizza at home on Fridays",
+    "We eat pizzas at home on Fridays",
+    "We eat pizza at home every Friday",
+    "We eat pizzas at home every Friday",
+    "On Fridays, we eat pizza at home",
+    "On Fridays, we eat pizzas at home",
+    "We have pizza at home on Fridays",
+    "We have pizza at home every Friday",
+    "On Fridays, we have pizza at home"
+   ],
+   "i": "Complément d'abord, puis le lieu, puis le temps.",
+   "e": "« We eat pizza at home on Fridays » : complément, lieu (at home), puis temps (on Fridays). Le temps peut aussi ouvrir la phrase."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my sister",
+    "sings",
+    "beautifully",
+    "at school",
+    "every morning"
+   ],
+   "fin": ".",
+   "i": "Après le verbe, l'ordre est manière, lieu, temps.",
+   "e": "« My sister sings beautifully at school every morning. » : sujet, verbe, puis manière (beautifully), lieu (at school) et temps (every morning).",
+   "alt": [
+    [
+     "every morning",
+     "my sister",
+     "sings",
+     "beautifully",
+     "at school"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We go every Saturday to the market.",
+   "r": [
+    "We go to the market every Saturday.",
+    "Every Saturday we go to the market."
+   ],
+   "i": "Le lieu et le temps se rangent à la fin : lequel passe en premier ?",
+   "e": "« We go to the market every Saturday. » : dans la fin de phrase, le lieu (to the market) vient avant le temps (every Saturday)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Is cold in the kitchen.",
+   "r": [
+    "It is cold in the kitchen.",
+    "It's cold in the kitchen."
+   ],
+   "i": "Qui est la locomotive de cette phrase ? Elle manque.",
+   "e": "« It is cold in the kitchen. » : l'anglais veut toujours un sujet, même vide, ici « it ». Le français peut dire « il fait froid », l'anglais ne supprime pas le sujet."
+  }
+ ],
+ "ecrire-anglais": [
+  {
+   "d": 1,
+   "q": "Lequel de ces mots prend une majuscule en anglais, même au milieu d'une phrase ?",
+   "o": [
+    "Friday",
+    "summer",
+    "teacher"
+   ],
+   "io": {
+    "summer": "Les saisons restent en minuscules.",
+    "teacher": "Un nom commun ne prend pas de majuscule."
+   },
+   "i": "Pense aux jours de la semaine.",
+   "e": "« Friday » : les jours prennent une majuscule en anglais. « summer » (une saison) et « teacher » (un nom commun) restent en minuscules."
+  },
+  {
+   "d": 1,
+   "q": "Lequel de ces mots prend une majuscule en anglais ?",
+   "o": [
+    "English",
+    "pencil",
+    "winter"
+   ],
+   "io": {
+    "pencil": "Un nom commun ne prend pas de majuscule.",
+    "winter": "Les saisons restent en minuscules."
+   },
+   "i": "Une langue s'écrit comme un nom propre.",
+   "e": "« English » : les langues prennent une majuscule. « pencil » et « winter » restent en minuscules."
+  },
+  {
+   "d": 1,
+   "q": "Lequel de ces mots prend une majuscule en anglais ?",
+   "o": [
+    "June",
+    "morning",
+    "week"
+   ],
+   "io": {
+    "morning": "Un nom commun ne prend pas de majuscule.",
+    "week": "Un nom commun ne prend pas de majuscule."
+   },
+   "i": "Un seul de ces trois mots désigne un moment précis du calendrier.",
+   "e": "« June » : les mois prennent une majuscule. « morning » et « week » sont des noms communs."
+  },
+  {
+   "d": 1,
+   "q": "Touche le jour qui est mal écrit.",
+   "p": "Léa and I have a test on *tuesday.",
+   "i": "Un jour de la semaine commence par une grande lettre en anglais.",
+   "e": "« Tuesday » : il manque la majuscule au jour de la semaine. En anglais, les jours prennent toujours une majuscule."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot mal écrit.",
+   "p": "Tom and *i are friends.",
+   "i": "Quel petit mot s'écrit toujours en grande lettre ?",
+   "e": "« I » : le pronom s'écrit toujours avec une majuscule, même au milieu de la phrase."
+  },
+  {
+   "d": 1,
+   "q": "Comment écrit-on en chiffres « mille cinq cents personnes » ?",
+   "o": [
+    "1,500 people",
+    "1.500 people"
+   ],
+   "io": {
+    "1.500 people": "En anglais, le point sépare les décimales ; les milliers prennent une virgule."
+   },
+   "i": "Pour séparer les milliers, l'anglais n'utilise pas le même signe que le français.",
+   "e": "« 1,500 people » : on met une virgule pour les milliers (et un point pour les décimales)."
+  },
+  {
+   "d": 2,
+   "q": "Quel groupe de mots prend tous une majuscule ?",
+   "o": [
+    "Spanish, Monday, May",
+    "pencil, Monday, May",
+    "Spanish, table, May"
+   ],
+   "io": {
+    "pencil, Monday, May": "« pencil » est un nom commun : il reste en minuscule.",
+    "Spanish, table, May": "« table » est un nom commun : il reste en minuscule."
+   },
+   "i": "Cherche le groupe où il n'y a ni nom commun ni saison.",
+   "e": "« Spanish, Monday, May » : une langue, un jour et un mois prennent une majuscule. « pencil » et « table » sont des noms communs."
+  },
+  {
+   "d": 2,
+   "q": "Où met-on le point d'interrogation d'une question anglaise ?",
+   "o": [
+    "Juste après le dernier mot, sans espace",
+    "Après un espace, comme en français"
+   ],
+   "io": {
+    "Après un espace, comme en français": "C'est l'habitude française ; en anglais, pas d'espace avant « ? »."
+   },
+   "i": "Compare avec le français, où l'on met une espace avant « ? » : l'anglais fait-il pareil ?",
+   "e": "Dans « Are you ready? », le point d'interrogation est collé au dernier mot : pas d'espace avant « ? », « ! », « : » ou « ; »."
+  },
+  {
+   "d": 2,
+   "q": "Comment écrit-on en chiffres « deux virgule cinq kilos » ?",
+   "o": [
+    "2.5 kilos",
+    "2,5 kilos"
+   ],
+   "io": {
+    "2,5 kilos": "En anglais, la virgule sépare les milliers, pas les décimales."
+   },
+   "i": "L'anglais utilise pour les décimales le signe que le français met pour les milliers.",
+   "e": "« 2.5 kilos » : en anglais, un point sépare les décimales et la virgule sépare les milliers (c'est l'inverse du français)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Où habites-tu ? »",
+   "r": [
+    "Where do you live",
+    "Where do you live?"
+   ],
+   "i": "Mot-question, auxiliaire « do », sujet, verbe. Colle le point d'interrogation au dernier mot.",
+   "e": "« Where do you live? » : on construit la question avec « do », et il n'y a pas d'espace avant le point d'interrogation."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle est française et parle anglais. »",
+   "r": [
+    "She is French and speaks English",
+    "She's French and speaks English",
+    "She is French and she speaks English",
+    "She's French and she speaks English"
+   ],
+   "i": "Une nationalité et une langue : pense aux majuscules.",
+   "e": "« She is French and speaks English. » : « French » et « English » prennent une majuscule."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "speak",
+    "English",
+    "on Mondays"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "on Mondays",
+     "we",
+     "speak",
+     "English"
+    ]
+   ],
+   "i": "Les morceaux « English » et « Mondays » gardent leur majuscule.",
+   "e": "« We speak English on Mondays. » : la langue et le jour prennent une majuscule."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "There are 1.500 students in my school.",
+   "r": [
+    "There are 1,500 students in my school."
+   ],
+   "i": "Regarde le signe qui sépare les milliers.",
+   "e": "« 1,500 students » : en anglais, la virgule sépare les milliers (le point est réservé aux décimales)."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots mal écrits.",
+   "p": "In *march my cousin visits *france.",
+   "i": "Un mois et un pays : quelle lettre est en trop petite ?",
+   "e": "« March » et « France » : les mois et les pays prennent une majuscule."
+  },
+  {
+   "d": 3,
+   "q": "Quel groupe de mots prend tous une majuscule ?",
+   "o": [
+    "Christmas, December, Egypt",
+    "Christmas, summer, Egypt",
+    "holiday, December, Egypt"
+   ],
+   "io": {
+    "Christmas, summer, Egypt": "Les saisons restent en minuscules.",
+    "holiday, December, Egypt": "« holiday » est un nom commun : minuscule."
+   },
+   "i": "Une fête, un mois et un pays.",
+   "e": "« Christmas, December, Egypt » : une fête, un mois et un pays. « summer » (saison) et « holiday » (nom commun) restent en minuscules."
+  },
+  {
+   "d": 3,
+   "q": "Lequel de ces mots reste en minuscule au milieu d'une phrase ?",
+   "o": [
+    "summer",
+    "Sunday",
+    "Italian"
+   ],
+   "io": {
+    "Sunday": "Les jours prennent une majuscule.",
+    "Italian": "Les nationalités prennent une majuscule."
+   },
+   "i": "Une des trois catégories fait exception à la règle des majuscules.",
+   "e": "« summer » : les saisons s'écrivent sans majuscule, alors que les jours (Sunday) et les nationalités (Italian) en prennent une."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux mots qui devraient avoir une majuscule.",
+   "p": "On *saturday my uncle drives to *germany.",
+   "i": "Il y a un jour de la semaine et un pays : tous deux prennent une majuscule.",
+   "e": "« Saturday » et « Germany » prennent une majuscule : les jours de la semaine et les noms de pays s'écrivent avec une grande lettre."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mon frère et moi parlons anglais le lundi. »",
+   "r": [
+    "My brother and I speak English on Mondays",
+    "My brother and I speak English on Monday",
+    "My brother and I speak English every Monday"
+   ],
+   "i": "Un jour, une langue, et « moi » dans cette phrase se dit avec un pronom sujet.",
+   "e": "« My brother and I speak English on Mondays. » : on met « I » (sujet) et les majuscules à la langue et au jour."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Tu es prêt ? Allons-y ! »",
+   "r": [
+    "Are you ready? Let's go!",
+    "Are you ready? Let's go",
+    "Are you ready? Let us go!"
+   ],
+   "i": "Deux phrases, deux ponctuations. Pas d'espace avant le « ? » ni le « ! ».",
+   "e": "« Are you ready? Let's go! » : en anglais, « ? » et « ! » sont collés au mot qui précède, sans espace."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The box weighs 2,5 kilos.",
+   "r": [
+    "The box weighs 2.5 kilos."
+   ],
+   "i": "En anglais, quel signe sépare les décimales ?",
+   "e": "« 2.5 kilos » : en anglais, on écrit un point pour les décimales (une virgule pour les milliers)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "12.000 people watch the match.",
+   "r": [
+    "12,000 people watch the match."
+   ],
+   "i": "Quel signe sépare les milliers en anglais ?",
+   "e": "« 12,000 people » : en anglais, on met une virgule entre les milliers, pas un point."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "Inès",
+    "is",
+    "French",
+    "but",
+    "her",
+    "father",
+    "is",
+    "Italian"
+   ],
+   "fin": ".",
+   "i": "Garde les majuscules du prénom et des nationalités.",
+   "e": "« Inès is French, but her father is Italian. » : un prénom et deux nationalités avec majuscule."
+  }
+ ],
+ "petits-gardiens": [
+  {
+   "d": 1,
+   "q": "« It is ___ dog. »",
+   "o": [
+    "a",
+    "an"
+   ],
+   "io": {
+    "an": "« an » se met devant un son de voyelle ; « dog » commence par un son de consonne."
+   },
+   "i": "Prononce « dog » : son de consonne ou de voyelle ?",
+   "e": "« a dog » : « dog » commence par un son de consonne, donc on emploie « a ». « An » est réservé aux sons de voyelle."
+  },
+  {
+   "d": 1,
+   "q": "« He is ___ engineer. »",
+   "o": [
+    "an",
+    "a"
+   ],
+   "io": {
+    "a": "« engineer » commence par un son de voyelle : il faut « an »."
+   },
+   "i": "Dis le mot « engineer » à voix haute : quel est son premier son ?",
+   "e": "« an engineer » : le premier son est une voyelle, donc « an ». Un métier prend toujours « a » ou « an »."
+  },
+  {
+   "d": 1,
+   "q": "Look at ___ moon!",
+   "o": [
+    "the",
+    "a",
+    "an"
+   ],
+   "io": {
+    "a": "« a » présente un objet quelconque ; la lune est unique, on met « the ».",
+    "an": "« an » se met devant un son de voyelle, et la lune est unique : « the »."
+   },
+   "i": "Il n'y a qu'une seule lune : tout le monde sait de laquelle on parle.",
+   "e": "« the moon » : pour une chose unique et connue de tous (the sun, the moon, the sea), on emploie « the »."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'article qui se met devant un son de voyelle.",
+   "p": "She has a cat and *an umbrella.",
+   "i": "Cherche l'article qui finit par -n, devant un mot qui commence par un son de voyelle.",
+   "e": "« an umbrella » : « umbrella » commence par un son de voyelle, donc on emploie « an » et non « a »."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'article qui montre que le chat est déjà connu.",
+   "p": "I saw a cat. *The cat was black.",
+   "i": "Le chat a déjà été mentionné avec « a » : quel article le reprend ?",
+   "e": "« The cat » : la première fois, on dit « a cat » ; quand on reparle du même chat, on emploie « the »."
+  },
+  {
+   "d": 1,
+   "q": "Traduis en anglais : « un œuf »",
+   "r": [
+    "an egg"
+   ],
+   "i": "Le mot « egg » commence par un son de voyelle.",
+   "e": "« an egg » : « egg » commence par un son de voyelle, donc « un » se dit « an » ; « a » est réservé aux sons de consonne."
+  },
+  {
+   "d": 2,
+   "q": "« She has a bike. ___ bike is red. »",
+   "o": [
+    "The",
+    "A",
+    "An"
+   ],
+   "io": {
+    "A": "« a » sert pour une première mention ; ici on reprend le vélo déjà cité.",
+    "An": "« an » va devant un son de voyelle, et « bike » commence par une consonne."
+   },
+   "i": "La première fois on dit « a bike » ; que dit-on quand on reparle du même vélo ?",
+   "e": "« The bike is red. » : on reparle du vélo qu'on vient de présenter avec « a », donc on emploie « the »."
+  },
+  {
+   "d": 2,
+   "q": "« He works in ___ office. »",
+   "o": [
+    "an",
+    "a"
+   ],
+   "io": {
+    "a": "Devant un son de voyelle, on emploie « an »."
+   },
+   "i": "Le « o » de « office » se prononce comme une voyelle.",
+   "e": "« an office » : « office » commence par un son de voyelle, donc « an ». On choisit selon le son, pas selon la lettre."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "She is an honest girl.",
+    "She is a honest girl.",
+    "She is honest girl."
+   ],
+   "io": {
+    "She is a honest girl.": "Le « h » de « honest » est muet : le son est une voyelle, donc « an ».",
+    "She is honest girl.": "Il manque l'article « a » ou « an » devant « honest girl »."
+   },
+   "i": "Le « h » de « honest » ne se prononce pas : quel est donc le premier son ?",
+   "e": "« an honest girl » : le h est muet, donc le premier son est une voyelle et l'article est « an »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle est médecin. »",
+   "r": [
+    "She is a doctor",
+    "She's a doctor"
+   ],
+   "i": "Pour dire un métier, l'anglais met un petit gardien devant.",
+   "e": "« She is a doctor. » : devant un métier, l'anglais met toujours « a » ou « an », contrairement au français (« elle est médecin »)."
+  },
+  {
+   "d": 2,
+   "q": "« We have ___ hour for lunch. » (un seul mot dans le trou)",
+   "r": [
+    "an"
+   ],
+   "i": "Le « h » de « hour » est muet : quel est le premier son ?",
+   "e": "« an hour » : le « h » ne se prononce pas, donc le premier son est une voyelle et on dit « an »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "is",
+    "an",
+    "engineer"
+   ],
+   "fin": ".",
+   "i": "Sujet, verbe, puis le métier avec son article.",
+   "e": "« He is an engineer. » : devant un métier qui commence par un son de voyelle, on emploie « an »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She is doctor.",
+   "r": [
+    "She is a doctor.",
+    "She's a doctor."
+   ],
+   "i": "Quel petit mot manque devant le métier ?",
+   "e": "« She is a doctor. » : l'anglais met toujours « a » ou « an » devant un métier (piège du français « elle est médecin »)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He eats a apple every day.",
+   "r": [
+    "He eats an apple every day."
+   ],
+   "i": "Le premier son de « apple » est-il une consonne ou une voyelle ?",
+   "e": "« He eats an apple every day. » : « apple » commence par un son de voyelle, donc « an » et non « a »."
+  },
+  {
+   "d": 3,
+   "q": "Choisis les bons articles : « I have ___ cat. ___ cat is small. »",
+   "o": [
+    "a / The",
+    "The / A",
+    "an / The"
+   ],
+   "io": {
+    "The / A": "C'est l'inverse : « a » pour la première mention, « the » ensuite.",
+    "an / The": "« cat » commence par un son de consonne : « a »."
+   },
+   "i": "« a » pour la première mention, « the » ensuite : dans quel ordre ?",
+   "e": "« I have a cat. The cat is small. » : on présente le chat avec « a », puis on le reprend avec « the »."
+  },
+  {
+   "d": 3,
+   "q": "« My cousin studies at ___ university in Canada. »",
+   "o": [
+    "a",
+    "an"
+   ],
+   "io": {
+    "an": "« university » commence par le son « you », une consonne : on dit « a », même si la lettre est un « u »."
+   },
+   "i": "Le mot « university » commence par le son « you » : consonne ou voyelle ?",
+   "e": "« a university » : le son initial est « you », une consonne, même si la lettre est « u ». C'est le son qui compte, pas la lettre."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux articles qui ne vont pas.",
+   "p": "I have *a umbrella and *an book.",
+   "i": "Écoute le premier son de « umbrella » puis celui de « book ».",
+   "e": "« an umbrella » (son de voyelle) et « a book » (son de consonne) : les deux articles étaient inversés."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons un chien. Le chien est petit. »",
+   "r": [
+    "We have a dog. The dog is small",
+    "We have a dog. The dog is little",
+    "We have a dog and the dog is small",
+    "We have a dog, the dog is small",
+    "We've got a dog. The dog is small",
+    "We have a dog and the dog is little"
+   ],
+   "i": "« a » la première fois, puis « the » pour le même chien.",
+   "e": "« We have a dog. The dog is small. » : le chien est présenté avec « a », puis repris avec « the »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "saw",
+    "a",
+    "film",
+    "and",
+    "the",
+    "film",
+    "was",
+    "great"
+   ],
+   "fin": ".",
+   "i": "Un film nouveau d'abord (premier « film »), puis le même film déjà connu.",
+   "e": "« I saw a film and the film was great. » : « a » à la première mention, « the » quand on reparle du même film."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I have a friends.",
+   "r": [
+    "I have friends.",
+    "I have a friend."
+   ],
+   "i": "Peut-on mettre « a » devant un pluriel ?",
+   "e": "« I have friends. » (ou « I have a friend. ») : « a » ne va qu'avec un singulier, et « des » ne se traduit pas en anglais."
+  }
+ ],
+ "foule": [
+  {
+   "d": 1,
+   "q": "« There are three ___ on the table. »",
+   "o": [
+    "books",
+    "book",
+    "bookes"
+   ],
+   "io": {
+    "book": "Après « three », le nom est au pluriel : on ajoute -s.",
+    "bookes": "Le -es ne s'ajoute qu'après s, sh, ch, x : « book » prend simplement -s."
+   },
+   "i": "« three » demande un nom au pluriel : quelle est la forme la plus simple ?",
+   "e": "« books » : la plupart des noms prennent simplement un -s au pluriel. On n'ajoute -es qu'après s, sh, ch, x."
+  },
+  {
+   "d": 1,
+   "q": "Choisis le pluriel de « box ».",
+   "o": [
+    "boxes",
+    "boxs",
+    "boxies"
+   ],
+   "io": {
+    "boxs": "Après un -x, on ajoute -es pour pouvoir prononcer le pluriel.",
+    "boxies": "Le -ies ne vaut que pour consonne + y."
+   },
+   "i": "Le mot finit par -x : le pluriel ajoute deux lettres.",
+   "e": "« boxes » : après -s, -sh, -ch et -x, on ajoute -es pour pouvoir prononcer le pluriel."
+  },
+  {
+   "d": 1,
+   "q": "Choisis le pluriel de « baby ».",
+   "o": [
+    "babies",
+    "babys",
+    "babyes"
+   ],
+   "io": {
+    "babys": "Après une consonne, le y devient -ies.",
+    "babyes": "Le y se transforme en -ies, on n'ajoute pas -es."
+   },
+   "i": "Le mot finit par une consonne suivie de y : que devient le y ?",
+   "e": "« babies » : après une consonne, le y devient -ies (baby → babies), au lieu de simplement ajouter -s."
+  },
+  {
+   "d": 1,
+   "q": "Touche le nom au pluriel qui finit par -s.",
+   "p": "I have one cat and two *dogs.",
+   "i": "Cherche le nom qui suit « two » : il est au pluriel.",
+   "e": "« dogs » : après « two », le nom est au pluriel, avec un -s. « Cat » reste singulier car il n'y en a qu'un."
+  },
+  {
+   "d": 1,
+   "q": "Touche le nom pluriel qui n'a pas de -s.",
+   "p": "The *children have two cats.",
+   "i": "Un des deux noms pluriels ne se termine pas par -s : cherche celui qui change de forme.",
+   "e": "« children » : c'est le pluriel irrégulier de « child », qui ne prend pas de -s."
+  },
+  {
+   "d": 1,
+   "q": "Écris le pluriel de « watch ».",
+   "r": [
+    "watches"
+   ],
+   "i": "Le mot finit par -ch : que faut-il ajouter ?",
+   "e": "« watches » : après -ch, on ajoute -es."
+  },
+  {
+   "d": 2,
+   "q": "Choisis le pluriel de « man ».",
+   "o": [
+    "men",
+    "mans",
+    "mens"
+   ],
+   "io": {
+    "mans": "« man » est un rebelle : le a devient e.",
+    "mens": "Pas de -s : le mot change de forme, « men »."
+   },
+   "i": "« man » est un rebelle : il change de voyelle au pluriel.",
+   "e": "« men » : le pluriel de « man » est irrégulier, la voyelle change (a → e), il ne prend pas -s."
+  },
+  {
+   "d": 2,
+   "q": "Choisis le pluriel de « knife ».",
+   "o": [
+    "knives",
+    "knifes",
+    "knifs"
+   ],
+   "io": {
+    "knifes": "Pour « knife », le f devient v : « knives ».",
+    "knifs": "Le pluriel est « knives »."
+   },
+   "i": "Beaucoup de noms en -fe changent leur fin au pluriel.",
+   "e": "« knives » : les noms en -fe passent souvent en -ves (knife → knives, wife → wives)."
+  },
+  {
+   "d": 2,
+   "q": "Choisis le pluriel de « day ».",
+   "o": [
+    "days",
+    "daies",
+    "dayes"
+   ],
+   "io": {
+    "daies": "Le y ne devient -ies qu'après une consonne.",
+    "dayes": "On ajoute seulement -s."
+   },
+   "i": "Il y a une voyelle avant le y : regarde si le y change.",
+   "e": "« days » : après une voyelle, le y ne change pas, on ajoute juste -s. Le y ne devient -ies qu'après une consonne."
+  },
+  {
+   "d": 2,
+   "q": "Écris le pluriel de « woman ».",
+   "r": [
+    "women"
+   ],
+   "i": "C'est un rebelle comme « man ».",
+   "e": "« women » : le pluriel de « woman » est irrégulier. Attention à la prononciation de la première syllabe, qui change aussi."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Mes enfants ont trois chats. »",
+   "r": [
+    "My children have three cats",
+    "My kids have three cats",
+    "My children have got three cats"
+   ],
+   "i": "Pour « enfants », il faut le pluriel irrégulier de « child ».",
+   "e": "« My children have three cats. » : « children » est le pluriel irrégulier de « child », et « cats » prend un simple -s."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "women",
+    "have",
+    "two",
+    "babies"
+   ],
+   "fin": ".",
+   "i": "Cherche d'abord le sujet, puis le verbe, puis ce que les femmes ont.",
+   "e": "« The women have two babies. » : « women » et « babies » sont deux pluriels particuliers (irrégulier et consonne + y)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I have two childs.",
+   "r": [
+    "I have two children."
+   ],
+   "i": "« Child » est un rebelle : son pluriel n'est pas « childs ».",
+   "e": "« I have two children. » : le pluriel de « child » est « children » ; on n'ajoute pas simplement -s."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She has three watchs.",
+   "r": [
+    "She has three watches."
+   ],
+   "i": "Quelle terminaison ajoute-t-on après -ch ?",
+   "e": "« She has three watches. » : après -ch, on ajoute -es, ce qui donne « watches »."
+  },
+  {
+   "d": 3,
+   "q": "« The people ___ happy. »",
+   "o": [
+    "are",
+    "is"
+   ],
+   "io": {
+    "is": "« people » est un pluriel : le verbe se met au pluriel."
+   },
+   "i": "« people » est le pluriel de « person » : le verbe doit s'accorder.",
+   "e": "« The people are happy. » : « people » est un pluriel, donc le verbe est « are ». Le piège vient du français, où « le peuple » est singulier."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase juste.",
+   "o": [
+    "Two mice are in the box.",
+    "Two mouses are in the box.",
+    "Two mices are in the box."
+   ],
+   "io": {
+    "Two mouses are in the box.": "« mouse » change de forme : « mice ».",
+    "Two mices are in the box.": "« mice » est déjà un pluriel, on n'ajoute rien."
+   },
+   "i": "Le pluriel de « mouse » est un rebelle.",
+   "e": "« Two mice are in the box. » : « mice » est le pluriel irrégulier de « mouse » ; on n'ajoute rien, et « mouses » comme « mices » sont faux."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mes pieds sont froids. »",
+   "r": [
+    "My feet are cold"
+   ],
+   "i": "« Pied » a un pluriel irrégulier, comme « dent » (tooth → teeth).",
+   "e": "« My feet are cold. » : le pluriel de « foot » est « feet », et le verbe est « are » avec un pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux noms mal mis au pluriel.",
+   "p": "Two *mans and three *babys are in the car.",
+   "i": "L'un des deux est un rebelle, l'autre finit par consonne + y.",
+   "e": "« men » et « babies » : « man » est irrégulier, et un nom en consonne + y passe à -ies."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "three",
+    "children",
+    "are",
+    "playing",
+    "with",
+    "two",
+    "dogs"
+   ],
+   "fin": ".",
+   "i": "Commence par le nombre et le nom pluriel.",
+   "e": "« Three children are playing with two dogs. » : « children » est un pluriel irrégulier, et le verbe est « are » avec un pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The childrens are in the garden.",
+   "r": [
+    "The children are in the garden."
+   ],
+   "i": "« Children » est déjà un pluriel : peut-on y ajouter autre chose ?",
+   "e": "« The children are in the garden. » : « children » est déjà le pluriel de « child », il ne reçoit pas de -s en plus."
+  }
+ ],
+ "adjectif-immobile": [
+  {
+   "d": 1,
+   "q": "Comment dit-on « un chat noir » ?",
+   "o": [
+    "a black cat",
+    "a cat black"
+   ],
+   "io": {
+    "a cat black": "L'adjectif ne suit pas le nom comme en français."
+   },
+   "i": "En anglais, l'adjectif passe avant le nom.",
+   "e": "« a black cat » : l'adjectif se place avant le nom qu'il décrit, contrairement au français (« un chat noir »)."
+  },
+  {
+   "d": 1,
+   "q": "« I have two ___ cats. »",
+   "o": [
+    "small",
+    "smalls"
+   ],
+   "io": {
+    "smalls": "L'adjectif ne change pas au pluriel."
+   },
+   "i": "Un adjectif prend-il un -s au pluriel ?",
+   "e": "« small » : l'adjectif ne change jamais de forme, même devant un pluriel (two small cats)."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'adjectif.",
+   "p": "Anna has a *red bike.",
+   "i": "Cherche le mot qui décrit le vélo.",
+   "e": "« red » est l'adjectif : il décrit le vélo et se place avant le nom (a red bike)."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'adjectif.",
+   "p": "The soup is *hot.",
+   "i": "Cherche le mot qui décrit la soupe, après « is ».",
+   "e": "« hot » est l'adjectif : après « be », il décrit le sujet (la soupe) et ne change jamais."
+  },
+  {
+   "d": 1,
+   "q": "« The ___ girls play basketball. »",
+   "o": [
+    "tall",
+    "talls",
+    "talles"
+   ],
+   "io": {
+    "talls": "L'adjectif reste invariable.",
+    "talles": "Pas d'accord en anglais."
+   },
+   "i": "Un adjectif prend-il un accord au pluriel ?",
+   "e": "« tall » : l'adjectif ne s'accorde jamais, ni en genre ni en nombre, même devant « girls »."
+  },
+  {
+   "d": 1,
+   "q": "Traduis en anglais : « une voiture rouge »",
+   "r": [
+    "a red car"
+   ],
+   "i": "Adjectif d'abord, nom ensuite.",
+   "e": "« a red car » : l'adjectif se place avant le nom, et n'a pas de féminin ni de pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase juste.",
+   "o": [
+    "I have a big dog.",
+    "I have a dog big.",
+    "I have a bigs dog."
+   ],
+   "io": {
+    "I have a dog big.": "L'adjectif se place avant le nom.",
+    "I have a bigs dog.": "L'adjectif ne prend jamais de -s."
+   },
+   "i": "L'adjectif se place avant le nom et ne prend jamais de -s.",
+   "e": "« I have a big dog. » : l'adjectif est avant le nom (pas « a dog big ») et reste invariable (pas « bigs »)."
+  },
+  {
+   "d": 2,
+   "q": "Quel est le bon ordre ?",
+   "o": [
+    "a big red ball",
+    "a red big ball"
+   ],
+   "io": {
+    "a red big ball": "La taille vient avant la couleur."
+   },
+   "i": "Quand il y a une taille et une couleur, laquelle passe en premier ?",
+   "e": "« a big red ball » : la taille (big) vient avant la couleur (red)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Mes amis sont grands. »",
+   "r": [
+    "My friends are tall"
+   ],
+   "i": "Après « be », l'adjectif reste invariable.",
+   "e": "« My friends are tall. » : l'adjectif ne prend pas de -s, même si le sujet est au pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle a des cheveux longs. »",
+   "r": [
+    "She has long hair",
+    "She's got long hair",
+    "She has got long hair"
+   ],
+   "i": "L'adjectif se place avant le nom, qui est ici un mot qu'on ne compte pas.",
+   "e": "« She has long hair. » : l'adjectif « long » est avant le nom et ne s'accorde pas."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "soup",
+    "is",
+    "very",
+    "hot"
+   ],
+   "fin": ".",
+   "i": "Sujet, « is », puis un mot d'intensité avant l'adjectif.",
+   "e": "« The soup is very hot. » : après « be », l'adjectif décrit le sujet, et « very » se place juste avant lui."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "has",
+    "a",
+    "small",
+    "white",
+    "cat"
+   ],
+   "fin": ".",
+   "i": "Taille avant couleur, puis le nom.",
+   "e": "« She has a small white cat. » : la taille (small) vient avant la couleur (white), puis le nom."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She has a bag blue.",
+   "r": [
+    "She has a blue bag."
+   ],
+   "i": "Où se place l'adjectif par rapport au nom ?",
+   "e": "« She has a blue bag. » : l'adjectif se place avant le nom ; l'ordre « a bag blue » est un calque du français."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My sisters are talls.",
+   "r": [
+    "My sisters are tall."
+   ],
+   "i": "L'adjectif prend-il un -s au pluriel ?",
+   "e": "« My sisters are tall. » : l'adjectif ne s'accorde pas, même avec un sujet pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Quel est le bon ordre ?",
+   "o": [
+    "a beautiful old Italian table",
+    "an Italian beautiful old table",
+    "a old beautiful Italian table"
+   ],
+   "io": {
+    "an Italian beautiful old table": "L'ordre n'est pas respecté : opinion, âge, origine.",
+    "a old beautiful Italian table": "Il faut « an » devant « old » et l'opinion passe en premier."
+   },
+   "i": "L'ordre est opinion, âge, origine, puis le nom ; pense aussi à « a » ou « an ».",
+   "e": "« a beautiful old Italian table » : opinion (beautiful), âge (old), origine (Italian). « A » reste devant « beautiful »."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase juste.",
+   "o": [
+    "We have two big green bags.",
+    "We have two green big bags.",
+    "We have two bigs green bags."
+   ],
+   "io": {
+    "We have two green big bags.": "La taille vient avant la couleur.",
+    "We have two bigs green bags.": "Les adjectifs ne prennent pas de -s."
+   },
+   "i": "Taille avant couleur, et aucun -s sur les adjectifs.",
+   "e": "« We have two big green bags. » : la taille (big) vient avant la couleur (green), et les adjectifs ne prennent pas de -s."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons une petite maison blanche. »",
+   "r": [
+    "We have a small white house",
+    "We have a little white house",
+    "We've got a small white house",
+    "We've got a little white house"
+   ],
+   "i": "Taille avant couleur, puis le nom.",
+   "e": "« We have a small white house. » : la taille vient avant la couleur ; on peut aussi dire « little »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ce sont de grandes maisons rouges. »",
+   "r": [
+    "They are big red houses",
+    "These are big red houses",
+    "Those are big red houses",
+    "They are large red houses",
+    "These are large red houses",
+    "Those are large red houses"
+   ],
+   "i": "Taille avant couleur, aucun -s sur les adjectifs.",
+   "e": "« They are big red houses. » : les adjectifs ne changent pas au pluriel, et la taille précède la couleur."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux adjectifs.",
+   "p": "He drives a *big *blue truck.",
+   "i": "Cherche les deux mots qui décrivent le camion avant le nom.",
+   "e": "« big » et « blue » sont deux adjectifs : ils se placent avant le nom, la taille avant la couleur."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "want",
+    "a",
+    "lovely",
+    "little",
+    "red",
+    "car"
+   ],
+   "fin": ".",
+   "i": "Opinion, taille, couleur, puis le nom.",
+   "e": "« I want a lovely little red car. » : opinion (lovely), taille (little), couleur (red), puis le nom."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He has a red big bike.",
+   "r": [
+    "He has a big red bike."
+   ],
+   "i": "Quelle est la bonne place de la taille par rapport à la couleur ?",
+   "e": "« He has a big red bike. » : la taille précède la couleur ; « a red big bike » inverse l'ordre."
+  }
+ ],
+ "his-ou-her": [
+  {
+   "d": 1,
+   "q": "« Tom loves ___ mother. » (la mère de Tom)",
+   "o": [
+    "his",
+    "her"
+   ],
+   "io": {
+    "her": "Tom est un homme : « his »."
+   },
+   "i": "Qui est le propriétaire de la mère : un garçon ou une fille ?",
+   "e": "« Tom loves his mother. » : on choisit selon le propriétaire (Tom, un garçon), donc « his », même si « mother » est féminin."
+  },
+  {
+   "d": 1,
+   "q": "« Emma loves ___ father. » (le père d'Emma)",
+   "o": [
+    "her",
+    "his"
+   ],
+   "io": {
+    "his": "Emma est une femme : « her »."
+   },
+   "i": "Qui est le propriétaire du père : un garçon ou une fille ?",
+   "e": "« Emma loves her father. » : Emma est une fille, donc « her », même si « father » est masculin."
+  },
+  {
+   "d": 1,
+   "q": "« We love ___ teacher. » (notre professeur)",
+   "o": [
+    "our",
+    "their"
+   ],
+   "io": {
+    "their": "« their » correspond à « they », pas à « we »."
+   },
+   "i": "Qui possède le professeur ? Le sujet est « we ».",
+   "e": "« We love our teacher. » : « we » donne « our ». « their » correspond à « they »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le possessif.",
+   "p": "Tom likes *his dog.",
+   "i": "Cherche le mot qui dit à qui est le chien.",
+   "e": "« his » est le possessif : Tom est un garçon, donc « his dog »."
+  },
+  {
+   "d": 1,
+   "q": "« Sam and Sofia like ___ teacher. » (le professeur de Sam et Sofia ; un seul mot)",
+   "r": [
+    "their"
+   ],
+   "i": "Il y a deux propriétaires : Sam et Sofia.",
+   "e": "« their teacher » : plusieurs propriétaires (Sam et Sofia), donc « their »."
+  },
+  {
+   "d": 1,
+   "q": "« The dog wags ___ tail. »",
+   "o": [
+    "its",
+    "it's"
+   ],
+   "io": {
+    "it's": "« it's » veut dire « it is »."
+   },
+   "i": "Un animal est une chose pour l'anglais. Le possessif prend-il une apostrophe ?",
+   "e": "« its tail » : « its » possessif s'écrit sans apostrophe ; « it's » veut dire « it is »."
+  },
+  {
+   "d": 2,
+   "q": "« Anna and I love ___ garden. » (le jardin d'Anna et de moi)",
+   "o": [
+    "our",
+    "their",
+    "her"
+   ],
+   "io": {
+    "their": "Anna et moi = we, pas they.",
+    "her": "Anna et moi = we."
+   },
+   "i": "Les propriétaires sont Anna et moi : quel pronom les regroupe ?",
+   "e": "« our garden » : Anna et moi = « we », donc « our »."
+  },
+  {
+   "d": 2,
+   "q": "« The children love ___ teacher. » (le professeur des enfants)",
+   "o": [
+    "their",
+    "his",
+    "its"
+   ],
+   "io": {
+    "his": "Plusieurs enfants : « their ».",
+    "its": "Les enfants sont des personnes : « their »."
+   },
+   "i": "Il y a plusieurs enfants : plusieurs propriétaires.",
+   "e": "« The children love their teacher. » : plusieurs propriétaires = « their ». « His » ne va qu'avec un seul garçon."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tom aime sa sœur. » (la sœur de Tom)",
+   "r": [
+    "Tom loves his sister",
+    "Tom likes his sister"
+   ],
+   "i": "Le propriétaire est Tom : un garçon.",
+   "e": "« Tom loves his sister. » : le propriétaire est Tom, un garçon, donc « his », même si « sister » est féminin."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous aimons notre école. »",
+   "r": [
+    "We love our school",
+    "We like our school"
+   ],
+   "i": "Les propriétaires, c'est « nous ».",
+   "e": "« We love our school. » : le propriétaire est « we » (nous), donc « our »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "Emma",
+    "loves",
+    "her",
+    "new",
+    "bike"
+   ],
+   "fin": ".",
+   "i": "Sujet, verbe, puis le possessif avant l'adjectif et le nom.",
+   "e": "« Emma loves her new bike. » : « her » (Emma est une fille) se place avant l'adjectif et le nom."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "dog",
+    "wags",
+    "its",
+    "tail"
+   ],
+   "fin": ".",
+   "i": "Un animal : quel possessif sans apostrophe ?",
+   "e": "« The dog wags its tail. » : pour un animal, on emploie « its », sans apostrophe."
+  },
+  {
+   "d": 2,
+   "q": "Touche le possessif qui est faux.",
+   "p": "Emma helps *his brother with the homework.",
+   "i": "Emma est une fille : le possessif doit lui correspondre.",
+   "e": "« her brother » : Emma est une fille, donc « her », même si « brother » est masculin."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur. (C'est la mère de Paul.)",
+   "f": "Paul loves her mother.",
+   "r": [
+    "Paul loves his mother."
+   ],
+   "i": "Qui est le propriétaire de la mère : un garçon ou une fille ?",
+   "e": "« Paul loves his mother. » : Paul est un garçon, donc « his », même si « mother » est féminin."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur. (C'est le frère d'Anna.)",
+   "f": "Anna and his brother are here.",
+   "r": [
+    "Anna and her brother are here."
+   ],
+   "i": "Quel est le sexe du propriétaire ?",
+   "e": "« Anna and her brother are here. » : Anna est une femme, donc « her », même si « brother » est masculin."
+  },
+  {
+   "d": 3,
+   "q": "« Inès is with ___ brother and Yusuf is with ___ sister. » (chacun est avec son propre frère ou sa propre sœur)",
+   "o": [
+    "her / his",
+    "his / her",
+    "their / their"
+   ],
+   "io": {
+    "his / her": "C'est l'inverse.",
+    "their / their": "Chaque phrase a un seul propriétaire."
+   },
+   "i": "Un possessif par propriétaire : regarde qui possède le frère, puis la sœur.",
+   "e": "« her brother / his sister » : on regarde le propriétaire (Inès est une fille, Yusuf un garçon), pas l'objet possédé."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ? (Il s'agit du lait du chat.)",
+   "o": [
+    "The cat drinks its milk.",
+    "The cat drinks it's milk.",
+    "The cat drinks their milk."
+   ],
+   "io": {
+    "The cat drinks it's milk.": "« it's » = it is.",
+    "The cat drinks their milk.": "Un seul chat : « its »."
+   },
+   "i": "Un seul chat : quelle forme sans apostrophe ?",
+   "e": "« The cat drinks its milk. » : « its » est le possessif (sans apostrophe) ; « it's » veut dire « it is »."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux possessifs.",
+   "p": "Sara loves *her dog and Tom loves *his cat.",
+   "i": "Un possessif pour Sara, un autre pour Tom.",
+   "e": "« her » (Sara est une fille) et « his » (Tom est un garçon) : on regarde le propriétaire."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Le chat mange sa nourriture. »",
+   "r": [
+    "The cat eats its food",
+    "The cat is eating its food"
+   ],
+   "i": "Un animal : quel possessif sans apostrophe ?",
+   "e": "« The cat eats its food. » : pour un animal, le possessif est « its », sans apostrophe."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The tree lost it's leaves.",
+   "r": [
+    "The tree lost its leaves."
+   ],
+   "i": "Peut-on dire « it is » à la place de « it's » ici ?",
+   "e": "« The tree lost its leaves. » : le possessif « its » s'écrit sans apostrophe ; « it's » veut dire « it is »."
+  }
+ ]
+}

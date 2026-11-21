@@ -1,0 +1,1320 @@
+{
+ "ici-labas": [
+  {
+   "d": 1,
+   "q": "(Tu tiens un livre dans ta main) « ___ is my book. »",
+   "o": [
+    "This",
+    "These",
+    "Those"
+   ],
+   "io": {
+    "These": "« these » est le pluriel : ici il n'y a qu'un livre.",
+    "Those": "« those » montre des choses éloignées au pluriel."
+   },
+   "i": "Le livre est dans ta main, donc tout près de toi. Y en a-t-il un ou plusieurs ?",
+   "e": "« This is my book. » : pour montrer une seule chose proche, on emploie « this ». « These » est réservé au pluriel et « those » à ce qui est loin."
+  },
+  {
+   "d": 1,
+   "q": "(Tu tiens des chaussures dans tes mains) « ___ are my shoes. »",
+   "o": [
+    "These",
+    "This",
+    "That"
+   ],
+   "io": {
+    "This": "« this » est au singulier : « shoes » est un pluriel.",
+    "That": "« that » est au singulier et montre quelque chose de loin."
+   },
+   "i": "Les chaussures sont dans tes mains, donc proches. Une chaussure ou plusieurs ?",
+   "e": "« These are my shoes. » : « shoes » est un pluriel et les chaussures sont proches, donc « these ». « This » et « that » ne s'emploient qu'avec un singulier."
+  },
+  {
+   "d": 1,
+   "q": "(Tu montres une école au loin) « ___ is my school. »",
+   "o": [
+    "That",
+    "This",
+    "These"
+   ],
+   "io": {
+    "This": "« this » montre ce qui est près de toi.",
+    "These": "« these » est un pluriel pour ce qui est près."
+   },
+   "i": "L'école est loin de toi et il n'y en a qu'une : choisis le mot qui montre de loin.",
+   "e": "« That is my school. » : pour montrer une seule chose éloignée, on emploie « that ». « This » sert pour ce qui est près de toi."
+  },
+  {
+   "d": 1,
+   "q": "(Tu montres des enfants au loin) « ___ are my cousins. »",
+   "o": [
+    "Those",
+    "That",
+    "This"
+   ],
+   "io": {
+    "That": "« that » est au singulier.",
+    "This": "« this » est au singulier et pour ce qui est près."
+   },
+   "i": "Les enfants sont loin de toi et ils sont plusieurs : cherche le pluriel de « loin ».",
+   "e": "« Those are my cousins. » : « those » montre des personnes ou des choses éloignées au pluriel. « That » et « this » sont des singuliers."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui montre le sac.",
+   "p": "I like *this bag.",
+   "i": "Cherche le mot qui montre un objet proche, au singulier.",
+   "e": "« this » est le démonstratif de ce qui est proche et au singulier : « this bag » veut dire « ce sac-ci »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui montre des oiseaux lointains.",
+   "p": "Look at *those birds!",
+   "i": "Cherche le mot qui montre des choses lointaines et nombreuses.",
+   "e": "« those » montre des choses éloignées au pluriel : « those birds » veut dire « ces oiseaux-là », au loin dans le ciel."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ is my brother, Omar. » (tu le présentes, il est à côté de toi)",
+   "r": [
+    "This"
+   ],
+   "i": "Pour présenter quelqu'un qui est près de toi, quel mot commence la phrase ?",
+   "e": "« This is my brother, Omar. » : pour présenter une personne proche, l'anglais dit « this is… » (comme « voici… » en français)."
+  },
+  {
+   "d": 2,
+   "q": "« ___ pizza here is delicious. »",
+   "o": [
+    "This",
+    "These"
+   ],
+   "io": {
+    "These": "« these » demande un pluriel."
+   },
+   "i": "La pizza est « here » (ici) et « pizza » est au singulier.",
+   "e": "« This pizza here is delicious. » : la pizza est proche et au singulier, donc « this ». « These » demanderait un pluriel comme « pizzas »."
+  },
+  {
+   "d": 2,
+   "q": "« Who are ___ boys over there? »",
+   "o": [
+    "those",
+    "that",
+    "these"
+   ],
+   "io": {
+    "that": "« that » est au singulier, mais « boys » est pluriel.",
+    "these": "« these » est pour ce qui est près."
+   },
+   "i": "« boys » est un pluriel, et les garçons sont « over there » (là-bas).",
+   "e": "« Who are those boys over there? » : loin + pluriel donne « those ». « That » est un singulier et « these » sert pour ce qui est proche."
+  },
+  {
+   "d": 2,
+   "q": "(La semaine où tu es) « I'm busy ___ week. »",
+   "o": [
+    "this",
+    "these"
+   ],
+   "io": {
+    "these": "« these » est un pluriel."
+   },
+   "i": "La semaine dont on parle est celle où tu es. « week » est-il un singulier ?",
+   "e": "« I'm busy this week. » : « this » + un nom singulier désigne le moment où l'on est (this week = cette semaine). « These » demanderait « weeks »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais, avec un démonstratif : « Ce sont mes livres. » (ils sont devant toi)",
+   "r": [
+    "These are my books"
+   ],
+   "i": "Les livres sont devant toi : proches et plusieurs. Il te faut aussi le verbe « be » au pluriel.",
+   "e": "« These are my books. » : proche + pluriel donne « these », et le verbe est « are » avec un pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Cette maison là-bas est grande. »",
+   "r": [
+    "That house is big",
+    "That house over there is big",
+    "That house is large",
+    "That house over there is large"
+   ],
+   "i": "La maison est loin et il n'y en a qu'une. Le mot « là-bas » peut se dire « over there ».",
+   "e": "« That house is big. » : loin + singulier donne « that ». On peut aussi préciser « over there » pour insister sur l'éloignement."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "these",
+    "apples",
+    "are",
+    "very",
+    "sweet"
+   ],
+   "fin": ".",
+   "i": "Le démonstratif ouvre la phrase. Demande-toi s'il va avec « apples » (pluriel).",
+   "e": "« These apples are very sweet. » : « apples » est un pluriel et les pommes sont proches, donc « these » ; le verbe est « are » comme avec tout pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "that",
+    "car",
+    "is",
+    "very",
+    "old"
+   ],
+   "fin": ".",
+   "i": "Le démonstratif commence, puis « car », puis le verbe « is », puis la description.",
+   "e": "« That car is very old. » : « that » montre une seule voiture, éloignée. Le groupe « that car » est le sujet, suivi de « is » et de l'adjectif."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "This shoes are new.",
+   "r": [
+    "These shoes are new."
+   ],
+   "i": "Regarde « shoes » : est-il au singulier ou au pluriel ? Le démonstratif doit s'accorder.",
+   "e": "« These shoes are new. » : « shoes » est un pluriel, donc « this » devient « these ». En français « ces » ne change pas : c'est le piège."
+  },
+  {
+   "d": 3,
+   "q": "(Tu montres des gens au loin) « ___ people are my teachers. »",
+   "o": [
+    "Those",
+    "That",
+    "These"
+   ],
+   "io": {
+    "That": "« people » est un pluriel : il faut « those ».",
+    "These": "Les gens sont loin de toi, donc pas « these »."
+   },
+   "i": "« people » désigne plusieurs personnes. Elles sont loin de toi.",
+   "e": "« Those people are my teachers. » : « people » est un pluriel et les gens sont loin, donc « those ». « That » ne s'emploie qu'avec un singulier."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase juste.",
+   "o": [
+    "Those children over there are my cousins.",
+    "That children over there are my cousins.",
+    "Those child over there are my cousins."
+   ],
+   "io": {
+    "That children over there are my cousins.": "« that » ne va pas avec un pluriel.",
+    "Those child over there are my cousins.": "« those » demande un nom pluriel : « children »."
+   },
+   "i": "Regarde le nom : « children » est le pluriel de « child ». Le démonstratif doit s'accorder.",
+   "e": "« Those children over there are my cousins. » : « children » est un pluriel et les enfants sont loin, donc « those ». « That » et « child » sont des singuliers."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ces pommes-ci sont rouges, mais ces poires-là sont vertes. »",
+   "r": [
+    "These apples are red, but those pears are green"
+   ],
+   "i": "Une chose proche (« -ci ») et une chose lointaine (« -là ») : un démonstratif de chaque sorte, tous deux au pluriel.",
+   "e": "« These apples are red, but those pears are green. » : « these » pour ce qui est proche, « those » pour ce qui est loin, tous deux au pluriel, avec le verbe « are »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le démonstratif mal accordé.",
+   "p": "I don't like *that shoes.",
+   "i": "Regarde le nom « shoes » : singulier ou pluriel ? Le démonstratif doit suivre.",
+   "e": "On dit « those shoes » : « shoes » est un pluriel, donc il faut « those » (ou « these »), pas « that » qui est un singulier."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "those",
+    "boys",
+    "over",
+    "there",
+    "are",
+    "my",
+    "cousins"
+   ],
+   "fin": ".",
+   "i": "Le démonstratif ouvre la phrase. Il va avec « boys », au pluriel, et les garçons sont loin.",
+   "e": "« Those boys over there are my cousins. » : loin + pluriel donne « those », et « are » est le verbe du pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Look at that cars over there!",
+   "r": [
+    "Look at those cars over there!"
+   ],
+   "i": "« cars » est-il singulier ou pluriel ? Quel démonstratif lointain va avec un pluriel ?",
+   "e": "« Look at those cars over there! » : « cars » est un pluriel et les voitures sont loin, donc « that » devient « those »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I love this flowers.",
+   "r": [
+    "I love these flowers."
+   ],
+   "i": "« flowers » finit par un -s : est-il singulier ou pluriel ?",
+   "e": "« I love these flowers. » : « flowers » est un pluriel, donc « this » devient « these ». Un démonstratif s'accorde en nombre avec son nom."
+  }
+ ],
+ "il-y-a": [
+  {
+   "d": 1,
+   "q": "« There ___ a cat in the garden. »",
+   "o": [
+    "is",
+    "are"
+   ],
+   "io": {
+    "are": "« there are » va avec un pluriel."
+   },
+   "i": "Un seul chat : lequel des deux verbes va avec un singulier ?",
+   "e": "« There is a cat in the garden. » : pour dire qu'une chose existe quelque part, on emploie « there is » devant un singulier. « There are » est pour un pluriel."
+  },
+  {
+   "d": 1,
+   "q": "« There ___ two cats in the garden. »",
+   "o": [
+    "are",
+    "is"
+   ],
+   "io": {
+    "is": "« there is » va avec un singulier."
+   },
+   "i": "Combien de chats ? Le verbe doit s'accorder avec ce nombre.",
+   "e": "« There are two cats in the garden. » : devant un pluriel, on emploie « there are ». Le verbe s'accorde avec ce qui vient après « there »."
+  },
+  {
+   "d": 1,
+   "q": "« There ___ milk in the fridge. »",
+   "o": [
+    "is",
+    "are"
+   ],
+   "io": {
+    "are": "« milk » n'est pas un pluriel."
+   },
+   "i": "Le lait ne se compte pas : traite-le comme un singulier.",
+   "e": "« There is milk in the fridge. » : devant un indénombrable comme « milk », on emploie « there is ». On ne peut pas mettre « are », car « milk » n'est pas un pluriel."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui disent « il y a ».",
+   "p": "*There *is a bank near here.",
+   "i": "Ces deux mots se suivent au début de la phrase et disent qu'une chose existe quelque part.",
+   "e": "« There is » veut dire « il y a » : « There is a bank near here » signifie « il y a une banque près d'ici ». On ne dit jamais « it has » pour cela."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui dit « il y a » dans le passé.",
+   "p": "I met him two years *ago.",
+   "i": "Cherche le petit mot qui se place après la durée et qui remplace « il y a » dans le passé.",
+   "e": "« ago » se place après la durée : « two years ago » veut dire « il y a deux ans ». Il ne faut pas dire « there is » pour une durée écoulée."
+  },
+  {
+   "d": 1,
+   "q": "« ___ a bakery in my street. » (deux mots)",
+   "r": [
+    "There is",
+    "There's"
+   ],
+   "i": "Une seule boulangerie : quels deux mots disent « il y a » devant un singulier ?",
+   "e": "« There is a bakery in my street. » : « there is » (ou « there's ») dit qu'une chose existe quelque part. « Bakery » est au singulier."
+  },
+  {
+   "d": 2,
+   "q": "« ___ a shop near here? »",
+   "o": [
+    "Is there",
+    "Are there",
+    "There is"
+   ],
+   "io": {
+    "Are there": "« are there » va avec un pluriel.",
+    "There is": "Pour une question, on inverse : « Is there… ? »."
+   },
+   "i": "C'est une question : le verbe se place avant « there ». Combien de magasins ?",
+   "e": "« Is there a shop near here? » : pour poser la question, on inverse « there is » en « is there ». Avec un singulier on emploie « is »."
+  },
+  {
+   "d": 2,
+   "q": "« There ___ any cars in the street. » (négation)",
+   "o": [
+    "aren't",
+    "isn't"
+   ],
+   "io": {
+    "isn't": "« cars » est un pluriel : « aren't »."
+   },
+   "i": "Dans la négation, on ajoute « n't » au verbe. « cars » est-il singulier ?",
+   "e": "« There aren't any cars in the street. » : « cars » est un pluriel, donc on utilise « are » (aren't) dans la négation de « there are »."
+  },
+  {
+   "d": 2,
+   "q": "Comment dit-on « il y a deux jours » (dans le passé) ?",
+   "o": [
+    "two days ago",
+    "there are two days",
+    "it has two days"
+   ],
+   "io": {
+    "there are two days": "« there are » dit l'existence, pas le temps passé.",
+    "it has two days": "« it has » ne veut jamais dire « il y a »."
+   },
+   "i": "Pour une durée écoulée, « il y a » se dit avec un seul petit mot placé après la durée.",
+   "e": "« two days ago » : pour une durée écoulée, « il y a » se dit « ago », placé après la durée. « There are » ne sert qu'à dire qu'une chose existe."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il y a un parc près de ma maison. »",
+   "r": [
+    "There is a park near my house",
+    "There's a park near my house",
+    "There is a park near my home",
+    "There's a park near my home"
+   ],
+   "i": "« Il y a » + une chose qui existe : quels deux mots, et quel verbe avec un seul parc ?",
+   "e": "« There is a park near my house. » : « there is » dit qu'une chose existe à un endroit. Piège : on ne traduit jamais « il y a » par « it has »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il y a trois chats dans le jardin. »",
+   "r": [
+    "There are three cats in the garden",
+    "There are three cats in the yard"
+   ],
+   "i": "Trois chats : quel verbe va avec un pluriel après « there » ?",
+   "e": "« There are three cats in the garden. » : devant un pluriel (three cats), on emploie « there are »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il n'y a pas de lait. »",
+   "r": [
+    "There isn't any milk",
+    "There is no milk",
+    "There's no milk"
+   ],
+   "i": "Le lait ne se compte pas. Tu peux dire « any » après « isn't » ou « no » après « is ».",
+   "e": "« There isn't any milk. » ou « There is no milk. » : la négation de « there is » est « there isn't » (avec « any ») ou « there is no »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "is",
+    "there",
+    "a",
+    "pharmacy",
+    "near",
+    "the",
+    "station"
+   ],
+   "fin": "?",
+   "i": "Une question commence par le verbe : place d'abord « is », puis « there ».",
+   "e": "« Is there a pharmacy near the station? » : pour poser la question, on inverse « there is » en « is there »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "there",
+    "are",
+    "two",
+    "eggs",
+    "in",
+    "the",
+    "box"
+   ],
+   "fin": ".",
+   "i": "Commence par « there are ». Combien d'œufs y a-t-il ?",
+   "e": "« There are two eggs in the box. » : « eggs » est un pluriel, donc « there are »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "There is two books on the desk.",
+   "r": [
+    "There are two books on the desk."
+   ],
+   "i": "Regarde « two books » : combien de livres ? Cela change le verbe.",
+   "e": "« There are two books on the desk. » : devant un pluriel, on emploie « there are » (pas « there is »)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It has a library near my school.",
+   "r": [
+    "There is a library near my school.",
+    "There's a library near my school."
+   ],
+   "i": "Pour dire qu'une chose existe quelque part, il y a deux mots qui commencent par « th ».",
+   "e": "« There is a park near my house. » : « il y a » (existence) se dit « there is ». Le piège est de dire « it has », calqué sur « il a »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "I arrived three days ago.",
+    "I arrived there are three days.",
+    "I arrived ago three days."
+   ],
+   "io": {
+    "I arrived there are three days.": "« there are » ne sert pas à dire « il y a » + durée passée.",
+    "I arrived ago three days.": "« ago » se place après la durée."
+   },
+   "i": "La durée est « three days ». Où place-t-on « ago » par rapport à la durée ?",
+   "e": "« I arrived three days ago. » : pour une durée écoulée, « il y a » se dit « ago », placé après la durée. « There are » ne sert qu'à dire qu'une chose existe."
+  },
+  {
+   "d": 3,
+   "q": "« There ___ no children in the pool. »",
+   "o": [
+    "are",
+    "is"
+   ],
+   "io": {
+    "is": "« children » est un pluriel."
+   },
+   "i": "« children » est un pluriel (de « child »). Choisis le verbe qui va avec.",
+   "e": "« There are no children in the pool. » : « children » est un pluriel, donc « there are no… ». « Is » serait pour un singulier."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Je l'ai rencontré il y a dix ans. »",
+   "r": [
+    "I met him ten years ago"
+   ],
+   "i": "Il y a dix ans : quel petit mot place-t-on après la durée ?",
+   "e": "« I met him ten years ago. » : pour une durée écoulée, « il y a » se dit « ago », placé après la durée (ici après « ten years »)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Y a-t-il des pommes sur la table ? »",
+   "r": [
+    "Are there any apples on the table",
+    "Are there apples on the table",
+    "Are there some apples on the table"
+   ],
+   "i": "Pose une question avec « there » : « apples » est un pluriel, donc quel verbe commence la question ?",
+   "e": "« Are there any apples on the table? » : pour poser la question, on inverse « there are » en « are there ». « Any » s'emploie dans les questions."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui doit changer.",
+   "p": "There *is three dogs in the park.",
+   "i": "Compte les chiens : « three dogs » est-il singulier ou pluriel ?",
+   "e": "« There are three dogs in the park. » : « dogs » est un pluriel, donc il faut « are » à la place de « is »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I arrived there are two days.",
+   "r": [
+    "I arrived two days ago."
+   ],
+   "i": "Le groupe « there are » ne dit pas le temps. Quel petit mot dit « il y a » avec une durée écoulée ?",
+   "e": "« I arrived two days ago. » : « there are » dit qu'une chose existe ; pour une durée écoulée, on place « ago » après la durée."
+  }
+ ],
+ "ou-est-le-chat": [
+  {
+   "d": 1,
+   "q": "« The cat is ___ the bed. » (sous le lit)",
+   "o": [
+    "under",
+    "on",
+    "in"
+   ],
+   "io": {
+    "on": "« on » veut dire « sur ».",
+    "in": "« in » veut dire « dans »."
+   },
+   "i": "Le chat est caché en dessous du lit : quel petit mot veut dire « sous » ?",
+   "e": "« The cat is under the bed. » : « under » veut dire « sous ». « On » veut dire « sur » et « in » veut dire « dans »."
+  },
+  {
+   "d": 1,
+   "q": "« My shoes are ___ the box. » (dedans)",
+   "o": [
+    "in",
+    "on",
+    "under"
+   ],
+   "io": {
+    "on": "« on » veut dire « sur ».",
+    "under": "« under » veut dire « sous »."
+   },
+   "i": "Les chaussures sont à l'intérieur de la boîte : quelle préposition veut dire « dedans » ?",
+   "e": "« My shoes are in the box. » : « in » veut dire « dans, à l'intérieur ». « On » serait « sur la boîte » et « under » serait « sous »."
+  },
+  {
+   "d": 1,
+   "q": "« The picture is ___ the wall. »",
+   "o": [
+    "on",
+    "in",
+    "at"
+   ],
+   "io": {
+    "in": "« in the wall » voudrait dire « à l'intérieur du mur ».",
+    "at": "« at » sert pour un point précis, pas pour un tableau."
+   },
+   "i": "Le tableau est accroché contre le mur, en contact avec sa surface : quelle préposition ?",
+   "e": "« The picture is on the wall. » : « on » s'emploie pour ce qui touche une surface (mur, table, plafond). « In the wall » voudrait dire à l'intérieur du mur."
+  },
+  {
+   "d": 1,
+   "q": "Touche la préposition de lieu.",
+   "p": "The cat is *on the sofa.",
+   "i": "Cherche le petit mot qui dit où est le chat par rapport au canapé.",
+   "e": "« on » : le chat est posé sur le canapé, donc en contact avec sa surface. « The cat is on the sofa » veut dire « le chat est sur le canapé »."
+  },
+  {
+   "d": 1,
+   "q": "Touche la préposition de lieu.",
+   "p": "The ball is *in the bag.",
+   "i": "Cherche le petit mot qui dit où est la balle par rapport au sac.",
+   "e": "« in » : la balle est à l'intérieur du sac. « The ball is in the bag » veut dire « la balle est dans le sac »."
+  },
+  {
+   "d": 1,
+   "q": "« The pen is ___ the desk. » (sous le bureau)",
+   "r": [
+    "under",
+    "beneath",
+    "underneath"
+   ],
+   "i": "Le stylo est tombé au-dessous du bureau : quel mot veut dire « sous » ?",
+   "e": "« The pen is under the desk. » : « under » veut dire « sous »."
+  },
+  {
+   "d": 2,
+   "q": "« The bank is ___ the station. » (en face de la gare)",
+   "o": [
+    "opposite",
+    "between",
+    "behind"
+   ],
+   "io": {
+    "between": "« between » veut dire « entre ».",
+    "behind": "« behind » veut dire « derrière »."
+   },
+   "i": "Les deux bâtiments se regardent de chaque côté de la rue : quel mot veut dire « en face de » ?",
+   "e": "« The bank is opposite the station. » : « opposite » veut dire « en face de ». « Between » veut dire « entre » et « behind » veut dire « derrière »."
+  },
+  {
+   "d": 2,
+   "q": "« I live ___ Paris. »",
+   "o": [
+    "in",
+    "at",
+    "on"
+   ],
+   "io": {
+    "at": "« at » sert pour un point précis.",
+    "on": "« on » sert pour une surface."
+   },
+   "i": "Pour une ville ou un pays, il y a une préposition qui veut dire « dans » ou « à l'intérieur de ».",
+   "e": "« I live in Paris. » : pour une ville ou un pays, on dit « in ». Piège : en français on dit « à Paris », mais en anglais on ne dit pas « at Paris »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Le chat est sous la table. »",
+   "r": [
+    "The cat is under the table",
+    "The cat is beneath the table",
+    "The cat is underneath the table"
+   ],
+   "i": "« sous » se dit avec un seul petit mot. Garde l'ordre sujet, verbe, lieu.",
+   "e": "« The cat is under the table. » : « under » veut dire « sous »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ma maison est en face de la gare. »",
+   "r": [
+    "My house is opposite the station",
+    "My house is across from the station",
+    "My house is across the street from the station",
+    "My home is opposite the station",
+    "My home is across from the station"
+   ],
+   "i": "« en face de » se dit avec un seul mot en anglais britannique, et « across from » en américain.",
+   "e": "« My house is opposite the station. » : « opposite » veut dire « en face de ». En américain, on dit aussi « across from the station »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "cat",
+    "is",
+    "behind",
+    "the",
+    "door"
+   ],
+   "fin": ".",
+   "i": "Place d'abord le sujet et le verbe, puis la préposition, puis le lieu.",
+   "e": "« The cat is behind the door. » : « behind » veut dire « derrière » et se place entre « is » et le lieu."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "is",
+    "at",
+    "the",
+    "bus stop"
+   ],
+   "fin": ".",
+   "i": "Pour un point précis, comme un arrêt de bus, quelle préposition ?",
+   "e": "« She is at the bus stop. » : « at » s'emploie pour un point précis, comme un arrêt de bus, une porte ou l'école."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I live at London.",
+   "r": [
+    "I live in London."
+   ],
+   "i": "Pour une ville, quelle préposition remplace « à » ?",
+   "e": "« I live in London. » : pour une ville ou un pays, on dit « in ». Le piège est de traduire « à Londres » par « at London »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The picture is in the wall.",
+   "r": [
+    "The picture is on the wall."
+   ],
+   "i": "Le tableau est-il à l'intérieur du mur ou contre sa surface ?",
+   "e": "« The picture is on the wall. » : un tableau est posé contre une surface, donc « on ». « In the wall » voudrait dire dans l'épaisseur du mur."
+  },
+  {
+   "d": 3,
+   "q": "(L'école est d'un côté du parc, la bibliothèque de l'autre) « The park is ___ the school and the library. »",
+   "o": [
+    "between",
+    "opposite",
+    "behind"
+   ],
+   "io": {
+    "opposite": "« opposite » veut dire « en face de ».",
+    "behind": "« behind » veut dire « derrière »."
+   },
+   "i": "Le parc a l'école d'un côté et la bibliothèque de l'autre : il est au milieu des deux.",
+   "e": "« The park is between the school and the library. » : « between » veut dire « entre » deux choses. « Opposite » voudrait dire « en face de »."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase juste.",
+   "o": [
+    "The bus stop is in front of the school.",
+    "The bus stop is before the school.",
+    "The bus stop is in front the school."
+   ],
+   "io": {
+    "The bus stop is before the school.": "« before » veut dire « avant », pas « devant » pour un lieu.",
+    "The bus stop is in front the school.": "Il manque « of » : « in front of »."
+   },
+   "i": "« Devant » (un lieu) s'écrit avec trois mots en anglais. « Before » a un autre sens.",
+   "e": "« The bus stop is in front of the school. » : « devant » (un lieu) se dit « in front of ». « Before » veut dire « avant », et on n'oublie pas « of »."
+  },
+  {
+   "d": 3,
+   "q": "« The lamp is ___ the table. » (au-dessus, sans la toucher)",
+   "o": [
+    "above",
+    "on",
+    "under"
+   ],
+   "io": {
+    "on": "« on » demande un contact avec la surface.",
+    "under": "« under » veut dire « sous »."
+   },
+   "i": "La lampe est en l'air, sans toucher la table : quel mot veut dire « au-dessus » sans contact ?",
+   "e": "« The lamp is above the table. » : « above » veut dire « au-dessus », sans contact. « On » demanderait un contact avec la table."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Le jardin est derrière la maison. »",
+   "r": [
+    "The garden is behind the house"
+   ],
+   "i": "« Derrière » se dit avec un seul petit mot qui commence par « b ».",
+   "e": "« The garden is behind the house. » : « behind » veut dire « derrière »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Le téléphone est dans la voiture. »",
+   "r": [
+    "The phone is in the car",
+    "The telephone is in the car",
+    "The mobile phone is in the car",
+    "The cell phone is in the car",
+    "The mobile is in the car"
+   ],
+   "i": "Le téléphone est à l'intérieur de la voiture : quelle préposition veut dire « dans » ?",
+   "e": "« The phone is in the car. » : « in » s'emploie pour ce qui est à l'intérieur d'un contenant ou d'un véhicule."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux prépositions de lieu.",
+   "p": "The cat is *under the chair and the dog is *behind the door.",
+   "i": "Cherche deux prépositions : une pour la chaise (« sous ») et une pour la porte (« derrière »).",
+   "e": "« under » (sous la chaise) et « behind » (derrière la porte) sont les deux prépositions de lieu qui disent où se trouvent le chat et le chien."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The car is before the house.",
+   "r": [
+    "The car is in front of the house."
+   ],
+   "i": "« Before » veut dire « avant » en anglais. Quelle expression veut dire « devant » pour un lieu ?",
+   "e": "« The car is in front of the house. » : « devant » (lieu) se dit « in front of ». « Before » veut dire « avant », donc il ne va pas ici."
+  }
+ ],
+ "mots-questions": [
+  {
+   "d": 1,
+   "q": "« ___ do you live? — In Lyon. »",
+   "o": [
+    "Where",
+    "What",
+    "Why"
+   ],
+   "io": {
+    "What": "« what » demande une chose.",
+    "Why": "« why » demande une raison."
+   },
+   "i": "La réponse (« In Lyon ») donne un lieu : quel mot-question demande un lieu ?",
+   "e": "« Where do you live? » : « where » demande un lieu (où). « What » demande une chose et « why » demande une raison."
+  },
+  {
+   "d": 1,
+   "q": "« ___ is that boy? — He's my brother. »",
+   "o": [
+    "Who",
+    "What",
+    "Where"
+   ],
+   "io": {
+    "What": "« what » demande une chose.",
+    "Where": "« where » demande un lieu."
+   },
+   "i": "La réponse (« He's my brother ») dit qui est le garçon : quel mot-question demande une personne ?",
+   "e": "« Who is that boy? » : « who » demande qui est quelqu'un. « What » demande une chose et « where » un lieu."
+  },
+  {
+   "d": 1,
+   "q": "« ___ is the match? — At five o'clock. »",
+   "o": [
+    "When",
+    "Why",
+    "Who"
+   ],
+   "io": {
+    "Why": "« why » demande une raison.",
+    "Who": "« who » demande une personne."
+   },
+   "i": "La réponse (« At five o'clock ») donne un moment : quel mot-question demande l'heure ou la date ?",
+   "e": "« When is the match? » : « when » demande le moment. « Why » demande la raison et « who » une personne."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot-question.",
+   "p": "*Where do you live?",
+   "i": "Le mot-question se place toujours au tout début de la phrase.",
+   "e": "« Where » est le mot-question : il demande le lieu et se place en tête, avant l'auxiliaire « do »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot-question.",
+   "p": "*Why are you late?",
+   "i": "Le mot-question se place au début ; celui-ci demande la raison.",
+   "e": "« Why » est le mot-question : il demande la raison (pourquoi) et se place en tête de la question."
+  },
+  {
+   "d": 1,
+   "q": "« ___ is the girl in the red dress? — She's Maryam. » (un mot)",
+   "r": [
+    "Who"
+   ],
+   "i": "La réponse (« She's Maryam ») donne le nom d'une personne : quel mot-question la demande ?",
+   "e": "« Who is the girl in the red dress? » : « who » demande qui est une personne."
+  },
+  {
+   "d": 2,
+   "q": "« ___ are you sad? — Because I lost my phone. »",
+   "o": [
+    "Why",
+    "How",
+    "When"
+   ],
+   "io": {
+    "How": "« how » demande la manière.",
+    "When": "« when » demande le moment."
+   },
+   "i": "La réponse commence par « because » : quel mot-question demande la raison ?",
+   "e": "« Why are you sad? » : « why » demande la raison (pourquoi) et on répond souvent par « because ». « How » demande la manière."
+  },
+  {
+   "d": 2,
+   "q": "« How ___ water do you drink? »",
+   "o": [
+    "much",
+    "many"
+   ],
+   "io": {
+    "many": "« many » avec un pluriel dénombrable."
+   },
+   "i": "L'eau se compte-t-elle ? Choisis le mot qui va avec ce qu'on ne compte pas.",
+   "e": "« How much water do you drink? » : « how much » s'emploie avec ce qu'on ne compte pas, comme l'eau. « How many » est pour ce qu'on compte."
+  },
+  {
+   "d": 2,
+   "q": "« ___ old are you? »",
+   "o": [
+    "How",
+    "What",
+    "Which"
+   ],
+   "io": {
+    "What": "« what old » n'existe pas.",
+    "Which": "« which » demande un choix."
+   },
+   "i": "Pour demander l'âge, quel mot-question s'associe à « old » ?",
+   "e": "« How old are you? » : « how » forme des questions composées, ici « how old » (quel âge). « What old » n'existe pas."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Où travaille ta mère ? »",
+   "r": [
+    "Where does your mother work",
+    "Where does your mum work",
+    "Where does your mom work"
+   ],
+   "i": "Mot-question, puis l'auxiliaire « does » (ta mère = she), puis le sujet, puis le verbe à la base.",
+   "e": "« Where does your mother work? » : après le mot-question vient l'auxiliaire « does » (avec she), puis le sujet, puis le verbe à la base « work » sans -s."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Pourquoi es-tu triste ? »",
+   "r": [
+    "Why are you sad",
+    "Why are you unhappy"
+   ],
+   "i": "Avec « be », pas besoin de « do » : le verbe « be » se place après le mot-question, puis vient le sujet.",
+   "e": "« Why are you sad? » : avec le verbe « be », la question est mot-question + « be » + sujet."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "what",
+    "do",
+    "you",
+    "eat",
+    "for",
+    "breakfast"
+   ],
+   "fin": "?",
+   "i": "Une question commence par le mot-question, puis l'auxiliaire, puis le sujet, puis le verbe.",
+   "e": "« What do you eat for breakfast? » : mot-question (what) + auxiliaire (do) + sujet (you) + verbe à la base (eat)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "how",
+    "many",
+    "brothers",
+    "do",
+    "you",
+    "have"
+   ],
+   "fin": "?",
+   "i": "Les frères se comptent : quelle expression de « combien » commence la question ?",
+   "e": "« How many brothers do you have? » : « how many » s'emploie avec ce qu'on compte, puis l'auxiliaire « do », le sujet et le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Where you live?",
+   "r": [
+    "Where do you live?"
+   ],
+   "i": "Après le mot-question, il manque un petit auxiliaire avant le sujet.",
+   "e": "« Where do you live? » : en français on peut dire « tu habites où ? », mais en anglais il faut l'auxiliaire « do » juste après le mot-question."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "How much apples do you want?",
+   "r": [
+    "How many apples do you want?"
+   ],
+   "i": "« apples » se compte : quelle expression de « combien » lui correspond ?",
+   "e": "« How many apples do you want? » : les pommes se comptent, donc « how many ». « How much » est pour ce qu'on ne compte pas, comme l'eau."
+  },
+  {
+   "d": 3,
+   "q": "« ___ is the film? — Two hours. »",
+   "o": [
+    "How long",
+    "How many",
+    "How much"
+   ],
+   "io": {
+    "How many": "« how many » compte des choses.",
+    "How much": "« how much » pour un indénombrable."
+   },
+   "i": "La réponse (« Two hours ») donne une durée : quelle expression demande combien de temps ?",
+   "e": "« How long is the film? » : « how long » demande la durée. « How many » compte des objets et « how much » une quantité qu'on ne compte pas."
+  },
+  {
+   "d": 3,
+   "q": "« ___ pen is this? — It's Maryam's. »",
+   "o": [
+    "Whose",
+    "Who",
+    "Which"
+   ],
+   "io": {
+    "Who": "« who » demande qui.",
+    "Which": "« which » demande lequel."
+   },
+   "i": "La réponse (« It's Maryam's ») dit à qui est le stylo : quel mot-question demande l'appartenance ?",
+   "e": "« Whose pen is this? » : « whose » demande à qui appartient quelque chose. « Who » demande une personne et « which » demande un choix."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Combien de livres as-tu ? »",
+   "r": [
+    "How many books do you have",
+    "How many books have you got"
+   ],
+   "i": "Les livres se comptent : choisis l'expression de « combien » pour un pluriel.",
+   "e": "« How many books do you have? » : « how many » + pluriel, puis l'auxiliaire « do », le sujet et le verbe."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Qui parle espagnol ? »",
+   "r": [
+    "Who speaks Spanish"
+   ],
+   "i": "Quand « qui » est le sujet de la phrase, la question ressemble à une phrase affirmative.",
+   "e": "« Who speaks Spanish? » : quand « who » est le sujet, pas de « does » : le verbe prend directement le -s de he/she/it (ici « speaks »)."
+  },
+  {
+   "d": 3,
+   "q": "Touche le moteur de la question.",
+   "p": "When *does Emma finish school?",
+   "i": "Cherche le petit verbe auxiliaire qui aide à poser la question.",
+   "e": "« does » est l'auxiliaire de la question : avec « Emma » (= she), on emploie « does », et le verbe « finish » reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "What time you finish school?",
+   "r": [
+    "What time do you finish school?"
+   ],
+   "i": "Après « what time », il manque un petit auxiliaire avant le sujet.",
+   "e": "« What time do you finish school? » : après le mot-question, on met l'auxiliaire « do » avant le sujet « you ». En français on peut dire « tu finis à quelle heure ? » sans rien ajouter."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "How many sugar do you want?",
+   "r": [
+    "How much sugar do you want?"
+   ],
+   "i": "Le sucre se compte-t-il ? Choisis l'expression de « combien » qui va avec.",
+   "e": "« How much sugar do you want? » : le sucre ne se compte pas, donc « how much ». « How many » est pour ce qu'on compte, comme des pommes."
+  }
+ ],
+ "nombres-dates": [
+  {
+   "d": 1,
+   "q": "Comment dit-on « 2nd » ?",
+   "o": [
+    "second",
+    "two",
+    "twice"
+   ],
+   "io": {
+    "two": "« two » est le nombre.",
+    "twice": "« twice » veut dire « deux fois »."
+   },
+   "i": "C'est le mot de rang qui vient juste après « first ».",
+   "e": "« second » : l'ordinal de 2 (le rang). « Two » est le nombre de quantité et « twice » veut dire « deux fois »."
+  },
+  {
+   "d": 1,
+   "q": "Comment dit-on « 1st » ?",
+   "o": [
+    "first",
+    "one",
+    "oneth"
+   ],
+   "io": {
+    "one": "« one » est le nombre.",
+    "oneth": "Cette forme n'existe pas."
+   },
+   "i": "L'ordinal de 1 est un mot irrégulier, pas formé sur « one ».",
+   "e": "« first » : l'ordinal de 1 est irrégulier, il ne se forme pas sur « one ». « Oneth » n'existe pas."
+  },
+  {
+   "d": 1,
+   "q": "« It's ___. » (7 h pile)",
+   "o": [
+    "seven o'clock",
+    "seven past",
+    "half seven"
+   ],
+   "io": {
+    "seven past": "« past » demande des minutes.",
+    "half seven": "« half » = et demie."
+   },
+   "i": "Pour l'heure pile, l'anglais emploie « o'clock » après le nombre.",
+   "e": "« It's seven o'clock. » : pour l'heure pile, on dit le nombre suivi de « o'clock ». « Past » demande des minutes et « half » veut dire « et demie »."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'ordinal.",
+   "p": "My birthday is on the *fifth of May.",
+   "i": "Cherche le mot de rang qui désigne le jour du mois.",
+   "e": "« fifth » est un ordinal : dans une date, le jour s'exprime avec un nombre de rang (the fifth of May = le 5 mai)."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui veut dire « demie ».",
+   "p": "It's *half past five.",
+   "i": "Le mot cherché veut dire « la moitié » et se place avant « past ».",
+   "e": "« half » veut dire « la moitié » : « half past five » signifie « cinq heures et demie »."
+  },
+  {
+   "d": 1,
+   "q": "Écris en lettres l'ordinal de 5.",
+   "r": [
+    "fifth"
+   ],
+   "i": "Ajoute -th à la fin, mais attention : la fin de « five » change avant.",
+   "e": "« fifth » : on forme l'ordinal avec -th, mais « five » change : son -ve devient -f (fifth)."
+  },
+  {
+   "d": 2,
+   "q": "« It's a quarter ___ six. » (6 h 15)",
+   "o": [
+    "past",
+    "to",
+    "at"
+   ],
+   "io": {
+    "to": "« to » sert pour la seconde moitié de l'heure.",
+    "at": "« at » ne s'emploie pas pour dire l'heure avec un quart."
+   },
+   "i": "6 h 15 : le quart est passé depuis six heures. Quel mot place-t-on avant « six » ?",
+   "e": "« It's a quarter past six. » : dans la première moitié de l'heure, on emploie « past ». « To » sert pour la seconde moitié."
+  },
+  {
+   "d": 2,
+   "q": "« It's ten ___ eight. » (7 h 50)",
+   "o": [
+    "to",
+    "past",
+    "at"
+   ],
+   "io": {
+    "past": "« past » pour la première moitié.",
+    "at": "« at » ne s'emploie pas ici."
+   },
+   "i": "7 h 50 : il manque dix minutes pour huit heures. Quel mot dit « avant » ?",
+   "e": "« It's ten to eight. » : dans la seconde moitié de l'heure, on compte ce qui reste avec « to ». « Past » est pour la première moitié."
+  },
+  {
+   "d": 2,
+   "q": "Comment lit-on « 12th » ?",
+   "o": [
+    "twelfth",
+    "twelveth",
+    "twelve"
+   ],
+   "io": {
+    "twelveth": "Cette forme n'existe pas.",
+    "twelve": "« twelve » est le nombre."
+   },
+   "i": "Le -ve de « twelve » change avant le -th.",
+   "e": "« twelfth » : l'ordinal de 12 est irrégulier, le -ve de « twelve » devient -f avant le -th. « Twelveth » n'existe pas."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il est 9 h 30. »",
+   "r": [
+    "It's half past nine",
+    "It is half past nine",
+    "It's nine thirty",
+    "It is nine thirty",
+    "It's half nine",
+    "It is half nine"
+   ],
+   "i": "« 9 h 30 » : un mot dit « la moitié » et un autre « passé ».",
+   "e": "« It's half past nine. » : « et demie » se dit « half past » + l'heure. Le piège est de dire « nine and half »."
+  },
+  {
+   "d": 2,
+   "q": "Écris en lettres : « 22nd »",
+   "r": [
+    "twenty-second",
+    "twenty second"
+   ],
+   "i": "Dizaine d'abord (vingt), puis l'ordinal de 2, séparés par un tiret.",
+   "e": "« twenty-second » : pour un nombre composé, la dizaine reste un nombre et seule l'unité devient ordinale (twenty + second)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it's",
+    "a quarter",
+    "past",
+    "six"
+   ],
+   "fin": ".",
+   "i": "L'heure commence par « it's », puis le quart, puis « past », puis l'heure.",
+   "e": "« It's a quarter past six. » : 6 h 15 se dit « a quarter past six » (« et quart »)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my",
+    "birthday",
+    "is",
+    "on",
+    "the",
+    "third",
+    "of",
+    "May"
+   ],
+   "fin": ".",
+   "i": "Dans une date, le jour est un nombre de rang, avec « the » et « of ».",
+   "e": "« My birthday is on the third of May. » : on emploie l'ordinal « third » (pas « three ») avec « the » et « of », et « on » devant la date."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It's the three of May.",
+   "r": [
+    "It's the third of May.",
+    "It is the third of May.",
+    "It's May the third.",
+    "It is May the third."
+   ],
+   "i": "Dans une date, le jour s'exprime avec un mot de rang, pas avec un nombre.",
+   "e": "« It's the third of May. » : dans une date, on emploie l'ordinal « third » et non le nombre « three »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It's seven and half.",
+   "r": [
+    "It's half past seven.",
+    "It is half past seven."
+   ],
+   "i": "Pour « et demie », l'anglais a un mot spécial placé avant « past ».",
+   "e": "« It's half past seven. » : « sept heures et demie » se dit « half past seven », pas « seven and half »."
+  },
+  {
+   "d": 3,
+   "q": "Comment lit-on le 21 mars ?",
+   "o": [
+    "the twenty-first of March",
+    "the twenty-one of March",
+    "the twentieth-one of March"
+   ],
+   "io": {
+    "the twenty-one of March": "Il faut un ordinal.",
+    "the twentieth-one of March": "Cette forme n'existe pas."
+   },
+   "i": "Les nombres terminés par 1 gardent un ordinal particulier, même dans un nombre composé.",
+   "e": "« the twenty-first of March » : dans un nombre en 1, l'ordinal est « first ». Le piège est de dire « twenty-one » comme le nombre, ou d'inventer « oneth »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle heure est-il : 3 h 40 ?",
+   "o": [
+    "It's twenty to four.",
+    "It's twenty past three.",
+    "It's forty to three."
+   ],
+   "io": {
+    "It's twenty past three.": "« twenty past three » = 3 h 20.",
+    "It's forty to three.": "Après la demie, on compte ce qui reste avant l'heure suivante."
+   },
+   "i": "3 h 40 : il manque vingt minutes avant quatre heures. Quel mot dit « avant » ?",
+   "e": "« It's twenty to four. » : dans la seconde moitié de l'heure, on dit ce qui manque avec « to », puis l'heure suivante (four)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « C'est le 1er janvier. »",
+   "r": [
+    "It's the first of January",
+    "It is the first of January",
+    "It's January the first",
+    "It is January the first",
+    "It's January 1st",
+    "It is January 1st"
+   ],
+   "i": "Un jour du mois est un rang : quel ordinal pour 1 ?",
+   "e": "« It's the first of January. » : dans une date, on emploie l'ordinal « first » (1er). On peut aussi dire « January the first »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il est 6 h 45. »",
+   "r": [
+    "It's a quarter to seven",
+    "It is a quarter to seven",
+    "It's quarter to seven",
+    "It is quarter to seven",
+    "It's six forty-five",
+    "It is six forty-five",
+    "It's six forty five",
+    "It is six forty five"
+   ],
+   "i": "Quand il reste un quart d'heure avant l'heure suivante, on emploie « to ».",
+   "e": "« It's a quarter to seven. » : 6 h 45 = sept heures moins le quart, donc « a quarter to seven »."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux ordinaux.",
+   "p": "My class is on the *second floor, and my room is on the *twelfth floor.",
+   "i": "Un étage se compte aussi en rang : cherche les deux ordinaux.",
+   "e": "« second » (2e) et « twelfth » (12e) sont des ordinaux : ils donnent le rang des étages."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It's the twenty-oneth of May.",
+   "r": [
+    "It's the twenty-first of May.",
+    "It is the twenty-first of May.",
+    "It's the twenty first of May.",
+    "It is the twenty first of May."
+   ],
+   "i": "Les nombres terminés par 1 gardent un ordinal particulier.",
+   "e": "« It's the twenty-first of May. » : les nombres en 1 gardent « first » : twenty-first, jamais « twenty-oneth »."
+  }
+ ]
+}

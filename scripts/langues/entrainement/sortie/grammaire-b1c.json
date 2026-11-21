@@ -1,0 +1,1881 @@
+{
+ "petite-question": [
+  {
+   "d": 1,
+   "q": "Your brother is a doctor, ___?",
+   "o": [
+    "isn't he",
+    "is he",
+    "doesn't he"
+   ],
+   "io": {
+    "is he": "La phrase est affirmative : le tag doit être négatif.",
+    "doesn't he": "La phrase contient « is » : le tag reprend « is », pas « does »."
+   },
+   "i": "Phrase affirmative, tag négatif. Quel est l'auxiliaire de la phrase ?",
+   "e": "« isn't he » : la phrase est affirmative avec « is », donc le tag est négatif (« isn't ») et reprend le pronom « he »."
+  },
+  {
+   "d": 1,
+   "q": "They aren't ready, ___?",
+   "o": [
+    "are they",
+    "aren't they",
+    "do they"
+   ],
+   "io": {
+    "aren't they": "La phrase est déjà négative : le tag doit être affirmatif.",
+    "do they": "La phrase contient « are » : le tag reprend « are »."
+   },
+   "i": "La phrase est négative. Que devient le tag ?",
+   "e": "« are they » : phrase négative, donc tag affirmatif, avec l'auxiliaire « are » et le pronom « they »."
+  },
+  {
+   "d": 1,
+   "q": "She can swim, ___?",
+   "o": [
+    "can't she",
+    "can she",
+    "doesn't she"
+   ],
+   "io": {
+    "can she": "La phrase est affirmative : le tag doit être négatif.",
+    "doesn't she": "Le verbe de la phrase est « can » : le tag le reprend."
+   },
+   "i": "Le tag reprend l'auxiliaire modal de la phrase.",
+   "e": "« can't she » : phrase affirmative avec « can », donc tag négatif « can't » + « she »."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots du tag.",
+   "p": "Omar is tall, *isn't *he?",
+   "i": "Le tag est la petite question collée à la fin, après la virgule.",
+   "e": "« isn't he » est le tag : auxiliaire négatif + pronom, après une phrase affirmative."
+  },
+  {
+   "d": 1,
+   "q": "Let's start now, ___?",
+   "o": [
+    "shall we",
+    "will we",
+    "don't we"
+   ],
+   "io": {
+    "will we": "Après « Let's », on n'emploie pas « will ».",
+    "don't we": "« Let's » a son propre tag, qui n'est pas « don't »."
+   },
+   "i": "C'est un cas à retenir par cœur : « Let's… » a son propre tag.",
+   "e": "« shall we » : après « Let's… », le tag est toujours « shall we? », quel que soit le verbe."
+  },
+  {
+   "d": 1,
+   "q": "Complète le tag : « Maryam likes tea, ___ she? »",
+   "r": [
+    "doesn't"
+   ],
+   "i": "Pas d'auxiliaire dans la phrase : on appelle do ou does. Le sujet est « she ».",
+   "e": "« doesn't » : « likes » est au présent simple à la 3e personne, donc le tag est « doesn't she? » (phrase affirmative, tag négatif)."
+  },
+  {
+   "d": 2,
+   "q": "You didn't see Léa, ___?",
+   "o": [
+    "did you",
+    "didn't you",
+    "do you"
+   ],
+   "io": {
+    "didn't you": "La phrase est négative : le tag doit être affirmatif.",
+    "do you": "La phrase est au passé (« didn't ») : le tag reste au passé."
+   },
+   "i": "Phrase négative au passé : quel tag, et à quel temps ?",
+   "e": "« did you » : phrase négative, donc tag affirmatif, et le temps (prétérit) est repris par « did »."
+  },
+  {
+   "d": 2,
+   "q": "Complète le tag : « We have finished, ___ we? »",
+   "r": [
+    "haven't"
+   ],
+   "i": "L'auxiliaire est déjà dans la phrase : lequel ?",
+   "e": "« haven't » : l'auxiliaire de la phrase est « have » (present perfect), le tag négatif est donc « haven't we? »."
+  },
+  {
+   "d": 2,
+   "q": "Complète le tag : « Tom lives in Nantes, ___ he? »",
+   "r": [
+    "doesn't"
+   ],
+   "i": "Verbe au présent simple, sujet « he » : quel moteur ?",
+   "e": "« doesn't » : sans auxiliaire dans la phrase, on emploie « does » ; la phrase est affirmative, le tag est négatif."
+  },
+  {
+   "d": 2,
+   "q": "Écris le tag complet : « You aren't tired, ___? »",
+   "r": [
+    "are you"
+   ],
+   "i": "Phrase négative : le tag est affirmatif. Deux mots.",
+   "e": "« are you » : l'auxiliaire est « are », la phrase est négative, donc le tag est affirmatif."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour confirmer l'information.",
+   "m": [
+    "you",
+    "speak",
+    "English,",
+    "don't",
+    "you"
+   ],
+   "fin": "?",
+   "i": "Phrase affirmative d'abord, puis le tag négatif.",
+   "e": "« You speak English, don't you? » : phrase affirmative au présent simple, tag « don't you ». Le tag reprend le pronom de la phrase."
+  },
+  {
+   "d": 2,
+   "q": "Close the door, ___?",
+   "o": [
+    "will you",
+    "do you",
+    "shall we"
+   ],
+   "io": {
+    "do you": "Après un ordre, on n'emploie pas « do ».",
+    "shall we": "« shall we » va avec « Let's », pas avec un ordre."
+   },
+   "i": "C'est un ordre (impératif). Un tag particulier existe.",
+   "e": "« will you » : après un impératif, le tag est « will you? » ; il adoucit l'ordre."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur dans le tag.",
+   "f": "Inès can't drive, can't she?",
+   "r": [
+    "Inès can't drive, can she?"
+   ],
+   "i": "La phrase est négative : le tag doit donc faire le contraire.",
+   "e": "« Inès can't drive, can she? » : la phrase est négative, donc le tag est affirmatif et reprend « can » et le pronom « she »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il habite ici, n'est-ce pas ? »",
+   "r": [
+    "He lives here, doesn't he?",
+    "He's living here, isn't he?",
+    "He is living here, isn't he?"
+   ],
+   "i": "Présent simple sans auxiliaire : do ou does dans le tag.",
+   "e": "« He lives here, doesn't he? » : phrase affirmative au présent simple, tag négatif avec « does » et « he »."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots du tag.",
+   "p": "Sarah cooked dinner, *didn't *she?",
+   "i": "Le tag reprend le temps du verbe : ici, le passé.",
+   "e": "« didn't she » est le tag : « cooked » est au prétérit, donc « did », en négatif, avec « she »."
+  },
+  {
+   "d": 3,
+   "q": "I'm right, ___?",
+   "o": [
+    "aren't I",
+    "amn't I",
+    "don't I"
+   ],
+   "io": {
+    "amn't I": "« amn't » n'existe pas dans l'anglais standard.",
+    "don't I": "La phrase contient « am », pas « do »."
+   },
+   "i": "Après « I am », le tag a une forme irrégulière.",
+   "e": "« aren't I » : après « I am… », le tag négatif est « aren't I? » (et non « amn't I »)."
+  },
+  {
+   "d": 3,
+   "q": "You've never been to Rome, ___?",
+   "o": [
+    "have you",
+    "haven't you",
+    "did you"
+   ],
+   "io": {
+    "haven't you": "« never » rend déjà la phrase négative : le tag doit être affirmatif.",
+    "did you": "La phrase est au present perfect (« have ») : le tag reprend « have »."
+   },
+   "i": "Le mot « never » donne un sens négatif à la phrase.",
+   "e": "« have you » : avec « never », la phrase est négative, donc le tag est affirmatif, avec l'auxiliaire « have »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "didn't",
+    "call",
+    "you,",
+    "did",
+    "she"
+   ],
+   "fin": "?",
+   "i": "Phrase négative au passé, puis tag affirmatif.",
+   "e": "« She didn't call you, did she? » : phrase négative, donc tag affirmatif avec « did »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Let's go to the beach, will we?",
+   "r": [
+    "Let's go to the beach, shall we?"
+   ],
+   "i": "Après « Let's », le tag ne change jamais.",
+   "e": "« Let's go to the beach, shall we? » : après « Let's… », le tag est toujours « shall we? », jamais « will we? »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur dans le tag.",
+   "f": "They live in Lyon, aren't they?",
+   "r": [
+    "They live in Lyon, don't they?"
+   ],
+   "i": "Le verbe « live » est au présent simple, sans auxiliaire dans la phrase.",
+   "e": "« They live in Lyon, don't they? » : sans auxiliaire, le tag emploie « do » (ici « don't »), pas « are »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous ne sommes pas en retard, n'est-ce pas ? »",
+   "r": [
+    "We aren't late, are we?",
+    "We're not late, are we?",
+    "We are not late, are we?"
+   ],
+   "i": "Phrase négative, tag affirmatif.",
+   "e": "« We aren't late, are we? » : phrase négative avec « are », donc tag affirmatif « are we? »."
+  }
+ ],
+ "question-polie": [
+  {
+   "d": 1,
+   "q": "Could you tell me where the post office ___?",
+   "o": [
+    "is",
+    "is it",
+    "does"
+   ],
+   "io": {
+    "is it": "Dans une question indirecte, il n'y a pas de forme de question : « it » est de trop.",
+    "does": "« does » n'a pas sa place dans une question indirecte."
+   },
+   "i": "Après le mot-question, on met le sujet puis le verbe, comme dans une phrase.",
+   "e": "« is » : « Could you tell me where the post office is? » Le sujet « the post office » passe avant le verbe « is »."
+  },
+  {
+   "d": 1,
+   "q": "Do you know what time the shop ___?",
+   "o": [
+    "opens",
+    "does open",
+    "open"
+   ],
+   "io": {
+    "does open": "Plus de « does » dans une question indirecte.",
+    "open": "Avec « the shop » (= it), le verbe prend un -s."
+   },
+   "i": "Plus de moteur « does » : le verbe reprend son -s.",
+   "e": "« opens » : dans une question indirecte, on n'emploie plus « does » ; le verbe est conjugué, avec son -s à la 3e personne."
+  },
+  {
+   "d": 1,
+   "q": "Can you tell me ___ the bus is late?",
+   "o": [
+    "if",
+    "is",
+    "do"
+   ],
+   "io": {
+    "is": "Pour une question oui ou non, il faut un petit mot de liaison.",
+    "do": "« do » ne sert plus dans une question indirecte."
+   },
+   "i": "Question fermée (oui ou non) : quel petit mot veut dire « si » ?",
+   "e": "« if » : pour une question fermée, on ajoute « if » (ou « whether ») : « Can you tell me if the bus is late? »"
+  },
+  {
+   "d": 1,
+   "q": "Touche le sujet et le verbe de la question indirecte.",
+   "p": "Do you know where *Yusuf *works?",
+   "i": "Après « where », l'ordre est celui d'une phrase : sujet puis verbe.",
+   "e": "« Yusuf works » : après le mot-question, on met le sujet (« Yusuf ») puis le verbe (« works »), comme dans une affirmation."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Could you tell me what time it ___? »",
+   "r": [
+    "is"
+   ],
+   "i": "Dans la question indirecte, le sujet « it » passe avant le verbe : quel verbe vient en dernier ?",
+   "e": "« is » : « what time it is » suit l'ordre sujet + verbe, sans inversion, comme dans une phrase affirmative."
+  },
+  {
+   "d": 1,
+   "q": "I wonder ___ it will rain tomorrow.",
+   "o": [
+    "if",
+    "does",
+    "do"
+   ],
+   "io": {
+    "does": "« does » n'a pas sa place dans une question indirecte.",
+    "do": "« do » n'a pas sa place dans une question indirecte."
+   },
+   "i": "Question oui ou non : « je me demande si… ».",
+   "e": "« if » : « I wonder if it will rain tomorrow. » On garde l'ordre sujet + verbe après « if »."
+  },
+  {
+   "d": 2,
+   "q": "Can you tell me how much ___?",
+   "o": [
+    "this costs",
+    "does this cost",
+    "costs this"
+   ],
+   "io": {
+    "does this cost": "Plus d'inversion ni de « does » dans la question indirecte.",
+    "costs this": "Le sujet « this » doit venir avant le verbe."
+   },
+   "i": "Sujet d'abord, puis le verbe avec son -s.",
+   "e": "« this costs » : après « how much », on met le sujet puis le verbe conjugué, sans « does »."
+  },
+  {
+   "d": 2,
+   "q": "Rends polie : « Where does she live? » → « Do you know where she ___? »",
+   "r": [
+    "lives"
+   ],
+   "i": "Le « does » disparaît : le verbe reprend son -s.",
+   "e": "« lives » : dans la question indirecte, « does » disparaît et le verbe prend le -s de « she »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour demander poliment.",
+   "m": [
+    "could",
+    "you",
+    "tell",
+    "me",
+    "where",
+    "the toilets",
+    "are"
+   ],
+   "fin": "?",
+   "i": "Formule polie, mot-question, puis sujet et verbe.",
+   "e": "« Could you tell me where the toilets are? » : après « where », le sujet « the toilets » précède le verbe « are »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Could you tell me how far is the airport?",
+   "r": [
+    "Could you tell me how far the airport is?"
+   ],
+   "i": "Après « how far », mets d'abord le sujet.",
+   "e": "« Could you tell me how far the airport is? » : dans une question indirecte, le sujet passe avant le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Savez-vous où habite Omar ? »",
+   "r": [
+    "Do you know where Omar lives?",
+    "Do you know where Omar is living?"
+   ],
+   "i": "Commence par « Do you know » ; ensuite, ordre d'une phrase.",
+   "e": "« Do you know where Omar lives? » : après « where », sujet « Omar » puis verbe « lives », sans « does »."
+  },
+  {
+   "d": 2,
+   "q": "Could you tell me ___ the library closes?",
+   "o": [
+    "when",
+    "when does",
+    "when do"
+   ],
+   "io": {
+    "when does": "Plus de « does » dans une question indirecte.",
+    "when do": "Plus de « do » dans une question indirecte."
+   },
+   "i": "Le verbe « closes » est déjà conjugué : aucun moteur n'est nécessaire.",
+   "e": "« when » : « Could you tell me when the library closes? » Pas de « does », car le verbe « closes » porte déjà le -s."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Do you know ___ Lucas is at home? » (oui ou non)",
+   "r": [
+    "if",
+    "whether"
+   ],
+   "i": "Deux petits mots possibles pour « si ».",
+   "e": "« if » (ou « whether ») : une question fermée dans une question indirecte demande « if » ou « whether »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot mal placé.",
+   "p": "Do you know how tall *is Maryam?",
+   "i": "Après « how tall », c'est le sujet qui doit venir en premier.",
+   "e": "« is » est mal placé : il faut dire « how tall Maryam is », avec le sujet avant le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Do you know ___?",
+   "o": [
+    "where Sam is going",
+    "where is Sam going",
+    "where does Sam go"
+   ],
+   "io": {
+    "where is Sam going": "C'est l'ordre d'une vraie question : il faut sujet puis verbe.",
+    "where does Sam go": "Plus de « does » dans la question indirecte."
+   },
+   "i": "Une seule version suit l'ordre d'une affirmation.",
+   "e": "« where Sam is going » : après « Do you know », la question garde l'ordre sujet + verbe."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I wonder where did Maryam put my keys.",
+   "r": [
+    "I wonder where Maryam put my keys."
+   ],
+   "i": "Dans cette phrase, un moteur n'a plus de raison d'être.",
+   "e": "« I wonder where Maryam put my keys. » : plus de « did » ; le verbe « put » porte déjà le passé."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a deux erreurs (un mot manquant et un verbe).",
+   "f": "Do you know does Tom speak Spanish?",
+   "r": [
+    "Do you know if Tom speaks Spanish?",
+    "Do you know whether Tom speaks Spanish?"
+   ],
+   "i": "Question oui ou non : il faut « if » ou « whether », et plus de « does ».",
+   "e": "« Do you know if Tom speaks Spanish? » : on ajoute « if », on supprime « does », et le verbe reprend son -s."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "wonder",
+    "if",
+    "she",
+    "remembers",
+    "my name"
+   ],
+   "fin": ".",
+   "i": "Question fermée : « if », puis sujet et verbe.",
+   "e": "« I wonder if she remembers my name. » : après « if », ordre d'une phrase, sans « does »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "do",
+    "you",
+    "know",
+    "how long",
+    "the journey",
+    "takes"
+   ],
+   "fin": "?",
+   "i": "Sujet « the journey » avant son verbe.",
+   "e": "« Do you know how long the journey takes? » : après « how long », sujet puis verbe conjugué."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Pourriez-vous me dire à quelle heure part le train ? »",
+   "r": [
+    "Could you tell me what time the train leaves?",
+    "Could you tell me when the train leaves?",
+    "Could you tell me what time the train is leaving?",
+    "Could you tell me what time the train departs?",
+    "Could you tell me when the train departs?"
+   ],
+   "i": "Commence par « Could you tell me ».",
+   "e": "« Could you tell me what time the train leaves? » : après le mot-question, sujet « the train » puis verbe « leaves », sans « does »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Je me demande si elle a raison. »",
+   "r": [
+    "I wonder if she is right",
+    "I wonder whether she is right",
+    "I wonder if she's right",
+    "I wonder whether she's right"
+   ],
+   "i": "« Avoir raison » se dit « to be right ».",
+   "e": "« I wonder if she is right. » : « si » devant une question fermée se dit « if » (ou « whether »), puis sujet et verbe ; « avoir raison » = « be right »."
+  },
+  {
+   "d": 3,
+   "q": "Rends polie : « Why is the road closed? » → « Could you tell me why ___? »",
+   "r": [
+    "the road is closed"
+   ],
+   "i": "Remets le sujet avant le verbe.",
+   "e": "« the road is closed » : dans la question indirecte, on retrouve l'ordre d'une phrase, sujet puis verbe."
+  }
+ ],
+ "questions-sujet": [
+  {
+   "d": 1,
+   "q": "Who ___ in this house?",
+   "o": [
+    "lives",
+    "does live",
+    "does lives"
+   ],
+   "io": {
+    "does live": "Le mot-question « who » est le sujet : pas de « does ».",
+    "does lives": "Pas de « does », et jamais deux marques de -s."
+   },
+   "i": "« Who » est le sujet : le verbe se conjugue seul.",
+   "e": "« lives » : quand « who » est le sujet, on n'emploie pas « do/does » ; le verbe prend son -s comme avec « he »."
+  },
+  {
+   "d": 1,
+   "q": "Who ___ you meet yesterday?",
+   "o": [
+    "did",
+    "do",
+    "does"
+   ],
+   "io": {
+    "do": "« yesterday » est au passé : il faut « did ».",
+    "does": "« yesterday » est au passé : il faut « did »."
+   },
+   "i": "Ici « who » est le complément : on utilise un moteur. Quel temps ?",
+   "e": "« did » : « who » est le complément (tu as rencontré quelqu'un), donc auxiliaire + sujet ; « yesterday » demande le passé."
+  },
+  {
+   "d": 1,
+   "q": "What ___ at the party?",
+   "o": [
+    "happened",
+    "did happen",
+    "did happened"
+   ],
+   "io": {
+    "did happen": "« what » est le sujet : pas de « did ».",
+    "did happened": "Pas de « did », et le passé ne se marque qu'une fois."
+   },
+   "i": "« What » est le sujet de l'action.",
+   "e": "« happened » : « what » est le sujet, donc le verbe se met directement au passé, sans « did »."
+  },
+  {
+   "d": 1,
+   "q": "Who are you talking ___?",
+   "o": [
+    "to",
+    "at",
+    "for"
+   ],
+   "io": {
+    "at": "On dit « talk to » quelqu'un.",
+    "for": "On dit « talk to » quelqu'un."
+   },
+   "i": "La préposition de « talk » reste à la fin de la question.",
+   "e": "« to » : « Who are you talking to? » La préposition du verbe se place à la fin de la question."
+  },
+  {
+   "d": 1,
+   "q": "Touche la préposition qui reste à la fin de la question.",
+   "p": "What is this song *about?",
+   "i": "Cherche le petit mot tout à la fin.",
+   "e": "« about » : en anglais courant, la préposition reste en fin de question (« What is this song about? »)."
+  },
+  {
+   "d": 1,
+   "q": "Complète au présent simple : « Who ___ the guitar in your band? »",
+   "r": [
+    "plays"
+   ],
+   "i": "« Who » est le sujet : il se comporte comme « he ».",
+   "e": "« plays » : « who » est le sujet, donc pas de « does », et le verbe prend le -s."
+  },
+  {
+   "d": 2,
+   "q": "Who ___ you to the airport yesterday?",
+   "o": [
+    "took",
+    "did take",
+    "did took"
+   ],
+   "io": {
+    "did take": "Ici « who » est le sujet de l'action : pas de « did ».",
+    "did took": "Pas de « did », et le passé ne se marque qu'une fois."
+   },
+   "i": "« Who » est celui qui a fait l'action (« you » est le complément).",
+   "e": "« took » : « who » est le sujet, donc le verbe est au prétérit sans « did »."
+  },
+  {
+   "d": 2,
+   "q": "Who ___ Léa invite to her party last week?",
+   "o": [
+    "did",
+    "do",
+    "does"
+   ],
+   "io": {
+    "do": "La phrase est au passé : il faut « did ».",
+    "does": "La phrase est au passé : il faut « did »."
+   },
+   "i": "« Léa » est le sujet : « who » est le complément. Quel moteur au passé ?",
+   "e": "« did » : « who » est le complément, donc « did » + sujet (« Léa ») + verbe à la base."
+  },
+  {
+   "d": 2,
+   "q": "Pose la question sur « Adam » : « Adam broke the vase. » → « Who ___ the vase? »",
+   "r": [
+    "broke"
+   ],
+   "i": "On remplace le sujet par « who » : le verbe ne change pas.",
+   "e": "« broke » : « who » remplace le sujet, donc le verbe reste au prétérit, sans « did »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe, qui se met au passé sans « did » devant lui.",
+   "p": "What *happened to the old bridge?",
+   "i": "Cherche l'action dont « what » est le sujet.",
+   "e": "« happened » : « what » est le sujet, donc on met directement le verbe au passé, sans « did »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "who",
+    "are",
+    "you",
+    "going",
+    "with"
+   ],
+   "fin": "?",
+   "i": "Dans cette question, la préposition termine la phrase.",
+   "e": "« Who are you going with? » : en anglais courant, la préposition « with » reste à la fin de la question."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "what",
+    "is",
+    "this book",
+    "about"
+   ],
+   "fin": "?",
+   "i": "Mot-question, verbe, sujet, puis la préposition en dernier.",
+   "e": "« What is this book about? » : la préposition « about » reste à la fin de la question, alors que le français la met devant."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "With who are you going to the cinema?",
+   "r": [
+    "Who are you going to the cinema with?"
+   ],
+   "i": "En anglais courant, où va la préposition ?",
+   "e": "« Who are you going to the cinema with? » : la préposition passe à la fin de la question."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Qui t'a appelé ? »",
+   "r": [
+    "Who called you?",
+    "Who phoned you?",
+    "Who rang you?",
+    "Who has called you?"
+   ],
+   "i": "Qui est le sujet : pas de « did ».",
+   "e": "« Who called you? » : « who » est le sujet, donc le verbe est au passé, sans « did »."
+  },
+  {
+   "d": 2,
+   "q": "Which team ___ the final last year?",
+   "o": [
+    "won",
+    "did win",
+    "did won"
+   ],
+   "io": {
+    "did win": "« which team » est le sujet : pas de « did ».",
+    "did won": "Pas de « did », et le passé ne se marque qu'une fois."
+   },
+   "i": "« Which team » est le sujet de l'action.",
+   "e": "« won » : « which team » joue le rôle du sujet, donc le verbe se met directement au prétérit."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Who did bring this cake?",
+   "r": [
+    "Who brought this cake?"
+   ],
+   "i": "Qui est le sujet de la question ? Faut-il un moteur « did » ?",
+   "e": "« Who brought this cake? » : « who » est le sujet de la question, donc pas de « did » et le verbe est directement au passé."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "What did happen to your phone?",
+   "r": [
+    "What happened to your phone?"
+   ],
+   "i": "Le mot « what » fait lui-même l'action.",
+   "e": "« What happened to your phone? » : « what » est le sujet, donc on n'ajoute pas « did » et le verbe se met au passé tout seul."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "who",
+    "did",
+    "you",
+    "give",
+    "the book",
+    "to"
+   ],
+   "fin": "?",
+   "i": "« Who » est le complément : auxiliaire puis sujet.",
+   "e": "« Who did you give the book to? » : « who » complément, donc « did » + sujet + base ; « to » reste à la fin."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « À qui parlais-tu ? »",
+   "r": [
+    "Who were you talking to?",
+    "Who were you speaking to?",
+    "Who did you talk to?",
+    "Who did you speak to?"
+   ],
+   "i": "Laisse la préposition à la fin.",
+   "e": "« Who were you talking to? » : « who » est le complément, la préposition « to » se place à la fin."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Qui a gagné le match ? »",
+   "r": [
+    "Who won the match?",
+    "Who won the game?"
+   ],
+   "i": "Le sujet est inconnu : pas de moteur.",
+   "e": "« Who won the match? » : « who » est le sujet, donc pas de « did » : le verbe est directement au passé."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "What are you afraid?",
+   "r": [
+    "What are you afraid of?"
+   ],
+   "i": "On est « afraid » de quelque chose : il manque un petit mot.",
+   "e": "« What are you afraid of? » : on dit « afraid of », et la préposition se place à la fin."
+  }
+ ],
+ "faux-amis": [
+  {
+   "d": 1,
+   "q": "I'm ___ on holiday. (Je suis en vacances en ce moment.)",
+   "o": [
+    "currently",
+    "actually",
+    "eventually"
+   ],
+   "io": {
+    "actually": "« actually » veut dire « en fait », pas « actuellement ».",
+    "eventually": "« eventually » veut dire « finalement »."
+   },
+   "i": "Quel mot anglais veut dire « en ce moment » ?",
+   "e": "« currently » : c'est l'anglais de « actuellement ». « actually » est un faux ami : il veut dire « en fait »."
+  },
+  {
+   "d": 1,
+   "q": "Where can I borrow books? In the ___.",
+   "o": [
+    "library",
+    "bookshop",
+    "lecture"
+   ],
+   "io": {
+    "bookshop": "Une « bookshop » est une librairie : on y achète, on n'y emprunte pas.",
+    "lecture": "« lecture » est un cours magistral."
+   },
+   "i": "On y emprunte des livres gratuitement.",
+   "e": "« library » : c'est la bibliothèque, où l'on emprunte. La librairie, où l'on achète, se dit « bookshop »."
+  },
+  {
+   "d": 1,
+   "q": "Where can I buy a new dictionary? At the ___.",
+   "o": [
+    "bookshop",
+    "library",
+    "lecture"
+   ],
+   "io": {
+    "library": "Une « library » est une bibliothèque : on y emprunte.",
+    "lecture": "« lecture » est un cours magistral."
+   },
+   "i": "Le livre s'achète dans ce magasin.",
+   "e": "« bookshop » : c'est une librairie. « library » est un faux ami : c'est une bibliothèque."
+  },
+  {
+   "d": 1,
+   "q": "Let's ___ that we're pirates!",
+   "o": [
+    "pretend",
+    "claim",
+    "expect"
+   ],
+   "io": {
+    "claim": "« claim » veut dire « prétendre » (affirmer), pas « faire semblant ».",
+    "expect": "« expect » veut dire « s'attendre à »."
+   },
+   "i": "On joue : on fait comme si on était des pirates.",
+   "e": "« pretend » veut dire « faire semblant ». Pour « prétendre » (affirmer), on dit « claim »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui veut dire « bibliothèque ».",
+   "p": "We study in the *library after school.",
+   "i": "Ce mot ressemble à « librairie », mais ce n'est pas la librairie.",
+   "e": "« library » veut dire « bibliothèque » : c'est un faux ami de « librairie », qui se dit « bookshop »."
+  },
+  {
+   "d": 1,
+   "q": "A ___ is a long talk given to students at university.",
+   "o": [
+    "lecture",
+    "reading",
+    "library"
+   ],
+   "io": {
+    "reading": "« reading » est l'action de lire.",
+    "library": "« library » est une bibliothèque."
+   },
+   "i": "Ce n'est pas la lecture d'un livre, c'est un exposé devant des étudiants.",
+   "e": "« lecture » : un cours magistral ou une conférence. « Une lecture » se dit « a reading »."
+  },
+  {
+   "d": 2,
+   "q": "I'm not hungry. ___, I had lunch an hour ago.",
+   "o": [
+    "Actually",
+    "Currently",
+    "Possibly"
+   ],
+   "io": {
+    "Currently": "« currently » veut dire « en ce moment ».",
+    "Possibly": "« possibly » veut dire « éventuellement »."
+   },
+   "i": "On veut dire « en fait » : quel mot anglais ?",
+   "e": "« Actually » : il veut dire « en fait », pas « actuellement » (qui se dit « currently »)."
+  },
+  {
+   "d": 2,
+   "q": "After three hours, we ___ found the hotel.",
+   "o": [
+    "eventually",
+    "possibly",
+    "currently"
+   ],
+   "io": {
+    "possibly": "« possibly » veut dire « éventuellement ».",
+    "currently": "« currently » veut dire « en ce moment »."
+   },
+   "i": "Après un long moment, on a fini par trouver l'hôtel.",
+   "e": "« eventually » : il veut dire « finalement, à la fin ». « Éventuellement » se dit « possibly »."
+  },
+  {
+   "d": 2,
+   "q": "That's a ___ idea: let's wait for good weather.",
+   "o": [
+    "sensible",
+    "sensitive",
+    "sympathetic"
+   ],
+   "io": {
+    "sensitive": "« sensitive » veut dire « sensible » (qui ressent vivement).",
+    "sympathetic": "« sympathetic » veut dire « compatissant ». Pour « sympathique », on dit « nice »."
+   },
+   "i": "Une idée qui a du bon sens, qui est prudente.",
+   "e": "« sensible » : en anglais, il veut dire « raisonnable ». Pour dire « sensible » au sens français (qui ressent vivement), on emploie « sensitive »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Tomorrow I'll ___ a lecture at the university. » (assister à)",
+   "r": [
+    "attend"
+   ],
+   "i": "Ce n'est pas « attendre » : c'est être présent à un cours.",
+   "e": "« attend » : il veut dire « assister à ». « Attendre » se dit « wait »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « I'll ___ for you outside. » (t'attendre)",
+   "r": [
+    "wait"
+   ],
+   "i": "Ici, on veut dire « attendre » : quel verbe anglais ?",
+   "e": "« wait » : attendre se dit « wait » (« wait for » + quelqu'un), alors que « attend » veut dire « assister à »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « J'ai emprunté ce roman à la bibliothèque. »",
+   "r": [
+    "I borrowed this novel from the library.",
+    "I borrowed that novel from the library.",
+    "I borrowed the novel from the library."
+   ],
+   "i": "Pas de « librairie » ici : on emprunte, on n'achète pas.",
+   "e": "« I borrowed this novel from the library. » : « library » est la bibliothèque et « novel » est le roman."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "is",
+    "currently",
+    "living",
+    "in",
+    "Spain"
+   ],
+   "fin": ".",
+   "i": "« Actuellement » se dit « currently » en anglais.",
+   "e": "« He is currently living in Spain. » : « currently » veut dire « actuellement » ; « actually » veut dire « en fait ».",
+   "alt": [
+    [
+     "he",
+     "is",
+     "living",
+     "in",
+     "Spain",
+     "currently"
+    ],
+    [
+     "currently",
+     "he",
+     "is",
+     "living",
+     "in",
+     "Spain"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Yusuf pretends that he saw a ghost, but nobody believes him.",
+   "r": [
+    "Yusuf claims that he saw a ghost, but nobody believes him."
+   ],
+   "i": "Il affirme quelque chose, il ne joue pas un rôle.",
+   "e": "« claims » : « prétendre » (affirmer) se dit « claim ». « Pretend » veut dire « faire semblant »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Léa is very busy: she assists three lectures this week.",
+   "r": [
+    "Léa is very busy: she attends three lectures this week."
+   ],
+   "i": "Elle est présente à ces cours, elle n'aide personne.",
+   "e": "« attends » : « assister à » se dit « attend ». « Assist » veut dire « aider »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui veut dire « finalement ».",
+   "p": "After many hours, we *eventually arrived.",
+   "i": "Ce mot n'est pas « éventuellement » : cherche l'idée de « à la fin ».",
+   "e": "« eventually » : il veut dire « finalement ». « Éventuellement » se dit « possibly »."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « Every evening, little Adam ___ to be a lion. » (fait semblant)",
+   "r": [
+    "pretends"
+   ],
+   "i": "Il joue : il fait comme si. Attention, ce n'est pas « prétendre » (affirmer).",
+   "e": "« pretends » : « pretend » veut dire « faire semblant » ; avec « Adam » (= he), le verbe prend un -s. Pour « prétendre » (affirmer), on dit « claim »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « En fait, je n'ai pas faim. »",
+   "r": [
+    "Actually, I'm not hungry.",
+    "Actually, I am not hungry."
+   ],
+   "i": "« En fait » ne se dit pas « actuellement » : cherche le faux ami.",
+   "e": "« Actually, I'm not hungry. » : « actually » veut dire « en fait »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons fini par trouver la plage. »",
+   "r": [
+    "We eventually found the beach.",
+    "We finally found the beach.",
+    "In the end, we found the beach."
+   ],
+   "i": "« Fini par » : cherche l'idée de « à la fin ».",
+   "e": "« We eventually found the beach. » : « eventually » veut dire « finalement, au bout du compte »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I can eventually help you with your homework tonight.",
+   "r": [
+    "I can possibly help you with your homework tonight.",
+    "Possibly I can help you with your homework tonight.",
+    "I could possibly help you with your homework tonight.",
+    "Perhaps I can help you with your homework tonight.",
+    "Maybe I can help you with your homework tonight."
+   ],
+   "i": "Ici, on veut dire « éventuellement, peut-être ».",
+   "e": "« possibly » : il veut dire « éventuellement ». « Eventually » veut dire « finalement »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Please be sensitive: don't spend all your money on sweets.",
+   "r": [
+    "Please be sensible: don't spend all your money on sweets."
+   ],
+   "i": "On demande d'être raisonnable, pas de ressentir vivement.",
+   "e": "« sensible » : il veut dire « raisonnable ». « Sensitive » veut dire « sensible »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "actually",
+    "attended",
+    "a lecture",
+    "on",
+    "robots"
+   ],
+   "alt": [
+    [
+     "actually",
+     "we",
+     "attended",
+     "a lecture",
+     "on",
+     "robots"
+    ]
+   ],
+   "fin": ".",
+   "i": "« Attended » veut dire « assisté à ».",
+   "e": "« We actually attended a lecture on robots. » : « attend » veut dire « assister à » et « lecture » est un cours magistral."
+  }
+ ],
+ "faux-jumeaux": [
+  {
+   "d": 1,
+   "q": "My mum ___ a delicious cake yesterday.",
+   "o": [
+    "made",
+    "did",
+    "told"
+   ],
+   "io": {
+    "did": "« do » sert pour une tâche, pas pour fabriquer un gâteau.",
+    "told": "« tell » veut dire « raconter, dire à quelqu'un »."
+   },
+   "i": "Fabriquer, créer : quel verbe ?",
+   "e": "« made » : on fabrique un gâteau, donc « make » (au prétérit, « made »)."
+  },
+  {
+   "d": 1,
+   "q": "I must ___ the dishes after dinner.",
+   "o": [
+    "do",
+    "make",
+    "say"
+   ],
+   "io": {
+    "make": "Les tâches ménagères prennent « do ».",
+    "say": "« say » veut dire « dire »."
+   },
+   "i": "La vaisselle est une tâche à accomplir.",
+   "e": "« do » : la vaisselle est une tâche, donc « do the dishes »."
+  },
+  {
+   "d": 1,
+   "q": "Please ___ me your name.",
+   "o": [
+    "tell",
+    "say",
+    "do"
+   ],
+   "io": {
+    "say": "Avec une personne (« me »), on emploie « tell ».",
+    "do": "« do » veut dire « faire »."
+   },
+   "i": "Il y a une personne après le verbe : « me ».",
+   "e": "« tell » : on dit « tell + personne + chose » ; « say » ne s'emploie pas directement avec la personne."
+  },
+  {
+   "d": 1,
+   "q": "Can you ___ me a pencil? I forgot mine.",
+   "o": [
+    "lend",
+    "borrow",
+    "make"
+   ],
+   "io": {
+    "borrow": "Celui qui donne pour un temps prête : « lend ».",
+    "make": "« make » veut dire « fabriquer »."
+   },
+   "i": "C'est toi qui demandes à l'autre de donner.",
+   "e": "« lend » : prêter, c'est donner pour un temps. Celui qui reçoit emprunte : « borrow »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui veut dire « emprunter ».",
+   "p": "Can I *borrow your bike, please?",
+   "i": "Tu reçois le vélo pour un moment.",
+   "e": "« borrow » : emprunter, c'est recevoir pour un temps."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I ___ my homework every evening. »",
+   "r": [
+    "do"
+   ],
+   "i": "Les devoirs sont une tâche à accomplir.",
+   "e": "« do » : on fait ses devoirs, donc « do homework »."
+  },
+  {
+   "d": 2,
+   "q": "Let's ___ a decision before Friday.",
+   "o": [
+    "make",
+    "do",
+    "say"
+   ],
+   "io": {
+    "do": "On prend une décision : « make a decision ».",
+    "say": "« say » veut dire « dire »."
+   },
+   "i": "Une expression toute faite avec « decision ».",
+   "e": "« make » : on dit « make a decision » ; c'est un bloc à apprendre."
+  },
+  {
+   "d": 2,
+   "q": "He ___ us a funny story about his dog.",
+   "o": [
+    "told",
+    "said",
+    "made"
+   ],
+   "io": {
+    "said": "Avec « a story » et une personne (« us »), on emploie « tell ».",
+    "made": "« make » veut dire « fabriquer »."
+   },
+   "i": "Raconter une histoire à quelqu'un.",
+   "e": "« told » : on dit « tell a story », et la personne (« us ») suit le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Can I ___ your dictionary until tomorrow?",
+   "o": [
+    "borrow",
+    "lend",
+    "say"
+   ],
+   "io": {
+    "lend": "C'est toi qui reçois : tu empruntes.",
+    "say": "« say » veut dire « dire »."
+   },
+   "i": "C'est toi qui vas recevoir le dictionnaire.",
+   "e": "« borrow » : emprunter, c'est recevoir pour un temps ; « lend » serait le verbe de celui qui prête."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Don't ___ so much noise, the baby is asleep! »",
+   "r": [
+    "make"
+   ],
+   "i": "Produire du bruit : quel verbe ?",
+   "e": "« make » : on dit « make noise », un bloc à apprendre."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Léa ___ me a secret yesterday. »",
+   "r": [
+    "told"
+   ],
+   "i": "Il y a une personne (« me »), et la phrase est au passé.",
+   "e": "« told » : « tell + personne + chose », au prétérit « told »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "can",
+    "you",
+    "lend",
+    "me",
+    "your laptop"
+   ],
+   "fin": "?",
+   "i": "« Lend » est suivi de la personne, puis de l'objet.",
+   "e": "« Can you lend me your laptop? » : on dit « lend + personne + chose »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I made my homework before dinner.",
+   "r": [
+    "I did my homework before dinner."
+   ],
+   "i": "Les devoirs sont-ils une tâche ou un objet à fabriquer ?",
+   "e": "« I did my homework before dinner. » : les devoirs sont une tâche, donc on dit « do homework »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Could I lend your umbrella, please?",
+   "r": [
+    "Could I borrow your umbrella, please?"
+   ],
+   "i": "Qui reçoit le parapluie ?",
+   "e": "« Could I borrow your umbrella, please? » : celui qui reçoit emprunte, donc « borrow »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il m'a dit la vérité. »",
+   "r": [
+    "He told me the truth."
+   ],
+   "i": "« La vérité » se construit avec « tell ».",
+   "e": "« He told me the truth. » : on dit « tell the truth », et la personne vient après « tell »."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux verbes : l'un pour créer, l'autre pour une tâche.",
+   "p": "Léa *made a cake and then *did the dishes.",
+   "i": "Un gâteau se fabrique, la vaisselle s'accomplit.",
+   "e": "« made » (créer un gâteau) et « did » (accomplir une tâche, la vaisselle)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The teacher said us to open our books.",
+   "r": [
+    "The teacher told us to open our books."
+   ],
+   "i": "Il y a une personne après le verbe : « us ».",
+   "e": "« The teacher told us to open our books. » : avec une personne après le verbe, on emploie « tell », pas « say »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He did a lot of noise in the library.",
+   "r": [
+    "He made a lot of noise in the library."
+   ],
+   "i": "Le bruit se produit : cherche le bon verbe.",
+   "e": "« He made a lot of noise in the library. » : on dit « make noise »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Peux-tu me prêter dix euros ? »",
+   "r": [
+    "Can you lend me ten euros?",
+    "Could you lend me ten euros?",
+    "Can you lend me €10?",
+    "Could you lend me €10?",
+    "Can you lend me 10 euros?",
+    "Could you lend me 10 euros?"
+   ],
+   "i": "Tu demandes à l'autre de donner pour un temps.",
+   "e": "« Can you lend me ten euros? » : « lend + personne + chose » ; prêter se dit « lend »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « J'ai fait une erreur dans mon exercice. »",
+   "r": [
+    "I made a mistake in my exercise.",
+    "I made a mistake in my exercises.",
+    "I made an error in my exercise.",
+    "I made a mistake on my exercise."
+   ],
+   "i": "Une erreur ne s'accomplit pas, elle se produit.",
+   "e": "« I made a mistake in my exercise. » : on dit « make a mistake »."
+  },
+  {
+   "d": 3,
+   "q": "Can you ___ the difference between these two words?",
+   "o": [
+    "tell",
+    "say",
+    "do"
+   ],
+   "io": {
+    "say": "« say » ne s'emploie pas dans cette expression.",
+    "do": "« do » ne s'emploie pas dans cette expression."
+   },
+   "i": "Un bloc à apprendre, sans personne dans la phrase.",
+   "e": "« tell » : « tell the difference » s'emploie toujours avec « tell », même sans personne."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "borrowed",
+    "a book",
+    "from",
+    "his teacher"
+   ],
+   "fin": ".",
+   "i": "Celui qui reçoit emprunte « à » quelqu'un.",
+   "e": "« He borrowed a book from his teacher. » : on dit « borrow + chose + from + personne »."
+  }
+ ],
+ "sujet-it": [
+  {
+   "d": 1,
+   "q": "___ is cold today. (la météo)",
+   "o": [
+    "It",
+    "There",
+    "He"
+   ],
+   "io": {
+    "There": "« there » annonce qu'une chose existe.",
+    "He": "« He » désigne une personne."
+   },
+   "i": "La météo n'a pas de sujet réel : un petit mot prend la place.",
+   "e": "« It » : pour la météo, le sujet de la phrase est « it »."
+  },
+  {
+   "d": 1,
+   "q": "___ is five o'clock.",
+   "o": [
+    "It",
+    "There",
+    "This"
+   ],
+   "io": {
+    "There": "« there » annonce qu'une chose existe.",
+    "This": "Pour l'heure, on emploie « it »."
+   },
+   "i": "On dit l'heure : quel petit sujet ?",
+   "e": "« It » : pour donner l'heure, on dit « It is five o'clock »."
+  },
+  {
+   "d": 1,
+   "q": "___ is Monday today.",
+   "o": [
+    "It",
+    "There",
+    "He"
+   ],
+   "io": {
+    "There": "« there is » annonce l'existence.",
+    "He": "« He » désigne une personne."
+   },
+   "i": "Pour dire le jour, on a besoin d'un sujet.",
+   "e": "« It » : pour dire le jour, on emploie « it » : « It is Monday »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le sujet de la phrase.",
+   "p": "*It is sunny in Marseille.",
+   "i": "Le sujet est un petit mot devant le verbe.",
+   "e": "« It » est le sujet de la phrase : il n'y a personne qui fait l'action, mais l'anglais veut toujours un sujet."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ is raining in Brest today. »",
+   "r": [
+    "It"
+   ],
+   "i": "Un seul mot, avec une majuscule.",
+   "e": "« It » : la pluie n'a pas de sujet réel, donc on met « it »."
+  },
+  {
+   "d": 1,
+   "q": "___ is easy to learn English words.",
+   "o": [
+    "It",
+    "This",
+    "They"
+   ],
+   "io": {
+    "This": "« This » désigne une chose précise.",
+    "They": "« They » désigne plusieurs personnes ou choses."
+   },
+   "i": "C'est un jugement suivi de « to ».",
+   "e": "« It is easy to learn… » : pour un jugement suivi de « to », on commence par « it »."
+  },
+  {
+   "d": 2,
+   "q": "___ takes me twenty minutes to walk to school.",
+   "o": [
+    "It",
+    "There",
+    "He"
+   ],
+   "io": {
+    "There": "On dit « It takes ».",
+    "He": "Pas de personne ici."
+   },
+   "i": "On parle du temps nécessaire.",
+   "e": "« It takes » : pour la durée, on dit « It takes… »."
+  },
+  {
+   "d": 2,
+   "q": "How much ___ it cost to go to Paris by train?",
+   "o": [
+    "does",
+    "is",
+    "takes"
+   ],
+   "io": {
+    "is": "On dit « does it cost ».",
+    "takes": "« takes » vaut pour la durée."
+   },
+   "i": "On parle du prix : quel verbe ?",
+   "e": "« does » : « How much does it cost? » est la question sur le prix, avec « does » et « cost » à la base."
+  },
+  {
+   "d": 2,
+   "q": "It ___ about two hours to fly to Rome.",
+   "o": [
+    "takes",
+    "needs",
+    "costs"
+   ],
+   "io": {
+    "needs": "On ne dit pas « It needs ».",
+    "costs": "« costs » se dit pour l'argent."
+   },
+   "i": "On parle de la durée, pas du prix.",
+   "e": "« takes » : pour la durée, on dit « It takes… »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « It ___ ten pounds to get in. » (le prix)",
+   "r": [
+    "costs"
+   ],
+   "i": "Pour l'argent, on emploie un autre verbe que « takes ».",
+   "e": "« costs » : pour le prix, on dit « It costs… »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « ___ nice to see you again. »",
+   "r": [
+    "It's",
+    "It is"
+   ],
+   "i": "C'est un jugement suivi de « to ».",
+   "e": "« It's » : pour dire « ça fait plaisir de… », on commence par « it ». « It's nice to see you again. »"
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it",
+    "takes",
+    "two hours",
+    "to",
+    "get",
+    "there"
+   ],
+   "fin": ".",
+   "i": "On commence par « it takes » + durée.",
+   "e": "« It takes two hours to get there. » : on dit « It takes » + durée + « to » + base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Is very cold today.",
+   "r": [
+    "It is very cold today.",
+    "It's very cold today."
+   ],
+   "i": "Le sujet est obligatoire en anglais.",
+   "e": "« It's very cold today. » : le sujet « it » est obligatoire, même pour la météo."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Is important to eat breakfast.",
+   "r": [
+    "It is important to eat breakfast.",
+    "It's important to eat breakfast."
+   ],
+   "i": "Il manque un petit mot au début de la phrase.",
+   "e": "« It is important to eat breakfast. » : pour un jugement suivi de « to », on commence par « it »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il pleut. »",
+   "r": [
+    "It's raining.",
+    "It is raining.",
+    "It rains."
+   ],
+   "i": "La pluie est de la météo : le sujet est obligatoire.",
+   "e": "« It's raining. » : la météo se dit avec « it » comme sujet."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It needs ten minutes to walk to the station.",
+   "r": [
+    "It takes ten minutes to walk to the station."
+   ],
+   "i": "Pour la durée, quel verbe faut-il ?",
+   "e": "« It takes ten minutes to walk to the station. » : pour la durée, on dit « take », pas « need »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il faut deux heures pour aller à Paris. »",
+   "r": [
+    "It takes two hours to get to Paris.",
+    "It takes two hours to go to Paris.",
+    "It takes two hours to reach Paris."
+   ],
+   "i": "Pas de « il faut » : on dit « it takes ».",
+   "e": "« It takes two hours to get to Paris. » : « It takes » + durée + « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il est difficile de se lever tôt. »",
+   "r": [
+    "It's hard to get up early.",
+    "It is hard to get up early.",
+    "It's difficult to get up early.",
+    "It is difficult to get up early."
+   ],
+   "i": "Un jugement avec « to » : « it » + adjectif + « to ».",
+   "e": "« It's hard to get up early. » : on dit « it » + adjectif + « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "There is windy today.",
+   "r": [
+    "It is windy today.",
+    "It's windy today."
+   ],
+   "i": "« Il y a du vent » : c'est la météo, pas l'existence.",
+   "e": "« It's windy today. » : la météo se dit avec « it » ; « there is » annonce l'existence d'une chose."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it",
+    "seems",
+    "that",
+    "he",
+    "is",
+    "right"
+   ],
+   "fin": ".",
+   "i": "Après « it seems that », on met un sujet et un verbe.",
+   "e": "« It seems that he is right. » : « it seems that » + sujet + verbe."
+  },
+  {
+   "d": 3,
+   "q": "Touche le sujet vide de la phrase.",
+   "p": "*It costs fifty euros to join the club.",
+   "i": "Personne ne fait l'action : un petit mot occupe la place.",
+   "e": "« It » : le sujet vide de « It costs fifty euros… » ne désigne personne."
+  }
+ ],
+ "pendant-jusqua": [
+  {
+   "d": 1,
+   "q": "I studied English ___ two hours.",
+   "o": [
+    "for",
+    "during",
+    "while"
+   ],
+   "io": {
+    "during": "« during » se met devant un événement, pas devant une durée chiffrée.",
+    "while": "« while » se met devant une phrase avec sujet et verbe."
+   },
+   "i": "Le blanc est suivi d'une durée chiffrée : deux heures.",
+   "e": "« for » : devant une durée chiffrée (two hours), on emploie « for »."
+  },
+  {
+   "d": 1,
+   "q": "She fell asleep ___ the lesson.",
+   "o": [
+    "during",
+    "for",
+    "while"
+   ],
+   "io": {
+    "for": "« for » se met devant une durée chiffrée.",
+    "while": "« while » demande un sujet et un verbe après lui."
+   },
+   "i": "« The lesson » est un événement, pas une durée chiffrée.",
+   "e": "« during » : devant un nom qui désigne un événement (the lesson), on emploie « during »."
+  },
+  {
+   "d": 1,
+   "q": "Wait here ___ I come back.",
+   "o": [
+    "until",
+    "by",
+    "for"
+   ],
+   "io": {
+    "by": "« by » exprime une date limite, pas une attente qui dure.",
+    "for": "« for » se met devant une durée chiffrée."
+   },
+   "i": "L'attente dure jusqu'à un moment précis.",
+   "e": "« until » : l'action dure jusqu'à un moment, ici mon retour."
+  },
+  {
+   "d": 1,
+   "q": "The film starts ___ ten minutes.",
+   "o": [
+    "in",
+    "for",
+    "by"
+   ],
+   "io": {
+    "for": "« for » parle d'une durée, pas d'un départ dans le futur.",
+    "by": "« by » indique une limite, pas un délai à venir."
+   },
+   "i": "Dans dix minutes, à partir de maintenant.",
+   "e": "« in » : pour dire « dans » + durée dans le futur, on emploie « in »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We stayed in Rome ___ five days. »",
+   "r": [
+    "for"
+   ],
+   "i": "Le blanc est suivi d'une durée chiffrée.",
+   "e": "« for » : devant une durée (five days), on emploie « for »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui veut dire « pendant » devant une durée.",
+   "p": "He worked *for six hours.",
+   "i": "Cherche le petit mot juste avant « six hours ».",
+   "e": "« for » : il se met devant une durée chiffrée."
+  },
+  {
+   "d": 2,
+   "q": "Someone knocked ___ I was in the shower.",
+   "o": [
+    "while",
+    "during",
+    "for"
+   ],
+   "io": {
+    "during": "« during » se met devant un nom.",
+    "for": "« for » se met devant une durée chiffrée."
+   },
+   "i": "Après le blanc, il y a un sujet et un verbe : « I was in the shower ».",
+   "e": "« while » : devant une phrase avec sujet et verbe, on emploie « while »."
+  },
+  {
+   "d": 2,
+   "q": "I'll stay at work ___ six o'clock.",
+   "o": [
+    "until",
+    "by",
+    "in"
+   ],
+   "io": {
+    "by": "« by » exprime une limite pour finir, pas une présence qui dure.",
+    "in": "« in » parle d'un délai à partir de maintenant."
+   },
+   "i": "Je reste jusqu'à ce moment, sans m'en aller avant.",
+   "e": "« until » : la présence dure jusqu'à six heures."
+  },
+  {
+   "d": 2,
+   "q": "Please send me your answer ___ Friday.",
+   "o": [
+    "by",
+    "until",
+    "during"
+   ],
+   "io": {
+    "until": "« until » exprime une action qui dure jusqu'à un moment ; ici, c'est une limite pour envoyer.",
+    "during": "« during » se met devant un événement."
+   },
+   "i": "C'est une date limite : au plus tard.",
+   "e": "« by » : il exprime une limite, « au plus tard »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « I'll call you back ___ an hour. »",
+   "r": [
+    "in"
+   ],
+   "i": "Dans une heure, à partir de maintenant.",
+   "e": "« in » : pour dire « dans » + durée dans le futur, on emploie « in »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Don't talk ___ the film! »",
+   "r": [
+    "during"
+   ],
+   "i": "« The film » est un événement : pas une phrase complète.",
+   "e": "« during » : devant un nom qui désigne un événement (the film), on emploie « during »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "was",
+    "reading",
+    "while",
+    "I",
+    "was",
+    "cooking"
+   ],
+   "fin": ".",
+   "i": "« While » est suivi d'une phrase avec sujet et verbe.",
+   "e": "« She was reading while I was cooking. » : « while » + sujet + verbe.",
+   "alt": [
+    [
+     "while",
+     "I",
+     "was",
+     "cooking",
+     "she",
+     "was",
+     "reading"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We lived in Canada during two years.",
+   "r": [
+    "We lived in Canada for two years."
+   ],
+   "i": "« Two years » est une durée chiffrée.",
+   "e": "« We lived in Canada for two years. » : devant une durée chiffrée, on emploie « for »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "While the lesson, Tom was texting.",
+   "r": [
+    "During the lesson, Tom was texting."
+   ],
+   "i": "« The lesson » est un nom, pas une phrase.",
+   "e": "« During the lesson, Tom was texting. » : devant un nom, on emploie « during » ; « while » demande un sujet et un verbe."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je dormirai jusqu'à huit heures. »",
+   "r": [
+    "I'll sleep until eight.",
+    "I will sleep until eight.",
+    "I'll sleep till eight.",
+    "I will sleep till eight.",
+    "I'll sleep until 8.",
+    "I will sleep until 8."
+   ],
+   "i": "L'action dure jusqu'à un moment : quel mot ?",
+   "e": "« I'll sleep until eight. » : l'action dure jusqu'à huit heures, donc « until »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui annonce une phrase complète.",
+   "p": "I sang *while I was walking home.",
+   "i": "Après lui viennent un sujet et un verbe.",
+   "e": "« while » : il introduit une phrase avec sujet et verbe."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You must pay the bill until the end of the month.",
+   "r": [
+    "You must pay the bill by the end of the month."
+   ],
+   "i": "C'est une date limite : au plus tard.",
+   "e": "« You must pay the bill by the end of the month. » : une limite se dit « by », alors que « until » exprime une durée."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Don't worry, the doctor will be here during ten minutes.",
+   "r": [
+    "Don't worry, the doctor will be here in ten minutes."
+   ],
+   "i": "Le médecin arrive dans dix minutes, à partir de maintenant.",
+   "e": "« in ten minutes » : pour dire « dans » + durée dans le futur, on emploie « in ». « During » se met devant un événement, pas devant une durée chiffrée."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il a téléphoné pendant que je mangeais. »",
+   "r": [
+    "He called while I was eating.",
+    "He phoned while I was eating.",
+    "He rang while I was eating."
+   ],
+   "i": "« Pendant que » est suivi d'une phrase avec sujet et verbe.",
+   "e": "« He called while I was eating. » : « while » + sujet + verbe."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Le colis arrivera dans trois jours. »",
+   "r": [
+    "The parcel will arrive in three days.",
+    "The package will arrive in three days.",
+    "The parcel will be here in three days.",
+    "The package will be here in three days."
+   ],
+   "i": "« Dans » + durée se dit « in ».",
+   "e": "« The parcel will arrive in three days. » : « in » + durée pour le futur."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "you",
+    "must",
+    "finish",
+    "your project",
+    "by",
+    "Friday"
+   ],
+   "fin": ".",
+   "i": "« Au plus tard » se dit « by ».",
+   "e": "« You must finish your project by Friday. » : « by » indique la date limite."
+  },
+  {
+   "d": 3,
+   "q": "I didn't see anyone ___ my stay in Madrid.",
+   "o": [
+    "during",
+    "while",
+    "for"
+   ],
+   "io": {
+    "while": "« while » demande un sujet et un verbe.",
+    "for": "« for » demande une durée chiffrée."
+   },
+   "i": "« My stay » est un nom qui désigne un événement.",
+   "e": "« during » : devant un nom (my stay), on emploie « during »."
+  }
+ ]
+}

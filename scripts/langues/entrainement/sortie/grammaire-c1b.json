@@ -1,0 +1,1450 @@
+{
+ "nuance": [
+  {
+   "d": 1,
+   "q": "Choisis la formulation la plus prudente pour un article scientifique.",
+   "o": [
+    "The results suggest that the drug may help.",
+    "The results prove that the drug helps.",
+    "The drug helps everybody."
+   ],
+   "io": {
+    "The results prove that the drug helps.": "« prove » est trop catégorique : en science, on préfère « suggest » ou « indicate ».",
+    "The drug helps everybody.": "Cette phrase est une affirmation absolue, sans aucune précaution."
+   },
+   "i": "Cherche la phrase qui contient à la fois un verbe prudent et un modal.",
+   "e": "« The results suggest that the drug may help. » est la plus nuancée : « suggest » et « may » laissent une place au doute, ce qui est la norme dans un texte scientifique."
+  },
+  {
+   "d": 1,
+   "q": "Prices ___ to rise in summer, but not every year.",
+   "o": [
+    "tend",
+    "tends",
+    "tending"
+   ],
+   "io": {
+    "tends": "« tends » prendrait un -s pour un sujet singulier ; or « prices » est pluriel.",
+    "tending": "Il faut ici un verbe conjugué, pas une forme en -ing."
+   },
+   "i": "Le sujet « prices » est au pluriel : le verbe s'accorde avec lui.",
+   "e": "« tend » est correct : « tend to » + base exprime une tendance générale, et le verbe reste sans -s puisque « prices » est pluriel."
+  },
+  {
+   "d": 1,
+   "q": "The new method ___ to be reliable.",
+   "o": [
+    "appears",
+    "appear",
+    "appearing"
+   ],
+   "io": {
+    "appear": "Le sujet « the new method » est singulier : le verbe doit prendre un -s.",
+    "appearing": "Il faut un verbe conjugué après le sujet."
+   },
+   "i": "Remplace « the new method » par un pronom : he, she ou it ?",
+   "e": "« appears » est correct : « appear to be » adoucit l'affirmation, et avec « the new method » (it) le verbe prend un -s au présent simple."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The new policy seems ___ popular with young people. » (be)",
+   "r": [
+    "to be"
+   ],
+   "i": "Le verbe « seem » est toujours suivi du même petit mot, puis de la base.",
+   "e": "On écrit « to be » : « seem » se construit avec « to » + base, jamais avec la base seule (le piège : « It seems be true »)."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui adoucit l'affirmation.",
+   "p": "The data *suggest that sleep affects memory.",
+   "i": "Cherche le verbe qui ne dit pas « prouve » ni « montre ».",
+   "e": "« suggest » est le verbe qui adoucit : il présente le résultat comme une piste plutôt que comme une certitude."
+  },
+  {
+   "d": 1,
+   "q": "Sales were ___ stable this year, apart from March.",
+   "o": [
+    "relatively",
+    "absolutely",
+    "never"
+   ],
+   "io": {
+    "absolutely": "« absolutely » renforce au lieu d'atténuer : il serait contredit par « apart from March ».",
+    "never": "« never stable » ne s'accorde pas avec « were » ni avec le sens de la phrase."
+   },
+   "i": "Cherche l'adverbe qui laisse une marge à la phrase.",
+   "e": "« relatively » est correct : cet adverbe de prudence signifie « assez, plutôt » et tient compte de l'exception de mars."
+  },
+  {
+   "d": 2,
+   "q": "Adoucis avec un modal : « This approach is too expensive. » → « This approach ___ too expensive. »",
+   "r": [
+    "may be",
+    "might be",
+    "could be"
+   ],
+   "i": "Un modal de possibilité remplace « is », suivi de « be ».",
+   "e": "« may be » (ou « might be », « could be ») convient : un modal transforme une certitude en possibilité, ce qui est plus prudent."
+  },
+  {
+   "d": 2,
+   "q": "Quel verbe est trop catégorique pour une conclusion de recherche ?",
+   "o": [
+    "prove",
+    "indicate",
+    "suggest"
+   ],
+   "io": {
+    "indicate": "« indicate » est un verbe nuancé, très courant dans les rapports.",
+    "suggest": "« suggest » est justement le verbe prudent par excellence."
+   },
+   "i": "Cherche le verbe qui ne laisse aucun doute.",
+   "e": "« prove » est trop catégorique : dans un texte universitaire, on préfère « suggest » ou « indicate », qui laissent la place à d'autres interprétations."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it",
+    "could",
+    "be",
+    "argued",
+    "that",
+    "the",
+    "law",
+    "is",
+    "unfair"
+   ],
+   "fin": ".",
+   "i": "La formule impersonnelle commence par « it » et se termine par « that ».",
+   "e": "« It could be argued that the law is unfair. » : cette formule impersonnelle présente l'opinion comme une thèse parmi d'autres, avec « that » avant la proposition."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : elle est trop catégorique.",
+   "f": "The study proves that coffee prevents heart disease.",
+   "r": [
+    "The study suggests that coffee prevents heart disease.",
+    "The study indicates that coffee prevents heart disease.",
+    "The study suggests that coffee may prevent heart disease.",
+    "The study indicates that coffee may prevent heart disease."
+   ],
+   "i": "Quel verbe laisse une place au doute ?",
+   "e": "« The study suggests that coffee may prevent heart disease. » : « proves » est trop absolu pour une étude ; on le remplace par « suggests » ou « indicates »."
+  },
+  {
+   "d": 2,
+   "q": "Quelle formule exprime correctement la probabilité ?",
+   "o": [
+    "It is likely that",
+    "It is probably that",
+    "It is arguably that"
+   ],
+   "io": {
+    "It is probably that": "« probably » est un adverbe : on dit « It is probably true » ou « It is likely that ».",
+    "It is arguably that": "« arguably » est un adverbe et ne s'emploie pas après « it is » devant « that »."
+   },
+   "i": "Après « it is », il faut un adjectif, pas un adverbe.",
+   "e": "« It is likely that… » est correct : « likely » est un adjectif, donc il suit « is »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Les prix ont tendance à baisser en hiver. »",
+   "r": [
+    "Prices tend to fall in winter",
+    "Prices tend to drop in winter",
+    "Prices tend to go down in winter",
+    "Prices tend to decrease in winter"
+   ],
+   "i": "« avoir tendance à » se dit avec un verbe suivi de « to » + base.",
+   "e": "« Prices tend to fall in winter. » : « tend to » + base exprime une tendance sans prétendre que c'est toujours vrai."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui atténuent l'affirmation.",
+   "p": "The plan *may be *largely successful.",
+   "i": "Cherche d'abord un verbe modal qui exprime la possibilité, puis un adverbe qui dit que le succès n'est que partiel.",
+   "e": "« may » (un modal) et « largely » (un adverbe) atténuent la phrase : le plan n'est ni sûrement ni entièrement réussi."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The results appear be reliable.",
+   "r": [
+    "The results appear to be reliable."
+   ],
+   "i": "Il manque un petit mot entre « appear » et « be ».",
+   "e": "« The results appear to be reliable. » : comme « seem » et « tend », le verbe « appear » est suivi de « to » + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : elle est trop catégorique.",
+   "f": "This proves that the policy is a failure.",
+   "r": [
+    "This suggests that the policy is a failure.",
+    "This indicates that the policy is a failure.",
+    "This suggests that the policy may be a failure.",
+    "This indicates that the policy may be a failure."
+   ],
+   "i": "Remplace le verbe qui exprime une preuve absolue.",
+   "e": "« This suggests that the policy may be a failure. » : « proves » ferme la discussion, alors que « suggests » ou « indicates » restent prudents."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « On pourrait soutenir que cette décision est discutable. »",
+   "r": [
+    "It could be argued that this decision is questionable",
+    "It could be argued that the decision is questionable",
+    "It could be argued that this decision is debatable",
+    "It could be argued that this decision is open to question",
+    "It might be argued that this decision is questionable",
+    "It may be argued that this decision is questionable",
+    "It could be argued that this decision is open to debate",
+    "It could be argued that this decision is open to debate"
+   ],
+   "i": "Utilise la formule impersonnelle qui commence par « It could be… ».",
+   "e": "« It could be argued that this decision is questionable. » : cette formule impersonnelle évite le « je » et présente l'opinion avec retenue."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il semble que le problème vienne du réseau. »",
+   "r": [
+    "It seems that the problem comes from the network",
+    "It seems that the problem is caused by the network",
+    "It appears that the problem comes from the network",
+    "The problem seems to come from the network",
+    "The problem appears to come from the network",
+    "The problem seems to be caused by the network",
+    "The problem appears to be caused by the network",
+    "It appears that the problem is caused by the network",
+    "It seems that the problem comes from the network"
+   ],
+   "i": "Pense aux verbes « seem » ou « appear » : ils présentent l'idée comme une apparence, donc avec prudence.",
+   "e": "« The problem seems to come from the network. » : « seem » ou « appear » adoucissent l'affirmation, avec « to » + base ou avec « that »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle formule est la plus prudente pour introduire une opinion ?",
+   "o": [
+    "To some extent, this is true.",
+    "This is absolutely true.",
+    "This is always true."
+   ],
+   "io": {
+    "This is absolutely true.": "« absolutely » renforce l'affirmation au lieu de l'atténuer.",
+    "This is always true.": "« always » est absolu : aucune exception n'est admise."
+   },
+   "i": "Cherche l'expression qui limite la portée de l'affirmation.",
+   "e": "« To some extent, this is true. » est la plus prudente : elle reconnaît une part de vérité sans tout affirmer."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "findings",
+    "seem",
+    "to",
+    "indicate",
+    "a",
+    "link",
+    "between",
+    "sleep",
+    "and",
+    "stress"
+   ],
+   "fin": ".",
+   "i": "Un verbe prudent est suivi de « to » + un autre verbe prudent.",
+   "e": "« The findings seem to indicate a link between sleep and stress. » : « seem to » suivi de « indicate » cumule deux précautions et reste très mesuré."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase atténue à la fois par un verbe et par un modal ?",
+   "o": [
+    "The evidence seems to suggest that the plan might fail.",
+    "The plan will fail.",
+    "The evidence proves the plan failed."
+   ],
+   "io": {
+    "The plan will fail.": "« will » exprime une certitude, sans aucune précaution.",
+    "The evidence proves the plan failed.": "« proves » est catégorique et ne contient aucun modal."
+   },
+   "i": "Cherche « seems » ou « appears » et « might » ou « may ».",
+   "e": "La première phrase est la bonne : « seems to suggest » est un verbe prudent et « might » un modal ; la prudence est double."
+  },
+  {
+   "d": 3,
+   "q": "Touche le verbe trop catégorique pour un texte scientifique.",
+   "p": "The report *proves that the policy is working.",
+   "i": "Cherche le verbe qui exprime une preuve absolue.",
+   "e": "« proves » est trop catégorique : dans un texte scientifique, on écrirait plutôt « suggests » ou « indicates »."
+  }
+ ],
+ "panneaux": [
+  {
+   "d": 1,
+   "q": "The weather was bad. ___, we had a great day.",
+   "o": [
+    "Nevertheless",
+    "Therefore",
+    "Moreover"
+   ],
+   "io": {
+    "Therefore": "« Therefore » exprime une conséquence, ce qui serait illogique ici.",
+    "Moreover": "« Moreover » ajoute une idée dans le même sens, alors qu'ici on oppose."
+   },
+   "i": "La deuxième phrase va à l'encontre de la première.",
+   "e": "« Nevertheless » est correct : il oppose deux faits, car la journée a été belle malgré le mauvais temps."
+  },
+  {
+   "d": 1,
+   "q": "She studied hard. ___, she passed the exam.",
+   "o": [
+    "Consequently",
+    "However",
+    "Whereas"
+   ],
+   "io": {
+    "However": "« However » oppose, or ici le succès découle de l'effort.",
+    "Whereas": "« Whereas » oppose deux éléments et ne s'emploie pas pour une conséquence."
+   },
+   "i": "La seconde phrase est le résultat de la première.",
+   "e": "« Consequently » est correct : il introduit la conséquence de son travail."
+  },
+  {
+   "d": 1,
+   "q": "The museum is free. ___, it is open every day.",
+   "o": [
+    "Moreover",
+    "Nevertheless",
+    "Therefore"
+   ],
+   "io": {
+    "Nevertheless": "« Nevertheless » oppose, mais ici les deux faits sont positifs.",
+    "Therefore": "« Therefore » exprime une conséquence, ce que n'est pas l'ouverture quotidienne."
+   },
+   "i": "On ajoute un deuxième avantage au premier.",
+   "e": "« Moreover » est correct : il ajoute une idée qui va dans le même sens que la précédente."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « You can borrow the car ___ you drive carefully. »",
+   "r": [
+    "provided that",
+    "as long as",
+    "provided",
+    "providing that",
+    "providing",
+    "so long as"
+   ],
+   "i": "La phrase pose une condition pour pouvoir emprunter la voiture : cherche une locution qui veut dire « à condition que ».",
+   "e": "On écrit « provided that » (ou « as long as ») : ces locutions posent une condition, « à condition que »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le connecteur qui sert à conclure.",
+   "p": "The printer broke down; *consequently, the report was late.",
+   "i": "Cherche le mot qui annonce la conséquence.",
+   "e": "« consequently » annonce la conséquence : la panne explique le retard du rapport."
+  },
+  {
+   "d": 1,
+   "q": "Big cities ___ Paris and Tokyo are expensive.",
+   "o": [
+    "such as",
+    "namely",
+    "whereas"
+   ],
+   "io": {
+    "namely": "« namely » sert à préciser exactement, comme « c'est-à-dire », pas à donner un exemple.",
+    "whereas": "« whereas » oppose deux éléments."
+   },
+   "i": "On cite des exemples de grandes villes.",
+   "e": "« such as » est correct : il introduit des exemples après un nom."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Le film est long ; néanmoins, il est passionnant. »",
+   "r": [
+    "The film is long; nevertheless, it is fascinating",
+    "The film is long; however, it is fascinating",
+    "The film is long; nonetheless, it is fascinating",
+    "The film is long. Nevertheless, it is fascinating",
+    "The film is long. However, it is fascinating",
+    "The film is long. Nonetheless, it is fascinating"
+   ],
+   "i": "Utilise un connecteur d'opposition, suivi d'une virgule.",
+   "e": "« The film is long; nevertheless, it is fascinating. » : « nevertheless » (ou « however », « nonetheless ») suit un point-virgule ou un point, puis une virgule."
+  },
+  {
+   "d": 2,
+   "q": "She likes tea, ___ her brother prefers coffee.",
+   "o": [
+    "whereas",
+    "moreover",
+    "therefore"
+   ],
+   "io": {
+    "moreover": "« moreover » ajoute une idée et relie deux phrases.",
+    "therefore": "« therefore » exprime une conséquence, pas une opposition."
+   },
+   "i": "On oppose deux personnes dans une même phrase.",
+   "e": "« whereas » est correct : il oppose deux éléments à l'intérieur d'une même phrase."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "you",
+    "can",
+    "stay",
+    "as",
+    "long",
+    "as",
+    "you",
+    "are",
+    "quiet"
+   ],
+   "fin": ".",
+   "i": "La condition est introduite par « as long as ».",
+   "e": "« You can stay as long as you are quiet. » : « as long as » pose la condition, ici le silence.",
+   "alt": [
+    [
+     "as",
+     "long",
+     "as",
+     "you",
+     "are",
+     "quiet",
+     "you",
+     "can",
+     "stay"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She forgot her umbrella. However, she got wet.",
+   "r": [
+    "She forgot her umbrella. Consequently, she got wet.",
+    "She forgot her umbrella. As a result, she got wet.",
+    "She forgot her umbrella. Therefore, she got wet."
+   ],
+   "i": "Le fait de se mouiller est-il une opposition ou une conséquence ?",
+   "e": "« She forgot her umbrella. As a result, she got wet. » : le second fait est la conséquence du premier, donc on emploie « as a result », « consequently » ou « therefore » ; « however » exprimerait une opposition."
+  },
+  {
+   "d": 2,
+   "q": "Quel connecteur sert à illustrer ?",
+   "o": [
+    "For instance",
+    "Hence",
+    "Whereas"
+   ],
+   "io": {
+    "Hence": "« Hence » exprime une conséquence.",
+    "Whereas": "« Whereas » exprime une opposition."
+   },
+   "i": "On veut donner un cas concret qui illustre ce qu'on vient d'affirmer : cherche l'équivalent de « par exemple » parmi les trois.",
+   "e": "« For instance » est correct : il introduit un exemple, comme « par exemple »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He lost his job. ___, he decided to study again. » (par conséquent)",
+   "r": [
+    "As a result",
+    "Consequently",
+    "Therefore",
+    "Thus",
+    "Hence",
+    "Accordingly",
+    "So"
+   ],
+   "i": "Perdre son emploi est la cause, étudier à nouveau est le résultat : cherche un connecteur de conséquence.",
+   "e": "« As a result » (ou « Consequently », « Therefore ») est correct : il introduit la conséquence de la perte d'emploi."
+  },
+  {
+   "d": 2,
+   "q": "Touche le connecteur qui ajoute, puis celui qui oppose.",
+   "p": "It is cheap; *moreover, it is fast. *However, it is noisy.",
+   "i": "L'un va dans le même sens, l'autre contredit.",
+   "e": "« Moreover » ajoute un avantage (rapide), tandis que « However » oppose le défaut (bruyant)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous partirons à moins qu'il ne pleuve. »",
+   "r": [
+    "We will leave unless it rains",
+    "We will go unless it rains",
+    "We are leaving unless it rains"
+   ],
+   "i": "« à moins que » se dit en un seul mot.",
+   "e": "« We will leave unless it rains. » : « unless » signifie « à moins que » et s'emploie avec un verbe au présent, sans « not »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Several fruits such as for instance apples are rich in fibre.",
+   "r": [
+    "Several fruits such as apples are rich in fibre.",
+    "Several fruits, for instance apples, are rich in fibre."
+   ],
+   "i": "Deux connecteurs d'exemple se suivent.",
+   "e": "« Several fruits such as apples are rich in fibre. » : un seul connecteur d'exemple suffit, car en cumuler deux alourdit la phrase."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The plan is risky. In addition, it might work.",
+   "r": [
+    "The plan is risky. However, it might work.",
+    "The plan is risky. Nevertheless, it might work.",
+    "The plan is risky. Nonetheless, it might work."
+   ],
+   "i": "La seconde phrase contredit-elle ou prolonge-t-elle la première ?",
+   "e": "« The plan is risky. However, it might work. » : le deuxième fait s'oppose au premier, donc il faut un connecteur d'opposition ; « in addition » ajouterait une idée dans le même sens."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Les ventes ont augmenté ; en outre, les coûts ont baissé. »",
+   "r": [
+    "Sales have increased; moreover, costs have fallen",
+    "Sales increased; moreover, costs fell",
+    "Sales rose; moreover, costs fell",
+    "Sales have risen; moreover, costs have fallen",
+    "Sales have increased; furthermore, costs have fallen",
+    "Sales increased; furthermore, costs fell",
+    "Sales have increased; in addition, costs have fallen",
+    "Sales increased; in addition, costs fell",
+    "Sales rose; in addition, costs fell",
+    "Sales rose; furthermore, costs fell"
+   ],
+   "i": "« en outre » ajoute une idée : choisis un connecteur d'addition.",
+   "e": "« Sales rose; moreover, costs fell. » : « moreover » (ou « furthermore ») ajoute une information, après un point-virgule et suivi d'une virgule."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase oppose correctement les deux faits ?",
+   "o": [
+    "It was late. However, we kept working.",
+    "It was late. Hence, we kept working.",
+    "It was late. Moreover, we kept working."
+   ],
+   "io": {
+    "It was late. Hence, we kept working.": "« Hence » exprime une conséquence, or l'heure tardive n'explique pas qu'on continue.",
+    "It was late. Moreover, we kept working.": "« Moreover » ajoute une idée dans le même sens, ce qui n'est pas le cas ici."
+   },
+   "i": "Le second fait va à l'encontre de ce qu'on attendrait de l'heure tardive.",
+   "e": "La première est correcte : « However » oppose deux faits ; on continue de travailler malgré l'heure tardive. Il suit un point et il est suivi d'une virgule."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "enjoys",
+    "tennis",
+    "whereas",
+    "he",
+    "prefers",
+    "chess"
+   ],
+   "fin": ".",
+   "i": "« whereas » relie deux idées qui s'opposent.",
+   "e": "« She enjoys tennis whereas he prefers chess. » : « whereas » met en contraste deux personnes ou deux choses dans une même phrase.",
+   "alt": [
+    [
+     "he",
+     "prefers",
+     "chess",
+     "whereas",
+     "she",
+     "enjoys",
+     "tennis"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Quel connecteur NE peut PAS introduire une opposition ?",
+   "o": [
+    "Hence",
+    "Nonetheless",
+    "Whereas"
+   ],
+   "io": {
+    "Nonetheless": "« Nonetheless » est un connecteur d'opposition, proche de « nevertheless ».",
+    "Whereas": "« Whereas » oppose deux éléments, comme « alors que »."
+   },
+   "i": "Un des trois exprime plutôt une conséquence.",
+   "e": "« Hence » est la bonne réponse : il signifie « d'où » et exprime une conséquence, pas une opposition."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « The firm is small; ___, it is highly profitable. » (néanmoins)",
+   "r": [
+    "nevertheless",
+    "nonetheless",
+    "however"
+   ],
+   "i": "Une petite entreprise qui rapporte beaucoup : les deux faits s'opposent, il faut donc un connecteur d'opposition.",
+   "e": "« nevertheless » (ou « nonetheless », « however ») est correct : il oppose la petite taille de l'entreprise à sa rentabilité."
+  }
+ ],
+ "marqueurs-oral": [
+  {
+   "d": 1,
+   "q": "— Is the party on Friday? — ___, it's on Saturday.",
+   "o": [
+    "Actually",
+    "Anyway",
+    "By the way"
+   ],
+   "io": {
+    "Anyway": "« Anyway » ramène au sujet principal, il ne corrige pas.",
+    "By the way": "« By the way » introduit un nouveau sujet, ce qui n'est pas le cas ici."
+   },
+   "i": "On corrige une information donnée par l'autre.",
+   "e": "« Actually » est correct : il corrige une idée, comme « en fait »."
+  },
+  {
+   "d": 1,
+   "q": "___, did you see the match last night?",
+   "o": [
+    "By the way",
+    "Mind you",
+    "Actually"
+   ],
+   "io": {
+    "Mind you": "« Mind you » ajoute une restriction à ce qui vient d'être dit.",
+    "Actually": "« Actually » corrige ou nuance une idée précédente."
+   },
+   "i": "La question n'a aucun lien avec ce qui précède : le locuteur ouvre un nouveau sujet, comme avec « au fait » en français.",
+   "e": "« By the way » est correct : il introduit un nouveau sujet, comme « au fait »."
+  },
+  {
+   "d": 1,
+   "q": "We've talked enough about the weather. ___, let's start the meeting.",
+   "o": [
+    "Anyway",
+    "Actually",
+    "I mean"
+   ],
+   "io": {
+    "Actually": "« Actually » corrige une idée, ce n'est pas le but ici.",
+    "I mean": "« I mean » reformule ou précise, il ne ramène pas au sujet."
+   },
+   "i": "On referme la parenthèse et on revient à l'essentiel.",
+   "e": "« Anyway » est correct : il clôt la digression et ramène au sujet, comme « bref »."
+  },
+  {
+   "d": 1,
+   "q": "Complète avec le marqueur du changement de sujet : « ___, have you got Sam's number? »",
+   "r": [
+    "By the way"
+   ],
+   "i": "En français, tu dirais « au fait » pour changer de sujet : cherche le marqueur anglais de trois mots qui joue ce rôle.",
+   "e": "« By the way » est correct : il annonce qu'on change de sujet, comme « au fait » en français."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots du marqueur qui reformule.",
+   "p": "It's a bit cold, *I *mean, it's freezing.",
+   "i": "Le marqueur qui reformule se compose de deux mots, un pronom et un verbe, et se traduit par « je veux dire ».",
+   "e": "« I mean » est le marqueur qui reformule : on corrige « a bit cold » en une idée plus forte."
+  },
+  {
+   "d": 1,
+   "q": "Comment dit-on « en fait » ?",
+   "o": [
+    "actually",
+    "currently",
+    "finally"
+   ],
+   "io": {
+    "currently": "« currently » veut dire « actuellement », pas « en fait ».",
+    "finally": "« finally » veut dire « enfin, finalement »."
+   },
+   "i": "Attention au faux ami « actuellement ».",
+   "e": "« actually » veut dire « en fait ». Le piège : « currently » est le mot pour « actuellement »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « En fait, je ne suis pas sûr. »",
+   "r": [
+    "Actually, I'm not sure",
+    "Actually, I am not sure",
+    "Actually, I'm not certain",
+    "I'm not sure, actually",
+    "I'm not sure actually"
+   ],
+   "i": "Commence par le marqueur qui nuance ou corrige.",
+   "e": "« Actually, I'm not sure. » : « actually » nuance ou corrige ce qu'on pensait, comme « en fait »."
+  },
+  {
+   "d": 2,
+   "q": "He's rude sometimes. ___, he's honest.",
+   "o": [
+    "Mind you",
+    "Anyway",
+    "By the way"
+   ],
+   "io": {
+    "Anyway": "« Anyway » ramène au sujet, il n'apporte pas de nuance.",
+    "By the way": "« By the way » change de sujet."
+   },
+   "i": "On ajoute une restriction à un reproche.",
+   "e": "« Mind you » est correct : il ajoute une restriction, comme « remarque » ou « cela dit »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "actually",
+    "I",
+    "think",
+    "you",
+    "are",
+    "right"
+   ],
+   "fin": ".",
+   "i": "Le marqueur se met tout au début de la phrase et sert à nuancer ou à rectifier l'opinion qui suit.",
+   "e": "« Actually I think you are right. » : le marqueur « actually » se place en tête et nuance l'opinion qui suit.",
+   "alt": [
+    [
+     "I",
+     "think",
+     "you",
+     "are",
+     "right",
+     "actually"
+    ],
+    [
+     "I",
+     "actually",
+     "think",
+     "you",
+     "are",
+     "right"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a un faux ami (le sens voulu est « actuellement »).",
+   "f": "He is actually unemployed but looking for a job.",
+   "r": [
+    "He is currently unemployed but looking for a job."
+   ],
+   "i": "Quel mot anglais signifie vraiment « actuellement » ?",
+   "e": "« He is currently unemployed. » : « actually » veut dire « en fait » ; pour « actuellement », on emploie « currently »."
+  },
+  {
+   "d": 2,
+   "q": "We talked about work all day. ___, how was your weekend? (nouveau sujet)",
+   "o": [
+    "By the way",
+    "Mind you",
+    "Actually"
+   ],
+   "io": {
+    "Mind you": "« Mind you » ajoute une restriction au sujet en cours.",
+    "Actually": "« Actually » corrige quelque chose qui vient d'être dit."
+   },
+   "i": "Après un long sujet de conversation, on veut en ouvrir un autre : cherche le marqueur qui annonce ce changement.",
+   "e": "« By the way » est correct : il ouvre un nouveau sujet de conversation."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He's tired, I ___, exhausted. »",
+   "r": [
+    "mean"
+   ],
+   "i": "Le marqueur qui reformule est « I … ».",
+   "e": "On écrit « I mean » : ce marqueur reformule ou précise ce qu'on vient de dire, ici « tired » devient « exhausted »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le marqueur qui ramène au sujet principal.",
+   "p": "That was a funny story. *Anyway, back to the budget.",
+   "i": "Ce marqueur ferme la parenthèse et se traduit par « bref » ou « enfin, bon » : il ramène la conversation à son sujet.",
+   "e": "« Anyway » ramène la conversation au sujet principal, ici le budget, après une digression."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Bref, revenons au travail. »",
+   "r": [
+    "Anyway, let's get back to work",
+    "Anyway, let's go back to work",
+    "Anyway, back to work"
+   ],
+   "i": "Commence la phrase par le marqueur qui ramène au sujet principal après une digression, puis utilise « let's get back ».",
+   "e": "« Anyway, let's get back to work. » : « anyway » clôt la digression et relance le sujet principal."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : le marqueur ne convient pas (tu veux dire « au fait »).",
+   "f": "Mind you, are you free on Friday?",
+   "r": [
+    "By the way, are you free on Friday?"
+   ],
+   "i": "Tu veux changer de sujet, pas ajouter une restriction : quel marqueur se traduit par « au fait » ?",
+   "e": "« By the way, are you free on Friday? » : « mind you » ajoute une restriction, alors que « by the way » introduit un nouveau sujet."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : ton ami s'est trompé de jour et tu le corriges.",
+   "f": "By the way, it's on Tuesday, not on Monday.",
+   "r": [
+    "Actually, it's on Tuesday, not on Monday.",
+    "Actually, it's on Tuesday, not Monday."
+   ],
+   "i": "Tu rectifies une erreur : quel marqueur ?",
+   "e": "« Actually, it's on Tuesday, not on Monday. » : on corrige une information avec « actually ». « By the way » ouvrirait un autre sujet."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « I love this town. ___, the winters are very cold. »",
+   "r": [
+    "Mind you"
+   ],
+   "i": "Tu ajoutes une restriction à ce que tu viens de dire.",
+   "e": "« Mind you » est correct : il nuance un éloge par une restriction, comme « remarque » ou « cela dit »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Remarque, il est plutôt honnête. »",
+   "r": [
+    "Mind you, he's quite honest",
+    "Mind you, he is quite honest",
+    "Mind you, he's rather honest",
+    "Mind you, he is rather honest",
+    "Mind you, he's fairly honest"
+   ],
+   "i": "« Remarque » au sens de « cela dit » se traduit par « mind you ».",
+   "e": "« Mind you, he's quite honest. » : « mind you » introduit une restriction ou une nuance, suivie d'une phrase normale."
+  },
+  {
+   "d": 3,
+   "q": "It was a disaster. ___, nobody came.",
+   "o": [
+    "I mean",
+    "By the way",
+    "Anyway"
+   ],
+   "io": {
+    "By the way": "« By the way » changerait de sujet, alors qu'on développe la même idée.",
+    "Anyway": "« Anyway » ramènerait à un sujet principal, ce qui n'est pas le cas ici."
+   },
+   "i": "Le second membre précise ce qu'on vient de dire.",
+   "e": "« I mean » est correct : il précise pourquoi c'était un désastre, comme « je veux dire »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "by",
+    "the",
+    "way",
+    "did",
+    "you",
+    "lock",
+    "the",
+    "door"
+   ],
+   "fin": "?",
+   "i": "Le marqueur qui change de sujet ouvre la phrase, puis la question commence normalement avec « did ».",
+   "e": "« By the way, did you lock the door? » : « by the way » ouvre la question pour changer de sujet, suivi d'une question normale."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase utilise « actually » correctement ?",
+   "o": [
+    "— You're from Lyon? — Actually, I'm from Nantes.",
+    "— You're from Lyon? — Currently, I'm from Nantes.",
+    "— You're from Lyon? — Anyway, I'm from Nantes."
+   ],
+   "io": {
+    "— You're from Lyon? — Currently, I'm from Nantes.": "« currently » veut dire « actuellement » et ne corrige pas.",
+    "— You're from Lyon? — Anyway, I'm from Nantes.": "« Anyway » ramène au sujet principal et ne corrige pas."
+   },
+   "i": "On corrige une idée fausse de l'autre.",
+   "e": "La première est correcte : « Actually, I'm from Nantes. » corrige poliment une erreur, comme « en fait »."
+  }
+ ],
+ "couples-inseparables": [
+  {
+   "d": 1,
+   "q": "I think I've ___ a mistake in the bill.",
+   "o": [
+    "made",
+    "done",
+    "taken"
+   ],
+   "io": {
+    "done": "« do a mistake » est un calque du français ; la collocation est « make a mistake ».",
+    "taken": "« take a mistake » n'existe pas."
+   },
+   "i": "En anglais, on « fait » une erreur avec un verbe précis.",
+   "e": "« made » est correct : on dit « make a mistake ». Le piège du francophone : dire « do a mistake » par calque de « faire une erreur »."
+  },
+  {
+   "d": 1,
+   "q": "Could you ___ a photo of us?",
+   "o": [
+    "take",
+    "make",
+    "do"
+   ],
+   "io": {
+    "make": "« make a photo » est faux : le verbe de la collocation est « take ».",
+    "do": "« do a photo » est faux : le verbe de la collocation est « take »."
+   },
+   "i": "Ne calque pas « faire une photo » : en anglais, on emploie le verbe qui correspond à « prendre » avec « a photo ».",
+   "e": "« take » est correct : on dit « take a photo »."
+  },
+  {
+   "d": 1,
+   "q": "We had ___ traffic on the way here.",
+   "o": [
+    "heavy",
+    "strong",
+    "big"
+   ],
+   "io": {
+    "strong": "« strong traffic » se comprend mais sonne étranger.",
+    "big": "« big traffic » se comprend mais sonne étranger."
+   },
+   "i": "Comme pour la pluie, un seul adjectif est naturel.",
+   "e": "« heavy » est correct : on dit « heavy traffic », comme « heavy rain »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She never pays ___ to my advice. »",
+   "r": [
+    "attention",
+    "heed"
+   ],
+   "i": "Pour « faire attention », on dit « pay » + un nom.",
+   "e": "On écrit « attention » : la collocation est « pay attention », et non « make attention » par calque du français."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui forme un couple avec « coffee ».",
+   "p": "I need a *strong coffee to wake up.",
+   "i": "Pense à l'adjectif qu'on emploie pour un café très serré, qui réveille bien, et qui n'est pas « big ».",
+   "e": "« strong » forme un couple avec « coffee » : un café fort se dit « strong coffee »."
+  },
+  {
+   "d": 1,
+   "q": "He is a ___ smoker.",
+   "o": [
+    "heavy",
+    "strong",
+    "big"
+   ],
+   "io": {
+    "strong": "« strong smoker » se comprend mais n'est pas la collocation.",
+    "big": "« big smoker » se comprend mais n'est pas la collocation."
+   },
+   "i": "Comme « heavy rain », un adjectif de poids.",
+   "e": "« heavy » est correct : on dit « a heavy smoker » pour un gros fumeur."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je dois prendre une décision. »",
+   "r": [
+    "I have to make a decision",
+    "I must make a decision",
+    "I need to make a decision",
+    "I've got to make a decision",
+    "I have to take a decision",
+    "I must take a decision"
+   ],
+   "i": "Une décision se « fabrique » en anglais, comme une erreur : cherche le verbe qui va avec « decision ».",
+   "e": "« I have to make a decision. » : la collocation courante est « make a decision » (l'anglais britannique accepte aussi « take a decision »)."
+  },
+  {
+   "d": 2,
+   "q": "We'll ___ our best to arrive on time.",
+   "o": [
+    "do",
+    "make",
+    "take"
+   ],
+   "io": {
+    "make": "« make our best » est faux : on dit « do our best ».",
+    "take": "« take our best » n'existe pas."
+   },
+   "i": "Une expression figée, toujours avec le même verbe.",
+   "e": "« do » est correct : l'expression est « do one's best »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "paid",
+    "a",
+    "short",
+    "visit",
+    "to",
+    "his",
+    "grandmother"
+   ],
+   "fin": ".",
+   "i": "Le verbe de la collocation est « pay ».",
+   "e": "« He paid a short visit to his grandmother. » : la collocation est « pay a visit ». On y associe l'adjectif « short »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We did a lot of mistakes in the test.",
+   "r": [
+    "We made a lot of mistakes in the test."
+   ],
+   "i": "Le français dit « faire une erreur », mais l'anglais n'emploie pas le verbe qui ressemble à « faire » pour « mistake » : lequel choisir ?",
+   "e": "« We made a lot of mistakes in the test. » : la collocation est « make a mistake ». Le piège : « do » vient du français « faire »."
+  },
+  {
+   "d": 2,
+   "q": "I'm ___ sorry for the delay.",
+   "o": [
+    "deeply",
+    "highly",
+    "heavily"
+   ],
+   "io": {
+    "highly": "« highly sorry » est faux ; « highly » va avec likely, unlikely, successful.",
+    "heavily": "« heavily sorry » est faux ; « heavily » va avec des verbes comme rely, depend."
+   },
+   "i": "Un adverbe d'intensité pour un regret sincère.",
+   "e": "« deeply » est correct : on dit « deeply sorry » pour exprimer un regret profond."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « We need to ___ a break. »",
+   "r": [
+    "take",
+    "have"
+   ],
+   "i": "Ne calque pas « faire une pause » : deux verbes courants conviennent, l'un qui veut dire « prendre » et l'autre « avoir ».",
+   "e": "« take » (ou « have ») est correct : on dit « take a break »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui ne forme pas un bon couple.",
+   "p": "We got *strong snow last night.",
+   "i": "Comme pour la pluie, on dit « heavy ».",
+   "e": "« strong » ne convient pas : on dit « heavy snow », comme « heavy rain »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle a commis une grave erreur. »",
+   "r": [
+    "She made a serious mistake",
+    "She made a big mistake",
+    "She made a bad mistake",
+    "She made a grave mistake",
+    "She made a huge mistake",
+    "She made a terrible mistake",
+    "She made a major mistake",
+    "She made a serious error"
+   ],
+   "i": "Le verbe qui va avec « mistake » est « make ».",
+   "e": "« She made a serious mistake. » : la collocation est « make a mistake », avec « serious » pour la gravité."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We discussed it for hours and finally did a decision.",
+   "r": [
+    "We discussed it for hours and finally made a decision."
+   ],
+   "i": "Le français dit « prendre une décision » ou « faire un choix », mais l'anglais emploie un verbe précis avec « decision » : cherche-le.",
+   "e": "« We discussed it for hours and finally made a decision. » : la collocation est « make a decision », et non « do »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It is deeply likely that he will agree.",
+   "r": [
+    "It is highly likely that he will agree.",
+    "It is very likely that he will agree.",
+    "It is extremely likely that he will agree."
+   ],
+   "i": "Un seul adverbe d'intensité va naturellement avec « likely » ; l'autre exprime plutôt des sentiments, comme dans « deeply sorry ».",
+   "e": "« It is highly likely that he will agree. » : la collocation naturelle est « highly likely » (« very likely » est correct aussi), alors que « deeply » va avec des sentiments comme sorry ou concerned."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il y avait une forte odeur de brûlé. »",
+   "r": [
+    "There was a strong smell of burning",
+    "There was a strong burning smell"
+   ],
+   "i": "Pour une odeur comme pour un café, l'anglais choisit le même adjectif, qui dit que l'intensité est élevée.",
+   "e": "« There was a strong smell of burning. » : en anglais, une odeur est « strong », comme un café."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons fait une pause avant de continuer. »",
+   "r": [
+    "We took a break before continuing",
+    "We had a break before continuing",
+    "We took a break before we carried on",
+    "We took a break before carrying on",
+    "We took a break before we continued"
+   ],
+   "i": "Le français dit « faire une pause », mais l'anglais emploie un autre verbe : cherche celui qu'on associe à « a break » ou « a rest ».",
+   "e": "« We took a break before continuing. » : on « prend » une pause (take a break) ; on ne « fait » pas une pause."
+  },
+  {
+   "d": 3,
+   "q": "Quel couple est naturel ?",
+   "o": [
+    "fully aware",
+    "highly aware",
+    "heavily aware"
+   ],
+   "io": {
+    "highly aware": "« highly aware » sonne étranger ; « highly » va avec likely, successful, effective.",
+    "heavily aware": "« heavily aware » est faux ; « heavily » va avec rely, depend, rain."
+   },
+   "i": "Un adverbe qui veut dire « complètement ».",
+   "e": "« fully aware » est correct : « fully » exprime le degré complet de conscience."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "company",
+    "has",
+    "made",
+    "significant",
+    "progress",
+    "this",
+    "year"
+   ],
+   "fin": ".",
+   "i": "On « fait » des progrès avec un verbe précis.",
+   "e": "« The company has made significant progress this year. » : la collocation est « make progress », avec « significant » pour le degré.",
+   "alt": [
+    [
+     "this",
+     "year",
+     "the",
+     "company",
+     "has",
+     "made",
+     "significant",
+     "progress"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est naturelle ?",
+   "o": [
+    "She pays great attention to detail.",
+    "She makes great attention to detail.",
+    "She does great attention to detail."
+   ],
+   "io": {
+    "She makes great attention to detail.": "« make attention » est un calque du français.",
+    "She does great attention to detail.": "« do attention » est un calque du français."
+   },
+   "i": "Le verbe de « attention » est le même que dans « pay attention ».",
+   "e": "La première est naturelle : « pay attention to » est la collocation, et « great » en renforce le degré."
+  },
+  {
+   "d": 3,
+   "q": "Choisis l'adverbe qui forme la collocation naturelle : « It is ___ unlikely that the museum will reopen soon. »",
+   "i": "Cherche l'adverbe qu'on emploie aussi dans « highly likely » ou « highly successful ».",
+   "e": "« highly » est correct : on dit « highly unlikely », comme « highly likely ».",
+   "o": [
+    "highly",
+    "deeply",
+    "heavily"
+   ],
+   "io": {
+    "deeply": "« deeply » va avec des sentiments ou des idées (deeply sorry, deeply concerned), pas avec « unlikely ».",
+    "heavily": "« heavily » va avec des verbes comme rely, depend ou rain, pas avec « unlikely »."
+   }
+  }
+ ],
+ "ponctuation": [
+  {
+   "d": 1,
+   "q": "That is ___ bike.",
+   "o": [
+    "Tom's",
+    "Toms",
+    "Toms'"
+   ],
+   "io": {
+    "Toms": "Sans apostrophe, « Toms » serait un pluriel.",
+    "Toms'": "L'apostrophe seule suit un pluriel en -s ; ici Tom est singulier."
+   },
+   "i": "On veut dire « le vélo de Tom » : quelle marque de possession ?",
+   "e": "« Tom's » est correct : la possession se marque par 's pour un nom singulier."
+  },
+  {
+   "d": 1,
+   "q": "The dog wagged ___ tail.",
+   "o": [
+    "its",
+    "it's",
+    "its'"
+   ],
+   "io": {
+    "it's": "« it's » veut dire « it is » ou « it has », pas « sa queue ».",
+    "its'": "Cette forme n'existe pas en anglais."
+   },
+   "i": "Le possessif de « it » s'écrit sans apostrophe.",
+   "e": "« its » est correct : le possessif de « it » s'écrit sans apostrophe."
+  },
+  {
+   "d": 1,
+   "q": "Quel signe annonce une explication ou une liste ?",
+   "o": [
+    "les deux-points",
+    "l'apostrophe",
+    "la virgule devant that"
+   ],
+   "io": {
+    "l'apostrophe": "L'apostrophe marque la contraction ou la possession, pas une annonce.",
+    "la virgule devant that": "On ne met pas de virgule devant « that » après un verbe."
+   },
+   "i": "Un seul de ces signes annonce quelque chose.",
+   "e": "Les deux-points annoncent une explication ou une liste, comme dans « You need three things: a pen, paper and time »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ late; we should go home. » (it is)",
+   "r": [
+    "It's",
+    "It is"
+   ],
+   "i": "Écris la contraction de « it is » ou la forme complète.",
+   "e": "On écrit « It's » (ou « It is ») : l'apostrophe marque ici la contraction de « it is »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui montre la possession.",
+   "p": "The *girl's coat is on the chair.",
+   "i": "Cherche le mot qui se termine par une apostrophe suivie de la lettre s : il dit à qui appartient le manteau.",
+   "e": "« girl's » montre la possession : l'apostrophe et le s indiquent que le manteau est à la fille."
+  },
+  {
+   "d": 1,
+   "q": "Dans « It's raining », que représente « 's » ?",
+   "o": [
+    "is",
+    "has",
+    "la possession"
+   ],
+   "io": {
+    "has": "« It's » peut valoir « it has » devant un participe passé (It's been long), mais pas devant « raining ».",
+    "la possession": "La possession de « it » s'écrit « its », sans apostrophe."
+   },
+   "i": "Remplace « 's » par « is » ou « has » dans la phrase et vois laquelle des deux reste naturelle devant « raining ».",
+   "e": "« 's » représente « is » : « It's raining » = « It is raining ». L'apostrophe marque ici une contraction, et non une possession."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « le sac de ma sœur »",
+   "r": [
+    "my sister's bag"
+   ],
+   "i": "En anglais, le possesseur passe avant l'objet : « ma sœur » vient d'abord, suivi de la marque de possession, puis du sac.",
+   "e": "« my sister's bag » : en anglais, on place le possesseur avant, avec 's, et on n'emploie pas « of »."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "Apples are on sale today.",
+    "Apple's are on sale today.",
+    "Apples' are on sale today."
+   ],
+   "io": {
+    "Apple's are on sale today.": "L'apostrophe ne forme jamais un pluriel.",
+    "Apples' are on sale today.": "Ici, l'apostrophe après le -s marquerait une possession qui n'existe pas."
+   },
+   "i": "Un pluriel simple ne prend pas d'apostrophe.",
+   "e": "« Apples are on sale today. » est correct : un pluriel simple s'écrit avec un -s, sans apostrophe."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my",
+    "brother's",
+    "car",
+    "is",
+    "in",
+    "the",
+    "garage"
+   ],
+   "fin": ".",
+   "i": "L'apostrophe marque ici la possession.",
+   "e": "« My brother's car is in the garage. » : « brother's » marque la possession, avec 's pour un seul frère."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The cat licked it's paw.",
+   "r": [
+    "The cat licked its paw."
+   ],
+   "i": "Le possessif de « it » ne prend pas d'apostrophe.",
+   "e": "« The cat licked its paw. » : « its » est le possessif de « it » ; « it's » veut dire « it is »."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la forme correcte : « les jouets des garçons »",
+   "o": [
+    "the boys' toys",
+    "the boys's toys",
+    "the boy's toys"
+   ],
+   "io": {
+    "the boys's toys": "Après un pluriel en -s, on n'ajoute pas un deuxième s.",
+    "the boy's toys": "« boy's » est un singulier : cela voudrait dire « les jouets du garçon »."
+   },
+   "i": "Le pluriel « boys » se termine déjà par -s.",
+   "e": "« the boys' toys » est correct : après un pluriel en -s, on ajoute seulement l'apostrophe."
+  },
+  {
+   "d": 2,
+   "q": "Écris avec une apostrophe : « the car of my parents »",
+   "r": [
+    "my parents' car"
+   ],
+   "i": "Le possesseur « my parents » est un pluriel en -s : sa marque de possession ne prend donc qu'un seul signe, et il passe avant « car ».",
+   "e": "« my parents' car » : après un pluriel qui se termine par -s, on ajoute seulement l'apostrophe."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot où l'apostrophe est de trop.",
+   "p": "We saw lots of *tourist's in Paris.",
+   "i": "Il s'agit d'un pluriel, pas d'une possession.",
+   "e": "« tourist's » est faux : un pluriel s'écrit « tourists », sans apostrophe."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « C'est son livre, pas le tien. »",
+   "r": [
+    "It's his book, not yours",
+    "It's her book, not yours",
+    "That's his book, not yours",
+    "That's her book, not yours",
+    "This is his book, not yours",
+    "This is her book, not yours"
+   ],
+   "i": "Le possessif « le tien » ne prend pas d'apostrophe.",
+   "e": "« It's his book, not yours. » : « it's » = « it is » avec apostrophe, et « yours » s'écrit sans apostrophe."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The childrens toys are in the garden.",
+   "r": [
+    "The children's toys are in the garden."
+   ],
+   "i": "« children » est déjà un pluriel, mais il y a possession.",
+   "e": "« The children's toys are in the garden. » : « children » est un pluriel irrégulier sans -s, donc on ajoute 's pour la possession."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Both my sisters's rooms are upstairs.",
+   "r": [
+    "Both my sisters' rooms are upstairs."
+   ],
+   "i": "Le mot « sisters » est déjà un pluriel qui se termine par -s : que faut-il alors ajouter pour marquer la possession ?",
+   "e": "« Both my sisters' rooms are upstairs. » : avec un pluriel en -s, on n'ajoute que l'apostrophe."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mon frère, qui habite à Rome, est infirmier. »",
+   "r": [
+    "My brother, who lives in Rome, is a nurse"
+   ],
+   "i": "L'information en bonus s'encadre de virgules.",
+   "e": "« My brother, who lives in Rome, is a nurse. » : la relative est une information en bonus ; elle est donc entre virgules."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « My sister, ___ lives in Rome, is a nurse. »",
+   "o": [
+    "who",
+    "that",
+    "which"
+   ],
+   "io": {
+    "that": "On n'emploie pas « that » dans une relative entre virgules.",
+    "which": "« which » est réservé aux choses ; ici on parle d'une personne."
+   },
+   "i": "La relative est entre virgules, et on parle d'une personne.",
+   "e": "« who » est correct : une relative en bonus entre virgules ne prend pas « that », et « who » désigne une personne."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « les chaussures de Sarah »",
+   "r": [
+    "Sarah's shoes"
+   ],
+   "i": "En anglais, on nomme d'abord le possesseur, puis on lui ajoute la marque de possession (apostrophe et s), puis l'objet.",
+   "e": "« Sarah's shoes » : le possesseur vient d'abord, suivi de 's."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it's",
+    "late",
+    "so",
+    "we",
+    "should",
+    "go",
+    "home"
+   ],
+   "fin": ".",
+   "i": "« it's » est la contraction de « it is ».",
+   "e": "« It's late so we should go home. » : l'apostrophe marque la contraction de « it is »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "It's a pity that the cat lost its collar.",
+    "It's a pity that the cat lost it's collar.",
+    "Its a pity that the cat lost its collar."
+   ],
+   "io": {
+    "It's a pity that the cat lost it's collar.": "Devant « collar », il faut le possessif « its », sans apostrophe.",
+    "Its a pity that the cat lost its collar.": "Au début, « it is » se contracte en « It's », avec apostrophe."
+   },
+   "i": "Une seule phrase écrit correctement à la fois la contraction de « it is » et le possessif de « it ».",
+   "e": "La première est correcte : « It's » = « it is » au début, et « its » est le possessif devant « collar »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Anna was tired she went to bed early.",
+   "r": [
+    "Anna was tired, so she went to bed early.",
+    "Anna was tired. She went to bed early.",
+    "Anna was tired so she went to bed early.",
+    "Anna was tired and she went to bed early."
+   ],
+   "i": "La phrase colle deux phrases complètes sans rien entre elles : il faut un point, ou un petit mot de liaison.",
+   "e": "« Anna was tired, so she went to bed early. » : deux phrases complètes se séparent par un point ou se relient par « so » ou « and »."
+  }
+ ]
+}

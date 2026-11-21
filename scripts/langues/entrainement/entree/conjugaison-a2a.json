@@ -1,0 +1,277 @@
+{
+ "section": "conjugaison",
+ "niveau": "A2",
+ "univers": "La Machine à voyager dans le temps",
+ "lecons": [
+  {
+   "id": "habitude-ou-direct",
+   "niveau": "A2",
+   "titre": "Habitude ou direct ?",
+   "notion": "Present simple ou present continuous",
+   "image": "Deux présents vivent en anglais : l'album photo (ce que tu fais d'habitude) et la caméra en direct (ce que tu fais maintenant).",
+   "demo": [
+    "I walk to school every day.",
+    "But today, I am taking the bus.",
+    "I know the answer.",
+    "I am knowing the answer."
+   ],
+   "regle": "Le présent simple parle de ce qui est vrai en général : habitudes, vérités, goûts, situations durables ({I work in a bank}). Le présent continu parle de ce qui se passe maintenant, ou en ce moment de la vie, pour un temps limité ({I'm working from home this week}). Les petits mots aident : {usually}, {every day}, {often}, {never} appellent le simple ; {now}, {right now}, {at the moment}, {today}, {Look!} appellent le continu. Enfin, les verbes d'état ({know}, {like}, {want}, {understand}, {believe}) restent presque toujours au présent simple.",
+   "formes": [
+    "L'album (d'habitude) : sujet + verbe (+ {-s} avec {he}, {she}, {it}) — He drives to work.",
+    "La caméra (en ce moment) : sujet + {am} / {is} / {are} + verbe en {-ing} — He is walking today."
+   ],
+   "usages": [
+    "Une habitude : I usually drink tea. (D'habitude, je bois du thé.)",
+    "Une exception aujourd'hui : But today I am drinking coffee. (Mais aujourd'hui, je bois du café.)",
+    "Un verbe d'état, même maintenant : I understand you now. (Je te comprends, maintenant.)"
+   ],
+   "pieges": [
+    "faux « I am knowing the answer. » → juste « I know the answer. » : {know} est un verbe d'état : il ne se met pas en {-ing}.",
+    "faux « Every morning I am taking the bus. » → juste « Every morning I take the bus. » : {every morning} décrit une habitude : présent simple.",
+    "faux « Be quiet! I work. » → juste « Be quiet! I am working. » : {Be quiet!} : l'action a lieu en ce moment même, on prend le continu."
+   ],
+   "retenir": "D'habitude = présent simple. En ce moment = {be} + {-ing}. Les verbes d'état restent simples.",
+   "secret": "Si tu peux dire « en train de » en français, l'anglais veut le -ing. Si tu parles d'une habitude, d'un goût, d'une vérité, ou si le verbe exprime un état (savoir, vouloir, aimer, croire, posséder), reste au present simple. Retiens les verbes d'état avec cette phrase : « I know I like what I want and need. »",
+   "defi_deja_pose": [
+    "« Every morning, she ___ coffee. »",
+    "« Look! The bus ___. »",
+    "« I ___ what you mean. »",
+    "« Water ___ at 0 °C. »",
+    "Mets le verbe au bon présent : « Be quiet, I (talk) on the phone. »",
+    "« ___ you ___ this song? » (aimer, en général)"
+   ]
+  },
+  {
+   "id": "was-were",
+   "niveau": "A2",
+   "titre": "Le roi Be se souvient",
+   "notion": "Be au passé : was et were",
+   "image": "Quand le roi Be remonte le temps, il ne garde que deux costumes : was et were.",
+   "demo": [
+    "I was tired yesterday.",
+    "It was cold last night.",
+    "We were at the beach.",
+    "They weren't happy. Were you at home?"
+   ],
+   "regle": "Au passé, {be} n'a que deux formes : {was} avec {I}, {he}, {she}, {it} (et un nom au singulier) ; {were} avec {you}, {we}, {they} (et les pluriels). Comme au présent, {be} n'a pas besoin de {did} : pour la négation, on ajoute {not} ({wasn't}, {weren't}) ; pour la question, on inverse ({Were you…?}). {Was} et {were} traduisent à la fois « j'étais » et « j'ai été ».",
+   "formes": [
+    "Affirmation : sujet + {was} / {were} — It was cold.",
+    "Négation : sujet + {wasn't} / {weren't} — We weren't at home.",
+    "Question : {Was} / {Were} + sujet… ? — Were you tired?"
+   ],
+   "usages": [
+    "Décrire le passé : The film was great. (Le film était génial.)",
+    "Dire où l'on était : We were in London last week. (Nous étions à Londres la semaine dernière.)",
+    "Avec {there} (il y avait) : There were a lot of people. (Il y avait beaucoup de monde.)"
+   ],
+   "pieges": [
+    "faux « I am born in 2005. » → juste « I was born in 2005. » : La naissance appartient au passé : {was born}.",
+    "faux « They was late. » → juste « They were late. » : {they}, comme {you} et {we}, va avec {were}.",
+    "faux « Did you be at home? » → juste « Were you at home? » : {be} se met en question tout seul, sans {did}."
+   ],
+   "retenir": "{I / he / she / it was}, {you / we / they were}. Et je suis né = {I was born}.",
+   "secret": "« Il y avait » suit la même règle : there was + un singulier (there was a dog), there were + un pluriel (there were two dogs). Et pour une question polie au passé, même chose : « Was there any milk? », « Were there many people? ».",
+   "defi_deja_pose": [
+    "« My parents ___ in Spain last summer. »",
+    "« I ___ ten when I learnt to swim. »",
+    "Complète : « ___ the film good? »",
+    "Quelle phrase est juste ?",
+    "Écris la négation courte de « it was »."
+   ]
+  },
+  {
+   "id": "ed-magique",
+   "niveau": "A2",
+   "titre": "Le -ed magique",
+   "notion": "Le past simple des verbes réguliers",
+   "image": "Pour envoyer un verbe régulier dans le passé, une baguette suffit : -ed. Et le même costume va à tous les passagers !",
+   "demo": [
+    "I walked to the park yesterday.",
+    "She liked the film.",
+    "They studied all night.",
+    "The car stopped.",
+    "worked (t) · played (d) · wanted (id)"
+   ],
+   "regle": "Le prétérit (le {past simple}) raconte une action terminée dans le passé, à un moment précis ou révolu ({yesterday}, {last week}, {in 2010}, {two days ago}). Pour les verbes réguliers, on ajoute {-ed} à la base, et c'est la même forme pour toutes les personnes : {I worked}, {she worked}, {they worked}. Orthographe : un {e} final donne seulement {-d} ({liked}) ; consonne + {y} donne {-ied} ({studied}) ; un verbe court en consonne-voyelle-consonne double sa dernière consonne ({stopped}).",
+   "formes": [
+    "Règle générale : base + {-ed} — I walked home.",
+    "Verbe en -e : base + {-d} — She smiled.",
+    "Consonne + y : {y} → {-ied} — They studied all night.",
+    "Consonne doublée : {stop} → {stopped}, {plan} → {planned} — The bus stopped."
+   ],
+   "usages": [
+    "Un fait passé daté : We visited Rome in 2019. (Nous avons visité Rome en 2019.)",
+    "Une suite d'actions : He opened the door and looked outside. (Il a ouvert la porte et il a regardé dehors.)",
+    "Avec {ago} (il y a) : She called two hours ago. (Elle a appelé il y a deux heures.)"
+   ],
+   "pieges": [
+    "faux « Yesterday I have worked. » → juste « Yesterday I worked. » : Avec un moment passé précis ({yesterday}), on prend le prétérit, pas {have} + participe, même si le français dit « j'ai travaillé ».",
+    "faux « She studyed English. » → juste « She studied English. » : Consonne + {y} : le {y} devient {i}, puis on ajoute {-ed}.",
+    "faux « We planed the trip. » → juste « We planned the trip. » : {plan} finit par consonne-voyelle-consonne : on double le {n}. Sinon, on lit un autre verbe, {plane} (raboter) !"
+   ],
+   "retenir": "Passé terminé et verbe régulier : base + {-ed}, pour tout le monde.",
+   "secret": "Le piège des francophones : dire « walk-ède » ou « play-ède ». Le -ed n'ajoute une syllabe qu'après t ou d (wanted, decided, needed). Partout ailleurs, il se colle au verbe : walked (« wolkt »), played (« pleyd »). Ton anglais sonnera tout de suite plus naturel.",
+   "defi_deja_pose": [
+    "Écris le past simple de « try ».",
+    "Écris le past simple de « plan ».",
+    "« Last year, we ___ in a small flat. »",
+    "Dans lequel de ces verbes le -ed se prononce-t-il « id » ?",
+    "Touche le verbe au past simple. Two days ago, she *visited her grandmother.",
+    "Écris le past simple de « enjoy »."
+   ]
+  },
+  {
+   "id": "rebelles",
+   "niveau": "A2",
+   "titre": "Les verbes rebelles",
+   "notion": "Les verbes irréguliers",
+   "image": "Certains verbes refusent la baguette -ed. Ce sont des rebelles : ils ont leur propre costume de passé.",
+   "demo": [
+    "I went to London last week.",
+    "She bought a new dress.",
+    "We put the books here.",
+    "They ate pizza and drank juice."
+   ],
+   "regle": "Environ 150 verbes courants refusent le {-ed} : ce sont les verbes irréguliers. Chacun a trois formes à connaître : la base ({go}), le prétérit ({went}) et le participe passé ({gone}). Le prétérit s'emploie seul ({I went}) ; le participe passé s'emploie après {have} ({I have gone}) ou après {be} ({it was written}). Bonne nouvelle : ce sont souvent les verbes les plus fréquents, donc ceux qu'on entend le plus.",
+   "formes": [
+    "Trois formes : base · prétérit · participe passé — go · went · gone",
+    "Trois fois pareil : {put} · {put} · {put}, comme {cut}, {cost}, {let}… — cut · cut · cut",
+    "Prétérit = participe : {buy} · {bought} · {bought}, comme {make}, {find}… — buy · bought · bought"
+   ],
+   "usages": [
+    "Au prétérit : We went to the beach. (Nous sommes allés à la plage.)",
+    "Après {have} : I have seen this film. (J'ai déjà vu ce film.)",
+    "Dans un récit : She took her bag and left. (Elle a pris son sac et elle est partie.)"
+   ],
+   "pieges": [
+    "faux « I goed to school. » → juste « I went to school. » : {go} est irrégulier : son prétérit est {went}.",
+    "faux « She has went home. » → juste « She has gone home. » : Après {have}, on prend la troisième forme, le participe passé : {gone}.",
+    "faux « He buyed a car. » → juste « He bought a car. » : {buy} · {bought} · {bought} : pas de {-ed}."
+   ],
+   "retenir": "Un verbe irrégulier s'apprend en trois formes, à voix haute : {go} · {went} · {gone}.",
+   "secret": "Ne mémorise pas les rebelles en liste alphabétique : range-les par familles qui riment. Les immobiles (put put put, cut cut cut), les -ought (buy bought, think thought), les i-a-u (sing sang sung), les -own (blow blew blown, know knew known). Ton cerveau retient les mélodies bien mieux que les listes. La Machine les connaît tous : essaie-les !",
+   "defi_deja_pose": [
+    "« Yesterday I ___ a great film. »",
+    "Écris le past simple de « write ».",
+    "« She ___ to Paris by train. »",
+    "Écris le past simple de « think ».",
+    "Touche les deux verbes rebelles. He *took his bag and *left without a word.",
+    "Écris le past simple de « cut »."
+   ]
+  },
+  {
+   "id": "did",
+   "niveau": "A2",
+   "titre": "Le majordome remonte le temps",
+   "notion": "Le past simple : négation et questions (did)",
+   "image": "Le majordome Do a aussi une tenue de voyage dans le passé : did. Et quand il arrive, il emporte le passé avec lui.",
+   "demo": [
+    "She went home.",
+    "Did she go home?",
+    "She didn't go home.",
+    "Where did you buy that?"
+   ],
+   "regle": "Au prétérit, la négation et la question appellent {did}, le passé de {do}. {Did} porte à lui seul la marque du passé : le verbe principal revient donc à sa base, sans {-ed} et sans forme irrégulière. Négation : {didn't} + base ; question : {Did} + sujet + base. C'est la même chose pour toutes les personnes. Seul {be} fait exception : {wasn't}, {Were you…?}",
+   "formes": [
+    "Négation : sujet + {didn't} + base — I didn't see him.",
+    "Question : {Did} + sujet + base ? — Did you enjoy the film?",
+    "Question ouverte : mot interrogatif + {did} + sujet + base ? — Where did she go?"
+   ],
+   "usages": [
+    "Dire ce qui ne s'est pas passé : We didn't go out last night. (Nous ne sommes pas sortis hier soir.)",
+    "Vérifier une information : Did he call you? (Il t'a appelé ?)",
+    "Demander un détail : What did you buy? (Qu'est-ce que tu as acheté ?)"
+   ],
+   "pieges": [
+    "faux « I didn't went there. » → juste « I didn't go there. » : Le passé est déjà dans {didn't} : le verbe revient à la base.",
+    "faux « Did you saw it? » → juste « Did you see it? » : Après {did}, toujours la base : {see}, pas {saw}.",
+    "faux « Where you went? » → juste « Where did you go? » : La question au passé a besoin de {did} entre le mot interrogatif et le sujet."
+   ],
+   "retenir": "{did} garde le passé pour lui : après {did} ou {didn't}, verbe à la base.",
+   "secret": "C'est la même loi que pour le -s : une seule marque par groupe verbal. Dès que did apparaît (question ou négation), le verbe redevient nu. Exception : be ne prend jamais did. On dit « Were you there? », « I wasn't there ».",
+   "defi_deja_pose": [
+    "Quelle phrase est juste ?",
+    "Mets à la négative : « We played tennis. »",
+    "« What ___ you do last weekend? »",
+    "Touche le verbe qui a gardé son passé par erreur. I didn't *bought anything.",
+    "Pose la question : « He called you. » → « ___ he call you? »"
+   ]
+  },
+  {
+   "id": "decor",
+   "niveau": "A2",
+   "titre": "Le décor de l'histoire",
+   "notion": "Le past continuous (when, while)",
+   "image": "Dans une histoire, il y a le décor qui tourne en fond (was + -ing) et l'événement qui coupe tout d'un coup (past simple).",
+   "demo": [
+    "At 8 o'clock, I was watching TV.",
+    "We were walking home when it started to rain.",
+    "While she was cooking, he was reading.",
+    "I woke up, got dressed and left."
+   ],
+   "regle": "Le prétérit continu ({was} / {were} + verbe en {-ing}) décrit une action en cours à un moment du passé, comme un décor : {At 8 o'clock, I was having dinner}. On l'associe souvent au prétérit simple : le continu pour l'action longue qui servait de fond, le simple pour l'événement bref qui l'a interrompue. {While} (pendant que) introduit en général l'action longue, {when} (quand) l'événement.",
+   "formes": [
+    "Le décor : sujet + {was} / {were} + verbe en {-ing} — They were playing.",
+    "Décor + événement : {was} / {were} + {-ing}… {when} + prétérit — I was cooking when the phone rang.",
+    "Deux actions en parallèle : {while} + prétérit continu, prétérit continu — While he was reading, she was sleeping."
+   ],
+   "usages": [
+    "Une action en cours à une heure donnée : At midnight, I was sleeping. (À minuit, je dormais.)",
+    "Le décor d'un récit : It was raining and the wind was blowing. (Il pleuvait et le vent soufflait.)",
+    "Une action interrompue : We were watching TV when the lights went out. (Nous regardions la télé quand la lumière s'est éteinte.)"
+   ],
+   "pieges": [
+    "faux « As a child, I was playing football every Saturday. » → juste « As a child, I played football every Saturday. » : Une habitude passée n'est pas un décor en cours : prétérit simple (ou {used to play}).",
+    "faux « I was cooking when the phone was ringing. » → juste « I was cooking when the phone rang. » : L'événement bref qui interrompt se met au prétérit simple.",
+    "faux « They was sleeping. » → juste « They were sleeping. » : Même règle que pour {be} au passé : {they were}."
+   ],
+   "retenir": "Le décor en cours = {was} / {were} + {-ing} ; l'événement qui surgit = prétérit simple.",
+   "secret": "Truc simple : « while » est presque toujours suivi du past continuous (le décor qui dure), et « when » souvent du past simple (le moment qui coupe). « I was reading when he arrived » / « He arrived while I was reading ». Les deux phrases racontent la même scène.",
+   "defi_deja_pose": [
+    "« I ___ when you called me. »",
+    "« The lights went out while we ___ dinner. »",
+    "Complète : « What were you (do) at 10 pm last night? »",
+    "« She ___ her keys, opened the door and ___ in. »",
+    "Touche le décor de l'histoire. It *was *raining when we arrived."
+   ]
+  },
+  {
+   "id": "going-to",
+   "niveau": "A2",
+   "titre": "Le projet dans la poche",
+   "notion": "Le futur avec be going to",
+   "image": "« Be going to » est un projet déjà dans ta poche : tu l'as décidé avant de parler.",
+   "demo": [
+    "I am going to learn Spanish.",
+    "She is going to buy a car.",
+    "Look out! You are going to fall!",
+    "Are you going to come? I'm not going to wait."
+   ],
+   "regle": "{Be going to} + base sert à parler d'un projet déjà décidé avant le moment où l'on parle ({I'm going to visit my aunt this weekend}), ou d'une prédiction appuyée sur un signe visible maintenant ({Look at those clouds, it's going to rain}). {Be} se conjugue ({am}, {is}, {are}) et c'est lui qui s'occupe de la négation et de la question.",
+   "formes": [
+    "Affirmation : sujet + {am} / {is} / {are} + {going to} + base — We are going to move.",
+    "Négation : sujet + {be} + {not going to} + base — She isn't going to come.",
+    "Question : {Am} / {Is} / {Are} + sujet + {going to} + base ? — Are you going to call him?"
+   ],
+   "usages": [
+    "Un projet décidé : I am going to learn Spanish next year. (Je vais apprendre l'espagnol l'année prochaine.)",
+    "Une prédiction visible : Be careful, you are going to fall! (Attention, tu vas tomber !)",
+    "Une intention négative : We aren't going to buy a car. (Nous n'allons pas acheter de voiture.)"
+   ],
+   "pieges": [
+    "faux « I going to study tonight. » → juste « I am going to study tonight. » : {going to} a besoin de {be} : {I am}, {she is}, {they are}.",
+    "faux « She is going to visits us. » → juste « She is going to visit us. » : Après {to}, le verbe reste à la base, sans {-s}.",
+    "faux « I go to call him tomorrow. » → juste « I am going to call him tomorrow. » : « Je vais l'appeler » ne se traduit pas par {I go to} : il faut toute la forme {be going to}."
+   ],
+   "retenir": "Projet décidé ou signe visible : {am} / {is} / {are} + {going to} + base.",
+   "secret": "À l'oral, les anglophones disent souvent « gonna » : I'm gonna call you. Tu l'entendras partout dans les films et les chansons. Comprends-le, mais écris toujours « going to » dans un texte sérieux.",
+   "defi_deja_pose": [
+    "« We ___ going to paint the kitchen this weekend. »",
+    "« Look at that black sky! It ___. »",
+    "Écris : « Je vais l'appeler. » (call him)",
+    "Quelle question est juste ?",
+    "Touche le verbe qui dit l'action prévue. They are going to *move to Canada."
+   ]
+  }
+ ]
+}

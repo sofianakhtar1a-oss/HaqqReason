@@ -1,6 +1,10 @@
 /* Tests des leçons des Règles (conjugaison et grammaire) : chaque leçon est complète, bien placée et jouable. */
 import { CONJUGAISON_PLUS } from "../src/lib/regles/conjugaison-plus";
 import { fichiersDe, palierDe } from "../src/lib/regles/cours/index";
+import { fichiersEntrainement } from "../src/lib/regles/entrainement/index";
+import { lireRef, refExercice } from "../src/lib/regles/suivi";
+import { bonneReponse, differences, normaliser, ordreJuste, phraseOrdre, verdictEcrit } from "../src/lib/regles/verifier";
+import { controlerExercice, MINIMUM } from "../scripts/langues/entrainement/controle";
 import { TEMPS } from "../src/lib/regles/conjugueur";
 import { GRAMMAIRE_PLUS } from "../src/lib/regles/grammaire-plus";
 import { SECTIONS } from "../src/lib/regles/index";
@@ -144,6 +148,45 @@ for (const section of SECTIONS) {
 }
 ok("une explication pour chaque leçon", explications === SECTIONS.reduce((n, s) => n + s.lecons.length, 0), explications);
 vu(`${explications} explications en français, une par leçon`);
+
+// L'entraînement : au moins vingt exercices corrigés par leçon, tous jouables.
+let exercicesEntrainement = 0;
+for (const section of SECTIONS) {
+  const fichiers = fichiersEntrainement(section.id);
+  for (const niveau of NIVEAUX) {
+    const lot = await fichiers[niveau]();
+    const ids = new Set(section.lecons.filter((l) => l.niveau === niveau).map((l) => l.id));
+    for (const id of Object.keys(lot)) ok(`entraînement ${section.id}/${niveau} : « ${id} » est une leçon de ce niveau`, ids.has(id));
+    for (const id of ids) {
+      const ex = lot[id] ?? [];
+      ok(`entraînement ${section.id}/${id} : au moins ${MINIMUM} exercices`, ex.length >= MINIMUM, ex.length);
+      exercicesEntrainement += ex.length;
+      ex.forEach((x, k) => {
+        const p = controlerExercice(x, `${section.id}/${id}#${k + 1}`);
+        ok(`entraînement ${section.id}/${id}#${k + 1} : exercice valide`, p.length === 0, p);
+        ok(`entraînement ${section.id}/${id}#${k + 1} : la bonne réponse s'écrit`, bonneReponse(x).trim().length > 0, x);
+      });
+    }
+  }
+}
+vu(`${exercicesEntrainement} exercices d'entraînement, au moins ${MINIMUM} par leçon`);
+
+// La vérification des réponses : pardonne la forme, jamais la grammaire.
+ok("contraction acceptée", verdictEcrit("She doesn't drink coffee.", ["She does not drink coffee"]) === "juste");
+ok("casse et ponctuation pardonnées", verdictEcrit("  she DOESN'T drink coffee ", ["She doesn't drink coffee."]) === "juste");
+ok("une lettre de trop : presque", verdictEcrit("She doesnt drinks coffee", ["She doesn't drink coffee"]) !== "juste");
+ok("une seule lettre : presque", verdictEcrit("beatiful", ["beautiful"]) === "presque");
+ok("faute de grammaire refusée", verdictEcrit("She don't drink coffee", ["She doesn't drink coffee"]) === "faux");
+ok("ordre juste", ordreJuste(["does", "your", "sister", "speak", "Spanish"], ["does", "your", "sister", "speak", "Spanish"]));
+ok("ordre variante", ordreJuste(["every", "day", "I", "walk"], ["I", "walk", "every", "day"], [["every", "day", "I", "walk"]]));
+ok("ordre faux", !ordreJuste(["your", "does", "sister", "speak", "Spanish"], ["does", "your", "sister", "speak", "Spanish"]));
+ok("phrase reconstituée", phraseOrdre(["does", "your", "sister", "speak", "Spanish"], "?") === "Does your sister speak Spanish?");
+const diff = differences("My father don't work.", "My father doesn't work.");
+ok("différences : le mot corrigé est repéré", diff.some((m) => m.etat === "manque" && m.mot === "doesn't") && diff.some((m) => m.etat === "trop" && m.mot === "don't"), diff);
+ok("normaliser : guillemets ignorés", normaliser("« Hello »") === normaliser("Hello"));
+const ref = refExercice("conjugaison", "verbe-voyageur", "e", 12);
+ok("référence d'exercice relue", JSON.stringify(lireRef(ref)) === JSON.stringify({ section: "conjugaison", lecon: "verbe-voyageur", source: "e", rang: 12 }), lireRef(ref));
+vu("vérification des réponses et références");
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

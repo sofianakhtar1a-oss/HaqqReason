@@ -1606,3 +1606,495 @@
     left: calc(50% - 0.45rem);
   }
 }
+
+/* ---------- L'entraînement : les nouveaux exercices, la série, le bilan ---------- */
+.rg-question-type {
+  margin-bottom: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--rg-accent);
+}
+.rg-question-type span {
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.rg-note {
+  margin-top: 1.1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  background: var(--surface-forte);
+  color: var(--encre-douce);
+  font-size: 0.95rem;
+}
+.rg-reponse-juste {
+  font-family: var(--lg-police);
+  font-weight: 600;
+}
+.rg-revele .mt-1 {
+  margin-top: 0.3rem;
+}
+.rg-lien-auto {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--azur) 40%, var(--trait));
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--azur);
+}
+.rg-lien-auto:hover {
+  background: color-mix(in srgb, var(--azur) 12%, transparent);
+}
+.rg-option[data-etat="choisi"] {
+  border-color: var(--rg-accent);
+  background: color-mix(in srgb, var(--rg-accent) 14%, transparent);
+  color: var(--encre);
+}
+
+/* Remettre dans l'ordre : la phrase qui se construit, et les morceaux à placer. */
+.rg-ordre {
+  display: grid;
+  gap: 1rem;
+}
+.rg-ordre-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 3.6rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 1rem;
+  border: 1.5px dashed color-mix(in srgb, var(--rg-accent) 45%, var(--trait));
+  background: color-mix(in srgb, var(--rg-accent) 5%, transparent);
+}
+.rg-ordre-ligne[data-etat="piste"] {
+  border-color: var(--rg-piste);
+  background: color-mix(in srgb, var(--rg-piste) 8%, transparent);
+}
+.rg-ordre-ligne[data-etat="bonne"] {
+  border-style: solid;
+  border-color: var(--succes);
+  background: color-mix(in srgb, var(--succes) 12%, transparent);
+}
+.rg-ordre-ligne[data-etat="revele"] {
+  border-style: solid;
+  border-color: var(--azur);
+}
+.rg-ordre-vide {
+  font-size: 0.92rem;
+  color: var(--encre-douce);
+}
+.rg-ordre-fin {
+  margin-left: -0.3rem;
+  font-family: var(--lg-police);
+  font-size: 1.2rem;
+}
+.rg-ordre-banque {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.rg-morceau {
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  border: 1.5px solid var(--trait);
+  background: var(--surface-forte);
+  font-family: var(--lg-police);
+  font-size: 1.08rem;
+  line-height: 1.3;
+  color: var(--encre);
+  transition:
+    border-color 0.15s ease,
+    transform 0.1s ease;
+}
+button.rg-morceau:hover {
+  border-color: var(--rg-accent);
+}
+button.rg-morceau:active {
+  transform: scale(0.96);
+}
+.rg-morceau[data-pose] {
+  border-color: color-mix(in srgb, var(--rg-accent) 55%, var(--trait));
+  background: color-mix(in srgb, var(--rg-accent) 14%, var(--surface));
+}
+.rg-morceau[data-vide] {
+  border-style: dashed;
+  background: transparent;
+  color: transparent;
+}
+
+/* Corriger la phrase. */
+.rg-corriger {
+  display: grid;
+  gap: 0.85rem;
+}
+.rg-corriger-fautive,
+.rg-corriger-juste {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  font-family: var(--lg-police);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  line-height: 1.5;
+}
+.rg-corriger-fautive {
+  border-left: 4px solid var(--rg-piste);
+  background: color-mix(in srgb, var(--rg-piste) 8%, transparent);
+}
+.rg-corriger-juste {
+  border-left: 4px solid var(--succes);
+  background: color-mix(in srgb, var(--succes) 10%, transparent);
+}
+.rg-corriger-etiquette {
+  font-family: var(--font-sans, inherit);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+mark.rg-change {
+  padding: 0 0.15em;
+  border-radius: 0.3em;
+  background: color-mix(in srgb, var(--succes) 25%, transparent);
+  color: inherit;
+  font-weight: 650;
+}
+
+/* La série. */
+.rg-serie-progres {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.rg-serie-progres > span:first-child {
+  white-space: nowrap;
+}
+.rg-mode-examen {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+  white-space: nowrap;
+}
+
+/* Le bilan et la correction complète. */
+.rg-bilan {
+  display: grid;
+  gap: 1.5rem;
+}
+.rg-bilan-titre {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.rg-bilan-score {
+  margin: 0.4rem 0 0.3rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+}
+.rg-bilan-score span {
+  font-size: 1rem;
+  color: var(--encre-douce);
+}
+.rg-bilan-detail {
+  margin-top: 0.3rem;
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}
+.rg-bilan-actions {
+  justify-content: center;
+}
+.rg-correction {
+  padding: clamp(1rem, 3.5vw, 1.5rem);
+  border-radius: 1.5rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rg-correction-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.rg-correction-tete h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.rg-filtre {
+  display: inline-flex;
+  padding: 0.2rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+}
+.rg-filtre button {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.rg-filtre button[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--encre);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.15);
+}
+.rg-correction-liste {
+  display: grid;
+  gap: 0.75rem;
+}
+.rg-correction-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface-forte);
+}
+.rg-correction-item[data-etat="faux"] {
+  border-color: color-mix(in srgb, var(--danger) 45%, var(--trait));
+}
+.rg-correction-icone {
+  color: var(--succes);
+}
+.rg-correction-item[data-etat="indice"] .rg-correction-icone {
+  color: var(--rg-piste);
+}
+.rg-correction-item[data-etat="faux"] .rg-correction-icone {
+  color: var(--danger);
+}
+.rg-correction-statut {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-correction-enonce {
+  margin: 0.2rem 0 0.45rem;
+  font-family: var(--lg-police);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.rg-correction-ligne {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.rg-correction-ligne > span:first-child {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.rg-correction-ligne [lang="en"] {
+  font-family: var(--lg-police);
+}
+.rg-correction-donnee s {
+  text-decoration-color: var(--danger);
+  color: var(--encre-douce);
+}
+.rg-correction-bonne strong {
+  color: var(--succes);
+}
+.rg-correction-pourquoi {
+  margin-top: 0.4rem;
+  font-size: 0.93rem;
+  line-height: 1.55;
+  color: var(--encre-douce);
+}
+.rg-charge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: var(--encre-douce);
+}
+
+/* L'écran de l'entraînement. */
+.rg-entrainement {
+  display: grid;
+  gap: 1.25rem;
+}
+.rg-entrainement-tete {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  color: var(--rg-accent);
+}
+.rg-entrainement-tete > svg {
+  flex-shrink: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0.35rem;
+  border-radius: 0.8rem;
+  background: color-mix(in srgb, var(--rg-accent) 14%, transparent);
+}
+.rg-entrainement-titre {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+.rg-entrainement-chapo {
+  margin-top: 0.3rem;
+  line-height: 1.6;
+  color: var(--encre-douce);
+}
+.rg-entrainement-record {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  justify-self: start;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--or) 14%, transparent);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.rg-entrainement-record svg {
+  color: var(--or);
+}
+.rg-mode {
+  display: grid;
+  gap: 0.6rem;
+}
+@media (min-width: 40rem) {
+  .rg-mode {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.rg-mode legend {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-mode label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid var(--trait);
+  background: var(--surface);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+.rg-mode label[data-choisi] {
+  border-color: var(--rg-accent);
+  background: color-mix(in srgb, var(--rg-accent) 10%, var(--surface));
+}
+.rg-mode strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--encre);
+}
+.rg-mode input {
+  margin-top: 0.2rem;
+  accent-color: var(--rg-accent);
+}
+.rg-series {
+  display: grid;
+  gap: 0.7rem;
+}
+@media (min-width: 40rem) {
+  .rg-series {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.rg-serie-choix {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.15rem 0.75rem;
+  padding: 1rem 1.15rem;
+  border-radius: 1.15rem;
+  border: 1.5px solid var(--trait);
+  background: var(--surface-forte);
+  text-align: left;
+  color: var(--rg-accent);
+  transition:
+    border-color 0.15s ease,
+    transform 0.1s ease;
+}
+.rg-serie-choix svg {
+  grid-row: span 2;
+}
+.rg-serie-choix:hover:not(:disabled) {
+  border-color: var(--rg-accent);
+}
+.rg-serie-choix:active:not(:disabled) {
+  transform: scale(0.99);
+}
+.rg-serie-choix[data-principal] {
+  border-color: var(--rg-accent);
+  background: color-mix(in srgb, var(--rg-accent) 14%, var(--surface));
+}
+.rg-serie-choix:disabled {
+  opacity: 0.45;
+}
+.rg-serie-nom {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+.rg-serie-aide {
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.rg-bandeau-entrainement {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 1.5rem 0 0.5rem;
+  padding: 1.05rem 1.3rem;
+  border-radius: 1.25rem;
+  border: 1.5px solid color-mix(in srgb, var(--rg-accent) 45%, var(--trait));
+  background: color-mix(in srgb, var(--rg-accent) 9%, transparent);
+  color: var(--rg-accent);
+  text-align: left;
+}
+.rg-bandeau-entrainement > span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.rg-bandeau-entrainement strong {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  color: var(--encre);
+}
+.rg-bandeau-entrainement span span {
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+.rg-bandeau-entrainement:hover {
+  background: color-mix(in srgb, var(--rg-accent) 15%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .rg-morceau,
+  .rg-serie-choix {
+    transition: none;
+  }
+}

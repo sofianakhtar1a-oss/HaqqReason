@@ -1,0 +1,241 @@
+{
+ "section": "conjugaison",
+ "niveau": "A1",
+ "univers": "La Machine à voyager dans le temps",
+ "lecons": [
+  {
+   "id": "verbe-voyageur",
+   "niveau": "A1",
+   "titre": "Le mot qui voyage dans le temps",
+   "notion": "Reconnaître le verbe anglais",
+   "image": "Dans une phrase anglaise, un seul mot change quand tu changes de jour : le verbe.",
+   "demo": [
+    "Today, Emma dances.",
+    "Yesterday, Emma danced.",
+    "Tomorrow, Emma will dance.",
+    "Emma does not dance."
+   ],
+   "regle": "Le verbe est le mot qui dit ce qu'on fait ({work}, {eat}, {sleep}) ou ce qu'on est ({be}). Pour le trouver à coup sûr, change le moment de la phrase en ajoutant {yesterday} (hier) ou {tomorrow} (demain) : le seul mot qui doit changer de forme, c'est le verbe. {I play} devient {I played}, puis {I will play}, alors que les autres mots ne bougent pas. Dans une phrase anglaise simple, il y a un seul verbe conjugué, placé juste après le sujet.",
+   "formes": [
+    "L'ordre habituel : sujet + verbe + complément — Tom plays football."
+   ],
+   "usages": [
+    "Une action : We watch a film. (Nous regardons un film.)",
+    "Un état ({be}, {have}, {like}…) : She is tired. (Elle est fatiguée.)",
+    "Le test du temps : on passe à hier : Yesterday, we watched a film. (Hier, nous avons regardé un film.)"
+   ],
+   "pieges": [
+    "faux « Yesterday I play tennis. » → juste « Yesterday I played tennis. » : Avec {yesterday}, le verbe doit passer au passé : c'est justement le mot qui change.",
+    "faux « I am agree with you. » → juste « I agree with you. » : {agree} est déjà un verbe (être d'accord) : on n'ajoute pas {am}. Une phrase simple n'a qu'un verbe conjugué."
+   ],
+   "retenir": "Pour trouver le verbe, change le jour de la phrase : le mot qui bouge, c'est lui.",
+   "secret": "Quand tu cherches le verbe, fais-le bouger : ajoute « yesterday » ou « tomorrow » devant la phrase. Le mot qui change de forme, ou qui a besoin d'un moteur (will, did), c'est lui. Et en anglais, le verbe a presque toujours un sujet juste devant lui : la phrase anglaise est un train bien rangé.",
+   "defi_deja_pose": [
+    "Touche le verbe : le mot qui changerait si on disait « yesterday ». The cat *sleeps on the sofa.",
+    "Touche le verbe. My brother *eats an apple.",
+    "Dans « The children play in the park », quel mot est le verbe ?",
+    "Touche le verbe. We *watch films on Fridays.",
+    "Lequel de ces mots est un verbe ?"
+   ]
+  },
+  {
+   "id": "six-passagers",
+   "niveau": "A1",
+   "titre": "Les six passagers",
+   "notion": "Les pronoms personnels sujets",
+   "image": "La Machine a six sièges, mais l'anglais n'a besoin que de sept petits mots pour les remplir.",
+   "demo": [
+    "I am happy.",
+    "You are my friend. You are my friends.",
+    "He is tall. She is tall.",
+    "The table is old. It is old.",
+    "We are here. They are here."
+   ],
+   "regle": "Les pronoms sujets remplacent celui qui fait l'action. Il y en a sept : {I} (je), {you} (tu ou vous), {he} (il, pour un homme ou un garçon), {she} (elle, pour une femme ou une fille), {it} (pour une chose, un animal, une idée), {we} (nous) et {they} (ils ou elles). {I} s'écrit toujours avec une majuscule, même au milieu d'une phrase. Et {you} sert pour une personne comme pour plusieurs, qu'on la tutoie ou qu'on la vouvoie.",
+   "formes": [
+    "Une personne : {I} · {you} · {he} / {she} / {it} — She is my sister.",
+    "Plusieurs : {we} · {you} · {they} — They are my friends."
+   ],
+   "usages": [
+    "Un homme, un garçon → {he} : My dad? He is a teacher. (Mon père ? Il est professeur.)",
+    "Une chose, un animal → {it} : The table is old. It is from 1920. (La table est vieille. Elle date de 1920.)",
+    "Plusieurs personnes ou choses → {they} : The keys? They are on the table. (Les clés ? Elles sont sur la table.)"
+   ],
+   "pieges": [
+    "faux « The car is new. She is red. » → juste « The car is new. It is red. » : « La voiture » est féminin en français, mais en anglais une chose est toujours {it}.",
+    "faux « My brother and i are here. » → juste « My brother and I are here. » : {I} prend toujours une majuscule, où qu'il soit dans la phrase."
+   ],
+   "retenir": "Une personne : {he} ou {she}. Tout le reste au singulier : {it}. Plusieurs : {they}.",
+   "secret": "Le français donne un genre à tout (la table, le soleil). L'anglais, non : tout ce qui n'est pas une personne est « it ». Les animaux de compagnie font exception quand on les aime (« my dog, he… »), et un bateau devient parfois « she ». Mais dans le doute : it.",
+   "defi_deja_pose": [
+    "Tu parles de ton téléphone : « My phone is new. ___ is red. »",
+    "Tu parles de toi et de ta sœur : « ___ are at school. »",
+    "Ton professeur te parle poliment : « ___ are early! »",
+    "Remplace « Sarah » : « Sarah reads a book » → « ___ reads a book ».",
+    "« The books are on the table. ___ are heavy. »",
+    "Corrige : « i am ready ». Écris la phrase juste."
+   ]
+  },
+  {
+   "id": "roi-be",
+   "niveau": "A1",
+   "titre": "Le roi Be",
+   "notion": "Le verbe be au présent (am, is, are)",
+   "image": "« Be » (être) est le roi du royaume : il change complètement de visage selon le passager.",
+   "demo": [
+    "I am French.",
+    "She is a doctor. It is cold.",
+    "We are ready. They are late.",
+    "I'm hungry. He's tired.",
+    "I am twenty. I am cold."
+   ],
+   "regle": "{Be} veut dire « être ». C'est le verbe le plus irrégulier de l'anglais : au présent, il a trois formes. {am} va seulement avec {I} ; {is} va avec une seule personne ou chose ({he}, {she}, {it}, {my mum}, {the dog}) ; {are} va avec tous les autres ({you}, {we}, {they} et tous les pluriels). À l'oral, on le contracte presque toujours : {I'm}, {she's}, {we're}.",
+   "formes": [
+    "Affirmation : sujet + {am} / {is} / {are} — I am ready.",
+    "Négation : sujet + {am} / {is} / {are} + {not} — He isn't here.",
+    "Question : {Am} / {Is} / {Are} + sujet… ? — Are you OK?"
+   ],
+   "usages": [
+    "Dire qui l'on est, ce qu'on fait : I am a student. (Je suis étudiant.)",
+    "Décrire : The house is big. (La maison est grande.)",
+    "Dire où l'on est : We are at home. (Nous sommes à la maison.)"
+   ],
+   "pieges": [
+    "faux « I is happy. » → juste « I am happy. » : {I} a sa forme à lui : {am}, et seulement {am}.",
+    "faux « Do you be tired? » → juste « Are you tired? » : {Be} pose ses questions tout seul, sans {do} : on met simplement {are} devant le sujet.",
+    "faux « My parents is French. » → juste « My parents are French. » : Plusieurs personnes, c'est {are}, même quand le sujet n'est pas un pronom."
+   ],
+   "retenir": "{I am}, {he / she / it is}, et pour tous les autres : {are}.",
+   "secret": "Le français dit « j'ai faim, j'ai froid, j'ai peur, j'ai raison, j'ai vingt ans ». L'anglais dit « je suis » : I am hungry, I am cold, I am afraid, I am right, I am twenty. Retiens cette liste de cinq : c'est l'erreur numéro un des francophones.",
+   "defi_deja_pose": [
+    "« I ___ twelve years old. » (j'ai douze ans)",
+    "« My parents ___ at home. »",
+    "Complète : « It ___ very hot today. »",
+    "« ___ you hungry? » (Tu as faim ?)",
+    "Écris la forme courte de « They are ».",
+    "Touche la forme de be. My sister *is a nurse."
+   ]
+  },
+  {
+   "id": "avoir-faim",
+   "niveau": "A1",
+   "titre": "Le roi Be vole le verbe avoir",
+   "notion": "Be là où le français dit « avoir » (hungry, cold, 20 years old)",
+   "image": "En anglais, on ne « possède » pas la faim, le froid ou son âge : on « est » affamé, on « est » gelé, on « est » 20 ans.",
+   "demo": [
+    "I am hungry. · She is thirsty.",
+    "We are cold. · I'm hot.",
+    "He is twelve (years old).",
+    "You are right. · I am wrong.",
+    "They are afraid of dogs. · I am sleepy."
+   ],
+   "regle": "Pour la faim, la soif, le froid, le chaud, la peur, l'âge, ou pour dire qu'on a raison ou tort, l'anglais n'emploie pas {have} mais {be}, suivi d'un adjectif : {I am hungry} (j'ai faim, littéralement « je suis affamé »). Le français dit qu'on possède la faim ; l'anglais dit qu'on est dans cet état. Pour l'âge, on met le nombre juste après {be} : {She is twenty}, ou {twenty years old}, mais jamais {years} tout seul.",
+   "formes": [
+    "Un état : sujet + {be} + adjectif — I am hungry.",
+    "L'âge : sujet + {be} + nombre (+ {years old}) — He is ten (years old).",
+    "Demander l'âge : {How old} + {be} + sujet ? — How old are you?"
+   ],
+   "usages": [
+    "La faim, la soif : We are thirsty. (Nous avons soif.)",
+    "Le froid, le chaud : I am cold. (J'ai froid.)",
+    "Avoir raison, avoir tort : You are right. (Tu as raison.)",
+    "Avoir peur : She is afraid of dogs. (Elle a peur des chiens.)"
+   ],
+   "pieges": [
+    "faux « I have 15 years. » → juste « I am 15 (years old). » : L'âge se dit avec {be}. Et si l'on dit {years}, il faut {old} derrière : {15 years old}.",
+    "faux « She has cold. » → juste « She is cold. » : Avoir froid, c'est être gelé : {be cold}. ({She has a cold} veut dire « elle a un rhume » !)",
+    "faux « You have right. » → juste « You are right. » : Avoir raison = {be right} ; avoir tort = {be wrong}."
+   ],
+   "retenir": "Faim, soif, froid, chaud, peur, raison, tort et âge : en anglais, on les « est », avec {be}.",
+   "secret": "Retiens-la d'un bloc : hungry (faim), thirsty (soif), cold (froid), hot (chaud), afraid (peur), right et wrong (raison et tort), sleepy (sommeil), et l'âge. Avec tous ces mots, le français dit « avoir », l'anglais dit « be ». Et pour la naissance, c'est encore be, au passé : « je suis né en 2010 » = I was born in 2010.",
+   "defi_deja_pose": [
+    "« I ___ hungry. Let's eat! »",
+    "Comment dit-on « Elle a 15 ans » ?",
+    "Traduis : « J'ai froid. »",
+    "« You ___ right, it's a good idea. »",
+    "Touche le mot qu'un francophone met à tort. My brother *has ten years.",
+    "Pose la question : « Quel âge as-tu ? »"
+   ]
+  },
+  {
+   "id": "have-got",
+   "niveau": "A1",
+   "titre": "Ce qu'il y a dans mon sac",
+   "notion": "Have et have got (posséder)",
+   "image": "« Have » est le sac à dos du royaume : il dit ce que tu possèdes.",
+   "demo": [
+    "I have a brother.",
+    "She has two cats.",
+    "I've got a car. He's got a car.",
+    "I don't have time. I haven't got time."
+   ],
+   "regle": "Pour dire ce qu'on possède (un objet, de la famille, un trait physique, une maladie), l'anglais a deux façons qui veulent dire la même chose : {have} (qui devient {has} avec {he}, {she}, {it}) et {have got} ({has got}). {Have got} est très courant à l'oral britannique ; {have} seul passe partout, et c'est le seul possible au passé ({had}). Les deux ne se construisent pas pareil : {have} appelle le majordome {do} pour la négation et la question, {have got} s'en passe.",
+   "formes": [
+    "Avec have : sujet + {have} / {has} — She has a cat.",
+    "Négation (have) : sujet + {don't} / {doesn't} + {have} — She doesn't have a cat.",
+    "Avec have got : sujet + {have} / {has} + {got} — She has got a cat.",
+    "Négation (have got) : sujet + {haven't} / {hasn't} + {got} — She hasn't got a cat.",
+    "Question : {Do you have…?} ou {Have you got…?} — Have you got a pen?"
+   ],
+   "usages": [
+    "Un objet : I have a new phone. (J'ai un nouveau téléphone.)",
+    "La famille : He has got two sisters. (Il a deux sœurs.)",
+    "Une description : She has long hair. (Elle a les cheveux longs.)"
+   ],
+   "pieges": [
+    "faux « He have a dog. » → juste « He has a dog. » : Avec {he}, {she}, {it}, {have} devient {has}.",
+    "faux « I haven't a car. » → juste « I don't have a car. » : Sans {got}, {have} a besoin de {do} pour la négation : {don't have}. Ou alors : {I haven't got a car}.",
+    "faux « Has she a brother? » → juste « Does she have a brother? » : La question se fait avec {does}… ou avec {got} : {Has she got a brother?}"
+   ],
+   "retenir": "{have} prend {do} pour nier et questionner ; {have got} se débrouille seul.",
+   "secret": "Dans « she doesn't have », le -s de la 3e personne est déjà parti dans « does ». Le verbe reste donc nu : have. C'est une règle d'or de l'anglais : un seul -s par groupe verbal, jamais deux.",
+   "defi_deja_pose": [
+    "« My brother ___ a new phone. »",
+    "« We ___ got a big garden. »",
+    "Complète : « ___ you got a pen? »",
+    "Quelle phrase est juste ?",
+    "Touche le verbe qui dit ce qu'on possède. They *have three children."
+   ]
+  },
+  {
+   "id": "s-qui-siffle",
+   "niveau": "A1",
+   "titre": "Le S qui siffle",
+   "notion": "Le present simple (affirmatif)",
+   "image": "Au présent, le verbe anglais ne change presque jamais… sauf avec he, she, it : un petit serpent S vient siffler au bout.",
+   "demo": [
+    "I play football every Sunday.",
+    "She plays football every Sunday.",
+    "He watches TV. She goes to school.",
+    "He studies English.",
+    "Water boils at 100 degrees."
+   ],
+   "regle": "Au présent simple, le verbe garde sa forme de base ({work}, {play}) avec {I}, {you}, {we}, {they}. Avec {he}, {she}, {it}, ou un nom au singulier comme {my sister}, on ajoute un {-s} : {she works}. Quelques règles d'orthographe : après {-s}, {-sh}, {-ch}, {-x} et {-o}, on ajoute {-es} ({watches}, {goes}) ; une consonne suivie de {y} donne {-ies} ({study} → {studies}) ; et {have} devient {has}.",
+   "formes": [
+    "I, you, we, they : sujet + base du verbe — They play tennis.",
+    "He, she, it : sujet + base + {-s} — He plays tennis.",
+    "Orthographe : {-es} après s, sh, ch, x, o · consonne + {y} → {-ies} — She watches TV and studies."
+   ],
+   "usages": [
+    "Une habitude : My dad cooks on Sundays. (Mon père cuisine le dimanche.)",
+    "Un fait, une vérité : Water boils at 100 degrees. (L'eau bout à 100 degrés.)",
+    "Un goût, un état : She likes chocolate. (Elle aime le chocolat.)"
+   ],
+   "pieges": [
+    "faux « She work in a bank. » → juste « She works in a bank. » : {She}, c'est la troisième personne du singulier : le {-s} est obligatoire.",
+    "faux « They works hard. » → juste « They work hard. » : Le {-s} n'est que pour {he}, {she}, {it}. Au pluriel, le verbe reste nu.",
+    "faux « He gos to school. » → juste « He goes to school. » : Après un {o}, on écrit {-es} : {goes}, {does}."
+   ],
+   "retenir": "{He}, {she}, {it} : le verbe siffle avec un {-s}. Tous les autres : verbe nu.",
+   "secret": "Le -s ne va que sur le premier verbe conjugué, et seulement avec he, she, it ou un nom au singulier (my mum, the dog). Une astuce : si tu peux remplacer le sujet par « he », « she » ou « it », le serpent siffle. Sinon, silence.",
+   "defi_deja_pose": [
+    "« My dad ___ in a bank. »",
+    "Écris la forme avec « she » : she (watch) TV every evening.",
+    "« The baby ___ a lot. » (cry)",
+    "« They ___ in London. »",
+    "Touche le verbe qui a mal reçu son -s. She *play the piano and he sings.",
+    "Écris la forme avec « he » : he (fly) to Paris every month."
+   ]
+  }
+ ]
+}

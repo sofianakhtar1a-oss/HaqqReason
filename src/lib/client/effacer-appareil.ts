@@ -3,6 +3,7 @@ import { suffixeCompte, tiroir } from "./compte";
 const BASES = ["haqqreason-calame", "haqqreason-langues", "haqqreason-transcriptions", "haqqreason-synchro"];
 const CLES = [
   "haqqreason-regles-anglais",
+  "haqqreason-regles-suivi",
   "hr-favoris",
   "hr-historique",
   "hr-collections",

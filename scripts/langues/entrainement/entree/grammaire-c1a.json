@@ -1,0 +1,207 @@
+{
+ "section": "grammaire",
+ "niveau": "C1",
+ "univers": "La Cité des mots",
+ "lecons": [
+  {
+   "id": "phrase-envers",
+   "niveau": "C1",
+   "titre": "La phrase à l'envers",
+   "notion": "L'inversion après un adverbe négatif",
+   "image": "Quand une phrase commence par un mot négatif fort (never, rarely, not only…), le moteur saute devant le sujet, comme dans une question. Effet dramatique garanti.",
+   "demo": [
+    "Never have I seen anything like it.",
+    "Rarely does she complain.",
+    "Not only did he lie, but he also stole.",
+    "Hardly had I arrived when the phone rang.",
+    "Under no circumstances should you open this door."
+   ],
+   "regle": "Dans un style soutenu, ou pour un effet dramatique, une phrase peut commencer par une expression négative ou restrictive : {Never}, {Rarely}, {Seldom}, {Hardly… when}, {No sooner… than}, {Not only… but also}, {Under no circumstances}, {Only then}, {Little}. L'auxiliaire passe alors devant le sujet, comme dans une question : {Never have I seen such a mess}. S'il n'y a pas d'auxiliaire, on ajoute {do}, {does} ou {did} : {Rarely does he complain}.",
+   "formes": [
+    "L'inversion : expression négative + auxiliaire + sujet + verbe — Never have I seen this.",
+    "Sans auxiliaire : expression + {do} / {does} / {did} + sujet + base — Rarely does she complain.",
+    "À peine… que : {Hardly} + {had} + sujet + participe + {when}… — Hardly had we arrived when it rained.",
+    "Non seulement : {Not only} + auxiliaire + sujet…, {but}… {also} — Not only is it cheap, but it's also fast."
+   ],
+   "usages": [
+    "Un discours : Never before have we faced such a challenge. (Jamais auparavant nous n'avions affronté un tel défi.)",
+    "Une consigne officielle : Under no circumstances should you open this door. (Vous ne devez en aucun cas ouvrir cette porte.)",
+    "Une succession immédiate : No sooner had he left than she called. (À peine était-il parti qu'elle a appelé.)",
+    "Un ajout fort : Not only did she win, she broke the record. (Non seulement elle a gagné, mais elle a battu le record.)"
+   ],
+   "pieges": [
+    "faux « Never I have seen such a thing. » → juste « Never have I seen such a thing. » : Après {Never} en tête, l'auxiliaire passe devant le sujet.",
+    "faux « Rarely he goes out. » → juste « Rarely does he go out. » : Sans auxiliaire, on ajoute {does}, et le verbe revient à la base.",
+    "faux « Not only she sings, but she also dances. » → juste « Not only does she sing, but she also dances. » : Après {Not only} en tête, inversion avec {does}."
+   ],
+   "retenir": "Expression négative en tête → auxiliaire + sujet, comme une question : {Never have I…}",
+   "secret": "Les expressions avec « only » déclenchent aussi l'inversion, mais seulement dans la phrase principale : « Only then did I understand », « Only when he left did I realise », « Only after the meeting will we know ». Note que l'inversion se fait après la première partie (Only when he left / did I realise).",
+   "defi_deja_pose": [
+    "« Never ___ such a beautiful sunset. »",
+    "« Not only ___ the exam, but she also got the best mark. »",
+    "« No sooner had we sat down ___ the lights went out. »",
+    "Réécris en commençant par « Rarely » : « He rarely goes out. »",
+    "Touche le mot qui déclenche l'inversion. *Seldom have I felt so happy."
+   ]
+  },
+  {
+   "id": "ne-pas-repeter",
+   "niveau": "C1",
+   "titre": "L'art de ne pas répéter",
+   "notion": "L'ellipse et la substitution",
+   "image": "Un anglophone déteste répéter. Il remplace des morceaux entiers de phrase par un petit mot : so, do, one, to.",
+   "demo": [
+    "I'm tired. — So am I. / I'm not tired. — Neither am I.",
+    "She plays the piano, and so does her brother.",
+    "Is he coming? — I think so. / I don't think so. / I hope not.",
+    "Do you want to dance? — I'd love to.",
+    "I don't like the red shirt. I prefer the blue one."
+   ],
+   "regle": "L'anglais évite les répétitions en remplaçant des morceaux de phrase par de petits mots. L'auxiliaire seul remplace tout le groupe verbal ({She can swim, and so can I} ; {I didn't call him, but Anna did}). {so} remplace une proposition après {think}, {hope}, {expect}, {suppose}, {be afraid} ({I think so}, {I hope so}), et {not} la remplace à la négation ({I hope not}, {I'm afraid not}). {one} / {ones} remplacent un nom comptable ({I prefer the red one}). Et {to} seul remplace un infinitif déjà connu ({I'd love to}).",
+   "formes": [
+    "L'auxiliaire seul : … + sujet + auxiliaire — I can't drive, but my sister can.",
+    "So et not : {I think} / {hope} + {so} · {I hope} / {I'm afraid} + {not} — Will it rain? — I hope not.",
+    "One, ones : adjectif + {one} / {ones} — Which bag? — The blue one.",
+    "To seul : verbe + {to} — Do you want to come? — I'd love to."
+   ],
+   "usages": [
+    "Ne pas répéter un verbe : He said he'd call, but he didn't. (Il a dit qu'il appellerait, mais il ne l'a pas fait.)",
+    "Répondre à une question : Is she coming? — I think so. (Elle vient ? — Je crois que oui.)",
+    "Choisir : I don't like these shoes. I prefer the black ones. (Je n'aime pas ces chaussures. Je préfère les noires.)",
+    "Accepter une invitation : Would you like to join us? — I'd love to! (Tu veux te joindre à nous ? — Avec plaisir !)"
+   ],
+   "pieges": [
+    "faux « Is it true? — I think yes. » → juste « Is it true? — I think so. » : « Je pense que oui » se dit {I think so}.",
+    "faux « Which car? — The red. » → juste « Which car? — The red one. » : Un adjectif seul ne remplace pas un nom comptable : il faut {one}.",
+    "faux « Is he coming? — I don't think not. » → juste « Is he coming? — I don't think so. » : Avec {think}, la négation porte sur {think} : {I don't think so}."
+   ],
+   "retenir": "On ne répète pas : l'auxiliaire seul, {so} / {not}, {one} / {ones}, {to} seul.",
+   "secret": "Pour répondre « moi aussi » ou « moi non plus », cherche le moteur de la phrase d'origine : I've finished → So have I. She can drive → So can I. He likes jazz (moteur caché : does) → So do I. Le français dit toujours « moi aussi » ; l'anglais exige le bon moteur à chaque fois.",
+   "defi_deja_pose": [
+    "« I can't swim. — ___ can I. » (moi non plus)",
+    "« She went to Rome last year, and so ___ I. »",
+    "« Will you pass? — I hope ___. »",
+    "« These shoes are too small. Have you got bigger ___? »",
+    "Complète : « Can you come tomorrow? — I'd like ___, but I can't. »"
+   ]
+  },
+  {
+   "id": "rappels",
+   "niveau": "C1",
+   "titre": "Les fils qui relient",
+   "notion": "La cohésion : this / these + nom, the former / the latter, such, the same",
+   "image": "Un texte bien écrit est cousu : chaque phrase est rattachée à la précédente par de petits fils de rappel.",
+   "demo": [
+    "Prices rose by 20%. This increase surprised everyone.",
+    "We met Paul and Anna. The former is a doctor, the latter a lawyer.",
+    "He lied to me. Such behaviour is unacceptable.",
+    "I ordered fish, and she did the same.",
+    "Some say it's too late. This view, however, is wrong."
+   ],
+   "regle": "Un texte bien construit relie chaque phrase à la précédente par des mots de rappel. {this} / {these} + un nom qui résume ce qui vient d'être dit ({this problem}, {these changes}, {this decision}) : c'est plus clair qu'un simple {it}. {such} + nom = un tel, de ce genre ({such behaviour}). {the former} (le premier des deux) et {the latter} (le second) renvoient à deux éléments déjà cités. {the same} reprend un élément identique. Ces rappels évitent les répétitions et guident le lecteur.",
+   "formes": [
+    "Résumer : {this} / {these} + nom-étiquette — This decision surprised everyone.",
+    "Un tel : {such} (+ {a}) + nom — Such mistakes are common.",
+    "Le premier, le second : {the former} · {the latter} — Tea or coffee? I prefer the latter."
+   ],
+   "usages": [
+    "Reprendre une idée : Prices rose by 20%. This increase worried consumers. (Les prix ont augmenté de 20 %. Cette hausse a inquiété les consommateurs.)",
+    "Généraliser : He shouted at the waiter. Such behaviour is unacceptable. (Il a crié sur le serveur. Un tel comportement est inacceptable.)",
+    "Distinguer deux éléments : Paris and Lyon are big cities; the former is the capital. (Paris et Lyon sont de grandes villes ; la première est la capitale.)"
+   ],
+   "pieges": [
+    "faux « It was a such good idea. » → juste « It was such a good idea. » : {such} se place avant l'article : {such a}.",
+    "faux « I met Tom, Sam and Ben; the latter is my cousin. » → juste « I met Tom, Sam and Ben; Ben is my cousin. » : {the latter} ne vaut que pour deux éléments ; avec trois, on nomme la personne (ou on dit {the last one})."
+   ],
+   "retenir": "{this} + nom-étiquette pour résumer, {such} pour généraliser, {the former} / {the latter} pour deux éléments.",
+   "secret": "Les rédacteurs anglais adorent résumer une phrase par un nom : this problem, this issue, this trend, this approach, this view, this claim, this shift. Au lieu de « this » tout seul (vague), « this trend » dit exactement de quoi on parle. C'est l'outil le plus simple pour rendre un essai fluide.",
+   "defi_deja_pose": [
+    "« Unemployment fell last year. ___ was good news. »",
+    "« I like both tea and coffee, but I prefer ___ in the morning. » (le café)",
+    "« The government raised taxes. ___ measures are never popular. »",
+    "Complète : « She ordered a salad and I had the ___. »",
+    "Quel nom-étiquette résume le mieux : « Many shops closed and jobs were lost. ___ was a disaster for the town. »",
+    "Touche les deux mots qui renvoient au premier élément. Rome and Paris are beautiful, but *the *former is older."
+   ]
+  },
+  {
+   "id": "relatives-luxe",
+   "niveau": "C1",
+   "titre": "Les relatives de luxe",
+   "notion": "Whom, préposition + which, whereby, whoever, whatever",
+   "image": "Dans les beaux quartiers de la Cité, les relatives s'habillent avec élégance : préposition en tête, whom, whereby.",
+   "demo": [
+    "The person to whom this letter is addressed…",
+    "The person (who) this letter is addressed to…",
+    "The house in which I grew up.",
+    "a system whereby students can vote online",
+    "Whoever wins will get a prize. Whatever you do, don't panic."
+   ],
+   "regle": "Dans un anglais soigné, les relatives se font plus élégantes. {whom} remplace {who} quand le relatif est complément, surtout après une préposition ({the person to whom I spoke}). La préposition peut passer devant le relatif : {the house in which I grew up} (au lieu de {the house I grew up in}). {whereby} = par lequel, grâce auquel ({a system whereby users pay monthly}). Et {whoever} (quiconque, qui que ce soit), {whatever} (quoi que, tout ce que) et {whichever} (n'importe lequel) introduisent une relative sans antécédent.",
+   "formes": [
+    "Préposition + whom : nom + préposition + {whom} — the man to whom I wrote",
+    "Préposition + which : nom + préposition + {which} — the city in which she lives",
+    "Par lequel : nom + {whereby} + phrase — a scheme whereby students borrow money",
+    "Quiconque, quoi que : {whoever} / {whatever} / {whichever} + verbe — Whoever wins gets a prize."
+   ],
+   "usages": [
+    "Une lettre formelle : The person to whom this letter is addressed… (La personne à qui cette lettre est adressée…)",
+    "Un texte écrit : The period during which he lived in Paris was crucial. (La période pendant laquelle il a vécu à Paris a été décisive.)",
+    "Un mécanisme : They signed an agreement whereby both sides cut prices. (Ils ont signé un accord par lequel les deux parties baissent leurs prix.)",
+    "Tout ce que : Take whatever you need. (Prends tout ce dont tu as besoin.)"
+   ],
+   "pieges": [
+    "faux « the man to who I spoke » → juste « the man to whom I spoke » : Directement après une préposition, on emploie {whom}, jamais {who}.",
+    "faux « the house in that I was born » → juste « the house in which I was born » : Après une préposition, {which}, jamais {that}.",
+    "faux « Who arrives first wins. » → juste « Whoever arrives first wins. » : Sans antécédent (« celui qui », « quiconque »), on dit {whoever}."
+   ],
+   "retenir": "Préposition + {whom} (personne) ou {which} (chose) ; {whereby} = par lequel ; {whoever}, {whatever} = quiconque, quoi que.",
+   "secret": "À l'oral, whom a presque disparu : on dit « Who did you see? ». Il survit dans trois cas : après une préposition (to whom, with whom), dans les lettres formelles (To whom it may concern : à qui de droit), et dans les quantités (some of whom, all of whom, many of whom). Connaître ces trois cas suffit.",
+   "defi_deja_pose": [
+    "« The colleague with ___ I work is very helpful. »",
+    "« The company ___ she works is in London. »",
+    "« ___ you go, I'll follow you. »",
+    "Réécris en style courant : « the girl to whom I gave the book » → « the girl I gave the book ___ »",
+    "« They signed an agreement ___ prices would be fixed. »"
+   ]
+  },
+  {
+   "id": "verbe-devient-nom",
+   "niveau": "C1",
+   "titre": "Quand le verbe devient nom",
+   "notion": "La nominalisation (style formel)",
+   "image": "Pour écrire comme un rapport officiel, on transforme les actions (verbes) en choses (noms). La phrase devient plus dense, plus objective.",
+   "demo": [
+    "They decided to close the factory. → The decision to close the factory…",
+    "Prices rose sharply. → a sharp rise in prices",
+    "If you fail to pay… → Failure to pay will result in…",
+    "We analysed the data carefully. → A careful analysis of the data shows…"
+   ],
+   "regle": "Dans un style formel (rapports, articles, écrits universitaires), on transforme souvent les verbes et les adjectifs en noms : {decide} → {decision}, {develop} → {development}, {arrive} → {arrival}, {fail} → {failure}, {perform} → {performance}, {aware} → {awareness}. La phrase devient plus dense et plus impersonnelle : {Prices increased rapidly} → {There was a rapid increase in prices}. Les suffixes les plus courants : {-tion}, {-ment}, {-al}, {-ure}, {-ance} / {-ence}, {-ness}, {-ity}.",
+   "formes": [
+    "Verbe → nom : {-tion} · {-ment} · {-al} · {-ure} · {-ance} — decide → decision",
+    "Adjectif → nom : {-ness} · {-ity} · {-ence} — aware → awareness",
+    "La phrase transformée : {There was a} + adjectif + nom + {in}… — There was a sharp rise in prices."
+   ],
+   "usages": [
+    "Un rapport : The introduction of the new tax caused protests. (L'introduction du nouvel impôt a provoqué des manifestations.)",
+    "Un résumé : Her arrival changed everything. (Son arrivée a tout changé.)",
+    "Un style objectif : There has been a significant improvement in sales. (Les ventes se sont nettement améliorées.)"
+   ],
+   "pieges": [
+    "faux « There was a rapid increase of prices. » → juste « There was a rapid increase in prices. » : On dit {an increase in}, {a rise in}, {a fall in} + ce qui change.",
+    "faux « His arrive surprised us. » → juste « His arrival surprised us. » : Le nom de {arrive} est {arrival}.",
+    "faux « a rapidly growth » → juste « a rapid growth » : Devant un nom, l'adverbe devient adjectif : {rapidly} → {rapid}."
+   ],
+   "retenir": "Style formel : verbe → nom ({-tion}, {-ment}, {-al}…), adverbe → adjectif, et la bonne préposition.",
+   "secret": "La nominalisation impressionne dans un essai, mais en excès, elle rend le texte lourd et flou. Les bons écrivains alternent : une phrase nominale pour résumer une idée, une phrase verbale pour raconter. Les guides de style anglais (comme ceux des journaux) conseillent même de préférer les verbes. Sache faire les deux, et choisis selon le lecteur.",
+   "defi_deja_pose": [
+    "Le nom de « arrive » :",
+    "Le nom de « fail » :",
+    "Version formelle de « Unemployment rose dramatically » :",
+    "Écris le nom de « develop ».",
+    "Écris le nom de « refuse »."
+   ]
+  }
+ ]
+}

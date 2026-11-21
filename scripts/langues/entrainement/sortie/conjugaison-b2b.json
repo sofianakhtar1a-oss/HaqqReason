@@ -1,0 +1,2053 @@
+{
+ "passif-pieges": [
+  {
+   "d": 1,
+   "q": "I ___ a watch for my birthday.",
+   "o": [
+    "was given",
+    "gave",
+    "was gave"
+   ],
+   "io": {
+    "gave": "« I gave » veut dire que c'est moi qui ai donné.",
+    "was gave": "Après was, il faut le participe passé : given."
+   },
+   "i": "La personne qui reçoit devient le sujet.",
+   "e": "« was given » : la personne qui reçoit devient le sujet, avec was + participe passé de give (given)."
+  },
+  {
+   "d": 1,
+   "q": "The children ___ a story by their teacher.",
+   "o": [
+    "were told",
+    "told",
+    "were tell"
+   ],
+   "io": {
+    "told": "« told » seul est une forme active : les enfants auraient raconté l'histoire.",
+    "were tell": "Après were, il faut le participe passé : told."
+   },
+   "i": "Les enfants reçoivent l'histoire : ils sont le sujet du passif.",
+   "e": "« were told » : les enfants qui reçoivent l'histoire deviennent le sujet, avec were + participe passé (told)."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots du passif avec get.",
+   "p": "Tom *got *hurt while he was playing football.",
+   "i": "Cherche get suivi d'un participe passé.",
+   "e": "« got hurt » : get + participe passé exprime un incident, comme un passif parlé."
+  },
+  {
+   "d": 1,
+   "q": "She doesn't like ___ watched.",
+   "o": [
+    "being",
+    "be",
+    "been"
+   ],
+   "io": {
+    "be": "Après like, on attend une forme en -ing : being.",
+    "been": "« been » ne se met pas ici : c'est being."
+   },
+   "i": "Après « like », le verbe suivant est en -ing.",
+   "e": "« being » : après un verbe suivi de -ing (like), le passif est being + participe passé."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « He wants ___ invited to the party. »",
+   "r": [
+    "to be"
+   ],
+   "i": "Après « wants », il y a « to ».",
+   "e": "« to be » : après un verbe suivi de to (wants), le passif est to be + participe passé."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "we",
+    "were",
+    "shown",
+    "around",
+    "the museum"
+   ],
+   "fin": ".",
+   "i": "Le sujet, were, puis le participe de show.",
+   "e": "« We were shown around the museum. » : la personne qui reçoit devient le sujet, avec were + participe passé de show."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "I was told to wait.",
+    "I was said to wait.",
+    "I was telled to wait."
+   ],
+   "io": {
+    "I was said to wait.": "Avec say, la personne ne peut pas devenir sujet : il faut tell.",
+    "I was telled to wait.": "Le participe passé de tell est told."
+   },
+   "i": "Quel verbe permet de mettre la personne en sujet ?",
+   "e": "La première est juste : avec tell, la personne peut devenir le sujet (I was told). Avec say, ce n'est pas possible."
+  },
+  {
+   "d": 2,
+   "q": "He got ___ in the accident.",
+   "o": [
+    "injured",
+    "injure",
+    "injuring"
+   ],
+   "io": {
+    "injure": "Après get, il faut un participe passé.",
+    "injuring": "La forme en -ing ne donne pas un passif."
+   },
+   "i": "Get est suivi d'un participe passé.",
+   "e": "« injured » : get est suivi d'un participe passé pour exprimer un incident, got injured."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « On nous a montré les photos. »",
+   "r": [
+    "We were shown the photos",
+    "We were shown the pictures",
+    "We were shown some photos",
+    "We were shown the photographs"
+   ],
+   "i": "La personne devient le sujet : la phrase commence par « We were… ».",
+   "e": "« We were shown the photos. » : la personne qui reçoit devient le sujet du passif, were shown."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « She avoids ___ (see) in public. »",
+   "r": [
+    "being seen"
+   ],
+   "i": "Après avoid, le verbe est en -ing, ici au passif.",
+   "e": "« being seen » : avoid est suivi de -ing, donc au passif on emploie being + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "he",
+    "expects",
+    "to be",
+    "paid",
+    "on Friday"
+   ],
+   "fin": ".",
+   "i": "Après expects, to be + participe.",
+   "e": "« He expects to be paid on Friday. » : après to, le passif est to be + participe passé.",
+   "alt": [
+    [
+     "on Friday",
+     "he",
+     "expects",
+     "to be",
+     "paid"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Maryam doesn't like be interrupted.",
+   "r": [
+    "Maryam doesn't like being interrupted.",
+    "Maryam doesn't like to be interrupted."
+   ],
+   "i": "Après « like », quelle forme ?",
+   "e": "« being interrupted » : like est suivi de -ing, donc au passif on emploie being + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Adam is excited about ___ chosen for the final.",
+   "o": [
+    "being",
+    "be",
+    "been"
+   ],
+   "io": {
+    "be": "Après about, on attend -ing : being.",
+    "been": "« been » ne s'emploie pas ici."
+   },
+   "i": "Après une préposition, on utilise -ing.",
+   "e": "« being » : après la préposition about, on emploie -ing, donc being + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui forment le passif après « wants ».",
+   "p": "Yusuf wants *to *be taught how to swim.",
+   "i": "Cherche to + be avant le participe.",
+   "e": "« to be taught » : après un verbe suivi de to, le passif est to be + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My bag got steal at the station.",
+   "r": [
+    "My bag got stolen at the station."
+   ],
+   "i": "Après get, quelle forme du verbe ?",
+   "e": "« got stolen » : après get, on emploie le participe passé (stolen)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She was offered to a new job.",
+   "r": [
+    "She was offered a new job."
+   ],
+   "i": "Un petit mot est de trop.",
+   "e": "« She was offered a new job. » : après offered, le nom suit directement, sans « to »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il déteste qu'on lui dise quoi faire. »",
+   "r": [
+    "He hates being told what to do",
+    "He hates to be told what to do",
+    "He hates it when people tell him what to do"
+   ],
+   "i": "Après hate, être dit : being + participe, ou to be + participe.",
+   "e": "« He hates being told what to do. » : hate peut être suivi de -ing, donc being + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "She didn't want to be disturbed.",
+    "She didn't want being disturbed.",
+    "She didn't want to being disturbed."
+   ],
+   "io": {
+    "She didn't want being disturbed.": "Après want, il faut « to be » + participe passé.",
+    "She didn't want to being disturbed.": "« to » est suivi de la base : be, pas being."
+   },
+   "i": "Want est suivi de to.",
+   "e": "La première est juste : après want, on met to be + participe passé. La forme « to being » est fausse, car to est suivi de la base."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "the visitors",
+    "were",
+    "given",
+    "a map",
+    "and",
+    "told",
+    "to wait"
+   ],
+   "fin": ".",
+   "i": "Les deux participes passés partagent le même verbe were.",
+   "e": "« The visitors were given a map and told to wait. » : un seul were suffit pour deux participes passés reliés par and."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il a été blessé pendant le match. »",
+   "r": [
+    "He got hurt during the match",
+    "He got injured during the match",
+    "He was hurt during the match",
+    "He was injured during the match",
+    "He got hurt in the match",
+    "He got injured in the match",
+    "He got hurt in the game",
+    "He got injured in the game",
+    "He was injured during the game",
+    "He was hurt during the game"
+   ],
+   "i": "Passif avec get ou be : participe passé.",
+   "e": "« He got injured during the match. » : un incident se dit avec get (ou was) + participe passé."
+  }
+ ],
+ "detective-modal": [
+  {
+   "d": 1,
+   "q": "The lights are on. They ___ be at home.",
+   "o": [
+    "must",
+    "can't",
+    "mustn't"
+   ],
+   "io": {
+    "can't": "« can't » veut dire « impossible », ce qui contredit les lumières allumées.",
+    "mustn't": "« mustn't » exprime une interdiction, pas une déduction."
+   },
+   "i": "Les lumières sont allumées : j'en suis presque sûr.",
+   "e": "« must » : must exprime la quasi-certitude ; les lumières allumées montrent qu'ils sont sûrement chez eux."
+  },
+  {
+   "d": 1,
+   "q": "He ___ be a doctor. He doesn't know what a stethoscope is!",
+   "o": [
+    "can't",
+    "must",
+    "has to"
+   ],
+   "io": {
+    "must": "« must be » dirait qu'il est sûrement médecin.",
+    "has to": "« has to » exprime une obligation, pas une déduction."
+   },
+   "i": "C'est impossible, vu ce qu'on constate.",
+   "e": "« can't » : pour dire que c'est impossible, on emploie can't et non mustn't."
+  },
+  {
+   "d": 1,
+   "q": "I'm not sure, but Sarah ___ be in the library.",
+   "o": [
+    "might",
+    "can't",
+    "must have"
+   ],
+   "io": {
+    "can't": "« can't » dit que c'est impossible.",
+    "must have": "« must have » serait pour le passé, avec plus de certitude."
+   },
+   "i": "Je ne suis pas sûr : c'est une possibilité.",
+   "e": "« might » : might exprime une simple possibilité, quand on n'est pas sûr."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui exprime la quasi-certitude.",
+   "p": "It's seven o'clock. Léa *must be home by now.",
+   "i": "Cherche le modal qui veut dire « sûrement ».",
+   "e": "« must » : must exprime que Léa est sûrement déjà rentrée."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The street is wet. It ___ rained. » (presque sûr)",
+   "r": [
+    "must have"
+   ],
+   "i": "Déduction sur le passé : modal + have + participe.",
+   "e": "« must have » : une déduction sur le passé se forme avec must have + participe passé."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "he",
+    "must",
+    "be",
+    "very",
+    "tired"
+   ],
+   "fin": ".",
+   "i": "Après « must », on met be, puis l'adjectif.",
+   "e": "« He must be very tired. » : must + base exprime une déduction sur le présent."
+  },
+  {
+   "d": 2,
+   "q": "Omar is late again. He ___ the bus.",
+   "o": [
+    "must have missed",
+    "must miss",
+    "can't have missed"
+   ],
+   "io": {
+    "must miss": "« must miss » parlerait du présent, pas d'un bus déjà raté.",
+    "can't have missed": "« can't have missed » dit qu'il est impossible qu'il l'ait raté."
+   },
+   "i": "Déduction sur le passé : il a sûrement raté le bus.",
+   "e": "« must have missed » : une déduction sur le passé se forme avec must have + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "The ground is dry. It ___ rained last night.",
+   "o": [
+    "can't have",
+    "must have",
+    "might"
+   ],
+   "io": {
+    "must have": "« must have rained » dirait qu'il a sûrement plu, ce qui contredit la terre sèche.",
+    "might": "« might rained » est incorrect : il manque have."
+   },
+   "i": "La terre est sèche : c'est presque impossible.",
+   "e": "« can't have » : la terre sèche rend la pluie impossible ; la déduction négative sur le passé est can't have + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ils ne peuvent pas être chez eux. »",
+   "r": [
+    "They can't be at home",
+    "They can't be home",
+    "They cannot be at home",
+    "They cannot be home"
+   ],
+   "i": "Il s'agit d'une déduction négative sur le présent : c'est impossible.",
+   "e": "« They can't be at home. » : can't + base exprime que c'est impossible."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « She ___ be Spanish; she doesn't speak a word of it. »",
+   "r": [
+    "can't",
+    "couldn't"
+   ],
+   "i": "Pour dire « ce n'est pas possible » : quel modal ?",
+   "e": "« can't » : pour une déduction négative, on emploie can't et non mustn't."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "they",
+    "must",
+    "have",
+    "left",
+    "early"
+   ],
+   "fin": ".",
+   "i": "Déduction sur le passé : modal + have + participe.",
+   "e": "« They must have left early. » : must have + participe passé exprime une déduction sur le passé."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She mustn't be at work because I saw her at the cinema.",
+   "r": [
+    "She can't be at work because I saw her at the cinema."
+   ],
+   "i": "Pour dire que c'est impossible, quel modal ?",
+   "e": "« can't be » : une déduction négative (« c'est impossible ») se fait avec can't et non mustn't."
+  },
+  {
+   "d": 2,
+   "q": "I heard a noise. It ___ the cat, or maybe the wind.",
+   "o": [
+    "might have been",
+    "must be",
+    "can't be"
+   ],
+   "io": {
+    "must be": "« must be » exprime une quasi-certitude et parle du présent.",
+    "can't be": "« can't be » dit que c'est impossible."
+   },
+   "i": "Je ne suis pas sûr : c'est peut-être l'un ou l'autre.",
+   "e": "« might have been » : une possibilité sur le passé se forme avec might have + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots d'une déduction sur le passé.",
+   "p": "The cake is gone. Someone *must *have eaten it.",
+   "i": "Cherche modal + have avant le participe.",
+   "e": "« must have eaten » : une déduction sur le passé se forme avec must have + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He can't has seen us because we were behind the tree.",
+   "r": [
+    "He can't have seen us because we were behind the tree."
+   ],
+   "i": "Après un modal, quelle forme de have ?",
+   "e": "« can't have seen » : après un modal, have reste à la base, et le participe passé suit."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My brother must been very tired last night.",
+   "r": [
+    "My brother must have been very tired last night."
+   ],
+   "i": "Il manque un petit mot entre « must » et « been ».",
+   "e": "« must have been » : une déduction sur le passé exige modal + have + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il n'a pas pu oublier mon anniversaire. »",
+   "r": [
+    "He can't have forgotten my birthday",
+    "He cannot have forgotten my birthday",
+    "He couldn't have forgotten my birthday"
+   ],
+   "i": "Impossibilité sur le passé : can't have + participe.",
+   "e": "« He can't have forgotten my birthday. » : l'impossibilité sur le passé se forme avec can't have + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase dit « peut-être qu'ils sont partis » ?",
+   "o": [
+    "They might have left.",
+    "They must have left.",
+    "They can't have left."
+   ],
+   "io": {
+    "They must have left.": "« must have » dit qu'ils sont sûrement partis.",
+    "They can't have left.": "« can't have » dit que c'est impossible."
+   },
+   "i": "Cherche le modal de la simple possibilité.",
+   "e": "La première est juste : might have + participe exprime « peut-être », alors que must have dit « sûrement »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "the lights",
+    "were",
+    "off",
+    "so",
+    "they",
+    "must",
+    "have",
+    "gone",
+    "to bed"
+   ],
+   "fin": ".",
+   "i": "La conclusion suit ce qu'on constate : les lumières sont éteintes.",
+   "e": "« The lights were off so they must have gone to bed. » : must have + participe passé exprime la déduction sur le passé."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « The door was locked from inside. The thief ___ come in through the door. »",
+   "r": [
+    "can't have",
+    "cannot have",
+    "couldn't have"
+   ],
+   "i": "Il s'agit d'une déduction négative sur le passé : c'est impossible.",
+   "e": "« can't have » : la porte étant fermée de l'intérieur, la déduction négative sur le passé est can't have + participe passé."
+  }
+ ],
+ "questions-negatives": [
+  {
+   "d": 1,
+   "q": "___ you like pizza? I thought everyone did!",
+   "o": [
+    "Don't",
+    "Aren't",
+    "Doesn't"
+   ],
+   "io": {
+    "Aren't": "« Aren't you like » n'est pas correct : like prend do.",
+    "Doesn't": "« Doesn't » va avec he, she, it, pas avec you."
+   },
+   "i": "L'auxiliaire du présent simple avec « you ».",
+   "e": "« Don't » : avec you et le verbe like, la question négative commence par Don't you… ?"
+  },
+  {
+   "d": 1,
+   "q": "___ he your brother? You look alike!",
+   "o": [
+    "Isn't",
+    "Doesn't",
+    "Don't"
+   ],
+   "io": {
+    "Doesn't": "« Doesn't he your brother » est incorrect : le verbe est be.",
+    "Don't": "« Don't » ne va pas avec le verbe be."
+   },
+   "i": "Avec le verbe être, on garde be.",
+   "e": "« Isn't » : avec le verbe be, la question négative commence par Isn't he… ?"
+  },
+  {
+   "d": 1,
+   "q": "Why ___ we have lunch together?",
+   "o": [
+    "don't",
+    "aren't",
+    "not"
+   ],
+   "io": {
+    "aren't": "« Why aren't we have » est incorrect.",
+    "not": "« Why not we have » n'est pas la bonne structure."
+   },
+   "i": "C'est une suggestion : Why… we… ?",
+   "e": "« don't » : pour proposer quelque chose, on dit Why don't we + base."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui forment la question négative.",
+   "p": "*Don't *you remember me?",
+   "i": "Cherche l'auxiliaire négatif et le sujet.",
+   "e": "« Don't you » : la question négative commence par l'auxiliaire négatif suivi du sujet."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ Emma finished her homework yet? »",
+   "r": [
+    "Hasn't"
+   ],
+   "i": "Present perfect avec « Emma » : have ou has ?",
+   "e": "« Hasn't » : Emma = she, donc le present perfect prend has, d'où Hasn't Emma finished… ?"
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "don't",
+    "you",
+    "like",
+    "chocolate"
+   ],
+   "fin": "?",
+   "i": "L'auxiliaire négatif ouvre la question, avant le sujet.",
+   "e": "« Don't you like chocolate? » : l'auxiliaire négatif passe devant le sujet, puis le verbe reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Isn't the museum open on Mondays? — ___, it is. You can go.",
+   "o": [
+    "Yes",
+    "No",
+    "Si"
+   ],
+   "io": {
+    "No": "« No » dirait que le musée n'est pas ouvert.",
+    "Si": "« Si » n'existe pas en anglais : on dit Yes."
+   },
+   "i": "Selon la réalité, le musée est ouvert.",
+   "e": "« Yes » : on répond selon la réalité, et comme le musée est ouvert, c'est Yes (notre « si »). Le mot « si » n'existe pas en anglais."
+  },
+  {
+   "d": 2,
+   "q": "Don't you have a bike? — ___, I walk to school.",
+   "o": [
+    "No",
+    "Yes",
+    "Si"
+   ],
+   "io": {
+    "Yes": "« Yes » voudrait dire que j'ai un vélo.",
+    "Si": "« Si » n'existe pas en anglais."
+   },
+   "i": "En réalité, tu n'as pas de vélo.",
+   "e": "« No » : on répond selon la réalité, et comme je n'ai pas de vélo, c'est No."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tu ne manges pas de viande ? »",
+   "r": [
+    "Don't you eat meat",
+    "Do you not eat meat",
+    "Don't you eat any meat"
+   ],
+   "i": "Question négative avec do.",
+   "e": "« Don't you eat meat? » : auxiliaire négatif + sujet + verbe à la base."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Why ___ you ask your teacher? »",
+   "r": [
+    "don't"
+   ],
+   "i": "Why + auxiliaire négatif + you.",
+   "e": "« don't » : pour suggérer, on emploie Why don't you + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "why",
+    "don't",
+    "we",
+    "take",
+    "a taxi"
+   ],
+   "fin": "?",
+   "i": "L'auxiliaire passe devant le sujet.",
+   "e": "« Why don't we take a taxi? » : Why don't we + base est une proposition."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Why you don't call him?",
+   "r": [
+    "Why don't you call him?"
+   ],
+   "i": "L'auxiliaire va devant le sujet.",
+   "e": "« Why don't you call him? » : dans la question, l'auxiliaire passe devant le sujet."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "Haven't you finished yet?",
+    "Don't you finished yet?",
+    "Hasn't you finished yet?"
+   ],
+   "io": {
+    "Don't you finished yet?": "Après don't, le verbe reste à la base.",
+    "Hasn't you finished yet?": "Hasn't va avec he/she/it, pas avec you."
+   },
+   "i": "Present perfect : quel auxiliaire avec « you » ?",
+   "e": "La première est juste : avec you, le present perfect négatif est Haven't you + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Touche le premier mot de la question négative.",
+   "p": "*Haven't you finished your homework yet?",
+   "i": "C'est l'auxiliaire négatif.",
+   "e": "« Haven't » : l'auxiliaire négatif ouvre la question et exprime la surprise ou le reproche."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Why you aren't coming with us?",
+   "r": [
+    "Why aren't you coming with us?"
+   ],
+   "i": "Dans une question, l'auxiliaire passe devant le sujet.",
+   "e": "« Why aren't you coming with us? » : dans la question, l'auxiliaire passe devant le sujet."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Doesn't your sister likes pasta?",
+   "r": [
+    "Doesn't your sister like pasta?"
+   ],
+   "i": "Après doesn't, le verbe est à la base.",
+   "e": "« like » : doesn't porte déjà le -s, donc le verbe reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Pourquoi ne pas essayer ce nouveau café ? »",
+   "r": [
+    "Why don't we try this new café",
+    "Why don't we try this new cafe",
+    "Why not try this new café",
+    "Why not try this new cafe",
+    "Why don't you try this new café",
+    "Why don't you try this new cafe"
+   ],
+   "i": "Proposition : Why don't we ou Why not.",
+   "e": "« Why don't we try this new café? » : Why don't we (ou Why not) sert à faire une suggestion."
+  },
+  {
+   "d": 3,
+   "q": "Quelle réponse est correcte à « Isn't it cold today? » si tu trouves qu'il fait très chaud ?",
+   "o": [
+    "No, it isn't.",
+    "Yes, it isn't.",
+    "No, it is."
+   ],
+   "io": {
+    "Yes, it isn't.": "« Yes » et « isn't » se contredisent : on ne peut pas confirmer et nier en même temps.",
+    "No, it is.": "« No » et « is » se contredisent : on ne peut pas nier et affirmer en même temps."
+   },
+   "i": "La réponse suit la réalité.",
+   "e": "« No, it isn't. » : en réalité il ne fait pas froid, donc No avec isn't ; Yes et isn't se contredisent."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "why",
+    "didn't",
+    "you",
+    "tell",
+    "me",
+    "about",
+    "the",
+    "meeting"
+   ],
+   "fin": "?",
+   "i": "L'auxiliaire négatif passe devant le sujet.",
+   "e": "« Why didn't you tell me about the meeting? » : Why + auxiliaire négatif + sujet + verbe à la base."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « N'avez-vous pas encore fini ? »",
+   "r": [
+    "Haven't you finished yet",
+    "Haven't you finished it yet",
+    "Have you not finished yet"
+   ],
+   "i": "C'est une question négative au present perfect, avec « you ».",
+   "e": "« Haven't you finished yet? » : le present perfect négatif en question se forme avec Haven't + sujet + participe passé."
+  }
+ ],
+ "genie-regrets": [
+  {
+   "d": 1,
+   "q": "I wish I ___ a bigger house.",
+   "o": [
+    "had",
+    "have",
+    "would have"
+   ],
+   "io": {
+    "have": "Après wish, le verbe ne reste pas au présent : il recule d'un cran, au prétérit.",
+    "would have": "Would sert à exprimer l'agacement devant le comportement de quelqu'un, pas à regretter ce qu'on possède."
+   },
+   "i": "Je n'ai pas de grande maison : le souhait porte sur une réalité présente.",
+   "e": "« had » : après wish, le présent recule au prétérit pour exprimer un souhait irréel sur le présent."
+  },
+  {
+   "d": 1,
+   "q": "I wish it ___ warmer today.",
+   "o": [
+    "were",
+    "is",
+    "will be"
+   ],
+   "io": {
+    "is": "Après wish, le présent recule au prétérit : il faut were.",
+    "will be": "Wish n'est pas suivi de will : pour un regret présent, on emploie le prétérit."
+   },
+   "i": "Il ne fait pas assez chaud : on rêve d'une réalité différente.",
+   "e": "« were » : après wish, be se met au prétérit, et on emploie were pour tous les sujets."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui exprime le souhait irréel.",
+   "p": "I *wish I knew the answer.",
+   "i": "Cherche le verbe qui exprime un souhait sur une réalité qu'on voudrait différente.",
+   "e": "« wish » : wish exprime un souhait irréel, et le verbe qui suit (knew) recule d'un cran."
+  },
+  {
+   "d": 1,
+   "q": "I wish I ___ the exam yesterday.",
+   "o": [
+    "hadn't failed",
+    "didn't fail",
+    "wouldn't fail"
+   ],
+   "io": {
+    "didn't fail": "Le prétérit exprime un regret sur le présent, mais ici l'examen est passé.",
+    "wouldn't fail": "Would sert à l'agacement, pas à un regret sur le passé."
+   },
+   "i": "Le regret porte sur le passé : « yesterday ».",
+   "e": "« hadn't failed » : pour un regret sur le passé, on emploie wish + had + participe passé, ici à la forme négative."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I wish I ___ (have) a dog. »",
+   "r": [
+    "had"
+   ],
+   "i": "Je n'ai pas de chien : le souhait porte sur le présent.",
+   "e": "« had » : après wish, le présent recule d'un cran au prétérit pour exprimer un regret sur le présent."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "I",
+    "wish",
+    "I",
+    "had",
+    "more",
+    "time"
+   ],
+   "fin": ".",
+   "i": "Après wish, le verbe recule d'un cran.",
+   "e": "« I wish I had more time. » : wish + prétérit exprime un regret sur le présent."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "I wish I had more time.",
+    "I wish I have more time.",
+    "I wish I would have more time."
+   ],
+   "io": {
+    "I wish I have more time.": "Après wish, le présent recule d'un cran : il faut le prétérit (had), pas have.",
+    "I wish I would have more time.": "Would ne s'emploie pas avec I pour un regret sur ce qu'on possède."
+   },
+   "i": "Après wish, le verbe recule d'un cran dans le temps.",
+   "e": "La première est juste : wish est suivi du prétérit pour un regret présent. Le présent et would sont impossibles ici."
+  },
+  {
+   "d": 2,
+   "q": "I wish you ___ stop shouting! It's so annoying.",
+   "o": [
+    "would",
+    "will",
+    "did"
+   ],
+   "io": {
+    "will": "Après wish, on n'emploie pas will : pour exprimer l'agacement, on dit wish + would.",
+    "did": "« Did stop » ne se dit pas pour exprimer un agacement : on emploie wish + would."
+   },
+   "i": "Je suis agacé par le comportement de quelqu'un d'autre.",
+   "e": "« would » : wish + sujet + would + base exprime l'agacement devant le comportement de quelqu'un."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais, avec « wish » : « J'aimerais être plus grand. »",
+   "r": [
+    "I wish I were taller",
+    "I wish I was taller"
+   ],
+   "i": "On parle d'une réalité présente qu'on voudrait changer.",
+   "e": "« I wish I were taller. » : après wish, be se met au prétérit (were, ou familièrement was)."
+  },
+  {
+   "d": 2,
+   "q": "Complète à la négative : « I wish I ___ (not, say) that to her yesterday. »",
+   "r": [
+    "hadn't said",
+    "had not said"
+   ],
+   "i": "Le regret porte sur le passé.",
+   "e": "« hadn't said » : regret sur le passé : wish + had + participe passé, ici à la négative."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "if only",
+    "I",
+    "had",
+    "a bike"
+   ],
+   "fin": "!",
+   "i": "If only a le même sens que wish, en plus fort.",
+   "e": "« If only I had a bike! » : if only est suivi du prétérit pour un regret sur le présent."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I wish I didn't go to the party last night.",
+   "r": [
+    "I wish I hadn't gone to the party last night.",
+    "I wish I had not gone to the party last night."
+   ],
+   "i": "Le regret porte sur le passé : quel temps faut-il après wish ?",
+   "e": "« I wish I hadn't gone » : pour un regret sur le passé, on emploie wish + past perfect, et non le prétérit."
+  },
+  {
+   "d": 2,
+   "q": "Tom wishes he ___ faster. He always loses the race.",
+   "o": [
+    "were",
+    "is",
+    "would be"
+   ],
+   "io": {
+    "is": "Après wish, le présent recule au prétérit : il faut were.",
+    "would be": "Would sert à l'agacement devant le comportement de quelqu'un d'autre, pas à une qualité qui manque."
+   },
+   "i": "Il n'est pas rapide : on parle du présent.",
+   "e": "« were » : après wish, be se met au prétérit pour un regret présent."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots du regret sur le passé.",
+   "p": "If only we *hadn't *missed the bus!",
+   "i": "Cherche le past perfect qui suit « if only ».",
+   "e": "« hadn't missed » : pour un regret sur le passé, if only (comme wish) est suivi du past perfect."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I wish you will stop talking.",
+   "r": [
+    "I wish you would stop talking."
+   ],
+   "i": "Pour exprimer l'agacement, quel modal faut-il ?",
+   "e": "« would stop » : pour l'agacement, on emploie wish + would, et jamais wish + will."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If only I knew about the meeting yesterday!",
+   "r": [
+    "If only I had known about the meeting yesterday!"
+   ],
+   "i": "Le regret porte sur le passé : « yesterday ».",
+   "e": "« had known » : pour un regret sur le passé, if only est suivi du past perfect."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais, avec « wish » ou « if only » : « Je regrette de ne pas avoir appris l'espagnol. »",
+   "r": [
+    "I wish I had learned Spanish",
+    "I wish I had learnt Spanish",
+    "I wish I had studied Spanish",
+    "If only I had learned Spanish",
+    "If only I had learnt Spanish",
+    "If only I had studied Spanish"
+   ],
+   "i": "Un regret sur le passé se dit avec wish + past perfect.",
+   "e": "« I wish I had learned Spanish. » : wish + had + participe passé exprime un regret sur le passé."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase exprime un souhait réaliste pour l'avenir ?",
+   "o": [
+    "I hope you pass your exam.",
+    "I wish you passed your exam.",
+    "I wish you will pass your exam."
+   ],
+   "io": {
+    "I wish you passed your exam.": "Wish + prétérit exprime une situation irréelle, pas un espoir réaliste.",
+    "I wish you will pass your exam.": "On ne met pas will après wish : pour un souhait réaliste, on dit hope."
+   },
+   "i": "On espère quelque chose qui peut vraiment arriver.",
+   "e": "La première est juste : pour un souhait réaliste sur l'avenir, on dit hope, suivi du présent."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "I",
+    "wish",
+    "you",
+    "would",
+    "stop",
+    "interrupting",
+    "me"
+   ],
+   "fin": ".",
+   "i": "Wish + would exprime l'agacement.",
+   "e": "« I wish you would stop interrupting me. » : wish + sujet + would + base exprime l'agacement."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « I wish she ___ (be) here with us now; she would love this view. »",
+   "r": [
+    "were",
+    "was"
+   ],
+   "i": "Elle n'est pas là : on parle du présent.",
+   "e": "« were » (ou was) : après wish, be se met au prétérit pour un regret présent."
+  }
+ ],
+ "messager": [
+  {
+   "d": 1,
+   "q": "« I like jazz », said Maya. → Maya said she ___ jazz. (recule le verbe d'un cran)",
+   "o": [
+    "liked",
+    "likes",
+    "had liked"
+   ],
+   "io": {
+    "likes": "Le verbe rapporté recule d'un cran : le présent ne reste pas tel quel.",
+    "had liked": "Le past perfect serait un recul de deux crans : ici, le présent devient simplement un prétérit."
+   },
+   "i": "Le verbe introducteur « said » est au passé : le présent recule au prétérit.",
+   "e": "« liked » : quand le verbe introducteur est au passé, le présent recule d'un cran, au prétérit."
+  },
+  {
+   "d": 1,
+   "q": "« I can swim », said Ali. → Ali said he ___ swim. (recule le verbe d'un cran)",
+   "o": [
+    "could",
+    "can",
+    "would"
+   ],
+   "io": {
+    "can": "Le verbe rapporté recule d'un cran : can devient could.",
+    "would": "« Would » est le recul de will, pas de can."
+   },
+   "i": "Can recule d'un cran au passé.",
+   "e": "« could » : au discours indirect, can devient could quand le verbe introducteur est au passé."
+  },
+  {
+   "d": 1,
+   "q": "She told ___ she was tired.",
+   "o": [
+    "me",
+    "to me",
+    "that me"
+   ],
+   "io": {
+    "to me": "Avec tell, la personne vient directement après, sans « to ».",
+    "that me": "Le mot « that » vient après la personne, pas avant."
+   },
+   "i": "Après tell, on nomme la personne directement.",
+   "e": "« me » : tell se construit avec la personne juste après (She told me), sans « to »."
+  },
+  {
+   "d": 1,
+   "q": "He said ___ he was busy.",
+   "o": [
+    "that",
+    "me",
+    "him"
+   ],
+   "io": {
+    "me": "Avec say, on ne met pas la personne juste après : il faudrait tell.",
+    "him": "Avec say, on ne met pas la personne juste après le verbe."
+   },
+   "i": "Say se construit sans personne devant la proposition.",
+   "e": "« that » : say se construit avec that + phrase, sans personne juste après le verbe."
+  },
+  {
+   "d": 1,
+   "q": "Sam a dit : « I am ready. » Touche le verbe qui a reculé d'un cran dans le discours indirect.",
+   "p": "Sam said he *was ready.",
+   "i": "Cherche le verbe qui n'est plus au présent.",
+   "e": "« was » : après said, le présent am recule d'un cran au prétérit was."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I work here », said Ana. → Ana said she ___ there.",
+   "r": [
+    "worked"
+   ],
+   "i": "Le verbe recule d'un cran.",
+   "e": "« worked » : le présent recule au prétérit, et here devient there."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est correcte ?",
+   "o": [
+    "She told me that she was tired.",
+    "She said me that she was tired.",
+    "She told that she was tired."
+   ],
+   "io": {
+    "She said me that she was tired.": "Say ne se construit pas avec une personne juste après : il faut tell.",
+    "She told that she was tired.": "Avec tell, il faut nommer la personne : told me."
+   },
+   "i": "Quel verbe se construit avec la personne ?",
+   "e": "La première est juste : tell se construit avec la personne (told me), alors que say ne se construit pas avec une personne juste après."
+  },
+  {
+   "d": 2,
+   "q": "He asked me where I ___.",
+   "o": [
+    "lived",
+    "did I live",
+    "do I live"
+   ],
+   "io": {
+    "did I live": "Dans une question rapportée, on n'inverse plus et on n'emploie plus do.",
+    "do I live": "Il ne faut pas de do, et le verbe recule au passé."
+   },
+   "i": "Dans une question rapportée, plus d'inversion.",
+   "e": "« lived » : une question rapportée se construit comme une phrase affirmative, sans inversion ni do, et le verbe recule d'un cran."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle a dit qu'elle viendrait demain. »",
+   "r": [
+    "She said she would come the next day",
+    "She said she would come the following day",
+    "She said that she would come the next day",
+    "She said that she would come the following day",
+    "She said she would come tomorrow",
+    "She said she would come the day after",
+    "She said that she would come tomorrow",
+    "She told me she would come the next day",
+    "She told me that she would come the next day"
+   ],
+   "i": "Will recule en would.",
+   "e": "« She said she would come the next day. » : will devient would, et tomorrow devient the next day."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « She asked me ___ I liked tea. »",
+   "r": [
+    "if",
+    "whether"
+   ],
+   "i": "Une question fermée rapportée est introduite par un petit mot.",
+   "e": "« if » (ou whether) : une question fermée rapportée se construit avec if ou whether."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "he",
+    "asked",
+    "me",
+    "if",
+    "I",
+    "liked",
+    "jazz"
+   ],
+   "fin": ".",
+   "i": "La question rapportée n'a plus d'inversion.",
+   "e": "« He asked me if I liked jazz. » : ask + personne + if + sujet + verbe, sans inversion."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She asked me what was my name.",
+   "r": [
+    "She asked me what my name was."
+   ],
+   "i": "Dans une question rapportée, quel est l'ordre des mots ?",
+   "e": "« what my name was » : dans une question rapportée, l'ordre redevient sujet + verbe."
+  },
+  {
+   "d": 2,
+   "q": "« Open the window! » → He told me ___ the window.",
+   "o": [
+    "to open",
+    "open",
+    "that I open"
+   ],
+   "io": {
+    "open": "Il manque « to » : tell + personne + to + base.",
+    "that I open": "Un ordre rapporté ne se construit pas avec that."
+   },
+   "i": "Un ordre rapporté se construit avec to.",
+   "e": "« to open » : un ordre rapporté se forme avec tell + personne + to + base."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui remplace « here » dans le discours indirect.",
+   "p": "He said he would go *there.",
+   "i": "Here change quand on rapporte les paroles ailleurs.",
+   "e": "« there » : au discours indirect, here devient there."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He told that he was late.",
+   "r": [
+    "He said that he was late.",
+    "He told me that he was late."
+   ],
+   "i": "Tell a besoin d'une personne ; say n'en a pas besoin.",
+   "e": "« He said that he was late » (ou « He told me that… ») : say s'emploie sans personne, alors que tell a besoin d'une personne."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The teacher told to us to be quiet.",
+   "r": [
+    "The teacher told us to be quiet."
+   ],
+   "i": "Avec tell, la personne vient directement après le verbe.",
+   "e": "« told us to be quiet » : tell se construit avec la personne directement, sans « to » devant elle."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il m'a demandé si j'avais fini. »",
+   "r": [
+    "He asked me if I had finished",
+    "He asked me whether I had finished",
+    "He asked if I had finished",
+    "He asked whether I had finished"
+   ],
+   "i": "La question fermée rapportée utilise if, et le verbe recule d'un cran.",
+   "e": "« He asked me if I had finished. » : la question fermée est rapportée avec if, et le present perfect devient past perfect."
+  },
+  {
+   "d": 3,
+   "q": "« I'll see you here tomorrow », he said. → He said he would see me ___ the next day.",
+   "o": [
+    "there",
+    "here",
+    "now"
+   ],
+   "io": {
+    "here": "Here s'adapte quand on rapporte les paroles ailleurs.",
+    "now": "« now » n'est pas un repère de lieu."
+   },
+   "i": "Les repères de lieu s'adaptent aussi.",
+   "e": "« there » : au discours indirect, les repères de lieu s'adaptent et here devient there."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "she",
+    "said",
+    "that",
+    "she",
+    "would",
+    "call",
+    "me",
+    "the next day"
+   ],
+   "fin": ".",
+   "i": "Will recule en would.",
+   "e": "« She said that she would call me the next day. » : will devient would, et tomorrow devient the next day."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle a dit qu'elle ne pouvait pas venir. »",
+   "r": [
+    "She said she couldn't come",
+    "She said she could not come",
+    "She said that she couldn't come",
+    "She said that she could not come",
+    "She said she wasn't able to come",
+    "She said she was unable to come"
+   ],
+   "i": "Can recule en could.",
+   "e": "« She said she couldn't come. » : can't devient couldn't au discours indirect."
+  }
+ ],
+ "verbes-rapporteurs": [
+  {
+   "d": 1,
+   "q": "He promised ___ me tomorrow.",
+   "o": [
+    "to call",
+    "calling",
+    "call"
+   ],
+   "io": {
+    "calling": "Après promise, on emploie to + base, et non la forme en -ing.",
+    "call": "Il manque « to » : promise + to + base."
+   },
+   "i": "Promise se construit avec to + base.",
+   "e": "« to call » : promise est suivi de to + verbe à la base, c'est la construction des verbes de promesse."
+  },
+  {
+   "d": 1,
+   "q": "She refused ___ the money.",
+   "o": [
+    "to take",
+    "taking",
+    "take"
+   ],
+   "io": {
+    "taking": "Après refuse, on emploie to + base, et non -ing.",
+    "take": "Il manque « to » : refuse + to + base."
+   },
+   "i": "Refuse se construit comme promise.",
+   "e": "« to take » : refuse est suivi de to + verbe à la base, comme promise."
+  },
+  {
+   "d": 1,
+   "q": "I apologise for ___ late.",
+   "o": [
+    "being",
+    "be",
+    "to be"
+   ],
+   "io": {
+    "be": "Après une préposition, le verbe est en -ing, pas à la base.",
+    "to be": "Après for, on emploie -ing, pas to + base."
+   },
+   "i": "Après une préposition, on emploie -ing.",
+   "e": "« being » : après une préposition comme for, le verbe prend -ing, donc apologise for being late."
+  },
+  {
+   "d": 1,
+   "q": "Touche la préposition qui suit « apologised ».",
+   "p": "Lucas apologised *for breaking the window.",
+   "i": "Cherche le petit mot qui suit le verbe de rapport.",
+   "e": "« for » : apologise est toujours suivi de for, puis d'un verbe en -ing."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « He advised me ___ more water. » (drink)",
+   "r": [
+    "to drink"
+   ],
+   "i": "Advise se construit avec une personne puis to + base.",
+   "e": "« to drink » : advise se construit avec une personne, puis to + verbe à la base."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "she",
+    "promised",
+    "to",
+    "help",
+    "me"
+   ],
+   "fin": ".",
+   "i": "Promise est suivi de to + base.",
+   "e": "« She promised to help me. » : promise est suivi directement de to + verbe à la base."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "He suggested going to the beach.",
+    "He suggested me to go to the beach.",
+    "He suggested to go to the beach."
+   ],
+   "io": {
+    "He suggested me to go to the beach.": "Suggest ne se construit pas avec personne + to, c'est le piège du francophone.",
+    "He suggested to go to the beach.": "Après suggest, on emploie -ing, pas to + base."
+   },
+   "i": "Suggest ne se construit pas avec une personne + to.",
+   "e": "La première est juste : suggest est suivi d'un verbe en -ing, ou de that + phrase, jamais de personne + to, c'est le piège du francophone."
+  },
+  {
+   "d": 2,
+   "q": "The teacher reminded us ___ our homework.",
+   "o": [
+    "to bring",
+    "bringing",
+    "that bring"
+   ],
+   "io": {
+    "bringing": "Après remind + personne, on emploie to + base, et non -ing.",
+    "that bring": "« that » demanderait une phrase complète avec un sujet et un verbe conjugué."
+   },
+   "i": "Remind se construit avec une personne puis to + base.",
+   "e": "« to bring » : remind se construit avec une personne, puis to + verbe à la base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il a promis de venir. »",
+   "r": [
+    "He promised to come",
+    "He promised that he would come",
+    "He promised he would come"
+   ],
+   "i": "Promise se construit avec to + base, ou avec that + phrase.",
+   "e": "« He promised to come. » : promise se construit avec to + base (ou avec that + phrase)."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He admitted ___ the window. » (break)",
+   "r": [
+    "breaking"
+   ],
+   "i": "Admit est suivi d'une forme en -ing.",
+   "e": "« breaking » : admit est suivi d'un verbe en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "he",
+    "denied",
+    "taking",
+    "the money"
+   ],
+   "fin": ".",
+   "i": "Deny est suivi d'une forme en -ing.",
+   "e": "« He denied taking the money. » : deny est suivi d'un verbe en -ing, jamais de to + base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The boy admitted to break the window.",
+   "r": [
+    "The boy admitted breaking the window.",
+    "The boy admitted to breaking the window."
+   ],
+   "i": "Admit est suivi d'une forme en -ing.",
+   "e": "« admitted breaking » : après admit, on emploie -ing (ou admit to + -ing), et non la base."
+  },
+  {
+   "d": 2,
+   "q": "They accused him ___ lying.",
+   "o": [
+    "of",
+    "for",
+    "to"
+   ],
+   "io": {
+    "for": "On dit accuse someone of, jamais accuse someone for.",
+    "to": "Après accuse + personne, la préposition est of, pas to."
+   },
+   "i": "Accuse se construit avec la personne puis une préposition.",
+   "e": "« of » : accuse se construit avec une personne, puis of et un verbe en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe en -ing qui suit deny.",
+   "p": "He denied *breaking the vase.",
+   "i": "Deny est suivi d'une forme en -ing.",
+   "e": "« breaking » : deny est suivi d'un verbe en -ing."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She accused her brother of take her book.",
+   "r": [
+    "She accused her brother of taking her book."
+   ],
+   "i": "Après la préposition of, quelle forme du verbe ?",
+   "e": "« of taking » : après la préposition of, le verbe prend -ing."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The coach advised us stopping early.",
+   "r": [
+    "The coach advised us to stop early."
+   ],
+   "i": "Advise + personne est suivi de to + base.",
+   "e": "« to stop » : advise + personne est suivi de to + base, jamais d'un verbe en -ing."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il s'est excusé d'être en retard. »",
+   "r": [
+    "He apologised for being late",
+    "He apologized for being late",
+    "He apologised for arriving late",
+    "He apologized for arriving late"
+   ],
+   "i": "Apologise se construit avec for + -ing.",
+   "e": "« He apologised for being late. » : apologise se construit avec for + verbe en -ing."
+  },
+  {
+   "d": 3,
+   "q": "« Let's take the bus. » → Adam ___ taking the bus.",
+   "o": [
+    "suggested",
+    "promised",
+    "warned"
+   ],
+   "io": {
+    "promised": "Promise est suivi de to + base, pas de -ing.",
+    "warned": "Warn + personne + to + base rapporte un avertissement."
+   },
+   "i": "Il propose une idée.",
+   "e": "« suggested » : suggest + -ing rapporte une proposition du type « Let's… »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "the guard",
+    "warned",
+    "us",
+    "not",
+    "to",
+    "enter",
+    "the building"
+   ],
+   "fin": ".",
+   "i": "Warn + personne + to + base.",
+   "e": "« The guard warned us not to enter the building. » : warn se construit avec une personne, puis not to + base à la négative."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il m'a conseillé de partir tôt. »",
+   "r": [
+    "He advised me to leave early",
+    "He advised me to go early",
+    "He advised me to set off early"
+   ],
+   "i": "Advise + personne + to + base.",
+   "e": "« He advised me to leave early. » : advise se construit avec une personne, puis to + base."
+  }
+ ],
+ "perception": [
+  {
+   "d": 1,
+   "q": "I saw the boy ___ the street from one side to the other.",
+   "o": [
+    "cross",
+    "to cross",
+    "crossed"
+   ],
+   "io": {
+    "to cross": "Après see + personne, le verbe est nu : on n'ajoute pas « to ».",
+    "crossed": "Après see + personne, on emploie la base verbale, pas le prétérit."
+   },
+   "i": "J'ai vu toute l'action, du début à la fin.",
+   "e": "« cross » : pour une action vue en entier, le verbe qui suit la personne est à la base, sans « to »."
+  },
+  {
+   "d": 1,
+   "q": "Listen! I can hear the neighbours ___ right now. The song isn't finished.",
+   "o": [
+    "singing",
+    "to sing",
+    "sung"
+   ],
+   "io": {
+    "to sing": "Après hear + personne, on n'emploie pas « to » : base ou -ing.",
+    "sung": "Le participe passé ne s'emploie pas ici : l'action est en cours."
+   },
+   "i": "L'action est en train de se passer.",
+   "e": "« singing » : l'action est en cours (la chanson n'est pas finie), donc le verbe qui suit la personne se met en -ing."
+  },
+  {
+   "d": 1,
+   "q": "I heard the phone ___. I answered at once.",
+   "o": [
+    "ring",
+    "to ring",
+    "rang"
+   ],
+   "io": {
+    "to ring": "Après hear + nom, le verbe est nu : pas de « to ».",
+    "rang": "Le prétérit ne s'emploie pas ici : après hear + nom, on met la base."
+   },
+   "i": "J'ai entendu la sonnerie en entier, puis j'ai répondu.",
+   "e": "« ring » : j'ai entendu la sonnerie en entier, donc le verbe qui suit le nom est à la base, sans « to »."
+  },
+  {
+   "d": 1,
+   "q": "Did you see him ___ the room?",
+   "o": [
+    "leave",
+    "to leave",
+    "left"
+   ],
+   "io": {
+    "to leave": "Après see + personne, pas de « to » à l'actif.",
+    "left": "Après see + personne, on emploie la base, pas le prétérit."
+   },
+   "i": "Tu as vu la scène en entier.",
+   "e": "« leave » : après see + personne, le verbe est à la base, sans « to », pour une action vue en entier."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui montre une action vue en entier.",
+   "p": "We watched the plane *land.",
+   "i": "Cherche le verbe sans -ing et sans to après le nom.",
+   "e": "« land » : l'action est vue du début à la fin, donc le verbe est à la base, sans -ing ni to."
+  },
+  {
+   "d": 1,
+   "q": "Complète avec une action entendue en entier : « I heard her ___ the door. » (open)",
+   "r": [
+    "open"
+   ],
+   "i": "L'action a été entendue en entier.",
+   "e": "« open » : après hear + personne, la base verbale exprime une action entendue en entier."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "I saw him leave.",
+    "I saw him to leave.",
+    "I saw him left."
+   ],
+   "io": {
+    "I saw him to leave.": "Après see + personne, on ne met pas « to » à l'actif.",
+    "I saw him left.": "Après see + personne, on emploie la base, pas le prétérit."
+   },
+   "i": "Après see + personne, le verbe est nu.",
+   "e": "La première est juste : après see + personne, le verbe est à la base, sans « to ». L'ajout de « to » est le piège du francophone."
+  },
+  {
+   "d": 2,
+   "q": "I can smell something ___ in the kitchen.",
+   "o": [
+    "burning",
+    "burn",
+    "to burn"
+   ],
+   "io": {
+    "burn": "La base montrerait l'action entière, mais ici elle est en cours.",
+    "to burn": "Après un verbe de perception, on n'emploie pas « to »."
+   },
+   "i": "On sent l'odeur pendant que ça brûle.",
+   "e": "« burning » : l'odeur se sent pendant que ça brûle, donc l'action est en cours et le verbe est en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je l'ai entendue chanter une chanson. »",
+   "r": [
+    "I heard her sing a song",
+    "I heard her singing a song"
+   ],
+   "i": "Verbe de perception + personne + base (ou -ing).",
+   "e": "« I heard her sing a song. » : la base verbale exprime la chanson entendue en entier, et la forme en -ing (singing) serait possible si tu l'entendais en cours de chant."
+  },
+  {
+   "d": 2,
+   "q": "Complète avec une action en cours : « I saw them ___ towards the station. » (run)",
+   "r": [
+    "running"
+   ],
+   "i": "Ils étaient en plein mouvement.",
+   "e": "« running » : ils étaient en plein mouvement, et une action surprise en plein déroulement prend -ing."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "I",
+    "saw",
+    "him",
+    "cross",
+    "the road"
+   ],
+   "fin": ".",
+   "i": "Verbe de perception + personne + base.",
+   "e": "« I saw him cross the road. » : l'action est vue en entier, donc la base verbale suffit après him."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I saw him to leave the building.",
+   "r": [
+    "I saw him leave the building."
+   ],
+   "i": "Après un verbe de perception + personne, le verbe est nu.",
+   "e": "« I saw him leave the building. » : à l'actif, on n'ajoute pas « to » après un verbe de perception suivi d'une personne."
+  },
+  {
+   "d": 2,
+   "q": "She felt the spider ___ up her arm.",
+   "o": [
+    "crawling",
+    "to crawl",
+    "crawled"
+   ],
+   "io": {
+    "to crawl": "Après feel + nom, on n'ajoute pas « to ».",
+    "crawled": "Le prétérit ne s'emploie pas ici : après feel + nom, on met la base ou -ing."
+   },
+   "i": "L'araignée est en train de monter.",
+   "e": "« crawling » : l'araignée est en train de monter, donc l'action est en cours et le verbe est en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Touche la forme en -ing qui montre une action en cours.",
+   "p": "I watched the sun *setting behind the hills.",
+   "i": "Cherche le verbe qui se termine par -ing.",
+   "e": "« setting » : le coucher du soleil est vu en plein déroulement, donc le verbe est en -ing."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I heard the neighbours to argue last night.",
+   "r": [
+    "I heard the neighbours argue last night.",
+    "I heard the neighbours arguing last night."
+   ],
+   "i": "Après hear + personne, le verbe est nu ou en -ing.",
+   "e": "« argue » (ou arguing) : après hear + personne, on n'ajoute pas « to » : on emploie la base ou -ing."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She was seen leave the building.",
+   "r": [
+    "She was seen to leave the building.",
+    "She was seen leaving the building."
+   ],
+   "i": "Au passif, quelque chose réapparaît devant le verbe nu.",
+   "e": "« was seen to leave » : au passif, le « to » réapparaît devant la base verbale (on peut aussi employer -ing)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Je l'ai vu sortir de la maison. »",
+   "r": [
+    "I saw him leave the house",
+    "I saw him come out of the house",
+    "I saw him go out of the house",
+    "I saw him leaving the house",
+    "I saw him coming out of the house"
+   ],
+   "i": "Verbe de perception + personne + base ou -ing.",
+   "e": "« I saw him leave the house. » : après see + personne, on emploie la base (ou -ing), jamais « to »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase dit qu'il était en train de traverser quand je l'ai vu ?",
+   "o": [
+    "I saw him crossing the street.",
+    "I saw him cross the street.",
+    "I saw him to cross the street."
+   ],
+   "io": {
+    "I saw him cross the street.": "La base montrerait toute l'action, du début à la fin.",
+    "I saw him to cross the street.": "« To » ne s'emploie pas après see + personne à l'actif."
+   },
+   "i": "L'action était en plein déroulement.",
+   "e": "La première est juste : le -ing montre une action surprise en plein déroulement, alors que la base montrerait toute l'action."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "we",
+    "watched",
+    "the",
+    "children",
+    "playing",
+    "in the garden",
+    "until",
+    "dark"
+   ],
+   "fin": ".",
+   "i": "Action vue en cours, donc -ing.",
+   "e": "« We watched the children playing in the garden until dark. » : verbe de perception + personne + -ing pour une action vue en cours.",
+   "alt": [
+    [
+     "until",
+     "dark",
+     "we",
+     "watched",
+     "the",
+     "children",
+     "playing",
+     "in the garden"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Complète : « He was seen ___ the building at midnight. » (leave)",
+   "r": [
+    "to leave",
+    "leaving"
+   ],
+   "i": "Au passif, quelle forme après le participe ?",
+   "e": "« to leave » (ou leaving) : au passif, le « to » réapparaît devant la base verbale."
+  }
+ ],
+ "couteau-get": [
+  {
+   "d": 1,
+   "q": "My brother wants to ___ a new job.",
+   "o": [
+    "get",
+    "arrive",
+    "wake"
+   ],
+   "io": {
+    "arrive": "Arrive ne se construit pas avec un complément direct : on ne « arrive » pas un travail.",
+    "wake": "Wake veut dire se réveiller, ce qui n'a pas de sens avec « a new job »."
+   },
+   "i": "Il veut obtenir quelque chose.",
+   "e": "« get » : suivi d'un nom, get veut dire obtenir ou trouver (get a job)."
+  },
+  {
+   "d": 1,
+   "q": "It's getting ___. Let's go home.",
+   "o": [
+    "dark",
+    "darkly",
+    "darkness"
+   ],
+   "io": {
+    "darkly": "Darkly est un adverbe, mais après get on attend un adjectif.",
+    "darkness": "Darkness est un nom, alors qu'après get on attend ici un adjectif."
+   },
+   "i": "Get + adjectif exprime un changement d'état.",
+   "e": "« dark » : get suivi d'un adjectif veut dire devenir, donc it's getting dark."
+  },
+  {
+   "d": 1,
+   "q": "We got ___ at six.",
+   "o": [
+    "home",
+    "to home",
+    "at home"
+   ],
+   "io": {
+    "to home": "Avec home, on n'emploie pas de préposition.",
+    "at home": "« at home » veut dire « à la maison », pas « arriver à la maison »."
+   },
+   "i": "Après get, home n'a pas de préposition.",
+   "e": "« home » : get home veut dire rentrer, et on n'ajoute aucune préposition devant home."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui veut dire « devient » dans cette phrase.",
+   "p": "My soup is *getting cold.",
+   "i": "Cherche get avant l'adjectif.",
+   "e": "« getting » : get suivi d'un adjectif veut dire devenir, donc getting cold = en train de refroidir."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Léa s'est habillée avant la fête. → Léa got ___ before the party. »",
+   "r": [
+    "dressed"
+   ],
+   "i": "Get + participe passé exprime une action sur soi.",
+   "e": "« dressed » : get + participe passé exprime une action sur soi, get dressed = s'habiller."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "we",
+    "got",
+    "home",
+    "very",
+    "late"
+   ],
+   "fin": ".",
+   "i": "Get home veut dire rentrer.",
+   "e": "« We got home very late. » : get home veut dire rentrer, sans préposition."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "We got married last year.",
+    "We married ourselves last year.",
+    "We got marry last year."
+   ],
+   "io": {
+    "We married ourselves last year.": "En anglais, on ne dit pas « se marier » avec un pronom réfléchi : on dit get married.",
+    "We got marry last year.": "Après get, on emploie le participe passé : married."
+   },
+   "i": "Se marier se dit avec get + participe passé.",
+   "e": "La première est juste : « se marier » se dit get married, sans pronom réfléchi (c'est le piège du francophone)."
+  },
+  {
+   "d": 2,
+   "q": "I got my sister ___ me with the homework.",
+   "o": [
+    "to help",
+    "help",
+    "helping"
+   ],
+   "io": {
+    "help": "Avec get, il faut « to » devant le verbe, contrairement à make et have.",
+    "helping": "Après get + personne, on emploie to + base."
+   },
+   "i": "Get + personne + to + base veut dire faire faire quelque chose.",
+   "e": "« to help » : get + personne + to + base veut dire convaincre quelqu'un de faire quelque chose, et le « to » est obligatoire."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il commence à faire froid. »",
+   "r": [
+    "It's getting cold",
+    "It is getting cold",
+    "It's starting to get cold",
+    "It is starting to get cold",
+    "It's beginning to get cold"
+   ],
+   "i": "Get + adjectif pour un changement progressif.",
+   "e": "« It's getting cold. » : get + adjectif exprime un changement progressif."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « What time did you get ___ the station? »",
+   "r": [
+    "to"
+   ],
+   "i": "Après get, un lieu est introduit par une préposition (sauf home).",
+   "e": "« to » : get to + lieu veut dire arriver à ce lieu."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "he",
+    "got",
+    "a letter",
+    "from",
+    "his uncle"
+   ],
+   "fin": ".",
+   "i": "Get + nom veut dire recevoir.",
+   "e": "« He got a letter from his uncle. » : get + nom veut dire recevoir."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We arrived to the hotel at nine.",
+   "r": [
+    "We got to the hotel at nine.",
+    "We arrived at the hotel at nine."
+   ],
+   "i": "Quelle préposition faut-il avec arrive ?",
+   "e": "« We got to the hotel » (ou « arrived at the hotel ») : arrive se construit avec at, et get avec to."
+  },
+  {
+   "d": 2,
+   "q": "My phone got ___ in the bus yesterday.",
+   "o": [
+    "stolen",
+    "steal",
+    "stealing"
+   ],
+   "io": {
+    "steal": "Après get, on emploie le participe passé.",
+    "stealing": "Après get, on emploie le participe passé, pas -ing."
+   },
+   "i": "Get + participe passé exprime un incident.",
+   "e": "« stolen » : get + participe passé exprime un incident, ici le vol du téléphone."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui veulent dire « est rentré ».",
+   "p": "Tom *got *home at nine.",
+   "i": "Cherche get et le lieu.",
+   "e": "« got home » : get + home veut dire rentrer, arriver à la maison."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Please get him fix the car.",
+   "r": [
+    "Please get him to fix the car."
+   ],
+   "i": "Get + personne est suivi de to.",
+   "e": "« get him to fix » : quand get veut dire faire faire, il faut get + personne + to + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The days are getting more long.",
+   "r": [
+    "The days are getting longer."
+   ],
+   "i": "Get + adjectif : quelle forme du comparatif ?",
+   "e": "« longer » : après get, on emploie l'adjectif, ici au comparatif, et long fait longer."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ils se sont perdus en route. »",
+   "r": [
+    "They got lost on the way",
+    "They got lost along the way",
+    "They got lost on the road",
+    "They got lost on their way"
+   ],
+   "i": "Get + participe passé : se perdre.",
+   "e": "« They got lost on the way. » : get lost veut dire se perdre, avec get + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase veut dire « J'ai convaincu mon père de m'aider » ?",
+   "o": [
+    "I got my father to help me.",
+    "I got my father help me.",
+    "I got helped my father."
+   ],
+   "io": {
+    "I got my father help me.": "Avec get, il faut « to » devant le verbe.",
+    "I got helped my father.": "Cette phrase n'a pas de sens : get + personne + to + base."
+   },
+   "i": "Get + personne + to + base.",
+   "e": "La première est juste : get + personne + to + base veut dire faire faire quelque chose à quelqu'un."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour former la phrase.",
+   "m": [
+    "when",
+    "we",
+    "got",
+    "to",
+    "the",
+    "airport",
+    "it",
+    "was",
+    "already",
+    "dark"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "it",
+     "was",
+     "already",
+     "dark",
+     "when",
+     "we",
+     "got",
+     "to",
+     "the",
+     "airport"
+    ]
+   ],
+   "i": "Get to + lieu veut dire arriver.",
+   "e": "« When we got to the airport, it was already dark. » : get to + lieu veut dire arriver à ce lieu."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous sommes arrivés à l'heure à la gare. »",
+   "r": [
+    "We got to the station on time",
+    "We arrived at the station on time",
+    "We got to the train station on time",
+    "We arrived at the train station on time"
+   ],
+   "i": "Get to + lieu ou arrive at.",
+   "e": "« We got to the station on time. » : get to + lieu veut dire arriver, et arrive at est aussi possible."
+  }
+ ]
+}

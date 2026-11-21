@@ -1,0 +1,244 @@
+{
+ "section": "grammaire",
+ "niveau": "A1",
+ "univers": "La Cité des mots",
+ "lecons": [
+  {
+   "id": "train-des-mots",
+   "niveau": "A1",
+   "titre": "Le train des mots",
+   "notion": "L'ordre des mots : sujet, verbe, complément",
+   "image": "La phrase anglaise est un train : la locomotive (le sujet), puis le wagon du verbe, puis celui du complément. On ne change jamais l'ordre des wagons.",
+   "demo": [
+    "Tom likes chocolate.",
+    "I like tea very much.",
+    "I like very much tea.",
+    "She speaks English well.",
+    "Yesterday, we visited a museum."
+   ],
+   "regle": "La phrase anglaise suit presque toujours le même ordre : le sujet, le verbe, puis le complément ({Tom eats an apple}). Quand on ajoute des précisions, elles se rangent en fin de phrase, dans l'ordre manière, lieu, temps ({She sings beautifully at the theatre every night}). Le sujet est obligatoire, même quand il ne veut rien dire ({It's raining}), et l'on ne glisse rien entre le verbe et son complément direct.",
+   "formes": [
+    "La base : sujet + verbe + complément — Anna reads books.",
+    "Avec des précisions : … + manière + lieu + temps — We play football in the park on Sundays.",
+    "Le temps en tête : temps, sujet + verbe + complément — On Sundays, we play football."
+   ],
+   "usages": [
+    "Une action simple : My sister likes chocolate. (Ma sœur aime le chocolat.)",
+    "Une phrase complète : He works hard in an office every day. (Il travaille dur dans un bureau tous les jours.)",
+    "Le temps en tête de phrase : Yesterday, I met Sarah. (Hier, j'ai rencontré Sarah.)"
+   ],
+   "pieges": [
+    "faux « I like very much chocolate. » → juste « I like chocolate very much. » : On ne sépare pas le verbe de son complément : {very much} va après.",
+    "faux « I him see. » → juste « I see him. » : Le pronom complément se place après le verbe, jamais devant comme dans « je le vois ».",
+    "faux « I go every day to school. » → juste « I go to school every day. » : Le lieu vient avant le temps : {to school every day}."
+   ],
+   "retenir": "Sujet + verbe + complément, puis manière, lieu, temps : on ne change pas l'ordre des wagons.",
+   "secret": "En anglais, presque toutes les phrases ont un sujet, même quand il ne veut rien dire. Le français dit « Pleut » chez certains poètes, mais l'anglais dit toujours « It's raining », « It's late », « It's important to… ». Ce « it » vide est la locomotive obligatoire du train.",
+   "defi_deja_pose": [
+    "Quelle phrase est juste ?",
+    "Remets dans l'ordre : « football / plays / Sam »",
+    "« He speaks ___. »",
+    "Touche le complément du verbe. My sister reads *books every night.",
+    "Remets dans l'ordre : « every day / coffee / drink / I »"
+   ]
+  },
+  {
+   "id": "ecrire-anglais",
+   "niveau": "A1",
+   "titre": "Écrire à l'anglaise",
+   "notion": "Les majuscules et la ponctuation anglaises",
+   "image": "L'anglais aime les majuscules : il en met aux jours, aux mois, aux langues, aux nationalités… et à « I ».",
+   "demo": [
+    "I live in Paris and I speak French.",
+    "See you on Monday, the 3rd of May.",
+    "She's Italian and her husband is English.",
+    "Where are you? · Wow! · Note: it's free.",
+    "The Lord of the Rings · Pride and Prejudice"
+   ],
+   "regle": "L'anglais met une majuscule là où le français n'en met pas : au pronom {I} (toujours), aux jours ({Monday}), aux mois ({January}), aux langues ({English}), aux nationalités et à leurs adjectifs ({French}, {a Spanish car}), aux pays et aux fêtes ({Christmas}). Dans les titres, on met souvent une majuscule à chaque mot important. Côté ponctuation : pas d'espace avant {?}, {!}, {:} et {;}, et une virgule fréquente après un mot d'introduction ({However,}).",
+   "formes": [
+    "Majuscules : {I} · jours · mois · langues · nationalités · pays · fêtes — I speak English on Mondays.",
+    "Ponctuation : pas d'espace avant {?} {!} {:} {;} — Are you ready? Let's go!",
+    "Les nombres : virgule pour les milliers, point pour les décimales — 1,500 people · 2.5 kilos"
+   ],
+   "usages": [
+    "Les jours et les mois : My birthday is on Friday, 3 May. (Mon anniversaire est le vendredi 3 mai.)",
+    "Les nationalités : She is Italian and speaks French. (Elle est italienne et parle français.)",
+    "Une question : Where do you live? (Où habites-tu ?)"
+   ],
+   "pieges": [
+    "faux « I was born in june. » → juste « I was born in June. » : Les mois prennent toujours une majuscule en anglais.",
+    "faux « Do you speak french ? » → juste « Do you speak French? » : Majuscule aux langues, et pas d'espace avant le point d'interrogation.",
+    "faux « My brother and i are english. » → juste « My brother and I are English. » : {I} et les nationalités s'écrivent toujours avec une majuscule."
+   ],
+   "retenir": "Majuscule à {I}, aux jours, aux mois, aux langues et aux nationalités ; pas d'espace avant {?} {!} {:} {;}.",
+   "secret": "L'anglais n'utilise pas les guillemets « ». Il écrit “Hello,” she said : des guillemets courbes, sans espace à l'intérieur. La virgule ou le point se placent souvent à l'intérieur des guillemets, surtout en américain. Pour une citation dans une citation, on alterne : “He said ‘no’ to me.”",
+   "defi_deja_pose": [
+    "Quelle phrase est bien écrite ?",
+    "« She is ___. » (française)",
+    "Touche les mots qui devraient avoir une majuscule. My friend is *spanish and she arrives on *friday.",
+    "Quelle phrase a la ponctuation anglaise ?",
+    "Touche les deux mots mal écrits. In *july I visited *england.",
+    "Quel mot prend toujours une majuscule en anglais, même au milieu d'une phrase ?"
+   ]
+  },
+  {
+   "id": "petits-gardiens",
+   "niveau": "A1",
+   "titre": "Les trois petits gardiens",
+   "notion": "Les articles a, an, the",
+   "image": "Devant les noms, trois petits gardiens montent la garde : a et an (un, une), et the (le, la, les).",
+   "demo": [
+    "a cat · a dog · a house",
+    "an apple · an egg · an umbrella",
+    "an hour · a university",
+    "I saw a film. The film was great.",
+    "The sun · the moon · the sea"
+   ],
+   "regle": "{a} et {an} veulent dire « un » ou « une » : on les met devant un nom singulier qu'on peut compter, quand on en parle pour la première fois ou qu'on ne précise pas lequel ({a cat}). Le choix dépend du son qui suit, pas de la lettre : {a} devant un son de consonne ({a book}, {a university}), {an} devant un son de voyelle ({an apple}, {an hour}). {the} veut dire « le, la, les » : on l'emploie pour ce qui est déjà connu, unique ou précisé ({the sun}, {the book I bought}).",
+   "formes": [
+    "Un, une (son consonne) : {a} + nom singulier — a dog · a university",
+    "Un, une (son voyelle) : {an} + nom singulier — an egg · an hour",
+    "Le, la, les (déjà connu) : {the} + nom — the dog · the children"
+   ],
+   "usages": [
+    "Première mention, puis rappel : I saw a film. The film was great. (J'ai vu un film. Le film était génial.)",
+    "Un métier : She is a doctor. (Elle est médecin.)",
+    "Une chose unique : Look at the moon! (Regarde la lune !)"
+   ],
+   "pieges": [
+    "faux « She is doctor. » → juste « She is a doctor. » : Devant un métier, l'anglais met {a} ou {an}.",
+    "faux « a hour » → juste « an hour » : Le {h} de {hour} ne se prononce pas : le son est une voyelle, donc {an}.",
+    "faux « I have a friends. » → juste « I have friends. » : {a} ne va qu'avec un singulier ; « des » ne se traduit pas."
+   ],
+   "retenir": "{a} + son consonne, {an} + son voyelle, {the} pour ce qui est connu.",
+   "secret": "Le français dit « Elle est médecin », sans article. L'anglais exige « She is a doctor », « I'm a student », « He's an engineer ». Pour dire le métier de quelqu'un, n'oublie jamais le petit gardien a ou an.",
+   "defi_deja_pose": [
+    "« I eat ___ orange every morning. »",
+    "« She is ___ honest woman. »",
+    "« He goes to ___ university in London. »",
+    "« I bought a shirt and a hat. ___ hat is blue. »",
+    "Complète avec a ou an : « ___ hour ago »",
+    "Touche le gardien qui ne va pas. I have *a umbrella in my bag."
+   ]
+  },
+  {
+   "id": "foule",
+   "niveau": "A1",
+   "titre": "La foule",
+   "notion": "Le pluriel des noms",
+   "image": "Pour passer d'un à plusieurs, la plupart des noms anglais prennent un -s… mais quelques-uns se transforment complètement.",
+   "demo": [
+    "book → books · car → cars",
+    "box → boxes · watch → watches",
+    "baby → babies · day → days",
+    "knife → knives · leaf → leaves",
+    "man → men · woman → women · child → children · tooth → teeth"
+   ],
+   "regle": "La plupart des noms prennent un {-s} au pluriel ({cat} → {cats}). Après {-s}, {-sh}, {-ch}, {-x} et souvent {-o}, on ajoute {-es} ({bus} → {buses}, {box} → {boxes}, {potato} → {potatoes}). Une consonne + {y} devient {-ies} ({city} → {cities}), mais une voyelle + {y} garde son {y} ({boy} → {boys}). Beaucoup de noms en {-f} ou {-fe} passent en {-ves} ({leaf} → {leaves}, {knife} → {knives}). Et quelques rebelles changent complètement : {man} → {men}, {woman} → {women}, {child} → {children}, {foot} → {feet}, {tooth} → {teeth}, {mouse} → {mice}, {person} → {people}.",
+   "formes": [
+    "Règle générale : nom + {-s} — books",
+    "Après s, sh, ch, x : nom + {-es} — boxes · watches",
+    "Consonne + y : {y} → {-ies} — babies",
+    "En f ou fe : → {-ves} — wives",
+    "Les rebelles : {men} · {women} · {children} · {feet} · {teeth} · {mice} · {people} — children · feet"
+   ],
+   "usages": [
+    "Un pluriel ordinaire : I have two cats. (J'ai deux chats.)",
+    "Un pluriel en -ies : There are many cities in Europe. (Il y a beaucoup de villes en Europe.)",
+    "Un pluriel rebelle : Three children are playing. (Trois enfants jouent.)"
+   ],
+   "pieges": [
+    "faux « two childs » → juste « two children » : {child} est un rebelle : son pluriel est {children}.",
+    "faux « The people is nice. » → juste « The people are nice. » : {people} est un pluriel : le verbe se met au pluriel.",
+    "faux « two babys » → juste « two babies » : Consonne + {y} : le {y} devient {ies}."
+   ],
+   "retenir": "+ {s}, + {es}, {y} → {ies}, {f} → {ves}… et les rebelles : {men}, {children}, {feet}, {people}.",
+   "secret": "Quelques noms gardent la même forme au pluriel : one sheep → two sheep, one fish → many fish, one deer → three deer. Et d'autres sont toujours pluriels, parce qu'ils ont deux jambes ou deux branches : trousers, jeans, glasses, scissors. On dit « my jeans are new » et « a pair of scissors ».",
+   "defi_deja_pose": [
+    "Le pluriel de « bus » :",
+    "Le pluriel de « child » :",
+    "Écris le pluriel de « city ».",
+    "Écris le pluriel de « foot ».",
+    "« There are many ___ in the park. »",
+    "Touche le nom mal mis au pluriel. The *womans are talking to the men."
+   ]
+  },
+  {
+   "id": "adjectif-immobile",
+   "niveau": "A1",
+   "titre": "L'adjectif qui ne bouge pas",
+   "notion": "La place et l'invariabilité de l'adjectif",
+   "image": "En anglais, l'adjectif est une statue : il se place toujours avant le nom, et il ne change jamais de forme.",
+   "demo": [
+    "a red car",
+    "two red cars",
+    "a tall man · a tall woman",
+    "The car is red. The cars are red."
+   ],
+   "regle": "En anglais, l'adjectif se place avant le nom qu'il décrit ({a red car}) ou après les verbes comme {be}, {look}, {seem}, {become} ({The car is red}). Il ne change jamais de forme : ni féminin, ni pluriel ({a tall man}, {a tall woman}, {tall people}). Quand il y en a plusieurs, ils suivent un ordre assez fixe : opinion, taille, âge, forme, couleur, origine, matière, puis le nom ({a beautiful old Italian table}).",
+   "formes": [
+    "Devant le nom : adjectif + nom — a green bag",
+    "Après be : sujet + {be} + adjectif — The bag is green.",
+    "Plusieurs adjectifs : opinion, taille, âge, couleur, origine, matière + nom — a lovely little red car"
+   ],
+   "usages": [
+    "Décrire : She has blue eyes. (Elle a les yeux bleus.)",
+    "Au pluriel, aucun changement : They are happy children. (Ce sont des enfants heureux.)",
+    "Après be : The soup is hot. (La soupe est chaude.)"
+   ],
+   "pieges": [
+    "faux « a car red » → juste « a red car » : L'adjectif se place avant le nom.",
+    "faux « two bigs dogs » → juste « two big dogs » : L'adjectif ne prend jamais de {-s}, même au pluriel.",
+    "faux « a red big ball » → juste « a big red ball » : La taille vient avant la couleur."
+   ],
+   "retenir": "Adjectif + nom, et l'adjectif ne change jamais.",
+   "secret": "En anglais, les adjectifs de nationalité et les langues prennent toujours une majuscule : a French car, an English book, I speak Spanish. Les jours et les mois aussi : Monday, July. Seules les saisons restent en minuscule : summer, winter.",
+   "defi_deja_pose": [
+    "Comment dit-on « une maison blanche » ?",
+    "« They have three ___. »",
+    "Traduis : « des chaussures noires »",
+    "Touche l'adjectif. She has a *beautiful voice.",
+    "Corrige : « They are happys. »"
+   ]
+  },
+  {
+   "id": "his-ou-her",
+   "niveau": "A1",
+   "titre": "His ou her ?",
+   "notion": "Les adjectifs possessifs",
+   "image": "En français, « sa » s'accorde avec l'objet (sa voiture). En anglais, his ou her dépend du propriétaire.",
+   "demo": [
+    "my · your · his · her · its · our · their",
+    "Tom loves his mother.",
+    "Emma loves her father.",
+    "The dog wags its tail.",
+    "My friends and their car."
+   ],
+   "regle": "Les adjectifs possessifs se placent devant le nom : {my} (mon, ma, mes), {your} (ton, ta, tes, votre, vos), {his} (son, sa, ses, pour un propriétaire masculin), {her} (son, sa, ses, pour une propriétaire féminine), {its} (son, sa, ses, pour une chose ou un animal), {our} (notre, nos), {their} (leur, leurs). Le choix dépend du propriétaire, jamais de l'objet possédé. Et ils ne changent pas au pluriel : {my book}, {my books}.",
+   "formes": [
+    "Un propriétaire : {my} · {your} · {his} · {her} · {its} — Tom and his sister",
+    "Plusieurs propriétaires : {our} · {your} · {their} — The kids and their dog"
+   ],
+   "usages": [
+    "Un propriétaire masculin : Paul loves his mother. (Paul aime sa mère.)",
+    "Une propriétaire féminine : Julie loves her father. (Julie aime son père.)",
+    "Une chose : The tree lost its leaves. (L'arbre a perdu ses feuilles.)"
+   ],
+   "pieges": [
+    "faux « Paul and her sister. » → juste « Paul and his sister. » : Le propriétaire est Paul, un homme : {his}, même si « sœur » est féminin.",
+    "faux « The dog wags it's tail. » → juste « The dog wags its tail. » : {its} possessif s'écrit sans apostrophe ; {it's} veut dire {it is}.",
+    "faux « Anna and his brother. » → juste « Anna and her brother. » : Anna est une femme : {her}, même si « frère » est masculin."
+   ],
+   "retenir": "{his} ou {her} : on regarde le propriétaire, jamais l'objet.",
+   "secret": "Même des anglophones s'y trompent. it's = it is (It's cold). its = son, sa, pour une chose ou un animal (The tree lost its leaves). Astuce : si tu peux dire « it is » à la place, mets l'apostrophe. Sinon, jamais.",
+   "defi_deja_pose": [
+    "« Julie is with ___ brother. »",
+    "« Mark lost ___ keys. »",
+    "« The cat is eating ___ food. »",
+    "Complète : « We love ___ new house. »",
+    "Touche le possessif qui ne va pas. My sister sold *his bike."
+   ]
+  }
+ ]
+}

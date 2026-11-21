@@ -1,0 +1,205 @@
+{
+ "section": "grammaire",
+ "niveau": "A1",
+ "univers": "La Cité des mots",
+ "lecons": [
+  {
+   "id": "ici-labas",
+   "niveau": "A1",
+   "titre": "Ici et là-bas",
+   "notion": "This, that, these, those",
+   "image": "Quatre doigts pointés : deux pour ce qui est près de toi, deux pour ce qui est loin.",
+   "demo": [
+    "This book is mine.",
+    "These books are mine.",
+    "Look at that star!",
+    "Those mountains are beautiful.",
+    "This is my friend, Sam."
+   ],
+   "regle": "Les démonstratifs montrent quelque chose en tenant compte de la distance et du nombre. Ce qui est près de toi : {this} (ce, cette, ceci) au singulier, {these} (ces, ceux-ci) au pluriel. Ce qui est loin : {that} (ce, cette, cela) au singulier, {those} (ces, ceux-là) au pluriel. Ils s'emploient aussi seuls ({This is my brother}) et pour le temps : {this week} (cette semaine, celle où l'on est), {that day} (ce jour-là).",
+   "formes": [
+    "Près : {this} + singulier · {these} + pluriel — this book · these books",
+    "Loin : {that} + singulier · {those} + pluriel — that house · those houses"
+   ],
+   "usages": [
+    "Présenter quelqu'un : This is my friend Sam. (Je te présente mon ami Sam.)",
+    "Montrer au loin : Look at those birds! (Regarde ces oiseaux, là-bas !)",
+    "Au téléphone : Hello, this is Anna. (Allô, c'est Anna.)"
+   ],
+   "pieges": [
+    "faux « This shoes are new. » → juste « These shoes are new. » : Au pluriel, {this} devient {these}.",
+    "faux « That people over there. » → juste « Those people over there. » : {people} est un pluriel : {those}."
+   ],
+   "retenir": "Près : {this} / {these}. Loin : {that} / {those}.",
+   "secret": "« That » est aussi un mot très pratique pour réagir : « That's great! », « That's right », « That's it! » (c'est ça !), « Is that so? ». Et au téléphone, les Britanniques disent « Hello, this is Tom » (c'est Tom) et demandent « Who's that? » ou « Who's this? ».",
+   "defi_deja_pose": [
+    "(Tu tiens des clés dans ta main) « ___ are my keys. »",
+    "(Tu montres un avion dans le ciel) « Look at ___ plane! »",
+    "« Who are ___ people over there? »",
+    "Complète pour présenter ta sœur : « ___ is my sister, Léa. »",
+    "Touche le démonstratif mal accordé. I like *this shoes."
+   ]
+  },
+  {
+   "id": "il-y-a",
+   "niveau": "A1",
+   "titre": "Il y a…",
+   "notion": "There is, there are",
+   "image": "« There is » est une lampe de poche : elle éclaire ce qui existe quelque part.",
+   "demo": [
+    "There is a park near my house.",
+    "There are three bedrooms.",
+    "There isn't any milk.",
+    "Is there a bank here? Are there any shops?",
+    "There was a party. There were many people."
+   ],
+   "regle": "Pour dire qu'une chose existe quelque part (« il y a »), l'anglais dit {there is} (souvent {there's}) devant un singulier ou un indénombrable, et {there are} devant un pluriel. Négation : {there isn't} / {there aren't} (ou {there is no} / {there are no}). Question : {Is there…?} / {Are there…?} Attention : « il y a » suivi d'une durée, au sens de « dans le passé », ne se dit pas {there is} mais {ago} : {two years ago}.",
+   "formes": [
+    "Singulier : {there is} + singulier ou indénombrable — There is a cat in the garden.",
+    "Pluriel : {there are} + pluriel — There are two cats.",
+    "Question : {Is} / {Are there}… ? — Is there a bank near here?",
+    "Il y a (passé) : durée + {ago} — I met him ten years ago."
+   ],
+   "usages": [
+    "Décrire un lieu : There are three bedrooms in my flat. (Il y a trois chambres dans mon appartement.)",
+    "Demander : Is there any milk? (Il y a du lait ?)",
+    "Dire qu'il n'y a pas : There isn't a cinema in my town. (Il n'y a pas de cinéma dans ma ville.)"
+   ],
+   "pieges": [
+    "faux « There is two books. » → juste « There are two books. » : Devant un pluriel, {there are}.",
+    "faux « It has a park near my house. » → juste « There is a park near my house. » : « Il y a » (existence) se dit {there is}, jamais {it has}.",
+    "faux « I arrived there are two days. » → juste « I arrived two days ago. » : « Il y a » + durée passée se dit avec {ago}, placé après la durée."
+   ],
+   "retenir": "{there is} + singulier, {there are} + pluriel ; « il y a deux jours » = {two days ago}.",
+   "secret": "Attention : « il y a » a deux sens en français. Pour l'existence : there is / there are. Pour le temps passé : ago, placé après la durée. « Je l'ai vu il y a deux jours » = I saw him two days ago. Jamais « there are two days ».",
+   "defi_deja_pose": [
+    "« ___ two cinemas in my town. »",
+    "« ___ a problem with my phone. »",
+    "« Are there ___ eggs in the fridge? »",
+    "Écris : « Il y avait beaucoup de monde. »",
+    "Touche le mot qui doit changer. There *is five apples on the table."
+   ]
+  },
+  {
+   "id": "ou-est-le-chat",
+   "niveau": "A1",
+   "titre": "Où est le chat ?",
+   "notion": "Les prépositions de lieu",
+   "image": "Le chat de la Cité ne tient pas en place : à chaque cachette, une petite préposition.",
+   "demo": [
+    "The cat is in the box.",
+    "The cat is on the sofa.",
+    "The cat is under the table.",
+    "The cat is between the chair and the lamp.",
+    "The cat is in front of the TV. / behind the door."
+   ],
+   "regle": "Les prépositions de lieu disent où se trouve quelque chose. {in} = dans, à l'intérieur ({in the box}, {in London}) ; {on} = sur, en contact avec une surface ({on the table}, {on the wall}) ; {under} = sous ; {next to} ou {beside} = à côté de ; {between} = entre ; {behind} = derrière ; {in front of} = devant ; {opposite} = en face de ; {above} = au-dessus, sans contact ; {at} = à, pour un point ou un lieu précis ({at the door}, {at school}, {at home}).",
+   "formes": [
+    "Dedans, dessus, dessous : {in} · {on} · {under} — The cat is under the bed.",
+    "Autour : {next to} · {behind} · {in front of} · {opposite} — The bank is opposite the station.",
+    "Un point précis : {at} + lieu — She's at the bus stop."
+   ],
+   "usages": [
+    "Une ville, un pays : I live in Paris. (J'habite à Paris.)",
+    "Une surface : Your keys are on the table. (Tes clés sont sur la table.)",
+    "Un lieu d'activité : He is at work. (Il est au travail.)",
+    "Entre deux choses : The café is between the bank and the cinema. (Le café est entre la banque et le cinéma.)"
+   ],
+   "pieges": [
+    "faux « I live at London. » → juste « I live in London. » : Pour une ville ou un pays, on dit {in}.",
+    "faux « The car is before the house. » → juste « The car is in front of the house. » : « Devant » (un lieu) se dit {in front of} ; {before} veut dire « avant ».",
+    "faux « The picture is in the wall. » → juste « The picture is on the wall. » : Un tableau est posé contre une surface : {on}."
+   ],
+   "retenir": "{in} = dedans, {on} = sur une surface, {at} = un point précis, {in front of} = devant.",
+   "secret": "Piège classique : « en face de la gare » se dit opposite the station (de l'autre côté de la rue). « in front of the station » veut dire juste devant, collé à la façade. Et « on the left / on the right » : à gauche, à droite.",
+   "defi_deja_pose": [
+    "« The book is ___ the table. » (posé dessus)",
+    "« My keys are ___ my bag. »",
+    "« The bank is ___ the café and the cinema. »",
+    "Complète : « There's a garden ___ the house. » (derrière)",
+    "Touche la préposition. The shoes are *under the bed."
+   ]
+  },
+  {
+   "id": "mots-questions",
+   "niveau": "A1",
+   "titre": "Les mots-questions",
+   "notion": "What, where, who, when, why, how",
+   "image": "Les mots-questions sont les clés du détective. Presque tous commencent par « wh ».",
+   "demo": [
+    "Where do you live?",
+    "What is your name?",
+    "Why are you laughing?",
+    "How old are you? · How much is it? · How many brothers?",
+    "Who lives here?"
+   ],
+   "regle": "Les mots interrogatifs se placent en tête de la question : {what} (quoi, quel), {where} (où), {who} (qui), {when} (quand), {why} (pourquoi), {how} (comment), {which} (lequel, parmi un choix), {whose} (à qui). Vient ensuite l'ordre de la question : auxiliaire ({do}, {does}, {did}, {be}, {can}…) + sujet + verbe. {How} forme aussi des questions composées : {How old?} (quel âge ?), {How much?} (combien, pour ce qu'on ne compte pas), {How many?} (combien, pour ce qu'on compte), {How long?} (combien de temps ?).",
+   "formes": [
+    "La structure : mot-question + auxiliaire + sujet + verbe ? — Where do you live?",
+    "Avec be : mot-question + {be} + sujet ? — Who is that man?",
+    "Combien : {How much} + indénombrable · {How many} + pluriel — How many brothers do you have?"
+   ],
+   "usages": [
+    "Un lieu : Where is the station? (Où est la gare ?)",
+    "Une raison : Why are you sad? (Pourquoi es-tu triste ?)",
+    "Une manière : How do you spell your name? (Comment s'écrit ton nom ?)",
+    "Un prix : How much is this jacket? (Combien coûte cette veste ?)"
+   ],
+   "pieges": [
+    "faux « Where you live? » → juste « Where do you live? » : Après le mot-question, il faut l'auxiliaire {do} avant le sujet.",
+    "faux « How much apples do you want? » → juste « How many apples do you want? » : {apples} se compte : {How many}. {How much} est pour ce qu'on ne compte pas ({How much water?}).",
+    "faux « Who did call you? » → juste « Who called you? » : Quand {who} est le sujet de la question, pas de {did}."
+   ],
+   "retenir": "Mot-question + auxiliaire + sujet + verbe ? (sauf quand le mot-question est lui-même le sujet).",
+   "secret": "« Who called you? » (qui t'a appelé ? who est le sujet, pas de did). « Who did you call? » (qui as-tu appelé ? who est le complément, le majordome revient). Même chose avec what : « What happened? » mais « What did you do? ». Le détective repère qui fait l'action.",
+   "defi_deja_pose": [
+    "« ___ is your birthday? — In May. »",
+    "« ___ do you go to school? — By bus. »",
+    "« How ___ sisters do you have? »",
+    "Pose la question : « ___ are you? — I'm 15. »",
+    "« ___ bag is this? — It's Tom's. »",
+    "Touche le moteur de la question. Where *does your father work?"
+   ]
+  },
+  {
+   "id": "nombres-dates",
+   "niveau": "A1",
+   "titre": "Compter, dater, donner l'heure",
+   "notion": "Les nombres ordinaux, les dates et l'heure",
+   "image": "Pour les dates, l'anglais compte avec des rangs (first, second, third), comme sur un podium : le 3 mai, c'est le troisième jour de mai.",
+   "demo": [
+    "first (1st) · second (2nd) · third (3rd) · fourth (4th) · twenty-first (21st)",
+    "My birthday is on the fifth of May. · May 5th",
+    "It's half past three. · It's a quarter to four.",
+    "It's ten o'clock. · It's seven fifteen (7:15).",
+    "1999 (nineteen ninety-nine) · 2026 (twenty twenty-six)"
+   ],
+   "regle": "Pour les dates, l'anglais emploie les nombres ordinaux (de rang) : {first} (1st), {second} (2nd), {third} (3rd), puis {-th} ({fourth}, {fifth}, {twelfth}, {twentieth}…), et {twenty-first} (21st). À l'oral, on dit {the third of May} ou {May the third} ; à l'écrit, {3 May} (britannique) ou {May 3} (américain). Pour l'heure : {o'clock} pour l'heure pile, {half past} (et demie), {a quarter past} (et quart), {a quarter to} (moins le quart), et {past} / {to} avec les minutes ({ten past six}, {twenty to eight}).",
+   "formes": [
+    "Les ordinaux : {first} · {second} · {third} · {fourth}… — the first day · the twenty-second floor",
+    "Dire une date : {the} + ordinal + {of} + mois — It's the fifth of March.",
+    "L'heure : minutes + {past} / {to} + heure · {o'clock} — It's a quarter past six."
+   ],
+   "usages": [
+    "Un anniversaire : My birthday is on the twelfth of July. (Mon anniversaire est le 12 juillet.)",
+    "Une heure pile : The film starts at eight o'clock. (Le film commence à huit heures.)",
+    "Une demi-heure : I get up at half past seven. (Je me lève à sept heures et demie.)"
+   ],
+   "pieges": [
+    "faux « the three of May » → juste « the third of May » : Dans une date, on emploie l'ordinal : {third}, pas {three}.",
+    "faux « It's seven and half. » → juste « It's half past seven. » : « Sept heures et demie » se dit {half past seven}.",
+    "faux « the twenty-oneth » → juste « the twenty-first » : Les nombres terminés par 1, 2, 3 gardent {first}, {second}, {third} : {twenty-first}, {thirty-second}."
+   ],
+   "retenir": "Dates : {the} + ordinal + {of} + mois. Heure : {past} / {to} et {o'clock}.",
+   "secret": "Aux États-Unis, la date s'écrit mois / jour / année : 04/07/2026 veut dire le 7 avril, pas le 4 juillet ! Au Royaume-Uni, c'est comme en France : jour / mois / année. En cas de doute, écris le mois en lettres : 4 July 2026. Et à l'oral, on dit the Fourth of July pour la fête nationale américaine.",
+   "defi_deja_pose": [
+    "Comment dit-on « le 2 juin » ?",
+    "Il est 4 h 30.",
+    "Écris en lettres le nombre ordinal « 3rd ».",
+    "Il est 8 h 45.",
+    "Comment lit-on l'année 1984 ?",
+    "Touche la préposition qui va devant une date. I was born *on the 12th of March."
+   ]
+  }
+ ]
+}

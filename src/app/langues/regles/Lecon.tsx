@@ -1,26 +1,30 @@
 "use client";
 
-import { ArrowLeft, BookOpen, Check, Eye, KeyRound, Lightbulb, RotateCcw, Sparkles, Star, Swords, Wand2 } from "lucide-react";
+import { ArrowLeft, BookOpen, Check, Dumbbell, Eye, KeyRound, Lightbulb, RotateCcw, Sparkles, Star, Swords, Wand2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { enregistrerLecon, useProgression } from "@/lib/regles/progression";
+import { noterReponses, refExercice } from "@/lib/regles/suivi";
 import { type Choix, type Ecrire, estChoix, estEcrire, type Lecon, type Question, type Section, type Toucher } from "@/lib/regles/types";
+import { EntrainementVue, useEntrainement } from "./Entrainement";
 import { Explication, useCours } from "./Explication";
 import { Machine } from "./Machine";
 import { codesDe, Legende, Phrase } from "./Phrase";
 
 /*
- * Une leçon, en cinq étapes : le déclic, la démonstration, l'explication (la règle racontée
- * en français), le défi, le secret d'expert.
- * Dans le défi, une erreur n'est jamais une sanction : elle allume un indice.
+ * Une leçon, en six étapes : le déclic, la démonstration, l'explication (la règle racontée
+ * en français), le défi, le secret d'expert, puis l'entraînement (vingt exercices corrigés de plus).
+ * Dans le défi, une erreur n'est jamais une sanction : elle allume un indice. Les questions ratées
+ * entrent dans le carnet d'erreurs.
  */
 
-type Etape = "declic" | "demo" | "cours" | "defi" | "secret";
+type Etape = "declic" | "demo" | "cours" | "defi" | "secret" | "entrainement";
 const ETAPES: { id: Etape; nom: string; Icone: typeof Lightbulb }[] = [
   { id: "declic", nom: "Le déclic", Icone: Lightbulb },
   { id: "demo", nom: "La démonstration", Icone: Wand2 },
   { id: "cours", nom: "L'explication", Icone: BookOpen },
   { id: "defi", nom: "Le défi", Icone: Swords },
   { id: "secret", nom: "Le secret d'expert", Icone: KeyRound },
+  { id: "entrainement", nom: "L'entraînement", Icone: Dumbbell },
 ];
 
 const BRAVO = ["Bravo !", "Exactement !", "Tu as l'œil !", "Dans le mille !", "Parfait !", "Génial, c'est ça !", "Impeccable !", "Quel flair !"];
@@ -50,14 +54,19 @@ export function LeconVue({ section, lecon, onRetour, onOuvrir }: Props) {
   // L'explication se charge dès l'ouverture : elle est prête quand on arrive à cette étape.
   const cours = useCours(section.id, lecon);
   const avecCours = cours.charge || cours.erreur || Boolean(cours.cours);
+  // L'entraînement aussi se charge d'avance, pour annoncer son nombre d'exercices.
+  const entrainement = useEntrainement(section.id, lecon);
+  const avecEntrainement = entrainement.charge || entrainement.erreur || entrainement.exercices.length > 0;
 
   useEffect(() => {
     titre.current?.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: "smooth" });
+    // Sur un téléphone, la barre des étapes défile : l'étape ouverte reste visible.
+    document.querySelector(".rg-etape[aria-current='step']")?.scrollIntoView({ block: "nearest", inline: "nearest" });
   }, [etape]);
 
   const aller = (e: Etape) => setEtape(e);
-  const ouverte = (e: Etape) => (e === "secret" ? Boolean(bilan) || Boolean(deja) : e === "cours" ? avecCours : true);
+  const ouverte = (e: Etape) => (e === "secret" ? Boolean(bilan) || Boolean(deja) : e === "cours" ? avecCours : e === "entrainement" ? avecEntrainement : true);
 
   return (
     <article className="rg-lecon" data-section={section.id}>
@@ -73,6 +82,8 @@ export function LeconVue({ section, lecon, onRetour, onOuvrir }: Props) {
                 <button
                   type="button"
                   className="rg-etape"
+                  aria-label={nom}
+                  title={nom}
                   aria-current={etape === id ? "step" : undefined}
                   data-faite={ETAPES.findIndex((x) => x.id === etape) > i || undefined}
                   disabled={!ouverte(id)}
@@ -109,8 +120,9 @@ export function LeconVue({ section, lecon, onRetour, onOuvrir }: Props) {
         <Defi
           key={lecon.id}
           questions={lecon.defi}
-          onFini={(b) => {
+          onFini={(b, erreursParQuestion) => {
             setBilan(b);
+            noterReponses(erreursParQuestion.map((n, k) => ({ ref: refExercice(section.id, lecon.id, "d", k), juste: n < 2, premierCoup: n === 0 })));
             enregistrerLecon(lecon.id, { etoiles: etoilesDe(b.erreurs), xp: b.xp });
             aller("secret");
           }}
@@ -128,8 +140,11 @@ export function LeconVue({ section, lecon, onRetour, onOuvrir }: Props) {
           }}
           onSuivante={() => suivante && onOuvrir(suivante.id)}
           onRetour={onRetour}
+          entrainement={entrainement.exercices.length}
+          onEntrainement={() => aller("entrainement")}
         />
       )}
+      {etape === "entrainement" && <EntrainementVue section={section} lecon={lecon} etat={entrainement} />}
     </article>
   );
 }
@@ -225,10 +240,11 @@ function Demo({ lecon, onSuite, onCours }: { lecon: Lecon; onSuite: () => void; 
 
 /* ---------- 3. Le défi ---------- */
 
-function Defi({ questions, onFini }: { questions: Question[]; onFini: (b: { erreurs: number; xp: number }) => void }) {
+function Defi({ questions, onFini }: { questions: Question[]; onFini: (b: { erreurs: number; xp: number }, erreursParQuestion: number[]) => void }) {
   const [n, setN] = useState(0);
   const [erreurs, setErreurs] = useState(0);
   const [xp, setXp] = useState(0);
+  const [parQuestion, setParQuestion] = useState<number[]>([]);
   const q = questions[n];
   return (
     <section className="rg-defi" aria-label="Le défi">
@@ -250,10 +266,15 @@ function Defi({ questions, onFini }: { questions: Question[]; onFini: (b: { erre
         onResultat={(r) => {
           setErreurs((e) => e + r.erreurs);
           setXp((x) => x + r.xp);
+          setParQuestion((l) => {
+            const c = [...l];
+            c[n] = r.erreurs;
+            return c;
+          });
         }}
         onSuite={() => {
           if (n < questions.length - 1) setN(n + 1);
-          else onFini({ erreurs, xp });
+          else onFini({ erreurs, xp }, questions.map((_, k) => parQuestion[k] ?? 0));
         }}
       />
     </section>
@@ -526,6 +547,8 @@ function Secret({
   onRefaire,
   onSuivante,
   onRetour,
+  entrainement,
+  onEntrainement,
 }: {
   lecon: Lecon;
   bilan: { erreurs: number; xp: number } | null;
@@ -534,6 +557,8 @@ function Secret({
   onRefaire: () => void;
   onSuivante: () => void;
   onRetour: () => void;
+  entrainement: number;
+  onEntrainement: () => void;
 }) {
   const etoiles = bilan ? etoilesDe(bilan.erreurs) : meilleur;
   const phrase = !bilan ? "Ton meilleur score sur cette leçon." : etoiles === 3 ? "Trois étoiles : tu maîtrises cette règle comme un expert." : etoiles === 2 ? "Deux étoiles : tes erreurs t'ont appris quelque chose de solide." : "Une étoile, et une règle de plus dans ta tête. Refais le défi quand tu veux : la deuxième fois, tout paraît simple.";
@@ -564,6 +589,16 @@ function Secret({
           </p>
         )}
       </div>
+
+      {entrainement > 0 && (
+        <button type="button" className="rg-bandeau-entrainement" onClick={onEntrainement}>
+          <Dumbbell className="size-6 shrink-0" aria-hidden="true" />
+          <span>
+            <strong>Passe à l&apos;entraînement</strong>
+            <span>{entrainement} exercices corrigés de plus sur cette règle, du plus facile au plus difficile, avec la correction de chacun.</span>
+          </span>
+        </button>
+      )}
 
       <div className="rg-actions">
         {suivante ? (

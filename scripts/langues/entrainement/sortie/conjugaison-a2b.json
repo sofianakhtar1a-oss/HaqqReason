@@ -1,0 +1,1646 @@
+{
+ "will": [
+  {
+   "d": 1,
+   "q": "It's cold in here. I think I ___ close the window.",
+   "o": [
+    "will",
+    "to",
+    "am"
+   ],
+   "io": {
+    "to": "« To » ne remplace pas will : le modal will se place seul devant la base.",
+    "am": "« Am » ne suffit pas pour exprimer le futur : il faut will + base."
+   },
+   "i": "Tu prends une décision à l'instant : quel modal du futur ?",
+   "e": "« I will close the window » : une décision prise au moment de parler se dit will + base."
+  },
+  {
+   "d": 1,
+   "q": "Écris la forme courte de « I will ».",
+   "r": [
+    "I'll"
+   ],
+   "i": "Le « wi » disparaît et il reste « ll ».",
+   "e": "« I'll » : après le sujet, will se réduit à 'll."
+  },
+  {
+   "d": 1,
+   "q": "She ___ be 30 next month.",
+   "o": [
+    "will",
+    "wills",
+    "will to"
+   ],
+   "io": {
+    "wills": "Un modal ne prend jamais de -s, même avec she.",
+    "will to": "Après will, pas de to : le verbe est à la base."
+   },
+   "i": "Will change-t-il de forme avec « she » ?",
+   "e": "« She will be 30 next month » : will est un modal, il a la même forme avec tous les sujets."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui exprime le futur.",
+   "p": "Don't worry, Tom *will help you.",
+   "i": "Cherche le modal qui précède help.",
+   "e": "« will » est le moteur du futur ; il est suivi du verbe à la base, help."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "will",
+    "call",
+    "you",
+    "tonight"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis will, puis le verbe à la base.",
+   "e": "« I will call you tonight. » : will se place entre le sujet et le verbe à la base."
+  },
+  {
+   "d": 1,
+   "q": "Oh, there is no milk! I ___ go and buy some.",
+   "o": [
+    "will",
+    "to",
+    "goes"
+   ],
+   "io": {
+    "to": "Il faut le modal will devant le verbe, pas un simple to.",
+    "goes": "Pour une décision prise sur le moment, on emploie will + base, pas le présent avec -s."
+   },
+   "i": "Tu décides à l'instant d'aller en acheter.",
+   "e": "« I will go and buy some » : une décision prise sur le moment se dit will + base."
+  },
+  {
+   "d": 2,
+   "q": "Don't worry, Maryam ___ be late tomorrow. I promise.",
+   "o": [
+    "won't",
+    "doesn't",
+    "isn't"
+   ],
+   "io": {
+    "doesn't": "Pour nier un futur, on emploie won't, pas doesn't.",
+    "isn't": "« Isn't be » est impossible : la négation du futur est won't + base."
+   },
+   "i": "Quelle est la forme négative de will ?",
+   "e": "« Maryam won't be late tomorrow » : la négation de will est won't (will not), suivi de la base be."
+  },
+  {
+   "d": 2,
+   "q": "___ you help me with this box, please?",
+   "o": [
+    "Will",
+    "Are",
+    "To"
+   ],
+   "io": {
+    "Are": "« Are you help » est impossible : il faut Will you help.",
+    "To": "« To » ne forme pas une question : on inverse will et le sujet."
+   },
+   "i": "Tu demandes un petit service pour maintenant ou tout de suite.",
+   "e": "« Will you help me…? » : will passe devant le sujet pour former la question."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je t'aiderai. »",
+   "r": [
+    "I will help you"
+   ],
+   "i": "C'est une promesse : sujet + will + base.",
+   "e": "« I will help you » : une promesse se dit will + base (forme courte : I'll help you)."
+  },
+  {
+   "d": 2,
+   "q": "Complète à la négative : « Don't worry, I ___ tell anyone. »",
+   "r": [
+    "won't",
+    "will not"
+   ],
+   "i": "C'est une promesse négative.",
+   "e": "« won't » : will + not = won't, suivi de la base tell."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "will",
+    "it",
+    "rain",
+    "tomorrow"
+   ],
+   "fin": "?",
+   "i": "Au futur, la question commence par will.",
+   "e": "« Will it rain tomorrow? » : will passe devant le sujet, puis vient la base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I will to call you later.",
+   "r": [
+    "I will call you later."
+   ],
+   "i": "Après un modal, le verbe est nu.",
+   "e": "« I will call you later. » : après will, on ne met pas to."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She wills help us tomorrow.",
+   "r": [
+    "She will help us tomorrow."
+   ],
+   "i": "Un modal change-t-il avec she ?",
+   "e": "« She will help us tomorrow. » : un modal ne prend jamais de -s."
+  },
+  {
+   "d": 2,
+   "q": "I think the match ___ exciting tomorrow.",
+   "o": [
+    "will be",
+    "will being",
+    "will to be"
+   ],
+   "io": {
+    "will being": "Après will, on met la base be, sans -ing.",
+    "will to be": "Après will, on ne met pas to."
+   },
+   "i": "Tu donnes une prédiction fondée sur ton opinion.",
+   "e": "« The match will be exciting » : une prédiction se dit will + base (be)."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux formes de will.",
+   "p": "I *will help you, and she *won't forget.",
+   "i": "Cherche will et sa forme négative.",
+   "e": "« will » et « won't » sont le modal du futur et sa négation."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "When I will arrive, I'll call you.",
+   "r": [
+    "When I arrive, I'll call you.",
+    "When I arrive I'll call you."
+   ],
+   "i": "Après when, que fait-on du futur ?",
+   "e": "« When I arrive, I'll call you. » : après when, if et as soon as, l'anglais garde le présent pour parler du futur."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ne t'inquiète pas, je te rappellerai. »",
+   "r": [
+    "Don't worry, I will call you back",
+    "Don't worry, I will phone you back",
+    "Don't worry, I will ring you back"
+   ],
+   "i": "Une promesse : will + base, avec « call back ».",
+   "e": "« Don't worry, I'll call you back » : une promesse se dit will + base."
+  },
+  {
+   "d": 3,
+   "q": "I'll text you as soon as I ___ home.",
+   "o": [
+    "get",
+    "will get",
+    "am getting"
+   ],
+   "io": {
+    "will get": "On ne met pas will après as soon as : le présent suffit.",
+    "am getting": "Après as soon as, on emploie le présent simple, pas le continu."
+   },
+   "i": "Après as soon as, quel temps pour parler du futur ?",
+   "e": "« As soon as I get home » : après as soon as, on garde le présent simple."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « If it rains, we ___ (stay) at home. »",
+   "r": [
+    "will stay",
+    "'ll stay"
+   ],
+   "i": "Le résultat futur se dit avec will.",
+   "e": "« will stay » : we + will + base, le résultat futur de la condition."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "think",
+    "she",
+    "will",
+    "win",
+    "the",
+    "game"
+   ],
+   "fin": ".",
+   "i": "Ton opinion d'abord, puis sujet + will + base.",
+   "e": "« I think she will win the game. » : après I think, une prédiction prend will + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Maybe it will rains tomorrow.",
+   "r": [
+    "Maybe it will rain tomorrow."
+   ],
+   "i": "Après will, quelle forme du verbe ?",
+   "e": "« Maybe it will rain tomorrow. » : après will, le verbe reste à la base, sans -s."
+  },
+  {
+   "d": 3,
+   "q": "The phone is ringing. — OK, I ___ it.",
+   "o": [
+    "will answer",
+    "answers",
+    "answering"
+   ],
+   "io": {
+    "answers": "Une décision sur le moment demande will + base, pas le présent avec -s.",
+    "answering": "Il faut un modal et la base : will answer."
+   },
+   "i": "Tu décides à l'instant de répondre.",
+   "e": "« I will answer it » : une décision éclair se dit will + base."
+  }
+ ],
+ "verite-si": [
+  {
+   "d": 1,
+   "q": "If you heat ice, it ___.",
+   "o": [
+    "melts",
+    "melt",
+    "melting"
+   ],
+   "io": {
+    "melt": "« It » est un sujet à la 3e personne du singulier : le présent simple prend -s.",
+    "melting": "Pas de -ing ici : une vérité générale se dit au présent simple."
+   },
+   "i": "Le sujet « it » : quelle terminaison au présent simple ?",
+   "e": "« It melts » : dans un conditionnel zéro, les deux verbes sont au présent simple, avec -s pour it."
+  },
+  {
+   "d": 1,
+   "q": "If you ___ water to 100 °C, it boils.",
+   "o": [
+    "heat",
+    "will heat",
+    "heats"
+   ],
+   "io": {
+    "will heat": "On ne met pas will juste après if : la condition reste au présent.",
+    "heats": "Avec « you », le présent simple n'a pas de -s."
+   },
+   "i": "Après if, quel temps ?",
+   "e": "« If you heat water to 100 °C, it boils » : if + présent simple, résultat au présent simple."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « When it rains, the grass ___ (grow). »",
+   "r": [
+    "grows"
+   ],
+   "i": "Une vérité générale : présent simple. Et le sujet « the grass » ?",
+   "e": "« grows » : when + présent simple, présent simple, avec -s pour the grass (= it)."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui introduit la condition.",
+   "p": "*If you ring the bell, the dog barks.",
+   "i": "Cherche le petit mot qui veut dire « si ».",
+   "e": "« If » introduit la condition ; le résultat « the dog barks » est au présent simple."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "if",
+    "you",
+    "freeze",
+    "water",
+    "it",
+    "becomes",
+    "ice"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "water",
+     "becomes",
+     "ice",
+     "if",
+     "you",
+     "freeze",
+     "it"
+    ]
+   ],
+   "i": "Commence par la condition, puis le résultat.",
+   "e": "« If you freeze water, it becomes ice. » : if + présent simple, présent simple."
+  },
+  {
+   "d": 1,
+   "q": "When the sun sets, it ___ dark.",
+   "o": [
+    "gets",
+    "get",
+    "getting"
+   ],
+   "io": {
+    "get": "« It » demande le -s du présent simple.",
+    "getting": "Une loi de la nature se dit au présent simple, pas en -ing."
+   },
+   "i": "Le sujet « it » prend quoi au présent simple ?",
+   "e": "« It gets dark » : présent simple avec -s pour it, après when."
+  },
+  {
+   "d": 2,
+   "q": "If I drink coffee in the evening, I ___ sleep.",
+   "o": [
+    "can't",
+    "won't can",
+    "don't can"
+   ],
+   "io": {
+    "won't can": "On ne met pas deux modaux ensemble : can't suffit.",
+    "don't can": "Un modal comme can se nie seul : can't, sans do."
+   },
+   "i": "Can est un modal : comment le nie-t-on ?",
+   "e": "« I can't sleep » : le résultat est au présent, et can se nie avec can't."
+  },
+  {
+   "d": 2,
+   "q": "She ___ angry when someone is late.",
+   "o": [
+    "gets",
+    "get",
+    "getting"
+   ],
+   "io": {
+    "get": "Avec « she », le présent simple prend -s.",
+    "getting": "Il faut une forme conjuguée : gets."
+   },
+   "i": "Le sujet « she » : quelle forme ?",
+   "e": "« She gets angry » : présent simple, -s avec she, après when."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Si tu mélanges du bleu et du jaune, tu obtiens du vert. »",
+   "r": [
+    "If you mix blue and yellow, you get green",
+    "When you mix blue and yellow, you get green",
+    "You get green if you mix blue and yellow",
+    "You get green when you mix blue and yellow"
+   ],
+   "i": "Deux fois le présent simple, comme en français.",
+   "e": "« If you mix blue and yellow, you get green » : if + présent simple, présent simple (when marche aussi)."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « If you don't water plants, they ___ (die). »",
+   "r": [
+    "die"
+   ],
+   "i": "Le résultat général de la condition négative.",
+   "e": "« die » : présent simple avec they, sans -s."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "when",
+    "it",
+    "is",
+    "cold",
+    "I",
+    "wear",
+    "a",
+    "hat"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "I",
+     "wear",
+     "a",
+     "hat",
+     "when",
+     "it",
+     "is",
+     "cold"
+    ]
+   ],
+   "i": "Commence par when et la condition.",
+   "e": "« When it is cold, I wear a hat. » : when + présent, présent."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If you will heat ice, it melts.",
+   "r": [
+    "If you heat ice, it melts."
+   ],
+   "i": "Regarde le verbe juste après if.",
+   "e": "« If you heat ice, it melts. » : pas de will après if, la condition est au présent simple."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If it rain, the roads get wet.",
+   "r": [
+    "If it rains, the roads get wet."
+   ],
+   "i": "Regarde le verbe de la condition : quel est le sujet ?",
+   "e": "« If it rains… » : it est à la 3e personne du singulier, le présent simple prend -s."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux verbes au présent simple.",
+   "p": "If it *rains, the road *gets wet.",
+   "i": "Cherche les verbes qui ont pris -s.",
+   "e": "« rains » et « gets » : conditionnel zéro, les deux verbes sont au présent simple."
+  },
+  {
+   "d": 3,
+   "q": "Metal ___ if you heat it.",
+   "o": [
+    "expands",
+    "expand",
+    "is expanding"
+   ],
+   "io": {
+    "expand": "« Metal » est singulier : le présent simple prend -s.",
+    "is expanding": "Une loi générale n'est pas une action en cours : présent simple."
+   },
+   "i": "C'est une loi scientifique.",
+   "e": "« Metal expands if you heat it » : une loi se dit au présent simple, avec -s pour metal (= it)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Quand il neige, les enfants font des bonhommes de neige. »",
+   "r": [
+    "When it snows, children make snowmen",
+    "When it snows, the children make snowmen",
+    "When it snows, children build snowmen",
+    "When it snows, the children build snowmen",
+    "When it snows, kids make snowmen",
+    "If it snows, children make snowmen"
+   ],
+   "i": "Deux présents simples ; neiger se dit comme « it rains ».",
+   "e": "« When it snows, children make snowmen » : when + présent simple, présent simple (it snows, avec -s)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My brother get angry when I take his things.",
+   "r": [
+    "My brother gets angry when I take his things."
+   ],
+   "i": "Qui est « my brother » : I, you, he ?",
+   "e": "« My brother gets angry… » : he demande le -s au présent simple."
+  },
+  {
+   "d": 3,
+   "q": "Rice ___ soft when you boil it.",
+   "o": [
+    "becomes",
+    "become",
+    "becoming"
+   ],
+   "io": {
+    "become": "Un nom singulier demande le -s au présent simple.",
+    "becoming": "Une vérité générale se dit au présent simple."
+   },
+   "i": "Rice est un nom singulier.",
+   "e": "« Rice becomes soft » : présent simple avec -s pour rice (= it)."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "if",
+    "you",
+    "don't",
+    "sleep",
+    "well",
+    "you",
+    "feel",
+    "tired"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "you",
+     "feel",
+     "tired",
+     "if",
+     "you",
+     "don't",
+     "sleep",
+     "well"
+    ]
+   ],
+   "i": "Condition négative d'abord, puis le résultat.",
+   "e": "« If you don't sleep well, you feel tired. » : deux présents simples, la négation avec don't."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If you turn the key, the engine is starting.",
+   "r": [
+    "If you turn the key, the engine starts."
+   ],
+   "i": "C'est un réflexe de la machine, pas une action en cours.",
+   "e": "« …the engine starts. » : un résultat qui se répète chaque fois se dit au présent simple."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Si tu appuies sur ce bouton, la porte s'ouvre. »",
+   "r": [
+    "If you press this button, the door opens",
+    "When you press this button, the door opens",
+    "The door opens if you press this button",
+    "The door opens when you press this button",
+    "If you push this button, the door opens"
+   ],
+   "i": "Condition et résultat au présent simple.",
+   "e": "« If you press this button, the door opens » : if + présent simple, présent simple (-s avec the door)."
+  }
+ ],
+ "used-to": [
+  {
+   "d": 1,
+   "q": "When I was little, I ___ play with toy cars.",
+   "o": [
+    "used to",
+    "use to",
+    "was used to"
+   ],
+   "io": {
+    "use to": "À l'affirmative, on écrit « used » avec un d.",
+    "was used to": "« Be used to » veut dire « être habitué à » ; pour une habitude passée, on dit used to tout seul."
+   },
+   "i": "Une habitude du passé, qui n'existe plus aujourd'hui.",
+   "e": "« I used to play with toy cars » : used to + base décrit une habitude passée."
+  },
+  {
+   "d": 1,
+   "q": "My grandfather ___ live in a small village.",
+   "o": [
+    "used to",
+    "use to",
+    "uses to"
+   ],
+   "io": {
+    "use to": "À l'affirmative, c'est toujours « used to » avec un d.",
+    "uses to": "Used to ne prend jamais de -s, même avec he."
+   },
+   "i": "Used to change-t-il selon le sujet ?",
+   "e": "« My grandfather used to live in a small village » : used to a la même forme pour toutes les personnes."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We ___ to go to the beach every summer. »",
+   "r": [
+    "used"
+   ],
+   "i": "Il s'agit d'une habitude d'autrefois.",
+   "e": "« used » : used to + base exprime une habitude qui n'existe plus."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui montrent une habitude du passé.",
+   "p": "Léa *used *to wear glasses.",
+   "i": "Cherche l'expression qui veut dire « avant ».",
+   "e": "« used to » annonce une habitude passée, suivie du verbe à la base wear."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "used",
+    "to",
+    "live",
+    "in",
+    "Paris"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis used to, puis la base.",
+   "e": "« I used to live in Paris. » : used to est suivi du verbe à la base."
+  },
+  {
+   "d": 1,
+   "q": "Did you ___ to play the piano?",
+   "o": [
+    "use",
+    "used",
+    "using"
+   ],
+   "io": {
+    "used": "Did porte déjà le passé : on écrit donc use, sans d.",
+    "using": "On garde la forme « use to » en deux mots, sans -ing."
+   },
+   "i": "Après did, le d de used disparaît.",
+   "e": "« Did you use to play the piano? » : après did, on écrit use to, sans d."
+  },
+  {
+   "d": 2,
+   "q": "I ___ like olives, but now I love them.",
+   "o": [
+    "didn't use to",
+    "don't use to",
+    "didn't uses to"
+   ],
+   "io": {
+    "don't use to": "On parle du passé : il faut didn't, pas don't.",
+    "didn't uses to": "Après didn't, use to ne prend ni -s ni d."
+   },
+   "i": "La négation du passé passe par did.",
+   "e": "« I didn't use to like olives » : la négation de used to est didn't use to + base."
+  },
+  {
+   "d": 2,
+   "q": "___ you use to walk to school?",
+   "o": [
+    "Did",
+    "Do",
+    "Were"
+   ],
+   "io": {
+    "Do": "Used to parle du passé : la question prend did, pas do.",
+    "Were": "« Were » ne peut pas introduire cette question : on prend did."
+   },
+   "i": "La question porte sur le passé.",
+   "e": "« Did you use to walk to school? » : la question se pose avec did + sujet + use to + base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis avec « used to » : « Avant, j'habitais à Lyon. »",
+   "r": [
+    "I used to live in Lyon",
+    "Before, I used to live in Lyon",
+    "I used to live in Lyon before"
+   ],
+   "i": "Une habitude passée : used to + base.",
+   "e": "« I used to live in Lyon » : used to + base décrit un état passé qui n'existe plus."
+  },
+  {
+   "d": 2,
+   "q": "Complète à la négative : « He ___ use to like fish. »",
+   "r": [
+    "didn't",
+    "did not"
+   ],
+   "i": "Quel moteur du passé porte la négation ?",
+   "e": "« He didn't use to like fish » : la négation est didn't + use to + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "did",
+    "you",
+    "use",
+    "to",
+    "play",
+    "football"
+   ],
+   "fin": "?",
+   "i": "La question commence par did.",
+   "e": "« Did you use to play football? » : did + sujet + use to + base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I use to play the guitar when I was a child.",
+   "r": [
+    "I used to play the guitar when I was a child."
+   ],
+   "i": "Il manque une lettre à used.",
+   "e": "« I used to play the guitar » : à l'affirmative, on écrit toujours used, avec un d."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Did she used to have a dog?",
+   "r": [
+    "Did she use to have a dog?"
+   ],
+   "i": "Après did, le d de used disparaît.",
+   "e": "« Did she use to have a dog? » : après did, on écrit use to, sans d."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Tom ___ to be shy, but now he loves speaking in public. »",
+   "r": [
+    "used"
+   ],
+   "i": "Un état qui a changé.",
+   "e": "« used » : used to + base peut aussi décrire un état passé qui n'existe plus."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "When I was young, I was used to play football every weekend.",
+   "r": [
+    "When I was young, I used to play football every weekend.",
+    "When I was young I used to play football every weekend."
+   ],
+   "i": "« Be used to » veut dire « être habitué à ».",
+   "e": "« I used to play football every weekend » : l'habitude passée se dit used to, sans be."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase veut dire « Avant, j'avais peur du noir » ?",
+   "o": [
+    "I used to be afraid of the dark.",
+    "I use to be afraid of the dark.",
+    "I am used to be afraid of the dark."
+   ],
+   "io": {
+    "I use to be afraid of the dark.": "À l'affirmative, il faut used avec un d.",
+    "I am used to be afraid of the dark.": "« Be used to » veut dire « être habitué à » et se construit avec -ing, pas avec la base."
+   },
+   "i": "Cherche la phrase correcte pour une habitude ou un état du passé.",
+   "e": "« I used to be afraid of the dark » : used to + base dit que l'état n'existe plus."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais (avec « use to ») : « Nous ne mangions pas de poisson avant. »",
+   "r": [
+    "We didn't use to eat fish",
+    "We never used to eat fish",
+    "We didn't use to eat fish before",
+    "Before, we didn't use to eat fish",
+    "We never used to eat fish before",
+    "Before, we never used to eat fish"
+   ],
+   "i": "La négation du passé passe par did.",
+   "e": "« We didn't use to eat fish » : la négation est didn't use to + base."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "didn't",
+    "use",
+    "to",
+    "like",
+    "tea"
+   ],
+   "fin": ".",
+   "i": "La négation se fait avec didn't.",
+   "e": "« She didn't use to like tea. » : didn't use to + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "They didn't used to have a computer.",
+   "r": [
+    "They didn't use to have a computer."
+   ],
+   "i": "Après didn't, le d de used disparaît.",
+   "e": "« They didn't use to have a computer. » : après didn't, on écrit use to, sans d."
+  },
+  {
+   "d": 3,
+   "q": "Touche le verbe qui reste à la base après used to.",
+   "p": "We used to *play cards every Sunday.",
+   "i": "Cherche le verbe qui suit used to.",
+   "e": "« play » reste à la base après used to."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « When I was a child, we ___ (not / have) a TV. »",
+   "r": [
+    "didn't use to have",
+    "did not use to have"
+   ],
+   "i": "Négation d'une habitude passée.",
+   "e": "« didn't use to have » : la négation est didn't + use to + base."
+  }
+ ],
+ "loi": [
+  {
+   "d": 1,
+   "q": "You ___ stop at a red light.",
+   "o": [
+    "must",
+    "mustn't",
+    "don't have to"
+   ],
+   "io": {
+    "mustn't": "« Mustn't » voudrait dire qu'il est interdit de s'arrêter.",
+    "don't have to": "« Don't have to » dirait que ce n'est pas obligatoire, ce qui est faux ici."
+   },
+   "i": "C'est une obligation, pas une interdiction.",
+   "e": "« You must stop at a red light » : must exprime l'obligation."
+  },
+  {
+   "d": 1,
+   "q": "In this school, we ___ wear a uniform.",
+   "o": [
+    "have to",
+    "has to",
+    "must to"
+   ],
+   "io": {
+    "has to": "« Has to » s'emploie avec he, she, it, pas avec we.",
+    "must to": "Après must, on ne met pas to : « must wear »."
+   },
+   "i": "C'est une règle de l'école, avec « we ».",
+   "e": "« We have to wear a uniform » : une règle extérieure se dit have to, et we prend have."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I ___ to get up at six every day. »",
+   "r": [
+    "have"
+   ],
+   "i": "Quelle forme de have va avec « I » ?",
+   "e": "« have » : I have to + base exprime une obligation."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui exprime l'obligation.",
+   "p": "You *must stop here.",
+   "i": "Cherche le modal.",
+   "e": "« must » exprime l'obligation, suivi de la base stop."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "you",
+    "must",
+    "wear",
+    "a",
+    "helmet"
+   ],
+   "fin": ".",
+   "i": "Sujet + must + base.",
+   "e": "« You must wear a helmet. » : must est suivi directement de la base."
+  },
+  {
+   "d": 1,
+   "q": "Sunday is a holiday. We ___ go to school.",
+   "o": [
+    "don't have to",
+    "mustn't",
+    "must"
+   ],
+   "io": {
+    "mustn't": "« Mustn't » dirait que c'est interdit, or il n'y a simplement pas école.",
+    "must": "« Must » dirait que c'est obligatoire, ce qui est faux un jour férié."
+   },
+   "i": "Ce n'est pas obligatoire : on a le choix.",
+   "e": "« We don't have to go to school » : don't have to dit qu'il n'y a pas d'obligation."
+  },
+  {
+   "d": 2,
+   "q": "You ___ park here. It's forbidden.",
+   "o": [
+    "mustn't",
+    "don't have to",
+    "doesn't have to"
+   ],
+   "io": {
+    "don't have to": "« Don't have to » dit seulement que ce n'est pas obligatoire, pas que c'est interdit.",
+    "doesn't have to": "Avec you, c'est don't, et le sens ne serait pas non plus l'interdiction."
+   },
+   "i": "Ici, c'est défendu.",
+   "e": "« You mustn't park here » : mustn't exprime l'interdiction."
+  },
+  {
+   "d": 2,
+   "q": "She ___ get up early on Sundays.",
+   "o": [
+    "doesn't have to",
+    "mustn't",
+    "don't have to"
+   ],
+   "io": {
+    "mustn't": "« Mustn't » dirait qu'il est interdit de se lever tôt.",
+    "don't have to": "Avec she, le moteur de la négation est doesn't."
+   },
+   "i": "Pas d'obligation, avec « she ».",
+   "e": "« She doesn't have to get up early » : avec she, la négation est doesn't have to."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tu dois faire tes devoirs. »",
+   "r": [
+    "You must do your homework",
+    "You have to do your homework"
+   ],
+   "i": "Une obligation : deux façons de la dire.",
+   "e": "« You must do your homework » ou « You have to do your homework » : must et have to expriment l'obligation."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « We ___ to wait for an hour yesterday. »",
+   "r": [
+    "had"
+   ],
+   "i": "Must n'a pas de passé. Quel verbe le remplace ?",
+   "e": "« had » : au passé, on dit had to + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "don't",
+    "have",
+    "to",
+    "wait"
+   ],
+   "fin": ".",
+   "i": "Ce n'est pas obligatoire.",
+   "e": "« We don't have to wait. » : don't have to + base dit qu'il n'y a pas d'obligation."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He have to go to the doctor.",
+   "r": [
+    "He has to go to the doctor."
+   ],
+   "i": "Have to se conjugue : regarde « he ».",
+   "e": "« He has to go to the doctor. » : avec he, she, it, have devient has."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You don't have to run in the corridor. It's forbidden.",
+   "r": [
+    "You mustn't run in the corridor. It's forbidden."
+   ],
+   "i": "Si c'est défendu, quelle expression convient ?",
+   "e": "« You mustn't run in the corridor. » : l'interdiction se dit mustn't, pas don't have to."
+  },
+  {
+   "d": 2,
+   "q": "Our teacher ___ to check the tests tonight.",
+   "o": [
+    "has",
+    "have",
+    "haves"
+   ],
+   "io": {
+    "have": "« My sister » = she : il faut has.",
+    "haves": "Cette forme n'existe pas : have devient has."
+   },
+   "i": "« Our teacher » = he ou she.",
+   "e": "« Our teacher has to check the tests tonight » : avec he ou she, have to devient has to."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Yesterday I must work late.",
+   "r": [
+    "Yesterday I had to work late."
+   ],
+   "i": "Must a-t-il un passé ?",
+   "e": "« Yesterday I had to work late. » : must n'a pas de passé, on emploie had to."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Tu n'es pas obligé de venir. »",
+   "r": [
+    "You don't have to come",
+    "You do not have to come",
+    "You don't need to come",
+    "You needn't come"
+   ],
+   "i": "Pas obligé, ce n'est pas interdit.",
+   "e": "« You don't have to come » : pas d'obligation, on a le choix."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il est interdit de fumer ici. »",
+   "r": [
+    "You mustn't smoke here",
+    "People mustn't smoke here",
+    "Smoking isn't allowed here",
+    "Smoking is not allowed here",
+    "You can't smoke here",
+    "You aren't allowed to smoke here"
+   ],
+   "i": "Interdiction : quelle expression ?",
+   "e": "« You mustn't smoke here » : mustn't exprime l'interdiction."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "did",
+    "you",
+    "have",
+    "to",
+    "work",
+    "yesterday"
+   ],
+   "fin": "?",
+   "i": "Au passé, la question de have to passe par did.",
+   "e": "« Did you have to work yesterday? » : did + sujet + have to + base."
+  },
+  {
+   "d": 3,
+   "q": "Yesterday we ___ go home early.",
+   "o": [
+    "had to",
+    "must",
+    "have to"
+   ],
+   "io": {
+    "must": "Must n'a pas de passé.",
+    "have to": "« Have to » est au présent, mais on parle d'hier."
+   },
+   "i": "Hier : quel temps ?",
+   "e": "« We had to go home early » : au passé, have to devient had to."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Do you must wear a uniform?",
+   "r": [
+    "Do you have to wear a uniform?",
+    "Must you wear a uniform?"
+   ],
+   "i": "Must pose sa question seul.",
+   "e": "« Do you have to wear a uniform? » ou « Must you wear… ? » : must ne prend pas do."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui exprime l'interdiction.",
+   "p": "Visitors *mustn't feed the animals.",
+   "i": "Cherche la négation de must.",
+   "e": "« mustn't » exprime l'interdiction."
+  },
+  {
+   "d": 3,
+   "q": "Touche les trois mots qui disent que ce n'est pas obligatoire.",
+   "p": "Students *don't *have *to wear a uniform in summer.",
+   "i": "Cherche l'expression de « pas obligé ».",
+   "e": "« don't have to » : pas d'obligation, les élèves ont le choix."
+  }
+ ],
+ "politesse": [
+  {
+   "d": 1,
+   "q": "___ I open the window? It's hot.",
+   "o": [
+    "Can",
+    "Do",
+    "Are"
+   ],
+   "io": {
+    "Do": "Pour demander la permission, on emploie un modal comme can, pas do.",
+    "Are": "« Are I » n'existe pas : pour demander la permission, on emploie can."
+   },
+   "i": "Tu demandes la permission, avec « I ».",
+   "e": "« Can I open the window? » : can sert à demander la permission, et le verbe suit à la base."
+  },
+  {
+   "d": 1,
+   "q": "___ you help me, please?",
+   "o": [
+    "Could",
+    "Do",
+    "Are"
+   ],
+   "io": {
+    "Do": "Pour demander un service, on emploie un modal comme could ou can.",
+    "Are": "« Are you help me » est impossible : un modal se place devant you."
+   },
+   "i": "Tu demandes un service, poliment.",
+   "e": "« Could you help me, please? » : could + you + base demande un service poliment."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "can",
+    "I",
+    "sit",
+    "here"
+   ],
+   "fin": "?",
+   "i": "Le modal passe devant le sujet.",
+   "e": "« Can I sit here? » : modal + I + verbe à la base."
+  },
+  {
+   "d": 1,
+   "q": "Touche le modal qui rend la demande polie.",
+   "p": "*Could you open the door, please?",
+   "i": "Cherche le mot placé avant « you ».",
+   "e": "« Could » est le modal qui rend la demande polie ; open reste à la base."
+  },
+  {
+   "d": 1,
+   "q": "Complète (le plus formel) : « ___ I come in? »",
+   "r": [
+    "May"
+   ],
+   "i": "Pense au mot très poli, un peu formel, pour demander la permission.",
+   "e": "« May I come in? » : may est très poli et un peu formel pour demander la permission."
+  },
+  {
+   "d": 1,
+   "q": "Can I ___ your pen?",
+   "o": [
+    "borrow",
+    "to borrow",
+    "borrowing"
+   ],
+   "io": {
+    "to borrow": "Après un modal, on ne met pas to.",
+    "borrowing": "Après un modal, pas de -ing : le verbe reste à la base."
+   },
+   "i": "Que devient le verbe après un modal ?",
+   "e": "« Can I borrow your pen? » : après un modal, le verbe est à la base."
+  },
+  {
+   "d": 2,
+   "q": "Tu proposes ton aide : « ___ I help you with your bags? »",
+   "o": [
+    "Shall",
+    "Will",
+    "Do"
+   ],
+   "io": {
+    "Will": "Avec « I », pour proposer son aide, on emploie shall, pas will.",
+    "Do": "« Do I help you » ne propose pas son aide : on emploie shall I."
+   },
+   "i": "Quel modal sert à proposer quelque chose avec « I » ?",
+   "e": "« Shall I help you with your bags? » : shall I propose son aide."
+  },
+  {
+   "d": 2,
+   "q": "Could you ___ me the way to the station?",
+   "o": [
+    "show",
+    "to show",
+    "showing"
+   ],
+   "io": {
+    "to show": "Après could, on ne met pas to.",
+    "showing": "Après un modal, le verbe reste à la base, sans -ing."
+   },
+   "i": "Que devient le verbe après could ?",
+   "e": "« Could you show me the way? » : après un modal, le verbe est à la base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Puis-je utiliser ton téléphone ? »",
+   "r": [
+    "Can I use your phone",
+    "May I use your phone",
+    "Could I use your phone"
+   ],
+   "i": "Tu demandes la permission : quel modal avec « I » ?",
+   "e": "« Can I use your phone? » : can, could ou may servent à demander la permission."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Pourriez-vous m'aider, s'il vous plaît ? »",
+   "r": [
+    "Could you help me please",
+    "Could you please help me",
+    "Could you help me",
+    "Would you help me please",
+    "Would you please help me"
+   ],
+   "i": "Un service poli : quel modal avec « you » ?",
+   "e": "« Could you help me, please? » : could + you + base est la façon polie de demander un service."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour faire une proposition.",
+   "m": [
+    "shall",
+    "we",
+    "go",
+    "to",
+    "the",
+    "park"
+   ],
+   "fin": "?",
+   "i": "Pour proposer « on… ? », on commence par shall.",
+   "e": "« Shall we go to the park? » : shall + we + base propose quelque chose à plusieurs."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Do you can help me?",
+   "r": [
+    "Can you help me?"
+   ],
+   "i": "Un modal pose sa question seul.",
+   "e": "« Can you help me? » : can passe devant le sujet, sans do."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Could you to close the door, please?",
+   "r": [
+    "Could you close the door, please?",
+    "Could you please close the door?"
+   ],
+   "i": "Que devient le verbe après un modal ?",
+   "e": "« Could you close the door, please? » : après could, le verbe est à la base, sans to."
+  },
+  {
+   "d": 2,
+   "q": "Quelle phrase est la plus polie ?",
+   "o": [
+    "Could you open the window, please?",
+    "Open the window.",
+    "You open the window."
+   ],
+   "io": {
+    "Open the window.": "C'est un ordre, pas une demande polie.",
+    "You open the window.": "Cette phrase est trop sèche et n'est pas une vraie demande."
+   },
+   "i": "Cherche la phrase avec un modal et « please ».",
+   "e": "« Could you open the window, please? » : could + please est la façon la plus polie de demander."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Will I open the window?",
+   "r": [
+    "Shall I open the window?",
+    "Can I open the window?",
+    "Could I open the window?",
+    "May I open the window?"
+   ],
+   "i": "Pour proposer de faire quelque chose, quel modal avec « I » ?",
+   "e": "« Shall I open the window? » : pour proposer son aide avec I, on emploie shall."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais avec « shall » : « Voulez-vous que j'appelle un taxi ? »",
+   "r": [
+    "Shall I call a taxi",
+    "Shall I call you a taxi",
+    "Shall I call a cab",
+    "Shall I call you a cab"
+   ],
+   "i": "Tu proposes ton aide : quel modal avec « I » ?",
+   "e": "« Shall I call a taxi? » : shall I + base propose de faire quelque chose pour l'autre."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais avec « shall » : « Et si on faisait une pause ? »",
+   "r": [
+    "Shall we take a break",
+    "Shall we have a break",
+    "Shall we take a short break",
+    "Shall we stop for a break"
+   ],
+   "i": "Une suggestion qui inclut « nous ».",
+   "e": "« Shall we take a break? » : shall we + base fait une suggestion à plusieurs."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "may",
+    "I",
+    "ask",
+    "you",
+    "a",
+    "question"
+   ],
+   "fin": "?",
+   "i": "Très poli : commence par may.",
+   "e": "« May I ask you a question? » : may + I + base est une demande très polie."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "May I leave a message?",
+    "Do I may leave a message?",
+    "May I to leave a message?"
+   ],
+   "io": {
+    "Do I may leave a message?": "Un modal ne s'emploie jamais avec do.",
+    "May I to leave a message?": "Après un modal, on ne met pas to."
+   },
+   "i": "Un modal pose sa question seul et suit la base.",
+   "e": "« May I leave a message? » : may passe devant le sujet, puis le verbe est à la base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Shall we to go home now?",
+   "r": [
+    "Shall we go home now?"
+   ],
+   "i": "Que devient le verbe après shall ?",
+   "e": "« Shall we go home now? » : après shall, le verbe est à la base, sans to."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux mots qui demandent la permission très poliment.",
+   "p": "*May *I borrow your dictionary?",
+   "i": "Cherche le modal formel et le sujet.",
+   "e": "« May I » : demande la permission de façon très polie."
+  }
+ ],
+ "conseil": [
+  {
+   "d": 1,
+   "q": "You have a cold. You ___ stay at home.",
+   "o": [
+    "should",
+    "shoulds",
+    "should to"
+   ],
+   "io": {
+    "shoulds": "Un modal ne prend jamais de -s.",
+    "should to": "Après should, on ne met pas to."
+   },
+   "i": "Tu donnes un conseil.",
+   "e": "« You should stay at home » : should + base donne un conseil."
+  },
+  {
+   "d": 1,
+   "q": "You ___ eat so much sugar. It's bad for you.",
+   "o": [
+    "shouldn't",
+    "should",
+    "not should"
+   ],
+   "io": {
+    "should": "« Should » conseillerait de manger du sucre, le contraire de ce que dit la phrase.",
+    "not should": "La négation de should est shouldn't : on ne met pas not devant."
+   },
+   "i": "Tu donnes un conseil négatif.",
+   "e": "« You shouldn't eat so much sugar » : shouldn't + base déconseille quelque chose."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "you",
+    "should",
+    "drink",
+    "more",
+    "water"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis should, puis la base.",
+   "e": "« You should drink more water. » : should + base donne un conseil."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui donne le conseil.",
+   "p": "You *should rest today.",
+   "i": "Cherche le modal du conseil.",
+   "e": "« should » donne le conseil ; le verbe rest reste à la base."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « He ___ study more for the exam. »",
+   "r": [
+    "should",
+    "ought to"
+   ],
+   "i": "Tu donnes un conseil : deux réponses possibles.",
+   "e": "« should » ou « ought to » : les deux donnent un conseil, suivis de la base."
+  },
+  {
+   "d": 1,
+   "q": "Should I ___ her?",
+   "o": [
+    "call",
+    "calling",
+    "to call"
+   ],
+   "io": {
+    "calling": "Après un modal, pas de -ing.",
+    "to call": "Après should, on ne met pas to."
+   },
+   "i": "Que devient le verbe après should ?",
+   "e": "« Should I call her? » : après should, le verbe est à la base."
+  },
+  {
+   "d": 2,
+   "q": "Yusuf is always late. He ___ get up earlier.",
+   "o": [
+    "should",
+    "shoulds",
+    "is should"
+   ],
+   "io": {
+    "shoulds": "Un modal ne prend jamais de -s, même avec he.",
+    "is should": "Should ne s'emploie pas avec be : il se place seul devant la base."
+   },
+   "i": "Tu conseilles quelque chose à Yusuf.",
+   "e": "« He should get up earlier » : should + base conseille, même avec he."
+  },
+  {
+   "d": 2,
+   "q": "Should we ___ a taxi?",
+   "o": [
+    "take",
+    "taking",
+    "takes"
+   ],
+   "io": {
+    "taking": "Après un modal, on ne met pas -ing.",
+    "takes": "Après un modal, on ne met jamais de -s."
+   },
+   "i": "Que devient le verbe après should ?",
+   "e": "« Should we take a taxi? » : après should, le verbe reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tu devrais te reposer. »",
+   "r": [
+    "You should rest",
+    "You should have a rest",
+    "You should take a rest",
+    "You should get some rest",
+    "You ought to rest"
+   ],
+   "i": "Un conseil : quel modal ?",
+   "e": "« You should rest » : should + base donne un conseil (ought to est aussi possible)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je ne devrais pas manger tant de chocolat. »",
+   "r": [
+    "I shouldn't eat so much chocolate",
+    "I shouldn't eat that much chocolate",
+    "I shouldn't eat too much chocolate",
+    "I should not eat so much chocolate"
+   ],
+   "i": "La négation du conseil : should + not.",
+   "e": "« I shouldn't eat so much chocolate » : shouldn't + base déconseille quelque chose."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour demander conseil.",
+   "m": [
+    "should",
+    "I",
+    "wear",
+    "a",
+    "coat"
+   ],
+   "fin": "?",
+   "i": "Pour demander conseil, commence par should.",
+   "e": "« Should I wear a coat? » : should passe devant le sujet pour demander conseil."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You should to sleep more.",
+   "r": [
+    "You should sleep more.",
+    "You ought to sleep more."
+   ],
+   "i": "Que devient le verbe après should ?",
+   "e": "« You should sleep more. » : après should, pas de to ; seul ought prend to."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She shoulds study harder.",
+   "r": [
+    "She should study harder."
+   ],
+   "i": "Un modal change-t-il avec she ?",
+   "e": "« She should study harder. » : un modal ne prend jamais de -s."
+  },
+  {
+   "d": 2,
+   "q": "___, I'd buy the blue one.",
+   "o": [
+    "If I were you",
+    "If I would be you",
+    "If I am you"
+   ],
+   "io": {
+    "If I would be you": "Après if, on n'emploie pas would : l'expression est « if I were you ».",
+    "If I am you": "Pour dire « à ta place », be se met à were, pas am."
+   },
+   "i": "Quelle expression veut dire « à ta place » ?",
+   "e": "« If I were you, I'd buy the blue one » : dans cette expression, on emploie were, même avec I, et jamais would après if."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If I was you, I'd go to the doctor.",
+   "r": [
+    "If I were you, I'd go to the doctor.",
+    "If I were you I'd go to the doctor."
+   ],
+   "i": "Quelle forme de be dans « à ta place » ?",
+   "e": "« If I were you, I'd go to the doctor. » : dans cette expression, la forme soignée est were."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « À ta place, j'attendrais. »",
+   "r": [
+    "If I were you, I'd wait",
+    "If I were you, I would wait",
+    "I'd wait if I were you",
+    "I would wait if I were you"
+   ],
+   "i": "« À ta place » : une expression avec were.",
+   "e": "« If I were you, I'd wait » : if I were you + I'd + base donne un conseil très personnel."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Est-ce que je devrais lui parler ? »",
+   "r": [
+    "Should I talk to him",
+    "Should I talk to her",
+    "Should I speak to him",
+    "Should I speak to her"
+   ],
+   "i": "Tu demandes conseil : quel modal avec « I » ?",
+   "e": "« Should I talk to him? » : should passe devant le sujet pour demander conseil."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "if",
+    "I",
+    "were",
+    "you",
+    "I'd",
+    "wait"
+   ],
+   "fin": ".",
+   "i": "Commence par l'expression « à ta place ».",
+   "e": "« If I were you, I'd wait. » : if I were you, puis I'd + base.",
+   "alt": [
+    [
+     "I'd",
+     "wait",
+     "if",
+     "I",
+     "were",
+     "you"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Should I to call him?",
+   "r": [
+    "Should I call him?"
+   ],
+   "i": "Que devient le verbe après should ?",
+   "e": "« Should I call him? » : après should, le verbe est à la base, sans to."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux mots qui ouvrent l'expression « à ta place ».",
+   "p": "*If I *were you, I'd see a doctor.",
+   "i": "Cherche le début de l'expression.",
+   "e": "« If I were you » ouvre l'expression « à ta place, je… » ; elle est suivie de I'd + base."
+  },
+  {
+   "d": 3,
+   "q": "You ___ to be more careful.",
+   "o": [
+    "ought",
+    "should",
+    "must"
+   ],
+   "io": {
+    "should": "Après should, on ne met pas to : « should be ».",
+    "must": "Après must, on ne met pas to : « must be », et c'est une obligation, pas un conseil."
+   },
+   "i": "Un seul de ces mots se construit avec to.",
+   "e": "« You ought to be more careful » : seul ought prend to pour donner un conseil."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You ought see a doctor.",
+   "r": [
+    "You ought to see a doctor.",
+    "You should see a doctor."
+   ],
+   "i": "Ought prend un petit mot devant la base.",
+   "e": "« You ought to see a doctor. » : ought est toujours suivi de to ; on peut aussi dire should."
+  }
+ ]
+}

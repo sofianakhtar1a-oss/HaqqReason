@@ -1,0 +1,324 @@
+{
+ "section": "conjugaison",
+ "niveau": "B1",
+ "univers": "La Machine à voyager dans le temps",
+ "lecons": [
+  {
+   "id": "quatre-futurs",
+   "niveau": "B1",
+   "titre": "Les quatre futurs",
+   "notion": "Will, going to, present continuous, present simple",
+   "image": "L'anglais n'a pas un futur, mais quatre outils. Chacun parle d'un futur différent.",
+   "demo": [
+    "OK, I'll have the soup.",
+    "I'm going to start a diet.",
+    "I'm seeing the dentist tomorrow at 10.",
+    "The plane lands at 7:45."
+   ],
+   "regle": "L'anglais a quatre outils pour parler du futur. {Will} : décision sur le moment, promesse, prédiction d'opinion ({I'll call you}). {Be going to} : projet déjà décidé, prédiction appuyée sur un signe ({I'm going to sell my car}). Le présent continu : rendez-vous organisé, avec une date et souvent d'autres personnes ({I'm meeting Sam at 6}). Le présent simple : horaire officiel, programme fixe ({The train leaves at 7.15}).",
+   "formes": [
+    "Décision, promesse : {will} + base — I'll help you.",
+    "Projet décidé : {be going to} + base — We are going to move.",
+    "Rendez-vous organisé : {be} + verbe en {-ing} + moment — I am seeing the dentist on Monday.",
+    "Horaire, programme : présent simple — The film starts at 8."
+   ],
+   "usages": [
+    "Une décision à l'instant : It's cold. I'll close the window. (Il fait froid. Je vais fermer la fenêtre.)",
+    "Une intention : I am going to study medicine. (Je vais faire médecine.)",
+    "Un rendez-vous dans l'agenda : We are flying to Rome on Friday. (Nous partons pour Rome vendredi.)",
+    "Un horaire : The shop closes at 7 tonight. (Le magasin ferme à 19 h ce soir.)"
+   ],
+   "pieges": [
+    "faux « I will see the doctor tomorrow at 10, I have an appointment. » → juste « I am seeing the doctor tomorrow at 10. » : Un rendez-vous fixé dans l'agenda se dit au présent continu.",
+    "faux « The train is leaving at 7.15 every day. » → juste « The train leaves at 7.15 every day. » : Un horaire régulier, fixé par d'autres : présent simple.",
+    "faux « The phone's ringing! — I am going to answer it. » → juste « The phone's ringing! — I'll answer it. » : Décision prise à l'instant : {will}."
+   ],
+   "retenir": "Décision sur le moment : {will}. Projet : {going to}. Rendez-vous : {be} + {-ing}. Horaire : présent simple.",
+   "secret": "Le français dit « Quand je serai grand ». L'anglais refuse le futur après when, as soon as, before, after, until, if : When I grow up, I'll be a pilot. Call me as soon as you arrive. Le futur est déjà dans l'autre partie de la phrase, une seule fois suffit.",
+   "defi_deja_pose": [
+    "« The concert ___ at 8 pm. » (c'est sur le billet)",
+    "« I ___ my grandparents on Sunday. It's all arranged. »",
+    "« It's dark in here. — I ___ the light. »",
+    "« She ___ be a doctor when she grows up. That's her dream. »",
+    "Quel futur va avec un horaire de train ?"
+   ]
+  },
+  {
+   "id": "quand-je-serai",
+   "niveau": "B1",
+   "titre": "Le rail du futur",
+   "notion": "Le futur après when, as soon as, until, before, after",
+   "image": "Dans une phrase sur le futur, will ne monte qu'une seule fois dans le train : la partie avec when, as soon as ou until reste au présent.",
+   "demo": [
+    "When I grow up, I'll be a pilot.",
+    "Call me as soon as you arrive.",
+    "We'll wait until she comes back.",
+    "I'll tell you when I have finished.",
+    "Before you leave, close the windows."
+   ],
+   "regle": "Dans une phrase qui parle du futur, la partie introduite par {when} (quand), {as soon as} (dès que), {until} (jusqu'à ce que), {before} (avant que) ou {after} (après que) reste au présent. Seule l'autre partie prend {will} (ou un impératif, ou {going to}) : {I'll call you when I arrive}. Pour insister sur le fait que l'action sera terminée, on met le present perfect : {I'll tell you as soon as I've finished}. Dans une question, en revanche, {When will you come?} prend bien {will}.",
+   "formes": [
+    "Futur + quand : {will} + base + {when} / {as soon as} + présent — I'll call you when I arrive.",
+    "Terminé d'abord : {will} + base + {after} / {as soon as} + present perfect — I'll tell you as soon as I've finished.",
+    "Dans l'autre sens : {When} + présent, {will} + base — When she gets home, she'll eat."
+   ],
+   "usages": [
+    "Un projet lié à un moment : We'll have dinner when Dad comes back. (Nous dînerons quand papa rentrera.)",
+    "Une attente : Wait here until I come back. (Attends ici jusqu'à ce que je revienne.)",
+    "Avant que : I'll clean the kitchen before the guests arrive. (Je nettoierai la cuisine avant que les invités arrivent.)"
+   ],
+   "pieges": [
+    "faux « I'll call you when I will arrive. » → juste « I'll call you when I arrive. » : Après {when}, le futur s'exprime au présent.",
+    "faux « As soon as she will finish, we'll leave. » → juste « As soon as she finishes, we'll leave. » : Après {as soon as}, présent (ou present perfect : {as soon as she has finished}).",
+    "faux « Stay until the film will end. » → juste « Stay until the film ends. » : Même règle avec {until}."
+   ],
+   "retenir": "{will} ne monte qu'une fois dans la phrase : après {when}, {as soon as}, {until}, {before}, {after}, présent.",
+   "secret": "Le présent n'est obligatoire que si when, as soon as ou until introduisent un moment. Si when ouvre une vraie question, will revient : « When will you arrive? » (Quand arriveras-tu ?). Et dans « I don't know when he will come » (je ne sais pas quand il viendra), when introduit une question indirecte : will y est permis.",
+   "defi_deja_pose": [
+    "« I'll phone you when I ___ home. »",
+    "« As soon as she ___ her exams, she'll travel. » (quand elle les aura finis)",
+    "Complète : « Stay here until I (come) back. »",
+    "Traduis : « Quand je serai riche, j'achèterai une maison. »",
+    "Touche le mot en trop. We'll start the meeting when everybody *will arrive.",
+    "« By the time you ___ this letter, I'll be in Paris. »"
+   ]
+  },
+  {
+   "id": "si-alors",
+   "niveau": "B1",
+   "titre": "Si… alors : le vrai possible",
+   "notion": "Le premier conditionnel (if + présent, will)",
+   "image": "Le premier conditionnel est un panneau « si… alors » sur un chemin réel : la condition peut vraiment arriver.",
+   "demo": [
+    "If you study, you will pass.",
+    "You'll miss the bus if you don't hurry.",
+    "Unless you hurry, you'll miss the bus.",
+    "If you heat ice, it melts."
+   ],
+   "regle": "Le premier conditionnel parle d'une condition réelle et possible dans l'avenir, et de sa conséquence : {If it rains, we will stay at home}. La partie avec {if} se met au présent simple ; la conséquence prend {will} + base (ou un impératif, {can}, {may}, {should}…). On peut commencer par l'une ou l'autre partie ; la virgule n'est obligatoire que si la phrase commence par {if}. {Unless} veut dire « à moins que, sauf si » ({if… not}).",
+   "formes": [
+    "Condition, résultat : {If} + présent, {will} + base — If it rains, we'll stay home.",
+    "Dans l'autre sens : {will} + base + {if} + présent — You'll miss the bus if you don't hurry.",
+    "Avec un autre modal : {If} + présent, {can} / {may} / {should} + base — If you are tired, you can sleep here."
+   ],
+   "usages": [
+    "Un projet sous condition : If I have time, I'll visit you. (Si j'ai le temps, je te rendrai visite.)",
+    "Un avertissement : If you touch that, you'll burn yourself. (Si tu touches ça, tu vas te brûler.)",
+    "Une promesse : If you pass your exam, we'll celebrate. (Si tu réussis ton examen, on fêtera ça.)"
+   ],
+   "pieges": [
+    "faux « If it will rain, we'll stay home. » → juste « If it rains, we'll stay home. » : Après {if}, le présent ; le {will} va dans l'autre partie.",
+    "faux « Unless you don't hurry, you'll be late. » → juste « Unless you hurry, you'll be late. » : {unless} veut déjà dire « si… ne… pas » : pas de double négation."
+   ],
+   "retenir": "Condition possible : {If} + présent, {will} + base.",
+   "secret": "Dans « if », « when », « as soon as », « unless », « until », « before », « after », la partie qui pose la condition ou le moment reste au présent. C'est comme un rail : un seul wagon porte le futur. Bonus de style : « If you need anything, just call » (impératif dans la 2e partie) est aussi très naturel.",
+   "defi_deja_pose": [
+    "« If it ___ tomorrow, we'll stay home. »",
+    "« If you heat water to 100 °C, it ___. »",
+    "Complète : « If she calls, I (tell) her the news. »",
+    "« ___ you leave now, you'll be late. » (à moins que)",
+    "Touche le verbe qui ne devrait pas être au futur. If he *will come, we will start the game."
+   ]
+  },
+  {
+   "id": "bulle-reve",
+   "niveau": "B1",
+   "titre": "La bulle de rêve",
+   "notion": "Le deuxième conditionnel (if + past, would)",
+   "image": "Dans la bulle de rêve, on fait reculer le verbe d'un cran dans le temps : c'est la marque de l'imaginaire.",
+   "demo": [
+    "If I had more time, I would travel.",
+    "If I were you, I'd accept.",
+    "She wouldn't do that.",
+    "What would you do if you met a lion?",
+    "I'd like a coffee, please."
+   ],
+   "regle": "Le deuxième conditionnel parle d'une situation imaginaire, peu probable ou contraire à la réalité présente : {If I had a million euros, I would travel} (je n'ai pas ce million). On recule le verbe de la condition d'un cran (prétérit), et la conséquence prend {would} + base. Ce recul ne veut pas dire passé : il signale l'irréel. Avec {be}, on emploie {were} à toutes les personnes dans un anglais soigné ({If I were rich…}). {Could} et {might} peuvent remplacer {would}.",
+   "formes": [
+    "Condition, résultat : {If} + prétérit, {would} + base — If I had time, I would help you.",
+    "Avec be : {If} + sujet + {were}…, {would} + base — If she were here, she'd know.",
+    "Avec could, might : {If} + prétérit, {could} / {might} + base — If we won, we could buy a house."
+   ],
+   "usages": [
+    "Un rêve : If I spoke Chinese, I would work in Shanghai. (Si je parlais chinois, je travaillerais à Shanghai.)",
+    "Le contraire de la réalité : If he lived closer, we would see him more. (S'il habitait plus près, nous le verrions plus souvent.)",
+    "Un conseil : If I were you, I would apologise. (À ta place, je m'excuserais.)"
+   ],
+   "pieges": [
+    "faux « If I would have money, I'd buy it. » → juste « If I had money, I'd buy it. » : Pas de {would} après {if} : la condition se met au prétérit.",
+    "faux « If I am rich, I would travel. » → juste « If I were rich, I would travel. » : Situation imaginaire : le verbe recule d'un cran ({were}). Au présent, on parlerait d'une condition réelle.",
+    "faux « If she knew, she will be angry. » → juste « If she knew, she would be angry. » : Avec une condition imaginaire, la conséquence prend {would}, pas {will}."
+   ],
+   "retenir": "Imaginaire : {If} + prétérit, {would} + base.",
+   "secret": "Retiens cette image : en anglais, plus une chose est loin du réel, plus on recule le verbe dans le temps. Réel possible : if + présent. Imaginaire maintenant : if + past. Imaginaire dans le passé : if + past perfect (tu le verras au niveau B2). Le temps sert à mesurer la distance avec la réalité.",
+   "defi_deja_pose": [
+    "« If I ___ rich, I would help everyone. »",
+    "« If she had a car, she ___ to work. »",
+    "Écris : « Si j'étais toi, je partirais. »",
+    "Ce rêve est-il réel ? « If I lived in Paris, I'd go to museums. »",
+    "Touche le mot qui fait la bulle de rêve. We *would travel more if we had money."
+   ]
+  },
+  {
+   "id": "monde-envers",
+   "niveau": "B1",
+   "titre": "Le monde à l'envers",
+   "notion": "Le passif (présent et passé)",
+   "image": "Au passif, le monde se retourne : l'objet qui subissait l'action devient le héros de la phrase.",
+   "demo": [
+    "People speak English here. → English is spoken here.",
+    "The Eiffel Tower was built in 1889.",
+    "These cars are made in Germany.",
+    "The book was written by Victor Hugo.",
+    "Was the window broken? It wasn't broken."
+   ],
+   "regle": "Au passif, on met en avant celui ou ce qui subit l'action : {The house was built in 1900}. On le forme avec {be}, conjugué au temps voulu, suivi du participe passé du verbe. Celui qui fait l'action (l'agent) est introduit par {by} si l'on veut le nommer ({The book was written by Victor Hugo}), mais on l'omet souvent quand il est inconnu, évident ou sans importance. Le passif sert à parler d'un objet, d'un processus, ou de ce qui arrive sans savoir (ou sans dire) qui a agi.",
+   "formes": [
+    "Présent : {am} / {is} / {are} + participe passé — English is spoken here.",
+    "Passé : {was} / {were} + participe passé — The window was broken.",
+    "Avec l'agent : … + {by} + agent — The song was written by Lennon.",
+    "Question : {Is} / {Was} + sujet + participe ? — Were you invited?"
+   ],
+   "usages": [
+    "L'agent est inconnu : My bike was stolen yesterday. (On m'a volé mon vélo hier.)",
+    "Un processus, un fait : Cheese is made from milk. (Le fromage est fabriqué à partir de lait.)",
+    "Mettre l'œuvre en avant : This tower was designed by Eiffel's company. (Cette tour a été conçue par l'entreprise d'Eiffel.)"
+   ],
+   "pieges": [
+    "faux « The letter was wrote yesterday. » → juste « The letter was written yesterday. » : Au passif, il faut le participe passé, la troisième forme : {write} · {wrote} · {written}.",
+    "faux « One speaks English here. » → juste « English is spoken here. » : Le « on » français se traduit très souvent par un passif ; {one} sonne vieilli ou très formel.",
+    "faux « The cake was made of my mum. » → juste « The cake was made by my mum. » : L'agent (« par ») s'introduit avec {by}."
+   ],
+   "retenir": "Passif = {be} au bon temps + participe passé (+ {by} + agent).",
+   "secret": "Le français dit souvent « on » là où l'anglais met un passif : « On parle anglais ici » → English is spoken here. « On m'a volé mon vélo » → My bike was stolen. « On m'a dit que… » → I was told that… Dès que tu vois un « on » vague, pense au monde à l'envers.",
+   "defi_deja_pose": [
+    "« Rice ___ in many countries. »",
+    "« The museum ___ in 1950. »",
+    "Mets au passif : « Someone stole my bag. » → « My bag ___. »",
+    "« The Mona Lisa was painted ___ Leonardo da Vinci. »",
+    "Touche le participe passé. These shoes were *made in Italy."
+   ]
+  },
+  {
+   "id": "peut-etre",
+   "niveau": "B1",
+   "titre": "Peut-être…",
+   "notion": "May, might, could : le possible",
+   "image": "May, might et could sont les modaux du « peut-être » : ils ouvrent une porte sans promettre qu'on la franchira.",
+   "demo": [
+    "It might rain this afternoon.",
+    "She may be at home.",
+    "We could go to the beach tomorrow.",
+    "I might not come. · He may not know.",
+    "Maybe he's right. = He may be right."
+   ],
+   "regle": "{May}, {might} et {could} + base expriment une possibilité : quelque chose de peut-être vrai maintenant, ou peut-être à venir. {may} est un peu plus probable et plus formel, {might} un peu moins sûr, {could} présente une possibilité parmi d'autres. À la négation, {may not} et {might not} veulent dire « peut-être pas », mais {couldn't} veut dire « impossible ». Le mot {maybe} (en un seul mot) est un adverbe qui se place en début de phrase : {Maybe she's ill}.",
+   "formes": [
+    "Possibilité : sujet + {may} / {might} / {could} + base — It might rain.",
+    "Peut-être pas : sujet + {may not} / {might not} + base — She may not come.",
+    "L'adverbe : {Maybe} + phrase complète — Maybe he is at home."
+   ],
+   "usages": [
+    "Une hypothèse sur maintenant : Where's Tom? — He may be in the garden. (Où est Tom ? — Il est peut-être dans le jardin.)",
+    "Un futur incertain : We might go to Spain this summer. (Nous irons peut-être en Espagne cet été.)",
+    "Une possibilité parmi d'autres : It could be a mistake. (Ça pourrait être une erreur.)"
+   ],
+   "pieges": [
+    "faux « She mights come. » → juste « She might come. » : Comme tout modal, {might} ne prend jamais de {-s}.",
+    "faux « It maybe true. » → juste « It may be true. » : {maybe} est un adverbe, pas un verbe : il faut {may be} en deux mots, ou {Maybe it is true}.",
+    "faux « He might to call. » → juste « He might call. » : Après un modal, verbe nu, sans {to}."
+   ],
+   "retenir": "Peut-être = {may} / {might} / {could} + base, ou {Maybe} en tête de phrase.",
+   "secret": "Range les modaux comme sur un thermomètre : will (sûr) → should (probable) → may (possible) → might / could (possible, sans plus) → might not (peut-être pas) → can't (impossible). Ajouter well renforce la probabilité : « It may well rain » = il y a de fortes chances qu'il pleuve.",
+   "defi_deja_pose": [
+    "« Take an umbrella. It ___ rain later. »",
+    "« ___ she's at the library. »",
+    "« I'm not sure, but I ___ go to the party. »",
+    "Traduis avec might : « Il se peut qu'ils soient en retard. »",
+    "Quelle phrase dit que c'est impossible ?",
+    "Touche le modal du « peut-être ». We *might move to Spain next year."
+   ]
+  },
+  {
+   "id": "pouvoir-hier",
+   "niveau": "B1",
+   "titre": "Le pouvoir dans le temps",
+   "notion": "Could, was able to, managed to, will be able to",
+   "image": "Can est un super-pouvoir qui ne sait pas voyager seul. Pour l'emmener dans le futur ou au present perfect, il emprunte un costume : be able to.",
+   "demo": [
+    "She could read when she was four.",
+    "I was able to open the door. · I managed to open it.",
+    "He couldn't find his keys.",
+    "You'll be able to speak English soon.",
+    "I haven't been able to sleep lately."
+   ],
+   "regle": "{Can} n'a que deux formes : {can} et {could}. Pour l'emmener ailleurs dans le temps, on emploie {be able to} (être capable de), qui se conjugue partout : {will be able to}, {have been able to}, {to be able to}. Au passé, {could} exprime une capacité générale ({I could swim when I was five}) ; pour une réussite ponctuelle, dans une situation précise, on dit {was able to} ou {managed to} (réussir à) : {I managed to open the door}. À la négation, {couldn't} convient dans les deux cas.",
+   "formes": [
+    "Capacité passée générale : {could} + base — She could read at four.",
+    "Réussite ponctuelle : {was able to} / {managed to} + base — We managed to find a taxi.",
+    "Futur : {will be able to} + base — You will be able to drive soon.",
+    "Present perfect : {have been able to} + base — I haven't been able to sleep."
+   ],
+   "usages": [
+    "Un talent d'autrefois : My grandfather could speak four languages. (Mon grand-père parlait quatre langues.)",
+    "Une difficulté surmontée : The road was closed, but we were able to get home. (La route était fermée, mais nous avons pu rentrer.)",
+    "Une capacité future : One day, robots will be able to cook. (Un jour, les robots sauront cuisiner.)"
+   ],
+   "pieges": [
+    "faux « I will can help you tomorrow. » → juste « I will be able to help you tomorrow. » : Deux modaux ne se suivent jamais : {can} devient {be able to} après {will}.",
+    "faux « After hours of work, we could fix the car. » → juste « After hours of work, we managed to fix the car. » : Pour une réussite précise dans le passé, on préfère {managed to} ou {were able to}.",
+    "faux « I haven't could sleep. » → juste « I haven't been able to sleep. » : {can} n'a pas de participe passé : on passe par {been able to}."
+   ],
+   "retenir": "{could} = savoir faire en général ; {managed to} / {was able to} = avoir réussi une fois ; ailleurs : {be able to}.",
+   "secret": "Le français dit « je pouvais » (capacité) et « j'ai pu » (réussite). L'anglais fait la même différence : I could ski (je savais skier) / I was able to ski down the black slope yesterday (j'ai pu, j'ai réussi). Avec les verbes des sens (see, hear, smell…), could reste naturel même pour une seule fois : I could see the sea from my room.",
+   "defi_deja_pose": [
+    "« Next year, I ___ drive. »",
+    "« The fire was huge, but everybody ___ escape. »",
+    "« When I was a child, I ___ swim very well. »",
+    "Mets au present perfect : « I (not / be able to) call you. »",
+    "Traduis avec managed : « Elle a réussi à trouver un appartement. »",
+    "Touche l'erreur. I *will can help you tomorrow."
+   ]
+  },
+  {
+   "id": "mieux-vaut",
+   "niveau": "B1",
+   "titre": "Tu ferais mieux de…",
+   "notion": "Had better, be supposed to",
+   "image": "« You'd better » est un conseil avec un panneau danger : si tu ne le suis pas, il y aura un problème.",
+   "demo": [
+    "You'd better hurry!",
+    "We'd better not be late.",
+    "I'm supposed to start at nine.",
+    "You aren't supposed to smoke here.",
+    "The film was supposed to be good, but it was boring."
+   ],
+   "regle": "{Had better} + base (souvent {'d better}) donne un conseil fort, presque un avertissement : si on ne le suit pas, il y aura un problème ({You'd better hurry, or you'll miss the train}). Malgré {had}, il parle du présent ou du futur, et sa négation est {had better not}. {Be supposed to} + base exprime ce qui est prévu, attendu ou exigé par une règle, et souvent ce qui ne se passe pas comme prévu : {You're supposed to be in bed!}",
+   "formes": [
+    "Conseil fort : sujet + {had better} ({'d better}) + base — You'd better leave now.",
+    "Négation : sujet + {had better not} + base — We'd better not be late.",
+    "Ce qui est prévu : sujet + {be supposed to} + base — The train is supposed to arrive at 9."
+   ],
+   "usages": [
+    "Un avertissement : You'd better take an umbrella. (Tu ferais mieux de prendre un parapluie.)",
+    "Une règle : You are supposed to wear a helmet. (On est censé porter un casque.)",
+    "Ce qui n'a pas eu lieu : He was supposed to call me. (Il était censé m'appeler.)"
+   ],
+   "pieges": [
+    "faux « You'd better to go. » → juste « You'd better go. » : Après {had better}, verbe nu, sans {to}.",
+    "faux « You'd not better call him. » → juste « You'd better not call him. » : La négation se place après {better} : {had better not}.",
+    "faux « You are suppose to knock. » → juste « You are supposed to knock. » : On écrit {supposed}, avec un {-d}, même si on ne l'entend presque pas."
+   ],
+   "retenir": "{had better} + base = tu as intérêt à ; {be supposed to} + base = être censé.",
+   "secret": "Trois conseils, trois tons. Should : un conseil tranquille (You should read this book). Ought to : pareil, un peu plus soutenu. Had better : un conseil urgent, pour éviter un ennui (You'd better leave now or you'll miss the bus). Ne l'emploie pas pour une vérité générale : « Children had better eat vegetables » sonne comme une menace !",
+   "defi_deja_pose": [
+    "« It's going to rain. You ___ take an umbrella. »",
+    "« You'd better ___ tell him. It's a secret. »",
+    "« I'm ___ to be at work at 8, but I'm always late! »",
+    "Traduis : « Tu n'es pas censé utiliser ton téléphone ici. »",
+    "Complète : « It was ___ to be a surprise! » (censé)",
+    "Touche le mot de trop. You'd better *to go now."
+   ]
+  }
+ ]
+}

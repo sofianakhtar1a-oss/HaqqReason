@@ -30,6 +30,29 @@ export type Question = Choix | Ecrire | Toucher;
 export const estChoix = (x: Question): x is Choix => "o" in x;
 export const estEcrire = (x: Question): x is Ecrire => "r" in x;
 
+/**
+ * L'entraînement : des exercices en plus du défi, pour chaque leçon (fichiers src/lib/regles/entrainement/,
+ * chargés à la demande). Aux trois types du défi s'en ajoutent deux.
+ */
+/** Phrase à remettre dans l'ordre : les morceaux dans le bon ordre (mélangés à l'écran), sans la ponctuation finale. */
+export type Ordre = { q: string; m: string[]; fin?: "." | "?" | "!"; alt?: string[][]; i: string; e: string };
+/** Phrase à corriger : la phrase fautive telle qu'on la montre, et les phrases corrigées acceptées. */
+export type Corriger = { q: string; f: string; r: string[]; i: string; e: string };
+/** 1 : échauffement · 2 : entraînement · 3 : expert. */
+export type Difficulte = 1 | 2 | 3;
+export type Exercice = (Choix | Ecrire | Toucher | Ordre | Corriger) & { d?: Difficulte };
+
+export const estOrdre = (x: Exercice): x is Ordre & { d?: Difficulte } => "m" in x;
+export const estCorriger = (x: Exercice): x is Corriger & { d?: Difficulte } => "f" in x;
+/** Le type d'un exercice (l'ordre des tests compte : une phrase à corriger a aussi des réponses « r »). */
+export function typeExercice(x: Exercice): "choix" | "ecrire" | "toucher" | "ordre" | "corriger" {
+  if ("f" in x) return "corriger";
+  if ("m" in x) return "ordre";
+  if ("o" in x) return "choix";
+  if ("r" in x) return "ecrire";
+  return "toucher";
+}
+
 export type Lecon = {
   id: string;
   niveau: Niveau;

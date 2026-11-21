@@ -1,0 +1,1877 @@
+{
+ "habitude-ou-direct": [
+  {
+   "d": 1,
+   "q": "Every Saturday, Yusuf ___ football with his friends.",
+   "o": [
+    "plays",
+    "is playing"
+   ],
+   "io": {
+    "is playing": "« Every Saturday » annonce une habitude : on prend le présent simple, pas le continu."
+   },
+   "i": "« Every Saturday » dit-il une habitude ou une action en cours ?",
+   "e": "« plays » : « every Saturday » décrit une habitude, donc présent simple (+ -s avec Yusuf = he)."
+  },
+  {
+   "d": 1,
+   "q": "Shh! The baby ___.",
+   "o": [
+    "is sleeping",
+    "sleeps"
+   ],
+   "io": {
+    "sleeps": "Le bébé dort en ce moment même : il faut le présent continu."
+   },
+   "i": "« Shh! » : l'action a lieu en ce moment même.",
+   "e": "« is sleeping » : l'action se passe maintenant, on prend be + verbe en -ing."
+  },
+  {
+   "d": 1,
+   "q": "I ___ pasta. It's my favourite food.",
+   "o": [
+    "like",
+    "am liking"
+   ],
+   "io": {
+    "am liking": "Les verbes d'état comme « like » ne se mettent presque jamais en -ing."
+   },
+   "i": "« Aimer » est un verbe d'état. Se met-il en -ing ?",
+   "e": "« like » : c'est un verbe d'état (un goût), il reste au présent simple."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui montrent ce que Léa fait en ce moment.",
+   "p": "Léa *is *cooking now, and she usually cooks pasta.",
+   "i": "Cherche be + verbe en -ing, à côté de « now ».",
+   "e": "« is cooking » : be + -ing, avec « now », parle de ce qui se passe maintenant. « cooks » est une habitude (« usually »)."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "Omar",
+    "is",
+    "reading",
+    "a",
+    "book",
+    "now"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "now",
+     "Omar",
+     "is",
+     "reading",
+     "a",
+     "book"
+    ]
+   ],
+   "i": "Une action en cours : sujet + be + verbe en -ing.",
+   "e": "« Omar is reading a book now. » : « is reading » (be + -ing) va avec « now »."
+  },
+  {
+   "d": 1,
+   "q": "Écris le verbe au bon présent : « Look! It ___ (rain). »",
+   "r": [
+    "is raining"
+   ],
+   "i": "« Look! » : c'est en direct. Quel auxiliaire et quelle terminaison ?",
+   "e": "« is raining » : « Look! » appelle le présent continu : is + verbe en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Tom ___ in the library at the moment.",
+   "o": [
+    "is studying",
+    "studies",
+    "study"
+   ],
+   "io": {
+    "studies": "« At the moment » = en ce moment : présent continu, pas simple.",
+    "study": "Il manque l'auxiliaire be pour parler de l'instant présent."
+   },
+   "i": "Quel petit mot dit « maintenant » dans la phrase ?",
+   "e": "« is studying » : « at the moment » appelle le présent continu."
+  },
+  {
+   "d": 2,
+   "q": "I ___ what the teacher is saying.",
+   "o": [
+    "understand",
+    "am understanding"
+   ],
+   "io": {
+    "am understanding": "« Understand » est un verbe d'état : pas de -ing."
+   },
+   "i": "« Comprendre » est un verbe d'état.",
+   "e": "« understand » : verbe d'état, présent simple, même si on parle de maintenant."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je travaille à la maison cette semaine. »",
+   "r": [
+    "I am working from home this week",
+    "I am working at home this week",
+    "This week I am working from home",
+    "This week I am working at home"
+   ],
+   "i": "Situation temporaire : quel présent ?",
+   "e": "« I am working from home this week » : « this week » = temps limité, présent continu."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle prend le bus tous les jours. »",
+   "r": [
+    "She takes the bus every day",
+    "Every day she takes the bus",
+    "She goes by bus every day"
+   ],
+   "i": "« Tous les jours » : habitude. Et le -s pour « she » ?",
+   "e": "« She takes the bus every day » : habitude, donc présent simple avec -s à la 3e personne."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "what",
+    "are",
+    "you",
+    "doing",
+    "right now"
+   ],
+   "fin": "?",
+   "i": "Une question en direct : mot interrogatif + be + sujet + -ing.",
+   "e": "« What are you doing right now? » : « right now » appelle be + -ing.",
+   "alt": [
+    [
+     "right now",
+     "what",
+     "are",
+     "you",
+     "doing"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I am knowing your brother.",
+   "r": [
+    "I know your brother."
+   ],
+   "i": "« Connaître » est un verbe d'état.",
+   "e": "« I know your brother. » : « know » est un verbe d'état, il ne se met pas en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Every evening, we are watching the news.",
+   "r": [
+    "Every evening, we watch the news.",
+    "Every evening we watch the news."
+   ],
+   "i": "« Every evening » : habitude ou action en cours ?",
+   "e": "« Every evening, we watch the news. » : une habitude se dit au présent simple."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux verbes d'état, qui restent au présent simple.",
+   "p": "I *know she *wants a new bike, but she is saving money.",
+   "i": "Cherche savoir et vouloir.",
+   "e": "« know » et « wants » sont des verbes d'état : présent simple. « is saving » est une action en cours."
+  },
+  {
+   "d": 3,
+   "q": "Why ___ a coat today? It's sunny!",
+   "o": [
+    "are you wearing",
+    "do you wear"
+   ],
+   "io": {
+    "do you wear": "« Do you wear » demande une habitude ; ici on s'étonne d'une situation d'aujourd'hui."
+   },
+   "i": "« Today » parle d'une situation du moment.",
+   "e": "« are you wearing » : « today » indique une situation du moment, donc présent continu."
+  },
+  {
+   "d": 3,
+   "q": "Usually Inès walks to school, but today she ___ the bus.",
+   "o": [
+    "is taking",
+    "takes"
+   ],
+   "io": {
+    "takes": "« Takes » dirait que c'est son habitude, or « today » annonce l'exception."
+   },
+   "i": "« But today » signale une exception.",
+   "e": "« is taking » : « today » marque l'exception du moment, donc présent continu."
+  },
+  {
+   "d": 3,
+   "q": "We ___ in a hotel this week; normally we live in a flat.",
+   "o": [
+    "are staying",
+    "stay"
+   ],
+   "io": {
+    "stay": "Séjour limité à cette semaine : présent continu."
+   },
+   "i": "Combien de temps dure cette situation ?",
+   "e": "« are staying » : situation temporaire (« this week »), présent continu. « live » reste simple car c'est durable."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Qu'est-ce que tu veux ? »",
+   "r": [
+    "What do you want"
+   ],
+   "i": "« Vouloir » est un verbe d'état : jamais de -ing.",
+   "e": "« What do you want? » : « want » est un verbe d'état, on ne dit pas « are you wanting »."
+  },
+  {
+   "d": 3,
+   "q": "Complète à la négative : « Right now, Adam ___ (listen) to me. »",
+   "r": [
+    "isn't listening",
+    "is not listening",
+    "'s not listening"
+   ],
+   "i": "« Right now » : quel présent ? Et la négation ?",
+   "e": "« isn't listening » : en ce moment, donc be + -ing, avec « not » après be."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Be quiet! The baby sleeps.",
+   "r": [
+    "Be quiet! The baby is sleeping."
+   ],
+   "i": "« Be quiet! » : c'est maintenant.",
+   "e": "« The baby is sleeping. » : l'action a lieu en ce moment même, présent continu."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I am not liking this soup.",
+   "r": [
+    "I don't like this soup.",
+    "I do not like this soup."
+   ],
+   "i": "« Aimer » est un verbe d'état ; sa négation passe par do.",
+   "e": "« I don't like this soup. » : « like » reste au présent simple, la négation prend « don't »."
+  }
+ ],
+ "was-were": [
+  {
+   "d": 1,
+   "q": "Yesterday, I ___ at the cinema.",
+   "o": [
+    "was",
+    "were"
+   ],
+   "io": {
+    "were": "« Were » va avec you, we et they ; avec « I », on emploie was."
+   },
+   "i": "Regarde le sujet : quelle forme de be va avec « I » au passé ?",
+   "e": "« I was at the cinema » : avec I, he, she et it, be prend la forme was au passé."
+  },
+  {
+   "d": 1,
+   "q": "The children ___ at school this morning.",
+   "o": [
+    "were",
+    "was"
+   ],
+   "io": {
+    "was": "« Children » est un pluriel, donc le verbe be prend were, pas was."
+   },
+   "i": "« The children » veut dire « ils » : c'est un pluriel.",
+   "e": "« The children were at school » : un sujet pluriel (they) prend were."
+  },
+  {
+   "d": 1,
+   "q": "My phone ___ on the table.",
+   "o": [
+    "was",
+    "were"
+   ],
+   "io": {
+    "were": "« My phone » est au singulier, comme « it » : on emploie was."
+   },
+   "i": "« My phone » est un seul objet : quel pronom le remplace ?",
+   "e": "« My phone was on the table » : un nom au singulier (it) prend was."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux formes de be au passé.",
+   "p": "Inès *was happy and her friends *were with her.",
+   "i": "Cherche les deux petits mots qui disent « était » et « étaient ».",
+   "e": "« was » (Inès = she) et « were » (her friends = they) sont les deux seules formes de be au passé."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We ___ in Spain last year. »",
+   "r": [
+    "were"
+   ],
+   "i": "Quelle forme de be va avec « we » au passé ?",
+   "e": "« We were in Spain last year » : we, you et they prennent were."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it",
+    "was",
+    "a",
+    "great",
+    "day"
+   ],
+   "fin": ".",
+   "i": "Commence par le sujet, puis la forme de be.",
+   "e": "« It was a great day. » : le sujet it est suivi de was, puis du reste de la phrase."
+  },
+  {
+   "d": 2,
+   "q": "Where ___ you last night?",
+   "o": [
+    "were",
+    "was",
+    "did"
+   ],
+   "io": {
+    "was": "Avec « you », be prend were, jamais was.",
+    "did": "Le verbe be ne s'emploie jamais avec did : on inverse simplement be et le sujet."
+   },
+   "i": "Quelle forme de be va avec « you », et be a-t-il besoin de did ?",
+   "e": "« Where were you last night? » : be pose sa question seul, et you prend were."
+  },
+  {
+   "d": 2,
+   "q": "There ___ a lot of children in the park.",
+   "o": [
+    "were",
+    "was"
+   ],
+   "io": {
+    "was": "« Children » est un pluriel : on dit there were, pas there was."
+   },
+   "i": "« A lot of children » : est-ce un singulier ou un pluriel ?",
+   "e": "« There were a lot of children » : après « there », le verbe s'accorde avec ce qui suit, ici un pluriel, donc were."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il était fatigué hier. »",
+   "r": [
+    "He was tired yesterday",
+    "Yesterday he was tired"
+   ],
+   "i": "Quelle forme de be va avec « he » ?",
+   "e": "« He was tired yesterday » : avec he, be prend la forme was."
+  },
+  {
+   "d": 2,
+   "q": "Complète à la négative : « The shops ___ open on Sunday. »",
+   "r": [
+    "weren't",
+    "were not"
+   ],
+   "i": "Le sujet est pluriel : quelle forme de be, suivie de not ?",
+   "e": "« The shops weren't open on Sunday » : la négation de were est weren't (were + not)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "were",
+    "you",
+    "at",
+    "home",
+    "last night"
+   ],
+   "fin": "?",
+   "i": "Avec be, on inverse : be passe devant le sujet.",
+   "e": "« Were you at home last night? » : be passe devant le sujet, sans did.",
+   "alt": [
+    [
+     "last night",
+     "were",
+     "you",
+     "at",
+     "home"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She were very tired after the trip.",
+   "r": [
+    "She was very tired after the trip."
+   ],
+   "i": "Quelle forme de be va avec « she » ?",
+   "e": "« She was very tired after the trip. » : she prend was, comme I, he et it."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Did you be at the party on Saturday?",
+   "r": [
+    "Were you at the party on Saturday?"
+   ],
+   "i": "Le verbe be a-t-il besoin de did pour poser une question ?",
+   "e": "« Were you at the party on Saturday? » : be pose sa question tout seul, sans did."
+  },
+  {
+   "d": 2,
+   "q": "He ___ at school yesterday. He was ill.",
+   "o": [
+    "wasn't",
+    "weren't",
+    "didn't be"
+   ],
+   "io": {
+    "weren't": "« He » prend was, donc la négation est wasn't.",
+    "didn't be": "Le verbe be forme sa négation seul : wasn't, sans didn't."
+   },
+   "i": "Le sujet est « he », et be forme sa négation avec not.",
+   "e": "« He wasn't at school yesterday » : la négation de was est wasn't ; be n'a pas besoin de didn't."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux formes qui marquent la négation.",
+   "p": "We *weren't at home and Tom *wasn't there.",
+   "i": "Cherche les formes terminées par -n't.",
+   "e": "« weren't » et « wasn't » : be au passé suivi de n't forme la négation."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Je suis né en 2010. »",
+   "r": [
+    "I was born in 2010"
+   ],
+   "i": "La naissance est un fait passé : quel temps de be ?",
+   "e": "« I was born in 2010 » : en anglais on dit « was born », jamais « am born »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I am born in a small village.",
+   "r": [
+    "I was born in a small village."
+   ],
+   "i": "Naître : est-ce un fait présent ou passé ?",
+   "e": "« I was born in a small village. » : la naissance appartient au passé, donc was born."
+  },
+  {
+   "d": 3,
+   "q": "There ___ any milk in the fridge, so I went shopping.",
+   "o": [
+    "wasn't",
+    "weren't"
+   ],
+   "io": {
+    "weren't": "« Milk » est un nom singulier : on dit there wasn't."
+   },
+   "i": "« Milk » (le lait) est-il singulier ou pluriel ?",
+   "e": "« There wasn't any milk » : milk est singulier, donc wasn't."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il y avait deux chats dans le jardin. »",
+   "r": [
+    "There were two cats in the garden",
+    "There were two cats in the yard"
+   ],
+   "i": "« Il y avait » + un pluriel : quelle forme ?",
+   "e": "« There were two cats in the garden » : there were s'emploie devant un pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "was",
+    "there",
+    "any",
+    "milk"
+   ],
+   "fin": "?",
+   "i": "Pour la question, be passe avant there.",
+   "e": "« Was there any milk? » : be est inversé avec there pour poser la question."
+  },
+  {
+   "d": 3,
+   "q": "Maryam and I ___ best friends when we were six.",
+   "o": [
+    "were",
+    "was"
+   ],
+   "io": {
+    "was": "Deux personnes forment un pluriel (we) : on emploie were."
+   },
+   "i": "« Maryam and I » se remplace par quel pronom ?",
+   "e": "« Maryam and I were best friends » : Maryam and I = we, donc were."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "There was three books on the desk.",
+   "r": [
+    "There were three books on the desk."
+   ],
+   "i": "Trois livres : singulier ou pluriel ?",
+   "e": "« There were three books on the desk. » : devant un pluriel, on dit there were."
+  }
+ ],
+ "ed-magique": [
+  {
+   "d": 1,
+   "q": "Écris le past simple de « walk ».",
+   "r": [
+    "walked"
+   ],
+   "i": "Verbe régulier : que ajoute-t-on à la base ?",
+   "e": "« walked » : pour un verbe régulier, on ajoute -ed à la base."
+  },
+  {
+   "d": 1,
+   "q": "Last night, I ___ a message to my cousin.",
+   "o": [
+    "texted",
+    "text",
+    "texting"
+   ],
+   "io": {
+    "text": "« Last night » demande le passé : on ajoute -ed.",
+    "texting": "La forme en -ing n'est pas un passé simple : il faut texted."
+   },
+   "i": "« Last night » place l'action dans le passé terminé.",
+   "e": "« I texted a message » : une action terminée dans le passé se met au past simple, ici base + -ed."
+  },
+  {
+   "d": 1,
+   "q": "Écris le past simple de « like ».",
+   "r": [
+    "liked"
+   ],
+   "i": "Le verbe finit déjà par un -e.",
+   "e": "« liked » : quand le verbe finit par -e, on ajoute seulement -d."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux verbes au past simple.",
+   "p": "Yesterday we *played tennis and Tom *watched us.",
+   "i": "Cherche les verbes qui se terminent par -ed.",
+   "e": "« played » et « watched » sont au past simple : base + -ed."
+  },
+  {
+   "d": 1,
+   "q": "Two days ago, they ___ the museum.",
+   "o": [
+    "visited",
+    "visit",
+    "visiting"
+   ],
+   "io": {
+    "visit": "« Two days ago » est dans le passé : il faut ajouter -ed.",
+    "visiting": "Il faut un verbe conjugué au passé simple, pas une forme en -ing."
+   },
+   "i": "Le mot « ago » parle d'un moment passé.",
+   "e": "« They visited the museum » : avec ago, on emploie le past simple (base + -ed)."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "cooked",
+    "dinner",
+    "together"
+   ],
+   "fin": ".",
+   "i": "Le verbe au passé vient juste après le sujet.",
+   "e": "« We cooked dinner together. » : cooked = cook + -ed, après le sujet we.",
+   "alt": [
+    [
+     "together",
+     "we",
+     "cooked",
+     "dinner"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Choisis l'orthographe juste du past simple de « study ».",
+   "o": [
+    "studied",
+    "studyed",
+    "studid"
+   ],
+   "io": {
+    "studyed": "Après une consonne, le y se change en i avant -ed.",
+    "studid": "La terminaison du passé régulier est -ed, pas -id."
+   },
+   "i": "Après une consonne, que devient le y ?",
+   "e": "« studied » : consonne + y, le y devient i, puis on ajoute -ed."
+  },
+  {
+   "d": 2,
+   "q": "The bus ___ at the corner.",
+   "o": [
+    "stopped",
+    "stoped",
+    "stopt"
+   ],
+   "io": {
+    "stoped": "Après une courte voyelle, on double le p : stopped.",
+    "stopt": "Le passé régulier s'écrit toujours avec -ed."
+   },
+   "i": "Stop est un verbe court en consonne-voyelle-consonne.",
+   "e": "« stopped » : on double la dernière consonne avant -ed."
+  },
+  {
+   "d": 2,
+   "q": "Écris le past simple de « decide ».",
+   "r": [
+    "decided"
+   ],
+   "i": "Le verbe finit par -e : quelle terminaison ?",
+   "e": "« decided » : un verbe en -e prend seulement -d."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle a appelé il y a deux heures. »",
+   "r": [
+    "She called two hours ago",
+    "Two hours ago she called",
+    "She phoned two hours ago"
+   ],
+   "i": "« Il y a » se dit « ago », placé après la durée.",
+   "e": "« She called two hours ago » : avec ago, on emploie le past simple, même si le français dit « a appelé »."
+  },
+  {
+   "d": 2,
+   "q": "My dad ___ the car in front of the house last night.",
+   "o": [
+    "parked",
+    "park",
+    "is parking"
+   ],
+   "io": {
+    "park": "Avec « last night », il faut le passé : on ajoute -ed.",
+    "is parking": "Le présent continu ne convient pas pour un fait terminé hier."
+   },
+   "i": "« Last night » : l'action est terminée.",
+   "e": "« My dad parked the car » : un fait passé daté se met au past simple, base + -ed."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "they",
+    "studied",
+    "English",
+    "last",
+    "year"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "last",
+     "year",
+     "they",
+     "studied",
+     "English"
+    ]
+   ],
+   "i": "Le sujet, puis le verbe au passé, puis le reste.",
+   "e": "« They studied English last year. » : study devient studied (consonne + y)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Yesterday I have cleaned my room.",
+   "r": [
+    "Yesterday I cleaned my room."
+   ],
+   "i": "« Yesterday » est un moment passé précis.",
+   "e": "« Yesterday I cleaned my room. » : avec un moment passé précis, on prend le past simple et non have + participe."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She studyed French at university.",
+   "r": [
+    "She studied French at university."
+   ],
+   "i": "Regarde l'orthographe du verbe : consonne + y.",
+   "e": "« She studied French » : le y devient i avant -ed."
+  },
+  {
+   "d": 3,
+   "q": "Écris le past simple de « drop ».",
+   "r": [
+    "dropped"
+   ],
+   "i": "Verbe court en consonne-voyelle-consonne.",
+   "e": "« dropped » : on double la dernière consonne avant -ed."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons visité Rome en 2019. »",
+   "r": [
+    "We visited Rome in 2019",
+    "In 2019 we visited Rome"
+   ],
+   "i": "« En 2019 » est une date précise du passé.",
+   "e": "« We visited Rome in 2019 » : avec une date précise, on emploie le past simple, même si le français dit « avons visité »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We planed a surprise party for Adam.",
+   "r": [
+    "We planned a surprise party for Adam."
+   ],
+   "i": "Plan est un verbe court en consonne-voyelle-consonne.",
+   "e": "« We planned a surprise party » : plan est un verbe court (consonne-voyelle-consonne), donc on double le n avant -ed. Sans doublement, « planed » serait mal orthographié."
+  },
+  {
+   "d": 3,
+   "q": "Last week, my sister ___ me her new bag.",
+   "o": [
+    "showed",
+    "shown",
+    "show"
+   ],
+   "io": {
+    "shown": "« Shown » est un participe passé, qui s'emploie après have ; ici il faut showed.",
+    "show": "Avec « last week », le verbe se met au passé : showed."
+   },
+   "i": "« Last week » : past simple d'un verbe régulier.",
+   "e": "« My sister showed me her new bag » : last week demande le past simple, base + -ed."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux verbes dont l'orthographe a changé avant -ed.",
+   "p": "She *carried the box and he *dropped the keys.",
+   "i": "Cherche un y devenu i, et une consonne doublée.",
+   "e": "« carried » (y devient i) et « dropped » (le p est doublé) changent d'orthographe avant -ed."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "opened",
+    "the",
+    "door",
+    "and",
+    "looked",
+    "outside"
+   ],
+   "fin": ".",
+   "i": "Deux actions qui se suivent, avec un seul sujet.",
+   "e": "« He opened the door and looked outside. » : deux verbes réguliers au past simple, reliés par and."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We waitted for the bus for twenty minutes.",
+   "r": [
+    "We waited for the bus for twenty minutes."
+   ],
+   "i": "Combien de voyelles y a-t-il avant le t dans wait ?",
+   "e": "« We waited… » : wait a deux voyelles (ai) avant le t, donc on ne double pas la consonne."
+  }
+ ],
+ "rebelles": [
+  {
+   "d": 1,
+   "q": "Écris le past simple de « eat ».",
+   "r": [
+    "ate"
+   ],
+   "i": "C'est un verbe rebelle : il n'a pas de -ed.",
+   "e": "« ate » : eat · ate · eaten, un verbe irrégulier."
+  },
+  {
+   "d": 1,
+   "q": "Écris le past simple de « buy ».",
+   "r": [
+    "bought"
+   ],
+   "i": "Ce verbe rebelle appartient à la famille des -ought.",
+   "e": "« bought » : buy · bought · bought."
+  },
+  {
+   "d": 1,
+   "q": "Last week, we ___ to the beach.",
+   "o": [
+    "went",
+    "goed",
+    "gone"
+   ],
+   "io": {
+    "goed": "Le verbe go est irrégulier : il n'y a pas de -ed, on dit went.",
+    "gone": "« Gone » est le participe passé, utilisé après have ; au past simple, on dit went."
+   },
+   "i": "Quel est le prétérit du verbe go ?",
+   "e": "« We went to the beach » : go est irrégulier, son past simple est went."
+  },
+  {
+   "d": 1,
+   "q": "My brother ___ a new bike yesterday.",
+   "o": [
+    "got",
+    "getted",
+    "get"
+   ],
+   "io": {
+    "getted": "Get est irrégulier : on ne lui ajoute pas -ed.",
+    "get": "Avec « yesterday », il faut le passé : got."
+   },
+   "i": "Quel est le prétérit irrégulier de get ?",
+   "e": "« My brother got a new bike » : get · got, un verbe irrégulier."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux verbes rebelles.",
+   "p": "Emma *drank some water and *ate an apple.",
+   "i": "Cherche les passés qui ne finissent pas par -ed.",
+   "e": "« drank » et « ate » sont des verbes irréguliers au past simple."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "drank",
+    "a",
+    "glass",
+    "of",
+    "milk"
+   ],
+   "fin": ".",
+   "i": "Sujet, verbe au passé, puis le complément.",
+   "e": "« I drank a glass of milk. » : drink · drank · drunk."
+  },
+  {
+   "d": 2,
+   "q": "She has ___ home. She isn't here now.",
+   "o": [
+    "gone",
+    "went",
+    "goed"
+   ],
+   "io": {
+    "went": "« Went » est le prétérit ; après has, on emploie le participe passé gone.",
+    "goed": "Go est irrégulier : ni goed, ni -ed."
+   },
+   "i": "Après has, il faut la troisième forme du verbe.",
+   "e": "« She has gone home » : après have ou has, on emploie le participe passé : gone."
+  },
+  {
+   "d": 2,
+   "q": "I have already ___ my homework.",
+   "o": [
+    "done",
+    "did",
+    "doed"
+   ],
+   "io": {
+    "did": "« Did » est le prétérit ; après have, il faut le participe passé done.",
+    "doed": "Do est irrégulier : le participe est done."
+   },
+   "i": "Après have, quelle forme du verbe do ?",
+   "e": "« I have already done my homework » : après have, on prend le participe passé, done."
+  },
+  {
+   "d": 2,
+   "q": "Écris le past simple de « come ».",
+   "r": [
+    "came"
+   ],
+   "i": "C'est un verbe rebelle : la voyelle change.",
+   "e": "« came » : come · came · come."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « I have ___ (take) the bus today. »",
+   "r": [
+    "taken"
+   ],
+   "i": "Après have, on utilise le participe passé.",
+   "e": "« taken » : take · took · taken ; après have, c'est le participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous avons acheté du pain hier. »",
+   "r": [
+    "We bought bread yesterday",
+    "Yesterday we bought bread",
+    "We bought some bread yesterday",
+    "Yesterday we bought some bread"
+   ],
+   "i": "« Hier » appelle le past simple du verbe buy.",
+   "e": "« We bought bread yesterday » : avec yesterday, on emploie le past simple irrégulier bought."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "put",
+    "the",
+    "books",
+    "on",
+    "the",
+    "table"
+   ],
+   "fin": ".",
+   "i": "Le verbe put ne change pas au passé.",
+   "e": "« He put the books on the table. » : put · put · put, la même forme aux trois temps."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I goed to the market with my mum.",
+   "r": [
+    "I went to the market with my mum."
+   ],
+   "i": "Go est un verbe rebelle : quel est son passé ?",
+   "e": "« I went to the market » : go est irrégulier, son past simple est went."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He buyed a new phone last week.",
+   "r": [
+    "He bought a new phone last week."
+   ],
+   "i": "Buy est un verbe rebelle : quel est son passé ?",
+   "e": "« He bought a new phone » : buy · bought · bought, sans -ed."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My sister has went to Canada.",
+   "r": [
+    "My sister has gone to Canada."
+   ],
+   "i": "Après has, quelle forme du verbe ?",
+   "e": "« My sister has gone to Canada. » : après have ou has, on emploie le participe passé gone."
+  },
+  {
+   "d": 3,
+   "q": "Yesterday Tom ___ his friends at the park.",
+   "o": [
+    "met",
+    "meeted",
+    "meet"
+   ],
+   "io": {
+    "meeted": "Meet est irrégulier : on ne lui ajoute pas -ed.",
+    "meet": "Avec « yesterday », il faut le passé : met."
+   },
+   "i": "Quel est le prétérit irrégulier de meet ?",
+   "e": "« Tom met his friends » : meet · met · met."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle a lu un livre hier soir. »",
+   "r": [
+    "She read a book last night",
+    "She read a book yesterday evening",
+    "Last night she read a book"
+   ],
+   "i": "Read s'écrit pareil au passé, mais se prononce autrement.",
+   "e": "« She read a book last night » : read · read · read ; seule la prononciation change (« red »)."
+  },
+  {
+   "d": 3,
+   "q": "We have ___ our tickets, so we can enter.",
+   "o": [
+    "bought",
+    "buyed",
+    "buy"
+   ],
+   "io": {
+    "buyed": "Buy est irrégulier : le participe est bought.",
+    "buy": "Après have, on emploie le participe passé, pas la base."
+   },
+   "i": "Après have, il faut la troisième forme du verbe.",
+   "e": "« We have bought our tickets » : après have, le participe passé de buy est bought."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux participes passés irréguliers.",
+   "p": "I have *seen the film, and she has *written a review.",
+   "i": "Cherche les verbes qui suivent have ou has.",
+   "e": "« seen » et « written » sont des participes passés irréguliers, après have et has."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "they",
+    "have",
+    "never",
+    "eaten",
+    "sushi"
+   ],
+   "fin": ".",
+   "i": "Have, puis never, puis le participe passé.",
+   "e": "« They have never eaten sushi. » : eat · ate · eaten, après have."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She has drank all the juice.",
+   "r": [
+    "She has drunk all the juice."
+   ],
+   "i": "Après has, il faut la troisième forme de drink.",
+   "e": "« She has drunk all the juice. » : drink · drank · drunk ; après has, c'est drunk."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « We ___ (sing) a song at the party last night. »",
+   "r": [
+    "sang"
+   ],
+   "i": "Ce verbe fait partie de la famille i-a-u.",
+   "e": "« sang » : sing · sang · sung ; « last night » demande le past simple."
+  }
+ ],
+ "did": [
+  {
+   "d": 1,
+   "q": "___ you like the film yesterday?",
+   "o": [
+    "Did",
+    "Do",
+    "Are"
+   ],
+   "io": {
+    "Do": "« Yesterday » place l'action dans le passé : on prend did, pas do.",
+    "Are": "« Are » ne s'emploie pas avec le verbe like au passé : il faut did."
+   },
+   "i": "La question parle d'hier : quel moteur du passé faut-il ?",
+   "e": "« Did you like the film yesterday? » : une question au passé simple commence par did."
+  },
+  {
+   "d": 1,
+   "q": "I ___ see Tom yesterday.",
+   "o": [
+    "didn't",
+    "don't",
+    "wasn't"
+   ],
+   "io": {
+    "don't": "« Yesterday » demande le passé : didn't, pas don't.",
+    "wasn't": "« Wasn't » est la négation de be, pas d'un verbe d'action comme see."
+   },
+   "i": "Pour nier une action passée, quel moteur prend la négation ?",
+   "e": "« I didn't see Tom yesterday. » : la négation du passé simple se fait avec didn't + base."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "did",
+    "she",
+    "go",
+    "home"
+   ],
+   "fin": "?",
+   "i": "Une question au passé simple commence par did.",
+   "e": "« Did she go home? » : did vient d'abord, puis le sujet, puis le verbe à la base."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe resté à la base après didn't.",
+   "p": "We didn't *watch TV last night.",
+   "i": "Cherche le verbe qui suit « didn't ».",
+   "e": "« watch » : après didn't, le verbe reste à la base, car le passé est déjà dans didn't."
+  },
+  {
+   "d": 1,
+   "q": "Complète à la négative : « They ___ come to the party. »",
+   "r": [
+    "didn't",
+    "did not"
+   ],
+   "i": "Quel moteur du passé porte la négation ?",
+   "e": "« didn't » : la négation du passé simple = didn't + verbe à la base (come)."
+  },
+  {
+   "d": 1,
+   "q": "Did she ___ her homework?",
+   "o": [
+    "do",
+    "did",
+    "done"
+   ],
+   "io": {
+    "did": "Did est déjà là comme moteur : le verbe principal reste à la base, donc do.",
+    "done": "Après did, jamais de participe passé : on garde la base, do."
+   },
+   "i": "Après did, quelle forme du verbe ?",
+   "e": "« Did she do her homework? » : après did, le verbe reste à la base : do."
+  },
+  {
+   "d": 2,
+   "q": "Where ___ you buy that jacket?",
+   "o": [
+    "did",
+    "do",
+    "were"
+   ],
+   "io": {
+    "do": "L'achat est passé : on prend did, pas do.",
+    "were": "« Were » est une forme de be ; avec le verbe buy, il faut did."
+   },
+   "i": "Question ouverte au passé : quel moteur entre le mot interrogatif et le sujet ?",
+   "e": "« Where did you buy that jacket? » : mot interrogatif + did + sujet + base."
+  },
+  {
+   "d": 2,
+   "q": "He didn't ___ the answer.",
+   "o": [
+    "know",
+    "knew",
+    "known"
+   ],
+   "io": {
+    "knew": "Le passé est déjà dans didn't : on ne le met pas deux fois.",
+    "known": "Le participe passé ne s'emploie pas après didn't : on prend la base."
+   },
+   "i": "Après didn't, le verbe a-t-il encore besoin du passé ?",
+   "e": "« He didn't know the answer. » : didn't porte le passé, donc know reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je n'ai pas vu Tom hier. »",
+   "r": [
+    "I didn't see Tom yesterday",
+    "Yesterday I didn't see Tom"
+   ],
+   "i": "Le français dit « j'ai vu », mais l'anglais n'utilise pas have ici.",
+   "e": "« I didn't see Tom yesterday » : négation du passé = didn't + base (see, jamais saw)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Est-ce que tu as aimé le film ? »",
+   "r": [
+    "Did you like the film",
+    "Did you enjoy the film",
+    "Did you like the movie",
+    "Did you enjoy the movie"
+   ],
+   "i": "Une question sur un fait passé commence par ce moteur.",
+   "e": "« Did you like the film? » : did + sujet + base (like), même si le français dit « as aimé »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "where",
+    "did",
+    "you",
+    "buy",
+    "that",
+    "bag"
+   ],
+   "fin": "?",
+   "i": "Mot interrogatif, puis le moteur, puis le sujet.",
+   "e": "« Where did you buy that bag? » : mot interrogatif + did + sujet + base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I didn't went to school yesterday.",
+   "r": [
+    "I didn't go to school yesterday."
+   ],
+   "i": "Le passé est déjà dans didn't : que devient le verbe ?",
+   "e": "« I didn't go to school yesterday. » : après didn't, le verbe revient à la base (go, pas went)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Did you saw my keys?",
+   "r": [
+    "Did you see my keys?"
+   ],
+   "i": "Après did, quelle forme du verbe ?",
+   "e": "« Did you see my keys? » : did porte le passé, donc see reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « What time ___ the film start? »",
+   "r": [
+    "did"
+   ],
+   "i": "Question ouverte au passé : quel moteur ?",
+   "e": "« did » : What time + did + sujet + base (start)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Where you went last summer?",
+   "r": [
+    "Where did you go last summer?"
+   ],
+   "i": "Cette question au passé a besoin d'un moteur, et le verbe change.",
+   "e": "« Where did you go last summer? » : on ajoute did entre where et le sujet, et went redevient go."
+  },
+  {
+   "d": 3,
+   "q": "___ you at home last night?",
+   "o": [
+    "Were",
+    "Did",
+    "Was"
+   ],
+   "io": {
+    "Did": "Be ne s'emploie jamais avec did : on inverse be et le sujet.",
+    "Was": "« You » va avec were, jamais avec was."
+   },
+   "i": "Le verbe be fait-il sa question avec did ?",
+   "e": "« Were you at home last night? » : be pose sa question seul, avec you on prend were."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Pourquoi n'as-tu pas appelé ? »",
+   "r": [
+    "Why didn't you call",
+    "Why didn't you phone",
+    "Why didn't you ring",
+    "Why didn't you call me",
+    "Why didn't you phone me",
+    "Why did you not call"
+   ],
+   "i": "Mot interrogatif + moteur négatif + sujet + base.",
+   "e": "« Why didn't you call? » : didn't passe devant le sujet, call reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "what",
+    "did",
+    "Yusuf",
+    "eat",
+    "for",
+    "lunch"
+   ],
+   "fin": "?",
+   "i": "Mot interrogatif, puis le moteur, puis le sujet.",
+   "e": "« What did Yusuf eat for lunch? » : did porte le passé, eat reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She didn't called me last night.",
+   "r": [
+    "She didn't call me last night."
+   ],
+   "i": "Où est déjà la marque du passé ?",
+   "e": "« She didn't call me last night. » : le passé est dans didn't, donc call reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui porte la marque du passé dans la question.",
+   "p": "Where *did you buy this?",
+   "i": "Cherche le moteur de la question.",
+   "e": "« did » porte la marque du passé : le verbe buy reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "My grandfather ___ any English when he was young.",
+   "o": [
+    "didn't speak",
+    "didn't spoke",
+    "not spoke"
+   ],
+   "io": {
+    "didn't spoke": "Le passé est déjà dans didn't : speak reste à la base.",
+    "not spoke": "On ne met pas simplement not : la négation du passé passe par didn't."
+   },
+   "i": "Négation d'un verbe au passé : moteur + base.",
+   "e": "« My grandfather didn't speak any English » : didn't + base (speak)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He no watched the match yesterday.",
+   "r": [
+    "He didn't watch the match yesterday.",
+    "He did not watch the match yesterday."
+   ],
+   "i": "En anglais, la négation n'est pas « no » devant le verbe.",
+   "e": "« He didn't watch the match yesterday. » : la négation du passé = didn't + verbe à la base."
+  }
+ ],
+ "decor": [
+  {
+   "d": 1,
+   "q": "At 8 o'clock last night, I ___ TV.",
+   "o": [
+    "was watching",
+    "am watching",
+    "watch"
+   ],
+   "io": {
+    "am watching": "« Last night » est passé : on prend was, pas am.",
+    "watch": "Une action en cours dans le passé demande was/were + -ing."
+   },
+   "i": "À 8 heures hier soir, l'action était en cours.",
+   "e": "« I was watching TV » : à un moment précis du passé, l'action en cours se dit was + -ing."
+  },
+  {
+   "d": 1,
+   "q": "They ___ football when it started to rain.",
+   "o": [
+    "were playing",
+    "was playing",
+    "are playing"
+   ],
+   "io": {
+    "was playing": "« They » prend were, comme you et we.",
+    "are playing": "La scène est dans le passé : were, pas are."
+   },
+   "i": "Avec « they », quelle forme de be au passé ?",
+   "e": "« They were playing football » : they + were + -ing pour le décor."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui forment le décor.",
+   "p": "At nine o'clock, Emma *was *sleeping.",
+   "i": "Cherche be au passé + un verbe en -ing.",
+   "e": "« was sleeping » : was + -ing décrit l'action en cours à neuf heures."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We ___ (walk) home when it started to rain. »",
+   "r": [
+    "were walking"
+   ],
+   "i": "Le décor : be au passé + -ing.",
+   "e": "« were walking » : we + were + -ing pour l'action longue, puis « started » pour l'événement."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it",
+    "was",
+    "raining",
+    "all",
+    "day"
+   ],
+   "fin": ".",
+   "i": "Sujet + was + verbe en -ing.",
+   "e": "« It was raining all day. » : was + -ing décrit un décor qui dure."
+  },
+  {
+   "d": 1,
+   "q": "The phone rang while I ___ a shower.",
+   "o": [
+    "was taking",
+    "taking",
+    "was took"
+   ],
+   "io": {
+    "taking": "« Taking » seul n'est pas un verbe conjugué : il faut was + -ing.",
+    "was took": "Après was, le verbe prend -ing : was taking."
+   },
+   "i": "« While » introduit l'action longue.",
+   "e": "« While I was taking a shower » : après while, l'action en cours se met au passé continu."
+  },
+  {
+   "d": 2,
+   "q": "I was cooking when the phone suddenly ___.",
+   "o": [
+    "rang",
+    "was ringing",
+    "rings"
+   ],
+   "io": {
+    "was ringing": "L'événement qui interrompt est bref : passé simple.",
+    "rings": "La scène est passée : rang."
+   },
+   "i": "L'événement bref qui coupe le décor se met à quel temps ?",
+   "e": "« When the phone suddenly rang » : « suddenly » annonce un événement bref qui coupe le décor, donc passé simple (rang)."
+  },
+  {
+   "d": 2,
+   "q": "She was sleeping ___ the storm began.",
+   "o": [
+    "when",
+    "while"
+   ],
+   "io": {
+    "while": "« While » introduit plutôt l'action longue ; ici l'orage est l'événement."
+   },
+   "i": "L'orage est l'événement qui interrompt.",
+   "e": "« when the storm began » : when introduit l'événement bref, qui coupe le décor."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il pleuvait quand nous sommes arrivés. »",
+   "r": [
+    "It was raining when we arrived",
+    "When we arrived it was raining",
+    "It was raining when we got there",
+    "When we got there it was raining"
+   ],
+   "i": "Le décor : was + -ing. L'événement : passé simple.",
+   "e": "« It was raining when we arrived » : décor au continu, événement au simple."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « I ___ (read) a book when you came in. »",
+   "r": [
+    "was reading"
+   ],
+   "i": "Quelle était ton action en cours ?",
+   "e": "« was reading » : I + was + -ing pour le décor ; « came in » est l'événement."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "were",
+    "having",
+    "lunch",
+    "when",
+    "he",
+    "called"
+   ],
+   "fin": ".",
+   "i": "Décor d'abord, puis when et l'événement.",
+   "e": "« We were having lunch when he called. » : continu pour le décor, simple après when.",
+   "alt": [
+    [
+     "when",
+     "he",
+     "called",
+     "we",
+     "were",
+     "having",
+     "lunch"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "They was playing in the garden.",
+   "r": [
+    "They were playing in the garden."
+   ],
+   "i": "Quelle forme de be va avec « they » ?",
+   "e": "« They were playing in the garden. » : they prend were."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We were having dinner when the lights were going out.",
+   "r": [
+    "We were having dinner when the lights went out."
+   ],
+   "i": "Le moment où la lumière s'éteint est bref.",
+   "e": "« …when the lights went out » : l'événement bref qui interrompt est au passé simple."
+  },
+  {
+   "d": 2,
+   "q": "Touche l'événement qui interrompt.",
+   "p": "I was walking home when it *started to rain.",
+   "i": "Cherche le verbe au passé simple.",
+   "e": "« started » : l'événement bref qui coupe le décor « was walking »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il lisait quand sa sœur est entrée. »",
+   "r": [
+    "He was reading when his sister came in",
+    "He was reading when his sister walked in",
+    "He was reading when his sister entered"
+   ],
+   "i": "Le décor (lire) et l'événement (entrer).",
+   "e": "« He was reading when his sister came in » : was + -ing pour le décor, passé simple pour l'événement."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "As a child, I was playing in the garden every day.",
+   "r": [
+    "As a child, I played in the garden every day.",
+    "As a child I played in the garden every day.",
+    "As a child, I used to play in the garden every day.",
+    "As a child I used to play in the garden every day."
+   ],
+   "i": "« Every day » : est-ce un décor ou une habitude ?",
+   "e": "« As a child, I played in the garden every day. » : une habitude passée se dit au passé simple (ou avec used to)."
+  },
+  {
+   "d": 3,
+   "q": "When I was young, we ___ to the sea every summer.",
+   "o": [
+    "went",
+    "were going",
+    "was going"
+   ],
+   "io": {
+    "were going": "Le continu décrit un décor, pas une habitude répétée.",
+    "was going": "« We » prend were ; et une habitude passée se dit au passé simple."
+   },
+   "i": "« Every summer » décrit une habitude passée.",
+   "e": "« We went to the sea every summer » : une habitude passée est au passé simple."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "while",
+    "she",
+    "was",
+    "cooking",
+    "he",
+    "was",
+    "reading"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "he",
+     "was",
+     "reading",
+     "while",
+     "she",
+     "was",
+     "cooking"
+    ],
+    [
+     "she",
+     "was",
+     "cooking",
+     "while",
+     "he",
+     "was",
+     "reading"
+    ],
+    [
+     "while",
+     "he",
+     "was",
+     "reading",
+     "she",
+     "was",
+     "cooking"
+    ]
+   ],
+   "i": "Deux actions qui durent en même temps.",
+   "e": "« While she was cooking, he was reading. » : deux décors parallèles, deux fois was + -ing."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Yusuf was playing football when he was breaking his arm.",
+   "r": [
+    "Yusuf was playing football when he broke his arm."
+   ],
+   "i": "Se casser le bras est un événement bref.",
+   "e": "« …when he broke his arm » : l'événement bref qui interrompt est au passé simple."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « It was snowing, and the children ___ (build) a snowman. »",
+   "r": [
+    "were building"
+   ],
+   "i": "Deux actions de décor en même temps.",
+   "e": "« were building » : the children = they, donc were + -ing."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux mots qui donnent le décor.",
+   "p": "She *was *singing when the lights went out.",
+   "i": "Cherche be au passé + -ing.",
+   "e": "« was singing » : le décor ; « went out » est l'événement."
+  }
+ ],
+ "going-to": [
+  {
+   "d": 1,
+   "q": "I ___ going to visit my aunt on Sunday.",
+   "o": [
+    "am",
+    "is",
+    "are"
+   ],
+   "io": {
+    "is": "« Is » va avec he, she, it.",
+    "are": "« Are » va avec you, we, they."
+   },
+   "i": "Quelle forme de be va avec « I » ?",
+   "e": "« I am going to visit… » : going to a besoin de be, et I prend am."
+  },
+  {
+   "d": 1,
+   "q": "She is going to ___ a new bike.",
+   "o": [
+    "buy",
+    "buys",
+    "buying"
+   ],
+   "io": {
+    "buys": "Le -s est déjà porté par be : après to, le verbe reste à la base.",
+    "buying": "Après « going to », on met la base, sans -ing."
+   },
+   "i": "Après « going to », quelle forme du verbe ?",
+   "e": "« She is going to buy a new bike » : après to, le verbe reste à la base."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe à la base après « going to ».",
+   "p": "Yusuf is going to *learn Spanish next year.",
+   "i": "Cherche le verbe qui suit « going to ».",
+   "e": "« learn » : après going to, le verbe reste à la base."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « They ___ going to play tennis. »",
+   "r": [
+    "are"
+   ],
+   "i": "Quelle forme de be va avec « they » ?",
+   "e": "« are » : they + are + going to + base."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "are",
+    "going",
+    "to",
+    "move"
+   ],
+   "fin": ".",
+   "i": "Sujet + be + going to + base.",
+   "e": "« We are going to move. » : be conjugué, puis going to, puis la base."
+  },
+  {
+   "d": 1,
+   "q": "Look at the long queue! We ___ be late.",
+   "o": [
+    "are going to",
+    "going to",
+    "go to"
+   ],
+   "io": {
+    "going to": "Il manque be : we are going to.",
+    "go to": "Le futur proche demande be + going to, pas le verbe go."
+   },
+   "i": "Un signe visible annonce un retard.",
+   "e": "« We are going to be late » : une prédiction fondée sur un signe visible (la longue file) se dit be going to."
+  },
+  {
+   "d": 2,
+   "q": "___ you going to call him tonight?",
+   "o": [
+    "Are",
+    "Do",
+    "Is"
+   ],
+   "io": {
+    "Do": "Avec going to, c'est be qui porte la question, pas do.",
+    "Is": "« You » va avec are."
+   },
+   "i": "Dans la question, c'est be qui passe devant le sujet.",
+   "e": "« Are you going to call him tonight? » : on inverse be et le sujet."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je vais apprendre l'espagnol. »",
+   "r": [
+    "I am going to learn Spanish"
+   ],
+   "i": "Un projet décidé : be going to + base.",
+   "e": "« I am going to learn Spanish » : projet décidé = am going to + base."
+  },
+  {
+   "d": 2,
+   "q": "Complète à la négative : « She ___ going to come tonight. »",
+   "r": [
+    "isn't",
+    "is not",
+    "'s not"
+   ],
+   "i": "C'est be qui porte la négation.",
+   "e": "« isn't » : she + is + not + going to + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "are",
+    "you",
+    "going",
+    "to",
+    "call",
+    "him"
+   ],
+   "fin": "?",
+   "i": "La question commence par be.",
+   "e": "« Are you going to call him? » : be, sujet, going to, base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "am",
+    "not",
+    "going",
+    "to",
+    "wait"
+   ],
+   "fin": ".",
+   "i": "Le not se place après be.",
+   "e": "« I am not going to wait. » : la négation suit be."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She is going to visits us on Friday.",
+   "r": [
+    "She is going to visit us on Friday."
+   ],
+   "i": "Après « to », quelle forme du verbe ?",
+   "e": "« She is going to visit us on Friday. » : après to, base, sans -s."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I going to study tonight.",
+   "r": [
+    "I am going to study tonight.",
+    "I'm going to study tonight."
+   ],
+   "i": "Il manque un petit mot avant « going ».",
+   "e": "« I am going to study tonight. » : going to a besoin de be."
+  },
+  {
+   "d": 2,
+   "q": "We ___ build a tree house. We already have the wood.",
+   "o": [
+    "are going to",
+    "go to",
+    "are going"
+   ],
+   "io": {
+    "go to": "« Je vais faire » ne se dit pas avec go to : il faut be going to.",
+    "are going": "Il manque to : be going to + base."
+   },
+   "i": "Le projet est déjà décidé.",
+   "e": "« We are going to build a tree house » : un projet déjà décidé se dit be going to + base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I go to call my mum tonight.",
+   "r": [
+    "I am going to call my mum tonight.",
+    "I'm going to call my mum tonight."
+   ],
+   "i": "« Je vais appeler » ne se traduit pas par « I go to ».",
+   "e": "« I am going to call my mum tonight. » : le futur proche se dit be going to."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous n'allons pas acheter de voiture. »",
+   "r": [
+    "We are not going to buy a car",
+    "We aren't going to buy a car",
+    "We're not going to buy a car"
+   ],
+   "i": "Négation : not après be.",
+   "e": "« We aren't going to buy a car » : be + not + going to + base."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Qu'est-ce que tu vas faire ce week-end ? »",
+   "r": [
+    "What are you going to do this weekend",
+    "What are you going to do at the weekend",
+    "What are you going to do on the weekend"
+   ],
+   "i": "Mot interrogatif, puis be, puis le sujet.",
+   "e": "« What are you going to do this weekend? » : what + be + sujet + going to + base."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "what",
+    "is",
+    "Maryam",
+    "going",
+    "to",
+    "cook"
+   ],
+   "fin": "?",
+   "i": "Mot interrogatif + be + sujet.",
+   "e": "« What is Maryam going to cook? » : be passe devant le sujet."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Are you going to meeting Tom tomorrow?",
+   "r": [
+    "Are you going to meet Tom tomorrow?"
+   ],
+   "i": "Après « to », quelle forme du verbe ?",
+   "e": "« Are you going to meet Tom tomorrow? » : base après to, pas de -ing."
+  },
+  {
+   "d": 3,
+   "q": "Be careful! You ___ spill your tea.",
+   "o": [
+    "are going to",
+    "go to",
+    "are going"
+   ],
+   "io": {
+    "go to": "Le futur proche demande be + going to.",
+    "are going": "Il manque to."
+   },
+   "i": "Un danger se voit maintenant.",
+   "e": "« You are going to spill your tea » : prédiction fondée sur un signe visible."
+  },
+  {
+   "d": 3,
+   "q": "Touche les trois mots qui annoncent un projet.",
+   "p": "I *am *going *to travel in August.",
+   "i": "Cherche be + going + to.",
+   "e": "« am going to » : la forme complète du projet décidé."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « Look out! That boy ___ (fall) off his bike! »",
+   "r": [
+    "is going to fall"
+   ],
+   "i": "Un signe visible annonce la chute.",
+   "e": "« is going to fall » : prédiction fondée sur ce qu'on voit."
+  }
+ ]
+}

@@ -1,0 +1,1528 @@
+{
+ "majordome-do": [
+  {
+   "d": 1,
+   "q": "Complète : « ___ Tom like chocolate? »",
+   "o": [
+    "Does",
+    "Do",
+    "Is"
+   ],
+   "io": {
+    "Do": "« Do » va avec I, you, we, they. Tom, c'est « he », donc le majordome est « does ».",
+    "Is": "« Is » est une forme du verbe be. Avec le verbe ordinaire « like », la question se pose avec « do » ou « does »."
+   },
+   "i": "Remplace « Tom » par un pronom (he, she ou it) pour choisir le bon majordome.",
+   "e": "« Does Tom like chocolate? » : Tom = he, donc la question commence par « does ». C'est « does » qui porte le -s, et « like » reste à la base."
+  },
+  {
+   "d": 1,
+   "q": "Mets à la négative : « I ___ like coffee. »",
+   "o": [
+    "don't",
+    "doesn't",
+    "am not"
+   ],
+   "io": {
+    "doesn't": "« Doesn't » est réservé à he, she et it. Avec « I », le majordome est « do ».",
+    "am not": "« Am not » est la négation du verbe be. Pour nier le verbe ordinaire « like », il faut « do » + not."
+   },
+   "i": "Avec « I », quel majordome appelle-t-on : do ou does ?",
+   "e": "« I don't like coffee. » : pour nier un verbe ordinaire au présent, on place « don't » (do not) devant le verbe à la base."
+  },
+  {
+   "d": 1,
+   "q": "Mets à la négative : « She ___ like fish. »",
+   "o": [
+    "doesn't",
+    "don't",
+    "isn't"
+   ],
+   "io": {
+    "don't": "« Don't » va avec I, you, we, they. Avec « she », le majordome est « does », donc « doesn't ».",
+    "isn't": "« Isn't » nie le verbe be. Ici le verbe est « like », qui a besoin de « does » + not."
+   },
+   "i": "« She » fait partie de he, she, it : quel majordome prennent-ils ?",
+   "e": "« She doesn't like fish. » : avec he, she, it, le majordome est « does », et sa négation est « doesn't »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ you live here? »",
+   "r": [
+    "Do"
+   ],
+   "i": "Avec « you », le majordome n'a pas de -es.",
+   "e": "« Do you live here? » : avec I, you, we, they, on pose la question avec « do » placé devant le sujet."
+  },
+  {
+   "d": 1,
+   "q": "Touche le majordome de la question.",
+   "p": "*Does your sister play the piano?",
+   "i": "C'est le tout premier mot de la phrase.",
+   "e": "« Does » est le majordome : il ouvre la question et porte le -s de « your sister » (= she). Le verbe « play » reste à la base."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "do",
+    "you",
+    "like",
+    "pizza"
+   ],
+   "fin": "?",
+   "i": "Une question au présent simple commence par le majordome.",
+   "e": "« Do you like pizza? » : on met d'abord « do », puis le sujet, puis le verbe à la base."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Does he ___ English? »",
+   "o": [
+    "speak",
+    "speaks",
+    "speaking"
+   ],
+   "io": {
+    "speaks": "Le -s est déjà dans « does ». Il ne faut jamais deux -s : le verbe reste à la base.",
+    "speaking": "La forme en -ing ne s'emploie pas ici. Après « does », on met le verbe à la base."
+   },
+   "i": "Après « does », le verbe est tout nu : sans -s et sans -ing.",
+   "e": "« Does he speak English? » : « does » porte déjà le -s de he, donc « speak » reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « My dad doesn't ___ coffee. »",
+   "o": [
+    "drink",
+    "drinks",
+    "drinking"
+   ],
+   "io": {
+    "drinks": "Le -s est déjà dans « doesn't ». Le verbe principal revient à la base.",
+    "drinking": "La forme en -ing ne s'emploie pas après « doesn't ». Il faut le verbe à la base."
+   },
+   "i": "Quel est le verbe à la base, sans aucune terminaison ?",
+   "e": "« My dad doesn't drink coffee. » : le -s est déjà dans « doesn't », donc « drink » reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous n'aimons pas le froid. »",
+   "r": [
+    "We don't like the cold",
+    "We don't like cold weather",
+    "We don't like cold",
+    "We do not like the cold",
+    "We do not like cold weather"
+   ],
+   "i": "Avec « we », on appelle « do » + not devant le verbe à la base.",
+   "e": "« We don't like the cold. » : on nie le verbe « like » avec « don't » (do not) puis la base du verbe, sans aucun -s."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Est-ce que tes amis jouent au football ? »",
+   "r": [
+    "Do your friends play football",
+    "Do your friends play soccer"
+   ],
+   "i": "« Tes amis » = they : quel majordome, et où le place-t-on ?",
+   "e": "« Do your friends play football? » : « your friends » = they, donc on commence par « do », puis le sujet, puis « play » à la base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "when",
+    "does",
+    "the",
+    "train",
+    "leave"
+   ],
+   "fin": "?",
+   "i": "Mot interrogatif d'abord, puis le majordome, puis le sujet, puis le verbe.",
+   "e": "« When does the train leave? » : mot interrogatif + does + sujet + verbe à la base. « The train » = it, donc « does »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He doesn't likes tea.",
+   "r": [
+    "He doesn't like tea.",
+    "He does not like tea."
+   ],
+   "i": "Qui porte déjà le -s dans cette phrase ?",
+   "e": "« He doesn't like tea. » : le -s est déjà dans « doesn't », donc le verbe principal reste à la base. En anglais, il n'y a jamais deux -s."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I not like tea.",
+   "r": [
+    "I don't like tea.",
+    "I do not like tea."
+   ],
+   "i": "« Not » ne peut pas se placer seul devant un verbe ordinaire : il lui faut un assistant.",
+   "e": "« I don't like tea. » : en français on dit « je n'aime pas », mais en anglais il faut le majordome « do » devant « not »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe principal, resté à la base.",
+   "p": "My dad doesn't *eat fish.",
+   "i": "Il vient juste après « doesn't ».",
+   "e": "« eat » reste à la base : le -s de « my dad » est déjà porté par « doesn't »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Speak you English?",
+   "r": [
+    "Do you speak English?"
+   ],
+   "i": "En anglais, un verbe ordinaire ne passe pas devant son sujet : qui passe devant ?",
+   "e": "« Do you speak English? » : en français on peut inverser (« parles-tu ? »), mais en anglais c'est le majordome « do » qui passe devant le sujet."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She don't speak French.",
+   "r": [
+    "She doesn't speak French.",
+    "She does not speak French."
+   ],
+   "i": "Quel majordome va avec « she » ?",
+   "e": "« She doesn't speak French. » : avec he, she, it, le majordome est « does », donc la négation est « doesn't »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour faire une phrase négative.",
+   "m": [
+    "my",
+    "friends",
+    "don't",
+    "play",
+    "chess",
+    "on",
+    "Sundays"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis la négation, puis le verbe à la base.",
+   "e": "« My friends don't play chess on Sundays. » : « my friends » = they, donc « don't », puis « play » à la base.",
+   "alt": [
+    [
+     "on",
+     "Sundays",
+     "my",
+     "friends",
+     "don't",
+     "play",
+     "chess"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mon frère n'aime pas le café. »",
+   "r": [
+    "My brother doesn't like coffee",
+    "My brother does not like coffee"
+   ],
+   "i": "« Mon frère » = he : quelle négation, et quelle forme du verbe ensuite ?",
+   "e": "« My brother doesn't like coffee. » : « doesn't » porte le -s, et « like » reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "Quelle question est juste ?",
+   "o": [
+    "What does your mum cook on Sundays?",
+    "What your mum cooks on Sundays?",
+    "What does your mum cooks on Sundays?"
+   ],
+   "io": {
+    "What your mum cooks on Sundays?": "Il manque le majordome « does » après le mot interrogatif.",
+    "What does your mum cooks on Sundays?": "Le -s est déjà dans « does » : le verbe « cook » reste à la base."
+   },
+   "i": "Mot interrogatif, puis majordome, puis sujet, puis verbe sans -s.",
+   "e": "« What does your mum cook on Sundays? » : mot interrogatif + does + sujet + verbe à la base. Le -s est dans « does »."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « Where ___ your cousins live? »",
+   "r": [
+    "do"
+   ],
+   "i": "« Your cousins » est un pluriel : pense à « they ».",
+   "e": "« Where do your cousins live? » : avec un pluriel (= they), on emploie « do », puis le sujet, puis le verbe à la base."
+  }
+ ],
+ "reponses-courtes": [
+  {
+   "d": 1,
+   "q": "Réponds « oui » : « Do you like tea? — Yes, I ___. »",
+   "o": [
+    "do",
+    "am",
+    "can"
+   ],
+   "io": {
+    "am": "On reprend le moteur de la question, qui est « do » ici. « Am » appartient au verbe be.",
+    "can": "On reprend le moteur de la question, qui est « do » ici, pas « can »."
+   },
+   "i": "Quel est le premier mot de la question ? Reprends-le.",
+   "e": "« Yes, I do. » : on répond avec le moteur de la question (« do ») et on ne répète pas le verbe « like »."
+  },
+  {
+   "d": 1,
+   "q": "Réponds « non » : « Does he play chess? — No, he ___. »",
+   "o": [
+    "doesn't",
+    "isn't",
+    "don't"
+   ],
+   "io": {
+    "isn't": "La question commence par « does », donc la réponse reprend « does » : « doesn't ».",
+    "don't": "Avec « he », le moteur de la question est « does », pas « do » : on répond « doesn't »."
+   },
+   "i": "Reprends le moteur de la question et ajoute n't.",
+   "e": "« No, he doesn't. » : on reprend « does » et, pour dire non, on y ajoute n't."
+  },
+  {
+   "d": 1,
+   "q": "Réponds « oui » : « Is she a doctor? — Yes, she ___. »",
+   "o": [
+    "is",
+    "does",
+    "has"
+   ],
+   "io": {
+    "does": "La question commence par « is » : on reprend « is ».",
+    "has": "La question commence par « is » : on reprend « is »."
+   },
+   "i": "Quel est le moteur de la question ?",
+   "e": "« Yes, she is. » : on reprend le moteur de la question, ici le verbe be sous la forme « is »."
+  },
+  {
+   "d": 1,
+   "q": "Réponds « oui » : « Are they at home? — Yes, they ___. »",
+   "r": [
+    "are"
+   ],
+   "i": "Reprends le premier mot de la question.",
+   "e": "« Yes, they are. » : on reprend le moteur de la question (« are »), sans répéter le reste."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui répond (le moteur).",
+   "p": "Do you like pizza? — Yes, I *do.",
+   "i": "Ce mot est le même que le premier mot de la question.",
+   "e": "« do » est le moteur de la question : on le reprend dans la réponse courte au lieu de répéter « like »."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour répondre « oui » à « Does she like tea? ».",
+   "m": [
+    "yes,",
+    "she",
+    "does"
+   ],
+   "fin": ".",
+   "i": "Yes, puis le pronom, puis le moteur.",
+   "e": "« Yes, she does. » : on dit yes, puis le pronom, puis le moteur de la question (« does »), sans répéter le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Réponds « non » : « Can you swim? — No, I ___. »",
+   "o": [
+    "can't",
+    "don't",
+    "am not"
+   ],
+   "io": {
+    "don't": "La question commence par « can », donc la réponse reprend « can » : « can't ».",
+    "am not": "La question commence par « can », donc la réponse reprend « can » : « can't »."
+   },
+   "i": "Reprends le moteur de la question et ajoute n't.",
+   "e": "« No, I can't. » : on reprend « can » avec n't. C'est toujours le moteur de la question qui revient."
+  },
+  {
+   "d": 2,
+   "q": "Réponds « non » : « Are your parents at home? — No, they ___. »",
+   "o": [
+    "aren't",
+    "don't",
+    "isn't"
+   ],
+   "io": {
+    "don't": "La question commence par « are » : on reprend « are », donc « aren't ».",
+    "isn't": "Avec « they », le verbe be est « are », donc « aren't »."
+   },
+   "i": "Quel est le moteur de la question ? Ajoute n't.",
+   "e": "« No, they aren't. » : la question commence par « are », donc on reprend « are » avec n't."
+  },
+  {
+   "d": 2,
+   "q": "Réponds en anglais à « Does he like pizza? » : « Oui. »",
+   "r": [
+    "Yes, he does",
+    "Yes he does"
+   ],
+   "i": "Oui, puis le pronom, puis le moteur de la question.",
+   "e": "« Yes, he does. » : on répond yes, puis le pronom, puis « does », qui est le moteur de la question."
+  },
+  {
+   "d": 2,
+   "q": "Réponds « oui » : « Does your mum work here? — Yes, she ___. »",
+   "o": [
+    "does",
+    "works",
+    "is"
+   ],
+   "io": {
+    "works": "On ne répète pas le verbe principal : on reprend le moteur de la question, « does ».",
+    "is": "La question commence par « does », donc la réponse reprend « does »."
+   },
+   "i": "On ne répète pas « work » : on reprend le moteur.",
+   "e": "« Yes, she does. » : on répond avec le moteur « does » et jamais avec le verbe principal."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour répondre « non » à « Can you swim? ».",
+   "m": [
+    "no,",
+    "I",
+    "can't"
+   ],
+   "fin": ".",
+   "i": "No, puis le pronom, puis le moteur avec n't.",
+   "e": "« No, I can't. » : on dit no, puis le pronom, puis le moteur de la question (« can ») avec n't."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la réponse à « Do you like it? ».",
+   "f": "Yes, I like.",
+   "r": [
+    "Yes, I do.",
+    "Yes I do."
+   ],
+   "i": "Quel est le moteur de la question ? C'est lui qui doit revenir.",
+   "e": "« Yes, I do. » : le piège du francophone est de répéter le verbe. En anglais, on reprend le moteur de la question (« do »)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la réponse à « Can he drive? ».",
+   "f": "No, he doesn't.",
+   "r": [
+    "No, he can't.",
+    "No, he cannot."
+   ],
+   "i": "Regarde le premier mot de la question.",
+   "e": "« No, he can't. » : la question commence par « can », donc la réponse reprend « can » (avec n't), pas « does »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui répond à la question.",
+   "p": "Is Tom tired? — No, he *isn't.",
+   "i": "Il reprend le moteur de la question.",
+   "e": "« isn't » reprend le moteur « is » de la question « Is Tom tired? », avec n't pour dire non."
+  },
+  {
+   "d": 3,
+   "q": "Réponds « non » : « Do they speak French? — No, they ___. »",
+   "o": [
+    "don't",
+    "aren't",
+    "can't"
+   ],
+   "io": {
+    "aren't": "La question commence par « do », donc la réponse reprend « do » : « don't ».",
+    "can't": "La question commence par « do », donc la réponse reprend « do » : « don't »."
+   },
+   "i": "Quel est le premier mot de la question ?",
+   "e": "« No, they don't. » : la question commence par « do », donc on reprend « do » avec n't."
+  },
+  {
+   "d": 3,
+   "q": "Réponds « non » : « Have you got a bike? — No, I ___. »",
+   "r": [
+    "haven't",
+    "have not"
+   ],
+   "i": "Quel est le moteur de la question ?",
+   "e": "« No, I haven't. » : le moteur de la question est « have », repris avec n't."
+  },
+  {
+   "d": 3,
+   "q": "Réponds en anglais à « Can your sister swim? » : « Non, elle ne sait pas. »",
+   "r": [
+    "No, she can't",
+    "No, she cannot",
+    "No she can't",
+    "No, she can't swim",
+    "No, she cannot swim"
+   ],
+   "i": "Reprends le moteur de la question avec n't.",
+   "e": "« No, she can't. » : no + pronom + « can't », car la question commence par « can »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la réponse à « Does she like it? ».",
+   "f": "Yes, she likes.",
+   "r": [
+    "Yes, she does.",
+    "Yes she does."
+   ],
+   "i": "On ne répète pas le verbe principal : quel moteur reprendre ?",
+   "e": "« Yes, she does. » : on reprend « does » (le moteur de la question), pas « likes »."
+  },
+  {
+   "d": 3,
+   "q": "Que dis-tu pour contredire « You don't like tea? » et dire « Si, j'aime ça ! » ?",
+   "o": [
+    "Yes, I do!",
+    "No, I do!",
+    "Yes, I don't!"
+   ],
+   "io": {
+    "No, I do!": "« No » et « do » se contredisent : on ne peut pas dire non et ensuite reprendre un moteur positif.",
+    "Yes, I don't!": "« Yes » et « don't » se contredisent : on ne peut pas dire oui et ensuite reprendre un moteur négatif."
+   },
+   "i": "Le français a « si » ; l'anglais dit « yes » et reprend le moteur de façon positive.",
+   "e": "« Yes, I do! » : le « yes » contredit la question négative, et « do » (dit fort) fait le travail du « si » français."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "does",
+    "your",
+    "dad",
+    "work",
+    "here"
+   ],
+   "fin": "?",
+   "i": "La question commence par son moteur.",
+   "e": "« Does your dad work here? » : does + sujet + verbe à la base ; on y répondra « Yes, he does »."
+  }
+ ],
+ "en-direct": [
+  {
+   "d": 1,
+   "q": "Complète : « Look! The dog ___ in the garden. »",
+   "o": [
+    "is running",
+    "runs",
+    "run"
+   ],
+   "io": {
+    "runs": "« Look! » montre une action qui se passe sous nos yeux : on emploie be + -ing, pas le présent simple.",
+    "run": "Cette forme est la base du verbe. Pour une action en cours, il faut be + verbe en -ing."
+   },
+   "i": "« Look! » veut dire qu'on voit l'action maintenant : pense à « être en train de ».",
+   "e": "« The dog is running in the garden. » : une action en train de se dérouler se dit avec be + -ing. Le sujet « the dog » (= it) prend « is »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Tom ___ a letter right now. »",
+   "o": [
+    "is writing",
+    "is write",
+    "writing"
+   ],
+   "io": {
+    "is write": "Après be, le verbe doit prendre -ing : « is writing ».",
+    "writing": "La forme en -ing ne s'emploie jamais seule : elle a besoin de be devant elle."
+   },
+   "i": "« Right now » veut dire « en ce moment » : il faut be + -ing.",
+   "e": "« Tom is writing a letter right now. » : on utilise « is » avec Tom (= he), puis le verbe en -ing. Le e de « write » tombe devant -ing."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « They ___ football at the moment. »",
+   "o": [
+    "are playing",
+    "is playing",
+    "play"
+   ],
+   "io": {
+    "is playing": "Avec « they », be est « are », pas « is ».",
+    "play": "« At the moment » annonce une action en cours : il faut be + -ing, pas la base du verbe."
+   },
+   "i": "« At the moment » veut dire « en ce moment ». Quelle forme de be va avec « they » ?",
+   "e": "« They are playing football at the moment. » : avec « they », on emploie « are » suivi du verbe en -ing."
+  },
+  {
+   "d": 1,
+   "q": "Écris la forme en -ing de « make » : « I am ___ a cake. »",
+   "r": [
+    "making"
+   ],
+   "i": "Le e muet à la fin du verbe disparaît devant -ing.",
+   "e": "« I am making a cake. » : make perd son e devant -ing, ce qui donne « making »."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui forment le présent continu.",
+   "p": "Listen! The birds *are *singing.",
+   "i": "Cherche be au présent, puis le verbe terminé par -ing.",
+   "e": "« are singing » : le présent continu se forme avec be (« are », car « the birds » = they) et le verbe en -ing."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "she",
+    "is",
+    "reading",
+    "a",
+    "book"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis be, puis le verbe en -ing, puis le reste.",
+   "e": "« She is reading a book. » : on met le sujet, puis be (« is »), puis le verbe en -ing, puis le reste."
+  },
+  {
+   "d": 2,
+   "q": "Quelle est la forme en -ing de « run » ?",
+   "o": [
+    "running",
+    "runing",
+    "runming"
+   ],
+   "io": {
+    "runing": "Après une voyelle courte et une seule consonne, on double la consonne : « running ».",
+    "runming": "C'est la dernière lettre (le n) qu'on double, pas une autre lettre."
+   },
+   "i": "« Run » est court et finit par une seule consonne : cette lettre est doublée.",
+   "e": "« running » : run → running. On double la consonne finale (comme sit → sitting)."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Be quiet! Dad ___ on the phone. »",
+   "o": [
+    "is talking",
+    "talks",
+    "talking"
+   ],
+   "io": {
+    "talks": "« Be quiet! » montre que papa parle en ce moment : on emploie be + -ing, pas le présent simple.",
+    "talking": "La forme en -ing ne s'emploie jamais sans be devant elle."
+   },
+   "i": "Papa est en train de parler : choisis la forme avec be.",
+   "e": "« Dad is talking on the phone. » : pour une action en cours, on emploie « is » (Dad = he) suivi du verbe en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je suis en train de lire. »",
+   "r": [
+    "I am reading",
+    "I'm reading"
+   ],
+   "i": "« En train de » se dit avec be + verbe en -ing.",
+   "e": "« I am reading. » : « être en train de » = be au présent + verbe en -ing. Avec « I », be devient « am »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ils ne dorment pas en ce moment. »",
+   "r": [
+    "They aren't sleeping",
+    "They aren't sleeping at the moment",
+    "They aren't sleeping right now",
+    "They aren't sleeping now",
+    "They are not sleeping",
+    "They are not sleeping at the moment",
+    "They are not sleeping right now",
+    "They are not sleeping now",
+    "They're not sleeping",
+    "They're not sleeping at the moment",
+    "They're not sleeping right now",
+    "They're not sleeping now"
+   ],
+   "i": "On nie avec be + not, puis le verbe en -ing. « En ce moment » se dit « at the moment » ou « right now ».",
+   "e": "« They aren't sleeping. » : pour nier le présent continu, on place « not » après be, puis on garde le verbe en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "is",
+    "your",
+    "mum",
+    "cooking",
+    "dinner"
+   ],
+   "fin": "?",
+   "i": "Pour poser la question, be passe devant le sujet.",
+   "e": "« Is your mum cooking dinner? » : be passe devant le sujet, puis vient le verbe en -ing."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I reading a book.",
+   "r": [
+    "I am reading a book.",
+    "I'm reading a book."
+   ],
+   "i": "Le verbe en -ing ne marche pas seul : il lui manque un petit mot devant.",
+   "e": "« I am reading a book. » : le verbe en -ing a toujours besoin de be devant lui. Le français n'a pas ce petit mot, d'où l'oubli."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Look! It rains.",
+   "r": [
+    "Look! It is raining.",
+    "Look! It's raining."
+   ],
+   "i": "« Look! » montre que la pluie tombe en ce moment même.",
+   "e": "« Look! It is raining. » : avec « Look! » (action sous nos yeux), on emploie be + -ing, pas le présent simple."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe en -ing.",
+   "p": "Emma is *swimming in the pool.",
+   "i": "Cherche le mot qui se termine par -ing.",
+   "e": "« swimming » est le verbe en -ing : « swim » finit par une voyelle et une consonne, donc on double le m."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She is writeing a letter.",
+   "r": [
+    "She is writing a letter.",
+    "She's writing a letter."
+   ],
+   "i": "L'erreur est dans l'orthographe du verbe en -ing.",
+   "e": "« She is writing a letter. » : le e muet final tombe devant -ing (write → writing, make → making)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "They is watching TV.",
+   "r": [
+    "They are watching TV.",
+    "They're watching TV."
+   ],
+   "i": "Regarde la forme de be : va-t-elle avec « they » ?",
+   "e": "« They are watching TV. » : avec « they », be devient « are », jamais « is »."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces questions est juste ?",
+   "o": [
+    "Is she working today?",
+    "Does she working today?",
+    "Is working she today?"
+   ],
+   "io": {
+    "Does she working today?": "Avec be + -ing, on n'emploie pas « does » : be passe lui-même devant le sujet.",
+    "Is working she today?": "Be se place devant le sujet, puis vient le verbe en -ing : « Is she working ? »."
+   },
+   "i": "Be passe devant le sujet, et le verbe en -ing vient après.",
+   "e": "« Is she working today? » : pour poser une question au présent continu, be passe devant le sujet."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase dit une action qui se passe maintenant ?",
+   "o": [
+    "Listen! Ali is playing the guitar.",
+    "Ali plays the guitar every day.",
+    "Ali play the guitar."
+   ],
+   "io": {
+    "Ali plays the guitar every day.": "« Every day » décrit une habitude, pas une action en cours.",
+    "Ali play the guitar.": "Avec Ali (= he), le verbe aurait un -s, et cette phrase ne dit pas que c'est en cours."
+   },
+   "i": "« Listen! » annonce quelque chose qu'on entend en ce moment.",
+   "e": "« Listen! Ali is playing the guitar. » : « Listen! » annonce une action en cours, donc be + -ing."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il ne pleut pas maintenant. »",
+   "r": [
+    "It isn't raining now",
+    "It is not raining now",
+    "It isn't raining at the moment",
+    "It is not raining at the moment",
+    "It isn't raining right now",
+    "It is not raining right now",
+    "It's not raining now",
+    "It's not raining right now",
+    "It's not raining at the moment"
+   ],
+   "i": "« It » + be + not + verbe en -ing.",
+   "e": "« It isn't raining now. » : on nie le présent continu avec be + not, puis le verbe en -ing."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "they",
+    "aren't",
+    "listening",
+    "to",
+    "the",
+    "teacher"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis be + not, puis le verbe en -ing.",
+   "e": "« They aren't listening to the teacher. » : sujet + are + not + verbe en -ing + complément."
+  }
+ ],
+ "telecommande": [
+  {
+   "d": 1,
+   "q": "Pour dire « Ferme la porte ! » :",
+   "o": [
+    "Close the door!",
+    "You close the door!",
+    "Closes the door!"
+   ],
+   "io": {
+    "You close the door!": "L'impératif n'a pas de sujet : on commence directement par le verbe.",
+    "Closes the door!": "L'impératif est la base du verbe, sans -s."
+   },
+   "i": "L'impératif, c'est le verbe tout seul, sans sujet.",
+   "e": "« Close the door! » : l'impératif est la base du verbe, sans sujet et sans -s."
+  },
+  {
+   "d": 1,
+   "q": "Pour dire « Ne touche pas ! » :",
+   "o": [
+    "Don't touch!",
+    "Not touch!",
+    "No touch!"
+   ],
+   "io": {
+    "Not touch!": "« Not » ne suffit pas pour interdire : il faut « don't » devant le verbe.",
+    "No touch!": "« No » ne s'emploie pas ainsi : pour interdire, on dit « don't » + base."
+   },
+   "i": "Pour interdire, il y a un petit mot à mettre devant le verbe.",
+   "e": "« Don't touch! » : pour interdire, on met « don't » devant la base du verbe. En français on dit « ne… pas », mais en anglais « not » seul ne suffit pas."
+  },
+  {
+   "d": 1,
+   "q": "Pour proposer « Jouons au tennis ! » :",
+   "o": [
+    "Let's play tennis!",
+    "Let's to play tennis!",
+    "Let's playing tennis!"
+   ],
+   "io": {
+    "Let's to play tennis!": "Après « let's », on met directement la base du verbe, sans « to ».",
+    "Let's playing tennis!": "Après « let's », le verbe reste à la base, sans -ing."
+   },
+   "i": "Pour proposer à plusieurs de faire quelque chose, on utilise « let's ».",
+   "e": "« Let's play tennis! » : « let's » + base du verbe, sans « to » ni -ing."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ the window, please. » (ouvrir)",
+   "r": [
+    "Open"
+   ],
+   "i": "À l'impératif, on utilise la base du verbe « open ».",
+   "e": "« Open the window, please. » : l'impératif est la base du verbe, sans sujet."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe de l'ordre.",
+   "p": "*Listen to the teacher, please.",
+   "i": "Dans un ordre, le verbe est tout au début.",
+   "e": "« Listen » est le verbe de l'ordre : à l'impératif, la phrase commence directement par le verbe."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour donner l'ordre.",
+   "m": [
+    "sit",
+    "down",
+    "please"
+   ],
+   "alt": [
+    [
+     "please",
+     "sit",
+     "down"
+    ]
+   ],
+   "fin": ".",
+   "i": "L'ordre commence par le verbe, ou par « please ».",
+   "e": "« Sit down, please. » : le verbe « sit » vient en premier. On peut aussi mettre « please » au début : « Please sit down. »"
+  },
+  {
+   "d": 2,
+   "q": "Pour dire « Ne mange pas ici ! » :",
+   "o": [
+    "Don't eat here!",
+    "Not eat here!",
+    "Don't to eat here!"
+   ],
+   "io": {
+    "Not eat here!": "« Not » ne suffit pas pour interdire : il faut « don't » devant le verbe.",
+    "Don't to eat here!": "Après « don't », le verbe est à la base, sans « to »."
+   },
+   "i": "Interdiction : un petit mot en « don't », puis le verbe tout nu.",
+   "e": "« Don't eat here! » : pour interdire, on met « don't » devant la base du verbe, sans « to »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « ___ noisy in the library! »",
+   "o": [
+    "Don't be",
+    "Not be",
+    "Don't"
+   ],
+   "io": {
+    "Not be": "« Not » ne suffit pas pour interdire : il faut « don't ».",
+    "Don't": "« Noisy » est un adjectif, il lui faut le verbe be : « Don't be noisy »."
+   },
+   "i": "« Noisy » est un adjectif : il a besoin du verbe be.",
+   "e": "« Don't be noisy in the library! » : avec un adjectif, on garde be après « don't »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ouvrez vos livres. »",
+   "r": [
+    "Open your books",
+    "Open your books, please",
+    "Please open your books"
+   ],
+   "i": "L'impératif est le même pour une ou plusieurs personnes : la base du verbe.",
+   "e": "« Open your books. » : à l'impératif, il n'y a ni sujet ni terminaison, même quand on parle à plusieurs personnes."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Mangeons une pizza ! »",
+   "r": [
+    "Let's eat pizza",
+    "Let's eat a pizza",
+    "Let's have pizza",
+    "Let's have a pizza",
+    "Let's have some pizza",
+    "Let's eat some pizza",
+    "Let us eat pizza",
+    "Let us eat a pizza"
+   ],
+   "i": "Pour proposer à plusieurs de faire quelque chose, utilise « let's » + la base du verbe.",
+   "e": "« Let's eat a pizza! » : « let's » + base du verbe, sans « to ». « Let's have a pizza » est aussi correct."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour proposer.",
+   "m": [
+    "let's",
+    "play",
+    "football",
+    "after",
+    "school"
+   ],
+   "fin": "!",
+   "i": "Une proposition commence par « let's », puis la base du verbe.",
+   "e": "« Let's play football after school! » : « let's » + base du verbe + complément."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Not touch!",
+   "r": [
+    "Don't touch!",
+    "Do not touch!"
+   ],
+   "i": "Pour interdire, il faut un petit mot devant le verbe.",
+   "e": "« Don't touch! » : pour interdire, on met « don't » devant la base du verbe. En français « ne… pas » marche, mais « not » seul ne suffit pas en anglais."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Let's to go!",
+   "r": [
+    "Let's go!"
+   ],
+   "i": "Après « let's », le verbe est à l'état nu.",
+   "e": "« Let's go! » : après « let's », le verbe est à la base, sans « to »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui sert à interdire.",
+   "p": "*Don't run in the corridor!",
+   "i": "C'est le premier mot de la phrase.",
+   "e": "« Don't » sert à interdire : on le place devant la base du verbe (« Don't run »)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Don't be worry.",
+   "r": [
+    "Don't worry."
+   ],
+   "i": "« Worry » est déjà un verbe : a-t-il besoin de be ?",
+   "e": "« Don't worry. » : « worry » est un verbe, donc « don't » se place directement devant lui. On garde be seulement avec un adjectif (« Don't be sad »)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Don't to be late!",
+   "r": [
+    "Don't be late!"
+   ],
+   "i": "Regarde le petit mot entre « don't » et « be ».",
+   "e": "« Don't be late! » : après « don't », on met be à la base, sans « to »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "Don't be afraid.",
+    "Don't afraid.",
+    "Not be afraid."
+   ],
+   "io": {
+    "Don't afraid.": "« Afraid » est un adjectif : il lui faut le verbe be, « Don't be afraid ».",
+    "Not be afraid.": "« Not » ne suffit pas pour interdire : il faut « don't » devant le verbe."
+   },
+   "i": "« Afraid » est un adjectif, et on interdit avec « don't ».",
+   "e": "« Don't be afraid. » : avec un adjectif, on emploie « don't be » + adjectif."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ne regarde pas la télé ce soir ! »",
+   "r": [
+    "Don't watch TV tonight",
+    "Don't watch TV this evening",
+    "Don't watch television tonight",
+    "Don't watch television this evening",
+    "Don't watch the TV tonight",
+    "Don't watch the TV this evening",
+    "Don't watch TV this evening!",
+    "Do not watch TV tonight"
+   ],
+   "i": "Interdiction : « don't » + base du verbe.",
+   "e": "« Don't watch TV tonight! » : « don't » devant la base du verbe. « Tonight » ou « this evening » disent « ce soir »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ne sois pas triste ! »",
+   "r": [
+    "Don't be sad",
+    "Do not be sad"
+   ],
+   "i": "« Triste » est un adjectif : il lui faut be.",
+   "e": "« Don't be sad! » : « sad » est un adjectif, donc on garde be après « don't ». En français on dit « ne sois pas », et l'anglais garde bien be ici."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour interdire poliment.",
+   "m": [
+    "please",
+    "don't",
+    "touch",
+    "the",
+    "hot",
+    "pan"
+   ],
+   "fin": "!",
+   "i": "Pour interdire, « don't » se place devant le verbe à la base ; « please » peut ouvrir ou fermer la phrase.",
+   "e": "« Please don't touch the hot pan! » : « don't » se place devant la base du verbe, et « please » peut ouvrir ou fermer la phrase.",
+   "alt": [
+    [
+     "don't",
+     "touch",
+     "the",
+     "hot",
+     "pan",
+     "please"
+    ]
+   ]
+  }
+ ],
+ "super-pouvoir": [
+  {
+   "d": 1,
+   "q": "Complète : « My brother ___ swim. »",
+   "o": [
+    "can",
+    "cans",
+    "can to"
+   ],
+   "io": {
+    "cans": "Can est un modal : il ne prend jamais de -s, même avec « my brother » (= he).",
+    "can to": "Après can, le verbe suit directement, sans « to »."
+   },
+   "i": "Can ne change jamais de forme.",
+   "e": "« My brother can swim. » : can reste « can » avec tous les sujets, puis vient la base du verbe."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She ___ play the piano. »",
+   "o": [
+    "can",
+    "cans",
+    "is can"
+   ],
+   "io": {
+    "cans": "Can ne prend jamais de -s, même avec she.",
+    "is can": "Can fait déjà le travail d'un verbe : on n'ajoute pas be."
+   },
+   "i": "Avec « she », can ne bouge pas.",
+   "e": "« She can play the piano. » : can ne prend jamais de -s, même avec she, et il est suivi de la base du verbe."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I ___ speak French. »",
+   "o": [
+    "can",
+    "can to",
+    "do can"
+   ],
+   "io": {
+    "can to": "Après can, on n'ajoute jamais « to ».",
+    "do can": "Can n'a jamais besoin de « do »."
+   },
+   "i": "Quel petit mot dit « savoir » ou « pouvoir » ?",
+   "e": "« I can speak French. » : can est suivi directement de la base du verbe, sans « to » ni « do »."
+  },
+  {
+   "d": 1,
+   "q": "Complète pour dire une capacité : « Birds ___ fly. »",
+   "r": [
+    "can"
+   ],
+   "i": "Ici, on parle d'une capacité des oiseaux.",
+   "e": "« Birds can fly. » : can dit ce qu'on est capable de faire ; ici, la capacité des oiseaux."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui dit la capacité.",
+   "p": "Léa *can run very fast.",
+   "i": "Il se place juste après Léa.",
+   "e": "« can » dit la capacité de Léa : elle sait courir très vite."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "he",
+    "can",
+    "ride",
+    "a",
+    "bike"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis can, puis le verbe à la base.",
+   "e": "« He can ride a bike. » : l'ordre est sujet, puis can, puis le verbe à la base."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He can't ___ the answer. »",
+   "o": [
+    "find",
+    "finds",
+    "to find"
+   ],
+   "io": {
+    "finds": "Après can't, le verbe reste sans -s, même avec he.",
+    "to find": "Après can't, on n'ajoute pas « to »."
+   },
+   "i": "Après can't, le verbe est tout nu.",
+   "e": "« He can't find the answer. » : can't + base du verbe, sans -s et sans to."
+  },
+  {
+   "d": 2,
+   "q": "Complète pour demander la permission : « ___ I open the window? »",
+   "o": [
+    "Can",
+    "Do",
+    "Am"
+   ],
+   "io": {
+    "Do": "Pour demander une permission avec le verbe « open », on emploie « can » au début, pas « do ».",
+    "Am": "« Am » est une forme du verbe be : il ne sert pas à demander la permission ici."
+   },
+   "i": "Quel petit mot sert à demander la permission ?",
+   "e": "« Can I open the window? » : can passe devant le sujet pour poser la question ou demander la permission."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je ne peux pas venir. »",
+   "r": [
+    "I can't come",
+    "I cannot come",
+    "I can not come"
+   ],
+   "i": "La négation de can est « can't » ou « cannot ».",
+   "e": "« I can't come. » : can't + base du verbe. Ne dis jamais « I don't can »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Mon frère sait lire. »",
+   "r": [
+    "My brother can read",
+    "My brother knows how to read"
+   ],
+   "i": "« Savoir faire quelque chose » se dit avec can.",
+   "e": "« My brother can read. » : can + base du verbe, sans -s même avec « my brother »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "can",
+    "you",
+    "help",
+    "me"
+   ],
+   "fin": "?",
+   "i": "Pour poser la question, can passe devant le sujet.",
+   "e": "« Can you help me? » : pour poser la question, can passe devant le sujet, puis vient le verbe à la base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He cans swim.",
+   "r": [
+    "He can swim."
+   ],
+   "i": "Regarde le mot can : avec « he », garde-t-il son -s ?",
+   "e": "« He can swim. » : can ne prend jamais de -s, même avec he, she ou it."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I can to drive.",
+   "r": [
+    "I can drive."
+   ],
+   "i": "Un petit mot est de trop entre can et le verbe.",
+   "e": "« I can drive. » : après can, on met directement la base du verbe, sans « to »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe qui suit can.",
+   "p": "Ali can *cook pasta.",
+   "i": "Il vient juste après « can ».",
+   "e": "« cook » est le verbe à la base : après can, comme après tout modal, il n'y a ni -s ni « to »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Do you can help me?",
+   "r": [
+    "Can you help me?"
+   ],
+   "i": "Can n'a pas besoin de majordome : il passe lui-même devant le sujet.",
+   "e": "« Can you help me? » : can ne s'emploie jamais avec « do ». Il se place lui-même devant le sujet."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She can't to swim.",
+   "r": [
+    "She can't swim.",
+    "She cannot swim."
+   ],
+   "i": "Après can't, le verbe est nu.",
+   "e": "« She can't swim. » : après can't, la base du verbe vient directement, sans « to »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "My sister can speak three languages.",
+    "My sister can speaks three languages.",
+    "My sister cans speak three languages."
+   ],
+   "io": {
+    "My sister can speaks three languages.": "Après can, le verbe reste à la base : « speak », sans -s.",
+    "My sister cans speak three languages.": "Can ne prend jamais de -s, même avec « my sister »."
+   },
+   "i": "Deux endroits sont à vérifier : can et le verbe qui le suit.",
+   "e": "« My sister can speak three languages. » : can reste identique et le verbe suivant est à la base."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Est-ce que tu peux ouvrir la fenêtre ? »",
+   "r": [
+    "Can you open the window",
+    "Could you open the window",
+    "Can you open the window, please",
+    "Could you open the window, please",
+    "Can you please open the window",
+    "Please can you open the window"
+   ],
+   "i": "Pour demander, can passe devant le sujet.",
+   "e": "« Can you open the window? » : can + sujet + base du verbe. « Could you… » est une version plus polie."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle ne sait pas conduire. »",
+   "r": [
+    "She can't drive",
+    "She cannot drive",
+    "She can not drive",
+    "She doesn't know how to drive"
+   ],
+   "i": "Négation : can't + base.",
+   "e": "« She can't drive. » : can't est suivi de la base du verbe, sans -s même avec she."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "they",
+    "can't",
+    "come",
+    "to",
+    "the",
+    "party"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis can't, puis le verbe à la base.",
+   "e": "« They can't come to the party. » : sujet + can't + base du verbe + complément."
+  }
+ ],
+ "j-aime": [
+  {
+   "d": 1,
+   "q": "Complète : « I like ___ in the sea. »",
+   "o": [
+    "swimming",
+    "swim",
+    "swims"
+   ],
+   "io": {
+    "swim": "Après like (un goût), l'activité se met en -ing : « swimming ».",
+    "swims": "Un -s n'a rien à faire ici : après like, c'est la forme en -ing qui est employée."
+   },
+   "i": "Après un verbe de goût, le verbe prend -ing.",
+   "e": "« I like swimming in the sea. » : après like, love, enjoy, hate, le verbe se met en -ing (swim double son m)."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We enjoy ___ pasta. »",
+   "o": [
+    "cooking",
+    "cook",
+    "to cook"
+   ],
+   "io": {
+    "cook": "Après enjoy, le verbe est toujours en -ing.",
+    "to cook": "Après enjoy, on n'emploie jamais « to » : il faut la forme en -ing."
+   },
+   "i": "Après enjoy, le verbe prend -ing.",
+   "e": "« We enjoy cooking pasta. » : enjoy est toujours suivi d'un verbe en -ing."
+  },
+  {
+   "d": 1,
+   "q": "Pour dire « Je voudrais un thé, s'il vous plaît » :",
+   "o": [
+    "I'd like a tea, please.",
+    "I want a tea, please.",
+    "I like a tea, please."
+   ],
+   "io": {
+    "I want a tea, please.": "« I want » veut dire « je veux » : cela sonne comme un ordre. Pour demander poliment, on dit « I'd like ».",
+    "I like a tea, please.": "« I like » veut dire « j'aime » : il ne sert pas à commander."
+   },
+   "i": "Pour un souhait poli, on emploie « would like ».",
+   "e": "« I'd like a tea, please. » : « I'd like » (= I would like) est la façon polie de demander quelque chose."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I'd like ___ a taxi. » (take)",
+   "r": [
+    "to take"
+   ],
+   "i": "Après would like, le verbe est précédé d'un petit mot.",
+   "e": "« I'd like to take a taxi. » : après would like, on met « to » puis la base du verbe."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe en -ing.",
+   "p": "Yusuf loves *reading comics.",
+   "i": "Cherche le mot qui se termine par -ing.",
+   "e": "« reading » est en -ing : après love, like, hate et enjoy, le verbe se met en -ing."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "I",
+    "like",
+    "playing",
+    "chess"
+   ],
+   "fin": ".",
+   "i": "Sujet, puis like, puis le verbe en -ing.",
+   "e": "« I like playing chess. » : après like, le verbe se met en -ing (play → playing)."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Would you like ___ a cake? »",
+   "o": [
+    "to make",
+    "making",
+    "make"
+   ],
+   "io": {
+    "making": "Après would like, on met « to » + base, jamais -ing.",
+    "make": "Il manque « to » : après would like, on dit « to make »."
+   },
+   "i": "Après would like, il faut un petit mot et la base du verbe.",
+   "e": "« Would you like to make a cake? » : would you like + to + base du verbe."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He hates ___ up early. »",
+   "o": [
+    "getting",
+    "get",
+    "gets"
+   ],
+   "io": {
+    "get": "Après hate, on emploie la forme en -ing pour parler de ce qu'on déteste en général.",
+    "gets": "Un -s n'a pas sa place ici : après hate, on emploie le verbe en -ing."
+   },
+   "i": "Après un verbe de goût, le verbe prend -ing.",
+   "e": "« He hates getting up early. » : hate + verbe en -ing (get double son t)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « J'aime cuisiner. »",
+   "r": [
+    "I like cooking",
+    "I love cooking",
+    "I enjoy cooking",
+    "I like to cook",
+    "I love to cook"
+   ],
+   "i": "Pour un goût, utilise like + verbe en -ing.",
+   "e": "« I like cooking. » : like + verbe en -ing pour dire ce qu'on aime faire."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je voudrais un verre d'eau, s'il vous plaît. »",
+   "r": [
+    "I'd like a glass of water, please",
+    "I would like a glass of water, please",
+    "Could I have a glass of water, please"
+   ],
+   "i": "Pour demander poliment, pense à « would like ».",
+   "e": "« I'd like a glass of water, please. » : « I'd like » est la forme polie pour commander."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "would",
+    "you",
+    "like",
+    "a",
+    "coffee"
+   ],
+   "fin": "?",
+   "i": "La question commence par would.",
+   "e": "« Would you like a coffee? » : would passe devant le sujet pour proposer quelque chose."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I enjoy to cook.",
+   "r": [
+    "I enjoy cooking."
+   ],
+   "i": "Après enjoy, quelle forme du verbe ?",
+   "e": "« I enjoy cooking. » : enjoy est toujours suivi du verbe en -ing, jamais de « to »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I would like go out.",
+   "r": [
+    "I would like to go out.",
+    "I'd like to go out."
+   ],
+   "i": "Il manque un petit mot devant « go ».",
+   "e": "« I would like to go out. » : après would like, il faut « to » devant le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Touche le petit mot qui suit would like.",
+   "p": "Léa would like *to visit Rome.",
+   "i": "Il est entre « like » et « visit ».",
+   "e": "« to » : après would like, on met « to » devant la base du verbe (would like to visit)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : elle est correcte, mais trop directe pour commander poliment.",
+   "f": "I want a coffee, please.",
+   "r": [
+    "I'd like a coffee, please.",
+    "I would like a coffee, please.",
+    "Could I have a coffee, please."
+   ],
+   "i": "Pour commander poliment, « I want » est trop direct.",
+   "e": "« I'd like a coffee, please. » : « I want » sonne comme un ordre, « I'd like » est poli."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She enjoys to read comics.",
+   "r": [
+    "She enjoys reading comics."
+   ],
+   "i": "Après enjoy, quelle forme du verbe ?",
+   "e": "« She enjoys reading comics. » : enjoy est toujours suivi de la forme en -ing."
+  },
+  {
+   "d": 3,
+   "q": "Pour accepter « Would you like a coffee? », tu réponds :",
+   "o": [
+    "Yes, please.",
+    "Yes, I do.",
+    "Yes, I like."
+   ],
+   "io": {
+    "Yes, I do.": "Le moteur de la question est « would », pas « do » : « Yes, I do » ne convient pas ici. Dis « Yes, please ».",
+    "Yes, I like.": "Cette réponse ne se dit pas en anglais."
+   },
+   "i": "Tu acceptes une proposition : quelle formule polie ?",
+   "e": "« Yes, please. » : « Would you like… ? » est une proposition, on accepte avec « Yes, please »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mes parents détestent attendre. »",
+   "r": [
+    "My parents hate waiting",
+    "My parents hate to wait"
+   ],
+   "i": "Après hate, le verbe prend -ing.",
+   "e": "« My parents hate waiting. » : hate + verbe en -ing, sans -s car « my parents » = they."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Tu voudrais venir avec nous ? »",
+   "r": [
+    "Would you like to come with us",
+    "Would you like to join us",
+    "Would you like to come along"
+   ],
+   "i": "Pour inviter, utilise would you like to + base.",
+   "e": "« Would you like to come with us? » : would you like to + base du verbe."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "we",
+    "would",
+    "like",
+    "to",
+    "go",
+    "to",
+    "the",
+    "zoo"
+   ],
+   "fin": ".",
+   "i": "Would like to + base.",
+   "e": "« We would like to go to the zoo. » : would like to + base du verbe."
+  }
+ ]
+}

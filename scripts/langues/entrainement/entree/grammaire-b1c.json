@@ -1,0 +1,284 @@
+{
+ "section": "grammaire",
+ "niveau": "B1",
+ "univers": "La Cité des mots",
+ "lecons": [
+  {
+   "id": "petite-question",
+   "niveau": "B1",
+   "titre": "La petite question de la fin",
+   "notion": "Les question tags",
+   "image": "Le question tag est un petit carillon en fin de phrase : il demande une confirmation, comme notre « n'est-ce pas ? ».",
+   "demo": [
+    "You are French, aren't you?",
+    "She can swim, can't she?",
+    "He doesn't like fish, does he?",
+    "You live here, don't you?",
+    "I'm right, aren't I?"
+   ],
+   "regle": "Le {question tag} est une petite question ajoutée en fin de phrase pour demander une confirmation, comme « n'est-ce pas ? » ou « hein ? ». Il reprend l'auxiliaire de la phrase (ou {do}, {does}, {did} s'il n'y en a pas) et le pronom sujet. Règle d'or : phrase affirmative → tag négatif ({You're French, aren't you?}) ; phrase négative → tag affirmatif ({She doesn't smoke, does she?}). Quelques cas à retenir : {I am…, aren't I?}, {Let's…, shall we?}, et après un impératif, {will you?}.",
+   "formes": [
+    "Affirmatif → négatif : phrase affirmative, auxiliaire + {n't} + pronom ? — It's cold, isn't it?",
+    "Négatif → affirmatif : phrase négative, auxiliaire + pronom ? — You can't swim, can you?",
+    "Sans auxiliaire : présent ou prétérit simple → {do} / {does} / {did} — He lives here, doesn't he?",
+    "Cas spéciaux : {I am…, aren't I?} · {Let's…, shall we?} — Let's go, shall we?"
+   ],
+   "usages": [
+    "Vérifier une information : You're coming tonight, aren't you? (Tu viens ce soir, hein ?)",
+    "Engager la conversation : Lovely day, isn't it? (Belle journée, n'est-ce pas ?)",
+    "Une question au passé : She called you, didn't she? (Elle t'a appelé, non ?)"
+   ],
+   "pieges": [
+    "faux « You like coffee, isn't it? » → juste « You like coffee, don't you? » : Le tag reprend le sujet ({you}) et l'auxiliaire du temps : {don't you?}, jamais un {isn't it?} passe-partout.",
+    "faux « She isn't here, isn't she? » → juste « She isn't here, is she? » : Phrase négative, tag affirmatif.",
+    "faux « I'm late, amn't I? » → juste « I'm late, aren't I? » : Avec {I am}, le tag négatif est {aren't I?}"
+   ],
+   "retenir": "Phrase positive → tag négatif, phrase négative → tag positif, avec l'auxiliaire et le pronom de la phrase.",
+   "secret": "Si ta voix descend sur le tag (isn't it ↘), tu es sûr de toi et tu attends juste un accord. Si elle monte (isn't it ↗), c'est une vraie question. Les Britanniques utilisent beaucoup ces tags pour engager la conversation : « Lovely weather, isn't it? ».",
+   "defi_deja_pose": [
+    "« It's a nice day, ___? »",
+    "« You haven't seen my keys, ___? »",
+    "« They went to Spain, ___? »",
+    "Complète : « Your sister plays the violin, ___ she? »",
+    "« I'm late, ___? »"
+   ]
+  },
+  {
+   "id": "question-polie",
+   "niveau": "B1",
+   "titre": "La question polie",
+   "notion": "Les questions indirectes",
+   "image": "Quand on enveloppe une question dans une formule polie, elle range ses mots dans l'ordre normal, comme une phrase.",
+   "demo": [
+    "Where is the bank? → Do you know where the bank is?",
+    "What time does the film start? → Can you tell me what time the film starts?",
+    "Is it open? → I wonder if it is open.",
+    "I'd like to know how much it costs."
+   ],
+   "regle": "Pour poser une question plus poliment, on l'enveloppe dans une formule : {Could you tell me…?}, {Do you know…?}, {I wonder…}, {Can you remember…?} La question qui suit perd alors sa forme de question : plus d'inversion, plus de {do}, {does}, {did}. On garde le mot interrogatif, puis l'ordre d'une affirmation, sujet + verbe : {Where is the station?} devient {Could you tell me where the station is?} Pour une question fermée (oui ou non), on ajoute {if} ou {whether} : {Do you know if she's coming?}",
+   "formes": [
+    "Question ouverte : formule + mot-question + sujet + verbe — Do you know where he lives?",
+    "Question fermée : formule + {if} / {whether} + sujet + verbe — Can you tell me if the shop is open?"
+   ],
+   "usages": [
+    "Demander son chemin : Could you tell me where the museum is? (Pourriez-vous me dire où se trouve le musée ?)",
+    "Demander une heure : Do you know what time the train leaves? (Savez-vous à quelle heure part le train ?)",
+    "Une question fermée : I wonder if she remembers me. (Je me demande si elle se souvient de moi.)"
+   ],
+   "pieges": [
+    "faux « Could you tell me where is the station? » → juste « Could you tell me where the station is? » : Dans une question indirecte, le sujet passe avant le verbe.",
+    "faux « Do you know what time does the film start? » → juste « Do you know what time the film starts? » : Plus de {does} dans la question indirecte : le verbe reprend son {-s}.",
+    "faux « Can you tell me is she coming? » → juste « Can you tell me if she is coming? » : Pour une question fermée, on ajoute {if} ou {whether}."
+   ],
+   "retenir": "Formule polie + mot-question (ou {if}) + sujet + verbe, sans inversion ni {do}.",
+   "secret": "Les questions indirectes sont la forme la plus polie pour aborder un inconnu : « Excuse me, could you tell me how I can get to the station? ». Elles sont aussi un classique des examens d'anglais (B1, B2) : le piège est toujours l'ordre des mots.",
+   "defi_deja_pose": [
+    "« Could you tell me where ___? »",
+    "« Do you know what time ___? »",
+    "« I wonder ___ he will come. »",
+    "Rends polie : « How old is she? » → « Do you know how old ___? »",
+    "Touche le mot mal placé. Can you tell me where *is the museum?"
+   ]
+  },
+  {
+   "id": "questions-sujet",
+   "niveau": "B1",
+   "titre": "Qui a appelé ? Qui as-tu appelé ?",
+   "notion": "Les questions sur le sujet, et la préposition en fin de question",
+   "image": "Quand le mot-question est lui-même le sujet, le majordome do reste à la maison.",
+   "demo": [
+    "Who called you?",
+    "Who did you call?",
+    "What happened? · What did you do?",
+    "Who are you talking to?",
+    "Where are you from? · What is it about?"
+   ],
+   "regle": "Quand le mot interrogatif ({who}, {what}, {which}…) est lui-même le sujet de la question, on ne met pas {do}, {does}, {did}, et le verbe garde sa forme normale : {Who called you?} (qui t'a appelé ?), {What happened?} (que s'est-il passé ?). Quand il est complément, on reprend la structure habituelle avec l'auxiliaire : {Who did you call?} (qui as-tu appelé ?). Autre particularité : la préposition se place souvent à la fin de la question : {Who are you talking to?}, {What are you looking at?}",
+   "formes": [
+    "Mot-question sujet : mot-question + verbe (sans {do}) — Who lives here?",
+    "Mot-question complément : mot-question + auxiliaire + sujet + base — Who did you see?",
+    "Préposition à la fin : mot-question + auxiliaire + sujet + verbe + préposition ? — Who are you waiting for?"
+   ],
+   "usages": [
+    "Qui a fait l'action : Who broke the window? (Qui a cassé la fenêtre ?)",
+    "Ce qui s'est passé : What happened last night? (Que s'est-il passé hier soir ?)",
+    "Qui l'a subie : Who did the police arrest? (Qui la police a-t-elle arrêté ?)",
+    "Une préposition finale : What is this book about? (De quoi parle ce livre ?)"
+   ],
+   "pieges": [
+    "faux « Who did break the window? » → juste « Who broke the window? » : {who} est le sujet : pas de {did}, le verbe se met au prétérit.",
+    "faux « What did happen? » → juste « What happened? » : {what} est le sujet : le verbe se conjugue directement.",
+    "faux « With who are you going? » → juste « Who are you going with? » : En anglais courant, la préposition se place en fin de question."
+   ],
+   "retenir": "Mot-question sujet : pas de {do}. Mot-question complément : auxiliaire + sujet. Préposition à la fin.",
+   "secret": "Le français place la préposition devant : « Avec qui pars-tu ? ». L'anglais courant la laisse à la fin : « Who are you going with? ». La forme « With whom are you going? » existe, mais elle est très formelle. De même : What are you looking at? Who is this present for? What are you afraid of?",
+   "defi_deja_pose": [
+    "« Who ___ the window? » (quelqu'un l'a cassée)",
+    "« Who ___ at the party? » (tu as vu quelqu'un)",
+    "« ___ are you waiting for? »",
+    "Traduis : « Qu'est-ce qui s'est passé ? »",
+    "Pose la question sur Sam : « Sam lives here. » → Qui habite ici ?",
+    "Touche le mot de trop. Who *did win the match?"
+   ]
+  },
+  {
+   "id": "faux-amis",
+   "niveau": "B1",
+   "titre": "Les faux amis",
+   "notion": "Les mots qui ressemblent au français mais trompent",
+   "image": "Dans la Cité, certains mots ont un visage familier… mais cachent un tout autre sens. Ce sont les faux amis.",
+   "demo": [
+    "Actually, I'm Belgian.",
+    "Eventually, we found the hotel.",
+    "That's a sensible idea.",
+    "I borrowed this book from the library.",
+    "I'm excited about the trip!"
+   ],
+   "regle": "Les faux amis sont des mots anglais qui ressemblent à des mots français mais n'ont pas le même sens. Parmi les plus courants : {actually} = en fait (« actuellement » se dit {currently}) ; {eventually} = finalement (« éventuellement » se dit {possibly}) ; {sensible} = raisonnable (« sensible » se dit {sensitive}) ; {library} = bibliothèque (« librairie » se dit {bookshop}) ; {to attend} = assister à (« attendre » se dit {to wait}) ; {to pretend} = faire semblant (« prétendre » se dit {to claim}) ; {a lecture} = un cours magistral, une conférence (« une lecture » se dit {reading}).",
+   "formes": [],
+   "usages": [
+    "En fait : Actually, I'm not hungry. (En fait, je n'ai pas faim.)",
+    "Finalement, au bout du compte : We eventually found the hotel. (Nous avons fini par trouver l'hôtel.)",
+    "Raisonnable : That's a sensible decision. (C'est une décision raisonnable.)",
+    "Bibliothèque : I borrowed this book from the library. (J'ai emprunté ce livre à la bibliothèque.)"
+   ],
+   "pieges": [
+    "faux « She is very sensible, she cries at every film. » → juste « She is very sensitive, she cries at every film. » : « Sensible » (qui ressent vivement) se dit {sensitive} ; {sensible} veut dire « raisonnable ».",
+    "faux « I bought this novel at the library. » → juste « I bought this novel at the bookshop. » : On achète un livre dans une librairie, {a bookshop} ; {a library} est une bibliothèque, où l'on emprunte.",
+    "faux « I'll eventually come if I have time. » → juste « I'll possibly come if I have time. » : « Éventuellement » se dit {possibly} ; {eventually} veut dire « finalement, à la fin »."
+   ],
+   "retenir": "{actually} = en fait · {eventually} = finalement · {sensible} = raisonnable · {library} = bibliothèque.",
+   "secret": "D'autres faux amis à connaître : a coin (une pièce de monnaie), a car (une voiture), a journey (un voyage), to attend (assister à), to pretend (faire semblant), a lecture (un cours magistral), a novel (un roman), a medicine (un médicament), to assist (aider), a stage (une scène, une étape). Quand un mot ressemble trop au français, méfie-toi et vérifie.",
+   "defi_deja_pose": [
+    "Comment dit-on « Actuellement, je vis à Lyon » ?",
+    "« She's very ___: she cries at every film. »",
+    "Que veut dire « He's a sympathetic person » ?",
+    "« J'ai acheté un roman à la librairie » :",
+    "Que veut dire « I'll eventually tell her » ?",
+    "Touche le faux ami. I need to *control my passport before the trip."
+   ]
+  },
+  {
+   "id": "faux-jumeaux",
+   "niveau": "B1",
+   "titre": "Les faux jumeaux",
+   "notion": "Make ou do, say ou tell, lend ou borrow",
+   "image": "Certains verbes français ont deux traductions anglaises qui se ressemblent comme des jumeaux… mais qui n'ont pas le même métier.",
+   "demo": [
+    "make a cake · make a mistake · make a decision · make noise",
+    "do your homework · do the shopping · do sport · do a favour",
+    "She said hello. · She told me a story.",
+    "Can you lend me €10? · Can I borrow €10?"
+   ],
+   "regle": "Certains verbes français ont deux traductions anglaises. « Faire » : {make} pour créer, fabriquer, produire ({make a cake}, {make a mistake}, {make noise}, {make a decision}) ; {do} pour accomplir une activité, un travail, une tâche ({do homework}, {do the dishes}, {do sport}, {do your best}). « Dire » : {say} + ce qu'on dit ({say hello}, {say something}) ; {tell} + la personne à qui l'on parle ({tell me}), et dans {tell a story}, {tell the truth}. « Prêter » et « emprunter » : {lend} (donner pour un temps), {borrow} (recevoir pour un temps).",
+   "formes": [
+    "Créer / accomplir : {make} + produit · {do} + activité — make a cake · do the shopping",
+    "Dire : {say} + chose · {tell} + personne + chose — She told me a secret.",
+    "Prêter / emprunter : {lend} + personne + chose · {borrow} + chose + {from} + personne — Can I borrow your pen?"
+   ],
+   "usages": [
+    "Une erreur : I made a mistake. (J'ai fait une erreur.)",
+    "Les tâches : Who does the cooking at home? (Qui fait la cuisine chez vous ?)",
+    "Raconter : Grandpa told us a story. (Papi nous a raconté une histoire.)",
+    "Prêter : Can you lend me ten euros? (Tu peux me prêter dix euros ?)"
+   ],
+   "pieges": [
+    "faux « I have to make my homework. » → juste « I have to do my homework. » : Les devoirs sont une tâche : {do}.",
+    "faux « She said me the truth. » → juste « She told me the truth. » : Avec une personne, {tell} ; et l'on dit {tell the truth}.",
+    "faux « Can you borrow me your car? » → juste « Can you lend me your car? » : Celui qui donne pour un temps prête : {lend}. Celui qui reçoit emprunte : {borrow}."
+   ],
+   "retenir": "{make} = créer, {do} = accomplir ; {say} + chose, {tell} + personne ; {lend} = prêter, {borrow} = emprunter.",
+   "secret": "tell a story, tell a joke, tell a lie, tell the truth, tell the time, tell the difference : ces expressions prennent toujours tell, même sans personne. Et say sorry, say yes, say goodbye, say a prayer prennent say. À apprendre comme des blocs.",
+   "defi_deja_pose": [
+    "« I always ___ mistakes in English! »",
+    "« Have you ___ your homework? »",
+    "« She ___ me that she was tired. »",
+    "« Can I ___ your pen? »",
+    "Complète : « Could you do me a ___? » (un service)",
+    "Touche le verbe qui ne va pas. He *said me the truth."
+   ]
+  },
+  {
+   "id": "sujet-it",
+   "niveau": "B1",
+   "titre": "Le sujet fantôme",
+   "notion": "It sans rien derrière : It's raining, It takes…, It's easy to…",
+   "image": "Une phrase anglaise a toujours un sujet. Quand il n'y a personne, un petit fantôme prend la place : it.",
+   "demo": [
+    "It's raining. · It's cold today.",
+    "It's six o'clock. · It's Monday.",
+    "It takes two hours to get there. · It costs ten pounds.",
+    "It's important to sleep well.",
+    "It seems that he's right. · It's no use crying."
+   ],
+   "regle": "Une phrase anglaise a toujours un sujet. Quand personne ne fait l'action, {it} occupe la place : pour la météo ({It's raining}, {It's cold}), l'heure et la date ({It's 5 o'clock}, {It's Monday}), la distance ({It's 10 km to the city}), le temps nécessaire ({It takes two hours}), le prix ({It costs ten euros}), un jugement suivi de {to} + verbe ({It's easy to learn}) ou d'une phrase ({It seems that…}, {It's a pity that…}).",
+   "formes": [
+    "Météo, heure, date : {It's} + adjectif, heure ou jour — It's sunny today.",
+    "Le temps qu'il faut : {It takes} + (personne) + durée + {to} + base — It takes me an hour to get there.",
+    "Un jugement : {It's} + adjectif + {to} + base — It's important to sleep.",
+    "Une impression : {It seems} / {It looks like} + phrase — It seems that he's right."
+   ],
+   "usages": [
+    "Le temps qu'il fait : It's been raining all day. (Il n'a pas arrêté de pleuvoir de la journée.)",
+    "La durée d'un trajet : It takes ten minutes to walk to school. (Il faut dix minutes pour aller à l'école à pied.)",
+    "Un avis : It's nice to see you again. (Ça fait plaisir de te revoir.)"
+   ],
+   "pieges": [
+    "faux « Is cold today. » → juste « It's cold today. » : Le sujet {it} est obligatoire, même pour la météo.",
+    "faux « It needs two hours to get there. » → juste « It takes two hours to get there. » : Pour le temps nécessaire, on dit {It takes}.",
+    "faux « Is easy to understand. » → juste « It's easy to understand. » : « C'est facile de… » : {It's easy to…}, avec {it}."
+   ],
+   "retenir": "Pas de sujet ? {it} : la météo, l'heure, {It takes…}, {It costs…}, {It's easy to…}.",
+   "secret": "There is annonce qu'une chose existe (There is a cat in the garden). It remplace un sujet vide (it's raining) ou reprend une chose déjà nommée (It's a cat). « Il y a du vent » → It's windy (la météo). « Il y a un problème » → There's a problem (l'existence). En cas de doute : si tu peux dire « il existe », c'est there.",
+   "defi_deja_pose": [
+    "« ___ is snowing. »",
+    "« ___ takes ten minutes to walk to school. »",
+    "« Il y a beaucoup de vent. »",
+    "Traduis : « C'est difficile de comprendre. »",
+    "Complète : « How long does ___ take? »",
+    "Touche le mot qui n'a pas de sujet. *Is important to drink water."
+   ]
+  },
+  {
+   "id": "pendant-jusqua",
+   "niveau": "B1",
+   "titre": "Pendant, jusqu'à, dans",
+   "notion": "For, during, while ; until, by ; in (dans deux jours)",
+   "image": "« Pendant » a trois traductions selon ce qui suit : une durée (for), un événement (during), une phrase (while).",
+   "demo": [
+    "I slept for eight hours.",
+    "She fell asleep during the film.",
+    "Someone called while I was cooking.",
+    "I'll wait until six. · Send it by Friday.",
+    "The train leaves in ten minutes."
+   ],
+   "regle": "« Pendant » se traduit de trois façons : {for} + une durée ({for two hours}) ; {during} + un événement, une période nommée ({during the film}, {during the summer}) ; {while} + une phrase avec sujet et verbe ({while I was cooking}). « Jusqu'à » : {until} (ou {till}) pour une action qui dure jusqu'à un moment ({I'll wait until 6}) ; {by} pour une limite, au plus tard ({Finish it by Friday}). « Dans » + durée, pour le futur : {in} ({I'll be back in ten minutes}).",
+   "formes": [
+    "Pendant : {for} + durée · {during} + nom · {while} + phrase — during the night · while she slept",
+    "Jusqu'à, au plus tard : {until} + moment · {by} + moment — Wait until I call. · Be here by 8.",
+    "Dans (futur) : {in} + durée — The film starts in five minutes."
+   ],
+   "usages": [
+    "Une durée : We lived there for six years. (Nous avons vécu là-bas pendant six ans.)",
+    "Un événement : I fell asleep during the meeting. (Je me suis endormi pendant la réunion.)",
+    "Une limite : Please send the report by Monday. (Envoyez le rapport d'ici lundi, s'il vous plaît.)",
+    "Dans peu de temps : I'll call you back in an hour. (Je te rappelle dans une heure.)"
+   ],
+   "pieges": [
+    "faux « I slept during eight hours. » → juste « I slept for eight hours. » : Devant une durée chiffrée, {for}.",
+    "faux « During I was cooking, the phone rang. » → juste « While I was cooking, the phone rang. » : Devant une phrase (sujet + verbe), {while}.",
+    "faux « You must finish until Friday. » → juste « You must finish by Friday. » : Une date limite (« au plus tard ») se dit {by}."
+   ],
+   "retenir": "{for} + durée, {during} + événement, {while} + phrase ; {until} = jusqu'à, {by} = au plus tard ; {in} + durée = dans.",
+   "secret": "« Dans deux jours » se dit in two days : on compte à partir de maintenant. « Après deux jours » (after two days) raconte une suite, souvent au passé : After two days, he left. Et « il y a deux jours » regarde en arrière : two days ago. Trois petits mots pour trois directions du temps : ago, maintenant, in.",
+   "defi_deja_pose": [
+    "« We lived in Spain ___ three years. »",
+    "« I met her ___ the summer holidays. »",
+    "« Please finish the report ___ Monday. » (au plus tard)",
+    "Complète : « The shop is open ___ 8 pm. » (jusqu'à)",
+    "Traduis : « Je reviens dans cinq minutes. »",
+    "Touche le mot qui ne convient pas. My phone rang *during I was driving."
+   ]
+  }
+ ]
+}

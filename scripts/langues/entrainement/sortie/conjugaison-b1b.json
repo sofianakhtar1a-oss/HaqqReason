@@ -1,0 +1,2219 @@
+{
+ "quatre-futurs": [
+  {
+   "d": 1,
+   "q": "It's cold in here. I ___ the window.",
+   "o": [
+    "will close",
+    "closes",
+    "to close"
+   ],
+   "io": {
+    "closes": "Avec « I », le verbe ne prend pas de -s ; et pour une décision prise à l'instant, on emploie will + base.",
+    "to close": "Pour une décision prise sur le moment, on emploie will + base, sans « to »."
+   },
+   "i": "Tu décides de fermer la fenêtre au moment même où tu parles.",
+   "e": "« will close » : une décision prise sur le moment se dit avec will + base."
+  },
+  {
+   "d": 1,
+   "q": "Look at those black clouds! It ___ rain.",
+   "o": [
+    "is going to",
+    "rains",
+    "is raining"
+   ],
+   "io": {
+    "rains": "Une prédiction appuyée sur un signe visible (les nuages) se dit avec be going to, pas avec le présent simple.",
+    "is raining": "Le présent continu dirait qu'il pleut en ce moment ; pour prédire à partir d'un signe, on dit be going to."
+   },
+   "i": "Les nuages noirs sont un signe visible : quel futur les prédictions avec signe utilisent-elles ?",
+   "e": "« is going to rain » : be going to exprime une prédiction fondée sur un signe que l'on voit."
+  },
+  {
+   "d": 1,
+   "q": "The school bus ___ at 8.10 every morning.",
+   "o": [
+    "leaves",
+    "leave",
+    "is leave"
+   ],
+   "io": {
+    "leave": "Avec « the bus » (it), le présent simple prend un -s : leaves.",
+    "is leave": "On ne mélange pas is et la base : on dit simplement « leaves » au présent simple."
+   },
+   "i": "C'est un horaire régulier. Quel temps ? Et quel sujet ?",
+   "e": "« leaves » : un horaire fixe se dit au présent simple, et avec it le verbe prend -s."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui montrent un projet déjà décidé.",
+   "p": "We are *going *to build a treehouse this summer.",
+   "i": "Cherche l'expression formée avec be + going + to.",
+   "e": "« going to » : be going to + base annonce un projet déjà décidé."
+  },
+  {
+   "d": 1,
+   "q": "Complète avec will : « Don't worry, I ___ help you. »",
+   "r": [
+    "will"
+   ],
+   "i": "Une promesse se fait avec le moteur du futur de base.",
+   "e": "« will » : will + base exprime une promesse ou une décision prise sur le moment."
+  },
+  {
+   "d": 1,
+   "q": "Sarah ___ the dentist tomorrow at ten. She has an appointment.",
+   "o": [
+    "is seeing",
+    "sees",
+    "seeing"
+   ],
+   "io": {
+    "sees": "Un rendez-vous organisé se dit au présent continu, pas au présent simple (réservé aux horaires).",
+    "seeing": "Il manque l'auxiliaire be : on dit « is seeing »."
+   },
+   "i": "Un rendez-vous noté dans l'agenda : quel temps utilise-t-on ?",
+   "e": "« is seeing » : le présent continu exprime un rendez-vous organisé, avec une date."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je vais vendre ma voiture. » (c'est décidé)",
+   "r": [
+    "I am going to sell my car",
+    "I am selling my car"
+   ],
+   "i": "Un projet déjà décidé : be going to + base.",
+   "e": "« I am going to sell my car » : be going to + base exprime un projet déjà décidé."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « La bibliothèque ouvre à 9 h. »",
+   "r": [
+    "The library opens at 9",
+    "The library opens at nine",
+    "The library opens at 9 o'clock",
+    "The library opens at nine o'clock",
+    "The library opens at 9 am",
+    "The library opens at 9 a.m."
+   ],
+   "i": "C'est un horaire : pas de moteur du futur, juste le verbe au présent.",
+   "e": "« The library opens at 9 » : un horaire se dit au présent simple, avec -s pour it."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "are",
+    "you",
+    "meeting",
+    "Sam",
+    "tomorrow"
+   ],
+   "fin": "?",
+   "i": "Un rendez-vous organisé se dit au présent continu : la question commence par are.",
+   "e": "« Are you meeting Sam tomorrow? » : Are + sujet + verbe en -ing exprime un rendez-vous."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I'll",
+    "help",
+    "you",
+    "with",
+    "your",
+    "homework"
+   ],
+   "fin": ".",
+   "i": "Une promesse : will contracté + base.",
+   "e": "« I'll help you with your homework. » : I'll (= I will) + base exprime une promesse."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The phone's ringing! — I am going to answer it.",
+   "r": [
+    "I'll answer it.",
+    "I will answer it."
+   ],
+   "i": "La décision est prise à l'instant : quel futur ?",
+   "e": "« I'll answer it. » : une décision prise sur le moment se dit avec will, pas avec be going to."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The train is leaving at 7.15 every day.",
+   "r": [
+    "The train leaves at 7.15 every day."
+   ],
+   "i": "C'est un horaire régulier : quel temps ?",
+   "e": "« The train leaves at 7.15 every day. » : un horaire fixe se dit au présent simple."
+  },
+  {
+   "d": 2,
+   "q": "Léa has decided: next year she ___ study Spanish.",
+   "o": [
+    "is going to",
+    "studies",
+    "studying"
+   ],
+   "io": {
+    "studies": "Le présent simple sert aux horaires ; un projet décidé se dit be going to.",
+    "studying": "Il manque is going to : « is going to study »."
+   },
+   "i": "Léa a déjà décidé : quel futur pour un projet décidé ?",
+   "e": "« is going to » : be going to + base exprime un projet déjà décidé."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui forment un rendez-vous organisé.",
+   "p": "I *am *seeing the dentist on Monday.",
+   "i": "Cherche be + verbe en -ing.",
+   "e": "« am seeing » : le présent continu exprime un rendez-vous organisé."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Demain, je vois le dentiste à 10 h. »",
+   "r": [
+    "I am seeing the dentist tomorrow at 10",
+    "Tomorrow I am seeing the dentist at 10",
+    "I am seeing the dentist at 10 tomorrow",
+    "I am seeing the dentist tomorrow at ten"
+   ],
+   "i": "Un rendez-vous fixé dans l'agenda se dit au présent continu.",
+   "e": "« I am seeing the dentist tomorrow at 10 » : un rendez-vous organisé se dit au présent continu, pas avec will."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Pas de problème, je vais t'aider ! »",
+   "r": [
+    "No problem, I will help you",
+    "No problem I will help you"
+   ],
+   "i": "Tu décides d'aider à l'instant.",
+   "e": "« No problem, I will help you » : une décision sur le moment se dit avec will, même si le français dit « je vais »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Tomorrow evening I will see my cousins. We have arranged it.",
+   "r": [
+    "Tomorrow evening I am seeing my cousins. We have arranged it."
+   ],
+   "i": "Le rendez-vous est déjà organisé avec d'autres personnes.",
+   "e": "« I am seeing my cousins » : un rendez-vous organisé se dit au présent continu."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "The school bus leaves at 8.10 every morning.",
+    "The school bus is going to leave at 8.10 every morning.",
+    "The school bus will leaves at 8.10 every morning."
+   ],
+   "io": {
+    "The school bus is going to leave at 8.10 every morning.": "Un horaire régulier se dit au présent simple, pas avec be going to.",
+    "The school bus will leaves at 8.10 every morning.": "Après will, le verbe est à la base (will leave), et ici un horaire demande le présent simple."
+   },
+   "i": "Un horaire régulier, fixé par d'autres.",
+   "e": "« leaves » : le présent simple exprime un horaire."
+  },
+  {
+   "d": 3,
+   "q": "I can't come on Friday. I ___ my grandparents then.",
+   "o": [
+    "am visiting",
+    "will visit",
+    "visit"
+   ],
+   "io": {
+    "will visit": "Une visite déjà organisée se dit au présent continu.",
+    "visit": "Le présent simple sert aux horaires ; une visite organisée se dit au présent continu."
+   },
+   "i": "La visite est déjà organisée pour vendredi.",
+   "e": "« am visiting » : le présent continu exprime un arrangement déjà pris."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we're",
+    "going",
+    "to",
+    "move",
+    "to",
+    "a",
+    "new",
+    "house"
+   ],
+   "fin": ".",
+   "i": "Un projet décidé : be going to + base.",
+   "e": "« We're going to move to a new house. » : be going to + base annonce un projet décidé."
+  },
+  {
+   "d": 3,
+   "q": "Oh, I forgot my keys! — Don't worry, I ___ get them for you.",
+   "o": [
+    "will",
+    "gets",
+    "getting"
+   ],
+   "io": {
+    "gets": "Avec I, pas de -s ; et pour une proposition faite à l'instant, il faut will.",
+    "getting": "Il manque un moteur : « will get »."
+   },
+   "i": "Une proposition faite à l'instant.",
+   "e": "« will » : une décision prise sur le moment se dit avec will + base."
+  }
+ ],
+ "quand-je-serai": [
+  {
+   "d": 1,
+   "q": "I'll call you when I ___ at the station.",
+   "o": [
+    "arrive",
+    "will arrive",
+    "arrived"
+   ],
+   "io": {
+    "will arrive": "Après « when », on ne met pas will : la partie avec when reste au présent, même si elle parle du futur.",
+    "arrived": "Le prétérit parle d'un fait passé ; ici on parle d'un futur, qui se dit au présent simple après « when »."
+   },
+   "i": "Regarde le mot « when » : quel temps le verbe qui le suit doit-il prendre quand on parle du futur ?",
+   "e": "« arrive » : après « when », on garde le présent simple pour parler du futur. Seule l'autre partie de la phrase prend will (« I'll call you »)."
+  },
+  {
+   "d": 1,
+   "q": "Wait here until the bus ___.",
+   "o": [
+    "comes",
+    "will come",
+    "come"
+   ],
+   "io": {
+    "will come": "Après « until », on ne met pas will : le futur se dit avec le présent simple.",
+    "come": "« The bus » correspond à it : au présent simple, le verbe prend donc un -s."
+   },
+   "i": "Après « until », le verbe est au présent. Avec « the bus » (it), que faut-il ajouter ?",
+   "e": "« comes » : après « until », on emploie le présent simple, et avec it le verbe prend un -s."
+  },
+  {
+   "d": 1,
+   "q": "When Dad ___ home, we'll have dinner.",
+   "o": [
+    "comes",
+    "will come",
+    "would come"
+   ],
+   "io": {
+    "will come": "La partie avec « when » reste au présent : seule la deuxième partie (« we'll have dinner ») prend will.",
+    "would come": "« would » n'a pas sa place ici : après « when », on utilise le présent simple."
+   },
+   "i": "Une des deux parties de la phrase a déjà son will. Que fait l'autre ?",
+   "e": "« comes » : « when » est suivi du présent simple, et c'est « we'll have » qui porte le futur."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui reste au présent même s'il parle du futur.",
+   "p": "We'll eat when Dad *comes home.",
+   "i": "Cherche le verbe qui vient juste après « when ».",
+   "e": "« comes » : même si le repas est dans le futur, le verbe après « when » reste au présent simple."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I'll tell you as soon as I ___ (know). »",
+   "r": [
+    "know"
+   ],
+   "i": "Après « as soon as », quel temps utilise-t-on pour le futur ?",
+   "e": "« know » : après « as soon as », le futur se dit au présent simple, donc « I know » et non « I will know »."
+  },
+  {
+   "d": 1,
+   "q": "She'll text me before she ___ the house.",
+   "o": [
+    "leaves",
+    "will leave",
+    "left"
+   ],
+   "io": {
+    "will leave": "Après « before », on garde le présent : le will est déjà dans « She'll text ».",
+    "left": "Le prétérit est pour le passé ; ici l'action est future, et elle se dit au présent après « before »."
+   },
+   "i": "Avec « she », que ajoute-t-on au verbe au présent ?",
+   "e": "« leaves » : après « before », présent simple, et avec she le verbe prend un -s."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Appelle-moi quand tu arriveras. »",
+   "r": [
+    "Call me when you arrive",
+    "Phone me when you arrive",
+    "Call me when you get here",
+    "Call me when you get there",
+    "Call me when you get home"
+   ],
+   "i": "Pense à ce que « quand » demande ensuite : un futur ou un présent ?",
+   "e": "« Call me when you arrive » : après « when », on met le présent simple (« arrive »), jamais « will arrive », même si le français dit « arriveras »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je te préviendrai dès que j'aurai fini. »",
+   "r": [
+    "I will tell you as soon as I have finished",
+    "I will let you know as soon as I have finished",
+    "I will tell you as soon as I finish",
+    "I will let you know as soon as I finish"
+   ],
+   "i": "Après « dès que », présent simple ou present perfect : les deux sont possibles.",
+   "e": "« I will tell you as soon as I have finished » : après « as soon as », on évite will ; le present perfect insiste sur le fait que l'action sera terminée, mais le présent simple « finish » est aussi juste."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "when",
+    "she",
+    "gets",
+    "home",
+    "she",
+    "will",
+    "eat"
+   ],
+   "fin": ".",
+   "i": "La partie avec « when » vient d'abord et reste au présent ; le will est dans la seconde partie.",
+   "e": "« When she gets home, she will eat. » : « when » est suivi du présent simple (« gets »), puis la conséquence prend will.",
+   "alt": [
+    [
+     "she",
+     "will",
+     "eat",
+     "when",
+     "she",
+     "gets",
+     "home"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "when",
+    "will",
+    "you",
+    "come",
+    "to",
+    "my",
+    "house"
+   ],
+   "fin": "?",
+   "i": "C'est une question directe : le mot interrogatif ouvre la phrase, puis vient le moteur.",
+   "e": "« When will you come to my house? » : dans une vraie question, « when » est suivi de will. La règle du présent ne vaut que pour « when » qui relie deux parties d'une phrase."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I'll call you when I will arrive.",
+   "r": [
+    "I'll call you when I arrive.",
+    "I will call you when I arrive."
+   ],
+   "i": "Un seul will suffit dans cette phrase : où est-il déjà ?",
+   "e": "« I'll call you when I arrive. » : après « when », le futur se dit au présent simple. Le piège du francophone est de recopier le futur du français (« quand j'arriverai »)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "As soon as she will finish, we'll leave.",
+   "r": [
+    "As soon as she finishes, we'll leave.",
+    "As soon as she has finished, we'll leave.",
+    "As soon as she finishes, we will leave.",
+    "As soon as she has finished, we will leave."
+   ],
+   "i": "Quel temps après « as soon as » ? Et n'oublie pas le -s de she.",
+   "e": "« As soon as she finishes, we'll leave. » : après « as soon as », on met le présent simple (ou le present perfect), jamais will."
+  },
+  {
+   "d": 2,
+   "q": "We'll go to the beach after we ___ lunch.",
+   "o": [
+    "have had",
+    "will have",
+    "would have"
+   ],
+   "io": {
+    "will have": "Après « after », on n'emploie pas will : l'action se dit au présent ou au present perfect.",
+    "would have": "« would have » n'est pas un temps du futur ici ; après « after », on met le present perfect ou le présent."
+   },
+   "i": "L'action « déjeuner » sera terminée avant la plage : quel temps le montre bien ?",
+   "e": "« have had » : après « after », le present perfect montre que l'action sera terminée avant l'autre, et on évite will."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe qui reste au présent même s'il parle du futur.",
+   "p": "Stay in bed until you *feel better.",
+   "i": "Cherche le verbe qui suit « until ».",
+   "e": "« feel » : après « until », on garde le présent simple. L'idée de futur est déjà dans la consigne « Stay in bed »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Stay until the film will end.",
+   "r": [
+    "Stay until the film ends."
+   ],
+   "i": "Quel temps se met après « until » quand on parle du futur ?",
+   "e": "« Stay until the film ends. » : après « until », le futur se dit au présent simple, et « the film » (it) demande un -s."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I'll send you the photos when I'll get home.",
+   "r": [
+    "I'll send you the photos when I get home.",
+    "I will send you the photos when I get home."
+   ],
+   "i": "Combien de will faut-il dans cette phrase ?",
+   "e": "« I'll send you the photos when I get home. » : un seul will, dans la partie principale. Après « when », on reste au présent simple."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Quand elle sera plus grande, elle voudra être médecin. »",
+   "r": [
+    "When she is older, she will want to be a doctor",
+    "When she grows up, she will want to be a doctor",
+    "When she is older she'll want to be a doctor",
+    "When she gets older, she will want to be a doctor"
+   ],
+   "i": "Le français dit « sera » après « quand ». Que dit l'anglais ?",
+   "e": "« When she is older, she will want to be a doctor » : après « when », le présent (« is »), et la conséquence prend will."
+  },
+  {
+   "d": 3,
+   "q": "Which question is correct?",
+   "o": [
+    "When will she arrive?",
+    "When she will arrive?",
+    "When does she will arrive?"
+   ],
+   "io": {
+    "When she will arrive?": "Une question directe demande l'inversion : le moteur will se met avant le sujet.",
+    "When does she will arrive?": "On n'ajoute pas does devant will : will est déjà le moteur de la question."
+   },
+   "i": "C'est une vraie question, pas une phrase avec deux parties.",
+   "e": "« When will she arrive? » : dans une question directe, « when » est suivi de will + sujet. La règle du présent ne concerne que « when » qui relie deux parties."
+  },
+  {
+   "d": 3,
+   "q": "Which sentence is correct?",
+   "o": [
+    "I'll let you know as soon as I've heard from the school.",
+    "I'll let you know as soon as I'll hear from the school.",
+    "I let you know as soon as I will hear from the school."
+   ],
+   "io": {
+    "I'll let you know as soon as I'll hear from the school.": "On ne met pas will après « as soon as » : on garde le présent ou le present perfect.",
+    "I let you know as soon as I will hear from the school.": "Ici le will est mal placé : il faut le will dans la partie principale, pas après « as soon as »."
+   },
+   "i": "Où doit se trouver le will : avant ou après « as soon as » ?",
+   "e": "« I'll let you know as soon as I've heard » : will dans la partie principale, et le present perfect après « as soon as »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "as soon as",
+    "I",
+    "have",
+    "finished",
+    "I",
+    "will",
+    "call",
+    "you"
+   ],
+   "fin": ".",
+   "i": "Commence par la partie avec « as soon as » : elle est au present perfect.",
+   "e": "« As soon as I have finished, I will call you. » : après « as soon as », le present perfect ; la conséquence prend will.",
+   "alt": [
+    [
+     "I",
+     "will",
+     "call",
+     "you",
+     "as soon as",
+     "I",
+     "have",
+     "finished"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Dès qu'il arrivera, nous commencerons. »",
+   "r": [
+    "As soon as he arrives, we will start",
+    "As soon as he arrives, we will begin",
+    "As soon as he gets here, we will start",
+    "As soon as he gets here, we will begin"
+   ],
+   "i": "Quel temps après « as soon as » ? Et n'oublie pas le -s de he.",
+   "e": "« As soon as he arrives, we will start » : après « as soon as », le présent simple (arrives), et la conséquence prend will."
+  }
+ ],
+ "si-alors": [
+  {
+   "d": 1,
+   "q": "If it rains, we ___ at home.",
+   "o": [
+    "will stay",
+    "would stay",
+    "stayed"
+   ],
+   "io": {
+    "would stay": "« would » sert aux situations imaginaires. Ici la pluie est possible, donc la conséquence prend will.",
+    "stayed": "Le prétérit parle du passé ; la conséquence d'une condition réelle dans le futur prend will + base."
+   },
+   "i": "La pluie est vraiment possible : quel moteur pour la conséquence ?",
+   "e": "« will stay » : dans une condition réelle, on met le présent après if et will + base dans la conséquence."
+  },
+  {
+   "d": 1,
+   "q": "If you study hard, you ___ the exam.",
+   "o": [
+    "will pass",
+    "would pass",
+    "passed"
+   ],
+   "io": {
+    "would pass": "« would » est pour l'irréel ; réussir l'examen est ici une possibilité réelle, donc will.",
+    "passed": "Le prétérit parle du passé ; la conséquence d'une condition réelle prend will + base."
+   },
+   "i": "C'est une condition possible : quelle forme dans la conséquence ?",
+   "e": "« will pass » : if + présent, puis will + base pour la conséquence."
+  },
+  {
+   "d": 1,
+   "q": "If I ___ time, I'll visit you.",
+   "o": [
+    "have",
+    "will have",
+    "had"
+   ],
+   "io": {
+    "will have": "Après « if », on ne met pas will : la condition reste au présent.",
+    "had": "Le prétérit après if donnerait une situation imaginaire (would). Ici la conséquence est avec will, donc la condition est au présent."
+   },
+   "i": "La conséquence a déjà un will. Que fait la partie avec if ?",
+   "e": "« have » : après « if », on emploie le présent simple, et le will reste dans la conséquence."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui est au présent après if.",
+   "p": "If she *finishes early, she will help us.",
+   "i": "Cherche le verbe qui suit if.",
+   "e": "« finishes » : après « if », le présent simple (avec she, on ajoute -s). Le futur est dans « will help »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « If you ___ (miss) the bus, you'll be late. »",
+   "r": [
+    "miss"
+   ],
+   "i": "Après if, quel temps ?",
+   "e": "« miss » : après « if », on met le présent simple, et la conséquence prend will (« you'll be late »)."
+  },
+  {
+   "d": 1,
+   "q": "You'll feel better if you ___ more water.",
+   "o": [
+    "drink",
+    "will drink",
+    "drank"
+   ],
+   "io": {
+    "will drink": "Après « if », on ne met pas will : la condition reste au présent.",
+    "drank": "Le prétérit après if donnerait une situation imaginaire ; ici la conséquence avec will demande le présent."
+   },
+   "i": "Que met-on dans la partie introduite par if ?",
+   "e": "« drink » : if + présent simple, et « you'll feel better » porte le will."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Si tu as faim, tu pourras manger un sandwich. »",
+   "r": [
+    "If you are hungry, you can eat a sandwich",
+    "If you are hungry, you can have a sandwich",
+    "If you are hungry, you will be able to eat a sandwich"
+   ],
+   "i": "Avec « if », le verbe est au présent ; la conséquence peut prendre can.",
+   "e": "« If you are hungry, you can eat a sandwich » : après if, le présent (are), et la conséquence peut prendre can ou will."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Si elle ne se dépêche pas, elle manquera le train. »",
+   "r": [
+    "If she doesn't hurry, she will miss the train",
+    "If she does not hurry, she will miss the train",
+    "If she doesn't hurry up, she will miss the train",
+    "If she does not hurry up, she will miss the train",
+    "She will miss the train if she doesn't hurry",
+    "She will miss the train if she does not hurry"
+   ],
+   "i": "La condition est négative et au présent ; la conséquence prend will.",
+   "e": "« If she doesn't hurry, she will miss the train » : if + présent négatif (doesn't hurry), puis will + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "if",
+    "you",
+    "touch",
+    "that",
+    "you",
+    "will",
+    "burn",
+    "yourself"
+   ],
+   "fin": ".",
+   "i": "Commence par la condition avec if, qui est au présent.",
+   "e": "« If you touch that, you will burn yourself. » : if + présent, puis will + base pour la conséquence.",
+   "alt": [
+    [
+     "you",
+     "will",
+     "burn",
+     "yourself",
+     "if",
+     "you",
+     "touch",
+     "that"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "what",
+    "will",
+    "you",
+    "do",
+    "if",
+    "it",
+    "rains"
+   ],
+   "fin": "?",
+   "i": "C'est une question : le mot interrogatif d'abord, puis will.",
+   "e": "« What will you do if it rains? » : la question prend will, mais la partie avec if reste au présent simple."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If it will rain, we'll stay home.",
+   "r": [
+    "If it rains, we'll stay home.",
+    "If it rains, we will stay home."
+   ],
+   "i": "Quel temps après if ?",
+   "e": "« If it rains, we'll stay home. » : après « if », on met le présent simple, jamais will. Le piège du francophone est de copier le futur de « s'il pleuvra »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Unless you don't hurry, you'll be late.",
+   "r": [
+    "Unless you hurry, you'll be late.",
+    "Unless you hurry, you will be late."
+   ],
+   "i": "« Unless » contient déjà l'idée de « if … not ».",
+   "e": "« Unless you hurry, you'll be late. » : « unless » veut dire « sauf si », donc le verbe qui suit est affirmatif ; deux négations seraient fausses."
+  },
+  {
+   "d": 2,
+   "q": "We'll go to the park unless it ___.",
+   "o": [
+    "rains",
+    "doesn't rain",
+    "will rain"
+   ],
+   "io": {
+    "doesn't rain": "« unless » veut déjà dire « si … ne … pas » : on ne rajoute pas de négation.",
+    "will rain": "Après « unless », comme après if, on garde le présent simple."
+   },
+   "i": "« Unless » est déjà négatif : le verbe qui suit doit-il l'être aussi ?",
+   "e": "« rains » : « unless it rains » veut dire « sauf s'il pleut », avec un verbe affirmatif au présent."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui forment le futur de la conséquence.",
+   "p": "If you don't wear a coat, you *will *catch a cold.",
+   "i": "Cherche le moteur du futur et le verbe qui le suit.",
+   "e": "« will catch » : la conséquence d'une condition réelle prend will + base ; la condition, elle, est au présent (« don't wear »)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If Omar will win the race, he will get a medal.",
+   "r": [
+    "If Omar wins the race, he will get a medal."
+   ],
+   "i": "Combien de will faut-il, et dans quelle partie ?",
+   "e": "« If Omar wins the race, he will get a medal. » : après if, présent simple (avec -s pour Omar) ; le will reste dans la conséquence."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If you will help me, I'll finish earlier.",
+   "r": [
+    "If you help me, I'll finish earlier.",
+    "If you help me, I will finish earlier."
+   ],
+   "i": "Dans la partie avec if, quel temps faut-il ?",
+   "e": "« If you help me, I'll finish earlier. » : on ne met pas will après if ; le présent simple suffit pour la condition."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Si tu étudies bien, tu réussiras ton examen. »",
+   "r": [
+    "If you study hard, you will pass your exam",
+    "If you study well, you will pass your exam",
+    "If you study hard, you will pass the exam",
+    "If you study well, you will pass the exam",
+    "If you work hard, you will pass your exam"
+   ],
+   "i": "Condition au présent, conséquence avec will. Le français dit « étudies » puis « réussiras ».",
+   "e": "« If you study hard, you will pass your exam » : if + présent, will + base. Le français utilise aussi un présent après « si », donc la règle est la même."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Je t'appellerai si j'ai le temps. »",
+   "r": [
+    "I will call you if I have time",
+    "I will phone you if I have time",
+    "If I have time, I will call you",
+    "If I have time, I will phone you",
+    "I will call you if I have the time"
+   ],
+   "i": "Tu peux commencer par la conséquence : alors pas de virgule devant if.",
+   "e": "« I will call you if I have time » : will dans la conséquence, présent simple après if. On peut aussi mettre la condition en premier, avec une virgule."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "If you don't hurry, you'll miss the bus.",
+    "If you won't hurry, you'll miss the bus.",
+    "If you don't hurry, you miss the bus."
+   ],
+   "io": {
+    "If you won't hurry, you'll miss the bus.": "Après if, on ne met pas will, même négatif (won't) : on dit « don't ».",
+    "If you don't hurry, you miss the bus.": "La conséquence d'une condition réelle dans le futur prend will : « you'll miss »."
+   },
+   "i": "Vérifie le temps dans chaque partie de la phrase.",
+   "e": "« If you don't hurry, you'll miss the bus. » : if + présent (négatif avec don't), puis will + base."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "will",
+    "go",
+    "to",
+    "the",
+    "zoo",
+    "unless",
+    "it",
+    "rains"
+   ],
+   "fin": ".",
+   "i": "« Unless » est suivi d'un verbe affirmatif au présent.",
+   "e": "« We will go to the zoo unless it rains. » : « unless » veut dire « sauf si », suivi du présent simple."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "If you are tired, you can sleep here.",
+    "If you will be tired, you can sleep here.",
+    "If you are tired, you can to sleep here."
+   ],
+   "io": {
+    "If you will be tired, you can sleep here.": "Après if, on garde le présent : « are », pas « will be ».",
+    "If you are tired, you can to sleep here.": "Après le modal can, le verbe est à la base, sans « to »."
+   },
+   "i": "Il y a deux pièges possibles : après if, et après can.",
+   "e": "« If you are tired, you can sleep here. » : présent après if, et can + base (sans to) dans la conséquence."
+  }
+ ],
+ "bulle-reve": [
+  {
+   "d": 1,
+   "q": "If I had a dog, I ___ it every day.",
+   "o": [
+    "would walk",
+    "will walk",
+    "walked"
+   ],
+   "io": {
+    "will walk": "« will » est pour une condition réelle ; ici « had » montre une situation imaginaire, donc would.",
+    "walked": "La conséquence d'une situation imaginaire se dit avec would + base, pas avec le prétérit."
+   },
+   "i": "Je n'ai pas de chien : la situation est imaginaire. Quel moteur pour la conséquence ?",
+   "e": "« would walk » : if + prétérit, puis would + base pour imaginer ce qui arriverait."
+  },
+  {
+   "d": 1,
+   "q": "If we had more time, we ___ the museum.",
+   "o": [
+    "would visit",
+    "will visit",
+    "visit"
+   ],
+   "io": {
+    "will visit": "« will » est pour le réel ; « had » montre ici que nous n'avons pas assez de temps : il faut would.",
+    "visit": "La conséquence d'une situation imaginaire se dit avec would + base."
+   },
+   "i": "Nous n'avons pas plus de temps : la situation est irréelle.",
+   "e": "« would visit » : la condition au prétérit annonce une conséquence avec would + base."
+  },
+  {
+   "d": 1,
+   "q": "If she ___ a bike, she would ride to school.",
+   "o": [
+    "had",
+    "has",
+    "would have"
+   ],
+   "io": {
+    "has": "Après if, pour une situation imaginaire, le verbe recule au prétérit : « had ».",
+    "would have": "On ne met jamais would après if ; le would est dans l'autre partie."
+   },
+   "i": "La conséquence a déjà son would. Que met-on après if ?",
+   "e": "« had » : if + prétérit, would + base. Le prétérit marque ici l'irréel, pas le passé."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe au prétérit qui fait la bulle de rêve.",
+   "p": "If I *had a car, I would drive to the sea.",
+   "i": "Cherche le verbe qui suit if.",
+   "e": "« had » : après if, le verbe recule d'un cran pour dire que la situation est imaginaire. La conséquence prend would."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « If I won a prize, I ___ (be) very happy. »",
+   "r": [
+    "would be"
+   ],
+   "i": "Je n'ai pas gagné de prix : quel moteur pour la conséquence ?",
+   "e": "« would be » : si la condition est au prétérit (won), la conséquence prend would + base."
+  },
+  {
+   "d": 1,
+   "q": "If I ___ you, I would take the train.",
+   "o": [
+    "were",
+    "am",
+    "would be"
+   ],
+   "io": {
+    "am": "Pour une situation imaginaire, le verbe recule d'un cran : « were ».",
+    "would be": "On ne met pas would après if ; le would est déjà dans l'autre partie."
+   },
+   "i": "« Si j'étais toi » est imaginaire : quelle forme de be après if ?",
+   "e": "« were » : dans « If I were you », on emploie were pour toutes les personnes, même avec I."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Si j'avais un million d'euros, je voyagerais. »",
+   "r": [
+    "If I had a million euros, I would travel",
+    "If I had one million euros, I would travel",
+    "I would travel if I had a million euros",
+    "I would travel if I had one million euros"
+   ],
+   "i": "Le français dit « avais » puis « voyagerais » : quels temps anglais ?",
+   "e": "« If I had a million euros, I would travel » : if + prétérit, would + base, comme en français (imparfait + conditionnel)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Si elle habitait plus près, nous la verrions plus souvent. »",
+   "r": [
+    "If she lived closer, we would see her more often",
+    "If she lived nearer, we would see her more often",
+    "If she lived closer, we would see her more",
+    "We would see her more often if she lived closer"
+   ],
+   "i": "Condition au prétérit, conséquence avec would.",
+   "e": "« If she lived closer, we would see her more often » : prétérit après if, would + base dans la conséquence."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "if",
+    "I",
+    "were",
+    "you",
+    "I",
+    "would",
+    "say",
+    "sorry"
+   ],
+   "fin": ".",
+   "i": "Pour un conseil, on se met à la place de l'autre : « If I were you ».",
+   "e": "« If I were you, I would say sorry. » : were après if, puis would + base pour donner le conseil."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "what",
+    "would",
+    "you",
+    "do",
+    "if",
+    "you",
+    "won",
+    "a",
+    "prize"
+   ],
+   "fin": "?",
+   "i": "La question commence par le mot interrogatif, puis would.",
+   "e": "« What would you do if you won a prize? » : would dans la question, prétérit après if."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If I would have money, I'd buy it.",
+   "r": [
+    "If I had money, I'd buy it.",
+    "If I had money, I would buy it."
+   ],
+   "i": "Après if, on ne met pas would.",
+   "e": "« If I had money, I'd buy it. » : le piège du francophone est de copier « si j'aurais ». Après if, on met le prétérit, et would seulement dans la conséquence."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If I am rich, I would travel.",
+   "r": [
+    "If I were rich, I would travel.",
+    "If I was rich, I would travel."
+   ],
+   "i": "La conséquence est avec would : la condition doit être imaginaire aussi.",
+   "e": "« If I were rich, I would travel. » : une situation imaginaire demande le prétérit (were) après if, pour s'accorder avec would."
+  },
+  {
+   "d": 2,
+   "q": "If he knew the answer, he ___ us.",
+   "o": [
+    "would tell",
+    "will tell",
+    "told"
+   ],
+   "io": {
+    "will tell": "La condition est au prétérit (« knew ») : situation imaginaire, donc would.",
+    "told": "La conséquence d'une situation imaginaire se dit avec would + base."
+   },
+   "i": "Il ne connaît pas la réponse : situation imaginaire.",
+   "e": "« would tell » : prétérit après if, would + base dans la conséquence."
+  },
+  {
+   "d": 2,
+   "q": "Touche le modal qui peut remplacer would.",
+   "p": "If Omar spoke Chinese, he *could work in Shanghai.",
+   "i": "Cherche le moteur de la conséquence.",
+   "e": "« could » : dans la conséquence, could (ou might) peut remplacer would, pour dire « il pourrait »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If she knew, she will be angry.",
+   "r": [
+    "If she knew, she would be angry."
+   ],
+   "i": "Le prétérit après if annonce une situation imaginaire : quel moteur ensuite ?",
+   "e": "« If she knew, she would be angry. » : avec un prétérit après if, la conséquence prend would, pas will."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "If I would be you, I would call him.",
+   "r": [
+    "If I were you, I would call him.",
+    "If I was you, I would call him."
+   ],
+   "i": "Que met-on après if : would ou le prétérit ?",
+   "e": "« If I were you, I would call him. » : après if, jamais would ; on met were (ou was) pour parler d'une situation imaginaire."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Que ferais-tu si tu parlais chinois ? »",
+   "r": [
+    "What would you do if you spoke Chinese",
+    "If you spoke Chinese, what would you do"
+   ],
+   "i": "Le français : conditionnel puis imparfait. L'anglais : would puis prétérit.",
+   "e": "« What would you do if you spoke Chinese? » : would + base pour la conséquence, prétérit après if."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Si nous gagnions, nous pourrions acheter une maison. »",
+   "r": [
+    "If we won, we could buy a house",
+    "We could buy a house if we won",
+    "If we won, we might buy a house",
+    "We might buy a house if we won"
+   ],
+   "i": "« Pourrions » : quel modal peut remplacer would ?",
+   "e": "« If we won, we could buy a house » : prétérit après if, et could (ou would) + base pour exprimer la possibilité."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "If I lived in Paris, I would go to the theatre every week.",
+    "If I would live in Paris, I would go to the theatre every week.",
+    "If I lived in Paris, I will go to the theatre every week."
+   ],
+   "io": {
+    "If I would live in Paris, I would go to the theatre every week.": "On ne met pas would après if : il faut le prétérit « lived ».",
+    "If I lived in Paris, I will go to the theatre every week.": "Avec un prétérit après if (situation imaginaire), la conséquence prend would, pas will."
+   },
+   "i": "Vérifie chaque partie : après if, puis dans la conséquence.",
+   "e": "« If I lived … I would go » : prétérit après if, would + base dans la conséquence."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "if",
+    "she",
+    "were",
+    "here",
+    "she",
+    "would",
+    "know",
+    "what",
+    "to",
+    "do"
+   ],
+   "fin": ".",
+   "i": "Avec be dans une situation imaginaire, on emploie were.",
+   "e": "« If she were here, she would know what to do. » : were après if, would + base ensuite.",
+   "alt": [
+    [
+     "she",
+     "would",
+     "know",
+     "what",
+     "to",
+     "do",
+     "if",
+     "she",
+     "were",
+     "here"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "I'd help you if I ___ the answer. But I don't.",
+   "o": [
+    "knew",
+    "know",
+    "would know"
+   ],
+   "io": {
+    "know": "Le présent donnerait une condition réelle ; ici « I'd help » est imaginaire, donc il faut le prétérit.",
+    "would know": "On ne met pas would après if : après if, c'est le prétérit."
+   },
+   "i": "« But I don't » montre que la situation est contraire à la réalité.",
+   "e": "« knew » : après if, le prétérit marque l'irréel (je ne connais pas la réponse), et la conséquence prend would."
+  }
+ ],
+ "monde-envers": [
+  {
+   "d": 1,
+   "q": "English ___ in many countries.",
+   "o": [
+    "is spoken",
+    "speaks",
+    "are spoken"
+   ],
+   "io": {
+    "speaks": "Ici l'anglais subit l'action : on emploie le passif, be + participe passé.",
+    "are spoken": "« English » est singulier : il prend is, pas are."
+   },
+   "i": "L'anglais ne parle pas : on le parle. Il faut be + participe passé.",
+   "e": "« is spoken » : au passif présent, on met am/is/are + participe passé ; « English » est singulier, donc is."
+  },
+  {
+   "d": 1,
+   "q": "My bike ___ stolen yesterday.",
+   "o": [
+    "was",
+    "were",
+    "is"
+   ],
+   "io": {
+    "were": "« My bike » est singulier : au passé, be devient was.",
+    "is": "« Yesterday » demande le passé : was, pas is."
+   },
+   "i": "« Yesterday » : quel temps de be ? Et le sujet est singulier.",
+   "e": "« was » : au passif passé, on met was/were + participe passé. Avec « my bike » (singulier), c'est was."
+  },
+  {
+   "d": 1,
+   "q": "These cookies ___ made by my mum.",
+   "o": [
+    "are",
+    "is",
+    "be"
+   ],
+   "io": {
+    "is": "« These cookies » est pluriel : il prend are.",
+    "be": "Au présent, on conjugue be : « are » avec un sujet pluriel."
+   },
+   "i": "Le sujet est pluriel.",
+   "e": "« are » : au passif présent, am/is/are + participe passé ; « these cookies » est pluriel, donc are."
+  },
+  {
+   "d": 1,
+   "q": "Touche le participe passé.",
+   "p": "The window was *broken last night.",
+   "i": "Cherche le verbe qui suit was.",
+   "e": "« broken » : au passif, be est suivi du participe passé. Le participe de break est broken."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The letter was ___ (write) yesterday. »",
+   "r": [
+    "written"
+   ],
+   "i": "Au passif, on met le participe passé : write · wrote · ?",
+   "e": "« written » : was + participe passé. Le participe de write est written, pas wrote."
+  },
+  {
+   "d": 1,
+   "q": "The song was written ___ John Lennon.",
+   "o": [
+    "by",
+    "from",
+    "of"
+   ],
+   "io": {
+    "from": "Pour dire « par » devant l'auteur, on emploie by.",
+    "of": "Pour dire « par » devant l'auteur, on emploie by."
+   },
+   "i": "Quel petit mot introduit celui qui a fait l'action ?",
+   "e": "« by » : au passif, l'auteur de l'action se met après by."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Le fromage est fabriqué à partir de lait. »",
+   "r": [
+    "Cheese is made from milk",
+    "Cheese is made of milk",
+    "Cheese is made with milk"
+   ],
+   "i": "Un processus : be + participe de make.",
+   "e": "« Cheese is made from milk » : au passif présent, is + participe passé (made)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « On m'a volé mon vélo hier. »",
+   "r": [
+    "My bike was stolen yesterday",
+    "My bicycle was stolen yesterday",
+    "Yesterday my bike was stolen"
+   ],
+   "i": "On ne sait pas qui a volé : mets le vélo en sujet.",
+   "e": "« My bike was stolen yesterday » : le « on » français se traduit souvent par un passif quand l'agent est inconnu."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "were",
+    "you",
+    "invited",
+    "to",
+    "the",
+    "party"
+   ],
+   "fin": "?",
+   "i": "Une question au passif passé commence par were.",
+   "e": "« Were you invited to the party? » : Were + sujet + participe passé."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "this",
+    "tower",
+    "was",
+    "designed",
+    "by",
+    "Eiffel's",
+    "company"
+   ],
+   "fin": ".",
+   "i": "Sujet, was, participe passé, puis by + l'agent.",
+   "e": "« This tower was designed by Eiffel's company. » : le passif avec by nomme l'agent."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The window was broke by the wind.",
+   "r": [
+    "The window was broken by the wind."
+   ],
+   "i": "Après was, quelle forme du verbe break ?",
+   "e": "« The window was broken by the wind. » : au passif, il faut le participe passé broken, pas le prétérit broke."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "One speaks English here.",
+   "r": [
+    "English is spoken here."
+   ],
+   "i": "Le « on » français se traduit souvent autrement.",
+   "e": "« English is spoken here. » : « one » sonne très formel ; en anglais courant, on emploie le passif pour traduire « on »."
+  },
+  {
+   "d": 2,
+   "q": "Where ___ these shoes made?",
+   "o": [
+    "are",
+    "is",
+    "do"
+   ],
+   "io": {
+    "is": "« These shoes » est pluriel : il prend are.",
+    "do": "Au passif, on conjugue be (are), pas do."
+   },
+   "i": "Le sujet est pluriel et la phrase est au passif.",
+   "e": "« are » : la question au passif présent met are avant le sujet pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux participes passés.",
+   "p": "Many cars are *made in Germany and *sold in France.",
+   "i": "Cherche les verbes qui suivent are.",
+   "e": "« made » et « sold » : au passif, on emploie le participe passé après be."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The cake was made of my mum.",
+   "r": [
+    "The cake was made by my mum."
+   ],
+   "i": "Quel petit mot introduit l'agent ?",
+   "e": "« The cake was made by my mum. » : l'agent s'introduit avec by, pas avec of."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The Eiffel Tower is built in 1889.",
+   "r": [
+    "The Eiffel Tower was built in 1889."
+   ],
+   "i": "« In 1889 » est une date passée : quel temps de be ?",
+   "e": "« The Eiffel Tower was built in 1889. » : une date passée demande was + participe passé."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ce château a été construit en 1200. »",
+   "r": [
+    "This castle was built in 1200",
+    "The castle was built in 1200",
+    "This castle was built in the year 1200"
+   ],
+   "i": "Une date passée : was + participe de build.",
+   "e": "« This castle was built in 1200 » : le passif passé, was + participe passé (build · built · built)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Tu as été invité à la fête ? »",
+   "r": [
+    "Were you invited to the party"
+   ],
+   "i": "Question au passif passé : were en premier.",
+   "e": "« Were you invited to the party? » : Were + sujet + participe passé de invite."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "The photos were taken by my sister.",
+    "The photos was taken by my sister.",
+    "The photos were took by my sister."
+   ],
+   "io": {
+    "The photos was taken by my sister.": "« The photos » est pluriel : il prend were.",
+    "The photos were took by my sister.": "Au passif, il faut le participe passé taken, pas took."
+   },
+   "i": "Vérifie l'accord de be et la forme du verbe.",
+   "e": "« The photos were taken by my sister. » : were avec un pluriel, puis le participe taken."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "book",
+    "was",
+    "written",
+    "by",
+    "a",
+    "famous",
+    "scientist"
+   ],
+   "fin": ".",
+   "i": "Sujet, was, participe passé, puis by + agent.",
+   "e": "« The book was written by a famous scientist. » : le passif nomme l'agent avec by."
+  },
+  {
+   "d": 3,
+   "q": "The room ___ every morning by a cleaner.",
+   "o": [
+    "is cleaned",
+    "cleans",
+    "was clean"
+   ],
+   "io": {
+    "cleans": "« The room » subit l'action : il faut le passif.",
+    "was clean": "« Was clean » est un adjectif au passé ; l'action répétée se dit is cleaned."
+   },
+   "i": "La chambre ne nettoie pas : elle est nettoyée.",
+   "e": "« is cleaned » : un fait habituel au passif présent, is + participe passé."
+  }
+ ],
+ "peut-etre": [
+  {
+   "d": 1,
+   "q": "Look at the sky. It ___ snow tonight.",
+   "o": [
+    "might",
+    "mights",
+    "maybe"
+   ],
+   "io": {
+    "mights": "Comme tous les modaux, might ne prend jamais de -s, même avec he, she ou it.",
+    "maybe": "« Maybe » est un adverbe qui s'écrit en tête de phrase ; ici il faut un modal juste devant le verbe snow."
+   },
+   "i": "Il faut un petit verbe modal qui dit « peut-être », suivi de la base du verbe.",
+   "e": "« might » : might + base exprime une possibilité (il se peut qu'il neige). Un modal ne prend pas de -s."
+  },
+  {
+   "d": 1,
+   "q": "Where is Tom? — He ___ be in the garden.",
+   "o": [
+    "may",
+    "maybe",
+    "mays"
+   ],
+   "io": {
+    "maybe": "« Maybe » est un adverbe : il ne se place pas devant « be ». Pour un verbe, on dit « may be » en deux mots.",
+    "mays": "Un modal ne prend jamais de -s, même avec he."
+   },
+   "i": "Après « He », il faut un modal, puis le verbe be à la base.",
+   "e": "« may » : « He may be in the garden » veut dire qu'il est peut-être dans le jardin."
+  },
+  {
+   "d": 1,
+   "q": "She ___ come to the party, but she isn't sure.",
+   "o": [
+    "might",
+    "mights",
+    "might to"
+   ],
+   "io": {
+    "mights": "Un modal ne prend pas de -s, même avec she.",
+    "might to": "Après un modal, on met le verbe à la base, sans « to »."
+   },
+   "i": "Le modal est suivi directement de la base du verbe.",
+   "e": "« might » : might + base, sans -s et sans to."
+  },
+  {
+   "d": 1,
+   "q": "Touche le modal qui dit « peut-être ».",
+   "p": "We *might go to Spain this summer.",
+   "i": "Cherche le petit verbe placé juste avant « go ».",
+   "e": "« might » : ce modal exprime une possibilité (nous irons peut-être en Espagne) et se place juste avant la base du verbe."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Maybe Léa ___ in the library now. »",
+   "r": [
+    "is"
+   ],
+   "i": "Après « Maybe », il faut une phrase complète, avec un verbe conjugué.",
+   "e": "« is » : « Maybe » est un adverbe suivi d'une phrase normale (Maybe Léa is in the library)."
+  },
+  {
+   "d": 1,
+   "q": "___ it will rain.",
+   "o": [
+    "Maybe",
+    "May be",
+    "Might be"
+   ],
+   "io": {
+    "May be": "Quand « maybe » est un adverbe en début de phrase, il s'écrit en un seul mot.",
+    "Might be": "« Might be » doit être suivi d'un adjectif ou d'un nom ; ici une phrase complète suit."
+   },
+   "i": "Un adverbe, en un seul mot, qui ouvre la phrase.",
+   "e": "« Maybe » : en début de phrase, l'adverbe maybe s'écrit en un mot et se suit d'une phrase complète."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il se peut qu'il pleuve ce soir. »",
+   "r": [
+    "It might rain tonight",
+    "It may rain tonight",
+    "It could rain tonight",
+    "It might rain this evening",
+    "It may rain this evening",
+    "It could rain this evening"
+   ],
+   "i": "Utilise un modal de possibilité suivi de la base du verbe.",
+   "e": "« It might rain tonight » : might, may ou could + base expriment une possibilité. Le français « il se peut que » se traduit par un modal, sans « that »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Peut-être qu'elle est malade. »",
+   "r": [
+    "Maybe she is ill",
+    "Maybe she is sick",
+    "She may be ill",
+    "She may be sick",
+    "She might be ill",
+    "She might be sick",
+    "She could be ill",
+    "She could be sick"
+   ],
+   "i": "Tu peux employer l'adverbe maybe ou un modal suivi de be.",
+   "e": "« Maybe she is ill » ou « She may be ill » : maybe ouvre une phrase complète, tandis que may/might/could sont suivis de be."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it",
+    "might",
+    "not",
+    "be",
+    "true"
+   ],
+   "fin": ".",
+   "i": "Le modal vient d'abord, puis la négation, puis be.",
+   "e": "« It might not be true. » : might not + base veut dire « peut-être pas »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "may",
+    "be",
+    "at",
+    "the",
+    "library"
+   ],
+   "fin": ".",
+   "i": "Après le sujet, mets le modal puis be.",
+   "e": "« She may be at the library. » : may + be exprime une hypothèse sur le moment présent."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She mights come to the party.",
+   "r": [
+    "She might come to the party.",
+    "She may come to the party.",
+    "She could come to the party."
+   ],
+   "i": "Regarde la fin du modal.",
+   "e": "« She might come to the party. » : un modal ne prend jamais de -s, même avec she."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It maybe true.",
+   "r": [
+    "It may be true.",
+    "It might be true.",
+    "It could be true.",
+    "Maybe it is true."
+   ],
+   "i": "« Maybe » en un mot est-il un verbe ?",
+   "e": "« It may be true. » : may be (deux mots) est un verbe ; maybe (un mot) est un adverbe qui ouvre une phrase."
+  },
+  {
+   "d": 2,
+   "q": "That ___ be Tom! He is in Paris.",
+   "o": [
+    "couldn't",
+    "might",
+    "may"
+   ],
+   "io": {
+    "might": "« Might » dit « peut-être » ; ici on est sûr que ce n'est pas Tom, donc c'est impossible.",
+    "may": "« May » dit « peut-être » ; ici la personne est à Paris, donc c'est impossible."
+   },
+   "i": "Tom est à Paris : est-ce possible ou impossible que ce soit lui ?",
+   "e": "« couldn't » : couldn't dit que c'est impossible, alors que may not et might not disent « peut-être pas »."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui disent « peut-être pas ».",
+   "p": "She may be at home, but she *might *not answer the phone.",
+   "i": "Cherche un modal suivi de not.",
+   "e": "« might not » : peut-être pas, c'est-à-dire qu'une possibilité existe qu'elle ne réponde pas."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He might to call you tonight.",
+   "r": [
+    "He might call you tonight.",
+    "He may call you tonight.",
+    "He could call you tonight."
+   ],
+   "i": "Quel petit mot est de trop après un modal ?",
+   "e": "« He might call you tonight. » : après un modal, on met le verbe nu, sans « to » (le français « peut-être appeler » pousse à l'erreur)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She might comes later.",
+   "r": [
+    "She might come later.",
+    "She may come later.",
+    "She could come later."
+   ],
+   "i": "Quelle forme du verbe après un modal ?",
+   "e": "« She might come later. » : après un modal, le verbe reste à la base, même avec she."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle ne viendra peut-être pas. »",
+   "r": [
+    "She might not come",
+    "She may not come",
+    "Maybe she will not come",
+    "Maybe she won't come"
+   ],
+   "i": "Peut-être pas : modal + not + base, ou maybe + futur négatif.",
+   "e": "« She might not come » : might not ou may not + base veulent dire « peut-être pas »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous irons peut-être en Espagne cet été. »",
+   "r": [
+    "We might go to Spain this summer",
+    "We may go to Spain this summer",
+    "We could go to Spain this summer",
+    "Maybe we will go to Spain this summer"
+   ],
+   "i": "Un modal de possibilité suivi de la base.",
+   "e": "« We might go to Spain this summer » : might, may ou could + base expriment une possibilité à venir."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "Maybe he is in the garden.",
+    "Maybe he be in the garden.",
+    "Maybe he might in the garden."
+   ],
+   "io": {
+    "Maybe he be in the garden.": "Après maybe, on met une phrase complète avec un verbe conjugué (is), pas la base be.",
+    "Maybe he might in the garden.": "« Might » doit être suivi d'un verbe (might be) ; et maybe + might est redondant."
+   },
+   "i": "Après maybe, on construit une phrase normale.",
+   "e": "« Maybe he is in the garden. » : maybe est un adverbe suivi d'une phrase complète."
+  },
+  {
+   "d": 3,
+   "q": "Which sentence means 'perhaps not'?",
+   "o": [
+    "She might not know.",
+    "She couldn't know.",
+    "She can't know."
+   ],
+   "io": {
+    "She couldn't know.": "« Couldn't » dit que c'est impossible, pas que c'est peut-être faux.",
+    "She can't know.": "« Can't » dit que c'est impossible, pas que c'est peut-être faux."
+   },
+   "i": "« Peut-être pas » laisse une possibilité ouverte.",
+   "e": "« She might not know » : might not veut dire peut-être pas, tandis que couldn't et can't disent impossible."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "maybe",
+    "the",
+    "bus",
+    "is",
+    "late",
+    "because",
+    "of",
+    "the",
+    "rain"
+   ],
+   "fin": ".",
+   "i": "Maybe ouvre une phrase complète.",
+   "e": "« Maybe the bus is late because of the rain. » : maybe + phrase complète avec un verbe conjugué."
+  }
+ ],
+ "pouvoir-hier": [
+  {
+   "d": 1,
+   "q": "My grandfather ___ speak four languages when he was young.",
+   "o": [
+    "could",
+    "can",
+    "will can"
+   ],
+   "io": {
+    "can": "La phrase parle du passé (« when he was young ») : can devient could.",
+    "will can": "« will can » n'existe pas : deux modaux ne se suivent jamais."
+   },
+   "i": "La phrase est au passé : quelle forme passée de can ?",
+   "e": "« could » : pour une capacité générale dans le passé, could remplace can."
+  },
+  {
+   "d": 1,
+   "q": "Tomorrow I ___ help you.",
+   "o": [
+    "will be able to",
+    "will can",
+    "can to"
+   ],
+   "io": {
+    "will can": "On ne met pas deux modaux à la suite : après will, can devient be able to.",
+    "can to": "Après can, on ne met pas to ; et pour le futur on dit will be able to."
+   },
+   "i": "Can n'a pas de futur : par quelle expression le remplace-t-on ?",
+   "e": "« will be able to » : pour le futur de can, on emploie will + be able to + base."
+  },
+  {
+   "d": 1,
+   "q": "We ___ find a taxi after an hour. It was hard!",
+   "o": [
+    "managed to",
+    "managed",
+    "could to"
+   ],
+   "io": {
+    "managed": "Managed est toujours suivi de to : managed to find.",
+    "could to": "Après could, on ne met pas to."
+   },
+   "i": "Il s'agit d'une réussite après des efforts, dans une situation précise.",
+   "e": "« managed to » : managed to + base veut dire réussir à, pour une réussite ponctuelle dans le passé."
+  },
+  {
+   "d": 1,
+   "q": "Touche les trois mots qui remplacent can au futur.",
+   "p": "You will *be *able *to drive soon.",
+   "i": "Cherche l'expression qui veut dire « être capable de ».",
+   "e": "« be able to » : après will, on emploie be able to à la place de can."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « You'll be ___ to swim next summer. »",
+   "r": [
+    "able"
+   ],
+   "i": "Quel adjectif forme « être capable de » avec be … to ?",
+   "e": "« able » : be able to + base remplace can quand on veut parler du futur."
+  },
+  {
+   "d": 1,
+   "q": "She ___ read at the age of four.",
+   "o": [
+    "could",
+    "can",
+    "will be able to"
+   ],
+   "io": {
+    "can": "La phrase est au passé (« at the age of four ») : can devient could.",
+    "will be able to": "Cette forme parle du futur, pas du passé."
+   },
+   "i": "La capacité date d'autrefois.",
+   "e": "« could » : une capacité générale du passé se dit avec could + base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous avons réussi à ouvrir la porte. »",
+   "r": [
+    "We managed to open the door",
+    "We were able to open the door"
+   ],
+   "i": "Réussir à : managed to ou was/were able to.",
+   "e": "« We managed to open the door » : pour une réussite précise dans le passé, on emploie managed to ou were able to, pas could."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Un jour, les robots sauront cuisiner. »",
+   "r": [
+    "One day robots will be able to cook",
+    "One day, robots will be able to cook"
+   ],
+   "i": "Le futur de can se forme avec will + be able to.",
+   "e": "« One day, robots will be able to cook » : will be able to + base est le futur de can."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "haven't",
+    "been",
+    "able",
+    "to",
+    "call",
+    "you"
+   ],
+   "fin": ".",
+   "i": "Le present perfect de can se forme avec been able to.",
+   "e": "« I haven't been able to call you. » : can n'a pas de participe passé, on utilise been able to."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "will",
+    "you",
+    "be",
+    "able",
+    "to",
+    "come",
+    "on",
+    "Friday"
+   ],
+   "fin": "?",
+   "i": "La question au futur commence par will.",
+   "e": "« Will you be able to come on Friday? » : Will + sujet + be able to + base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She will can speak French next year.",
+   "r": [
+    "She will be able to speak French next year."
+   ],
+   "i": "Deux modaux se suivent : c'est impossible.",
+   "e": "« She will be able to speak French next year. » : après will, can devient be able to."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I haven't could sleep.",
+   "r": [
+    "I haven't been able to sleep."
+   ],
+   "i": "Can a-t-il un participe passé ?",
+   "e": "« I haven't been able to sleep. » : can n'a pas de participe passé, donc on passe par been able to."
+  },
+  {
+   "d": 2,
+   "q": "The road was closed, but we ___ get home.",
+   "o": [
+    "were able to",
+    "will be able to",
+    "are able to"
+   ],
+   "io": {
+    "will be able to": "La phrase est au passé : il faut was/were able to.",
+    "are able to": "La phrase est au passé : il faut were able to."
+   },
+   "i": "C'est une réussite précise dans le passé.",
+   "e": "« were able to » : pour une réussite ponctuelle dans le passé, on emploie were able to ou managed to."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui disent « ont réussi à ».",
+   "p": "The firefighters *managed *to save the cat.",
+   "i": "Cherche le verbe qui exprime la réussite, et le petit mot qui le suit.",
+   "e": "« managed to » : managed to + base veut dire réussir à."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "After hours of work, we could fix the car.",
+   "r": [
+    "After hours of work, we managed to fix the car.",
+    "After hours of work, we were able to fix the car."
+   ],
+   "i": "C'est une réussite précise, après des efforts.",
+   "e": "« After hours of work, we managed to fix the car. » : pour une réussite ponctuelle, on évite could."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I could open the door after ten minutes.",
+   "r": [
+    "I managed to open the door after ten minutes.",
+    "I was able to open the door after ten minutes."
+   ],
+   "i": "Il s'agit d'une réussite précise, pas d'une capacité générale.",
+   "e": "« I managed to open the door after ten minutes. » : pour une réussite précise, on dit managed to ou was able to."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Je n'ai pas pu dormir cette semaine. »",
+   "r": [
+    "I haven't been able to sleep this week",
+    "I have not been able to sleep this week"
+   ],
+   "i": "Present perfect de can : been able to.",
+   "e": "« I haven't been able to sleep this week » : le present perfect de can se dit have/has been able to."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mon grand-père savait jouer du piano. »",
+   "r": [
+    "My grandfather could play the piano"
+   ],
+   "i": "Une capacité générale du passé : quel modal ?",
+   "e": "« My grandfather could play the piano » : une capacité générale dans le passé se dit avec could."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "We haven't been able to find the keys.",
+    "We haven't could find the keys.",
+    "We haven't able to find the keys."
+   ],
+   "io": {
+    "We haven't could find the keys.": "Can n'a pas de participe passé : on ne dit pas « haven't could ».",
+    "We haven't able to find the keys.": "Il manque « been » : le present perfect de be able to est have been able to."
+   },
+   "i": "Quel est le present perfect de can ?",
+   "e": "« We haven't been able to find the keys. » : have been able to remplace le participe passé qui n'existe pas."
+  },
+  {
+   "d": 3,
+   "q": "The firefighters ___ save the cat.",
+   "o": [
+    "managed to",
+    "could",
+    "can"
+   ],
+   "io": {
+    "could": "Could ne convient pas pour une réussite ponctuelle affirmative dans le passé.",
+    "can": "La phrase est au passé : can ne convient pas."
+   },
+   "i": "Une réussite précise, pas une capacité générale.",
+   "e": "« managed to » : pour une réussite précise, on emploie managed to ou were able to."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "by",
+    "next",
+    "year",
+    "she",
+    "will",
+    "be",
+    "able",
+    "to",
+    "drive"
+   ],
+   "fin": ".",
+   "i": "Le futur de can : will be able to.",
+   "e": "« By next year she will be able to drive. » : will be able to + base est le futur de can.",
+   "alt": [
+    [
+     "she",
+     "will",
+     "be",
+     "able",
+     "to",
+     "drive",
+     "by",
+     "next",
+     "year"
+    ]
+   ]
+  }
+ ],
+ "mieux-vaut": [
+  {
+   "d": 1,
+   "q": "You ___ hurry, or you'll miss the train.",
+   "o": [
+    "had better",
+    "better had",
+    "have better"
+   ],
+   "io": {
+    "better had": "L'ordre est « had better » : had d'abord, better ensuite.",
+    "have better": "L'expression est « had better », avec had même pour parler du présent."
+   },
+   "i": "L'expression pour un conseil fort commence par had.",
+   "e": "« had better » : had better + base donne un conseil fort, presque un avertissement."
+  },
+  {
+   "d": 1,
+   "q": "We'd better not ___ late.",
+   "o": [
+    "be",
+    "to be",
+    "being"
+   ],
+   "io": {
+    "to be": "Après « had better », on met la base, sans to.",
+    "being": "Après « had better », on met la base du verbe, pas -ing."
+   },
+   "i": "Après « had better not », quelle forme du verbe ?",
+   "e": "« be » : had better not + base, sans to."
+  },
+  {
+   "d": 1,
+   "q": "You'd better ___ your coat. It's cold.",
+   "o": [
+    "take",
+    "to take",
+    "taking"
+   ],
+   "io": {
+    "to take": "Après « had better », on met la base sans to.",
+    "taking": "Après « had better », on met la base, pas -ing."
+   },
+   "i": "Après « had better », le verbe est nu.",
+   "e": "« take » : had better + base."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots du conseil fort.",
+   "p": "You *had *better leave now.",
+   "i": "Cherche l'expression qui dit « tu ferais mieux de ».",
+   "e": "« had better » : l'expression had better + base donne un conseil fort."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « You are ___ to wear a helmet. »",
+   "r": [
+    "supposed"
+   ],
+   "i": "Le mot s'écrit avec un -d à la fin.",
+   "e": "« supposed » : be supposed to + base exprime ce qui est prévu ou exigé par une règle."
+  },
+  {
+   "d": 1,
+   "q": "Students ___ to arrive before 8.30.",
+   "o": [
+    "are supposed",
+    "are suppose",
+    "suppose"
+   ],
+   "io": {
+    "are suppose": "Il faut écrire « supposed », avec un -d, même si on l'entend à peine.",
+    "suppose": "Pour « sont censés », on emploie be + supposed."
+   },
+   "i": "On parle d'une règle, avec be + participe.",
+   "e": "« are supposed » : be supposed to + base dit ce qui est attendu."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tu ferais mieux de partir maintenant. »",
+   "r": [
+    "You had better leave now",
+    "You had better go now"
+   ],
+   "i": "L'expression « ferais mieux » : had better + base.",
+   "e": "« You had better leave now » : had better + base, sans to."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous ferions mieux de ne pas être en retard. »",
+   "r": [
+    "We had better not be late"
+   ],
+   "i": "La négation se place après better.",
+   "e": "« We had better not be late » : had better not + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "you",
+    "had",
+    "better",
+    "take",
+    "an",
+    "umbrella"
+   ],
+   "fin": ".",
+   "i": "Sujet, had better, puis la base.",
+   "e": "« You had better take an umbrella. » : had better + base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "train",
+    "is",
+    "supposed",
+    "to",
+    "arrive",
+    "at",
+    "nine"
+   ],
+   "fin": ".",
+   "i": "Be supposed to + base dit ce qui est prévu.",
+   "e": "« The train is supposed to arrive at nine. » : be supposed to + base."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You'd better to go.",
+   "r": [
+    "You'd better go.",
+    "You had better go."
+   ],
+   "i": "Quel petit mot est de trop après better ?",
+   "e": "« You'd better go. » : après had better, on met la base sans to."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You'd not better call him.",
+   "r": [
+    "You'd better not call him.",
+    "You had better not call him."
+   ],
+   "i": "Où se place la négation ?",
+   "e": "« You'd better not call him. » : la négation se place après better."
+  },
+  {
+   "d": 2,
+   "q": "He ___ to call me yesterday, but he didn't.",
+   "o": [
+    "was supposed",
+    "had better",
+    "is supposed"
+   ],
+   "io": {
+    "had better": "Pour dire ce qui était prévu et n'a pas eu lieu, on emploie was supposed to.",
+    "is supposed": "« Yesterday » demande le passé : was supposed."
+   },
+   "i": "Il était prévu qu'il appelle, dans le passé.",
+   "e": "« was supposed » : was supposed to + base dit ce qui était prévu, souvent sans que cela ait eu lieu."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui disent « censé ».",
+   "p": "You are *supposed *to be in bed!",
+   "i": "Cherche le participe suivi de to.",
+   "e": "« supposed to » : be supposed to + base dit ce qui est attendu."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You are suppose to knock before you enter.",
+   "r": [
+    "You are supposed to knock before you enter."
+   ],
+   "i": "Regarde l'orthographe de supposed.",
+   "e": "« You are supposed to knock before you enter. » : on écrit supposed avec un -d."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You'd better taking a coat.",
+   "r": [
+    "You'd better take a coat.",
+    "You had better take a coat."
+   ],
+   "i": "Quelle forme du verbe après had better ?",
+   "e": "« You'd better take a coat. » : après had better, la base, pas -ing."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « On est censé porter un casque. »",
+   "r": [
+    "You are supposed to wear a helmet",
+    "We are supposed to wear a helmet",
+    "People are supposed to wear a helmet"
+   ],
+   "i": "On est censé : be supposed to + base.",
+   "e": "« You are supposed to wear a helmet » : be supposed to exprime une règle."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il était censé m'appeler hier soir. »",
+   "r": [
+    "He was supposed to call me last night",
+    "He was supposed to phone me last night",
+    "He was supposed to call me yesterday evening",
+    "He was supposed to phone me yesterday evening"
+   ],
+   "i": "Le passé de be supposed to : was supposed to.",
+   "e": "« He was supposed to call me last night » : was supposed to dit ce qui était prévu."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est correcte ?",
+   "o": [
+    "You had better not tell anyone.",
+    "You had not better tell anyone.",
+    "You had better don't tell anyone."
+   ],
+   "io": {
+    "You had not better tell anyone.": "La négation se place après better : had better not.",
+    "You had better don't tell anyone.": "On n'emploie pas don't ici : had better not."
+   },
+   "i": "Où se place la négation dans had better ?",
+   "e": "« You had better not tell anyone. » : had better not + base."
+  },
+  {
+   "d": 3,
+   "q": "Laquelle de ces phrases est un avertissement ?",
+   "o": [
+    "You'd better wear a coat, or you'll be cold.",
+    "You are supposed to wear a coat on Monday.",
+    "You were supposed to wear a coat."
+   ],
+   "io": {
+    "You are supposed to wear a coat on Monday.": "Cette phrase donne une règle, pas un avertissement.",
+    "You were supposed to wear a coat.": "Cette phrase donne un reproche sur le passé."
+   },
+   "i": "Un avertissement dit ce qui arrivera sinon.",
+   "e": "« You'd better wear a coat, or you'll be cold. » : had better avertit."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "had",
+    "better",
+    "not",
+    "be",
+    "late",
+    "for",
+    "school"
+   ],
+   "fin": ".",
+   "i": "Sujet, had better not, base.",
+   "e": "« We had better not be late for school. » : had better not + base."
+  }
+ ]
+}

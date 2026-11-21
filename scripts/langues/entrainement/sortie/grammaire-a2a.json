@@ -1,0 +1,2399 @@
+{
+ "apostrophe-possede": [
+  {
+   "d": 1,
+   "q": "This is ___ bag.",
+   "o": [
+    "Anna's",
+    "Annas",
+    "Annas'"
+   ],
+   "io": {
+    "Annas": "Il manque l'apostrophe : sans elle, « Annas » n'est pas un génitif.",
+    "Annas'": "L'apostrophe seule est réservée aux pluriels en -s, or Anna est une seule personne."
+   },
+   "i": "Anna est une seule personne : quelle petite étiquette faut-il lui coller pour dire « à qui » est le sac ?",
+   "e": "La bonne réponse est « Anna's ». Un propriétaire au singulier prend « 's » collé à son nom, avant l'objet possédé."
+  },
+  {
+   "d": 1,
+   "q": "The ___ toys are in the garden.",
+   "o": [
+    "children's",
+    "childrens'",
+    "childrens"
+   ],
+   "io": {
+    "childrens'": "« children » est déjà un pluriel, mais irrégulier : il prend « 's » et non l'apostrophe seule.",
+    "childrens": "« childrens » n'existe pas : il manque l'apostrophe du génitif et « children » est déjà un pluriel."
+   },
+   "i": "Regarde la fin du mot « children » : finit-il par un -s ?",
+   "e": "La bonne réponse est « children's ». Un pluriel irrégulier, qui ne finit pas par -s, prend « 's » comme un singulier."
+  },
+  {
+   "d": 1,
+   "q": "___ news is good.",
+   "o": [
+    "Today's",
+    "Todays",
+    "Today"
+   ],
+   "io": {
+    "Todays": "Sans apostrophe, « Todays » n'est pas un génitif.",
+    "Today": "Pour dire « les informations du jour », il faut le génitif : « Today » seul ne suffit pas."
+   },
+   "i": "Pour dire « les informations du jour », le mot qui exprime le temps peut lui aussi porter une étiquette.",
+   "e": "La bonne réponse est « Today's ». Le génitif sert aussi pour le temps : today's news, yesterday's paper, tomorrow's weather."
+  },
+  {
+   "d": 1,
+   "q": "Complète : This is my ___ car. (father)",
+   "r": [
+    "father's"
+   ],
+   "i": "Le père est une seule personne : quelle étiquette lui colle-t-on ?",
+   "e": "La bonne réponse est « father's ». Un propriétaire singulier prend « 's » : my father's car."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "this",
+    "is",
+    "Emma's",
+    "bike"
+   ],
+   "fin": ".",
+   "i": "Le propriétaire avec son étiquette se place avant l'objet.",
+   "e": "« This is Emma's bike. » En anglais, le propriétaire (Emma's) vient avant l'objet possédé (bike)."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui portent le génitif.",
+   "p": "*Tom's sister and *Emma's brother are friends.",
+   "i": "Cherche les mots qui se terminent par une apostrophe suivie de s.",
+   "e": "« Tom's » et « Emma's » portent le génitif : propriétaire + 's, avant la personne ou l'objet possédé."
+  },
+  {
+   "d": 2,
+   "q": "Complète (deux professeurs) : These are my two ___ books.",
+   "o": [
+    "teachers'",
+    "teacher's",
+    "teachers's"
+   ],
+   "io": {
+    "teacher's": "« teacher's » désigne un seul professeur, alors que la phrase en parle de deux.",
+    "teachers's": "Après un pluriel en -s, on ajoute seulement l'apostrophe, pas un second « s »."
+   },
+   "i": "Il y a deux professeurs : le mot est donc au pluriel, avec un -s déjà présent.",
+   "e": "La bonne réponse est « teachers' ». Quand le propriétaire est un pluriel en -s, on ajoute seulement l'apostrophe après le s."
+  },
+  {
+   "d": 2,
+   "q": "We had lunch at my ___ yesterday. (chez ma grand-mère)",
+   "o": [
+    "grandmother's",
+    "grandmother",
+    "grandmothers"
+   ],
+   "io": {
+    "grandmother": "Sans « 's », la phrase ne dit plus « chez » ma grand-mère.",
+    "grandmothers": "« grandmothers » est un pluriel, pas un génitif : il manque l'apostrophe."
+   },
+   "i": "Pour dire « chez quelqu'un », quel petit signe suit le nom, le mot « house » étant sous-entendu ?",
+   "e": "La bonne réponse est « grandmother's ». Le génitif employé seul signifie « chez » : at my grandmother's, le mot house étant sous-entendu."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la bonne forme : ___ is in the garage.",
+   "o": [
+    "My father's car",
+    "My father car",
+    "The my father car"
+   ],
+   "io": {
+    "My father car": "Il manque le « 's » du génitif : on ne peut pas poser deux noms l'un derrière l'autre pour dire « à qui ».",
+    "The my father car": "Cette construction n'existe pas en anglais : on ne cumule pas « the » et « my »."
+   },
+   "i": "Pour dire qu'un objet appartient à une personne, quelle petite étiquette colle-t-on au propriétaire ?",
+   "e": "La bonne réponse est « My father's car ». Pour une personne, on construit propriétaire + 's + objet, sans article devant ; « the car of my father » est un calque du français que l'on évite."
+  },
+  {
+   "d": 2,
+   "q": "Complète : The ___ team won the match. (les femmes)",
+   "r": [
+    "women's"
+   ],
+   "i": "« women » est un pluriel irrégulier : finit-il par un -s ?",
+   "e": "La bonne réponse est « women's ». « women » ne finit pas par -s, donc il prend « 's » comme un singulier."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « La voiture de mon père est rouge. »",
+   "r": [
+    "My father's car is red",
+    "My dad's car is red"
+   ],
+   "i": "Pour une personne, on n'écrit pas « the car of… » : on colle une étiquette au propriétaire.",
+   "e": "« My father's car is red. » Pour une personne, on emploie propriétaire + 's + objet, sans article devant ; « the car of my father » est un calque du français."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « C'est le sac de Maryam. »",
+   "r": [
+    "It's Maryam's bag",
+    "This is Maryam's bag",
+    "That's Maryam's bag",
+    "It is Maryam's bag",
+    "That is Maryam's bag"
+   ],
+   "i": "Un nom propre n'a pas besoin d'article devant le génitif.",
+   "e": "« It's Maryam's bag. » Le nom propre + 's se place devant l'objet, sans « the » : on ne dit jamais « the Maryam's bag »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my",
+    "parents'",
+    "house",
+    "is",
+    "near",
+    "the",
+    "station"
+   ],
+   "fin": ".",
+   "i": "Le propriétaire commence le groupe nominal, puis vient l'objet.",
+   "e": "« My parents' house is near the station. » Le propriétaire « my parents' » précède l'objet « house » ; l'apostrophe seule suffit après un pluriel en -s."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The Tom's bike is new.",
+   "r": [
+    "Tom's bike is new."
+   ],
+   "i": "Un nom propre suivi de « 's » a-t-il besoin d'un article ?",
+   "e": "« Tom's bike is new. » On n'ajoute pas d'article devant un génitif avec un nom propre, même si le français dit « le vélo de Tom »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot dont l'apostrophe est mal placée (je parle de plusieurs garçons).",
+   "p": "The *boy's bikes are in the garden.",
+   "i": "Il y a plusieurs garçons : le mot est donc au pluriel, avec un -s.",
+   "e": "Il faudrait « boys' » : avec plusieurs garçons, le pluriel en -s ne prend que l'apostrophe, placée après le s."
+  },
+  {
+   "d": 3,
+   "q": "Mes parents ont une maison. Complète : ___ house is big.",
+   "o": [
+    "My parents'",
+    "My parent's",
+    "My parents's"
+   ],
+   "io": {
+    "My parent's": "« parent's » désigne un seul parent, mais il s'agit ici de deux personnes.",
+    "My parents's": "Après un pluriel en -s, on ne rajoute qu'une apostrophe, sans second « s »."
+   },
+   "i": "Combien de personnes possèdent la maison, et par quelle lettre finit alors le mot ?",
+   "e": "La bonne réponse est « My parents' ». « parents » est un pluriel en -s : l'apostrophe se met après le s, sans rien ajouter."
+  },
+  {
+   "d": 3,
+   "q": "It's Sam and ___ room. (la chambre qu'ils partagent)",
+   "o": [
+    "Leo's",
+    "Leos'",
+    "Leo"
+   ],
+   "io": {
+    "Leos'": "Leo est une seule personne : il prend « 's », pas l'apostrophe seule.",
+    "Leo": "Sans « 's », on ne comprend pas que la chambre appartient aussi à Leo."
+   },
+   "i": "Quand deux personnes partagent un objet, sur quel nom met-on l'étiquette ?",
+   "e": "La bonne réponse est « Leo's ». Pour un objet partagé, le « 's » se met seulement sur le dernier nom : Sam and Leo's room."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons dîné chez Yusuf. »",
+   "r": [
+    "We had dinner at Yusuf's",
+    "We ate dinner at Yusuf's",
+    "We had dinner at Yusuf's house",
+    "We had dinner at Yusuf's place",
+    "We ate at Yusuf's",
+    "We dined at Yusuf's",
+    "We had dinner at Yusuf's home"
+   ],
+   "i": "Pour dire « chez Yusuf », le génitif suffit après « at ».",
+   "e": "« We had dinner at Yusuf's. » Le génitif employé seul après « at » signifie « chez » : le mot house est sous-entendu."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Les jouets des enfants sont dans la chambre. »",
+   "r": [
+    "The children's toys are in the room",
+    "The children's toys are in the bedroom",
+    "The children's toys are in their room",
+    "The children's toys are in the children's room",
+    "The kids' toys are in the room",
+    "The children's toys are in the children's bedroom"
+   ],
+   "i": "« children » est un pluriel irrégulier : quelle étiquette prend-il ?",
+   "e": "« The children's toys are in the room. » Le pluriel irrégulier « children » prend « 's », comme un singulier."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "had",
+    "lunch",
+    "at",
+    "Omar's",
+    "yesterday"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "yesterday",
+     "we",
+     "had",
+     "lunch",
+     "at",
+     "Omar's"
+    ],
+    [
+     "we",
+     "had",
+     "lunch",
+     "yesterday",
+     "at",
+     "Omar's"
+    ]
+   ],
+   "i": "« Chez Omar » s'exprime avec le génitif seul après « at ».",
+   "e": "« We had lunch at Omar's yesterday. » « at Omar's » signifie chez Omar, et « yesterday » peut aussi ouvrir la phrase."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase (je parle de mes deux parents) : il y a une erreur.",
+   "f": "My parent's house is big.",
+   "r": [
+    "My parents' house is big."
+   ],
+   "i": "Combien de personnes sont concernées, et où va l'apostrophe quand le mot finit par un -s ?",
+   "e": "« My parents' house is big. » Il s'agit de deux parents, donc d'un pluriel en -s : l'apostrophe se place après le s."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My sister bag is new.",
+   "r": [
+    "My sister's bag is new."
+   ],
+   "i": "Qui possède le sac ? Quelle petite étiquette manque au propriétaire ?",
+   "e": "« My sister's bag is new. » Le propriétaire (my sister) prend « 's » et se place avant l'objet ; en anglais, on ne peut pas poser deux noms côte à côte pour dire « à qui »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot en trop.",
+   "p": "I saw *the Maryam's cousin yesterday.",
+   "i": "Que n'ajoute-t-on pas devant un nom propre au génitif ?",
+   "e": "« the » est de trop : on dit « Maryam's cousin », sans article devant un génitif avec un nom propre."
+  }
+ ],
+ "compter": [
+  {
+   "d": 1,
+   "q": "How ___ apples do you want?",
+   "o": [
+    "many",
+    "much",
+    "little"
+   ],
+   "io": {
+    "much": "« apples » se compte : avec un pluriel dénombrable, on emploie « many ».",
+    "little": "« little » va avec un indénombrable et ne s'emploie pas dans « How… ? »."
+   },
+   "i": "Les pommes, on peut les compter sur ses doigts : quel mot demande « combien » pour ce qu'on compte ?",
+   "e": "La bonne réponse est « many ». « How many » s'emploie avec un nom pluriel qu'on peut compter."
+  },
+  {
+   "d": 1,
+   "q": "I need some ___.",
+   "o": [
+    "advice",
+    "advices",
+    "an advice"
+   ],
+   "io": {
+    "advices": "« advice » n'a pas de pluriel : on ne lui ajoute jamais de -s.",
+    "an advice": "« advice » est indénombrable : il ne prend pas « an »."
+   },
+   "i": "Ce nom désigne une idée, pas quelque chose qu'on compte : accepte-t-il un -s ou un « a » ?",
+   "e": "La bonne réponse est « advice ». C'est un indénombrable : pas de pluriel et pas de « a » ; en français « un conseil » se compte, mais pas en anglais."
+  },
+  {
+   "d": 1,
+   "q": "How ___ milk is there in the fridge?",
+   "o": [
+    "much",
+    "many",
+    "few"
+   ],
+   "io": {
+    "many": "Le lait ne se compte pas : « many » ne convient pas.",
+    "few": "« few » ne s'emploie pas dans une question « How… ? » et va avec un pluriel."
+   },
+   "i": "Peut-on compter le lait comme des pommes ?",
+   "e": "La bonne réponse est « much ». « How much » s'emploie avec un indénombrable comme milk, water ou money."
+  },
+  {
+   "d": 1,
+   "q": "Complète : How ___ brothers do you have?",
+   "r": [
+    "many"
+   ],
+   "i": "Les frères se comptent : quel mot demande « combien » pour un pluriel ?",
+   "e": "La bonne réponse est « many ». « How many » s'emploie devant un nom pluriel qu'on peut compter."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "how",
+    "much",
+    "water",
+    "do",
+    "you",
+    "drink"
+   ],
+   "fin": "?",
+   "i": "Les deux premiers mots forment l'expression « combien » et se suivent.",
+   "e": "« How much water do you drink? » On pose la question avec « how much » devant l'indénombrable water, puis l'auxiliaire do."
+  },
+  {
+   "d": 1,
+   "q": "Touche le nom que l'on peut compter.",
+   "p": "There is some milk and one *egg in the fridge.",
+   "i": "Cherche ce qu'on peut compter avec un chiffre : un, deux, trois…",
+   "e": "« egg » se compte (one egg, two eggs), alors que « milk » est une masse indénombrable."
+  },
+  {
+   "d": 2,
+   "q": "She has ___ friends in Paris.",
+   "o": [
+    "a lot of",
+    "much",
+    "a little"
+   ],
+   "io": {
+    "much": "« much » s'emploie surtout dans les questions et les négations, et « friends » se compte.",
+    "a little": "« a little » va avec un indénombrable, or « friends » se compte."
+   },
+   "i": "La phrase est affirmative : quelle expression marche aussi bien avec ce qu'on compte qu'avec ce qu'on ne compte pas ?",
+   "e": "La bonne réponse est « a lot of ». Elle va avec les dénombrables et les indénombrables, surtout dans une phrase affirmative."
+  },
+  {
+   "d": 2,
+   "q": "We have very ___ time.",
+   "o": [
+    "little",
+    "few",
+    "many"
+   ],
+   "io": {
+    "few": "« few » va avec un pluriel dénombrable, et « time » est indénombrable.",
+    "many": "« many » va avec un pluriel dénombrable, pas avec « time »."
+   },
+   "i": "Le temps se compte-t-il comme des objets ?",
+   "e": "La bonne réponse est « little ». « little » (peu) s'emploie avec un indénombrable, alors que « few » s'emploie avec un pluriel."
+  },
+  {
+   "d": 2,
+   "q": "There are only a ___ chairs in the room.",
+   "o": [
+    "few",
+    "little",
+    "much"
+   ],
+   "io": {
+    "little": "« chairs » se compte : on emploie « few » et non « little ».",
+    "much": "« much » ne s'emploie pas avec un nom pluriel."
+   },
+   "i": "Les chaises se comptent : quel mot de « peu » va avec un pluriel ?",
+   "e": "La bonne réponse est « few ». « a few » s'emploie avec un nom pluriel dénombrable ; avec un indénombrable, on dirait « a little »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : We bought a new ___ of furniture. (un élément ; mot qui commence par p)",
+   "r": [
+    "piece"
+   ],
+   "i": "Pour compter un indénombrable, on le range dans une petite unité : « a … of ».",
+   "e": "La bonne réponse est « piece ». « furniture » est indénombrable, donc on le compte avec « a piece of furniture »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je n'ai pas beaucoup de temps. »",
+   "r": [
+    "I don't have much time",
+    "I haven't got much time",
+    "I don't have a lot of time",
+    "I haven't got a lot of time",
+    "I don't have lots of time",
+    "I haven't got lots of time"
+   ],
+   "i": "Le temps ne se compte pas, et la phrase est négative : quel mot choisit-on ?",
+   "e": "« I don't have much time. » À la négation, on emploie « much » avec un indénombrable ; « a lot of » est aussi possible."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Combien d'argent as-tu ? »",
+   "r": [
+    "How much money do you have",
+    "How much money have you got",
+    "How much money have you"
+   ],
+   "i": "L'argent est une masse qu'on ne compte pas.",
+   "e": "« How much money do you have? » « money » est indénombrable, donc on demande « how much » et non « how many »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "there",
+    "isn't",
+    "much",
+    "milk",
+    "in",
+    "the",
+    "fridge"
+   ],
+   "fin": ".",
+   "i": "C'est une négation : quel mot de quantité y est le plus naturel ?",
+   "e": "« There isn't much milk in the fridge. » À la négation, « much » s'emploie avec un indénombrable comme milk."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I have many money.",
+   "r": [
+    "I have a lot of money.",
+    "I have lots of money.",
+    "I have plenty of money."
+   ],
+   "i": "Peut-on compter l'argent comme des pommes ?",
+   "e": "« I have a lot of money. » « money » est indénombrable : on évite « many » et on emploie « a lot of » (ou « much » dans les questions et les négations)."
+  },
+  {
+   "d": 2,
+   "q": "Touche le nom indénombrable.",
+   "p": "She gave me some good *advice.",
+   "i": "Quel nom n'a ni pluriel ni « a » ?",
+   "e": "« advice » est indénombrable : on ne dit pas « an advice » ni « advices »."
+  },
+  {
+   "d": 3,
+   "q": "The news ___ good today.",
+   "o": [
+    "is",
+    "are",
+    "were"
+   ],
+   "io": {
+    "are": "Malgré son -s final, « news » est indénombrable : le verbe reste au singulier.",
+    "were": "On parle d'aujourd'hui, donc le verbe est au présent, et « news » prend un verbe au singulier."
+   },
+   "i": "Le mot « news » finit par -s, mais est-ce vraiment un pluriel ?",
+   "e": "La bonne réponse est « is ». Malgré son -s final, « news » est indénombrable : il n'a pas de pluriel et son verbe reste au singulier."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "I need some information.",
+    "I need an information.",
+    "I need some informations."
+   ],
+   "io": {
+    "I need an information.": "« information » est indénombrable : il ne prend pas « an ».",
+    "I need some informations.": "« information » n'a pas de pluriel : on n'ajoute pas de -s."
+   },
+   "i": "Le français dit « des informations », mais ce nom se comporte-t-il de la même façon en anglais ?",
+   "e": "La bonne réponse est « I need some information. » Ce nom est indénombrable : ni -s, ni « a / an » ; c'est un piège classique pour les francophones."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle m'a donné un conseil. »",
+   "r": [
+    "She gave me some advice",
+    "She gave me a piece of advice",
+    "She gave me advice",
+    "She gave me a bit of advice",
+    "She has given me some advice",
+    "She has given me a piece of advice",
+    "She gave me one piece of advice"
+   ],
+   "i": "Le mot « advice » n'accepte pas « an » : comment peut-on quand même parler d'un seul conseil ?",
+   "e": "« She gave me a piece of advice. » « advice » est indénombrable, donc on dit « some advice » ou « a piece of advice », jamais « an advice »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Les informations sont bonnes. »",
+   "r": [
+    "The news is good",
+    "The news is great",
+    "The news is very good",
+    "The information is good",
+    "The information is great"
+   ],
+   "i": "En anglais, « les informations » est un mot en -s qui n'est pas un pluriel.",
+   "e": "« The news is good. » « news » est indénombrable : il n'a pas de pluriel et son verbe reste au singulier."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "news",
+    "about",
+    "the",
+    "exam",
+    "is",
+    "not",
+    "good"
+   ],
+   "fin": ".",
+   "i": "Quel verbe s'accorde avec « news » ?",
+   "e": "« The news about the exam is not good. » « news » est indénombrable : le verbe est au singulier (is)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The informations are useful.",
+   "r": [
+    "The information is useful."
+   ],
+   "i": "Ce nom n'a pas de pluriel, et son verbe doit suivre.",
+   "e": "« The information is useful. » « information » est indénombrable : pas de -s, et le verbe passe au singulier (is)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She gave me an advice.",
+   "r": [
+    "She gave me some advice.",
+    "She gave me a piece of advice.",
+    "She gave me advice."
+   ],
+   "i": "Ce nom désigne une idée qu'on ne compte pas : accepte-t-il « an » ?",
+   "e": "« She gave me some advice. » « advice » est indénombrable, donc pas de « an » : on dit « some advice » ou « a piece of advice »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le nom qui ne devrait pas avoir de -s.",
+   "p": "The *furnitures in this shop are expensive.",
+   "i": "Ce nom désigne l'ensemble des meubles, comme une masse.",
+   "e": "Il faut « furniture » : indénombrable, sans -s, et le verbe passe au singulier (The furniture in this shop is expensive)."
+  }
+ ],
+ "some-any": [
+  {
+   "d": 1,
+   "q": "I have ___ apples in my bag.",
+   "o": [
+    "some",
+    "any"
+   ],
+   "io": {
+    "any": "« any » s'emploie dans les questions et les négations, mais cette phrase est affirmative."
+   },
+   "i": "La phrase affirme qu'il y a des pommes : quel mot sert à affirmer ?",
+   "e": "La bonne réponse est « some ». On l'emploie dans les phrases affirmatives."
+  },
+  {
+   "d": 1,
+   "q": "Is there ___ sugar in your tea?",
+   "o": [
+    "any",
+    "some"
+   ],
+   "io": {
+    "some": "Dans une question ordinaire, on emploie « any » et non « some »."
+   },
+   "i": "Cette phrase est une question : quel mot sert à questionner ?",
+   "e": "La bonne réponse est « any ». Dans les questions, on emploie « any » à la place de « some »."
+  },
+  {
+   "d": 1,
+   "q": "I don't have ___ time.",
+   "o": [
+    "any",
+    "some"
+   ],
+   "io": {
+    "some": "Après une négation, « some » ne convient pas : il faut « any »."
+   },
+   "i": "Cette phrase est négative : quel mot sert à nier ?",
+   "e": "La bonne réponse est « any ». Dans une phrase négative, on emploie « any » avec « don't »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : I'd like ___ tea, please.",
+   "r": [
+    "some"
+   ],
+   "i": "C'est une demande polie.",
+   "e": "La bonne réponse est « some ». On l'emploie dans les offres et les demandes polies : I'd like some tea."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "don't",
+    "have",
+    "any",
+    "money"
+   ],
+   "fin": ".",
+   "i": "Après la négation, quel mot de quantité vient avant le nom ?",
+   "e": "« I don't have any money. » Après la négation « don't have », on emploie « any » devant le nom."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui dit qu'il y en a.",
+   "p": "I have *some bread but I don't have any butter.",
+   "i": "Cherche le mot de la partie affirmative de la phrase.",
+   "e": "« some » s'emploie dans les phrases affirmatives, alors que « any » apparaît après la négation."
+  },
+  {
+   "d": 2,
+   "q": "Can I have ___ water, please?",
+   "o": [
+    "some",
+    "any",
+    "no"
+   ],
+   "io": {
+    "any": "Pour une demande polie, on garde « some », même si c'est une question.",
+    "no": "« no » veut dire « pas de » : ce serait refuser de l'eau, pas en demander."
+   },
+   "i": "C'est une demande polie : le mot reste celui de l'affirmation.",
+   "e": "La bonne réponse est « some ». Dans une offre ou une demande polie, on emploie « some », même sous forme de question."
+  },
+  {
+   "d": 2,
+   "q": "There is ___ in the box. It's empty.",
+   "o": [
+    "nothing",
+    "anything",
+    "something"
+   ],
+   "io": {
+    "anything": "Sans négation devant, « anything » ne convient pas ici.",
+    "something": "« something » veut dire qu'il y a quelque chose, or la boîte est vide."
+   },
+   "i": "La boîte est vide : il n'y a rien du tout.",
+   "e": "La bonne réponse est « nothing ». « nothing » (rien) s'emploie avec un verbe affirmatif, ici « is »."
+  },
+  {
+   "d": 2,
+   "q": "She doesn't want to go ___ today.",
+   "o": [
+    "anywhere",
+    "somewhere",
+    "nowhere"
+   ],
+   "io": {
+    "somewhere": "Avec « doesn't », on emploie « anywhere » et non « somewhere ».",
+    "nowhere": "« nowhere » est déjà négatif : avec « doesn't », on aurait une double négation."
+   },
+   "i": "Il y a déjà une négation dans « doesn't » : cherche le mot neutre.",
+   "e": "La bonne réponse est « anywhere ». Après une négation, on emploie le mot en « any- » : une seule négation par phrase."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je n'ai rien à manger. »",
+   "r": [
+    "I don't have anything to eat",
+    "I have nothing to eat",
+    "I haven't got anything to eat",
+    "I've got nothing to eat"
+   ],
+   "i": "En anglais, une seule négation suffit dans la phrase.",
+   "e": "« I don't have anything to eat » ou « I have nothing to eat ». L'anglais n'accepte qu'une négation par phrase, contrairement au français « ne… rien »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il y a quelqu'un à la porte. »",
+   "r": [
+    "There is somebody at the door",
+    "There's somebody at the door",
+    "There is someone at the door",
+    "There's someone at the door",
+    "Somebody is at the door",
+    "Someone is at the door"
+   ],
+   "i": "La phrase est affirmative : quel mot en « some- » choisit-on ?",
+   "e": "« There is somebody at the door. » Dans une phrase affirmative, on emploie « somebody » ou « someone »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "is",
+    "there",
+    "anything",
+    "in",
+    "the",
+    "box"
+   ],
+   "fin": "?",
+   "i": "Une question avec « there » commence par le verbe be.",
+   "e": "« Is there anything in the box? » Dans une question, on emploie « anything », et « is » passe avant « there »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I don't have some friends here.",
+   "r": [
+    "I don't have any friends here.",
+    "I have no friends here."
+   ],
+   "i": "Quel mot emploie-t-on après une négation ?",
+   "e": "« I don't have any friends here. » Après une négation, « some » est remplacé par « any »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui ne va pas.",
+   "p": "She doesn't want *nothing for lunch.",
+   "i": "Il y a déjà une négation dans « doesn't ».",
+   "e": "« nothing » forme une double négation avec « doesn't » ; il faut « anything » (She doesn't want anything)."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui ne va pas.",
+   "p": "There isn't *some milk in the glass.",
+   "i": "La phrase est négative.",
+   "e": "« some » ne convient pas après une négation ; il faut « any » (There isn't any milk)."
+  },
+  {
+   "d": 3,
+   "q": "There isn't ___ in the bag.",
+   "o": [
+    "anything",
+    "nothing",
+    "something"
+   ],
+   "io": {
+    "nothing": "Avec « isn't », il y a déjà une négation : « nothing » en ferait une deuxième.",
+    "something": "« something » s'emploie dans les phrases affirmatives, pas après une négation."
+   },
+   "i": "La phrase est déjà négative : il ne faut pas de seconde négation.",
+   "e": "La bonne réponse est « anything ». On dit « There isn't anything » ou « There is nothing » : jamais « isn't nothing »."
+  },
+  {
+   "d": 3,
+   "q": "I saw ___ at the door, but I couldn't see who it was.",
+   "o": [
+    "somebody",
+    "anybody",
+    "nobody"
+   ],
+   "io": {
+    "anybody": "La première partie de la phrase est affirmative, donc « anybody » ne convient pas.",
+    "nobody": "J'ai bien vu quelqu'un, donc « nobody » (personne) est faux."
+   },
+   "i": "J'ai vu une personne, mais je ne sais pas qui : la phrase est affirmative.",
+   "e": "La bonne réponse est « somebody ». C'est une phrase affirmative et il y a bien quelqu'un, donc on emploie le mot en « some- »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle n'a vu personne. »",
+   "r": [
+    "She didn't see anybody",
+    "She didn't see anyone",
+    "She saw nobody",
+    "She saw no one",
+    "She hasn't seen anybody",
+    "She hasn't seen anyone",
+    "She has seen nobody",
+    "She has seen no one"
+   ],
+   "i": "Une seule négation par phrase : soit « didn't », soit « nobody ».",
+   "e": "« She didn't see anybody » ou « She saw nobody ». On choisit une seule négation, jamais « didn't see nobody »."
+  },
+  {
+   "d": 3,
+   "q": "Réécris avec « any » : « There is no milk. »",
+   "r": [
+    "There isn't any milk",
+    "There is not any milk",
+    "There's not any milk"
+   ],
+   "i": "« no » est une façon abrégée de dire « not any ».",
+   "e": "« There isn't any milk. » « no milk » équivaut à « not any milk » : on peut passer de l'un à l'autre."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "there",
+    "is",
+    "nobody",
+    "at",
+    "home",
+    "today"
+   ],
+   "fin": ".",
+   "i": "« nobody » est déjà négatif : le verbe reste affirmatif.",
+   "e": "« There is nobody at home today. » « nobody » contient la négation, donc le verbe « is » est affirmatif.",
+   "alt": [
+    [
+     "today",
+     "there",
+     "is",
+     "nobody",
+     "at",
+     "home"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He didn't say nothing.",
+   "r": [
+    "He didn't say anything.",
+    "He said nothing."
+   ],
+   "i": "Le français accepte deux négations, mais l'anglais en veut une seule.",
+   "e": "« He didn't say anything » ou « He said nothing ». Avec « didn't », on emploie « anything » ; « nothing » se réserve à un verbe affirmatif."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "There aren't some chairs in the room.",
+   "r": [
+    "There aren't any chairs in the room.",
+    "There are no chairs in the room."
+   ],
+   "i": "La phrase est négative : quel mot faut-il à la place de « some » ?",
+   "e": "« There aren't any chairs » ou « There are no chairs ». À la négation, on emploie « any », ou on remplace le tout par « no »."
+  }
+ ],
+ "il-y-avait": [
+  {
+   "d": 1,
+   "q": "___ a park near my school when I was little.",
+   "o": [
+    "There was",
+    "There were",
+    "There is"
+   ],
+   "io": {
+    "There were": "« a park » est au singulier : il faut « there was ».",
+    "There is": "« when I was little » parle du passé : « there is » est au présent."
+   },
+   "i": "Il y avait un seul parc : quelle forme de « be » va avec le singulier au passé ?",
+   "e": "La bonne réponse est « There was ». Au passé, « there was » va avec un nom singulier."
+  },
+  {
+   "d": 1,
+   "q": "___ three eggs in the fridge yesterday.",
+   "o": [
+    "There were",
+    "There was",
+    "There are"
+   ],
+   "io": {
+    "There was": "« three eggs » est pluriel, donc « there was » ne convient pas.",
+    "There are": "Le mot « yesterday » indique le passé, donc le présent « there are » est faux."
+   },
+   "i": "Il y avait trois œufs, hier : le nom est au pluriel et la phrase est au passé.",
+   "e": "La bonne réponse est « There were ». Au passé, « there were » va avec un pluriel."
+  },
+  {
+   "d": 1,
+   "q": "___ a concert on Saturday night.",
+   "o": [
+    "There will be",
+    "It will have",
+    "There will have"
+   ],
+   "io": {
+    "It will have": "« Il y aura » se dit « there will be », jamais « it will have ».",
+    "There will have": "Le verbe qui suit « will » est « be », pas « have »."
+   },
+   "i": "Pour dire « il y aura », quel verbe se conjugue après « there will » ?",
+   "e": "La bonne réponse est « There will be ». Pour « il y aura », on dit « there will be »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : ___ a cat in the garden an hour ago. (il y avait)",
+   "r": [
+    "There was"
+   ],
+   "i": "Un seul chat, et l'action est dans le passé.",
+   "e": "La bonne réponse est « There was ». Au passé, « there was » va avec un nom singulier."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "there",
+    "was",
+    "a",
+    "big",
+    "tree",
+    "here"
+   ],
+   "fin": ".",
+   "i": "C'est le passé de « there is » avec un nom singulier.",
+   "e": "« There was a big tree here. » « there was » introduit un nom singulier au passé.",
+   "alt": [
+    [
+     "here",
+     "there",
+     "was",
+     "a",
+     "big",
+     "tree"
+    ]
+   ]
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui met la phrase au passé.",
+   "p": "There *was a castle on this hill.",
+   "i": "Cherche la forme de « be » qui parle d'hier.",
+   "e": "« was » est le passé de « is » : « there was » signifie « il y avait » avec un singulier."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui donnent le futur.",
+   "p": "Next week there *will *be a school trip.",
+   "i": "Deux mots forment « il y aura ».",
+   "e": "« will be » est le futur de « there is » : « there will be » signifie « il y aura »."
+  },
+  {
+   "d": 2,
+   "q": "___ any milk in the fridge yesterday?",
+   "o": [
+    "Was there",
+    "Is there",
+    "Were there"
+   ],
+   "io": {
+    "Is there": "« yesterday » parle d'un moment passé : il faut le passé.",
+    "Were there": "« milk » est indénombrable, donc singulier : « was », pas « were »."
+   },
+   "i": "La question est au passé et « milk » est singulier.",
+   "e": "La bonne réponse est « Was there ». Pour une question au passé, on place « was » avant « there » ; « milk » étant indénombrable, il est singulier."
+  },
+  {
+   "d": 2,
+   "q": "There ___ many accidents this year.",
+   "o": [
+    "have been",
+    "has been",
+    "was"
+   ],
+   "io": {
+    "has been": "« accidents » est au pluriel : il faut « have been ».",
+    "was": "« accidents » est au pluriel : on ne peut pas dire « there was » devant un pluriel."
+   },
+   "i": "L'année n'est pas finie et le nom est au pluriel.",
+   "e": "La bonne réponse est « have been ». « there has / have been » se construit avec le present perfect, et ici « accidents » est pluriel."
+  },
+  {
+   "d": 2,
+   "q": "___ a lot of snow last winter.",
+   "o": [
+    "There was",
+    "There were",
+    "There is"
+   ],
+   "io": {
+    "There were": "« snow » est indénombrable, donc singulier : « there was ».",
+    "There is": "« last winter » est dans le passé : « there is » est au présent."
+   },
+   "i": "« snow » se compte-t-il ? Et la phrase est au passé.",
+   "e": "La bonne réponse est « There was ». Avec un nom indénombrable comme snow, on emploie le singulier : there was a lot of snow."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il y avait beaucoup de monde au marché. »",
+   "r": [
+    "There were a lot of people at the market",
+    "There were lots of people at the market",
+    "There were many people at the market",
+    "There were plenty of people at the market",
+    "There were loads of people at the market",
+    "There were lots of people in the market",
+    "There were a lot of people in the market"
+   ],
+   "i": "« people » est un pluriel : quelle forme de « be » lui va au passé ?",
+   "e": "« There were a lot of people at the market. » « people » est un pluriel, donc on emploie « there were »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il y aura une fête samedi. »",
+   "r": [
+    "There will be a party on Saturday",
+    "There will be a party Saturday",
+    "There is going to be a party on Saturday",
+    "There is going to be a party Saturday"
+   ],
+   "i": "Au futur, c'est « be » qui se conjugue après « there will ».",
+   "e": "« There will be a party on Saturday. » « Il y aura » se dit « there will be », avec le verbe be."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "there",
+    "will",
+    "be",
+    "a",
+    "test",
+    "on",
+    "Monday"
+   ],
+   "fin": ".",
+   "i": "Au futur, « there » est suivi de « will be ».",
+   "e": "« There will be a test on Monday. » « there will be » exprime « il y aura ».",
+   "alt": [
+    [
+     "on",
+     "Monday",
+     "there",
+     "will",
+     "be",
+     "a",
+     "test"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It was a lot of cars in the street.",
+   "r": [
+    "There were a lot of cars in the street.",
+    "There were lots of cars in the street."
+   ],
+   "i": "Pour « il y avait », on n'emploie jamais « it was ».",
+   "e": "« There were a lot of cars in the street. » « Il y avait » se dit « there was / were » ; ici « cars » est pluriel, donc « there were »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le verbe mal choisi.",
+   "p": "Tomorrow there *was a football match.",
+   "i": "« Tomorrow » parle de demain : le verbe doit être au futur.",
+   "e": "« was » est faux : avec « tomorrow », il faut « will be » (Tomorrow there will be a football match)."
+  },
+  {
+   "d": 3,
+   "q": "Will ___ enough food for everyone?",
+   "o": [
+    "there be",
+    "it be",
+    "there is"
+   ],
+   "io": {
+    "it be": "Pour dire « y aura-t-il », on emploie « there », jamais « it ».",
+    "there is": "Après « will », le verbe est à la base : « be », pas « is »."
+   },
+   "i": "Après « Will », le verbe se met à la forme de base.",
+   "e": "La bonne réponse est « there be ». La question au futur est « Will there be… ? » : « will » ouvre la phrase puis vient « there be »."
+  },
+  {
+   "d": 3,
+   "q": "I think ___ a problem with the car.",
+   "o": [
+    "there might be",
+    "there might",
+    "there might have"
+   ],
+   "io": {
+    "there might": "Il manque le verbe « be » après le modal.",
+    "there might have": "Après un modal, « il y a » se dit « there… be » : « have » ne convient pas."
+   },
+   "i": "Après un modal comme « might », quel verbe à la base manque ?",
+   "e": "La bonne réponse est « there might be ». Avec un modal (might, must, could), on dit « there + modal + be »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Y avait-il du pain hier ? »",
+   "r": [
+    "Was there any bread yesterday",
+    "Was there some bread yesterday",
+    "Was there bread yesterday"
+   ],
+   "i": "Le pain ne se compte pas, et la question est au passé.",
+   "e": "« Was there any bread yesterday? » La question se forme avec « was » avant « there », et « bread » est indénombrable donc singulier."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il n'y a pas eu de problème. »",
+   "r": [
+    "There hasn't been a problem",
+    "There has not been a problem",
+    "There hasn't been any problem",
+    "There haven't been any problems",
+    "There have not been any problems",
+    "There was no problem",
+    "There wasn't a problem",
+    "There wasn't any problem",
+    "There has been no problem",
+    "There have been no problems"
+   ],
+   "i": "« Il y a eu » se rend par le present perfect de « there is ».",
+   "e": "« There hasn't been a problem. » « Il y a eu » se dit « there has / have been » : on met « has » avec un singulier, « have » avec un pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il y aura beaucoup de monde demain. »",
+   "r": [
+    "There will be a lot of people tomorrow",
+    "There will be lots of people tomorrow",
+    "There will be many people tomorrow",
+    "There will be plenty of people tomorrow",
+    "There are going to be a lot of people tomorrow"
+   ],
+   "i": "Au futur, la forme de « there will be » change-t-elle avec le pluriel ?",
+   "e": "« There will be a lot of people tomorrow. » « there will be » ne change jamais, que le nom soit singulier ou pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "there",
+    "has",
+    "been",
+    "a",
+    "lot",
+    "of",
+    "rain",
+    "this",
+    "week"
+   ],
+   "fin": ".",
+   "i": "Present perfect de « there is » avec un indénombrable.",
+   "e": "« There has been a lot of rain this week. » « rain » est indénombrable, donc on emploie « has been ».",
+   "alt": [
+    [
+     "this",
+     "week",
+     "there",
+     "has",
+     "been",
+     "a",
+     "lot",
+     "of",
+     "rain"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "There will have a big storm tomorrow.",
+   "r": [
+    "There will be a big storm tomorrow."
+   ],
+   "i": "Après « will », le verbe qui se conjugue est « be ».",
+   "e": "« There will be a big storm tomorrow. » « Il y aura » se dit « there will be », avec be et non have."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "There was two dogs in the garden.",
+   "r": [
+    "There were two dogs in the garden."
+   ],
+   "i": "Combien de chiens y a-t-il ? Quelle forme de « be » va avec le pluriel ?",
+   "e": "« There were two dogs in the garden. » Avec un nom pluriel au passé, on emploie « there were »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui ne va pas.",
+   "p": "*It was two nice cafés on the corner.",
+   "i": "Pour « il y avait », on n'emploie pas ce mot.",
+   "e": "« It » est faux : on dit « There were two nice cafés on the corner », car « il y avait » se dit « there was » ou « there were », jamais « it was »."
+  }
+ ],
+ "match": [
+  {
+   "d": 1,
+   "q": "An elephant is ___ than a horse.",
+   "o": [
+    "bigger",
+    "more big",
+    "biger"
+   ],
+   "io": {
+    "more big": "« big » est un adjectif court : il prend -er et non « more ».",
+    "biger": "Après une voyelle courte et une consonne, on double la consonne : bigger."
+   },
+   "i": "« big » est court et finit par une voyelle suivie d'une consonne.",
+   "e": "La bonne réponse est « bigger ». Un adjectif court prend -er, et ici on double la consonne finale."
+  },
+  {
+   "d": 1,
+   "q": "My bag is ___ than your bag.",
+   "o": [
+    "heavier",
+    "more heavy",
+    "heavyer"
+   ],
+   "io": {
+    "more heavy": "« heavy » est un adjectif court en -y : il prend -er et non « more ».",
+    "heavyer": "Devant -er, le -y d'un adjectif devient -i : heavier."
+   },
+   "i": "Un adjectif en -y change sa fin avant d'ajouter -er.",
+   "e": "La bonne réponse est « heavier ». Les adjectifs en -y changent le y en i et prennent -er."
+  },
+  {
+   "d": 1,
+   "q": "This phone is ___ than that one.",
+   "o": [
+    "more expensive",
+    "expensiver",
+    "more expensiver"
+   ],
+   "io": {
+    "expensiver": "« expensive » est un adjectif long : on le fait précéder de « more ».",
+    "more expensiver": "On n'ajoute pas -er quand on emploie déjà « more »."
+   },
+   "i": "« expensive » compte plusieurs syllabes : est-ce un adjectif court ou long ?",
+   "e": "La bonne réponse est « more expensive ». Les adjectifs longs se comparent avec « more » placé devant."
+  },
+  {
+   "d": 1,
+   "q": "Complète : A mouse is ___ than a cat. (small)",
+   "r": [
+    "smaller"
+   ],
+   "i": "Adjectif court : quelle terminaison ajoute-t-on ?",
+   "e": "La bonne réponse est « smaller ». Un adjectif court prend -er pour former son comparatif."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my",
+    "sister",
+    "is",
+    "taller",
+    "than",
+    "me"
+   ],
+   "fin": ".",
+   "i": "Le comparatif est suivi de « than ».",
+   "e": "« My sister is taller than me. » Le comparatif « taller » est suivi de « than » puis du second élément."
+  },
+  {
+   "d": 1,
+   "q": "Touche le comparatif.",
+   "p": "My dog is *bigger than your dog.",
+   "i": "Cherche le mot qui se termine par -er.",
+   "e": "« bigger » est le comparatif de « big » : -er avec la consonne doublée."
+  },
+  {
+   "d": 2,
+   "q": "Your idea is ___ than mine.",
+   "o": [
+    "better",
+    "gooder",
+    "more good"
+   ],
+   "io": {
+    "gooder": "« good » est irrégulier : son comparatif est « better ».",
+    "more good": "« good » est irrégulier et ne se compare pas avec « more »."
+   },
+   "i": "Cet adjectif a un comparatif irrégulier qu'il faut connaître.",
+   "e": "La bonne réponse est « better ». « good » devient « better », comme « bon » devient « meilleur » en français."
+  },
+  {
+   "d": 2,
+   "q": "The weather today is ___ than yesterday.",
+   "o": [
+    "worse",
+    "badder",
+    "more bad"
+   ],
+   "io": {
+    "badder": "« bad » est irrégulier : son comparatif est « worse ».",
+    "more bad": "« bad » est irrégulier et ne se compare pas avec « more »."
+   },
+   "i": "Cet adjectif a lui aussi un comparatif irrégulier.",
+   "e": "La bonne réponse est « worse ». « bad » devient « worse »."
+  },
+  {
+   "d": 2,
+   "q": "Lyon is ___ Paris.",
+   "o": [
+    "smaller than",
+    "smaller that",
+    "more small than"
+   ],
+   "io": {
+    "smaller that": "Dans une comparaison, « que » se dit « than », pas « that ».",
+    "more small than": "« small » est court : il prend -er, pas « more »."
+   },
+   "i": "Adjectif court, et le mot qui veut dire « que » dans une comparaison.",
+   "e": "La bonne réponse est « smaller than ». Un adjectif court prend -er, puis « than » introduit le second élément."
+  },
+  {
+   "d": 2,
+   "q": "Complète : Summer is ___ than spring. (hot)",
+   "r": [
+    "hotter"
+   ],
+   "i": "« hot » finit par une voyelle courte et une consonne.",
+   "e": "La bonne réponse est « hotter ». On double le t avant d'ajouter -er."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Mon frère est plus âgé que moi. »",
+   "r": [
+    "My brother is older than me",
+    "My brother is older than I am",
+    "My brother is older than I"
+   ],
+   "i": "« old » est un adjectif court ; le français « que » se dit autrement en anglais.",
+   "e": "« My brother is older than me. » Un adjectif court prend -er, puis « than » introduit le second élément."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "this",
+    "road",
+    "is",
+    "longer",
+    "than",
+    "that",
+    "one"
+   ],
+   "fin": ".",
+   "i": "Le comparatif est suivi de « than ».",
+   "e": "« This road is longer than that one. » Comparatif en -er + « than » + second élément."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My brother is more young than me.",
+   "r": [
+    "My brother is younger than me."
+   ],
+   "i": "« young » est un adjectif court : comment le compare-t-on ?",
+   "e": "« My brother is younger than me. » Un adjectif court prend -er et non « more » : c'est un calque du français « plus jeune »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Paris is bigger that Lyon.",
+   "r": [
+    "Paris is bigger than Lyon."
+   ],
+   "i": "Quel mot signifie « que » dans une comparaison ?",
+   "e": "« Paris is bigger than Lyon. » Dans une comparaison, « que » se dit « than » ; « that » s'écrit presque pareil, mais n'a pas ce sens."
+  },
+  {
+   "d": 2,
+   "q": "Touche le comparatif irrégulier.",
+   "p": "Your English is *better than mine.",
+   "i": "Cherche un comparatif qui ne se forme pas avec -er.",
+   "e": "« better » est le comparatif irrégulier de « good »."
+  },
+  {
+   "d": 3,
+   "q": "He is not ___ his brother.",
+   "o": [
+    "as tall as",
+    "as taller as",
+    "as tall than"
+   ],
+   "io": {
+    "as taller as": "Avec « as… as », l'adjectif reste à la forme de base, sans -er.",
+    "as tall than": "L'égalité se construit avec « as… as », jamais avec « than »."
+   },
+   "i": "Pour dire « pas aussi grand que », on encadre l'adjectif par deux mots identiques.",
+   "e": "La bonne réponse est « as tall as ». Avec « not as… as », l'adjectif reste à la base et le second « as » remplace « than »."
+  },
+  {
+   "d": 3,
+   "q": "The film was ___ I expected.",
+   "o": [
+    "less interesting than",
+    "least interesting than",
+    "interestinger than"
+   ],
+   "io": {
+    "least interesting than": "« least » est un superlatif et ne se combine pas avec « than ».",
+    "interestinger than": "« interesting » est un adjectif long : on ne lui ajoute pas -er."
+   },
+   "i": "On exprime ici une infériorité : le film est moins intéressant.",
+   "e": "La bonne réponse est « less interesting than ». « less » + adjectif + « than » exprime l'infériorité."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ce livre est plus intéressant que le film. »",
+   "r": [
+    "This book is more interesting than the film",
+    "This book is more interesting than the movie",
+    "The book is more interesting than the film",
+    "The book is more interesting than the movie"
+   ],
+   "i": "« interesting » est un adjectif long : il ne prend pas -er.",
+   "e": "« This book is more interesting than the film. » Un adjectif long se compare avec « more » devant et « than » avant le second élément."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il fait de plus en plus froid. »",
+   "r": [
+    "It's getting colder and colder",
+    "It is getting colder and colder",
+    "It's becoming colder and colder",
+    "It gets colder and colder"
+   ],
+   "i": "Pour « de plus en plus », l'anglais répète le comparatif.",
+   "e": "« It's getting colder and colder. » Pour une évolution continue, on répète le comparatif avec « and »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "train",
+    "is",
+    "more",
+    "comfortable",
+    "than",
+    "the",
+    "bus"
+   ],
+   "fin": ".",
+   "i": "Adjectif long : « more » se place devant.",
+   "e": "« The train is more comfortable than the bus. » Pour un adjectif long, on emploie « more » devant l'adjectif puis « than »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "This pizza is more better than that one.",
+   "r": [
+    "This pizza is better than that one."
+   ],
+   "i": "« better » est déjà un comparatif : a-t-il besoin d'un renfort ?",
+   "e": "« This pizza is better than that one. » « better » est déjà le comparatif de « good » : on n'ajoute pas « more »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Maths is difficulter than English.",
+   "r": [
+    "Maths is more difficult than English.",
+    "Math is more difficult than English.",
+    "Maths is harder than English.",
+    "Math is harder than English."
+   ],
+   "i": "« difficult » est un adjectif long : comment le compare-t-on ?",
+   "e": "« Maths is more difficult than English. » Un adjectif long se compare avec « more » et non avec -er."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui ne va pas.",
+   "p": "This exam is *more easy than the last one.",
+   "i": "« easy » est un adjectif court en -y.",
+   "e": "Il faut « easier » : les adjectifs en -y prennent -er (avec y devenu i), pas « more »."
+  }
+ ],
+ "podium": [
+  {
+   "d": 1,
+   "q": "Everest is ___ mountain in the world.",
+   "o": [
+    "the highest",
+    "highest",
+    "the most high"
+   ],
+   "io": {
+    "highest": "Le superlatif garde toujours « the » devant lui.",
+    "the most high": "« high » est un adjectif court : il prend -est, pas « the most »."
+   },
+   "i": "Le superlatif désigne le champion du groupe : quel petit mot l'accompagne toujours ?",
+   "e": "La bonne réponse est « the highest ». Un adjectif court se met au superlatif avec « the » + -est."
+  },
+  {
+   "d": 1,
+   "q": "She is ___ girl in my class.",
+   "o": [
+    "the tallest",
+    "the most tall",
+    "tallest"
+   ],
+   "io": {
+    "the most tall": "« tall » est un adjectif court : on lui ajoute -est.",
+    "tallest": "Il manque « the » devant le superlatif."
+   },
+   "i": "Adjectif court, et le superlatif porte toujours son article.",
+   "e": "La bonne réponse est « the tallest ». Un adjectif court prend « the » + -est."
+  },
+  {
+   "d": 1,
+   "q": "This is ___ book I have.",
+   "o": [
+    "the best",
+    "the most good",
+    "the goodest"
+   ],
+   "io": {
+    "the most good": "« good » est irrégulier : son superlatif est « the best ».",
+    "the goodest": "« good » est irrégulier et ne prend pas -est."
+   },
+   "i": "Cet adjectif a un superlatif irrégulier.",
+   "e": "La bonne réponse est « the best ». « good » devient « the best » au superlatif."
+  },
+  {
+   "d": 1,
+   "q": "Complète : Tom is the ___ boy in the class. (short)",
+   "r": [
+    "shortest"
+   ],
+   "i": "Adjectif court : « the » + quelle terminaison ?",
+   "e": "La bonne réponse est « shortest ». Un adjectif court prend -est pour former le superlatif."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "cheetah",
+    "is",
+    "the",
+    "fastest",
+    "animal"
+   ],
+   "fin": ".",
+   "i": "Le superlatif commence par « the ».",
+   "e": "« The cheetah is the fastest animal. » Le superlatif prend « the » devant l'adjectif en -est."
+  },
+  {
+   "d": 1,
+   "q": "Touche le superlatif.",
+   "p": "Lucas is the *oldest boy in the group.",
+   "i": "Cherche le mot qui finit par -est.",
+   "e": "« oldest » est le superlatif de « old » : the + -est."
+  },
+  {
+   "d": 2,
+   "q": "It is ___ restaurant in town.",
+   "o": [
+    "the most popular",
+    "the popularest",
+    "most popular"
+   ],
+   "io": {
+    "the popularest": "« popular » est un adjectif long : on emploie « the most ».",
+    "most popular": "Il manque « the » devant le superlatif."
+   },
+   "i": "« popular » a trois syllabes : adjectif court ou long ?",
+   "e": "La bonne réponse est « the most popular ». Les adjectifs longs prennent « the most » devant."
+  },
+  {
+   "d": 2,
+   "q": "That was ___ day of my life.",
+   "o": [
+    "the worst",
+    "the baddest",
+    "the most bad"
+   ],
+   "io": {
+    "the baddest": "« bad » est irrégulier : son superlatif est « the worst ».",
+    "the most bad": "« bad » est irrégulier et ne se forme pas avec « the most »."
+   },
+   "i": "Cet adjectif a aussi un superlatif irrégulier.",
+   "e": "La bonne réponse est « the worst ». « bad » devient « the worst » au superlatif."
+  },
+  {
+   "d": 2,
+   "q": "He is the fastest runner ___ the team.",
+   "o": [
+    "in",
+    "of",
+    "at"
+   ],
+   "io": {
+    "of": "Pour un groupe ou un lieu, on emploie « in » ; « of » sert pour une période ou un ensemble.",
+    "at": "« at » n'introduit pas le groupe de comparaison après un superlatif."
+   },
+   "i": "La team est un groupe : quelle préposition introduit un groupe ou un lieu ?",
+   "e": "La bonne réponse est « in ». Après un superlatif, « in » introduit un lieu ou un groupe (in the team, in the world)."
+  },
+  {
+   "d": 2,
+   "q": "Écris le superlatif de « happy ».",
+   "r": [
+    "the happiest",
+    "happiest"
+   ],
+   "i": "Un adjectif en -y change sa fin avant -est.",
+   "e": "La bonne réponse est « the happiest ». Le y devient i, puis on ajoute -est."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « C'est le plus long fleuve d'Europe. »",
+   "r": [
+    "It's the longest river in Europe",
+    "It is the longest river in Europe",
+    "That's the longest river in Europe"
+   ],
+   "i": "Adjectif court, et un lieu après le superlatif.",
+   "e": "« It's the longest river in Europe. » Adjectif court : the + -est ; et « in » introduit le lieu."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "is",
+    "the",
+    "youngest",
+    "girl",
+    "in",
+    "the",
+    "team"
+   ],
+   "fin": ".",
+   "i": "Le groupe de comparaison est introduit par « in ».",
+   "e": "« She is the youngest girl in the team. » Superlatif court + « in » devant le groupe."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He is tallest boy in my class.",
+   "r": [
+    "He is the tallest boy in my class."
+   ],
+   "i": "Il manque un petit mot que le superlatif porte toujours.",
+   "e": "« He is the tallest boy in my class. » Le superlatif garde toujours « the » devant lui."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui introduit le groupe de comparaison.",
+   "p": "She is the best singer *in the class.",
+   "i": "Cherche la petite préposition devant le groupe.",
+   "e": "« in » introduit un groupe ou un lieu après un superlatif."
+  },
+  {
+   "d": 3,
+   "q": "It was the most interesting lesson ___ the week.",
+   "o": [
+    "of",
+    "in",
+    "at"
+   ],
+   "io": {
+    "in": "« in » introduit un lieu ou un groupe ; la semaine est une période, donc « of ».",
+    "at": "« at » n'introduit pas le groupe de comparaison après un superlatif."
+   },
+   "i": "La semaine est une période de temps, pas un lieu.",
+   "e": "La bonne réponse est « of ». Après un superlatif, « of » introduit une période ou un ensemble (of the week, of my life)."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "It's the biggest city in Spain.",
+    "It's the most big city in Spain.",
+    "It's the bigest city in Spain."
+   ],
+   "io": {
+    "It's the most big city in Spain.": "« big » est un adjectif court : il prend -est et non « the most ».",
+    "It's the bigest city in Spain.": "Il manque la consonne doublée : on écrit « biggest »."
+   },
+   "i": "« big » est court, et se termine par une voyelle courte + consonne.",
+   "e": "La bonne réponse est « It's the biggest city in Spain. » Adjectif court : the + -est, avec la consonne doublée."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « C'est la meilleure pizza que j'aie jamais mangée. »",
+   "r": [
+    "It's the best pizza I've ever eaten",
+    "It's the best pizza I have ever eaten",
+    "This is the best pizza I've ever eaten",
+    "It's the best pizza I've ever had",
+    "This is the best pizza I've ever had",
+    "It's the best pizza that I've ever eaten",
+    "This is the best pizza I have ever eaten"
+   ],
+   "i": "Superlatif irrégulier de « good », suivi de « ever » et du present perfect.",
+   "e": "« It's the best pizza I've ever eaten. » Après un superlatif, on emploie souvent « ever » avec le present perfect."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle est la personne la plus gentille de l'école. »",
+   "r": [
+    "She is the nicest person in the school",
+    "She's the nicest person in the school",
+    "She is the kindest person in the school",
+    "She's the kindest person in the school",
+    "She is the nicest person at school",
+    "She's the nicest person at school",
+    "She is the nicest person in school",
+    "She's the nicest person in school"
+   ],
+   "i": "Le groupe de comparaison est un lieu : quelle préposition employer ?",
+   "e": "« She is the nicest person in the school. » Adjectif court : the + -est ; et « in » introduit l'école, un lieu ou un groupe."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "this",
+    "is",
+    "the",
+    "most",
+    "beautiful",
+    "beach",
+    "in",
+    "France"
+   ],
+   "fin": ".",
+   "i": "Adjectif long : « the most » se place devant.",
+   "e": "« This is the most beautiful beach in France. » Adjectif long : the most + adjectif, puis « in » + le lieu."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It was the most big house in the street.",
+   "r": [
+    "It was the biggest house in the street."
+   ],
+   "i": "« big » est un adjectif court : comment forme-t-il son superlatif ?",
+   "e": "« It was the biggest house in the street. » Un adjectif court prend -est (avec la consonne doublée) et non « the most »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "This is the best student of the school.",
+   "r": [
+    "This is the best student in the school."
+   ],
+   "i": "L'école est un lieu ou un groupe : quelle préposition emploie-t-on ?",
+   "e": "« This is the best student in the school. » Après un superlatif, « in » introduit un lieu ou un groupe ; « of » est réservé à une période ou un ensemble."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui ne va pas.",
+   "p": "It was the *baddest day of my life.",
+   "i": "« bad » est un adjectif irrégulier.",
+   "e": "Il faut « worst » : « the worst » est le superlatif irrégulier de « bad »."
+  }
+ ],
+ "pareil-different": [
+  {
+   "d": 1,
+   "q": "Tom is ___ tall as his father.",
+   "o": [
+    "as",
+    "than",
+    "like"
+   ],
+   "io": {
+    "than": "« than » sert aux comparatifs en -er ; l'égalité se construit avec « as… as ».",
+    "like": "« like » sert à comparer des natures, pas à exprimer l'égalité d'une qualité."
+   },
+   "i": "Pour dire « aussi grand que », on répète le même petit mot avant et après l'adjectif.",
+   "e": "La bonne réponse est « as ». L'égalité se construit avec « as + adjectif + as »."
+  },
+  {
+   "d": 1,
+   "q": "My phone is the same ___ yours.",
+   "o": [
+    "as",
+    "than",
+    "like"
+   ],
+   "io": {
+    "than": "« than » sert aux comparatifs ; ici on dit « the same as ».",
+    "like": "Après « the same », on emploie « as », pas « like »."
+   },
+   "i": "Pour dire « le même que », quel petit mot suit « the same » ?",
+   "e": "La bonne réponse est « as ». « the same as » signifie « le même que »."
+  },
+  {
+   "d": 1,
+   "q": "French is different ___ English.",
+   "o": [
+    "from",
+    "of",
+    "at"
+   ],
+   "io": {
+    "of": "Comme en français « différent de », on pourrait penser à « of », mais l'anglais dit « from ».",
+    "at": "« at » ne se construit pas avec « different »."
+   },
+   "i": "Quelle préposition suit « different » en anglais standard ?",
+   "e": "La bonne réponse est « from ». « different from » signifie « différent de » ; « of » est un calque du français."
+  },
+  {
+   "d": 1,
+   "q": "Complète : He swims ___ a fish. (comme)",
+   "r": [
+    "like"
+   ],
+   "i": "Il nage comme un poisson sans en être un : quel petit mot compare ?",
+   "e": "La bonne réponse est « like ». « like » + nom compare (il nage comme un poisson, sans en être un), alors que « as » indiquerait un rôle réel."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "is",
+    "as",
+    "tall",
+    "as",
+    "me"
+   ],
+   "fin": ".",
+   "i": "L'adjectif se place entre les deux « as ».",
+   "e": "« She is as tall as me. » L'égalité se construit avec « as + adjectif + as »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui exprime « pareil ».",
+   "p": "Your pen is the *same as mine.",
+   "i": "Cherche le mot qui veut dire « même ».",
+   "e": "« same » exprime l'identité : « the same as » signifie « le même que »."
+  },
+  {
+   "d": 2,
+   "q": "He works ___ a driver for a bus company.",
+   "o": [
+    "as",
+    "like"
+   ],
+   "io": {
+    "like": "« like » compare à quelque chose ; ici il est vraiment chauffeur, donc on emploie « as »."
+   },
+   "i": "Est-il réellement chauffeur, ou ressemble-t-il seulement à un chauffeur ?",
+   "e": "La bonne réponse est « as ». « as » + nom indique un rôle réel, un métier ou une fonction."
+  },
+  {
+   "d": 2,
+   "q": "Omar looks ___ his uncle.",
+   "o": [
+    "like",
+    "as",
+    "than"
+   ],
+   "io": {
+    "as": "« as » indique un rôle réel, pas une ressemblance.",
+    "than": "« than » sert aux comparatifs en -er ou « more »."
+   },
+   "i": "On parle ici d'une ressemblance, pas d'un rôle.",
+   "e": "La bonne réponse est « like ». « look like » signifie « ressembler à »."
+  },
+  {
+   "d": 2,
+   "q": "This soup isn't ___ good as yesterday's.",
+   "o": [
+    "as",
+    "like",
+    "than"
+   ],
+   "io": {
+    "like": "Pour « pas aussi… que », il faut « as… as ».",
+    "than": "« than » sert aux comparatifs en -er ou « more »."
+   },
+   "i": "Pour dire « pas aussi bon que », on a besoin de deux mots identiques.",
+   "e": "La bonne réponse est « as ». « not as good as » exprime « pas aussi bon que »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ton sac est le même que le mien. »",
+   "r": [
+    "Your bag is the same as mine",
+    "Your bag is the same as my bag"
+   ],
+   "i": "« Le même que » se rend par « the same » suivi d'un petit mot.",
+   "e": "« Your bag is the same as mine. » « the same as » signifie « le même que »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ce film n'est pas aussi bon que le livre. »",
+   "r": [
+    "This film isn't as good as the book",
+    "This film is not as good as the book",
+    "This movie isn't as good as the book",
+    "This movie is not as good as the book"
+   ],
+   "i": "Pour dire « pas aussi… que », on garde « as… as » avec une négation.",
+   "e": "« This film isn't as good as the book. » « not as… as » exprime « pas aussi… que »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "this",
+    "book",
+    "is",
+    "different",
+    "from",
+    "that",
+    "one"
+   ],
+   "fin": ".",
+   "i": "« different » est suivi de « from ».",
+   "e": "« This book is different from that one. » « different from » signifie « différent de »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase (c'est son vrai métier) : il y a une erreur.",
+   "f": "She works like a doctor.",
+   "r": [
+    "She works as a doctor."
+   ],
+   "i": "Elle est vraiment médecin : quel mot indique un rôle réel ?",
+   "e": "« She works as a doctor. » Pour un vrai métier, on emploie « as » ; « like » ne ferait que comparer."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui compare (« comme »).",
+   "p": "She sings *like a bird.",
+   "i": "Cherche le mot qui introduit une comparaison avec un nom.",
+   "e": "« like » + nom exprime une comparaison : elle chante comme un oiseau."
+  },
+  {
+   "d": 3,
+   "q": "Your jacket is similar ___ mine.",
+   "o": [
+    "to",
+    "with",
+    "of"
+   ],
+   "io": {
+    "with": "On dit « similar to », pas « similar with ».",
+    "of": "« similar of » n'existe pas en anglais."
+   },
+   "i": "Quelle préposition suit « similar » en anglais ?",
+   "e": "La bonne réponse est « to ». « similar to » signifie « semblable à »."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "Your car is as fast as mine.",
+    "Your car is as fast than mine.",
+    "Your car is same fast as mine."
+   ],
+   "io": {
+    "Your car is as fast than mine.": "L'égalité se construit avec « as… as » et jamais avec « than ».",
+    "Your car is same fast as mine.": "Cette construction n'existe pas en anglais."
+   },
+   "i": "Pour dire que les deux voitures vont aussi vite, on répète le même mot.",
+   "e": "La bonne réponse est « Your car is as fast as mine. » L'égalité se dit « as + adjectif + as »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il travaille comme cuisinier. » (c'est son métier)",
+   "r": [
+    "He works as a cook",
+    "He works as a chef",
+    "He is working as a cook",
+    "He is working as a chef"
+   ],
+   "i": "C'est son vrai métier : quel mot indique un rôle réel ?",
+   "e": "« He works as a cook. » « as » + nom indique un rôle réel, comme un métier ; « like » ne ferait que comparer."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ma maison est différente de la tienne. »",
+   "r": [
+    "My house is different from yours",
+    "My house is different to yours",
+    "My house is different from your house",
+    "My house is different to your house"
+   ],
+   "i": "Après « different », quelle préposition emploie-t-on ?",
+   "e": "« My house is different from yours. » « different from » signifie « différent de » ; « different to » s'entend aussi en anglais britannique."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "my",
+    "phone",
+    "is",
+    "not",
+    "as",
+    "new",
+    "as",
+    "yours"
+   ],
+   "fin": ".",
+   "i": "La négation se place avant le premier « as ».",
+   "e": "« My phone is not as new as yours. » « not as… as » signifie « pas aussi… que »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "This house is different of mine.",
+   "r": [
+    "This house is different from mine.",
+    "This house is different to mine."
+   ],
+   "i": "Quelle préposition suit « different » en anglais ?",
+   "e": "« This house is different from mine. » On dit « different from » (ou « to » en britannique), jamais « of »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Your bike is as fast than mine.",
+   "r": [
+    "Your bike is as fast as mine."
+   ],
+   "i": "L'égalité répète le même petit mot avant et après l'adjectif.",
+   "e": "« Your bike is as fast as mine. » L'égalité se dit « as… as », jamais « as… than »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui ne va pas.",
+   "p": "This hotel is different *of the other one.",
+   "i": "Quelle préposition suit « different » ?",
+   "e": "Il faut « from » : on dit « different from », jamais « different of »."
+  }
+ ],
+ "ly-frequence": [
+  {
+   "d": 1,
+   "q": "She walks ___.",
+   "o": [
+    "slowly",
+    "slow",
+    "slowing"
+   ],
+   "io": {
+    "slow": "Pour décrire une action, il faut un adverbe en -ly, pas l'adjectif.",
+    "slowing": "« slowing » est une forme du verbe, pas un adverbe de manière."
+   },
+   "i": "Pour dire comment elle marche, on ajoute un badge à l'adjectif.",
+   "e": "La bonne réponse est « slowly ». Un adverbe de manière se forme souvent en ajoutant -ly à l'adjectif."
+  },
+  {
+   "d": 1,
+   "q": "He plays the piano ___.",
+   "o": [
+    "well",
+    "good",
+    "goodly"
+   ],
+   "io": {
+    "good": "« good » est un adjectif : pour décrire une action, il faut un adverbe.",
+    "goodly": "« goodly » n'est pas l'adverbe de « good » : on dit « well »."
+   },
+   "i": "L'adverbe de « good » est irrégulier.",
+   "e": "La bonne réponse est « well ». C'est l'adverbe de « good »."
+  },
+  {
+   "d": 1,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "I usually walk to school.",
+    "I walk usually to school.",
+    "Usually I walks to school."
+   ],
+   "io": {
+    "I walk usually to school.": "L'adverbe de fréquence se place avant le verbe principal.",
+    "Usually I walks to school.": "Avec « I », le verbe ne prend pas de -s."
+   },
+   "i": "Où place-t-on « usually » par rapport au verbe ?",
+   "e": "La bonne réponse est « I usually walk to school. » L'adverbe de fréquence se place avant le verbe principal."
+  },
+  {
+   "d": 1,
+   "q": "Écris l'adverbe de « quick ».",
+   "r": [
+    "quickly"
+   ],
+   "i": "Pour former un adverbe de manière, on ajoute un badge à l'adjectif.",
+   "e": "La bonne réponse est « quickly ». On ajoute -ly à l'adjectif."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "always",
+    "smiles",
+    "at",
+    "me"
+   ],
+   "fin": ".",
+   "i": "L'adverbe de fréquence se place avant le verbe principal.",
+   "e": "« She always smiles at me. » « always » se place avant le verbe principal."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'adverbe de manière.",
+   "p": "He speaks *quietly in the library.",
+   "i": "Cherche le mot en -ly qui dit comment il parle.",
+   "e": "« quietly » est un adverbe de manière : il décrit comment il parle."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "She is always happy.",
+    "She always is happy.",
+    "Always she is happy."
+   ],
+   "io": {
+    "She always is happy.": "Avec « be », l'adverbe de fréquence se place après.",
+    "Always she is happy.": "Placé au début, l'adverbe sonne faux ici : avec « be », il se place après."
+   },
+   "i": "Où place-t-on « always » par rapport au verbe « be » ?",
+   "e": "La bonne réponse est « She is always happy. » Avec « be », l'adverbe de fréquence se place après."
+  },
+  {
+   "d": 2,
+   "q": "He runs very ___.",
+   "o": [
+    "fast",
+    "fastly",
+    "fasty"
+   ],
+   "io": {
+    "fastly": "« fast » ne change pas : l'adjectif et l'adverbe sont identiques.",
+    "fasty": "« fasty » n'existe pas : « fast » ne change pas."
+   },
+   "i": "Certains adverbes ressemblent à l'adjectif : celui-ci n'ajoute rien.",
+   "e": "La bonne réponse est « fast ». « fast » est à la fois adjectif et adverbe."
+  },
+  {
+   "d": 2,
+   "q": "She works ___ and gets good marks.",
+   "o": [
+    "hard",
+    "hardly",
+    "hardy"
+   ],
+   "io": {
+    "hardly": "« hardly » veut dire « à peine », pas « dur ».",
+    "hardy": "« hardy » signifie « robuste », ce n'est pas un adverbe."
+   },
+   "i": "L'adverbe de « hard » ne change pas.",
+   "e": "La bonne réponse est « hard ». « hard » est adjectif et adverbe ; « hardly » veut dire à peine."
+  },
+  {
+   "d": 2,
+   "q": "He answered the question ___.",
+   "o": [
+    "easily",
+    "easy",
+    "easyly"
+   ],
+   "io": {
+    "easy": "« easy » est un adjectif : pour décrire l'action, il faut l'adverbe.",
+    "easyly": "Devant -ly, le y devient i : on écrit « easily »."
+   },
+   "i": "Pour former l'adverbe d'un adjectif en -y, on change la fin.",
+   "e": "La bonne réponse est « easily ». Le y devient i avant -ly."
+  },
+  {
+   "d": 2,
+   "q": "Écris l'adverbe de « happy ».",
+   "r": [
+    "happily"
+   ],
+   "i": "Un adjectif en -y change sa fin avant -ly.",
+   "e": "La bonne réponse est « happily ». Le y devient i avant -ly."
+  },
+  {
+   "d": 2,
+   "q": "Complète avec l'adverbe de fréquence « jamais » : She is ___ late.",
+   "r": [
+    "never"
+   ],
+   "i": "Quel adverbe de fréquence signifie « jamais » ?",
+   "e": "La bonne réponse est « never ». Avec « be », il se place après le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle parle anglais très bien. »",
+   "r": [
+    "She speaks English very well",
+    "She speaks very good English",
+    "She speaks English really well"
+   ],
+   "i": "Pour décrire l'action de parler, il faut l'adverbe de « good ».",
+   "e": "« She speaks English very well. » « well » est l'adverbe de « good » ; « very good English » est aussi possible mais décrit le nom."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "is",
+    "never",
+    "late",
+    "for",
+    "school"
+   ],
+   "fin": ".",
+   "i": "Avec « be », l'adverbe de fréquence suit le verbe.",
+   "e": "« He is never late for school. » Avec « be », l'adverbe de fréquence se place après."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She sings beautiful.",
+   "r": [
+    "She sings beautifully."
+   ],
+   "i": "Pour décrire comment elle chante, il faut un adverbe.",
+   "e": "« She sings beautifully. » Pour décrire une action, on emploie un adverbe en -ly, pas l'adjectif."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot mal placé.",
+   "p": "She *often is tired after work.",
+   "i": "Avec « be », où place-t-on l'adverbe ?",
+   "e": "« often » est mal placé : avec « be », on dit « She is often tired »."
+  },
+  {
+   "d": 3,
+   "q": "I ___ eat meat. I'm vegetarian.",
+   "o": [
+    "never",
+    "always",
+    "usually"
+   ],
+   "io": {
+    "always": "Un végétarien ne mange jamais de viande : « always » serait le contraire.",
+    "usually": "« usually » veut dire « d'habitude » : tu mangerais de la viande la plupart du temps, ce qui est faux pour un végétarien."
+   },
+   "i": "Je suis végétarien : quelle fréquence exprime zéro ?",
+   "e": "La bonne réponse est « never ». « never » signifie « jamais » (0 %)."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "She is never late.",
+    "She never is late.",
+    "She is late never."
+   ],
+   "io": {
+    "She never is late.": "Avec « be », l'adverbe de fréquence se place après.",
+    "She is late never.": "L'adverbe de fréquence ne se place pas en fin de phrase."
+   },
+   "i": "Avec le verbe « be », l'adverbe se place après lui.",
+   "e": "La bonne réponse est « She is never late. » Avec « be », l'adverbe de fréquence suit le verbe."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « D'habitude, nous mangeons à sept heures. »",
+   "r": [
+    "We usually eat at seven",
+    "We usually eat at 7",
+    "We usually eat at seven o'clock",
+    "Usually we eat at seven",
+    "Usually, we eat at seven",
+    "We normally eat at seven",
+    "We normally eat at 7",
+    "Normally we eat at seven",
+    "We usually eat at 7 o'clock"
+   ],
+   "i": "L'adverbe de fréquence se place avant le verbe principal.",
+   "e": "« We usually eat at seven. » L'adverbe de fréquence se place avant le verbe principal."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il conduit toujours prudemment. »",
+   "r": [
+    "He always drives carefully",
+    "He drives carefully all the time",
+    "He always drives cautiously"
+   ],
+   "i": "Un adverbe de fréquence se place avant le verbe, un adverbe de manière après.",
+   "e": "« He always drives carefully. » « always » se place avant le verbe, et « carefully » (manière) après."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "often",
+    "walk",
+    "to",
+    "the",
+    "park",
+    "on",
+    "Sundays"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "on",
+     "Sundays",
+     "we",
+     "often",
+     "walk",
+     "to",
+     "the",
+     "park"
+    ],
+    [
+     "often",
+     "we",
+     "walk",
+     "to",
+     "the",
+     "park",
+     "on",
+     "Sundays"
+    ]
+   ],
+   "i": "L'adverbe de fréquence se place avant le verbe principal.",
+   "e": "« We often walk to the park on Sundays. » « often » se place avant le verbe, et le groupe de temps peut aussi ouvrir la phrase."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I watch often TV in the evening.",
+   "r": [
+    "I often watch TV in the evening.",
+    "Often I watch TV in the evening."
+   ],
+   "i": "Où place-t-on l'adverbe de fréquence par rapport au verbe ?",
+   "e": "« I often watch TV in the evening. » L'adverbe de fréquence se place avant le verbe principal, jamais entre le verbe et son complément."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "They always are happy.",
+   "r": [
+    "They are always happy."
+   ],
+   "i": "Avec le verbe « be », l'adverbe se place après lui.",
+   "e": "« They are always happy. » Avec « be », l'adverbe de fréquence se place après le verbe."
+  },
+  {
+   "d": 3,
+   "q": "Touche l'adjectif qui devrait être un adverbe.",
+   "p": "He opened the box *careful.",
+   "i": "Le mot décrit comment il a ouvert la boîte.",
+   "e": "Il faut « carefully » : pour décrire une action, on emploie un adverbe en -ly."
+  }
+ ]
+}

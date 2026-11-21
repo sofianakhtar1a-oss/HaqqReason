@@ -1,0 +1,2047 @@
+{
+ "remplacants": [
+  {
+   "d": 1,
+   "q": "I love my sister. I see ___ every day.",
+   "o": [
+    "her",
+    "she",
+    "hers"
+   ],
+   "io": {
+    "she": "« she » est la forme sujet ; après le verbe, il faut la forme complément.",
+    "hers": "« hers » est un possessif (« à elle »), pas un pronom complément."
+   },
+   "i": "Après le verbe, le pronom change de forme : quelle est la forme complément de « she » ?",
+   "e": "La bonne réponse est « her ». Quand « she » est complément, après le verbe, il devient « her »."
+  },
+  {
+   "d": 1,
+   "q": "Tom is my friend. I like ___.",
+   "o": [
+    "him",
+    "he",
+    "his"
+   ],
+   "io": {
+    "he": "« he » est la forme sujet ; après « like », il faut la forme complément.",
+    "his": "« his » est un possessif et il serait suivi d'un nom."
+   },
+   "i": "Après le verbe « like », quelle est la forme complément de « he » ?",
+   "e": "La bonne réponse est « him ». Quand « he » est complément, après le verbe, il devient « him »."
+  },
+  {
+   "d": 1,
+   "q": "Anna and I are cousins. Our aunt visits ___.",
+   "o": [
+    "us",
+    "we",
+    "our"
+   ],
+   "io": {
+    "we": "« we » est la forme sujet ; ici le pronom est complément du verbe « visits ».",
+    "our": "« our » est un possessif et il serait suivi d'un nom."
+   },
+   "i": "Le pronom remplace « Anna et moi » après le verbe : quelle est la forme complément de « we » ?",
+   "e": "La bonne réponse est « us ». Quand « we » est complément, après le verbe, il devient « us »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : I know Sara. I like ___.",
+   "r": [
+    "her"
+   ],
+   "i": "Sara est une fille : quelle est la forme complément de « she » ?",
+   "e": "La bonne réponse est « her ». Après le verbe, « she » devient « her »."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "can",
+    "see",
+    "him"
+   ],
+   "fin": ".",
+   "i": "Le pronom complément se place après le verbe.",
+   "e": "« I can see him. » Le pronom complément « him » se place après le verbe."
+  },
+  {
+   "d": 1,
+   "q": "Touche le pronom complément.",
+   "p": "Maryam called *me last night.",
+   "i": "Cherche le pronom qui suit le verbe « called ».",
+   "e": "« me » est le pronom complément de « I » : il suit le verbe."
+  },
+  {
+   "d": 2,
+   "q": "My parents are kind. I often help ___.",
+   "o": [
+    "them",
+    "they",
+    "their"
+   ],
+   "io": {
+    "they": "« they » est la forme sujet ; ici le pronom est complément du verbe « help ».",
+    "their": "« their » est un possessif et il serait suivi d'un nom."
+   },
+   "i": "Le pronom remplace « my parents » après le verbe : quelle est la forme complément de « they » ?",
+   "e": "La bonne réponse est « them ». Quand « they » est complément, après le verbe, il devient « them »."
+  },
+  {
+   "d": 2,
+   "q": "Sit next to ___, Omar. (moi)",
+   "o": [
+    "me",
+    "I",
+    "my"
+   ],
+   "io": {
+    "I": "Après une préposition (next to), on emploie la forme complément, pas « I ».",
+    "my": "« my » est un possessif et il serait suivi d'un nom."
+   },
+   "i": "Après la préposition « to », quelle forme de « I » faut-il ?",
+   "e": "La bonne réponse est « me ». Après une préposition, on emploie la forme complément : next to me."
+  },
+  {
+   "d": 2,
+   "q": "Who wants some cake? — ___!",
+   "o": [
+    "Me",
+    "I",
+    "Mine"
+   ],
+   "io": {
+    "I": "Dans une réponse courte, on emploie le pronom complément, pas « I ».",
+    "Mine": "« mine » est un possessif (« le mien »), pas une réponse à « qui ? »."
+   },
+   "i": "Dans une réponse courte, quel pronom emploie-t-on à l'oral ?",
+   "e": "La bonne réponse est « Me ». Dans une réponse courte, l'anglais de tous les jours emploie le pronom complément : Me!"
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je les aime. » (eux)",
+   "r": [
+    "I like them",
+    "I love them"
+   ],
+   "i": "Le pronom vient après le verbe : quelle est la forme complément de « they » ?",
+   "e": "« I like them. » Quand « they » est complément, il devient « them » et se place après le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elle nous aide. »",
+   "r": [
+    "She helps us",
+    "She is helping us"
+   ],
+   "i": "Le pronom vient après le verbe : quelle est la forme complément de « we » ?",
+   "e": "« She helps us. » Quand « we » est complément, il devient « us » et se place après le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Complète : Give the book to Tom and Emma. → Give the book to ___.",
+   "r": [
+    "them"
+   ],
+   "i": "Le pronom remplace deux personnes, après la préposition « to ».",
+   "e": "La bonne réponse est « them ». Après une préposition, « they » prend sa forme complément : them."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "is",
+    "waiting",
+    "for",
+    "them"
+   ],
+   "fin": ".",
+   "i": "Le pronom complément suit la préposition.",
+   "e": "« She is waiting for them. » Après la préposition « for », on emploie le pronom complément « them »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I like they very much.",
+   "r": [
+    "I like them very much."
+   ],
+   "i": "Après le verbe, le pronom change de forme : quelle est la forme complément de « they » ?",
+   "e": "« I like them very much. » Après le verbe, « they » devient « them » : la forme sujet ne convient pas ici."
+  },
+  {
+   "d": 2,
+   "q": "Touche le pronom complément qui remplace « Adam et Sarah ».",
+   "p": "I can see *them near the gate.",
+   "i": "Deux personnes, après le verbe : quelle est la forme complément de « they » ?",
+   "e": "« them » est la forme complément de « they » : il remplace Adam et Sarah après le verbe."
+  },
+  {
+   "d": 3,
+   "q": "Yusuf and ___ are in the same class.",
+   "o": [
+    "I",
+    "me",
+    "my"
+   ],
+   "io": {
+    "me": "« Yusuf and … » est ici le sujet du verbe « are » : il faut la forme sujet « I ».",
+    "my": "« my » est un possessif et il serait suivi d'un nom."
+   },
+   "i": "Ici, le pronom fait partie du sujet du verbe « are », pas du complément.",
+   "e": "La bonne réponse est « I ». Yusuf et moi sommes le sujet du verbe : on emploie la forme sujet, pas « me »."
+  },
+  {
+   "d": 3,
+   "q": "Between you and ___, it's a secret.",
+   "o": [
+    "me",
+    "I",
+    "my"
+   ],
+   "io": {
+    "I": "Après une préposition (between), on emploie la forme complément.",
+    "my": "« my » est un possessif et il serait suivi d'un nom."
+   },
+   "i": "« Between » est une préposition : quelle forme de « I » suit une préposition ?",
+   "e": "La bonne réponse est « me ». Après une préposition comme between, on emploie la forme complément : between you and me."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Viens avec moi ! »",
+   "r": [
+    "Come with me",
+    "Come along with me"
+   ],
+   "i": "Après la préposition « with », quelle forme de « I » faut-il ?",
+   "e": "« Come with me! » Après une préposition, on emploie la forme complément : with me."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Peux-tu l'appeler ? » (elle)",
+   "r": [
+    "Can you call her",
+    "Could you call her",
+    "Can you phone her",
+    "Could you phone her",
+    "Can you ring her",
+    "Could you ring her",
+    "Could you give her a call",
+    "Can you give her a call"
+   ],
+   "i": "Le pronom suit le verbe : quelle est la forme complément de « she » ?",
+   "e": "« Can you call her? » Quand « she » est complément, il devient « her » et se place après le verbe."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "gave",
+    "it",
+    "to",
+    "me",
+    "yesterday"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "yesterday",
+     "he",
+     "gave",
+     "it",
+     "to",
+     "me"
+    ]
+   ],
+   "i": "Le pronom complément vient après la préposition « to ».",
+   "e": "« He gave it to me yesterday. » Après « to », on emploie la forme complément « me », et « yesterday » peut aussi ouvrir la phrase."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Give the keys to I, please.",
+   "r": [
+    "Give the keys to me, please."
+   ],
+   "i": "Après la préposition « to », on emploie une autre forme de « I ».",
+   "e": "« Give the keys to me, please. » Après une préposition, on emploie la forme complément : to me, jamais « to I »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My cousins live in Spain. I visit they every summer.",
+   "r": [
+    "My cousins live in Spain. I visit them every summer."
+   ],
+   "i": "Dans la deuxième phrase, le pronom suit le verbe « visit ».",
+   "e": "« I visit them every summer. » Le pronom est complément du verbe « visit » : « they » devient « them »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le pronom qui ne va pas.",
+   "p": "Lucas is waiting for *we.",
+   "i": "Après la préposition « for », on emploie la forme complément.",
+   "e": "Il faut « us » : après une préposition, « we » devient « us »."
+  }
+ ],
+ "aussi-non-plus": [
+  {
+   "d": 1,
+   "q": "I like pizza. — ___",
+   "o": [
+    "Me too.",
+    "Me neither."
+   ],
+   "io": {
+    "Me neither.": "La phrase de départ est affirmative : pour dire « moi aussi », on emploie « Me too »."
+   },
+   "i": "La phrase est affirmative : on répond « moi aussi ».",
+   "e": "La bonne réponse est « Me too. » Après une phrase affirmative, « moi aussi » se dit « Me too » (ou « So do I »)."
+  },
+  {
+   "d": 1,
+   "q": "I don't like spiders. — ___",
+   "o": [
+    "Me neither.",
+    "Me too."
+   ],
+   "io": {
+    "Me too.": "La phrase de départ est négative : « moi non plus » se dit « Me neither », pas « Me too »."
+   },
+   "i": "La phrase est négative : on répond « moi non plus ».",
+   "e": "La bonne réponse est « Me neither. » Après une phrase négative, « moi non plus » se dit « Me neither » (ou « Neither do I »)."
+  },
+  {
+   "d": 1,
+   "q": "I'm happy. — So ___ I.",
+   "o": [
+    "am",
+    "do",
+    "can"
+   ],
+   "io": {
+    "do": "La phrase est avec « be » : on reprend « am », pas « do ».",
+    "can": "La phrase est avec « be » : on reprend « am », pas « can »."
+   },
+   "i": "On reprend l'auxiliaire de la première phrase : quel est-il ici ?",
+   "e": "La bonne réponse est « am ». Dans « So am I », on reprend le verbe « be » de la phrase de départ."
+  },
+  {
+   "d": 1,
+   "q": "Complète : She speaks French, and I speak French ___.",
+   "r": [
+    "too",
+    "as well"
+   ],
+   "i": "La phrase est affirmative : quel mot veut dire « aussi » ?",
+   "e": "La bonne réponse est « too ». Dans une phrase affirmative, « aussi » se dit « too » en fin de phrase."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "like",
+    "tea",
+    "too"
+   ],
+   "fin": ".",
+   "i": "Dans une phrase affirmative, « too » se place en fin de phrase.",
+   "e": "« I like tea too. » Dans une phrase affirmative, « too » se place en fin de phrase."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui veut dire « aussi ».",
+   "p": "I like jazz *too.",
+   "i": "Cherche le mot en fin de phrase.",
+   "e": "« too » est le mot qui veut dire « aussi » dans une phrase affirmative."
+  },
+  {
+   "d": 2,
+   "q": "I can swim. — So ___ I.",
+   "o": [
+    "can",
+    "do",
+    "am"
+   ],
+   "io": {
+    "do": "La phrase de départ contient « can » : c'est lui qu'on reprend.",
+    "am": "La phrase de départ contient « can » : c'est lui qu'on reprend."
+   },
+   "i": "On reprend l'auxiliaire de la première phrase : quel est-il ici ?",
+   "e": "La bonne réponse est « can ». Dans « So can I », on reprend le modal de la phrase de départ."
+  },
+  {
+   "d": 2,
+   "q": "I play football. — So ___ I.",
+   "o": [
+    "do",
+    "am",
+    "can"
+   ],
+   "io": {
+    "am": "La phrase est au present simple : on reprend « do », pas « am ».",
+    "can": "La phrase est au present simple : on reprend « do », pas « can »."
+   },
+   "i": "Au present simple, il n'y a pas d'auxiliaire visible : quel moteur sort alors ?",
+   "e": "La bonne réponse est « do ». Au present simple, on reprend l'auxiliaire « do » : So do I."
+  },
+  {
+   "d": 2,
+   "q": "He doesn't eat fish, and I don't ___.",
+   "o": [
+    "either",
+    "too",
+    "neither"
+   ],
+   "io": {
+    "too": "Après une négation, « non plus » se dit « either » et non « too ».",
+    "neither": "« neither » est déjà négatif : avec « don't », il y aurait une double négation."
+   },
+   "i": "La phrase est négative : quel mot de fin de phrase veut dire « non plus » ?",
+   "e": "La bonne réponse est « either ». Dans une phrase négative, « non plus » se dit « either » en fin de phrase."
+  },
+  {
+   "d": 2,
+   "q": "Complète : I don't like coffee, and my brother doesn't like it ___.",
+   "r": [
+    "either"
+   ],
+   "i": "La phrase est négative : quel mot veut dire « non plus » ?",
+   "e": "La bonne réponse est « either ». Dans une phrase négative, « non plus » se dit « either » en fin de phrase."
+  },
+  {
+   "d": 2,
+   "q": "Réponds avec « So » (deux mots) : « I love music. — ___ I. »",
+   "r": [
+    "So do"
+   ],
+   "i": "Au present simple, quel auxiliaire reprend-on après « So » ?",
+   "e": "La bonne réponse est « So do ». Au present simple, on reprend « do » : So do I."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Moi aussi, j'aime le chocolat. »",
+   "r": [
+    "I like chocolate too",
+    "I like chocolate, too",
+    "I also like chocolate",
+    "I love chocolate too",
+    "I also love chocolate",
+    "I like chocolate as well",
+    "I love chocolate as well",
+    "Me too, I like chocolate"
+   ],
+   "i": "Pour dire « aussi » dans une phrase affirmative, tu as deux mots possibles.",
+   "e": "« I like chocolate too. » Dans une phrase affirmative, « aussi » se dit « too » (en fin de phrase) ou « also » (avant le verbe)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "so",
+    "does",
+    "my",
+    "brother"
+   ],
+   "fin": ".",
+   "i": "Après « so », on place l'auxiliaire avant le sujet.",
+   "e": "« So does my brother. » On construit So + auxiliaire + sujet : l'auxiliaire passe avant le sujet."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I don't speak Spanish too.",
+   "r": [
+    "I don't speak Spanish either."
+   ],
+   "i": "La phrase est négative : quel mot veut dire « non plus » ?",
+   "e": "« I don't speak Spanish either. » À la négation, « non plus » se dit « either » et non « too »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui veut dire « non plus ».",
+   "p": "He doesn't eat meat and I don't eat it *either.",
+   "i": "Cherche le mot en fin de phrase négative.",
+   "e": "« either » veut dire « non plus » dans une phrase négative."
+  },
+  {
+   "d": 3,
+   "q": "I didn't watch the match. — Neither ___ I.",
+   "o": [
+    "did",
+    "do",
+    "didn't"
+   ],
+   "io": {
+    "do": "La phrase est au passé : on reprend « did », pas « do ».",
+    "didn't": "« Neither » est déjà négatif : on reprend « did » sans « n't »."
+   },
+   "i": "La phrase de départ est au passé : quel auxiliaire reprend-on ?",
+   "e": "La bonne réponse est « did ». Dans « Neither did I », on reprend l'auxiliaire du passé, sans négation (elle est déjà dans Neither)."
+  },
+  {
+   "d": 3,
+   "q": "I've never been to Japan. — Neither ___ I.",
+   "o": [
+    "have",
+    "do",
+    "did"
+   ],
+   "io": {
+    "do": "La phrase de départ est au present perfect : on reprend « have », pas « do ».",
+    "did": "La phrase de départ est au present perfect : on reprend « have », pas « did »."
+   },
+   "i": "La phrase de départ contient « have » : c'est lui qu'on reprend.",
+   "e": "La bonne réponse est « have ». Dans « Neither have I », on reprend l'auxiliaire du present perfect."
+  },
+  {
+   "d": 3,
+   "q": "Réponds avec « Neither » (deux mots) : « I can't cook. — ___ I. »",
+   "r": [
+    "Neither can",
+    "Nor can"
+   ],
+   "i": "Reprends l'auxiliaire de la première phrase : quel est-il ?",
+   "e": "La bonne réponse est « Neither can ». On reprend le modal « can », et il passe avant le sujet : Neither can I."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais la réponse à « I wasn't ready. » : « Moi non plus. »",
+   "r": [
+    "Neither was I",
+    "Nor was I",
+    "Me neither"
+   ],
+   "i": "La phrase de départ contient le verbe « be » : on le reprend.",
+   "e": "« Neither was I. » On reprend le verbe « be » de la phrase de départ (was), et il passe avant le sujet ; « Me neither » est la version familière."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "he",
+    "doesn't",
+    "like",
+    "fish",
+    "and",
+    "I",
+    "don't",
+    "either"
+   ],
+   "fin": ".",
+   "i": "Dans une phrase négative, « either » se place en fin de phrase.",
+   "e": "« He doesn't like fish and I don't either. » Dans une phrase négative, « non plus » se dit « either » et se place en fin de phrase."
+  },
+  {
+   "d": 3,
+   "q": "Il a dit : « I went to London. » Corrige ta réponse.",
+   "f": "So do I.",
+   "r": [
+    "So did I.",
+    "Me too."
+   ],
+   "i": "La phrase de départ est au passé : quel auxiliaire reprend-on ?",
+   "e": "« So did I. » Comme la phrase de départ est au past simple, on reprend « did » et non « do »."
+  },
+  {
+   "d": 3,
+   "q": "Il a dit : « I can't dance. » Corrige ta réponse (moi non plus).",
+   "f": "Neither I can.",
+   "r": [
+    "Neither can I.",
+    "Nor can I.",
+    "Me neither."
+   ],
+   "i": "Après « Neither », l'auxiliaire change de place par rapport au sujet.",
+   "e": "« Neither can I. » Après « Neither », l'auxiliaire passe avant le sujet, comme dans une question."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui ne va pas (je veux dire « moi non plus »).",
+   "p": "I don't like horror films. *So do I.",
+   "i": "La phrase de départ est négative : quel mot de la réponse ne convient pas ?",
+   "e": "« So » ne convient pas : après une phrase négative, « moi non plus » se dit « Neither do I »."
+  }
+ ],
+ "horloge-calendrier": [
+  {
+   "d": 1,
+   "q": "The film starts ___ 7.30.",
+   "o": [
+    "at",
+    "on",
+    "in"
+   ],
+   "io": {
+    "on": "« on » s'emploie pour un jour ou une date, pas pour une heure.",
+    "in": "« in » s'emploie pour un mois, une année ou une saison, pas pour une heure."
+   },
+   "i": "Une heure est un point précis : quelle petite boîte lui va ?",
+   "e": "La bonne réponse est « at ». Pour une heure précise, on emploie « at »."
+  },
+  {
+   "d": 1,
+   "q": "My birthday is ___ June.",
+   "o": [
+    "in",
+    "on",
+    "at"
+   ],
+   "io": {
+    "on": "« on » s'emploie pour un jour ou une date, pas pour un mois.",
+    "at": "« at » s'emploie pour une heure précise, pas pour un mois."
+   },
+   "i": "Un mois est une période plus longue qu'un jour : quelle boîte lui va ?",
+   "e": "La bonne réponse est « in ». Pour un mois, on emploie « in »."
+  },
+  {
+   "d": 1,
+   "q": "We have English ___ Tuesday.",
+   "o": [
+    "on",
+    "in",
+    "at"
+   ],
+   "io": {
+    "in": "« in » s'emploie pour un mois ou une année, pas pour un jour de la semaine.",
+    "at": "« at » s'emploie pour une heure précise, pas pour un jour."
+   },
+   "i": "Un jour de la semaine : quelle boîte lui va ?",
+   "e": "La bonne réponse est « on ». Pour un jour de la semaine, on emploie « on »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : I go to school ___ Monday.",
+   "r": [
+    "on"
+   ],
+   "i": "Un jour de la semaine : quelle petite boîte lui va ?",
+   "e": "La bonne réponse est « on ». Pour un jour de la semaine, on emploie « on »."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "meeting",
+    "is",
+    "at",
+    "ten"
+   ],
+   "fin": ".",
+   "i": "Une heure précise est précédée de « at ».",
+   "e": "« The meeting is at ten. » Pour une heure précise, on emploie « at »."
+  },
+  {
+   "d": 1,
+   "q": "Touche la préposition de l'heure.",
+   "p": "The bus leaves *at 8 o'clock.",
+   "i": "Cherche la petite préposition devant l'heure.",
+   "e": "« at » est la préposition de l'heure précise."
+  },
+  {
+   "d": 2,
+   "q": "I wake up early ___ the morning.",
+   "o": [
+    "in",
+    "on",
+    "at"
+   ],
+   "io": {
+    "on": "« on the morning » ne s'emploie que pour un jour précis (on Monday morning).",
+    "at": "« at » ne s'emploie pas devant « the morning »."
+   },
+   "i": "Une partie de la journée est une période : quelle boîte lui va ?",
+   "e": "La bonne réponse est « in ». Pour les parties de la journée (the morning, the afternoon, the evening), on emploie « in »."
+  },
+  {
+   "d": 2,
+   "q": "She was born ___ 12 May.",
+   "o": [
+    "on",
+    "in",
+    "at"
+   ],
+   "io": {
+    "in": "« in » s'emploie pour un mois seul ; avec le jour précis, on emploie « on ».",
+    "at": "« at » s'emploie pour une heure précise, pas pour une date."
+   },
+   "i": "Il y a un jour précis du calendrier : quelle boîte lui va ?",
+   "e": "La bonne réponse est « on ». Pour une date précise (on 12 May), on emploie « on »."
+  },
+  {
+   "d": 2,
+   "q": "We eat turkey ___ Christmas Day.",
+   "o": [
+    "on",
+    "in",
+    "at"
+   ],
+   "io": {
+    "in": "« in » s'emploie pour une période, alors que « Christmas Day » est un jour précis.",
+    "at": "« at Christmas » existe, mais avec le mot « Day » on emploie « on »."
+   },
+   "i": "« Day » désigne un jour précis : quelle boîte lui va ?",
+   "e": "La bonne réponse est « on ». Avec « Christmas Day », qui est un jour précis, on emploie « on »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : We go skiing ___ February.",
+   "r": [
+    "in"
+   ],
+   "i": "Un mois : quelle petite boîte lui va ?",
+   "e": "La bonne réponse est « in ». Pour un mois, on emploie « in »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Le cours commence à neuf heures. »",
+   "r": [
+    "The class starts at nine",
+    "The lesson starts at nine",
+    "The class starts at 9",
+    "The lesson starts at 9",
+    "The class begins at nine",
+    "The class starts at nine o'clock",
+    "The class starts at 9 o'clock",
+    "The class begins at 9"
+   ],
+   "i": "Une heure précise : quelle préposition la précède ?",
+   "e": "« The class starts at nine. » Pour une heure précise, on emploie « at »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "visit",
+    "my",
+    "grandmother",
+    "on",
+    "Sundays"
+   ],
+   "fin": ".",
+   "i": "Un jour de la semaine est précédé de « on ».",
+   "e": "« We visit my grandmother on Sundays. » Un jour de la semaine se construit avec « on ».",
+   "alt": [
+    [
+     "on",
+     "Sundays",
+     "we",
+     "visit",
+     "my",
+     "grandmother"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The party is in Saturday.",
+   "r": [
+    "The party is on Saturday."
+   ],
+   "i": "Un jour de la semaine : quelle préposition lui va ?",
+   "e": "« The party is on Saturday. » Un jour de la semaine se construit avec « on », jamais avec « in »."
+  },
+  {
+   "d": 2,
+   "q": "Touche la préposition du jour.",
+   "p": "I play tennis *on Wednesdays.",
+   "i": "Cherche la petite préposition devant le jour de la semaine.",
+   "e": "« on » est la préposition d'un jour de la semaine."
+  },
+  {
+   "d": 3,
+   "q": "I often study ___ night.",
+   "o": [
+    "at",
+    "in",
+    "on"
+   ],
+   "io": {
+    "in": "On dit « in the morning » mais « at night » : c'est une exception.",
+    "on": "« on night » ne s'emploie pas ainsi, il faut « at night »."
+   },
+   "i": "« Night » est une exception à retenir par cœur.",
+   "e": "La bonne réponse est « at ». On dit « at night », même si les autres parties du jour prennent « in »."
+  },
+  {
+   "d": 3,
+   "q": "This building was built ___ the 19th century.",
+   "o": [
+    "in",
+    "on",
+    "at"
+   ],
+   "io": {
+    "on": "« on » s'emploie pour un jour ou une date, pas pour un siècle.",
+    "at": "« at » s'emploie pour une heure précise, pas pour un siècle."
+   },
+   "i": "Un siècle est une très longue période : quelle boîte lui va ?",
+   "e": "La bonne réponse est « in ». Pour un siècle, une année, un mois ou une saison, on emploie « in »."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "See you next Friday!",
+    "See you on next Friday!",
+    "See you in next Friday!"
+   ],
+   "io": {
+    "See you on next Friday!": "Devant « next », on n'ajoute pas de préposition.",
+    "See you in next Friday!": "Devant « next », on n'ajoute pas de préposition."
+   },
+   "i": "Quand un mot comme « next » est présent, faut-il vraiment une préposition ?",
+   "e": "La bonne réponse est « See you next Friday! » Devant next, last, this et every, on n'ajoute aucune préposition."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Je joue au tennis le samedi. »",
+   "r": [
+    "I play tennis on Saturdays",
+    "I play tennis on Saturday",
+    "I play tennis every Saturday",
+    "On Saturdays I play tennis"
+   ],
+   "i": "Un jour de la semaine, avec une habitude : quelle préposition emploie-t-on ?",
+   "e": "« I play tennis on Saturdays. » Pour un jour de la semaine, on emploie « on » ; le pluriel exprime l'habitude."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle est née en 2001. »",
+   "r": [
+    "She was born in 2001"
+   ],
+   "i": "Une année seule : quelle préposition la précède ?",
+   "e": "« She was born in 2001. » Une année seule se construit avec « in »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "I",
+    "get",
+    "up",
+    "at",
+    "seven",
+    "in",
+    "the",
+    "morning"
+   ],
+   "fin": ".",
+   "alt": [
+    [
+     "in",
+     "the",
+     "morning",
+     "I",
+     "get",
+     "up",
+     "at",
+     "seven"
+    ]
+   ],
+   "i": "Il y a une heure précise puis une partie de la journée.",
+   "e": "« I get up at seven in the morning. » On emploie « at » pour l'heure précise et « in » pour la partie de la journée ; le groupe « in the morning » peut aussi ouvrir la phrase."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I was born on 1999.",
+   "r": [
+    "I was born in 1999."
+   ],
+   "i": "Une année seule : quelle préposition lui va ?",
+   "e": "« I was born in 1999. » Une année seule se construit avec « in » ; « on » est réservé aux dates complètes."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We'll meet on next Sunday.",
+   "r": [
+    "We'll meet next Sunday."
+   ],
+   "i": "Quand « next » est présent, faut-il une préposition ?",
+   "e": "« We'll meet next Sunday. » Devant next, last, this et every, on n'ajoute aucune préposition."
+  },
+  {
+   "d": 3,
+   "q": "Touche la préposition qui ne va pas.",
+   "p": "My sister was born *on 2005.",
+   "i": "Une année seule : quelle préposition lui va ?",
+   "e": "Il faut « in » : une année seule se construit avec « in », pas avec « on »."
+  }
+ ],
+ "mouvement": [
+  {
+   "d": 1,
+   "q": "The cat jumped ___ the box. (dans)",
+   "o": [
+    "into",
+    "across",
+    "along"
+   ],
+   "io": {
+    "across": "« across » veut dire traverser une surface, pas entrer dans une boîte.",
+    "along": "« along » veut dire longer, pas entrer."
+   },
+   "i": "Le chat passe de l'extérieur à l'intérieur de la boîte.",
+   "e": "La bonne réponse est « into ». Pour entrer dans un lieu ou un objet, on emploie « into »."
+  },
+  {
+   "d": 1,
+   "q": "She opened the door and walked ___ the classroom. (elle entre)",
+   "o": [
+    "into",
+    "across",
+    "along"
+   ],
+   "io": {
+    "across": "« across » veut dire traverser d'un bord à l'autre, ici elle entre.",
+    "along": "« along » veut dire longer, ici elle entre."
+   },
+   "i": "Elle passe de l'extérieur à l'intérieur de la salle.",
+   "e": "La bonne réponse est « into ». Pour entrer dans un lieu, on emploie « into »."
+  },
+  {
+   "d": 1,
+   "q": "The boy climbed ___ the tree. (monter)",
+   "o": [
+    "up",
+    "down",
+    "past"
+   ],
+   "io": {
+    "down": "« down » veut dire descendre, alors que le garçon monte.",
+    "past": "« past » veut dire passer devant, pas monter."
+   },
+   "i": "Le garçon va vers le haut de l'arbre.",
+   "e": "La bonne réponse est « up ». Pour monter le long de quelque chose, on emploie « up »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : The cat jumped ___ the roof. (monter sur)",
+   "r": [
+    "onto",
+    "on to",
+    "on"
+   ],
+   "i": "Le chat monte sur une surface.",
+   "e": "La bonne réponse est « onto ». « onto » exprime le mouvement vers le haut d'une surface (monter sur) ; « on » est aussi accepté ici."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "dog",
+    "ran",
+    "into",
+    "the",
+    "garden"
+   ],
+   "fin": ".",
+   "i": "« into » est suivi du lieu dans lequel on entre.",
+   "e": "« The dog ran into the garden. » « into » exprime l'entrée dans le jardin."
+  },
+  {
+   "d": 1,
+   "q": "Touche la préposition qui veut dire « dans » (entrer).",
+   "p": "The boy ran *into the room.",
+   "i": "Cherche le mot qui exprime l'entrée.",
+   "e": "« into » exprime l'entrée dans un lieu."
+  },
+  {
+   "d": 2,
+   "q": "We walked ___ the bridge. (d'un bord à l'autre)",
+   "o": [
+    "across",
+    "through",
+    "along"
+   ],
+   "io": {
+    "through": "« through » veut dire traverser l'intérieur de quelque chose, or un pont est une surface.",
+    "along": "« along » veut dire longer, pas traverser d'un bord à l'autre."
+   },
+   "i": "Un pont est une surface qu'on traverse d'un bord à l'autre.",
+   "e": "La bonne réponse est « across ». Pour traverser une surface (une route, un pont), on emploie « across »."
+  },
+  {
+   "d": 2,
+   "q": "The children ran ___ the cave. (à l'intérieur)",
+   "o": [
+    "through",
+    "across",
+    "along"
+   ],
+   "io": {
+    "across": "« across » s'emploie pour traverser une surface, pas l'intérieur d'une grotte.",
+    "along": "« along » veut dire longer, pas traverser l'intérieur."
+   },
+   "i": "Une grotte est un espace fermé qu'on traverse par l'intérieur.",
+   "e": "La bonne réponse est « through ». Pour traverser l'intérieur de quelque chose (grotte, forêt, tunnel), on emploie « through »."
+  },
+  {
+   "d": 2,
+   "q": "Go ___ the church and turn left. (passer devant)",
+   "o": [
+    "past",
+    "into",
+    "along"
+   ],
+   "io": {
+    "into": "« into » veut dire entrer, alors qu'on doit seulement passer devant.",
+    "along": "« along » veut dire longer, pas passer devant."
+   },
+   "i": "Pour une indication de chemin, on passe devant l'église sans y entrer.",
+   "e": "La bonne réponse est « past ». Pour passer devant quelque chose sans s'arrêter, on emploie « past »."
+  },
+  {
+   "d": 2,
+   "q": "He got ___ the car and waved. (il sort)",
+   "o": [
+    "out of",
+    "into",
+    "across"
+   ],
+   "io": {
+    "into": "« into » veut dire entrer, alors qu'il sort de la voiture.",
+    "across": "« across » veut dire traverser une surface, pas sortir."
+   },
+   "i": "Il passe de l'intérieur de la voiture à l'extérieur.",
+   "e": "La bonne réponse est « out of ». Pour sortir de l'intérieur de quelque chose, on emploie « out of »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : Be careful when you walk ___ the road. (d'un côté à l'autre)",
+   "r": [
+    "across"
+   ],
+   "i": "Une route est une surface qu'on traverse d'un bord à l'autre.",
+   "e": "La bonne réponse est « across ». Pour traverser une surface comme une route, on emploie « across »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il est sorti de la maison en courant. »",
+   "r": [
+    "He ran out of the house",
+    "He came running out of the house",
+    "He rushed out of the house",
+    "He came out of the house running"
+   ],
+   "i": "En anglais, le verbe dit la manière (courir), la préposition dit le trajet.",
+   "e": "« He ran out of the house. » Le verbe « ran » donne la manière et « out of » donne le trajet : sortir de l'intérieur."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "walked",
+    "along",
+    "the",
+    "river"
+   ],
+   "fin": ".",
+   "i": "« along » est suivi de ce qu'on longe.",
+   "e": "« We walked along the river. » « along » exprime qu'on longe la rivière."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase (elle entre) : il y a une erreur.",
+   "f": "She went in the kitchen.",
+   "r": [
+    "She went into the kitchen."
+   ],
+   "i": "Elle entre dans la cuisine : quelle préposition exprime l'entrée ?",
+   "e": "« She went into the kitchen. » Pour exprimer le mouvement d'entrée, on emploie « into » et non « in »."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui veulent dire « sortir de ».",
+   "p": "She came *out *of the shop.",
+   "i": "Cherche l'expression de deux mots qui exprime la sortie.",
+   "e": "« out of » exprime la sortie de l'intérieur d'un lieu."
+  },
+  {
+   "d": 3,
+   "q": "The boy ran ___ his mother with open arms. (vers elle)",
+   "o": [
+    "towards",
+    "through",
+    "past"
+   ],
+   "io": {
+    "through": "« through » veut dire traverser l'intérieur, or il va vers sa mère.",
+    "past": "« past » veut dire passer devant sans s'arrêter, or il va vers sa mère."
+   },
+   "i": "Il court en direction de sa mère, sans l'avoir encore atteinte.",
+   "e": "La bonne réponse est « towards ». Pour aller dans la direction de quelqu'un ou de quelque chose, on emploie « towards »."
+  },
+  {
+   "d": 3,
+   "q": "The bus went ___ the school without stopping. (sans s'arrêter devant)",
+   "o": [
+    "past",
+    "into",
+    "onto"
+   ],
+   "io": {
+    "into": "« into » veut dire entrer, or le bus ne s'arrête pas.",
+    "onto": "« onto » veut dire monter sur, pas passer devant."
+   },
+   "i": "Le bus passe à côté de l'école sans y entrer.",
+   "e": "La bonne réponse est « past ». Pour passer devant quelque chose sans s'arrêter, on emploie « past »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous avons traversé la forêt à pied. »",
+   "r": [
+    "We walked through the forest",
+    "We went through the forest",
+    "We walked through the woods",
+    "We went through the woods",
+    "We went through the forest on foot",
+    "We walked through the forest on foot",
+    "We crossed the forest on foot",
+    "We crossed the forest"
+   ],
+   "i": "Une forêt se traverse par l'intérieur.",
+   "e": "« We walked through the forest. » Pour traverser l'intérieur de quelque chose, on emploie « through »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il a traversé la rivière à la nage. »",
+   "r": [
+    "He swam across the river",
+    "He crossed the river swimming",
+    "He crossed the river by swimming"
+   ],
+   "i": "En anglais, le verbe dit la manière (nager), la préposition dit le trajet.",
+   "e": "« He swam across the river. » Le verbe « swam » donne la manière et « across » donne le trajet d'un bord à l'autre ; c'est l'inverse du français."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "ran",
+    "across",
+    "the",
+    "road",
+    "and",
+    "into",
+    "the",
+    "shop"
+   ],
+   "fin": ".",
+   "i": "Il y a deux trajets l'un après l'autre : traverser, puis entrer.",
+   "e": "« She ran across the road and into the shop. » On emploie « across » pour traverser la route, puis « into » pour entrer dans le magasin."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We went across the tunnel.",
+   "r": [
+    "We went through the tunnel."
+   ],
+   "i": "On passe par l'intérieur du tunnel, pas d'un bord à l'autre d'une surface.",
+   "e": "« We went through the tunnel. » Pour traverser l'intérieur de quelque chose, on emploie « through » ; « across » s'emploie pour une surface."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He took a pen of his bag.",
+   "r": [
+    "He took a pen out of his bag.",
+    "He took a pen from his bag."
+   ],
+   "i": "Il retire le stylo de l'intérieur du sac : quelle expression exprime la sortie ?",
+   "e": "« He took a pen out of his bag. » « out of » exprime la sortie de l'intérieur de quelque chose ; « of » seul n'a pas ce sens."
+  },
+  {
+   "d": 3,
+   "q": "Touche la préposition qui ne va pas.",
+   "p": "The cat walked *through the road to the other side.",
+   "i": "Une route est une surface qu'on traverse d'un bord à l'autre.",
+   "e": "Il faut « across » : une route est une surface, et « through » est réservé à l'intérieur de quelque chose."
+  }
+ ],
+ "a-moi": [
+  {
+   "d": 1,
+   "q": "This is my pen. It's ___.",
+   "o": [
+    "mine",
+    "my",
+    "me"
+   ],
+   "io": {
+    "my": "« my » est un adjectif possessif : il est toujours suivi d'un nom.",
+    "me": "« me » est un pronom complément, pas un possessif."
+   },
+   "i": "On remplace « my pen » par un mot qui s'emploie seul.",
+   "e": "La bonne réponse est « mine ». Le pronom possessif de « I » s'emploie seul, sans nom après lui."
+  },
+  {
+   "d": 1,
+   "q": "That's your bag. It's ___.",
+   "o": [
+    "yours",
+    "your",
+    "you"
+   ],
+   "io": {
+    "your": "« your » est un adjectif possessif : il est toujours suivi d'un nom.",
+    "you": "« you » est un pronom personnel, pas un possessif."
+   },
+   "i": "On remplace « your bag » par un mot qui s'emploie seul.",
+   "e": "La bonne réponse est « yours ». Le pronom possessif de « you » s'emploie seul, sans nom après lui."
+  },
+  {
+   "d": 1,
+   "q": "Is this coat ___? (à elle)",
+   "o": [
+    "hers",
+    "her",
+    "she"
+   ],
+   "io": {
+    "her": "« her » est un adjectif possessif : il est toujours suivi d'un nom.",
+    "she": "« she » est un pronom personnel, pas un possessif."
+   },
+   "i": "On cherche un possessif qui s'emploie seul et qui se rapporte à elle.",
+   "e": "La bonne réponse est « hers ». Le pronom possessif de « she » s'emploie seul, sans apostrophe."
+  },
+  {
+   "d": 1,
+   "q": "Complète : This book isn't yours. It's ___. (à moi)",
+   "r": [
+    "mine"
+   ],
+   "i": "On cherche le possessif de « I ».",
+   "e": "La bonne réponse est « mine ». Le pronom possessif de « I » s'emploie seul."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "this",
+    "bag",
+    "is",
+    "mine"
+   ],
+   "fin": ".",
+   "i": "Le possessif s'emploie seul, à la fin.",
+   "e": "« This bag is mine. » Le possessif « mine » s'emploie seul, sans nom après."
+  },
+  {
+   "d": 1,
+   "q": "Touche le pronom possessif.",
+   "p": "This seat is *mine.",
+   "i": "Cherche le mot qui s'emploie seul, sans nom après.",
+   "e": "« mine » est un pronom possessif : il remplace « my seat »."
+  },
+  {
+   "d": 2,
+   "q": "These are our seats. They're ___.",
+   "o": [
+    "ours",
+    "our",
+    "us"
+   ],
+   "io": {
+    "our": "« our » est un adjectif possessif : il est toujours suivi d'un nom.",
+    "us": "« us » est un pronom complément, pas un possessif."
+   },
+   "i": "On remplace « our seats » par un mot qui s'emploie seul.",
+   "e": "La bonne réponse est « ours ». Le pronom possessif de « we » s'emploie seul, sans apostrophe."
+  },
+  {
+   "d": 2,
+   "q": "___ coat is this?",
+   "o": [
+    "Whose",
+    "Who's",
+    "Who"
+   ],
+   "io": {
+    "Who's": "« who's » veut dire « who is » et ne demande pas « à qui ».",
+    "Who": "« who » demande « qui », pas « à qui est cet objet »."
+   },
+   "i": "Pour demander « à qui est ce manteau ? », quel mot introduit la question ?",
+   "e": "La bonne réponse est « Whose ». « Whose » + nom demande à qui appartient quelque chose."
+  },
+  {
+   "d": 2,
+   "q": "Their house is big, but ___ is bigger. (la nôtre)",
+   "o": [
+    "ours",
+    "our",
+    "us"
+   ],
+   "io": {
+    "our": "« our » est un adjectif possessif : il est toujours suivi d'un nom.",
+    "us": "« us » est un pronom complément, pas un possessif."
+   },
+   "i": "On remplace « our house » par un mot qui s'emploie seul.",
+   "e": "La bonne réponse est « ours ». Le possessif « ours » remplace « our house » et s'emploie seul."
+  },
+  {
+   "d": 2,
+   "q": "Complète : Are these keys ___? (à eux)",
+   "r": [
+    "theirs"
+   ],
+   "i": "On cherche le possessif de « they ».",
+   "e": "La bonne réponse est « theirs ». Le pronom possessif de « they » s'emploie seul, sans apostrophe."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « À qui est ce téléphone ? »",
+   "r": [
+    "Whose phone is this",
+    "Whose is this phone",
+    "Whose phone is that",
+    "Whose is that phone"
+   ],
+   "i": "« À qui » se dit avec un mot qui ressemble à « who's », mais pas pareil.",
+   "e": "« Whose phone is this? » « Whose » + nom demande à qui appartient quelque chose ; « who's » veut dire « who is »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "whose",
+    "keys",
+    "are",
+    "these"
+   ],
+   "fin": "?",
+   "i": "« Whose » est suivi du nom, puis du verbe.",
+   "e": "« Whose keys are these? » « Whose » + nom demande à qui appartiennent les clés."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The red bike is the mine.",
+   "r": [
+    "The red bike is mine."
+   ],
+   "i": "Un pronom possessif prend-il un article ?",
+   "e": "« The red bike is mine. » Les pronoms possessifs ne prennent jamais d'article, même si le français dit « le mien »."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui demande « à qui ».",
+   "p": "*Whose shoes are these?",
+   "i": "Cherche le mot qui ouvre la question.",
+   "e": "« Whose » demande à qui appartient quelque chose."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "It's hers.",
+    "It's her's.",
+    "It's the hers."
+   ],
+   "io": {
+    "It's her's.": "Les pronoms possessifs ne prennent pas d'apostrophe.",
+    "It's the hers.": "Les pronoms possessifs ne prennent jamais d'article."
+   },
+   "i": "Un pronom possessif prend-il une apostrophe ou un article ?",
+   "e": "La bonne réponse est « It's hers. » Un pronom possessif s'écrit sans apostrophe et sans article."
+  },
+  {
+   "d": 3,
+   "q": "I met ___ at the party. (un de mes amis)",
+   "o": [
+    "a friend of mine",
+    "a friend of me",
+    "a my friend"
+   ],
+   "io": {
+    "a friend of me": "Après « of », il faut un pronom possessif, pas un pronom complément.",
+    "a my friend": "On ne met pas « a » devant un adjectif possessif."
+   },
+   "i": "Pour dire « un de mes amis », on utilise un possessif après « of ».",
+   "e": "La bonne réponse est « a friend of mine ». Pour « un de mes… », on dit « a … of mine / yours / hers »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ce n'est pas le sien, c'est le mien. » (à lui)",
+   "r": [
+    "It isn't his, it's mine",
+    "It's not his, it's mine",
+    "It isn't his. It's mine",
+    "It's not his. It's mine",
+    "That isn't his, it's mine",
+    "That's not his, it's mine",
+    "It isn't his, it's mine."
+   ],
+   "i": "Les pronoms possessifs s'emploient seuls, sans article, même quand le français dit « le sien ».",
+   "e": "« It isn't his, it's mine. » « his » et « mine » s'emploient seuls, sans article : on ne dit pas « the mine »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Notre maison est plus grande que la leur. »",
+   "r": [
+    "Our house is bigger than theirs",
+    "Our house is larger than theirs",
+    "Our home is bigger than theirs"
+   ],
+   "i": "« La leur » se rend par un possessif seul.",
+   "e": "« Our house is bigger than theirs. » « theirs » remplace « their house » et s'emploie seul."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "our",
+    "car",
+    "is",
+    "older",
+    "than",
+    "theirs"
+   ],
+   "fin": ".",
+   "i": "Le possessif « theirs » s'emploie seul, à la fin.",
+   "e": "« Our car is older than theirs. » « theirs » remplace « their car » et s'emploie seul."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "These are your shoes, but those are her's.",
+   "r": [
+    "These are your shoes, but those are hers."
+   ],
+   "i": "Un pronom possessif prend-il une apostrophe ?",
+   "e": "« Those are hers. » Les pronoms possessifs (hers, yours, ours, theirs) s'écrivent sans apostrophe."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Who's bag is this?",
+   "r": [
+    "Whose bag is this?"
+   ],
+   "i": "Pour demander « à qui », quel mot faut-il, et qu'est-ce que « who's » veut dire ?",
+   "e": "« Whose bag is this? » « À qui » se dit « whose » ; « who's » est la contraction de « who is »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui ne va pas.",
+   "p": "Their garden is nice, but *our's is bigger.",
+   "i": "Un pronom possessif prend-il une apostrophe ?",
+   "e": "Il faut « ours » : les pronoms possessifs s'écrivent sans apostrophe."
+  }
+ ],
+ "ponts": [
+  {
+   "d": 1,
+   "q": "I like apples ___ bananas.",
+   "o": [
+    "and",
+    "because",
+    "so"
+   ],
+   "io": {
+    "because": "« because » donne une cause, or ici on ajoute un élément.",
+    "so": "« so » donne une conséquence, or ici on ajoute un élément."
+   },
+   "i": "On ajoute un fruit à un autre : quel pont ajoute ?",
+   "e": "La bonne réponse est « and ». « and » (et) ajoute un élément à un autre."
+  },
+  {
+   "d": 1,
+   "q": "I like tennis, ___ I don't like football.",
+   "o": [
+    "but",
+    "so",
+    "because"
+   ],
+   "io": {
+    "so": "« so » donne une conséquence : ne pas aimer le football n'est pas le résultat d'aimer le tennis.",
+    "because": "« because » donne une cause : ce n'est pas la raison."
+   },
+   "i": "Les deux idées s'opposent : quel pont les relie ?",
+   "e": "La bonne réponse est « but ». « but » (mais) oppose deux idées."
+  },
+  {
+   "d": 1,
+   "q": "Do you want milk ___ sugar?",
+   "o": [
+    "or",
+    "but",
+    "so"
+   ],
+   "io": {
+    "but": "« but » oppose deux idées, mais ici on propose un choix.",
+    "so": "« so » donne une conséquence, mais ici on propose un choix."
+   },
+   "i": "On propose un choix entre deux possibilités : quel pont les relie ?",
+   "e": "La bonne réponse est « or ». « or » (ou) propose un choix."
+  },
+  {
+   "d": 1,
+   "q": "Complète : It was raining, ___ we took an umbrella.",
+   "r": [
+    "so"
+   ],
+   "i": "Le résultat de la pluie est de prendre un parapluie : quel pont donne la conséquence ?",
+   "e": "La bonne réponse est « so ». « so » (donc, alors) donne la conséquence."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "has",
+    "a",
+    "cat",
+    "and",
+    "a",
+    "dog"
+   ],
+   "fin": ".",
+   "i": "« and » relie deux éléments d'une liste.",
+   "e": "« She has a cat and a dog. » « and » ajoute le deuxième élément au premier."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui oppose deux idées.",
+   "p": "It's small *but comfortable.",
+   "i": "Cherche le pont qui veut dire « mais ».",
+   "e": "« but » oppose les deux qualités : petit mais confortable."
+  },
+  {
+   "d": 2,
+   "q": "I'm tired ___ I worked all night.",
+   "o": [
+    "because",
+    "so",
+    "or"
+   ],
+   "io": {
+    "so": "« so » donne la conséquence, mais ici on donne la raison de la fatigue.",
+    "or": "« or » propose un choix, ce n'est pas le sens ici."
+   },
+   "i": "On donne la raison de la fatigue : quel pont introduit la cause ?",
+   "e": "La bonne réponse est « because ». « because » (parce que) donne la cause, suivie d'une phrase complète."
+  },
+  {
+   "d": 2,
+   "q": "It was cold, ___ I wore a scarf.",
+   "o": [
+    "so",
+    "because",
+    "but"
+   ],
+   "io": {
+    "because": "« because » donne la cause, mais ici on donne le résultat du froid.",
+    "but": "« but » oppose deux idées, ce n'est pas le sens ici."
+   },
+   "i": "Le froid a pour résultat de mettre une écharpe : quel pont introduit la conséquence ?",
+   "e": "La bonne réponse est « so ». « so » (donc, alors) donne la conséquence."
+  },
+  {
+   "d": 2,
+   "q": "We stayed at home ___ the rain.",
+   "o": [
+    "because of",
+    "because",
+    "so"
+   ],
+   "io": {
+    "because": "Devant un simple nom, on dit « because of » ; « because » demande une phrase complète.",
+    "so": "« so » donne une conséquence et ne se construit pas avec un nom."
+   },
+   "i": "Ce qui suit est un simple nom (« the rain »), sans sujet ni verbe.",
+   "e": "La bonne réponse est « because of ». Devant un simple nom, on dit « because of »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : He is rich ___ unhappy. (opposition)",
+   "r": [
+    "but"
+   ],
+   "i": "Les deux idées s'opposent : quel pont les relie ?",
+   "e": "La bonne réponse est « but ». « but » (mais) oppose deux idées."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je suis fatigué parce que j'ai couru. »",
+   "r": [
+    "I'm tired because I ran",
+    "I am tired because I ran",
+    "I'm tired because I went running",
+    "I'm tired because I've been running",
+    "I'm tired because I have been running",
+    "I'm tired because I was running"
+   ],
+   "i": "« Parce que » introduit la raison, suivie d'une phrase complète.",
+   "e": "« I'm tired because I ran. » « because » donne la cause et est suivi d'une phrase complète (sujet + verbe)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "we",
+    "stayed",
+    "home",
+    "because",
+    "it",
+    "was",
+    "cold"
+   ],
+   "fin": ".",
+   "i": "« because » est suivi d'une phrase complète.",
+   "e": "« We stayed home because it was cold. » « because » donne la cause, suivie d'une phrase complète (sujet + verbe).",
+   "alt": [
+    [
+     "because",
+     "it",
+     "was",
+     "cold",
+     "we",
+     "stayed",
+     "home"
+    ]
+   ]
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She is happy but she passed her exam.",
+   "r": [
+    "She is happy because she passed her exam."
+   ],
+   "i": "La deuxième partie donne la raison de son bonheur : quel pont introduit la cause ?",
+   "e": "« She is happy because she passed her exam. » La raison de son bonheur se donne avec « because », et non avec « but », qui oppose."
+  },
+  {
+   "d": 2,
+   "q": "Touche le pont qui exprime la conséquence.",
+   "p": "It was late, *so we went to bed.",
+   "i": "Cherche le mot qui veut dire « donc, alors ».",
+   "e": "« so » exprime la conséquence : il était tard, donc ils se sont couchés."
+  },
+  {
+   "d": 3,
+   "q": "He didn't come ___ he was ill.",
+   "o": [
+    "because",
+    "because of",
+    "so"
+   ],
+   "io": {
+    "because of": "Après « because of », il faut un nom ; ici il y a une phrase complète (he was ill).",
+    "so": "« so » donnerait la conséquence, mais ici on donne la raison de son absence."
+   },
+   "i": "Ce qui suit est une phrase complète avec un sujet et un verbe.",
+   "e": "La bonne réponse est « because ». « because » est suivi d'une phrase complète (sujet + verbe)."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "She was late because of the traffic.",
+    "She was late because the traffic.",
+    "She was late so of the traffic."
+   ],
+   "io": {
+    "She was late because the traffic.": "Devant un nom seul (the traffic), il faut « because of ».",
+    "She was late so of the traffic.": "« so of » n'existe pas en anglais."
+   },
+   "i": "Après le pont, il n'y a qu'un nom (« the traffic »).",
+   "e": "La bonne réponse est « She was late because of the traffic. » Devant un simple nom, on dit « because of »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Nous sommes restés à l'intérieur à cause de la neige. »",
+   "r": [
+    "We stayed inside because of the snow",
+    "We stayed in because of the snow",
+    "We stayed indoors because of the snow",
+    "We stayed at home because of the snow"
+   ],
+   "i": "« À cause de » est suivi d'un simple nom.",
+   "e": "« We stayed inside because of the snow. » Devant un simple nom, on dit « because of »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il pleuvait, alors nous sommes rentrés. »",
+   "r": [
+    "It was raining, so we went home",
+    "It was raining so we went home",
+    "It was raining, so we went back",
+    "It rained, so we went home",
+    "It was raining, so we came home",
+    "It was raining, so we went back home"
+   ],
+   "i": "« Alors » donne ici la conséquence de la pluie.",
+   "e": "« It was raining, so we went home. » « so » (donc, alors) donne la conséquence et relie deux phrases."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "match",
+    "was",
+    "cancelled",
+    "because",
+    "of",
+    "the",
+    "storm"
+   ],
+   "fin": ".",
+   "i": "« because of » est suivi d'un simple nom.",
+   "e": "« The match was cancelled because of the storm. » Devant un simple nom (the storm), on dit « because of ».",
+   "alt": [
+    [
+     "because",
+     "of",
+     "the",
+     "storm",
+     "the",
+     "match",
+     "was",
+     "cancelled"
+    ]
+   ]
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "We stayed home because the storm.",
+   "r": [
+    "We stayed home because of the storm."
+   ],
+   "i": "Après le pont, il n'y a qu'un nom (« the storm »).",
+   "e": "« We stayed home because of the storm. » Devant un simple nom, on dit « because of » et non « because »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I was cold, because I put on a jacket.",
+   "r": [
+    "I was cold, so I put on a jacket.",
+    "I put on a jacket because I was cold."
+   ],
+   "i": "Mettre une veste est le résultat du froid, pas sa cause.",
+   "e": "« I was cold, so I put on a jacket. » Mettre une veste est la conséquence du froid : on emploie « so » et non « because »."
+  },
+  {
+   "d": 3,
+   "q": "Touche les deux mots qui introduisent un nom (cause).",
+   "p": "We cancelled the picnic *because *of the rain.",
+   "i": "Cherche l'expression de deux mots qui précède « the rain ».",
+   "e": "« because of » introduit un simple nom pour exprimer la cause."
+  }
+ ],
+ "exclamations": [
+  {
+   "d": 1,
+   "q": "___ a lovely day!",
+   "o": [
+    "What",
+    "How",
+    "So"
+   ],
+   "io": {
+    "How": "« How » s'emploie devant un adjectif seul, pas devant « a + nom ».",
+    "So": "« so » ne commence pas une exclamation avec un nom."
+   },
+   "i": "L'exclamation porte sur un nom précédé de « a » : quelle formule choisir ?",
+   "e": "La bonne réponse est « What ». Devant un nom singulier, on emploie « What a »."
+  },
+  {
+   "d": 1,
+   "q": "___ beautiful!",
+   "o": [
+    "How",
+    "What",
+    "Such"
+   ],
+   "io": {
+    "What": "« What » s'emploie devant un nom, mais ici il n'y a qu'un adjectif.",
+    "Such": "« such » s'emploie devant « a + nom », pas devant un adjectif seul."
+   },
+   "i": "L'exclamation porte sur un adjectif seul : quelle formule choisir ?",
+   "e": "La bonne réponse est « How ». Devant un adjectif seul, on emploie « How »."
+  },
+  {
+   "d": 1,
+   "q": "What ___ idea!",
+   "o": [
+    "an",
+    "a",
+    "the"
+   ],
+   "io": {
+    "a": "« idea » commence par une voyelle : on dit « an ».",
+    "the": "Dans une exclamation avec « What », on emploie « a » ou « an », pas « the »."
+   },
+   "i": "Regarde la première lettre du mot « idea ».",
+   "e": "La bonne réponse est « an ». « idea » commence par une voyelle, donc « What an idea! »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : ___ a nice surprise!",
+   "r": [
+    "What"
+   ],
+   "i": "L'exclamation porte sur un nom précédé de « a ».",
+   "e": "La bonne réponse est « What ». Devant un nom singulier, on emploie « What a »."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "what",
+    "a",
+    "great",
+    "day"
+   ],
+   "fin": "!",
+   "i": "« What a » ouvre l'exclamation, avant l'adjectif et le nom.",
+   "e": "« What a great day! » Devant un nom singulier, on construit What a + adjectif + nom."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui ouvre l'exclamation devant un adjectif.",
+   "p": "*How funny the film was!",
+   "i": "Cherche le premier mot de l'exclamation.",
+   "e": "« How » s'emploie devant un adjectif (ou un adverbe) dans une exclamation : How funny!"
+  },
+  {
+   "d": 2,
+   "q": "What ___ flowers!",
+   "o": [
+    "lovely",
+    "a lovely",
+    "the lovely"
+   ],
+   "io": {
+    "a lovely": "« flowers » est au pluriel : on n'emploie pas « a » avec un pluriel.",
+    "the lovely": "Dans une exclamation avec « What », on n'emploie pas « the »."
+   },
+   "i": "Les fleurs sont au pluriel : faut-il « a » ?",
+   "e": "La bonne réponse est « lovely ». Avec un nom pluriel, « What » s'emploie sans « a » : What lovely flowers!"
+  },
+  {
+   "d": 2,
+   "q": "It's ___ cold today!",
+   "o": [
+    "so",
+    "such",
+    "what"
+   ],
+   "io": {
+    "such": "« such » s'emploie devant « a + nom », pas devant un adjectif seul.",
+    "what": "« what » ne s'emploie pas devant un adjectif seul dans une phrase ordinaire."
+   },
+   "i": "Le mot suivant est un adjectif seul, sans nom.",
+   "e": "La bonne réponse est « so ». Devant un adjectif seul, « so » veut dire « tellement »."
+  },
+  {
+   "d": 2,
+   "q": "She is ___ a kind girl.",
+   "o": [
+    "such",
+    "so",
+    "what"
+   ],
+   "io": {
+    "so": "« so a » n'existe pas : devant « a + adjectif + nom », on emploie « such ».",
+    "what": "« what » est pour une exclamation, et ici la phrase est ordinaire."
+   },
+   "i": "Après le blanc, il y a « a kind girl » : un nom avec son adjectif.",
+   "e": "La bonne réponse est « such ». Devant adjectif + nom, on emploie « such a »."
+  },
+  {
+   "d": 2,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "How kind of you!",
+    "What kind of you!",
+    "How a kind of you!"
+   ],
+   "io": {
+    "What kind of you!": "Devant un adjectif seul, on emploie « How », pas « What ».",
+    "How a kind of you!": "On n'emploie pas « a » après « How »."
+   },
+   "i": "« Kind » est ici un adjectif seul : quelle formule l'accompagne ?",
+   "e": "La bonne réponse est « How kind of you! » Devant un adjectif seul, on emploie « How », sans « a »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : The test was ___ difficult! (tellement)",
+   "r": [
+    "so"
+   ],
+   "i": "Le mot suivant est un adjectif seul : quel petit mot veut dire « tellement » ?",
+   "e": "La bonne réponse est « so ». Devant un adjectif seul, « so » veut dire « tellement »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Quelle belle maison ! »",
+   "r": [
+    "What a beautiful house",
+    "What a lovely house",
+    "What a nice house",
+    "What a pretty house",
+    "What a beautiful home",
+    "What a gorgeous house",
+    "What a lovely home",
+    "What a nice home"
+   ],
+   "i": "Le nom « maison » est singulier : n'oublie pas le petit mot qui le précède.",
+   "e": "« What a beautiful house! » Devant un nom singulier, on emploie « What a » + adjectif + nom."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "what",
+    "lovely",
+    "flowers"
+   ],
+   "fin": "!",
+   "i": "Le nom est au pluriel : il n'y a pas de « a ».",
+   "e": "« What lovely flowers! » Avec un nom pluriel, on construit What + adjectif + nom, sans « a »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "What beautiful day!",
+   "r": [
+    "What a beautiful day!"
+   ],
+   "i": "« day » est un nom singulier dénombrable : que manque-t-il avant l'adjectif ?",
+   "e": "« What a beautiful day! » Devant un nom singulier dénombrable, « What a » est obligatoire."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui va devant adjectif + nom.",
+   "p": "It's *such a great game!",
+   "i": "Cherche le mot qui précède « a great game ».",
+   "e": "« such » s'emploie devant « a + adjectif + nom »."
+  },
+  {
+   "d": 3,
+   "q": "What ___ news!",
+   "o": [
+    "great",
+    "a great",
+    "great a"
+   ],
+   "io": {
+    "a great": "« news » est indénombrable : on n'emploie pas « a » devant lui.",
+    "great a": "Cette construction n'existe pas en anglais."
+   },
+   "i": "« news » est un nom indénombrable : accepte-t-il « a » ?",
+   "e": "La bonne réponse est « great ». Avec un indénombrable, « What » s'emploie sans « a » : What great news!"
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "It's such a good film!",
+    "It's so a good film!",
+    "It's what a good film!"
+   ],
+   "io": {
+    "It's so a good film!": "Devant adjectif + nom, on emploie « such a », pas « so a ».",
+    "It's what a good film!": "« what » n'est pas à sa place dans une phrase ordinaire."
+   },
+   "i": "Après le pont, il y a un adjectif suivi d'un nom.",
+   "e": "La bonne réponse est « It's such a good film! » Devant adjectif + nom, on emploie « such a »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Quelle bonne idée ! »",
+   "r": [
+    "What a good idea",
+    "What a great idea",
+    "What a nice idea",
+    "What an excellent idea",
+    "What a brilliant idea",
+    "What a wonderful idea",
+    "What a lovely idea"
+   ],
+   "i": "Le nom « idée » est singulier et dénombrable : « a » est obligatoire.",
+   "e": "« What a good idea! » Devant un nom singulier dénombrable, « What a » est obligatoire, même si le français n'a pas d'article."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « C'est tellement gentil de ta part ! »",
+   "r": [
+    "That's so kind of you",
+    "How kind of you",
+    "It's so kind of you",
+    "That is so kind of you",
+    "It is so kind of you",
+    "That's so nice of you",
+    "How nice of you",
+    "It's so nice of you",
+    "That's very kind of you",
+    "That's really kind of you",
+    "That's so sweet of you",
+    "It's very kind of you"
+   ],
+   "i": "Devant un adjectif seul, « so » ou « How » conviennent.",
+   "e": "« That's so kind of you! » Devant un adjectif seul, on emploie « so » (tellement) ou « How » dans une exclamation."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "it's",
+    "such",
+    "a",
+    "hot",
+    "day"
+   ],
+   "fin": "!",
+   "i": "« such a » précède l'adjectif suivi du nom.",
+   "e": "« It's such a hot day! » Devant adjectif + nom, on construit such a + adjectif + nom."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "What a lovely weather!",
+   "r": [
+    "What lovely weather!"
+   ],
+   "i": "« weather » se compte-t-il ? Accepte-t-il « a » ?",
+   "e": "« What lovely weather! » « weather » est indénombrable : on n'emploie pas « a » devant lui."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "It's so a good idea.",
+   "r": [
+    "It's such a good idea."
+   ],
+   "i": "Devant « a + adjectif + nom », quel petit mot faut-il à la place de « so » ?",
+   "e": "« It's such a good idea. » Devant adjectif + nom, on emploie « such a » ; « so » reste devant un adjectif seul."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot en trop.",
+   "p": "What *a beautiful flowers!",
+   "i": "« flowers » est au pluriel.",
+   "e": "« a » est de trop : avec un nom pluriel, on dit « What beautiful flowers! »."
+  }
+ ]
+}

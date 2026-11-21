@@ -1,0 +1,1507 @@
+{
+ "verbe-voyageur": [
+  {
+   "d": 1,
+   "q": "Dans « Maryam reads a book », quel mot est le verbe ?",
+   "o": [
+    "reads",
+    "Maryam",
+    "a",
+    "book"
+   ],
+   "io": {
+    "Maryam": "« Maryam » est le prénom de celle qui fait l'action : c'est le sujet, pas le verbe.",
+    "a": "« a » est un petit mot qui accompagne le nom « book ». Il ne dit pas ce qu'on fait.",
+    "book": "« book » est une chose (un livre), pas une action."
+   },
+   "i": "Quel mot dit ce que Maryam fait ?",
+   "e": "« reads » est le verbe : il dit l'action. Si on passait à hier, ce serait « Yesterday, Maryam read a book » : c'est le mot qui change."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe.",
+   "p": "Inès *sings in the school choir.",
+   "i": "Cherche le mot qui dit ce qu'Inès fait.",
+   "e": "« sings » est le verbe : c'est l'action d'Inès, placée juste après le sujet."
+  },
+  {
+   "d": 1,
+   "q": "Dans « Omar cooks dinner », si on ajoute « yesterday » au début, quel mot change de forme ?",
+   "o": [
+    "cooks",
+    "Omar",
+    "dinner"
+   ],
+   "io": {
+    "Omar": "Un prénom ne change pas quand on change le jour.",
+    "dinner": "Un nom ne change pas quand on change le jour."
+   },
+   "i": "Le mot qui change, c'est l'action.",
+   "e": "« cooks » devient « cooked » (Yesterday, Omar cooked dinner). Le mot qui change quand on change le jour, c'est le verbe."
+  },
+  {
+   "d": 1,
+   "q": "Écris le seul verbe de la phrase : Léa drinks water.",
+   "r": [
+    "drinks"
+   ],
+   "i": "Quel mot dit l'action de Léa ?",
+   "e": "« drinks » est le verbe : il dit ce que Léa fait. « Léa » est le sujet et « water » est une chose."
+  },
+  {
+   "d": 1,
+   "q": "Parmi ces quatre mots, un seul est un verbe : lequel ?",
+   "o": [
+    "listen",
+    "window",
+    "small",
+    "blue"
+   ],
+   "io": {
+    "window": "« window » (fenêtre) est une chose : c'est un nom.",
+    "small": "« small » (petit) décrit : c'est un adjectif.",
+    "blue": "« blue » (bleu) est une couleur : ce n'est pas une action."
+   },
+   "i": "Cherche le mot qui dit une action.",
+   "e": "« listen » (écouter) est un verbe : il dit une action. Les trois autres sont une chose, une taille et une couleur."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "my",
+    "sister",
+    "plays",
+    "tennis"
+   ],
+   "fin": ".",
+   "i": "L'ordre habituel : sujet, puis verbe, puis le reste.",
+   "e": "« My sister plays tennis. » : le sujet « my sister » vient d'abord, le verbe « plays » juste après, puis le complément."
+  },
+  {
+   "d": 2,
+   "q": "Dans « Yusuf wants a new bike », quel mot est le verbe ?",
+   "o": [
+    "wants",
+    "Yusuf",
+    "new",
+    "bike"
+   ],
+   "io": {
+    "Yusuf": "C'est le prénom de celui qui veut : le sujet.",
+    "new": "« new » (neuf) décrit le vélo : c'est un adjectif.",
+    "bike": "« bike » (vélo) est une chose, pas une action."
+   },
+   "i": "Qui fait quoi ? Cherche le mot d'action.",
+   "e": "« wants » est le verbe : il dit ce que Yusuf veut (Yesterday, Yusuf wanted a new bike)."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux verbes.",
+   "p": "My parents *like music and my uncle *plays the guitar.",
+   "i": "Il y a deux sujets, donc deux verbes : un après chaque sujet.",
+   "e": "« like » (my parents) et « plays » (my uncle) sont les deux verbes. Chaque verbe vient juste après son sujet."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Tom travaille dans une banque. »",
+   "r": [
+    "Tom works in a bank",
+    "Tom works at a bank",
+    "Tom works in the bank",
+    "Tom works at the bank"
+   ],
+   "i": "Sujet, puis verbe, puis le lieu. Le verbe « travailler » se dit work.",
+   "e": "« Tom works in a bank » : le sujet « Tom » est suivi du verbe « works » (avec -s pour he/Tom), puis du lieu."
+  },
+  {
+   "d": 2,
+   "q": "Un seul mot de « Today, Adam helps his mum » changera si on dit « Yesterday ». Lequel ?",
+   "o": [
+    "helps",
+    "Adam",
+    "mum",
+    "his"
+   ],
+   "io": {
+    "Adam": "Un prénom reste le même.",
+    "mum": "Un nom reste le même.",
+    "his": "« his » (son) ne change pas avec le jour."
+   },
+   "i": "Quel mot est l'action ?",
+   "e": "« helps » devient « helped » (Yesterday, Adam helped his mum). Le mot qui bouge est le verbe."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "the",
+    "dog",
+    "sleeps",
+    "under",
+    "the",
+    "table"
+   ],
+   "fin": ".",
+   "i": "Le sujet est « the dog ». Le verbe vient juste après.",
+   "e": "« The dog sleeps under the table. » : sujet « the dog », verbe « sleeps », puis le lieu « under the table »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She is likes music.",
+   "r": [
+    "She likes music."
+   ],
+   "i": "Dans une phrase simple, combien de verbes conjugués faut-il ?",
+   "e": "« She likes music. » : « likes » est déjà le verbe. On n'ajoute pas « is » devant : il n'y a qu'un verbe conjugué par phrase simple."
+  },
+  {
+   "d": 2,
+   "q": "Écris le seul verbe de la phrase : Emma and Léa study English at school.",
+   "r": [
+    "study"
+   ],
+   "i": "Quel mot dit ce qu'elles font ?",
+   "e": "« study » est le verbe : il dit l'action des deux filles. Il est à la base car le sujet est pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Dans « The little cat drinks milk », quel mot est le verbe ?",
+   "o": [
+    "drinks",
+    "little",
+    "cat",
+    "milk"
+   ],
+   "io": {
+    "little": "« little » (petit) décrit le chat : c'est un adjectif.",
+    "cat": "« cat » est l'animal qui fait l'action : c'est le sujet.",
+    "milk": "« milk » (lait) est une chose, pas une action."
+   },
+   "i": "Quel mot dit l'action du chat ?",
+   "e": "« drinks » est le verbe : il dit ce que le chat fait. Hier, ce serait « drank »."
+  },
+  {
+   "d": 3,
+   "q": "Dans « Adam is tired », quel mot est le verbe ?",
+   "o": [
+    "is",
+    "Adam",
+    "tired"
+   ],
+   "io": {
+    "Adam": "C'est le sujet : celui dont on parle.",
+    "tired": "« tired » (fatigué) décrit Adam : c'est un adjectif, pas le verbe."
+   },
+   "i": "Un verbe peut dire un état, pas seulement une action. Quel mot changerait si on passait à hier ?",
+   "e": "« is » est le verbe : il dit un état (être). Hier : « Adam was tired ». C'est « is » qui change, pas « tired »."
+  },
+  {
+   "d": 3,
+   "q": "Touche le verbe.",
+   "p": "Yesterday, my cousin *visited the museum.",
+   "i": "Le verbe est au passé : c'est le mot qui a déjà changé à cause de « yesterday ».",
+   "e": "« visited » est le verbe : il vient juste après son sujet « my cousin » et il est au passé, comme « yesterday » le demande."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Yesterday I play tennis.",
+   "r": [
+    "Yesterday I played tennis.",
+    "Yesterday, I played tennis."
+   ],
+   "i": "Le mot « yesterday » dit quand : regarde le verbe, il doit suivre.",
+   "e": "« Yesterday I played tennis. » : avec « yesterday », le verbe change de forme et passe au passé (play → played)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "They are love pizza.",
+   "r": [
+    "They love pizza."
+   ],
+   "i": "« love » est déjà un verbe. Combien de verbes conjugués faut-il dans cette phrase ?",
+   "e": "« They love pizza. » : « love » est le verbe, on n'ajoute pas « are ». Une phrase simple n'a qu'un verbe conjugué (comme le piège « I am agree »)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mes amis jouent au football le samedi. »",
+   "r": [
+    "My friends play football on Saturdays",
+    "My friends play football on Saturday",
+    "My friends play soccer on Saturdays",
+    "My friends play soccer on Saturday",
+    "My friends play football every Saturday",
+    "My friends play soccer every Saturday"
+   ],
+   "i": "Sujet pluriel, puis le verbe « play », puis le reste. « Le samedi » (chaque samedi) se dit avec on.",
+   "e": "« My friends play football on Saturdays » : le sujet pluriel « my friends » est suivi du verbe « play ». « On Saturdays » dit « tous les samedis »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "our",
+    "teacher",
+    "reads",
+    "a",
+    "story",
+    "to",
+    "us"
+   ],
+   "fin": ".",
+   "i": "Trouve d'abord le sujet, puis le verbe qui le suit.",
+   "e": "« Our teacher reads a story to us. » : le sujet « our teacher » est suivi de son verbe « reads », puis viennent le complément et « to us »."
+  }
+ ],
+ "six-passagers": [
+  {
+   "d": 1,
+   "q": "Tu parles de ton frère Adam : « ___ is ten years old. »",
+   "o": [
+    "He",
+    "She",
+    "It",
+    "They"
+   ],
+   "io": {
+    "She": "« She » sert pour une femme ou une fille. Adam est un garçon.",
+    "It": "« It » sert pour une chose ou un animal. Adam est une personne.",
+    "They": "« They » sert pour plusieurs personnes. Ici, on parle d'une seule."
+   },
+   "i": "Adam est un garçon, et il est seul.",
+   "e": "« He is ten years old. » : Adam est un garçon, et il est seul : on emploie « he » (« she » serait pour une fille)."
+  },
+  {
+   "d": 1,
+   "q": "Tu parles de ta mère : « ___ is a nurse. »",
+   "o": [
+    "She",
+    "He",
+    "It"
+   ],
+   "io": {
+    "He": "« He » sert pour un homme ou un garçon.",
+    "It": "« It » ne s'emploie pas pour une personne."
+   },
+   "i": "Ta mère est une femme.",
+   "e": "« She is a nurse. » : ta mère est une femme, donc on emploie « she »."
+  },
+  {
+   "d": 1,
+   "q": "Tu parles de ton école : « ___ is very big. »",
+   "o": [
+    "It",
+    "She",
+    "He"
+   ],
+   "io": {
+    "She": "En français, « l'école » est féminin, mais en anglais une chose est toujours « it ».",
+    "He": "« He » est réservé aux hommes et aux garçons."
+   },
+   "i": "Une école n'est pas une personne. Le genre français ne compte pas.",
+   "e": "« It is very big. » : pour une chose, un lieu ou un animal, on emploie « it », même si le mot français est féminin."
+  },
+  {
+   "d": 1,
+   "q": "Tu parles de Tom et de toi : « Tom and I are friends. » → « ___ are friends. »",
+   "r": [
+    "We"
+   ],
+   "i": "Tom et toi, ça fait « nous ».",
+   "e": "« We are friends. » : « Tom and I » te comprend toi, donc on le remplace par « we » (nous)."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux pronoms sujets.",
+   "p": "Léa says *she is tired, but *I am fine.",
+   "i": "Cherche les petits mots qui remplacent Léa et la personne qui parle.",
+   "e": "« she » remplace Léa et « I » est la personne qui parle. Les pronoms sujets remplacent celui qui fait l'action."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "they",
+    "are",
+    "at",
+    "home"
+   ],
+   "fin": ".",
+   "i": "Commence par le pronom sujet.",
+   "e": "« They are at home. » : le pronom sujet « they » vient d'abord, puis « are »."
+  },
+  {
+   "d": 2,
+   "q": "Tu parles de Lucas et Inès : « ___ are in the garden. »",
+   "o": [
+    "They",
+    "We",
+    "He",
+    "She"
+   ],
+   "io": {
+    "We": "« We » inclut la personne qui parle. Ici, tu parles de deux autres personnes.",
+    "He": "« He » est pour un seul garçon.",
+    "She": "« She » est pour une seule fille."
+   },
+   "i": "Deux personnes, et ce n'est pas toi.",
+   "e": "« They are in the garden. » : « they » remplace plusieurs personnes (ou plusieurs choses)."
+  },
+  {
+   "d": 2,
+   "q": "Tu parles de ton chien : « ___ is very friendly. »",
+   "o": [
+    "It",
+    "They",
+    "We"
+   ],
+   "io": {
+    "They": "« They » est pour plusieurs. Ici, il n'y a qu'un chien.",
+    "We": "« We » inclut celui qui parle. Le chien n'est pas toi !"
+   },
+   "i": "Un seul animal, donc un seul pronom au singulier.",
+   "e": "« It is very friendly. » : un animal est « it ». (On dit parfois « he » ou « she » pour son propre chien, mais « it » est toujours correct.)"
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Elles sont à la maison. »",
+   "r": [
+    "They are at home",
+    "They are home"
+   ],
+   "i": "Le pronom qui remplace plusieurs filles est le même que pour plusieurs garçons.",
+   "e": "« They are at home. » : l'anglais n'a qu'un seul mot, « they », pour « ils » et pour « elles »."
+  },
+  {
+   "d": 2,
+   "q": "Sarah and I are friends. ___ play tennis together.",
+   "o": [
+    "We",
+    "They",
+    "You",
+    "She"
+   ],
+   "io": {
+    "They": "« They » désigne d'autres personnes que toi. Ici, tu en fais partie.",
+    "You": "« You » désigne la personne à qui tu parles.",
+    "She": "« She » ne désigne qu'une seule fille, mais vous êtes deux."
+   },
+   "i": "Tu fais partie du groupe.",
+   "e": "« We play tennis together. » : Sarah et toi, vous êtes deux et tu en fais partie, donc on emploie « we »."
+  },
+  {
+   "d": 2,
+   "q": "Remplace « my dad and my uncle » par un pronom : « My dad and my uncle work here. » → « ___ work here. »",
+   "r": [
+    "They"
+   ],
+   "i": "Deux hommes : quel pronom pour plusieurs personnes ?",
+   "e": "« They work here. » : « they » remplace plusieurs personnes, même si ce sont deux hommes."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "Léa",
+    "and",
+    "I",
+    "are",
+    "friends"
+   ],
+   "fin": ".",
+   "i": "Le sujet est composé de deux personnes. Le « I » prend toujours une majuscule.",
+   "e": "« Léa and I are friends. » : le sujet est « Léa and I » et le « I » prend toujours une majuscule."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Look at my bike. She is new.",
+   "r": [
+    "Look at my bike. It is new."
+   ],
+   "i": "Un vélo est une chose. Quel pronom pour une chose ?",
+   "e": "« It is new. » : en anglais, une chose est toujours « it », même si le mot français est masculin ou féminin."
+  },
+  {
+   "d": 2,
+   "q": "Touche le pronom qui remplace « the books ».",
+   "p": "The books are old, but *they are interesting.",
+   "i": "Les livres : plusieurs choses.",
+   "e": "« they » remplace « the books » : pour plusieurs choses, on emploie « they »."
+  },
+  {
+   "d": 3,
+   "q": "Tu écris à deux amis : « ___ are very kind. »",
+   "o": [
+    "You",
+    "They",
+    "We"
+   ],
+   "io": {
+    "They": "« They » parle d'autres personnes, pas de celles à qui tu écris.",
+    "We": "« We » t'inclut, mais tu parles seulement à tes amis."
+   },
+   "i": "Tu parles directement à eux. Et « you » sert pour un seul ami comme pour plusieurs.",
+   "e": "« You are very kind. » : « you » désigne la ou les personnes à qui tu parles."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "My sister and I are late.",
+    "My sister and me are late.",
+    "My sister and I is late."
+   ],
+   "io": {
+    "My sister and me are late.": "« me » ne peut pas être sujet. Il faut le pronom sujet « I ».",
+    "My sister and I is late.": "Deux personnes : be devient « are »."
+   },
+   "i": "Le sujet est composé de deux personnes dont toi.",
+   "e": "« My sister and I are late. » : on emploie le pronom sujet « I », avec une majuscule."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Sofia is my sister. He is ten.",
+   "r": [
+    "Sofia is my sister. She is ten."
+   ],
+   "i": "Sofia est ta sœur : fille ou garçon ?",
+   "e": "« She is ten. » : Sofia est une fille, donc on la reprend par « she » et non par « he »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My brother and me play chess.",
+   "r": [
+    "My brother and I play chess."
+   ],
+   "i": "Regarde le petit mot qui te représente : est-ce un pronom sujet ?",
+   "e": "« My brother and I play chess. » : « me » ne peut pas être sujet. On emploie le pronom sujet « I » (toujours avec une majuscule)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ma mère et moi, nous sommes au parc. »",
+   "r": [
+    "My mum and I are at the park",
+    "My mom and I are at the park",
+    "My mother and I are at the park",
+    "My mum and I are in the park",
+    "My mom and I are in the park",
+    "My mother and I are in the park"
+   ],
+   "i": "Le sujet est « ma mère et moi » : mets « I » en dernier, avec une majuscule.",
+   "e": "« My mum and I are at the park. » : le sujet « my mum and I » est suivi de « are ». En anglais, on met « I » en dernier par politesse."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "the",
+    "books",
+    "are",
+    "old",
+    "but",
+    "they",
+    "are",
+    "interesting"
+   ],
+   "fin": ".",
+   "i": "Il y a deux petites phrases reliées par « but ».",
+   "e": "« The books are old but they are interesting. » : le pronom « they » reprend « the books » dans la deuxième partie."
+  }
+ ],
+ "roi-be": [
+  {
+   "d": 1,
+   "q": "Complète : « I ___ a student. »",
+   "o": [
+    "am",
+    "is",
+    "are"
+   ],
+   "io": {
+    "is": "« is » va avec he, she, it, jamais avec « I ».",
+    "are": "« are » va avec you, we, they, mais pas avec « I »."
+   },
+   "i": "Une seule forme va avec « I ».",
+   "e": "« I am a student. » : avec « I », be prend toujours la forme « am », jamais « is » ni « are »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She ___ my friend. »",
+   "o": [
+    "is",
+    "am",
+    "are"
+   ],
+   "io": {
+    "am": "« am » est réservé à « I ».",
+    "are": "« are » va avec you, we, they."
+   },
+   "i": "« She » est une seule personne, ni « I » ni « you ».",
+   "e": "« She is my friend. » : avec he, she et it (une seule personne ou chose), be devient « is »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We ___ in the kitchen. »",
+   "o": [
+    "are",
+    "is",
+    "am"
+   ],
+   "io": {
+    "is": "« is » va avec une seule personne ou chose.",
+    "am": "« am » va seulement avec « I »."
+   },
+   "i": "« We » = plusieurs personnes.",
+   "e": "« We are in the kitchen. » : avec we, you, they et les pluriels, be devient « are »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The dog ___ in the garden. »",
+   "r": [
+    "is"
+   ],
+   "i": "Un seul chien : pense à « it ».",
+   "e": "« The dog is in the garden. » : « the dog » (= it) est un seul animal, donc be devient « is »."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux formes de be.",
+   "p": "I *am happy and my friends *are here.",
+   "i": "Cherche deux petits mots qui veulent dire « suis » et « sont ».",
+   "e": "« am » va avec « I » et « are » avec « my friends » (= they) : ce sont deux formes de be."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "he",
+    "is",
+    "a",
+    "doctor"
+   ],
+   "fin": ".",
+   "i": "Le sujet, puis be, puis le métier.",
+   "e": "« He is a doctor. » : l'ordre est le sujet « he », puis be (« is »), puis le métier. N'oublie pas « is » : l'anglais ne le sous-entend jamais."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Tom and Léa ___ in the same class. »",
+   "o": [
+    "are",
+    "is",
+    "am"
+   ],
+   "io": {
+    "is": "Il y a deux personnes, pas une seule.",
+    "am": "« am » va seulement avec « I »."
+   },
+   "i": "Tom et Léa : combien de personnes ?",
+   "e": "« Tom and Léa are in the same class. » : deux personnes (= they), donc « are »."
+  },
+  {
+   "d": 2,
+   "q": "Touche la forme de be qui convient à « the children ».",
+   "p": "The children *are in the playground.",
+   "i": "« The children » = plusieurs personnes.",
+   "e": "« are » va avec « the children » (= they). Un pluriel prend toujours « are »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous sommes en retard. »",
+   "r": [
+    "We are late"
+   ],
+   "i": "Le sujet « nous » se dit we. Be s'accorde avec lui.",
+   "e": "« We are late. » : « we » (nous) est pluriel, donc be devient « are »."
+  },
+  {
+   "d": 2,
+   "q": "Pour demander « Es-tu prêt ? », on dit :",
+   "o": [
+    "Are you ready?",
+    "Do you be ready?",
+    "Is you ready?"
+   ],
+   "io": {
+    "Do you be ready?": "Be n'appelle jamais « do » : il passe lui-même devant le sujet.",
+    "Is you ready?": "Avec « you », be est « are », pas « is »."
+   },
+   "i": "Be se place seul devant le sujet.",
+   "e": "« Are you ready? » : pour poser une question avec be, on le met devant le sujet, sans « do »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "are",
+    "your",
+    "parents",
+    "at",
+    "home"
+   ],
+   "fin": "?",
+   "i": "Be passe devant le sujet.",
+   "e": "« Are your parents at home? » : be (« are ») est placé devant le sujet « your parents »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My parents is French.",
+   "r": [
+    "My parents are French."
+   ],
+   "i": "Combien de personnes dans « my parents » ?",
+   "e": "« My parents are French. » : « my parents » est un pluriel (= they), donc « are »."
+  },
+  {
+   "d": 2,
+   "q": "Complète à la négative : « My brother ___ at school today. »",
+   "o": [
+    "isn't",
+    "aren't",
+    "doesn't"
+   ],
+   "io": {
+    "aren't": "« aren't » va avec you, we, they, pas avec un seul garçon.",
+    "doesn't": "Be n'a pas besoin de « do » pour se nier : il prend simplement « not »."
+   },
+   "i": "Un seul garçon (= he) et be + not.",
+   "e": "« My brother isn't at school today. » : be + not, avec « is » pour he : « isn't »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Where ___ your keys? »",
+   "r": [
+    "are"
+   ],
+   "i": "Les clés : un ou plusieurs objets ?",
+   "e": "« Where are your keys? » : « your keys » est un pluriel (= they), donc « are »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Do you be tired?",
+   "r": [
+    "Are you tired?"
+   ],
+   "i": "Be pose ses questions tout seul.",
+   "e": "« Are you tired? » : be ne s'utilise jamais avec « do ». On met « are » devant « you »."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « Maryam and I ___ cousins. »",
+   "o": [
+    "are",
+    "is",
+    "am"
+   ],
+   "io": {
+    "am": "Même avec « I » dans le sujet, il y a deux personnes : « Maryam and I » = we.",
+    "is": "Il y a deux personnes, pas une."
+   },
+   "i": "« Maryam and I » = we.",
+   "e": "« Maryam and I are cousins. » : « Maryam and I » remplace « we », donc « are »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "My sister isn't at home.",
+    "My sister not is at home.",
+    "My sister doesn't be at home."
+   ],
+   "io": {
+    "My sister not is at home.": "« not » se place après be, pas avant.",
+    "My sister doesn't be at home.": "Be n'emploie jamais « do » pour se nier."
+   },
+   "i": "La négation de be : be + not.",
+   "e": "« My sister isn't at home. » : be se nie avec « not » placé après lui : « is not » ou « isn't »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ma sœur n'est pas à la maison. »",
+   "r": [
+    "My sister isn't at home",
+    "My sister is not at home",
+    "My sister's not at home",
+    "My sister isn't home",
+    "My sister is not home"
+   ],
+   "i": "Un seul sujet féminin : be + not.",
+   "e": "« My sister isn't at home. » : be se nie en ajoutant « not » après lui (« is not » ou « isn't »), sans jamais appeler « do »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a deux erreurs.",
+   "f": "She are a nurse and he are a doctor.",
+   "r": [
+    "She is a nurse and he is a doctor."
+   ],
+   "i": "Cherche les deux formes de be, et accorde-les à she et à he.",
+   "e": "« She is a nurse and he is a doctor. » : avec she et he, be devient « is »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "where",
+    "are",
+    "your",
+    "new",
+    "friends"
+   ],
+   "fin": "?",
+   "i": "Le mot interrogatif ouvre la phrase, puis be passe devant le sujet.",
+   "e": "« Where are your new friends? » : mot interrogatif, puis be (« are »), puis le sujet."
+  }
+ ],
+ "avoir-faim": [
+  {
+   "d": 1,
+   "q": "Complète : « She ___ thirsty. »",
+   "o": [
+    "is",
+    "has",
+    "have"
+   ],
+   "io": {
+    "has": "Le français dit « avoir soif », mais l'anglais dit « être assoiffé » : on emploie be.",
+    "have": "Pour la soif, l'anglais n'emploie pas « have » mais be."
+   },
+   "i": "Pour la soif, l'anglais dit « être ».",
+   "e": "« She is thirsty. » : pour la soif, la faim, le froid…, l'anglais emploie be + adjectif."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We ___ cold. »",
+   "o": [
+    "are",
+    "have",
+    "has"
+   ],
+   "io": {
+    "have": "Avoir froid se dit « be cold » en anglais.",
+    "has": "Avoir froid se dit « be cold », et « has » ne va pas avec « we »."
+   },
+   "i": "Avoir froid = être froid.",
+   "e": "« We are cold. » : en anglais, on « est » froid au lieu de l'« avoir » ; avec « we », be devient « are »."
+  },
+  {
+   "d": 1,
+   "q": "Comment dit-on « Il a faim » ?",
+   "o": [
+    "He is hungry.",
+    "He has hungry.",
+    "He has hunger."
+   ],
+   "io": {
+    "He has hungry.": "« hungry » est un adjectif : il va avec be, pas avec have.",
+    "He has hunger.": "L'anglais ne dit pas « avoir de la faim » : il dit « être affamé »."
+   },
+   "i": "En anglais, on est affamé.",
+   "e": "« He is hungry. » : le français dit « avoir faim », mais l'anglais emploie be + hungry (« être affamé »)."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « They ___ afraid of spiders. »",
+   "r": [
+    "are"
+   ],
+   "i": "Avoir peur = être effrayé.",
+   "e": "« They are afraid of spiders. » : la peur se dit avec be + afraid, et « are » va avec they."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui dit l'état de Sarah.",
+   "p": "Sarah is *sleepy after the long trip.",
+   "i": "Cherche l'adjectif qui dit comment elle se sent.",
+   "e": "« sleepy » dit l'état de Sarah (elle a sommeil) : c'est l'adjectif qui suit « is »."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "I",
+    "am",
+    "very",
+    "hot"
+   ],
+   "fin": ".",
+   "i": "Avoir chaud = être chaud (en anglais).",
+   "e": "« I am very hot. » : le chaud se dit avec be, donc « am » avec « I » ; « I have hot » est une erreur de francophone."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « You ___ wrong, it's not Monday today. »",
+   "o": [
+    "are",
+    "have",
+    "has"
+   ],
+   "io": {
+    "have": "Avoir tort se dit « be wrong » en anglais.",
+    "has": "Avoir tort se dit « be wrong », et « has » ne va pas avec « you »."
+   },
+   "i": "Avoir tort = être dans l'erreur.",
+   "e": "« You are wrong. » : avoir tort se dit « be wrong » ; avoir raison se dit « be right »."
+  },
+  {
+   "d": 2,
+   "q": "Comment dit-on « Mon frère a dix ans » ?",
+   "o": [
+    "My brother is ten.",
+    "My brother has ten.",
+    "My brother has ten years."
+   ],
+   "io": {
+    "My brother has ten.": "L'âge se dit avec be, pas avec have.",
+    "My brother has ten years.": "L'âge se dit avec be, pas avec have, et « years » seul est incorrect."
+   },
+   "i": "L'âge s'exprime avec le verbe « être ».",
+   "e": "« My brother is ten. » : l'âge se dit avec be, jamais avec have ; on peut ajouter « years old » (« is ten years old »)."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Nous avons soif. »",
+   "r": [
+    "We are thirsty"
+   ],
+   "i": "Pas de « have » : utilise be et un adjectif.",
+   "e": "« We are thirsty. » : la soif se dit avec be + thirsty, et « are » va avec « we »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « How old ___ your sister? »",
+   "r": [
+    "is"
+   ],
+   "i": "Pour demander l'âge, on emploie be.",
+   "e": "« How old is your sister? » : on demande l'âge avec « how old » + be, et « is » va avec « your sister »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "how",
+    "old",
+    "is",
+    "your",
+    "brother"
+   ],
+   "fin": "?",
+   "i": "Commence par « how old », puis be.",
+   "e": "« How old is your brother? » : pour demander l'âge, on met « how old », puis be devant le sujet."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "I have 15 years.",
+   "r": [
+    "I am 15",
+    "I am 15 years old",
+    "I am fifteen",
+    "I am fifteen years old"
+   ],
+   "i": "L'âge se dit avec le verbe « être ».",
+   "e": "« I am 15 (years old). » : l'âge se dit avec be, et si on dit « years », il faut « old » derrière."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She has cold.",
+   "r": [
+    "She is cold."
+   ],
+   "i": "Pour le froid, quel verbe emploie l'anglais ?",
+   "e": "« She is cold. » : avoir froid = « be cold ». (« She has a cold » voudrait dire « elle est enrhumée ».)"
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui disent que nous avons faim.",
+   "p": "We *are *hungry but the shop is closed.",
+   "i": "Cherche be, puis l'adjectif qui le suit : ils se trouvent avant « but ».",
+   "e": "« are hungry » : on dit « avoir faim » avec be + hungry ; « are » va avec « we »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "You have right.",
+   "r": [
+    "You are right."
+   ],
+   "i": "Avoir raison se dit avec le verbe « être ».",
+   "e": "« You are right. » : avoir raison se dit avec be (« be right »), jamais avec have."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Tu as raison, j'ai tort. »",
+   "r": [
+    "You are right, I am wrong",
+    "You are right and I am wrong",
+    "You are right. I am wrong",
+    "You're right, I'm wrong"
+   ],
+   "i": "Les deux fois, c'est be (« are » puis « am »).",
+   "e": "« You are right, I am wrong. » : avoir raison = « be right », avoir tort = « be wrong »."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "He is fifteen years old.",
+    "He is fifteen years.",
+    "He has fifteen years old."
+   ],
+   "io": {
+    "He is fifteen years.": "Avec « years », il faut ajouter « old ».",
+    "He has fifteen years old.": "L'âge se dit avec be, pas avec have."
+   },
+   "i": "Be, puis le nombre, puis « years old ».",
+   "e": "« He is fifteen years old. » : be + nombre + years old, ou simplement « He is fifteen »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mes grands-parents ont très chaud. »",
+   "r": [
+    "My grandparents are very hot",
+    "My grandparents are very warm",
+    "My grandparents are really hot"
+   ],
+   "i": "Sujet pluriel, be, puis l'adjectif.",
+   "e": "« My grandparents are very hot. » : le chaud se dit avec be, et « are » va avec un sujet pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Que veut dire « She has a cold » ?",
+   "o": [
+    "Elle est enrhumée.",
+    "Elle a froid.",
+    "Elle a peur."
+   ],
+   "io": {
+    "Elle a froid.": "Avoir froid se dit « She is cold ». Avec « has a cold », c'est une maladie.",
+    "Elle a peur.": "Avoir peur se dit « She is afraid »."
+   },
+   "i": "Fais attention à l'article « a ».",
+   "e": "« She has a cold » : c'est un rhume, une petite maladie (avec have). Pour dire qu'elle a froid, on dit « She is cold »."
+  },
+  {
+   "d": 3,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "they",
+    "are",
+    "not",
+    "afraid",
+    "of",
+    "the",
+    "dark"
+   ],
+   "fin": ".",
+   "i": "Be, puis « not », puis l'adjectif de la peur.",
+   "e": "« They are not afraid of the dark. » : la négation se place après be (« are not »)."
+  }
+ ],
+ "have-got": [
+  {
+   "d": 1,
+   "q": "Complète : « I ___ a new bike. »",
+   "o": [
+    "have",
+    "has",
+    "am"
+   ],
+   "io": {
+    "has": "« has » va avec he, she, it, pas avec « I ».",
+    "am": "« am » est le verbe be : il ne dit pas ce qu'on possède."
+   },
+   "i": "Pour dire ce qu'on possède, on utilise « have ».",
+   "e": "« I have a new bike. » : avec I, you, we et they, on emploie « have » pour dire ce qu'on possède."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She ___ two sisters. »",
+   "o": [
+    "has",
+    "have",
+    "is"
+   ],
+   "io": {
+    "have": "Avec she, « have » devient « has ».",
+    "is": "« is » est le verbe be : il ne dit pas ce qu'on possède."
+   },
+   "i": "« She » : troisième personne du singulier.",
+   "e": "« She has two sisters. » : avec he, she et it, « have » devient « has »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « They ___ a big house. »",
+   "o": [
+    "have",
+    "has",
+    "are"
+   ],
+   "io": {
+    "has": "« has » est pour he, she, it.",
+    "are": "« are » est le verbe be : il ne dit pas qu'on possède."
+   },
+   "i": "« They » est un pluriel.",
+   "e": "« They have a big house. » : « they » est un pluriel, donc on garde « have » (« has » est réservé à he, she, it)."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Léa ___ a red bag. »",
+   "r": [
+    "has",
+    "has got"
+   ],
+   "i": "Léa = she. Quelle forme de have ?",
+   "e": "« Léa has a red bag. » : avec Léa (= she), on emploie « has » (ou « has got »)."
+  },
+  {
+   "d": 1,
+   "q": "Touche le verbe qui dit ce qu'on possède.",
+   "p": "My uncle *has a small boat.",
+   "i": "Cherche le verbe, après « my uncle ».",
+   "e": "« has » dit ce que l'oncle possède : un petit bateau. Avec « my uncle » (= he), « have » devient « has »."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "I",
+    "have",
+    "a",
+    "dog"
+   ],
+   "fin": ".",
+   "i": "Sujet, verbe, puis ce qu'on possède.",
+   "e": "« I have a dog. » : le sujet « I » vient d'abord, puis le verbe « have », puis ce qu'on possède."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « My dad ___ got a new car. »",
+   "o": [
+    "has",
+    "have",
+    "does"
+   ],
+   "io": {
+    "have": "Avec « my dad » (= he), il faut « has got ».",
+    "does": "« does » n'est pas utilisé avec « got »."
+   },
+   "i": "« My dad » = he. Et « got » est là.",
+   "e": "« My dad has got a new car. » : « my dad » = he, donc « have got » devient « has got »."
+  },
+  {
+   "d": 2,
+   "q": "Laquelle de ces négations est juste ?",
+   "o": [
+    "She doesn't have a bike.",
+    "She doesn't has a bike.",
+    "She don't have a bike."
+   ],
+   "io": {
+    "She doesn't has a bike.": "Le -s est déjà dans « doesn't » : le verbe reste à la base.",
+    "She don't have a bike.": "Avec she, il faut « doesn't », pas « don't »."
+   },
+   "i": "Au présent simple, la négation prend « doesn't » avec she.",
+   "e": "« She doesn't have a bike. » : « doesn't » porte le -s, et « have » reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « J'ai un frère. »",
+   "r": [
+    "I have a brother",
+    "I've got a brother",
+    "I have got a brother"
+   ],
+   "i": "Deux façons sont possibles : have ou have got.",
+   "e": "« I have a brother. » ou « I've got a brother. » : have et have got veulent dire la même chose."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « ___ she have a pen? »",
+   "o": [
+    "Does",
+    "Do",
+    "Is"
+   ],
+   "io": {
+    "Do": "Avec she, c'est « does ».",
+    "Is": "« is » est le verbe be, qui ne se combine pas avec « have »."
+   },
+   "i": "Une question avec « have » (sans got) prend un majordome.",
+   "e": "« Does she have a pen? » : avec she, la question avec « have » commence par « does »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour poser la question.",
+   "m": [
+    "has",
+    "your",
+    "brother",
+    "got",
+    "a",
+    "bike"
+   ],
+   "fin": "?",
+   "i": "Avec « got », have passe devant le sujet.",
+   "e": "« Has your brother got a bike? » : avec « have got », on met « has » devant le sujet, sans « does »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He have a dog.",
+   "r": [
+    "He has a dog.",
+    "He has got a dog."
+   ],
+   "i": "Regarde le verbe : le sujet est « he ».",
+   "e": "« He has a dog. » : avec he, she et it, « have » devient « has » ; « he have » est une faute fréquente."
+  },
+  {
+   "d": 2,
+   "q": "Mets à la négative avec got : « They have got a cat. » → « They ___ got a cat. »",
+   "r": [
+    "haven't",
+    "have not"
+   ],
+   "i": "Avec got, on ajoute « not » à have.",
+   "e": "« They haven't got a cat. » : la négation de « have got » est « haven't got »."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui forment « have got » au singulier.",
+   "p": "Léa *has *got long hair.",
+   "i": "Cherche les deux mots après Léa.",
+   "e": "« has got » : la forme he/she/it de « have got ». C'est la même idée que « has long hair »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He doesn't has a bike.",
+   "r": [
+    "He doesn't have a bike.",
+    "He does not have a bike.",
+    "He hasn't got a bike.",
+    "He has not got a bike."
+   ],
+   "i": "Qui porte déjà le -s dans cette phrase ?",
+   "e": "« He doesn't have a bike. » : le -s est déjà dans « doesn't », donc « have » reste à la base (jamais « doesn't has »). Avec « got », on pourrait aussi dire « He hasn't got a bike »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Have your sister got a phone?",
+   "r": [
+    "Has your sister got a phone?",
+    "Does your sister have a phone?"
+   ],
+   "i": "Avec « got », have passe devant le sujet : regarde si sa forme va avec « your sister ».",
+   "e": "« Has your sister got a phone? » : « your sister » = she, donc « have » devient « has ». On peut aussi dire « Does your sister have a phone? »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle n'a pas de voiture. »",
+   "r": [
+    "She doesn't have a car",
+    "She hasn't got a car",
+    "She has not got a car",
+    "She does not have a car"
+   ],
+   "i": "Deux façons de le dire : avec « doesn't » ou avec « got ».",
+   "e": "« She doesn't have a car. » ou « She hasn't got a car. » : « don't/doesn't have » ou « haven't/hasn't got »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Est-ce que ton frère a un téléphone ? »",
+   "r": [
+    "Does your brother have a phone",
+    "Has your brother got a phone"
+   ],
+   "i": "Question avec « does » ou avec « got ».",
+   "e": "« Does your brother have a phone? » ou « Has your brother got a phone? » : sans « got », la question prend « does » ; avec « got », « has » passe devant le sujet."
+  },
+  {
+   "d": 3,
+   "q": "Quelle question est juste ?",
+   "o": [
+    "Does he have a bike?",
+    "Does he has a bike?",
+    "Do he have a bike?"
+   ],
+   "io": {
+    "Does he has a bike?": "Le -s est déjà dans « does » : on dit « have ».",
+    "Do he have a bike?": "Avec he, c'est « does » et non « do »."
+   },
+   "i": "Un seul -s, et c'est « does » qui le porte.",
+   "e": "« Does he have a bike? » : « does » porte le -s, « have » revient à la base."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « He doesn't ___ a car. »",
+   "o": [
+    "have",
+    "has",
+    "got"
+   ],
+   "io": {
+    "has": "Après « doesn't », le verbe est à la base : « have ».",
+    "got": "« got » va avec have/has, pas seul après « doesn't »."
+   },
+   "i": "Après « doesn't », le verbe est à la base.",
+   "e": "« He doesn't have a car. » : le -s est dans « doesn't », donc « have » reste à la base."
+  }
+ ],
+ "s-qui-siffle": [
+  {
+   "d": 1,
+   "q": "Complète : « Yusuf ___ football every Sunday. »",
+   "o": [
+    "plays",
+    "play",
+    "playing"
+   ],
+   "io": {
+    "play": "Avec Yusuf (= he), le verbe prend un -s.",
+    "playing": "La forme en -ing ne s'emploie pas pour une habitude au présent simple."
+   },
+   "i": "Yusuf = he.",
+   "e": "« Yusuf plays football every Sunday. » : Yusuf = he, donc le verbe « play » prend un -s."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « We ___ English at school. »",
+   "o": [
+    "learn",
+    "learns",
+    "learning"
+   ],
+   "io": {
+    "learns": "Avec « we », le verbe reste à la base.",
+    "learning": "La forme en -ing ne s'emploie pas ici."
+   },
+   "i": "« We » ne prend pas de -s.",
+   "e": "« We learn English at school. » : avec I, you, we, they, le verbe reste à la base."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The sun ___ in the east. »",
+   "o": [
+    "rises",
+    "rise",
+    "rising"
+   ],
+   "io": {
+    "rise": "« The sun » = it, donc le verbe prend un -s.",
+    "rising": "La forme en -ing ne s'emploie pas pour un fait."
+   },
+   "i": "« The sun » = it.",
+   "e": "« The sun rises in the east. » : « the sun » = it, donc le verbe prend un -s."
+  },
+  {
+   "d": 1,
+   "q": "Écris la forme du verbe : « My brother (like) ___ pizza. »",
+   "r": [
+    "likes"
+   ],
+   "i": "« My brother » = he.",
+   "e": "« My brother likes pizza. » : « my brother » = he, donc « like » prend un -s."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux verbes qui ont pris un -s.",
+   "p": "Inès *lives in Lyon and *works in a hospital.",
+   "i": "Cherche les verbes qui suivent « Inès ».",
+   "e": "« lives » et « works » ont un -s : Inès = she, et les deux verbes viennent juste après elle."
+  },
+  {
+   "d": 1,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "she",
+    "likes",
+    "green",
+    "tea"
+   ],
+   "fin": ".",
+   "i": "Sujet, verbe avec -s, puis le complément.",
+   "e": "« She likes green tea. » : avec she, le verbe « like » prend un -s."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He ___ TV after dinner. »",
+   "o": [
+    "watches",
+    "watchs",
+    "watch"
+   ],
+   "io": {
+    "watchs": "Après -ch, on ajoute -es, pas seulement -s.",
+    "watch": "Avec he, il faut un -s (ici -es)."
+   },
+   "i": "Regarde la fin du verbe : -ch.",
+   "e": "« He watches TV after dinner. » : après -s, -sh, -ch, -x, -o, on ajoute -es."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Adam ___ his homework at six. »",
+   "o": [
+    "does",
+    "do",
+    "dos"
+   ],
+   "io": {
+    "do": "Avec Adam (= he), do devient does.",
+    "dos": "Après un o, on ajoute -es : does."
+   },
+   "i": "Après -o, on écrit -es.",
+   "e": "« Adam does his homework at six. » : Adam = he, et après un o on ajoute -es : do devient « does »."
+  },
+  {
+   "d": 2,
+   "q": "Complète avec le verbe entre parenthèses : « She (study) ___ French on Mondays. »",
+   "r": [
+    "studies"
+   ],
+   "i": "Consonne + y devient -ies.",
+   "e": "« She studies French on Mondays. » : avec she, « study » prend un -s ; comme le y suit une consonne, il devient -ies."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Ils habitent à Paris. »",
+   "r": [
+    "They live in Paris"
+   ],
+   "i": "« Ils » = they : pas de -s.",
+   "e": "« They live in Paris. » : « ils » = they, et avec they le verbe reste à la base, sans -s."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « My parents ___ a small shop. »",
+   "o": [
+    "have",
+    "has",
+    "haves"
+   ],
+   "io": {
+    "has": "« has » est pour he, she, it.",
+    "haves": "Le verbe have devient has, pas « haves »."
+   },
+   "i": "« My parents » = they.",
+   "e": "« My parents have a small shop. » : « my parents » = they, donc on garde « have » (« has » est pour he, she, it)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour faire une phrase.",
+   "m": [
+    "my",
+    "grandfather",
+    "drinks",
+    "tea",
+    "every",
+    "morning"
+   ],
+   "fin": ".",
+   "i": "Sujet, verbe en -s, puis le reste.",
+   "e": "« My grandfather drinks tea every morning. » : « my grandfather » = he, donc « drinks »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She work in a bank.",
+   "r": [
+    "She works in a bank."
+   ],
+   "i": "She : troisième personne.",
+   "e": "« She works in a bank. » : avec she, le verbe prend obligatoirement un -s."
+  },
+  {
+   "d": 2,
+   "q": "Touche les verbes écrits avec -es.",
+   "p": "He *watches TV and she *goes to bed.",
+   "i": "Cherche deux verbes terminés par -es.",
+   "e": "« watches » (après -ch, on ajoute -es) et « goes » (après -o, on ajoute -es) : ce sont les deux verbes en -es."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "They works hard.",
+   "r": [
+    "They work hard."
+   ],
+   "i": "« They » : pluriel.",
+   "e": "« They work hard. » : le -s est réservé à he, she et it ; avec they, le verbe reste à la base."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He gos to school.",
+   "r": [
+    "He goes to school."
+   ],
+   "i": "Regarde l'orthographe du verbe.",
+   "e": "« He goes to school. » : après un o, on ajoute -es (go → goes), pas seulement -s."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "My sister studys English.",
+   "r": [
+    "My sister studies English."
+   ],
+   "i": "Consonne + y : que devient le y ?",
+   "e": "« My sister studies English. » : après une consonne, le y devient -ies (study → studies)."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Mon père cuisine le dimanche. »",
+   "r": [
+    "My dad cooks on Sundays",
+    "My father cooks on Sundays",
+    "My dad cooks on Sunday",
+    "My father cooks on Sunday",
+    "My dad cooks every Sunday",
+    "My father cooks every Sunday"
+   ],
+   "i": "« Mon père » = he. « Le dimanche » (chaque dimanche) se dit avec on.",
+   "e": "« My dad cooks on Sundays. » : he prend le -s, et « on Sundays » dit une habitude."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « L'eau bout à cent degrés. »",
+   "r": [
+    "Water boils at 100 degrees",
+    "Water boils at one hundred degrees",
+    "Water boils at a hundred degrees",
+    "Water boils at 100 degrees Celsius",
+    "The water boils at 100 degrees",
+    "Water boils at one hundred degrees Celsius"
+   ],
+   "i": "« L'eau » = it. C'est un fait.",
+   "e": "« Water boils at 100 degrees. » : un fait se dit au présent simple, avec -s car water = it."
+  },
+  {
+   "d": 3,
+   "q": "Quelle phrase est juste ?",
+   "o": [
+    "Tom fixes bikes.",
+    "Tom fixs bikes.",
+    "Tom fix bikes."
+   ],
+   "io": {
+    "Tom fixs bikes.": "Après -x, on ajoute -es.",
+    "Tom fix bikes.": "Tom = he : le verbe prend -s."
+   },
+   "i": "Regarde la fin du verbe : -x.",
+   "e": "« Tom fixes bikes. » : « fix » finit par -x, donc on ajoute -es pour he."
+  }
+ ]
+}

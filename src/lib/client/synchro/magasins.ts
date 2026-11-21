@@ -21,6 +21,7 @@ import { historiqueBrut, lireCollections, rangerCollections, rangerHistorique } 
 import { rangerRecherchesSauvegardees, recherchesSauvegardees } from "@/lib/client/recherches-locales";
 import * as langues from "@/lib/langues/stockage";
 import { leconsLocales, rangerLecon, type Resultat } from "@/lib/regles/progression";
+import * as reglesSuivi from "@/lib/regles/suivi";
 import * as monde from "@/lib/monde/progression";
 import * as corps from "@/lib/corps/progression";
 
@@ -103,6 +104,15 @@ const regles: Adaptateur = {
     if (ici && (ici.etoiles !== venu.etoiles || ici.xp !== venu.xp || ici.fini !== venu.fini)) return "a-renvoyer";
   },
   effacer: async (c) => rangerLecon(c, null),
+};
+
+/* L'entraînement, les examens et le carnet d'erreurs des Règles. */
+const suiviRegles: Adaptateur = {
+  cles: async () => reglesSuivi.clesLocales(),
+  lire: async (c) => reglesSuivi.valeurLocale(c),
+  // On garde le meilleur score des deux appareils, et l'état le plus récent d'une erreur.
+  ecrire: async (c, v) => (reglesSuivi.rangerValeur(c, v) ? "a-renvoyer" : undefined),
+  effacer: async (c) => reglesSuivi.effacerValeur(c),
 };
 
 /* ---------- Le Portulan ---------- */
@@ -326,6 +336,7 @@ export const ADAPTATEURS: Record<NomMagasin, Adaptateur> = {
   "calame-bibliotheque": calameBibliotheque,
   "calame-versions": calameVersions,
   regles,
+  "regles-suivi": suiviRegles,
   "langues-cartes": magasinLangue("cartes"),
   "langues-dictionnaire": magasinLangue("dictionnaire"),
   "langues-journal": magasinLangue("journal"),

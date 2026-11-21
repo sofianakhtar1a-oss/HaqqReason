@@ -1,0 +1,206 @@
+{
+ "section": "grammaire",
+ "niveau": "C1",
+ "univers": "La Cité des mots",
+ "lecons": [
+  {
+   "id": "nuance",
+   "niveau": "C1",
+   "titre": "L'art de la nuance",
+   "notion": "La prudence dans l'expression (hedging)",
+   "image": "En anglais universitaire et professionnel, on évite d'affirmer trop fort. On enveloppe ses idées dans une brume de prudence.",
+   "demo": [
+    "The results seem to confirm the theory.",
+    "Young people tend to spend more online.",
+    "This is arguably his best novel.",
+    "It could be argued that the plan is too ambitious.",
+    "This is to some extent true."
+   ],
+   "regle": "En anglais universitaire et professionnel, on évite les affirmations trop catégoriques. On adoucit avec des verbes ({seem to}, {appear to}, {tend to}, {suggest}, {indicate}), des modaux ({may}, {might}, {could}), des adverbes ({arguably}, {possibly}, {probably}, {relatively}, {largely}) et des formules impersonnelles ({It could be argued that…}, {It is likely that…}, {To some extent…}). Cette prudence n'est pas de la faiblesse : elle montre qu'on pèse ses mots et qu'on laisse une place aux autres avis.",
+   "formes": [
+    "Un verbe prudent : {seem to} / {appear to} / {tend to} + base — Prices tend to rise in summer.",
+    "Un adverbe : {arguably} · {probably} · {largely} + … — It is arguably the best solution.",
+    "Une formule impersonnelle : {It could be argued that} / {It is likely that} + phrase — It is likely that costs will rise."
+   ],
+   "usages": [
+    "Un résultat d'étude : The results seem to suggest a link. (Les résultats semblent indiquer un lien.)",
+    "Une opinion nuancée : To some extent, this is true. (Dans une certaine mesure, c'est vrai.)",
+    "Une critique polie : This approach may not be the most effective. (Cette approche n'est peut-être pas la plus efficace.)"
+   ],
+   "pieges": [
+    "faux « The study proves that the drug works. » → juste « The study suggests that the drug works. » : Dans un texte scientifique, {prove} est trop catégorique : on préfère {suggest} ou {indicate}.",
+    "faux « It seems be true. » → juste « It seems to be true. » : {seem} est suivi de {to} + base."
+   ],
+   "retenir": "Pour nuancer : {seem to}, {tend to}, {may}, {arguably}, {to some extent}, {It could be argued that…}",
+   "secret": "Quand un Britannique dit « That's an interesting idea », il pense parfois « je ne suis pas d'accord ». « Not bad » peut vouloir dire « très bien », et « quite good » seulement « correct ». L'art de la nuance est aussi un art de décoder.",
+   "defi_deja_pose": [
+    "Quelle phrase est la plus nuancée ?",
+    "« Women ___ live longer than men. » (en général)",
+    "« This is ___ the most important discovery of the century. » (on peut le soutenir)",
+    "Adoucis : « You are wrong. » → « I'm not ___ that's right. »",
+    "Touche le mot qui atténue l'affirmation. The method is *largely effective."
+   ]
+  },
+  {
+   "id": "panneaux",
+   "niveau": "C1",
+   "titre": "Les panneaux de l'argumentation",
+   "notion": "Les connecteurs logiques avancés",
+   "image": "Dans un texte argumenté, les connecteurs sont des panneaux indicateurs : ils disent au lecteur où va la pensée.",
+   "demo": [
+    "The plan is expensive. Moreover, it is risky.",
+    "It was difficult. Nevertheless, we succeeded.",
+    "Sales fell; consequently, jobs were cut.",
+    "You can borrow my car provided that you drive carefully.",
+    "On the one hand, it's cheap. On the other hand, it's slow."
+   ],
+   "regle": "Les connecteurs logiques guident le lecteur dans un raisonnement. Pour ajouter : {moreover}, {furthermore}, {in addition}, {what is more}. Pour opposer : {however}, {nevertheless}, {nonetheless}, {on the other hand}, {whereas}. Pour conclure ou déduire : {therefore}, {thus}, {consequently}, {as a result}, {hence}. Pour poser une condition : {provided that}, {as long as}, {unless}. Pour illustrer : {for instance}, {such as}, {namely}. Les connecteurs qui relient deux phrases ({moreover}, {however}, {therefore}) se placent en tête de la seconde, suivis d'une virgule.",
+   "formes": [
+    "Ajouter : Phrase. {Moreover}, / {Furthermore}, phrase. — Moreover, it is cheaper.",
+    "Opposer : Phrase. {Nevertheless}, / {However}, phrase. — Nevertheless, we continued.",
+    "Conclure : Phrase. {Therefore}, / {As a result}, phrase. — Therefore, we must act now.",
+    "Illustrer : … {such as} + nom · {For instance},… — big cities such as London"
+   ],
+   "usages": [
+    "Une dissertation : The plan is expensive. Moreover, it is risky. (Le projet est coûteux. De plus, il est risqué.)",
+    "Une objection : It was difficult. Nevertheless, they succeeded. (C'était difficile. Néanmoins, ils ont réussi.)",
+    "Une conséquence : Sales fell. As a result, the shop closed. (Les ventes ont chuté. Par conséquent, la boutique a fermé.)"
+   ],
+   "pieges": [
+    "faux « It's cheap. On the other hand, it's fast. » → juste « It's cheap. Moreover, it's fast. » : Pour ajouter (« d'autre part »), {moreover} ou {in addition} ; {on the other hand} veut dire « en revanche ».",
+    "faux « It's expensive, therefore we didn't buy it. » → juste « It's expensive; therefore, we didn't buy it. » : {therefore} ne relie pas deux phrases avec une simple virgule : point-virgule ou point.",
+    "faux « big cities like for example London » → juste « big cities such as London » : Dans un texte soigné, pour donner des exemples : {such as}, sans cumuler deux connecteurs."
+   ],
+   "retenir": "Ajouter : {moreover} ; opposer : {nevertheless}, {on the other hand} ; conclure : {therefore} ; illustrer : {such as}.",
+   "secret": "« On the other hand » présente un autre aspect (d'un autre côté). « On the contrary » contredit totalement ce qui précède : « Is he lazy? — On the contrary, he works all the time! ». Les francophones disent « au contraire » à la place de « en revanche », mais en anglais, on the contrary est une vraie contradiction.",
+   "defi_deja_pose": [
+    "« The hotel was cheap. ___, it was close to the beach. » (de plus)",
+    "« He had no experience. ___, he got the job. »",
+    "« You can go out ___ you're back by midnight. »",
+    "« The road was icy; ___, the race was cancelled. »",
+    "Complète : « On the one hand, cities are exciting. On the ___ hand, they're noisy. »"
+   ]
+  },
+  {
+   "id": "marqueurs-oral",
+   "niveau": "C1",
+   "titre": "Les petits mots de la conversation",
+   "notion": "Les marqueurs de l'oral : actually, anyway, I mean, by the way, mind you",
+   "image": "À l'oral, les anglophones sèment de petits mots qui ne disent rien… mais qui disent tout : ils corrigent, changent de sujet, adoucissent.",
+   "demo": [
+    "I thought he was French. Actually, he's Belgian.",
+    "…and the train was late. Anyway, we got there in the end.",
+    "It's expensive. I mean, really expensive.",
+    "By the way, have you seen Tom?",
+    "The hotel was noisy. Mind you, it was cheap."
+   ],
+   "regle": "À l'oral, les anglophones emploient de petits mots qui organisent la conversation. {actually} corrige ou nuance (« en fait » : {Actually, I'm not sure}). {anyway} ramène au sujet principal ou clôt une parenthèse (« bref », « enfin bon »). {I mean} reformule ou précise (« je veux dire »). {by the way} introduit un nouveau sujet (« au fait »). {mind you} ajoute une restriction (« remarque », « cela dit »). {you know} et {kind of} adoucissent. {Right} et {So} ouvrent ou relancent l'échange.",
+   "formes": [
+    "Corriger : {Actually},… — Actually, it's on Tuesday.",
+    "Revenir au sujet : {Anyway},… — Anyway, let's get back to work.",
+    "Changer de sujet : {By the way},… — By the way, did you call Sam?",
+    "Nuancer : {Mind you},… — He's rude. Mind you, he's honest."
+   ],
+   "usages": [
+    "Rectifier poliment : Actually, I think you're wrong. (En fait, je crois que tu te trompes.)",
+    "Préciser sa pensée : It's expensive. I mean, it's really expensive. (C'est cher. Je veux dire, c'est vraiment cher.)",
+    "Clore une parenthèse : Anyway, what were we saying? (Bref, qu'est-ce qu'on disait ?)",
+    "Ajouter un bémol : The hotel was noisy. Mind you, it was cheap. (L'hôtel était bruyant. Remarque, il n'était pas cher.)"
+   ],
+   "pieges": [
+    "faux « I'm actually unemployed, but I have an interview next week. » → juste « I'm currently unemployed, but I have an interview next week. » : « Actuellement, en ce moment » se dit {currently} ; {actually} veut dire « en fait »."
+   ],
+   "retenir": "{actually} = en fait · {anyway} = bref · {I mean} = je veux dire · {by the way} = au fait · {mind you} = remarque.",
+   "secret": "Ces mots rendent l'oral naturel, mais à l'écrit formel ils sonnent familiers. Dans un essai, préfère in fact (au lieu de actually), in any case (anyway), that is to say (I mean), incidentally (by the way), nevertheless (mind you). Et évite le « like » toutes les deux secondes, le tic des adolescents anglophones !",
+   "defi_deja_pose": [
+    "« I don't usually like jazz. ___, I love this song! »",
+    "Comment dit-on « actuellement » ?",
+    "« We talked for hours about his problems. ___, let's get back to work. »",
+    "Traduis : « Au fait, tu as appelé ta mère ? »",
+    "« She's not very friendly. ___, she's quite cold. »",
+    "Touche le marqueur qui corrige une idée. *Actually, the meeting is tomorrow, not today."
+   ]
+  },
+  {
+   "id": "couples-inseparables",
+   "niveau": "C1",
+   "titre": "Les couples inséparables",
+   "notion": "Les collocations",
+   "image": "Dans la Cité, certains mots vivent toujours en couple. Les séparer, ça ne se fait pas : la phrase reste compréhensible, mais elle sonne étrangère.",
+   "demo": [
+    "heavy rain · heavy traffic · a heavy smoker",
+    "strong coffee · a strong accent · strong wind",
+    "make a decision · pay attention · take a photo · catch a cold",
+    "highly likely · deeply sorry · bitterly cold · fully aware"
+   ],
+   "regle": "Une collocation est une association de mots que l'usage a figée : les anglophones disent {heavy rain} (une forte pluie), {strong coffee} (un café fort), {make a decision} (prendre une décision), {highly likely} (très probable), {take a photo}, {pay attention}. Les mots voisins ({strong}, {heavy}, {big}) ne sont pas interchangeables : {strong rain} ou {make a photo} se comprennent, mais sonnent étrangers. Les collocations s'apprennent par blocs, en lisant et en écoutant.",
+   "formes": [
+    "Adjectif + nom : {heavy rain} · {strong coffee} · {a heavy smoker} — heavy traffic",
+    "Verbe + nom : {make a decision} · {take a photo} · {pay attention} — make a mistake",
+    "Adverbe + adjectif : {highly likely} · {deeply sorry} · {fully aware} — highly unlikely"
+   ],
+   "usages": [
+    "La météo : We had heavy rain last night. (Il a plu très fort cette nuit.)",
+    "Une décision : We need to make a decision today. (Nous devons prendre une décision aujourd'hui.)",
+    "Une probabilité : It's highly likely to snow. (Il va très probablement neiger.)",
+    "L'attention : Please pay attention. (Faites attention, s'il vous plaît.)"
+   ],
+   "pieges": [
+    "faux « There was strong traffic. » → juste « There was heavy traffic. » : On dit {heavy traffic}, comme {heavy rain}.",
+    "faux « Can you do a photo of us? » → juste « Can you take a photo of us? » : « Prendre une photo » : {take a photo}.",
+    "faux « Please make attention. » → juste « Please pay attention. » : « Faire attention » : {pay attention}."
+   ],
+   "retenir": "Les mots vont par couples : {heavy rain}, {make a decision}, {take a photo}, {pay attention}, {highly likely}.",
+   "secret": "Au lieu de noter « decision = décision », note « make a decision », « a difficult decision », « reach a decision ». Les dictionnaires de collocations (comme l'Oxford Collocations Dictionary) sont l'outil secret des traducteurs. Chaque nouveau mot appris avec ses partenaires vaut trois mots appris seuls.",
+   "defi_deja_pose": [
+    "« There was ___ rain all night. »",
+    "« Please ___ attention to the instructions. »",
+    "« It's ___ likely that he'll win. »",
+    "« I think I've ___ a cold. »",
+    "Complète : « She has a ___ French accent. » (fort)",
+    "Touche le mot qui ne forme pas un bon couple. I drink *powerful coffee every morning."
+   ]
+  },
+  {
+   "id": "ponctuation",
+   "niveau": "C1",
+   "titre": "La ponctuation qui pense",
+   "notion": "La virgule, le point-virgule, les deux-points et l'apostrophe en anglais",
+   "image": "En anglais, la ponctuation ne sert pas seulement à respirer : elle donne le sens. Une virgule mal placée peut changer une phrase entière.",
+   "demo": [
+    "I think that he's right. (I think, that he's right ✗)",
+    "I bought apples, pears, and plums.",
+    "It was late; we went home.",
+    "She had one goal: to win.",
+    "it's (it is) ≠ its (son, sa) · the dog's bowl · the dogs' bowls"
+   ],
+   "regle": "En anglais, la ponctuation change parfois le sens. Pas de virgule devant {that}, ni dans une relative essentielle, ni après un verbe ({I think that…}). Les virgules encadrent une information en bonus (relative non déterminative). Dans une liste, la virgule avant {and} (la « virgule d'Oxford ») est facultative : {red, white(,) and blue}. Le point-virgule relie deux phrases complètes étroitement liées ; les deux-points annoncent une explication ou une liste. L'apostrophe marque la contraction ({it's} = {it is}) ou la possession ({Tom's}), jamais un pluriel.",
+   "formes": [
+    "Relative essentielle : nom + {that} / {who}… (sans virgule) — The book that I bought is great.",
+    "Information en bonus : nom, {which} / {who}…, suite — My sister, who lives in Rome, is a nurse.",
+    "Point-virgule : phrase complète ; phrase complète — It was late; we went home.",
+    "Apostrophe : {it's} = {it is} · {its} = possessif · pluriel sans apostrophe — It's late. The cat ate its food."
+   ],
+   "usages": [
+    "Deux phrases liées : I love London; it's full of surprises. (J'adore Londres : la ville est pleine de surprises.)",
+    "Une annonce : You need three things: patience, time and money. (Il te faut trois choses : de la patience, du temps et de l'argent.)",
+    "Une virgule qui informe : My brother, who lives in Paris, is a doctor. (Mon frère, qui vit à Paris, est médecin (je n'ai qu'un frère).)"
+   ],
+   "pieges": [
+    "faux « I think, that you're right. » → juste « I think that you're right. » : Pas de virgule devant {that} après un verbe.",
+    "faux « Fresh tomato's for sale! » → juste « Fresh tomatoes for sale! » : L'apostrophe ne forme jamais un pluriel.",
+    "faux « It was raining, we stayed home. » → juste « It was raining; we stayed home. » : Deux phrases complètes ne se relient pas par une simple virgule : point-virgule, point, ou conjonction ({so})."
+   ],
+   "retenir": "Pas de virgule devant {that} ; un point-virgule entre deux phrases ; jamais d'apostrophe pour un pluriel.",
+   "secret": "Une virgule devant une relative change son sens : « My brother who lives in London is a doctor » (j'ai plusieurs frères : celui de Londres) / « My brother, who lives in London, is a doctor » (j'ai un seul frère, et il vit à Londres). Tu as vu cette nuance dans « La relative entre virgules » : à l'écrit, tout se joue à une virgule près.",
+   "defi_deja_pose": [
+    "« Le chien a perdu son jouet. »",
+    "Quelle phrase est correctement ponctuée ?",
+    "« I have three goals ___ health, family and work. »",
+    "Où le point-virgule est-il bien employé ?",
+    "Écris avec une apostrophe : « the toys of the children »",
+    "Touche le mot mal écrit. *Its raining again."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,320 @@
+{
+ "section": "conjugaison",
+ "niveau": "B1",
+ "univers": "La Machine à voyager dans le temps",
+ "lecons": [
+  {
+   "id": "pont",
+   "niveau": "B1",
+   "titre": "Le pont entre hier et aujourd'hui",
+   "notion": "Le present perfect (have + participe)",
+   "image": "Le present perfect est un pont : il part du passé mais il arrive dans le présent.",
+   "demo": [
+    "I have visited Rome.",
+    "She has written three books.",
+    "Have you ever been to Japan?",
+    "I've never eaten snails.",
+    "Oh no! I've lost my keys."
+   ],
+   "regle": "Le present perfect ({have} / {has} + participe passé) relie un moment passé au présent. On l'emploie quand ce qui compte, c'est le résultat maintenant ({I have lost my keys} : je ne les ai toujours pas), l'expérience d'une vie jusqu'à aujourd'hui ({She has visited Japan}), ou une période qui n'est pas terminée ({this week}, {today}). Le moment exact de l'action n'est pas donné : s'il l'était, on passerait au prétérit.",
+   "formes": [
+    "Affirmation : sujet + {have} / {has} + participe passé — I have finished.",
+    "Négation : sujet + {haven't} / {hasn't} + participe — She hasn't called.",
+    "Question : {Have} / {Has} + sujet + participe ? — Have you seen my phone?"
+   ],
+   "usages": [
+    "Un résultat visible maintenant : I have broken my glasses. (J'ai cassé mes lunettes (et je n'y vois plus rien).)",
+    "Une expérience de vie : We have been to Canada twice. (Nous sommes allés deux fois au Canada.)",
+    "Une période pas encore finie : She has drunk three coffees today. (Elle a bu trois cafés aujourd'hui.)",
+    "Une nouvelle toute fraîche : The price has gone up. (Le prix a augmenté.)"
+   ],
+   "pieges": [
+    "faux « My parents are arrived. » → juste « My parents have arrived. » : L'auxiliaire est toujours {have}, même avec les verbes qui prennent « être » en français.",
+    "faux « I have saw this film. » → juste « I have seen this film. » : Après {have}, il faut le participe passé, la troisième forme : {see} · {saw} · {seen}.",
+    "faux « He have finished. » → juste « He has finished. » : Avec {he}, {she}, {it} : {has}."
+   ],
+   "retenir": "Passé relié à maintenant, sans date : {have} / {has} + participe passé.",
+   "secret": "Deux participes de « go » se disputent. « He has gone to Spain » : il est parti, il est là-bas maintenant. « He has been to Spain » : il y est allé dans sa vie, il est revenu. Pour parler de tes voyages et expériences, c'est presque toujours « been to ».",
+   "defi_deja_pose": [
+    "« ___ you ever seen a ghost? »",
+    "« She ___ never been to London. »",
+    "Écris le participe passé de « speak ».",
+    "« Tom isn't here. He ___ to the shop. » (il y est, il n'est pas revenu)",
+    "Mets au present perfect : « I (finish) my homework. »",
+    "Touche le participe passé. We have *bought a new house."
+   ]
+  },
+  {
+   "id": "piege-mange",
+   "niveau": "B1",
+   "titre": "Le piège du « j'ai mangé »",
+   "notion": "Present perfect ou past simple",
+   "image": "« J'ai mangé » ressemble à « I have eaten »… mais c'est un piège : si tu donnes une date, l'anglais veut le past simple.",
+   "demo": [
+    "I have seen that film.",
+    "I saw that film last week.",
+    "I have seen that film yesterday.",
+    "She has worked here since 2020. She worked in Paris before."
+   ],
+   "regle": "La question à se poser : le moment de l'action est-il terminé et précisé ? Si oui ({yesterday}, {in 2015}, {last summer}, {when I was a child}, {two days ago}), c'est le prétérit : {I ate sushi yesterday}. Si le moment n'est pas donné, ou si la période dure encore ({ever}, {never}, {this week}, {so far}), c'est le present perfect : {I have eaten sushi} (dans ma vie). Une conversation passe souvent de l'un à l'autre : on annonce au present perfect, puis on raconte les détails au prétérit.",
+   "formes": [
+    "Moment fini et précis : prétérit — I saw her yesterday.",
+    "Sans date, jusqu'à maintenant : {have} / {has} + participe — I have seen her."
+   ],
+   "usages": [
+    "Annoncer, puis détailler : I have been to Rome. I went there in 2019. (Je suis allé à Rome. J'y suis allé en 2019.)",
+    "Une question sur toute la vie : Have you ever eaten snails? (Tu as déjà mangé des escargots ?)",
+    "Une question sur un moment : When did you arrive? (Quand es-tu arrivé ?)"
+   ],
+   "pieges": [
+    "faux « I have seen him last week. » → juste « I saw him last week. » : {last week} est un moment terminé et précis : prétérit obligatoire.",
+    "faux « When have you arrived? » → juste « When did you arrive? » : {When} demande un moment précis : la question se met au prétérit.",
+    "faux « I didn't finish yet. » → juste « I haven't finished yet. » : {yet} relie l'action au moment présent : present perfect."
+   ],
+   "retenir": "Une date terminée = prétérit. Pas de date, ou jusqu'à maintenant = present perfect.",
+   "secret": "Avant d'écrire, pose-toi la question : « Est-ce que je dis ou est-ce qu'on sait QUAND ? ». Oui → past simple. Non, ce qui compte c'est que c'est fait, ou ça continue jusqu'à maintenant → present perfect. Les mots-alarmes du past simple : yesterday, ago, last…, in + année, when…?",
+   "defi_deja_pose": [
+    "« I ___ him two days ago. »",
+    "« ___ you ever ___ sushi? »",
+    "« Shakespeare ___ many plays. »",
+    "« When ___ you arrive? »",
+    "Corrige : « I have finished it yesterday. »",
+    "Touche l'année qui oblige à utiliser le past simple. We moved to Lyon in *2015."
+   ]
+  },
+  {
+   "id": "depuis",
+   "niveau": "B1",
+   "titre": "Le piège du « depuis »",
+   "notion": "For et since avec le present perfect",
+   "image": "« J'habite ici depuis 3 ans » : le français dit présent, mais l'anglais voit un pont qui part du passé.",
+   "demo": [
+    "I live here since 2020.",
+    "I have lived here since 2020.",
+    "I have lived here for three years.",
+    "She has known him for ages.",
+    "How long have you been a teacher?"
+   ],
+   "regle": "Pour une situation qui a commencé dans le passé et qui dure encore, l'anglais emploie le present perfect, là où le français met un présent : {I have lived here for three years} (j'habite ici depuis trois ans). « Depuis » se traduit de deux façons : {for} + une durée ({for ten minutes}, {for two years}) et {since} + un point de départ ({since Monday}, {since 2019}, {since I was a child}). Pour poser la question, on dit {How long have you…?}",
+   "formes": [
+    "Avec une durée : {have} + participe + {for} + durée — I have known her for ten years.",
+    "Avec un point de départ : {have} + participe + {since} + date, moment — She has worked here since 2020.",
+    "La question : {How long} + {have} + sujet + participe ? — How long have you been here?"
+   ],
+   "usages": [
+    "Une durée : We have been married for twenty years. (Nous sommes mariés depuis vingt ans.)",
+    "Un point de départ : I haven't seen him since Christmas. (Je ne l'ai pas vu depuis Noël.)",
+    "Depuis + une phrase : He has lived in Paris since he was a student. (Il vit à Paris depuis l'époque où il était étudiant.)"
+   ],
+   "pieges": [
+    "faux « I live here since 2018. » → juste « I have lived here since 2018. » : La situation dure encore depuis un moment du passé : present perfect.",
+    "faux « I have worked here since five years. » → juste « I have worked here for five years. » : {five years} est une durée : {for}. {since} n'accepte qu'un point de départ.",
+    "faux « Since when do you know him? » → juste « How long have you known him? » : « Depuis quand ? Depuis combien de temps ? » se dit {How long have you…?}"
+   ],
+   "retenir": "Depuis = {have} + participe, avec {for} + durée ou {since} + point de départ.",
+   "secret": "Pour ne plus hésiter : si tu peux remplacer « depuis » par « pendant » → for (for two weeks). Si tu peux le remplacer par « à partir de » → since (since Monday). Et dès que tu vois « depuis » dans une phrase française au présent, allume l'alarme : en anglais, ce sera un present perfect.",
+   "defi_deja_pose": [
+    "« I've known Sarah ___ ten years. »",
+    "« He has worked here ___ January. »",
+    "Traduis : « Je suis malade depuis lundi. »",
+    "« How long ___ you had this car? »",
+    "Choisis la phrase juste."
+   ]
+  },
+  {
+   "id": "trois-horloges",
+   "niveau": "B1",
+   "titre": "Just, already, yet : les trois horloges",
+   "notion": "Just, already, yet, still",
+   "image": "Trois petites horloges vivent avec le present perfect : just (à l'instant), already (déjà, plus tôt que prévu) et yet (pas encore, ou déjà ? en question).",
+   "demo": [
+    "I've just seen him.",
+    "She's already finished.",
+    "They haven't arrived yet.",
+    "Has the film started yet?",
+    "He still hasn't called."
+   ],
+   "regle": "Quatre petits mots accompagnent souvent le present perfect. {just} = à l'instant ({I've just arrived}) ; {already} = déjà, plus tôt que prévu ({She's already left}) ; {yet} = pas encore à la négation ({I haven't finished yet}) et déjà ? dans une question ({Have you finished yet?}) ; {still} = toujours, encore, pour ce qui n'a pas changé ({He still hasn't called}). Place : {just} et {already} entre {have} et le participe, {yet} en fin de phrase, {still} devant {haven't}.",
+   "formes": [
+    "À l'instant : {have} + {just} + participe — I have just eaten.",
+    "Déjà : {have} + {already} + participe — She has already left.",
+    "Pas encore, déjà ? : {haven't} + participe… {yet} · {Have}… {yet} ? — We haven't started yet.",
+    "Toujours pas : sujet + {still} + {haven't} + participe — He still hasn't called."
+   ],
+   "usages": [
+    "Une nouvelle toute fraîche : The film has just started. (Le film vient de commencer.)",
+    "Plus tôt que prévu : I have already done my homework. (J'ai déjà fait mes devoirs.)",
+    "Une attente : Has the bus arrived yet? (Le bus est déjà arrivé ?)",
+    "Une impatience : I still haven't received the parcel. (Je n'ai toujours pas reçu le colis.)"
+   ],
+   "pieges": [
+    "faux « I come of eat. » → juste « I have just eaten. » : « Venir de » ne se traduit pas mot à mot : on dit {have just} + participe.",
+    "faux « I have finished not yet. » → juste « I haven't finished yet. » : {not} s'attache à {have} ({haven't}), et {yet} se met en fin de phrase.",
+    "faux « She has yet left. » → juste « She has already left. » : Dans une affirmation, « déjà » se dit {already} ; {yet} sert à la négation et à la question."
+   ],
+   "retenir": "{just} = à l'instant, {already} = déjà, {yet} = pas encore ou déjà ?, {still} = toujours (pas).",
+   "secret": "Le français « je viens de… » ne se traduit jamais avec « come ». C'est have + just + participe : I've just called her. Et à l'oral américain, tu entendras souvent le past simple avec ces horloges (Did you eat yet? I just saw him). Les deux se comprennent ; le present perfect reste la version des examens.",
+   "defi_deja_pose": [
+    "« I've ___ had breakfast. I'm not hungry. »",
+    "« Have you finished your project ___? »",
+    "Traduis : « Je viens d'arriver. »",
+    "« She hasn't replied ___. »",
+    "Touche l'horloge mal placée. I have finished *yet my homework."
+   ]
+  },
+  {
+   "id": "premiere-fois",
+   "niveau": "B1",
+   "titre": "C'est la première fois",
+   "notion": "It's the first time I've…, the best… I've ever…",
+   "image": "Après « c'est la première fois que » et après un superlatif, l'anglais fait le bilan de toute ta vie jusqu'à maintenant : il lui faut le pont du present perfect.",
+   "demo": [
+    "It's the first time I've been here.",
+    "This is the first time she's driven a car.",
+    "It's the best pizza I've ever eaten.",
+    "It was the first time I had seen snow.",
+    "I have never tasted anything like it!"
+   ],
+   "regle": "Après {It's the first time} (c'est la première fois que…) et après un superlatif ({the best}, {the most beautiful}, {the worst}…), l'anglais fait le bilan de toute une vie jusqu'à maintenant : il emploie donc le present perfect, souvent avec {ever} (de toute ma vie). Si l'on parle du passé, tout recule d'un cran : {It was the first time I had…}",
+   "formes": [
+    "La première fois : {It's the first time} + sujet + {have} + participe — It's the first time I have seen snow.",
+    "Le superlatif : {the best}… + sujet + {have ever} + participe — It's the best film I've ever seen.",
+    "Dans un récit passé : {It was the first time} + {had} + participe — It was the first time she had flown."
+   ],
+   "usages": [
+    "Une première : It's the first time we have been here. (C'est la première fois que nous venons ici.)",
+    "Un record personnel : This is the most delicious cake I have ever eaten. (C'est le gâteau le plus délicieux que j'aie jamais mangé.)",
+    "Au passé : It was the first time he had driven at night. (C'était la première fois qu'il conduisait de nuit.)"
+   ],
+   "pieges": [
+    "faux « It's the first time I see snow. » → juste « It's the first time I have seen snow. » : Après {It's the first time}, l'anglais veut le present perfect, pas le présent.",
+    "faux « It's the best book I ever read. » → juste « It's the best book I have ever read. » : Après un superlatif, c'est un bilan de vie : {have ever} + participe."
+   ],
+   "retenir": "Première fois ou superlatif : {I have (ever)} + participe.",
+   "secret": "Trois phrases françaises au présent demandent le present perfect en anglais : « Je te connais depuis des années » (I've known you for years), « C'est la première fois que je vois ça » (It's the first time I've seen this), et « C'est le meilleur gâteau que j'aie jamais mangé » (the best cake I've ever eaten). Dès que tu fais le bilan d'une vie jusqu'à maintenant, construis le pont.",
+   "defi_deja_pose": [
+    "« It's the first time I ___ sushi. »",
+    "« This is the most beautiful place I ___. »",
+    "Traduis : « C'est la première fois que je viens ici. »",
+    "« It was the first time she ___ a horse. »",
+    "Complète avec le participe de see : « It's the worst film I've ever ___. »",
+    "Touche les deux mots qui forment le present perfect. It's the second time we *have *met."
+   ]
+  },
+  {
+   "id": "ca-dure",
+   "niveau": "B1",
+   "titre": "Ça dure encore !",
+   "notion": "Le present perfect continuous",
+   "image": "Le present perfect continuous est un marathon qui n'est pas fini : il insiste sur la durée de l'effort.",
+   "demo": [
+    "I have been waiting for 20 minutes!",
+    "She's been learning English since May.",
+    "Your eyes are red. Have you been crying?",
+    "I've read three books. / I've been reading all day."
+   ],
+   "regle": "Le present perfect continu ({have} / {has} + {been} + verbe en {-ing}) parle d'une activité commencée dans le passé qui dure encore, ou qui vient juste de s'arrêter, en insistant sur la durée ou sur l'effort : {I have been waiting for an hour} (j'attends depuis une heure). Il explique aussi une trace visible maintenant : {You're out of breath. Have you been running?} Le present perfect simple insiste plutôt sur le résultat ou sur la quantité : {I have written three emails}.",
+   "formes": [
+    "Affirmation : sujet + {have} / {has} + {been} + verbe en {-ing} — She has been studying all day.",
+    "Négation : sujet + {haven't} / {hasn't} + {been} + {-ing} — I haven't been sleeping well.",
+    "Question : {How long} + {have} + sujet + {been} + {-ing} ? — How long have you been waiting?"
+   ],
+   "usages": [
+    "Une durée qui continue : It has been raining since this morning. (Il pleut depuis ce matin.)",
+    "La cause d'une trace visible : Your eyes are red. Have you been crying? (Tu as les yeux rouges. Tu as pleuré ?)",
+    "L'effort plutôt que le résultat : I have been painting the kitchen. (J'ai passé du temps à repeindre la cuisine.)"
+   ],
+   "pieges": [
+    "faux « I wait for an hour. » → juste « I have been waiting for an hour. » : Une activité qui dure depuis un moment du passé : present perfect continu.",
+    "faux « I have been knowing him for years. » → juste « I have known him for years. » : {know} est un verbe d'état : pas de forme en {-ing}, on garde le present perfect simple.",
+    "faux « She has been writing five emails. » → juste « She has written five emails. » : Quand on compte un résultat (cinq e-mails), on prend le present perfect simple."
+   ],
+   "retenir": "Une activité qui dure jusqu'à maintenant : {have been} + {-ing}. Un résultat à compter : {have} + participe.",
+   "secret": "Si la phrase répond à « combien ? » (how many, how much), prends le present perfect simple : I've drunk three coffees. Si elle répond à « combien de temps ? » (how long), le continuous est souvent plus naturel : I've been drinking coffee all day. Avec les verbes d'état (know, have, be), reste au simple : I've known her for years.",
+   "defi_deja_pose": [
+    "« I'm tired because I ___ all morning. »",
+    "« How long have you ___ for the bus? »",
+    "« She ___ three emails this morning. »",
+    "Écris : « Il pleut depuis deux heures. »",
+    "Touche le petit mot obligatoire entre have et -ing. They have *been playing since lunch."
+   ]
+  },
+  {
+   "id": "passe-du-passe",
+   "niveau": "B1",
+   "titre": "Le passé du passé",
+   "notion": "Le past perfect (had + participe)",
+   "image": "Quand tu arrives à la gare, le train est déjà parti : le past perfect raconte ce qui était déjà fait avant un autre moment passé.",
+   "demo": [
+    "When we arrived, the film had started.",
+    "She had never seen the sea before that trip.",
+    "I knew him because we had met before.",
+    "After he had eaten, he went to bed."
+   ],
+   "regle": "Le past perfect ({had} + participe passé) situe une action avant un autre moment du passé. C'est le retour en arrière d'un récit : {When I arrived at the station, the train had left} (le train était déjà parti avant mon arrivée). Il est surtout utile quand l'ordre des événements ne va pas de soi ; avec {before} ou {after}, qui donnent déjà l'ordre, le prétérit suffit souvent. {Had} est le même pour toutes les personnes.",
+   "formes": [
+    "Affirmation : sujet + {had} + participe passé — The film had started.",
+    "Négation : sujet + {hadn't} + participe — I hadn't eaten.",
+    "Question : {Had} + sujet + participe ? — Had you met him before?"
+   ],
+   "usages": [
+    "Avant un autre moment passé : When we arrived, the film had already started. (Quand nous sommes arrivés, le film avait déjà commencé.)",
+    "Expliquer une situation passée : She was tired because she hadn't slept. (Elle était fatiguée parce qu'elle n'avait pas dormi.)",
+    "Une première fois dans le passé : I had never seen the sea before. (Je n'avais jamais vu la mer auparavant.)"
+   ],
+   "pieges": [
+    "faux « When I arrived, he left already. » → juste « When I arrived, he had already left. » : Il était parti avant mon arrivée : il faut le passé du passé, {had} + participe.",
+    "faux « She was gone out when I called. » → juste « She had gone out when I called. » : L'auxiliaire est toujours {had}, même si le français dit « elle était sortie »."
+   ],
+   "retenir": "Avant un autre moment du passé : {had} + participe.",
+   "secret": "Si l'ordre est déjà clair (avec « after » ou « before »), le past simple suffit souvent : « After he ate, he went to bed ». Le past perfect sert surtout quand, sans lui, on se tromperait sur l'ordre : « When I arrived, he left » (il part quand j'arrive) n'a pas le même sens que « When I arrived, he had left » (il était déjà parti).",
+   "defi_deja_pose": [
+    "« When I got to the party, Anna ___. »",
+    "« I didn't recognise him because he ___ a beard. »",
+    "Écris le past perfect de « they forget ».",
+    "Quelle action est arrivée en premier ? « When I called, she had gone to bed. »",
+    "Touche le verbe au past perfect. The shop *had *closed before we arrived."
+   ]
+  },
+  {
+   "id": "be-used-to",
+   "niveau": "B1",
+   "titre": "Prendre le pli",
+   "notion": "Be used to, get used to + -ing (à ne pas confondre avec used to)",
+   "image": "« Be used to », c'est une vieille paire de chaussons : on y est habitué, on ne la sent même plus. « Get used to », c'est le moment où des chaussons neufs commencent à se faire.",
+   "demo": [
+    "I am used to working at night.",
+    "She isn't used to the cold.",
+    "We're getting used to living in London.",
+    "You'll get used to it.",
+    "I used to smoke. ≠ I'm used to smoking."
+   ],
+   "regle": "{Be used to} veut dire « être habitué à » : c'est un état ({I'm used to the noise}). {Get used to} veut dire « s'habituer à » : c'est le changement, le moment où l'habitude se prend ({I'm getting used to my new job}). Dans les deux cas, {to} est une préposition : il est suivi d'un nom ou d'un verbe en {-ing}, jamais de la base du verbe. À ne pas confondre avec {used to} + base, qui parle d'autrefois.",
+   "formes": [
+    "Être habitué : {be used to} + nom ou verbe en {-ing} — I am used to working at night.",
+    "S'habituer : {get used to} + nom ou verbe en {-ing} — She is getting used to the cold.",
+    "À ne pas confondre : {used to} + base = autrefois — I used to work at night."
+   ],
+   "usages": [
+    "Une habitude installée : He is used to driving on the left. (Il a l'habitude de conduire à gauche.)",
+    "Une habitude qui se prend : You'll get used to it. (Tu vas t'y habituer.)",
+    "Un manque d'habitude : I am not used to getting up so early. (Je n'ai pas l'habitude de me lever si tôt.)"
+   ],
+   "pieges": [
+    "faux « I'm used to work at night. » → juste « I'm used to working at night. » : Après {be used to}, le verbe prend {-ing}.",
+    "faux « I used to the noise now. » → juste « I am used to the noise now. » : Sans {be}, {used to} parle d'un passé révolu. Pour l'habitude actuelle : {I'm used to}.",
+    "faux « She can't be used to her new city. » → juste « She can't get used to her new city. » : « S'habituer », le processus, c'est {get used to}."
+   ],
+   "retenir": "{be used to} + {-ing} = être habitué ; {get used to} + {-ing} = s'habituer ; {used to} + base = autrefois.",
+   "secret": "Pour savoir si to est une préposition, essaie de mettre un nom à la place du verbe. « I'm used to the noise » fonctionne : to est une préposition, donc le verbe prendra -ing (I'm used to sleeping with noise). Même test pour look forward to et object to : I look forward to seeing you, jamais « to see you ».",
+   "defi_deja_pose": [
+    "« He's from Canada, so he's used to ___ in the snow. »",
+    "« When I was young, I ___ play the piano. » (je n'en joue plus)",
+    "« It's hard at first, but you'll ___ it. »",
+    "Complète : « I'm not used to (get) up so early. »",
+    "Traduis : « Elle s'habitue à son nouveau travail. »",
+    "Touche le mot qui est mal formé. I'm used to *work late."
+   ]
+  }
+ ]
+}

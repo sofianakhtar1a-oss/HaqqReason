@@ -1,0 +1,1560 @@
+{
+ "phrase-envers": [
+  {
+   "d": 1,
+   "q": "Complète : « Never ___ I seen such a big dog. »",
+   "o": [
+    "have",
+    "did",
+    "am"
+   ],
+   "io": {
+    "did": "« Never did I seen » mélange deux temps : après did, le verbe resterait à la base. Ici, c'est le present perfect.",
+    "am": "Avec « seen », il faut l'auxiliaire have."
+   },
+   "i": "La phrase commence par Never : l'auxiliaire passe devant le sujet. Quel auxiliaire va avec « seen » ?",
+   "e": "« Never have I seen such a big dog. » : après Never en tête, l'auxiliaire (have) passe devant le sujet, comme dans une question."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Rarely ___ he go out on weekdays. »",
+   "o": [
+    "does",
+    "do",
+    "is"
+   ],
+   "io": {
+    "do": "Avec he, c'est does, et il faut l'inversion.",
+    "is": "« is go » n'existe pas : sans auxiliaire, on ajoute does."
+   },
+   "i": "Il n'y a pas d'auxiliaire dans « he goes out » : lequel ajouter ?",
+   "e": "« Rarely does he go out on weekdays. » : avec Rarely en tête et sans auxiliaire, on ajoute does devant le sujet, et le verbe revient à la base (go, sans -es)."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Hardly had I arrived ___ the phone rang. »",
+   "o": [
+    "when",
+    "than",
+    "that"
+   ],
+   "io": {
+    "than": "« Hardly… than » est une erreur fréquente : on dit « hardly… when » (et « no sooner… than »).",
+    "that": "Ce n'est pas « that » : Hardly va avec when."
+   },
+   "i": "« À peine… que » avec hardly : quel petit mot ?",
+   "e": "« Hardly had I arrived when the phone rang. » : après Hardly en tête, had passe devant le sujet ; la paire est hardly… when (et no sooner… than)."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « No sooner had she left ___ it started to rain. »",
+   "o": [
+    "than",
+    "when",
+    "that"
+   ],
+   "io": {
+    "when": "« No sooner… when » est faux : no sooner va avec than.",
+    "that": "Ce n'est pas « that » : No sooner va avec than."
+   },
+   "i": "« No sooner » a un partenaire fixe : quel petit mot vient après ?",
+   "e": "« No sooner had she left than it started to rain. » : No sooner… than est la paire fixe ; « when » va avec hardly."
+  },
+  {
+   "d": 1,
+   "q": "Touche l'expression négative qui ouvre la phrase.",
+   "p": "*Rarely does Sarah arrive late.",
+   "i": "Cherche le mot de fréquence placé tout au début de la phrase.",
+   "e": "« Rarely » est l'adverbe négatif en tête : il déclenche l'inversion, d'où « does Sarah » et non « Sarah does »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Never ___ she been so happy. »",
+   "r": [
+    "has"
+   ],
+   "i": "Present perfect : have ou has ? Le sujet est « she ».",
+   "e": "« Never has she been so happy. » : après Never en tête, l'auxiliaire passe devant le sujet ; avec she, c'est has."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Not only ___ the restaurant cheap, but the food was also excellent. »",
+   "o": [
+    "was",
+    "did",
+    "has"
+   ],
+   "io": {
+    "did": "Le verbe « be » ne prend pas did : il s'inverse lui-même.",
+    "has": "Le temps du contexte est le passé simple : was."
+   },
+   "i": "Le verbe « be » fait lui-même l'inversion.",
+   "e": "« Not only was the restaurant cheap… » : avec be, c'est be qui passe devant le sujet."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Under no circumstances ___ you open this door. »",
+   "o": [
+    "should",
+    "are",
+    "does"
+   ],
+   "io": {
+    "are": "« are you open this door » n'a aucun sens : après cette expression, il faut un modal qui passe devant « you ».",
+    "does": "« does » ne s'accorde pas avec « you » et n'exprime pas l'interdiction."
+   },
+   "i": "L'auxiliaire modal vient avant « you ».",
+   "e": "« Under no circumstances should you open this door. » : l'expression négative en tête entraîne l'inversion, ici avec le modal should, qui exprime l'interdiction."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Only then ___ I understand the problem. » (alors seulement, j'ai compris)",
+   "r": [
+    "did"
+   ],
+   "i": "Pas d'auxiliaire dans « I understood » : lequel ajouter, au passé ?",
+   "e": "« Only then did I understand the problem. » : Only then en tête déclenche l'inversion ; sans auxiliaire, on ajoute did (passé) et le verbe revient à la base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "never",
+    "have",
+    "I",
+    "eaten",
+    "such",
+    "good",
+    "bread"
+   ],
+   "fin": ".",
+   "i": "Never en tête, puis l'auxiliaire.",
+   "e": "« Never have I eaten such good bread. » : après Never en tête, l'auxiliaire have passe devant le sujet, puis vient le participe passé (eaten)."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "rarely",
+    "does",
+    "Omar",
+    "miss",
+    "a",
+    "training session"
+   ],
+   "fin": ".",
+   "i": "Après Rarely, il faut le moteur, puis le sujet, puis le verbe à la base.",
+   "e": "« Rarely does Omar miss a training session. » : does porte le -s, et miss reste à la base."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "hardly",
+    "had",
+    "we",
+    "sat down",
+    "when",
+    "the lights",
+    "went out"
+   ],
+   "fin": ".",
+   "i": "Hardly + had + sujet + participe… when.",
+   "e": "« Hardly had we sat down when the lights went out. » : après Hardly en tête, had passe devant we, puis vient le participe passé ; la seconde action est introduite par when."
+  },
+  {
+   "d": 2,
+   "q": "Touche les deux mots qui ouvrent la phrase de façon négative.",
+   "p": "*No *sooner had he left than she called.",
+   "i": "Cherche l'expression de deux mots placée au début de la phrase.",
+   "e": "« No sooner » est l'expression négative en tête : elle est suivie de had + sujet + participe, puis de than."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Never I have been so tired.",
+   "r": [
+    "Never have I been so tired."
+   ],
+   "i": "Après Never placé en tête, l'ordre du sujet et de l'auxiliaire change.",
+   "e": "« Never have I been so tired. » : après Never en tête, l'auxiliaire passe devant le sujet, comme dans une question."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Rarely he goes out on Sundays.",
+   "r": [
+    "Rarely does he go out on Sundays."
+   ],
+   "i": "Sans auxiliaire dans la phrase, il faut en ajouter un après Rarely.",
+   "e": "« Rarely does he go out on Sundays. » : on ajoute does devant le sujet, et le verbe revient à la base."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Jamais je n'ai mangé un si bon gâteau. »",
+   "r": [
+    "Never have I eaten such a good cake",
+    "Never have I eaten such a great cake",
+    "Never have I eaten such a delicious cake",
+    "Never have I eaten such a nice cake",
+    "Never have I eaten such a tasty cake",
+    "Never have I tasted such a good cake",
+    "Never have I tasted such a great cake",
+    "Never have I tasted such a delicious cake",
+    "Never have I tasted such a nice cake",
+    "Never have I tasted such a tasty cake",
+    "Never have I had such a good cake",
+    "Never have I had such a great cake",
+    "Never have I had such a delicious cake",
+    "Never have I had such a nice cake",
+    "Never have I had such a tasty cake",
+    "Never did I eat such a good cake",
+    "Never did I eat such a delicious cake"
+   ],
+   "i": "Commence par « Never have I… » et finis avec le participe passé.",
+   "e": "« Never have I eaten such a good cake. » : Never + have + sujet + participe passé (eaten)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "No sooner he had arrived than the party started.",
+   "r": [
+    "No sooner had he arrived than the party started."
+   ],
+   "i": "Après No sooner, le sujet et had changent de place.",
+   "e": "« No sooner had he arrived than the party started. » : après No sooner en tête, had passe devant he ; la paire fixe est no sooner… than."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Under no circumstances you must leave your bag unattended.",
+   "r": [
+    "Under no circumstances must you leave your bag unattended.",
+    "Under no circumstances should you leave your bag unattended."
+   ],
+   "i": "Le verbe modal doit passer devant le sujet « you ».",
+   "e": "« Under no circumstances must you leave your bag unattended. » : après cette expression, le modal passe devant le sujet."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « À peine étions-nous partis qu'il s'est mis à pleuvoir. »",
+   "r": [
+    "Hardly had we left when it started to rain",
+    "Hardly had we left when it began to rain",
+    "Hardly had we left when it started raining",
+    "Hardly had we left when it began raining",
+    "Hardly had we set off when it started to rain",
+    "Hardly had we set off when it began to rain",
+    "Hardly had we set off when it started raining",
+    "Hardly had we set off when it began raining",
+    "No sooner had we left than it started to rain",
+    "No sooner had we left than it began to rain",
+    "No sooner had we left than it started raining",
+    "No sooner had we left than it began raining",
+    "No sooner had we set off than it started to rain",
+    "No sooner had we set off than it began to rain",
+    "No sooner had we set off than it started raining",
+    "No sooner had we set off than it began raining"
+   ],
+   "i": "Hardly… when ou No sooner… than, avec had en tête.",
+   "e": "« Hardly had we left when it started to rain. » : Hardly + had + sujet + participe passé, puis when ; « No sooner had we left than… » est aussi juste."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Non seulement Inès parle espagnol, mais elle parle aussi arabe. »",
+   "r": [
+    "Not only does Inès speak Spanish, but she also speaks Arabic",
+    "Not only does Inès speak Spanish, but she speaks Arabic too",
+    "Not only does Inès speak Spanish, but she speaks Arabic as well",
+    "Not only does Inès speak Spanish, but also Arabic",
+    "Not only does Inès speak Spanish, she also speaks Arabic",
+    "Not only does Ines speak Spanish, but she also speaks Arabic",
+    "Not only does Ines speak Spanish, but she speaks Arabic too",
+    "Not only does Ines speak Spanish, but she speaks Arabic as well",
+    "Not only does Ines speak Spanish, but also Arabic",
+    "Not only does Ines speak Spanish, she also speaks Arabic"
+   ],
+   "i": "Not only en tête : ajoute does.",
+   "e": "« Not only does Inès speak Spanish, but she also speaks Arabic. » : Not only + does + sujet + base."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "Only after the meeting did we understand the problem.",
+    "Only after the meeting we understood the problem.",
+    "Only after the meeting understood we the problem."
+   ],
+   "io": {
+    "Only after the meeting we understood the problem.": "Only after… en tête déclenche l'inversion.",
+    "Only after the meeting understood we the problem.": "On n'inverse pas le verbe lexical : on utilise did."
+   },
+   "i": "Une expression avec « only » ouvre la phrase : le moteur passe avant le sujet.",
+   "e": "« Only after the meeting did we understand the problem. » : après Only after… en tête, on emploie did + sujet + base."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « Little ___ he know that the party was for him. »",
+   "o": [
+    "did",
+    "has",
+    "was"
+   ],
+   "io": {
+    "has": "Le contexte est passé.",
+    "was": "« was know » est impossible."
+   },
+   "i": "Little en tête déclenche l'inversion, et le contexte est au passé.",
+   "e": "« Little did he know that the party was for him. » : Little en tête est suivi de did + sujet + base."
+  },
+  {
+   "d": 3,
+   "q": "Touche le verbe qui passe devant le sujet.",
+   "p": "Never before *had Léa felt so proud.",
+   "i": "Cherche l'auxiliaire placé juste avant le sujet Léa.",
+   "e": "« had Léa felt » : après « Never before » en tête, l'auxiliaire had passe devant le sujet Léa, comme dans une question."
+  }
+ ],
+ "ne-pas-repeter": [
+  {
+   "d": 1,
+   "q": "Complète : « I like jazz. — So ___ I. »",
+   "o": [
+    "do",
+    "am",
+    "like"
+   ],
+   "io": {
+    "am": "Le moteur de « I like » est « do » : on reprend le même, pas « am ».",
+    "like": "On ne répète pas le verbe plein : on le remplace par son moteur."
+   },
+   "i": "Quel moteur se cache derrière « I like » au présent simple ?",
+   "e": "« So do I. » : pour dire « moi aussi », on reprend le moteur de la phrase d'origine ; au présent simple c'est « do »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « She plays the piano, and so ___ her brother. »",
+   "o": [
+    "does",
+    "is",
+    "plays"
+   ],
+   "io": {
+    "is": "Le moteur caché de « plays » est « does », pas « is ».",
+    "plays": "On évite de répéter le verbe : on reprend seulement son moteur."
+   },
+   "i": "Le sujet est « her brother », donc « he ».",
+   "e": "« She plays the piano, and so does her brother. » : pour dire « lui aussi », on emploie so + le moteur (does, car « her brother » = he) + le sujet."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Is it going to rain? — I'm afraid ___. »",
+   "o": [
+    "so",
+    "yes",
+    "it"
+   ],
+   "io": {
+    "yes": "On ne dit pas « I'm afraid yes » : « so » remplace la proposition.",
+    "it": "« I'm afraid it » est incomplet : il faut le petit mot qui remplace toute la proposition."
+   },
+   "i": "Quel mot remplace « it is going to rain » ?",
+   "e": "« I'm afraid so. » : après afraid, think, hope, expect, « so » remplace la proposition qu'on ne veut pas répéter."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Will she win? — I hope ___. » (j'espère que non)",
+   "o": [
+    "not",
+    "no",
+    "don't"
+   ],
+   "io": {
+    "no": "On ne dit pas « I hope no » : c'est « I hope not ».",
+    "don't": "« I hope don't » est impossible : « not » remplace la proposition négative."
+   },
+   "i": "Pour reprendre une proposition négative après « hope », on utilise un seul mot.",
+   "e": "« I hope not. » : le mot not remplace toute la proposition négative « she won't win »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui remplace un nom.",
+   "p": "I don't like the red shirt. I prefer the blue *one.",
+   "i": "Cherche le petit mot placé après « blue ».",
+   "e": "« one » remplace « shirt » pour éviter de la répéter : « the blue one » veut dire la chemise bleue."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Would you like to come to the cinema? — Yes, I'd love ___. »",
+   "r": [
+    "to"
+   ],
+   "i": "Le verbe « come » ne se répète pas : il reste un petit mot.",
+   "e": "« I'd love to. » : « to » seul remplace l'infinitif déjà connu (to come to the cinema)."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Which bags? — The black ___. »",
+   "o": [
+    "ones",
+    "one"
+   ],
+   "io": {
+    "one": "« Bags » est au pluriel : on remplace par « ones »."
+   },
+   "i": "Le nom remplacé (bags) est au pluriel.",
+   "e": "« The black ones. » : « one » remplace un nom singulier et « ones » un nom pluriel ; ici « bags » est pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He said he'd call, but he ___. »",
+   "o": [
+    "didn't",
+    "wasn't",
+    "doesn't"
+   ],
+   "io": {
+    "wasn't": "Le moteur de « call » au passé est « did ».",
+    "doesn't": "La phrase est au passé : « doesn't » ne convient pas."
+   },
+   "i": "Quel moteur du passé reprend « call » ?",
+   "e": "« He said he'd call, but he didn't. » : l'auxiliaire seul (didn't) remplace « call »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Is he coming? — I don't think ___. »",
+   "r": [
+    "so"
+   ],
+   "i": "Quel mot remplace « he is coming » ?",
+   "e": "« I don't think so. » : en anglais, la négation porte sur « think » et « so » remplace la proposition."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « I've finished my homework. — So ___ I. »",
+   "r": [
+    "have"
+   ],
+   "i": "Cherche le moteur dans « I've finished ».",
+   "e": "« So have I. » : pour dire moi aussi, on reprend l'auxiliaire de la phrase d'origine, ici have."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "she",
+    "can",
+    "swim,",
+    "and",
+    "so",
+    "can",
+    "her",
+    "sister"
+   ],
+   "fin": ".",
+   "i": "Après « so », le moteur passe devant le sujet.",
+   "e": "« She can swim, and so can her sister. » : on construit so + moteur + sujet, comme dans une question."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre pour répondre à « Is Léa at home? ».",
+   "m": [
+    "I",
+    "don't",
+    "think",
+    "so"
+   ],
+   "fin": ".",
+   "i": "La négation se place sur « think ».",
+   "e": "« I don't think so. » : c'est « think » qui est nié, et « so » remplace la proposition."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Is it true? — I think yes.",
+   "r": [
+    "Is it true? — I think so."
+   ],
+   "i": "Quel petit mot remplace la proposition après « think » ?",
+   "e": "« I think so. » : le français « je pense que oui » se rend par « so », jamais par « yes »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Which car do you like? — The red.",
+   "r": [
+    "Which car do you like? — The red one."
+   ],
+   "i": "Un adjectif seul ne peut pas remplacer un nom.",
+   "e": "« The red one. » : en anglais, il faut « one » pour remplacer le nom comptable ; on ne peut pas laisser l'adjectif seul."
+  },
+  {
+   "d": 2,
+   "q": "Quelqu'un dit « I'm tired. » Réponds « Moi aussi. » en anglais.",
+   "r": [
+    "So am I",
+    "Me too",
+    "I am too",
+    "Same here"
+   ],
+   "i": "Reprends le verbe de la phrase d'origine.",
+   "e": "« So am I. » : la phrase d'origine contient « am » (I'm tired), donc on reprend ce verbe avec so + am + sujet ; « Me too » est aussi juste, en plus familier."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui remplace toute la proposition « it won't rain ».",
+   "p": "Will it rain? — I hope *not.",
+   "i": "Cherche le petit mot de négation qui termine la réponse.",
+   "e": "« not » remplace toute la proposition « it won't rain » : « I hope not » veut dire « j'espère que non »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Elle a dit qu'elle viendrait, mais elle ne l'a pas fait. »",
+   "r": [
+    "She said she would come but she didn't",
+    "She said she'd come but she didn't",
+    "She said that she would come but she didn't",
+    "She said she was coming but she didn't",
+    "She said she was going to come but she didn't",
+    "She said that she'd come but she didn't"
+   ],
+   "i": "Le verbe « venir » ne se répète pas : garde seulement le moteur du passé.",
+   "e": "« She said she would come, but she didn't. » : l'auxiliaire seul remplace le verbe."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais la réponse : « Tu as appelé ta mère ? — Pas encore, mais je vais le faire. »",
+   "r": [
+    "Not yet, but I'm going to",
+    "Not yet, but I am going to",
+    "No, not yet, but I'm going to",
+    "Not yet, but I will",
+    "No, not yet, but I will",
+    "Not yet, but I'll do it"
+   ],
+   "i": "Après « going », le verbe déjà connu ne se répète pas : il reste un petit mot.",
+   "e": "« Not yet, but I'm going to. » : to seul remplace l'infinitif déjà connu (to call her), ce qui évite de répéter le verbe."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She doesn't like jazz, and neither is her brother.",
+   "r": [
+    "She doesn't like jazz, and neither does her brother.",
+    "She doesn't like jazz, and nor does her brother.",
+    "She doesn't like jazz, and her brother doesn't either."
+   ],
+   "i": "Quel moteur contient « doesn't like » ?",
+   "e": "« neither does her brother » : on reprend le moteur de la phrase d'origine (does)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "He can't drive, and so can't I.",
+   "r": [
+    "He can't drive, and neither can I.",
+    "He can't drive, and nor can I.",
+    "He can't drive, and I can't either."
+   ],
+   "i": "Pour une phrase négative, « so » ne convient pas.",
+   "e": "« neither can I » : pour « moi non plus », on emploie « neither » ; « so » est réservé aux phrases affirmatives."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « Léa has lived here for years, and so ___ her parents. »",
+   "o": [
+    "have",
+    "do",
+    "has"
+   ],
+   "io": {
+    "do": "Le moteur de « has lived » est « have/has ».",
+    "has": "« Her parents » = they, donc « have »."
+   },
+   "i": "Le sujet « her parents » équivaut à « they » : quel moteur choisir ?",
+   "e": "« so have her parents » : on reprend l'auxiliaire have, qui s'accorde avec they."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui remplace « smokes ».",
+   "p": "He doesn't smoke, but his brother *does.",
+   "i": "Cherche le moteur seul à la fin.",
+   "e": "« does » remplace « smokes » : l'auxiliaire seul évite de répéter le verbe dans « but his brother does »."
+  }
+ ],
+ "rappels": [
+  {
+   "d": 1,
+   "q": "Complète : « Prices rose by 20%. ___ increase worried everyone. »",
+   "o": [
+    "This",
+    "These",
+    "Those"
+   ],
+   "io": {
+    "These": "« Increase » est singulier : on dit « this increase ».",
+    "Those": "« Those » désigne des éléments éloignés et pluriels ; il ne sert pas à résumer."
+   },
+   "i": "« Increase » est au singulier.",
+   "e": "« This increase worried everyone. » : « this » + un nom singulier résume ce qui vient d'être dit."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « It was ___ a good idea that everyone agreed. »",
+   "o": [
+    "such",
+    "so",
+    "a such"
+   ],
+   "io": {
+    "so": "« So » se place devant un adjectif seul (so good), pas devant « a » + nom.",
+    "a such": "« Such » se place avant l'article : « such a »."
+   },
+   "i": "Après le blanc il y a « a good idea ».",
+   "e": "« It was such a good idea that everyone agreed. » : « such » se place avant l'article."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I ordered fish, and she did the ___. »",
+   "o": [
+    "same",
+    "equal",
+    "like"
+   ],
+   "io": {
+    "equal": "« Equal » existe mais ne reprend pas un choix : on dit « the same ».",
+    "like": "« The like » ne se dit pas ainsi."
+   },
+   "i": "Quel mot veut dire « pareil » ?",
+   "e": "« I ordered fish, and she did the same. » : « the same » reprend un élément identique."
+  },
+  {
+   "d": 1,
+   "q": "Touche les deux mots qui reprennent l'idée de la phrase d'avant.",
+   "p": "Prices rose by 20%. *This *increase surprised everyone.",
+   "i": "Cherche le groupe de deux mots qui résume la première phrase.",
+   "e": "« This increase » reprend l'idée de la phrase précédente avec un nom-étiquette plus précis que « it »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « I've never met ___ a kind person. »",
+   "r": [
+    "such"
+   ],
+   "i": "Le mot cherché se place avant « a ».",
+   "e": "« I've never met such a kind person. » : such se place avant l'article a, puis viennent l'adjectif et le nom (« une si gentille personne »)."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Many shops closed. ___ closures hurt the town. »",
+   "o": [
+    "These",
+    "This"
+   ],
+   "io": {
+    "This": "« Closures » est pluriel : on dit « these »."
+   },
+   "i": "« Closures » est au pluriel : quel démonstratif choisir ?",
+   "e": "« These closures hurt the town. » : closures est un pluriel, donc on emploie these, qui s'accorde en nombre avec le nom."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « I have a cat and a dog. The ___ is older. » (le chien)",
+   "o": [
+    "latter",
+    "former",
+    "last"
+   ],
+   "io": {
+    "former": "« The former » désigne le premier cité (le chat).",
+    "last": "On ne dit pas « the last » ici : on dit « the latter »."
+   },
+   "i": "Le chien est le second élément cité.",
+   "e": "« The latter is older. » : « the latter » renvoie au second des deux éléments."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Omar and Yusuf are brothers; the ___ is a pilot. » (Omar)",
+   "o": [
+    "former",
+    "latter",
+    "first"
+   ],
+   "io": {
+    "latter": "« The latter » désigne Yusuf, cité en second.",
+    "first": "On ne dit pas « the first » ; on dit « the former »."
+   },
+   "i": "Omar est le premier des deux frères cités.",
+   "e": "« The former is a pilot. » : the former désigne le premier des deux éléments."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « He shouted at the waiter. ___ behaviour is unacceptable. » (un tel)",
+   "r": [
+    "Such"
+   ],
+   "i": "Le mot qui généralise un comportement en « un tel ».",
+   "e": "« Such behaviour is unacceptable. » : such + nom veut dire un tel, et il généralise ce qui vient d'être dit."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « She chose the green one and I chose the ___. » (la même)",
+   "r": [
+    "same"
+   ],
+   "i": "Cherche le mot qui reprend un choix identique.",
+   "e": "« I chose the same. » : « the same » reprend ce que l'autre personne a choisi, sans répéter « the green one »."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "this",
+    "decision",
+    "surprised",
+    "everyone"
+   ],
+   "fin": ".",
+   "i": "Le nom-étiquette ouvre la phrase.",
+   "e": "« This decision surprised everyone. » : « this » + un nom-étiquette (decision) reprend l'idée déjà évoquée et sert ici de sujet."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "such",
+    "mistakes",
+    "are",
+    "very",
+    "common"
+   ],
+   "fin": ".",
+   "i": "Such est suivi d'un nom pluriel, sans article.",
+   "e": "« Such mistakes are very common. » : such se place devant un nom pluriel, sans article, et veut dire « de telles »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She is a such talented singer.",
+   "r": [
+    "She is such a talented singer."
+   ],
+   "i": "Regarde la place de « such » par rapport à « a ».",
+   "e": "« She is such a talented singer. » : such passe avant l'article a (jamais « a such »), alors que le français place l'article d'abord (« une telle »)."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Many trains were cancelled. This cancellations annoyed passengers.",
+   "r": [
+    "Many trains were cancelled. These cancellations annoyed passengers."
+   ],
+   "i": "Le démonstratif doit s'accorder avec le nom pluriel « cancellations ».",
+   "e": "« These cancellations annoyed passengers. » : le démonstratif s'accorde en nombre avec le nom : this + singulier, these + pluriel."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « De tels retards sont inacceptables. »",
+   "r": [
+    "Such delays are unacceptable",
+    "Such delays are not acceptable",
+    "Such delays are intolerable"
+   ],
+   "i": "« Such » + un nom pluriel : pas d'article.",
+   "e": "« Such delays are unacceptable. » : such + nom pluriel, sans article, veut dire « de tels retards »."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Je prends la même chose, s'il vous plaît. »",
+   "r": [
+    "I'll have the same please",
+    "I'll have the same",
+    "I'll have the same thing please",
+    "I'll have the same thing",
+    "I will have the same please",
+    "I will have the same",
+    "I will have the same thing please",
+    "I will have the same thing",
+    "I'll take the same please",
+    "I'll take the same",
+    "I'll take the same thing please",
+    "I'll take the same thing",
+    "I will take the same please",
+    "I will take the same",
+    "I will take the same thing please",
+    "I will take the same thing",
+    "I'd like the same please",
+    "I'd like the same",
+    "I'd like the same thing please",
+    "I'd like the same thing",
+    "I would like the same please",
+    "I would like the same",
+    "I would like the same thing please",
+    "I would like the same thing"
+   ],
+   "i": "« La même chose » se dit avec « the same ».",
+   "e": "« I'll have the same, please. » : « the same » reprend ce que quelqu'un d'autre a déjà commandé, sans le répéter."
+  },
+  {
+   "d": 2,
+   "q": "Touche le mot qui désigne le second élément.",
+   "p": "Football and tennis are popular, but I prefer the *latter.",
+   "i": "Quel mot désigne le dernier des deux éléments cités ?",
+   "e": "« the latter » désigne le tennis, cité en second : on emploie the latter pour le dernier de deux éléments."
+  },
+  {
+   "d": 3,
+   "q": "Quel nom-étiquette résume : « Many young people leave the village for the city. ___ is changing the region. »",
+   "o": [
+    "This trend",
+    "This holiday",
+    "This accident"
+   ],
+   "io": {
+    "This holiday": "« Holiday » ne résume pas un mouvement de population.",
+    "This accident": "« Accident » ne décrit pas un départ continu."
+   },
+   "i": "Il s'agit d'un mouvement général.",
+   "e": "« This trend is changing the region. » : « trend » résume précisément la tendance."
+  },
+  {
+   "d": 3,
+   "q": "Quel nom-étiquette résume : « The company cut jobs and closed two factories. ___ angered the workers. »",
+   "o": [
+    "These measures",
+    "This feature",
+    "These flowers"
+   ],
+   "io": {
+    "This feature": "« Feature » ne désigne pas des décisions.",
+    "These flowers": "« Flowers » n'a aucun rapport."
+   },
+   "i": "Ce sont des décisions prises par l'entreprise.",
+   "e": "« These measures angered the workers. » : « measures » résume les décisions."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "It was such a long film that we left.",
+    "It was a such long film that we left.",
+    "It was so a long film that we left."
+   ],
+   "io": {
+    "It was a such long film that we left.": "« Such » se place avant « a ».",
+    "It was so a long film that we left.": "« So » ne se place pas devant « a »."
+   },
+   "i": "Regarde la place de « such » par rapport à l'article.",
+   "e": "« It was such a long film that we left. » : such se place avant a ; « so » irait devant un adjectif seul (so long)."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "These problem needs urgent action.",
+   "r": [
+    "This problem needs urgent action.",
+    "These problems need urgent action."
+   ],
+   "i": "Le démonstratif et le nom doivent s'accorder.",
+   "e": "« This problem needs urgent action. » : « this » avec un singulier, ou « these problems need » avec un pluriel."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Such an information could be dangerous in the wrong hands.",
+   "r": [
+    "Such information could be dangerous in the wrong hands."
+   ],
+   "i": "« Information » ne se compte pas : quel petit mot faut-il supprimer ?",
+   "e": "« Such information could be dangerous in the wrong hands. » : information est indénombrable, donc pas d'article a ou an après such."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ces changements ont inquiété les employés. »",
+   "r": [
+    "These changes worried the employees",
+    "These changes worried the workers",
+    "These changes worried the staff",
+    "These changes concerned the employees",
+    "These changes concerned the workers",
+    "These changes concerned the staff",
+    "These changes troubled the employees",
+    "These changes troubled the workers",
+    "These changes troubled the staff",
+    "These changes alarmed the employees",
+    "These changes alarmed the workers",
+    "These changes alarmed the staff"
+   ],
+   "i": "Utilise « these » + un nom pluriel, puis un verbe au prétérit.",
+   "e": "« These changes worried the employees. » : these + nom pluriel reprend ce qui vient d'être dit ; le verbe est au prétérit."
+  },
+  {
+   "d": 3,
+   "q": "Complète avec former ou latter : « Sarah and Maryam are friends. The ___ works in a bank. » (Maryam)",
+   "r": [
+    "latter"
+   ],
+   "i": "Maryam est citée en second : quel mot choisir ?",
+   "e": "« The latter works in a bank. » : the latter renvoie au second des deux éléments cités."
+  }
+ ],
+ "relatives-luxe": [
+  {
+   "d": 1,
+   "q": "Complète : « The person to ___ this letter is addressed… »",
+   "o": [
+    "whom",
+    "who",
+    "which"
+   ],
+   "io": {
+    "who": "Juste après une préposition (to), on emploie « whom », jamais « who ».",
+    "which": "« Which » désigne une chose ; ici on parle d'une personne."
+   },
+   "i": "On parle d'une personne, juste après la préposition « to ».",
+   "e": "« The person to whom this letter is addressed… » : après une préposition, le relatif pour une personne est « whom »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The house in ___ I grew up is very old. »",
+   "o": [
+    "which",
+    "that",
+    "what"
+   ],
+   "io": {
+    "that": "« That » ne peut pas suivre directement une préposition : on emploie « which ».",
+    "what": "« What » ne sert pas de relatif après un nom."
+   },
+   "i": "On parle d'une chose, juste après la préposition « in ».",
+   "e": "« The house in which I grew up is very old. » : préposition + « which » pour une chose."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « ___ wins will get a prize. »",
+   "o": [
+    "Whoever",
+    "Who",
+    "Whatever"
+   ],
+   "io": {
+    "Who": "« Who » seul ne peut pas signifier « quiconque » : il faut « whoever ».",
+    "Whatever": "« Whatever » désigne une chose, pas une personne."
+   },
+   "i": "Le sens est « celui qui gagnera, quel qu'il soit ».",
+   "e": "« Whoever wins will get a prize. » : « whoever » = quiconque, la personne qui."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Take ___ you need. »",
+   "o": [
+    "whatever",
+    "whoever",
+    "whichever"
+   ],
+   "io": {
+    "whoever": "« Whoever » désigne une personne ; ici on parle de choses.",
+    "whichever": "« Whichever » suppose un choix limité entre plusieurs objets."
+   },
+   "i": "On parle de « tout ce dont tu as besoin » : quel relatif sans antécédent ?",
+   "e": "« Take whatever you need. » : whatever signifie tout ce que, et il introduit une relative sans antécédent."
+  },
+  {
+   "d": 1,
+   "q": "Touche le mot qui suit la préposition dans la relative.",
+   "p": "The girl to *whom he gave the book smiled.",
+   "i": "Cherche le relatif placé juste après « to ».",
+   "e": "« whom » suit directement la préposition to et remplace « the girl » : on ne dit pas « to who »."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « The street in ___ I live is quiet. »",
+   "r": [
+    "which"
+   ],
+   "i": "Préposition + relatif pour une chose.",
+   "e": "« The street in which I live is quiet. » : après « in », on emploie « which » pour une chose."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « There is a scheme ___ students can borrow money. »",
+   "o": [
+    "whereby",
+    "whom",
+    "whoever"
+   ],
+   "io": {
+    "whom": "« Whom » est un relatif de personne et suit une préposition ; ici il faut l'idée de « par lequel ».",
+    "whoever": "« Whoever » signifie quiconque et ne relie pas à un nom."
+   },
+   "i": "Le sens est « un système grâce auquel ».",
+   "e": "« a scheme whereby students can borrow money » : « whereby » = par lequel, grâce auquel."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « The friends with ___ I travelled were great. »",
+   "o": [
+    "whom",
+    "who",
+    "which"
+   ],
+   "io": {
+    "who": "Après la préposition « with », on utilise « whom ».",
+    "which": "« Which » est pour une chose ; ici ce sont des amis."
+   },
+   "i": "Ce sont des personnes, après « with ».",
+   "e": "« The friends with whom I travelled were great. » : préposition + whom pour des personnes."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « The period during ___ he lived in Paris was crucial. »",
+   "r": [
+    "which"
+   ],
+   "i": "Préposition + relatif pour une chose (ici une période).",
+   "e": "« The period during which he lived in Paris was crucial. » : « during which » = pendant laquelle."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « ___ you do, don't panic. »",
+   "r": [
+    "Whatever"
+   ],
+   "i": "Le sens est « quoi que tu fasses ».",
+   "e": "« Whatever you do, don't panic. » : whatever signifie quoi que, et introduit une proposition sans antécédent."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « Choose from the three bags: take ___ one you like. »",
+   "o": [
+    "whichever",
+    "whoever"
+   ],
+   "io": {
+    "whoever": "« Whoever » désigne une personne ; ici on choisit parmi trois sacs."
+   },
+   "i": "On choisit parmi un nombre limité d'objets.",
+   "e": "« take whichever one you like » : « whichever » = n'importe lequel, parmi un choix limité."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "city",
+    "in",
+    "which",
+    "she",
+    "lives",
+    "is",
+    "huge"
+   ],
+   "fin": ".",
+   "i": "La préposition précède « which ».",
+   "e": "« The city in which she lives is huge. » : nom + préposition + which + sujet + verbe."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "man",
+    "to",
+    "whom",
+    "I",
+    "wrote",
+    "never",
+    "replied"
+   ],
+   "fin": ".",
+   "i": "Préposition + whom juste après « the man ».",
+   "e": "« The man to whom I wrote never replied. » : « to whom » reste ensemble après le nom."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "She is the colleague with who I share an office.",
+   "r": [
+    "She is the colleague with whom I share an office.",
+    "She is the colleague I share an office with.",
+    "She is the colleague that I share an office with.",
+    "She is the colleague who I share an office with."
+   ],
+   "i": "Quel relatif se place juste après une préposition ?",
+   "e": "« with whom » : directement après une préposition, le relatif de personne est whom, jamais who. On peut aussi mettre la préposition à la fin : « the colleague I share an office with »."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The room in that we met was freezing.",
+   "r": [
+    "The room in which we met was freezing.",
+    "The room that we met in was freezing.",
+    "The room we met in was freezing.",
+    "The room which we met in was freezing."
+   ],
+   "i": "« That » ne s'utilise jamais juste après une préposition.",
+   "e": "« in which » : directement après une préposition, on emploie which et non that. Sans préposition devant, « the room that we met in » est aussi juste."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « L'école dans laquelle ma mère enseigne est très ancienne. »",
+   "r": [
+    "The school in which my mother teaches is very old",
+    "The school in which my mother teaches is very ancient",
+    "The school my mother teaches in is very old",
+    "The school my mother teaches in is very ancient",
+    "The school that my mother teaches in is very old",
+    "The school that my mother teaches in is very ancient",
+    "The school which my mother teaches in is very old",
+    "The school which my mother teaches in is very ancient",
+    "The school where my mother teaches is very old",
+    "The school where my mother teaches is very ancient",
+    "The school at which my mother teaches is very old",
+    "The school at which my mother teaches is very ancient"
+   ],
+   "i": "Place la préposition devant « which », ou à la fin sans relatif.",
+   "e": "« The school in which my mother teaches is very old. » : forme soignée ; « the school my mother teaches in » est la forme courante."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « La femme à qui j'ai parlé est médecin. »",
+   "r": [
+    "The woman to whom I spoke is a doctor",
+    "The woman to whom I was speaking is a doctor",
+    "The woman I spoke to is a doctor",
+    "The woman who I spoke to is a doctor",
+    "The woman that I spoke to is a doctor",
+    "The woman whom I spoke to is a doctor",
+    "The woman to whom I talked is a doctor",
+    "The woman I spoke to is a doctor.",
+    "The woman I talked to is a doctor"
+   ],
+   "i": "Style soigné : préposition + whom.",
+   "e": "« The woman to whom I spoke is a doctor. » : « to whom » en style soigné, « the woman I spoke to » en langue courante."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Fais ce que tu veux. »",
+   "r": [
+    "Do whatever you want",
+    "Do whatever you like",
+    "Do whatever you wish",
+    "Do whatever you want to"
+   ],
+   "i": "Le relatif sans antécédent qui signifie « tout ce que ».",
+   "e": "« Do whatever you want. » : whatever introduit une relative sans antécédent et veut dire « tout ce que » ou « quoi que »."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Ils ont créé un système par lequel les élèves votent en ligne. »",
+   "r": [
+    "They created a system whereby students vote online",
+    "They created a system whereby pupils vote online",
+    "They created a system whereby students can vote online",
+    "They created a system whereby pupils can vote online",
+    "They have created a system whereby students vote online",
+    "They have created a system whereby students can vote online"
+   ],
+   "i": "Le mot qui veut dire « par lequel ».",
+   "e": "« a system whereby students can vote online » : « whereby » relie le nom à la phrase qui explique le procédé."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "Who finishes first will receive a medal.",
+   "r": [
+    "Whoever finishes first will receive a medal.",
+    "The one who finishes first will receive a medal.",
+    "Anyone who finishes first will receive a medal."
+   ],
+   "i": "Il n'y a pas d'antécédent : « celui qui, quiconque ».",
+   "e": "« Whoever finishes first will receive a medal. » : sans antécédent, on emploie « whoever »."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The woman about who we were talking is my aunt.",
+   "r": [
+    "The woman about whom we were talking is my aunt.",
+    "The woman we were talking about is my aunt.",
+    "The woman who we were talking about is my aunt.",
+    "The woman whom we were talking about is my aunt.",
+    "The woman that we were talking about is my aunt."
+   ],
+   "i": "Regarde le mot placé juste après « about ».",
+   "e": "« about whom » : après une préposition, on emploie whom et non who. On peut aussi dire « the woman we were talking about »."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "The people with whom she works are friendly.",
+    "The people with who she works are friendly.",
+    "The people with that she works are friendly."
+   ],
+   "io": {
+    "The people with who she works are friendly.": "Après « with », « who » est impossible : il faut « whom ».",
+    "The people with that she works are friendly.": "« That » ne suit jamais une préposition."
+   },
+   "i": "Regarde ce qui suit « with » dans chaque phrase.",
+   "e": "« The people with whom she works are friendly. » : après une préposition, on emploie whom pour des personnes."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « There were forty pupils, ___ were boys. »",
+   "o": [
+    "twenty of whom",
+    "twenty of who",
+    "twenty of them"
+   ],
+   "io": {
+    "twenty of who": "Après « of », on emploie « whom ».",
+    "twenty of them": "« Them » ne relie pas les deux propositions : il faut un relatif (« whom »)."
+   },
+   "i": "Il faut relier deux propositions par un relatif, pas par un simple pronom.",
+   "e": "« forty pupils, twenty of whom were boys » : on exprime la quantité avec of whom, qui joue le rôle de relatif."
+  },
+  {
+   "d": 3,
+   "q": "Touche le mot qui veut dire « par lequel ».",
+   "p": "They created a scheme *whereby students pay less.",
+   "i": "Cherche le mot qui relie « scheme » à l'explication de son fonctionnement.",
+   "e": "« whereby » signifie par lequel ou grâce auquel : il relie le nom au procédé décrit."
+  }
+ ],
+ "verbe-devient-nom": [
+  {
+   "d": 1,
+   "q": "Quel est le nom de « improve » ?",
+   "o": [
+    "improvement",
+    "improvation",
+    "improval"
+   ],
+   "io": {
+    "improvation": "Le nom de « improve » prend le suffixe -ment, pas -ation.",
+    "improval": "« Improval » n'existe pas : on dit « improvement »."
+   },
+   "i": "Le suffixe -ment forme souvent des noms à partir de verbes.",
+   "e": "« improvement » : improve + -ment. Ce suffixe forme aussi « development » et « movement »."
+  },
+  {
+   "d": 1,
+   "q": "Quel est le nom de « perform » ?",
+   "o": [
+    "performance",
+    "performation",
+    "performment"
+   ],
+   "io": {
+    "performation": "On dit « performance », avec le suffixe -ance.",
+    "performment": "Le suffixe n'est pas -ment : c'est -ance."
+   },
+   "i": "Le nom se termine par -ance.",
+   "e": "« performance » : le nom de perform se forme avec le suffixe -ance, comme dans « appearance »."
+  },
+  {
+   "d": 1,
+   "q": "Quel est le nom de l'adjectif « possible » ?",
+   "o": [
+    "possibility",
+    "possibleness",
+    "possiblety"
+   ],
+   "io": {
+    "possibleness": "Ce mot existe peu : on dit « possibility ».",
+    "possiblety": "Ce mot n'existe pas : le nom est « possibility »."
+   },
+   "i": "Le suffixe -ity forme souvent des noms à partir d'adjectifs.",
+   "e": "« possibility » : l'adjectif possible donne le nom possibility avec le suffixe -ity, comme « real » donne « reality »."
+  },
+  {
+   "d": 1,
+   "q": "Écris le nom de « introduce ».",
+   "r": [
+    "introduction"
+   ],
+   "i": "Le suffixe -tion forme beaucoup de noms à partir de verbes.",
+   "e": "« introduction » : introduce perd son -e final et prend -tion, comme « reduce » donne « reduction »."
+  },
+  {
+   "d": 1,
+   "q": "Touche le nom formé à partir du verbe « arrive ».",
+   "p": "Her *arrival changed everything.",
+   "i": "Cherche le mot qui se termine par -al.",
+   "e": "« arrival » : le nom formé à partir du verbe arrive est arrival (arrive + -al) ; le piège est de garder le verbe « arrive » à sa place."
+  },
+  {
+   "d": 1,
+   "q": "Complète : « Her ___ at the party surprised everyone. »",
+   "o": [
+    "arrival",
+    "arrive"
+   ],
+   "io": {
+    "arrive": "« Arrive » est un verbe ; après « her », il faut un nom : « arrival »."
+   },
+   "i": "Après « her », on attend un nom.",
+   "e": "« Her arrival at the party surprised everyone. » : le nom de « arrive » est « arrival »."
+  },
+  {
+   "d": 2,
+   "q": "Écris le nom de « recommend ».",
+   "r": [
+    "recommendation"
+   ],
+   "i": "Le suffixe -ation s'ajoute au verbe.",
+   "e": "« recommendation » : recommend prend le suffixe -ation, comme « inform » donne « information »."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « There was a sharp ___ in prices. »",
+   "o": [
+    "rise",
+    "rose",
+    "rising"
+   ],
+   "io": {
+    "rose": "« Rose » est le prétérit du verbe : après « a sharp », il faut un nom.",
+    "rising": "« Rising » est une forme verbale ici ; le nom attendu est « rise »."
+   },
+   "i": "Après « a sharp », il faut un nom.",
+   "e": "« There was a sharp rise in prices. » : « rise » est le nom ; « rose » est le passé du verbe."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « There has been a sharp fall ___ unemployment. »",
+   "o": [
+    "in",
+    "of",
+    "on"
+   ],
+   "io": {
+    "of": "Pour ce qui change, on dit « a fall in », pas « of ».",
+    "on": "« On » ne convient pas ici."
+   },
+   "i": "La préposition qui suit « an increase », « a rise » ou « a fall ».",
+   "e": "« a sharp fall in unemployment » : après un nom de variation (a rise, a fall, an increase), la préposition est in + ce qui change."
+  },
+  {
+   "d": 2,
+   "q": "Complète : « There was a ___ increase in prices. »",
+   "o": [
+    "rapid",
+    "rapidly"
+   ],
+   "io": {
+    "rapidly": "Devant un nom, on utilise un adjectif (« rapid »), pas un adverbe."
+   },
+   "i": "Devant un nom, on met un adjectif.",
+   "e": "« a rapid increase » : l'adverbe « rapidly » devient l'adjectif « rapid » devant un nom."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "there",
+    "was",
+    "a",
+    "sudden",
+    "fall",
+    "in",
+    "temperature"
+   ],
+   "fin": ".",
+   "i": "« There was a » + adjectif + nom + préposition.",
+   "e": "« There was a sudden fall in temperature. » : there was a + adjectif + nom + in + ce qui change."
+  },
+  {
+   "d": 2,
+   "q": "Remets les mots dans l'ordre.",
+   "m": [
+    "the",
+    "introduction",
+    "of",
+    "the",
+    "new",
+    "tax",
+    "caused",
+    "protests"
+   ],
+   "fin": ".",
+   "i": "Le nom « introduction » est suivi de « of ».",
+   "e": "« The introduction of the new tax caused protests. » : le groupe nominal « the introduction of the new tax » est le sujet, ce qui rend la phrase plus dense et plus formelle."
+  },
+  {
+   "d": 2,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "The discover of the island changed history.",
+   "r": [
+    "The discovery of the island changed history."
+   ],
+   "i": "Le nom de « discover » se termine par -y.",
+   "e": "« The discovery of the island changed history. » : le nom de discover est discovery ; le verbe ne peut pas servir de nom."
+  },
+  {
+   "d": 2,
+   "q": "Traduis en anglais : « Il y a eu une forte hausse des prix. »",
+   "r": [
+    "There was a sharp rise in prices",
+    "There was a sharp increase in prices",
+    "There was a steep rise in prices",
+    "There was a steep increase in prices",
+    "There was a big rise in prices",
+    "There was a big increase in prices",
+    "There was a significant rise in prices",
+    "There was a significant increase in prices",
+    "There was a dramatic rise in prices",
+    "There was a dramatic increase in prices",
+    "There was a large rise in prices",
+    "There was a large increase in prices",
+    "There was a huge rise in prices",
+    "There was a huge increase in prices",
+    "There has been a sharp rise in prices",
+    "There has been a sharp increase in prices",
+    "There has been a steep rise in prices",
+    "There has been a steep increase in prices",
+    "There has been a big rise in prices",
+    "There has been a big increase in prices",
+    "There has been a significant rise in prices",
+    "There has been a significant increase in prices",
+    "There has been a dramatic rise in prices",
+    "There has been a dramatic increase in prices",
+    "There has been a large rise in prices",
+    "There has been a large increase in prices",
+    "There has been a huge rise in prices",
+    "There has been a huge increase in prices"
+   ],
+   "i": "Il faut un nom suivi de « in » devant prices.",
+   "e": "« There was a sharp rise in prices. » : après a rise (ou an increase), on emploie in (a rise in prices), jamais of."
+  },
+  {
+   "d": 2,
+   "q": "Touche le nom qui vient du verbe « announce ».",
+   "p": "The *announcement of the results disappointed everyone.",
+   "i": "Cherche le nom qui se termine par -ment.",
+   "e": "« announcement » : le verbe announce donne le nom announcement avec le suffixe -ment."
+  },
+  {
+   "d": 3,
+   "q": "Complète avec un nom : « They decided to close the shop. → The ___ to close the shop surprised us. »",
+   "r": [
+    "decision"
+   ],
+   "i": "Cherche le nom qui correspond au verbe decide.",
+   "e": "« The decision to close the shop surprised us. » : le verbe devient un nom, suivi de to + base."
+  },
+  {
+   "d": 3,
+   "q": "Complète : « Failure ___ pay the bill will result in a fine. »",
+   "r": [
+    "to"
+   ],
+   "i": "« Failure » est suivi d'un infinitif.",
+   "e": "« Failure to pay the bill will result in a fine. » : le nom failure se construit avec to + base, comme le verbe fail to."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « L'arrivée du nouveau directeur a tout changé. »",
+   "r": [
+    "The arrival of the new director changed everything",
+    "The new director's arrival changed everything",
+    "The arrival of the new director has changed everything",
+    "The new director's arrival has changed everything",
+    "The arrival of the new manager changed everything",
+    "The new manager's arrival changed everything",
+    "The arrival of the new manager has changed everything",
+    "The new manager's arrival has changed everything",
+    "The arrival of the new boss changed everything",
+    "The new boss's arrival changed everything",
+    "The arrival of the new boss has changed everything",
+    "The new boss's arrival has changed everything"
+   ],
+   "i": "Le nom « arrival » est suivi de « of ».",
+   "e": "« The arrival of the new director changed everything. » : le verbe arrive devient le nom arrival, suivi de of + celui qui arrive."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Une analyse prudente des données montre que la situation s'améliore. »",
+   "r": [
+    "A careful analysis of the data shows that the situation is improving",
+    "A careful analysis of the data shows the situation is improving",
+    "A careful analysis of the data shows that the situation is getting better",
+    "A careful analysis of the data shows the situation is getting better",
+    "A careful analysis of the data shows that things are improving",
+    "A careful analysis of the data reveals that the situation is improving",
+    "A careful analysis of the data reveals the situation is improving",
+    "A careful analysis of the data reveals that the situation is getting better",
+    "A careful analysis of the data reveals the situation is getting better",
+    "A careful analysis of the data reveals that things are improving",
+    "A careful analysis of the data indicates that the situation is improving",
+    "A careful analysis of the data indicates the situation is improving",
+    "A careful analysis of the data indicates that the situation is getting better",
+    "A careful analysis of the data indicates the situation is getting better",
+    "A careful analysis of the data indicates that things are improving",
+    "Careful analysis of the data shows that the situation is improving",
+    "Careful analysis of the data shows the situation is improving",
+    "Careful analysis of the data shows that the situation is getting better",
+    "Careful analysis of the data shows the situation is getting better",
+    "Careful analysis of the data shows that things are improving",
+    "Careful analysis of the data reveals that the situation is improving",
+    "Careful analysis of the data reveals the situation is improving",
+    "Careful analysis of the data reveals that the situation is getting better",
+    "Careful analysis of the data reveals the situation is getting better",
+    "Careful analysis of the data reveals that things are improving",
+    "Careful analysis of the data indicates that the situation is improving",
+    "Careful analysis of the data indicates the situation is improving",
+    "Careful analysis of the data indicates that the situation is getting better",
+    "Careful analysis of the data indicates the situation is getting better",
+    "Careful analysis of the data indicates that things are improving"
+   ],
+   "i": "Le nom « analysis » avec un adjectif.",
+   "e": "« A careful analysis of the data shows… » : le nom analysis, précédé d'un adjectif (careful) et suivi de of + complément, remplace le verbe analyse."
+  },
+  {
+   "d": 3,
+   "q": "Traduis en anglais : « Il y a eu une amélioration significative des ventes. »",
+   "r": [
+    "There has been a significant improvement in sales",
+    "There was a significant improvement in sales",
+    "There has been a significant improvement in the sales"
+   ],
+   "i": "Quelle préposition suit le nom « improvement » ?",
+   "e": "« There has been a significant improvement in sales. » : on dit an improvement in + ce qui s'améliore, avec la préposition in."
+  },
+  {
+   "d": 3,
+   "q": "Corrige la phrase : il y a une erreur.",
+   "f": "A rapidly growth in sales surprised the managers.",
+   "r": [
+    "A rapid growth in sales surprised the managers.",
+    "Rapid growth in sales surprised the managers."
+   ],
+   "i": "Devant un nom, on emploie un adjectif et non un adverbe.",
+   "e": "« A rapid growth in sales surprised the managers. » : l'adverbe rapidly devient l'adjectif rapid devant un nom."
+  },
+  {
+   "d": 3,
+   "q": "Choisis la phrase correcte.",
+   "o": [
+    "The construction of the new bridge took two years.",
+    "The construct of the new bridge took two years.",
+    "The constructed of the new bridge took two years."
+   ],
+   "io": {
+    "The construct of the new bridge took two years.": "« Construct » est un verbe : le nom est « construction ».",
+    "The constructed of the new bridge took two years.": "« Constructed » est un participe : le nom est « construction »."
+   },
+   "i": "Il faut le nom de « construct ».",
+   "e": "« The construction of the new bridge took two years. » : le nom de construct est construction (suffixe -tion) ; « construct » est un verbe et « constructed » un participe."
+  },
+  {
+   "d": 3,
+   "q": "Touche le nom qui vient de l'adjectif « aware ».",
+   "p": "Public *awareness of the problem is growing.",
+   "i": "Cherche le mot qui se termine par -ness.",
+   "e": "« awareness » : l'adjectif aware donne le nom awareness avec le suffixe -ness."
+  }
+ ]
+}
