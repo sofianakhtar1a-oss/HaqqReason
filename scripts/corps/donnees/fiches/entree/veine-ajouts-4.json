@@ -1,0 +1,603 @@
+{
+ "lot": "veine-ajouts-4",
+ "couche": "veine",
+ "structures": [
+  {
+   "id": "veine-pancreaticoduodenale-posterosuperieure",
+   "nom": "Veine pancréaticoduodénale postérosupérieure",
+   "latin": "Vena pancreaticoduodenalis superior posterior",
+   "anglais": "Posterior superior pancreaticoduodenal vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine pancréaticoduodénale postérosupérieure",
+   "ta2": "5109",
+   "connu": {
+    "description_du_trace": "Elle passe derrière la tête du pancréas, accompagne l'artère du même nom et se jette directement dans la veine porte.",
+    "appui_dans_le_modele": {
+     "id": "veine-porte-du-foie",
+     "nom": "Veine porte du foie"
+    }
+   }
+  },
+  {
+   "id": "veine-phrenique-inferieure",
+   "nom": "Veine phrénique inférieure",
+   "latin": "Venae phrenicae inferiores",
+   "anglais": "Inferior phrenic veins",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine phrénique inférieure",
+   "ta2": "4992",
+   "connu": {
+    "description_du_trace": "Elles drainent la face inférieure du diaphragme : la droite se jette dans la veine cave inférieure, la gauche dans la veine rénale gauche ou la veine surrénale gauche.",
+    "appui_dans_le_modele": {
+     "id": "veine-renale-gauche",
+     "nom": "Veine rénale gauche"
+    }
+   }
+  },
+  {
+   "id": "veine-prepylorique",
+   "nom": "Veine prépylorique",
+   "latin": "Vena prepylorica",
+   "anglais": "Prepyloric vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine prépylorique",
+   "ta2": "5112",
+   "connu": {
+    "description_du_trace": "Veine de Mayo : elle monte sur la face antérieure du pylore, repère chirurgical de la jonction gastroduodénale, et se jette dans la veine gastrique droite.",
+    "appui_dans_le_modele": {
+     "id": "petit-omentum",
+     "nom": "Petit omentum"
+    }
+   }
+  },
+  {
+   "id": "veine-surrenale-droite",
+   "nom": "Veine surrénale droite",
+   "latin": "Vena suprarenalis dextra",
+   "anglais": "Right suprarenal vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine surrénale droite",
+   "ta2": "4998",
+   "connu": {
+    "description_du_trace": "Courte veine du hile de la glande surrénale droite qui se jette directement dans la veine cave inférieure.",
+    "appui_dans_le_modele": {
+     "id": "veine-cave-inferieure",
+     "nom": "Veine cave inférieure"
+    }
+   }
+  },
+  {
+   "id": "veine-surrenale-gauche",
+   "nom": "Veine surrénale gauche",
+   "latin": "Vena suprarenalis sinistra",
+   "anglais": "Left suprarenal vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine surrénale gauche",
+   "ta2": "5012",
+   "connu": {
+    "description_du_trace": "Elle quitte le hile de la glande surrénale gauche, descend avec l'artère phrénique inférieure et se jette dans la veine rénale gauche.",
+    "appui_dans_le_modele": {
+     "id": "veine-renale-gauche",
+     "nom": "Veine rénale gauche"
+    }
+   }
+  },
+  {
+   "id": "veine-testiculaire-droite",
+   "nom": "Veine testiculaire droite",
+   "latin": "Vena testicularis dextra",
+   "anglais": "Right testicular vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine testiculaire droite",
+   "ta2": "5018",
+   "connu": {
+    "description_du_trace": "Née du plexus pampiniforme du cordon spermatique, elle remonte dans l'abdomen et se jette directement dans la veine cave inférieure, sous la veine rénale droite."
+   }
+  },
+  {
+   "id": "veine-testiculaire-gauche",
+   "nom": "Veine testiculaire gauche",
+   "latin": "Vena testicularis sinistra",
+   "anglais": "Left testicular vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine testiculaire gauche",
+   "ta2": "5015",
+   "connu": {
+    "description_du_trace": "Née du plexus pampiniforme du cordon spermatique, elle remonte dans l'abdomen et se jette dans la veine rénale gauche, à angle droit."
+   }
+  },
+  {
+   "id": "veines-cystiques",
+   "nom": "Veines cystiques",
+   "latin": "Venae cysticae",
+   "anglais": "Cystic veins",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veines cystiques",
+   "ta2": "5107",
+   "connu": {
+    "description_du_trace": "Elles drainent la vésicule biliaire et se jettent dans la branche droite de la veine porte ou directement dans le foie.",
+    "appui_dans_le_modele": {
+     "id": "veine-porte-du-foie",
+     "nom": "Veine porte du foie"
+    }
+   }
+  },
+  {
+   "id": "veines-gastriques-courtes",
+   "nom": "Veines gastriques courtes",
+   "latin": "Venae gastricae breves",
+   "anglais": "Short gastric veins",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veines gastriques courtes",
+   "ta2": "5125",
+   "connu": {
+    "description_du_trace": "Quatre à six petites veines du fond de l'estomac qui passent dans le ligament gastro-splénique et se jettent dans la veine splénique ou dans ses branches.",
+    "appui_dans_le_modele": {
+     "id": "veine-splenique",
+     "nom": "Veine splénique"
+    }
+   }
+  },
+  {
+   "id": "veines-jejunales",
+   "nom": "Veines jéjunales",
+   "latin": "Venae jejunales",
+   "anglais": "Jejunal veins",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veines jéjunales",
+   "ta2": "5114",
+   "connu": {
+    "description_du_trace": "Elles drainent les anses jéjunales, cheminent dans le mésentère avec les artères et se jettent dans le bord gauche de la veine mésentérique supérieure.",
+    "appui_dans_le_modele": {
+     "id": "veine-mesenterique-superieure",
+     "nom": "Veine mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "veines-pancreaticoduodenales",
+   "nom": "Veines pancréaticoduodénales",
+   "latin": "Venae pancreaticoduodenales",
+   "anglais": "Pancreaticoduodenal veins",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veines pancréaticoduodénales",
+   "ta2": "5118",
+   "connu": {
+    "description_du_trace": "Arcades veineuses antérieure et postérieure entre la tête du pancréas et le duodénum ; les veines supérieures rejoignent la veine porte, les inférieures la veine mésentérique supérieure.",
+    "appui_dans_le_modele": {
+     "id": "veine-mesenterique-superieure",
+     "nom": "Veine mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "veines-pancreatiques",
+   "nom": "Veines pancréatiques",
+   "latin": "Venae pancreaticae",
+   "anglais": "Pancreatic veins",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veines pancréatiques",
+   "ta2": "5124",
+   "connu": {
+    "description_du_trace": "Petites veines du corps et de la queue du pancréas qui se jettent dans la veine splénique, le long de la face postérieure de la glande.",
+    "appui_dans_le_modele": {
+     "id": "veine-splenique",
+     "nom": "Veine splénique"
+    }
+   }
+  },
+  {
+   "id": "veines-para-ombillicales",
+   "nom": "Veines para-ombillicales",
+   "latin": "Venae paraumbilicales",
+   "anglais": "Para-umbilical veins",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veines para-ombillicales",
+   "ta2": "5108",
+   "connu": {
+    "description_du_trace": "Petites veines qui accompagnent le ligament rond du foie et relient les veines de l'ombilic à la veine porte ; elles s'élargissent en cas d'hypertension portale.",
+    "appui_dans_le_modele": {
+     "id": "veine-porte-du-foie",
+     "nom": "Veine porte du foie"
+    }
+   }
+  },
+  {
+   "id": "veine-anorectale-superieure",
+   "nom": "Veine anorectale supérieure",
+   "latin": "Vena anorectalis superior",
+   "anglais": "Superior anorectal vein",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veine anorectale supérieure",
+   "ta2": "5130",
+   "connu": {
+    "description_du_trace": "Elle prolonge le plexus rectal interne, accompagne l'artère rectale supérieure et se continue par la veine mésentérique inférieure."
+   }
+  },
+  {
+   "id": "veine-appendiculaire",
+   "nom": "Veine appendiculaire",
+   "latin": "Vena appendicularis",
+   "anglais": "Appendicular vein",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veine appendiculaire",
+   "ta2": "5120",
+   "connu": {
+    "description_du_trace": "Elle draine l'appendice vermiforme dans le méso-appendice, derrière l'iléon terminal, et se jette dans la veine iléocolique."
+   }
+  },
+  {
+   "id": "veine-circonflexe-iliaque-profonde",
+   "nom": "Veine circonflexe iliaque profonde",
+   "latin": "Vena circumflexa iliaca profunda",
+   "anglais": "Deep circumflex iliac vein",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veine circonflexe iliaque profonde",
+   "ta2": "5054",
+   "connu": {
+    "description_du_trace": "Elle longe le ligament inguinal puis la crête iliaque, avec l'artère circonflexe iliaque profonde, et se jette dans la veine iliaque externe.",
+    "appui_dans_le_modele": {
+     "id": "veine-iliaque-externe",
+     "nom": "Veine iliaque externe"
+    }
+   }
+  },
+  {
+   "id": "veine-pubienne",
+   "nom": "Veine pubienne",
+   "latin": "Vena pubica",
+   "anglais": "Pubic vein",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veine pubienne",
+   "ta2": "5052",
+   "connu": {
+    "description_du_trace": "Elle relie la veine épigastrique inférieure à la veine obturatrice en longeant la face postérieure du pubis (la « corona mortis » veineuse).",
+    "appui_dans_le_modele": {
+     "id": "artere-obturatrice",
+     "nom": "Artère obturatrice"
+    }
+   }
+  },
+  {
+   "id": "veine-sacree-mediane",
+   "nom": "Veine sacrée médiane",
+   "latin": "Vena sacralis mediana",
+   "anglais": "Median sacral vein",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veine sacrée médiane",
+   "ta2": "5022",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère sacrale médiane devant le sacrum et le coccyx et se jette dans la veine iliaque commune gauche, près de la confluence des iliaques."
+   }
+  },
+  {
+   "id": "veines-anorectales-inferieures",
+   "nom": "Veines anorectales inférieures",
+   "latin": "Venae anorectales inferiores",
+   "anglais": "Inferior anorectal veins",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veines anorectales inférieures",
+   "ta2": "5033",
+   "connu": {
+    "description_du_trace": "Elles drainent le canal anal et la région périanale, traversent la fosse ischio-anale et se jettent dans la veine pudendale interne.",
+    "appui_dans_le_modele": {
+     "id": "veine-pudendale-interne",
+     "nom": "Veine pudendale interne"
+    }
+   }
+  },
+  {
+   "id": "veines-anorectales-moyennes",
+   "nom": "Veines anorectales moyennes",
+   "latin": "Venae anorectales mediae",
+   "anglais": "Middle anorectal veins",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veines anorectales moyennes",
+   "ta2": "5030",
+   "connu": {
+    "description_du_trace": "Elles drainent l'ampoule rectale, traversent les ligaments latéraux du rectum et se jettent dans la veine iliaque interne.",
+    "appui_dans_le_modele": {
+     "id": "veine-iliaque-interne",
+     "nom": "Veine iliaque interne"
+    }
+   }
+  },
+  {
+   "id": "veines-ileales",
+   "nom": "Veines iléales",
+   "latin": "Venae ileales",
+   "anglais": "Ileal veins",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veines iléales",
+   "ta2": "5115",
+   "connu": {
+    "description_du_trace": "Elles drainent l'iléon et se jettent dans la veine mésentérique supérieure par le mésentère.",
+    "appui_dans_le_modele": {
+     "id": "veine-mesenterique-superieure",
+     "nom": "Veine mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "veines-obturatrices",
+   "nom": "Veines obturatrices",
+   "latin": "Venae obturatoriae",
+   "anglais": "Obturator veins",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veines obturatrices",
+   "ta2": "5027",
+   "connu": {
+    "description_du_trace": "Elles accompagnent l'artère obturatrice, depuis le canal obturateur sur la paroi latérale du petit bassin, et se jettent dans la veine iliaque interne."
+   }
+  },
+  {
+   "id": "veines-vesicales",
+   "nom": "Veines vésicales",
+   "latin": "Venae vesicales",
+   "anglais": "Vesical veins",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Veines vésicales",
+   "ta2": "5038",
+   "connu": {
+    "description_du_trace": "Elles naissent du plexus veineux vésical autour de la vessie et se jettent dans la veine iliaque interne.",
+    "appui_dans_le_modele": {
+     "id": "veine-iliaque-interne",
+     "nom": "Veine iliaque interne"
+    }
+   }
+  },
+  {
+   "id": "veines-pectorales",
+   "nom": "Veines pectorales",
+   "latin": "Venae pectorales",
+   "anglais": "Pectoral veins",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Veines pectorales",
+   "ta2": "4954",
+   "connu": {
+    "description_du_trace": "Elles drainent les muscles grand et petit pectoraux et se jettent dans la veine axillaire, souvent avec la veine thoraco-acromiale.",
+    "appui_dans_le_modele": {
+     "id": "veine-axillaire",
+     "nom": "Veine axillaire"
+    }
+   }
+  },
+  {
+   "id": "veines-interosseuses-anterieures",
+   "nom": "Veines interosseuses antérieures",
+   "latin": "Venae interosseae anteriores",
+   "anglais": "Anterior interosseous veins",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Veines interosseuses antérieures",
+   "ta2": "4983",
+   "connu": {
+    "description_du_trace": "Deux veines accompagnent l'artère interosseuse antérieure sur la face antérieure de la membrane interosseuse et se jettent dans les veines ulnaires.",
+    "appui_dans_le_modele": {
+     "id": "veines-ulnaires",
+     "nom": "Veines ulnaires"
+    }
+   }
+  },
+  {
+   "id": "veines-interosseuses-posterieures",
+   "nom": "Veines interosseuses postérieures",
+   "latin": "Venae interosseae posteriores",
+   "anglais": "Posterior interosseous veins",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Veines interosseuses postérieures",
+   "ta2": "4984",
+   "connu": {
+    "description_du_trace": "Deux veines accompagnent l'artère interosseuse postérieure sur la face postérieure de la membrane interosseuse et se jettent dans les veines brachiales près du coude.",
+    "appui_dans_le_modele": {
+     "id": "veines-brachiales",
+     "nom": "Veines brachiales"
+    }
+   }
+  },
+  {
+   "id": "veines-intercapitales-de-la-main",
+   "nom": "Veines intercapitales de la main",
+   "latin": "Venae intercapitulares manus",
+   "anglais": "Intercapitular veins of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Veines intercapitales de la main",
+   "ta2": "4968",
+   "connu": {
+    "description_du_trace": "Elles traversent les espaces entre les têtes des métacarpiens et relient le réseau veineux dorsal aux veines digitales palmaires.",
+    "appui_dans_le_modele": {
+     "id": "cinquieme-metacarpien",
+     "nom": "Cinquième métacarpien"
+    }
+   }
+  },
+  {
+   "id": "veines-metacarpiennes-dorsales",
+   "nom": "Veines métacarpiennes dorsales",
+   "latin": "Venae metacarpeae dorsales",
+   "anglais": "Dorsal metacarpal veins",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Veines métacarpiennes dorsales",
+   "ta2": "4969",
+   "connu": {
+    "description_du_trace": "Quatre veines des espaces interosseux dorsaux, qui reçoivent les veines digitales dorsales et se jettent dans le réseau veineux dorsal de la main.",
+    "appui_dans_le_modele": {
+     "id": "reseau-veineux-dorsal-de-la-main",
+     "nom": "Réseau veineux dorsal de la main"
+    }
+   }
+  },
+  {
+   "id": "veines-metacarpiennes-palmaires",
+   "nom": "Veines métacarpiennes palmaires",
+   "latin": "Venae metacarpeae palmares",
+   "anglais": "Palmar metacarpal veins",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Veines métacarpiennes palmaires",
+   "ta2": "4990",
+   "connu": {
+    "description_du_trace": "Elles accompagnent les artères métacarpiennes palmaires, de la paume vers les veines digitales, et se jettent dans l'arcade veineuse palmaire profonde.",
+    "appui_dans_le_modele": {
+     "id": "arcade-veineuse-palmaire-profonde",
+     "nom": "Arcade veineuse palmaire profonde"
+    }
+   }
+  },
+  {
+   "id": "veine-circonflexe-iliaque-superficielle",
+   "nom": "Veine circonflexe iliaque superficielle",
+   "latin": "Vena circumflexa iliaca superficialis",
+   "anglais": "Superficial circumflex iliac vein",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Veine circonflexe iliaque superficielle",
+   "ta2": "5066",
+   "connu": {
+    "description_du_trace": "Veine sous-cutanée qui longe le ligament inguinal vers l'épine iliaque antéro-supérieure et se jette dans la partie terminale de la veine grande saphène.",
+    "appui_dans_le_modele": {
+     "id": "veine-grande-saphene",
+     "nom": "Veine grande saphène"
+    }
+   }
+  },
+  {
+   "id": "veines-sous-cutanees-de-l-abdomen",
+   "nom": "Veines sous-cutanées de l'abdomen",
+   "latin": "Venae subcutaneae abdominis",
+   "anglais": "Subcutaneous abdominal veins",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Veines sous-cutanées de l'abdomen",
+   "ta2": "4788",
+   "connu": {
+    "description_du_trace": "Réseau veineux superficiel de la paroi abdominale antérieure, rayonnant autour de l'ombilic ; il se draine vers le haut dans la veine thoracique latérale et vers le bas dans les veines épigastrique et circonflexe iliaque superficielles.",
+    "appui_dans_le_modele": {
+     "id": "veine-epigastrique-superficielle",
+     "nom": "Veine épigastrique superficielle"
+    }
+   }
+  },
+  {
+   "id": "veine-pudendale-externe-profonde",
+   "nom": "Veine pudendale externe profonde",
+   "latin": "Vena pudendalis externa profunda",
+   "anglais": "Deep external pudendal vein",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Veine pudendale externe profonde",
+   "ta2": "5060",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère pudendale externe profonde et draine la peau du périnée et du scrotum ou des grandes lèvres ; elle rejoint la veine fémorale."
+   }
+  },
+  {
+   "id": "veine-saphene-accessoire",
+   "nom": "Veine saphène accessoire",
+   "latin": "Vena saphena accessoria",
+   "anglais": "Accessory saphenous vein",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Veine saphène accessoire",
+   "ta2": "5068",
+   "connu": {
+    "description_du_trace": "Veine superficielle de la cuisse, postéro-médiale, parallèle à la veine grande saphène, qu'elle rejoint près de la crosse.",
+    "appui_dans_le_modele": {
+     "id": "veine-grande-saphene",
+     "nom": "Veine grande saphène"
+    }
+   }
+  },
+  {
+   "id": "veines-surales",
+   "nom": "Veines surales",
+   "latin": "Venae surales",
+   "anglais": "Sural veins",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Veines surales",
+   "ta2": "5073",
+   "connu": {
+    "description_du_trace": "Veines des muscles du mollet (gastrocnémiens et soléaire) qui se jettent dans la veine poplitée et les veines tibiales postérieures.",
+    "appui_dans_le_modele": {
+     "id": "veines-tibiales-posterieures",
+     "nom": "Veines tibiales postérieures"
+    }
+   }
+  },
+  {
+   "id": "veine-marginale-laterale-du-pied",
+   "nom": "Veine marginale latérale du pied",
+   "latin": "Vena marginalis lateralis pedis",
+   "anglais": "Lateral marginal vein of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veine marginale latérale du pied",
+   "ta2": "5086",
+   "connu": {
+    "description_du_trace": "Elle longe le bord latéral du pied et se continue par la veine petite saphène derrière la malléole latérale.",
+    "appui_dans_le_modele": {
+     "id": "veine-petite-saphene",
+     "nom": "Veine petite saphène"
+    }
+   }
+  },
+  {
+   "id": "veine-marginale-mediale-du-pied",
+   "nom": "Veine marginale médiale du pied",
+   "latin": "Vena marginalis medialis pedis",
+   "anglais": "Medial marginal vein of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veine marginale médiale du pied",
+   "ta2": "5069",
+   "connu": {
+    "description_du_trace": "Elle longe le bord médial du pied depuis le gros orteil et se continue par la veine grande saphène en avant de la malléole médiale.",
+    "appui_dans_le_modele": {
+     "id": "veine-grande-saphene",
+     "nom": "Veine grande saphène"
+    }
+   }
+  },
+  {
+   "id": "veines-dorsales-du-pied",
+   "nom": "Veines dorsales du pied",
+   "latin": "Venae dorsales pedis",
+   "anglais": "Dorsalis pedis veins",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veines dorsales du pied",
+   "ta2": "5076",
+   "connu": {
+    "description_du_trace": "Veines satellites de l'artère dorsale du pied : elles drainent le dos du pied et se continuent par les veines tibiales antérieures."
+   }
+  }
+ ]
+}

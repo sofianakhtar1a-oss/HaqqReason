@@ -1,0 +1,1279 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), artères de la tête et du cou",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "kenhub-maxillaire": {
+   "titre": "Kenhub, Maxillary artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/maxillary-artery"
+  },
+  "wp-carotide-externe": {
+   "titre": "Wikipédia (en), External carotid artery",
+   "url": "https://en.wikipedia.org/wiki/External_carotid_artery"
+  },
+  "wp-infra-orbitaire": {
+   "titre": "Wikipédia (en), Infraorbital artery",
+   "url": "https://en.wikipedia.org/wiki/Infraorbital_artery"
+  },
+  "wp-alv-moyenne": {
+   "titre": "Wikipédia (en), Middle superior alveolar artery",
+   "url": "https://en.wikipedia.org/wiki/Middle_superior_alveolar_artery"
+  },
+  "wp-alv-anterieure": {
+   "titre": "Wikipédia (en), Anterior superior alveolar artery",
+   "url": "https://en.wikipedia.org/wiki/Anterior_superior_alveolar_artery"
+  },
+  "wp-stylomastoidienne": {
+   "titre": "Wikipédia (en), Stylomastoid artery",
+   "url": "https://en.wikipedia.org/wiki/Stylomastoid_artery"
+  },
+  "wp-tympanique-superieure": {
+   "titre": "Wikipédia (en), Superior tympanic artery",
+   "url": "https://en.wikipedia.org/wiki/Superior_tympanic_artery"
+  },
+  "wp-tympanique-inferieure": {
+   "titre": "Wikipédia (en), Inferior tympanic artery",
+   "url": "https://en.wikipedia.org/wiki/Inferior_tympanic_artery"
+  },
+  "wp-tympanique-anterieure": {
+   "titre": "Wikipédia (en), Anterior tympanic artery",
+   "url": "https://en.wikipedia.org/wiki/Anterior_tympanic_artery"
+  },
+  "wp-auriculaire-profonde": {
+   "titre": "Wikipédia (en), Deep auricular artery",
+   "url": "https://en.wikipedia.org/wiki/Deep_auricular_artery"
+  },
+  "wp-caroticotympanique": {
+   "titre": "Wikipédia (en), Caroticotympanic artery",
+   "url": "https://en.wikipedia.org/wiki/Caroticotympanic_artery"
+  },
+  "wp-masseterique": {
+   "titre": "Wikipédia (en), Masseteric artery",
+   "url": "https://en.wikipedia.org/wiki/Masseteric_artery"
+  },
+  "wp-temporale-moyenne": {
+   "titre": "Wikipédia (en), Middle temporal artery",
+   "url": "https://en.wikipedia.org/wiki/Middle_temporal_artery"
+  },
+  "wp-zygomatico-orbitaire": {
+   "titre": "Wikipédia (en), Zygomatico-orbital artery",
+   "url": "https://en.wikipedia.org/wiki/Zygomatico-orbital_artery"
+  },
+  "wp-sphenopalatine": {
+   "titre": "Wikipédia (en), Sphenopalatine artery",
+   "url": "https://en.wikipedia.org/wiki/Sphenopalatine_artery"
+  },
+  "wp-petite-palatine": {
+   "titre": "Wikipédia (en), Lesser palatine arteries",
+   "url": "https://en.wikipedia.org/wiki/Lesser_palatine_arteries"
+  },
+  "wp-palatine-ascendante": {
+   "titre": "Wikipédia (en), Ascending palatine artery",
+   "url": "https://en.wikipedia.org/wiki/Ascending_palatine_artery"
+  },
+  "wp-meningee-posterieure": {
+   "titre": "Wikipédia (en), Posterior meningeal artery",
+   "url": "https://en.wikipedia.org/wiki/Posterior_meningeal_artery"
+  },
+  "wp-dorsale-nez": {
+   "titre": "Wikipédia (en), Dorsal nasal artery",
+   "url": "https://en.wikipedia.org/wiki/Dorsal_nasal_artery"
+  },
+  "wp-palpebrales-laterales": {
+   "titre": "Wikipédia (en), Lateral palpebral arteries",
+   "url": "https://en.wikipedia.org/wiki/Lateral_palpebral_arteries"
+  },
+  "wp-palpebrales-mediales": {
+   "titre": "Wikipédia (en), Medial palpebral arteries",
+   "url": "https://en.wikipedia.org/wiki/Medial_palpebral_arteries"
+  },
+  "wp-sublinguale": {
+   "titre": "Wikipédia (en), Sublingual artery (page de l'artère linguale)",
+   "url": "https://en.wikipedia.org/wiki/Sublingual_artery"
+  },
+  "wp-linguale-profonde": {
+   "titre": "Wikipédia (en), Deep lingual artery (page de l'artère linguale)",
+   "url": "https://en.wikipedia.org/wiki/Deep_lingual_artery"
+  },
+  "wp-thyroidienne-superieure": {
+   "titre": "Wikipédia (en), Superior thyroid artery",
+   "url": "https://en.wikipedia.org/wiki/Superior_thyroid_artery"
+  },
+  "wp-laryngee-superieure": {
+   "titre": "Wikipédia (en), Superior laryngeal artery",
+   "url": "https://en.wikipedia.org/wiki/Superior_laryngeal_artery"
+  },
+  "wp-thyroidienne-inferieure": {
+   "titre": "Wikipédia (en), Inferior thyroid artery",
+   "url": "https://en.wikipedia.org/wiki/Inferior_thyroid_artery"
+  },
+  "wp-cervicale-ascendante": {
+   "titre": "Wikipédia (en), Ascending cervical artery",
+   "url": "https://en.wikipedia.org/wiki/Ascending_cervical_artery"
+  },
+  "wp-choroidienne-anterieure": {
+   "titre": "Wikipédia (en), Anterior choroidal artery",
+   "url": "https://en.wikipedia.org/wiki/Anterior_choroidal_artery"
+  },
+  "radiopaedia-choroidienne": {
+   "titre": "Radiopaedia, Anterior choroidal artery",
+   "url": "https://radiopaedia.org/articles/anterior-choroidal-artery"
+  },
+  "wp-ophtalmique": {
+   "titre": "Wikipédia (en), Ophthalmic artery",
+   "url": "https://en.wikipedia.org/wiki/Ophthalmic_artery"
+  },
+  "wp-cerebrale-anterieure": {
+   "titre": "Wikipédia (en), Anterior cerebral artery",
+   "url": "https://en.wikipedia.org/wiki/Anterior_cerebral_artery"
+  },
+  "kenhub-cerebrale-anterieure": {
+   "titre": "Kenhub, Anterior cerebral artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/anterior-cerebral-artery"
+  },
+  "wp-communicante-anterieure": {
+   "titre": "Wikipédia (en), Anterior communicating artery",
+   "url": "https://en.wikipedia.org/wiki/Anterior_communicating_artery"
+  },
+  "wp-cerebrale-posterieure": {
+   "titre": "Wikipédia (en), Posterior cerebral artery",
+   "url": "https://en.wikipedia.org/wiki/Posterior_cerebral_artery"
+  },
+  "kenhub-cerebrale-posterieure": {
+   "titre": "Kenhub, Posterior cerebral artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/posterior-cerebral-artery"
+  },
+  "wp-lenticulostriees": {
+   "titre": "Wikipédia (en), Lenticulostriate arteries",
+   "url": "https://en.wikipedia.org/wiki/Lenticulostriate_arteries"
+  },
+  "wp-spinale-posterieure": {
+   "titre": "Wikipédia (en), Posterior spinal artery",
+   "url": "https://en.wikipedia.org/wiki/Posterior_spinal_artery"
+  },
+  "kenhub-moelle": {
+   "titre": "Kenhub, Blood supply of the spinal cord",
+   "url": "https://www.kenhub.com/en/library/anatomy/blood-supply-of-the-spinal-cord"
+  }
+ },
+ "fiches": [
+  {
+   "id": "artere-alveolaire-superieure-moyenne",
+   "resume": "Petite artère inconstante du sinus maxillaire : elle longe sa paroi latérale et nourrit le plexus dentaire des prémolaires.",
+   "provenance": {
+    "artere": "artere-infra-orbitaire",
+    "texte": "Branche de l'artère infra-orbitaire, quand elle existe (souvent absente)"
+   },
+   "trajet": "Naît de l'infra-orbitaire dans la gouttière puis le canal infra-orbitaire, descend dans la paroi latérale du sinus maxillaire et rejoint le plexus dentaire supérieur près de la canine",
+   "branches": [],
+   "terminaison": "Se perd dans le plexus dentaire supérieur, en arcades avec les deux autres artères alvéolaires",
+   "territoire": {
+    "texte": "Prémolaires supérieures, gencive et muqueuse du sinus maxillaire voisines",
+    "structures": [
+     "premiere-premolaire-superieure",
+     "deuxieme-premolaire-superieure",
+     "maxillaire"
+    ]
+   },
+   "rapports": "Dans un canal ou un sillon de la paroi latérale du sinus maxillaire, sous la muqueuse sinusienne",
+   "pouls": null,
+   "anastomoses": "Arcades avec les artères alvéolaires supéro-antérieure (par l'infra-orbitaire) et supéro-postérieure (par la maxillaire)",
+   "clinique": "Sa course dans la paroi latérale du sinus l'expose lors d'un abord de cette paroi (greffe sinusienne) : un saignement est possible mais le plus souvent minime",
+   "memo": "Moyenne : au milieu des trois alvéolaires, sur la paroi du sinus, à hauteur des prémolaires",
+   "variantes": "Inconstante : absente chez un nombre notable de personnes, son territoire est alors repris par ses voisines",
+   "sources": [
+    "wp-alv-moyenne",
+    "kenhub-maxillaire",
+    "wp-infra-orbitaire"
+   ],
+   "divergences": "Wikipédia (en) lui donne les incisives et la canine, Kenhub le plexus dentaire près de la canine ; j'ai retenu les prémolaires, repartition des manuels récents que je n'ai pas pu relire ici (à vérifier)"
+  },
+  {
+   "id": "artere-alveolaire-supero-anterieure",
+   "resume": "Branche de l'infra-orbitaire qui descend dans la paroi antérieure du maxillaire pour nourrir les incisives, la canine et le sinus.",
+   "provenance": {
+    "artere": "artere-infra-orbitaire",
+    "texte": "Branche de l'artère infra-orbitaire, dans le canal infra-orbitaire"
+   },
+   "trajet": "Se détache dans le canal infra-orbitaire, entre dans la paroi antérieure du maxillaire par le canal sinueux et descend jusqu'aux dents antérieures",
+   "branches": [],
+   "terminaison": "Rejoint le plexus dentaire supérieur des dents antérieures",
+   "territoire": {
+    "texte": "Incisives et canine supérieures, gencive voisine et muqueuse du sinus maxillaire",
+    "structures": [
+     "dent-incisive-superomediale",
+     "dent-incisive-superolaterale",
+     "dent-canine-superieure",
+     "maxillaire"
+    ]
+   },
+   "rapports": "Dans le canal sinueux, creusé dans la paroi antérieure du maxillaire, sous l'infra-orbitaire",
+   "pouls": null,
+   "anastomoses": "Avec l'artère alvéolaire supéro-postérieure et, quand elle existe, la moyenne, en arcades dentaires",
+   "clinique": "Son canal sinueux, dans la paroi antérieure du maxillaire, est un détail à connaître avant une chirurgie de la région canine",
+   "memo": "Antérieure, donc dents du devant : incisives et canine",
+   "variantes": "Sa taille varie avec celle de l'alvéolaire moyenne, qui peut la suppléer ou la remplacer",
+   "sources": [
+    "wp-alv-anterieure",
+    "wp-infra-orbitaire",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-auriculaire-posterieure",
+   "resume": "Petite branche de la carotide externe qui monte derrière l'oreille et nourrit le pavillon, la région mastoïdienne et l'oreille moyenne.",
+   "provenance": {
+    "artere": "carotide-externe",
+    "texte": "Branche postérieure de la carotide externe, au-dessus du ventre postérieur du digastrique, vers l'apophyse styloïde"
+   },
+   "trajet": "Monte sous la parotide le long du processus styloïde, gagne le sillon rétro-auriculaire et s'y divise en rameaux auriculaire et occipital",
+   "branches": [
+    {
+     "artere": "artere-stylomastoidienne",
+     "texte": "Artère stylomastoïdienne"
+    },
+    {
+     "artere": null,
+     "texte": "Rameau auriculaire"
+    },
+    {
+     "artere": null,
+     "texte": "Rameau occipital"
+    }
+   ],
+   "terminaison": "Se termine en rameaux auriculaire (face postérieure du pavillon) et occipital (cuir chevelu rétro-auriculaire)",
+   "territoire": {
+    "texte": "Face postérieure du pavillon, peau de la région mastoïdienne et du cuir chevelu voisin, oreille moyenne par la stylomastoïdienne",
+    "structures": [
+     "auriculaire-posterieur"
+    ]
+   },
+   "rapports": "Sous la parotide, contre le processus styloïde, au-dessus du digastrique et du stylo-hyoïdien",
+   "pouls": null,
+   "anastomoses": "Avec l'artère occipitale, et avec les rameaux auriculaires antérieurs et pariétaux de la temporale superficielle",
+   "clinique": "Avec l'artère occipitale, elle forme un réseau très riche du cuir chevelu rétro-auriculaire, d'où des plaies qui saignent beaucoup",
+   "memo": "Auriculaire postérieure : elle passe derrière l'oreille et lui donne la stylomastoïdienne",
+   "variantes": "Peut naître de l'artère occipitale",
+   "sources": [
+    "gray1918",
+    "wp-carotide-externe",
+    "wp-stylomastoidienne"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-auriculaire-profonde",
+   "resume": "Fine branche de l'artère maxillaire qui perce la paroi du méat acoustique externe : peau du conduit et face externe du tympan.",
+   "provenance": {
+    "artere": "artere-maxillaire",
+    "texte": "Branche de la partie mandibulaire de l'artère maxillaire, souvent par un tronc commun avec la tympanique antérieure"
+   },
+   "trajet": "Monte dans la parotide, derrière l'articulation temporo-mandibulaire, perce la paroi cartilagineuse ou osseuse du méat acoustique externe et court entre cartilage et os",
+   "branches": [],
+   "terminaison": "Se distribue à la peau du méat et à la face externe de la membrane tympanique",
+   "territoire": {
+    "texte": "Peau du méat acoustique externe, face externe du tympan, un rameau pour l'articulation temporo-mandibulaire",
+    "structures": [
+     "membrane-tympanique"
+    ]
+   },
+   "rapports": "Derrière l'articulation temporo-mandibulaire, dans l'épaisseur de la glande parotide",
+   "pouls": null,
+   "anastomoses": "Avec les rameaux auriculaires de la temporale superficielle et de l'auriculaire postérieure",
+   "clinique": "Elle fait partie du réseau qui nourrit la face externe du tympan, en continuité avec la tympanique antérieure née de la même souche",
+   "memo": "Profonde : elle plonge dans la paroi du conduit, côté extérieur du tympan",
+   "variantes": "Naît très souvent de la même souche que la tympanique antérieure",
+   "sources": [
+    "wp-auriculaire-profonde",
+    "kenhub-maxillaire",
+    "wp-tympanique-anterieure"
+   ],
+   "divergences": "Anastomoses non décrites dans mes lectures : celles indiquées sont les voisines usuelles (à confirmer)"
+  },
+  {
+   "id": "artere-caroticotympanique",
+   "resume": "Minuscule branche de la carotide interne dans le rocher : elle traverse le canal carotidien vers l'oreille moyenne.",
+   "provenance": {
+    "artere": "carotide-interne",
+    "texte": "Une ou deux petites branches de la partie pétreuse de l'artère carotide interne"
+   },
+   "trajet": "Naît dans le canal carotidien, perce sa paroi par un petit orifice et entre dans la cavité tympanique et dans la partie osseuse de la trompe auditive",
+   "branches": [],
+   "terminaison": "Se perd dans la muqueuse de la cavité tympanique",
+   "territoire": {
+    "texte": "Muqueuse de la cavité tympanique et partie osseuse de la trompe auditive",
+    "structures": [
+     "trompe-auditive"
+    ]
+   },
+   "rapports": "Dans la paroi osseuse du canal carotidien, contre la carotide interne pétreuse",
+   "pouls": null,
+   "anastomoses": "Avec la tympanique antérieure (maxillaire) et la stylomastoïdienne, autour de la cavité tympanique",
+   "clinique": "Reste de l'artère hyoïdienne embryonnaire : si la carotide interne cervicale manque, la tympanique inférieure peut la suppléer à contre-courant, avec acouphène pulsatile et masse de l'oreille moyenne à l'imagerie",
+   "memo": "Caroticotympanique : un pont minuscule entre la carotide interne et l'oreille moyenne",
+   "variantes": "Plus souvent absente que présente ; parfois double",
+   "sources": [
+    "gray1918",
+    "wp-caroticotympanique",
+    "wp-tympanique-inferieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-choroidienne-anterieure",
+   "resume": "Fine artère de la carotide interne qui longe le tractus optique et entre dans la corne temporale : plexus choroïde, hippocampe, capsule interne.",
+   "provenance": {
+    "artere": "carotide-interne",
+    "texte": "Branche de la partie cérébrale de la carotide interne, 2 à 5 mm après la communicante postérieure et avant sa bifurcation"
+   },
+   "trajet": "Longe le tractus optique, contourne le pédoncule cérébral jusqu'au corps géniculé latéral, passe au-dessus de l'uncus et entre dans la corne temporale par la fissure choroïdienne",
+   "branches": [],
+   "terminaison": "Se termine dans le plexus choroïde de la corne temporale du ventricule latéral",
+   "territoire": {
+    "texte": "Plexus choroïde, hippocampe, tractus optique, corps géniculé latéral, pallidum interne, bras postérieur de la capsule interne, queue du noyau caudé",
+    "structures": [
+     "plexus-choroide",
+     "hippocampe",
+     "tractus-optique",
+     "corps-genicule-lateral",
+     "globus-pallidus"
+    ]
+   },
+   "rapports": "Dans les citernes carotidienne puis ambiante, contre le tractus optique et le pédoncule cérébral",
+   "pouls": null,
+   "anastomoses": "Territoire en partie partagé avec les lenticulo-striées de la cérébrale moyenne et avec la cérébrale postérieure",
+   "clinique": "Son occlusion donne une hémiplégie, une hémianesthésie et une hémianopsie du côté opposé (atteinte du bras postérieur de la capsule interne et des voies optiques)",
+   "memo": "Choroïdienne antérieure : elle accompagne le tractus optique et finit dans le plexus choroïde",
+   "variantes": "Double chez environ 5 % des personnes ; naissance rare sur la cérébrale moyenne",
+   "sources": [
+    "radiopaedia-choroidienne",
+    "wp-choroidienne-anterieure",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-cerebrale-precommuniquante",
+   "resume": "Le premier segment (A1) de l'artère cérébrale antérieure, entre la carotide interne et la communicante antérieure.",
+   "provenance": {
+    "artere": "carotide-interne",
+    "texte": "Branche de bifurcation terminale de la carotide interne, avec la cérébrale moyenne"
+   },
+   "trajet": "Passe en avant et en dedans, au-dessus du nerf optique et du chiasma, sous la substance perforée antérieure, jusqu'à l'artère communicante antérieure",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameaux centraux antéro-médiaux, par la substance perforée antérieure"
+    }
+   ],
+   "terminaison": "Rejoint son homologue par l'artère communicante antérieure, puis se poursuit en A2",
+   "territoire": {
+    "texte": "Structures profondes antérieures : tête du noyau caudé, putamen antérieur, septum pellucide, bras antérieur de la capsule interne",
+    "structures": [
+     "noyau-caude",
+     "putamen",
+     "septum-pellucidum"
+    ]
+   },
+   "rapports": "Au-dessus du chiasma optique, sous la substance perforée antérieure, en avant du plancher du troisième ventricule",
+   "pouls": null,
+   "anastomoses": "Avec l'autre cérébrale antérieure par la communicante antérieure, partie antérieure du polygone de Willis",
+   "clinique": "Une occlusion en amont de la communicante antérieure est souvent bien tolérée grâce à la suppléance par l'autre côté",
+   "memo": "Pré-communicante : avant la communicante antérieure, c'est le segment A1",
+   "variantes": "A1 hypoplasique dans environ 5 % des cas ; A2 supplémentaire ou unique dans 2 à 3 %",
+   "sources": [
+    "kenhub-cerebrale-anterieure",
+    "wp-cerebrale-anterieure",
+    "wp-communicante-anterieure"
+   ],
+   "divergences": "Le nom latin saisi dans la liste évoque la cérébrale postérieure (P1) ; j'ai retenu A1, comme dans la description du tracé et l'appui sur la carotide interne"
+  },
+  {
+   "id": "artere-dorsale-du-nez",
+   "resume": "Branche terminale de l'ophtalmique qui sort de l'orbite au coin interne de l'œil et file sur le dos du nez.",
+   "provenance": {
+    "artere": "artere-ophtalmique",
+    "texte": "Branche terminale de l'artère ophtalmique, avec l'artère supratrochléaire"
+   },
+   "trajet": "Longe la paroi médiale de l'orbite, sort entre la poulie du grand oblique et le ligament palpébral médial, donne un rameau au sac lacrymal puis se divise",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameau pour le sac lacrymal"
+    },
+    {
+     "artere": "artere-angulaire",
+     "texte": "Rameau qui s'anastomose avec l'artère angulaire"
+    }
+   ],
+   "terminaison": "Descend sur le dos du nez et s'anastomose avec sa jumelle et avec le rameau nasal latéral de la faciale",
+   "territoire": {
+    "texte": "Sac lacrymal, racine et dos du nez ; la pointe du nez dans environ une personne sur cinq",
+    "structures": [
+     "sac-lacrymal"
+    ]
+   },
+   "rapports": "Émerge de l'orbite au-dessus du ligament palpébral médial, près du coin interne de l'œil",
+   "pouls": null,
+   "anastomoses": "Avec l'artère angulaire (faciale) : jonction entre les systèmes carotidiens interne et externe",
+   "clinique": "Son anastomose avec l'angulaire relie le système carotidien interne au système externe : une voie de suppléance entre les deux",
+   "memo": "Dorsale du nez : l'ophtalmique, venue du cerveau, rejoint la faciale au coin de l'œil",
+   "variantes": "La pointe du nez en dépend chez environ 20 % des personnes seulement",
+   "sources": [
+    "wp-dorsale-nez",
+    "gray1918",
+    "wp-ophtalmique"
+   ],
+   "divergences": "Gray la fait sortir au-dessus du ligament palpébral médial, Wikipédia entre la poulie et ce ligament : même repère, formulé autrement"
+  },
+  {
+   "id": "artere-linguale",
+   "resume": "L'artère de la langue : elle naît de la carotide externe à hauteur de l'os hyoïde et nourrit la langue et le plancher de la bouche.",
+   "provenance": {
+    "artere": "carotide-externe",
+    "texte": "Branche antérieure de la carotide externe, entre la thyroïdienne supérieure et la faciale, en regard de la grande corne de l'hyoïde"
+   },
+   "trajet": "Monte en dedans, fait une boucle sous le nerf hypoglosse, passe sous le digastrique et le stylo-hyoïdien, puis sous l'hyoglosse avant de monter à la langue",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameau sus-hyoïdien"
+    },
+    {
+     "artere": null,
+     "texte": "Artères dorsales de la langue"
+    },
+    {
+     "artere": "artere-sublinguale",
+     "texte": "Artère sublinguale"
+    },
+    {
+     "artere": "artere-linguale-pofonde",
+     "texte": "Artère linguale profonde, branche terminale"
+    }
+   ],
+   "terminaison": "Se continue en artère linguale profonde jusqu'à la pointe de la langue",
+   "territoire": {
+    "texte": "Langue, plancher de la bouche, glande sublinguale, gencive, et par les dorsales amygdale, voile du palais, épiglotte",
+    "structures": [
+     "langue",
+     "hyoglosse",
+     "genioglosse",
+     "glande-sublinguale",
+     "tonsille-palatine"
+    ]
+   },
+   "rapports": "Croisée par le nerf hypoglosse ; passe en profondeur de l'hyoglosse, qui la sépare du nerf",
+   "pouls": null,
+   "anastomoses": "Avec l'artère du côté opposé (rameaux sus-hyoïdiens, dorsales, sublinguale), et avec la submentale par la sublinguale",
+   "clinique": "Le nerf hypoglosse est le repère pour la retrouver ; ses artères profondes courent de part et d'autre du frein de la langue",
+   "memo": "Linguale : sous l'hypoglosse, sous l'hyoglosse, puis tout droit dans la langue",
+   "variantes": "Tronc commun avec la faciale (tronc linguo-facial) dans une minorité de cas",
+   "sources": [
+    "gray1918",
+    "wp-linguale-profonde",
+    "wp-sublinguale"
+   ],
+   "divergences": "Le tronc linguo-facial n'est pas dans mes lectures : variante courante des manuels, à confirmer"
+  },
+  {
+   "id": "artere-linguale-pofonde",
+   "resume": "La terminaison de l'artère linguale : elle court sous la langue, jusqu'à sa pointe, à côté du nerf lingual.",
+   "provenance": {
+    "artere": "artere-linguale",
+    "texte": "Branche terminale de l'artère linguale, après la naissance de la sublinguale"
+   },
+   "trajet": "Monte presque verticalement au bord antérieur de l'hyoglosse puis se porte en avant sur la face inférieure de la langue, entre génioglosse et longitudinal inférieur, avec le nerf lingual",
+   "branches": [],
+   "terminaison": "Atteint la pointe de la langue, où elle rencontre peut-être sa jumelle (point discuté)",
+   "territoire": {
+    "texte": "Corps de la langue, surtout sa face inférieure et sa pointe",
+    "structures": [
+     "langue",
+     "genioglosse",
+     "longitudinal-inferieur-de-la-langue"
+    ]
+   },
+   "rapports": "De chaque côté du frein de la langue, sous la muqueuse de la face inférieure, contre le génioglosse",
+   "pouls": null,
+   "anastomoses": "Avec l'artère du côté opposé à la pointe, mais certains auteurs, dont Hyrtl, le nient",
+   "clinique": "Visible par transparence de chaque côté du frein, elle est exposée lors des gestes sous la langue",
+   "memo": "Profonde, mais visible : les deux veines et artères bleutées de chaque côté du frein",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-linguale-profonde"
+   ],
+   "divergences": "Anastomose à la pointe de la langue contestée entre les auteurs"
+  },
+  {
+   "id": "artere-masseterique",
+   "resume": "Petite branche de la maxillaire qui franchit l'échancrure mandibulaire pour nourrir le masséter.",
+   "provenance": {
+    "artere": "artere-maxillaire",
+    "texte": "Branche de la partie ptérygoïdienne de l'artère maxillaire"
+   },
+   "trajet": "Passe en dehors dans l'échancrure sigmoïde de la mandibule et gagne la face profonde du muscle masséter",
+   "branches": [],
+   "terminaison": "Se ramifie dans la face profonde du masséter",
+   "territoire": {
+    "texte": "Muscle masséter",
+    "structures": [
+     "masseter"
+    ]
+   },
+   "rapports": "Accompagne le nerf massétérique dans l'échancrure sigmoïde, sous le muscle",
+   "pouls": null,
+   "anastomoses": "Avec les rameaux massétériques de la faciale et avec la transverse de la face",
+   "clinique": "Vaisseau musculaire à faible enjeu clinique ; ses anastomoses avec la faciale et la transverse de la face assurent une riche suppléance du masséter",
+   "memo": "Massétérique : par l'échancrure de la mandibule, elle arrive sous le masséter",
+   "variantes": null,
+   "sources": [
+    "wp-masseterique",
+    "kenhub-maxillaire",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-meningee-posterieure",
+   "resume": "Branche de l'artère pharyngienne ascendante qui monte par le foramen jugulaire pour nourrir la dure-mère de la fosse crânienne postérieure.",
+   "provenance": {
+    "artere": "artere-pharyngienne-ascendante",
+    "texte": "Branche terminale de l'artère pharyngienne ascendante"
+   },
+   "trajet": "Monte contre la carotide interne jusqu'à la base du crâne et entre dans la fosse crânienne postérieure par le foramen jugulaire",
+   "branches": [],
+   "terminaison": "Se ramifie dans la dure-mère de la fosse crânienne postérieure",
+   "territoire": {
+    "texte": "Dure-mère de la fosse crânienne postérieure, dont elle est le principal vaisseau",
+    "structures": []
+   },
+   "rapports": "Passe dans le foramen jugulaire avec la veine jugulaire interne et les nerfs mixtes",
+   "pouls": null,
+   "anastomoses": "Avec la méningée moyenne et avec les branches méningées de l'artère vertébrale",
+   "clinique": "Premier vaisseau de la dure-mère de la fosse postérieure : elle relie le système carotidien externe aux branches méningées de la vertébrale",
+   "memo": "Méningée postérieure : par le foramen jugulaire, elle arrive à la dure-mère du fond du crâne",
+   "variantes": "Naît parfois de l'artère occipitale",
+   "sources": [
+    "wp-meningee-posterieure",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-palatine-ascendante",
+   "resume": "Branche de la faciale qui monte le long du pharynx jusqu'au voile du palais, à la trompe auditive et à l'amygdale.",
+   "provenance": {
+    "artere": "artere-faciale",
+    "texte": "Branche cervicale de l'artère faciale, près de son origine"
+   },
+   "trajet": "Monte entre le stylo-glosse et le stylo-pharyngien, puis entre le constricteur supérieur du pharynx et le ptérygoïdien médial, presque jusqu'à la base du crâne",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameau du voile du palais"
+    },
+    {
+     "artere": null,
+     "texte": "Rameau tonsillaire"
+    }
+   ],
+   "terminaison": "Se divise près de l'élévateur du voile du palais en un rameau palatin et un rameau tonsillaire",
+   "territoire": {
+    "texte": "Voile du palais et ses glandes, amygdale palatine, trompe auditive",
+    "structures": [
+     "tonsille-palatine",
+     "trompe-auditive",
+     "constricteur-superieur-du-pharynx"
+    ]
+   },
+   "rapports": "Contre la paroi latérale du pharynx, en dehors du constricteur supérieur ; le rameau tonsillaire perce ce muscle",
+   "pouls": null,
+   "anastomoses": "Avec l'artère du côté opposé, la palatine descendante (par la grande palatine) et la pharyngienne ascendante",
+   "clinique": "Son rameau tonsillaire alimente l'amygdale, et la branche palatine de la pharyngienne ascendante peut la remplacer quand elle est grêle",
+   "memo": "Palatine ascendante : la faciale qui grimpe le long du pharynx jusqu'au voile",
+   "variantes": "Quand elle est petite, la branche palatine de la pharyngienne ascendante la remplace",
+   "sources": [
+    "gray1918",
+    "wp-palatine-ascendante"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-petite-palatine",
+   "resume": "Deux fines branches de la palatine descendante qui sortent par les petits canaux palatins pour nourrir le voile du palais et l'amygdale.",
+   "provenance": {
+    "artere": "artere-palatine-descendante",
+    "texte": "Branches de l'artère palatine descendante, dans le canal ptérygo-palatin"
+   },
+   "trajet": "Se détachent de la palatine descendante, descendent dans les canaux palatins accessoires (petits foramens palatins) et débouchent derrière le palais osseux",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameaux muqueux du voile du palais"
+    },
+    {
+     "artere": null,
+     "texte": "Rameaux tonsillaires"
+    }
+   ],
+   "terminaison": "Se terminent dans le voile du palais et l'amygdale palatine",
+   "territoire": {
+    "texte": "Voile du palais (muqueuse) et amygdale palatine",
+    "structures": [
+     "tonsille-palatine"
+    ]
+   },
+   "rapports": "Sortent par les petits foramens palatins, en arrière du grand foramen palatin, avec les nerfs petits palatins",
+   "pouls": null,
+   "anastomoses": "Avec l'artère pharyngienne ascendante et la palatine ascendante",
+   "clinique": "Avec la grande palatine, elles forment le pédicule du palais : dur par l'une, mou par les autres, tous deux issus de la palatine descendante",
+   "memo": "Petites palatines : les palatines du voile, derrière la grande qui nourrit le palais dur",
+   "variantes": "Leur nombre varie de un à trois",
+   "sources": [
+    "wp-petite-palatine",
+    "gray1918",
+    "kenhub-maxillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-sphenopalatine",
+   "resume": "La grande artère de la cavité nasale : branche terminale de la maxillaire, elle entre par le foramen sphéno-palatin.",
+   "provenance": {
+    "artere": "artere-maxillaire",
+    "texte": "Branche terminale de la maxillaire, dans la fosse ptérygo-palatine"
+   },
+   "trajet": "Passe par le foramen sphéno-palatin dans la cavité nasale, au fond du méat supérieur, puis longe la face inférieure du sphénoïde vers la cloison",
+   "branches": [
+    {
+     "artere": "branches-nasales-posterolaterales-artere-sphenopalatine",
+     "texte": "Branches nasales postéro-latérales"
+    },
+    {
+     "artere": "branches-septales-posterieures-de-l-artere-sphenopalatine",
+     "texte": "Branches septales postérieures"
+    }
+   ],
+   "terminaison": "Se termine sur la cloison nasale par les branches septales postérieures",
+   "territoire": {
+    "texte": "Paroi latérale (cornets, méats) et cloison de la cavité nasale, sinus voisins",
+    "structures": [
+     "muqueuse-de-la-cavite-nasale",
+     "cornet-nasal-inferieur",
+     "cartilage-septal-nasal"
+    ]
+   },
+   "rapports": "Dans la fosse ptérygo-palatine avec le ganglion ptérygo-palatin, puis contre la muqueuse nasale postérieure",
+   "pouls": null,
+   "anastomoses": "Avec la grande palatine par le canal incisif, au niveau de la cloison",
+   "clinique": "Source la plus fréquente des épistaxis, surtout postérieures ; en cas d'échec du tamponnement, on la ligature ou on l'embolise",
+   "memo": "Sphéno-palatine : l'artère du nez, qui entre par le trou sphéno-palatin",
+   "variantes": null,
+   "sources": [
+    "wp-sphenopalatine",
+    "gray1918",
+    "kenhub-maxillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-stylomastoidienne",
+   "resume": "Petite artère de l'oreille moyenne : elle entre par le foramen stylo-mastoïdien et suit le canal facial.",
+   "provenance": {
+    "artere": "artere-auriculaire-posterieure",
+    "texte": "Branche de l'artère auriculaire postérieure, près du foramen stylo-mastoïdien"
+   },
+   "trajet": "Entre dans le foramen stylo-mastoïdien et monte dans le canal facial avec le nerf facial, en donnant des rameaux à l'oreille moyenne et aux cellules mastoïdiennes",
+   "branches": [
+    {
+     "artere": "artere-tympanique-posterieure",
+     "texte": "Artère tympanique postérieure"
+    }
+   ],
+   "terminaison": "Se perd dans la muqueuse de la cavité tympanique et des cellules mastoïdiennes",
+   "territoire": {
+    "texte": "Cavité tympanique, antre et cellules mastoïdiennes, canaux semi-circulaires, nerf facial dans son canal",
+    "structures": [
+     "nerf-facial-vii",
+     "membrane-tympanique"
+    ]
+   },
+   "rapports": "Dans le canal facial, contre le nerf facial, à son passage dans l'os temporal",
+   "pouls": null,
+   "anastomoses": "Avec la tympanique antérieure (cercle autour du tympan chez l'enfant) et, par le hiatus du canal facial, avec le rameau pétreux de la méningée moyenne",
+   "clinique": "Chez l'enfant, un rameau forme avec la tympanique antérieure un cercle artériel autour du tympan, d'où partent de fins vaisseaux vers la membrane",
+   "memo": "Stylomastoïdienne : elle entre par le même trou que le nerf facial",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-stylomastoidienne"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-sublinguale",
+   "resume": "Branche de l'artère linguale qui court vers la glande sublinguale et nourrit le plancher de la bouche et la gencive.",
+   "provenance": {
+    "artere": "artere-linguale",
+    "texte": "Branche de l'artère linguale, née au bord antérieur de l'hyoglosse"
+   },
+   "trajet": "Longe le canal submandibulaire entre le génioglosse et le mylohyoïdien, vers la glande sublinguale",
+   "branches": [],
+   "terminaison": "Se termine dans la glande sublinguale, le mylohyoïdien et la gencive, avec un rameau qui perce le mylohyoïdien",
+   "territoire": {
+    "texte": "Glande sublinguale, mylohyoïdien et muscles voisins, muqueuse du plancher de la bouche et gencive",
+    "structures": [
+     "glande-sublinguale",
+     "mylohyoidien",
+     "gencive"
+    ]
+   },
+   "rapports": "Entre le génioglosse et le mylohyoïdien, au contact du canal de la glande submandibulaire",
+   "pouls": null,
+   "anastomoses": "Avec la submentale à travers le mylohyoïdien, et avec sa jumelle dans la gencive",
+   "clinique": "Riche en anastomoses (côté opposé, submentale), elle assure une bonne suppléance du plancher de la bouche",
+   "memo": "Sublinguale : sous la langue, jusqu'à la glande du même nom",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-sublinguale"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-temporale-moyenne",
+   "resume": "Branche de la temporale superficielle qui perce le fascia temporal pour nourrir le muscle temporal.",
+   "provenance": {
+    "artere": "temporale-superficielle",
+    "texte": "Branche de l'artère temporale superficielle, née juste au-dessus de l'arcade zygomatique"
+   },
+   "trajet": "Naît au-dessus de l'arcade zygomatique, perce le fascia temporal et se ramifie dans le muscle temporal",
+   "branches": [
+    {
+     "artere": "artere-zygomatico-orbitaire",
+     "texte": "Artère zygomatico-orbitaire, parfois"
+    }
+   ],
+   "terminaison": "Se perd dans le muscle temporal",
+   "territoire": {
+    "texte": "Muscle temporal",
+    "structures": [
+     "muscle-temporal"
+    ]
+   },
+   "rapports": "Sous le fascia temporal, contre la fosse temporale",
+   "pouls": null,
+   "anastomoses": "Avec les artères temporales profondes, branches de la maxillaire",
+   "clinique": "Ses anastomoses avec les temporales profondes (maxillaire) relient les systèmes carotidiens externes superficiel et profond autour du muscle temporal",
+   "memo": "Temporale moyenne : elle traverse le fascia et nourrit le muscle temporal",
+   "variantes": "Elle donne parfois la zygomatico-orbitaire",
+   "sources": [
+    "wp-temporale-moyenne",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-tympanique-anterieure",
+   "resume": "Branche de la maxillaire qui entre dans l'oreille moyenne par la fissure pétro-tympanique et nourrit le tympan.",
+   "provenance": {
+    "artere": "artere-maxillaire",
+    "texte": "Branche de la partie mandibulaire de l'artère maxillaire"
+   },
+   "trajet": "Monte derrière l'articulation temporo-mandibulaire et entre dans la cavité tympanique par la fissure pétro-tympanique, avec la corde du tympan",
+   "branches": [],
+   "terminaison": "S'étale sur la membrane tympanique et la muqueuse de la cavité tympanique",
+   "territoire": {
+    "texte": "Muqueuse de l'oreille moyenne et membrane tympanique",
+    "structures": [
+     "membrane-tympanique",
+     "corde-du-tympan"
+    ]
+   },
+   "rapports": "Dans la fissure pétro-tympanique, avec la corde du tympan ; son origine est très variable",
+   "pouls": null,
+   "anastomoses": "Cercle artériel du tympan avec la stylomastoïdienne ; liaisons avec l'artère du canal ptérygoïdien et la caroticotympanique",
+   "clinique": "Artère nourricière de l'oreille moyenne, à l'origine très variable d'une personne à l'autre",
+   "memo": "Tympanique antérieure : elle entre par la fissure pétro-tympanique, avec la corde du tympan",
+   "variantes": "Origine très variable ; souvent tronc commun avec l'auriculaire profonde",
+   "sources": [
+    "wp-tympanique-anterieure",
+    "kenhub-maxillaire",
+    "wp-stylomastoidienne"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-tympanique-inferieure",
+   "resume": "Petite branche de la pharyngienne ascendante qui entre dans le canalicule tympanique pour nourrir la paroi interne de l'oreille moyenne.",
+   "provenance": {
+    "artere": "artere-pharyngienne-ascendante",
+    "texte": "Petite branche de l'artère pharyngienne ascendante"
+   },
+   "trajet": "Entre dans le canalicule tympanique avec le nerf tympanique, branche du glossopharyngien, et rejoint la paroi médiale de la cavité tympanique",
+   "branches": [],
+   "terminaison": "Se perd dans la muqueuse de la paroi médiale de la cavité tympanique",
+   "territoire": {
+    "texte": "Paroi médiale de la cavité tympanique",
+    "structures": [
+     "nerf-tympanique"
+    ]
+   },
+   "rapports": "Dans le canalicule tympanique, avec le nerf tympanique (IX)",
+   "pouls": null,
+   "anastomoses": "Avec les autres artères tympaniques, dont la caroticotympanique",
+   "clinique": "Quand la carotide interne cervicale manque, elle peut la suppléer en inversant le flux de la caroticotympanique : carotide aberrante, acouphène pulsatile, masse de l'oreille moyenne",
+   "memo": "Tympanique inférieure : elle monte avec le nerf tympanique (IX) par son petit canal",
+   "variantes": null,
+   "sources": [
+    "wp-tympanique-inferieure",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-tympanique-posterieure",
+   "resume": "Minuscule branche de la stylomastoïdienne qui rejoint la membrane tympanique et complète son cercle artériel.",
+   "provenance": {
+    "artere": "artere-stylomastoidienne",
+    "texte": "Branche de l'artère stylomastoïdienne, dans le canal facial"
+   },
+   "trajet": "Se détache de la stylomastoïdienne dans le canal facial et gagne le tympan, selon la description classique par le canalicule de la corde du tympan",
+   "branches": [],
+   "terminaison": "Se perd sur la membrane tympanique, dans le cercle artériel du tympan",
+   "territoire": {
+    "texte": "Membrane tympanique et muqueuse voisine",
+    "structures": [
+     "membrane-tympanique",
+     "corde-du-tympan"
+    ]
+   },
+   "rapports": "Près de la corde du tympan, derrière la cavité tympanique",
+   "pouls": null,
+   "anastomoses": "Avec la tympanique antérieure, autour de la membrane tympanique",
+   "clinique": "Fait partie du cercle artériel qui entoure le tympan, bien visible chez l'enfant",
+   "memo": "Tympanique postérieure : la petite jumelle, par derrière, de la tympanique antérieure",
+   "variantes": null,
+   "sources": [
+    "wp-stylomastoidienne",
+    "gray1918"
+   ],
+   "divergences": "Son trajet par le canalicule de la corde du tympan vient de la description du modèle ; mes sources décrivent seulement le cercle formé avec la tympanique antérieure"
+  },
+  {
+   "id": "artere-tympanique-superieure",
+   "resume": "Fine branche de la méningée moyenne qui gagne le muscle tenseur du tympan et la paroi supérieure de l'oreille moyenne.",
+   "provenance": {
+    "artere": "artere-meningee-moyenne",
+    "texte": "Petite branche de l'artère méningée moyenne, dans la fosse crânienne moyenne"
+   },
+   "trajet": "Entre dans le canal du muscle tenseur du tympan, selon d'autres descriptions par le hiatus du canal facial, avec le petit nerf pétreux",
+   "branches": [],
+   "terminaison": "Se perd dans le muscle tenseur du tympan et la muqueuse de son canal",
+   "territoire": {
+    "texte": "Muscle tenseur du tympan et muqueuse de son canal, toit de la cavité tympanique",
+    "structures": []
+   },
+   "rapports": "Dans le rocher, contre le canal du muscle tenseur du tympan",
+   "pouls": null,
+   "anastomoses": "Avec la stylomastoïdienne, par le rameau pétreux de la méningée moyenne et le hiatus du canal facial",
+   "clinique": "Vestige de l'artère stapédienne embryonnaire, par sa branche sus-orbitaire",
+   "memo": "Tympanique supérieure : la méningée moyenne envoie un fil vers le tenseur du tympan",
+   "variantes": null,
+   "sources": [
+    "wp-tympanique-superieure",
+    "wp-stylomastoidienne"
+   ],
+   "divergences": "Wikipédia fait passer l'artère dans le canal du tenseur du tympan, la description du modèle par le hiatus du canal facial avec le petit nerf pétreux : version Wikipédia retenue pour le canal, hiatus pour l'anastomose"
+  },
+  {
+   "id": "artere-zygomatico-orbitaire",
+   "resume": "Fine branche de la temporale qui longe l'arcade zygomatique jusqu'au coin externe de l'œil.",
+   "provenance": {
+    "artere": "temporale-superficielle",
+    "texte": "Branche de l'artère temporale superficielle, ou le plus souvent de la temporale moyenne"
+   },
+   "trajet": "Court sur le bord supérieur de l'arcade zygomatique, entre les deux feuillets du fascia temporal, jusqu'à l'angle latéral de l'orbite",
+   "branches": [],
+   "terminaison": "Se termine dans le muscle orbiculaire de l'œil, près de l'angle externe",
+   "territoire": {
+    "texte": "Muscle orbiculaire de l'œil, région de l'angle externe de l'œil",
+    "structures": [
+     "orbiculaire-oeil"
+    ]
+   },
+   "rapports": "Entre les deux feuillets du fascia temporal, au-dessus de l'arcade zygomatique",
+   "pouls": null,
+   "anastomoses": "Avec les branches lacrymales et palpébrales de l'ophtalmique : jonction entre carotides externe et interne",
+   "clinique": "Son anastomose avec l'ophtalmique est une voie de suppléance entre les territoires carotidiens externe et interne",
+   "memo": "Zygomatico-orbitaire : de l'arcade zygomatique à l'orbite, comme son nom",
+   "variantes": "Naît tantôt de la temporale moyenne, tantôt directement de la temporale superficielle",
+   "sources": [
+    "wp-zygomatico-orbitaire",
+    "wp-temporale-moyenne",
+    "gray1918"
+   ],
+   "divergences": "La liste du modèle la rattache à la temporale superficielle, Gray et Wikipédia à la temporale moyenne : les deux origines existent"
+  },
+  {
+   "id": "arteres-centrales-anterolaterales",
+   "resume": "Les artères lenticulo-striées : de fines perforantes de la cérébrale moyenne qui nourrissent les noyaux gris centraux et la capsule interne.",
+   "provenance": {
+    "artere": "artere-cerebrale-moyenne",
+    "texte": "Branches du segment M1 de l'artère cérébrale moyenne"
+   },
+   "trajet": "Se détachent de M1 sous le cerveau et pénètrent à angle droit dans la substance perforée antérieure, puis montent dans les noyaux gris centraux",
+   "branches": [],
+   "terminaison": "Se terminent dans les noyaux gris centraux et la capsule interne, sans anastomose notable (artères terminales)",
+   "territoire": {
+    "texte": "Putamen postérieur, tête du noyau caudé, pallidum latéral, capsule interne (bras antérieur, genou, partie du bras postérieur), claustrum",
+    "structures": [
+     "putamen",
+     "noyau-caude",
+     "globus-pallidus"
+    ]
+   },
+   "rapports": "Traversent la substance perforée antérieure, au-dessus de la partie initiale de la cérébrale moyenne",
+   "pouls": null,
+   "anastomoses": "Peu ou pas : ce sont des artères terminales ; leur territoire jouxte celui de la choroïdienne antérieure",
+   "clinique": "Leur occlusion, souvent par lipohyalinose liée à l'hypertension, donne un infarctus lacunaire : déficit moteur ou sensitif du visage et du corps du côté opposé",
+   "memo": "Lenticulo-striées : elles nourrissent le noyau lenticulaire et le striatum, d'où leur nom",
+   "variantes": "Autres noms : artères striées, perforantes antéro-latérales ; Gray parle de l'artère de l'hémorragie cérébrale (Charcot)",
+   "sources": [
+    "wp-lenticulostriees",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "arteres-centrales-posterolaterales",
+   "resume": "Les artères thalamo-géniculées : des perforantes de la cérébrale postérieure pour le thalamus latéral et les corps géniculés.",
+   "provenance": {
+    "artere": "artere-cerebrale-posterieure",
+    "texte": "Branches du segment P2 de l'artère cérébrale postérieure, quand elle contourne le pédoncule cérébral"
+   },
+   "trajet": "Naissent de la cérébrale postérieure à son passage autour du pédoncule cérébral et pénètrent dans le diencéphale",
+   "branches": [],
+   "terminaison": "Se terminent dans le thalamus latéral et les corps géniculés",
+   "territoire": {
+    "texte": "Partie postéro-latérale du thalamus (pulvinar) et corps géniculés",
+    "structures": [
+     "thalamus",
+     "noyau-du-pulvinar",
+     "corps-genicule-lateral",
+     "corps-genicule-medial"
+    ]
+   },
+   "rapports": "Sur le côté du pédoncule cérébral, dans la citerne ambiante",
+   "pouls": null,
+   "anastomoses": "Peu : perforantes terminales ; le territoire thalamique voisin reçoit aussi la choroïdienne antérieure",
+   "clinique": "Leur infarctus donne le syndrome thalamique : perte de toutes les sensibilités du côté opposé, puis douleurs spontanées",
+   "memo": "Thalamo-géniculées : l'artère du thalamus et des genouillés, celle de P2",
+   "variantes": null,
+   "sources": [
+    "kenhub-cerebrale-posterieure",
+    "wp-cerebrale-posterieure"
+   ],
+   "divergences": "Wikipédia nomme ces branches « pédonculaires perforantes »; Kenhub « thalamo-géniculées » : même groupe"
+  },
+  {
+   "id": "arteres-centrales-posteromediales",
+   "resume": "Les artères thalamo-perforantes : de fines branches de P1 qui traversent la substance perforée postérieure vers le thalamus médial et le mésencéphale.",
+   "provenance": {
+    "artere": "artere-cerebrale-posterieure",
+    "texte": "Branches du segment P1 de l'artère cérébrale postérieure, au début de celle-ci"
+   },
+   "trajet": "Naissent de P1 près de la bifurcation basilaire et traversent la substance perforée postérieure, dans la fosse interpédonculaire",
+   "branches": [],
+   "terminaison": "Se terminent dans le thalamus médial, la paroi du troisième ventricule et le mésencéphale",
+   "territoire": {
+    "texte": "Thalamus médial, parois du troisième ventricule, mésencéphale",
+    "structures": [
+     "thalamus",
+     "mesencephale"
+    ]
+   },
+   "rapports": "Dans la fosse interpédonculaire, entre les deux pédoncules cérébraux, sous le troisième ventricule",
+   "pouls": null,
+   "anastomoses": "Peu : artères terminales ; les deux côtés peuvent naître d'un tronc commun (artère de Percheron)",
+   "clinique": "Un tronc commun (artère de Percheron) irrigue les deux thalami : son occlusion donne un infarctus thalamique bilatéral",
+   "memo": "Postéro-médiales : les petites perforantes de P1, tout contre la ligne médiane",
+   "variantes": "Artère de Percheron : tronc unique issu de P1 qui nourrit les deux thalami",
+   "sources": [
+    "wp-cerebrale-posterieure",
+    "kenhub-cerebrale-posterieure"
+   ],
+   "divergences": "Le territoire du mésencéphale vient de la description du modèle, Wikipédia cite le thalamus médial et les parois du troisième ventricule"
+  },
+  {
+   "id": "arteres-palpebrales-laterales",
+   "resume": "Deux petites branches de l'artère lacrymale, une pour chaque paupière, qui contribuent aux arcades tarsiennes.",
+   "provenance": {
+    "artere": "artere-lacrymale",
+    "texte": "Deux branches de l'artère lacrymale, supérieure et inférieure"
+   },
+   "trajet": "Naissent de l'artère lacrymale près de l'angle latéral, gagnent chacune une paupière et courent en dedans dans son épaisseur",
+   "branches": [],
+   "terminaison": "S'unissent aux artères palpébrales médiales pour former les arcades tarsiennes",
+   "territoire": {
+    "texte": "Paupières supérieure et inférieure, côté latéral",
+    "structures": [
+     "orbiculaire-oeil"
+    ]
+   },
+   "rapports": "Entre le muscle orbiculaire de l'œil et le tarse, près du bord libre de la paupière",
+   "pouls": null,
+   "anastomoses": "Avec les palpébrales médiales (cercle artériel) et la zygomatico-orbitaire",
+   "clinique": "Les arcades tarsiennes relient les artères de l'ophtalmique à la temporale superficielle et à la faciale : les paupières ont une vascularisation riche",
+   "memo": "Palpébrales latérales : les deux petites de l'angle externe, côté lacrymale",
+   "variantes": null,
+   "sources": [
+    "wp-palpebrales-laterales",
+    "gray1918",
+    "wp-palpebrales-mediales"
+   ],
+   "divergences": "Wikipédia donne l'origine à la glande lacrymale dans le texte et à l'artère lacrymale dans l'encadré ; j'ai retenu l'artère lacrymale, comme Gray"
+  },
+  {
+   "id": "arteres-palpebrales-mediales",
+   "resume": "Deux branches de l'ophtalmique qui bordent les paupières près du coin interne de l'œil et forment les arcades tarsiennes.",
+   "provenance": {
+    "artere": "artere-ophtalmique",
+    "texte": "Un tronc de l'artère ophtalmique, près de la poulie, qui se divise en branches supérieure et inférieure"
+   },
+   "trajet": "Naissent près de la poulie du grand oblique, sortent de l'orbite et courent près du bord libre des paupières, entre l'orbiculaire et le tarse",
+   "branches": [],
+   "terminaison": "Forment les arcades tarsiennes supérieure et inférieure, unies aux palpébrales latérales",
+   "territoire": {
+    "texte": "Paupières supérieure et inférieure, côté médial ; la branche inférieure donne aussi au canal lacrymonasal",
+    "structures": [
+     "orbiculaire-oeil",
+     "canal-lacrymonasal"
+    ]
+   },
+   "rapports": "Entre le muscle orbiculaire de l'œil et le tarse, le long de chaque bord palpébral",
+   "pouls": null,
+   "anastomoses": "Avec les palpébrales latérales, la zygomatico-orbitaire (branche supérieure), la transverse de la face (inférieure) et l'angulaire",
+   "clinique": "Elles unissent le système carotidien interne (ophtalmique) aux artères du visage : jonction utile en cas d'obstruction",
+   "memo": "Palpébrales médiales : de l'ophtalmique, elles ceinturent les paupières côté nez",
+   "variantes": null,
+   "sources": [
+    "wp-palpebrales-mediales",
+    "wp-ophtalmique",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "arteres-spinales-posterieures",
+   "resume": "Deux artères longitudinales qui descendent derrière la moelle spinale et nourrissent ses cordons postérieurs et sa corne postérieure.",
+   "provenance": {
+    "artere": "vertebrale",
+    "texte": "Branches de l'artère vertébrale, ou de la cérébelleuse postéro-inférieure, près du foramen magnum"
+   },
+   "trajet": "Naissent près de la moelle allongée et descendent de chaque côté du sillon postéro-latéral, sur toute la hauteur de la moelle, en recevant des artères radiculaires",
+   "branches": [],
+   "terminaison": "S'unissent à l'artère spinale antérieure en un réseau, au cône médullaire",
+   "territoire": {
+    "texte": "Cordons postérieurs et corne postérieure de la moelle spinale ; en haut, noyaux gracile et cuneiforme de la moelle allongée",
+    "structures": [
+     "corne-posterieure-de-la-moelle-epiniere",
+     "substance-blanche-de-la-moelle-epiniere",
+     "moelle-allongee"
+    ]
+   },
+   "rapports": "De chaque côté du sillon postéro-latéral, là où entrent les racines dorsales",
+   "pouls": null,
+   "anastomoses": "Avec les artères radiculaires, la couronne artérielle pie-mérienne, le côté opposé et, au cône médullaire, la spinale antérieure",
+   "clinique": "Leur occlusion supprime la proprioception consciente, la vibration et le tact fin, du côté de la lésion sous la décussation, du côté opposé au-dessus",
+   "memo": "Spinales postérieures : une paire, derrière, pour les cordons postérieurs",
+   "variantes": "Origine sur la vertébrale ou sur la cérébelleuse postéro-inférieure ; souvent discontinues dans la moelle",
+   "sources": [
+    "wp-spinale-posterieure",
+    "kenhub-moelle"
+   ],
+   "divergences": "Origine : environ 75 % sur la cérébelleuse postéro-inférieure selon Wikipédia, directement sur la vertébrale selon Kenhub. Territoire : la liste du modèle disait « tiers postérieur », les sources parlent de cordon postérieur et corne postérieure"
+  },
+  {
+   "id": "branches-centrales-anteromed-de-l-artere-communiquante-ant",
+   "resume": "De fines perforantes de la région de la communicante antérieure qui plongent dans la substance perforée antérieure.",
+   "provenance": {
+    "artere": "artere-communiquante-anterieure",
+    "texte": "Branches de la région de l'artère communicante antérieure, avec les centrales de A1 et A2"
+   },
+   "trajet": "Partent de la communicante antérieure et du début des cérébrales antérieures, puis pénètrent dans la substance perforée antérieure",
+   "branches": [],
+   "terminaison": "Se terminent dans les structures profondes antérieures de la ligne médiane",
+   "territoire": {
+    "texte": "Septum pellucide, rostre du corps calleux et région antérieure du striatum",
+    "structures": [
+     "septum-pellucidum",
+     "noyau-caude",
+     "putamen"
+    ]
+   },
+   "rapports": "Au-dessus du chiasma optique, dans la partie antérieure du polygone de Willis",
+   "pouls": null,
+   "anastomoses": "Avec les autres centrales antéro-médiales de A1 et A2",
+   "clinique": "L'anévrisme de la communicante antérieure, le plus fréquent du polygone de Willis, peut comprimer le chiasma optique",
+   "memo": "Antéro-médiales : les petites perforantes de la communicante antérieure, vers la ligne médiane",
+   "variantes": "La communicante antérieure peut être double, fenêtrée, très courte ou absente",
+   "sources": [
+    "wp-communicante-anterieure",
+    "kenhub-cerebrale-anterieure"
+   ],
+   "divergences": "Hypothalamus antérieur et colonnes du fornix, cités dans la description du modèle, ne figurent pas dans mes sources. Wikipédia attribue ces perforantes surtout à la cérébrale antérieure"
+  },
+  {
+   "id": "artere-cervicale-ascendante",
+   "resume": "Petite branche de la thyroïdienne inférieure qui monte sur le scalène antérieur et nourrit les muscles profonds du cou et le canal vertébral.",
+   "provenance": {
+    "artere": "artere-thyroidienne-inferieure",
+    "texte": "Branche de l'artère thyroïdienne inférieure, quand celle-ci tourne en dedans"
+   },
+   "trajet": "Monte devant les processus transverses des vertèbres cervicales, entre le scalène antérieur et le long de la tête, et donne des rameaux spinaux",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameaux spinaux, par les foramens intervertébraux"
+    },
+    {
+     "artere": null,
+     "texte": "Rameaux musculaires"
+    }
+   ],
+   "terminaison": "Se termine dans les muscles profonds du cou",
+   "territoire": {
+    "texte": "Muscles profonds du cou ; par les rameaux spinaux, moelle spinale, méninges et corps vertébraux",
+    "structures": [
+     "scalene-anterieur",
+     "long-du-cou"
+    ]
+   },
+   "rapports": "Sur le scalène antérieur, devant les processus transverses cervicaux",
+   "pouls": null,
+   "anastomoses": "Avec les branches de la vertébrale, de la pharyngienne ascendante et de l'occipitale",
+   "clinique": "Ses rameaux spinaux participent à la vascularisation de la moelle cervicale et complètent celle de la vertébrale",
+   "memo": "Cervicale ascendante : elle remonte sur le scalène antérieur, avec des rameaux jusqu'à la moelle",
+   "variantes": null,
+   "sources": [
+    "wp-cervicale-ascendante",
+    "wp-thyroidienne-inferieure"
+   ],
+   "divergences": "Rapport avec le nerf phrénique, indiqué dans la description du modèle, non retrouvé dans mes lectures"
+  },
+  {
+   "id": "artere-laryngee-inferieure",
+   "resume": "Branche de la thyroïdienne inférieure qui monte avec le nerf laryngé récurrent et nourrit les muscles et la muqueuse du larynx.",
+   "provenance": {
+    "artere": "artere-thyroidienne-inferieure",
+    "texte": "Branche de l'artère thyroïdienne inférieure"
+   },
+   "trajet": "Monte avec le nerf laryngé récurrent dans la gouttière trachéo-œsophagienne et entre dans le larynx sous le constricteur inférieur du pharynx",
+   "branches": [],
+   "terminaison": "Se distribue aux muscles et à la muqueuse du larynx",
+   "territoire": {
+    "texte": "Muscles et muqueuse du larynx",
+    "structures": [
+     "constricteur-inferieur-du-pharynx"
+    ]
+   },
+   "rapports": "Avec le nerf laryngé récurrent, qui passe le plus souvent derrière l'artère mère",
+   "pouls": null,
+   "anastomoses": "Avec l'artère du côté opposé et avec l'artère laryngée supérieure",
+   "clinique": "Le nerf laryngé récurrent est exposé quand on lie la thyroïdienne inférieure : risque de dysphonie",
+   "memo": "Laryngée inférieure : elle monte avec le nerf récurrent jusqu'au larynx",
+   "variantes": "Le nerf passe le plus souvent derrière l'artère, parfois devant",
+   "sources": [
+    "wp-thyroidienne-inferieure",
+    "wp-laryngee-superieure"
+   ],
+   "divergences": "La description du modèle place l'entrée derrière l'articulation crico-thyroïdienne, Wikipédia sous le constricteur inférieur : versions compatibles, la seconde est retenue"
+  },
+  {
+   "id": "artere-laryngee-superieure",
+   "resume": "Branche de la thyroïdienne supérieure qui traverse la membrane thyro-hyoïdienne avec le nerf laryngé interne pour nourrir le larynx.",
+   "provenance": {
+    "artere": "artere-thyroidienne-superieure",
+    "texte": "Branche de l'artère thyroïdienne supérieure, près de son origine"
+   },
+   "trajet": "Court sous le thyro-hyoïdien avec le rameau interne du nerf laryngé supérieur et perce la membrane thyro-hyoïdienne latérale pour entrer dans le larynx",
+   "branches": [],
+   "terminaison": "Se distribue à la muqueuse, aux glandes et aux muscles du larynx",
+   "territoire": {
+    "texte": "Muqueuse, glandes et muscles du larynx",
+    "structures": [
+     "cartilage-thyroide"
+    ]
+   },
+   "rapports": "Avec le rameau interne du nerf laryngé supérieur, à travers la membrane thyro-hyoïdienne",
+   "pouls": null,
+   "anastomoses": "Avec l'artère du côté opposé et la laryngée inférieure",
+   "clinique": "Elle perce la membrane thyro-hyoïdienne avec le nerf laryngé interne : les deux forment le pédicule supérieur du larynx",
+   "memo": "Laryngée supérieure : elle traverse la membrane thyro-hyoïdienne en compagnie du nerf laryngé interne",
+   "variantes": null,
+   "sources": [
+    "wp-laryngee-superieure",
+    "gray1918",
+    "wp-thyroidienne-superieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-thyroidienne-superieure",
+   "resume": "La première branche de la carotide externe : elle descend vers le pôle supérieur de la glande thyroïde.",
+   "provenance": {
+    "artere": "carotide-externe",
+    "texte": "Première branche antérieure de la carotide externe, juste sous la grande corne de l'hyoïde"
+   },
+   "trajet": "Monte brièvement dans le trigone carotidien puis se courbe vers le bas, sous les muscles omo-hyoïdien, sterno-hyoïdien et sterno-thyroïdien, jusqu'au pôle supérieur du lobe thyroïdien",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameau infrahyoïdien"
+    },
+    {
+     "artere": null,
+     "texte": "Rameau sterno-cléido-mastoïdien"
+    },
+    {
+     "artere": "artere-laryngee-superieure",
+     "texte": "Artère laryngée supérieure"
+    },
+    {
+     "artere": null,
+     "texte": "Rameau crico-thyroïdien"
+    },
+    {
+     "artere": null,
+     "texte": "Rameaux glandulaires antérieur et postérieur"
+    }
+   ],
+   "terminaison": "Se termine en deux rameaux glandulaires, l'un sur la face antérieure et l'isthme, l'autre sur la face postérieure de la glande",
+   "territoire": {
+    "texte": "Glande thyroïde, larynx par la laryngée supérieure, muscles infrahyoïdiens et sterno-cléido-mastoïdien",
+    "structures": [
+     "glande-thyroide",
+     "sterno-cleido-mastoidien",
+     "sterno-thyroidien"
+    ]
+   },
+   "rapports": "Le rameau externe du nerf laryngé supérieur la longe, près du pôle supérieur de la thyroïde",
+   "pouls": null,
+   "anastomoses": "Avec l'artère du côté opposé (sur l'isthme), avec la thyroïdienne inférieure, et par les rameaux laryngés",
+   "clinique": "On la lie au contact de la glande lors d'une thyroïdectomie, pour épargner le rameau externe du nerf laryngé supérieur, voisin",
+   "memo": "Thyroïdienne supérieure : la première de la carotide externe, pour le pôle supérieur de la thyroïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-thyroidienne-superieure",
+    "wp-carotide-externe"
+   ],
+   "divergences": null
+  }
+ ]
+}

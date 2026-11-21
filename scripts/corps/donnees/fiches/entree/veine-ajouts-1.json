@@ -1,0 +1,644 @@
+{
+ "lot": "veine-ajouts-1",
+ "couche": "veine",
+ "structures": [
+  {
+   "id": "grande-veine-cerebrale",
+   "nom": "Grande veine cérébrale",
+   "latin": "Vena magna cerebri",
+   "anglais": "Great cerebral vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Grande veine cérébrale",
+   "ta2": "4922",
+   "connu": {
+    "description_du_trace": "Veine de Galien : très courte, née de la réunion des deux veines cérébrales internes sous le splénium du corps calleux, elle se jette avec le sinus sagittal inférieur dans le sinus droit.",
+    "appui_dans_le_modele": {
+     "id": "sinus-droit",
+     "nom": "Sinus droit"
+    }
+   }
+  },
+  {
+   "id": "sinus-marginal",
+   "nom": "Sinus marginal",
+   "latin": "Sinus marginalis",
+   "anglais": "Marginal sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus marginal",
+   "ta2": "4848",
+   "connu": {
+    "description_du_trace": "Petit sinus de la dure-mère qui entoure le foramen magnum dans son bord ; il relie le sinus occipital au sinus sigmoïde et au plexus basilaire.",
+    "appui_dans_le_modele": {
+     "id": "sinus-sigmoide",
+     "nom": "Sinus sigmoïde"
+    }
+   }
+  },
+  {
+   "id": "sinus-petrosquameux",
+   "nom": "Sinus pétrosquameux",
+   "latin": "Sinus petrosquamosus",
+   "anglais": "Petrosquamous sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus pétrosquameux",
+   "ta2": "4851",
+   "connu": {
+    "description_du_trace": "Petit sinus de la dure-mère qui suit la suture pétro-squameuse, à la face interne du temporal, et se jette dans le sinus transverse.",
+    "appui_dans_le_modele": {
+     "id": "sinus-transverse",
+     "nom": "Sinus transverse"
+    }
+   }
+  },
+  {
+   "id": "sinus-sphenoparietal",
+   "nom": "Sinus sphénopariétal",
+   "latin": "Sinus sphenoparietalis",
+   "anglais": "Sphenoparietal sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus sphénopariétal",
+   "ta2": "4861",
+   "connu": {
+    "description_du_trace": "Il longe le bord postérieur de la petite aile du sphénoïde, reçoit les veines méningées et la veine cérébrale moyenne superficielle, et se jette dans la partie antérieure du sinus caverneux.",
+    "appui_dans_le_modele": {
+     "id": "sinus-caverneux",
+     "nom": "Sinus caverneux"
+    }
+   }
+  },
+  {
+   "id": "veine-anastomotique-inferieure",
+   "nom": "Veine anastomotique inférieure",
+   "latin": "Vena anastomotica inferior",
+   "anglais": "Inferior anastomotic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine anastomotique inférieure",
+   "ta2": "4910",
+   "connu": {
+    "description_du_trace": "Veine de Labbé : elle relie la veine cérébrale moyenne superficielle au sinus transverse à travers le lobe temporal.",
+    "appui_dans_le_modele": {
+     "id": "sinus-transverse",
+     "nom": "Sinus transverse"
+    }
+   }
+  },
+  {
+   "id": "veine-anastomotique-superieure",
+   "nom": "Veine anastomotique supérieure",
+   "latin": "Vena anastomotica superior",
+   "anglais": "Superior anastomotic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine anastomotique supérieure",
+   "ta2": "4909",
+   "connu": {
+    "description_du_trace": "Veine de Trolard : elle relie la veine cérébrale moyenne superficielle au sinus sagittal supérieur en passant sur la convexité, devant le sillon postcentral.",
+    "appui_dans_le_modele": {
+     "id": "sinus-sagittal-superieur",
+     "nom": "Sinus sagittal supérieur"
+    }
+   }
+  },
+  {
+   "id": "veine-basale",
+   "nom": "Veine basale",
+   "latin": "Vena basalis",
+   "anglais": "Basal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine basale",
+   "ta2": "4916",
+   "connu": {
+    "description_du_trace": "Veine de Rosenthal : née près de la substance perforée antérieure, elle contourne le pédoncule cérébral et rejoint la grande veine cérébrale.",
+    "appui_dans_le_modele": {
+     "id": "glande-pineale",
+     "nom": "Glande pinéale"
+    }
+   }
+  },
+  {
+   "id": "veine-choroide-inferieure",
+   "nom": "Veine choroïde inférieure",
+   "latin": "Vena chorioidea inferior",
+   "anglais": "Inferior choroidal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine choroïde inférieure",
+   "ta2": "4921",
+   "connu": {
+    "description_du_trace": "Elle draine le plexus choroïde de la corne temporale du ventricule latéral et l'hippocampe, puis se jette dans la veine basale.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "veine-choroide-superieure",
+   "nom": "Veine choroïde supérieure",
+   "latin": "Vena chorioidea superior",
+   "anglais": "Superior choroid vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine choroïde supérieure",
+   "ta2": "4924",
+   "connu": {
+    "description_du_trace": "Elle longe le plexus choroïde du ventricule latéral et se jette dans la veine cérébrale interne au foramen interventriculaire.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "veine-cerebrale-anterieure",
+   "nom": "Veine cérébrale antérieure",
+   "latin": "Vena anterior cerebri",
+   "anglais": "Anterior cerebral vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine cérébrale antérieure",
+   "ta2": "4917",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère cérébrale antérieure, draine la face médiale du lobe frontal et le genou du corps calleux et se jette dans la veine basale.",
+    "appui_dans_le_modele": {
+     "id": "artere-cerebrale-anterieure",
+     "nom": "Artère cérébrale antérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-cerebrale-interne",
+   "nom": "Veine cérébrale interne",
+   "latin": "Vena interna cerebri",
+   "anglais": "Internal cerebral vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine cérébrale interne",
+   "ta2": "4923",
+   "connu": {
+    "description_du_trace": "Elle court dans le toit du troisième ventricule, de part et d'autre de la ligne médiane, depuis le foramen interventriculaire jusqu'au-dessous du splénium où les deux veines forment la grande veine cérébrale.",
+    "appui_dans_le_modele": {
+     "id": "glande-pineale",
+     "nom": "Glande pinéale"
+    }
+   }
+  },
+  {
+   "id": "veine-cerebrale-moyenne-profonde",
+   "nom": "Veine cérébrale moyenne profonde",
+   "latin": "Vena media profunda cerebri",
+   "anglais": "Deep middle cerebral vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine cérébrale moyenne profonde",
+   "ta2": "4918",
+   "connu": {
+    "description_du_trace": "Elle chemine dans la profondeur du sillon latéral, sur l'insula, puis rejoint la veine basale à la base du cerveau.",
+    "appui_dans_le_modele": {
+     "id": "artere-cerebrale-anterieure",
+     "nom": "Artère cérébrale antérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-cerebrale-moyenne-superficielle",
+   "nom": "Veine cérébrale moyenne superficielle",
+   "latin": "Vena media superficialis cerebri",
+   "anglais": "Superficial middle cerebral vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine cérébrale moyenne superficielle",
+   "ta2": "4908",
+   "connu": {
+    "description_du_trace": "Elle longe le sillon latéral sur la face externe de l'hémisphère, de l'arrière vers l'avant, contourne le pôle temporal et se jette dans le sinus caverneux ou le sinus sphéno-pariétal.",
+    "appui_dans_le_modele": {
+     "id": "sinus-caverneux",
+     "nom": "Sinus caverneux"
+    }
+   }
+  },
+  {
+   "id": "veine-diploique-frontale",
+   "nom": "Veine diploïque frontale",
+   "latin": "Vena diploica frontalis",
+   "anglais": "Frontal diploic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine diploïque frontale",
+   "ta2": "4868",
+   "connu": {
+    "description_du_trace": "Veine du diploé de l'os frontal qui descend vers l'incisure supra-orbitaire et se jette dans la veine supra-orbitaire.",
+    "appui_dans_le_modele": {
+     "id": "artere-supra-orbitaire",
+     "nom": "Artère supra-orbitaire"
+    }
+   }
+  },
+  {
+   "id": "veine-diploique-occipitale",
+   "nom": "Veine diploïque occipitale",
+   "latin": "Vena diploica occipitalis",
+   "anglais": "Occipital diploic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine diploïque occipitale",
+   "ta2": "4871",
+   "connu": {
+    "description_du_trace": "Veine du diploé de l'os occipital qui se jette dans le sinus transverse près du sinus sigmoïde ou dans la veine occipitale.",
+    "appui_dans_le_modele": {
+     "id": "sinus-transverse",
+     "nom": "Sinus transverse"
+    }
+   }
+  },
+  {
+   "id": "veine-diploique-temporale-anterieure",
+   "nom": "Veine diploïque temporale antérieure",
+   "latin": "Vena diploica temporalis anterior",
+   "anglais": "Anterior temporal diploic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine diploïque temporale antérieure",
+   "ta2": "4869",
+   "connu": {
+    "description_du_trace": "Veine du diploé de la région frontale latérale et pariétale antérieure ; elle descend vers le ptérion et se jette dans le sinus sphéno-pariétal ou dans une veine temporale profonde.",
+    "appui_dans_le_modele": {
+     "id": "sphenoide",
+     "nom": "Sphénoïde"
+    }
+   }
+  },
+  {
+   "id": "veine-diploique-temporale-posterieure",
+   "nom": "Veine diploïque temporale postérieure",
+   "latin": "Vena diploica temporalis posterior",
+   "anglais": "Posterior temporal diploic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine diploïque temporale postérieure",
+   "ta2": "4870",
+   "connu": {
+    "description_du_trace": "Veine du diploé de l'os pariétal postérieur ; elle gagne l'angle mastoïdien du pariétal et se jette dans le sinus transverse.",
+    "appui_dans_le_modele": {
+     "id": "sinus-transverse",
+     "nom": "Sinus transverse"
+    }
+   }
+  },
+  {
+   "id": "veine-ethmoidale-posterieure",
+   "nom": "Veine ethmoidale postérieure",
+   "latin": "Vena ethmoidea posterior",
+   "anglais": "Posterior ethmoidal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine ethmoidale postérieure",
+   "ta2": "4890",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère ethmoïdale postérieure et draine les cellules ethmoïdales postérieures vers la veine ophtalmique supérieure."
+   }
+  },
+  {
+   "id": "veine-ethmoidale-anterieure",
+   "nom": "Veine ethmoïdale antérieure",
+   "latin": "Vena ethmoidea anterior",
+   "anglais": "Anterior ethmoidal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine ethmoïdale antérieure",
+   "ta2": "4889",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère ethmoïdale antérieure et draine les cellules ethmoïdales antérieures et la muqueuse nasale vers la veine ophtalmique supérieure."
+   }
+  },
+  {
+   "id": "veine-faciale-profonde",
+   "nom": "Veine faciale profonde",
+   "latin": "Vena facialis profunda",
+   "anglais": "Deep facial vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine faciale profonde",
+   "ta2": "4826",
+   "connu": {
+    "description_du_trace": "Elle relie le plexus ptérygoïdien à la veine faciale en passant sur le buccinateur et la face latérale du maxillaire.",
+    "appui_dans_le_modele": {
+     "id": "veine-faciale",
+     "nom": "Veine faciale"
+    }
+   }
+  },
+  {
+   "id": "veine-frontopolaire",
+   "nom": "Veine frontopolaire",
+   "latin": "Vena frontopolaris",
+   "anglais": "Frontopolar vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine frontopolaire",
+   "ta2": "4904",
+   "connu": {
+    "description_du_trace": "Elle draine le pôle frontal et se jette dans la partie antérieure du sinus sagittal supérieur.",
+    "appui_dans_le_modele": {
+     "id": "sinus-sagittal-superieur",
+     "nom": "Sinus sagittal supérieur"
+    }
+   }
+  },
+  {
+   "id": "veine-inferieure-du-vermis",
+   "nom": "Veine inférieure du vermis",
+   "latin": "Vena inferior vermis",
+   "anglais": "Inferior vein of vermis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine inférieure du vermis",
+   "ta2": "4937",
+   "connu": {
+    "description_du_trace": "Elle draine le vermis inférieur et se jette dans le sinus droit, le sinus transverse ou le sinus occipital.",
+    "appui_dans_le_modele": {
+     "id": "sinus-occipital",
+     "nom": "Sinus occipital"
+    }
+   }
+  },
+  {
+   "id": "veine-lacrymale",
+   "nom": "Veine lacrymale",
+   "latin": "Vena lacrimalis",
+   "anglais": "Lacrimal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine lacrymale",
+   "ta2": "4891",
+   "connu": {
+    "description_du_trace": "Elle naît de la glande lacrymale, longe le bord supérieur du muscle droit latéral et se jette dans la veine ophtalmique supérieure.",
+    "appui_dans_le_modele": {
+     "id": "veine-ophtalmique-superieure",
+     "nom": "Veine ophtalmique supérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-linguale-profonde",
+   "nom": "Veine linguale profonde",
+   "latin": "Vena profunda linguae",
+   "anglais": "Deep lingual vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine linguale profonde",
+   "ta2": "4811",
+   "connu": {
+    "description_du_trace": "Elle naît de la pointe de la langue, court sous la muqueuse de la face inférieure, de part et d'autre du frein, et se termine dans la veine linguale en arrière.",
+    "appui_dans_le_modele": {
+     "id": "veine-linguale",
+     "nom": "Veine linguale"
+    }
+   }
+  },
+  {
+   "id": "veine-nasofrontale",
+   "nom": "Veine nasofrontale",
+   "latin": "Vena nasofrontalis",
+   "anglais": "Nasofrontal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine nasofrontale",
+   "ta2": "4888",
+   "connu": {
+    "description_du_trace": "Elle relie la veine supratrochléaire (région frontale) à la veine ophtalmique supérieure à l'angle médial de l'orbite, faisant communiquer le système facial et le sinus caverneux.",
+    "appui_dans_le_modele": {
+     "id": "veine-ophtalmique-superieure",
+     "nom": "Veine ophtalmique supérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-palatine-externe",
+   "nom": "Veine palatine externe",
+   "latin": "Vena palatina externa",
+   "anglais": "External palatine vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine palatine externe",
+   "ta2": "4828",
+   "connu": {
+    "description_du_trace": "Elle quitte le voile du palais, passe près de l'amygdale palatine et se jette dans la veine faciale.",
+    "appui_dans_le_modele": {
+     "id": "veine-faciale",
+     "nom": "Veine faciale"
+    }
+   }
+  },
+  {
+   "id": "veine-pontomesencephalique",
+   "nom": "Veine pontomésencéphalique",
+   "latin": "Vena pontomesencephalica",
+   "anglais": "Pontomesencephalic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine pontomésencéphalique",
+   "ta2": "4930",
+   "connu": {
+    "description_du_trace": "Elle passe sur la face antérieure de la jonction pont-mésencéphale et relie les veines du pont à la veine basale.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "veine-posterieure-du-corps-calleux",
+   "nom": "Veine postérieure du corps calleux",
+   "latin": "Vena posterior corporis callosi",
+   "anglais": "Posterior vein of corpus callosum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine postérieure du corps calleux",
+   "ta2": "4928",
+   "connu": {
+    "description_du_trace": "Elle contourne le splénium du corps calleux d'arrière en avant et se jette dans la grande veine cérébrale ou la veine cérébrale interne.",
+    "appui_dans_le_modele": {
+     "id": "glande-pineale",
+     "nom": "Glande pinéale"
+    }
+   }
+  },
+  {
+   "id": "veine-precentrale-cerebelleuse",
+   "nom": "Veine précentrale cérébelleuse",
+   "latin": "Vena precentralis cerebelli",
+   "anglais": "Precentral cerebellar vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine précentrale cérébelleuse",
+   "ta2": "4940",
+   "connu": {
+    "description_du_trace": "Elle naît dans le sillon entre la lingula et le lobule central du vermis et se jette dans la grande veine cérébrale.",
+    "appui_dans_le_modele": {
+     "id": "glande-pineale",
+     "nom": "Glande pinéale"
+    }
+   }
+  },
+  {
+   "id": "veine-petreuse",
+   "nom": "Veine pétreuse",
+   "latin": "Vena petrosa",
+   "anglais": "Petrosal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine pétreuse",
+   "ta2": "4941",
+   "connu": {
+    "description_du_trace": "Veine de Dandy : elle rassemble les veines du cervelet et du pont dans l'angle pontocérébelleux et se jette dans le sinus pétreux supérieur.",
+    "appui_dans_le_modele": {
+     "id": "sinus-petreux-superieur",
+     "nom": "Sinus pétreux supérieur"
+    }
+   }
+  },
+  {
+   "id": "veine-petreuse-superficielle",
+   "nom": "Veine pétreuse superficielle",
+   "latin": "Vena petrosa superficialis",
+   "anglais": "Superficial petrosal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine pétreuse superficielle",
+   "ta2": "4882",
+   "connu": {
+    "description_du_trace": "Petite veine de la face supérieure du rocher qui rejoint le sinus pétreux supérieur.",
+    "appui_dans_le_modele": {
+     "id": "sinus-petreux-superieur",
+     "nom": "Sinus pétreux supérieur"
+    }
+   }
+  },
+  {
+   "id": "veine-sphenoidienne",
+   "nom": "Veine sphénoïdienne",
+   "latin": "Vena sphenoidea",
+   "anglais": "Sphenoidal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine sphénoïdienne",
+   "ta2": "4879",
+   "connu": {
+    "description_du_trace": "Veine émissaire de la base du crâne qui relie le sinus caverneux au plexus ptérygoïdien par un foramen de la grande aile du sphénoïde.",
+    "appui_dans_le_modele": {
+     "id": "veines-maxillaires",
+     "nom": "Veines maxillaires"
+    }
+   }
+  },
+  {
+   "id": "veine-stylomastoidienne",
+   "nom": "Veine stylomastoïdienne",
+   "latin": "Vena stylomastoidea",
+   "anglais": "Stylomastoid vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine stylomastoïdienne",
+   "ta2": "4844",
+   "connu": {
+    "description_du_trace": "Elle sort du canal facial par le foramen stylomastoïdien, draine l'oreille moyenne et se jette dans la veine auriculaire postérieure ou la veine rétromandibulaire.",
+    "appui_dans_le_modele": {
+     "id": "veine-auriculaire-posterieure",
+     "nom": "Veine auriculaire postérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-sublinguale",
+   "nom": "Veine sublinguale",
+   "latin": "Vena sublingualis",
+   "anglais": "Sublingual vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine sublinguale",
+   "ta2": "4810",
+   "connu": {
+    "description_du_trace": "Elle draine la glande sublinguale et le plancher de la bouche, puis rejoint la veine linguale.",
+    "appui_dans_le_modele": {
+     "id": "veine-linguale",
+     "nom": "Veine linguale"
+    }
+   }
+  },
+  {
+   "id": "veine-supra-orbitaire",
+   "nom": "Veine supra-orbitaire",
+   "latin": "Vena supraorbitalis",
+   "anglais": "Supra-orbital vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine supra-orbitaire",
+   "ta2": "4820",
+   "connu": {
+    "description_du_trace": "Elle naît sur le front, près de l'éminence frontale, descend au-dessus de l'arcade sourcilière et rejoint la veine supratrochléaire pour former la veine angulaire ; une branche passe par l'incisure supra-orbitaire vers la veine ophtalmique supérieure.",
+    "appui_dans_le_modele": {
+     "id": "veine-angulaire",
+     "nom": "Veine angulaire"
+    }
+   }
+  },
+  {
+   "id": "veine-supratrochleaire",
+   "nom": "Veine supratrochléaire",
+   "latin": "Venae supratrochleares",
+   "anglais": "Supratrochlear veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine supratrochléaire",
+   "ta2": "4819",
+   "connu": {
+    "description_du_trace": "Elles drainent le front près de la ligne médiane, descendent vers la racine du nez et s'unissent à la veine supra-orbitaire pour former la veine angulaire.",
+    "appui_dans_le_modele": {
+     "id": "veine-angulaire",
+     "nom": "Veine angulaire"
+    }
+   }
+  },
+  {
+   "id": "veine-superieure-du-vermis",
+   "nom": "Veine supérieure du vermis",
+   "latin": "Vena superior vermis",
+   "anglais": "Superior vein of vermis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine supérieure du vermis",
+   "ta2": "4936",
+   "connu": {
+    "description_du_trace": "Elle draine le vermis supérieur et se jette dans le sinus droit (ou la grande veine cérébrale).",
+    "appui_dans_le_modele": {
+     "id": "sinus-droit",
+     "nom": "Sinus droit"
+    }
+   }
+  },
+  {
+   "id": "veine-temporale-moyenne",
+   "nom": "Veine temporale moyenne",
+   "latin": "Vena temporalis media",
+   "anglais": "Middle temporal vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine temporale moyenne",
+   "ta2": "4833",
+   "connu": {
+    "description_du_trace": "Née près de l'angle latéral de l'orbite, elle traverse le muscle temporal et son fascia, puis se jette dans la veine temporale superficielle au-dessus de l'arcade zygomatique.",
+    "appui_dans_le_modele": {
+     "id": "veines-temporales-superficielles",
+     "nom": "Veines temporales superficielles"
+    }
+   }
+  }
+ ]
+}

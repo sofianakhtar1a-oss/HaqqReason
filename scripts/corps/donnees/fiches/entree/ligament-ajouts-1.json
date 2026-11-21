@@ -1,0 +1,452 @@
+{
+ "lot": "ligament-ajouts-1",
+ "couche": "ligament",
+ "structures": [
+  {
+   "id": "ligament-apical-de-la-dent",
+   "nom": "Ligament apical de la dent",
+   "latin": "Ligamentum apicis dentis",
+   "anglais": "Apical ligament of dens",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament apical de la dent",
+   "ta2": "1697",
+   "connu": {
+    "description_du_trace": "Mince cordon médian qui va du sommet de la dent de l'axis au bord antérieur du foramen magnum (basion) ; vestige de la corde dorsale."
+   }
+  },
+  {
+   "id": "ligament-atlanto-occipital-lateral",
+   "nom": "Ligament atlanto-occipital latéral",
+   "latin": "Ligamentum atlantooccipitale laterale",
+   "anglais": "Lateral atlanto-occipital ligament",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament atlanto-occipital latéral",
+   "ta2": "1634",
+   "connu": {
+    "description_du_trace": "Court ligament qui relie le processus transverse de l'atlas au processus jugulaire de l'os occipital ; il renforce la capsule de l'articulation atlanto-occipitale en dehors."
+   }
+  },
+  {
+   "id": "ligament-atlantodental-anterieur",
+   "nom": "Ligament atlantodental antérieur",
+   "latin": "Ligamentum atlantodentale anterius",
+   "anglais": "Anterior atlantodental ligament",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament atlantodental antérieur",
+   "ta2": "1698",
+   "connu": {
+    "description_du_trace": "Court faisceau qui attache la face antérieure de la dent de l'axis au bord inférieur de l'arc antérieur de l'atlas."
+   }
+  },
+  {
+   "id": "ligament-auriculaire-anterieur",
+   "nom": "Ligament auriculaire antérieur",
+   "latin": "Ligamentum auriculare anterius",
+   "anglais": "Anterior ligament of auricle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament auriculaire antérieur",
+   "ta2": "1571",
+   "connu": {
+    "description_du_trace": "Ruban fibreux qui fixe l'hélix et le tragus à la racine de l'arc zygomatique ; il maintient le pavillon contre le crâne en avant."
+   }
+  },
+  {
+   "id": "ligament-auriculaire-posterieur",
+   "nom": "Ligament auriculaire postérieur",
+   "latin": "Ligamentum auriculare posterius",
+   "anglais": "Posterior ligament of auricle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament auriculaire postérieur",
+   "ta2": "1573",
+   "connu": {
+    "description_du_trace": "Ruban fibreux tendu de la convexité de la conque à la face latérale du processus mastoïde ; il retient le pavillon en arrière."
+   }
+  },
+  {
+   "id": "ligament-auriculaire-superieur",
+   "nom": "Ligament auriculaire supérieur",
+   "latin": "Ligamentum auriculare superius",
+   "anglais": "Superior ligament of auricle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament auriculaire supérieur",
+   "ta2": "1572",
+   "connu": {
+    "description_du_trace": "Ruban fibreux qui relie le haut de l'hélix à l'aponévrose temporale, au-dessus du conduit acoustique externe ; il suspend le pavillon."
+   }
+  },
+  {
+   "id": "ligament-cruciforme",
+   "nom": "Ligament cruciforme",
+   "latin": "Ligamentum cruciforme",
+   "anglais": "Cruciform ligament",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament cruciforme",
+   "ta2": "1699",
+   "connu": {
+    "description_du_trace": "Croix fibreuse placée derrière la dent de l'axis : son bras vertical, en haut vers le basion et en bas vers le corps de l'axis, croise le ligament transverse de l'atlas qui en forme le bras horizontal."
+   }
+  },
+  {
+   "id": "ligament-temporomandibulaire-medial",
+   "nom": "Ligament temporomandibulaire médial",
+   "latin": "Ligamentum temporomandibulare mediale",
+   "anglais": "Medial temporomandibular ligament",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament temporomandibulaire médial",
+   "ta2": "1625",
+   "connu": {
+    "description_du_trace": "Renforcement de la face médiale de la capsule de l'articulation temporo-mandibulaire, tendu de la région de l'épine du sphénoïde au col du condyle de la mandibule."
+   }
+  },
+  {
+   "id": "ligament-transverse-de-l-atlas",
+   "nom": "Ligament transverse de l'atlas",
+   "latin": "Ligamentum transversum atlantis",
+   "anglais": "Transverse ligament of atlas",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament transverse de l'atlas",
+   "ta2": "1703",
+   "connu": {
+    "description_du_trace": "Robuste bande horizontale tendue entre les tubercules médiaux des masses latérales de l'atlas ; elle plaque la dent de l'axis contre l'arc antérieur et empêche son recul vers la moelle."
+   }
+  },
+  {
+   "id": "ligaments-alaires",
+   "nom": "Ligaments alaires",
+   "latin": "Ligamenta alaria",
+   "anglais": "Alar ligaments",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligaments alaires",
+   "ta2": "1695",
+   "connu": {
+    "description_du_trace": "Deux cordons obliques tendus des faces latérales du sommet de la dent de l'axis au bord médial des condyles de l'occipital ; ils limitent la rotation et l'inclinaison de la tête."
+   }
+  },
+  {
+   "id": "ligaments-auriculaires",
+   "nom": "Ligaments auriculaires",
+   "latin": "Ligamenta auricularia",
+   "anglais": "Ligaments of auricle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligaments auriculaires",
+   "ta2": "1570",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-auriculaire-anterieur",
+      "nom": "Ligament auriculaire antérieur"
+     },
+     {
+      "id": "ligament-auriculaire-superieur",
+      "nom": "Ligament auriculaire supérieur"
+     },
+     {
+      "id": "ligament-auriculaire-posterieur",
+      "nom": "Ligament auriculaire postérieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligament-crico-arytenoide",
+   "nom": "Ligament crico-aryténoïde",
+   "latin": "Ligamentum cricoarytenoideum",
+   "anglais": "Crico-arytenoid ligament",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ligament crico-aryténoïde",
+   "ta2": "1668",
+   "connu": {
+    "description_du_trace": "Ligament postérieur de l'articulation crico-aryténoïdienne : il relie la base de l'aryténoïde au bord supérieur de la lame du cricoïde."
+   }
+  },
+  {
+   "id": "ligament-cricotracheal",
+   "nom": "Ligament cricotrachéal",
+   "latin": "Ligamentum cricotracheale",
+   "anglais": "Cricotracheal ligament",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ligament cricotrachéal",
+   "ta2": "1663",
+   "connu": {
+    "description_du_trace": "Membrane fibreuse qui unit le bord inférieur du cartilage cricoïde au premier anneau de la trachée."
+   }
+  },
+  {
+   "id": "ligament-ceratocricoide",
+   "nom": "Ligament cératocricoïde",
+   "latin": "Ligamentum ceratocricoideum",
+   "anglais": "Ceratocricoid ligament",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ligament cératocricoïde",
+   "ta2": "1666",
+   "connu": {
+    "description_du_trace": "Petit ligament qui tend de la corne inférieure du cartilage thyroïde à la face postérieure du cricoïde, au voisinage de l'articulation cricothyroïdienne."
+   }
+  },
+  {
+   "id": "ligament-hyo-epiglottique",
+   "nom": "Ligament hyo-épiglottique",
+   "latin": "Ligamentum hyoepiglotticum",
+   "anglais": "Hyo-epiglottic ligament",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ligament hyo-épiglottique",
+   "ta2": "1656",
+   "connu": {
+    "description_du_trace": "Bande élastique médiane qui relie la face antérieure de l'épiglotte au bord supérieur du corps de l'os hyoïde."
+   }
+  },
+  {
+   "id": "ligament-thyro-epiglottique",
+   "nom": "Ligament thyro-épiglottique",
+   "latin": "Ligamentum thyreoepiglotticum",
+   "anglais": "Thyro-epiglottic ligament",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ligament thyro-épiglottique",
+   "ta2": "1655",
+   "connu": {
+    "description_du_trace": "Court ligament médian qui attache la tige de l'épiglotte à la face interne du cartilage thyroïde, sous l'incisure thyroïdienne."
+   }
+  },
+  {
+   "id": "ligament-vestibulaire",
+   "nom": "Ligament vestibulaire",
+   "latin": "Ligamentum vestibulare",
+   "anglais": "Vestibular ligament",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ligament vestibulaire",
+   "ta2": "1659",
+   "connu": {
+    "description_du_trace": "Bord libre fibreux de la membrane quadrangulaire : de l'angle du cartilage thyroïde à la face antérolatérale de l'aryténoïde, il soutient le pli vestibulaire (fausse corde vocale)."
+   }
+  },
+  {
+   "id": "ligament-vocal",
+   "nom": "Ligament vocal",
+   "latin": "Ligamentum vocale",
+   "anglais": "Vocal ligament",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ligament vocal",
+   "ta2": "1661",
+   "connu": {
+    "description_du_trace": "Bord supérieur épaissi du cône élastique : de l'angle du cartilage thyroïde au processus vocal de l'aryténoïde, il forme l'ossature du pli vocal (corde vocale)."
+   }
+  },
+  {
+   "id": "ligament-costotransversaire-inferieur",
+   "nom": "Ligament costotransversaire inférieur",
+   "latin": "Ligamentum costotransversarium laterale",
+   "anglais": "Lateral costotransverse ligament",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Ligament costotransversaire inférieur",
+   "ta2": "1727",
+   "connu": {
+    "description_du_trace": "Ligament court qui joint le sommet du processus transverse à la partie non articulaire du tubercule de la côte correspondante (ici la sixième) ; il renforce l'articulation costo-transversaire en dehors."
+   }
+  },
+  {
+   "id": "ligament-costotransversaire-superieur",
+   "nom": "Ligament costotransversaire supérieur",
+   "latin": "Ligamentum costotransversarium superius",
+   "anglais": "Superior costotransverse ligament",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Ligament costotransversaire supérieur",
+   "ta2": "1726",
+   "connu": {
+    "description_du_trace": "Ligament qui monte de la crête du col d'une côte (ici la sixième) au processus transverse de la vertèbre sus-jacente ; il existe à chaque articulation costo-vertébrale."
+   }
+  },
+  {
+   "id": "ligament-radie-sternochondral",
+   "nom": "Ligament radié sternochondral",
+   "latin": "Ligamenta sternochondralia radiata",
+   "anglais": "Radiate sternochondral ligament",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Ligament radié sternochondral",
+   "ta2": "1732",
+   "connu": {
+    "description_du_trace": "Faisceaux en éventail sur la face antérieure de l'articulation sternocostale (ici celle du quatrième cartilage), qui rayonnent du cartilage costal vers le sternum."
+   }
+  },
+  {
+   "id": "ligament-sternochondral-intra-articulaire",
+   "nom": "Ligament sternochondral intra-articulaire",
+   "latin": "Ligamentum sternochondrale intraarticulare",
+   "anglais": "Intra-articular sternochondral ligament",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Ligament sternochondral intra-articulaire",
+   "ta2": "1731",
+   "connu": {
+    "description_du_trace": "Lame fibreuse placée à l'intérieur de l'articulation sternocostale de la deuxième côte : elle relie le cartilage costal à l'angle du sternum et sépare la cavité articulaire en deux."
+   }
+  },
+  {
+   "id": "ligaments-xiphochondraux",
+   "nom": "Ligaments xiphochondraux",
+   "latin": "Ligamenta xiphochondralia",
+   "anglais": "Xiphichondral ligaments",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Ligaments xiphochondraux",
+   "ta2": "1734",
+   "connu": {
+    "description_du_trace": "Bandelettes fibreuses qui unissent la face antérieure du processus xiphoïde au cartilage de la septième côte."
+   }
+  },
+  {
+   "id": "ligament-lombocostal",
+   "nom": "Ligament lombocostal",
+   "latin": "Ligamentum lumbocostale",
+   "anglais": "Lumbocostal ligament",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Ligament lombocostal",
+   "ta2": "1728",
+   "connu": {
+    "description_du_trace": "Bande fibreuse qui unit le sommet du processus transverse de la première vertèbre lombaire au bord inférieur de la douzième côte ; il limite l'écartement de cette côte."
+   }
+  },
+  {
+   "id": "ligaments-interchondraux",
+   "nom": "Ligaments interchondraux",
+   "latin": "Ligamenta interchondralia",
+   "anglais": "Interchondral ligaments",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Ligaments interchondraux",
+   "ta2": "1736",
+   "connu": {
+    "description_du_trace": "Ligaments qui unissent les bords adjacents des cartilages costaux 6 à 10 (articulations interchondrales), le long de l'arc costal."
+   }
+  },
+  {
+   "id": "disque-intervertebral",
+   "nom": "Disque intervertébral",
+   "latin": "Discus intervertebralis",
+   "anglais": "Intervertebral disc",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Disque intervertébral",
+   "ta2": "1684",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "disque-intervertebral-c2-c3",
+      "nom": "Disque intervertébral C2-C3"
+     },
+     {
+      "id": "disque-intervertebral-c3-c4",
+      "nom": "Disque intervertébral C3-C4"
+     },
+     {
+      "id": "disque-intervertebral-c4-c5",
+      "nom": "Disque intervertébral C4-C5"
+     },
+     {
+      "id": "disque-intervertebral-c5-c6",
+      "nom": "Disque intervertébral C5-C6"
+     },
+     {
+      "id": "disque-intervertebral-c6-c7",
+      "nom": "Disque intervertébral C6-C7"
+     },
+     {
+      "id": "disque-intervertebral-c7-t1",
+      "nom": "Disque intervertébral C7-T1"
+     },
+     {
+      "id": "disque-intervertebral-l1-l2",
+      "nom": "Disque intervertébral L1-L2"
+     },
+     {
+      "id": "disque-intervertebral-l2-l3",
+      "nom": "Disque intervertébral L2-L3"
+     },
+     {
+      "id": "disque-intervertebral-l3-l4",
+      "nom": "Disque intervertébral L3-L4"
+     },
+     {
+      "id": "disque-intervertebral-l4-l5",
+      "nom": "Disque intervertébral L4-L5"
+     },
+     {
+      "id": "disque-intervertebral-l5-s1",
+      "nom": "Disque intervertébral L5-S1"
+     },
+     {
+      "id": "disque-intervertebral-t1-t2",
+      "nom": "Disque intervertébral T1-T2"
+     },
+     {
+      "id": "disque-intervertebral-t10-t11",
+      "nom": "Disque intervertébral T10-T11"
+     },
+     {
+      "id": "disque-intervertebral-t11-t12",
+      "nom": "Disque intervertébral T11-T12"
+     },
+     {
+      "id": "disque-intervertebral-t12-l1",
+      "nom": "Disque intervertébral T12-L1"
+     },
+     {
+      "id": "disque-intervertebral-t2-t3",
+      "nom": "Disque intervertébral T2-T3"
+     },
+     {
+      "id": "disque-intervertebral-t3-t4",
+      "nom": "Disque intervertébral T3-T4"
+     },
+     {
+      "id": "disque-intervertebral-t4-t5",
+      "nom": "Disque intervertébral T4-T5"
+     },
+     {
+      "id": "disque-intervertebral-t5-t6",
+      "nom": "Disque intervertébral T5-T6"
+     },
+     {
+      "id": "disque-intervertebral-t6-t7",
+      "nom": "Disque intervertébral T6-T7"
+     },
+     {
+      "id": "disque-intervertebral-t7-t8",
+      "nom": "Disque intervertébral T7-T8"
+     },
+     {
+      "id": "disque-intervertebral-t8-t9",
+      "nom": "Disque intervertébral T8-T9"
+     },
+     {
+      "id": "disque-intervertebral-t9-t10",
+      "nom": "Disque intervertébral T9-T10"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,1275 @@
+{
+ "sources": {
+  "wp-cerebellar-nuclei": {
+   "titre": "Wikipédia (anglais), Cerebellar nuclei / Deep cerebellar nuclei",
+   "url": "https://en.wikipedia.org/wiki/Deep_cerebellar_nuclei"
+  },
+  "wp-fastigial": {
+   "titre": "Wikipédia (anglais), Fastigial nucleus",
+   "url": "https://en.wikipedia.org/wiki/Fastigial_nucleus"
+  },
+  "tma-cervelet": {
+   "titre": "TeachMeAnatomy, The cerebellum",
+   "url": "https://teachmeanatomy.info/neuroanatomy/structures/cerebellum/"
+  },
+  "wp-gracile": {
+   "titre": "Wikipédia (anglais), Gracile nucleus",
+   "url": "https://en.wikipedia.org/wiki/Gracile_nucleus"
+  },
+  "tma-bulbe": {
+   "titre": "TeachMeAnatomy, The medulla oblongata",
+   "url": "https://teachmeanatomy.info/neuroanatomy/brainstem/medulla-oblongata/"
+  },
+  "wp-gigantocellulaire": {
+   "titre": "Wikipédia (anglais), Gigantocellular reticular nucleus",
+   "url": "https://en.wikipedia.org/wiki/Gigantocellular_reticular_nucleus"
+  },
+  "wp-formation-reticulee": {
+   "titre": "Wikipédia (anglais), Reticular formation",
+   "url": "https://en.wikipedia.org/wiki/Reticular_formation"
+  },
+  "wp-rvlm": {
+   "titre": "Wikipédia (anglais), Rostral ventrolateral medulla",
+   "url": "https://en.wikipedia.org/wiki/Rostral_ventrolateral_medulla"
+  },
+  "wp-olive-inferieure": {
+   "titre": "Wikipédia (anglais), Inferior olivary nucleus",
+   "url": "https://en.wikipedia.org/wiki/Inferior_olivary_nucleus"
+  },
+  "wp-olive": {
+   "titre": "Wikipédia (anglais), Olivary body",
+   "url": "https://en.wikipedia.org/wiki/Olivary_body"
+  },
+  "wp-habenula": {
+   "titre": "Wikipédia (anglais), Habenula",
+   "url": "https://en.wikipedia.org/wiki/Habenula"
+  },
+  "wp-interpedonculaire": {
+   "titre": "Wikipédia (anglais), Interpeduncular nucleus",
+   "url": "https://en.wikipedia.org/wiki/Interpeduncular_nucleus"
+  },
+  "wp-cajal": {
+   "titre": "Wikipédia (anglais), Interstitial nucleus of Cajal",
+   "url": "https://en.wikipedia.org/wiki/Interstitial_nucleus_of_Cajal"
+  },
+  "wp-mamillaire": {
+   "titre": "Wikipédia (anglais), Mammillary body",
+   "url": "https://en.wikipedia.org/wiki/Mammillary_body"
+  },
+  "wp-papez": {
+   "titre": "Wikipédia (anglais), Papez circuit",
+   "url": "https://en.wikipedia.org/wiki/Papez_circuit"
+  },
+  "wp-olive-superieure": {
+   "titre": "Wikipédia (anglais), Superior olivary complex",
+   "url": "https://en.wikipedia.org/wiki/Superior_olivary_complex"
+  },
+  "wp-colliculus-superieur": {
+   "titre": "Wikipédia (anglais), Superior colliculus",
+   "url": "https://en.wikipedia.org/wiki/Superior_colliculus"
+  },
+  "wp-raphe-median": {
+   "titre": "Wikipédia (anglais), Median raphe nucleus",
+   "url": "https://en.wikipedia.org/wiki/Median_raphe_nucleus"
+  },
+  "wp-trijumeau-mesencephalique": {
+   "titre": "Wikipédia (anglais), Mesencephalic nucleus of trigeminal nerve",
+   "url": "https://en.wikipedia.org/wiki/Mesencephalic_nucleus_of_trigeminal_nerve"
+  },
+  "wp-trijumeau-moteur": {
+   "titre": "Wikipédia (anglais), Trigeminal motor nucleus",
+   "url": "https://en.wikipedia.org/wiki/Trigeminal_motor_nucleus"
+  },
+  "wp-olfactif-anterieur": {
+   "titre": "Wikipédia (anglais), Anterior olfactory nucleus",
+   "url": "https://en.wikipedia.org/wiki/Anterior_olfactory_nucleus"
+  },
+  "wp-thalamus": {
+   "titre": "Wikipédia (anglais), Thalamus",
+   "url": "https://en.wikipedia.org/wiki/Thalamus"
+  },
+  "wp-posterolateral": {
+   "titre": "Wikipédia (anglais), Lateral posterior nucleus",
+   "url": "https://en.wikipedia.org/wiki/Lateral_posterior_nucleus"
+  },
+  "kenhub-thalamus": {
+   "titre": "Kenhub, Thalamus",
+   "url": "https://www.kenhub.com/en/library/anatomy/thalamus"
+  },
+  "wp-salivaire-superieur": {
+   "titre": "Wikipédia (anglais), Superior salivary nucleus",
+   "url": "https://en.wikipedia.org/wiki/Superior_salivary_nucleus"
+  },
+  "wp-splanchniques-pelviens": {
+   "titre": "Wikipédia (anglais), Pelvic splanchnic nerves",
+   "url": "https://en.wikipedia.org/wiki/Pelvic_splanchnic_nerves"
+  },
+  "wp-hypothalamus": {
+   "titre": "Wikipédia (anglais), Hypothalamus",
+   "url": "https://en.wikipedia.org/wiki/Hypothalamus"
+  },
+  "kenhub-hypothalamus": {
+   "titre": "Kenhub, Hypothalamus",
+   "url": "https://www.kenhub.com/en/library/anatomy/hypothalamus"
+  },
+  "wp-pvn": {
+   "titre": "Wikipédia (anglais), Paraventricular nucleus of hypothalamus",
+   "url": "https://en.wikipedia.org/wiki/Paraventricular_nucleus_of_hypothalamus"
+  },
+  "wp-vmh": {
+   "titre": "Wikipédia (anglais), Ventromedial nucleus of the hypothalamus",
+   "url": "https://en.wikipedia.org/wiki/Ventromedial_nucleus_of_the_hypothalamus"
+  },
+  "wp-dmh": {
+   "titre": "Wikipédia (anglais), Dorsomedial hypothalamic nucleus",
+   "url": "https://en.wikipedia.org/wiki/Dorsomedial_hypothalamic_nucleus"
+  },
+  "wp-preoptique": {
+   "titre": "Wikipédia (anglais), Preoptic area",
+   "url": "https://en.wikipedia.org/wiki/Preoptic_area"
+  },
+  "wp-mesencephale": {
+   "titre": "Wikipédia (anglais), Midbrain",
+   "url": "https://en.wikipedia.org/wiki/Midbrain"
+  },
+  "wp-nerf-facial": {
+   "titre": "Wikipédia (anglais), Facial nerve",
+   "url": "https://en.wikipedia.org/wiki/Facial_nerve"
+  },
+  "wp-sna": {
+   "titre": "Wikipédia (anglais), Autonomic nervous system",
+   "url": "https://en.wikipedia.org/wiki/Autonomic_nervous_system"
+  },
+  "wp-tractus-olfactif": {
+   "titre": "Wikipédia (anglais), Olfactory tract",
+   "url": "https://en.wikipedia.org/wiki/Olfactory_tract"
+  }
+ },
+ "fiches": [
+  {
+   "id": "noyau-fastigial",
+   "resume": "Le plus médial des noyaux profonds du cervelet : il reçoit le vermis et pilote l'équilibre du tronc et le regard.",
+   "partie": "cervelet",
+   "situation": "Dans la substance blanche du cervelet, tout près de la ligne médiane, sous le vermis et contre le toit du quatrième ventricule dont il est séparé par une fine lame de substance blanche",
+   "fonction": "Régule l'équilibre, la posture et les muscles axiaux et proximaux par ses projections vestibulaires et réticulaires ; sa partie caudale intervient dans les saccades oculaires",
+   "connexions": {
+    "texte": "Reçoit les cellules de Purkinje du vermis et des afférences vestibulaires ; projette par le corps juxtarestiforme vers les noyaux vestibulaires et la formation réticulée, et vers le thalamus ventral latéral",
+    "structures": [
+     "noyaux-vestibulaires",
+     "quatrieme-ventricule",
+     "pedoncule-cerebelleux-inferieur",
+     "tractus-vestibulospinal-lateral",
+     "tractus-reticulospinal-medial"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Surtout l'artère cérébelleuse supérieure, avec l'artère cérébelleuse inféro-postérieure",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Atteinte de la ligne médiane : ataxie du tronc (titubation, impossibilité de tenir assis ou debout sans appui) avec marche à base large, sans grande dysmétrie des membres ; troubles des saccades et nystagmus possibles",
+   "clinique": "Un médulloblastome du vermis comprime le toit du quatrième ventricule : ataxie du tronc chez l'enfant, puis hydrocéphalie",
+   "memo": "Fastigium, le faîte du toit : le noyau fastigial est tout en haut, sous le toit du quatrième ventricule",
+   "sources": [
+    "wp-fastigial",
+    "wp-cerebellar-nuclei",
+    "tma-cervelet"
+   ],
+   "divergences": "Wikipédia place les noyaux fastigiaux dans le vermis ; les manuels classiques les situent dans la substance blanche juste sous lui, c'est la version retenue",
+   "variantes": null
+  },
+  {
+   "id": "noyau-gigantocellulaire",
+   "resume": "Le noyau à grosses cellules de la formation réticulée du bulbe et du pont caudal : source du tractus réticulospinal latéral.",
+   "partie": "tronc-cerebral",
+   "situation": "Zone médiale de la formation réticulée, à la jonction de la moelle allongée rostrale et du pont caudal, de part et d'autre du raphé",
+   "fonction": "Règle le tonus musculaire du tronc et des membres par le tractus réticulospinal, coordonne tête et yeux, participe à la respiration et à l'inhibition de la douleur",
+   "connexions": {
+    "texte": "Reçoit le cortex prémoteur, la substance grise périaqueducale, l'hypothalamus et l'amygdale ; projette par le tractus réticulospinal latéral vers la moelle et vers les noyaux du raphé",
+    "structures": [
+     "tractus-reticulospinal-lateral",
+     "noyaux-du-raphe-de-la-moelle-allongee",
+     "hypothalamus",
+     "corps-amygdaloide"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches paramédianes de l'artère basilaire et de l'artère vertébrale",
+    "arteres": [
+     "artere-basilaire",
+     "vertebrale"
+    ]
+   },
+   "atteinte": "Pas de syndrome propre : une atteinte étendue de la formation réticulée bulbo-pontique perturbe le tonus, la vigilance et la respiration ; une lésion haute du tronc donne une rigidité en extension",
+   "memo": "Gigantocellulaire : ses neurones sont les plus gros de la formation réticulée, des géants qui règlent le tonus",
+   "sources": [
+    "wp-gigantocellulaire",
+    "wp-formation-reticulee"
+   ],
+   "divergences": "Le tractus réticulospinal latéral est dit bulbaire et surtout issu de ce noyau ; la description d'origine parlait d'afférences vers le thalamus, non retrouvées dans les références",
+   "variantes": null
+  },
+  {
+   "id": "noyau-globuleux",
+   "resume": "Un noyau profond du cervelet formé de petits amas, en dedans de l'emboliforme : il règle la posture et les mouvements des membres.",
+   "partie": "cervelet",
+   "situation": "Dans la substance blanche du cervelet, entre le noyau fastigial en dedans et le noyau emboliforme en dehors, en avant du noyau dentelé",
+   "fonction": "Avec l'emboliforme, il forme le noyau interposé du spinocérébellum : il corrige les mouvements des membres et la posture à partir des afférences de la zone paravermienne",
+   "connexions": {
+    "texte": "Reçoit la zone paravermienne par les cellules de Purkinje ; projette surtout vers le noyau rouge controlatéral et le thalamus ventral latéral, donc vers les voies rubrospinale et corticospinale",
+    "structures": [
+     "noyau-emboliforme",
+     "noyau-fastigial",
+     "noyau-rouge",
+     "faisceau-rubrospinal",
+     "pedoncule-cerebelleux-superieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébelleuse supérieure, avec l'artère cérébelleuse inféro-antérieure",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebelleuse-infero-anterieure"
+    ]
+   },
+   "atteinte": "Lésion du noyau interposé : dysmétrie et tremblement d'intention du membre homolatéral, hypotonie ; la symptomatologie est celle du syndrome cérébelleux cinétique",
+   "memo": "Globuleux comme une petite boule : ses amas ronds sont collés à l'emboliforme, le « bouchon » voisin",
+   "sources": [
+    "wp-cerebellar-nuclei",
+    "tma-cervelet"
+   ],
+   "variantes": "Chez l'humain, le globuleux et l'emboliforme sont souvent décrits ensemble sous le nom de noyau interposé",
+   "divergences": "Les références ne donnent pas de projections propres au globuleux ; elles le traitent avec l'emboliforme (noyau interposé), qui projette vers le noyau rouge"
+  },
+  {
+   "id": "noyau-gracile",
+   "resume": "Le premier relais de la sensibilité fine du membre inférieur et du bas du tronc, au bas de la face dorsale du bulbe.",
+   "partie": "tronc-cerebral",
+   "situation": "Face dorsale de la moelle allongée caudale, sous le tubercule gracile, en dedans du noyau cunéiforme, au niveau de la décussation des pyramides",
+   "fonction": "Relaie le toucher fin, la vibration et la proprioception consciente de la moitié inférieure du corps (sous T6 environ) ; ses fibres croisent et forment le lemnisque médial",
+   "connexions": {
+    "texte": "Reçoit le faisceau gracile ; ses axones forment les fibres arquées internes, croisent la ligne médiane (décussation sensitive) et montent par le lemnisque médial vers le noyau ventral postéro-latéral du thalamus",
+    "structures": [
+     "faisceau-gracile",
+     "noyau-ventral-posterolateral",
+     "encephale-noyau-cuneiforme"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères spinales postérieures et artère cérébelleuse inféro-postérieure",
+    "arteres": [
+     "arteres-spinales-posterieures",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Perte du toucher fin, de la vibration et du sens de position du côté de la lésion avant le croisement : ataxie sensitive avec signe de Romberg, qui s'aggrave les yeux fermés",
+   "clinique": "Le tabès et la carence en vitamine B12 abîment les cordons postérieurs : marche talonnante, Romberg positif",
+   "memo": "Gracile, la fine : le noyau de la sensibilité fine du bas du corps ; le cunéiforme prend le haut",
+   "sources": [
+    "wp-gracile",
+    "tma-bulbe"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-habenulaire-lateral",
+   "resume": "La moitié latérale de l'habénula : un relais qui signale l'échec ou la punition et freine les neurones dopaminergiques.",
+   "partie": "diencephale",
+   "situation": "Épithalamus, dans l'habénula contre le troisième ventricule en avant de la glande pinéale, en dehors du noyau habénulaire médial",
+   "fonction": "S'active devant un événement désagréable ou une récompense attendue qui manque ; inhibe les neurones dopaminergiques et sérotoninergiques, ce qui oriente l'évitement et la prise de décision",
+   "connexions": {
+    "texte": "Reçoit par la strie médullaire l'aire pré-optique, l'hypothalamus latéral, le pallidum ; projette par le faisceau rétroflexe vers l'aire tegmentale ventrale, la substance noire et les noyaux du raphé",
+    "structures": [
+     "strie-medullaire-thalamique",
+     "habenula",
+     "noyau-interpedonculaire",
+     "hypothalamus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches choroïdiennes postérieures de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Pas de lésion focale décrite en clinique ; son hyperactivité est associée à la dépression (volume réduit chez les déprimés) et la stimulation profonde de la strie médullaire a été essayée dans les dépressions résistantes",
+   "memo": "Habena, la rêne : l'habénula tient les rênes des circuits de la récompense, et le latéral tire quand ça va mal",
+   "sources": [
+    "wp-habenula",
+    "wp-interpedonculaire"
+   ],
+   "divergences": "La description d'origine disait qu'il projette vers le noyau interpédonculaire : c'est le fait du noyau habénulaire médial ; le latéral projette surtout vers les systèmes dopaminergique et sérotoninergique",
+   "variantes": null
+  },
+  {
+   "id": "noyau-hypothalamique-dorsomedial",
+   "resume": "Un noyau de l'hypothalamus tubéral qui relie l'alimentation, les rythmes circadiens et la réponse au stress.",
+   "partie": "diencephale",
+   "situation": "Région tubérale de l'hypothalamus, contre la paroi du troisième ventricule, en arrière et au-dessus du noyau ventromédial",
+   "fonction": "Intègre l'alimentation à l'activité circadienne ; règle la veille, la température, la sécrétion de corticoïdes et les réactions de stress (fréquence cardiaque, pression artérielle)",
+   "connexions": {
+    "texte": "Reçoit le noyau suprachiasmatique et la plupart des autres noyaux hypothalamiques ; projette vers l'aire pré-optique ventrolatérale, le locus coeruleus et les noyaux du raphé bulbaire",
+    "structures": [
+     "noyau-suprachiasmatique",
+     "noyau-hypothalamique-ventromedial",
+     "locus-coeruleus",
+     "troisieme-ventricule"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante postérieure et du polygone de Willis",
+    "arteres": [
+     "artere-communiquante-posterieure"
+    ]
+   },
+   "atteinte": "Chez l'animal, sa lésion supprime l'entraînement des rythmes de veille, d'activité et de température par les repas ; chez l'humain, pas de syndrome propre, il est touché avec les tumeurs ou lésions tubérales",
+   "memo": "Dorso-médian : derrière et au-dessus du ventromédial, il relie l'appétit aux rythmes du jour",
+   "sources": [
+    "wp-dmh",
+    "kenhub-hypothalamus"
+   ],
+   "divergences": "Kenhub y ajoute un lien avec l'agressivité, que Wikipédia ne cite pas",
+   "variantes": null
+  },
+  {
+   "id": "noyau-hypothalamique-posterieur",
+   "resume": "Le noyau de l'hypothalamus mamillaire qui conserve et produit la chaleur et active le système sympathique.",
+   "partie": "diencephale",
+   "situation": "Région mamillaire de l'hypothalamus, en arrière du noyau dorsomédial et au-dessus des corps mamillaires, contre le troisième ventricule",
+   "fonction": "Gère la production et la conservation de chaleur (frissons, vasoconstriction), la réponse cardiovasculaire et la vigilance, en lien avec la substance grise périaqueducale",
+   "connexions": {
+    "texte": "Échange avec la substance grise périaqueducale, la formation réticulée du tronc et le tractus mamillotegmental ; projette vers les centres sympathiques du tronc cérébral et de la moelle",
+    "structures": [
+     "corps-mamillaire",
+     "faisceau-mamillotegmental",
+     "hypothalamus",
+     "troisieme-ventricule"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante postérieure et de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-communiquante-posterieure",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Lésion postérieure de l'hypothalamus : somnolence, troubles de la thermorégulation (hypothermie, poïkilothermie) et dysautonomie ; une atteinte bilatérale étendue peut donner un coma vigil",
+   "clinique": "La destruction de l'hypothalamus postérieur par un traumatisme ou une tumeur fait perdre la vigilance, car il envoie des fibres d'éveil vers le cortex",
+   "memo": "Postérieur, donc chaud : il fait trembler de froid et serrer les vaisseaux de la peau",
+   "sources": [
+    "kenhub-hypothalamus",
+    "wp-hypothalamus"
+   ],
+   "divergences": "Les références décrivent surtout les fonctions de la région postérieure en général, non du seul noyau ; la vigilance et la somnolence viennent de la clinique classique de l'hypothalamus postérieur",
+   "variantes": null
+  },
+  {
+   "id": "noyau-hypothalamique-periventriculaire-anterieur",
+   "resume": "La fine couche de neurones neurosécréteurs contre la paroi du troisième ventricule, dans l'hypothalamus antérieur.",
+   "partie": "diencephale",
+   "situation": "Zone périventriculaire de l'hypothalamus antérieur, en une mince bande de cellules accolée à la paroi du troisième ventricule, au-dessus du chiasma optique",
+   "fonction": "Ses neurones fabriquent des hormones de libération et de la somatostatine qui modulent l'hypophyse antérieure ; il reçoit aussi des informations des centres autonomes",
+   "connexions": {
+    "texte": "Projette vers l'éminence médiane, d'où les hormones gagnent l'antéhypophyse par le système porte ; échange avec l'aire pré-optique et le noyau paraventriculaire",
+    "structures": [
+     "noyau-paraventriculaire-de-l-hypothalamus",
+     "hypophyse",
+     "troisieme-ventricule"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante antérieure et de l'artère cérébrale antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome individualisé : une lésion de la région antérieure de l'hypothalamus perturbe les sécrétions hypophysaires, avec diabète insipide si le noyau supra-optique est touché, et la thermorégulation",
+   "memo": "Péri-ventriculaire : il borde le ventricule comme un liseré, et chaque neurone déverse une hormone de plus",
+   "sources": [
+    "kenhub-hypothalamus",
+    "wp-hypothalamus"
+   ],
+   "divergences": "Les références décrivent la zone périventriculaire en bloc ; l'attribution de chaque fonction à la partie antérieure ou postérieure reste approximative",
+   "variantes": null
+  },
+  {
+   "id": "noyau-hypothalamique-periventriculaire-posterieur",
+   "resume": "La fine couche de neurones neurosécréteurs contre la paroi du troisième ventricule, dans la partie postérieure de l'hypothalamus.",
+   "partie": "diencephale",
+   "situation": "Zone périventriculaire de l'hypothalamus postérieur, collée à la paroi du troisième ventricule au-dessus des corps mamillaires",
+   "fonction": "Appartient à la zone périventriculaire, dont la plupart des neurones fabriquent des hormones de libération ; il relaie des signaux viscéraux vers le tronc cérébral",
+   "connexions": {
+    "texte": "Échange avec l'hypothalamus postérieur et la substance grise périaqueducale par le faisceau longitudinal postérieur ; contribue aux projections périventriculaires vers l'éminence médiane",
+    "structures": [
+     "faisceau-longitudinal-posterieur",
+     "noyau-hypothalamique-posterieur",
+     "troisieme-ventricule"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante postérieure",
+    "arteres": [
+     "artere-communiquante-posterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome individualisé ; la lésion de la région est confondue avec celle de l'hypothalamus postérieur (somnolence, troubles de la thermorégulation)",
+   "memo": "Le jumeau postérieur du périventriculaire antérieur : même liseré, mais derrière",
+   "sources": [
+    "kenhub-hypothalamus",
+    "wp-hypothalamus"
+   ],
+   "divergences": "Peu de références décrivent ce noyau à part ; sa fonction est déduite de celle de la zone périventriculaire",
+   "variantes": null
+  },
+  {
+   "id": "noyau-hypothalamique-ventromedial",
+   "resume": "Le noyau arrondi de l'hypothalamus tubéral que l'on appelle le centre de la satiété.",
+   "partie": "diencephale",
+   "situation": "Région tubérale de l'hypothalamus, en dehors du troisième ventricule, en avant du dorsomédial et au-dessus du tuber cinereum",
+   "fonction": "Signale la satiété et met fin à la prise alimentaire ; participe à la thermorégulation, à la peur et, chez la femelle, au comportement sexuel",
+   "connexions": {
+    "texte": "Reçoit la leptine et le noyau arqué ; projette vers l'amygdale, la substance grise périaqueducale et le noyau paraventriculaire",
+    "structures": [
+     "noyau-arque-de-l-hypothalamus",
+     "noyau-paraventriculaire-de-l-hypothalamus",
+     "corps-amygdaloide",
+     "noyau-hypothalamique-dorsomedial"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante postérieure et de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-communiquante-posterieure"
+    ]
+   },
+   "atteinte": "Chez l'animal, sa destruction entraîne une hyperphagie et une obésité ; chez l'humain, les tumeurs ou lésions de la région tubérale donnent faim insatiable, prise de poids et troubles du comportement",
+   "clinique": "L'obésité hypothalamique survient après une chirurgie ou une radiothérapie de la région de la tige hypophysaire",
+   "memo": "Ventro-médian : « Ventre plein », il dit stop à la fourchette",
+   "sources": [
+    "wp-vmh",
+    "kenhub-hypothalamus"
+   ],
+   "divergences": "Une étude a mis en doute que le noyau ventromédial seul soit le centre de la satiété ; la plupart des travaux confirment son rôle",
+   "variantes": null
+  },
+  {
+   "id": "noyau-intercale",
+   "resume": "Le noyau de Staderini : un petit amas de la moelle allongée entre les noyaux de l'hypoglosse et du vague, relié aux circuits du regard.",
+   "partie": "tronc-cerebral",
+   "situation": "Plancher du quatrième ventricule, dans la moelle allongée, entre le noyau du nerf hypoglosse et le noyau dorsal du nerf vague, avec le noyau prépositus",
+   "fonction": "Fait partie des noyaux périhypoglossaux qui intègrent la position de l'œil et maintiennent le regard horizontal ; sa part exacte, avec le prépositus, reste mal séparée",
+   "connexions": {
+    "texte": "Échange avec les noyaux vestibulaires, le cervelet et les noyaux oculomoteurs par le faisceau longitudinal médial",
+    "structures": [
+     "noyaux-perihypoglossaux",
+     "noyau-du-nerf-hypoglosse",
+     "noyau-posterieur-du-nerf-vague",
+     "noyaux-vestibulaires",
+     "faisceau-longitudinal-medial"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère vertébrale et artère cérébelleuse inféro-postérieure (rameaux paramédians du bulbe)",
+    "arteres": [
+     "vertebrale",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome isolé : une lésion des noyaux périhypoglossaux fait perdre le maintien du regard excentré, avec nystagmus évoqué par le regard",
+   "memo": "Intercalé : il se glisse entre l'hypoglosse et le vague, comme une carte intercalée dans un jeu",
+   "sources": [
+    "wp-formation-reticulee",
+    "tma-bulbe"
+   ],
+   "divergences": "La description d'origine ajoutait un relais des mouvements de la langue ; les références consultées ne le confirment pas, seul l'intérêt pour le regard est retenu",
+   "variantes": null
+  },
+  {
+   "id": "noyau-interpedonculaire",
+   "resume": "Le noyau impair au fond de la fosse interpédonculaire, qui reçoit le faisceau rétroflexe de l'habénula.",
+   "partie": "tronc-cerebral",
+   "situation": "Base du tegmentum mésencéphalique, sur la ligne médiane, sous la fosse interpédonculaire entre les deux pédoncules cérébraux",
+   "fonction": "Relais limbique de l'habénula médiale : il freine de façon étendue des régions riches en dopamine et en sérotonine, intervient dans le sommeil paradoxal et dans les réactions au sevrage de la nicotine",
+   "connexions": {
+    "texte": "Reçoit surtout le noyau habénulaire médial par le faisceau rétroflexe ; projette vers la substance grise périaqueducale, les noyaux du raphé et l'aire tegmentale dorsale",
+    "structures": [
+     "tractus-habenulo-interpedonculaire",
+     "habenula",
+     "fosse-interpedonculaire",
+     "noyau-habenulaire-lateral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches perforantes de l'artère basilaire et de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-basilaire",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Aucun syndrome clinique propre n'est établi chez l'humain ; chez l'animal son rôle est lié au sevrage nicotinique et à l'anxiété",
+   "memo": "Entre les deux pédoncules, interpédonculaire : un petit nœud au milieu d'un pont de deux piliers",
+   "sources": [
+    "wp-interpedonculaire",
+    "wp-habenula"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-interstitiel",
+   "resume": "Le noyau interstitiel de Cajal : le centre du mésencéphale qui tient le regard vertical et torsionnel.",
+   "partie": "tronc-cerebral",
+   "situation": "Tegmentum rostral du mésencéphale, entre la substance grise périaqueducale et le noyau rouge, au milieu des fibres du faisceau longitudinal médial",
+   "fonction": "Intègre la position et la vitesse de l'œil pour tenir le regard vertical et coordonner la tête et les yeux, surtout pour les mouvements verticaux et torsionnels",
+   "connexions": {
+    "texte": "Reçoit les noyaux vestibulaires et le noyau interstitiel rostral du faisceau longitudinal médial ; projette aux noyaux oculomoteur et trochléaire et, par le tractus interstitiospinal, à la moelle",
+    "structures": [
+     "faisceau-longitudinal-medial",
+     "noyaux-vestibulaires",
+     "noyau-du-nerf-oculomoteur",
+     "noyau-du-nerf-trochleaire",
+     "noyau-rouge"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches thalamo-perforantes de l'artère cérébrale postérieure et artère basilaire (sommet)",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-basilaire"
+    ]
+   },
+   "atteinte": "Lésion unilatérale : réaction d'inclinaison oculaire (déviation oblique de l'œil, torsion et inclinaison de la tête) ; avec le noyau rostral, paralysie du regard vertical, notamment vers le bas",
+   "clinique": "Dans un infarctus du sommet de la basilaire, une paralysie du regard vertical alerte sur l'atteinte du mésencéphale rostral",
+   "memo": "Interstitiel : coincé dans les fibres du faisceau longitudinal médial, il tient le regard à la verticale",
+   "sources": [
+    "wp-cajal",
+    "wp-mesencephale"
+   ],
+   "divergences": "Wikipédia ne décrit pas les lésions de ce noyau ; la réaction d'inclinaison oculaire et la paralysie du regard vertical viennent de la neuro-ophtalmologie classique",
+   "variantes": null
+  },
+  {
+   "id": "noyau-intracuneiforme",
+   "resume": "Un petit amas de neurones du tegmentum mésencéphalique, entre le noyau cunéiforme et la substance grise périaqueducale.",
+   "partie": "tronc-cerebral",
+   "situation": "Tegmentum du mésencéphale, en arrière et en dehors de l'aqueduc, entre la substance grise périaqueducale et le noyau cunéiforme, au niveau des colliculus",
+   "fonction": "Appartient à la formation réticulée mésencéphalique, proche de la région locomotrice (cunéiforme) ; son rôle propre reste mal connu chez l'humain",
+   "connexions": {
+    "texte": "Voisin du noyau cunéiforme et de la substance grise périaqueducale, avec lesquels il partage des liens avec la formation réticulée et les centres de la défense et de la locomotion",
+    "structures": [
+     "noyau-cuneiforme",
+     "noyau-subcuneiforme",
+     "aqueduc-du-mesencephale"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères quadrigéminales, branches de l'artère cérébrale postérieure, et artère cérébelleuse supérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-cerebelleuse-superieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome individualisé ; une lésion du tegmentum dorsal du mésencéphale perturbe la vigilance et la motricité automatique, avec les structures voisines",
+   "memo": "Intra-cunéiforme : tout contre le coin du cunéiforme, dans le même coin du tegmentum",
+   "sources": [
+    "wp-mesencephale",
+    "wp-formation-reticulee"
+   ],
+   "divergences": "Aucune référence consultée ne décrit ce noyau par son nom ; la fiche est déduite de sa position entre les noyaux voisins",
+   "variantes": null
+  },
+  {
+   "id": "noyau-larcrymal",
+   "resume": "Le groupe de neurones parasympathiques du pont qui commande les larmes par le nerf facial.",
+   "partie": "tronc-cerebral",
+   "situation": "Tegmentum du pont caudal, en arrière et en dehors du noyau moteur du nerf facial, au sein ou contre le noyau salivaire supérieur",
+   "fonction": "Origine des fibres parasympathiques préganglionnaires qui commandent la glande lacrymale et les glandes muqueuses du nez et du palais",
+   "connexions": {
+    "texte": "Ses axones suivent le nerf intermédiaire (VII bis) puis le nerf grand pétreux jusqu'au ganglion ptérygopalatin ; les fibres postganglionnaires gagnent la glande lacrymale",
+    "structures": [
+     "noyau-salivaire-superieur",
+     "nerf-facial-vii",
+     "ganglion-pterygopalatin",
+     "glande-lacrymale"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches pontines latérales de l'artère basilaire",
+    "arteres": [
+     "branches-pontines-laterales-de-l-artere-basilaire",
+     "artere-cerebelleuse-infero-anterieure"
+    ]
+   },
+   "atteinte": "Lésion du nerf facial en amont du ganglion ptérygopalatin : œil sec du côté atteint, avec paralysie faciale périphérique ; une lésion en aval du nerf grand pétreux épargne les larmes",
+   "clinique": "Le test de Schirmer mesure les larmes : il aide à situer une atteinte du facial avant ou après le ganglion ptérygopalatin",
+   "memo": "Le lacrymal est le robinet des larmes : il passe par le facial et le ganglion ptérygopalatin",
+   "sources": [
+    "wp-salivaire-superieur",
+    "wp-nerf-facial"
+   ],
+   "variantes": "Le noyau lacrymal est parfois décrit comme une partie du noyau salivaire supérieur et non comme un noyau distinct",
+   "divergences": "Le nom de la fiche porte une faute de frappe d'origine (« larcrymal ») ; la forme correcte est lacrymal"
+  },
+  {
+   "id": "noyau-mamillaire-medial",
+   "resume": "Le noyau principal du corps mamillaire : un maillon du circuit de Papez, indispensable à la mémoire des faits.",
+   "partie": "diencephale",
+   "situation": "Dans le corps mamillaire, à la face inférieure de l'hypothalamus, derrière le tuber cinereum, en dedans du noyau mamillaire latéral",
+   "fonction": "Relaie l'hippocampe vers le thalamus antérieur : contribue à la mémoire des faits récents et à la mémoire spatiale",
+   "connexions": {
+    "texte": "Reçoit le subiculum par le fornix ; projette par le faisceau mamillothalamique vers les noyaux antérieurs du thalamus et par le faisceau mamillotegmental vers le tegmentum du mésencéphale",
+    "structures": [
+     "fornix",
+     "faisceau-mamillothalamique",
+     "faisceau-mamillotegmental",
+     "noyaux-anterieurs-du-thalamus",
+     "corps-mamillaire",
+     "hippocampe"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante postérieure et de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-communiquante-posterieure",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "La lésion des corps mamillaires (carence en thiamine) entraîne une amnésie antérograde avec confabulations : syndrome de Korsakoff, qui suit l'encéphalopathie de Wernicke",
+   "clinique": "Chez l'alcoolique chronique, la carence en thiamine fait atrophier les corps mamillaires ; l'IRM le montre, et la thiamine précoce peut le prévenir",
+   "memo": "Papez : hippocampe, fornix, corps mamillaire, thalamus, cingulum, puis retour ; le mamillaire médial est la plaque tournante de la boucle",
+   "sources": [
+    "wp-mamillaire",
+    "wp-papez",
+    "kenhub-hypothalamus"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-mammiliare-lateral",
+   "resume": "Le petit noyau du corps mamillaire, en dehors du médial : un relais de l'orientation spatiale.",
+   "partie": "diencephale",
+   "situation": "Dans le corps mamillaire, en dehors du noyau mamillaire médial, à la face inférieure de l'hypothalamus",
+   "fonction": "Intervient dans l'orientation de la tête et le sens de la direction ; il envoie l'information vers le thalamus antérieur",
+   "connexions": {
+    "texte": "Échange avec le noyau tegmental dorsal et la formation réticulée mésencéphalique ; projette vers le noyau antérieur du thalamus et relie le système limbique au tronc cérébral",
+    "structures": [
+     "noyau-tegmental-posterieur",
+     "noyau-mamillaire-medial",
+     "corps-mamillaire",
+     "noyaux-anterieurs-du-thalamus",
+     "faisceau-mamillotegmental"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante postérieure et de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-communiquante-posterieure",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome propre ; les corps mamillaires, avec leurs deux noyaux, sont touchés dans le syndrome de Wernicke-Korsakoff, avec amnésie antérograde et désorientation",
+   "memo": "Le médial est le grand frère de la mémoire, le latéral est la boussole : il garde l'orientation de la tête",
+   "sources": [
+    "wp-mamillaire",
+    "kenhub-hypothalamus"
+   ],
+   "divergences": "La description d'origine parlait de relais vestibulaires ; les références disent seulement liens avec le tegmentum et le thalamus antérieur, l'orientation de la tête vient de la physiologie animale",
+   "variantes": null
+  },
+  {
+   "id": "noyau-moteur-du-nerf-trigeminal",
+   "resume": "Le noyau moteur du trijumeau, dans le pont : il commande les muscles de la mastication.",
+   "partie": "tronc-cerebral",
+   "situation": "Tegmentum du pont supérieur, sous la partie latérale du plancher du quatrième ventricule, en dedans du noyau sensitif principal",
+   "fonction": "Commande les muscles masticateurs, le mylo-hyoïdien, le ventre antérieur du digastrique et les muscles tenseurs du voile du palais et du tympan",
+   "connexions": {
+    "texte": "Ses axones sortent du pont en racine motrice et rejoignent le nerf mandibulaire ; il reçoit le noyau mésencéphalique du trijumeau pour le réflexe massétérin",
+    "structures": [
+     "racine-motrice-du-nerf-trijumeau",
+     "nerf-mandibulaire",
+     "nerf-trijumeau-v",
+     "noyau-mesencephalique-du-nerf-trijumeau"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches circonférentielles courtes de l'artère basilaire",
+    "arteres": [
+     "artere-basilaire",
+     "branches-pontines-laterales-de-l-artere-basilaire"
+    ]
+   },
+   "atteinte": "Lésion homolatérale : paralysie des masticateurs, mâchoire déviée du côté lésé à l'ouverture, réflexe massétérin aboli, fonte du masséter à terme",
+   "memo": "Les muscles du premier arc : mâcher, mylo-hyoïdien, digastrique antérieur et les deux tenseurs, tous par le V3",
+   "sources": [
+    "wp-trijumeau-moteur",
+    "wp-trijumeau-mesencephalique"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-median-du-raphe",
+   "resume": "Le noyau du raphé médian : des neurones à sérotonine qui projettent vers l'hippocampe et le septum.",
+   "partie": "tronc-cerebral",
+   "situation": "Sur la ligne médiane du tegmentum, au niveau du pont rostral et du mésencéphale caudal, sous le noyau du raphé dorsal jusqu'à la décussation des pédoncules cérébelleux supérieurs",
+   "fonction": "Fournit la sérotonine de l'hippocampe et du septum ; intervient dans la consolidation de la mémoire, l'anxiété et l'humeur",
+   "connexions": {
+    "texte": "Projette vers l'hippocampe, le septum médial, le cortex cingulaire et l'hypothalamus ; reçoit l'habénula latérale",
+    "structures": [
+     "hippocampe",
+     "noyaux-septaux",
+     "noyau-habenulaire-lateral",
+     "noyaux-du-raphe-du-pont"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches paramédianes de l'artère basilaire",
+    "arteres": [
+     "artere-basilaire"
+    ]
+   },
+   "atteinte": "Pas de syndrome focal : le dysfonctionnement sérotoninergique est lié à la dépression et à l'anxiété ; une lésion médiane du tegmentum dans le pont atteint aussi la veille",
+   "clinique": "Les antidépresseurs inhibiteurs de la recapture de la sérotonine agissent sur ce système de projections",
+   "memo": "Raphé, la couture : la couture médiane du tronc, et le médian y est la sérotonine de la mémoire",
+   "sources": [
+    "wp-raphe-median",
+    "wp-mesencephale"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-mediodorsal-du-thalamus",
+   "resume": "Le grand noyau médial du thalamus, lié au cortex préfrontal et au système limbique : mémoire, attention et émotion.",
+   "partie": "diencephale",
+   "situation": "Face médiale du thalamus, entre la lame médullaire interne et la paroi du troisième ventricule, en arrière des noyaux antérieurs",
+   "fonction": "Intègre l'olfaction, les informations viscérales et les émotions et les adresse au cortex préfrontal ; contribue à la mémoire, à l'attention et à la prise de décision",
+   "connexions": {
+    "texte": "Reçoit l'amygdale, l'hypothalamus et le pallidum ; échange avec le cortex préfrontal (réciproque) et participe à la boucle limbique des noyaux gris",
+    "structures": [
+     "thalamus",
+     "hypothalamus",
+     "corps-amygdaloide",
+     "noyaux-anterieurs-du-thalamus",
+     "noyaux-intralaminaires-du-thalamus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères thalamo-perforantes issues de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-communiquante-posterieure"
+    ]
+   },
+   "atteinte": "Atteinte bilatérale (infarctus paramédian, carence en thiamine) : amnésie, apathie et troubles de l'attention avec confabulations, tableau proche du syndrome de Korsakoff",
+   "clinique": "L'artère de Percheron irrigue les deux thalamus : son occlusion donne somnolence, paralysie du regard vertical et amnésie",
+   "memo": "Médio-dorsal : au milieu et en arrière, il parle au cerveau préfrontal, le chef d'orchestre",
+   "sources": [
+    "kenhub-thalamus",
+    "wp-thalamus"
+   ],
+   "divergences": "Les références n'attribuent pas toutes explicitement l'amnésie au noyau médiodorsal seul ; elle est présentée comme celle du circuit mamillo-thalamo-limbique",
+   "variantes": null
+  },
+  {
+   "id": "noyau-mesencephalique-du-nerf-trijumeau",
+   "resume": "Une colonne grêle du mésencéphale qui contient les corps cellulaires de la proprioception de la mâchoire et des dents.",
+   "partie": "tronc-cerebral",
+   "situation": "Mésencéphale et pont rostral, en dehors de la substance grise périaqueducale, le long de l'aqueduc, en une colonne mince",
+   "fonction": "Reçoit la proprioception des muscles masticateurs et des ligaments des dents ; règle la force de la morsure par le réflexe massétérin",
+   "connexions": {
+    "texte": "Ses neurones pseudo-unipolaires envoient leurs fibres au noyau moteur du trijumeau (voie monosynaptique du réflexe massétérin) et aux muscles par le nerf mandibulaire",
+    "structures": [
+     "noyau-moteur-du-nerf-trigeminal",
+     "tractus-mesencephalique-du-nerf-trigeminal",
+     "nerf-mandibulaire",
+     "nerf-trijumeau-v"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébelleuse supérieure et branches quadrigéminales de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Lésion rare et isolée : perte de la proprioception de la mâchoire et du réflexe massétérin ; elle est atteinte avec le tegmentum dorsal du mésencéphale, sans signe propre fiable",
+   "test": "Réflexe massétérin : on tape sur le menton, bouche entrouverte, et la mâchoire se ferme",
+   "memo": "Un ganglion sensitif exilé dans le tronc : le seul à garder ses corps cellulaires dans le système nerveux central",
+   "sources": [
+    "wp-trijumeau-mesencephalique",
+    "wp-trijumeau-moteur"
+   ],
+   "divergences": "Son étendue varie selon les auteurs : mésencéphale seul, ou mésencéphale caudal et pont rostral",
+   "variantes": null
+  },
+  {
+   "id": "noyau-olfactif-anterieur",
+   "resume": "Un amas de neurones dans le pédoncule olfactif, derrière le bulbe : il relaie l'olfaction vers le bulbe opposé.",
+   "partie": "telencephale",
+   "situation": "Dans le pédoncule olfactif (tractus olfactif), derrière le bulbe olfactif, en avant du cortex piriforme et du tubercule olfactif",
+   "fonction": "Relais secondaire de l'olfaction : intègre l'information du bulbe et relie les deux côtés ; son rôle précis reste mal connu",
+   "connexions": {
+    "texte": "Reçoit les cellules mitrales et en panache du bulbe olfactif ; projette vers le bulbe controlatéral par la commissure antérieure et vers le cortex piriforme",
+    "structures": [
+     "tractus-olfactif",
+     "nerf-olfactif-i",
+     "commissure-anterieure",
+     "sillon-olfactif"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches orbitofrontales et artère communicante antérieure, de l'artère cérébrale antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Atteinte du pédoncule olfactif : diminution ou perte de l'odorat (hyposmie, anosmie) du même côté ; elle est précoce dans la maladie d'Alzheimer et la maladie de Parkinson",
+   "clinique": "Un méningiome de la gouttière olfactive peut donner une anosmie unilatérale (syndrome de Foster Kennedy)",
+   "memo": "Un petit bureau de poste dans la voie de l'odorat, qui poste le courrier vers l'autre bulbe",
+   "sources": [
+    "wp-olfactif-anterieur",
+    "wp-tractus-olfactif"
+   ],
+   "divergences": "L'anosmie homolatérale par atteinte du pédoncule est confirmée ; le lien avec le syndrome de Foster Kennedy et l'atteinte précoce dans les maladies neurodégénératives viennent de la littérature clinique générale",
+   "variantes": null
+  },
+  {
+   "id": "noyau-olivaire-accessoire-medial",
+   "resume": "La lame médiale des olives accessoires : un relais des fibres grimpantes vers le vermis du cervelet.",
+   "partie": "tronc-cerebral",
+   "situation": "Moelle allongée, entre le noyau olivaire principal et la pyramide, en lame courbe concave en dehors",
+   "fonction": "Envoie des fibres grimpantes au cervelet, surtout au vermis, pour corriger le mouvement et apprendre les gestes",
+   "connexions": {
+    "texte": "Reçoit la moelle spinale et les noyaux du tronc ; ses fibres croisent la ligne médiane et gagnent le cervelet par le pédoncule cérébelleux inférieur",
+    "structures": [
+     "tractus-olivocerebelleux",
+     "pedoncule-cerebelleux-inferieur",
+     "noyau-olivaire-inferieur-principal",
+     "tractus-spino-olivaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère spinale antérieure et artère vertébrale (branches paramédianes)",
+    "arteres": [
+     "artere-spinale-anterieure",
+     "vertebrale"
+    ]
+   },
+   "atteinte": "Syndrome bulbaire médial (Dejerine) par infarctus : paralysie controlatérale du bras et de la jambe, perte du sens de position et déviation de la langue vers le côté lésé",
+   "memo": "Médial : collé à la pyramide, il se range près de la ligne médiane",
+   "sources": [
+    "wp-olive-inferieure",
+    "wp-olive"
+   ],
+   "divergences": "La description d'origine reliait cette lame au vermis ; Wikipédia attribue le vermis à l'olive accessoire dorsale (postérieure) et ne détaille pas les projections de la médiale",
+   "variantes": null
+  },
+  {
+   "id": "noyau-olivaire-accessoire-posterieur",
+   "resume": "La lame dorsale des olives accessoires, la plus petite des trois : un relais des fibres grimpantes vers le cervelet.",
+   "partie": "tronc-cerebral",
+   "situation": "Moelle allongée, en lame courbe derrière le noyau olivaire principal, entre lui et le pédoncule cérébelleux inférieur",
+   "fonction": "Reçoit les informations spinales et des noyaux des cordons postérieurs et les transmet au cervelet, surtout au vermis, par les fibres grimpantes",
+   "connexions": {
+    "texte": "Reçoit la moelle spinale et les noyaux gracile et cunéiforme ; ses fibres croisent la ligne médiane et projettent au vermis par le pédoncule cérébelleux inférieur",
+    "structures": [
+     "tractus-olivocerebelleux",
+     "pedoncule-cerebelleux-inferieur",
+     "tractus-spino-olivaire",
+     "noyau-gracile"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère vertébrale et artère cérébelleuse inféro-postérieure",
+    "arteres": [
+     "vertebrale",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome propre ; elle est touchée avec l'olive dans les infarctus bulbaires, avec ataxie cérébelleuse homolatérale et vertiges",
+   "memo": "Dorsale ou postérieure : derrière la grande olive, au chevet du cervelet",
+   "sources": [
+    "wp-olive-inferieure",
+    "wp-olive"
+   ],
+   "divergences": "« Dorsale » (anglais) et « postérieure » (nomenclature) désignent la même lame",
+   "variantes": null
+  },
+  {
+   "id": "noyau-olivaire-inferieur-principal",
+   "resume": "La lame plissée de l'olive : la source des fibres grimpantes du cervelet, indispensable à l'apprentissage moteur.",
+   "partie": "tronc-cerebral",
+   "situation": "Moelle allongée, dans l'olive, entre la pyramide en avant et le pédoncule cérébelleux inférieur en arrière, en lame plissée en « sac froissé »",
+   "fonction": "Envoie des fibres grimpantes au cervelet controlatéral : détecte les erreurs de mouvement et participe à l'apprentissage moteur",
+   "connexions": {
+    "texte": "Reçoit le cortex, le noyau rouge par le faisceau tegmental central et la moelle ; envoie au cortex cérébelleux controlatéral par le pédoncule cérébelleux inférieur, et reçoit en retour le noyau dentelé",
+    "structures": [
+     "tractus-olivocerebelleux",
+     "tractus-tegmental-central",
+     "tractus-rubro-olivaire",
+     "noyau-rouge",
+     "noyau-dentele",
+     "pedoncule-cerebelleux-inferieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère spinale antérieure et artère vertébrale",
+    "arteres": [
+     "artere-spinale-anterieure",
+     "vertebrale"
+    ]
+   },
+   "atteinte": "Lésion du triangle de Guillain-Mollaret : dégénérescence hypertrophique de l'olive, avec tremblement du voile du palais et ataxie ; une lésion de l'olive empêche aussi d'apprendre un geste nouveau",
+   "clinique": "Un tremblement palatin apparaît des mois après un accident vasculaire du tronc : l'IRM montre une olive gonflée",
+   "memo": "Grimpantes comme du lierre : chaque fibre grimpe sur une seule cellule de Purkinje",
+   "sources": [
+    "wp-olive-inferieure",
+    "wp-olive",
+    "tma-bulbe"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-olivaire-superieur",
+   "resume": "Le noyau du bas du pont où les deux oreilles se comparent pour localiser un son.",
+   "partie": "tronc-cerebral",
+   "situation": "Partie basse du pont, en arrière du corps trapézoïde, de part et d'autre de la ligne médiane, sous le noyau facial",
+   "fonction": "Première station binaurale de la voie auditive : le noyau médial compare les délais entre les oreilles et le latéral compare les intensités, ce qui localise le son sur le plan horizontal",
+   "connexions": {
+    "texte": "Reçoit les noyaux cochléaires par le corps trapézoïde, des deux côtés ; projette par le lemnisque latéral vers les colliculus inférieurs et donne le faisceau olivocochléaire",
+    "structures": [
+     "noyau-cochleaire-anterieur",
+     "noyau-du-corps-trapezoide",
+     "noyau-du-lemnisque-lateral",
+     "colliculus-inferieur",
+     "tractus-olivocochleaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébelleuse inféro-antérieure et branches pontines de l'artère basilaire",
+    "arteres": [
+     "artere-cerebelleuse-infero-anterieure",
+     "branches-pontines-laterales-de-l-artere-basilaire"
+    ]
+   },
+   "atteinte": "Lésion du tronc : la voie auditive étant bilatérale, la surdité est rare ; on observe plutôt un mauvais repérage des sons dans l'espace et une gêne dans le bruit",
+   "memo": "Deux oreilles, un seul noyau pour comparer : le plus petit retard suffit à situer la source",
+   "sources": [
+    "wp-olive-superieure",
+    "wp-colliculus-superieur"
+   ],
+   "divergences": "La seconde référence n'aborde pas ce noyau ; la conséquence clinique d'une lésion est une déduction de l'anatomie, Wikipédia ne la décrit pas",
+   "variantes": null
+  },
+  {
+   "id": "noyau-parabigeminal",
+   "resume": "Le petit noyau du tegmentum latéral, tout contre le colliculus supérieur : un relais de l'orientation visuelle.",
+   "partie": "tronc-cerebral",
+   "situation": "Tegmentum latéral du mésencéphale, près du bras du colliculus inférieur et du colliculus supérieur, en dehors du lemnisque latéral",
+   "fonction": "Relais réciproque du colliculus supérieur : participe à l'orientation du regard et de l'attention visuelle",
+   "connexions": {
+    "texte": "Reçoit le colliculus supérieur et, selon les espèces, la rétine ; renvoie au colliculus supérieur et projette vers le corps géniculé latéral",
+    "structures": [
+     "colliculus-superieur",
+     "corps-genicule-lateral",
+     "noyau-du-bras-des-colliculi-inferieurs"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères quadrigéminales, branches de l'artère cérébrale postérieure, et artère cérébelleuse supérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-cerebelleuse-superieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome individualisé chez l'humain : il est touché avec le tegmentum du mésencéphale, avec troubles d'orientation visuelle comme dans une atteinte du colliculus supérieur",
+   "memo": "Para-bigéminal : à côté des « jumeaux », les colliculus qui forment les tubercules quadrijumeaux",
+   "sources": [
+    "wp-colliculus-superieur",
+    "wp-mesencephale"
+   ],
+   "divergences": "Une seule référence cite ce noyau, comme afférence du colliculus supérieur ; son rôle chez l'humain est déduit",
+   "variantes": null
+  },
+  {
+   "id": "noyau-paragigantocellulaire-lateral",
+   "resume": "Le noyau du bulbe rostral, en surface : il maintient la pression artérielle par ses projections sympathiques.",
+   "partie": "tronc-cerebral",
+   "situation": "Région ventrolatérale de la moelle allongée rostrale, contre la surface, en dehors du noyau gigantocellulaire et au contact de l'olive",
+   "fonction": "Fait partie de la région ventrolatérale rostrale du bulbe, centre pressif : il maintient l'activité sympathique de repos et le réflexe baro-sensible, et il active le locus coeruleus",
+   "connexions": {
+    "texte": "Reçoit le noyau du tractus solitaire et l'hypothalamus ; projette sur les neurones sympathiques de la colonne intermédiolatérale de la moelle et sur le locus coeruleus",
+    "structures": [
+     "noyau-intermediolateral",
+     "noyau-du-tractus-solitaire",
+     "locus-coeruleus",
+     "tractus-reticulospinal-medial"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère vertébrale et artère cérébelleuse inféro-postérieure",
+    "arteres": [
+     "vertebrale",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Lésion bulbaire ventrolatérale : chute de la pression artérielle et hypotension orthostatique par perte du tonus sympathique ; la stimulation, à l'inverse, l'élève",
+   "clinique": "Une compression neurovasculaire de cette région a été invoquée dans certaines hypertensions résistantes",
+   "memo": "Le « robinet » de la pression : s'il s'ouvre, la tension monte, s'il se tait, elle tombe",
+   "sources": [
+    "wp-rvlm",
+    "wp-formation-reticulee"
+   ],
+   "divergences": "Wikipédia (région ventrolatérale rostrale) ne cite pas le nom « paragigantocellulaire » ; l'équivalence entre les deux est celle de la littérature de recherche",
+   "variantes": null
+  },
+  {
+   "id": "noyau-paragigantocellulaire-posterieur",
+   "resume": "Un petit noyau réticulé du bulbe, près de la ligne médiane, relié aux noyaux du raphé.",
+   "partie": "tronc-cerebral",
+   "situation": "Formation réticulée de la moelle allongée rostrale, près de la ligne médiane, dorsal au noyau gigantocellulaire et voisin des noyaux du raphé",
+   "fonction": "Relais réticulé médian entre les noyaux du raphé et le noyau gigantocellulaire : module la sérotonine, la douleur et l'éveil ; son rôle précis est peu connu",
+   "connexions": {
+    "texte": "Échange avec les noyaux du raphé et le noyau gigantocellulaire ; reçoit la substance grise périaqueducale",
+    "structures": [
+     "noyau-gigantocellulaire",
+     "noyaux-du-raphe-de-la-moelle-allongee",
+     "noyau-du-grand-raphe"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches paramédianes de l'artère vertébrale et de l'artère basilaire",
+    "arteres": [
+     "vertebrale",
+     "artere-basilaire"
+    ]
+   },
+   "atteinte": "Pas de syndrome individualisé ; une atteinte étendue de la formation réticulée bulbaire perturbe la vigilance, le tonus et la respiration",
+   "memo": "Gigantocellulaire et son voisin de derrière : la même famille, côté raphé",
+   "sources": [
+    "wp-formation-reticulee",
+    "wp-gigantocellulaire"
+   ],
+   "divergences": "Aucune référence consultée ne décrit ce noyau à part ; fiche déduite de sa place dans la colonne réticulée médiane",
+   "variantes": null
+  },
+  {
+   "id": "noyau-paramedian-posterieur",
+   "resume": "Un noyau réticulé de la ligne médiane du bulbe, sous le plancher du quatrième ventricule, qui renvoie vers le cervelet.",
+   "partie": "tronc-cerebral",
+   "situation": "Moelle allongée, de part et d'autre de la ligne médiane sous le plancher du quatrième ventricule, près des noyaux du raphé et du faisceau longitudinal médial",
+   "fonction": "Noyau précérébelleux : transmet au cervelet des informations motrices et vestibulaires pour la posture et les mouvements de l'œil",
+   "connexions": {
+    "texte": "Reçoit le cortex, les noyaux vestibulaires et la moelle ; envoie ses fibres au cervelet par le pédoncule cérébelleux inférieur",
+    "structures": [
+     "pedoncule-cerebelleux-inferieur",
+     "noyaux-vestibulaires",
+     "quatrieme-ventricule",
+     "noyau-reticulaire-lateral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches paramédianes de l'artère vertébrale et de l'artère spinale antérieure",
+    "arteres": [
+     "vertebrale",
+     "artere-spinale-anterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome individualisé ; une lésion paramédiane du bulbe donne ataxie, vertiges et nystagmus par atteinte des relais vers le cervelet",
+   "memo": "Paramédian : juste à côté de la ligne médiane, comme un voisin de palier du raphé",
+   "sources": [
+    "wp-formation-reticulee",
+    "tma-bulbe"
+   ],
+   "divergences": "Peu de références détaillent ce noyau ; la description est déduite de la famille des noyaux réticulaires précérébelleux",
+   "variantes": null
+  },
+  {
+   "id": "noyau-parasympathique-sacral",
+   "resume": "Le noyau de la moelle sacrale qui commande la vessie, le rectum et les organes génitaux par le parasympathique.",
+   "partie": "moelle-spinale",
+   "situation": "Moelle sacrale S2 à S4, dans la substance grise intermédiaire latérale, près de la corne latérale",
+   "fonction": "Contient les neurones préganglionniques parasympathiques qui commandent la vidange de la vessie, la motricité du côlon distal et du rectum, et l'érection",
+   "connexions": {
+    "texte": "Ses axones sortent par les racines ventrales S2 à S4 et forment les nerfs splanchniques pelviens, qui gagnent le plexus hypogastrique inférieur puis les ganglions des viscères pelviens",
+    "structures": [
+     "nerfs-splanchniques-pelviens",
+     "substance-intermediaire-laterale",
+     "canal-central"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères spinales antérieure et postérieures, renforcées par l'artère d'Adamkiewicz et les artères radiculaires",
+    "arteres": [
+     "artere-spinale-anterieure",
+     "arteres-spinales-posterieures"
+    ]
+   },
+   "atteinte": "Lésion du cône terminal ou des racines S2 à S4 : vessie neurogène avec rétention puis incontinence par regorgement, constipation, troubles de l'érection et anesthésie en selle",
+   "clinique": "Le syndrome de la queue de cheval est une urgence : rétention d'urine, anesthésie en selle, déficit des membres inférieurs",
+   "memo": "S2, S3, S4 gardent la vessie en place : « trois sacrés pour ne pas déborder »",
+   "sources": [
+    "wp-splanchniques-pelviens",
+    "wp-sna"
+   ],
+   "divergences": "Le noyau parasympathique sacral est décrit en S2-S4 dans toutes les références ; certaines étendent à S1-S5 selon les individus",
+   "variantes": null
+  },
+  {
+   "id": "noyau-paraventriculaire-de-l-hypothalamus",
+   "resume": "Le noyau contre la paroi du troisième ventricule qui fabrique ocytocine, vasopressine et hormones de libération.",
+   "partie": "diencephale",
+   "situation": "Hypothalamus antérieur, contre la paroi du troisième ventricule, au-dessus du noyau supra-optique, dans la zone périventriculaire",
+   "fonction": "Fabrique l'ocytocine et l'ADH (cellules magnocellulaires), la CRH, la TRH et la somatostatine (cellules parvocellulaires) ; gouverne la réponse au stress, l'équilibre hydrique, l'appétit et des réponses autonomes",
+   "connexions": {
+    "texte": "Ses axones magnocellulaires gagnent la neurohypophyse ; les parvocellulaires gagnent l'éminence médiane (système porte), le tronc cérébral et la moelle",
+    "structures": [
+     "tractus-paraventriculohypophysaire",
+     "neurohypophyse",
+     "adenohypophyse",
+     "noyau-supra-optique",
+     "troisieme-ventricule"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante antérieure et de l'artère cérébrale antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Lésion : diabète insipide central (défaut d'ADH) avec polyurie et soif, trouble de l'axe du stress, hyperphagie ; l'accouchement et l'allaitement perdent l'ocytocine",
+   "clinique": "Une tumeur de la région hypothalamique ou une chirurgie hypophysaire donne un diabète insipide par atteinte de l'ADH",
+   "memo": "Para-ventriculaire : à côté du ventricule, un petit laboratoire de neurohormones",
+   "sources": [
+    "wp-pvn",
+    "kenhub-hypothalamus"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-posterolateral",
+   "resume": "Le noyau latéral postérieur du thalamus, prolongement du pulvinar, relié au cortex pariétal associatif.",
+   "partie": "diencephale",
+   "situation": "Thalamus dorsal, en arrière du noyau dorsolatéral et en avant du pulvinar dont il est le prolongement rostral",
+   "fonction": "Participe à l'intégration sensorielle complexe, surtout visuelle et spatiale, avec le pulvinar",
+   "connexions": {
+    "texte": "Reçoit le colliculus supérieur, la région prétectale et le cortex occipital ; échange avec le lobule pariétal supérieur, le précunéus et le cortex cingulaire",
+    "structures": [
+     "noyau-du-pulvinar",
+     "noyau-dorsolateral",
+     "colliculus-superieur",
+     "thalamus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches thalamo-géniculées et choroïdiennes postérieures de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome isolé : avec le pulvinar, une lésion thalamique postérieure gêne l'attention visuelle et peut donner négligence spatiale ou hémi-inattention",
+   "memo": "Postéro-latéral : juste devant le pulvinar, sur le même chemin que le regard",
+   "sources": [
+    "wp-posterolateral",
+    "kenhub-thalamus"
+   ],
+   "divergences": "L'appellation « latéral postérieur » (anglais) correspond à « postérolatéral » (nomenclature) ; aucune des deux références ne décrit de syndrome propre",
+   "variantes": null
+  },
+  {
+   "id": "noyau-pre-optique-lateral",
+   "resume": "Le noyau pré-optique situé en dehors du médial, qui se prolonge dans l'hypothalamus latéral.",
+   "partie": "diencephale",
+   "situation": "Aire pré-optique, en dehors du noyau pré-optique médial, en continuité avec l'hypothalamus latéral et le faisceau prosencéphalique médian",
+   "fonction": "Zone latérale de l'aire pré-optique : intervient dans le sommeil et la régulation de la température avec les noyaux voisins",
+   "connexions": {
+    "texte": "Échange avec le noyau pré-optique médial, l'hypothalamus latéral, le septum et le tronc cérébral",
+    "structures": [
+     "noyau-pre-optique-medial",
+     "noyaux-septaux",
+     "hypothalamus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante antérieure et de l'artère cérébrale antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Une lésion de l'aire pré-optique donne des troubles du sommeil (insomnie), de la thermorégulation (hyperthermie) et de la soif ; pas de syndrome propre à ce noyau",
+   "memo": "Latéral, donc en dehors : il fait la jonction entre l'aire pré-optique et l'hypothalamus latéral",
+   "sources": [
+    "wp-preoptique",
+    "kenhub-hypothalamus"
+   ],
+   "divergences": "Wikipédia attribue le sommeil au noyau pré-optique ventrolatéral voisin et la thermorégulation à l'aire pré-optique entière ; la fonction propre du latéral est peu précise",
+   "variantes": null
+  },
+  {
+   "id": "noyau-pre-optique-medial",
+   "resume": "Le noyau de l'aire pré-optique qui contrôle les comportements sexuels et parentaux et la thermorégulation.",
+   "partie": "diencephale",
+   "situation": "Aire pré-optique, entre le noyau pré-optique périventriculaire en dedans et le noyau pré-optique latéral en dehors, en avant du chiasma optique",
+   "fonction": "Contrôle la libération de GnRH, le comportement sexuel et parental ; son aire sexuellement dimorphe est plus grande chez l'homme ; il participe à la thermorégulation et à l'équilibre hydrique",
+   "connexions": {
+    "texte": "Travaille avec le noyau de la strie terminale et l'amygdale médiale ; ses projections latérales sont essentielles au comportement maternel (chez l'animal)",
+    "structures": [
+     "noyaux-strie-terminal",
+     "corps-amygdaloide",
+     "noyau-pre-optique-lateral",
+     "noyau-pre-optique-periventriculaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante antérieure et de l'artère cérébrale antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Lésion : baisse du comportement sexuel et des gonadotrophines, hyperthermie ou troubles de la régulation thermique, perturbation de l'équilibre hydrique",
+   "memo": "Pré-optique médial : devant le chiasma, il tient la température et le désir",
+   "sources": [
+    "wp-preoptique",
+    "kenhub-hypothalamus"
+   ],
+   "variantes": null,
+   "divergences": null
+  },
+  {
+   "id": "noyau-pre-optique-periventriculaire",
+   "resume": "Le petit noyau de l'aire pré-optique contre la paroi du troisième ventricule, au-dessus du chiasma optique.",
+   "partie": "diencephale",
+   "situation": "Aire pré-optique, en dedans du noyau pré-optique médial, contre la paroi du troisième ventricule, juste au-dessus du chiasma optique",
+   "fonction": "Appartient à la zone périventriculaire neurosécrétrice ; ses neurones participent aux régulations neuroendocrines et hydrique, mais son rôle propre est peu connu chez l'humain",
+   "connexions": {
+    "texte": "Échange avec les noyaux pré-optiques voisins et l'éminence médiane ; reçoit des informations viscérales par l'hypothalamus",
+    "structures": [
+     "noyau-pre-optique-medial",
+     "noyau-hypothalamique-periventriculaire-anterieur",
+     "troisieme-ventricule"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère communicante antérieure et de l'artère cérébrale antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome individualisé ; une lésion de l'aire pré-optique perturbe la thermorégulation et l'équilibre hydrique",
+   "memo": "Le plus interne des trois pré-optiques : il touche le ventricule",
+   "sources": [
+    "wp-preoptique",
+    "kenhub-hypothalamus"
+   ],
+   "divergences": "Wikipédia ne décrit ni sa fonction ni ses connexions ; celles de la fiche sont celles de la zone périventriculaire de l'aire pré-optique",
+   "variantes": null
+  }
+ ]
+}

@@ -177,3 +177,8 @@ def voile(nom, P, bord):
     x, y = np.abs(P[:, 0]), P[:, 1]
     dans = (y >= ys[0] - 0.012) & (y <= ys[-1] + 0.012) & (P[:, 2] > np.interp(y, ys, zmin) - 0.004)
     return np.clip((np.interp(y, ys, xmax) + 0.005 - x) / 0.006, 0, 1) * dans
+
+
+# Les coquilles de la TA2 de Z-Anatomy (anglais) : la coquille → le bon nom. Le site montre le bon ; on cherche les deux.
+COQUILLES_TA2 = {"Lleocolic vein": "Ileocolic vein", "Suprerior laryngeal vein": "Superior laryngeal vein", "Menyngeal veins": "Meningeal veins", "Sollitary tract": "Solitary tract", "Genigulate ganglion": "Geniculate ganglion", "Arterior superior pancreaticoduodenal artery": "Anterior superior pancreaticoduodenal artery", "Interosseus intercarpal ligaments": "Interosseous intercarpal ligaments"}
+CORRECTIONS_TA2 = {v: k for k, v in COQUILLES_TA2.items()}

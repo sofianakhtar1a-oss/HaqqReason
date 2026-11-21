@@ -1,0 +1,618 @@
+{
+ "lot": "encephale-ajouts-4",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "noyau-pregenicule",
+   "nom": "Noyau prégéniculé",
+   "latin": "Nucleus pregeniculatus",
+   "anglais": "Pregeniculate nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau prégéniculé",
+   "ta2": "5705",
+   "connu": {
+    "description_du_trace": "Petit noyau (partie ventrale du corps géniculé latéral) situé juste devant celui-ci ; il reçoit des fibres rétiniennes et intervient dans les réflexes oculomoteurs.",
+    "appui_dans_le_modele": {
+     "id": "corps-genicule-lateral",
+     "nom": "Corps géniculé latéral"
+    }
+   }
+  },
+  {
+   "id": "noyau-prepose",
+   "nom": "Noyau préposé",
+   "latin": "Nucleus prepositus",
+   "anglais": "Prepositus nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau préposé",
+   "ta2": "6020",
+   "connu": {
+    "description_du_trace": "Noyau prépositus, sous le plancher du quatrième ventricule ; intégrateur neuronal de la position des yeux (avec le noyau vestibulaire médial).",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-perifornical",
+   "nom": "Noyau périfornical",
+   "latin": "Nucleus perifornicalis",
+   "anglais": "Perifornical nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau périfornical",
+   "ta2": "5727",
+   "connu": {
+    "description_du_trace": "Noyau entourant la colonne du fornix dans l'hypothalamus latéral ; relié à l'éveil, à l'appétit et aux réponses autonomes.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-reticulaire-central",
+   "nom": "Noyau réticulaire central",
+   "latin": "Nucleus reticularis centralis",
+   "anglais": "Central reticular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau réticulaire central",
+   "ta2": "6027",
+   "connu": {
+    "description_du_trace": "Noyau de la formation réticulée de la partie basse du bulbe, qui participe à la régulation cardio-respiratoire et à la modulation de la douleur.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-reticulaire-du-prethalamus",
+   "nom": "Noyau réticulaire du préthalamus",
+   "latin": "Nucleus reticularis prethalami",
+   "anglais": "Reticular nucleus of prethalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau réticulaire du préthalamus",
+   "ta2": "5704",
+   "connu": {
+    "description_du_trace": "Fine nappe de neurones inhibiteurs enveloppant la face latérale du thalamus, contre la capsule interne ; elle module les relais thalamo-corticaux.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyau-reticulaire-lateral",
+   "nom": "Noyau réticulaire latéral",
+   "latin": "Nucleus reticularis lateralis",
+   "anglais": "Lateral reticular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau réticulaire latéral",
+   "ta2": "6032",
+   "connu": {
+    "description_du_trace": "Noyau réticulé latéral du bulbe : relais de la moelle vers le cervelet (fibres moussues) par le pédoncule cérébelleux inférieur.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-reticulaire-parvocellulaire",
+   "nom": "Noyau réticulaire parvocellulaire",
+   "latin": "Nucleus reticularis parvocellularis",
+   "anglais": "Parvocellular reticular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau réticulaire parvocellulaire",
+   "ta2": "6030",
+   "connu": {
+    "description_du_trace": "Noyau à petites cellules de la formation réticulée, dorsolatéral, relais des réflexes de déglutition, de mastication et de la parole.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-reticulaire-pontin-caudal",
+   "nom": "Noyau réticulaire pontin caudal",
+   "latin": "Nucleus reticularis caudalis pontis",
+   "anglais": "Caudal pontine reticular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau réticulaire pontin caudal",
+   "ta2": "5949",
+   "connu": {
+    "description_du_trace": "Partie caudale de la formation réticulée pontique, origine du tractus réticulospinal médial ; elle facilite le tonus des extenseurs et participe au réflexe de sursaut.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-reticulaire-pontin-rostral",
+   "nom": "Noyau réticulaire pontin rostral",
+   "latin": "Nucleus reticularis rostralis pontis",
+   "anglais": "Rostral pontine reticular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau réticulaire pontin rostral",
+   "ta2": "5950",
+   "connu": {
+    "description_du_trace": "Partie rostrale de la formation réticulée pontique, qui intervient dans l'éveil et le sommeil paradoxal.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-reticulaire-tegmental",
+   "nom": "Noyau réticulaire tegmental",
+   "latin": "Nucleus reticularis tegmenti pontis",
+   "anglais": "Reticulotegmental nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau réticulaire tegmental",
+   "ta2": "5952",
+   "connu": {
+    "description_du_trace": "Noyau de Bechterew, entre le tegmentum et la partie basilaire du pont : relais entre cortex et cervelet et centre des mouvements oculaires.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-retro-ambigu",
+   "nom": "Noyau rétro-ambigu",
+   "latin": "Nucleus retroambiguus",
+   "anglais": "Retroambiguus nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau rétro-ambigu",
+   "ta2": "6015",
+   "connu": {
+    "description_du_trace": "Colonne de neurones en arrière et au-dessous du noyau ambigu ; ses neurones expiratoires commandent les muscles abdominaux et intercostaux.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-retrofacial",
+   "nom": "Noyau rétrofacial",
+   "latin": "Nucleus retrofacialis",
+   "anglais": "Retrofacial nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau rétrofacial",
+   "ta2": "6012",
+   "connu": {
+    "description_du_trace": "Partie rostrale de la colonne ambiguë, derrière le noyau facial ; intervient dans la respiration et le contrôle autonome.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-sensoriel-principal-du-nerf-trigeminal",
+   "nom": "Noyau sensoriel principal du nerf trigéminal",
+   "latin": "Nucleus sensorius principalis nervi trigemini",
+   "anglais": "Principal sensory nucleus of trigeminal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau sensoriel principal du nerf trigéminal",
+   "ta2": "5932",
+   "connu": {
+    "description_du_trace": "Noyau sensitif principal du trijumeau, en dehors du noyau moteur, qui reçoit le tact discriminatif de la face.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-spinal-du-nerf-trijumeau",
+   "nom": "Noyau spinal du nerf trijumeau",
+   "latin": "Nucleus spinalis nervi trigemini",
+   "anglais": "Spinal nucleus of trigeminal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau spinal du nerf trijumeau",
+   "ta2": "6001",
+   "connu": {
+    "description_du_trace": "Longue colonne de substance grise, du pont à la moelle cervicale haute (C2-C4), qui reçoit la douleur et la température de la face par le tractus spinal du trijumeau.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-subcuneiforme",
+   "nom": "Noyau subcunéiforme",
+   "latin": "Nucleus subcuneiformis",
+   "anglais": "Subcuneiform nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau subcunéiforme",
+   "ta2": "5901",
+   "connu": {
+    "description_du_trace": "Noyau situé sous le noyau cunéiforme, dans le prolongement caudal de la formation réticulée mésencéphalique.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-subhypoglosse",
+   "nom": "Noyau subhypoglosse",
+   "latin": "Nucleus subhypoglossalis",
+   "anglais": "Subhypoglossal nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau subhypoglosse",
+   "ta2": "6018",
+   "connu": {
+    "description_du_trace": "Noyau situé sous le noyau de l'hypoglosse, avec lui dans le groupe périhypoglossal.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-subthalamique",
+   "nom": "Noyau subthalamique",
+   "latin": "Nucleus subthalamicus",
+   "anglais": "Subthalamic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau subthalamique",
+   "ta2": "5709",
+   "connu": {
+    "description_du_trace": "Noyau en lentille accolé à la capsule interne, sous le thalamus ; élément excitateur des noyaux gris centraux, impliqué dans la maladie de Parkinson (cible de stimulation profonde).",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-supra-optique",
+   "nom": "Noyau supra-optique",
+   "latin": "Nucleus supraopticus",
+   "anglais": "Supra-optic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau supra-optique",
+   "ta2": "5721",
+   "connu": {
+    "description_du_trace": "Noyau de neurones à grandes cellules, au-dessus du tractus optique ; il synthétise l'hormone antidiurétique et l'ocytocine, libérées dans la neurohypophyse.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-suprachiasmatique",
+   "nom": "Noyau suprachiasmatique",
+   "latin": "Nucleus suprachiasmaticus",
+   "anglais": "Suprachiasmatic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau suprachiasmatique",
+   "ta2": "5720",
+   "connu": {
+    "description_du_trace": "Noyau situé juste au-dessus du chiasma optique, de part et d'autre du ventricule : horloge biologique principale, il règle les rythmes circadiens à partir des signaux lumineux de la rétine.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-supragenual",
+   "nom": "Noyau supragenual",
+   "latin": "Nucleus supragenualis",
+   "anglais": "Supragenual nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau supragenual",
+   "ta2": "5958",
+   "connu": {
+    "description_du_trace": "Petit noyau situé au-dessus du genou du nerf facial, près de la ligne médiane, relié aux noyaux oculomoteurs.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-tegmental-anterieur",
+   "nom": "Noyau tegmental antérieur",
+   "latin": "Nucleus tegmentalis anterior",
+   "anglais": "Anterior tegmental nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau tegmental antérieur",
+   "ta2": "5951",
+   "connu": {
+    "description_du_trace": "Noyau tegmental ventral de Gudden, relié aux corps mamillaires par le faisceau mamillotegmental.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-tegmental-pedonculopontin",
+   "nom": "Noyau tegmental pedonculopontin",
+   "latin": "Nucleus tegmentalis pedunculopontinus",
+   "anglais": "Pedunculopontine tegmental nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau tegmental pedonculopontin",
+   "ta2": "5895",
+   "connu": {
+    "description_du_trace": "Noyau cholinergique du tegmentum, le long du pédoncule cérébelleux supérieur ; il règle l'éveil, la locomotion et le sommeil paradoxal et se relie aux noyaux gris centraux.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-tegmental-posterieur",
+   "nom": "Noyau tegmental postérieur",
+   "latin": "Nucleus tegmentalis posterior",
+   "anglais": "Posterior tegmental nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau tegmental postérieur",
+   "ta2": "5947",
+   "connu": {
+    "description_du_trace": "Noyau tegmental dorsal de Gudden, contre le plancher du quatrième ventricule, lié au système limbique et à l'orientation de la tête.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-tegmental-postero-lateral",
+   "nom": "Noyau tegmental postéro-latéral",
+   "latin": "Nucleus tegmentalis posterolateralis",
+   "anglais": "Lateroposterior tegmental nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau tegmental postéro-latéral",
+   "ta2": "5894",
+   "connu": {
+    "description_du_trace": "Noyau tegmental dorsolatéral, contre la substance grise périaqueducale, à la jonction mésencéphale-pont ; neurones cholinergiques de l'éveil et du sommeil paradoxal.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-thoracique-posterieur",
+   "nom": "Noyau thoracique postérieur",
+   "latin": "Nucleus thoracicus posterior",
+   "anglais": "Posterior thoracic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau thoracique postérieur",
+   "ta2": "6074",
+   "connu": {
+    "description_du_trace": "Noyau de Clarke : colonne de neurones à la base de la corne postérieure, de C8 à L3 ; elle reçoit la proprioception du membre inférieur et donne le tractus spinocérébelleux postérieur.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "noyau-tuberal-lateral",
+   "nom": "Noyau tubéral latéral",
+   "latin": "Nucleus tuberalis lateralis",
+   "anglais": "Lateral tuberal nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau tubéral latéral",
+   "ta2": "5735",
+   "connu": {
+    "description_du_trace": "Amas de neurones de la région tubérale latérale, sur le trajet de l'hypothalamus latéral.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-tuberomammilaire",
+   "nom": "Noyau tubéromammilaire",
+   "latin": "Nucleus tuberomammillaris",
+   "anglais": "Tuberomamillary nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau tubéromammilaire",
+   "ta2": "5734",
+   "connu": {
+    "description_du_trace": "Noyau de l'hypothalamus postérieur dont les neurones à histamine entretiennent l'éveil.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-ventral-postero-inferieur",
+   "nom": "Noyau ventral postéro-inférieur",
+   "latin": "Nucleus ventralis posterior inferior",
+   "anglais": "Ventral posterior inferior nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau ventral postéro-inférieur",
+   "ta2": "5694",
+   "connu": {
+    "description_du_trace": "Petit noyau situé sous le ventral postérieur, relais de la sensibilité vestibulaire.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyau-ventral-posterolateral",
+   "nom": "Noyau ventral postérolatéral",
+   "latin": "Nucleus ventralis posterolateralis",
+   "anglais": "Ventral posterolateral nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau ventral postérolatéral",
+   "ta2": "5692",
+   "connu": {
+    "description_du_trace": "Relais des sensibilités du corps (lemnisque médial et voie spinothalamique) vers le gyrus postcentral.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyau-ventral-posteromedial",
+   "nom": "Noyau ventral postéromédial",
+   "latin": "Nucleus ventralis posteromedialis",
+   "anglais": "Ventral posteromedial nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau ventral postéromédial",
+   "ta2": "5693",
+   "connu": {
+    "description_du_trace": "Relais de la sensibilité de la face (voies trigéminothalamiques) et du goût vers le cortex somesthésique.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyau-vestibulaire-inferieur",
+   "nom": "Noyau vestibulaire inférieur",
+   "latin": "Nucleus vestibularis inferior",
+   "anglais": "Inferior vestibular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau vestibulaire inférieur",
+   "ta2": "6005",
+   "connu": {
+    "description_du_trace": "Noyau vestibulaire inférieur (descendant), à la jonction bulbo-pontique, relié au cervelet et à la formation réticulée.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-vestibulaire-lateral",
+   "nom": "Noyau vestibulaire latéral",
+   "latin": "Nucleus vestibularis lateralis",
+   "anglais": "Lateral vestibular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau vestibulaire latéral",
+   "ta2": "5935",
+   "connu": {
+    "description_du_trace": "Noyau vestibulaire de Deiters, origine du tractus vestibulospinal latéral qui règle le tonus des extenseurs.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-vestibulaire-medial",
+   "nom": "Noyau vestibulaire médial",
+   "latin": "Nucleus vestibularis medialis",
+   "anglais": "Medial vestibular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau vestibulaire médial",
+   "ta2": "6004",
+   "connu": {
+    "description_du_trace": "Noyau vestibulaire médial, sous le plancher du quatrième ventricule ; origine du tractus vestibulospinal médial et relais des réflexes vestibulo-oculaires.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-vestibulaire-superieur",
+   "nom": "Noyau vestibulaire supérieur",
+   "latin": "Nucleus vestibularis superior",
+   "anglais": "Superior vestibular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau vestibulaire supérieur",
+   "ta2": "5934",
+   "connu": {
+    "description_du_trace": "Noyau vestibulaire de Bechterew, le plus haut du complexe vestibulaire ; il projette surtout vers les noyaux oculomoteurs par le faisceau longitudinal médial.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyaux-accessoires-du-tractus-optique",
+   "nom": "Noyaux accessoires du tractus optique",
+   "latin": "Nuclei accessorii tractus optici",
+   "anglais": "Accessory nuclei of optic tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux accessoires du tractus optique",
+   "ta2": "5742",
+   "connu": {
+    "description_du_trace": "Noyaux terminaux du système optique accessoire, contre le pédoncule cérébral, qui reçoivent des fibres rétiniennes et règlent les mouvements de poursuite oculaire.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyaux-amygdaliens-basaux-lateraux",
+   "nom": "Noyaux amygdaliens basaux latéraux",
+   "latin": "Nuclei basolaterales amygdalae",
+   "anglais": "Basolateral amygdaloid nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux amygdaliens basaux latéraux",
+   "ta2": "5551",
+   "connu": {
+    "description_du_trace": "Grande partie latérale et postérieure de l'amygdale ; elle reçoit les afférences corticales et thalamiques et intervient dans l'apprentissage émotionnel de la peur.",
+    "appui_dans_le_modele": {
+     "id": "corps-amygdaloide",
+     "nom": "Corps amygdaloïde"
+    }
+   }
+  }
+ ]
+}

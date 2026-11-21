@@ -33,7 +33,9 @@ const fichiers = groupes.flatMap(({ g }) => g.lods).filter((l) => (manifeste as 
 const chemin = (f: string) => new URL(`../public/corps/${f}`, import.meta.url);
 ok("chaque paquet du manifeste est sur le disque, à la bonne taille", fichiers.every((l) => existsSync(chemin(l.fichier)) && statSync(chemin(l.fichier)).size === l.octets), fichiers.filter((l) => !existsSync(chemin(l.fichier))).map((l) => l.fichier).join());
 ok("pas de peau : aucune couche ni structure de peau", !CALQUES.some((c) => /peau|skin/.test(c)) && !ELEMENTS.some((e) => /\bskin\b|\bpeau\b/i.test(`${e.anglais} ${e.nom}`)));
-ok("par pudeur, pas d'organes génitaux externes", !ELEMENTS.some((e) => /penis|scrot|\btest(is|icular)\b|epididym|clitor|\blabi(um|a) m|vulva/i.test(e.anglais)), ELEMENTS.filter((e) => /penis|scrot|\btest(is|icular)\b|epididym|clitor|\blabi(um|a) m|vulva/i.test(e.anglais)).map((e) => e.anglais).join());
+// (les vaisseaux testiculaires, eux, se montrent dans l'abdomen, jusqu'à l'anneau inguinal profond : voir plus bas)
+const PUDEUR = /penis|scrot|\btestis\b|\btesticular (?!artery|vein)|epididym|clitor|\blabi(um|a) m|vulva/i;
+ok("par pudeur, pas d'organes génitaux externes", !ELEMENTS.some((e) => PUDEUR.test(e.anglais)), ELEMENTS.filter((e) => PUDEUR.test(e.anglais)).map((e) => e.anglais).join());
 ok("les dix couches sont là", COUCHES.every((c) => CALQUES.includes(c)), CALQUES.join());
 ok("trois niveaux de détail par couche", COUCHES.every((c) => groupes.filter((x) => x.nom === c).every((x) => x.g.lods.length === 3)));
 // Le niveau léger, décodé en entier : c'est celui du premier affichage.
@@ -119,7 +121,9 @@ for (const c of IDS_CATEGORIES.filter((x) => x !== "corps")) {
   ok(`${c} : chaque structure vue une seule fois`, new Set(vus).size === vus.length);
   ok(`${c} : les planches publiées gardent leur contenu`, JSON.stringify(niveauxDe(c).map((n) => n.nouveaux)) === JSON.stringify(publiees[c].map((l) => l.filter((id) => !ABSENTS.includes(id)))));
   // (la dernière peut être petite : quelques structures arrivées après la publication, comme le rein)
-  ok(`${c} : aucune planche vide`, niveauxDe(c).every((n, k, l) => n.nouveaux.length >= 4 || (k === l.length - 1 && n.nouveaux.length >= 1)));
+  // (les planches de compléments publiées avant le deuxième chantier gardent leur taille : la progression en dépend)
+  const PETITES_PUBLIEES: Record<string, number[]> = { nerfs: [16], visceres: [17] };
+  ok(`${c} : aucune planche vide`, niveauxDe(c).every((n, k, l) => n.nouveaux.length >= 4 || (k === l.length - 1 && n.nouveaux.length >= 1) || ((PETITES_PUBLIEES[c] ?? []).includes(k) && n.nouveaux.length >= 1)));
 }
 ok("les quatre couches de la première version ont leurs planches", ["os", "muscles", "tendons", "arteres"].every((c) => (IDS_CATEGORIES as string[]).includes(c)));
 ok("le grand examen couvre tout ce qu'on apprend", niveauxDe("corps").at(-1)!.nouveaux.length === ELEMENTS_APPRIS.length && ELEMENTS_APPRIS.length >= 225);
@@ -288,12 +292,39 @@ ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe(
   }
 }
 
+/* ---------- Les ensembles, les repères et les structures construites ---------- */
+{
+  const ensembles = ELEMENTS.filter((e) => e.membres?.length);
+  // (les ensembles de la première version peuvent désigner une partie d'un os : l'ilium dans l'os coxal)
+  const malFaits = ensembles.filter((e) => (e.nature === "ensemble" && e.membres!.length < 2) || !e.membres!.every((m) => PAR_ID.has(m) && !PAR_ID.get(m)!.membres));
+  ok("chaque ensemble de la nomenclature réunit au moins deux structures du catalogue (pas d'ensemble d'ensembles)", !malFaits.length, malFaits.map((e) => e.id).join());
+  const reperes = lire("../src/lib/corps/modele/reperes.json") as { cle: string; sur: string | null; nom: string; p: number[] }[];
+  ok("chaque repère a une clé unique", new Set(reperes.map((r) => r.cle)).size === reperes.length);
+  ok("presque tous les repères sont posés sur une structure du catalogue", reperes.filter((r) => r.sur && PAR_ID.has(r.sur)).length >= 0.98 * reperes.length, `${reperes.filter((r) => r.sur && PAR_ID.has(r.sur)).length}/${reperes.length}`);
+  const PUDEUR_FR = /pénis|scrot|testicul|épididym|\bgland\b|prépuce/i;
+  ok("aucun repère que la pudeur tait", !reperes.some((r) => PUDEUR_FR.test(r.nom)), reperes.filter((r) => PUDEUR_FR.test(r.nom)).map((r) => r.nom).join());
+  const construits = ELEMENTS.filter((e) => e.construit);
+  ok("les structures construites d'après les manuels sont là (plus de 500)", construits.length > 500, String(construits.length));
+  // (une fiche rédigée remplace le résumé du tracé)
+  const avecFiche = new Set(COUCHES.flatMap((c) => Object.keys((lire(`../src/lib/corps/fiches/${c}.json`) as { fiches: Record<string, unknown> }).fiches)));
+  const sansTexte = construits.filter((e) => !e.resume && !avecFiche.has(e.id));
+  ok("chaque structure construite dit ce qu'elle est (un résumé de son tracé, ou sa fiche)", !sansTexte.length, sansTexte.slice(0, 8).map((e) => e.id).join());
+  const appuis = construits.filter((e) => e.appui && !PAR_ID.has(e.appui));
+  ok("l'appui d'une structure construite est une structure du catalogue", !appuis.length, appuis.map((e) => e.id).join());
+  // Les vaisseaux testiculaires ne sont montrés que dans l'abdomen : ils s'arrêtent au-dessus du pubis.
+  const pieces = lire("../src/lib/corps/modele/pieces.json") as { element: string; c?: number[]; r?: number }[];
+  const pubis = pieces.find((x) => x.element === "symphyse-pubienne");
+  const testiculaires = pieces.filter((x) => /testiculaire/.test(x.element) && x.c && x.r !== undefined);
+  ok("les vaisseaux testiculaires s'arrêtent au-dessus du pubis", Boolean(pubis?.c) && testiculaires.every((x) => x.c![1] - x.r! * 0.5 > pubis!.c![1]), testiculaires.map((x) => `${x.element} ${x.c?.[1]}`).join());
+}
+
 /* ---------- La couverture de la nomenclature ---------- */
 {
   const c = lire("../src/lib/corps/modele/couverture.json") as { elements: number; couches: Record<string, { part: number; presents: number; reference: number }> };
   ok("la couverture est calculée sur le modèle actuel", c.elements === ELEMENTS.length, `${c.elements} ≠ ${ELEMENTS.length}`);
   // Des planchers : la couverture ne doit pas reculer (une pièce perdue en route se verrait ici).
-  const planchers: Record<string, number> = { os: 0.7, ligament: 0.65, muscle: 0.7, artere: 0.5, veine: 0.35, lymphe: 0.6, nerf: 0.2, encephale: 0.28, viscere: 0.75 };
+  // Toute la référence (hors du champ mis à part : pudeur, corps féminin, microscopique, classement, inconstant).
+  const planchers: Record<string, number> = { os: 1, ligament: 1, muscle: 1, artere: 1, veine: 1, lymphe: 1, nerf: 1, encephale: 1, viscere: 1 };
   for (const [couche, min] of Object.entries(planchers)) ok(`couverture ${couche} ≥ ${Math.round(min * 100)} %`, (c.couches[couche]?.part ?? 0) >= min, `${c.couches[couche]?.presents}/${c.couches[couche]?.reference}`);
 }
 

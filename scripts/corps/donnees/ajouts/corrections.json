@@ -1,0 +1,40 @@
+{
+ "structures": [
+  {
+   "nom": "Posterior lumbar plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "le_long": [
+    {
+     "objet": "Vertebra L1",
+     "rel": [
+      0.55,
+      0.0,
+      -0.75
+     ]
+    },
+    {
+     "objet": "Vertebra L2",
+     "rel": [
+      0.55,
+      0.0,
+      -0.75
+     ]
+    },
+    {
+     "objet": "Vertebra L3",
+     "rel": [
+      0.55,
+      0.0,
+      -0.75
+     ]
+    }
+   ],
+   "brins": 3,
+   "ecart_mm": 4,
+   "rayon": 0.35,
+   "texte": "Le réseau que forment, en arrière des processus transverses, les rameaux postérieurs des premiers nerfs lombaux ; il donne les rameaux des muscles profonds du dos et les nerfs cutanés glutéaux supérieurs (nerfs cluniaux supérieurs)."
+  }
+ ]
+}

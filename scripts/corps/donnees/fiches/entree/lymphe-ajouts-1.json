@@ -1,0 +1,889 @@
+{
+ "lot": "lymphe-ajouts-1",
+ "couche": "lymphe",
+ "structures": [
+  {
+   "id": "lymphonoeud-jugulaire-anterosuperieur",
+   "nom": "Lymphonœud jugulaire antérosupérieur",
+   "latin": "Nodus jugularis superior anterior",
+   "anglais": "Anterior superior jugular node",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lymphonœud jugulaire antérosupérieur",
+   "ta2": "5228",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœud de la chaîne jugulaire interne placé en avant de la veine, au niveau de l'os hyoïde, sous le nœud jugulo-digastrique ; il reçoit la lymphe de la tête et du cou.",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-interne",
+     "nom": "Veine jugulaire interne"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeud-malaire",
+   "nom": "Lymphonœud malaire",
+   "latin": "Nodus malaris",
+   "anglais": "Malar node",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lymphonœud malaire",
+   "ta2": "5209",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Petit nœud des nœuds faciaux, sur la saillie de la joue (os zygomatique) ; il draine la peau de la joue et de la paupière inférieure vers les nœuds sous-mandibulaires.",
+    "appui_dans_le_modele": {
+     "id": "zygomatique",
+     "nom": "Zygomatique"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-de-la-tete",
+   "nom": "Lymphonœuds de la tète",
+   "latin": "Nodi lymphoidei capitis",
+   "anglais": "Lymph nodes of head",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lymphonœuds de la tète",
+   "ta2": "5198",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-buccinateur",
+      "nom": "Lymphonœud buccinateur"
+     },
+     {
+      "id": "lymphonoeuds-infra-auriculaires",
+      "nom": "Lymphonœuds infra-auriculaires"
+     },
+     {
+      "id": "lymphonoeuds-parotidiens-infraglandulaires",
+      "nom": "Lymphonœuds parotidiens infraglandulaires"
+     },
+     {
+      "id": "lymphonoeud-mandibulaire",
+      "nom": "Lymphonœud mandibulaire"
+     },
+     {
+      "id": "lymphonoeuds-mastoidiens",
+      "nom": "Lymphonœuds mastoïdiens"
+     },
+     {
+      "id": "lymphonoeud-nasolabial",
+      "nom": "Lymphonœud nasolabial"
+     },
+     {
+      "id": "lymphonoeuds-occipitaux",
+      "nom": "Lymphonœuds occipitaux"
+     },
+     {
+      "id": "lymphonoeuds-pre-auriculaires",
+      "nom": "Lymphonœuds pré-auriculaires"
+     },
+     {
+      "id": "lymphonoeuds-parotidiens-superficiels",
+      "nom": "Lymphonœuds parotidiens superficiels"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-faciaux",
+   "nom": "Lymphonœuds faciaux",
+   "latin": "Nodi faciales",
+   "anglais": "Facial nodes",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lymphonœuds faciaux",
+   "ta2": "5206",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-buccinateur",
+      "nom": "Lymphonœud buccinateur"
+     },
+     {
+      "id": "lymphonoeud-mandibulaire",
+      "nom": "Lymphonœud mandibulaire"
+     },
+     {
+      "id": "lymphonoeud-nasolabial",
+      "nom": "Lymphonœud nasolabial"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-linguaux",
+   "nom": "Lymphonœuds linguaux",
+   "latin": "Nodi linguales",
+   "anglais": "Lingual nodes",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lymphonœuds linguaux",
+   "ta2": "5211",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Petits nœuds inconstants posés sur les muscles génioglosse et hyoglosse, sur la face inférieure de la langue ; ils drainent la langue vers les nœuds sous-mandibulaires et jugulaires.",
+    "appui_dans_le_modele": {
+     "id": "langue",
+     "nom": "Langue"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-parotidiens-profonds",
+   "nom": "Lymphonœuds parotidiens profonds",
+   "latin": "Nodi parotidei profundi",
+   "anglais": "Deep parotid nodes",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lymphonœuds parotidiens profonds",
+   "ta2": "5202",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-infra-auriculaires",
+      "nom": "Lymphonœuds infra-auriculaires"
+     },
+     {
+      "id": "lymphonoeuds-parotidiens-infraglandulaires",
+      "nom": "Lymphonœuds parotidiens infraglandulaires"
+     },
+     {
+      "id": "lymphonoeuds-pre-auriculaires",
+      "nom": "Lymphonœuds pré-auriculaires"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeud-jugulaire-latero-inferieur",
+   "nom": "Lymphonœud jugulaire latéro-inférieur",
+   "latin": "Nodus jugularis inferior lateralis",
+   "anglais": "Lateral inferior jugular node",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Lymphonœud jugulaire latéro-inférieur",
+   "ta2": "5231",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœud de la chaîne jugulaire interne, en dehors de la veine, à la base du cou près de la clavicule ; il se jette dans le tronc jugulaire.",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-interne",
+     "nom": "Veine jugulaire interne"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeud-jugulo-omohyoidien",
+   "nom": "Lymphonœud jugulo-omohyoïdien",
+   "latin": "Nodus juguloomohyoideus",
+   "anglais": "Jugulo-omohyoid node",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Lymphonœud jugulo-omohyoïdien",
+   "ta2": "5230",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœud de la chaîne jugulaire interne situé là où le tendon intermédiaire du muscle omohyoïdien croise la veine ; il draine surtout la langue.",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-interne",
+     "nom": "Veine jugulaire interne"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-cervicaux-anterieurs",
+   "nom": "Lymphonœuds cervicaux antérieurs",
+   "latin": "Nodi cervicales anteriores",
+   "anglais": "Anterior cervical nodes",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Lymphonœuds cervicaux antérieurs",
+   "ta2": "5215",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-cervicaux-paratracheaux",
+      "nom": "Lymphonœuds cervicaux paratrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-pretracheaux",
+      "nom": "Lymphonœuds prétrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-cervicaux-anterieurs-superficiels",
+      "nom": "Lymphonœuds cervicaux antérieurs superficiels"
+     },
+     {
+      "id": "lymphonoeuds-thyroidiens",
+      "nom": "Lymphonœuds thyroïdiens"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-cervicaux-anterieurs-profonds",
+   "nom": "Lymphonœuds cervicaux antérieurs profonds",
+   "latin": "Nodi cervicales anteriores profundi",
+   "anglais": "Deep anterior cervical nodes",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Lymphonœuds cervicaux antérieurs profonds",
+   "ta2": "5217",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-cervicaux-paratracheaux",
+      "nom": "Lymphonœuds cervicaux paratrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-pretracheaux",
+      "nom": "Lymphonœuds prétrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-thyroidiens",
+      "nom": "Lymphonœuds thyroïdiens"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-cervicaux-lateraux",
+   "nom": "Lymphonœuds cervicaux latéraux",
+   "latin": "Nodi cervicales latérales",
+   "anglais": "Lateral cervical nodes",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Lymphonœuds cervicaux latéraux",
+   "ta2": "5223",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-jugulaires-antero-inferieurs",
+      "nom": "Lymphonœuds jugulaires antéro-inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+      "nom": "Lymphonœuds cervicaux latéraux profonds inférieurs"
+     },
+     {
+      "id": "lymphonoeud-jugulodigastrique",
+      "nom": "Lymphonœud jugulodigastrique"
+     },
+     {
+      "id": "lymphonoeud-jugulaire-laterosuperieur",
+      "nom": "Lymphonœud jugulaire latérosupérieur"
+     },
+     {
+      "id": "lymphonoeuds-cervicaux-lateraux-superficiels",
+      "nom": "Lymphonœuds cervicaux latéraux superficiels"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-du-cou",
+   "nom": "Lymphonœuds du cou",
+   "latin": "Nodi lymphoidei colli",
+   "anglais": "Lymph nodes of neck",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Lymphonœuds du cou",
+   "ta2": "5212",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-jugulaires-antero-inferieurs",
+      "nom": "Lymphonœuds jugulaires antéro-inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+      "nom": "Lymphonœuds cervicaux latéraux profonds inférieurs"
+     },
+     {
+      "id": "lymphonoeud-jugulodigastrique",
+      "nom": "Lymphonœud jugulodigastrique"
+     },
+     {
+      "id": "lymphonoeud-jugulaire-laterosuperieur",
+      "nom": "Lymphonœud jugulaire latérosupérieur"
+     },
+     {
+      "id": "lymphonoeuds-cervicaux-paratracheaux",
+      "nom": "Lymphonœuds cervicaux paratrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-pretracheaux",
+      "nom": "Lymphonœuds prétrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-retropharyngiens",
+      "nom": "Lymphonœuds rétropharyngiens"
+     },
+     {
+      "id": "lymphonoeuds-submandibulaires",
+      "nom": "Lymphonœuds submandibulaires"
+     },
+     {
+      "id": "lymphonoeuds-submentaux",
+      "nom": "Lymphonœuds submentaux"
+     },
+     {
+      "id": "lymphonoeuds-cervicaux-anterieurs-superficiels",
+      "nom": "Lymphonœuds cervicaux antérieurs superficiels"
+     },
+     {
+      "id": "lymphonoeuds-cervicaux-lateraux-superficiels",
+      "nom": "Lymphonœuds cervicaux latéraux superficiels"
+     },
+     {
+      "id": "lymphonoeuds-supraclaviculaires",
+      "nom": "Lymphonœuds supraclaviculaires"
+     },
+     {
+      "id": "lymphonoeuds-thyroidiens",
+      "nom": "Lymphonœuds thyroïdiens"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-prelarynges",
+   "nom": "Lymphonœuds prélaryngés",
+   "latin": "Nodi prelaryngei",
+   "anglais": "Prelaryngeal nodes",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Lymphonœuds prélaryngés",
+   "ta2": "5219",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Un ou deux petits nœuds médians sur le ligament cricothyroïdien médian (nœud delphien) ; ils drainent le larynx et la glande thyroïde vers les nœuds pré-trachéaux.",
+    "appui_dans_le_modele": {
+     "id": "ligament-cricothyroide-median",
+     "nom": "Ligament cricothyroïde médian"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-bronchopulmonaires",
+   "nom": "Lymphonœuds bronchopulmonaires",
+   "latin": "Nodi bronchopulmonales",
+   "anglais": "Bronchopulmonary nodes",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Lymphonœuds bronchopulmonaires",
+   "ta2": "5266",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœuds du hile pulmonaire, à la division des bronches lobaires ; ils reçoivent la lymphe des poumons et la transmettent aux nœuds trachéo-bronchiques.",
+    "appui_dans_le_modele": {
+     "id": "bronche-lobaire-superieure-gauche",
+     "nom": "Bronche lobaire supérieure gauche"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-mediastinaux",
+   "nom": "Lymphonœuds médiastinaux",
+   "latin": "Nodi lymphoidei mediastinaies",
+   "anglais": "Mediastinal lymph nodes",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Lymphonœuds médiastinaux",
+   "ta2": "5254",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-brachiocephaliques",
+      "nom": "Lymphonœuds brachiocéphaliques"
+     },
+     {
+      "id": "lymphonoeuds-tracheobronchiques-inferieurs",
+      "nom": "Lymphonœuds trachéobronchiques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-juxta-oesophagiens",
+      "nom": "Lymphonœuds juxta-œsophagiens"
+     },
+     {
+      "id": "lymphonoeuds-pericardiques-lateraux",
+      "nom": "Lymphonœuds péricardiques latéraux"
+     },
+     {
+      "id": "lymphonoeud-de-l-arcade-de-la-veine-azygos",
+      "nom": "Lymphonœud de l'arcade de la veine azygos"
+     },
+     {
+      "id": "lymphonoeud-du-ligament-arterosum",
+      "nom": "Lymphonœud du ligament artérosum"
+     },
+     {
+      "id": "lymphonoeuds-thoraciques-paratracheaux",
+      "nom": "Lymphonœuds thoraciques paratrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-prepericardiques",
+      "nom": "Lymphonœuds prépéricardiques"
+     },
+     {
+      "id": "lymphonoeuds-tracheobronchiques-superieurs",
+      "nom": "Lymphonœuds trachéobronchiques supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-paramammaires",
+   "nom": "Lymphonœuds paramammaires",
+   "latin": "Nodi paramammarii",
+   "anglais": "Paramammary nodes",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Lymphonœuds paramammaires",
+   "ta2": "5249",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœuds situés le long du bord latéral du sein, sur la paroi thoracique antérolatérale (4e à 6e espaces) ; ils drainent le sein vers les nœuds axillaires.",
+    "appui_dans_le_modele": {
+     "id": "cinquieme-cote",
+     "nom": "Cinquième côte"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-thoraciques",
+   "nom": "Lymphonœuds thoraciques",
+   "latin": "Nodi lymphoidei thoracis",
+   "anglais": "Thoracic lymph nodes",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Lymphonœuds thoraciques",
+   "ta2": "5247",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-brachiocephaliques",
+      "nom": "Lymphonœuds brachiocéphaliques"
+     },
+     {
+      "id": "lymphonoeuds-tracheobronchiques-inferieurs",
+      "nom": "Lymphonœuds trachéobronchiques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-intercostaux",
+      "nom": "Lymphonœuds intercostaux"
+     },
+     {
+      "id": "lymphonoeuds-intrapulmonaires",
+      "nom": "Lymphonœuds intrapulmonaires"
+     },
+     {
+      "id": "lymphonoeuds-juxta-oesophagiens",
+      "nom": "Lymphonœuds juxta-œsophagiens"
+     },
+     {
+      "id": "lymphonoeuds-pericardiques-lateraux",
+      "nom": "Lymphonœuds péricardiques latéraux"
+     },
+     {
+      "id": "lymphonoeud-de-l-arcade-de-la-veine-azygos",
+      "nom": "Lymphonœud de l'arcade de la veine azygos"
+     },
+     {
+      "id": "lymphonoeud-du-ligament-arterosum",
+      "nom": "Lymphonœud du ligament artérosum"
+     },
+     {
+      "id": "lymphonoeuds-parasternaux",
+      "nom": "Lymphonœuds parasternaux"
+     },
+     {
+      "id": "lymphonoeuds-thoraciques-paratracheaux",
+      "nom": "Lymphonœuds thoraciques paratrachéaux"
+     },
+     {
+      "id": "lymphonoeuds-prepericardiques",
+      "nom": "Lymphonœuds prépéricardiques"
+     },
+     {
+      "id": "lymphonoeuds-prevertebraux",
+      "nom": "Lymphonœuds prévertébraux"
+     },
+     {
+      "id": "lymphonoeuds-diaphragmatiques-superieurs",
+      "nom": "Lymphonœuds diaphragmatiques supérieurs"
+     },
+     {
+      "id": "lymphonoeuds-tracheobronchiques-superieurs",
+      "nom": "Lymphonœuds trachéobronchiques supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-thoraciques-parietaux",
+   "nom": "Lymphonœuds thoraciques pariétaux",
+   "latin": "Nodi lymphoidei parietaies thoracis",
+   "anglais": "Parietal thoracic lymph nodes",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Lymphonœuds thoraciques pariétaux",
+   "ta2": "5248",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-intercostaux",
+      "nom": "Lymphonœuds intercostaux"
+     },
+     {
+      "id": "lymphonoeuds-parasternaux",
+      "nom": "Lymphonœuds parasternaux"
+     },
+     {
+      "id": "lymphonoeuds-prevertebraux",
+      "nom": "Lymphonœuds prévertébraux"
+     },
+     {
+      "id": "lymphonoeuds-diaphragmatiques-superieurs",
+      "nom": "Lymphonœuds diaphragmatiques supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-tracheobronchiques",
+   "nom": "Lymphonœuds trachéobronchiques",
+   "latin": "Nodi tracheobronchiales",
+   "anglais": "Tracheobronchial nodes",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Lymphonœuds trachéobronchiques",
+   "ta2": "5261",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-tracheobronchiques-superieurs",
+      "nom": "Lymphonœuds trachéobronchiques supérieurs"
+     },
+     {
+      "id": "lymphonoeuds-tracheobronchiques-inferieurs",
+      "nom": "Lymphonœuds trachéobronchiques inférieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-abdominaux",
+   "nom": "Lymphonœuds abdominaux",
+   "latin": "Nodi lymphoidei abdominis",
+   "anglais": "Abdominal lymph nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds abdominaux",
+   "ta2": "5268",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-retropyloriques",
+      "nom": "Lymphonœuds rétropyloriques"
+     },
+     {
+      "id": "lymphonoeuds-subpyloriques",
+      "nom": "Lymphonœuds subpyloriques"
+     },
+     {
+      "id": "lymphonoeud-suprapylorique",
+      "nom": "Lymphonœud suprapylorique"
+     },
+     {
+      "id": "lymphonoeuds-appendiculaires",
+      "nom": "Lymphonœuds appendiculaires"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-superieurs-centraux",
+      "nom": "Lymphonœuds mésentériques supérieurs centraux"
+     },
+     {
+      "id": "lymphonoeuds-coeliaques",
+      "nom": "Lymphonœuds coeliaques"
+     },
+     {
+      "id": "lymphonoeud-cystique",
+      "nom": "Lymphonœud cystique"
+     },
+     {
+      "id": "lymphonoeuds-ileocoliques",
+      "nom": "Lymphonœuds iléocoliques"
+     },
+     {
+      "id": "lymphonoeuds-phreniques-inferieurs",
+      "nom": "Lymphonœuds phréniques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-epigastriques-inferieurs",
+      "nom": "Lymphonœuds épigastriques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-pancreatiques-inferieurs",
+      "nom": "Lymphonœuds pancréatiques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-lombaux-intermediaires",
+      "nom": "Lymphonœuds lombaux intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-juxta-intestinaux",
+      "nom": "Lymphonœuds mésentériques juxta-intestinaux"
+     },
+     {
+      "id": "lymphonoeuds-aortiques-lateraux",
+      "nom": "Lymphonœuds aortiques latéraux"
+     },
+     {
+      "id": "lymphonoeuds-caves-lateraux",
+      "nom": "Lymphonœuds caves latéraux"
+     },
+     {
+      "id": "lymphonoeuds-coliques-gauches",
+      "nom": "Lymphonœuds coliques gauches"
+     },
+     {
+      "id": "lymphonoeuds-coliques-moyens",
+      "nom": "Lymphonœuds coliques moyens"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-paracoliques-superieurs",
+      "nom": "Lymphonœuds mésentériques paracoliques supérieurs"
+     },
+     {
+      "id": "lymphonoeuds-pre-aortiques",
+      "nom": "Lymphonœuds pré-aortiques"
+     },
+     {
+      "id": "lymphonoeuds-precaecaux",
+      "nom": "Lymphonœuds précaecaux"
+     },
+     {
+      "id": "lymphonoeuds-precaves",
+      "nom": "Lymphonœuds précaves"
+     },
+     {
+      "id": "lymphonoeuds-retro-aortiques",
+      "nom": "Lymphonœuds rétro-aortiques"
+     },
+     {
+      "id": "lymphonoeuds-retrocaecaux",
+      "nom": "Lymphonœuds rétrocaecaux"
+     },
+     {
+      "id": "lymphonoeuds-retrocaves",
+      "nom": "Lymphonœuds rétrocaves"
+     },
+     {
+      "id": "lymphonoeuds-coliques-droits",
+      "nom": "Lymphonœuds coliques droits"
+     },
+     {
+      "id": "lymphonoeuds-gastriques-droits",
+      "nom": "Lymphonœuds gastriques droits"
+     },
+     {
+      "id": "lymphonoeuds-gastro-omentaux-droits",
+      "nom": "Lymphonœuds gastro-omentaux droits"
+     },
+     {
+      "id": "lymphonoeuds-sigmoidiens",
+      "nom": "Lymphonœuds sigmoïdiens"
+     },
+     {
+      "id": "lymphonoeuds-spleniques",
+      "nom": "Lymphonœuds spléniques"
+     },
+     {
+      "id": "lymphonoeuds-pancreatiques-superieurs",
+      "nom": "Lymphonœuds pancréatiques supérieurs"
+     },
+     {
+      "id": "lymphonoeuds-pancreaticoduodenaux-superieurs",
+      "nom": "Lymphonœuds pancréaticoduodénaux supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-abdominaux-parietaux",
+   "nom": "Lymphonœuds abdominaux pariétaux",
+   "latin": "Nodi lymphoideiparietaies abdominis",
+   "anglais": "Parietal abdominal lymph nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds abdominaux pariétaux",
+   "ta2": "5269",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-phreniques-inferieurs",
+      "nom": "Lymphonœuds phréniques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-epigastriques-inferieurs",
+      "nom": "Lymphonœuds épigastriques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-aortiques-lateraux",
+      "nom": "Lymphonœuds aortiques latéraux"
+     },
+     {
+      "id": "lymphonoeuds-caves-lateraux",
+      "nom": "Lymphonœuds caves latéraux"
+     },
+     {
+      "id": "lymphonoeuds-pre-aortiques",
+      "nom": "Lymphonœuds pré-aortiques"
+     },
+     {
+      "id": "lymphonoeuds-precaves",
+      "nom": "Lymphonœuds précaves"
+     },
+     {
+      "id": "lymphonoeuds-retro-aortiques",
+      "nom": "Lymphonœuds rétro-aortiques"
+     },
+     {
+      "id": "lymphonoeuds-retrocaves",
+      "nom": "Lymphonœuds rétrocaves"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-iliaques-communs",
+   "nom": "Lymphonœuds iliaques communs",
+   "latin": "Nodi iliaci communes",
+   "anglais": "Common iliac nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds iliaques communs",
+   "ta2": "5319",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-iliaques-communs-intermediaires",
+      "nom": "Lymphonœuds iliaques communs intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-lateraux",
+      "nom": "Lymphonœuds iliaques communs latéraux"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-mediaux",
+      "nom": "Lymphonœuds iliaques communs médiaux"
+     },
+     {
+      "id": "lymphonoeuds-sacraux-medians",
+      "nom": "Lymphonœuds sacraux médians"
+     },
+     {
+      "id": "lymphonoeuds-subaortiques",
+      "nom": "Lymphonœuds subaortiques"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-lombaux-droits",
+   "nom": "Lymphonœuds lombaux droits",
+   "latin": "Nodi lumbales dextri",
+   "anglais": "Right lumbar nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds lombaux droits",
+   "ta2": "5275",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-caves-lateraux",
+      "nom": "Lymphonœuds caves latéraux"
+     },
+     {
+      "id": "lymphonoeuds-precaves",
+      "nom": "Lymphonœuds précaves"
+     },
+     {
+      "id": "lymphonoeuds-retrocaves",
+      "nom": "Lymphonœuds rétrocaves"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-lombaux-gauches",
+   "nom": "Lymphonœuds lombaux gauches",
+   "latin": "Nodi lumbales sinistri",
+   "anglais": "Left lumbar nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds lombaux gauches",
+   "ta2": "5270",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-aortiques-lateraux",
+      "nom": "Lymphonœuds aortiques latéraux"
+     },
+     {
+      "id": "lymphonoeuds-pre-aortiques",
+      "nom": "Lymphonœuds pré-aortiques"
+     },
+     {
+      "id": "lymphonoeuds-retro-aortiques",
+      "nom": "Lymphonœuds rétro-aortiques"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-mesenteriques-inferieurs",
+   "nom": "Lymphonœuds mésentériques inférieurs",
+   "latin": "Nodi mesenterici inferiores",
+   "anglais": "Inferior mesenteric nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds mésentériques inférieurs",
+   "ta2": "5312",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-coliques-gauches",
+      "nom": "Lymphonœuds coliques gauches"
+     },
+     {
+      "id": "lymphonoeuds-sigmoidiens",
+      "nom": "Lymphonœuds sigmoïdiens"
+     }
+    ]
+   }
+  }
+ ]
+}

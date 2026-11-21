@@ -1,0 +1,790 @@
+{
+ "lot": "veine-ajouts-2",
+ "couche": "veine",
+ "structures": [
+  {
+   "id": "veine-thalamostriee-superieure",
+   "nom": "Veine thalamostriée supérieure",
+   "latin": "Vena thalamostriata superior",
+   "anglais": "Superior thalamostriate vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine thalamostriée supérieure",
+   "ta2": "4925",
+   "connu": {
+    "description_du_trace": "Elle suit le sillon entre le noyau caudé et le thalamus (stria terminalis) d'arrière en avant et se jette dans la veine cérébrale interne au foramen interventriculaire.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "veine-transverse-de-la-face",
+   "nom": "Veine transverse de la face",
+   "latin": "Vena transversa faciei",
+   "anglais": "Transverse facial vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine transverse de la face",
+   "ta2": "4834",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère transverse de la face, au-dessus du canal parotidien, et se jette dans la veine temporale superficielle."
+   }
+  },
+  {
+   "id": "veine-emissaire-condylaire",
+   "nom": "Veine émissaire condylaire",
+   "latin": "Emissarium condylare",
+   "anglais": "Condylar emissary vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine émissaire condylaire",
+   "ta2": "4875",
+   "connu": {
+    "description_du_trace": "Elle passe par le canal condylaire, en arrière du condyle occipital, et relie le sinus sigmoïde au plexus veineux vertébral externe.",
+    "appui_dans_le_modele": {
+     "id": "veine-vertebrale",
+     "nom": "Veine vertébrale"
+    }
+   }
+  },
+  {
+   "id": "veine-emissaire-mastoidienne",
+   "nom": "Veine émissaire mastoïdienne",
+   "latin": "Emissarium mastoideum",
+   "anglais": "Mastoid emissary vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine émissaire mastoïdienne",
+   "ta2": "4874",
+   "connu": {
+    "description_du_trace": "Elle traverse le foramen mastoïdien et relie le sinus sigmoïde à la veine auriculaire postérieure ou occipitale.",
+    "appui_dans_le_modele": {
+     "id": "veine-auriculaire-posterieure",
+     "nom": "Veine auriculaire postérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-emissaire-occipitale",
+   "nom": "Veine émissaire occipitale",
+   "latin": "Emissarium occipitale",
+   "anglais": "Occipital emissary vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine émissaire occipitale",
+   "ta2": "4876",
+   "connu": {
+    "description_du_trace": "Elle traverse l'os occipital près de la protubérance occipitale interne et relie le confluent des sinus à la veine occipitale du cuir chevelu.",
+    "appui_dans_le_modele": {
+     "id": "veine-occipitale",
+     "nom": "Veine occipitale"
+    }
+   }
+  },
+  {
+   "id": "veine-emissaire-parietale",
+   "nom": "Veine émissaire pariétale",
+   "latin": "Emissarium pariétale",
+   "anglais": "Parietal emissary vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine émissaire pariétale",
+   "ta2": "4873",
+   "connu": {
+    "description_du_trace": "Elle traverse le foramen pariétal et met en relation le sinus sagittal supérieur avec les veines du cuir chevelu.",
+    "appui_dans_le_modele": {
+     "id": "veine-occipitale",
+     "nom": "Veine occipitale"
+    }
+   }
+  },
+  {
+   "id": "veines-articulaires-temporomandibulaire",
+   "nom": "Veines articulaires temporomandibulaire",
+   "latin": "Venae articulares temporomandibulares",
+   "anglais": "Temporomandibular articular veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines articulaires temporomandibulaire",
+   "ta2": "4842",
+   "connu": {
+    "description_du_trace": "Elles drainent l'articulation temporo-mandibulaire et se jettent dans la veine rétromandibulaire et la veine temporale superficielle.",
+    "appui_dans_le_modele": {
+     "id": "veines-temporales-superficielles",
+     "nom": "Veines temporales superficielles"
+    }
+   }
+  },
+  {
+   "id": "veines-auriculaires-anterieures",
+   "nom": "Veines auriculaires antérieures",
+   "latin": "Venae auriculares anteriores",
+   "anglais": "Anterior auricular veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines auriculaires antérieures",
+   "ta2": "4840",
+   "connu": {
+    "description_du_trace": "Elles drainent la face antérieure du pavillon de l'oreille et se jettent dans la veine temporale superficielle.",
+    "appui_dans_le_modele": {
+     "id": "veines-temporales-superficielles",
+     "nom": "Veines temporales superficielles"
+    }
+   }
+  },
+  {
+   "id": "veines-cervicales-transverses",
+   "nom": "Veines cervicales transverses",
+   "latin": "Venae transversae colli",
+   "anglais": "Transverse cervical veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines cervicales transverses",
+   "ta2": "4962",
+   "connu": {
+    "description_du_trace": "Elles accompagnent l'artère cervicale transverse dans la région cervicale latérale et se jettent dans la veine jugulaire externe ou la veine sous-clavière.",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-externe",
+     "nom": "Veine jugulaire externe"
+    }
+   }
+  },
+  {
+   "id": "veines-clivales",
+   "nom": "Veines clivales",
+   "latin": "Venae clivales",
+   "anglais": "Clival veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines clivales",
+   "ta2": "4885",
+   "connu": {
+    "description_du_trace": "Petites veines du clivus qui convergent vers le plexus veineux basilaire.",
+    "appui_dans_le_modele": {
+     "id": "plexus-veineux-basilaire",
+     "nom": "Plexus veineux basilaire"
+    }
+   }
+  },
+  {
+   "id": "veines-cerebelleuses",
+   "nom": "Veines cérébelleuses",
+   "latin": "Venae cerebelli",
+   "anglais": "Cerebellar veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines cérébelleuses",
+   "ta2": "4935",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-superieure-du-vermis",
+      "nom": "Veine supérieure du vermis"
+     },
+     {
+      "id": "veine-inferieure-du-vermis",
+      "nom": "Veine inférieure du vermis"
+     },
+     {
+      "id": "veines-superieures-de-l-hemisphere-cerebelleux",
+      "nom": "Veines supérieures de l'hémisphère cérébelleux"
+     },
+     {
+      "id": "veines-inferieures-de-l-hemisphere-cerebelleux",
+      "nom": "Veines inférieures de l'hémisphère cérébelleux"
+     },
+     {
+      "id": "veine-precentrale-cerebelleuse",
+      "nom": "Veine précentrale cérébelleuse"
+     },
+     {
+      "id": "veine-petreuse",
+      "nom": "Veine pétreuse"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-cerebrales-directes-laterales",
+   "nom": "Veines cérébrales directes latérales",
+   "latin": "Venae directae latérales cerebri",
+   "anglais": "Lateral direct cerebral veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines cérébrales directes latérales",
+   "ta2": "4927",
+   "connu": {
+    "description_du_trace": "Veines de la paroi latérale du ventricule latéral qui descendent vers la veine basale.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "veines-cerebrales-inferieures",
+   "nom": "Veines cérébrales inférieures",
+   "latin": "Venae inferiores cerebri",
+   "anglais": "Inferior cerebral veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines cérébrales inférieures",
+   "ta2": "4911",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veines-orbitofrontales",
+      "nom": "Veines orbitofrontales"
+     },
+     {
+      "id": "veines-temporales",
+      "nom": "Veines temporales"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-cerebrales-profondes",
+   "nom": "Veines cérébrales profondes",
+   "latin": "Venae profundae cerebri",
+   "anglais": "Deep cerebral veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines cérébrales profondes",
+   "ta2": "4915",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-basale",
+      "nom": "Veine basale"
+     },
+     {
+      "id": "veine-cerebrale-anterieure",
+      "nom": "Veine cérébrale antérieure"
+     },
+     {
+      "id": "veine-cerebrale-moyenne-profonde",
+      "nom": "Veine cérébrale moyenne profonde"
+     },
+     {
+      "id": "veines-insulaires",
+      "nom": "Veines insulaires"
+     },
+     {
+      "id": "veines-thalamo-striees-inferieures",
+      "nom": "Veines thalamo-striées inférieures"
+     },
+     {
+      "id": "veine-choroide-inferieure",
+      "nom": "Veine choroïde inférieure"
+     },
+     {
+      "id": "grande-veine-cerebrale",
+      "nom": "Grande veine cérébrale"
+     },
+     {
+      "id": "veine-cerebrale-interne",
+      "nom": "Veine cérébrale interne"
+     },
+     {
+      "id": "veine-choroide-superieure",
+      "nom": "Veine choroïde supérieure"
+     },
+     {
+      "id": "veine-thalamostriee-superieure",
+      "nom": "Veine thalamostriée supérieure"
+     },
+     {
+      "id": "veines-cerebrales-directes-laterales",
+      "nom": "Veines cérébrales directes latérales"
+     },
+     {
+      "id": "veine-posterieure-du-corps-calleux",
+      "nom": "Veine postérieure du corps calleux"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-cerebrales-superficielles",
+   "nom": "Veines cérébrales superficielles",
+   "latin": "Venae superficiales cerebri",
+   "anglais": "Superficial veins of brain",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines cérébrales superficielles",
+   "ta2": "4902",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-frontopolaire",
+      "nom": "Veine frontopolaire"
+     },
+     {
+      "id": "veines-frontales",
+      "nom": "Veines frontales"
+     },
+     {
+      "id": "veines-parietales",
+      "nom": "Veines pariétales"
+     },
+     {
+      "id": "veines-occipitales",
+      "nom": "Veines occipitales"
+     },
+     {
+      "id": "veine-cerebrale-moyenne-superficielle",
+      "nom": "Veine cérébrale moyenne superficielle"
+     },
+     {
+      "id": "veine-anastomotique-superieure",
+      "nom": "Veine anastomotique supérieure"
+     },
+     {
+      "id": "veine-anastomotique-inferieure",
+      "nom": "Veine anastomotique inférieure"
+     },
+     {
+      "id": "veines-orbitofrontales",
+      "nom": "Veines orbitofrontales"
+     },
+     {
+      "id": "veines-temporales",
+      "nom": "Veines temporales"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-cerebrales-superieures",
+   "nom": "Veines cérébrales supérieures",
+   "latin": "Venae superiores cerebri",
+   "anglais": "Superior cerebral veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines cérébrales supérieures",
+   "ta2": "4903",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-frontopolaire",
+      "nom": "Veine frontopolaire"
+     },
+     {
+      "id": "veines-frontales",
+      "nom": "Veines frontales"
+     },
+     {
+      "id": "veines-parietales",
+      "nom": "Veines pariétales"
+     },
+     {
+      "id": "veines-occipitales",
+      "nom": "Veines occipitales"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-diploiques",
+   "nom": "Veines diploïques",
+   "latin": "Venae diploicae",
+   "anglais": "Diploic veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines diploïques",
+   "ta2": "4867",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-diploique-frontale",
+      "nom": "Veine diploïque frontale"
+     },
+     {
+      "id": "veine-diploique-temporale-anterieure",
+      "nom": "Veine diploïque temporale antérieure"
+     },
+     {
+      "id": "veine-diploique-temporale-posterieure",
+      "nom": "Veine diploïque temporale postérieure"
+     },
+     {
+      "id": "veine-diploique-occipitale",
+      "nom": "Veine diploïque occipitale"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-frontales",
+   "nom": "Veines frontales",
+   "latin": "Venae frontales",
+   "anglais": "Frontal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines frontales",
+   "ta2": "4905",
+   "connu": {
+    "description_du_trace": "Veines de la face convexe et médiale du lobe frontal qui montent vers le sinus sagittal supérieur et s'y ouvrent en obliquant vers l'avant.",
+    "appui_dans_le_modele": {
+     "id": "sinus-sagittal-superieur",
+     "nom": "Sinus sagittal supérieur"
+    }
+   }
+  },
+  {
+   "id": "veines-inferieures-de-l-hemisphere-cerebelleux",
+   "nom": "Veines inférieures de l'hémisphère cérébelleux",
+   "latin": "Venae inferiores hemisphaerii",
+   "anglais": "Inferior veins of cerebellar hemisphere",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines inférieures de l'hémisphère cérébelleux",
+   "ta2": "4939",
+   "connu": {
+    "description_du_trace": "Elles drainent la face inférieure de l'hémisphère cérébelleux et se jettent dans le sinus sigmoïde et le sinus transverse.",
+    "appui_dans_le_modele": {
+     "id": "sinus-transverse",
+     "nom": "Sinus transverse"
+    }
+   }
+  },
+  {
+   "id": "veines-insulaires",
+   "nom": "Veines insulaires",
+   "latin": "Venae insulares",
+   "anglais": "Insular veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines insulaires",
+   "ta2": "4919",
+   "connu": {
+    "description_du_trace": "Elles drainent le cortex de l'insula et se jettent dans la veine cérébrale moyenne profonde.",
+    "appui_dans_le_modele": {
+     "id": "cortex-insulaire",
+     "nom": "Cortex insulaire"
+    }
+   }
+  },
+  {
+   "id": "veines-linguales-dorsales",
+   "nom": "Veines linguales dorsales",
+   "latin": "Venae dorsales linguae",
+   "anglais": "Dorsal lingual veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines linguales dorsales",
+   "ta2": "4808",
+   "connu": {
+    "description_du_trace": "Elles drainent le dos et les bords de la langue et rejoignent la veine linguale sous le muscle hyoglosse.",
+    "appui_dans_le_modele": {
+     "id": "veine-linguale",
+     "nom": "Veine linguale"
+    }
+   }
+  },
+  {
+   "id": "veines-meningees",
+   "nom": "Veines méningées",
+   "latin": "Venae meningeae",
+   "anglais": "Meningeal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines méningées",
+   "ta2": "4804",
+   "connu": {
+    "description_du_trace": "Veines de la dure-mère des fosses crâniennes postérieure et moyenne : elles rejoignent les sinus sigmoïde et pétreux inférieur puis la veine jugulaire interne au foramen jugulaire.",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-interne",
+     "nom": "Veine jugulaire interne"
+    }
+   }
+  },
+  {
+   "id": "veines-meningees-moyennes",
+   "nom": "Veines méningées moyennes",
+   "latin": "Venae meningeae mediae",
+   "anglais": "Middle meningeal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines méningées moyennes",
+   "ta2": "4837",
+   "connu": {
+    "description_du_trace": "Deux veines accompagnent chaque branche de l'artère méningée moyenne dans les gouttières de la face interne de la voûte, sortent par le foramen épineux et se jettent dans le plexus ptérygoïdien.",
+    "appui_dans_le_modele": {
+     "id": "veines-maxillaires",
+     "nom": "Veines maxillaires"
+    }
+   }
+  },
+  {
+   "id": "veines-nasales-externes",
+   "nom": "Veines nasales externes",
+   "latin": "Venae nasales externae",
+   "anglais": "External nasal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines nasales externes",
+   "ta2": "4822",
+   "connu": {
+    "description_du_trace": "Elles drainent la peau et le cartilage du nez et se jettent dans la veine angulaire et la veine faciale.",
+    "appui_dans_le_modele": {
+     "id": "veine-angulaire",
+     "nom": "Veine angulaire"
+    }
+   }
+  },
+  {
+   "id": "veines-occipitales",
+   "nom": "Veines occipitales",
+   "latin": "Venae occipitales",
+   "anglais": "Occipital veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines occipitales",
+   "ta2": "4907",
+   "connu": {
+    "description_du_trace": "Veines du lobe occipital : les unes montent vers le sinus sagittal supérieur, les autres descendent vers le sinus transverse.",
+    "appui_dans_le_modele": {
+     "id": "sinus-transverse",
+     "nom": "Sinus transverse"
+    }
+   }
+  },
+  {
+   "id": "veines-orbitaires",
+   "nom": "Veines orbitaires",
+   "latin": "Venae orbitales",
+   "anglais": "Orbital veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines orbitaires",
+   "ta2": "4886",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-ophtalmique-inferieure",
+      "nom": "Veine ophtalmique inférieure"
+     },
+     {
+      "id": "veine-ophtalmique-superieure",
+      "nom": "Veine ophtalmique supérieure"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-orbitofrontales",
+   "nom": "Veines orbitofrontales",
+   "latin": "Venae orbitofrontales",
+   "anglais": "Orbitofrontal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines orbitofrontales",
+   "ta2": "4912",
+   "connu": {
+    "description_du_trace": "Elles drainent la face orbitaire du lobe frontal et se jettent dans le sinus sagittal supérieur et dans la veine basale ou le sinus caverneux.",
+    "appui_dans_le_modele": {
+     "id": "sinus-caverneux",
+     "nom": "Sinus caverneux"
+    }
+   }
+  },
+  {
+   "id": "veines-palpebrales",
+   "nom": "Veines palpébrales",
+   "latin": "Venae palpebrales",
+   "anglais": "Palpebral veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines palpébrales",
+   "ta2": "4898",
+   "connu": {
+    "description_du_trace": "Veines des paupières qui se jettent dans les veines ophtalmiques supérieure et inférieure, à la partie antérieure de l'orbite.",
+    "appui_dans_le_modele": {
+     "id": "veine-ophtalmique-inferieure",
+     "nom": "Veine ophtalmique inférieure"
+    }
+   }
+  },
+  {
+   "id": "veines-palpebrales-inferieures",
+   "nom": "Veines palpébrales inférieures",
+   "latin": "Venae palpebrales inferiores",
+   "anglais": "Inferior palpebral veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines palpébrales inférieures",
+   "ta2": "4823",
+   "connu": {
+    "description_du_trace": "Elles drainent la paupière inférieure et rejoignent la veine faciale à la racine du nez.",
+    "appui_dans_le_modele": {
+     "id": "veine-faciale",
+     "nom": "Veine faciale"
+    }
+   }
+  },
+  {
+   "id": "veines-palpebrales-superieures",
+   "nom": "Veines palpébrales supérieures",
+   "latin": "Venae palpebrales superiores",
+   "anglais": "Superior palpebral vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines palpébrales supérieures",
+   "ta2": "4821",
+   "connu": {
+    "description_du_trace": "Elles drainent la paupière supérieure et se jettent dans la veine angulaire, près de l'angle médial de l'oeil.",
+    "appui_dans_le_modele": {
+     "id": "veine-angulaire",
+     "nom": "Veine angulaire"
+    }
+   }
+  },
+  {
+   "id": "veines-parietales",
+   "nom": "Veines pariétales",
+   "latin": "Venae pariétales",
+   "anglais": "Parietal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines pariétales",
+   "ta2": "4906",
+   "connu": {
+    "description_du_trace": "Veines des gyrus postcentral et pariétaux qui rejoignent le sinus sagittal supérieur.",
+    "appui_dans_le_modele": {
+     "id": "sinus-sagittal-superieur",
+     "nom": "Sinus sagittal supérieur"
+    }
+   }
+  },
+  {
+   "id": "veines-parotidiennes-anterieures",
+   "nom": "Veines parotidiennes antérieures",
+   "latin": "Venae parotideae anteriores",
+   "anglais": "Anterior parotid veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines parotidiennes antérieures",
+   "ta2": "4827",
+   "connu": {
+    "description_du_trace": "Elles drainent la partie antérieure de la glande parotide et se jettent dans la veine faciale.",
+    "appui_dans_le_modele": {
+     "id": "veine-faciale",
+     "nom": "Veine faciale"
+    }
+   }
+  },
+  {
+   "id": "veines-parotidiennes-posterieures",
+   "nom": "Veines parotidiennes postérieures",
+   "latin": "Venae parotideae posteriores",
+   "anglais": "Posterior parotid veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines parotidiennes postérieures",
+   "ta2": "4841",
+   "connu": {
+    "description_du_trace": "Elles drainent la partie postérieure de la glande parotide et se jettent dans la veine rétromandibulaire.",
+    "appui_dans_le_modele": {
+     "id": "veine-retromandibulaire",
+     "nom": "Veine rétromandibulaire"
+    }
+   }
+  },
+  {
+   "id": "veines-pharyngees",
+   "nom": "Veines pharyngées",
+   "latin": "Venae pharyngeae",
+   "anglais": "Pharyngeal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines pharyngées",
+   "ta2": "4806",
+   "connu": {
+    "description_du_trace": "Elles forment un plexus sur la paroi postérieure du pharynx, puis des veines gagnent la veine jugulaire interne (parfois la veine faciale).",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-interne",
+     "nom": "Veine jugulaire interne"
+    }
+   }
+  },
+  {
+   "id": "veines-pontines",
+   "nom": "Veines pontines",
+   "latin": "Venae pontis",
+   "anglais": "Pontine veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines pontines",
+   "ta2": "4931",
+   "connu": {
+    "description_du_trace": "Elles drainent le pont et se jettent dans la veine pétreuse et le sinus pétreux supérieur.",
+    "appui_dans_le_modele": {
+     "id": "sinus-petreux-superieur",
+     "nom": "Sinus pétreux supérieur"
+    }
+   }
+  },
+  {
+   "id": "veines-superieures-de-l-hemisphere-cerebelleux",
+   "nom": "Veines supérieures de l'hémisphère cérébelleux",
+   "latin": "Venae superiores hemisphaerii",
+   "anglais": "Superior veins of cerebellar hemisphere",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines supérieures de l'hémisphère cérébelleux",
+   "ta2": "4938",
+   "connu": {
+    "description_du_trace": "Elles drainent la face supérieure de l'hémisphère cérébelleux et se jettent dans le sinus transverse, le sinus droit et le sinus pétreux supérieur.",
+    "appui_dans_le_modele": {
+     "id": "sinus-petreux-superieur",
+     "nom": "Sinus pétreux supérieur"
+    }
+   }
+  },
+  {
+   "id": "veines-temporales",
+   "nom": "Veines temporales",
+   "latin": "Venae temporales",
+   "anglais": "Temporal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines temporales",
+   "ta2": "4914",
+   "connu": {
+    "description_du_trace": "Elles drainent la face inférieure et latérale du lobe temporal et rejoignent le sinus transverse, le sinus pétreux supérieur et le sinus caverneux.",
+    "appui_dans_le_modele": {
+     "id": "sinus-caverneux",
+     "nom": "Sinus caverneux"
+    }
+   }
+  },
+  {
+   "id": "veines-temporales-profondes",
+   "nom": "Veines temporales profondes",
+   "latin": "Venae temporales profundae",
+   "anglais": "Deep temporal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines temporales profondes",
+   "ta2": "4838",
+   "connu": {
+    "description_du_trace": "Elles drainent le muscle temporal avec les artères temporales profondes et se jettent dans le plexus ptérygoïdien (veines maxillaires).",
+    "appui_dans_le_modele": {
+     "id": "veines-maxillaires",
+     "nom": "Veines maxillaires"
+    }
+   }
+  }
+ ]
+}

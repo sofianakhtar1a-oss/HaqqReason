@@ -1,0 +1,1165 @@
+{
+ "lot": "nerf-ajouts-4",
+ "couche": "nerf",
+ "structures": [
+  {
+   "id": "plexus-iliaque",
+   "nom": "Plexus iliaque",
+   "latin": "Plexus iliacus",
+   "anglais": "Iliac plexus",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Plexus iliaque",
+   "ta2": "6659",
+   "connu": {
+    "description_du_trace": "Prolongement du plexus aortique autour des artères iliaques commune et externe.",
+    "appui_dans_le_modele": {
+     "id": "iliaque-commune",
+     "nom": "Artère iliaque commune"
+    }
+   }
+  },
+  {
+   "id": "plexus-rectal",
+   "nom": "Plexus rectal",
+   "latin": "Plexus rectalis",
+   "anglais": "Rectal plexus",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Plexus rectal",
+   "ta2": "6717",
+   "connu": {
+    "description_du_trace": "Réseau autonome entourant le rectum, issu des plexus mésentérique inférieur et hypogastrique inférieur, qui innerve ses muscles et sa muqueuse.",
+    "appui_dans_le_modele": {
+     "id": "rectum",
+     "nom": "Rectum"
+    }
+   }
+  },
+  {
+   "id": "plexus-ureterique",
+   "nom": "Plexus urétérique",
+   "latin": "Plexus uretericus",
+   "anglais": "Ureteric plexus",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Plexus urétérique",
+   "ta2": "6704",
+   "connu": {
+    "description_du_trace": "Fin réseau autonome qui entoure l'uretère, issu des plexus rénal, aortique et hypogastriques.",
+    "appui_dans_le_modele": {
+     "id": "uretere",
+     "nom": "Uretère"
+    }
+   }
+  },
+  {
+   "id": "nerf-anal-inferieur",
+   "nom": "Nerf anal inférieur",
+   "latin": "Nervus analis inferior",
+   "anglais": "Inferior anal nerve",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Nerf anal inférieur",
+   "ta2": "6555",
+   "connu": {
+    "description_du_trace": "Branche du nerf pudendal dans le canal pudendal : elle traverse la fosse ischio-anale et innerve le sphincter externe de l'anus et la peau périanale.",
+    "appui_dans_le_modele": {
+     "id": "nerf-pudendal",
+     "nom": "Nerf pudendal"
+    }
+   }
+  },
+  {
+   "id": "nerf-hypogastrique",
+   "nom": "Nerf hypogastrique",
+   "latin": "Nervus hypogastricus",
+   "anglais": "Hypogastric nerve",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Nerf hypogastrique",
+   "ta2": "6714",
+   "connu": {
+    "description_du_trace": "Chacun des deux nerfs hypogastriques unit le plexus hypogastrique supérieur au plexus hypogastrique inférieur, en descendant devant le sacrum, le long du rectum.",
+    "appui_dans_le_modele": {
+     "id": "artere-sacrale-mediane",
+     "nom": "Artère sacrale médiane"
+    }
+   }
+  },
+  {
+   "id": "nerf-perineal",
+   "nom": "Nerf périnéal",
+   "latin": "Nervus perinealis",
+   "anglais": "Perineal nerve",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Nerf périnéal",
+   "ta2": "6556",
+   "connu": {
+    "description_du_trace": "Branche terminale du nerf pudendal qui se divise en rameaux superficiels (peau du périnée et du scrotum) et profond (muscles du périnée et bulbe du pénis).",
+    "appui_dans_le_modele": {
+     "id": "nerf-pudendal",
+     "nom": "Nerf pudendal"
+    }
+   }
+  },
+  {
+   "id": "nerfs-splanchniques-pelviens",
+   "nom": "Nerfs splanchniques pelviens",
+   "latin": "Nervi splanchnici pelvici",
+   "anglais": "Pelvic splanchnic nerves",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Nerfs splanchniques pelviens",
+   "ta2": "6685",
+   "connu": {
+    "description_du_trace": "Fibres parasympathiques préganglionnaires des rameaux antérieurs de S2 à S4 qui rejoignent le plexus hypogastrique inférieur ; elles innervent le côlon descendant, le rectum, la vessie et les organes génitaux.",
+    "appui_dans_le_modele": {
+     "id": "sacrum",
+     "nom": "Sacrum"
+    }
+   }
+  },
+  {
+   "id": "nerfs-splanchniques-sacres",
+   "nom": "Nerfs splanchniques sacrés",
+   "latin": "Nervi splanchnici sacrales",
+   "anglais": "Sacral splanchnic nerves",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Nerfs splanchniques sacrés",
+   "ta2": "6636",
+   "connu": {
+    "description_du_trace": "Rameaux sympathiques des ganglions sacraux du tronc sympathique, sur la face pelvienne du sacrum, qui rejoignent le plexus hypogastrique inférieur.",
+    "appui_dans_le_modele": {
+     "id": "sacrum",
+     "nom": "Sacrum"
+    }
+   }
+  },
+  {
+   "id": "plexus-anorectal-moyen",
+   "nom": "Plexus anorectal moyen",
+   "latin": "Plexus anorectalis medius",
+   "anglais": "Middle anorectal plexus",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Plexus anorectal moyen",
+   "ta2": "6716",
+   "connu": {
+    "description_du_trace": "Partie du plexus hypogastrique inférieur qui accompagne l'artère rectale moyenne sur la paroi latérale du rectum.",
+    "appui_dans_le_modele": {
+     "id": "rectum",
+     "nom": "Rectum"
+    }
+   }
+  },
+  {
+   "id": "plexus-anorectal-superieur",
+   "nom": "Plexus anorectal supérieur",
+   "latin": "Plexus anorectalis superior",
+   "anglais": "Superior anorectal plexus",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Plexus anorectal supérieur",
+   "ta2": "6710",
+   "connu": {
+    "description_du_trace": "Prolongement du plexus mésentérique inférieur le long de l'artère rectale supérieure vers le haut du rectum.",
+    "appui_dans_le_modele": {
+     "id": "artere-anorectale-superieure",
+     "nom": "Artère anorectale supérieure"
+    }
+   }
+  },
+  {
+   "id": "plexus-coccygien",
+   "nom": "Plexus coccygien",
+   "latin": "Plexus coccygeus",
+   "anglais": "Coccygeal plexus",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Plexus coccygien",
+   "ta2": "6598",
+   "connu": {
+    "description_du_trace": "Petit réseau formé par une partie de S4, par S5 et par le nerf coccygien, sur la face pelvienne du muscle coccygien ; il donne les nerfs anococcygiens.",
+    "appui_dans_le_modele": {
+     "id": "coccyx",
+     "nom": "Coccyx"
+    }
+   }
+  },
+  {
+   "id": "plexus-hypogastrique-inferieur",
+   "nom": "Plexus hypogastrique inférieur",
+   "latin": "Plexus hypogastricus inferior",
+   "anglais": "Inferior hypogastric plexus",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Plexus hypogastrique inférieur",
+   "ta2": "6715",
+   "connu": {
+    "description_du_trace": "Plexus pelvien sur la paroi latérale du rectum, de la vessie et de la prostate ; il reçoit les nerfs hypogastriques et splanchniques pelviens et distribue des fibres à tous les organes pelviens.",
+    "appui_dans_le_modele": {
+     "id": "rectum",
+     "nom": "Rectum"
+    }
+   }
+  },
+  {
+   "id": "plexus-hypogastrique-superieur",
+   "nom": "Plexus hypogastrique supérieur",
+   "latin": "Plexus hypogastricus superior",
+   "anglais": "Superior hypogastric plexus",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Plexus hypogastrique supérieur",
+   "ta2": "6711",
+   "connu": {
+    "description_du_trace": "Réseau impair situé en avant de la bifurcation aortique, de L5 et du promontoire du sacrum, entre les artères iliaques communes ; il prolonge le plexus aortique et se divise en nerfs hypogastriques.",
+    "appui_dans_le_modele": {
+     "id": "artere-sacrale-mediane",
+     "nom": "Artère sacrale médiane"
+    }
+   }
+  },
+  {
+   "id": "plexus-prostatique",
+   "nom": "Plexus prostatique",
+   "latin": "Plexus prostaticus",
+   "anglais": "Prostatic plexus",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Plexus prostatique",
+   "ta2": "6724",
+   "connu": {
+    "description_du_trace": "Réseau issu du plexus hypogastrique inférieur sur les faces latérales de la prostate ; ses nerfs caverneux innervent les corps érectiles du pénis.",
+    "appui_dans_le_modele": {
+     "id": "prostate",
+     "nom": "Prostate"
+    }
+   }
+  },
+  {
+   "id": "plexus-vesical",
+   "nom": "Plexus vésical",
+   "latin": "Plexus vesicalis",
+   "anglais": "Vesical plexus",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Plexus vésical",
+   "ta2": "6719",
+   "connu": {
+    "description_du_trace": "Réseau issu du plexus hypogastrique inférieur sur la face inférolatérale de la vessie, qui innerve le muscle détrusor et le trigone.",
+    "appui_dans_le_modele": {
+     "id": "vessie-urinaire",
+     "nom": "Vessie urinaire"
+    }
+   }
+  },
+  {
+   "id": "plexus-brachial",
+   "nom": "Plexus brachial",
+   "latin": "Plexus brachialis",
+   "anglais": "Brachial plexus",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Plexus brachial",
+   "ta2": "6395",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "branche-communiquante-du-nerf-median-avec-le-nerf-ulnaire",
+      "nom": "Branche communiquante du nerf médian avec le nerf ulnaire"
+     },
+     {
+      "id": "branche-anterieure-du-nerf-cutane-medial-de-l-avant-bras",
+      "nom": "Branche antérieure du nerf cutané médial de l'avant-bras"
+     },
+     {
+      "id": "division-anterieure-du-tronc-inferieur-du-plexus-brachial",
+      "nom": "Division antérieure du tronc inférieur du plexus brachial"
+     },
+     {
+      "id": "division-anterieure-du-tronc-moyen-du-plexus-brachial",
+      "nom": "Division antérieure du tronc moyen du plexus brachial"
+     },
+     {
+      "id": "division-anterieure-du-tronc-superieur-du-plexus-brachial",
+      "nom": "Division antérieure du tronc supérieur du plexus brachial"
+     },
+     {
+      "id": "nerf-interosseux-anterieur-de-l-avant-bras",
+      "nom": "Nerf interosseux antérieur de l'avant-bras"
+     },
+     {
+      "id": "nerf-axillaire",
+      "nom": "Nerf axillaire"
+     },
+     {
+      "id": "branches-digitales-palmaires-communes-du-nerf-median",
+      "nom": "Branches digitales palmaires communes du nerf médian"
+     },
+     {
+      "id": "branches-digitales-palmaires-communes-du-nerf-ulnaire",
+      "nom": "Branches digitales palmaires communes du nerf ulnaire"
+     },
+     {
+      "id": "branche-profonde-du-nerf-radial",
+      "nom": "Branche profonde du nerf radial"
+     },
+     {
+      "id": "branche-profonde-du-nerf-ulnaire",
+      "nom": "Branche profonde du nerf ulnaire"
+     },
+     {
+      "id": "branche-dorsale-du-nerf-ulnaire",
+      "nom": "Branche dorsale du nerf ulnaire"
+     },
+     {
+      "id": "branches-digitales-dorsales-du-nerf-radial",
+      "nom": "Branches digitales dorsales du nerf radial"
+     },
+     {
+      "id": "branches-digitales-dorsales-du-nerf-ulnaire",
+      "nom": "Branches digitales dorsales du nerf ulnaire"
+     },
+     {
+      "id": "nerf-dorsal-de-la-scapula",
+      "nom": "Nerf dorsal de la scapula"
+     },
+     {
+      "id": "nerf-cutane-lateral-inferieur-du-bras",
+      "nom": "Nerf cutané latéral inférieur du bras"
+     },
+     {
+      "id": "nerf-subscapulaire-inferieur",
+      "nom": "Nerf subscapulaire inférieur"
+     },
+     {
+      "id": "tronc-inferieur-du-plexus-brachial",
+      "nom": "Tronc inférieur du plexus brachial"
+     },
+     {
+      "id": "nerf-cutane-antebrachial-lateral",
+      "nom": "Nerf cutané antébrachial latéral"
+     },
+     {
+      "id": "nerf-pectoral-lateral",
+      "nom": "Nerf pectoral latéral"
+     },
+     {
+      "id": "nerf-thoracique-long",
+      "nom": "Nerf thoracique long"
+     },
+     {
+      "id": "nerf-cutane-medial-de-l-avant-bras",
+      "nom": "Nerf cutané médial de l'avant-bras"
+     },
+     {
+      "id": "nerf-cutane-medial-du-bras",
+      "nom": "Nerf cutané médial du bras"
+     },
+     {
+      "id": "nerf-pectoral-medial",
+      "nom": "Nerf pectoral médial"
+     },
+     {
+      "id": "nerf-median",
+      "nom": "Nerf médian"
+     },
+     {
+      "id": "tronc-moyen-du-plexus-brachial",
+      "nom": "Tronc moyen du plexus brachial"
+     },
+     {
+      "id": "branches-musculaires-du-nerf-axillaire",
+      "nom": "Branches musculaires du nerf axillaire"
+     },
+     {
+      "id": "branches-musculaires-du-nerf-median",
+      "nom": "Branches musculaires du nerf médian"
+     },
+     {
+      "id": "branches-musculaires-du-nerf-radial",
+      "nom": "Branches musculaires du nerf radial"
+     },
+     {
+      "id": "branches-musculaires-du-nerf-ulnaire",
+      "nom": "Branches musculaires du nerf ulnaire"
+     },
+     {
+      "id": "nerf-musculocutane",
+      "nom": "Nerf musculocutané"
+     },
+     {
+      "id": "branche-palmaire-du-nerf-median",
+      "nom": "Branche palmaire du nerf médian"
+     },
+     {
+      "id": "branche-palmaire-du-nerf-ulnaire",
+      "nom": "Branche palmaire du nerf ulnaire"
+     },
+     {
+      "id": "nerf-cutane-posterieur-de-l-avant-bras",
+      "nom": "Nerf cutané postérieur de l'avant-bras"
+     },
+     {
+      "id": "branche-posterieure-du-nerf-cutane-medial-de-l-avant-bras",
+      "nom": "Branche postérieure du nerf cutané médial de l'avant-bras"
+     },
+     {
+      "id": "faisceau-posterieur-du-plexus-brachial",
+      "nom": "Faisceau postérieur du plexus brachial"
+     },
+     {
+      "id": "division-posterieure-du-tronc-inferieur-du-plexus-brachial",
+      "nom": "Division postérieure du tronc inférieur du plexus brachial"
+     },
+     {
+      "id": "division-posterieure-du-tronc-moyen-du-plexus-brachial",
+      "nom": "Division postérieure du tronc moyen du plexus brachial"
+     },
+     {
+      "id": "division-posterieure-du-tronc-superieur-du-plexus-brachial",
+      "nom": "Division postérieure du tronc supérieur du plexus brachial"
+     },
+     {
+      "id": "nerf-interosseux-posterieur-de-l-avant-bras",
+      "nom": "Nerf interosseux postérieur de l'avant-bras"
+     },
+     {
+      "id": "branches-digitales-palmaires-propres-du-nerf-median",
+      "nom": "Branches digitales palmaires propres du nerf médian"
+     },
+     {
+      "id": "branches-digitales-palmaires-propres-du-nerf-ulnaire",
+      "nom": "Branches digitales palmaires propres du nerf ulnaire"
+     },
+     {
+      "id": "nerf-radial",
+      "nom": "Nerf radial"
+     },
+     {
+      "id": "racines-du-plexus-brachial",
+      "nom": "Racines du plexus brachial"
+     },
+     {
+      "id": "nerf-subclavier",
+      "nom": "Nerf subclavier"
+     },
+     {
+      "id": "branche-superficielle-du-nerf-radial",
+      "nom": "Branche superficielle du nerf radial"
+     },
+     {
+      "id": "branche-superficielle-du-nerf-ulnaire",
+      "nom": "Branche superficielle du nerf ulnaire"
+     },
+     {
+      "id": "nerf-cutane-brachial-lateroposterieur",
+      "nom": "Nerf cutané brachial latéropostérieur"
+     },
+     {
+      "id": "nerf-subscapulaire-superieur",
+      "nom": "Nerf subscapulaire supérieur"
+     },
+     {
+      "id": "tronc-superieur-du-plexus-brachial",
+      "nom": "Tronc supérieur du plexus brachial"
+     },
+     {
+      "id": "nerf-suprascapulaire",
+      "nom": "Nerf suprascapulaire"
+     },
+     {
+      "id": "nerf-thoracodorsal",
+      "nom": "Nerf thoracodorsal"
+     },
+     {
+      "id": "nerf-ulnaire",
+      "nom": "Nerf ulnaire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerf-intercostobrachial",
+   "nom": "Nerf intercostobrachial",
+   "latin": "Nervus intercostobrachialis",
+   "anglais": "Intercostobrachial nerve",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerf intercostobrachial",
+   "ta2": "6476",
+   "connu": {
+    "description_du_trace": "Branche cutanée latérale du deuxième nerf intercostal : elle traverse le creux axillaire et se distribue à la peau de la face médiale du bras, avec le nerf cutané médial du bras.",
+    "appui_dans_le_modele": {
+     "id": "deuxieme-cote",
+     "nom": "Deuxième côte"
+    }
+   }
+  },
+  {
+   "id": "nerfs-subscapulaires",
+   "nom": "Nerfs subscapulaires",
+   "latin": "Nervi subscapulares",
+   "anglais": "Subscapular nerves",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerfs subscapulaires",
+   "ta2": "6427",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "nerf-subscapulaire-superieur",
+      "nom": "Nerf subscapulaire supérieur"
+     },
+     {
+      "id": "nerf-subscapulaire-inferieur",
+      "nom": "Nerf subscapulaire inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerfs-supraclaviculaires",
+   "nom": "Nerfs supraclaviculaires",
+   "latin": "Nervi supraclaviculares",
+   "anglais": "Supraclavicular nerves",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerfs supraclaviculaires",
+   "ta2": "6391",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "nerfs-supraclaviculaires-mediaux",
+      "nom": "Nerfs supraclaviculaires médiaux"
+     },
+     {
+      "id": "nerfs-supraclaviculaires-intermediaires",
+      "nom": "Nerfs supraclaviculaires intermédiaires"
+     },
+     {
+      "id": "nerfs-supraclaviculaires-lateraux",
+      "nom": "Nerfs supraclaviculaires latéraux"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerfs-supraclaviculaires-intermediaires",
+   "nom": "Nerfs supraclaviculaires intermédiaires",
+   "latin": "Nervi supraclaviculares intermedii",
+   "anglais": "Intermediate supraclavicular nerves",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerfs supraclaviculaires intermédiaires",
+   "ta2": "6393",
+   "connu": {
+    "description_du_trace": "Rameaux du plexus cervical (C3-C4) qui croisent la partie moyenne de la clavicule, parfois à travers l'os, pour la peau de la paroi thoracique antérieure sous la clavicule.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-c3-c4",
+     "nom": "Disque intervertébral C3-C4"
+    }
+   }
+  },
+  {
+   "id": "nerfs-supraclaviculaires-lateraux",
+   "nom": "Nerfs supraclaviculaires latéraux",
+   "latin": "Nervi supraclaviculares laterales",
+   "anglais": "Lateral supraclavicular nerves",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerfs supraclaviculaires latéraux",
+   "ta2": "6394",
+   "connu": {
+    "description_du_trace": "Rameaux du plexus cervical (C3-C4) qui traversent le trapèze et la partie latérale de la clavicule pour la peau de l'épaule, au-dessus du deltoïde et de l'acromion.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-c3-c4",
+     "nom": "Disque intervertébral C3-C4"
+    }
+   }
+  },
+  {
+   "id": "nerfs-supraclaviculaires-mediaux",
+   "nom": "Nerfs supraclaviculaires médiaux",
+   "latin": "Nervi supraclaviculares mediales",
+   "anglais": "Medial supraclavicular nerves",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerfs supraclaviculaires médiaux",
+   "ta2": "6392",
+   "connu": {
+    "description_du_trace": "Rameaux du plexus cervical (C3-C4) qui descendent sur le muscle sternocléidomastoïdien et croisent la partie médiale de la clavicule pour la peau de la région sternale et de l'articulation sterno-claviculaire.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-c3-c4",
+     "nom": "Disque intervertébral C3-C4"
+    }
+   }
+  },
+  {
+   "id": "plexus-autonome-brachial",
+   "nom": "Plexus autonome brachial",
+   "latin": "Plexus autonomicus brachialis",
+   "anglais": "Brachial autonomic plexus",
+   "region": "bras",
+   "rang": 2,
+   "officiel": "Plexus autonome brachial",
+   "ta2": "6656",
+   "connu": {
+    "description_du_trace": "Plexus autonome (sympathique) qui accompagne les artères axillaire et brachiale ; il innerve les vaisseaux et les glandes sudoripares du membre supérieur.",
+    "appui_dans_le_modele": {
+     "id": "axillaire",
+     "nom": "Artère axillaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-cutane-posterieur-du-bras",
+   "nom": "Nerf cutané postérieur du bras",
+   "latin": "Nervus cutaneus posterior brachii",
+   "anglais": "Posterior brachial cutaneous nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf cutané postérieur du bras",
+   "ta2": "6432",
+   "connu": {
+    "description_du_trace": "Branche du nerf radial née dans l'aisselle : elle passe sous la tête longue du triceps, devient sous-cutanée et descend sur la face postérieure du bras jusqu'à l'olécrane.",
+    "appui_dans_le_modele": {
+     "id": "nerf-radial",
+     "nom": "Nerf radial"
+    }
+   }
+  },
+  {
+   "id": "nerfs-lombaires",
+   "nom": "Nerfs lombaires",
+   "latin": "Nervi lumbales",
+   "anglais": "Lumbar nerves",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Nerfs lombaires",
+   "ta2": "6489",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "nerf-ilio-inguinal",
+      "nom": "Nerf ilio-inguinal"
+     },
+     {
+      "id": "nerf-iliohypogastrique",
+      "nom": "Nerf iliohypogastrique"
+     }
+    ]
+   }
+  },
+  {
+   "id": "plexus-femoral",
+   "nom": "Plexus fémoral",
+   "latin": "Plexus femoralis",
+   "anglais": "Femoral plexus",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Plexus fémoral",
+   "ta2": "6660",
+   "connu": {
+    "description_du_trace": "Prolongement du plexus iliaque autour de l'artère fémorale, qui innerve les vaisseaux de la cuisse.",
+    "appui_dans_le_modele": {
+     "id": "femorale",
+     "nom": "Artère fémorale"
+    }
+   }
+  },
+  {
+   "id": "plexus-lombosacral",
+   "nom": "Plexus lombosacral",
+   "latin": "Plexus lumbosacralis",
+   "anglais": "Lumbosacral plexus",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Plexus lombosacral",
+   "ta2": "6516",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "branche-anterieure-du-nerf-obturateur",
+      "nom": "Branche antérieure du nerf obturateur"
+     },
+     {
+      "id": "branches-cutanees-anterieures-du-nerf-femoral",
+      "nom": "Branches cutanées antérieures du nerf fémoral"
+     },
+     {
+      "id": "racine-anterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+      "nom": "Racine antérieure du nerf cutané postérieur de la cuisse"
+     },
+     {
+      "id": "nerf-fibulaire-commun",
+      "nom": "Nerf fibulaire commun"
+     },
+     {
+      "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-lat",
+      "nom": "Branches digitales plantaires communes du nerf plantaire lat."
+     },
+     {
+      "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-med",
+      "nom": "Branches digitales plantaires communes du nerf plantaire méd."
+     },
+     {
+      "id": "nerf-fibulaire-profond",
+      "nom": "Nerf fibulaire profond"
+     },
+     {
+      "id": "branches-digitales-dorsales-du-nerf-fibulaire-profond",
+      "nom": "Branches digitales dorsales du nerf fibulaire profond"
+     },
+     {
+      "id": "branches-digitales-dorsales-du-nerf-fibulaire-superficiel",
+      "nom": "Branches digitales dorsales du nerf fibulaire superficiel"
+     },
+     {
+      "id": "branche-femorale-du-nerf-genitofemoral",
+      "nom": "Branche fémorale du nerf génitofémoral"
+     },
+     {
+      "id": "nerf-femoral",
+      "nom": "Nerf fémoral"
+     },
+     {
+      "id": "branche-genitale-du-nerf-genitofemoral",
+      "nom": "Branche génitale du nerf génitofémoral"
+     },
+     {
+      "id": "nerf-genitofemoral",
+      "nom": "Nerf génitofémoral"
+     },
+     {
+      "id": "branche-infrapatellaire-du-nerf-saphene",
+      "nom": "Branche infrapatellaire du nerf saphène"
+     },
+     {
+      "id": "nerf-cutane-dorsal-intermediaire-du-pied",
+      "nom": "Nerf cutané dorsal intermédiaire du pied"
+     },
+     {
+      "id": "nerf-cutane-femoral-lateral",
+      "nom": "Nerf cutané fémoral latéral"
+     },
+     {
+      "id": "nerf-plantaire-lateral",
+      "nom": "Nerf plantaire latéral"
+     },
+     {
+      "id": "branches-cutanees-crurales-mediales-du-nerf-saphene",
+      "nom": "Branches cutanées crurales médiales du nerf saphène"
+     },
+     {
+      "id": "nerf-cutane-dorsal-medial-du-pied",
+      "nom": "Nerf cutané dorsal médial du pied"
+     },
+     {
+      "id": "nerf-plantaire-medial",
+      "nom": "Nerf plantaire médial"
+     },
+     {
+      "id": "nerf-cutane-sural-medial",
+      "nom": "Nerf cutané sural médial"
+     },
+     {
+      "id": "branches-musculaires-du-nerf-fibulaire-profond",
+      "nom": "Branches musculaires du nerf fibulaire profond"
+     },
+     {
+      "id": "nerf-du-muscle-piriforme",
+      "nom": "Nerf du muscle piriforme"
+     },
+     {
+      "id": "nerf-du-muscle-carre-femoral",
+      "nom": "Nerf du muscle carré fémoral"
+     },
+     {
+      "id": "nerf-obturateur",
+      "nom": "Nerf obturateur"
+     },
+     {
+      "id": "branche-posterieure-du-nerf-obturateur",
+      "nom": "Branche postérieure du nerf obturateur"
+     },
+     {
+      "id": "nerf-cutane-posterieur-de-la-cuisse",
+      "nom": "Nerf cutané postérieur de la cuisse"
+     },
+     {
+      "id": "racine-posterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+      "nom": "Racine postérieure du nerf cutané postérieur de la cuisse"
+     },
+     {
+      "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-lat",
+      "nom": "Branches digitales plantaires propres du nerf plantaire lat."
+     },
+     {
+      "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-med",
+      "nom": "Branches digitales plantaires propres du nerf plantaire méd."
+     },
+     {
+      "id": "nerf-pudendal",
+      "nom": "Nerf pudendal"
+     },
+     {
+      "id": "nerf-saphene",
+      "nom": "Nerf saphène"
+     },
+     {
+      "id": "nerf-sciatique",
+      "nom": "Nerf sciatique"
+     },
+     {
+      "id": "nerf-fibulaire-superficiel",
+      "nom": "Nerf fibulaire superficiel"
+     },
+     {
+      "id": "nerf-gluteal-superieur",
+      "nom": "Nerf glutéal supérieur"
+     },
+     {
+      "id": "branche-surale-communiquante-du-nerf-fibulaire-commun",
+      "nom": "Branche surale communiquante du nerf fibulaire commun"
+     },
+     {
+      "id": "nerf-sural",
+      "nom": "Nerf sural"
+     },
+     {
+      "id": "nerf-tibial",
+      "nom": "Nerf tibial"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerfs-cutanes-gluteaux-inferieurs",
+   "nom": "Nerfs cutanés glutéaux inférieurs",
+   "latin": "Nervi cutanei glutei inferiores",
+   "anglais": "Inferior gluteal cutaneous nerves",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerfs cutanés glutéaux inférieurs",
+   "ta2": "6567",
+   "connu": {
+    "description_du_trace": "Rameaux du nerf cutané postérieur de la cuisse qui contournent le bord inférieur du grand glutéal et remontent innerver la peau de la partie inférieure de la fesse.",
+    "appui_dans_le_modele": {
+     "id": "nerf-cutane-posterieur-de-la-cuisse",
+     "nom": "Nerf cutané postérieur de la cuisse"
+    }
+   }
+  },
+  {
+   "id": "nerfs-cutanes-gluteaux-moyens",
+   "nom": "Nerfs cutanés glutéaux moyens",
+   "latin": "Nervi cutanei glutei medii",
+   "anglais": "Middle gluteal cutaneous nerves",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerfs cutanés glutéaux moyens",
+   "ta2": "6509",
+   "connu": {
+    "description_du_trace": "Branches cutanées latérales des rameaux postérieurs de S1 à S3 : elles sortent par les foramens sacrés postérieurs, traversent l'origine du grand glutéal et innervent la peau de la région glutéale médiale, devant le sacrum et le coccyx.",
+    "appui_dans_le_modele": {
+     "id": "sacrum",
+     "nom": "Sacrum"
+    }
+   }
+  },
+  {
+   "id": "nerfs-cutanes-gluteaux-superieurs",
+   "nom": "Nerfs cutanés glutéaux supérieurs",
+   "latin": "Nervi cutanei glutei superiores",
+   "anglais": "Superior gluteal cutaneous nerves",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerfs cutanés glutéaux supérieurs",
+   "ta2": "6493",
+   "connu": {
+    "description_du_trace": "Branches cutanées latérales des rameaux postérieurs de L1 à L3 : elles traversent les muscles du dos et le fascia thoraco-lombaire, croisent la crête iliaque et innervent la peau de la partie supérieure de la fesse.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-l1-l2",
+     "nom": "Disque intervertébral L1-L2"
+    }
+   }
+  },
+  {
+   "id": "nerfs-cutanes-perforants",
+   "nom": "Nerfs cutanés perforants",
+   "latin": "Nervus cutaneus perforans",
+   "anglais": "Perforating cutaneous nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerfs cutanés perforants",
+   "ta2": "6546",
+   "connu": {
+    "description_du_trace": "Branche des rameaux antérieurs de S2-S3 qui perfore le ligament sacro-tubéral et le bord inférieur du grand glutéal et innerve la peau de la partie inféromédiale de la fesse.",
+    "appui_dans_le_modele": {
+     "id": "nerf-pudendal",
+     "nom": "Nerf pudendal"
+    }
+   }
+  },
+  {
+   "id": "plexus-lombal",
+   "nom": "Plexus lombal",
+   "latin": "Plexus lumbalis",
+   "anglais": "Lumbar plexus",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Plexus lombal",
+   "ta2": "6517",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "branche-anterieure-du-nerf-obturateur",
+      "nom": "Branche antérieure du nerf obturateur"
+     },
+     {
+      "id": "branches-cutanees-anterieures-du-nerf-femoral",
+      "nom": "Branches cutanées antérieures du nerf fémoral"
+     },
+     {
+      "id": "branche-femorale-du-nerf-genitofemoral",
+      "nom": "Branche fémorale du nerf génitofémoral"
+     },
+     {
+      "id": "nerf-femoral",
+      "nom": "Nerf fémoral"
+     },
+     {
+      "id": "branche-genitale-du-nerf-genitofemoral",
+      "nom": "Branche génitale du nerf génitofémoral"
+     },
+     {
+      "id": "nerf-genitofemoral",
+      "nom": "Nerf génitofémoral"
+     },
+     {
+      "id": "branche-infrapatellaire-du-nerf-saphene",
+      "nom": "Branche infrapatellaire du nerf saphène"
+     },
+     {
+      "id": "nerf-cutane-femoral-lateral",
+      "nom": "Nerf cutané fémoral latéral"
+     },
+     {
+      "id": "branches-cutanees-crurales-mediales-du-nerf-saphene",
+      "nom": "Branches cutanées crurales médiales du nerf saphène"
+     },
+     {
+      "id": "nerf-obturateur",
+      "nom": "Nerf obturateur"
+     },
+     {
+      "id": "branche-posterieure-du-nerf-obturateur",
+      "nom": "Branche postérieure du nerf obturateur"
+     },
+     {
+      "id": "nerf-saphene",
+      "nom": "Nerf saphène"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerfs-anaux-superieurs",
+   "nom": "Nerfs anaux supérieurs",
+   "latin": "Nervi anales superiores",
+   "anglais": "Superior anal nerves",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Nerfs anaux supérieurs",
+   "ta2": "6718",
+   "connu": {
+    "description_du_trace": "Fins rameaux issus des plexus pelviens, qui descendent le long du rectum et innervent la muqueuse du canal anal au-dessus de la ligne pectinée.",
+    "appui_dans_le_modele": {
+     "id": "rectum",
+     "nom": "Rectum"
+    }
+   }
+  },
+  {
+   "id": "nerf-crural-interosseux",
+   "nom": "Nerf crural interosseux",
+   "latin": "Nervus interosseus cruris",
+   "anglais": "Crural interosseous nerve",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Nerf crural interosseux",
+   "ta2": "6584",
+   "connu": {
+    "description_du_trace": "Branche du nerf tibial qui descend sur la face postérieure de la membrane interosseuse de la jambe et innerve la membrane, le périoste et la syndesmose tibiofibulaire distale.",
+    "appui_dans_le_modele": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    }
+   }
+  },
+  {
+   "id": "nerf-cutane-sural-lateral",
+   "nom": "Nerf cutané sural latéral",
+   "latin": "Nervus cutaneus lateralis surae",
+   "anglais": "Lateral sural cutaneous nerve",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Nerf cutané sural latéral",
+   "ta2": "6572",
+   "connu": {
+    "description_du_trace": "Branche du nerf fibulaire commun née dans la fosse poplitée : elle croise le chef latéral du gastrocnémien et innerve la peau de la face latérale de la jambe ; elle est unie au nerf sural par la branche surale communicante.",
+    "appui_dans_le_modele": {
+     "id": "nerf-fibulaire-commun",
+     "nom": "Nerf fibulaire commun"
+    }
+   }
+  },
+  {
+   "id": "plexus-sacral",
+   "nom": "Plexus sacral",
+   "latin": "Plexus sacralis",
+   "anglais": "Sacral plexus",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Plexus sacral",
+   "ta2": "6539",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "racine-anterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+      "nom": "Racine antérieure du nerf cutané postérieur de la cuisse"
+     },
+     {
+      "id": "nerf-fibulaire-commun",
+      "nom": "Nerf fibulaire commun"
+     },
+     {
+      "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-lat",
+      "nom": "Branches digitales plantaires communes du nerf plantaire lat."
+     },
+     {
+      "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-med",
+      "nom": "Branches digitales plantaires communes du nerf plantaire méd."
+     },
+     {
+      "id": "nerf-fibulaire-profond",
+      "nom": "Nerf fibulaire profond"
+     },
+     {
+      "id": "branches-digitales-dorsales-du-nerf-fibulaire-profond",
+      "nom": "Branches digitales dorsales du nerf fibulaire profond"
+     },
+     {
+      "id": "branches-digitales-dorsales-du-nerf-fibulaire-superficiel",
+      "nom": "Branches digitales dorsales du nerf fibulaire superficiel"
+     },
+     {
+      "id": "nerf-cutane-dorsal-intermediaire-du-pied",
+      "nom": "Nerf cutané dorsal intermédiaire du pied"
+     },
+     {
+      "id": "nerf-plantaire-lateral",
+      "nom": "Nerf plantaire latéral"
+     },
+     {
+      "id": "nerf-cutane-dorsal-medial-du-pied",
+      "nom": "Nerf cutané dorsal médial du pied"
+     },
+     {
+      "id": "nerf-plantaire-medial",
+      "nom": "Nerf plantaire médial"
+     },
+     {
+      "id": "nerf-cutane-sural-medial",
+      "nom": "Nerf cutané sural médial"
+     },
+     {
+      "id": "branches-musculaires-du-nerf-fibulaire-profond",
+      "nom": "Branches musculaires du nerf fibulaire profond"
+     },
+     {
+      "id": "nerf-du-muscle-piriforme",
+      "nom": "Nerf du muscle piriforme"
+     },
+     {
+      "id": "nerf-du-muscle-carre-femoral",
+      "nom": "Nerf du muscle carré fémoral"
+     },
+     {
+      "id": "nerf-cutane-posterieur-de-la-cuisse",
+      "nom": "Nerf cutané postérieur de la cuisse"
+     },
+     {
+      "id": "racine-posterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+      "nom": "Racine postérieure du nerf cutané postérieur de la cuisse"
+     },
+     {
+      "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-lat",
+      "nom": "Branches digitales plantaires propres du nerf plantaire lat."
+     },
+     {
+      "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-med",
+      "nom": "Branches digitales plantaires propres du nerf plantaire méd."
+     },
+     {
+      "id": "nerf-pudendal",
+      "nom": "Nerf pudendal"
+     },
+     {
+      "id": "nerf-sciatique",
+      "nom": "Nerf sciatique"
+     },
+     {
+      "id": "nerf-fibulaire-superficiel",
+      "nom": "Nerf fibulaire superficiel"
+     },
+     {
+      "id": "nerf-gluteal-superieur",
+      "nom": "Nerf glutéal supérieur"
+     },
+     {
+      "id": "branche-surale-communiquante-du-nerf-fibulaire-commun",
+      "nom": "Branche surale communiquante du nerf fibulaire commun"
+     },
+     {
+      "id": "nerf-sural",
+      "nom": "Nerf sural"
+     },
+     {
+      "id": "nerf-tibial",
+      "nom": "Nerf tibial"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerf-cutane-dorsolateral-du-pied",
+   "nom": "Nerf cutané dorsolatéral du pied",
+   "latin": "Nervus cutaneus lateralis dorsalis pedis",
+   "anglais": "Lateral dorsal cutaneous nerve of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Nerf cutané dorsolatéral du pied",
+   "ta2": "6587",
+   "connu": {
+    "description_du_trace": "Prolongement du nerf sural qui passe derrière la malléole latérale, longe le bord latéral du pied et se termine sur la face dorsale du cinquième orteil.",
+    "appui_dans_le_modele": {
+     "id": "nerf-sural",
+     "nom": "Nerf sural"
+    }
+   }
+  }
+ ]
+}

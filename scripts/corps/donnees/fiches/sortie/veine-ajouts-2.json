@@ -1,0 +1,1270 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), veines du cerveau, sinus de la dure-mère, veines diploïques et émissaires, veines de la tête et du cou",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "kenhub-cerveau": {
+   "titre": "Kenhub, Veins of the brain",
+   "url": "https://www.kenhub.com/en/library/anatomy/veins-of-the-brain"
+  },
+  "wp-emissaires": {
+   "titre": "Wikipédia anglais, Emissary veins",
+   "url": "https://en.wikipedia.org/wiki/Emissary_veins"
+  },
+  "wp-emissaire-condylaire": {
+   "titre": "Wikipédia anglais, Condylar emissary vein",
+   "url": "https://en.wikipedia.org/wiki/Condylar_emissary_vein"
+  },
+  "wp-emissaire-mastoidien": {
+   "titre": "Wikipédia anglais, Mastoid emissary vein",
+   "url": "https://en.wikipedia.org/wiki/Mastoid_emissary_vein"
+  },
+  "wp-diploiques": {
+   "titre": "Wikipédia anglais, Diploic veins",
+   "url": "https://en.wikipedia.org/wiki/Diploic_veins"
+  },
+  "wp-veines-cerebrales": {
+   "titre": "Wikipédia anglais, Cerebral veins",
+   "url": "https://en.wikipedia.org/wiki/Cerebral_veins"
+  },
+  "wp-cerebrales-inferieures": {
+   "titre": "Wikipédia anglais, Inferior cerebral veins",
+   "url": "https://en.wikipedia.org/wiki/Inferior_cerebral_veins"
+  },
+  "wp-cerebrales-internes": {
+   "titre": "Wikipédia anglais, Internal cerebral veins",
+   "url": "https://en.wikipedia.org/wiki/Internal_cerebral_veins"
+  },
+  "wp-thalamostriee": {
+   "titre": "Wikipédia anglais, Superior thalamostriate vein",
+   "url": "https://en.wikipedia.org/wiki/Superior_thalamostriate_vein"
+  },
+  "wp-cerebelleuses": {
+   "titre": "Wikipédia anglais, Cerebellar veins",
+   "url": "https://en.wikipedia.org/wiki/Cerebellar_veins"
+  },
+  "wp-faciale": {
+   "titre": "Wikipédia anglais, Facial vein",
+   "url": "https://en.wikipedia.org/wiki/Facial_vein"
+  },
+  "wp-temporale-superficielle": {
+   "titre": "Wikipédia anglais, Superficial temporal vein",
+   "url": "https://en.wikipedia.org/wiki/Superficial_temporal_vein"
+  },
+  "wp-transverse-face": {
+   "titre": "Wikipédia anglais, Transverse facial vein",
+   "url": "https://en.wikipedia.org/wiki/Transverse_facial_vein"
+  },
+  "wp-plexus-pterygoidien": {
+   "titre": "Wikipédia anglais, plexus ptérygoïdien (page Middle meningeal veins)",
+   "url": "https://en.wikipedia.org/wiki/Middle_meningeal_veins"
+  },
+  "wp-pharyngees": {
+   "titre": "Wikipédia anglais, Pharyngeal veins",
+   "url": "https://en.wikipedia.org/wiki/Pharyngeal_veins"
+  },
+  "wp-cervicales-transverses": {
+   "titre": "Wikipédia anglais, Transverse cervical veins",
+   "url": "https://en.wikipedia.org/wiki/Transverse_cervical_veins"
+  },
+  "wp-linguales-dorsales": {
+   "titre": "Wikipédia anglais, Dorsal lingual veins",
+   "url": "https://en.wikipedia.org/wiki/Dorsal_lingual_veins"
+  }
+ },
+ "fiches": [
+  {
+   "id": "veine-thalamostriee-superieure",
+   "resume": "Une veine profonde du cerveau : elle longe la gouttière entre le noyau caudé et le thalamus et forme avec la veine choroïde supérieure la veine cérébrale interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naît dans la gouttière entre le corps strié et le thalamus, au plancher du ventricule latéral"
+   },
+   "trajet": "Court d'arrière en avant dans le sillon qui sépare le noyau caudé du thalamus, le long de la strie terminale, en recueillant des veinules des deux côtés ; elle se recourbe derrière le pilier du fornix, près du foramen interventriculaire",
+   "terminaison": {
+    "veine": "veine-cerebrale-interne",
+    "texte": "Rejoint la veine choroïde supérieure derrière le pilier du fornix : leur réunion forme la veine cérébrale interne"
+   },
+   "drainage": {
+    "texte": "Noyau caudé, thalamus et substance blanche voisine (capsule interne)",
+    "structures": [
+     "noyau-caude",
+     "thalamus"
+    ]
+   },
+   "rapports": "Sous l'épendyme du plancher du corps du ventricule latéral, en dedans du noyau caudé, avec la strie terminale",
+   "clinique": "Dans l'imagerie, son angle de réunion avec la veine choroïde supérieure dessine l'« angle veineux », repère du foramen interventriculaire ; son déplacement trahit une masse profonde ou une hydrocéphalie",
+   "memo": "Entre le caudé et le thalamus, elle avance vers le foramen interventriculaire pour fonder la veine cérébrale interne",
+   "variantes": "Le calibre et le nombre de ses affluents varient d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "wp-thalamostriee",
+    "wp-cerebrales-internes"
+   ],
+   "divergences": "Gray la nomme veine terminale ; la nomenclature actuelle dit veine thalamostriée supérieure. Les sources s'accordent sur le trajet et la jonction avec la veine choroïde supérieure"
+  },
+  {
+   "id": "veine-transverse-de-la-face",
+   "resume": "Petite veine de la joue : elle accompagne l'artère transverse de la face et se jette dans la veine temporale superficielle.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naît de petites veines de la joue, sur le masséter, sous l'arcade zygomatique"
+   },
+   "trajet": "Chemine d'avant en arrière à la face latérale de la joue, sur le masséter et sous l'arcade zygomatique, avec l'artère du même nom et au-dessus du canal parotidien, puis gagne la parotide",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veinules de la joue et de la région masséter"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-temporales-superficielles",
+    "texte": "Se jette dans la veine temporale superficielle, juste avant que celle-ci s'unisse à la veine maxillaire pour former la veine rétromandibulaire"
+   },
+   "drainage": {
+    "texte": "Peau et tissus de la joue sur le masséter, région parotidienne",
+    "structures": []
+   },
+   "rapports": "Au-dessus du canal parotidien, avec l'artère transverse de la face et les rameaux du nerf facial",
+   "clinique": "Sans importance clinique propre ; elle fait partie des veines que le chirurgien rencontre en soulevant la parotide ou en abordant l'arcade zygomatique",
+   "memo": "Transverse, comme l'artère : elle traverse la joue en travers du masséter pour rejoindre la temporale superficielle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-transverse-face",
+    "wp-temporale-superficielle"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-emissaire-condylaire",
+   "resume": "Veine inconstante qui traverse le canal condylaire et relie le sinus sigmoïde aux veines profondes du cou.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "sinus-sigmoide",
+    "texte": "Naît du sinus sigmoïde, près de sa jonction avec le bulbe de la jugulaire"
+   },
+   "trajet": "Traverse le canal condylaire, derrière le condyle occipital, quitte le crâne et se jette dans les veines suboccipitales, qui se continuent par la veine vertébrale",
+   "terminaison": {
+    "veine": "veine-vertebrale",
+    "texte": "Se perd dans le plexus veineux suboccipital, d'où le sang gagne la veine vertébrale"
+   },
+   "drainage": {
+    "texte": "Sinus sigmoïde et veines profondes de la nuque (région suboccipitale)",
+    "structures": []
+   },
+   "rapports": "Dans le canal condylaire, en arrière du condyle de l'os occipital",
+   "clinique": "Absente chez une partie des gens ; sans valve, elle peut véhiculer une infection de la nuque vers le sinus et son saignement gêne les abords du foramen magnum",
+   "memo": "Condylaire : elle passe derrière le condyle occipital, par son petit canal, pour joindre le sinus aux veines de la nuque",
+   "variantes": "Inconstante ; calibre très variable",
+   "sources": [
+    "gray1918",
+    "wp-emissaire-condylaire",
+    "wp-emissaires"
+   ],
+   "divergences": "Gray la relie au sinus transverse, d'autres sources au sinus sigmoïde (la version retenue, car le canal s'ouvre dans la gouttière sigmoïde) ; la plupart des auteurs la relient au plexus suboccipital, Gray aux veines profondes du cou"
+  },
+  {
+   "id": "veine-emissaire-mastoidienne",
+   "resume": "La veine émissaire la plus constante : elle traverse le foramen mastoïdien et relie le sinus sigmoïde aux veines de la nuque.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "sinus-sigmoide",
+    "texte": "Naît du sinus sigmoïde, dans la gouttière du même nom"
+   },
+   "trajet": "Traverse le foramen mastoïdien, en arrière du processus mastoïde, et rejoint à l'extérieur la veine auriculaire postérieure ou la veine occipitale",
+   "terminaison": {
+    "veine": "veine-auriculaire-posterieure",
+    "texte": "Se jette dans la veine auriculaire postérieure (ou occipitale)"
+   },
+   "drainage": {
+    "texte": "Sinus sigmoïde, os mastoïde et cuir chevelu de la région rétro-auriculaire",
+    "structures": []
+   },
+   "rapports": "Dans le foramen mastoïdien, sur la partie postérieure du processus mastoïde",
+   "clinique": "Voie de propagation d'une infection de la mastoïde ou du cuir chevelu vers le sinus sigmoïde (thrombophlébite) ; une plaie au rasage ou une chirurgie mastoïdienne peut la faire saigner",
+   "memo": "Mastoïdienne : un pont court entre la gouttière du sinus sigmoïde et les veines rétro-auriculaires",
+   "variantes": "Le foramen peut être double ou absent d'un côté",
+   "sources": [
+    "gray1918",
+    "wp-emissaires",
+    "wp-emissaire-mastoidien"
+   ],
+   "divergences": "Gray la relie au sinus transverse, les sources actuelles au sinus sigmoïde (version retenue). Aucune source lue ne précise que les deux sinus conviennent"
+  },
+  {
+   "id": "veine-emissaire-occipitale",
+   "resume": "Veine émissaire inconstante de l'os occipital : elle relie le confluent des sinus aux veines du cuir chevelu.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naît du confluent des sinus, près de la protubérance occipitale interne"
+   },
+   "trajet": "Traverse l'os occipital près de la protubérance occipitale, d'un côté à l'autre de la table osseuse, et rejoint les veines du cuir chevelu de la nuque",
+   "terminaison": {
+    "veine": "veine-occipitale",
+    "texte": "Se jette dans la veine occipitale du cuir chevelu"
+   },
+   "drainage": {
+    "texte": "Confluent des sinus et cuir chevelu de la région occipitale",
+    "structures": []
+   },
+   "clinique": "Comme toutes les émissaires, sans valve : elle peut transmettre une infection du cuir chevelu au sinus, mais le chemin principal est la veine mastoïdienne",
+   "memo": "Occipitale : une petite porte dans l'os de la nuque, près de la bosse occipitale",
+   "variantes": "Inconstante ; souvent absente ou remplacée par des veines diploïques",
+   "sources": [
+    "wp-emissaires",
+    "gray1918"
+   ],
+   "divergences": "Gray ne décrit pas de veine émissaire occipitale distincte : l'occipitale du cuir chevelu communique par les émissaires pariétale et mastoïdienne. La Terminologia Anatomica la nomme pourtant ; la fiche suit la nomenclature, avec ce point de doute"
+  },
+  {
+   "id": "veine-emissaire-parietale",
+   "resume": "Veine émissaire du foramen pariétal : elle met en relation le sinus sagittal supérieur avec les veines du cuir chevelu.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "sinus-sagittal-superieur",
+    "texte": "Naît du sinus sagittal supérieur, près de la suture sagittale"
+   },
+   "trajet": "Traverse le foramen pariétal, près de la suture sagittale, et rejoint les veines du cuir chevelu, notamment de la région temporale et occipitale",
+   "terminaison": {
+    "veine": "veine-occipitale",
+    "texte": "Se jette dans les veines du cuir chevelu (par exemple la veine occipitale)"
+   },
+   "drainage": {
+    "texte": "Sinus sagittal supérieur et cuir chevelu de la région pariétale",
+    "structures": []
+   },
+   "clinique": "Sa rupture peut causer un hématome sous-galéal, notamment lors d'un accouchement par ventouse ; elle peut aussi transmettre une infection du scalp aux méninges",
+   "memo": "Pariétale : un petit trou près de la suture sagittale relie le sinus aux veines du scalp",
+   "variantes": "Le foramen pariétal manque ou est asymétrique chez certaines personnes",
+   "sources": [
+    "gray1918",
+    "wp-emissaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-articulaires-temporomandibulaire",
+   "resume": "Petites veines de l'articulation de la mâchoire : elles se jettent dans la veine temporale superficielle et le plexus ptérygoïdien.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent d'un réseau autour de la capsule de l'articulation temporo-mandibulaire"
+   },
+   "trajet": "Quittent la capsule articulaire par de courtes veinules et rejoignent la veine temporale superficielle, parfois la veine maxillaire, avant la formation de la veine rétromandibulaire",
+   "terminaison": {
+    "veine": "veines-temporales-superficielles",
+    "texte": "Se jettent dans la veine temporale superficielle"
+   },
+   "drainage": {
+    "texte": "Articulation temporo-mandibulaire et ses tissus voisins",
+    "structures": []
+   },
+   "clinique": "Sans rôle clinique propre ; un hématome ou un gonflement de l'articulation vient en partie de ce réseau",
+   "memo": "Articulaires : elles drainent l'articulation et rejoignent les veines temporales superficielles",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-temporale-superficielle"
+   ],
+   "divergences": "Gray place les veines articulaires parmi les affluents de la veine temporale superficielle ; la voie de la veine maxillaire est une variante non confirmée par les sources lues"
+  },
+  {
+   "id": "veines-auriculaires-anterieures",
+   "resume": "Veines de la face antérieure du pavillon de l'oreille : elles se jettent dans la veine temporale superficielle.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la peau de la face antérieure du pavillon de l'oreille"
+   },
+   "trajet": "Descendent devant l'oreille, avec les branches auriculaires de l'artère temporale superficielle, vers la veine temporale superficielle",
+   "terminaison": {
+    "veine": "veines-temporales-superficielles",
+    "texte": "Se jettent dans la veine temporale superficielle, devant le tragus"
+   },
+   "drainage": {
+    "texte": "Pavillon de l'oreille (face antérieure) et peau voisine",
+    "structures": []
+   },
+   "clinique": "Leur faible calibre rend le pavillon rouge et saignant en cas de plaie ; sans valeur clinique propre",
+   "memo": "Auriculaires antérieures : devant l'oreille, elles rejoignent la temporale superficielle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-temporale-superficielle"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-cervicales-transverses",
+   "resume": "Veines qui accompagnent l'artère cervicale transverse et se jettent dans la jugulaire externe, parfois dans la veine subclavière.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la région cervicale latérale, dans la partie basse du triangle postérieur du cou"
+   },
+   "trajet": "Accompagnent l'artère cervicale transverse dans le triangle supraclaviculaire, en travers du cou, au-dessus de la clavicule",
+   "terminaison": {
+    "veine": "veine-jugulaire-externe",
+    "texte": "Se jettent dans la veine jugulaire externe, près de sa terminaison (parfois dans la veine subclavière)"
+   },
+   "drainage": {
+    "texte": "Muscles et tissus de la région cervicale latérale",
+    "structures": []
+   },
+   "clinique": "Dans une chirurgie du triangle supraclaviculaire, elles peuvent saigner : elles se coupent avec l'artère cervicale transverse",
+   "memo": "Elles traversent le cou comme l'artère qui les accompagne, vers la jugulaire externe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-cervicales-transverses"
+   ],
+   "divergences": "Gray cite ces veines comme affluents de la jugulaire externe ; leur terminaison dans la veine subclavière est une variante fréquemment signalée en pratique, mais non confirmée par les deux sources lues"
+  },
+  {
+   "id": "veines-clivales",
+   "resume": "Petites veines du clivus qui convergent vers le plexus veineux basilaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de l'os et des méninges du clivus"
+   },
+   "trajet": "Descendent le long du clivus, entre le dos de la selle et le foramen magnum, et s'ouvrent dans le plexus veineux basilaire",
+   "terminaison": {
+    "veine": "plexus-veineux-basilaire",
+    "texte": "Se jettent dans le plexus veineux basilaire, lui-même relié aux sinus pétreux inférieurs"
+   },
+   "drainage": {
+    "texte": "Clivus et dure-mère de la base du crâne",
+    "structures": []
+   },
+   "clinique": "Le plexus basilaire peut saigner lors des abords chirurgicaux transclivaux de la base du crâne",
+   "memo": "Clivales : les petites veines de la pente du clivus vers le plexus basilaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau"
+   ],
+   "divergences": "Les deux sources lues décrivent le plexus basilaire et les sinus pétreux, mais aucune ne décrit les veines clivales elles-mêmes : le détail vient de la nomenclature"
+  },
+  {
+   "id": "veines-cerebelleuses",
+   "resume": "Les veines du cervelet : elles drainent le vermis et les hémisphères vers les sinus voisins de la fosse postérieure.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent à la surface du cervelet, du vermis et des hémisphères"
+   },
+   "trajet": "Rampent sur les faces supérieure et inférieure du cervelet, dans les sillons, perforent l'arachnoïde et la dure-mère et se jettent dans le sinus le plus proche : les supérieures vers la ligne médiane, les inférieures vers les côtés et l'arrière",
+   "affluents": [
+    {
+     "veine": "veine-superieure-du-vermis",
+     "texte": "Veine supérieure du vermis"
+    },
+    {
+     "veine": "veine-inferieure-du-vermis",
+     "texte": "Veine inférieure du vermis"
+    },
+    {
+     "veine": "veines-superieures-de-l-hemisphere-cerebelleux",
+     "texte": "Veines supérieures de l'hémisphère cérébelleux"
+    },
+    {
+     "veine": "veines-inferieures-de-l-hemisphere-cerebelleux",
+     "texte": "Veines inférieures de l'hémisphère cérébelleux"
+    },
+    {
+     "veine": "veine-precentrale-cerebelleuse",
+     "texte": "Veine précentrale cérébelleuse"
+    },
+    {
+     "veine": "veine-petreuse",
+     "texte": "Veine pétreuse"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "Les supérieures vont au sinus droit, au sinus transverse et au sinus pétreux supérieur ; les inférieures au sinus transverse, au sinus sigmoïde, au sinus pétreux et au sinus occipital"
+   },
+   "drainage": {
+    "texte": "Cervelet : vermis supérieur et inférieur, hémisphères cérébelleux",
+    "structures": []
+   },
+   "clinique": "Une thrombose des sinus de la fosse postérieure bloque leur drainage et provoque un infarctus veineux du cervelet, avec céphalées et signes d'hypertension intracrânienne",
+   "memo": "Les cérébelleuses supérieures filent vers le haut et le milieu, les inférieures vers le bas et les côtés",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-cerebelleuses"
+   ],
+   "divergences": "Les sources lues ne donnent pas les mêmes sinus pour les veines cérébelleuses inférieures : Kenhub cite sigmoïde, pétreux inférieur, occipital et droit ; Wikipédia et Gray, transverse, pétreux supérieur et occipital. La fiche reprend les voies citées par au moins une source"
+  },
+  {
+   "id": "veines-cerebrales-directes-laterales",
+   "resume": "Petites veines de la paroi latérale du ventricule latéral qui se jettent dans la veine basale.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent dans la paroi latérale du ventricule latéral"
+   },
+   "trajet": "Descendent le long de la paroi latérale du ventricule latéral, passent autour du pédoncule cérébral et s'ouvrent dans la veine basale",
+   "terminaison": {
+    "veine": "veine-basale",
+    "texte": "Se jettent dans la veine basale"
+   },
+   "drainage": {
+    "texte": "Paroi latérale du ventricule latéral et substance blanche voisine",
+    "structures": []
+   },
+   "clinique": "Leur compression ou leur thrombose, rare, entre dans le tableau d'un infarctus veineux profond ; elles n'ont pas de signe d'examen propre",
+   "memo": "Directes : elles descendent droit de la paroi du ventricule vers la veine basale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau"
+   ],
+   "divergences": "Aucune des deux sources lues ne nomme ces veines : le trajet est reconstitué de la description de la veine basale et des veines profondes. Leur terminaison exacte (veine basale ou veine cérébrale interne) varie selon les auteurs"
+  },
+  {
+   "id": "veines-cerebrales-inferieures",
+   "resume": "Les veines de la face inférieure des hémisphères : elles se jettent dans les sinus caverneux, pétreux supérieur et sagittal supérieur.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la face inférieure des lobes frontal et temporal"
+   },
+   "trajet": "Longent la face inférieure du cerveau : celles du lobe frontal rejoignent les veines cérébrales supérieures, celles du lobe temporal gagnent les sinus de la base du crâne",
+   "affluents": [
+    {
+     "veine": "veines-orbitofrontales",
+     "texte": "Veines orbitofrontales"
+    },
+    {
+     "veine": "veines-temporales",
+     "texte": "Veines temporales"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "Sinus sagittal supérieur (veines orbitofrontales) ; sinus transverse, pétreux supérieur et caverneux (veines temporales)"
+   },
+   "drainage": {
+    "texte": "Face inférieure du lobe frontal et du lobe temporal",
+    "structures": []
+   },
+   "clinique": "Une thrombose du sinus caverneux ou transverse provoque un infarctus veineux hémorragique du lobe temporal",
+   "memo": "Les inférieures : le dessous du cerveau, avec les veines orbitofrontales et temporales",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-cerebrales-inferieures"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-cerebrales-profondes",
+   "resume": "Le système veineux profond du cerveau : il draine les structures centrales vers la grande veine cérébrale.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent dans les noyaux gris centraux, le thalamus, les ventricules et l'insula"
+   },
+   "trajet": "Les veines thalamostriée supérieure et choroïde supérieure forment la veine cérébrale interne. La veine basale, formée au bord de la substance perforée antérieure, contourne le pédoncule et la rejoint. Les deux veines internes forment la grande veine",
+   "affluents": [
+    {
+     "veine": "veine-basale",
+     "texte": "Veine basale"
+    },
+    {
+     "veine": "veine-cerebrale-anterieure",
+     "texte": "Veine cérébrale antérieure"
+    },
+    {
+     "veine": "veine-cerebrale-moyenne-profonde",
+     "texte": "Veine cérébrale moyenne profonde"
+    },
+    {
+     "veine": "veines-insulaires",
+     "texte": "Veines insulaires"
+    },
+    {
+     "veine": "veines-thalamo-striees-inferieures",
+     "texte": "Veines thalamo-striées inférieures"
+    },
+    {
+     "veine": "veine-choroide-inferieure",
+     "texte": "Veine choroïde inférieure"
+    },
+    {
+     "veine": "veine-cerebrale-interne",
+     "texte": "Veine cérébrale interne"
+    },
+    {
+     "veine": "veine-choroide-superieure",
+     "texte": "Veine choroïde supérieure"
+    },
+    {
+     "veine": "veine-thalamostriee-superieure",
+     "texte": "Veine thalamostriée supérieure"
+    },
+    {
+     "veine": "veines-cerebrales-directes-laterales",
+     "texte": "Veines cérébrales directes latérales"
+    },
+    {
+     "veine": "veine-posterieure-du-corps-calleux",
+     "texte": "Veine postérieure du corps calleux"
+    }
+   ],
+   "terminaison": {
+    "veine": "grande-veine-cerebrale",
+    "texte": "La grande veine cérébrale, sous le splénium du corps calleux, se jette dans le sinus droit"
+   },
+   "drainage": {
+    "texte": "Noyaux gris centraux, thalamus, plexus choroïdes, hippocampe, corps calleux et insula",
+    "structures": []
+   },
+   "clinique": "Leur thrombose touche les deux thalami et donne un coma ou une confusion",
+   "memo": "Le profond converge : deux veines internes se réunissent en la grande veine de Galen, qui rejoint le sinus droit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-cerebrales-internes"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-cerebrales-superficielles",
+   "resume": "Les veines de la surface du cerveau : elles drainent le cortex vers les sinus sagittal supérieur, transverse, caverneux et pétreux.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du cortex et de la substance blanche sous-corticale, à la surface des hémisphères"
+   },
+   "trajet": "Rampent dans les sillons, sous l'arachnoïde, puis se jettent dans les sinus : les supérieures vers le sinus sagittal supérieur, les inférieures vers les sinus de la base, la moyenne vers le sinus caverneux avec des anastomoses vers les sinus sagittal et transverse",
+   "affluents": [
+    {
+     "veine": "veine-frontopolaire",
+     "texte": "Veine frontopolaire"
+    },
+    {
+     "veine": "veines-frontales",
+     "texte": "Veines frontales"
+    },
+    {
+     "veine": "veines-parietales",
+     "texte": "Veines pariétales"
+    },
+    {
+     "veine": "veines-occipitales",
+     "texte": "Veines occipitales"
+    },
+    {
+     "veine": "veine-cerebrale-moyenne-superficielle",
+     "texte": "Veine cérébrale moyenne superficielle"
+    },
+    {
+     "veine": "veine-anastomotique-superieure",
+     "texte": "Veine anastomotique supérieure"
+    },
+    {
+     "veine": "veine-anastomotique-inferieure",
+     "texte": "Veine anastomotique inférieure"
+    },
+    {
+     "veine": "veines-orbitofrontales",
+     "texte": "Veines orbitofrontales"
+    },
+    {
+     "veine": "veines-temporales",
+     "texte": "Veines temporales"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-sagittal-superieur",
+    "texte": "Sinus sagittal supérieur, sinus transverse, sinus caverneux et sinus pétreux supérieur"
+   },
+   "drainage": {
+    "texte": "Cortex des hémisphères cérébraux, faces latérale, médiale et inférieure",
+    "structures": []
+   },
+   "clinique": "Elles n'ont pas de valve et traversent l'espace sous-dural : une chute ou un choc peut déchirer les veines pontantes et provoquer un hématome sous-dural",
+   "memo": "Superficielles : celles du dessus montent au sinus sagittal, celles du dessous descendent aux sinus de la base",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-veines-cerebrales"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-cerebrales-superieures",
+   "resume": "Les huit à douze veines de la face supérieure des hémisphères : elles se jettent dans le sinus sagittal supérieur.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la face supérolatérale et de la face médiale des hémisphères"
+   },
+   "trajet": "Montent sur la convexité du cerveau dans les sillons, traversent l'arachnoïde et se jettent dans le sinus sagittal supérieur ; les postérieures le font en obliquant vers l'avant, à contre-courant du sang du sinus",
+   "affluents": [
+    {
+     "veine": "veine-frontopolaire",
+     "texte": "Veine frontopolaire"
+    },
+    {
+     "veine": "veines-frontales",
+     "texte": "Veines frontales"
+    },
+    {
+     "veine": "veines-parietales",
+     "texte": "Veines pariétales"
+    },
+    {
+     "veine": "veines-occipitales",
+     "texte": "Veines occipitales"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-sagittal-superieur",
+    "texte": "Se jettent dans le sinus sagittal supérieur"
+   },
+   "drainage": {
+    "texte": "Faces supérolatérale et médiale des lobes frontal, pariétal et occipital",
+    "structures": []
+   },
+   "clinique": "Ces veines pontantes, fragiles, relient le cortex au sinus : leur déchirure après un traumatisme crânien, même léger, donne un hématome sous-dural, surtout chez le sujet âgé",
+   "memo": "Les supérieures montent au sinus sagittal supérieur, les postérieures à contre-courant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-veines-cerebrales"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-diploiques",
+   "resume": "Les veines logées dans le diploé des os du crâne : elles relient les veines du cuir chevelu, des méninges et des sinus.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent dans le tissu spongieux (diploé) des os du crâne"
+   },
+   "trajet": "Sans valve, à paroi très mince et pourvues de dilatations, elles cheminent dans des canaux du diploé et communiquent avec les veines méningées, les sinus de la dure-mère et les veines du péricrâne",
+   "affluents": [
+    {
+     "veine": "veine-diploique-frontale",
+     "texte": "Veine diploïque frontale"
+    },
+    {
+     "veine": "veine-diploique-temporale-anterieure",
+     "texte": "Veine diploïque temporale antérieure"
+    },
+    {
+     "veine": "veine-diploique-temporale-posterieure",
+     "texte": "Veine diploïque temporale postérieure"
+    },
+    {
+     "veine": "veine-diploique-occipitale",
+     "texte": "Veine diploïque occipitale"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "Se jettent à la fois dans les sinus de la dure-mère et les veines du cuir chevelu selon la veine : sinus sagittal supérieur, sinus transverse, sinus sphénopariétal, veines supra-orbitaire et occipitale"
+   },
+   "drainage": {
+    "texte": "Os de la voûte du crâne (frontal, pariétal, occipital) et leur diploé",
+    "structures": []
+   },
+   "clinique": "Leurs canaux sont visibles en radiographie du crâne ; ils peuvent être confondus avec un trait de fracture. Ils sont aussi une voie d'extension d'une infection de l'os (ostéite) vers les méninges",
+   "memo": "Dans le diploé comme dans un sandwich osseux, quatre veines : frontale, deux temporales, occipitale",
+   "variantes": "Symétriques en général ; leur calibre augmente avec l'âge",
+   "sources": [
+    "gray1918",
+    "wp-diploiques"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-frontales",
+   "resume": "Les veines de la face externe et médiale du lobe frontal : elles montent vers le sinus sagittal supérieur.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du cortex de la face convexe et de la face médiale du lobe frontal"
+   },
+   "trajet": "Montent dans les sillons du lobe frontal et se jettent dans le sinus sagittal supérieur, en général presque à angle droit ; ce sont les veines postérieures du groupe qui obliquent vers l'avant",
+   "terminaison": {
+    "veine": "sinus-sagittal-superieur",
+    "texte": "Se jettent dans le sinus sagittal supérieur"
+   },
+   "drainage": {
+    "texte": "Cortex frontal, face convexe et médiale",
+    "structures": []
+   },
+   "clinique": "Ces veines pontantes traversent l'espace sous-dural : leur déchirure provoque un hématome sous-dural, plus souvent chez le sujet âgé après un choc",
+   "memo": "Frontales : elles montent du front du cerveau au sinus sagittal supérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-veines-cerebrales"
+   ],
+   "divergences": "Le tracé de départ disait qu'elles obliquent vers l'avant ; selon Gray, ce sont les veines supérieures postérieures qui le font, à contre-courant"
+  },
+  {
+   "id": "veines-inferieures-de-l-hemisphere-cerebelleux",
+   "resume": "Les veines de la face inférieure de l'hémisphère cérébelleux : elles se jettent dans les sinus transverse, sigmoïde et pétreux.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la face inférieure de l'hémisphère cérébelleux"
+   },
+   "trajet": "Longent la face inférieure du cervelet et s'ouvrent dans le sinus transverse, le sinus sigmoïde, le sinus pétreux et parfois le sinus occipital",
+   "terminaison": {
+    "veine": "sinus-transverse",
+    "texte": "Se jettent dans le sinus transverse (et, selon les sources, sigmoïde, pétreux supérieur et inférieur, occipital)"
+   },
+   "drainage": {
+    "texte": "Face inférieure de l'hémisphère cérébelleux",
+    "structures": []
+   },
+   "clinique": "Une thrombose du sinus transverse peut s'étendre à ces veines et provoquer un infarctus veineux du cervelet, avec céphalées et vomissements",
+   "memo": "Inférieures : le dessous du cervelet vers le sinus transverse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-cerebelleuses"
+   ],
+   "divergences": "Kenhub cite le sinus sigmoïde, le sinus pétreux inférieur, le sinus occipital et le sinus droit ; Gray et Wikipédia, le sinus transverse, le sinus pétreux supérieur et le sinus occipital. La fiche garde les voies les plus constantes"
+  },
+  {
+   "id": "veines-insulaires",
+   "resume": "Les veines du cortex insulaire : elles se jettent dans la veine cérébrale moyenne profonde.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du cortex insulaire (insula), dans la profondeur de la scissure latérale"
+   },
+   "trajet": "Convergent sur la face de l'insula, puis se jettent dans la veine cérébrale moyenne profonde, qui rejoint la veine basale",
+   "terminaison": {
+    "veine": "veine-cerebrale-moyenne-profonde",
+    "texte": "Se jettent dans la veine cérébrale moyenne profonde"
+   },
+   "drainage": {
+    "texte": "Cortex insulaire et capsules voisines",
+    "structures": [
+     "cortex-insulaire"
+    ]
+   },
+   "clinique": "Elles font partie du drainage profond du cerveau ; leur thrombose, rare, accompagne un infarctus veineux profond",
+   "memo": "Insulaires : de l'insula vers la veine de Sylvius profonde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau"
+   ],
+   "divergences": "Kenhub et Gray décrivent la veine cérébrale moyenne profonde mais ne décrivent pas en détail ses affluents insulaires : la liaison vient de la nomenclature"
+  },
+  {
+   "id": "veines-linguales-dorsales",
+   "resume": "Les veines du dos et des bords de la langue : elles rejoignent la veine linguale.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du réseau veineux du dos et des bords de la langue"
+   },
+   "trajet": "Passent entre les muscles hyoglosse et génioglosse, suivent l'artère linguale et s'unissent aux autres veines linguales, avant de gagner la veine jugulaire interne",
+   "terminaison": {
+    "veine": "veine-linguale",
+    "texte": "Rejoignent la veine linguale, qui se jette dans la veine jugulaire interne près de la grande corne de l'os hyoïde"
+   },
+   "drainage": {
+    "texte": "Dos et bords de la langue, muqueuse linguale",
+    "structures": []
+   },
+   "clinique": "Le riche réseau veineux de la langue explique les hémorragies abondantes des plaies de langue ; la voie sublinguale permet pourtant un passage rapide de médicaments dans le sang",
+   "memo": "Dorsales : le dos de la langue vers la veine linguale, sous l'hyoglosse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-linguales-dorsales"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-meningees",
+   "resume": "Les petites veines de la dure-mère de la fosse crânienne postérieure et moyenne : elles se jettent dans les sinus voisins et dans la veine jugulaire interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent dans la dure-mère de la base du crâne, fosses moyenne et postérieure"
+   },
+   "trajet": "Rampent dans l'épaisseur de la dure-mère et s'ouvrent dans les sinus proches (sigmoïde, pétreux inférieur) qui gagnent la veine jugulaire interne au foramen jugulaire ; les veines méningées postérieures vont au plexus pharyngé",
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Rejoignent la veine jugulaire interne, par les sinus sigmoïde et pétreux inférieur ou par les veines pharyngées"
+   },
+   "drainage": {
+    "texte": "Dure-mère de la base du crâne (fosses moyenne et postérieure)",
+    "structures": []
+   },
+   "clinique": "Une fistule artérioveineuse durale de la fosse postérieure se draine dans ces veines et les sinus voisins, et provoque un acouphène pulsatile",
+   "memo": "Méningées : le drainage de la dure-mère de la base du crâne, qui finit dans la jugulaire interne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau"
+   ],
+   "divergences": "Gray ne décrit que les veines méningées postérieures, qui rejoignent le plexus pharyngé ; l'ensemble détaillé vient de la nomenclature. Les deux sources lues ne donnent pas le détail de ces petites veines"
+  },
+  {
+   "id": "veines-meningees-moyennes",
+   "resume": "Deux veines accompagnent chaque branche de l'artère méningée moyenne et rejoignent le plexus ptérygoïdien par le foramen épineux.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la dure-mère de la voûte et de la fosse moyenne, le long des branches de l'artère méningée moyenne"
+   },
+   "trajet": "Deux veines comitantes suivent chaque branche de l'artère, dans les gouttières de la face interne de l'os, sortent du crâne par le foramen épineux et se jettent dans le plexus ptérygoïdien",
+   "terminaison": {
+    "veine": "veines-maxillaires",
+    "texte": "Se jettent dans le plexus ptérygoïdien, qui se continue par la veine maxillaire"
+   },
+   "drainage": {
+    "texte": "Dure-mère de la voûte et de la fosse crânienne moyenne",
+    "structures": []
+   },
+   "clinique": "L'hématome extradural vient surtout de l'artère méningée moyenne, parfois de ses veines ou d'un sinus déchiré par une fracture du ptérion",
+   "memo": "Méningées moyennes : deux veines pour chaque branche de l'artère, vers le plexus ptérygoïdien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-plexus-pterygoidien"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-nasales-externes",
+   "resume": "Veines de la peau et du cartilage du nez : elles rejoignent la veine angulaire et la veine faciale.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la peau et des cartilages du nez, notamment de l'aile du nez"
+   },
+   "trajet": "Descendent sur le côté du nez et se jettent dans la veine angulaire et dans la veine faciale, qui vient de la racine du nez",
+   "terminaison": {
+    "veine": "veine-faciale",
+    "texte": "Se jettent dans la veine faciale (et dans la veine angulaire)"
+   },
+   "drainage": {
+    "texte": "Peau et cartilages du nez externe",
+    "structures": []
+   },
+   "clinique": "La veine faciale n'a pas de valve et communique avec le sinus caverneux : un furoncle du nez peut propager une infection jusqu'à lui (thrombophlébite faciale)",
+   "memo": "Nasales externes : le nez se vide dans la faciale, la veine du triangle dangereux",
+   "variantes": null,
+   "sources": [
+    "wp-faciale",
+    "gray1918"
+   ],
+   "divergences": "Gray n'énumère pas les veines nasales externes parmi les affluents de la veine faciale ; il note seulement que la veine angulaire reçoit des veines de l'aile du nez. Wikipédia les place parmi les affluents de la veine faciale"
+  },
+  {
+   "id": "veines-occipitales",
+   "resume": "Les veines du lobe occipital : les unes montent au sinus sagittal supérieur, les autres descendent vers le sinus transverse.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du cortex occipital, face externe et face médiale"
+   },
+   "trajet": "Longent la face du lobe occipital : les supérieures montent vers le sinus sagittal supérieur, les inférieures vers le sinus transverse, d'autres gagnent la grande veine cérébrale",
+   "terminaison": {
+    "veine": "sinus-transverse",
+    "texte": "Se jettent dans le sinus sagittal supérieur, le sinus transverse ou la grande veine cérébrale"
+   },
+   "drainage": {
+    "texte": "Cortex du lobe occipital",
+    "structures": []
+   },
+   "clinique": "Une thrombose du sinus transverse peut bloquer leur drainage et provoquer un infarctus veineux du lobe occipital, avec troubles visuels",
+   "memo": "Occipitales : le lobe de la vision se vide vers le haut, vers le bas ou vers la ligne médiane",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-orbitaires",
+   "resume": "Les veines de l'orbite : les veines ophtalmiques supérieure et inférieure, qui gagnent le sinus caverneux.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent dans l'orbite, de la région de l'angle médial de l'œil et du plancher"
+   },
+   "trajet": "La veine ophtalmique supérieure traverse la fissure orbitaire supérieure ; l'inférieure s'unit à elle ou gagne le plexus ptérygoïdien par la fissure orbitaire inférieure",
+   "affluents": [
+    {
+     "veine": "veine-ophtalmique-inferieure",
+     "texte": "Veine ophtalmique inférieure"
+    },
+    {
+     "veine": "veine-ophtalmique-superieure",
+     "texte": "Veine ophtalmique supérieure"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-caverneux",
+    "texte": "Se jettent dans le sinus caverneux"
+   },
+   "drainage": {
+    "texte": "Globe oculaire, muscles de l'orbite, glande lacrymale, paupières",
+    "structures": []
+   },
+   "clinique": "Elles n'ont pas de valve et relient la face au sinus caverneux : une infection de l'angle de l'œil ou du nez peut donner une thrombose du sinus caverneux",
+   "memo": "Orbitaires : l'œil se vide par deux veines ophtalmiques vers le sinus caverneux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-faciale"
+   ],
+   "divergences": "Le détail de la veine ophtalmique inférieure (union avec la supérieure ou plexus ptérygoïdien) n'a pas été relu dans les deux sources ; il vient de la nomenclature"
+  },
+  {
+   "id": "veines-orbitofrontales",
+   "resume": "Les veines de la face orbitaire du lobe frontal : elles rejoignent les veines cérébrales supérieures et le sinus sagittal supérieur.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la face orbitaire du lobe frontal"
+   },
+   "trajet": "Longent la face inférieure du lobe frontal et rejoignent les veines cérébrales supérieures, qui se jettent dans le sinus sagittal supérieur",
+   "terminaison": {
+    "veine": "sinus-sagittal-superieur",
+    "texte": "Se jettent dans le sinus sagittal supérieur, par les veines cérébrales supérieures"
+   },
+   "drainage": {
+    "texte": "Face orbitaire du lobe frontal",
+    "structures": []
+   },
+   "clinique": "Un traumatisme frontal peut les déchirer et provoquer un hématome sous-dural frontal",
+   "memo": "Orbitofrontales : le dessous du lobe frontal, qui monte vers le sinus sagittal",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-cerebrales-inferieures"
+   ],
+   "divergences": "Le tracé de départ citait aussi la veine basale et le sinus caverneux ; Gray et Wikipédia ne retiennent que les veines cérébrales supérieures puis le sinus sagittal supérieur"
+  },
+  {
+   "id": "veines-palpebrales",
+   "resume": "Les veines des paupières : elles se jettent dans les veines ophtalmiques supérieure et inférieure.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du réseau veineux des paupières"
+   },
+   "trajet": "Convergent à l'angle médial de l'œil et se jettent dans les veines ophtalmiques, dans la partie antérieure de l'orbite",
+   "terminaison": {
+    "veine": "veine-ophtalmique-inferieure",
+    "texte": "Se jettent dans les veines ophtalmiques, qui vont au sinus caverneux"
+   },
+   "drainage": {
+    "texte": "Paupières supérieure et inférieure",
+    "structures": []
+   },
+   "clinique": "Une infection de la paupière peut gagner l'orbite et le sinus caverneux par ces veines, qui n'ont pas de valve",
+   "memo": "Palpébrales : les paupières se vident dans l'orbite et dans la face",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-faciale"
+   ],
+   "divergences": "Gray note aussi un drainage palpébral vers la veine faciale (veines palpébrales supérieure et inférieure) : la fiche garde les veines ophtalmiques pour l'ensemble orbitaire"
+  },
+  {
+   "id": "veines-palpebrales-inferieures",
+   "resume": "Les veines de la paupière inférieure : elles se jettent dans la veine faciale.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du réseau veineux de la paupière inférieure"
+   },
+   "trajet": "Descendent de la paupière inférieure vers la racine du nez et se jettent dans la veine faciale",
+   "terminaison": {
+    "veine": "veine-faciale",
+    "texte": "Se jettent dans la veine faciale"
+   },
+   "drainage": {
+    "texte": "Paupière inférieure",
+    "structures": []
+   },
+   "clinique": "Leur drainage rejoint la veine faciale, sans valve : une infection de la paupière peut donc s'étendre vers l'orbite",
+   "memo": "Inférieures : la paupière du bas vers la veine faciale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-faciale"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-palpebrales-superieures",
+   "resume": "Les veines de la paupière supérieure : elles se jettent dans la veine angulaire.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du réseau veineux de la paupière supérieure"
+   },
+   "trajet": "Convergent vers l'angle médial de l'œil et se jettent dans la veine angulaire, qui devient la veine faciale",
+   "terminaison": {
+    "veine": "veine-angulaire",
+    "texte": "Se jettent dans la veine angulaire"
+   },
+   "drainage": {
+    "texte": "Paupière supérieure",
+    "structures": []
+   },
+   "clinique": "L'angle médial de l'œil est la zone de communication avec la veine ophtalmique : une infection s'y propage vers le sinus caverneux",
+   "memo": "Supérieures : la paupière du haut vers la veine angulaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-faciale"
+   ],
+   "divergences": "Gray place les veines palpébrales supérieures parmi les affluents de la veine faciale ; la fiche suit la nomenclature (veine angulaire, origine de la veine faciale)"
+  },
+  {
+   "id": "veines-parietales",
+   "resume": "Les veines des gyrus postcentral et pariétaux : elles montent vers le sinus sagittal supérieur.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du cortex pariétal, face externe et face médiale"
+   },
+   "trajet": "Montent dans les sillons de la convexité et se jettent dans le sinus sagittal supérieur, en obliquant vers l'avant, à contre-courant du sang du sinus",
+   "terminaison": {
+    "veine": "sinus-sagittal-superieur",
+    "texte": "Se jettent dans le sinus sagittal supérieur"
+   },
+   "drainage": {
+    "texte": "Cortex pariétal, dont le gyrus postcentral",
+    "structures": []
+   },
+   "clinique": "Ces veines pontantes traversent l'espace sous-dural : leur déchirure provoque un hématome sous-dural",
+   "memo": "Pariétales : elles montent à contre-courant dans le sinus sagittal",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-parotidiennes-anterieures",
+   "resume": "Les veines de la partie antérieure de la parotide : elles se jettent dans la veine faciale.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la partie antérieure de la glande parotide"
+   },
+   "trajet": "Quittent le bord antérieur de la glande parotide et se jettent dans la veine faciale",
+   "terminaison": {
+    "veine": "veine-faciale",
+    "texte": "Se jettent dans la veine faciale"
+   },
+   "drainage": {
+    "texte": "Partie antérieure de la glande parotide",
+    "structures": []
+   },
+   "clinique": "Sans valeur clinique propre ; elles rappellent que la parotide se draine à la fois vers la face et vers la veine rétromandibulaire",
+   "memo": "Antérieures : la partie avant de la parotide vers la faciale",
+   "variantes": null,
+   "sources": [
+    "wp-faciale",
+    "wp-temporale-superficielle"
+   ],
+   "divergences": "Gray place les veines parotidiennes parmi les affluents de la veine temporale superficielle sans les séparer en antérieures et postérieures. La répartition vers la veine faciale vient de Wikipédia"
+  },
+  {
+   "id": "veines-parotidiennes-posterieures",
+   "resume": "Les veines de la partie postérieure de la parotide : elles se jettent dans la veine rétromandibulaire.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la partie postérieure de la glande parotide"
+   },
+   "trajet": "Quittent la glande parotide en arrière et se jettent dans la veine rétromandibulaire, ou dans la veine temporale superficielle",
+   "terminaison": {
+    "veine": "veine-retromandibulaire",
+    "texte": "Se jettent dans la veine rétromandibulaire"
+   },
+   "drainage": {
+    "texte": "Partie postérieure de la glande parotide",
+    "structures": []
+   },
+   "clinique": "La veine rétromandibulaire, qu'elles alimentent, croise la parotide : elle sert de repère au chirurgien qui cherche le nerf facial",
+   "memo": "Postérieures : la parotide vers l'arrière, donc vers la veine rétromandibulaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-temporale-superficielle"
+   ],
+   "divergences": "Gray cite des veines parotidiennes parmi les affluents de la veine temporale superficielle ; leur réunion vers la veine rétromandibulaire est la version de la nomenclature"
+  },
+  {
+   "id": "veines-pharyngees",
+   "resume": "Les veines de la paroi du pharynx : elles forment un plexus à sa face postérieure puis gagnent la veine jugulaire interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du plexus pharyngé, réseau veineux de la paroi postérieure du pharynx"
+   },
+   "trajet": "Le plexus reçoit des veines méningées postérieures et la veine du canal ptérygoïdien, puis des veines naissent de lui et descendent pour rejoindre la jugulaire interne",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines méningées postérieures"
+    },
+    {
+     "veine": null,
+     "texte": "Veine du canal ptérygoïdien"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Se jettent dans la veine jugulaire interne (parfois dans les veines faciale, linguale ou thyroïdienne supérieure)"
+   },
+   "drainage": {
+    "texte": "Paroi du pharynx, muscles constricteurs, muqueuse",
+    "structures": []
+   },
+   "clinique": "Ce plexus communique avec le plexus ptérygoïdien : une infection pharyngée peut se propager aux veines profondes de la face",
+   "memo": "Pharyngées : un plexus derrière le pharynx, qui se vide dans la jugulaire interne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-pharyngees"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-pontines",
+   "resume": "Les veines du pont : elles se jettent dans les sinus pétreux et transverse et la veine pétreuse.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du pont, à sa face antérieure et latérale"
+   },
+   "trajet": "Drainent le pont et rejoignent la veine pétreuse et les sinus pétreux supérieur et inférieur, voire le sinus transverse",
+   "terminaison": {
+    "veine": "sinus-petreux-superieur",
+    "texte": "Se jettent dans la veine pétreuse et le sinus pétreux supérieur"
+   },
+   "drainage": {
+    "texte": "Pont (tronc cérébral)",
+    "structures": []
+   },
+   "clinique": "Leur anomalie compte dans les malformations vasculaires du tronc cérébral, qui peuvent saigner ; les voies d'abord de la fosse postérieure doivent les ménager",
+   "memo": "Pontines : le pont se vide vers les sinus pétreux",
+   "variantes": null,
+   "sources": [
+    "kenhub-cerveau",
+    "gray1918"
+   ],
+   "divergences": "Kenhub dit que les veines du pont et du bulbe rejoignent les sinus pétreux, le sinus transverse et le sinus occipital ; Gray ne décrit pas les veines pontines (la veine pétreuse vient de la nomenclature)"
+  },
+  {
+   "id": "veines-superieures-de-l-hemisphere-cerebelleux",
+   "resume": "Les veines de la face supérieure de l'hémisphère cérébelleux : elles se jettent dans les sinus transverse, droit et pétreux supérieur.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la face supérieure de l'hémisphère cérébelleux"
+   },
+   "trajet": "Longent la face supérieure du cervelet, certaines vers la ligne médiane, d'autres vers les côtés, pour rejoindre le sinus transverse, le sinus droit et le sinus pétreux supérieur",
+   "terminaison": {
+    "veine": "sinus-transverse",
+    "texte": "Se jettent dans le sinus transverse, le sinus droit et le sinus pétreux supérieur"
+   },
+   "drainage": {
+    "texte": "Face supérieure de l'hémisphère cérébelleux",
+    "structures": []
+   },
+   "clinique": "Une thrombose du sinus transverse peut bloquer leur drainage et causer un infarctus veineux du cervelet",
+   "memo": "Supérieures : le dessus du cervelet vers le sinus transverse, le droit et le pétreux supérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-cerebelleuses"
+   ],
+   "divergences": "Gray et Wikipédia placent le sinus droit pour les veines supérieures du vermis et le sinus transverse et pétreux supérieur pour les hémisphères ; la fiche garde les trois sinus"
+  },
+  {
+   "id": "veines-temporales",
+   "resume": "Les veines du lobe temporal : elles se jettent dans les sinus caverneux, pétreux supérieur et transverse.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent de la face inférieure et latérale du lobe temporal"
+   },
+   "trajet": "Rejoignent la veine cérébrale moyenne et la veine basale, puis les sinus de la base du crâne : sinus caverneux, sphénopariétal, pétreux supérieur et transverse",
+   "terminaison": {
+    "veine": "sinus-caverneux",
+    "texte": "Se jettent dans le sinus caverneux, le sinus pétreux supérieur et le sinus transverse"
+   },
+   "drainage": {
+    "texte": "Face inférieure et latérale du lobe temporal",
+    "structures": []
+   },
+   "clinique": "Une thrombose des sinus transverse ou sigmoïde peut provoquer un infarctus veineux hémorragique du lobe temporal, avec crises d'épilepsie",
+   "memo": "Temporales : le dessous du lobe temporal vers les sinus de la base",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cerveau",
+    "wp-cerebrales-inferieures"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-temporales-profondes",
+   "resume": "Les veines du muscle temporal : elles se jettent dans le plexus ptérygoïdien.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Naissent du muscle temporal, dans la fosse temporale"
+   },
+   "trajet": "Accompagnent les artères temporales profondes, passent sous l'arcade zygomatique et se jettent dans le plexus ptérygoïdien, qui se continue par la veine maxillaire",
+   "terminaison": {
+    "veine": "veines-maxillaires",
+    "texte": "Se jettent dans le plexus ptérygoïdien (veines maxillaires)"
+   },
+   "drainage": {
+    "texte": "Muscle temporal",
+    "structures": []
+   },
+   "clinique": "Elles relient le muscle temporal au plexus ptérygoïdien, voie possible d'une infection de la fosse infratemporale",
+   "memo": "Temporales profondes : le muscle temporal vers le plexus ptérygoïdien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-plexus-pterygoidien"
+   ],
+   "divergences": null
+  }
+ ]
+}

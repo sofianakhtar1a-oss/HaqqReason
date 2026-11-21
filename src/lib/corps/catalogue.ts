@@ -55,6 +55,7 @@ export const NOMS_COUCHES: Record<Couche, { un: string; des: string; le: string 
 
 /** Ce qu'est une structure dans sa couche, quand ce n'est pas l'évidence : un cartilage parmi les os, une bourse… */
 export const NOMS_NATURES: Record<string, string> = {
+  ensemble: "Ensemble",
   cartilage: "Cartilage",
   dent: "Dent",
   aponevrose: "Aponévrose",

@@ -1,0 +1,7730 @@
+{
+ "structures": [
+  {
+   "nom": "Middle lobar vein of right lung",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    1.6,
+    1.6
+   ],
+   "points": [
+    {
+     "objet": "Medial vein of right lung",
+     "a": 0.3
+    },
+    {
+     "objet": "Lateral vein of right lung",
+     "a": 0.1
+    },
+    {
+     "objet": "Right superior pulmonary vein",
+     "a": 0.08
+    }
+   ],
+   "texte": "Elle draine le lobe moyen du poumon droit, par la réunion des veines latérale et médiale, et se jette dans la veine pulmonaire supérieure droite au hile.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Left marginal vein of heart",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.1,
+    1.5
+   ],
+   "points": [
+    {
+     "objet": "Left ventricle",
+     "rel": [
+      0.95,
+      -0.6,
+      0.2
+     ]
+    },
+    {
+     "objet": "Left ventricle",
+     "rel": [
+      1.0,
+      -0.1,
+      -0.1
+     ]
+    },
+    {
+     "objet": "Circumflex artery of heart",
+     "a": 0.45
+    },
+    {
+     "objet": "Great cardiac vein",
+     "a": 0.1
+    }
+   ],
+   "texte": "Elle longe le bord gauche du ventricule gauche, qu'elle draine, et se jette dans la grande veine cardiaque au niveau du sillon atrioventriculaire gauche.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Oblique vein of left atrium",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Left atrium",
+     "rel": [
+      0.3,
+      0.5,
+      -1
+     ]
+    },
+    {
+     "objet": "Left atrium",
+     "rel": [
+      0.5,
+      -0.2,
+      -1
+     ]
+    },
+    {
+     "objet": "Coronary sinus",
+     "a": 0.95
+    }
+   ],
+   "texte": "Petite veine (veine de Marshall) qui descend sur la face postérieure de l'atrium gauche, dont elle draine la paroi, et rejoint le sinus coronaire près de la grande veine cardiaque.",
+   "sources": [
+    "gray1918",
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Small cardiac vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.9,
+    1.3
+   ],
+   "points": [
+    {
+     "objet": "Right coronary artery",
+     "a": 0.45,
+     "decale": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "objet": "Right coronary artery",
+     "a": 0.7,
+     "decale": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "objet": "Right coronary artery",
+     "a": 0.9,
+     "decale": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "objet": "Coronary sinus",
+     "a": 0.08
+    }
+   ],
+   "texte": "Elle accompagne l'artère coronaire droite dans le sillon atrioventriculaire droit, draine la face inférieure de l'atrium et du ventricule droits et se termine dans le sinus coronaire près de son ostium.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Right marginal vein of heart",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.9,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Right ventricle",
+     "rel": [
+      -0.85,
+      -0.85,
+      0.1
+     ]
+    },
+    {
+     "objet": "Right coronary artery",
+     "a": 0.5,
+     "decale": [
+      -1,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Right atrium",
+     "rel": [
+      0.6,
+      -0.5,
+      0.4
+     ]
+    }
+   ],
+   "texte": "Elle longe le bord droit (aigu) du ventricule droit et se jette dans l'atrium droit ou dans la petite veine cardiaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior cardiac veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Right ventricle",
+      "rel": [
+       0.5,
+       -0.7,
+       1
+      ]
+     },
+     {
+      "objet": "Right ventricle",
+      "rel": [
+       0.1,
+       -0.2,
+       1
+      ]
+     },
+     {
+      "objet": "Right atrium",
+      "rel": [
+       -0.3,
+       -0.1,
+       0.9
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Right ventricle",
+      "rel": [
+       0.2,
+       -0.8,
+       1
+      ]
+     },
+     {
+      "objet": "Right ventricle",
+      "rel": [
+       -0.2,
+       -0.3,
+       1
+      ]
+     },
+     {
+      "objet": "Right atrium",
+      "rel": [
+       0.0,
+       -0.2,
+       0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Right ventricle",
+      "rel": [
+       -0.1,
+       -0.6,
+       1
+      ]
+     },
+     {
+      "objet": "Right ventricle",
+      "rel": [
+       -0.4,
+       -0.2,
+       1
+      ]
+     },
+     {
+      "objet": "Right atrium",
+      "rel": [
+       0.4,
+       -0.3,
+       0.9
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux à quatre petites veines de la face antérieure du ventricule droit qui franchissent le sillon coronaire et s'ouvrent directement dans l'atrium droit, sans passer par le sinus coronaire.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Thymic veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Left lobe of thymus",
+      "rel": [
+       0.1,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Left lobe of thymus",
+      "bord": "superieur",
+      "decale": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "objet": "Left brachiocephalic vein",
+      "a": 0.55
+     }
+    ],
+    [
+     {
+      "objet": "Right lobe of thymus",
+      "rel": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Right lobe of thymus",
+      "bord": "superieur",
+      "decale": [
+       0,
+       1,
+       0
+      ]
+     },
+     {
+      "objet": "Left brachiocephalic vein",
+      "a": 0.7
+     }
+    ]
+   ],
+   "texte": "Petites veines du thymus : elles quittent les deux lobes et rejoignent la veine brachiocéphalique gauche, parfois les veines thyroïdiennes inférieures.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Pericardiacophrenic veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.3
+   ],
+   "points": [
+    {
+     "objet": "Phrenic nerve",
+     "a": 0.97,
+     "decale": [
+      -2,
+      0,
+      -2
+     ]
+    },
+    {
+     "objet": "Phrenic nerve",
+     "a": 0.75,
+     "decale": [
+      -2,
+      0,
+      -2
+     ]
+    },
+    {
+     "objet": "Phrenic nerve",
+     "a": 0.5,
+     "decale": [
+      -2,
+      0,
+      -2
+     ]
+    },
+    {
+     "objet": "Phrenic nerve",
+     "a": 0.28,
+     "decale": [
+      -2,
+      0,
+      -2
+     ]
+    },
+    {
+     "objet": "Brachiocephalic vein",
+     "a": 0.2
+    }
+   ],
+   "texte": "Elles accompagnent le nerf phrénique et l'artère péricardiacophrénique depuis le péricarde et le diaphragme, entre plèvre et péricarde, et se jettent dans la veine thoracique interne ou la veine brachiocéphalique.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Tracheal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Trachea",
+      "rel": [
+       0.8,
+       -0.5,
+       0.8
+      ]
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       0.85,
+       -0.15,
+       0.9
+      ]
+     },
+     {
+      "objet": "Left brachiocephalic vein",
+      "a": 0.45
+     }
+    ],
+    [
+     {
+      "objet": "Trachea",
+      "rel": [
+       -0.8,
+       -0.5,
+       0.8
+      ]
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       -0.85,
+       -0.15,
+       0.9
+      ]
+     },
+     {
+      "objet": "Right brachiocephalic vein",
+      "a": 0.4
+     }
+    ]
+   ],
+   "texte": "Petites veines de la trachée qui gagnent la veine brachiocéphalique de chaque côté, et aussi les veines thyroïdiennes inférieures.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Oesophageal brachiocephalic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Oesophagus",
+     "a": 0.15
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      1.0,
+      -0.2,
+      0.0
+     ],
+     "decale": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Left brachiocephalic vein",
+     "a": 0.4
+    }
+   ],
+   "texte": "Veines de la partie haute de l'oesophage thoracique qui contournent la trachée à gauche et se jettent dans la veine brachiocéphalique gauche.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Oesophageal accessory hemi-azygos vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.8
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Oesophagus",
+      "a": 0.35
+     },
+     {
+      "objet": "Accessory hemi-azygos vein",
+      "a": 0.42
+     }
+    ],
+    [
+     {
+      "objet": "Oesophagus",
+      "a": 0.45
+     },
+     {
+      "objet": "Accessory hemi-azygos vein",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Oesophagus",
+      "a": 0.55
+     },
+     {
+      "objet": "Accessory hemi-azygos vein",
+      "a": 0.58
+     }
+    ]
+   ],
+   "texte": "Affluentes de l'oesophage thoracique moyen : de petites veines viennent de la paroi oesophagienne et se jettent dans la veine hémi-azygos accessoire, à gauche de la colonne.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Anterior vertebral vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Longus colli muscle",
+     "rel": [
+      0.2,
+      0.85,
+      0.8
+     ]
+    },
+    {
+     "objet": "Longus colli muscle",
+     "rel": [
+      0.3,
+      0.0,
+      0.9
+     ]
+    },
+    {
+     "objet": "Longus colli muscle",
+     "rel": [
+      0.6,
+      -0.8,
+      0.7
+     ]
+    },
+    {
+     "objet": "Vertebral vein",
+     "a": 0.95
+    }
+   ],
+   "texte": "Petite veine qui monte devant les corps vertébraux cervicaux, contre le muscle long du cou ; elle descend vers le pied du cou et se jette dans la veine vertébrale.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Deep cervical vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.5
+   ],
+   "points": [
+    {
+     "objet": "Occipital bone",
+     "rel": [
+      0.15,
+      -0.9,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Deep cervical artery",
+     "a": 0.95
+    },
+    {
+     "objet": "Deep cervical artery",
+     "a": 0.5
+    },
+    {
+     "objet": "Deep cervical artery",
+     "a": 0.05
+    },
+    {
+     "objet": "Vertebral vein",
+     "a": 0.95
+    }
+   ],
+   "texte": "Elle draine la région sous-occipitale, descend en arrière des apophyses transverses cervicales sous les muscles de la nuque, accompagne l'artère cervicale profonde et se jette dans la veine vertébrale à la base du cou.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior thyroid vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.8
+   ],
+   "points": [
+    {
+     "objet": "Thyroid gland",
+     "rel": [
+      0.2,
+      -0.9,
+      0.7
+     ]
+    },
+    {
+     "objet": "Thyroid gland",
+     "rel": [
+      0.2,
+      -1.0,
+      0.6
+     ],
+     "decale": [
+      0,
+      -6,
+      2
+     ]
+    },
+    {
+     "objet": "Brachiocephalic vein",
+     "a": 0.35
+    }
+   ],
+   "texte": "Née du plexus thyroïdien du bord inférieur de la glande, elle descend devant la trachée et se jette dans la veine brachiocéphalique du même côté.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior laryngeal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "points": [
+    {
+     "objet": "Cricoid cartilage",
+     "rel": [
+      0.9,
+      -0.2,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      1.0,
+      0.7,
+      0.0
+     ]
+    },
+    {
+     "objet": "Thyroid gland",
+     "rel": [
+      0.7,
+      -0.7,
+      -0.2
+     ]
+    }
+   ],
+   "texte": "Elle accompagne le nerf laryngé inférieur et l'artère laryngée inférieure le long de la trachée et rejoint la veine thyroïdienne inférieure.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Middle thyroid vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.1,
+    1.6
+   ],
+   "points": [
+    {
+     "objet": "Thyroid gland",
+     "rel": [
+      0.9,
+      -0.1,
+      0.2
+     ]
+    },
+    {
+     "objet": "Internal jugular vein",
+     "a": 0.72
+    }
+   ],
+   "texte": "Elle naît du bord latéral du lobe thyroïdien, traverse le cou en avant de l'artère carotide commune et se jette dans la veine jugulaire interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Suprerior laryngeal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Thyroid cartilage",
+     "rel": [
+      0.1,
+      0.2,
+      0.0
+     ]
+    },
+    {
+     "objet": "Thyroid cartilage",
+     "rel": [
+      0.85,
+      0.8,
+      0.1
+     ]
+    },
+    {
+     "objet": "Superior thyroid vein",
+     "a": 0.28
+    }
+   ],
+   "texte": "Elle sort du larynx avec le nerf laryngé supérieur à travers la membrane thyrohyoïdienne et se jette dans la veine thyroïdienne supérieure.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Sternocleidomastoid vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Sternocleidomastoid muscle",
+     "centre": true
+    },
+    {
+     "objet": "Internal jugular vein",
+     "a": 0.55
+    }
+   ],
+   "texte": "Elle draine le muscle sterno-cléido-mastoïdien et rejoint la veine jugulaire interne.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Pharyngeal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Nasopharynx",
+      "rel": [
+       0.8,
+       0.2,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Oropharynx",
+      "rel": [
+       0.9,
+       0.5,
+       -0.7
+      ]
+     },
+     {
+      "objet": "Internal jugular vein",
+      "a": 0.2
+     }
+    ],
+    [
+     {
+      "objet": "Oropharynx",
+      "rel": [
+       0.8,
+       -0.5,
+       -0.7
+      ]
+     },
+     {
+      "objet": "Internal jugular vein",
+      "a": 0.4
+     }
+    ],
+    [
+     {
+      "objet": "Laryngopharynx",
+      "rel": [
+       0.8,
+       0.5,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Internal jugular vein",
+      "a": 0.6
+     }
+    ]
+   ],
+   "texte": "Elles forment un plexus sur la paroi postérieure du pharynx, puis des veines gagnent la veine jugulaire interne (parfois la veine faciale).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Dorsal lingual veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.1
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Tongue",
+      "rel": [
+       0.3,
+       0.85,
+       0.2
+      ]
+     },
+     {
+      "objet": "Tongue",
+      "rel": [
+       0.8,
+       0.4,
+       0.0
+      ]
+     },
+     {
+      "objet": "Lingual vein",
+      "a": 0.45
+     }
+    ],
+    [
+     {
+      "objet": "Tongue",
+      "rel": [
+       0.5,
+       0.85,
+       -0.4
+      ]
+     },
+     {
+      "objet": "Tongue",
+      "rel": [
+       0.9,
+       0.4,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Lingual vein",
+      "a": 0.2
+     }
+    ]
+   ],
+   "texte": "Elles drainent le dos et les bords de la langue et rejoignent la veine linguale sous le muscle hyoglosse.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Sublingual vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Sublingual gland",
+     "centre": true
+    },
+    {
+     "objet": "Lingual vein",
+     "a": 0.6
+    }
+   ],
+   "texte": "Elle draine la glande sublinguale et le plancher de la bouche, puis rejoint la veine linguale.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Deep lingual vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.2,
+      -0.5,
+      0.95
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.35,
+      -0.6,
+      0.4
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.5,
+      -0.6,
+      -0.1
+     ]
+    },
+    {
+     "objet": "Lingual vein",
+     "a": 0.45
+    }
+   ],
+   "texte": "Elle naît de la pointe de la langue, court sous la muqueuse de la face inférieure, de part et d'autre du frein, et se termine dans la veine linguale en arrière.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Supratrochlear veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Frontal bone",
+     "rel": [
+      0.2,
+      0.45,
+      1.0
+     ],
+     "decale": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "objet": "Frontal bone",
+     "rel": [
+      0.1,
+      -0.2,
+      1.0
+     ],
+     "decale": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "objet": "Angular vein",
+     "a": 1.0
+    }
+   ],
+   "texte": "Elles drainent le front près de la ligne médiane, descendent vers la racine du nez et s'unissent à la veine supra-orbitaire pour former la veine angulaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Supra-orbital vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.3
+   ],
+   "points": [
+    {
+     "objet": "Supra-orbital artery",
+     "a": 1.0,
+     "decale": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "objet": "Supra-orbital artery",
+     "a": 0.6,
+     "decale": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "objet": "Angular vein",
+     "a": 0.85
+    }
+   ],
+   "texte": "Elle naît sur le front, près de l'éminence frontale, descend au-dessus de l'arcade sourcilière et rejoint la veine supratrochléaire pour former la veine angulaire ; une branche passe par l'incisure supra-orbitaire vers la veine ophtalmique supérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior palpebral vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.8,
+       0.7,
+       1.0
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.2,
+       0.8,
+       1.0
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       -0.8,
+       0.6,
+       1.0
+      ]
+     },
+     {
+      "objet": "Angular vein",
+      "a": 0.5
+     }
+    ]
+   ],
+   "texte": "Elles drainent la paupière supérieure et se jettent dans la veine angulaire, près de l'angle médial de l'oeil.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Inferior palpebral veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.8,
+       -0.7,
+       1.0
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.0,
+       -0.85,
+       1.0
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       -0.8,
+       -0.7,
+       1.0
+      ]
+     },
+     {
+      "objet": "Facial vein",
+      "a": 0.92
+     }
+    ]
+   ],
+   "texte": "Elles drainent la paupière inférieure et rejoignent la veine faciale à la racine du nez.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Palpebral veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.3,
+       0.75,
+       0.6
+      ]
+     },
+     {
+      "objet": "Superior ophthalmic vein",
+      "a": 0.95
+     }
+    ],
+    [
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.3,
+       -0.75,
+       0.6
+      ]
+     },
+     {
+      "objet": "Inferior ophthalmic vein",
+      "a": 0.95
+     }
+    ]
+   ],
+   "texte": "Veines des paupières qui se jettent dans les veines ophtalmiques supérieure et inférieure, à la partie antérieure de l'orbite.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "External nasal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Lateral process of nasal septal cartilage",
+      "rel": [
+       0.2,
+       0.6,
+       1.0
+      ]
+     },
+     {
+      "objet": "Lateral process of nasal septal cartilage",
+      "rel": [
+       0.6,
+       -0.2,
+       0.7
+      ]
+     },
+     {
+      "objet": "Facial vein",
+      "a": 0.9
+     }
+    ],
+    [
+     {
+      "objet": "Nasalis muscle",
+      "rel": [
+       0.2,
+       0.9,
+       1.0
+      ]
+     },
+     {
+      "objet": "Angular vein",
+      "a": 0.3
+     }
+    ],
+    [
+     {
+      "objet": "Nasal bone",
+      "rel": [
+       0.2,
+       -0.5,
+       1.0
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Angular vein",
+      "a": 0.15
+     }
+    ]
+   ],
+   "texte": "Elles drainent la peau et le cartilage du nez et se jettent dans la veine angulaire et la veine faciale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Nasofrontal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Angular vein",
+     "a": 0.9
+    },
+    {
+     "objet": "Superior ophthalmic vein",
+     "a": 0.95,
+     "decale": [
+      0,
+      2,
+      -3
+     ]
+    },
+    {
+     "objet": "Superior ophthalmic vein",
+     "a": 0.8
+    }
+   ],
+   "texte": "Elle relie la veine supratrochléaire (région frontale) à la veine ophtalmique supérieure à l'angle médial de l'orbite, faisant communiquer le système facial et le sinus caverneux.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Anterior ethmoidal vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "deux",
+   "suit": "Anterior ethmoidal artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle accompagne l'artère ethmoïdale antérieure et draine les cellules ethmoïdales antérieures et la muqueuse nasale vers la veine ophtalmique supérieure.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Posterior ethmoidal vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "deux",
+   "suit": "Posterior ethmoidal artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle accompagne l'artère ethmoïdale postérieure et draine les cellules ethmoïdales postérieures vers la veine ophtalmique supérieure.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Lacrimal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Lacrimal gland",
+     "centre": true
+    },
+    {
+     "objet": "Superior ophthalmic vein",
+     "a": 0.55
+    }
+   ],
+   "texte": "Elle naît de la glande lacrymale, longe le bord supérieur du muscle droit latéral et se jette dans la veine ophtalmique supérieure.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Deep facial vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.5
+   ],
+   "points": [
+    {
+     "objet": "Maxillary veins",
+     "a": 0.4
+    },
+    {
+     "objet": "Maxilla",
+     "rel": [
+      1.0,
+      -0.7,
+      0.0
+     ],
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Facial vein",
+     "a": 0.5
+    }
+   ],
+   "texte": "Elle relie le plexus ptérygoïdien à la veine faciale en passant sur le buccinateur et la face latérale du maxillaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior parotid veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Parotid gland",
+      "rel": [
+       -0.2,
+       0.3,
+       0.8
+      ]
+     },
+     {
+      "objet": "Facial vein",
+      "a": 0.15
+     }
+    ],
+    [
+     {
+      "objet": "Parotid gland",
+      "rel": [
+       -0.2,
+       -0.3,
+       0.8
+      ]
+     },
+     {
+      "objet": "Facial vein",
+      "a": 0.2
+     }
+    ]
+   ],
+   "texte": "Elles drainent la partie antérieure de la glande parotide et se jettent dans la veine faciale.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Posterior parotid veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Parotid gland",
+      "rel": [
+       0.5,
+       0.3,
+       -0.6
+      ]
+     },
+     {
+      "objet": "Retromandibular vein",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Parotid gland",
+      "rel": [
+       0.5,
+       -0.3,
+       -0.6
+      ]
+     },
+     {
+      "objet": "Retromandibular vein",
+      "a": 0.6
+     }
+    ]
+   ],
+   "texte": "Elles drainent la partie postérieure de la glande parotide et se jettent dans la veine rétromandibulaire.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "External palatine vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Soft palate",
+     "rel": [
+      0.8,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "Soft palate",
+     "rel": [
+      1.0,
+      -0.4,
+      -0.5
+     ],
+     "decale": [
+      4,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Facial vein",
+     "a": 0.05
+    }
+   ],
+   "texte": "Elle quitte le voile du palais, passe près de l'amygdale palatine et se jette dans la veine faciale.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Middle temporal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      0.9,
+      0.4,
+      0.2
+     ],
+     "decale": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Temporalis muscle",
+     "rel": [
+      0.9,
+      0.3,
+      0.4
+     ]
+    },
+    {
+     "objet": "Superficial temporal veins",
+     "a": 0.3
+    }
+   ],
+   "texte": "Née près de l'angle latéral de l'orbite, elle traverse le muscle temporal et son fascia, puis se jette dans la veine temporale superficielle au-dessus de l'arcade zygomatique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Transverse facial vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "deux",
+   "suit": "Transverse facial artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    1.2,
+    0.8
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle accompagne l'artère transverse de la face, au-dessus du canal parotidien, et se jette dans la veine temporale superficielle.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Deep temporal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Anterior deep temporal artery",
+      "a": 0.95,
+      "decale": [
+       2,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Anterior deep temporal artery",
+      "a": 0.5,
+      "decale": [
+       2,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Anterior deep temporal artery",
+      "a": 0.05,
+      "decale": [
+       2,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Maxillary veins",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Posterior deep temporal artery",
+      "a": 0.95,
+      "decale": [
+       2,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Posterior deep temporal artery",
+      "a": 0.5,
+      "decale": [
+       2,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Posterior deep temporal artery",
+      "a": 0.05,
+      "decale": [
+       2,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Maxillary veins",
+      "a": 0.8
+     }
+    ]
+   ],
+   "texte": "Elles drainent le muscle temporal avec les artères temporales profondes et se jettent dans le plexus ptérygoïdien (veines maxillaires).",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Anterior auricular veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Tympanic membrane",
+      "centre": true,
+      "decale": [
+       30,
+       15,
+       3
+      ]
+     },
+     {
+      "objet": "Tympanic membrane",
+      "centre": true,
+      "decale": [
+       22,
+       5,
+       4
+      ]
+     },
+     {
+      "objet": "Superficial temporal veins",
+      "a": 0.15
+     }
+    ],
+    [
+     {
+      "objet": "Tympanic membrane",
+      "centre": true,
+      "decale": [
+       30,
+       -5,
+       2
+      ]
+     },
+     {
+      "objet": "Tympanic membrane",
+      "centre": true,
+      "decale": [
+       22,
+       -4,
+       3
+      ]
+     },
+     {
+      "objet": "Superficial temporal veins",
+      "a": 0.1
+     }
+    ]
+   ],
+   "texte": "Elles drainent la face antérieure du pavillon de l'oreille et se jettent dans la veine temporale superficielle.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Temporomandibular articular veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Articular capsule of temporomandibular joint",
+      "centre": true
+     },
+     {
+      "objet": "Retromandibular vein",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Articular capsule of temporomandibular joint",
+      "rel": [
+       0.9,
+       0.2,
+       0.5
+      ]
+     },
+     {
+      "objet": "Superficial temporal veins",
+      "a": 0.1
+     }
+    ]
+   ],
+   "texte": "Elles drainent l'articulation temporo-mandibulaire et se jettent dans la veine rétromandibulaire et la veine temporale superficielle.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Tympanic veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.8
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Tympanic membrane",
+      "centre": true,
+      "decale": [
+       -4,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Articular capsule of temporomandibular joint",
+      "rel": [
+       0.0,
+       -0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Retromandibular vein",
+      "a": 0.8
+     }
+    ],
+    [
+     {
+      "objet": "Tympanic membrane",
+      "centre": true,
+      "decale": [
+       -6,
+       2,
+       0
+      ]
+     },
+     {
+      "objet": "Cochlea",
+      "rel": [
+       0.0,
+       0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior petrosal sinus",
+      "a": 0.3
+     }
+    ]
+   ],
+   "texte": "Elles naissent de la cavité du tympan et gagnent le plexus ptérygoïdien (par la fissure pétrotympanique) et le sinus pétreux supérieur.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Stylomastoid vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Tympanic membrane",
+     "centre": true,
+     "decale": [
+      -3,
+      -5,
+      -6
+     ]
+    },
+    {
+     "objet": "Posterior auricular vein",
+     "a": 0.97
+    }
+   ],
+   "texte": "Elle sort du canal facial par le foramen stylomastoïdien, draine l'oreille moyenne et se jette dans la veine auriculaire postérieure ou la veine rétromandibulaire.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Marginal sinus",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.6,
+    2.0
+   ],
+   "points": [
+    {
+     "repere": "Groove for occipital sinus"
+    },
+    {
+     "repere": "Groove for marginal sinus"
+    },
+    {
+     "repere": "Jugular notch of occipital bone"
+    },
+    {
+     "objet": "Sigmoid sinus",
+     "a": 1.0
+    }
+   ],
+   "texte": "Petit sinus de la dure-mère qui entoure le foramen magnum dans son bord ; il relie le sinus occipital au sinus sigmoïde et au plexus basilaire.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Petrosquamous sinus",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.5,
+    2.0
+   ],
+   "points": [
+    {
+     "objet": "Temporal bone",
+     "rel": [
+      0.55,
+      -0.2,
+      0.3
+     ]
+    },
+    {
+     "objet": "Temporal bone",
+     "rel": [
+      0.5,
+      0.2,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Transverse sinus",
+     "a": 0.97
+    }
+   ],
+   "texte": "Petit sinus de la dure-mère qui suit la suture pétro-squameuse, à la face interne du temporal, et se jette dans le sinus transverse.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Sphenoparietal sinus",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.5,
+    2.0
+   ],
+   "points": [
+    {
+     "objet": "Sphenoid bone",
+     "rel": [
+      0.95,
+      0.7,
+      0.2
+     ]
+    },
+    {
+     "objet": "Sphenoid bone",
+     "rel": [
+      0.55,
+      0.75,
+      0.1
+     ]
+    },
+    {
+     "objet": "Sphenoid bone",
+     "rel": [
+      0.25,
+      0.75,
+      0.0
+     ]
+    },
+    {
+     "objet": "Cavernous sinus",
+     "a": 0.85
+    }
+   ],
+   "texte": "Il longe le bord postérieur de la petite aile du sphénoïde, reçoit les veines méningées et la veine cérébrale moyenne superficielle, et se jette dans la partie antérieure du sinus caverneux.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Frontal diploic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.0
+   ],
+   "points": [
+    {
+     "repere": "Frontal eminence",
+     "decale": [
+      -6,
+      10,
+      -3
+     ]
+    },
+    {
+     "repere": "Frontal eminence",
+     "decale": [
+      -4,
+      -15,
+      -3
+     ]
+    },
+    {
+     "objet": "Supra-orbital artery",
+     "a": 0.5,
+     "decale": [
+      0,
+      0,
+      -2
+     ]
+    }
+   ],
+   "texte": "Veine du diploé de l'os frontal qui descend vers l'incisure supra-orbitaire et se jette dans la veine supra-orbitaire.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Anterior temporal diploic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Parietal bone",
+     "rel": [
+      0.45,
+      0.5,
+      0.9
+     ]
+    },
+    {
+     "objet": "Parietal bone",
+     "rel": [
+      0.6,
+      0.0,
+      0.9
+     ]
+    },
+    {
+     "objet": "Sphenoid bone",
+     "rel": [
+      0.95,
+      0.5,
+      0.4
+     ]
+    }
+   ],
+   "texte": "Veine du diploé de la région frontale latérale et pariétale antérieure ; elle descend vers le ptérion et se jette dans le sinus sphéno-pariétal ou dans une veine temporale profonde.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Posterior temporal diploic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Parietal bone",
+     "rel": [
+      0.4,
+      0.8,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Parietal bone",
+     "rel": [
+      0.6,
+      0.3,
+      -0.5
+     ]
+    },
+    {
+     "repere": "Mastoid angle of parietal bone"
+    },
+    {
+     "objet": "Transverse sinus",
+     "a": 0.8
+    }
+   ],
+   "texte": "Veine du diploé de l'os pariétal postérieur ; elle gagne l'angle mastoïdien du pariétal et se jette dans le sinus transverse.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Occipital diploic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Occipital bone",
+     "rel": [
+      0.15,
+      0.5,
+      -0.7
+     ]
+    },
+    {
+     "objet": "Occipital bone",
+     "rel": [
+      0.25,
+      0.0,
+      -0.7
+     ]
+    },
+    {
+     "objet": "Transverse sinus",
+     "a": 0.4
+    }
+   ],
+   "texte": "Veine du diploé de l'os occipital qui se jette dans le sinus transverse près du sinus sigmoïde ou dans la veine occipitale.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Parietal emissary vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.9
+   ],
+   "points": [
+    {
+     "objet": "Superior sagittal sinus",
+     "a": 0.68
+    },
+    {
+     "repere": "Parietal foramen"
+    },
+    {
+     "repere": "Parietal foramen",
+     "decale": [
+      0,
+      10,
+      0
+     ]
+    },
+    {
+     "objet": "Occipital vein",
+     "proche": true
+    }
+   ],
+   "texte": "Elle traverse le foramen pariétal et met en relation le sinus sagittal supérieur avec les veines du cuir chevelu.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Mastoid emissary vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Sigmoid sinus",
+     "a": 0.3
+    },
+    {
+     "objet": "Sigmoid sinus",
+     "a": 0.3,
+     "decale": [
+      9,
+      0,
+      -4
+     ]
+    },
+    {
+     "objet": "Posterior auricular vein",
+     "proche": true
+    }
+   ],
+   "texte": "Elle traverse le foramen mastoïdien et relie le sinus sigmoïde à la veine auriculaire postérieure ou occipitale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Condylar emissary vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Sigmoid sinus",
+     "a": 0.95
+    },
+    {
+     "repere": "Condylar fossa"
+    },
+    {
+     "objet": "Vertebral vein",
+     "a": 0.05
+    }
+   ],
+   "texte": "Elle passe par le canal condylaire, en arrière du condyle occipital, et relie le sinus sigmoïde au plexus veineux vertébral externe.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Occipital emissary vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "points": [
+    {
+     "repere": "Confluence of sinuses"
+    },
+    {
+     "repere": "Confluence of sinuses",
+     "decale": [
+      0,
+      3,
+      -19
+     ]
+    },
+    {
+     "objet": "Occipital vein",
+     "proche": true
+    }
+   ],
+   "texte": "Elle traverse l'os occipital près de la protubérance occipitale interne et relie le confluent des sinus à la veine occipitale du cuir chevelu.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Sphenoidal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Cavernous sinus",
+     "a": 0.25
+    },
+    {
+     "repere": "Foramen ovale",
+     "decale": [
+      -2,
+      4,
+      3
+     ]
+    },
+    {
+     "repere": "Foramen ovale",
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    },
+    {
+     "objet": "Maxillary veins",
+     "a": 0.9
+    }
+   ],
+   "texte": "Veine émissaire de la base du crâne qui relie le sinus caverneux au plexus ptérygoïdien par un foramen de la grande aile du sphénoïde.",
+   "sources": [
+    "gray1918",
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Superficial petrosal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.0
+   ],
+   "points": [
+    {
+     "repere": "Arcuate eminence"
+    },
+    {
+     "objet": "Superior petrosal sinus",
+     "a": 0.45
+    }
+   ],
+   "texte": "Petite veine de la face supérieure du rocher qui rejoint le sinus pétreux supérieur.",
+   "sources": [
+    "gray1918"
+   ]
+  },
+  {
+   "nom": "Clival veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.2,
+      "decale": [
+       11,
+       2,
+       -1
+      ]
+     },
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.2,
+      "decale": [
+       5,
+       1,
+       0
+      ]
+     },
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.2
+     }
+    ],
+    [
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.5,
+      "decale": [
+       11,
+       2,
+       -1
+      ]
+     },
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.5,
+      "decale": [
+       5,
+       1,
+       0
+      ]
+     },
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.8,
+      "decale": [
+       11,
+       2,
+       -1
+      ]
+     },
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.8,
+      "decale": [
+       5,
+       1,
+       0
+      ]
+     },
+     {
+      "objet": "Basilar venous plexus",
+      "a": 0.8
+     }
+    ]
+   ],
+   "texte": "Petites veines du clivus qui convergent vers le plexus veineux basilaire.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Middle meningeal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Parietal bone",
+      "rel": [
+       0.5,
+       0.6,
+       0.55
+      ]
+     },
+     {
+      "objet": "Parietal bone",
+      "rel": [
+       0.9,
+       -0.4,
+       0.85
+      ]
+     },
+     {
+      "repere": "Foramen spinosum",
+      "decale": [
+       0,
+       3,
+       0
+      ]
+     },
+     {
+      "objet": "Maxillary veins",
+      "a": 0.85
+     }
+    ],
+    [
+     {
+      "objet": "Parietal bone",
+      "rel": [
+       0.6,
+       0.5,
+       -0.4
+      ]
+     },
+     {
+      "objet": "Parietal bone",
+      "rel": [
+       0.9,
+       -0.4,
+       0.0
+      ]
+     },
+     {
+      "repere": "Foramen spinosum",
+      "decale": [
+       0,
+       3,
+       0
+      ]
+     },
+     {
+      "objet": "Maxillary veins",
+      "a": 0.85
+     }
+    ]
+   ],
+   "texte": "Deux veines accompagnent chaque branche de l'artère méningée moyenne dans les gouttières de la face interne de la voûte, sortent par le foramen épineux et se jettent dans le plexus ptérygoïdien.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Menyngeal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Tentorium cerebelli",
+      "rel": [
+       0.7,
+       0.0,
+       0.3
+      ]
+     },
+     {
+      "objet": "Sigmoid sinus",
+      "a": 0.9
+     },
+     {
+      "objet": "Internal jugular vein",
+      "a": 0.03
+     }
+    ],
+    [
+     {
+      "objet": "Temporal bone",
+      "rel": [
+       0.4,
+       0.6,
+       0.0
+      ]
+     },
+     {
+      "objet": "Inferior petrosal sinus",
+      "a": 0.8
+     },
+     {
+      "objet": "Internal jugular vein",
+      "a": 0.03
+     }
+    ]
+   ],
+   "texte": "Veines de la dure-mère des fosses crâniennes postérieure et moyenne : elles rejoignent les sinus sigmoïde et pétreux inférieur puis la veine jugulaire interne au foramen jugulaire.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Frontopolar vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Transverse frontopolar gyrus and sulcus*",
+     "rel": [
+      0.6,
+      -0.2,
+      0.9
+     ]
+    },
+    {
+     "objet": "Transverse frontopolar gyrus and sulcus*",
+     "rel": [
+      0.0,
+      0.4,
+      0.2
+     ]
+    },
+    {
+     "objet": "Superior sagittal sinus",
+     "a": 0.17
+    }
+   ],
+   "texte": "Elle draine le pôle frontal et se jette dans la partie antérieure du sinus sagittal supérieur.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Frontal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Middle frontal gyrus",
+      "rel": [
+       0.8,
+       -0.2,
+       0.7
+      ]
+     },
+     {
+      "objet": "Middle frontal gyrus",
+      "rel": [
+       0.3,
+       0.5,
+       0.7
+      ]
+     },
+     {
+      "objet": "Superior frontal gyrus",
+      "rel": [
+       0.3,
+       0.6,
+       0.55
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.24
+     }
+    ],
+    [
+     {
+      "objet": "Middle frontal gyrus",
+      "rel": [
+       0.8,
+       -0.3,
+       0.1
+      ]
+     },
+     {
+      "objet": "Middle frontal gyrus",
+      "rel": [
+       0.4,
+       0.5,
+       0.1
+      ]
+     },
+     {
+      "objet": "Superior frontal gyrus",
+      "rel": [
+       0.3,
+       0.75,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.34
+     }
+    ],
+    [
+     {
+      "objet": "Superior frontal gyrus",
+      "rel": [
+       0.9,
+       0.0,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Superior frontal gyrus",
+      "rel": [
+       0.6,
+       0.8,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.42
+     }
+    ]
+   ],
+   "texte": "Veines de la face convexe et médiale du lobe frontal qui montent vers le sinus sagittal supérieur et s'y ouvrent en obliquant vers l'avant.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Parietal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Postcentral gyrus",
+      "rel": [
+       0.8,
+       -0.3,
+       0.0
+      ]
+     },
+     {
+      "objet": "Postcentral gyrus",
+      "rel": [
+       0.4,
+       0.85,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Supramarginal gyrus",
+      "rel": [
+       0.7,
+       0.2,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior parietal lobule",
+      "rel": [
+       0.6,
+       0.7,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.58
+     }
+    ],
+    [
+     {
+      "objet": "Superior parietal lobule",
+      "rel": [
+       0.5,
+       0.75,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.64
+     }
+    ]
+   ],
+   "texte": "Veines des gyrus postcentral et pariétaux qui rejoignent le sinus sagittal supérieur.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Occipital veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Lateral occipital gyrus (Middle occipital gyrus*)",
+      "rel": [
+       0.6,
+       0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior occipital gyri",
+      "rel": [
+       0.4,
+       0.85,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.76
+     }
+    ],
+    [
+     {
+      "objet": "Lateral occipital gyrus (Middle occipital gyrus*)",
+      "rel": [
+       0.5,
+       -0.5,
+       -0.8
+      ]
+     },
+     {
+      "objet": "Transverse sinus",
+      "a": 0.3
+     }
+    ]
+   ],
+   "texte": "Veines du lobe occipital : les unes montent vers le sinus sagittal supérieur, les autres descendent vers le sinus transverse.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Superficial middle cerebral vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.8
+   ],
+   "points": [
+    {
+     "objet": "Lat_Fis-post",
+     "a": 1.0,
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "Lat_Fis-ant-Vertical",
+     "a": 1.0,
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Lat_Fis-ant-Horizont",
+     "a": 0.0,
+     "decale": [
+      3,
+      0,
+      -2
+     ]
+    },
+    {
+     "objet": "Temporal pole",
+     "rel": [
+      0.2,
+      0.7,
+      0.9
+     ]
+    },
+    {
+     "objet": "Cavernous sinus",
+     "a": 0.9
+    }
+   ],
+   "texte": "Elle longe le sillon latéral sur la face externe de l'hémisphère, de l'arrière vers l'avant, contourne le pôle temporal et se jette dans le sinus caverneux ou le sinus sphéno-pariétal.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Superior anastomotic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Lat_Fis-post",
+     "a": 1.0,
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Supramarginal gyrus",
+     "rel": [
+      0.9,
+      0.5,
+      0.0
+     ]
+    },
+    {
+     "objet": "Postcentral gyrus",
+     "rel": [
+      0.5,
+      0.9,
+      0.5
+     ]
+    },
+    {
+     "objet": "Superior sagittal sinus",
+     "a": 0.48
+    }
+   ],
+   "texte": "Veine de Trolard : elle relie la veine cérébrale moyenne superficielle au sinus sagittal supérieur en passant sur la convexité, devant le sillon postcentral.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Inferior anastomotic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Lat_Fis-post",
+     "a": 1.0,
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Middle temporal gyrus",
+     "rel": [
+      0.9,
+      0.1,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Inferior temporal gyrus",
+     "rel": [
+      0.8,
+      -0.3,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Transverse sinus",
+     "a": 0.9
+    }
+   ],
+   "texte": "Veine de Labbé : elle relie la veine cérébrale moyenne superficielle au sinus transverse à travers le lobe temporal.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Orbitofrontal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Orbital gyri",
+      "rel": [
+       0.5,
+       -0.5,
+       0.6
+      ]
+     },
+     {
+      "objet": "Straight gyrus (Gyrus rectus)",
+      "rel": [
+       0.4,
+       -0.2,
+       0.9
+      ]
+     },
+     {
+      "objet": "Superior sagittal sinus",
+      "a": 0.05
+     }
+    ],
+    [
+     {
+      "objet": "Orbital gyri",
+      "rel": [
+       0.9,
+       -0.4,
+       0.2
+      ]
+     },
+     {
+      "objet": "Orbital gyri",
+      "rel": [
+       0.6,
+       -0.5,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Cavernous sinus",
+      "a": 0.9
+     }
+    ]
+   ],
+   "texte": "Elles drainent la face orbitaire du lobe frontal et se jettent dans le sinus sagittal supérieur et dans la veine basale ou le sinus caverneux.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Temporal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Inferior temporal gyrus",
+      "rel": [
+       0.6,
+       -0.9,
+       -0.4
+      ]
+     },
+     {
+      "objet": "Inferior temporal gyrus",
+      "rel": [
+       0.4,
+       -0.9,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Transverse sinus",
+      "a": 0.85
+     }
+    ],
+    [
+     {
+      "objet": "Inferior temporal gyrus",
+      "rel": [
+       0.5,
+       -0.9,
+       0.4
+      ]
+     },
+     {
+      "objet": "Superior petrosal sinus",
+      "a": 0.45
+     }
+    ],
+    [
+     {
+      "objet": "Temporal pole",
+      "rel": [
+       0.6,
+       -0.8,
+       0.5
+      ]
+     },
+     {
+      "objet": "Cavernous sinus",
+      "a": 0.5
+     }
+    ]
+   ],
+   "texte": "Elles drainent la face inférieure et latérale du lobe temporal et rejoignent le sinus transverse, le sinus pétreux supérieur et le sinus caverneux.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Basal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.8
+   ],
+   "points": [
+    {
+     "objet": "Anterior cerebral artery",
+     "a": 0.0,
+     "decale": [
+      4,
+      -1,
+      0
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      1.0,
+      0.0,
+      0.5
+     ],
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      1.0,
+      0.3,
+      -0.4
+     ],
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Pineal gland",
+     "a": 0.9,
+     "decale": [
+      0,
+      4,
+      0
+     ]
+    }
+   ],
+   "texte": "Veine de Rosenthal : née près de la substance perforée antérieure, elle contourne le pédoncule cérébral et rejoint la grande veine cérébrale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Anterior cerebral vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.1
+   ],
+   "points": [
+    {
+     "objet": "Anterior cerebral artery",
+     "a": 1.0,
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Anterior cerebral artery",
+     "a": 0.6,
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Anterior cerebral artery",
+     "a": 0.0,
+     "decale": [
+      4,
+      -1,
+      0
+     ]
+    }
+   ],
+   "texte": "Elle accompagne l'artère cérébrale antérieure, draine la face médiale du lobe frontal et le genou du corps calleux et se jette dans la veine basale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Deep middle cerebral vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.5
+   ],
+   "points": [
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      0.2,
+      0.3,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      0.2,
+      -0.3,
+      -0.1
+     ]
+    },
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      0.2,
+      -0.9,
+      0.8
+     ]
+    },
+    {
+     "objet": "Anterior cerebral artery",
+     "a": 0.0,
+     "decale": [
+      4,
+      -1,
+      0
+     ]
+    }
+   ],
+   "texte": "Elle chemine dans la profondeur du sillon latéral, sur l'insula, puis rejoint la veine basale à la base du cerveau.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Insular veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.8
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.9,
+       0.7,
+       -0.7
+      ]
+     },
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.5,
+       0.0,
+       -0.4
+      ]
+     },
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.2,
+       -0.3,
+       -0.1
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.9,
+       0.2,
+       0.5
+      ]
+     },
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.5,
+       -0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.2,
+       -0.6,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.9,
+       -0.4,
+       -0.2
+      ]
+     },
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.5,
+       -0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+      "rel": [
+       0.2,
+       -0.3,
+       -0.1
+      ]
+     }
+    ]
+   ],
+   "texte": "Elles drainent le cortex de l'insula et se jettent dans la veine cérébrale moyenne profonde.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Inferior thalamostriate veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.8
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       -0.3,
+       -0.9,
+       0.5
+      ]
+     },
+     {
+      "objet": "Anterior cerebral artery",
+      "a": 0.0,
+      "decale": [
+       4,
+       -1,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Caudate nucleus",
+      "rel": [
+       0.3,
+       -0.9,
+       0.5
+      ]
+     },
+     {
+      "objet": "Anterior cerebral artery",
+      "a": 0.0,
+      "decale": [
+       4,
+       -1,
+       0
+      ]
+     }
+    ]
+   ],
+   "texte": "Petites veines des noyaux gris centraux qui traversent la substance perforée antérieure et se jettent dans la veine basale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Inferior choroidal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      0.3,
+      0.7,
+      0.2
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.4,
+      0.5,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      1.0,
+      0.3,
+      0.0
+     ],
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Elle draine le plexus choroïde de la corne temporale du ventricule latéral et l'hippocampe, puis se jette dans la veine basale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Great cerebral vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    2.0,
+    2.4
+   ],
+   "points": [
+    {
+     "objet": "Pineal gland",
+     "a": 0.9,
+     "decale": [
+      0,
+      4,
+      0
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "a": 0.02,
+     "decale": [
+      0,
+      -4,
+      -3
+     ]
+    },
+    {
+     "objet": "Straight sinus",
+     "a": 0.0
+    }
+   ],
+   "texte": "Veine de Galien : très courte, née de la réunion des deux veines cérébrales internes sous le splénium du corps calleux, elle se jette avec le sinus sagittal inférieur dans le sinus droit.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Internal cerebral vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.6
+   ],
+   "points": [
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.9,
+      0.95,
+      0.85
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.9,
+      1.0,
+      0.1
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.85,
+      0.95,
+      -0.7
+     ]
+    },
+    {
+     "objet": "Pineal gland",
+     "a": 0.9,
+     "decale": [
+      0,
+      4,
+      0
+     ]
+    }
+   ],
+   "texte": "Elle court dans le toit du troisième ventricule, de part et d'autre de la ligne médiane, depuis le foramen interventriculaire jusqu'au-dessous du splénium où les deux veines forment la grande veine cérébrale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Superior choroid vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "points": [
+    {
+     "objet": "Choroid plexus",
+     "rel": [
+      0.9,
+      0.4,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Choroid plexus",
+     "rel": [
+      0.6,
+      0.5,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Choroid plexus",
+     "rel": [
+      0.2,
+      0.4,
+      0.6
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.9,
+      0.9,
+      0.85
+     ]
+    }
+   ],
+   "texte": "Elle longe le plexus choroïde du ventricule latéral et se jette dans la veine cérébrale interne au foramen interventriculaire.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Superior thalamostriate vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Thalamus",
+     "rel": [
+      0.7,
+      1.0,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      0.8,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      0.4,
+      1.0,
+      0.8
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.7,
+      1.0,
+      0.9
+     ]
+    }
+   ],
+   "texte": "Elle suit le sillon entre le noyau caudé et le thalamus (stria terminalis) d'arrière en avant et se jette dans la veine cérébrale interne au foramen interventriculaire.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Lateral direct cerebral veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.8
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Lateral ventricle",
+      "rel": [
+       0.8,
+       0.3,
+       -0.6
+      ]
+     },
+     {
+      "objet": "Hippocampus",
+      "rel": [
+       0.5,
+       0.5,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Midbrain",
+      "rel": [
+       1.0,
+       0.3,
+       -0.4
+      ],
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Lateral ventricle",
+      "rel": [
+       0.8,
+       0.3,
+       0.4
+      ]
+     },
+     {
+      "objet": "Hippocampus",
+      "rel": [
+       0.5,
+       0.5,
+       0.4
+      ]
+     },
+     {
+      "objet": "Midbrain",
+      "rel": [
+       1.0,
+       0.0,
+       0.5
+      ],
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     }
+    ]
+   ],
+   "texte": "Veines de la paroi latérale du ventricule latéral qui descendent vers la veine basale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Posterior vein of corpus callosum",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.0,
+      0.9,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "decale": [
+      0,
+      0,
+      -2.5
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.0,
+      -0.9,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Pineal gland",
+     "a": 0.9,
+     "decale": [
+      0,
+      4,
+      0
+     ]
+    }
+   ],
+   "texte": "Elle contourne le splénium du corps calleux d'arrière en avant et se jette dans la grande veine cérébrale ou la veine cérébrale interne.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Pontomesencephalic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.1
+   ],
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      0.2,
+      0.9,
+      0.9
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      0.7,
+      0.95,
+      0.2
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      1.0,
+      0.0,
+      0.3
+     ],
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Elle passe sur la face antérieure de la jonction pont-mésencéphale et relie les veines du pont à la veine basale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Pontine veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Pons",
+      "rel": [
+       0.2,
+       -0.3,
+       0.9
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.9,
+       -0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Superior petrosal sinus",
+      "a": 0.95
+     }
+    ],
+    [
+     {
+      "objet": "Pons",
+      "rel": [
+       0.2,
+       0.2,
+       0.9
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.9,
+       0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Superior petrosal sinus",
+      "a": 0.9
+     }
+    ]
+   ],
+   "texte": "Elles drainent le pont et se jettent dans la veine pétreuse et le sinus pétreux supérieur.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Petrosal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.8
+   ],
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      1.0,
+      -0.3,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      1.0,
+      -0.4,
+      -0.8
+     ],
+     "decale": [
+      4,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Superior petrosal sinus",
+     "a": 0.6
+    }
+   ],
+   "texte": "Veine de Dandy : elle rassemble les veines du cervelet et du pont dans l'angle pontocérébelleux et se jette dans le sinus pétreux supérieur.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Superior vein of vermis",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Folium of vermis",
+     "rel": [
+      0.0,
+      0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Declive",
+     "rel": [
+      0.0,
+      0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Culmen",
+     "rel": [
+      0.0,
+      0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Culmen",
+     "rel": [
+      0.0,
+      0.9,
+      0.9
+     ]
+    },
+    {
+     "objet": "Straight sinus",
+     "a": 0.0
+    }
+   ],
+   "texte": "Elle draine le vermis supérieur et se jette dans le sinus droit (ou la grande veine cérébrale).",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Inferior vein of vermis",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Tuber of vermis",
+     "rel": [
+      0.0,
+      -0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Pyramis of vermis",
+     "rel": [
+      0.0,
+      -0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Uvula of vermis",
+     "rel": [
+      0.0,
+      -0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Occipital sinus",
+     "a": 0.0
+    }
+   ],
+   "texte": "Elle draine le vermis inférieur et se jette dans le sinus droit, le sinus transverse ou le sinus occipital.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Superior veins of cerebellar hemisphere",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.1
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Superior semilunar lobule",
+      "rel": [
+       0.8,
+       0.9,
+       0.5
+      ]
+     },
+     {
+      "objet": "Superior semilunar lobule",
+      "rel": [
+       0.5,
+       0.9,
+       0.9
+      ]
+     },
+     {
+      "objet": "Transverse sinus",
+      "a": 0.4
+     }
+    ],
+    [
+     {
+      "objet": "Posterior quadrangular lobule",
+      "rel": [
+       0.7,
+       0.9,
+       0.0
+      ]
+     },
+     {
+      "objet": "Posterior quadrangular lobule",
+      "rel": [
+       0.4,
+       0.9,
+       -0.6
+      ]
+     },
+     {
+      "objet": "Transverse sinus",
+      "a": 0.25
+     }
+    ],
+    [
+     {
+      "objet": "Anterior quadrangular lobule",
+      "rel": [
+       0.7,
+       0.9,
+       0.0
+      ]
+     },
+     {
+      "objet": "Anterior quadrangular lobule",
+      "rel": [
+       0.9,
+       0.8,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Superior petrosal sinus",
+      "a": 0.5
+     }
+    ]
+   ],
+   "texte": "Elles drainent la face supérieure de l'hémisphère cérébelleux et se jettent dans le sinus transverse, le sinus droit et le sinus pétreux supérieur.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Inferior veins of cerebellar hemisphere",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.1
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Tonsil of cerebellum",
+      "rel": [
+       0.6,
+       -0.8,
+       0.0
+      ]
+     },
+     {
+      "objet": "Sigmoid sinus",
+      "a": 0.8
+     }
+    ],
+    [
+     {
+      "objet": "Biventral lobule",
+      "rel": [
+       0.8,
+       -0.8,
+       0.0
+      ]
+     },
+     {
+      "objet": "Sigmoid sinus",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Inferior semilunar lobule",
+      "rel": [
+       0.8,
+       -0.8,
+       -0.2
+      ]
+     },
+     {
+      "objet": "Transverse sinus",
+      "a": 0.8
+     }
+    ]
+   ],
+   "texte": "Elles drainent la face inférieure de l'hémisphère cérébelleux et se jettent dans le sinus sigmoïde et le sinus transverse.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Precentral cerebellar vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "points": [
+    {
+     "objet": "Lingula of cerebellum",
+     "rel": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "Central lobule",
+     "rel": [
+      0.0,
+      0.9,
+      0.8
+     ]
+    },
+    {
+     "objet": "Pineal gland",
+     "a": 0.9,
+     "decale": [
+      0,
+      3,
+      -1
+     ]
+    }
+   ],
+   "texte": "Elle naît dans le sillon entre la lingula et le lobule central du vermis et se jette dans la grande veine cérébrale.",
+   "sources": [
+    "gray1918",
+    "radiopaedia"
+   ]
+  },
+  {
+   "nom": "Anterior spinal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.6
+   ],
+   "traces": [
+    [
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.0,
+      "decale": [
+       0,
+       0,
+       4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.2,
+      "decale": [
+       0,
+       0,
+       4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.4,
+      "decale": [
+       0,
+       0,
+       4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.6,
+      "decale": [
+       0,
+       0,
+       4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.8,
+      "decale": [
+       0,
+       0,
+       4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 1.0,
+      "decale": [
+       0,
+       0,
+       4
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.0,
+      "decale": [
+       4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.2,
+      "decale": [
+       4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.4,
+      "decale": [
+       4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.6,
+      "decale": [
+       4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.8,
+      "decale": [
+       4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 1.0,
+      "decale": [
+       4,
+       0,
+       3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.0,
+      "decale": [
+       -4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.2,
+      "decale": [
+       -4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.4,
+      "decale": [
+       -4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.6,
+      "decale": [
+       -4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.8,
+      "decale": [
+       -4,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 1.0,
+      "decale": [
+       -4,
+       0,
+       3
+      ]
+     }
+    ]
+   ],
+   "texte": "Veines longitudinales de la face antérieure de la moelle spinale, l'une médiane dans la fissure médiane antérieure et deux antérolatérales ; elles se jettent dans les veines radiculaires.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Posterior spinal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.6
+   ],
+   "traces": [
+    [
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.0,
+      "decale": [
+       0,
+       0,
+       -4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.2,
+      "decale": [
+       0,
+       0,
+       -4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.4,
+      "decale": [
+       0,
+       0,
+       -4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.6,
+      "decale": [
+       0,
+       0,
+       -4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.8,
+      "decale": [
+       0,
+       0,
+       -4
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 1.0,
+      "decale": [
+       0,
+       0,
+       -4
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.0,
+      "decale": [
+       3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.2,
+      "decale": [
+       3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.4,
+      "decale": [
+       3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.6,
+      "decale": [
+       3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.8,
+      "decale": [
+       3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 1.0,
+      "decale": [
+       3,
+       0,
+       -3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.0,
+      "decale": [
+       -3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.2,
+      "decale": [
+       -3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.4,
+      "decale": [
+       -3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.6,
+      "decale": [
+       -3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 0.8,
+      "decale": [
+       -3,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "White matter of spinal cord",
+      "a": 1.0,
+      "decale": [
+       -3,
+       0,
+       -3
+      ]
+     }
+    ]
+   ],
+   "texte": "Veines longitudinales de la face postérieure de la moelle, médiane et postérolatérales, qui se jettent dans les veines radiculaires.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Intervertebral veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Vertebra C5",
+      "rel": [
+       0.0,
+       0.0,
+       -0.1
+      ]
+     },
+     {
+      "objet": "Vertebra C5",
+      "rel": [
+       0.6,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Vertebral vein",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Vertebra T4",
+      "rel": [
+       0.0,
+       0.0,
+       -0.1
+      ]
+     },
+     {
+      "objet": "Vertebra T4",
+      "rel": [
+       0.6,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior intercostal vein",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Vertebra T8",
+      "rel": [
+       0.0,
+       0.0,
+       -0.1
+      ]
+     },
+     {
+      "objet": "Vertebra T8",
+      "rel": [
+       0.6,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior intercostal vein",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Vertebra L2",
+      "rel": [
+       0.0,
+       0.0,
+       -0.1
+      ]
+     },
+     {
+      "objet": "Vertebra L2",
+      "rel": [
+       0.6,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Lumbar veins",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Vertebra L4",
+      "rel": [
+       0.0,
+       0.0,
+       -0.1
+      ]
+     },
+     {
+      "objet": "Vertebra L4",
+      "rel": [
+       0.6,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Lumbar veins",
+      "proche": true
+     }
+    ]
+   ],
+   "texte": "Elles quittent le canal vertébral par les foramens intervertébraux et relient les plexus veineux vertébraux internes aux veines segmentaires : vertébrale au cou, intercostales dans le thorax, lombaires plus bas.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Supreme intercostal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.3
+   ],
+   "points": [
+    {
+     "objet": "First posterior intercostal artery",
+     "a": 0.35,
+     "decale": [
+      -1.5,
+      1,
+      0
+     ]
+    },
+    {
+     "objet": "First posterior intercostal artery",
+     "a": 0.1,
+     "decale": [
+      -1.5,
+      1,
+      0
+     ]
+    },
+    {
+     "objet": "First posterior intercostal artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Vertebral vein",
+     "a": 0.95
+    }
+   ],
+   "texte": "Elle draine le premier espace intercostal en arrière et se jette dans la veine vertébrale ou la veine brachiocéphalique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Subcutaneous abdominal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Umbilicus",
+      "rel": [
+       0.8,
+       0.6,
+       1.0
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Rectus abdominis muscle",
+      "rel": [
+       0.2,
+       0.1,
+       1.0
+      ],
+      "decale": [
+       0,
+       0,
+       1
+      ]
+     },
+     {
+      "objet": "Rectus abdominis muscle",
+      "rel": [
+       0.6,
+       0.4,
+       0.9
+      ],
+      "decale": [
+       0,
+       0,
+       1
+      ]
+     },
+     {
+      "objet": "Lateral thoracic vein",
+      "a": 0.1
+     }
+    ],
+    [
+     {
+      "objet": "Rectus abdominis muscle",
+      "rel": [
+       0.0,
+       0.45,
+       1.0
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Umbilicus",
+      "rel": [
+       0.5,
+       0.3,
+       1.0
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Umbilicus",
+      "rel": [
+       0.5,
+       -0.4,
+       1.0
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Superficial epigastric vein",
+      "a": 0.0
+     }
+    ],
+    [
+     {
+      "objet": "Rectus abdominis muscle",
+      "rel": [
+       0.1,
+       -0.6,
+       1.0
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Superficial epigastric vein",
+      "a": 0.4
+     }
+    ],
+    [
+     {
+      "objet": "Rectus abdominis muscle",
+      "rel": [
+       0.8,
+       -0.3,
+       0.8
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Rectus abdominis muscle",
+      "rel": [
+       0.7,
+       -0.7,
+       0.9
+      ],
+      "decale": [
+       0,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Superficial epigastric vein",
+      "a": 0.75
+     }
+    ]
+   ],
+   "texte": "Réseau veineux superficiel de la paroi abdominale antérieure, rayonnant autour de l'ombilic ; il se draine vers le haut dans la veine thoracique latérale et vers le bas dans les veines épigastrique et circonflexe iliaque superficielles.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Inferior phrenic veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Diaphragm",
+      "rel": [
+       -0.55,
+       0.5,
+       0.1
+      ]
+     },
+     {
+      "objet": "Diaphragm",
+      "rel": [
+       -0.3,
+       0.4,
+       0.0
+      ]
+     },
+     {
+      "objet": "Inferior vena cava (abdominal part)",
+      "a": 1.0
+     }
+    ],
+    [
+     {
+      "objet": "Diaphragm",
+      "rel": [
+       0.55,
+       0.35,
+       0.0
+      ]
+     },
+     {
+      "objet": "Diaphragm",
+      "rel": [
+       0.3,
+       0.0,
+       -0.2
+      ]
+     },
+     {
+      "objet": "Left renal vein",
+      "a": 0.7
+     }
+    ]
+   ],
+   "texte": "Elles drainent la face inférieure du diaphragme : la droite se jette dans la veine cave inférieure, la gauche dans la veine rénale gauche ou la veine surrénale gauche.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Right hepatic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.8,
+    3.2
+   ],
+   "points": [
+    {
+     "objet": "Anterior lateral segment of liver (VI)",
+     "rel": [
+      0.2,
+      -0.5,
+      0.0
+     ]
+    },
+    {
+     "objet": "Posterior lateral segment of liver (VII)",
+     "rel": [
+      -0.6,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "Hepatic veins",
+     "a": 0.0
+    }
+   ],
+   "texte": "Elle court entre les secteurs antérieur et postérieur du foie droit, dans le plan de la scissure portale droite, et se jette dans la veine cave inférieure sous le diaphragme.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Intermediate hepatic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.8,
+    3.2
+   ],
+   "points": [
+    {
+     "objet": "Anterior medial segment of liver (V)",
+     "rel": [
+      -0.8,
+      -0.5,
+      0.4
+     ]
+    },
+    {
+     "objet": "Posterior medial segment of liver (VIII)",
+     "rel": [
+      -0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "Hepatic veins",
+     "a": 0.0
+    }
+   ],
+   "texte": "Elle occupe la scissure portale principale, entre foie droit et foie gauche, et se jette dans la veine cave inférieure, souvent avec la veine hépatique gauche.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Left hepatic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.8,
+    3.0
+   ],
+   "points": [
+    {
+     "objet": "Left anterior lateral segment of liver (III)",
+     "rel": [
+      0.6,
+      -0.2,
+      0.0
+     ]
+    },
+    {
+     "objet": "Left posterior lateral segment of liver (II)",
+     "rel": [
+      -0.3,
+      0.3,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Hepatic veins",
+     "a": 0.0
+    }
+   ],
+   "texte": "Elle passe entre les segments latéraux gauches (II et III) du foie, dans la scissure ombilicale, et se jette dans la veine cave inférieure, le plus souvent avec la veine hépatique intermédiaire.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Right suprarenal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Suprarenal gland",
+     "centre": true
+    },
+    {
+     "objet": "Suprarenal gland",
+     "rel": [
+      -0.9,
+      -0.3,
+      0.4
+     ]
+    },
+    {
+     "objet": "Inferior vena cava (abdominal part)",
+     "a": 0.99
+    }
+   ],
+   "texte": "Courte veine du hile de la glande surrénale droite qui se jette directement dans la veine cave inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Left suprarenal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "gauche",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Suprarenal gland",
+     "centre": true
+    },
+    {
+     "objet": "Suprarenal gland",
+     "rel": [
+      -0.8,
+      -0.8,
+      0.3
+     ]
+    },
+    {
+     "objet": "Left renal vein",
+     "a": 0.75
+    }
+   ],
+   "texte": "Elle quitte le hile de la glande surrénale gauche, descend avec l'artère phrénique inférieure et se jette dans la veine rénale gauche.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Arcuate vein of right kidney",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.75,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.75,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       -0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       -0.75,
+       0.0
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of right kidney",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.75,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       0.5,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.75,
+       0.0,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       -0.5,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       -0.75,
+       0.45
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of right kidney",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.75,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       0.5,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.75,
+       0.0,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       -0.5,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       -0.75,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of right kidney",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       -0.2,
+       0.6,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.2,
+       0.35,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.2,
+       -0.35,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       -0.2,
+       -0.6,
+       0.0
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of right kidney",
+      "proche": true
+     }
+    ]
+   ],
+   "texte": "Veines arquées : elles forment des arcades à la base des pyramides rénales, entre médullaire et cortex, reçoivent les veines interlobulaires et se jettent dans les veines interlobaires.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Arcuate vein of left kidney",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "gauche",
+   "rayon": [
+    0.6,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.75,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.75,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       -0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       -0.75,
+       0.0
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of left kidney",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.75,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       0.5,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.75,
+       0.0,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       -0.5,
+       0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       -0.75,
+       0.45
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of left kidney",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.75,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       0.5,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.75,
+       0.0,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.65,
+       -0.5,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       -0.75,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of left kidney",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Kidney",
+      "rel": [
+       -0.2,
+       0.6,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.2,
+       0.35,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.3,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       0.2,
+       -0.35,
+       0.0
+      ]
+     },
+     {
+      "objet": "Kidney",
+      "rel": [
+       -0.2,
+       -0.6,
+       0.0
+      ]
+     },
+     {
+      "objet": "Intrarenal veins of left kidney",
+      "proche": true
+     }
+    ]
+   ],
+   "texte": "Veines arquées : elles forment des arcades à la base des pyramides rénales, entre médullaire et cortex, reçoivent les veines interlobulaires et se jettent dans les veines interlobaires.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Median sacral vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "milieu",
+   "suit": "Median sacral artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    1.2,
+    0.7
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle accompagne l'artère sacrale médiane devant le sacrum et le coccyx et se jette dans la veine iliaque commune gauche, près de la confluence des iliaques.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Obturator veins",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "deux",
+   "suit": "Obturator artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 2,
+   "rayon": [
+    1.3,
+    0.8
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elles accompagnent l'artère obturatrice, depuis le canal obturateur sur la paroi latérale du petit bassin, et se jettent dans la veine iliaque interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle anorectal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Rectum",
+     "rel": [
+      0.8,
+      0.3,
+      0.0
+     ]
+    },
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.0,
+      0.8,
+      0.0
+     ],
+     "decale": [
+      10,
+      3,
+      0
+     ]
+    },
+    {
+     "objet": "Internal iliac vein",
+     "a": 0.2
+    }
+   ],
+   "texte": "Elles drainent l'ampoule rectale, traversent les ligaments latéraux du rectum et se jettent dans la veine iliaque interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior anorectal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.3
+   ],
+   "points": [
+    {
+     "objet": "Rectum",
+     "a": 0.0
+    },
+    {
+     "objet": "Rectum",
+     "a": 0.0,
+     "decale": [
+      18,
+      3,
+      0
+     ]
+    },
+    {
+     "objet": "Internal pudendal vein",
+     "a": 0.5
+    }
+   ],
+   "texte": "Elles drainent le canal anal et la région périanale, traversent la fosse ischio-anale et se jettent dans la veine pudendale interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior anorectal vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "milieu",
+   "suit": "Superior anorectal artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    1.4,
+    0.9
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle prolonge le plexus rectal interne, accompagne l'artère rectale supérieure et se continue par la veine mésentérique inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Vesical veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       0.9,
+       -0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       1.0,
+       0.3,
+       0.4
+      ],
+      "decale": [
+       6,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Internal iliac vein",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       0.8,
+       -0.6,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       1.0,
+       0.2,
+       -0.4
+      ],
+      "decale": [
+       6,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Internal iliac vein",
+      "a": 0.3
+     }
+    ]
+   ],
+   "texte": "Elles naissent du plexus veineux vésical autour de la vessie et se jettent dans la veine iliaque interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pubic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.1
+   ],
+   "points": [
+    {
+     "objet": "Inferior epigastric vein",
+     "a": 1.0
+    },
+    {
+     "repere": "Pubic crest",
+     "decale": [
+      0,
+      2,
+      -3
+     ]
+    },
+    {
+     "objet": "Obturator artery",
+     "a": 1.0
+    }
+   ],
+   "texte": "Elle relie la veine épigastrique inférieure à la veine obturatrice en longeant la face postérieure du pubis (la « corona mortis » veineuse).",
+   "sources": [
+    "gray1918",
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Deep circumflex iliac vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.4
+   ],
+   "points": [
+    {
+     "repere": "Iliac crest",
+     "decale": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "repere": "Anterior superior iliac spine",
+     "decale": [
+      0,
+      2,
+      -1
+     ]
+    },
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.6,
+     "decale": [
+      0,
+      2,
+      -3
+     ]
+    },
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.2,
+     "decale": [
+      0,
+      2,
+      -3
+     ]
+    },
+    {
+     "objet": "External iliac vein",
+     "a": 0.08
+    }
+   ],
+   "texte": "Elle longe le ligament inguinal puis la crête iliaque, avec l'artère circonflexe iliaque profonde, et se jette dans la veine iliaque externe.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Deep external pudendal vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "deux",
+   "suit": "Deep external pudendal artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    0.9,
+    0.6
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle accompagne l'artère pudendale externe profonde et draine la peau du périnée et du scrotum ou des grandes lèvres ; elle rejoint la veine fémorale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superficial circumflex iliac vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.95,
+     "decale": [
+      0,
+      -6,
+      3
+     ]
+    },
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.6,
+     "decale": [
+      0,
+      -6,
+      3
+     ]
+    },
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.3,
+     "decale": [
+      0,
+      -6,
+      3
+     ]
+    },
+    {
+     "objet": "Great saphenous vein",
+     "a": 0.97
+    }
+   ],
+   "texte": "Veine sous-cutanée qui longe le ligament inguinal vers l'épine iliaque antéro-supérieure et se jette dans la partie terminale de la veine grande saphène.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Left gastric vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.3,
+    2.0
+   ],
+   "points": [
+    {
+     "objet": "Left gastric artery",
+     "a": 1.0,
+     "decale": [
+      -3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Left gastric artery",
+     "a": 0.5,
+     "decale": [
+      -3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Left gastric artery",
+     "a": 0.0,
+     "decale": [
+      -3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Hepatic portal vein",
+     "a": 0.12
+    }
+   ],
+   "texte": "Elle longe la petite courbure de l'estomac avec l'artère gastrique gauche, reçoit des veines oesophagiennes et se jette dans la veine porte.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Right gastric vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.0,
+    1.8
+   ],
+   "points": [
+    {
+     "objet": "Stomach",
+     "rel": [
+      -1.0,
+      -0.6,
+      0.5
+     ]
+    },
+    {
+     "objet": "Lesser omentum",
+     "rel": [
+      -0.9,
+      -0.4,
+      0.6
+     ]
+    },
+    {
+     "objet": "Lesser omentum",
+     "rel": [
+      -0.7,
+      -0.2,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Hepatic portal vein",
+     "a": 0.5
+    }
+   ],
+   "texte": "Elle longe la petite courbure de l'estomac vers le pylore, dans le petit omentum, et se jette directement dans la veine porte.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Prepyloric vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    1.0
+   ],
+   "points": [
+    {
+     "objet": "Stomach",
+     "rel": [
+      -1.0,
+      -0.7,
+      0.5
+     ]
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      -1.0,
+      -0.3,
+      0.4
+     ]
+    },
+    {
+     "objet": "Lesser omentum",
+     "rel": [
+      -0.9,
+      -0.4,
+      0.6
+     ]
+    }
+   ],
+   "texte": "Veine de Mayo : elle monte sur la face antérieure du pylore, repère chirurgical de la jonction gastroduodénale, et se jette dans la veine gastrique droite.",
+   "sources": [
+    "gray1918",
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Short gastric veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    1.1
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.85,
+       0.7,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.02
+     }
+    ],
+    [
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.9,
+       0.5,
+       -0.1
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.05
+     }
+    ],
+    [
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.9,
+       0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.1
+     }
+    ],
+    [
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.85,
+       0.6,
+       0.6
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.14
+     }
+    ]
+   ],
+   "texte": "Quatre à six petites veines du fond de l'estomac qui passent dans le ligament gastro-splénique et se jettent dans la veine splénique ou dans ses branches.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Cystic veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    1.1
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Gallbladder",
+      "a": 0.5
+     },
+     {
+      "objet": "Gallbladder",
+      "a": 0.9
+     },
+     {
+      "objet": "Hepatic portal vein",
+      "a": 0.95
+     }
+    ],
+    [
+     {
+      "objet": "Gallbladder",
+      "a": 0.3,
+      "decale": [
+       -2,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Gallbladder",
+      "a": 0.8,
+      "decale": [
+       -2,
+       2,
+       0
+      ]
+     },
+     {
+      "objet": "Hepatic portal vein",
+      "a": 0.9
+     }
+    ]
+   ],
+   "texte": "Elles drainent la vésicule biliaire et se jettent dans la branche droite de la veine porte ou directement dans le foie.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Umbilical vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.0,
+    1.6
+   ],
+   "points": [
+    {
+     "objet": "Umbilicus",
+     "centre": true,
+     "decale": [
+      0,
+      0,
+      -4
+     ]
+    },
+    {
+     "repere": "Notch for ligamentum teres"
+    },
+    {
+     "repere": "Fissure for ligamentum teres"
+    },
+    {
+     "repere": "Fissure for ligamentum venosum"
+    },
+    {
+     "objet": "Hepatic portal vein",
+     "a": 1.0
+    }
+   ],
+   "texte": "Veine du cordon ombilical chez le foetus ; chez l'adulte, oblitérée, elle forme le ligament rond du foie qui monte de l'ombilic dans le bord libre du ligament falciforme jusqu'à la branche gauche de la veine porte.",
+   "sources": [
+    "gray1918",
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Para-umbilical veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.8
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Umbilicus",
+      "centre": true,
+      "decale": [
+       3,
+       0,
+       -4
+      ]
+     },
+     {
+      "repere": "Notch for ligamentum teres",
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     },
+     {
+      "repere": "Fissure for ligamentum teres",
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Hepatic portal vein",
+      "a": 0.98,
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Umbilicus",
+      "centre": true,
+      "decale": [
+       -3,
+       0,
+       -4
+      ]
+     },
+     {
+      "repere": "Notch for ligamentum teres",
+      "decale": [
+       -3,
+       0,
+       0
+      ]
+     },
+     {
+      "repere": "Fissure for ligamentum teres",
+      "decale": [
+       -3,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Hepatic portal vein",
+      "a": 0.98,
+      "decale": [
+       -3,
+       0,
+       0
+      ]
+     }
+    ]
+   ],
+   "texte": "Petites veines qui accompagnent le ligament rond du foie et relient les veines de l'ombilic à la veine porte ; elles s'élargissent en cas d'hypertension portale.",
+   "sources": [
+    "gray1918",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Posterior superior pancreaticoduodenal vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.7,
+      -0.5,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.5,
+      0.2,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Hepatic portal vein",
+     "a": 0.1,
+     "decale": [
+      0,
+      0,
+      -3
+     ]
+    }
+   ],
+   "texte": "Elle passe derrière la tête du pancréas, accompagne l'artère du même nom et se jette directement dans la veine porte.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pancreaticoduodenal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Pancreas",
+      "rel": [
+       -0.8,
+       -0.7,
+       0.9
+      ]
+     },
+     {
+      "objet": "Pancreas",
+      "rel": [
+       -0.5,
+       -0.3,
+       0.9
+      ]
+     },
+     {
+      "objet": "Pancreas",
+      "rel": [
+       -0.2,
+       0.5,
+       0.9
+      ]
+     },
+     {
+      "objet": "Hepatic portal vein",
+      "a": 0.3
+     }
+    ],
+    [
+     {
+      "objet": "Pancreas",
+      "rel": [
+       -0.8,
+       -0.8,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Pancreas",
+      "rel": [
+       -0.4,
+       -0.5,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.85
+     }
+    ],
+    [
+     {
+      "objet": "Pancreas",
+      "rel": [
+       -0.7,
+       -0.9,
+       0.9
+      ]
+     },
+     {
+      "objet": "Pancreas",
+      "rel": [
+       -0.3,
+       -0.8,
+       0.9
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.8
+     }
+    ]
+   ],
+   "texte": "Arcades veineuses antérieure et postérieure entre la tête du pancréas et le duodénum ; les veines supérieures rejoignent la veine porte, les inférieures la veine mésentérique supérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pancreatic veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Pancreas",
+      "rel": [
+       0.8,
+       -0.3,
+       0.2
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.15
+     }
+    ],
+    [
+     {
+      "objet": "Pancreas",
+      "rel": [
+       0.5,
+       -0.4,
+       0.2
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.35
+     }
+    ],
+    [
+     {
+      "objet": "Pancreas",
+      "rel": [
+       0.2,
+       -0.4,
+       0.2
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.6
+     }
+    ],
+    [
+     {
+      "objet": "Pancreas",
+      "rel": [
+       0.0,
+       -0.4,
+       0.2
+      ]
+     },
+     {
+      "objet": "Splenic vein",
+      "a": 0.8
+     }
+    ]
+   ],
+   "texte": "Petites veines du corps et de la queue du pancréas qui se jettent dans la veine splénique, le long de la face postérieure de la glande.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Jejunal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.7,
+       0.6,
+       0.5
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.3,
+       0.4,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.7
+     }
+    ],
+    [
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.7,
+       0.0,
+       0.3
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.3,
+       0.1,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.78
+     }
+    ],
+    [
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.5,
+       -0.4,
+       0.5
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.2,
+       -0.2,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.85
+     }
+    ],
+    [
+     {
+      "objet": "Jejunum",
+      "rel": [
+       -0.1,
+       0.7,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.92
+     }
+    ]
+   ],
+   "texte": "Elles drainent les anses jéjunales, cheminent dans le mésentère avec les artères et se jettent dans le bord gauche de la veine mésentérique supérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Ileal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    1.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.6,
+       0.7,
+       0.3
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.2,
+       0.8,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.5
+     }
+    ],
+    [
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.0,
+       0.6,
+       0.5
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       -0.2,
+       0.8,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.52
+     }
+    ],
+    [
+     {
+      "objet": "Ileum",
+      "rel": [
+       -0.5,
+       0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       -0.3,
+       0.8,
+       0.0
+      ]
+     },
+     {
+      "objet": "Superior mesenteric vein",
+      "a": 0.55
+     }
+    ]
+   ],
+   "texte": "Elles drainent l'iléon et se jettent dans la veine mésentérique supérieure par le mésentère.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lleocolic vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.1,
+    1.8
+   ],
+   "points": [
+    {
+     "objet": "Ascending colon",
+     "a": 0.0
+    },
+    {
+     "objet": "Ileocolic artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Ileocolic artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Superior mesenteric vein",
+     "a": 0.55
+    }
+   ],
+   "texte": "Elle draine l'iléon terminal, le caecum et l'appendice, accompagne l'artère iléocolique et se jette dans la veine mésentérique supérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Appendicular vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "milieu",
+   "suit": "Appendicular artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    0.5,
+    0.9
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle draine l'appendice vermiforme dans le méso-appendice, derrière l'iléon terminal, et se jette dans la veine iléocolique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pectoral veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    1.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Pectoralis minor muscle",
+      "centre": true
+     },
+     {
+      "objet": "Axillary vein",
+      "a": 0.6
+     }
+    ],
+    [
+     {
+      "objet": "Sternocostal head of pectoralis major muscle",
+      "centre": true
+     },
+     {
+      "objet": "Axillary vein",
+      "a": 0.8
+     }
+    ]
+   ],
+   "texte": "Elles drainent les muscles grand et petit pectoraux et se jettent dans la veine axillaire, souvent avec la veine thoraco-acromiale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Dorsal scapular vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Scapula",
+     "rel": [
+      -0.9,
+      -0.1,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Scapula",
+     "rel": [
+      -0.95,
+      0.9,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Levator scapulae",
+     "a": 0.05
+    },
+    {
+     "objet": "Subclavian vein",
+     "a": 0.4
+    }
+   ],
+   "texte": "Elle accompagne l'artère et le nerf scapulaires dorsaux le long du bord médial de la scapula, sous les rhomboïdes, puis rejoint la veine sous-clavière.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Transverse cervical veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.4
+   ],
+   "points": [
+    {
+     "objet": "Transverse cervical artery",
+     "a": 0.0,
+     "decale": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Transverse cervical artery",
+     "a": 1.0,
+     "decale": [
+      2,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "External jugular vein",
+     "a": 0.97
+    }
+   ],
+   "texte": "Elles accompagnent l'artère cervicale transverse dans la région cervicale latérale et se jettent dans la veine jugulaire externe ou la veine sous-clavière.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Thoraco-acromial vein",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "deux",
+   "suit": "Thoraco-acromial artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 1,
+   "rayon": [
+    1.3,
+    0.8
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Elle accompagne l'artère thoraco-acromiale, perce la fascia clavipectorale et se jette dans la veine axillaire (ou céphalique).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Dorsal metacarpal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Second metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Second metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Second metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Dorsal venous network of hand",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Dorsal venous network of hand",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Dorsal venous network of hand",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       -3
+      ]
+     },
+     {
+      "objet": "Dorsal venous network of hand",
+      "proche": true
+     }
+    ]
+   ],
+   "texte": "Quatre veines des espaces interosseux dorsaux, qui reçoivent les veines digitales dorsales et se jettent dans le réseau veineux dorsal de la main.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Palmar metacarpal veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.9
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Second metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Second metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Second metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Deep venous palmar arch",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Deep venous palmar arch",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Deep venous palmar arch",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.5,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.97,
+      "decale": [
+       0,
+       0,
+       3
+      ]
+     },
+     {
+      "objet": "Deep venous palmar arch",
+      "proche": true
+     }
+    ]
+   ],
+   "texte": "Elles accompagnent les artères métacarpiennes palmaires, de la paume vers les veines digitales, et se jettent dans l'arcade veineuse palmaire profonde.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Intercapitular veins of hand",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.7
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       -5
+      ]
+     },
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Third metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       5
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       -5
+      ]
+     },
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Fourth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       5
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       -5
+      ]
+     },
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Fifth metacarpal bone",
+      "a": 0.03,
+      "decale": [
+       5,
+       0,
+       5
+      ]
+     }
+    ]
+   ],
+   "texte": "Elles traversent les espaces entre les têtes des métacarpiens et relient le réseau veineux dorsal aux veines digitales palmaires.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior interosseous veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       -0.85,
+       0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       -0.2,
+       0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       0.5,
+       0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       0.95,
+       0.7
+      ]
+     },
+     {
+      "objet": "Ulnar veins",
+      "a": 0.95
+     }
+    ],
+    [
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       -0.85,
+       0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       -0.2,
+       0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       0.5,
+       0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       0.95,
+       0.7
+      ]
+     },
+     {
+      "objet": "Ulnar veins",
+      "a": 0.95
+     }
+    ]
+   ],
+   "texte": "Deux veines accompagnent l'artère interosseuse antérieure sur la face antérieure de la membrane interosseuse et se jettent dans les veines ulnaires.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior interosseous veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    1.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       -0.85,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       -0.2,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       0.5,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       -0.3,
+       0.95,
+       -0.7
+      ]
+     },
+     {
+      "objet": "Brachial veins",
+      "a": 0.02
+     }
+    ],
+    [
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       -0.85,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       -0.2,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       0.5,
+       -0.9
+      ]
+     },
+     {
+      "objet": "Interosseous membrane of forearm",
+      "rel": [
+       0.3,
+       0.95,
+       -0.7
+      ]
+     },
+     {
+      "objet": "Brachial veins",
+      "a": 0.02
+     }
+    ]
+   ],
+   "texte": "Deux veines accompagnent l'artère interosseuse postérieure sur la face postérieure de la membrane interosseuse et se jettent dans les veines brachiales près du coude.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Accessory saphenous vein",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.8
+   ],
+   "points": [
+    {
+     "objet": "Great saphenous vein",
+     "a": 0.65,
+     "decale": [
+      0,
+      0,
+      -30
+     ]
+    },
+    {
+     "objet": "Great saphenous vein",
+     "a": 0.75,
+     "decale": [
+      0,
+      0,
+      -25
+     ]
+    },
+    {
+     "objet": "Great saphenous vein",
+     "a": 0.85,
+     "decale": [
+      0,
+      0,
+      -15
+     ]
+    },
+    {
+     "objet": "Great saphenous vein",
+     "a": 0.96,
+     "decale": [
+      0,
+      0,
+      -3
+     ]
+    }
+   ],
+   "texte": "Veine superficielle de la cuisse, postéro-médiale, parallèle à la veine grande saphène, qu'elle rejoint près de la crosse.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Medial marginal vein of foot",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.5
+   ],
+   "points": [
+    {
+     "objet": "First metatarsal bone",
+     "a": 0.0,
+     "decale": [
+      -3,
+      3,
+      0
+     ]
+    },
+    {
+     "objet": "First metatarsal bone",
+     "a": 0.5,
+     "decale": [
+      -3,
+      3,
+      0
+     ]
+    },
+    {
+     "objet": "Great saphenous vein",
+     "a": 0.0
+    }
+   ],
+   "texte": "Elle longe le bord médial du pied depuis le gros orteil et se continue par la veine grande saphène en avant de la malléole médiale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral marginal vein of foot",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    1.5
+   ],
+   "points": [
+    {
+     "objet": "Fifth metatarsal bone",
+     "a": 0.0,
+     "decale": [
+      3,
+      3,
+      0
+     ]
+    },
+    {
+     "objet": "Fifth metatarsal bone",
+     "a": 0.5,
+     "decale": [
+      3,
+      3,
+      0
+     ]
+    },
+    {
+     "objet": "Fifth metatarsal bone",
+     "a": 1.0,
+     "decale": [
+      3,
+      3,
+      0
+     ]
+    },
+    {
+     "objet": "Small saphenous vein",
+     "a": 0.0
+    }
+   ],
+   "texte": "Elle longe le bord latéral du pied et se continue par la veine petite saphène derrière la malléole latérale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Sural veins",
+   "couche": "veine",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.6
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Medial head of gastrocnemius",
+      "rel": [
+       0.0,
+       -0.2,
+       0.0
+      ]
+     },
+     {
+      "objet": "Medial head of gastrocnemius",
+      "rel": [
+       0.0,
+       0.5,
+       0.2
+      ]
+     },
+     {
+      "objet": "Popliteal vein",
+      "a": 0.2
+     }
+    ],
+    [
+     {
+      "objet": "Lateral head of gastrocnemius",
+      "rel": [
+       0.0,
+       -0.2,
+       0.0
+      ]
+     },
+     {
+      "objet": "Lateral head of gastrocnemius",
+      "rel": [
+       0.0,
+       0.5,
+       0.2
+      ]
+     },
+     {
+      "objet": "Popliteal vein",
+      "a": 0.1
+     }
+    ],
+    [
+     {
+      "objet": "Soleus muscle",
+      "centre": true
+     },
+     {
+      "objet": "Posterior tibial veins",
+      "a": 0.75
+     }
+    ]
+   ],
+   "texte": "Veines des muscles du mollet (gastrocnémiens et soléaire) qui se jettent dans la veine poplitée et les veines tibiales postérieures.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Dorsalis pedis veins",
+   "couche": "veine",
+   "forme": "satellite",
+   "cotes": "deux",
+   "suit": "Dorsalis pedis artery",
+   "de": 0.0,
+   "a": 1.0,
+   "nombre": 2,
+   "rayon": [
+    0.6,
+    1.0
+   ],
+   "ecart_mm": 0.0,
+   "texte": "Veines satellites de l'artère dorsale du pied : elles drainent le dos du pied et se continuent par les veines tibiales antérieures.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  }
+ ]
+}

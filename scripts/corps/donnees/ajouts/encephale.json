@@ -1,0 +1,6966 @@
+{
+ "structures": [
+  {
+   "nom": "Sulcus of corpus callosum",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Gouttière profonde qui sépare la face supérieure du corps calleux du gyrus cingulaire, de son genou à son splénium, où elle se prolonge vers le sillon de l'hippocampe.",
+   "points": [
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.328,
+      0.359,
+      0.823
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.348,
+      0.806,
+      0.602
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.353,
+      0.965,
+      0.244
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.311,
+      0.837,
+      -0.148
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.443,
+      0.56,
+      -0.479
+     ]
+    },
+    {
+     "objet": "Corpus callosum",
+     "rel": [
+      0.321,
+      0.166,
+      -0.795
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Rhinal sulcus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillon de la face médiale et basale du lobe temporal antérieur, prolongeant vers l'avant le sillon collatéral ; il limite en dehors le cortex entorhinal et l'uncus.",
+   "points": [
+    {
+     "objet": "Collateral sulcus",
+     "rel": [
+      0.759,
+      -0.617,
+      0.988
+     ]
+    },
+    {
+     "objet": "Temporal pole",
+     "rel": [
+      -0.697,
+      -0.666,
+      -0.1
+     ]
+    },
+    {
+     "objet": "Temporal pole",
+     "rel": [
+      -0.544,
+      -0.638,
+      0.063
+     ]
+    },
+    {
+     "objet": "Temporal pole",
+     "rel": [
+      -0.323,
+      -0.418,
+      0.404
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Central sulcus of insula",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillon oblique de la face de l'insula, parallèle au sillon central du cerveau : il sépare les gyri courts, en avant, du long gyrus, en arrière.",
+   "points": [
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      0.479,
+      0.654,
+      -0.23
+     ]
+    },
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      0.497,
+      0.456,
+      -0.091
+     ]
+    },
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      0.491,
+      -0.188,
+      0.091
+     ]
+    },
+    {
+     "objet": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+     "rel": [
+      0.485,
+      -0.559,
+      0.257
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Transverse temporal sulci",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillons peu profonds de la face supérieure du lobe temporal, derrière le gyrus temporal transverse antérieur : ils séparent les gyri de Heschl et se dirigent obliquement en avant et en dehors.",
+   "traces": [
+    [
+     {
+      "objet": "Transverse temporal gyri",
+      "rel": [
+       -0.541,
+       -0.102,
+       -0.271
+      ]
+     },
+     {
+      "objet": "Transverse temporal gyri",
+      "rel": [
+       0.038,
+       -0.026,
+       0.346
+      ]
+     },
+     {
+      "objet": "Transverse temporal gyri",
+      "rel": [
+       0.636,
+       -0.169,
+       0.856
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Transverse temporal gyri",
+      "rel": [
+       -0.669,
+       -0.033,
+       -0.631
+      ]
+     },
+     {
+      "objet": "Transverse temporal gyri",
+      "rel": [
+       0.059,
+       0.099,
+       -0.135
+      ]
+     },
+     {
+      "objet": "Transverse temporal gyri",
+      "rel": [
+       0.685,
+       0.065,
+       0.264
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "nom": "Dentate gyrus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "texte": "Fine bande de cortex dentelée qui borde le bord médial de l'hippocampe, entre la fimbria et le gyrus parahippocampique ; elle se continue en arrière par le gyrus fasciolaire.",
+   "points": [
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.566,
+      0.765,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.72,
+      0.39,
+      -0.467
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.669,
+      -0.032,
+      0.062
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.411,
+      -0.407,
+      0.543
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.051,
+      -0.595,
+      0.831
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Hippocampal sulcus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillon, souvent oblitéré, qui sépare le gyrus dentatus de la corne d'Ammon et de la couche moléculaire de l'hippocampe.",
+   "points": [
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.411,
+      0.671,
+      -0.804
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.514,
+      0.296,
+      -0.323
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.411,
+      -0.079,
+      0.158
+     ]
+    },
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.154,
+      -0.407,
+      0.639
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Fasciolar gyrus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Mince bande grise située derrière le splénium du corps calleux, prolongement postérieur du gyrus dentatus vers le gyrus supracalleux.",
+   "points": [
+    {
+     "objet": "Hippocampus",
+     "rel": [
+      -0.875,
+      0.812,
+      -1.044
+     ]
+    },
+    {
+     "objet": "Hippocampal commissure",
+     "rel": [
+      0.336,
+      0.575,
+      -1.169
+     ]
+    },
+    {
+     "objet": "Hippocampal commissure",
+     "rel": [
+      0.126,
+      0.981,
+      -1.369
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Paraterminal gyrus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.2,
+    3.5,
+    7
+   ],
+   "en": {
+    "objet": "Septal nuclei",
+    "rel": [
+     0.851,
+     -0.347,
+     1.343
+    ]
+   },
+   "texte": "Petit gyrus de la face médiale du lobe frontal, juste devant la lame terminale et sous le rostre du corps calleux ; il fait partie de l'aire subcalleuse du système limbique."
+  },
+  {
+   "nom": "Para-olfactory gyri",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    7
+   ],
+   "en": {
+    "objet": "Septal nuclei",
+    "rel": [
+     1.584,
+     -0.607,
+     3.315
+    ]
+   },
+   "texte": "Petits gyri de l'aire subcalleuse, devant le gyrus paraterminal, au pied de la face médiale du lobe frontal ; ils sont séparés par les sillons para-olfactifs."
+  },
+  {
+   "nom": "Para-olfactory sulci",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.35
+   ],
+   "texte": "Fins sillons verticaux qui délimitent les gyri para-olfactifs, sur la face médiale du lobe frontal, sous le rostre du corps calleux.",
+   "points": [
+    {
+     "objet": "Septal nuclei",
+     "rel": [
+      2.171,
+      0.432,
+      2.751
+     ]
+    },
+    {
+     "objet": "Septal nuclei",
+     "rel": [
+      2.318,
+      -0.434,
+      3.455
+     ]
+    },
+    {
+     "objet": "Septal nuclei",
+     "rel": [
+      2.171,
+      -1.299,
+      3.878
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Anterior nuclei of thalamus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    6,
+    8,
+    6
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.25,
+     0.5,
+     0.78
+    ]
+   },
+   "texte": "Groupe de noyaux du pôle antérieur du thalamus, sous le tubercule antérieur ; il reçoit le faisceau mamillothalamique et projette sur le gyrus cingulaire (circuit de Papez, mémoire)."
+  },
+  {
+   "nom": "Mediodorsal nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    7,
+    12,
+    11
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.55,
+     0.15,
+     0.1
+    ]
+   },
+   "texte": "Grand noyau de la face médiale du thalamus, relié au cortex préfrontal et au système limbique ; il intervient dans la mémoire, l'attention et l'émotion."
+  },
+  {
+   "nom": "Intralaminar nuclei of thalamus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    10,
+    11
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.1,
+     0.0,
+     -0.15
+    ]
+   },
+   "texte": "Noyaux (centromédian, parafasciculaire…) logés dans la lame médullaire interne ; ils projettent largement sur le cortex et le striatum et règlent l'éveil et l'attention."
+  },
+  {
+   "nom": "Ventral anterior nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    6,
+    9,
+    7
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.05,
+     -0.05,
+     0.55
+    ]
+   },
+   "texte": "Noyau ventral antérieur du thalamus, relais du globus pallidus vers le cortex prémoteur ; il participe au contrôle du mouvement."
+  },
+  {
+   "nom": "Ventral lateral nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    8,
+    11,
+    9
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     0.3,
+     0.0,
+     0.1
+    ]
+   },
+   "texte": "Noyaux ventraux latéraux, relais du cervelet (noyau dentelé) et du pallidum vers le cortex moteur primaire."
+  },
+  {
+   "nom": "Ventral medial nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    7,
+    6
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.3,
+     -0.45,
+     0.0
+    ]
+   },
+   "texte": "Petit noyau ventral médial, contre la paroi du troisième ventricule ; relais gustatif et viscéral vers l'insula."
+  },
+  {
+   "nom": "Ventral posterolateral nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    7,
+    11,
+    9
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     0.45,
+     -0.2,
+     -0.3
+    ]
+   },
+   "texte": "Relais des sensibilités du corps (lemnisque médial et voie spinothalamique) vers le gyrus postcentral."
+  },
+  {
+   "nom": "Ventral posteromedial nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    8,
+    7
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.1,
+     -0.3,
+     -0.35
+    ]
+   },
+   "texte": "Relais de la sensibilité de la face (voies trigéminothalamiques) et du goût vers le cortex somesthésique."
+  },
+  {
+   "nom": "Ventral posterior inferior nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    7,
+    4
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     0.2,
+     -0.65,
+     -0.4
+    ]
+   },
+   "texte": "Petit noyau situé sous le ventral postérieur, relais de la sensibilité vestibulaire."
+  },
+  {
+   "nom": "Lateral dorsal nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    9,
+    5
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.05,
+     0.6,
+     0.0
+    ]
+   },
+   "texte": "Noyau latéral dorsal, en haut du thalamus, associé au système limbique et au cortex cingulaire."
+  },
+  {
+   "nom": "Lateral posterior nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    6,
+    8,
+    6
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     0.2,
+     0.5,
+     -0.4
+    ]
+   },
+   "texte": "Noyau latéral postérieur, au-dessus du pulvinar, relié au cortex pariétal associatif."
+  },
+  {
+   "nom": "Pulvinar nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    10,
+    7,
+    10
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     0.1,
+     0.2,
+     -0.68
+    ]
+   },
+   "texte": "Masse postérieure du thalamus qui surplombe les corps géniculés ; elle intègre des informations visuelles et associatives pour les cortex pariétal, temporal et occipital."
+  },
+  {
+   "nom": "Periventricular nuclei of thalamus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.2,
+    20,
+    14
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     -0.95,
+     0.0,
+     0.0
+    ]
+   },
+   "texte": "Mince couche de cellules appliquée contre la paroi du troisième ventricule."
+  },
+  {
+   "nom": "Reticular nucleus of prethalamus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.5,
+    24,
+    16
+   ],
+   "en": {
+    "objet": "Thalamus",
+    "rel": [
+     0.97,
+     0.05,
+     0.0
+    ]
+   },
+   "texte": "Fine nappe de neurones inhibiteurs enveloppant la face latérale du thalamus, contre la capsule interne ; elle module les relais thalamo-corticaux."
+  },
+  {
+   "nom": "Pregeniculate nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    3
+   ],
+   "en": {
+    "objet": "Lateral geniculate body",
+    "rel": [
+     0.0,
+     -0.6,
+     1.2
+    ]
+   },
+   "texte": "Petit noyau (partie ventrale du corps géniculé latéral) situé juste devant celui-ci ; il reçoit des fibres rétiniennes et intervient dans les réflexes oculomoteurs."
+  },
+  {
+   "nom": "Nuclei of perizonal fields",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    8,
+    4,
+    2.5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     0.541,
+     0.4,
+     0.42
+    ]
+   },
+   "texte": "Noyaux de la zone incertaine et des champs de Forel, nappe sous le thalamus, au-dessus du noyau subthalamique ; ils relient pallidum, thalamus et tronc cérébral."
+  },
+  {
+   "nom": "Subthalamic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    8,
+    4,
+    5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     0.611,
+     0.037,
+     0.245
+    ]
+   },
+   "texte": "Noyau en lentille accolé à la capsule interne, sous le thalamus ; élément excitateur des noyaux gris centraux, impliqué dans la maladie de Parkinson (cible de stimulation profonde)."
+  },
+  {
+   "nom": "Lateral habenular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.4,
+    3,
+    2.4
+   ],
+   "en": {
+    "objet": "Habenula",
+    "rel": [
+     0.708,
+     0.047,
+     0.03
+    ]
+   },
+   "texte": "Partie latérale de l'habenula, relais limbique qui reçoit la strie médullaire et projette vers le noyau interpédonculaire et le mésencéphale."
+  },
+  {
+   "nom": "Medial habenular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    3,
+    2.4
+   ],
+   "en": {
+    "objet": "Habenula",
+    "rel": [
+     0.3,
+     0.047,
+     0.152
+    ]
+   },
+   "texte": "Partie médiale de l'habenula, origine principale du tractus habénulo-interpédonculaire (faisceau rétroflexe)."
+  },
+  {
+   "nom": "Habenular commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Mince commissure qui relie les deux habenulae, au-devant de la glande pinéale ; elle appartient à l'épithalamus.",
+   "points": [
+    {
+     "objet": "Habenula",
+     "rel": [
+      -0.981,
+      0.445,
+      -0.737
+     ]
+    },
+    {
+     "objet": "Habenula",
+     "rel": [
+      -0.0,
+      0.644,
+      -0.899
+     ]
+    },
+    {
+     "objet": "Habenula",
+     "rel": [
+      0.981,
+      0.445,
+      -0.737
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Periventricular preoptic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    3,
+    3.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.423,
+     -0.264,
+     1.04
+    ]
+   },
+   "texte": "Petit noyau de l'aire pré-optique, contre la paroi du troisième ventricule, au-dessus du chiasma optique ; il règle l'équilibre hydrique et la thermorégulation."
+  },
+  {
+   "nom": "Medial preoptic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3.5,
+    4
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.925,
+     -0.353,
+     1.015
+    ]
+   },
+   "texte": "Noyau de l'aire pré-optique, en dehors du précédent ; son aire sexuellement dimorphe contrôle les comportements sexuels et la thermorégulation."
+  },
+  {
+   "nom": "Lateral preoptic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3.5,
+    4
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     1.718,
+     -0.442,
+     0.989
+    ]
+   },
+   "texte": "Noyau diffus de l'aire pré-optique latérale, en continuité avec l'hypothalamus latéral ; il participe à la régulation du sommeil et de la température."
+  },
+  {
+   "nom": "Anterior periventricular hypothalamic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.6,
+    3,
+    3.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.476,
+     -0.175,
+     0.912
+    ]
+   },
+   "texte": "Fine couche cellulaire de la paroi du troisième ventricule, dans l'hypothalamus antérieur ; relais neuroendocrine."
+  },
+  {
+   "nom": "Suprachiasmatic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    2.5,
+    2.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.344,
+     -0.692,
+     1.066
+    ]
+   },
+   "texte": "Noyau situé juste au-dessus du chiasma optique, de part et d'autre du ventricule : horloge biologique principale, il règle les rythmes circadiens à partir des signaux lumineux de la rétine."
+  },
+  {
+   "nom": "Supra-optic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    4,
+    3
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     1.453,
+     -0.665,
+     0.963
+    ]
+   },
+   "texte": "Noyau de neurones à grandes cellules, au-dessus du tractus optique ; il synthétise l'hormone antidiurétique et l'ocytocine, libérées dans la neurohypophyse."
+  },
+  {
+   "nom": "Paraventricular hypothalamic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.2,
+    4,
+    4.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.581,
+     -0.041,
+     0.809
+    ]
+   },
+   "texte": "Noyau contre la paroi du troisième ventricule, au-dessus du noyau supra-optique ; il produit ocytocine, ADH et facteurs de libération, et commande des réponses autonomes et au stress."
+  },
+  {
+   "nom": "Posterior periventricular hypothalamic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.6,
+    3,
+    3.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.476,
+     -0.531,
+     0.527
+    ]
+   },
+   "texte": "Fine couche cellulaire de la paroi ventriculaire de l'hypothalamus postérieur, au-dessus des corps mamillaires."
+  },
+  {
+   "nom": "Arcuate nucleus of hypothalamus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.2,
+    3.5,
+    3
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.396,
+     -1.2,
+     0.886
+    ]
+   },
+   "texte": "Noyau infundibulaire au pied du troisième ventricule, au-dessus de l'éminence médiane ; il contrôle l'adénohypophyse et l'appétit."
+  },
+  {
+   "nom": "Perifornical nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    3,
+    3.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     1.057,
+     -0.175,
+     0.629
+    ]
+   },
+   "texte": "Noyau entourant la colonne du fornix dans l'hypothalamus latéral ; relié à l'éveil, à l'appétit et aux réponses autonomes."
+  },
+  {
+   "nom": "Dorsomedial hypothalamic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3.5,
+    3.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.793,
+     -0.353,
+     0.655
+    ]
+   },
+   "texte": "Noyau de l'hypothalamus tubéral, au-dessus du ventromédial ; il intervient dans le comportement alimentaire et les rythmes."
+  },
+  {
+   "nom": "Ventromedial hypothalamic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3.5,
+    4,
+    3.5
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     1.004,
+     -0.888,
+     0.835
+    ]
+   },
+   "texte": "Noyau arrondi de l'hypothalamus tubéral, centre de la satiété."
+  },
+  {
+   "nom": "Medial mamillary nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.6,
+    3,
+    3.2
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.793,
+     -0.709,
+     0.45
+    ]
+   },
+   "texte": "Noyau principal du corps mamillaire : origine du faisceau mamillothalamique et du faisceau mamillotegmental, maillon du circuit de Papez (mémoire)."
+  },
+  {
+   "nom": "Lateral mamillary nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.2,
+    1.6,
+    1.6
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     1.136,
+     -0.594,
+     0.439
+    ]
+   },
+   "texte": "Petit noyau situé en dehors du noyau mamillaire médial ; relais des informations vestibulaires et de l'orientation spatiale vers le thalamus antérieur."
+  },
+  {
+   "nom": "Tuberomamillary nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    3,
+    3
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     1.004,
+     -0.709,
+     0.578
+    ]
+   },
+   "texte": "Noyau de l'hypothalamus postérieur dont les neurones à histamine entretiennent l'éveil."
+  },
+  {
+   "nom": "Lateral tuberal nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    3.5,
+    3
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     1.718,
+     -0.709,
+     0.784
+    ]
+   },
+   "texte": "Amas de neurones de la région tubérale latérale, sur le trajet de l'hypothalamus latéral."
+  },
+  {
+   "nom": "Posterior hypothalamic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    4,
+    4
+   ],
+   "en": {
+    "objet": "Third ventricle",
+    "rel": [
+     0.74,
+     -0.219,
+     0.501
+    ]
+   },
+   "texte": "Noyau de l'hypothalamus postérieur, au-dessus des corps mamillaires ; intervient dans la thermorégulation (production de chaleur) et la réponse sympathique."
+  },
+  {
+   "nom": "Hypothalamic sulcus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillon de la paroi latérale du troisième ventricule, du trou interventriculaire à l'aqueduc du mésencéphale ; il sépare le thalamus, au-dessus, de l'hypothalamus, au-dessous.",
+   "points": [
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.969,
+      0.555,
+      0.633
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.733,
+      0.07,
+      0.332
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.878,
+      -0.126,
+      -0.167
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.485,
+      -0.405,
+      -0.4
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Habenular sulcus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillon du bord dorsal de la paroi du troisième ventricule, sous la strie médullaire, qui sépare le thalamus de l'épithalamus (habenula).",
+   "points": [
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.901,
+      0.836,
+      0.409
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.747,
+      0.596,
+      0.039
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.724,
+      0.365,
+      -0.387
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.547,
+      -0.041,
+      -0.67
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Mamillothalamic fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Faisceau de Vicq d'Azyr : il part du corps mamillaire, monte derrière la colonne du fornix et atteint les noyaux antérieurs du thalamus (circuit de Papez).",
+   "points": [
+    {
+     "objet": "Mamillary body",
+     "rel": [
+      -0.06,
+      0.657,
+      0.113
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      1.057,
+      -0.041,
+      0.552
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      1.374,
+      0.539,
+      0.552
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.25,
+      0.5,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Mamillotegmental fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Faisceau qui quitte le corps mamillaire en arrière et en bas pour gagner les noyaux tegmentaux dorsal et ventral du mésencéphale.",
+   "points": [
+    {
+     "objet": "Mamillary body",
+     "rel": [
+      -0.164,
+      -0.369,
+      0.068
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.624,
+      -0.083,
+      0.561
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.694,
+      -0.446,
+      0.21
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.75,
+      -0.688,
+      -0.071
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Habenulo-interpeduncular tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Faisceau rétroflexe (de Meynert) : né de l'habenula, il descend en dedans du noyau rouge jusqu'au noyau interpédonculaire.",
+   "points": [
+    {
+     "objet": "Habenula",
+     "rel": [
+      0.844,
+      -0.351,
+      0.03
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.694,
+      0.497,
+      -0.457
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.764,
+      0.037,
+      0.104
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.876,
+      -0.047,
+      0.596
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Lenticular fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Faisceau (champ H2 de Forel) né du pallidum interne : il traverse la capsule interne, passe au-dessus du noyau subthalamique puis rejoint le thalamus ventral antérieur et latéral.",
+   "points": [
+    {
+     "objet": "Globus pallidus",
+     "rel": [
+      -0.55,
+      -0.1,
+      0.0
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      0.849,
+      0.993,
+      0.456
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      0.47,
+      0.654,
+      0.35
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.05,
+      -0.05,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Supraopticohypophysial tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.6
+   ],
+   "texte": "Les axones des neurones du noyau supra-optique descendent par l'infundibulum jusqu'à la neurohypophyse, où ils libèrent ADH et ocytocine.",
+   "points": [
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      1.453,
+      -0.665,
+      0.963
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.846,
+      -1.021,
+      0.938
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.317,
+      -1.289,
+      0.912
+     ]
+    },
+    {
+     "objet": "Neurohypophysis",
+     "rel": [
+      -0.0,
+      0.373,
+      -0.072
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Paraventriculohypophysial tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.6
+   ],
+   "texte": "Les axones des neurones du noyau paraventriculaire descendent, en dedans du précédent, par l'infundibulum vers la neurohypophyse.",
+   "points": [
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.581,
+      -0.041,
+      0.809
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.449,
+      -0.709,
+      0.845
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.238,
+      -1.2,
+      0.886
+     ]
+    },
+    {
+     "objet": "Neurohypophysis",
+     "rel": [
+      -0.0,
+      0.373,
+      -0.072
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Retinohypothalamic tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.5
+   ],
+   "texte": "Branche de la voie optique qui quitte le chiasma pour le noyau suprachiasmatique : elle apporte l'information lumineuse qui synchronise l'horloge circadienne.",
+   "points": [
+    {
+     "objet": "Optic chiasm",
+     "rel": [
+      -0.026,
+      -0.015,
+      0.635
+     ]
+    },
+    {
+     "objet": "Optic chiasm",
+     "rel": [
+      -0.363,
+      0.495,
+      0.435
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.344,
+      -0.692,
+      1.066
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Dorsal supra-optic commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Commissure de Meynert : mince bande de fibres qui croise la ligne médiane au-dessus du chiasma optique, dans l'hypothalamus.",
+   "points": [
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      -1.718,
+      -0.264,
+      0.809
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      -0.0,
+      -0.21,
+      0.886
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      1.718,
+      -0.264,
+      0.809
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Ventral supra-optic commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Commissure de Gudden : elle croise la ligne médiane sous l'hypothalamus, en arrière du chiasma optique.",
+   "points": [
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      -1.586,
+      -0.932,
+      0.707
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      -0.0,
+      -0.977,
+      0.784
+     ]
+    },
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      1.585,
+      -0.932,
+      0.707
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Olfactory tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.9
+   ],
+   "texte": "Prolongement du bulbe olfactif sous le lobe frontal, couché dans le sillon olfactif ; il se divise en arrière en stries olfactives qui gagnent l'aire para-olfactive et l'amygdale.",
+   "points": [
+    {
+     "objet": "Olfactory sulcus",
+     "rel": [
+      -0.565,
+      -0.192,
+      0.759
+     ]
+    },
+    {
+     "objet": "Olfactory sulcus",
+     "rel": [
+      -0.312,
+      -0.223,
+      0.342
+     ]
+    },
+    {
+     "objet": "Olfactory sulcus",
+     "rel": [
+      -0.255,
+      -0.1,
+      -0.075
+     ]
+    },
+    {
+     "objet": "Olfactory sulcus",
+     "rel": [
+      -0.087,
+      -0.384,
+      -0.492
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Anterior olfactory nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    6,
+    2.5
+   ],
+   "en": {
+    "objet": "Olfactory sulcus",
+    "rel": [
+     -0.565,
+     -0.192,
+     0.655
+    ]
+   },
+   "texte": "Amas de neurones disséminés dans le bulbe et le pédoncule olfactifs ; il relaie l'information olfactive vers le bulbe opposé et le cortex piriforme."
+  },
+  {
+   "nom": "Magnocellular nuclei of basal forebrain",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    12,
+    10,
+    4
+   ],
+   "en": {
+    "objet": "Lentiform nucleus",
+    "rel": [
+     -0.622,
+     -1.148,
+     0.225
+    ]
+   },
+   "texte": "Noyaux à grandes cellules cholinergiques (dont le noyau basal de Meynert) de la substance innominée, sous le pallidum ; ils innervent tout le cortex et sont atteints dans la maladie d'Alzheimer."
+  },
+  {
+   "nom": "Basolateral amygdaloid nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    10,
+    10,
+    8
+   ],
+   "en": {
+    "objet": "Amygdaloid body",
+    "rel": [
+     0.152,
+     -0.314,
+     -0.345
+    ]
+   },
+   "texte": "Grande partie latérale et postérieure de l'amygdale ; elle reçoit les afférences corticales et thalamiques et intervient dans l'apprentissage émotionnel de la peur."
+  },
+  {
+   "nom": "Centromedial amygdaloid nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    6,
+    7,
+    5
+   ],
+   "en": {
+    "objet": "Amygdaloid body",
+    "rel": [
+     -0.513,
+     0.38,
+     -0.009
+    ]
+   },
+   "texte": "Partie dorsomédiale de l'amygdale, origine de la strie terminale ; elle commande les réponses autonomes et comportementales de l'émotion."
+  },
+  {
+   "nom": "Bed nucleus of stria terminalis",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    6,
+    4
+   ],
+   "en": {
+    "objet": "Septal nuclei",
+    "rel": [
+     4.959,
+     1.61,
+     -1.052
+    ]
+   },
+   "texte": "Noyau du lit de la strie terminale, derrière le septum et au-dessus de la commissure antérieure ; prolongement de l'amygdale centrale, il intervient dans l'anxiété et le stress."
+  },
+  {
+   "nom": "Inferior longitudinal fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.3,
+    1.3
+   ],
+   "texte": "Faisceau d'association qui longe la paroi latérale des cornes occipitale et temporale du ventricule latéral, du pôle occipital au pôle temporal ; il relie le cortex visuel aux régions temporales (reconnaissance visuelle, mémoire).",
+   "points": [
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -3.13,
+      -23.47,
+      -82.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.87,
+      -29.47,
+      -55.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      9.87,
+      -34.47,
+      -25.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      8.87,
+      -41.47,
+      -0.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.87,
+      -47.47,
+      17.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.13,
+      -50.47,
+      24.58
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Superior longitudinal fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.5,
+    1.5
+   ],
+   "texte": "Grand faisceau d'association qui arque au-dessus de l'insula : il relie le lobe frontal aux lobes pariétal, occipital et temporal (langage par son composant arqué, attention spatiale).",
+   "points": [
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -5.13,
+      12.53,
+      54.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.87,
+      19.53,
+      21.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      7.87,
+      19.53,
+      -10.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      8.87,
+      12.53,
+      -35.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.87,
+      2.53,
+      -60.42
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Uncinate fasciculus of cerebrum",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "texte": "Faisceau en crochet qui relie le pôle temporal antérieur (et l'amygdale) au cortex orbitofrontal en contournant la vallée latérale ; il intervient dans la mémoire et l'émotion.",
+   "points": [
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.13,
+      -45.47,
+      21.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -2.13,
+      -38.47,
+      27.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -4.13,
+      -29.47,
+      33.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -7.13,
+      -21.47,
+      42.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -11.13,
+      -17.47,
+      55.58
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Inferior occipitofrontal fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.3,
+    1.3
+   ],
+   "texte": "Long faisceau qui joint le lobe occipital au lobe frontal en passant par la capsule extrême, sous l'insula ; il participe au traitement visuel et sémantique.",
+   "points": [
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -3.13,
+      -21.47,
+      -80.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      0.87,
+      -21.47,
+      -45.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.87,
+      -17.47,
+      -10.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.87,
+      -11.47,
+      14.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      0.87,
+      -11.47,
+      34.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -7.13,
+      -14.47,
+      51.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -13.13,
+      -19.47,
+      69.58
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Superior occipitofrontal fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "texte": "Faisceau profond longeant le bord supérieur du noyau caudé et du ventricule latéral, sous le corps calleux ; il relie les lobes frontal et pariétal.",
+   "points": [
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -19.13,
+      3.53,
+      59.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -13.13,
+      8.53,
+      34.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -9.13,
+      10.53,
+      9.58
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -9.13,
+      6.53,
+      -20.42
+     ]
+    },
+    {
+     "objet": "White matter of telencephalon",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -11.13,
+      -3.47,
+      -45.42
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Mesencephalic nucleus of midbrain",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.4,
+    1.4,
+    12
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.638,
+     -0.628,
+     -0.352
+    ]
+   },
+   "texte": "Colonne grêle de neurones sensitifs en dehors de la substance grise périaqueducale, qui reçoit la proprioception des muscles masticateurs et des dents (neurones pseudo-unipolaires du trijumeau)."
+  },
+  {
+   "nom": "Nucleus of brachium of inferior colliculi",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    2.5,
+    3
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     0.513,
+     0.219,
+     -0.422
+    ]
+   },
+   "texte": "Petit noyau du bras du colliculus inférieur, relais auditif entre le colliculus inférieur et le corps géniculé médial."
+  },
+  {
+   "nom": "Parabigeminal nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.2,
+    2.2,
+    2.8
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     0.33,
+     -0.204,
+     -0.492
+    ]
+   },
+   "texte": "Petit noyau du tegmentum latéral, près du bras du colliculus supérieur, relié au colliculus supérieur et à la rétine (orientation du regard)."
+  },
+  {
+   "nom": "Lateroposterior tegmental nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    2,
+    5
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.685,
+     0.709,
+     -0.244
+    ]
+   },
+   "texte": "Noyau tegmental dorsolatéral, contre la substance grise périaqueducale, à la jonction mésencéphale-pont ; neurones cholinergiques de l'éveil et du sommeil paradoxal."
+  },
+  {
+   "nom": "Pedunculopontine tegmental nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    4,
+    8
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.334,
+     0.709,
+     -0.005
+    ]
+   },
+   "texte": "Noyau cholinergique du tegmentum, le long du pédoncule cérébelleux supérieur ; il règle l'éveil, la locomotion et le sommeil paradoxal et se relie aux noyaux gris centraux."
+  },
+  {
+   "nom": "Nuclei of anterior tegmental area",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3.5,
+    4,
+    5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.75,
+     -0.083,
+     0.701
+    ]
+   },
+   "texte": "Noyaux de l'aire tegmentale ventrale, près de la fosse interpédonculaire : neurones dopaminergiques du circuit de la récompense (voies mésolimbique et mésocorticale)."
+  },
+  {
+   "nom": "Interpeduncular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "milieu",
+   "taille_mm": [
+    4,
+    3,
+    4
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -1.003,
+     0.037,
+     0.596
+    ]
+   },
+   "texte": "Noyau impair au fond de la fosse interpédonculaire, qui reçoit le faisceau rétroflexe de l'habenula ; relais limbique vers le tronc cérébral."
+  },
+  {
+   "nom": "Cuneiform nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    3,
+    5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.161,
+     -0.265,
+     -0.247
+    ]
+   },
+   "texte": "Noyau du tegmentum mésencéphalique dorsolatéral, au-dessus du pédoncule cérébelleux supérieur ; il intervient dans la locomotion et les réactions de défense."
+  },
+  {
+   "nom": "Subcuneiform nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3.5,
+    3,
+    3.5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.189,
+     -0.93,
+     -0.226
+    ]
+   },
+   "texte": "Noyau situé sous le noyau cunéiforme, dans le prolongement caudal de la formation réticulée mésencéphalique."
+  },
+  {
+   "nom": "Intracuneiform nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.2,
+    2.2,
+    3
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.47,
+     -0.603,
+     -0.261
+    ]
+   },
+   "texte": "Petit amas de neurones entre le noyau cunéiforme et la substance grise périaqueducale."
+  },
+  {
+   "nom": "Commissure of superior colliculi",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.6
+   ],
+   "texte": "Fibres qui relient les deux colliculi supérieurs en arrière de l'aqueduc du mésencéphale ; elles coordonnent les mouvements oculaires.",
+   "points": [
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -1.985,
+      0.34,
+      -0.738
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -1.003,
+      0.376,
+      -0.717
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.021,
+      0.34,
+      -0.738
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Nuclei of inferior colliculus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    9,
+    5,
+    9
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     0.021,
+     -0.108,
+     -0.647
+    ]
+   },
+   "texte": "Noyaux central, péricentral et externe du colliculus inférieur, relais auditif obligatoire vers le corps géniculé médial."
+  },
+  {
+   "nom": "Commissure of inferior colliculi",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Fibres qui relient les deux colliculi inférieurs et assurent l'intégration auditive entre les deux côtés.",
+   "points": [
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -1.845,
+      -0.144,
+      -0.703
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -1.003,
+      -0.108,
+      -0.689
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.161,
+      -0.144,
+      -0.703
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Pretectal nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    3,
+    3.5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.301,
+     0.606,
+     -0.317
+    ]
+   },
+   "texte": "Noyaux du prétectum, au-devant du colliculus supérieur : relais du réflexe photomoteur (rétine vers noyau d'Edinger-Westphal)."
+  },
+  {
+   "nom": "Nucleus of posterior commissure",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.8,
+    2.2,
+    2.5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.722,
+     0.702,
+     -0.408
+    ]
+   },
+   "texte": "Noyau de Darkschewitsch, au pied de la commissure postérieure ; intervient dans la coordination des mouvements oculaires verticaux."
+  },
+  {
+   "nom": "Accessory nuclei of optic tract",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    2.5,
+    2.5
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     0.26,
+     0.34,
+     0.701
+    ]
+   },
+   "texte": "Noyaux terminaux du système optique accessoire, contre le pédoncule cérébral, qui reçoivent des fibres rétiniennes et règlent les mouvements de poursuite oculaire."
+  },
+  {
+   "nom": "Interstitial nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.6,
+    2,
+    3.2
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.694,
+     0.497,
+     -0.001
+    ]
+   },
+   "texte": "Noyau interstitiel de Cajal, dans le tegmentum rostral : centre d'intégration des mouvements oculaires verticaux et de la position de la tête."
+  },
+  {
+   "nom": "Elliptic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.4,
+    1.6,
+    2.2
+   ],
+   "en": {
+    "objet": "Midbrain",
+    "rel": [
+     -0.834,
+     0.279,
+     -0.127
+    ]
+   },
+   "texte": "Petit noyau du mésencéphale rostral, voisin du noyau oculomoteur et de la substance grise périaqueducale."
+  },
+  {
+   "nom": "Pontine nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    15,
+    6,
+    14
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.12,
+     0.061,
+     0.654
+    ]
+   },
+   "texte": "Amas de neurones de la partie basilaire du pont : ils reçoivent les fibres corticopontines et les envoient, par le pédoncule cérébelleux moyen, au cervelet controlatéral."
+  },
+  {
+   "nom": "Principal sensory nucleus of trigeminal nerve",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    6
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     0.055,
+     0.169,
+     -0.238
+    ]
+   },
+   "texte": "Noyau sensitif principal du trijumeau, en dehors du noyau moteur, qui reçoit le tact discriminatif de la face."
+  },
+  {
+   "nom": "Motor nucleus of trigeminal nerve",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    5
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.218,
+     0.133,
+     -0.179
+    ]
+   },
+   "texte": "Noyau moteur du trijumeau dont les axones innervent les muscles masticateurs, le mylo-hyoïdien, le ventre antérieur du digastrique et les tenseurs du voile et du tympan."
+  },
+  {
+   "nom": "Superior vestibular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    2.5,
+    3
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.568,
+     0.385,
+     -0.167
+    ]
+   },
+   "texte": "Noyau vestibulaire de Bechterew, le plus haut du complexe vestibulaire ; il projette surtout vers les noyaux oculomoteurs par le faisceau longitudinal médial."
+  },
+  {
+   "nom": "Lateral vestibular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    4
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.315,
+     0.025,
+     -0.143
+    ]
+   },
+   "texte": "Noyau vestibulaire de Deiters, origine du tractus vestibulospinal latéral qui règle le tonus des extenseurs."
+  },
+  {
+   "nom": "Medial vestibular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    8
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.685,
+     -0.587,
+     -0.382
+    ]
+   },
+   "texte": "Noyau vestibulaire médial, sous le plancher du quatrième ventricule ; origine du tractus vestibulospinal médial et relais des réflexes vestibulo-oculaires."
+  },
+  {
+   "nom": "Inferior vestibular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    8
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.156,
+     0.807,
+     0.342
+    ]
+   },
+   "texte": "Noyau vestibulaire inférieur (descendant), à la jonction bulbo-pontique, relié au cervelet et à la formation réticulée."
+  },
+  {
+   "nom": "Nuclei of trapezoid body",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    2.5,
+    3
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.51,
+     -0.623,
+     0.097
+    ]
+   },
+   "texte": "Amas de neurones dans le corps trapézoïde, relais des voies auditives entre noyaux cochléaires et olive supérieure."
+  },
+  {
+   "nom": "Superior olivary nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    4
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.266,
+     -0.623,
+     0.037
+    ]
+   },
+   "texte": "Noyau de la partie basse du pont, première station binaurale de la voie auditive : il localise les sons par comparaison entre les deux oreilles."
+  },
+  {
+   "nom": "Nuclei of lateral lemniscus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    2.5,
+    4
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.169,
+     0.205,
+     -0.065
+    ]
+   },
+   "texte": "Noyaux disséminés sur le trajet du lemnisque latéral, relais de la voie auditive vers le colliculus inférieur."
+  },
+  {
+   "nom": "Lacrimal nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1,
+    1,
+    1.8
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.364,
+     -0.515,
+     -0.202
+    ]
+   },
+   "texte": "Groupe de neurones parasympathiques préganglionnaires voisin du noyau salivaire supérieur ; ses axones empruntent le nerf facial pour la glande lacrymale."
+  },
+  {
+   "nom": "Caerulean nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.6,
+    2,
+    6
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.656,
+     0.421,
+     -0.382
+    ]
+   },
+   "texte": "Locus cœruleus : petit noyau pigmenté sous le plancher du quatrième ventricule, source principale de noradrénaline du cerveau (éveil, attention, stress)."
+  },
+  {
+   "nom": "Parabrachial nuclei",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    3,
+    5
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.315,
+     0.493,
+     -0.244
+    ]
+   },
+   "texte": "Noyaux autour du pédoncule cérébelleux supérieur : relais gustatif et viscéral, et centre de régulation respiratoire."
+  },
+  {
+   "nom": "Posterior tegmental nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.5,
+    1.5,
+    4
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.801,
+     0.637,
+     -0.334
+    ]
+   },
+   "texte": "Noyau tegmental dorsal de Gudden, contre le plancher du quatrième ventricule, lié au système limbique et à l'orientation de la tête."
+  },
+  {
+   "nom": "Caudal pontine reticular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    4,
+    8
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.656,
+     -0.299,
+     -0.005
+    ]
+   },
+   "texte": "Partie caudale de la formation réticulée pontique, origine du tractus réticulospinal médial ; elle facilite le tonus des extenseurs et participe au réflexe de sursaut."
+  },
+  {
+   "nom": "Rostral pontine reticular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    4,
+    7
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.656,
+     0.421,
+     -0.005
+    ]
+   },
+   "texte": "Partie rostrale de la formation réticulée pontique, qui intervient dans l'éveil et le sommeil paradoxal."
+  },
+  {
+   "nom": "Anterior tegmental nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    2.5,
+    3
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.801,
+     0.709,
+     0.205
+    ]
+   },
+   "texte": "Noyau tegmental ventral de Gudden, relié aux corps mamillaires par le faisceau mamillotegmental."
+  },
+  {
+   "nom": "Reticulotegmental nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    6,
+    4,
+    5
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.704,
+     0.061,
+     0.325
+    ]
+   },
+   "texte": "Noyau de Bechterew, entre le tegmentum et la partie basilaire du pont : relais entre cortex et cervelet et centre des mouvements oculaires."
+  },
+  {
+   "nom": "Median raphe nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "milieu",
+   "taille_mm": [
+    2,
+    2,
+    6
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.996,
+     0.421,
+     0.145
+    ]
+   },
+   "texte": "Noyau médian du raphé : neurones à sérotonine projetant vers l'hippocampe et le septum."
+  },
+  {
+   "nom": "Posterior raphe nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "milieu",
+   "taille_mm": [
+    2.2,
+    2.5,
+    4
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.996,
+     0.709,
+     -0.185
+    ]
+   },
+   "texte": "Noyau dorsal du raphé, sous l'aqueduc : principal foyer de neurones à sérotonine projetant vers le prosencéphale (humeur, sommeil)."
+  },
+  {
+   "nom": "Supragenual nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.5,
+    1.5,
+    2.5
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.879,
+     -0.299,
+     -0.394
+    ]
+   },
+   "texte": "Petit noyau situé au-dessus du genou du nerf facial, près de la ligne médiane, relié aux noyaux oculomoteurs."
+  },
+  {
+   "nom": "Olivocochlear tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.5
+   ],
+   "texte": "Faisceau efférent né de l'olive supérieure : il gagne la racine vestibulaire du nerf VIII et atteint les cellules ciliées de la cochlée (faisceau d'Oort).",
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.266,
+      -0.623,
+      0.037
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.607,
+      -0.335,
+      -0.125
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.364,
+      -0.371,
+      -0.304
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.352,
+      0.981,
+      0.28
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.506,
+      0.896,
+      0.249
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Auditory commissure of pons",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "texte": "Corps trapézoïde : fibres cochléaires qui croisent la ligne médiane dans la partie basse du tegmentum pontique et gagnent le lemnisque latéral controlatéral.",
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      -1.872,
+      -0.551,
+      0.085
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.996,
+      -0.551,
+      0.073
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.12,
+      -0.551,
+      0.085
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Gracile nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    4,
+    12
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.725,
+     -0.291,
+     -0.62
+    ]
+   },
+   "texte": "Noyau de la partie basse du bulbe, derrière le tubercule gracile : premier relais de la sensibilité tactile fine et proprioceptive du membre inférieur et du tronc (faisceau gracile)."
+  },
+  {
+   "nom": "Cuneate nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    4,
+    12
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.31,
+     -0.142,
+     -0.589
+    ]
+   },
+   "texte": "Noyau du tubercule cunéiforme, en dehors du noyau gracile : relais de la sensibilité tactile fine et proprioceptive du membre supérieur (faisceau cunéiforme)."
+  },
+  {
+   "nom": "Accessory cuneate nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    4,
+    6
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     0.044,
+     0.158,
+     -0.434
+    ]
+   },
+   "texte": "Noyau cunéiforme accessoire (externe) : il transmet la proprioception du membre supérieur au cervelet par le pédoncule cérébelleux inférieur."
+  },
+  {
+   "nom": "Spinal nucleus of trigeminal nerve",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    4,
+    34
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.002,
+     -0.042,
+     -0.216
+    ]
+   },
+   "texte": "Longue colonne de substance grise, du pont à la moelle cervicale haute (C2-C4), qui reçoit la douleur et la température de la face par le tractus spinal du trijumeau."
+  },
+  {
+   "nom": "Retrofacial nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    4
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.233,
+     0.857,
+     0.528
+    ]
+   },
+   "texte": "Partie rostrale de la colonne ambiguë, derrière le noyau facial ; intervient dans la respiration et le contrôle autonome."
+  },
+  {
+   "nom": "Retroambiguus nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    2,
+    8
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.417,
+     0.008,
+     0.187
+    ]
+   },
+   "texte": "Colonne de neurones en arrière et au-dessous du noyau ambigu ; ses neurones expiratoires commandent les muscles abdominaux et intercostaux."
+  },
+  {
+   "nom": "Arcuate nucleus of medulla oblongata",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    2.5,
+    8
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.51,
+     0.457,
+     0.714
+    ]
+   },
+   "texte": "Noyau appliqué à la face antérieure de la pyramide bulbaire, prolongement des noyaux du pont, relais vers le cervelet."
+  },
+  {
+   "nom": "Subhypoglossal nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.2,
+    1.6,
+    3
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.848,
+     0.382,
+     0.187
+    ]
+   },
+   "texte": "Noyau situé sous le noyau de l'hypoglosse, avec lui dans le groupe périhypoglossal."
+  },
+  {
+   "nom": "Intercalated nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.2,
+    1.5,
+    3
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.664,
+     0.632,
+     0.044
+    ]
+   },
+   "texte": "Noyau intercalé de Staderini, entre les noyaux de l'hypoglosse et du vague ; relais des mouvements oculaires et de la langue."
+  },
+  {
+   "nom": "Prepositus nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.6,
+    1.6,
+    5
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.818,
+     0.956,
+     0.15
+    ]
+   },
+   "texte": "Noyau prépositus, sous le plancher du quatrième ventricule ; intégrateur neuronal de la position des yeux (avec le noyau vestibulaire médial)."
+  },
+  {
+   "nom": "Principal inferior olivary nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    6,
+    5,
+    9
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     0.306,
+     0.557,
+     0.261
+    ]
+   },
+   "texte": "Lame plissée de substance grise dans l'olive : source des fibres grimpantes du cervelet controlatéral, indispensable à l'apprentissage moteur."
+  },
+  {
+   "nom": "Posterior accessory olivary nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    2,
+    8
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.079,
+     0.532,
+     0.094
+    ]
+   },
+   "texte": "Lame dorsale des olives accessoires, associée au spinocérébellum."
+  },
+  {
+   "nom": "Medial accessory olivary nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    2,
+    8
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.14,
+     0.557,
+     0.423
+    ]
+   },
+   "texte": "Lame médiale des olives accessoires, reliée au vermis cérébelleux."
+  },
+  {
+   "nom": "Central reticular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    4,
+    4,
+    9
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.464,
+     0.158,
+     0.311
+    ]
+   },
+   "texte": "Noyau de la formation réticulée de la partie basse du bulbe, qui participe à la régulation cardio-respiratoire et à la modulation de la douleur."
+  },
+  {
+   "nom": "Gigantocellular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    5,
+    4,
+    7
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.541,
+     0.707,
+     0.404
+    ]
+   },
+   "texte": "Noyau à grandes cellules de la formation réticulée bulbaire, origine de fibres réticulospinales et d'afférences au thalamus ; il règle le tonus et l'éveil."
+  },
+  {
+   "nom": "Lateral paragigantocellular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    5
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.002,
+     0.707,
+     0.652
+    ]
+   },
+   "texte": "Noyau ventrolatéral du bulbe rostral, au contact de la surface : il maintient la pression artérielle par ses projections sympathiques."
+  },
+  {
+   "nom": "Parvocellular reticular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    6
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     0.075,
+     0.807,
+     0.156
+    ]
+   },
+   "texte": "Noyau à petites cellules de la formation réticulée, dorsolatéral, relais des réflexes de déglutition, de mastication et de la parole."
+  },
+  {
+   "nom": "Posterior paragigantocellular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2,
+    2,
+    4
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.664,
+     0.757,
+     0.187
+    ]
+   },
+   "texte": "Petit noyau réticulé proche de la ligne médiane, relié aux noyaux du raphé."
+  },
+  {
+   "nom": "Lateral reticular nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    3,
+    7
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     0.306,
+     0.357,
+     0.342
+    ]
+   },
+   "texte": "Noyau réticulé latéral du bulbe : relais de la moelle vers le cervelet (fibres moussues) par le pédoncule cérébelleux inférieur."
+  },
+  {
+   "nom": "Pallidus raphe nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "milieu",
+   "taille_mm": [
+    1.5,
+    1.8,
+    6
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -1.002,
+     0.657,
+     0.559
+    ]
+   },
+   "texte": "Noyau pâle du raphé, sérotoninergique, qui projette vers la moelle et module le tonus moteur."
+  },
+  {
+   "nom": "Obscurus raphe nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "milieu",
+   "taille_mm": [
+    1.5,
+    1.8,
+    8
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -1.002,
+     0.357,
+     0.342
+    ]
+   },
+   "texte": "Noyau obscur du raphé, sérotoninergique, projetant vers la moelle spinale (modulation de la douleur et du tonus)."
+  },
+  {
+   "nom": "Magnus raphe nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "milieu",
+   "taille_mm": [
+    1.5,
+    1.8,
+    5
+   ],
+   "en": {
+    "objet": "Pons",
+    "rel": [
+     -0.996,
+     -0.659,
+     -0.035
+    ]
+   },
+   "texte": "Noyau du grand raphé : origine d'une voie descendante sérotoninergique qui inhibe la douleur dans la corne postérieure de la moelle."
+  },
+  {
+   "nom": "Posterior paramedian nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.5,
+    1.5,
+    5
+   ],
+   "en": {
+    "objet": "Medulla oblongata",
+    "rel": [
+     -0.756,
+     0.308,
+     -0.03
+    ]
+   },
+   "texte": "Noyau paramédian postérieur, au bord de la ligne médiane sous le plancher du quatrième ventricule, relais vers le cervelet."
+  },
+  {
+   "nom": "Pyramidal tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.5,
+    1.5
+   ],
+   "texte": "Voie motrice principale : les fibres corticospinales traversent la capsule interne, la base du pédoncule cérébral et la partie basilaire du pont, forment la pyramide bulbaire puis décussent en bas du bulbe.",
+   "points": [
+    {
+     "objet": "Thalamus",
+     "rel": [
+      1.063,
+      1.432,
+      0.57
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      0.71,
+      0.384,
+      0.513
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      1.032,
+      0.461,
+      0.561
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.072,
+      0.493,
+      0.654
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.315,
+      -0.299,
+      0.564
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.356,
+      0.557,
+      0.59
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.848,
+      -0.042,
+      0.156
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Sollitary tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.6
+   ],
+   "texte": "Faisceau de fibres visérales (faciale, glossopharyngienne, vagale) qui descend en dehors du noyau du tractus solitaire et s'y termine par des collatérales.",
+   "points": [
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.479,
+      1.056,
+      0.125
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.494,
+      0.607,
+      0.032
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.587,
+      0.108,
+      -0.123
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.664,
+      -0.341,
+      -0.309
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Anterior trigeminothalamic tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Tractus trigéminothalamique ventral : les fibres du noyau spinal du trijumeau croisent la ligne médiane et montent près du lemnisque médial jusqu'au noyau ventral postéro-médial controlatéral (douleur et température de la face).",
+   "points": [
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.002,
+      0.657,
+      0.001
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.464,
+      0.757,
+      0.435
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.996,
+      -0.947,
+      -0.185
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -1.58,
+      0.061,
+      -0.005
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -2.125,
+      -0.628,
+      0.35
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -1.848,
+      -1.363,
+      0.4
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -1.539,
+      -0.315,
+      0.203
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Posterior trigeminothalamic tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.6
+   ],
+   "texte": "Tractus trigéminothalamique dorsal : fibres du noyau sensitif principal qui montent du même côté, près de la substance grise centrale, jusqu'au noyau ventral postéro-médial (tact fin de la face).",
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      0.055,
+      0.169,
+      -0.238
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.218,
+      0.493,
+      -0.035
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.091,
+      -0.628,
+      0.069
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.161,
+      0.34,
+      0.21
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -0.1,
+      -0.3,
+      -0.35
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Medial longitudinal fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Faisceau de fibres, près de la ligne médiane, sous le plancher du quatrième ventricule et de l'aqueduc ; il relie noyaux vestibulaires et noyaux oculomoteurs (III, IV, VI) et coordonne les mouvements des yeux et de la tête.",
+   "points": [
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.848,
+      -0.541,
+      -0.123
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.818,
+      0.308,
+      0.063
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.899,
+      -0.659,
+      -0.484
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.899,
+      0.205,
+      -0.334
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.862,
+      -0.869,
+      -0.282
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.778,
+      -0.144,
+      -0.176
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Posterior longitudinal fasciculus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Faisceau périventriculaire de Schütz : voie descendante de l'hypothalamus vers les noyaux parasympathiques et moteurs du tronc cérébral (salivation, déglutition, comportement alimentaire).",
+   "points": [
+    {
+     "objet": "Third ventricle",
+     "rel": [
+      0.476,
+      -0.264,
+      0.629
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.792,
+      0.34,
+      0.21
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.806,
+      -0.748,
+      -0.282
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.85,
+      -0.083,
+      -0.364
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.787,
+      0.807,
+      0.187
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Central tegmental tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "texte": "Faisceau du tegmentum, qui descend du mésencéphale à l'olive bulbaire et porte aussi des fibres ascendantes de la formation réticulée.",
+   "points": [
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.47,
+      0.34,
+      0.28
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.47,
+      -1.353,
+      -0.001
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.587,
+      -0.155,
+      -0.065
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.11,
+      0.906,
+      0.497
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.075,
+      0.557,
+      0.342
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Rubro-olivary tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Fibres du noyau rouge qui descendent dans le faisceau tegmental central jusqu'à l'olive inférieure du même côté ; elles ferment la boucle noyau rouge – olive – cervelet.",
+   "points": [
+    {
+     "objet": "Red nucleus",
+     "rel": [
+      0.021,
+      -0.003,
+      -0.003
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.273,
+      -1.111,
+      0.21
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.471,
+      0.061,
+      0.097
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.373,
+      -0.659,
+      -0.095
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.229,
+      0.657,
+      0.404
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Spinal tract of trigeminal nerve",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Faisceau de fibres de la douleur et de la température de la face, qui descend en dehors du noyau spinal du trijumeau jusqu'au niveau C2-C3.",
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      0.123,
+      -0.371,
+      -0.155
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.768,
+      0.906,
+      0.404
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.46,
+      0.457,
+      0.032
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.198,
+      -0.092,
+      -0.278
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.048,
+      -0.641,
+      -0.434
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.156,
+      -0.89,
+      -0.527
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Mesencephalic tract of trigeminal nerve",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.5
+   ],
+   "texte": "Fibres de la proprioception des muscles masticateurs, issues du noyau mésencéphalique du trijumeau, qui descendent vers le noyau moteur du trijumeau et la racine du nerf.",
+   "points": [
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.638,
+      -0.144,
+      -0.352
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.582,
+      -1.353,
+      -0.387
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.364,
+      0.205,
+      -0.214
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.198,
+      0.133,
+      -0.185
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Basilar sulcus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Gouttière médiane de la face antérieure du pont où chemine l'artère basilaire.",
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.996,
+      -0.659,
+      0.504
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.996,
+      -0.083,
+      0.772
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.996,
+      0.493,
+      0.918
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.996,
+      0.853,
+      0.921
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Medullopontine sulcus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillon transversal qui sépare, à la face antérieure du tronc cérébral, le bord inférieur du pont de la pyramide et de l'olive ; les nerfs VI, VII et VIII en émergent.",
+   "points": [
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.899,
+      -0.875,
+      0.443
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.51,
+      -0.875,
+      0.449
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.12,
+      -0.875,
+      0.414
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      0.269,
+      -0.875,
+      0.199
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      0.658,
+      -0.875,
+      -0.319
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Median sulcus of rhomboid fossa",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "texte": "Sillon médian du plancher du quatrième ventricule, de l'aqueduc du mésencéphale à l'obex ; il sépare les deux éminences médianes.",
+   "points": [
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      -0.925,
+      0.215
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      -0.598,
+      0.433
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      -0.27,
+      0.594
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      0.058,
+      0.769
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      0.385,
+      0.892
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      0.713,
+      0.986
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      0.931,
+      0.991
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Dentate nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    12,
+    8,
+    15
+   ],
+   "en": {
+    "objet": "Fourth ventricle",
+    "rel": [
+     1.313,
+     0.167,
+     -1.175
+    ]
+   },
+   "texte": "Le plus grand des noyaux cérébelleux, en forme de sac plissé dans la substance blanche de l'hémisphère ; ses axones forment l'essentiel du pédoncule cérébelleux supérieur vers le thalamus et le noyau rouge."
+  },
+  {
+   "nom": "Emboliform nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    3.5,
+    4
+   ],
+   "en": {
+    "objet": "Fourth ventricle",
+    "rel": [
+     0.73,
+     0.167,
+     -0.911
+    ]
+   },
+   "texte": "Noyau cérébelleux situé entre le globuleux et le dentelé ; avec le globuleux il forme le noyau interposé (contrôle des membres)."
+  },
+  {
+   "nom": "Globose nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    2.5,
+    4,
+    4
+   ],
+   "en": {
+    "objet": "Fourth ventricle",
+    "rel": [
+     0.474,
+     0.221,
+     -0.822
+    ]
+   },
+   "texte": "Noyau cérébelleux de petits amas globuleux, en dedans de l'emboliforme ; régule la posture et les mouvements des membres."
+  },
+  {
+   "nom": "Fastigial nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    3,
+    4,
+    4
+   ],
+   "en": {
+    "objet": "Fourth ventricle",
+    "rel": [
+     0.182,
+     0.303,
+     -0.646
+    ]
+   },
+   "texte": "Noyau le plus médial, au sommet du toit du quatrième ventricule ; il reçoit le vermis et commande l'axe du corps et les mouvements des yeux par les noyaux vestibulaires et réticulés."
+  },
+  {
+   "nom": "Cerebellar commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Fibres qui croisent la ligne médiane dans la substance blanche du vermis et relient les deux hémisphères cérébelleux.",
+   "points": [
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.876,
+      0.221,
+      -1.087
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      0.303,
+      -1.175
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.876,
+      0.221,
+      -1.087
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Dentatothalamic tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "texte": "Voie efférente du noyau dentelé : par le pédoncule cérébelleux supérieur elle croise (décussation) dans le mésencéphale et gagne le noyau ventral latéral du thalamus controlatéral, puis le cortex moteur.",
+   "points": [
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      1.167,
+      0.385,
+      -0.734
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.803,
+      0.604,
+      0.059
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.438,
+      0.931,
+      0.897
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.109,
+      1.15,
+      1.294
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.109,
+      1.204,
+      1.471
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -1.915,
+      0.098,
+      0.21
+     ]
+    },
+    {
+     "objet": "Thalamus",
+     "rel": [
+      -2.024,
+      0.035,
+      0.457
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Middle cerebellar peduncle",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.4,
+    1.2
+   ],
+   "texte": "Plus gros des pédoncules cérébelleux : il enserre la face latérale du pont et porte au cervelet controlatéral les fibres des noyaux du pont (cortex – pont – cervelet).",
+   "traces": [
+    [
+     {
+      "objet": "Pons",
+      "rel": [
+       -0.412,
+       0.349,
+       0.564
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.366,
+       0.277,
+       0.384
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.853,
+       0.205,
+       0.085
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       1.824,
+       0.44,
+       0.765
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       2.189,
+       0.385,
+       0.059
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Pons",
+      "rel": [
+       -0.412,
+       -0.011,
+       0.564
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.366,
+       -0.083,
+       0.384
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.853,
+       -0.155,
+       0.085
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       1.824,
+       0.167,
+       0.765
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       2.189,
+       0.112,
+       0.059
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Pons",
+      "rel": [
+       -0.412,
+       -0.371,
+       0.564
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.366,
+       -0.443,
+       0.384
+      ]
+     },
+     {
+      "objet": "Pons",
+      "rel": [
+       0.853,
+       -0.515,
+       0.085
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       1.824,
+       -0.106,
+       0.765
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       2.189,
+       -0.161,
+       0.059
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "nom": "Inferior cerebellar peduncle",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.3,
+    1.1
+   ],
+   "texte": "Pédoncule qui unit le bulbe au cervelet en arrière du pédoncule moyen ; il porte surtout les fibres spino-cérébelleuses, olivocérébelleuses et vestibulocérébelleuses (corps restiforme).",
+   "traces": [
+    [
+     {
+      "objet": "Medulla oblongata",
+      "rel": [
+       0.075,
+       0.357,
+       0.125
+      ]
+     },
+     {
+      "objet": "Medulla oblongata",
+      "rel": [
+       0.383,
+       0.757,
+       -0.123
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       0.803,
+       -0.161,
+       -0.205
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       1.021,
+       0.112,
+       -0.558
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Medulla oblongata",
+      "rel": [
+       0.306,
+       0.258,
+       0.187
+      ]
+     },
+     {
+      "objet": "Medulla oblongata",
+      "rel": [
+       0.614,
+       0.657,
+       -0.061
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       0.912,
+       -0.27,
+       -0.117
+      ]
+     },
+     {
+      "objet": "Fourth ventricle",
+      "rel": [
+       1.131,
+       0.003,
+       -0.47
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "nom": "Olivocerebellar tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.9
+   ],
+   "texte": "Fibres grimpantes de l'olive inférieure : elles croisent la ligne médiane, entrent par le pédoncule cérébelleux inférieur controlatéral et se terminent sur les cellules de Purkinje.",
+   "points": [
+    {
+     "objet": "Olive",
+     "rel": [
+      -0.136,
+      -0.025,
+      -0.055
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.387,
+      0.457,
+      0.373
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -1.31,
+      0.507,
+      0.311
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -2.233,
+      0.657,
+      0.187
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -2.464,
+      0.807,
+      0.001
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.803,
+      -0.27,
+      0.059
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -1.021,
+      0.112,
+      -0.558
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Cerebello-olivary tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Fibres du noyau dentelé qui quittent le cervelet par le pédoncule supérieur, croisent dans le mésencéphale et descendent par le faisceau tegmental central jusqu'à l'olive inférieure controlatérale.",
+   "points": [
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      1.167,
+      0.385,
+      -0.734
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.73,
+      0.604,
+      0.059
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.292,
+      0.822,
+      0.941
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      -0.0,
+      1.095,
+      1.426
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -1.704,
+      -1.716,
+      -0.212
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -1.483,
+      -0.299,
+      -0.244
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -2.079,
+      0.807,
+      0.311
+     ]
+    },
+    {
+     "objet": "Olive",
+     "rel": [
+      -4.274,
+      -0.025,
+      -0.055
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Uncinate fasciculus of cerebellum",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Faisceau en crochet de Russell : fibres du noyau fastigial qui contournent le pédoncule cérébelleux supérieur pour gagner les noyaux vestibulaires et la formation réticulée.",
+   "points": [
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.146,
+      0.331,
+      -0.646
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.365,
+      0.658,
+      -0.47
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.584,
+      0.767,
+      0.148
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.511,
+      0.604,
+      0.853
+     ]
+    },
+    {
+     "objet": "Fourth ventricle",
+     "rel": [
+      0.401,
+      0.44,
+      1.162
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Anterolateral sulcus of spinal cord",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.97,
+      242.46,
+      22.37
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.82,
+      200.46,
+      28.64
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.3,
+      155.46,
+      19.32
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.2,
+      110.46,
+      -0.24
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.56,
+      65.46,
+      -16.15
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.56,
+      20.46,
+      -21.45
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.71,
+      -24.54,
+      -20.51
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.95,
+      -69.54,
+      -14.26
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.95,
+      -114.54,
+      -4.59
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.8,
+      -154.54,
+      8.84
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.78,
+      -189.54,
+      18.58
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.09,
+      -214.54,
+      22.06
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.06,
+      -231.54,
+      23.26
+     ]
+    }
+   ],
+   "texte": "Sillon longitudinal de la face antéro-latérale de la moelle, par où émergent les radicelles antérieures des nerfs spinaux ; il sépare les cordons antérieur et latéral."
+  },
+  {
+   "nom": "Posterolateral sulcus of spinal cord",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.97,
+      242.46,
+      15.08
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.82,
+      200.46,
+      21.57
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.3,
+      155.46,
+      13.01
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.2,
+      110.46,
+      -6.41
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.56,
+      65.46,
+      -22.84
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.56,
+      20.46,
+      -28.14
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.71,
+      -24.54,
+      -27.42
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.95,
+      -69.54,
+      -21.53
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.95,
+      -114.54,
+      -11.86
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.8,
+      -154.54,
+      1.78
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.78,
+      -189.54,
+      13.03
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.09,
+      -214.54,
+      19.03
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.06,
+      -231.54,
+      21.74
+     ]
+    }
+   ],
+   "texte": "Sillon longitudinal où pénètrent les radicelles postérieures des nerfs spinaux ; il sépare les cordons latéral et postérieur."
+  },
+  {
+   "nom": "Posterior intermediate sulcus of spinal cord",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.94,
+      242.46,
+      14.11
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.88,
+      200.46,
+      20.62
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.69,
+      155.46,
+      12.17
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.65,
+      110.46,
+      -7.23
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.79,
+      65.46,
+      -23.73
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.79,
+      20.46,
+      -29.03
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.84,
+      -24.54,
+      -28.34
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.93,
+      -69.54,
+      -22.5
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.93,
+      -114.54,
+      -12.83
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.88,
+      -154.54,
+      0.84
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.49,
+      -189.54,
+      12.3
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      0.85,
+      -214.54,
+      18.62
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      0.47,
+      -231.54,
+      21.53
+     ]
+    }
+   ],
+   "texte": "Sillon superficiel du cordon postérieur, aux niveaux cervical et thoracique supérieur, qui sépare le faisceau gracile (en dedans) du faisceau cunéiforme (en dehors)."
+  },
+  {
+   "nom": "Posterior median sulcus of spinal cord",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.4,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      242.46,
+      13.97
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      200.46,
+      20.49
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      155.46,
+      12.05
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      110.46,
+      -7.35
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      65.46,
+      -23.86
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      20.46,
+      -29.16
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -24.54,
+      -28.47
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -69.54,
+      -22.64
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -114.54,
+      -12.97
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -154.54,
+      0.71
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -189.54,
+      12.19
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -214.54,
+      18.56
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -231.54,
+      21.5
+     ]
+    }
+   ],
+   "texte": "Sillon médian de la face postérieure de la moelle, prolongé en profondeur par le septum médian postérieur ; il sépare les deux faisceaux gracile."
+  },
+  {
+   "nom": "Posterior thoracic nucleus",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    1.0
+   ],
+   "texte": "Noyau de Clarke : colonne de neurones à la base de la corne postérieure, de C8 à L3 ; elle reçoit la proprioception du membre inférieur et donne le tractus spinocérébelleux postérieur.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.64,
+      136.46,
+      7.61
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.76,
+      80.46,
+      -15.6
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.79,
+      20.46,
+      -25.29
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.9,
+      -39.54,
+      -22.61
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.94,
+      -99.54,
+      -12.34
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.92,
+      -149.54,
+      2.73
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.67,
+      -179.54,
+      13.14
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Sacral parasympathetic nucleus",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.4,
+    1.4,
+    14
+   ],
+   "en": {
+    "objet": "Central canal",
+    "rel": [
+     0,
+     0,
+     0
+    ],
+    "decale": [
+     1.02,
+     -227.54,
+     22.3
+    ]
+   },
+   "texte": "Noyau parasympathique sacral (S2-S4), dans la substance grise intermédiaire latérale ; ses axones forment les nerfs splanchniques pelviens qui commandent vessie, rectum et organes génitaux."
+  },
+  {
+   "nom": "Medial motor nuclei of spinal nerves",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    1.2
+   ],
+   "texte": "Colonne médiale de la corne antérieure, présente sur toute la hauteur de la moelle : ses motoneurones innervent les muscles axiaux du cou et du tronc.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.17,
+      230.46,
+      20.92
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.83,
+      140.46,
+      11.59
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.99,
+      40.46,
+      -21.43
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.16,
+      -59.54,
+      -17.31
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.06,
+      -159.54,
+      8.38
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      1.06,
+      -209.54,
+      20.69
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      0.39,
+      -234.54,
+      23.01
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Lateral motor nuclei of spinal nerves",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.5,
+    1.5
+   ],
+   "texte": "Colonne latérale de la corne antérieure, développée aux renflements cervical (C5-T1) et lombo-sacral (L2-S2) : ses motoneurones innervent les muscles des membres.",
+   "traces": [
+    [
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       3.77,
+       195.46,
+       26.88
+      ]
+     },
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       3.6,
+       175.46,
+       24.35
+      ]
+     },
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       3.4,
+       155.46,
+       17.73
+      ]
+     },
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       3.3,
+       140.46,
+       11.52
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       3.53,
+       -169.54,
+       11.53
+      ]
+     },
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       2.98,
+       -189.54,
+       17.17
+      ]
+     },
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       1.88,
+       -209.54,
+       20.64
+      ]
+     },
+     {
+      "objet": "Central canal",
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "decale": [
+       1.11,
+       -224.54,
+       22.55
+      ]
+     }
+    ]
+   ]
+  },
+  {
+   "nom": "Nucleus of phrenic nerve",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.8,
+    1.8,
+    28
+   ],
+   "en": {
+    "objet": "Central canal",
+    "rel": [
+     0,
+     0,
+     0
+    ],
+    "decale": [
+     2.93,
+     196.46,
+     27.02
+    ]
+   },
+   "texte": "Colonne de motoneurones de C3 à C5 dans la corne antérieure ; elle innerve le diaphragme par le nerf phrénique."
+  },
+  {
+   "nom": "Nucleus of pudendal nerve",
+   "couche": "encephale",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "taille_mm": [
+    1.2,
+    1.2,
+    12
+   ],
+   "en": {
+    "objet": "Central canal",
+    "rel": [
+     0,
+     0,
+     0
+    ],
+    "decale": [
+     1.12,
+     -223.54,
+     22.63
+    ]
+   },
+   "texte": "Noyau d'Onuf (S2-S3) de la corne antérieure : ses motoneurones innervent les sphincters strié de l'urètre et de l'anus et les muscles du périnée par le nerf pudendal."
+  },
+  {
+   "nom": "Spinoreticular tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Voie ascendante du cordon antéro-latéral : elle porte la douleur diffuse de la moelle à la formation réticulée du bulbe et du pont (éveil, composante affective de la douleur).",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.59,
+      -149.54,
+      5.28
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.62,
+      -49.54,
+      -18.82
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.28,
+      50.46,
+      -19.99
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.97,
+      150.46,
+      15.48
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.67,
+      230.46,
+      21.06
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.233,
+      -0.541,
+      -0.154
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.31,
+      -0.042,
+      0.187
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.448,
+      0.457,
+      0.342
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Spinomesencephalic tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.8
+   ],
+   "texte": "Voie ascendante du cordon antéro-latéral vers le colliculus supérieur et la substance grise périaqueducale, qui règle la modulation descendante de la douleur.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.88,
+      -149.54,
+      5.73
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.91,
+      -49.54,
+      -18.37
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.55,
+      50.46,
+      -19.57
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.22,
+      150.46,
+      15.86
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      4.96,
+      230.46,
+      21.51
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.002,
+      -0.441,
+      0.001
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.152,
+      0.357,
+      0.311
+     ]
+    },
+    {
+     "objet": "Pons",
+     "rel": [
+      -0.169,
+      -0.515,
+      -0.095
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      0.05,
+      -1.595,
+      0.14
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.301,
+      -0.386,
+      -0.001
+     ]
+    },
+    {
+     "objet": "Midbrain",
+     "rel": [
+      -0.512,
+      0.219,
+      -0.282
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Spino-olivary tract",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.7
+   ],
+   "texte": "Voie de la moelle à l'olive inférieure (olives accessoires) : relais indirect de la proprioception vers le cervelet.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.36,
+      -149.54,
+      6.62
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.39,
+      -49.54,
+      -17.47
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.14,
+      50.46,
+      -18.74
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      2.91,
+      150.46,
+      16.63
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      3.42,
+      230.46,
+      22.42
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      -0.002,
+      -0.291,
+      0.187
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.152,
+      0.058,
+      0.311
+     ]
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.075,
+      0.407,
+      0.342
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Anterior white commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.5
+   ],
+   "texte": "Mince bande de fibres qui croise la ligne médiane en avant de la commissure grise : elle porte les axones de la douleur et de la température vers le cordon antéro-latéral opposé.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      242.46,
+      21.28
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      180.46,
+      26.22
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      120.46,
+      3.15
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      60.46,
+      -18.42
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      0.46,
+      -22.79
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -59.54,
+      -16.67
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -119.54,
+      -4.12
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -169.54,
+      12.18
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -209.54,
+      20.98
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -233.54,
+      23.05
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Anterior grey commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.5
+   ],
+   "texte": "Pont de substance grise qui unit en avant du canal central les deux cornes antérieures.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      242.46,
+      20.0
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      180.46,
+      25.04
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      120.46,
+      2.08
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      60.46,
+      -19.59
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      0.46,
+      -23.96
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -59.54,
+      -17.94
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -119.54,
+      -5.39
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -169.54,
+      11.04
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -209.54,
+      20.39
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -233.54,
+      22.85
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Posterior grey commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.5
+   ],
+   "texte": "Pont de substance grise qui unit en arrière du canal central les deux cornes postérieures.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      242.46,
+      17.72
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      180.46,
+      22.94
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      120.46,
+      0.19
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      60.46,
+      -21.68
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      0.46,
+      -26.05
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -59.54,
+      -20.22
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -119.54,
+      -7.67
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -169.54,
+      9.0
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -209.54,
+      19.34
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -233.54,
+      22.51
+     ]
+    }
+   ]
+  },
+  {
+   "nom": "Posterior white commissure",
+   "couche": "encephale",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.5,
+    0.5
+   ],
+   "texte": "Mince bande de fibres blanches en arrière de la commissure grise postérieure, au fond du sillon médian postérieur, croisant la ligne médiane.",
+   "points": [
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      242.46,
+      16.81
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      180.46,
+      22.09
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      120.46,
+      -0.57
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      60.46,
+      -22.51
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      0.46,
+      -26.88
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -59.54,
+      -21.13
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -119.54,
+      -8.58
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -169.54,
+      8.19
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -209.54,
+      18.92
+     ]
+    },
+    {
+     "objet": "Central canal",
+     "rel": [
+      0,
+      0,
+      0
+     ],
+     "decale": [
+      -0.11,
+      -233.54,
+      22.38
+     ]
+    }
+   ]
+  }
+ ]
+}

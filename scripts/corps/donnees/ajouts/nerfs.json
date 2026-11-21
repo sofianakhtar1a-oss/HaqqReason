@@ -1,0 +1,6162 @@
+{
+ "structures": [
+  {
+   "nom": "Trigeminal ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Trigeminal nerve (V)",
+    "a": 0.98,
+    "decale": [
+     3,
+     0,
+     -1
+    ]
+   },
+   "taille_mm": [
+    4,
+    3,
+    14
+   ],
+   "vers": {
+    "repere": "Foramen ovale"
+   },
+   "texte": "Ganglion sensitif du nerf trijumeau, en croissant, logé dans la cavité trigéminale sur l'apex de la partie pétreuse de l'os temporal ; il donne les nerfs ophtalmique, maxillaire et mandibulaire.",
+   "sources": [
+    "gray1918",
+    "tma",
+    "kenhub"
+   ]
+  },
+  {
+   "nom": "Lacrimal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Ophthalmic nerve",
+     "a": 0.3
+    },
+    {
+     "objet": "Lateral rectus muscle",
+     "rel": [
+      0.5,
+      0.95,
+      -0.4
+     ]
+    },
+    {
+     "objet": "Lacrimal gland",
+     "centre": true
+    },
+    {
+     "objet": "Lacrimal gland",
+     "rel": [
+      0.0,
+      0.3,
+      0.9
+     ],
+     "decale": [
+      0,
+      0,
+      4
+     ]
+    }
+   ],
+   "texte": "Branche la plus latérale du nerf ophtalmique : elle entre dans l'orbite par la fissure orbitaire supérieure, longe le bord supérieur du muscle droit latéral, innerve la glande lacrymale puis la peau de la paupière supérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Frontal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Ophthalmic nerve",
+     "a": 0.3
+    },
+    {
+     "objet": "Levator palpebrae superioris",
+     "rel": [
+      -0.3,
+      1.0,
+      -0.5
+     ]
+    },
+    {
+     "objet": "Levator palpebrae superioris",
+     "rel": [
+      0.1,
+      1.0,
+      0.35
+     ],
+     "decale": [
+      0,
+      1.5,
+      0
+     ]
+    }
+   ],
+   "texte": "Plus grosse branche du nerf ophtalmique : elle passe par la fissure orbitaire supérieure, court sous le toit de l'orbite sur le muscle releveur de la paupière supérieure et se divise à mi-orbite en nerfs supra-orbitaire et supratrochléaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Supra-orbital nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Levator palpebrae superioris",
+     "rel": [
+      0.1,
+      1.0,
+      0.35
+     ],
+     "decale": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "repere": "(Supra-orbital notch)"
+    },
+    {
+     "objet": "Frontal bone",
+     "rel": [
+      0.45,
+      0.45,
+      1.3
+     ]
+    },
+    {
+     "objet": "Frontal bone",
+     "proche": true,
+     "decale": [
+      0,
+      0,
+      4
+     ]
+    }
+   ],
+   "texte": "Branche latérale du nerf frontal : elle quitte l'orbite par l'incisure (ou le foramen) supra-orbitaire et monte sur le front, jusqu'au vertex, pour la peau du front, la paupière supérieure et le cuir chevelu.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Supratrochlear nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Levator palpebrae superioris",
+     "rel": [
+      0.1,
+      1.0,
+      0.35
+     ],
+     "decale": [
+      0,
+      1.5,
+      0
+     ]
+    },
+    {
+     "objet": "Superior oblique muscle",
+     "rel": [
+      -0.5,
+      0.9,
+      0.7
+     ]
+    },
+    {
+     "repere": "Glabella",
+     "decale": [
+      10,
+      8,
+      0
+     ]
+    },
+    {
+     "objet": "Frontal bone",
+     "rel": [
+      0.2,
+      0.5,
+      1.3
+     ]
+    },
+    {
+     "objet": "Frontal bone",
+     "proche": true,
+     "decale": [
+      0,
+      0,
+      4
+     ]
+    }
+   ],
+   "texte": "Branche médiale du nerf frontal : elle passe au-dessus de la trochlée du muscle oblique supérieur, sort de l'orbite près de la glabelle et innerve la peau du front médial et de la paupière supérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Nasociliary nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Ophthalmic nerve",
+     "a": 0.3
+    },
+    {
+     "objet": "Optic nerve (II)",
+     "a": 0.62,
+     "decale": [
+      0,
+      3.5,
+      0
+     ]
+    },
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.95,
+      0.75,
+      0.0
+     ]
+    },
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.95,
+      0.75,
+      0.45
+     ]
+    }
+   ],
+   "texte": "Branche du nerf ophtalmique qui entre dans l'orbite par la fissure orbitaire supérieure, croise au-dessus du nerf optique et longe la paroi médiale de l'orbite ; elle donne les nerfs ciliaires longs, ethmoïdaux et infratrochléaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Long ciliary nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.62,
+      "decale": [
+       0,
+       3.5,
+       0
+      ]
+     },
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.8,
+      "decale": [
+       -2,
+       2.5,
+       0
+      ]
+     },
+     {
+      "objet": "Sclera",
+      "rel": [
+       -0.3,
+       0.3,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.62,
+      "decale": [
+       0,
+       3.5,
+       0
+      ]
+     },
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.8,
+      "decale": [
+       -2,
+       -2.5,
+       0
+      ]
+     },
+     {
+      "objet": "Sclera",
+      "rel": [
+       -0.3,
+       -0.3,
+       -0.95
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux fins nerfs nés du nerf nasociliaire qui longent le nerf optique, traversent la sclère à l'arrière du globe et innervent l'iris, le corps ciliaire et la cornée ; ils portent les fibres sympathiques du muscle dilatateur de la pupille.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior ethmoidal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.95,
+      0.75,
+      -0.35
+     ]
+    },
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.7,
+      0.4,
+      -0.6
+     ]
+    },
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.4,
+      0.5,
+      -0.7
+     ]
+    }
+   ],
+   "texte": "Branche du nerf nasociliaire qui traverse le foramen ethmoïdal postérieur et innerve les cellules ethmoïdales postérieures et le sinus sphénoïdal.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior ethmoidal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.95,
+      0.75,
+      0.45
+     ]
+    },
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.6,
+      1.0,
+      0.3
+     ]
+    },
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.1,
+      0.85,
+      0.1
+     ]
+    },
+    {
+     "objet": "Nasal bone",
+     "rel": [
+      0.0,
+      -0.9,
+      -0.6
+     ]
+    },
+    {
+     "objet": "Nasal septal cartilage",
+     "rel": [
+      0.6,
+      0.3,
+      0.9
+     ],
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche terminale du nerf nasociliaire : elle passe par le foramen ethmoïdal antérieur dans la fosse crânienne antérieure, descend dans la cavité nasale par la lame criblée et se termine par le rameau nasal externe pour la peau du nez.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Infratrochlear nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Ethmoid bone",
+     "rel": [
+      0.95,
+      0.75,
+      0.45
+     ]
+    },
+    {
+     "objet": "Superior oblique muscle",
+     "rel": [
+      -0.6,
+      0.0,
+      0.8
+     ]
+    },
+    {
+     "repere": "Glabella",
+     "decale": [
+      14,
+      -8,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche terminale du nerf nasociliaire, sous la trochlée du muscle oblique supérieur ; elle innerve la peau des paupières près de l'angle médial de l'œil, la racine du nez et le sac lacrymal.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Ciliary ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Optic nerve (II)",
+    "a": 0.62,
+    "decale": [
+     3,
+     0,
+     0
+    ]
+   },
+   "taille_mm": [
+    2,
+    1,
+    2
+   ],
+   "texte": "Petit ganglion parasympathique de l'orbite, entre le nerf optique et le muscle droit latéral, à un centimètre environ en avant de la fissure orbitaire supérieure ; il relaie les fibres du nerf oculomoteur vers les muscles intrinsèques de l'œil.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Short ciliary nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.25,
+    0.15
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.62,
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Sclera",
+      "rel": [
+       -0.4,
+       0.4,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.62,
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Sclera",
+      "rel": [
+       0.3,
+       0.5,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.62,
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Sclera",
+      "rel": [
+       0.6,
+       0.0,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.62,
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Sclera",
+      "rel": [
+       0.3,
+       -0.5,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Optic nerve (II)",
+      "a": 0.62,
+      "decale": [
+       3,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Sclera",
+      "rel": [
+       -0.4,
+       -0.4,
+       -0.95
+      ]
+     }
+    ]
+   ],
+   "texte": "Une dizaine de fins nerfs partis du ganglion ciliaire qui entourent le nerf optique et traversent la sclère à l'arrière du globe ; ils innervent le muscle sphincter de la pupille et le muscle ciliaire (parasympathique) et portent la sensibilité de l'œil.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pterygopalatine ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Maxillary nerve",
+    "a": 0.5,
+    "decale": [
+     -1.5,
+     -3,
+     0
+    ]
+   },
+   "taille_mm": [
+    3,
+    2,
+    4
+   ],
+   "texte": "Ganglion parasympathique situé dans la fosse ptérygopalatine, sous le nerf maxillaire ; il reçoit le nerf du canal ptérygoïdien et distribue des fibres sécrétoires aux glandes lacrymale, nasales et palatines.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Greater palatine nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5,
+     "decale": [
+      -1.5,
+      -3,
+      0
+     ]
+    },
+    {
+     "objet": "Descending palatine artery",
+     "a": 0.7
+    },
+    {
+     "objet": "Descending palatine artery",
+     "a": 0.05
+    },
+    {
+     "objet": "Greater palatine artery",
+     "a": 0.95
+    },
+    {
+     "objet": "Greater palatine artery",
+     "a": 0.5
+    },
+    {
+     "objet": "Greater palatine artery",
+     "a": 0.12
+    }
+   ],
+   "texte": "Branche du ganglion ptérygopalatin qui descend dans le canal grand palatin, sort par le foramen grand palatin et se dirige en avant dans la fibromuqueuse du palais dur jusqu'à la région des incisives.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle palatine nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5,
+     "decale": [
+      -1.5,
+      -3,
+      0
+     ]
+    },
+    {
+     "objet": "Descending palatine artery",
+     "a": 0.35,
+     "decale": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Descending palatine artery",
+     "a": 0.03,
+     "decale": [
+      1,
+      0,
+      -4
+     ]
+    },
+    {
+     "objet": "Soft palate",
+     "rel": [
+      0.4,
+      0.4,
+      -0.3
+     ]
+    }
+   ],
+   "texte": "Branche descendante du ganglion ptérygopalatin qui sort par un foramen petit palatin et innerve la luette, les amygdales palatines et la muqueuse du voile du palais.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior palatine nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5,
+     "decale": [
+      -1.5,
+      -3,
+      0
+     ]
+    },
+    {
+     "objet": "Descending palatine artery",
+     "a": 0.35,
+     "decale": [
+      2,
+      0,
+      -1
+     ]
+    },
+    {
+     "objet": "Descending palatine artery",
+     "a": 0.0,
+     "decale": [
+      2,
+      0,
+      -3
+     ]
+    },
+    {
+     "objet": "Soft palate",
+     "rel": [
+      0.85,
+      0.2,
+      0.3
+     ]
+    }
+   ],
+   "texte": "Branche descendante du ganglion ptérygopalatin qui sort par un foramen petit palatin, derrière le foramen grand palatin, et innerve le voile du palais et l'amygdale palatine.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Nasopalatine nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5,
+     "decale": [
+      -1.5,
+      -3,
+      0
+     ]
+    },
+    {
+     "objet": "Palatine bone",
+     "rel": [
+      0.0,
+      0.85,
+      0.0
+     ]
+    },
+    {
+     "objet": "Vomer",
+     "rel": [
+      0.9,
+      0.5,
+      0.0
+     ]
+    },
+    {
+     "objet": "Vomer",
+     "rel": [
+      0.9,
+      -0.6,
+      0.8
+     ]
+    },
+    {
+     "objet": "Greater palatine artery",
+     "a": 0.0
+    }
+   ],
+   "texte": "Branche du ganglion ptérygopalatin qui passe par le foramen sphénopalatin, traverse le toit de la cavité nasale, descend en avant sur le septum nasal (vomer) et émerge par le canal incisif pour la muqueuse du palais derrière les incisives.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pharyngeal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5,
+     "decale": [
+      -1.5,
+      -3,
+      0
+     ]
+    },
+    {
+     "objet": "Palatine bone",
+     "rel": [
+      -0.6,
+      0.2,
+      -0.8
+     ]
+    },
+    {
+     "repere": "Pharyngeal tubercle",
+     "decale": [
+      10,
+      -1,
+      10
+     ]
+    },
+    {
+     "repere": "Pharyngeal tubercle",
+     "decale": [
+      6,
+      -2,
+      0
+     ]
+    }
+   ],
+   "texte": "Fin rameau du ganglion ptérygopalatin qui traverse le canal palatovaginal et innerve la muqueuse du toit du nasopharynx, en arrière de l'orifice de la trompe auditive.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Zygomatic nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5
+    },
+    {
+     "objet": "Infra-orbital artery",
+     "a": 0.04
+    },
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      -0.75,
+      0.0,
+      -0.3
+     ]
+    }
+   ],
+   "texte": "Branche du nerf maxillaire née dans la fosse ptérygopalatine ; elle entre dans l'orbite par la fissure orbitaire inférieure, longe sa paroi latérale et se divise en nerfs zygomaticotemporal et zygomaticofacial.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Zygomaticotemporal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      -0.75,
+      0.0,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      0.2,
+      0.3,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Temporalis muscle",
+     "rel": [
+      0.5,
+      0.6,
+      0.85
+     ]
+    }
+   ],
+   "texte": "Branche du nerf zygomatique qui traverse le foramen zygomaticotemporal, monte dans la fosse temporale et innerve la peau de la tempe antérieure ; il porte des fibres sécrétoires vers la glande lacrymale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Zygomaticofacial nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      -0.75,
+      0.0,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      0.3,
+      -0.1,
+      0.9
+     ]
+    },
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      0.5,
+      0.1,
+      1.0
+     ],
+     "decale": [
+      4,
+      0,
+      2
+     ]
+    }
+   ],
+   "texte": "Branche du nerf zygomatique qui traverse le foramen zygomaticofacial et innerve la peau de la pommette.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior superior alveolar nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5
+    },
+    {
+     "objet": "Posterior superior alveolar artery",
+     "a": 0.1
+    },
+    {
+     "objet": "Posterior superior alveolar artery",
+     "a": 0.5
+    },
+    {
+     "objet": "Posterior superior alveolar artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Upper first molar tooth",
+     "rel": [
+      0.0,
+      0.6,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Branche du nerf maxillaire qui descend sur la tubérosité de la maxille, entre par les foramens alvéolaires et innerve les molaires supérieures, la gencive voisine et le sinus maxillaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior dental plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.25,
+   "ecart_mm": 1.5,
+   "le_long": [
+    {
+     "objet": "Upper second molar tooth",
+     "rel": [
+      0,
+      0.75,
+      0
+     ],
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Upper first molar tooth",
+     "rel": [
+      0,
+      0.75,
+      0
+     ],
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Upper second premolar",
+     "rel": [
+      0,
+      0.75,
+      0
+     ],
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Upper first premolar",
+     "rel": [
+      0,
+      0.75,
+      0
+     ],
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Upper canine",
+     "rel": [
+      0,
+      0.75,
+      0
+     ],
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Upper lateral incisor",
+     "rel": [
+      0,
+      0.75,
+      0
+     ],
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Upper medial incisor",
+     "rel": [
+      0,
+      0.75,
+      0
+     ],
+     "decale": [
+      0,
+      2,
+      0
+     ]
+    }
+   ],
+   "texte": "Réseau de rameaux alvéolaires supérieurs (postérieur, moyen et antérieur) situé dans l'os alvéolaire de la maxille, au-dessus des racines des dents supérieures, qu'il innerve ainsi que la gencive.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Infra-orbital nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5
+    },
+    {
+     "objet": "Infra-orbital artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Infra-orbital artery",
+     "a": 0.45
+    },
+    {
+     "objet": "Infra-orbital artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Levator labii superioris",
+     "rel": [
+      0.0,
+      -0.3,
+      0.3
+     ]
+    }
+   ],
+   "texte": "Prolongement du nerf maxillaire : il entre dans l'orbite par la fissure orbitaire inférieure, parcourt la gouttière puis le canal infra-orbitaires, émerge par le foramen infra-orbitaire et se divise en rameaux palpébraux, nasaux et labiaux supérieurs.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle superior alveolar nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Infra-orbital artery",
+     "a": 0.5
+    },
+    {
+     "objet": "Upper second premolar",
+     "rel": [
+      0.1,
+      0.8,
+      0
+     ]
+    },
+    {
+     "objet": "Upper first premolar",
+     "rel": [
+      0.0,
+      0.8,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche du nerf infra-orbitaire née dans le canal infra-orbitaire ; elle longe la paroi latérale du sinus maxillaire et innerve les prémolaires supérieures et la racine mésiovestibulaire de la première molaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior superior alveolar nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Infra-orbital artery",
+     "a": 0.75
+    },
+    {
+     "objet": "Upper canine",
+     "rel": [
+      0.0,
+      0.9,
+      0.5
+     ]
+    },
+    {
+     "objet": "Upper lateral incisor",
+     "rel": [
+      0.0,
+      0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Upper medial incisor",
+     "rel": [
+      0.0,
+      0.85,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Branche du nerf infra-orbitaire née avant sa sortie ; elle chemine dans un canal de la paroi antérieure de la maxille et innerve les incisives et la canine supérieures, la gencive et la partie antérieure de la cavité nasale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Masseteric nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Anterior division of mandibular nerve",
+     "a": 0.95
+    },
+    {
+     "objet": "Deep part of masseter",
+     "rel": [
+      -0.85,
+      0.75,
+      0.0
+     ]
+    },
+    {
+     "objet": "Deep part of masseter",
+     "rel": [
+      -0.2,
+      0.25,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure du nerf mandibulaire : elle passe au-dessus du muscle ptérygoïdien latéral, traverse l'incisure mandibulaire et entre dans la face profonde du muscle masséter.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior deep temporal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Anterior division of mandibular nerve",
+     "a": 0.7
+    },
+    {
+     "objet": "Posterior deep temporal artery",
+     "a": 0.2
+    },
+    {
+     "objet": "Posterior deep temporal artery",
+     "a": 0.55
+    },
+    {
+     "objet": "Posterior deep temporal artery",
+     "a": 0.9
+    }
+   ],
+   "texte": "Branche motrice de la division antérieure du nerf mandibulaire qui monte contre l'os temporal, sous le muscle temporal, et en innerve la partie postérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior deep temporal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Buccal nerve",
+     "a": 0.0
+    },
+    {
+     "objet": "Anterior deep temporal artery",
+     "a": 0.2
+    },
+    {
+     "objet": "Anterior deep temporal artery",
+     "a": 0.55
+    },
+    {
+     "objet": "Anterior deep temporal artery",
+     "a": 0.9
+    }
+   ],
+   "texte": "Branche motrice de la division antérieure du nerf mandibulaire (souvent née du nerf buccal) qui monte sur la fosse temporale et innerve la partie antérieure du muscle temporal.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Auriculotemporal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Posterior division of mandibular nerve",
+     "a": 0.35
+    },
+    {
+     "objet": "Middle meningeal artery",
+     "a": 0.3
+    },
+    {
+     "objet": "External carotid artery",
+     "a": 1.0,
+     "decale": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Superficial temporal artery",
+     "a": 0.1
+    },
+    {
+     "objet": "Superficial temporal artery",
+     "a": 0.3
+    },
+    {
+     "objet": "Superficial temporal artery",
+     "a": 0.55
+    }
+   ],
+   "texte": "Branche de la division postérieure du nerf mandibulaire qui embrasse l'artère méningée moyenne, passe derrière le col de la mandibule, traverse la glande parotide et monte devant l'oreille avec l'artère temporale superficielle pour la peau de la tempe et du pavillon.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior auricular nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Superficial temporal artery",
+      "a": 0.15
+     },
+     {
+      "objet": "Superficial temporal artery",
+      "a": 0.3,
+      "decale": [
+       3,
+       0,
+       -5
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superficial temporal artery",
+      "a": 0.2
+     },
+     {
+      "objet": "Superficial temporal artery",
+      "a": 0.4,
+      "decale": [
+       3,
+       -2,
+       -8
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superficial temporal artery",
+      "a": 0.1
+     },
+     {
+      "objet": "Superficial temporal artery",
+      "a": 0.25,
+      "decale": [
+       3,
+       -6,
+       -6
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux du nerf auriculotemporal qui innervent la peau de la face antérieure du pavillon de l'oreille, du tragus et de l'hélix et le conduit acoustique externe.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Sublingual nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Lingual nerve",
+     "a": 0.75
+    },
+    {
+     "objet": "Sublingual gland",
+     "rel": [
+      0.0,
+      0.0,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Sublingual gland",
+     "rel": [
+      -0.4,
+      0.2,
+      0.7
+     ]
+    }
+   ],
+   "texte": "Branche du nerf lingual qui innerve la glande sublinguale et la muqueuse du plancher de la bouche et de la gencive linguale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior dental plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.25,
+   "ecart_mm": 1.5,
+   "le_long": [
+    {
+     "objet": "Lower second molar tooth",
+     "rel": [
+      0,
+      -0.7,
+      0
+     ],
+     "decale": [
+      0,
+      -2,
+      0
+     ]
+    },
+    {
+     "objet": "Lower first molar tooth",
+     "rel": [
+      0,
+      -0.7,
+      0
+     ],
+     "decale": [
+      0,
+      -2,
+      0
+     ]
+    },
+    {
+     "objet": "Lower second premolar",
+     "rel": [
+      0,
+      -0.7,
+      0
+     ],
+     "decale": [
+      0,
+      -2,
+      0
+     ]
+    },
+    {
+     "objet": "Lower first premolar",
+     "rel": [
+      0,
+      -0.7,
+      0
+     ],
+     "decale": [
+      0,
+      -2,
+      0
+     ]
+    },
+    {
+     "objet": "Lower canine",
+     "rel": [
+      0,
+      -0.7,
+      0
+     ],
+     "decale": [
+      0,
+      -2,
+      0
+     ]
+    },
+    {
+     "objet": "Lower lateral incisor",
+     "rel": [
+      0,
+      -0.7,
+      0
+     ],
+     "decale": [
+      0,
+      -2,
+      0
+     ]
+    },
+    {
+     "objet": "Lower medial incisor",
+     "rel": [
+      0,
+      -0.7,
+      0
+     ],
+     "decale": [
+      0,
+      -2,
+      0
+     ]
+    }
+   ],
+   "texte": "Réseau de rameaux issus du nerf alvéolaire inférieur dans le canal mandibulaire, sous les racines des dents inférieures, qu'il innerve ainsi que la gencive.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Submandibular ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Lingual nerve",
+    "a": 0.55,
+    "decale": [
+     0,
+     -3,
+     0
+    ]
+   },
+   "taille_mm": [
+    3,
+    2,
+    4
+   ],
+   "texte": "Ganglion parasympathique suspendu au nerf lingual, sur le muscle hyoglosse au-dessus de la glande submandibulaire ; il reçoit la corde du tympan et innerve les glandes submandibulaire et sublinguale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Submandibular nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.25,
+    0.15
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Lingual nerve",
+      "a": 0.55,
+      "decale": [
+       0,
+       -3,
+       0
+      ]
+     },
+     {
+      "objet": "Submandibular gland",
+      "rel": [
+       -0.3,
+       0.4,
+       0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Lingual nerve",
+      "a": 0.55,
+      "decale": [
+       0,
+       -3,
+       0
+      ]
+     },
+     {
+      "objet": "Submandibular gland",
+      "rel": [
+       0.3,
+       0.2,
+       -0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Lingual nerve",
+      "a": 0.55,
+      "decale": [
+       0,
+       -3,
+       0
+      ]
+     },
+     {
+      "objet": "Submandibular gland",
+      "rel": [
+       0.0,
+       -0.3,
+       0.4
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux glandulaires du ganglion submandibulaire qui pénètrent dans la glande submandibulaire et portent les fibres sécrétoires parasympathiques.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Otic ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "repere": "Foramen ovale",
+    "decale": [
+     -1.5,
+     -4,
+     0
+    ]
+   },
+   "taille_mm": [
+    3,
+    2,
+    3
+   ],
+   "texte": "Ganglion parasympathique sous le foramen ovale, contre la face médiale du nerf mandibulaire ; il reçoit le nerf petit pétreux et innerve la glande parotide par le nerf auriculotemporal.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Genigulate ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Facial nerve (VII)",
+    "a": 0.31
+   },
+   "taille_mm": [
+    2.5,
+    2.5,
+    3.5
+   ],
+   "vers": {
+    "objet": "Facial nerve (VII)",
+    "a": 0.36
+   },
+   "texte": "Ganglion sensitif du nerf facial, au coude (genou) du canal facial dans la partie pétreuse de l'os temporal ; il contient les neurones du goût des deux tiers antérieurs de la langue (corde du tympan) et donne le nerf grand pétreux.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Greater petrosal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Facial nerve (VII)",
+     "a": 0.31
+    },
+    {
+     "repere": "Anterior surface of petrous part",
+     "decale": [
+      -4,
+      0,
+      4
+     ]
+    },
+    {
+     "repere": "Apex of petrous part",
+     "decale": [
+      0,
+      -1,
+      0
+     ]
+    },
+    {
+     "repere": "Pterygoid canal"
+    },
+    {
+     "objet": "Maxillary nerve",
+     "a": 0.5,
+     "decale": [
+      -1.5,
+      -3,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche parasympathique du nerf facial née du ganglion géniculé : elle sort par l'hiatus du canal du nerf grand pétreux, longe la face antérieure du rocher sous le ganglion trigéminal, traverse le foramen déchiré et rejoint le nerf pétreux profond pour former le nerf du canal ptérygoïdien, qui aboutit au ganglion ptérygopalatin.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior auricular nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Facial nerve (VII)",
+     "a": 0.58
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      6,
+      8,
+      2
+     ]
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      10,
+      25,
+      -10
+     ]
+    },
+    {
+     "objet": "Occipitalis muscle",
+     "rel": [
+      0.7,
+      -0.2,
+      -0.2
+     ]
+    }
+   ],
+   "texte": "Branche du nerf facial née juste sous le foramen stylomastoïdien ; elle monte entre le processus mastoïde et le pavillon de l'oreille et innerve le ventre occipital du muscle occipito-frontal et les muscles auriculaires postérieurs.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Parotid plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.4,
+   "ecart_mm": 3.5,
+   "le_long": [
+    {
+     "objet": "Facial nerve (VII)",
+     "a": 0.62
+    },
+    {
+     "objet": "Parotid gland",
+     "rel": [
+      -0.2,
+      0.2,
+      -0.6
+     ]
+    },
+    {
+     "objet": "Parotid gland",
+     "rel": [
+      0.0,
+      0.0,
+      0.2
+     ]
+    },
+    {
+     "objet": "Parotid gland",
+     "rel": [
+      0.0,
+      -0.2,
+      0.9
+     ]
+    }
+   ],
+   "texte": "Réseau de division du nerf facial à l'intérieur de la glande parotide (branches temporofaciale et cervicofaciale), d'où partent les rameaux temporaux, zygomatiques, buccaux, mandibulaire marginal et cervical pour les muscles de la face.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Vestibular ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Vestibular nerve",
+    "a": 0.03
+   },
+   "taille_mm": [
+    1.5,
+    1.5,
+    5
+   ],
+   "vers": {
+    "objet": "Vestibular nerve",
+    "a": 0.2
+   },
+   "texte": "Ganglion de Scarpa : renflement des neurones bipolaires du nerf vestibulaire dans le fond du méat acoustique interne, avant sa division en nerfs utriculaire, ampullaires et sacculaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Cochlear ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Cochlea",
+    "centre": true
+   },
+   "taille_mm": [
+    1.5,
+    1.5,
+    5
+   ],
+   "vers": {
+    "objet": "Cochlear nerve",
+    "a": 1.0
+   },
+   "texte": "Ganglion spiral de la cochlée, enroulé dans le canal spiral du modiolus ; ses neurones bipolaires relaient les cellules ciliées de l'organe spiral vers le nerf cochléaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Utricular nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Vestibular nerve",
+     "a": 0.7
+    },
+    {
+     "objet": "Vestibule",
+     "rel": [
+      -0.2,
+      0.5,
+      -0.2
+     ]
+    }
+   ],
+   "texte": "Branche du nerf vestibulaire pour la macule de l'utricule, dans la partie supéropostérieure du vestibule.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior ampullary nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Vestibular nerve",
+     "a": 0.7
+    },
+    {
+     "repere": "Anterior bony ampulla"
+    }
+   ],
+   "texte": "Branche du nerf vestibulaire pour la crête ampullaire du conduit semi-circulaire antérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral ampullary nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Vestibular nerve",
+     "a": 0.7
+    },
+    {
+     "repere": "Lateral bony ampulla"
+    }
+   ],
+   "texte": "Branche du nerf vestibulaire pour la crête ampullaire du conduit semi-circulaire latéral.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior ampullary nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Vestibular nerve",
+     "a": 0.9
+    },
+    {
+     "repere": "Posterior bony ampulla"
+    }
+   ],
+   "texte": "Branche du nerf vestibulaire (portion inférieure) qui traverse le foramen singulier pour la crête ampullaire du conduit semi-circulaire postérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Saccular nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Vestibular nerve",
+     "a": 0.7
+    },
+    {
+     "objet": "Vestibule",
+     "rel": [
+      -0.5,
+      -0.5,
+      0.6
+     ]
+    }
+   ],
+   "texte": "Branche du nerf vestibulaire (portion inférieure) pour la macule du saccule, dans la partie antéroinférieure du vestibule.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior ganglion of glossopharyngeal nerve",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Glossopharyngeal nerve (IX)",
+    "a": 0.17
+   },
+   "taille_mm": [
+    2,
+    2,
+    3
+   ],
+   "vers": {
+    "objet": "Glossopharyngeal nerve (IX)",
+    "a": 0.22
+   },
+   "texte": "Petit ganglion sensitif du nerf glossopharyngien, dans le foramen jugulaire ; il contient les neurones de la sensibilité générale de l'oreille, de la langue et du pharynx.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior ganglion of glossopharyngeal nerve",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Glossopharyngeal nerve (IX)",
+    "a": 0.27
+   },
+   "taille_mm": [
+    3,
+    3,
+    5
+   ],
+   "vers": {
+    "objet": "Glossopharyngeal nerve (IX)",
+    "a": 0.32
+   },
+   "texte": "Ganglion pétreux, plus grand que le supérieur, situé juste sous le foramen jugulaire dans la fossette pétreuse ; il donne les nerfs tympanique et du sinus carotidien.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Tympanic nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Glossopharyngeal nerve (IX)",
+     "a": 0.27
+    },
+    {
+     "objet": "Cochlea",
+     "rel": [
+      0.9,
+      -1.0,
+      0.2
+     ]
+    },
+    {
+     "objet": "Cochlea",
+     "rel": [
+      1.05,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Nerf de Jacobson, né du ganglion inférieur du glossopharyngien ; il monte par le canalicule tympanique inférieur dans la cavité du tympan et forme le plexus tympanique sur le promontoire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Tympanic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.25,
+   "ecart_mm": 1.5,
+   "en": {
+    "objet": "Cochlea",
+    "rel": [
+     1.05,
+     0.0,
+     0.0
+    ]
+   },
+   "etendue_mm": 8,
+   "texte": "Réseau nerveux de la paroi médiale de la cavité du tympan (promontoire) formé par le nerf tympanique et les nerfs caroticotympaniques ; il innerve la muqueuse de l'oreille moyenne et de la trompe auditive et donne le nerf petit pétreux.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lesser petrosal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Cochlea",
+     "rel": [
+      1.05,
+      0.3,
+      0.0
+     ]
+    },
+    {
+     "repere": "Tegmen tympani",
+     "decale": [
+      0,
+      -1,
+      2
+     ]
+    },
+    {
+     "repere": "Anterior surface of petrous part",
+     "decale": [
+      -3,
+      0,
+      -2
+     ]
+    },
+    {
+     "repere": "Foramen ovale"
+    },
+    {
+     "repere": "Foramen ovale",
+     "decale": [
+      -1.5,
+      -4,
+      0
+     ]
+    }
+   ],
+   "texte": "Nerf parasympathique issu du plexus tympanique ; il traverse le toit de la cavité du tympan, longe la face antérieure du rocher et sort par le foramen ovale (ou un canalicule voisin) vers le ganglion otique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Carotid sinus nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Glossopharyngeal nerve (IX)",
+     "a": 0.35
+    },
+    {
+     "objet": "Internal carotid artery",
+     "a": 0.08
+    },
+    {
+     "objet": "Internal carotid artery",
+     "a": 0.02
+    }
+   ],
+   "texte": "Nerf de Hering, branche du glossopharyngien qui descend le long de l'artère carotide interne jusqu'au sinus carotidien ; il porte l'information des barorécepteurs et des chimiorécepteurs du glomus carotidien.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior ganglion of vagus nerve",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Vagus nerve (X)",
+    "a": 0.11
+   },
+   "taille_mm": [
+    3,
+    3,
+    4
+   ],
+   "vers": {
+    "objet": "Vagus nerve (X)",
+    "a": 0.14
+   },
+   "texte": "Ganglion jugulaire du nerf vague, dans le foramen jugulaire ; il contient les neurones de la sensibilité cutanée de l'oreille externe et des méninges.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior ganglion of vagus nerve",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Vagus nerve (X)",
+    "a": 0.2
+   },
+   "taille_mm": [
+    4,
+    4,
+    20
+   ],
+   "vers": {
+    "objet": "Vagus nerve (X)",
+    "a": 0.27
+   },
+   "texte": "Ganglion plexiforme (noueux) du nerf vague, long d'environ 2,5 cm, sous le foramen jugulaire devant les processus transverses de l'atlas ; il contient les neurones sensitifs viscéraux et donne le nerf laryngé supérieur et le rameau pharyngien.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior laryngeal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Vagus nerve (X)",
+      "a": 0.22
+     },
+     {
+      "objet": "Vagus nerve (X)",
+      "a": 0.3,
+      "decale": [
+       -5,
+       0,
+       2
+      ]
+     },
+     {
+      "repere": "Greater horn of hyoid bone",
+      "decale": [
+       -3,
+       -3,
+       -3
+      ]
+     },
+     {
+      "objet": "Thyroid cartilage",
+      "rel": [
+       0.6,
+       0.5,
+       0.0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Vagus nerve (X)",
+      "a": 0.22
+     },
+     {
+      "objet": "Vagus nerve (X)",
+      "a": 0.3,
+      "decale": [
+       -5,
+       0,
+       2
+      ]
+     },
+     {
+      "objet": "Thyroid cartilage",
+      "rel": [
+       0.9,
+       -0.8,
+       0.2
+      ]
+     },
+     {
+      "objet": "Thyroid cartilage",
+      "rel": [
+       0.4,
+       -0.9,
+       0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Branche du ganglion inférieur du vague qui descend derrière l'artère carotide interne, puis se divise : le rameau interne traverse la membrane thyrohyoïdienne pour la muqueuse laryngée sus-glottique, le rameau externe descend vers le muscle cricothyroïdien.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pharyngeal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "le_long": [
+    {
+     "objet": "Superior pharyngeal constrictor",
+     "rel": [
+      0.6,
+      0.3,
+      0.0
+     ]
+    },
+    {
+     "objet": "Middle pharyngeal constrictor",
+     "rel": [
+      0.6,
+      0.4,
+      0.0
+     ]
+    },
+    {
+     "objet": "Inferior pharyngeal constrictor",
+     "rel": [
+      0.6,
+      0.4,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Réseau de la paroi latérale du pharynx, sur le muscle constricteur moyen, formé de rameaux du vague, du glossopharyngien et du sympathique cervical ; il innerve les muscles et la muqueuse du pharynx.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Suboccipital nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "repere": "Groove for vertebral artery"
+    },
+    {
+     "objet": "Obliquus superior capitis muscle",
+     "rel": [
+      -0.2,
+      -0.5,
+      0.0
+     ]
+    },
+    {
+     "objet": "Obliquus inferior capitis muscle",
+     "rel": [
+      0.3,
+      0.5,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Branche postérieure du premier nerf cervical (C1) : elle sort entre l'os occipital et l'arc postérieur de l'atlas, sous l'artère vertébrale, et innerve les muscles sous-occipitaux (grand et petit droits postérieurs de la tête, obliques supérieur et inférieur).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Greater occipital nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Axis (C2)",
+     "rel": [
+      0.6,
+      0.2,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Obliquus inferior capitis muscle",
+     "rel": [
+      0.3,
+      -0.4,
+      0.0
+     ]
+    },
+    {
+     "objet": "Semispinalis capitis muscle",
+     "rel": [
+      0.5,
+      0.2,
+      -0.9
+     ]
+    },
+    {
+     "repere": "Superior nuchal line",
+     "decale": [
+      10,
+      0,
+      -4
+     ]
+    },
+    {
+     "objet": "Occipital bone",
+     "rel": [
+      0.35,
+      0.95,
+      -1.05
+     ]
+    },
+    {
+     "objet": "Parietal bone",
+     "rel": [
+      0.2,
+      0.9,
+      -0.4
+     ],
+     "decale": [
+      0,
+      5,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche médiale du rameau postérieur du deuxième nerf cervical (C2) : elle contourne le bord inférieur du muscle oblique inférieur de la tête, traverse le semi-épineux de la tête et le trapèze et monte avec l'artère occipitale pour la peau du cuir chevelu jusqu'au vertex.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Third occipital nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Vertebra C3",
+     "rel": [
+      0.6,
+      0.3,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Semispinalis capitis muscle",
+     "rel": [
+      0.3,
+      0.0,
+      -0.9
+     ]
+    },
+    {
+     "repere": "External occipital protuberance",
+     "decale": [
+      10,
+      -8,
+      -8
+     ]
+    }
+   ],
+   "texte": "Branche médiale du rameau postérieur de C3 : elle croise l'articulation zygapophysaire C2-C3, traverse le semi-épineux et le trapèze et innerve la peau de la nuque près de la protubérance occipitale externe.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lesser occipital nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Intervertebral disc C2-C3",
+     "rel": [
+      0.9,
+      0,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Intervertebral disc C4-C5",
+     "rel": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "decale": [
+      26,
+      0,
+      6
+     ]
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      2,
+      -8,
+      -4
+     ]
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      15,
+      28,
+      -15
+     ]
+    }
+   ],
+   "texte": "Branche du plexus cervical (C2-C3) : elle contourne le milieu du bord postérieur du muscle sternocléidomastoïdien (point nerveux du cou), monte le long de ce bord et innerve la peau du cuir chevelu derrière le pavillon de l'oreille.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Great auricular nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Intervertebral disc C3-C4",
+      "rel": [
+       0.9,
+       0,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Intervertebral disc C4-C5",
+      "rel": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       26,
+       0,
+       6
+      ]
+     },
+     {
+      "repere": "Mastoid process",
+      "decale": [
+       8,
+       -18,
+       10
+      ]
+     },
+     {
+      "repere": "Mastoid process",
+      "decale": [
+       18,
+       -2,
+       8
+      ]
+     }
+    ],
+    [
+     {
+      "repere": "Mastoid process",
+      "decale": [
+       8,
+       -18,
+       10
+      ]
+     },
+     {
+      "objet": "Parotid gland",
+      "rel": [
+       0.9,
+       0.0,
+       0.1
+      ]
+     }
+    ]
+   ],
+   "texte": "Plus grosse branche cutanée ascendante du plexus cervical (C2-C3) : elle croise obliquement le muscle sternocléidomastoïdien et se divise en rameaux antérieur (peau de la parotide) et postérieur (lobule et face postérieure de l'oreille).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Transverse cervical nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Intervertebral disc C3-C4",
+     "rel": [
+      0.9,
+      0,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Intervertebral disc C4-C5",
+     "rel": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "decale": [
+      26,
+      0,
+      6
+     ]
+    },
+    {
+     "objet": "Intervertebral disc C4-C5",
+     "rel": [
+      1.0,
+      0,
+      0
+     ],
+     "decale": [
+      31,
+      0,
+      22
+     ]
+    },
+    {
+     "objet": "Hyoid bone",
+     "rel": [
+      0.7,
+      -0.5,
+      1.0
+     ],
+     "decale": [
+      0,
+      0,
+      12
+     ]
+    }
+   ],
+   "texte": "Branche du plexus cervical (C2-C3) qui contourne le bord postérieur du muscle sternocléidomastoïdien, le croise transversalement sous le platysma et innerve la peau de la région cervicale antérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Medial supraclavicular nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Intervertebral disc C3-C4",
+      "rel": [
+       0.9,
+       0,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Intervertebral disc C4-C5",
+      "rel": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       26,
+       0,
+       6
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       -0.6,
+       1.0,
+       0.3
+      ]
+     },
+     {
+      "objet": "Manubrium of sternum",
+      "rel": [
+       0.7,
+       0.8,
+       1.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc C3-C4",
+      "rel": [
+       0.9,
+       0,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Intervertebral disc C4-C5",
+      "rel": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       26,
+       0,
+       6
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       -0.5,
+       1.0,
+       0.1
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       -0.5,
+       0.0,
+       1.4
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux du plexus cervical (C3-C4) qui descendent sur le muscle sternocléidomastoïdien et croisent la partie médiale de la clavicule pour la peau de la région sternale et de l'articulation sterno-claviculaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Intermediate supraclavicular nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Intervertebral disc C3-C4",
+      "rel": [
+       0.9,
+       0,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Intervertebral disc C4-C5",
+      "rel": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       26,
+       0,
+       6
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       0.0,
+       1.0,
+       0.2
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       0.0,
+       0.0,
+       1.4
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc C3-C4",
+      "rel": [
+       0.9,
+       0,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Intervertebral disc C4-C5",
+      "rel": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       26,
+       0,
+       6
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       0.1,
+       1.0,
+       -0.1
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       0.15,
+       -0.5,
+       1.4
+      ],
+      "decale": [
+       0,
+       -8,
+       0
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux du plexus cervical (C3-C4) qui croisent la partie moyenne de la clavicule, parfois à travers l'os, pour la peau de la paroi thoracique antérieure sous la clavicule.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral supraclavicular nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Intervertebral disc C3-C4",
+      "rel": [
+       0.9,
+       0,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Intervertebral disc C4-C5",
+      "rel": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       26,
+       0,
+       6
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       0.5,
+       1.0,
+       -0.3
+      ]
+     },
+     {
+      "repere": "Acromion",
+      "decale": [
+       8,
+       3,
+       10
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc C3-C4",
+      "rel": [
+       0.9,
+       0,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Intervertebral disc C4-C5",
+      "rel": [
+       1.0,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       26,
+       0,
+       6
+      ]
+     },
+     {
+      "objet": "Clavicle",
+      "rel": [
+       0.6,
+       1.0,
+       -0.5
+      ]
+     },
+     {
+      "repere": "Acromion",
+      "decale": [
+       -5,
+       6,
+       -10
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux du plexus cervical (C3-C4) qui traversent le trapèze et la partie latérale de la clavicule pour la peau de l'épaule, au-dessus du deltoïde et de l'acromion.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior brachial cutaneous nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Radial nerve",
+     "a": 0.04
+    },
+    {
+     "objet": "Long head of triceps brachii",
+     "rel": [
+      -0.2,
+      0.7,
+      -1.0
+     ]
+    },
+    {
+     "objet": "Long head of triceps brachii",
+     "rel": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "repere": "Olecranon",
+     "decale": [
+      -2,
+      40,
+      -4
+     ]
+    }
+   ],
+   "texte": "Branche du nerf radial née dans l'aisselle : elle passe sous la tête longue du triceps, devient sous-cutanée et descend sur la face postérieure du bras jusqu'à l'olécrane.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Intercostobrachial nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Second rib",
+     "bord": "lateral"
+    },
+    {
+     "objet": "Axillary artery",
+     "a": 0.7,
+     "decale": [
+      0,
+      -8,
+      0
+     ]
+    },
+    {
+     "objet": "Medial brachial cutaneous nerve",
+     "a": 0.35
+    },
+    {
+     "objet": "Medial brachial cutaneous nerve",
+     "a": 0.65
+    }
+   ],
+   "texte": "Branche cutanée latérale du deuxième nerf intercostal : elle traverse le creux axillaire et se distribue à la peau de la face médiale du bras, avec le nerf cutané médial du bras.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Subcostal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Intervertebral disc T12-L1",
+     "rel": [
+      1.0,
+      0,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Quadratus lumborum muscle",
+     "rel": [
+      0.0,
+      0.9,
+      0.9
+     ]
+    },
+    {
+     "objet": "Quadratus lumborum muscle",
+     "rel": [
+      0.9,
+      0.4,
+      1.0
+     ]
+    },
+    {
+     "objet": "Internal abdominal oblique muscle",
+     "rel": [
+      0.8,
+      0.4,
+      -0.1
+     ]
+    },
+    {
+     "objet": "Rectus abdominis muscle",
+     "rel": [
+      0.6,
+      -0.3,
+      0.3
+     ]
+    }
+   ],
+   "texte": "Rameau antérieur du douzième nerf thoracique (T12), sous la douzième côte : il passe devant le muscle carré des lombes, traverse le muscle transverse de l'abdomen, chemine entre celui-ci et l'oblique interne et se termine dans le muscle pyramidal et la gaine du droit.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior gluteal cutaneous nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Intervertebral disc L1-L2",
+      "rel": [
+       1.0,
+       0,
+       -0.6
+      ]
+     },
+     {
+      "repere": "Posterior superior iliac spine",
+      "decale": [
+       40,
+       15,
+       8
+      ]
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       0.5,
+       0.85,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc L2-L3",
+      "rel": [
+       1.0,
+       0,
+       -0.6
+      ]
+     },
+     {
+      "repere": "Posterior superior iliac spine",
+      "decale": [
+       40,
+       15,
+       8
+      ]
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       0.6,
+       0.8,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc L3-L4",
+      "rel": [
+       1.0,
+       0,
+       -0.6
+      ]
+     },
+     {
+      "repere": "Posterior superior iliac spine",
+      "decale": [
+       40,
+       15,
+       8
+      ]
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       0.7,
+       0.75,
+       -0.9
+      ]
+     }
+    ]
+   ],
+   "texte": "Branches cutanées latérales des rameaux postérieurs de L1 à L3 : elles traversent les muscles du dos et le fascia thoraco-lombaire, croisent la crête iliaque et innervent la peau de la partie supérieure de la fesse.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle gluteal cutaneous nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       0.55,
+       -0.32
+      ]
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       -0.6,
+       0.62,
+       -0.9
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       0.15,
+       -0.58
+      ]
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       -0.5,
+       0.45,
+       -0.9
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       -0.24,
+       -0.78
+      ]
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       -0.4,
+       0.3,
+       -0.9
+      ]
+     }
+    ]
+   ],
+   "texte": "Branches cutanées latérales des rameaux postérieurs de S1 à S3 : elles sortent par les foramens sacrés postérieurs, traversent l'origine du grand glutéal et innervent la peau de la région glutéale médiale, devant le sacrum et le coccyx.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Sacral nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    0.6
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Cauda equina",
+      "a": 0.62
+     },
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       0.55,
+       0.78
+      ]
+     },
+     {
+      "objet": "Piriformis muscle",
+      "rel": [
+       -0.7,
+       0.0,
+       0.9
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Cauda equina",
+      "a": 0.74
+     },
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       0.15,
+       0.43
+      ]
+     },
+     {
+      "objet": "Piriformis muscle",
+      "rel": [
+       -0.49999999999999994,
+       0.0,
+       0.9
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Cauda equina",
+      "a": 0.84
+     },
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       -0.24,
+       -0.4
+      ]
+     },
+     {
+      "objet": "Piriformis muscle",
+      "rel": [
+       -0.29999999999999993,
+       0.0,
+       0.9
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Cauda equina",
+      "a": 0.92
+     },
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       -0.59,
+       -0.52
+      ]
+     },
+     {
+      "objet": "Piriformis muscle",
+      "rel": [
+       -0.09999999999999987,
+       0.0,
+       0.9
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Cauda equina",
+      "a": 1.0
+     },
+     {
+      "objet": "Sacrum",
+      "bord": "inferieur",
+      "decale": [
+       4,
+       0,
+       0
+      ]
+     },
+     {
+      "objet": "Coccyx",
+      "rel": [
+       0.9,
+       0.9,
+       0.8
+      ]
+     }
+    ]
+   ],
+   "texte": "Les cinq paires de nerfs sacraux (S1 à S5) : leurs racines descendent dans le canal sacral, les rameaux antérieurs de S1 à S4 sortent par les foramens sacrés antérieurs vers le plexus sacral, ceux de S5 par le hiatus sacral.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Coccygeal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Sacrum",
+     "bord": "inferieur",
+     "decale": [
+      5,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Coccyx",
+     "rel": [
+      1.1,
+      0.9,
+      0.0
+     ]
+    },
+    {
+     "objet": "Coccyx",
+     "rel": [
+      1.0,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "texte": "Dernier nerf spinal (Co1) : il sort par le hiatus sacral, contourne la face latérale du coccyx, perfore le muscle coccygien et s'unit à S4-S5 dans le plexus coccygien.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Coccygeal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 1.5,
+   "le_long": [
+    {
+     "objet": "Coccyx",
+     "rel": [
+      0.5,
+      0.9,
+      1.0
+     ]
+    },
+    {
+     "objet": "Coccyx",
+     "rel": [
+      0.9,
+      0.2,
+      1.0
+     ]
+    },
+    {
+     "objet": "Coccygeus muscle",
+     "rel": [
+      0.0,
+      0.0,
+      0.9
+     ]
+    }
+   ],
+   "texte": "Petit réseau formé par une partie de S4, par S5 et par le nerf coccygien, sur la face pelvienne du muscle coccygien ; il donne les nerfs anococcygiens.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anococcygeal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Coccyx",
+     "rel": [
+      0.9,
+      0.2,
+      1.0
+     ]
+    },
+    {
+     "objet": "Coccygeus muscle",
+     "rel": [
+      0.6,
+      -0.4,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Coccyx",
+     "bord": "inferieur",
+     "decale": [
+      5,
+      -4,
+      -10
+     ]
+    }
+   ],
+   "texte": "Rameau du plexus coccygien qui perfore le ligament sacro-tubéral et innerve la peau entre le coccyx et l'anus.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior anal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Pudendal nerve",
+     "a": 0.4
+    },
+    {
+     "objet": "External anal sphincter",
+     "rel": [
+      0.8,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "External anal sphincter",
+     "rel": [
+      -0.3,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Branche du nerf pudendal dans le canal pudendal : elle traverse la fosse ischio-anale et innerve le sphincter externe de l'anus et la peau périanale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Perineal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Pudendal nerve",
+     "a": 0.7
+    },
+    {
+     "objet": "Corpus spongiosum of penis",
+     "rel": [
+      0.6,
+      0.2,
+      -0.7
+     ]
+    },
+    {
+     "objet": "Corpus spongiosum of penis",
+     "rel": [
+      0.8,
+      -0.2,
+      -0.5
+     ],
+     "decale": [
+      6,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche terminale du nerf pudendal qui se divise en rameaux superficiels (peau du périnée et du scrotum) et profond (muscles du périnée et bulbe du pénis).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior anal nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Rectum",
+      "rel": [
+       0.9,
+       -0.3,
+       0.2
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       0.4,
+       -0.9,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Rectum",
+      "rel": [
+       0.9,
+       -0.3,
+       -0.2
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       0.4,
+       -0.9,
+       -0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Fins rameaux issus des plexus pelviens, qui descendent le long du rectum et innervent la muqueuse du canal anal au-dessus de la ligne pectinée.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior cervical ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Sympathetic trunk",
+    "a": 0.05,
+    "decale": [
+     0,
+     6,
+     0
+    ]
+   },
+   "taille_mm": [
+    5,
+    4,
+    25
+   ],
+   "vers": {
+    "objet": "Sympathetic trunk",
+    "a": 0.05,
+    "decale": [
+     0,
+     20,
+     0
+    ]
+   },
+   "texte": "Le plus grand ganglion du tronc sympathique (environ 2,5 cm), fusiforme, devant les processus transverses de C2 et C3, derrière l'artère carotide interne ; il envoie les fibres sympathiques à la tête et au cou.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle cervical ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Sympathetic trunk",
+    "a": 0.12
+   },
+   "taille_mm": [
+    4,
+    3,
+    8
+   ],
+   "vers": {
+    "objet": "Sympathetic trunk",
+    "a": 0.15
+   },
+   "texte": "Petit ganglion inconstant du tronc sympathique cervical, au niveau de C6, près de l'artère thyroïdienne inférieure ; il donne le nerf cardiaque cervical moyen.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Cervicothoracic ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Sympathetic trunk",
+    "a": 0.23
+   },
+   "taille_mm": [
+    6,
+    4,
+    22
+   ],
+   "vers": {
+    "objet": "Sympathetic trunk",
+    "a": 0.19
+   },
+   "texte": "Ganglion étoilé : fusion du ganglion cervical inférieur et du premier ganglion thoracique, au col de la première côte, derrière l'origine de l'artère vertébrale ; il innerve le cœur, le membre supérieur et l'encéphale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Jugular nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.05,
+     "decale": [
+      0,
+      18,
+      0
+     ]
+    },
+    {
+     "objet": "Vagus nerve (X)",
+     "a": 0.2
+    },
+    {
+     "objet": "Vagus nerve (X)",
+     "a": 0.12
+    }
+   ],
+   "texte": "Rameau sympathique du ganglion cervical supérieur qui monte vers le foramen jugulaire pour joindre les ganglions du glossopharyngien et du vague.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Internal carotid nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.05,
+     "decale": [
+      0,
+      18,
+      0
+     ]
+    },
+    {
+     "objet": "Internal carotid artery",
+     "a": 0.3
+    },
+    {
+     "objet": "Internal carotid artery",
+     "a": 0.55
+    },
+    {
+     "objet": "Internal carotid artery",
+     "a": 0.75
+    }
+   ],
+   "texte": "Prolongement ascendant du ganglion cervical supérieur : il pénètre dans le canal carotidien avec l'artère carotide interne et s'y divise en plexus carotidien interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "External carotid nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.05,
+      "decale": [
+       0,
+       6,
+       0
+      ]
+     },
+     {
+      "objet": "External carotid artery",
+      "a": 0.15
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.05,
+      "decale": [
+       0,
+       6,
+       0
+      ]
+     },
+     {
+      "objet": "External carotid artery",
+      "a": 0.45
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.05,
+      "decale": [
+       0,
+       6,
+       0
+      ]
+     },
+     {
+      "objet": "External carotid artery",
+      "a": 0.75
+     }
+    ]
+   ],
+   "texte": "Rameaux sympathiques du ganglion cervical supérieur qui rejoignent l'artère carotide externe et forment son plexus.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Laryngopharyngeal nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.05,
+      "decale": [
+       0,
+       6,
+       0
+      ]
+     },
+     {
+      "objet": "Middle pharyngeal constrictor",
+      "rel": [
+       0.9,
+       0.7,
+       0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.05,
+      "decale": [
+       0,
+       6,
+       0
+      ]
+     },
+     {
+      "objet": "Inferior pharyngeal constrictor",
+      "rel": [
+       0.9,
+       0.7,
+       0.0
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux sympathiques du ganglion cervical supérieur qui se portent vers le plexus pharyngien et le larynx.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior cervical cardiac nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.07
+    },
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.13,
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.21,
+     "decale": [
+      3,
+      0,
+      5
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      1.15,
+      -0.2,
+      0.1
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      0.2,
+      -0.85,
+      1.15
+     ]
+    }
+   ],
+   "texte": "Nerf né du ganglion cervical supérieur, qui descend derrière l'artère carotide commune et le long du tronc sympathique jusqu'au plexus cardiaque, en avant de la bifurcation trachéale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle cervical cardiac nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.12
+    },
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.2,
+     "decale": [
+      2,
+      0,
+      3
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      1.15,
+      -0.4,
+      0.1
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      0.2,
+      -0.85,
+      1.15
+     ]
+    }
+   ],
+   "texte": "Plus gros des nerfs cardiaques sympathiques, né du ganglion cervical moyen ; il descend dans le cou puis le médiastin jusqu'au plexus cardiaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior cervical cardiac nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.23
+    },
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.28,
+     "decale": [
+      0,
+      0,
+      2
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      1.1,
+      -0.5,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      0.2,
+      -0.85,
+      1.15
+     ]
+    }
+   ],
+   "texte": "Nerf né du ganglion cervicothoracique (étoilé), qui descend derrière l'artère sous-clavière et la crosse de l'aorte jusqu'au plexus cardiaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Vertebral nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.23
+    },
+    {
+     "objet": "Vertebral artery",
+     "a": 0.05
+    },
+    {
+     "objet": "Vertebral artery",
+     "a": 0.35
+    },
+    {
+     "objet": "Vertebral artery",
+     "a": 0.65
+    }
+   ],
+   "texte": "Branche du ganglion cervicothoracique qui monte avec l'artère vertébrale dans les foramens transversaires jusqu'à C2 et donne les fibres sympathiques du plexus vertébral et de l'artère basilaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Vertebral plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Vertebral artery",
+    "de": 0.0,
+    "a": 0.85
+   },
+   "texte": "Plexus sympathique qui entoure l'artère vertébrale, dans les foramens transversaires, issu du nerf vertébral ; il se poursuit sur l'artère basilaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Subclavian plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.2,
+   "autour": {
+    "objet": "Subclavian artery"
+   },
+   "texte": "Plexus sympathique qui entoure l'artère sous-clavière, prolongé par le plexus autonome du membre supérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Brachial autonomic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "le_long": [
+    {
+     "objet": "Axillary artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Axillary artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Brachial artery",
+     "a": 0.4
+    },
+    {
+     "objet": "Brachial artery",
+     "a": 0.9
+    }
+   ],
+   "texte": "Plexus autonome (sympathique) qui accompagne les artères axillaire et brachiale ; il innerve les vaisseaux et les glandes sudoripares du membre supérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Common carotid plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.2,
+   "autour": {
+    "objet": "Common carotid artery"
+   },
+   "texte": "Plexus sympathique qui entoure l'artère carotide commune, issu du tronc sympathique cervical et des nerfs carotidiens.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Internal carotid plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Internal carotid artery",
+    "de": 0.0,
+    "a": 0.8
+   },
+   "texte": "Plexus sympathique issu du nerf carotidien interne, autour de l'artère carotide interne dans le canal carotidien ; il donne les nerfs pétreux profond et caroticotympaniques.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Cavernous plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Internal carotid artery",
+    "de": 0.8,
+    "a": 1.0
+   },
+   "texte": "Prolongement du plexus carotidien interne dans le sinus caverneux, autour de la partie caverneuse de l'artère carotide interne ; il envoie des rameaux aux nerfs oculomoteurs, au ganglion ciliaire et à l'œil.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "External carotid plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "External carotid artery"
+   },
+   "texte": "Plexus sympathique qui entoure l'artère carotide externe et ses branches, issu des nerfs carotidiens externes.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Deep petrosal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Internal carotid artery",
+     "a": 0.62
+    },
+    {
+     "repere": "Apex of petrous part",
+     "decale": [
+      0,
+      -3,
+      -2
+     ]
+    },
+    {
+     "repere": "Pterygoid canal"
+    }
+   ],
+   "texte": "Branche sympathique du plexus carotidien interne qui traverse le foramen déchiré et rejoint le nerf grand pétreux pour former le nerf du canal ptérygoïdien.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Caroticotympanic nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Internal carotid artery",
+      "a": 0.45
+     },
+     {
+      "objet": "Cochlea",
+      "rel": [
+       1.05,
+       -0.6,
+       -0.4
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Internal carotid artery",
+      "a": 0.55
+     },
+     {
+      "objet": "Cochlea",
+      "rel": [
+       1.05,
+       -0.6,
+       -0.4
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux fins rameaux sympathiques du plexus carotidien interne qui traversent la paroi du canal carotidien et rejoignent le plexus tympanique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pineal nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.3,
+    0.2
+   ],
+   "points": [
+    {
+     "objet": "Internal carotid artery",
+     "a": 0.95
+    },
+    {
+     "objet": "Tentorium cerebelli",
+     "rel": [
+      -0.6,
+      0.5,
+      0.3
+     ]
+    },
+    {
+     "objet": "Tentorium cerebelli",
+     "rel": [
+      -0.9,
+      0.7,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Pineal gland",
+     "centre": true
+    }
+   ],
+   "texte": "Nerfs coniaires : fibres sympathiques postganglionnaires nées du ganglion cervical supérieur qui gagnent le sinus caverneux puis la tente du cervelet et se distribuent à la glande pinéale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Thoracic cardiac nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.3
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       1.2,
+       -0.35,
+       0.0
+      ]
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       0.2,
+       -0.85,
+       1.15
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.355
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       1.2,
+       -0.45,
+       0.0
+      ]
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       0.2,
+       -0.85,
+       1.15
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.416
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       1.2,
+       -0.55,
+       0.0
+      ]
+     },
+     {
+      "objet": "Trachea",
+      "rel": [
+       0.2,
+       -0.85,
+       1.15
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux sympathiques des ganglions thoraciques T2 à T4 qui traversent le médiastin supérieur jusqu'au plexus cardiaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Thoracic pulmonary nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.36
+     },
+     {
+      "objet": "Main bronchus",
+      "rel": [
+       -0.2,
+       0.6,
+       -0.8
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.42
+     },
+     {
+      "objet": "Main bronchus",
+      "rel": [
+       0.1,
+       0.2,
+       -0.8
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.48
+     },
+     {
+      "objet": "Main bronchus",
+      "rel": [
+       0.4,
+       -0.2,
+       -0.8
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux sympathiques des ganglions thoraciques T2 à T4 (parfois T5) qui gagnent le plexus pulmonaire sur la face postérieure de la bronche principale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Oesophageal nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.48
+     },
+     {
+      "objet": "Oesophagus",
+      "a": 0.48,
+      "decale": [
+       5,
+       0,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.55
+     },
+     {
+      "objet": "Oesophagus",
+      "a": 0.585,
+      "decale": [
+       5,
+       0,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sympathetic trunk",
+      "a": 0.62
+     },
+     {
+      "objet": "Oesophagus",
+      "a": 0.69,
+      "decale": [
+       5,
+       0,
+       0
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux sympathiques des ganglions thoraciques moyens qui rejoignent le plexus œsophagien, avec les rameaux des nerfs vagues.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Greater thoracic splanchnic nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.48
+    },
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.66,
+     "decale": [
+      -4,
+      -2,
+      6
+     ]
+    },
+    {
+     "objet": "Thoracic aorta",
+     "a": 0.9,
+     "decale": [
+      7,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Abdominal aorta",
+     "a": 0.08,
+     "decale": [
+      8,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Coeliac trunk",
+     "a": 0.15,
+     "decale": [
+      7,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Nerf préganglionnaire issu des ganglions thoraciques T5 à T9 : il descend sur les corps vertébraux, traverse le pilier du diaphragme et se termine dans le ganglion cœliaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Thoracic splanchnic ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Thoracic aorta",
+    "a": 0.9,
+    "decale": [
+     7,
+     0,
+     0
+    ]
+   },
+   "taille_mm": [
+    3,
+    2,
+    4
+   ],
+   "texte": "Petit ganglion inconstant sur le grand nerf splanchnique thoracique, près du diaphragme, où des neurones postganglionnaires s'intercalent.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lesser thoracic splanchnic nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.78
+    },
+    {
+     "objet": "Thoracic aorta",
+     "a": 0.97,
+     "decale": [
+      9,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Renal artery",
+     "a": 0.02,
+     "decale": [
+      4,
+      4,
+      2
+     ]
+    }
+   ],
+   "texte": "Nerf préganglionnaire issu des ganglions thoraciques T10-T11 : il traverse le diaphragme et se termine dans le ganglion aorticorénal, à l'origine de l'artère rénale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Least thoracic splanchnic nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Sympathetic trunk",
+     "a": 0.9
+    },
+    {
+     "objet": "Abdominal aorta",
+     "a": 0.2,
+     "decale": [
+      9,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Renal artery",
+     "a": 0.3,
+     "decale": [
+      0,
+      3,
+      0
+     ]
+    }
+   ],
+   "texte": "Nerf préganglionnaire issu du ganglion thoracique T12 : il traverse le diaphragme et rejoint le plexus rénal.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lumbar splanchnic nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Intervertebral disc L1-L2",
+      "rel": [
+       1.1,
+       0.0,
+       0.4
+      ]
+     },
+     {
+      "objet": "Abdominal aorta",
+      "a": 0.58,
+      "decale": [
+       6,
+       0,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc L2-L3",
+      "rel": [
+       1.1,
+       0.0,
+       0.4
+      ]
+     },
+     {
+      "objet": "Abdominal aorta",
+      "a": 0.76,
+      "decale": [
+       6,
+       0,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc L3-L4",
+      "rel": [
+       1.1,
+       0.0,
+       0.4
+      ]
+     },
+     {
+      "objet": "Abdominal aorta",
+      "a": 0.95,
+      "decale": [
+       6,
+       0,
+       0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Intervertebral disc L4-L5",
+      "rel": [
+       1.1,
+       0.0,
+       0.4
+      ]
+     },
+     {
+      "repere": "Aortic bifurcation",
+      "decale": [
+       4,
+       -3,
+       0
+      ]
+     }
+    ]
+   ],
+   "texte": "Quatre nerfs issus des ganglions lombaires du tronc sympathique, qui gagnent le plexus aortique abdominal, le plexus mésentérique inférieur et le plexus hypogastrique supérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior mesenteric ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Superior mesenteric artery",
+    "a": 0.02,
+    "decale": [
+     4,
+     0,
+     0
+    ]
+   },
+   "taille_mm": [
+    3,
+    2,
+    6
+   ],
+   "texte": "Ganglion prévertébral situé à l'origine de l'artère mésentérique supérieure, qui relaie les fibres sympathiques vers l'intestin grêle et le côlon droit.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior mesenteric ganglion",
+   "couche": "nerf",
+   "forme": "ganglion",
+   "cotes": "deux",
+   "en": {
+    "objet": "Inferior mesenteric artery",
+    "a": 0.03,
+    "decale": [
+     4,
+     0,
+     0
+    ]
+   },
+   "taille_mm": [
+    3,
+    2,
+    5
+   ],
+   "texte": "Ganglion prévertébral situé à l'origine de l'artère mésentérique inférieure, qui relaie les fibres sympathiques vers le côlon gauche, le rectum et les organes pelviens.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Cardiac plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.35,
+   "ecart_mm": 3,
+   "le_long": [
+    {
+     "objet": "Trachea",
+     "rel": [
+      -0.3,
+      -0.75,
+      1.2
+     ]
+    },
+    {
+     "objet": "Trachea",
+     "rel": [
+      0.5,
+      -0.9,
+      1.2
+     ]
+    },
+    {
+     "objet": "Pulmonary trunk",
+     "rel": [
+      -0.5,
+      -0.9,
+      -0.5
+     ]
+    }
+   ],
+   "texte": "Réseau autonome du médiastin moyen, sous la crosse de l'aorte et en avant de la bifurcation trachéale, formé des nerfs cardiaques sympathiques et des rameaux cardiaques du vague ; il innerve le cœur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Oesophageal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 6,
+   "autour": {
+    "objet": "Oesophagus",
+    "de": 0.45,
+    "a": 0.95
+   },
+   "texte": "Réseau formé des troncs des nerfs vagues et de rameaux sympathiques autour de la partie inférieure de l'œsophage ; il innerve la muqueuse et les muscles de l'œsophage.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pulmonary plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 6,
+   "autour": {
+    "objet": "Main bronchus"
+   },
+   "texte": "Réseau du hile pulmonaire, en arrière des bronches principales, formé des nerfs vagues et sympathiques ; il innerve les bronches et les vaisseaux du poumon.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Thoracic aortic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 3,
+   "autour": {
+    "objet": "Thoracic aorta"
+   },
+   "texte": "Réseau autonome qui entoure l'aorte thoracique, formé de rameaux sympathiques du tronc et des nerfs splanchniques.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Abdominal aortic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 3,
+   "autour": {
+    "objet": "Abdominal aorta"
+   },
+   "texte": "Prolongement du plexus cœliaque autour de l'aorte abdominale, avec les nerfs splanchniques lombaires ; il se continue par le plexus hypogastrique supérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Coeliac plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 5,
+   "rayon": 0.35,
+   "ecart_mm": 4,
+   "autour": {
+    "objet": "Coeliac trunk"
+   },
+   "texte": "Le plus grand plexus du système autonome, autour de l'origine du tronc cœliaque, avec les ganglions cœliaques ; il distribue des fibres à l'estomac, au foie, à la rate, au pancréas et aux reins.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Hepatic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Proper hepatic artery",
+    "de": 0.0,
+    "a": 0.6
+   },
+   "texte": "Réseau qui accompagne l'artère hépatique propre et la veine porte jusqu'au foie et à la vésicule biliaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Splenic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Splenic artery",
+    "de": 0.3,
+    "a": 1.0
+   },
+   "texte": "Réseau issu du plexus cœliaque qui accompagne l'artère splénique jusqu'au hile de la rate.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pancreatic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2,
+   "le_long": [
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.75,
+      -0.3,
+      0.3
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.25,
+      0.0,
+      0.3
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      0.25,
+      0.1,
+      0.3
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      0.75,
+      0.2,
+      0.3
+     ]
+    }
+   ],
+   "texte": "Réseau issu du plexus cœliaque, du plexus mésentérique supérieur et du vague, qui suit les artères pancréatiques et innerve le pancréas.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Suprarenal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2,
+   "le_long": [
+    {
+     "objet": "Coeliac trunk",
+     "a": 0.15,
+     "decale": [
+      7,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Suprarenal gland",
+     "rel": [
+      -0.6,
+      -0.2,
+      0.0
+     ]
+    },
+    {
+     "objet": "Suprarenal gland",
+     "centre": true
+    }
+   ],
+   "texte": "Réseau issu des ganglions cœliaques et des nerfs splanchniques, qui pénètre dans la glande surrénale et innerve surtout la médullosurrénale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Renal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Renal artery"
+   },
+   "texte": "Réseau autour de l'artère rénale, issu du plexus cœliaque, des nerfs splanchniques et du plexus aortique, qui accompagne les vaisseaux dans le hile du rein.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Ureteric plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.25,
+   "ecart_mm": 1.5,
+   "autour": {
+    "objet": "Ureter",
+    "de": 0.15,
+    "a": 0.95
+   },
+   "texte": "Fin réseau autonome qui entoure l'uretère, issu des plexus rénal, aortique et hypogastriques.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior mesenteric plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 3,
+   "autour": {
+    "objet": "Superior mesenteric artery",
+    "de": 0.0,
+    "a": 0.5
+   },
+   "texte": "Réseau autour de l'artère mésentérique supérieure issu du plexus cœliaque ; il accompagne ses branches jusqu'à l'intestin grêle et au côlon jusqu'à l'angle gauche.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Intermesenteric plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Abdominal aorta",
+    "de": 0.6,
+    "a": 0.93
+   },
+   "texte": "Partie du plexus aortique abdominal entre les origines des artères mésentériques supérieure et inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior mesenteric plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Inferior mesenteric artery",
+    "de": 0.0,
+    "a": 0.7
+   },
+   "texte": "Réseau autour de l'artère mésentérique inférieure qui innerve le côlon gauche et le haut du rectum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Phrenic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.25,
+   "ecart_mm": 2,
+   "le_long": [
+    {
+     "objet": "Coeliac trunk",
+     "a": 0.15,
+     "decale": [
+      7,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Thoracic aorta",
+     "a": 0.97,
+     "decale": [
+      14,
+      10,
+      0
+     ]
+    },
+    {
+     "objet": "Diaphragm",
+     "proche": true
+    }
+   ],
+   "texte": "Réseau qui accompagne l'artère phrénique inférieure vers la face inférieure du diaphragme ; il reçoit des fibres du nerf phrénique et rejoint le plexus cœliaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Iliac plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "le_long": [
+    {
+     "objet": "Common iliac artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Common iliac artery",
+     "a": 1.0
+    },
+    {
+     "objet": "External iliac artery",
+     "a": 0.5
+    },
+    {
+     "objet": "External iliac artery",
+     "a": 1.0
+    }
+   ],
+   "texte": "Prolongement du plexus aortique autour des artères iliaques commune et externe.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Femoral plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Femoral artery",
+    "de": 0.0,
+    "a": 0.4
+   },
+   "texte": "Prolongement du plexus iliaque autour de l'artère fémorale, qui innerve les vaisseaux de la cuisse.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior hypogastric plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 3,
+   "autour": {
+    "objet": "Median sacral artery",
+    "de": 0.0,
+    "a": 0.3
+   },
+   "texte": "Réseau impair situé en avant de la bifurcation aortique, de L5 et du promontoire du sacrum, entre les artères iliaques communes ; il prolonge le plexus aortique et se divise en nerfs hypogastriques.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Hypogastric nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "Median sacral artery",
+     "a": 0.28,
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Sacrum",
+     "rel": [
+      0.35,
+      0.5,
+      1.15
+     ]
+    },
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.3,
+      0.9,
+      0.2
+     ]
+    }
+   ],
+   "texte": "Chacun des deux nerfs hypogastriques unit le plexus hypogastrique supérieur au plexus hypogastrique inférieur, en descendant devant le sacrum, le long du rectum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior hypogastric plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "le_long": [
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.3,
+      0.9,
+      0.2
+     ]
+    },
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.3,
+      0.4,
+      0.2
+     ]
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      1.0,
+      -0.7,
+      -0.8
+     ]
+    }
+   ],
+   "texte": "Plexus pelvien sur la paroi latérale du rectum, de la vessie et de la prostate ; il reçoit les nerfs hypogastriques et splanchniques pelviens et distribue des fibres à tous les organes pelviens.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pelvic splanchnic nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       0.15,
+       0.43
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       1.3,
+       0.7,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       -0.24,
+       -0.4
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       1.3,
+       0.5,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.3,
+       -0.59,
+       -0.52
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       1.3,
+       0.3,
+       0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Fibres parasympathiques préganglionnaires des rameaux antérieurs de S2 à S4 qui rejoignent le plexus hypogastrique inférieur ; elles innervent le côlon descendant, le rectum, la vessie et les organes génitaux.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Sacral splanchnic nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.15,
+       0.55,
+       0.7
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       1.3,
+       0.8,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.15,
+       0.15,
+       0.35
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       1.3,
+       0.6,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Sacrum",
+      "rel": [
+       0.15,
+       -0.24,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Rectum",
+      "rel": [
+       1.3,
+       0.4,
+       0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux sympathiques des ganglions sacraux du tronc sympathique, sur la face pelvienne du sacrum, qui rejoignent le plexus hypogastrique inférieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle anorectal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2,
+   "le_long": [
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.1,
+      0.4,
+      0.2
+     ]
+    },
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.15,
+      0.1,
+      0.0
+     ]
+    },
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.1,
+      -0.3,
+      -0.2
+     ]
+    }
+   ],
+   "texte": "Partie du plexus hypogastrique inférieur qui accompagne l'artère rectale moyenne sur la paroi latérale du rectum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Rectal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 4,
+   "rayon": 0.3,
+   "ecart_mm": 12,
+   "autour": {
+    "objet": "Rectum"
+   },
+   "texte": "Réseau autonome entourant le rectum, issu des plexus mésentérique inférieur et hypogastrique inférieur, qui innerve ses muscles et sa muqueuse.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior anorectal plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "milieu",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2.5,
+   "autour": {
+    "objet": "Superior anorectal artery",
+    "de": 0.0,
+    "a": 0.8
+   },
+   "texte": "Prolongement du plexus mésentérique inférieur le long de l'artère rectale supérieure vers le haut du rectum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Vesical plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2,
+   "le_long": [
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      1.0,
+      -0.5,
+      -0.7
+     ]
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      1.0,
+      -0.3,
+      0.0
+     ]
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      1.0,
+      -0.2,
+      0.6
+     ]
+    }
+   ],
+   "texte": "Réseau issu du plexus hypogastrique inférieur sur la face inférolatérale de la vessie, qui innerve le muscle détrusor et le trigone.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Prostatic plexus",
+   "couche": "nerf",
+   "forme": "plexus",
+   "cotes": "deux",
+   "brins": 3,
+   "rayon": 0.3,
+   "ecart_mm": 2,
+   "le_long": [
+    {
+     "objet": "Prostate",
+     "rel": [
+      1.1,
+      0.6,
+      -0.6
+     ]
+    },
+    {
+     "objet": "Prostate",
+     "rel": [
+      1.2,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "objet": "Prostate",
+     "rel": [
+      1.1,
+      -0.5,
+      0.6
+     ]
+    }
+   ],
+   "texte": "Réseau issu du plexus hypogastrique inférieur sur les faces latérales de la prostate ; ses nerfs caverneux innervent les corps érectiles du pénis.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Perforating cutaneous nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Pudendal nerve",
+     "a": 0.05
+    },
+    {
+     "repere": "Ischial tuberosity",
+     "decale": [
+      -10,
+      15,
+      -5
+     ]
+    },
+    {
+     "objet": "Gluteus maximus muscle",
+     "rel": [
+      -0.1,
+      -0.05,
+      -0.95
+     ]
+    }
+   ],
+   "texte": "Branche des rameaux antérieurs de S2-S3 qui perfore le ligament sacro-tubéral et le bord inférieur du grand glutéal et innerve la peau de la partie inféromédiale de la fesse.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior gluteal cutaneous nerves",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Posterior femoral cutaneous nerve",
+      "a": 0.28
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       0.0,
+       -0.1,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Posterior femoral cutaneous nerve",
+      "a": 0.28
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       0.3,
+       0.0,
+       -0.95
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Posterior femoral cutaneous nerve",
+      "a": 0.28
+     },
+     {
+      "objet": "Gluteus maximus muscle",
+      "rel": [
+       0.6,
+       0.15,
+       -0.95
+      ]
+     }
+    ]
+   ],
+   "texte": "Rameaux du nerf cutané postérieur de la cuisse qui contournent le bord inférieur du grand glutéal et remontent innerver la peau de la partie inférieure de la fesse.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral sural cutaneous nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Common fibular nerve",
+     "a": 0.15
+    },
+    {
+     "objet": "Lateral head of gastrocnemius",
+     "rel": [
+      0.2,
+      0.9,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Lateral head of gastrocnemius",
+     "rel": [
+      0.7,
+      0.4,
+      0.0
+     ]
+    },
+    {
+     "objet": "Fibularis longus muscle",
+     "rel": [
+      0.8,
+      0.3,
+      0.2
+     ]
+    }
+   ],
+   "texte": "Branche du nerf fibulaire commun née dans la fosse poplitée : elle croise le chef latéral du gastrocnémien et innerve la peau de la face latérale de la jambe ; elle est unie au nerf sural par la branche surale communicante.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Crural interosseous nerve",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Tibial nerve",
+     "a": 0.35
+    },
+    {
+     "objet": "Interosseous membrane of leg",
+     "rel": [
+      0.2,
+      0.8,
+      -1.0
+     ]
+    },
+    {
+     "objet": "Interosseous membrane of leg",
+     "rel": [
+      0.0,
+      0.0,
+      -1.0
+     ]
+    },
+    {
+     "objet": "Interosseous membrane of leg",
+     "rel": [
+      -0.2,
+      -0.9,
+      -0.8
+     ]
+    }
+   ],
+   "texte": "Branche du nerf tibial qui descend sur la face postérieure de la membrane interosseuse de la jambe et innerve la membrane, le périoste et la syndesmose tibiofibulaire distale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral dorsal cutaneous nerve of foot",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Sural nerve",
+     "a": 1.0
+    },
+    {
+     "objet": "Fifth metatarsal bone",
+     "rel": [
+      0.8,
+      0.8,
+      0.1
+     ]
+    },
+    {
+     "objet": "Fifth metatarsal bone",
+     "rel": [
+      0.2,
+      0.9,
+      0.9
+     ]
+    },
+    {
+     "objet": "Distal phalanx of fifth finger of foot",
+     "rel": [
+      0.0,
+      0.7,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Prolongement du nerf sural qui passe derrière la malléole latérale, longe le bord latéral du pied et se termine sur la face dorsale du cinquième orteil.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior nerve of lesser curvature",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "repere": "Cardia",
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    },
+    {
+     "repere": "Lesser curvature of stomach"
+    },
+    {
+     "repere": "Angular incisure",
+     "decale": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "repere": "Pyloric antrum"
+    }
+   ],
+   "texte": "Nerf de Latarjet antérieur : prolongement du tronc vagal antérieur, il descend le long de la petite courbure sur la face antérieure de l'estomac et se termine dans l'antre pylorique par des rameaux en « patte d'oie ».",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior nerve of lesser curvature",
+   "couche": "nerf",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "repere": "Cardia",
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    },
+    {
+     "repere": "Lesser curvature of stomach",
+     "decale": [
+      0,
+      0,
+      -40
+     ]
+    },
+    {
+     "repere": "Angular incisure",
+     "decale": [
+      0,
+      0,
+      -28
+     ]
+    },
+    {
+     "repere": "Pyloric antrum",
+     "decale": [
+      0,
+      0,
+      -22
+     ]
+    }
+   ],
+   "texte": "Nerf de Latarjet postérieur : prolongement du tronc vagal postérieur, il longe la petite courbure sur la face postérieure de l'estomac et innerve l'antre et le pylore ; il donne aussi le rameau cœliaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,918 @@
+{
+ "lot": "encephale-ajouts-2",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "gyrus-fasciculaire",
+   "nom": "Gyrus fasciculaire",
+   "latin": "Gyrus fasciolaris",
+   "anglais": "Fasciolar gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus fasciculaire",
+   "ta2": "5525",
+   "connu": {
+    "description_du_trace": "Mince bande grise située derrière le splénium du corps calleux, prolongement postérieur du gyrus dentatus vers le gyrus supracalleux.",
+    "appui_dans_le_modele": {
+     "id": "hippocampe",
+     "nom": "Hippocampe"
+    }
+   }
+  },
+  {
+   "id": "gyrus-fornicatus",
+   "nom": "Gyrus fornicatus",
+   "latin": "Gyrus fornicatus",
+   "anglais": "Fornicate gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus fornicatus",
+   "ta2": "5512",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-cingulaire",
+      "nom": "Gyrus cingulaire"
+     },
+     {
+      "id": "gyrus-occipitotemporal-medial",
+      "nom": "Gyrus occipitotemporal médial"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gyrus-frontal-inferieur",
+   "nom": "Gyrus frontal inférieur",
+   "latin": "Gyrus frontalis inferior",
+   "anglais": "Inferior frontal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus frontal inférieur",
+   "ta2": "5447",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "partie-operculaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie operculaire du gyrus frontal inférieur"
+     },
+     {
+      "id": "partie-triangulaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie triangulaire du gyrus frontal inférieur"
+     },
+     {
+      "id": "partie-orbitaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie orbitaire du gyrus frontal inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gyrus-limbique",
+   "nom": "Gyrus limbique",
+   "latin": "Gyrus limbicus",
+   "anglais": "Limbic gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus limbique",
+   "ta2": "5508",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-cingulaire",
+      "nom": "Gyrus cingulaire"
+     },
+     {
+      "id": "gyrus-occipitotemporal-medial",
+      "nom": "Gyrus occipitotemporal médial"
+     },
+     {
+      "id": "gyrus-dentatus",
+      "nom": "Gyrus dentatus"
+     },
+     {
+      "id": "gyrus-fasciculaire",
+      "nom": "Gyrus fasciculaire"
+     },
+     {
+      "id": "gyrus-paraterminal",
+      "nom": "Gyrus paraterminal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gyrus-paraterminal",
+   "nom": "Gyrus paraterminal",
+   "latin": "Gyrus paraterminalis",
+   "anglais": "Paraterminal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus paraterminal",
+   "ta2": "5517",
+   "connu": {
+    "description_du_trace": "Petit gyrus de la face médiale du lobe frontal, juste devant la lame terminale et sous le rostre du corps calleux ; il fait partie de l'aire subcalleuse du système limbique.",
+    "appui_dans_le_modele": {
+     "id": "noyaux-septaux",
+     "nom": "Noyaux septaux"
+    }
+   }
+  },
+  {
+   "id": "lobe-flocculonodulaire",
+   "nom": "Lobe flocculonodulaire",
+   "latin": "Lobus flocculonodularis",
+   "anglais": "Flocculonodular lobe",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobe flocculonodulaire",
+   "ta2": "5799",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "flocculus",
+      "nom": "Flocculus"
+     },
+     {
+      "id": "nodule-du-vermis",
+      "nom": "Nodule du vermis"
+     },
+     {
+      "id": "pedoncule-du-flocculus",
+      "nom": "Pédoncule du flocculus"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobe-frontal",
+   "nom": "Lobe frontal",
+   "latin": "Lobus frontalis",
+   "anglais": "Frontal lobe",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobe frontal",
+   "ta2": "5445",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "sillon-frontal-inferieur",
+      "nom": "Sillon frontal inférieur"
+     },
+     {
+      "id": "rameau-anterieur-du-sillon-lateral",
+      "nom": "Rameau antérieur du sillon latéral"
+     },
+     {
+      "id": "rameau-ascendant-du-sillon-lateral",
+      "nom": "Rameau ascendant du sillon latéral"
+     },
+     {
+      "id": "gyrus-frontal-moyen",
+      "nom": "Gyrus frontal moyen"
+     },
+     {
+      "id": "sillon-olfactif",
+      "nom": "Sillon olfactif"
+     },
+     {
+      "id": "partie-operculaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie operculaire du gyrus frontal inférieur"
+     },
+     {
+      "id": "gyri-orbitaires",
+      "nom": "Gyri orbitaires"
+     },
+     {
+      "id": "encephale-gyri-orbitaires",
+      "nom": "Gyri orbitaires"
+     },
+     {
+      "id": "partie-orbitaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie orbitaire du gyrus frontal inférieur"
+     },
+     {
+      "id": "sillons-orbitaires",
+      "nom": "Sillons orbitaires"
+     },
+     {
+      "id": "encephale-sillons-orbitaires",
+      "nom": "Sillons orbitaires"
+     },
+     {
+      "id": "lobule-paracentral",
+      "nom": "Lobule paracentral"
+     },
+     {
+      "id": "sillon-paracentral",
+      "nom": "Sillon paracentral"
+     },
+     {
+      "id": "gyrus-precentral",
+      "nom": "Gyrus précentral"
+     },
+     {
+      "id": "sillon-precentral",
+      "nom": "Sillon précentral"
+     },
+     {
+      "id": "gyrus-rectus",
+      "nom": "Gyrus rectus"
+     },
+     {
+      "id": "gyrus-frontal-superieur",
+      "nom": "Gyrus frontal supérieur"
+     },
+     {
+      "id": "sillon-frontal-superieur",
+      "nom": "Sillon frontal supérieur"
+     },
+     {
+      "id": "gyrus-et-sillon-frontopolaires-transverses",
+      "nom": "Gyrus et sillon frontopolaires transverses"
+     },
+     {
+      "id": "partie-triangulaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie triangulaire du gyrus frontal inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobe-limbique",
+   "nom": "Lobe limbique",
+   "latin": "Lobus limbicus",
+   "anglais": "Limbic lobe",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobe limbique",
+   "ta2": "5507",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-cingulaire",
+      "nom": "Gyrus cingulaire"
+     },
+     {
+      "id": "sillon-cingulaire",
+      "nom": "Sillon cingulaire"
+     },
+     {
+      "id": "hippocampe",
+      "nom": "Hippocampe"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobe-occipital",
+   "nom": "Lobe occipital",
+   "latin": "Lobus occipitalis",
+   "anglais": "Occipital lobe",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobe occipital",
+   "ta2": "5480",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "sillon-calcarin",
+      "nom": "Sillon calcarin"
+     },
+     {
+      "id": "cuneus",
+      "nom": "Cunéus"
+     },
+     {
+      "id": "gyrus-occipital-inferieur",
+      "nom": "Gyrus occipital inférieur"
+     },
+     {
+      "id": "gyrus-occipital-lateral",
+      "nom": "Gyrus occipital latéral"
+     },
+     {
+      "id": "gyrus-lingual",
+      "nom": "Gyrus lingual"
+     },
+     {
+      "id": "sillon-lunaire",
+      "nom": "Sillon lunaire"
+     },
+     {
+      "id": "pole-occipital",
+      "nom": "Pôle occipital"
+     },
+     {
+      "id": "gyri-occipitaux-superieurs",
+      "nom": "Gyri occipitaux supérieurs"
+     },
+     {
+      "id": "sillon-occipital-transverse",
+      "nom": "Sillon occipital transverse"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobe-parietal",
+   "nom": "Lobe pariétal",
+   "latin": "Lobus parietalis",
+   "anglais": "Parietal lobe",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobe pariétal",
+   "ta2": "5467",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-angulaire",
+      "nom": "Gyrus angulaire"
+     },
+     {
+      "id": "sillon-intraparietal",
+      "nom": "Sillon intrapariétal"
+     },
+     {
+      "id": "gyrus-postcentral",
+      "nom": "Gyrus postcentral"
+     },
+     {
+      "id": "sillon-postcentral",
+      "nom": "Sillon postcentral"
+     },
+     {
+      "id": "precuneus",
+      "nom": "Précuneus"
+     },
+     {
+      "id": "lobule-parietal-superieur",
+      "nom": "Lobule pariétal supérieur"
+     },
+     {
+      "id": "gyrus-supramarginal",
+      "nom": "Gyrus supramarginal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobe-temporal",
+   "nom": "Lobe temporal",
+   "latin": "Lobus temporalis",
+   "anglais": "Temporal lobe",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobe temporal",
+   "ta2": "5488",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-temporal-inferieur",
+      "nom": "Gyrus temporal inférieur"
+     },
+     {
+      "id": "sillon-temporal-inferieur",
+      "nom": "Sillon temporal inférieur"
+     },
+     {
+      "id": "gyrus-occipitotemporal-lateral",
+      "nom": "Gyrus occipitotemporal latéral"
+     },
+     {
+      "id": "gyrus-occipitotemporal-medial",
+      "nom": "Gyrus occipitotemporal médial"
+     },
+     {
+      "id": "gyrus-temporal-moyen",
+      "nom": "Gyrus temporal moyen"
+     },
+     {
+      "id": "sillon-occipitotemporal",
+      "nom": "Sillon occipitotemporal"
+     },
+     {
+      "id": "gyrus-temporal-superieur",
+      "nom": "Gyrus temporal supérieur"
+     },
+     {
+      "id": "sillon-temporal-superieur",
+      "nom": "Sillon temporal supérieur"
+     },
+     {
+      "id": "planum-temporal",
+      "nom": "Planum temporal"
+     },
+     {
+      "id": "pole-temporal",
+      "nom": "Pôle temporal"
+     },
+     {
+      "id": "gyrus-temporal-transverse",
+      "nom": "Gyrus temporal transverse"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobule-parietal-inferieur",
+   "nom": "Lobule pariétal inférieur",
+   "latin": "Lobulus parietalis inferior",
+   "anglais": "Inferior parietal lobule",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobule pariétal inférieur",
+   "ta2": "5471",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-supramarginal",
+      "nom": "Gyrus supramarginal"
+     },
+     {
+      "id": "gyrus-angulaire",
+      "nom": "Gyrus angulaire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "locus-coeruleus",
+   "nom": "Locus cœruleus",
+   "latin": "Nucleus caeruleus",
+   "anglais": "Caerulean nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Locus cœruleus",
+   "ta2": "5944",
+   "connu": {
+    "description_du_trace": "Locus cœruleus : petit noyau pigmenté sous le plancher du quatrième ventricule, source principale de noradrénaline du cerveau (éveil, attention, stress).",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyan-habenulaire-medial",
+   "nom": "Noyan habénulaire médial",
+   "latin": "Nucleus habenularis medialis",
+   "anglais": "Medial habenular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyan habénulaire médial",
+   "ta2": "5677",
+   "connu": {
+    "description_du_trace": "Partie médiale de l'habenula, origine principale du tractus habénulo-interpédonculaire (faisceau rétroflexe).",
+    "appui_dans_le_modele": {
+     "id": "habenula",
+     "nom": "Habénula"
+    }
+   }
+  },
+  {
+   "id": "noyau-arque-de-l-hypothalamus",
+   "nom": "Noyau arqué de l'hypothalamus",
+   "latin": "Nucleus arcuatus hypothalami",
+   "anglais": "Arcuate nucleus of hypothalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau arqué de l'hypothalamus",
+   "ta2": "5726",
+   "connu": {
+    "description_du_trace": "Noyau infundibulaire au pied du troisième ventricule, au-dessus de l'éminence médiane ; il contrôle l'adénohypophyse et l'appétit.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-arque-de-la-moelle-allongee",
+   "nom": "Noyau arqué de la moëlle allongée",
+   "latin": "Nucleus arcuatus medullae oblongatae",
+   "anglais": "Arcuate nucleus of medulla oblongata",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau arqué de la moëlle allongée",
+   "ta2": "6016",
+   "connu": {
+    "description_du_trace": "Noyau appliqué à la face antérieure de la pyramide bulbaire, prolongement des noyaux du pont, relais vers le cervelet.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-commissural-posterieur",
+   "nom": "Noyau commissural postérieur",
+   "latin": "Nucleus commissurae posterioris",
+   "anglais": "Nucleus of posterior commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau commissural postérieur",
+   "ta2": "5741",
+   "connu": {
+    "description_du_trace": "Noyau de Darkschewitsch, au pied de la commissure postérieure ; intervient dans la coordination des mouvements oculaires verticaux.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-cuneiforme",
+   "nom": "Noyau cunéiforme",
+   "latin": "Nucleus cuneiformis",
+   "anglais": "Cuneiform nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau cunéiforme",
+   "ta2": "5900",
+   "connu": {
+    "description_du_trace": "Noyau du tegmentum mésencéphalique dorsolatéral, au-dessus du pédoncule cérébelleux supérieur ; il intervient dans la locomotion et les réactions de défense.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "encephale-noyau-cuneiforme",
+   "nom": "Noyau cunéiforme",
+   "latin": "Nucleus cuneatus",
+   "anglais": "Cuneate nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau cunéiforme",
+   "ta2": "5999",
+   "connu": {
+    "description_du_trace": "Noyau du tubercule cunéiforme, en dehors du noyau gracile : relais de la sensibilité tactile fine et proprioceptive du membre supérieur (faisceau cunéiforme).",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-cuneiforme-accessoire",
+   "nom": "Noyau cunéiforme accessoire",
+   "latin": "Nucleus cuneatus accessorius",
+   "anglais": "Accessory cuneate nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau cunéiforme accessoire",
+   "ta2": "6000",
+   "connu": {
+    "description_du_trace": "Noyau cunéiforme accessoire (externe) : il transmet la proprioception du membre supérieur au cervelet par le pédoncule cérébelleux inférieur.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-d-origine-d-un-nerf-cranial",
+   "nom": "Noyau d'origine d'un nerf crânial",
+   "latin": "Nucleus originis nervi cranialis",
+   "anglais": "Nucleus of origin of cranial nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau d'origine d'un nerf crânial",
+   "ta2": "5858",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-du-nerf-oculomoteur",
+      "nom": "Noyau du nerf oculomoteur"
+     },
+     {
+      "id": "noyau-accessoire-du-nerf-oculomoteur",
+      "nom": "Noyau accessoire du nerf oculomoteur"
+     },
+     {
+      "id": "noyau-du-nerf-trochleaire",
+      "nom": "Noyau du nerf trochléaire"
+     },
+     {
+      "id": "noyau-du-nerf-abducens",
+      "nom": "Noyau du nerf abducens"
+     },
+     {
+      "id": "noyau-moteur-du-nerf-trigeminal",
+      "nom": "Noyau moteur du nerf trigéminal"
+     },
+     {
+      "id": "noyau-moteur-du-nef-facial",
+      "nom": "Noyau moteur du nef facial"
+     },
+     {
+      "id": "noyau-salivaire-superieur",
+      "nom": "Noyau salivaire supérieur"
+     },
+     {
+      "id": "noyau-larcrymal",
+      "nom": "Noyau larcrymal"
+     },
+     {
+      "id": "noyau-salivaire-inferieur",
+      "nom": "Noyau salivaire inférieur"
+     },
+     {
+      "id": "noyau-ambigu",
+      "nom": "Noyau ambigu"
+     },
+     {
+      "id": "noyau-posterieur-du-nerf-vague",
+      "nom": "Noyau postérieur du nerf vague"
+     },
+     {
+      "id": "noyau-du-nerf-hypoglosse",
+      "nom": "Noyau du nerf hypoglosse"
+     },
+     {
+      "id": "noyau-du-nerf-accessoire",
+      "nom": "Noyau du nerf accessoire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyau-de-l-aire-tegmentale-anterieure",
+   "nom": "Noyau de l'aire tegmentale antérieure",
+   "latin": "Nuclei areae tegmentalis anterioris",
+   "anglais": "Nuclei of anterior tegmental area",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau de l'aire tegmentale antérieure",
+   "ta2": "5896",
+   "connu": {
+    "description_du_trace": "Noyaux de l'aire tegmentale ventrale, près de la fosse interpédonculaire : neurones dopaminergiques du circuit de la récompense (voies mésolimbique et mésocorticale).",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-dentele",
+   "nom": "Noyau dentelé",
+   "latin": "Nucleus dentatus",
+   "anglais": "Dentate nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau dentelé",
+   "ta2": "5836",
+   "connu": {
+    "description_du_trace": "Le plus grand des noyaux cérébelleux, en forme de sac plissé dans la substance blanche de l'hémisphère ; ses axones forment l'essentiel du pédoncule cérébelleux supérieur vers le thalamus et le noyau rouge.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-dorsal-du-thalamus",
+   "nom": "Noyau dorsal du thalamus",
+   "latin": "Nucleus dorsalis thalami",
+   "anglais": "Dorsal nuclei of thalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau dorsal du thalamus",
+   "ta2": "5695",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-dorsolateral",
+      "nom": "Noyau dorsolatéral"
+     },
+     {
+      "id": "noyau-posterolateral",
+      "nom": "Noyau postérolatéral"
+     },
+     {
+      "id": "noyau-du-pulvinar",
+      "nom": "Noyau du pulvinar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyau-dorsolateral",
+   "nom": "Noyau dorsolatéral",
+   "latin": "Nucleus dorsalis lateralis",
+   "anglais": "Lateral dorsal nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau dorsolatéral",
+   "ta2": "5696",
+   "connu": {
+    "description_du_trace": "Noyau latéral dorsal, en haut du thalamus, associé au système limbique et au cortex cingulaire.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-bras-des-colliculi-inferieurs",
+   "nom": "Noyau du bras des colliculi inférieurs",
+   "latin": "Nucleus brachii colliculi inferioris",
+   "anglais": "Nucleus of brachium of inferior colliculi",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du bras des colliculi inférieurs",
+   "ta2": "5888",
+   "connu": {
+    "description_du_trace": "Petit noyau du bras du colliculus inférieur, relais auditif entre le colliculus inférieur et le corps géniculé médial.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-corps-trapezoide",
+   "nom": "Noyau du corps trapézoïde",
+   "latin": "Nuclei corporis trapezoidei",
+   "anglais": "Nuclei of trapezoid body",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du corps trapézoïde",
+   "ta2": "5936",
+   "connu": {
+    "description_du_trace": "Amas de neurones dans le corps trapézoïde, relais des voies auditives entre noyaux cochléaires et olive supérieure.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-grand-raphe",
+   "nom": "Noyau du grand raphé",
+   "latin": "Nucleus magnus raphes",
+   "anglais": "Magnus raphe nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du grand raphé",
+   "ta2": "6038",
+   "connu": {
+    "description_du_trace": "Noyau du grand raphé : origine d'une voie descendante sérotoninergique qui inhibe la douleur dans la corne postérieure de la moelle.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-lemnisque-lateral",
+   "nom": "Noyau du lemnisque latéral",
+   "latin": "Nuclei lemnisci lateralis",
+   "anglais": "Nuclei of lateral lemniscus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du lemnisque latéral",
+   "ta2": "5938",
+   "connu": {
+    "description_du_trace": "Noyaux disséminés sur le trajet du lemnisque latéral, relais de la voie auditive vers le colliculus inférieur.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-nerf-phrenique",
+   "nom": "Noyau du nerf phrénique",
+   "latin": "Nucleus nervi phrenici",
+   "anglais": "Nucleus of phrenic nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du nerf phrénique",
+   "ta2": "6083",
+   "connu": {
+    "description_du_trace": "Colonne de motoneurones de C3 à C5 dans la corne antérieure ; elle innerve le diaphragme par le nerf phrénique.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-nerf-pudendal",
+   "nom": "Noyau du nerf pudendal",
+   "latin": "Nucleus nervi pudendalis",
+   "anglais": "Nucleus of pudendal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du nerf pudendal",
+   "ta2": "6084",
+   "connu": {
+    "description_du_trace": "Noyau d'Onuf (S2-S3) de la corne antérieure : ses motoneurones innervent les sphincters strié de l'urètre et de l'anus et les muscles du périnée par le nerf pudendal.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-pulvinar",
+   "nom": "Noyau du pulvinar",
+   "latin": "Nuclei pulvinaris",
+   "anglais": "Pulvinar nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du pulvinar",
+   "ta2": "5698",
+   "connu": {
+    "description_du_trace": "Masse postérieure du thalamus qui surplombe les corps géniculés ; elle intègre des informations visuelles et associatives pour les cortex pariétal, temporal et occipital.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-raphe-obscur",
+   "nom": "Noyau du raphé obscur",
+   "latin": "Nucleus obscurus raphes",
+   "anglais": "Obscurus raphe nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du raphé obscur",
+   "ta2": "6037",
+   "connu": {
+    "description_du_trace": "Noyau obscur du raphé, sérotoninergique, projetant vers la moelle spinale (modulation de la douleur et du tonus).",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-du-raphe-pallidal",
+   "nom": "Noyau du raphé pallidal",
+   "latin": "Nucleus pallidus raphes",
+   "anglais": "Pallidus raphe nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du raphé pallidal",
+   "ta2": "6036",
+   "connu": {
+    "description_du_trace": "Noyau pâle du raphé, sérotoninergique, qui projette vers la moelle et module le tonus moteur.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-elliptique",
+   "nom": "Noyau elliptique",
+   "latin": "Nucleus ellipticus",
+   "anglais": "Elliptic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau elliptique",
+   "ta2": "5745",
+   "connu": {
+    "description_du_trace": "Petit noyau du mésencéphale rostral, voisin du noyau oculomoteur et de la substance grise périaqueducale.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-emboliforme",
+   "nom": "Noyau emboliforme",
+   "latin": "Nucleus emboliformis",
+   "anglais": "Emboliform nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau emboliforme",
+   "ta2": "5838",
+   "connu": {
+    "description_du_trace": "Noyau cérébelleux situé entre le globuleux et le dentelé ; avec le globuleux il forme le noyau interposé (contrôle des membres).",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  }
+ ]
+}

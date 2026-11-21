@@ -18,7 +18,7 @@ export function Logo() {
       <span className="text-or">
         <Sceau />
       </span>
-      HaqqReason
+      <span className="logo-nom">HaqqReason</span>
     </LienAccueil>
   );
 }

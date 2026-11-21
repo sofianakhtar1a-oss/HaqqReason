@@ -1,0 +1,526 @@
+{
+ "lot": "muscle-ajouts-1",
+ "couche": "muscle",
+ "structures": [
+  {
+   "id": "epicranien",
+   "nom": "Épicrânien",
+   "latin": "Musculus epicranius",
+   "anglais": "Epicranius muscle",
+   "region": "tete",
+   "rang": 1,
+   "officiel": "Muscle épicrânien",
+   "ta2": "2054",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "aponevrose-epicranienne",
+      "nom": "Aponévrose épicrânienne"
+     },
+     {
+      "id": "muscle-frontal",
+      "nom": "Frontal"
+     },
+     {
+      "id": "muscle-occipital",
+      "nom": "Occipital"
+     },
+     {
+      "id": "temporoparietal",
+      "nom": "Temporopariétal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "auriculaire-anterieur",
+   "nom": "Auriculaire antérieur",
+   "latin": "Musculus auricularis anterior",
+   "anglais": "Auricularis anterior muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle auriculaire antérieur",
+   "ta2": "2089",
+   "connu": {
+    "description_du_trace": "Petit muscle triangulaire né de la galéa aponévrotique en avant de l'oreille ; il s'insère sur l'épine de l'hélix et tire le pavillon vers l'avant.",
+    "profondeur_sous_la_peau_mm": 0.7
+   }
+  },
+  {
+   "id": "auriculaire-posterieur",
+   "nom": "Auriculaire postérieur",
+   "latin": "Musculus auricularis posterior",
+   "anglais": "Auricularis posterior muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle auriculaire postérieur",
+   "ta2": "2091",
+   "profondeur": 1,
+   "connu": {
+    "description_du_trace": "Deux ou trois faisceaux nés du processus mastoïde qui se fixent sur la convexité de la conque ; ils tirent le pavillon vers l'arrière.",
+    "profondeur_sous_la_peau_mm": 0.4
+   }
+  },
+  {
+   "id": "auriculaire-superieur",
+   "nom": "Auriculaire supérieur",
+   "latin": "Musculus auricularis superior",
+   "anglais": "Auricularis superior muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle auriculaire supérieur",
+   "ta2": "2090",
+   "connu": {
+    "description_du_trace": "Le plus grand des muscles extrinsèques : en éventail depuis la galéa aponévrotique, il rejoint la face supérieure du pavillon et l'élève.",
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "de-l-antitragus",
+   "nom": "De l'antitragus",
+   "latin": "Musculus antitragicus",
+   "anglais": "Antitragicus muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle de l'antitragus",
+   "ta2": "2098",
+   "connu": {
+    "description_du_trace": "Petit muscle qui va de la face latérale de l'antitragus à la queue de l'hélix et à l'anthélix.",
+    "profondeur_sous_la_peau_mm": 1.2
+   }
+  },
+  {
+   "id": "du-tragus",
+   "nom": "Du tragus",
+   "latin": "Musculus tragicus",
+   "anglais": "Tragicus muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle du tragus",
+   "ta2": "2095",
+   "connu": {
+    "description_du_trace": "Mince bandelette verticale sur la face latérale du tragus.",
+    "profondeur_sous_la_peau_mm": 2.6
+   }
+  },
+  {
+   "id": "grand-muscle-de-l-helix",
+   "nom": "Grand muscle de l'hélix",
+   "latin": "Musculus major helicis",
+   "anglais": "Helicis major muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Grand muscle de l'hélix",
+   "ta2": "2093",
+   "connu": {
+    "description_du_trace": "Mince bandelette verticale sur le bord antérieur de l'hélix, au-dessus du tragus ; elle abaisse un peu l'hélix.",
+    "profondeur_sous_la_peau_mm": 0.7
+   }
+  },
+  {
+   "id": "oblique-de-l-auricule",
+   "nom": "Oblique de l'auricule",
+   "latin": "Musculus obliquus auriculae",
+   "anglais": "Oblique muscle of auricle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle oblique de l'auricule",
+   "ta2": "2100",
+   "connu": {
+    "description_du_trace": "Sur la face postérieure du pavillon, quelques fibres relient la convexité de la conque à celle de la fosse triangulaire.",
+    "profondeur_sous_la_peau_mm": 0.8
+   }
+  },
+  {
+   "id": "petit-muscle-de-l-helix",
+   "nom": "Petit muscle de l'hélix",
+   "latin": "Musculus minor helicis",
+   "anglais": "Helicis minor muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Petit muscle de l'hélix",
+   "ta2": "2094",
+   "connu": {
+    "description_du_trace": "Petit faisceau oblique qui couvre la racine (crus) de l'hélix, devant la conque.",
+    "profondeur_sous_la_peau_mm": 0.6
+   }
+  },
+  {
+   "id": "pyramidal-de-l-auricule",
+   "nom": "Pyramidal de l'auricule",
+   "latin": "Musculus pyramidalis auriculae",
+   "anglais": "Pyramidal muscle of auricle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle pyramidal de l'auricule",
+   "ta2": "2097",
+   "connu": {
+    "description_du_trace": "Faisceau inconstant qui monte de la base du tragus vers l'épine de l'hélix.",
+    "profondeur_sous_la_peau_mm": 0.8
+   }
+  },
+  {
+   "id": "transverse-de-l-auricule",
+   "nom": "Transverse de l'auricule",
+   "latin": "Musculus transversus auriculae",
+   "anglais": "Transverse muscle of auricle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle transverse de l'auricule",
+   "ta2": "2099",
+   "connu": {
+    "description_du_trace": "Sur la face postérieure du pavillon, des fibres tendues de la convexité de la conque à celle de la scapha ; il rapproche ces deux reliefs.",
+    "profondeur_sous_la_peau_mm": 0.7
+   }
+  },
+  {
+   "id": "transverse-du-menton",
+   "nom": "Transverse du menton",
+   "latin": "Musculus transversus menti",
+   "anglais": "Transversus menti muscle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muscle transverse du menton",
+   "ta2": "2077",
+   "connu": {
+    "description_du_trace": "Faisceaux inconstants qui passent sous le menton d'un muscle abaisseur de l'angle de la bouche à l'autre ; ils se croisent sur la ligne médiane.",
+    "profondeur_sous_la_peau_mm": 0.7
+   }
+  },
+  {
+   "id": "chondroglosse",
+   "nom": "Chondroglosse",
+   "latin": "Musculus chondroglossus",
+   "anglais": "Chondroglossus muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle chondroglosse",
+   "ta2": "2119",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Faisceau du muscle hyoglosse né de la petite corne et du corps de l'os hyoïde, qui gagne le côté de la langue en dedans de l'hyoglosse ; il abaisse la langue.",
+    "profondeur_sous_la_peau_mm": 15.4
+   }
+  },
+  {
+   "id": "ceratoglosse",
+   "nom": "Cératoglosse",
+   "latin": "Musculus ceratoglossus",
+   "anglais": "Ceratoglossus muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle cératoglosse",
+   "ta2": "2120",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Faisceau du muscle hyoglosse né de la grande corne de l'os hyoïde, qui monte sur le côté de la langue ; il abaisse et rétracte la langue.",
+    "profondeur_sous_la_peau_mm": 18.2
+   }
+  },
+  {
+   "id": "longitudinal-inferieur-de-la-langue",
+   "nom": "Longitudinal inférieur de la langue",
+   "latin": "Musculus longitudinalis inferior linguae",
+   "anglais": "Inferior longitudinal lingual muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle longitudinal inférieur de la langue",
+   "ta2": "2123",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Cordon de fibres longitudinales de la face inférieure de la langue, entre le génioglosse et l'hyoglosse ; il raccourcit la langue et abaisse sa pointe.",
+    "profondeur_sous_la_peau_mm": 11.2
+   }
+  },
+  {
+   "id": "longitudinal-superieur-de-la-langue",
+   "nom": "Longitudinal supérieur de la langue",
+   "latin": "Musculus longitudinalis superior linguae",
+   "anglais": "Superior longitudinal lingual muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle longitudinal supérieur de la langue",
+   "ta2": "2122",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Nappe de fibres longitudinales sous la muqueuse du dos de la langue, de la racine à la pointe ; elle raccourcit la langue et relève sa pointe.",
+    "profondeur_sous_la_peau_mm": 14.2
+   }
+  },
+  {
+   "id": "palatoglosse",
+   "nom": "Palatoglosse",
+   "latin": "Musculus palatoglossus",
+   "anglais": "Palatoglossus muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle palatoglosse",
+   "ta2": "2131",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Il forme l'arc palatoglosse : de l'aponévrose du palais mou, il descend sur le côté de la langue ; il rétrécit l'isthme du gosier et élève la base de la langue.",
+    "profondeur_sous_la_peau_mm": 26.1
+   }
+  },
+  {
+   "id": "salpingopharyngien",
+   "nom": "Salpingopharyngien",
+   "latin": "Musculus salpingopharyngeus",
+   "anglais": "Salpingopharyngeus muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle salpingopharyngien",
+   "ta2": "2191",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Mince muscle né du cartilage de la trompe auditive près de son ouverture pharyngienne ; il descend sur la paroi du pharynx pour se mêler au muscle palatopharyngien et élève le pharynx.",
+    "profondeur_sous_la_peau_mm": 34.4
+   }
+  },
+  {
+   "id": "stapedien",
+   "nom": "Stapédien",
+   "latin": "Musculus stapedius",
+   "anglais": "Stapedius muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle stapédien",
+   "ta2": "2103",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Le plus petit muscle du corps : logé dans l'éminence pyramidale de la paroi postérieure de la caisse du tympan, son tendon se fixe sur le col de l'étrier ; il amortit les sons forts en limitant les mouvements de l'étrier.",
+    "profondeur_sous_la_peau_mm": 17.5
+   }
+  },
+  {
+   "id": "styloglosse",
+   "nom": "Styloglosse",
+   "latin": "Musculus styloglossus",
+   "anglais": "Styloglossus muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle styloglosse",
+   "ta2": "2121",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Né du processus styloïde, il descend vers l'avant et longe le bord latéral de la langue jusqu'à la pointe ; il rétracte et élève la langue (nerf hypoglosse).",
+    "profondeur_sous_la_peau_mm": 16.1
+   }
+  },
+  {
+   "id": "transverse-de-la-langue",
+   "nom": "Transverse de la langue",
+   "latin": "Musculus transversus linguae",
+   "anglais": "Transversus linguae muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle transverse de la langue",
+   "ta2": "2124",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Nappe de fibres transversales tendue du septum médian de la langue à ses bords ; elle rétrécit et allonge la langue.",
+    "profondeur_sous_la_peau_mm": 24.0
+   }
+  },
+  {
+   "id": "vertical-de-la-langue",
+   "nom": "Vertical de la langue",
+   "latin": "Musculus verticalis linguae",
+   "anglais": "Verticalis linguae muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Muscle vertical de la langue",
+   "ta2": "2125",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Fibres verticales qui vont du dos de la langue à sa face inférieure, surtout vers les bords de la partie antérieure ; elles aplatissent et élargissent la langue.",
+    "profondeur_sous_la_peau_mm": 18.7
+   }
+  },
+  {
+   "id": "vocal",
+   "nom": "Vocal",
+   "latin": "Musculus vocalis",
+   "anglais": "Vocalis muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle vocal",
+   "ta2": "2202",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Partie médiale du muscle thyro-aryténoïdien, accolée au ligament vocal ; de l'angle du cartilage thyroïde au processus vocal, elle règle la tension de la corde vocale.",
+    "profondeur_sous_la_peau_mm": 15.9
+   }
+  },
+  {
+   "id": "iliopsoas",
+   "nom": "Iliopsoas",
+   "latin": "Iliopsoas",
+   "anglais": "Iliopsoas muscle",
+   "region": "bassin",
+   "rang": 1,
+   "officiel": "Muscle iliopsoas",
+   "ta2": "2593",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "iliaque",
+      "nom": "Iliaque"
+     },
+     {
+      "id": "grand-psoas",
+      "nom": "Grand psoas"
+     }
+    ]
+   }
+  },
+  {
+   "id": "puboperineal",
+   "nom": "Pubopérinéal",
+   "latin": "Musculus puboperinealis",
+   "anglais": "Puboperinealis muscle",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Muscle pubopérinéal",
+   "ta2": "2407",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Faisceau médial du muscle élévateur de l'anus : du corps du pubis, il longe la prostate et se termine sur le centre tendineux du périnée.",
+    "profondeur_sous_la_peau_mm": 22.4
+   }
+  },
+  {
+   "id": "articulaire-du-coude",
+   "nom": "Articulaire du coude",
+   "latin": "Musculus articularis cubiti",
+   "anglais": "Articularis cubiti muscle",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Muscle articulaire du coude",
+   "ta2": "2475",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Petits faisceaux de la face postérieure de la diaphyse distale de l'humérus qui se fixent sur la capsule du coude ; ils la tendent pendant l'extension.",
+    "profondeur_sous_la_peau_mm": 11.0
+   }
+  },
+  {
+   "id": "court-palmaire",
+   "nom": "Court palmaire",
+   "latin": "Musculus palmaris brevis",
+   "anglais": "Palmaris brevis muscle",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Muscle court palmaire",
+   "ta2": "2520",
+   "connu": {
+    "description_du_trace": "Mince muscle cutané de l'éminence hypothénar, tendu du bord ulnaire de l'aponévrose palmaire à la peau du bord ulnaire de la main ; il creuse la paume.",
+    "profondeur_sous_la_peau_mm": 1.3
+   }
+  },
+  {
+   "id": "quadriceps-femoral",
+   "nom": "Quadriceps fémoral",
+   "latin": "Musculus quadriceps femoris",
+   "anglais": "Quadriceps femoris muscle",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Muscle quadriceps fémoral",
+   "ta2": "2613",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "droit-femoral",
+      "nom": "Droit fémoral"
+     },
+     {
+      "id": "vaste-lateral",
+      "nom": "Vaste latéral"
+     },
+     {
+      "id": "vaste-medial",
+      "nom": "Vaste médial"
+     },
+     {
+      "id": "vaste-intermediaire",
+      "nom": "Vaste intermédiaire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "articulaire-du-genou",
+   "nom": "Articulaire du genou",
+   "latin": "Musculus articularis genus",
+   "anglais": "Articularis genus muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Muscle articulaire du genou",
+   "ta2": "2625",
+   "profondeur": 2,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Fémur"
+    ],
+    "description_du_trace": "Faisceaux profonds du quadriceps qui vont de la face antérieure de la diaphyse distale du fémur à la capsule et à la bourse suprapatellaire ; ils les retirent pendant l'extension du genou.",
+    "profondeur_sous_la_peau_mm": 25.5
+   }
+  },
+  {
+   "id": "transverse-profond-du-perinee",
+   "nom": "Transverse profond du périnée",
+   "latin": "Musculus transversus profundus perinei",
+   "anglais": "Deep transverse perineal muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Muscle transverse profond du périnée",
+   "ta2": "2420",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Lame musculaire du plan profond du périnée, de la branche ischio-pubienne au centre tendineux du périnée, sous la prostate ; elle fixe le centre tendineux.",
+    "profondeur_sous_la_peau_mm": 31.1
+   }
+  },
+  {
+   "id": "transverse-superficiel-du-perinee",
+   "nom": "Transverse superficiel du périnée",
+   "latin": "Musculus transversus superficialis perinei",
+   "anglais": "Superficial transverse perineal muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Muscle transverse superficiel du périnée",
+   "ta2": "2416",
+   "profondeur": 2,
+   "connu": {
+    "description_du_trace": "Mince bande née de la face interne de la branche ischiale, près de la tubérosité, qui rejoint le centre tendineux du périnée ; elle le fixe.",
+    "profondeur_sous_la_peau_mm": 23.4
+   }
+  },
+  {
+   "id": "triceps-sural",
+   "nom": "Triceps sural",
+   "latin": "Musculus triceps surae",
+   "anglais": "Triceps surae muscle",
+   "region": "jambe",
+   "rang": 0,
+   "officiel": "Muscle triceps sural",
+   "ta2": "2656",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gastrocnemien",
+      "nom": "Gastrocnémien"
+     },
+     {
+      "id": "soleaire",
+      "nom": "Soléaire"
+     }
+    ]
+   }
+  }
+ ]
+}

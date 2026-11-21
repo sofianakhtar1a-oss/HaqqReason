@@ -10,6 +10,8 @@ import { AMPLITUDES_SOURCES } from "@/lib/corps/mouvement/articulations";
 const REFERENCES = referencesJson as { fiches: number; references: { nom: string; url: string; fiches: number }[] };
 const nombre = (n: number) => n.toLocaleString("fr-FR");
 const COUVERTURE = couvertureJson as unknown as {
+  ensembles?: number;
+  reperes?: number;
   raisons: Record<string, string>;
   couches: Record<string, { reference: number; presents: number; part: number; reperes?: number; hors_champ?: Record<string, string[]> }>;
 };
@@ -106,7 +108,7 @@ export function Sources({ fermer }: { fermer: () => void }) {
 
         <h3 className="ec-section-titre">Ce que le modèle couvre</h3>
         <p>
-          Pour chaque couche, la part des structures que la <i lang="la">Terminologia Anatomica</i> nomme et que le modèle montre : par un modèle, par un ensemble (un groupe nommé, comme les lobes du cerveau ou les nœuds axillaires, montre ses membres) ou par un repère (un point nommé sur sa structure, qu’on trouve en le cherchant).
+          Pour chaque couche, la part des structures que la <i lang="la">Terminologia Anatomica</i> nomme et que le modèle montre : par un modèle, par un ensemble (un groupe nommé, comme les lobes du cerveau ou les nœuds axillaires, montre ses membres{COUVERTURE.ensembles ? ` ; ${nombre(COUVERTURE.ensembles)} ensembles` : ""}) ou par un repère (un point nommé sur sa structure, qu’on trouve en le cherchant{COUVERTURE.reperes ? ` ; ${nombre(COUVERTURE.reperes)} repères` : ""}).
         </p>
         <ul className="ec-facettes">
           {NOMS_COUVERTURE.filter(([c]) => COUVERTURE.couches[c]).map(([c, nom, quoi]) => {

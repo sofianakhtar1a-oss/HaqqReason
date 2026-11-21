@@ -2239,3 +2239,19 @@
   background: rgb(var(--ec-laiton-rgb) / 0.18);
   border-radius: 3px;
 }
+
+/* Sur un petit téléphone, l'en-tête garde le sceau et le nom du module : le nom du site se tait (il reste lu par
+   les lecteurs d'écran), pour que les boutons du son, du thème, des réglages et du compte tiennent sur la ligne. */
+@media (max-width: 520px) {
+  .ec-logo .logo-nom {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .ec-tete-actions {
+    gap: 0.15rem;
+  }
+}

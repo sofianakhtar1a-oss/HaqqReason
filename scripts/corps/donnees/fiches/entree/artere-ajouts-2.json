@@ -1,0 +1,660 @@
+{
+ "lot": "artere-ajouts-2",
+ "couche": "artere",
+ "structures": [
+  {
+   "id": "artere-intercostale-posterieure",
+   "nom": "Artère intercostale postérieure",
+   "latin": "Arteria intercostalis posterior",
+   "anglais": "Posterior intercostal artery",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère intercostale postérieure",
+   "ta2": "4192",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "premiere-artere-intercostale-posterieure",
+      "nom": "Première artère intercostale postérieure"
+     },
+     {
+      "id": "deuxieme-artere-intercostale-posterieure",
+      "nom": "Deuxième artère intercostale postérieure"
+     },
+     {
+      "id": "arteres-intercostales-posterieures",
+      "nom": "Artères intercostales postérieures"
+     }
+    ]
+   }
+  },
+  {
+   "id": "artere-lingulaire-du-poumon-gauche",
+   "nom": "Artère lingulaire du poumon gauche",
+   "latin": "Arteria lingularis pulmonis sinistri",
+   "anglais": "Lingular artery of left lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère lingulaire du poumon gauche",
+   "ta2": "4098",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "artere-lingulaire-superieure-du-poumon-gauche",
+      "nom": "Artère lingulaire supérieure du poumon gauche"
+     },
+     {
+      "id": "artere-lingulaire-inferieure-du-poumon-gauche",
+      "nom": "Artère lingulaire inférieure du poumon gauche"
+     }
+    ]
+   }
+  },
+  {
+   "id": "artere-lobaire-superieure-du-poumon-gauche",
+   "nom": "Artère lobaire supérieure du poumon gauche",
+   "latin": "Arteria lobaris superior pulmonis sinistri",
+   "anglais": "Superior lobar artery of left lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère lobaire supérieure du poumon gauche",
+   "ta2": "4094",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "artere-segmentaire-anterieure-du-poumon-gauche",
+      "nom": "Artère segmentaire antérieure du poumon gauche"
+     },
+     {
+      "id": "artere-segmentaire-apicale-du-poumon-gauche",
+      "nom": "Artère segmentaire apicale du poumon gauche"
+     },
+     {
+      "id": "artere-lingulaire-inferieure-du-poumon-gauche",
+      "nom": "Artère lingulaire inférieure du poumon gauche"
+     },
+     {
+      "id": "artere-segmentaire-posterieure-du-poumon-gauche",
+      "nom": "Artère segmentaire postérieure du poumon gauche"
+     },
+     {
+      "id": "artere-lingulaire-superieure-du-poumon-gauche",
+      "nom": "Artère lingulaire supérieure du poumon gauche"
+     }
+    ]
+   }
+  },
+  {
+   "id": "artere-lobaire-inferieure-du-poumon-gauche",
+   "nom": "Artère lobaire inférieure du poumon gauche",
+   "latin": "Arteria lobaris inferior pulmonis sinistri",
+   "anglais": "Inferior lobar artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère lobaire inférieure du poumon gauche",
+   "ta2": "4101",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "artere-segmentaire-basale-anterieure-du-poumon-gauche",
+      "nom": "Artère segmentaire basale antérieure du poumon gauche"
+     },
+     {
+      "id": "artere-segmentaire-basale-laterale-du-poumon-gauche",
+      "nom": "Artère segmentaire basale latérale du poumon gauche"
+     },
+     {
+      "id": "artere-segmentaire-basale-mediale-du-poumon-gauche",
+      "nom": "Artère segmentaire basale médiale du poumon gauche"
+     },
+     {
+      "id": "artere-segmentaire-basale-posterieure-du-poumon-gauche",
+      "nom": "Artère segmentaire basale postérieure du poumon gauche"
+     },
+     {
+      "id": "artere-segmentaire-basale-superieure-du-poumon-gauche",
+      "nom": "Artère segmentaire basale supérieure du poumon gauche"
+     }
+    ]
+   }
+  },
+  {
+   "id": "artere-mammaire-thoracique-interne-mediale",
+   "nom": "Artère mammaire thoracique interne médiale",
+   "latin": "Rami mammarii mediales arteriae thoracicae internae",
+   "anglais": "Medial mammary internal thoracic artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère mammaire thoracique interne médiale",
+   "ta2": "4584",
+   "connu": {
+    "provenance": "thoracique-interne",
+    "description_du_trace": "Branches perforantes de l'artère thoracique interne dans les deuxième à quatrième espaces intercostaux ; elles traversent le muscle grand pectoral et irriguent la partie médiale de la glande mammaire et la peau.",
+    "appui_dans_le_modele": {
+     "id": "thoracique-interne",
+     "nom": "Artère thoracique interne"
+    }
+   }
+  },
+  {
+   "id": "artere-pericardiacophrenique",
+   "nom": "Artère péricardiacophrénique",
+   "latin": "Arteria pericardiacophrenica",
+   "anglais": "Pericardiacophrenic artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère péricardiacophrénique",
+   "ta2": "4581",
+   "connu": {
+    "provenance": "thoracique-interne",
+    "description_du_trace": "Branche de l'artère thoracique interne, elle descend entre la plèvre et le péricarde avec le nerf phrénique et irrigue le péricarde, la plèvre et la partie centrale du diaphragme.",
+    "appui_dans_le_modele": {
+     "id": "thoracique-interne",
+     "nom": "Artère thoracique interne"
+    }
+   }
+  },
+  {
+   "id": "artere-thoracique-superieure",
+   "nom": "Artère thoracique supérieure",
+   "latin": "Arteria thoracica superior",
+   "anglais": "Superior thoracic artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère thoracique supérieure",
+   "ta2": "4618",
+   "connu": {
+    "provenance": "axillaire",
+    "description_du_trace": "Petite branche de la première partie de l'artère axillaire, elle longe le bord supérieur du petit pectoral et irrigue les muscles subclavier et pectoraux ainsi que les deux premiers espaces intercostaux.",
+    "appui_dans_le_modele": {
+     "id": "axillaire",
+     "nom": "Artère axillaire"
+    }
+   }
+  },
+  {
+   "id": "artere-thyroide-oesophagienne",
+   "nom": "Artère thyroïde œsophagienne",
+   "latin": "Rami oesophagei arteriae thyreoideae inferioris",
+   "anglais": "Oesophageal thyroid artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère thyroïde œsophagienne",
+   "ta2": "4595",
+   "connu": {
+    "provenance": "artere-thyroidienne-inferieure",
+    "description_du_trace": "Rameaux œsophagiens de l'artère thyroïdienne inférieure ; ils gagnent le segment cervical de l'œsophage et s'anastomosent avec les branches œsophagiennes de l'aorte.",
+    "appui_dans_le_modele": {
+     "id": "artere-thyroidienne-inferieure",
+     "nom": "Artère thyroïdienne inférieure"
+    }
+   }
+  },
+  {
+   "id": "br-cutanees-dorsales-mediales-de-l-artere-intercostale-post",
+   "nom": "Br. cutanées dorsales médiales de l'artère intercostale post.",
+   "latin": "Ramus cut. dorsalis medialis arteriae intercostalis post.",
+   "anglais": "Medial dorsal cutaneous branch-posterior intercostal artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Br. cutanées dorsales médiales de l'artère intercostale post.",
+   "ta2": "4194",
+   "connu": {
+    "provenance": "arteres-intercostales-posterieures",
+    "description_du_trace": "Rameau de la branche dorsale de l'artère intercostale postérieure ; il passe entre les processus transverses, contourne les muscles profonds du dos près des processus épineux et se termine dans la peau de la ligne médiane du dos.",
+    "appui_dans_le_modele": {
+     "id": "arteres-intercostales-posterieures",
+     "nom": "Artères intercostales postérieures"
+    }
+   }
+  },
+  {
+   "id": "branche-cutanee-dorsale-lat-artere-intercostale-post",
+   "nom": "Branche cutanée dorsale lat.-artère intercostale post.",
+   "latin": "Ramus cut. dorsalis lateralis arteriae intercostalis post.",
+   "anglais": "Lateral dorsal cutaneous branch-posterior intercostal artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Branche cutanée dorsale lat.-artère intercostale post.",
+   "ta2": "4195",
+   "connu": {
+    "provenance": "arteres-intercostales-posterieures",
+    "description_du_trace": "Rameau de la branche dorsale de l'artère intercostale postérieure ; il traverse les muscles érecteurs du rachis et gagne la peau de la région dorsale latérale.",
+    "appui_dans_le_modele": {
+     "id": "arteres-intercostales-posterieures",
+     "nom": "Artères intercostales postérieures"
+    }
+   }
+  },
+  {
+   "id": "artere-anastomotique-intercolique",
+   "nom": "Artère anastomotique intercolique",
+   "latin": "Arteria anastomotica intercolica",
+   "anglais": "Intercolic anastomotic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère anastomotique intercolique",
+   "ta2": "4267",
+   "connu": {
+    "provenance": "branche-colique-de-l-artere-ileocolique",
+    "description_du_trace": "Anastomose entre les artères coliques voisines, le long du côlon ascendant ; elle participe à l'artère marginale du côlon qui assure la continuité de l'irrigation.",
+    "appui_dans_le_modele": {
+     "id": "branche-colique-de-l-artere-ileocolique",
+     "nom": "Branche colique de l'artère iléocolique"
+    }
+   }
+  },
+  {
+   "id": "artere-cystique",
+   "nom": "Artère cystique",
+   "latin": "Arteria cystica",
+   "anglais": "Cystic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère cystique",
+   "ta2": "4230",
+   "connu": {
+    "provenance": "artere-hepatique-propre",
+    "description_du_trace": "Née de l'artère hépatique droite dans le triangle cystohépatique, elle atteint le col de la vésicule biliaire et se divise en rameaux qui en irriguent les deux faces.",
+    "appui_dans_le_modele": {
+     "id": "artere-hepatique-propre",
+     "nom": "Artère hépatique propre"
+    }
+   }
+  },
+  {
+   "id": "artere-droite-du-lobe-caude",
+   "nom": "Artère droite du lobe caudé",
+   "latin": "Arteria dextra lobi caudati",
+   "anglais": "Right artery of caudate lobe",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère droite du lobe caudé",
+   "ta2": "4231",
+   "connu": {
+    "provenance": "artere-hepatique-propre",
+    "description_du_trace": "Petite branche de l'artère hépatique droite qui, par le hile, gagne la partie droite du lobe caudé (segment I) en passant en arrière de la veine porte.",
+    "appui_dans_le_modele": {
+     "id": "artere-hepatique-propre",
+     "nom": "Artère hépatique propre"
+    }
+   }
+  },
+  {
+   "id": "artere-gastrique-posterieure",
+   "nom": "Artère gastrique postérieure",
+   "latin": "Arteria gastrica posterior",
+   "anglais": "Posterior gastric artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère gastrique postérieure",
+   "ta2": "4246",
+   "connu": {
+    "provenance": "artere-splenique",
+    "description_du_trace": "Branche inconstante de l'artère splénique qui monte en arrière de l'estomac et irrigue la face postérieure du corps et du fundus.",
+    "appui_dans_le_modele": {
+     "id": "artere-splenique",
+     "nom": "Artère splénique"
+    }
+   }
+  },
+  {
+   "id": "artere-gastro-omentale-droite",
+   "nom": "Artère gastro-omentale droite",
+   "latin": "Arteria gastroomentalis dextra",
+   "anglais": "Right gastro-omental artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère gastro-omentale droite",
+   "ta2": "4221",
+   "connu": {
+    "provenance": "artere-gastroduodenale",
+    "description_du_trace": "Branche terminale de l'artère gastroduodénale, elle chemine le long de la grande courbure de l'estomac dans le grand omentum et s'anastomose avec la gastro-omentale gauche.",
+    "appui_dans_le_modele": {
+     "id": "artere-gastroduodenale",
+     "nom": "Artère gastroduodénale"
+    }
+   }
+  },
+  {
+   "id": "artere-gastro-omentale-gauche",
+   "nom": "Artère gastro-omentale gauche",
+   "latin": "Arteria gastroomentalis sinistra",
+   "anglais": "Left gastro-omental artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère gastro-omentale gauche",
+   "ta2": "4248",
+   "connu": {
+    "provenance": "artere-splenique",
+    "description_du_trace": "Branche de l'artère splénique, elle descend dans le grand omentum à un travers de doigt de la grande courbure de l'estomac et s'anastomose avec l'artère gastro-omentale droite.",
+    "appui_dans_le_modele": {
+     "id": "artere-splenique",
+     "nom": "Artère splénique"
+    }
+   }
+  },
+  {
+   "id": "artere-gauche-du-lobe-caude",
+   "nom": "Artère gauche du lobe caudé",
+   "latin": "Arteria sinistra lobi caudati",
+   "anglais": "Left artery of caudate lobe",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère gauche du lobe caudé",
+   "ta2": "4235",
+   "connu": {
+    "provenance": "artere-hepatique-propre",
+    "description_du_trace": "Petite branche de l'artère hépatique gauche qui rejoint la partie gauche du lobe caudé (segment I).",
+    "appui_dans_le_modele": {
+     "id": "artere-hepatique-propre",
+     "nom": "Artère hépatique propre"
+    }
+   }
+  },
+  {
+   "id": "artere-hepatique-droite",
+   "nom": "Artère hépatique droite",
+   "latin": "Arteria hepatica dextra",
+   "anglais": "Right hepatic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère hépatique droite",
+   "ta2": "4229",
+   "connu": {
+    "provenance": "artere-hepatique-propre",
+    "description_du_trace": "Branche droite de l'artère hépatique propre, elle gagne le lobe droit du foie en croisant en général derrière le canal hépatique commun ; elle donne l'artère cystique avant de se diviser en branches segmentaires antérieure et postérieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-hepatique-propre",
+     "nom": "Artère hépatique propre"
+    }
+   }
+  },
+  {
+   "id": "artere-hepatique-gauche",
+   "nom": "Artère hépatique gauche",
+   "latin": "Arteria hepatica sinistra",
+   "anglais": "Left hepatic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère hépatique gauche",
+   "ta2": "4234",
+   "connu": {
+    "provenance": "artere-hepatique-propre",
+    "description_du_trace": "Branche gauche de l'artère hépatique propre, elle monte vers le sillon ombilical pour irriguer le lobe gauche du foie et se divise en branches segmentaires médiale et latérale.",
+    "appui_dans_le_modele": {
+     "id": "artere-hepatique-propre",
+     "nom": "Artère hépatique propre"
+    }
+   }
+  },
+  {
+   "id": "artere-pancreaticoduodenale-antero-superieure",
+   "nom": "Artère pancréaticoduodénale antéro-supérieure",
+   "latin": "Arteria pancreaticoduodenalis superior anterior",
+   "anglais": "Anterior superior pancreaticoduodenal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère pancréaticoduodénale antéro-supérieure",
+   "ta2": "4224",
+   "connu": {
+    "provenance": "artere-gastroduodenale",
+    "description_du_trace": "Branche de l'artère gastroduodénale, elle descend en avant de la tête du pancréas dans le sillon duodéno-pancréatique et s'anastomose avec l'artère pancréaticoduodénale antéro-inférieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-gastroduodenale",
+     "nom": "Artère gastroduodénale"
+    }
+   }
+  },
+  {
+   "id": "artere-pancreaticoduodenale-infero-posterieure",
+   "nom": "Artère pancréaticoduodénale inféro-postérieure",
+   "latin": "Arteria pancreaticoduodenalis inferior posterior",
+   "anglais": "Posterior inferior pancreaticoduodenal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère pancréaticoduodénale inféro-postérieure",
+   "ta2": "4255",
+   "connu": {
+    "provenance": "artere-pancreaticoduodenale-inferieure",
+    "description_du_trace": "Branche postérieure de l'artère pancréaticoduodénale inférieure, elle remonte derrière la tête du pancréas pour s'anastomoser avec l'artère pancréaticoduodénale postéro-supérieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-pancreaticoduodenale-inferieure",
+     "nom": "Artère pancréaticoduodénale inférieure"
+    }
+   }
+  },
+  {
+   "id": "artere-pancreaticoduodenale-posterosuperieure",
+   "nom": "Artère pancréaticoduodénale postérosupérieure",
+   "latin": "Arteria pancreaticoduodenalis superior posterior",
+   "anglais": "Posterior superior pancreaticoduodenal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère pancréaticoduodénale postérosupérieure",
+   "ta2": "4217",
+   "connu": {
+    "provenance": "artere-gastroduodenale",
+    "description_du_trace": "Branche de l'artère gastroduodénale, elle passe en avant du canal cholédoque puis descend en arrière de la tête du pancréas pour s'anastomoser avec la pancréaticoduodénale postéro-inférieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-gastroduodenale",
+     "nom": "Artère gastroduodénale"
+    }
+   }
+  },
+  {
+   "id": "artere-pancreatique-dorsale",
+   "nom": "Artère pancréatique dorsale",
+   "latin": "Arteria pancreatica dorsalis",
+   "anglais": "Dorsal pancreatic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère pancréatique dorsale",
+   "ta2": "4241",
+   "connu": {
+    "provenance": "artere-splenique",
+    "description_du_trace": "Née à l'origine de l'artère splénique, elle descend derrière le col du pancréas et se divise à son bord inférieur en branches droite (prépancréatique) et gauche (pancréatique inférieure).",
+    "appui_dans_le_modele": {
+     "id": "artere-splenique",
+     "nom": "Artère splénique"
+    }
+   }
+  },
+  {
+   "id": "artere-pancreatique-inferieure",
+   "nom": "Artère pancréatique inférieure",
+   "latin": "Arteria pancreatica inferior",
+   "anglais": "Inferior pancreatic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère pancréatique inférieure",
+   "ta2": "4242",
+   "connu": {
+    "description_du_trace": "Branche gauche de l'artère pancréatique dorsale, elle longe le bord inférieur du corps du pancréas vers la queue et s'anastomose avec la grande artère pancréatique.",
+    "appui_dans_le_modele": {
+     "id": "pancreas",
+     "nom": "Pancréas"
+    }
+   }
+  },
+  {
+   "id": "artere-prepancreatique",
+   "nom": "Artère prépancréatique",
+   "latin": "Arteria prepancreatica",
+   "anglais": "Prepancreatic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère prépancréatique",
+   "ta2": "4243",
+   "connu": {
+    "description_du_trace": "Branche droite de l'artère pancréatique dorsale, elle passe en avant de la tête du pancréas et s'anastomose avec les arcades pancréaticoduodénales.",
+    "appui_dans_le_modele": {
+     "id": "pancreas",
+     "nom": "Pancréas"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-anterieure-du-foie",
+   "nom": "Artère segmentaire antérieure du foie",
+   "latin": "Arteria segmenti anterioris hepatis",
+   "anglais": "Anterior segmental artery of liver",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire antérieure du foie",
+   "ta2": "4232",
+   "connu": {
+    "description_du_trace": "Branche de l'artère hépatique droite pour les segments antérieurs du foie droit : segment V, inférieur, et segment VIII, supérieur.",
+    "appui_dans_le_modele": {
+     "id": "segment-anteromedial-droit-du-foie-v",
+     "nom": "Segment antéromédial droit du foie (V)"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-anteroinferieure-du-rein",
+   "nom": "Artère segmentaire antéroinférieure du rein",
+   "latin": "Arteria segmenti anterioris inferioris renis",
+   "anglais": "Anterior inferior segmental artery of kidney",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire antéroinférieure du rein",
+   "ta2": "4275",
+   "connu": {
+    "provenance": "branche-anterieure-de-l-artere-renale",
+    "description_du_trace": "Branche de la division antérieure de l'artère rénale pour le segment antéro-inférieur du rein.",
+    "appui_dans_le_modele": {
+     "id": "branche-anterieure-de-l-artere-renale",
+     "nom": "Branche antérieure de l'artère rénale"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-anterosuperieure-du-rein",
+   "nom": "Artère segmentaire antérosupérieure du rein",
+   "latin": "Arteria segmenti anterioris superioris renis",
+   "anglais": "Anterior superior segmental artery of kidney",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire antérosupérieure du rein",
+   "ta2": "4274",
+   "connu": {
+    "provenance": "branche-anterieure-de-l-artere-renale",
+    "description_du_trace": "Branche de la division antérieure de l'artère rénale pour le segment antérosupérieur du rein.",
+    "appui_dans_le_modele": {
+     "id": "branche-anterieure-de-l-artere-renale",
+     "nom": "Branche antérieure de l'artère rénale"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-inferieure-du-rein",
+   "nom": "Artère segmentaire inférieure du rein",
+   "latin": "Arteria segmenti inferioris renis",
+   "anglais": "Inferior segmental artery of kidney",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire inférieure du rein",
+   "ta2": "4276",
+   "connu": {
+    "provenance": "branche-anterieure-de-l-artere-renale",
+    "description_du_trace": "Branche de la division antérieure de l'artère rénale pour le segment inférieur, au pôle inférieur du rein.",
+    "appui_dans_le_modele": {
+     "id": "branche-anterieure-de-l-artere-renale",
+     "nom": "Branche antérieure de l'artère rénale"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-laterale-du-foie",
+   "nom": "Artère segmentaire latérale du foie",
+   "latin": "Arteria segmenti lateralis hepatis",
+   "anglais": "Lateral segmental artery of liver",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire latérale du foie",
+   "ta2": "4237",
+   "connu": {
+    "description_du_trace": "Branche de l'artère hépatique gauche pour le secteur latéral du lobe gauche : segment III en avant et segment II en arrière.",
+    "appui_dans_le_modele": {
+     "id": "segment-medial-gauche-du-foie-iv",
+     "nom": "Segment médial gauche du foie (IV)"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-mediale-du-foie",
+   "nom": "Artère segmentaire médiale du foie",
+   "latin": "Arteria segmenti medialis hepatis",
+   "anglais": "Medial segmental artery of liver",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire médiale du foie",
+   "ta2": "4236",
+   "connu": {
+    "description_du_trace": "Branche de l'artère hépatique gauche destinée au segment IV du foie (lobe carré), le long du sillon ombilical.",
+    "appui_dans_le_modele": {
+     "id": "segment-medial-gauche-du-foie-iv",
+     "nom": "Segment médial gauche du foie (IV)"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-posterieure-du-foie",
+   "nom": "Artère segmentaire postérieure du foie",
+   "latin": "Arteria segmenti posterions hepatis",
+   "anglais": "Posterior segmental artery of liver",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire postérieure du foie",
+   "ta2": "4233",
+   "connu": {
+    "description_du_trace": "Branche de l'artère hépatique droite pour les segments postérieurs du foie droit : segment VI, inférieur, et segment VII, supérieur.",
+    "appui_dans_le_modele": {
+     "id": "segment-anteromedial-droit-du-foie-v",
+     "nom": "Segment antéromédial droit du foie (V)"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-posterieure-du-rein",
+   "nom": "Artère segmentaire postérieure du rein",
+   "latin": "Arteria segmenti posterioris renis",
+   "anglais": "Posterior segmental artery of kidney",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire postérieure du rein",
+   "ta2": "4278",
+   "connu": {
+    "provenance": "branche-posterieure-de-l-artere-renale",
+    "description_du_trace": "Prolongement de la division postérieure de l'artère rénale, elle passe derrière le bassinet et irrigue à elle seule le segment postérieur du rein.",
+    "appui_dans_le_modele": {
+     "id": "branche-posterieure-de-l-artere-renale",
+     "nom": "Branche postérieure de l'artère rénale"
+    }
+   }
+  },
+  {
+   "id": "artere-segmentaire-superieure-du-rein",
+   "nom": "Artère segmentaire supérieure du rein",
+   "latin": "Arteria segmenti superioris renis",
+   "anglais": "Superior segmental artery of kidney",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère segmentaire supérieure du rein",
+   "ta2": "4273",
+   "connu": {
+    "provenance": "branche-anterieure-de-l-artere-renale",
+    "description_du_trace": "Branche de la division antérieure de l'artère rénale, elle irrigue le segment supérieur, au pôle supérieur du rein.",
+    "appui_dans_le_modele": {
+     "id": "branche-anterieure-de-l-artere-renale",
+     "nom": "Branche antérieure de l'artère rénale"
+    }
+   }
+  }
+ ]
+}

@@ -6,7 +6,7 @@
 # Usage : python 06_catalogue.py   → src/lib/corps/modele/{pieces,elements,ensembles,insertions,reperes}.json
 import collections, json, os, re, sys
 import numpy as np
-from commun import DONNEES, decouper, lire_ta2, norme, slug, vers_repere
+from commun import CORRECTIONS_TA2, DONNEES, decouper, lire_ta2, norme, slug, vers_repere
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 DEPOT = os.path.abspath(os.path.join(ICI, "..", ".."))
@@ -57,7 +57,7 @@ def boite(objet):
 
 def ta(anglais):
     b = anglais.strip()
-    for e in (b, b + " muscle", re.sub(r" muscle$", "", b), re.sub(r"\s*\(.*?\)\s*", " ", b).strip()):
+    for e in (b, b + " muscle", re.sub(r" muscle$", "", b), re.sub(r"\s*\(.*?\)\s*", " ", b).strip(), CORRECTIONS_TA2.get(b, b)):
         r = ta2.get(norme(e))
         if r:
             return r
@@ -97,9 +97,9 @@ HORS_TA = {
 
 CORRECTIONS = [
     (r"^\((.*)\)$", r"\1"), (r"\bArtere\b", "Artère"), (r"\bFacia\b", "Fascia"), (r"\bMusclé\b", "Muscle"), (r"\bTroisème\b", "Troisième"), (r"\bCristalin\b", "Cristallin"),
-    (r"\bEpiglotte\b", "Épiglotte"), (r"\bEtrier\b", "Étrier"), (r"\bMoëlle\b", "Moelle"), (r"\bOesophage\b", "Œsophage"), (r"\boesophag", "œsophag"), (r"\bArythénoïde\b", "Aryténoïdien"),
+    (r"\bEpiglotte\b", "Épiglotte"), (r"\bEtrier\b", "Étrier"), (r"\b([Mm])oëlle\b", r"\1oelle"), (r"\bOesophage\b", "Œsophage"), (r"\boesophag", "œsophag"), (r"\bArythénoïde\b", "Aryténoïdien"),
     (r"ymphonoeud", "ymphonœud"), (r"\bHabenula\b", "Habénula"), (r"\bnoeud", "nœud"), (r"\bNoeud", "Nœud"), (r"\boeil\b", "œil"), (r"\bcoeur\b", "cœur"), (r"métacrapien", "métacarpien"),
-    (r"\bplaxus\b", "plexus"), (r"\bocculaire\b", "oculaire"), (r"cunéïforme", "cunéiforme"), (r"^Os cornet\b", "Cornet"), (r"\bCuneus\b", "Cunéus"), (r"\s+", " "),
+    (r"\bplaxus\b", "plexus"), (r"superieur", "supérieur"), (r"\bethmoidal", "ethmoïdal"), (r"\bocculaire\b", "oculaire"), (r"cunéïforme", "cunéiforme"), (r"^Os cornet\b", "Cornet"), (r"\bCuneus\b", "Cunéus"), (r"\s+", " "),
 ]
 
 
@@ -108,6 +108,9 @@ RETOUCHES = [(r"inféfieure", "inférieure"), (r"\bcinqu[eè]me\b", "cinquième"
 
 # Des noms français de l'atlas qui ne disent pas ce que dit le latin (relevés en rédigeant les fiches).
 NOMS_PAR_ID = {
+    # (coquilles du français de la TA2 de Z-Anatomy ; l'identifiant, déjà publié, ne change pas)
+    "noyau-moteur-du-nef-facial": "Noyau moteur du nerf facial", "noyan-habenulaire-medial": "Noyau habénulaire médial", "noyau-larcrymal": "Noyau lacrymal",
+    "artere-linguale-pofonde": "Artère linguale profonde",
     "ligament-tibiofibullaire-posterieur": "Ligament talo-fibulaire postérieur",
     "ligament-talocalcaneen": "Ligament talo-calcanéen latéral",
     "ligament-talocalcaneen-lateral": "Ligament talo-calcanéen postérieur",
@@ -701,11 +704,27 @@ for p in classement["pieces"]:
 # la description écrite avec elles sert de résumé tant qu'une fiche n'est pas rédigée.
 from commun import objets_bruts as _objets_bruts
 
-CONSTRUITS = {o["nom"] for o in _objets_bruts() if (o.get("source") or "").startswith("L'Écorché (")}
+CONSTRUITS = {}
+for _o in _objets_bruts():
+    if (_o.get("source") or "").startswith("L'Écorché ("):
+        CONSTRUITS[_o["nom"]] = _o.get("appui")
+
+
+def element_d_objet(nom):
+    """L'élément d'un objet de l'atlas (un objet droit porté en miroir par son jumeau gauche compte aussi)."""
+    if not nom:
+        return None
+    return el_de_objet.get(nom) or el_de_objet.get(re.sub(r"\.r$", ".l", nom)) or el_de_objet.get(re.sub(r"^Right ", "Left ", nom))
 _f_textes = os.path.join(ICI, "donnees", "ajouts-textes.json")
 TEXTES_AJOUTS = json.load(open(_f_textes, encoding="utf-8")) if os.path.exists(_f_textes) else {}
+# (une structure qui a sa fiche n'a plus besoin du résumé de son tracé : le catalogue, chargé d'emblée, reste léger)
+AVEC_FICHE = set()
+for _c in ("os", "muscle", "tendon", "ligament", "artere", "veine", "nerf", "viscere", "encephale", "lymphe"):
+    _f = os.path.join(DEPOT, "src", "lib", "corps", "fiches", f"{_c}.json")
+    if os.path.exists(_f):
+        AVEC_FICHE |= set(json.load(open(_f, encoding="utf-8")).get("fiches", {}))
 # Quelques noms anglais de la TA2 de Z-Anatomy portent une coquille : le site montre le bon.
-ANGLAIS_CORRIGES = {"Lleocolic vein": "Ileocolic vein", "Suprerior laryngeal vein": "Superior laryngeal vein", "Menyngeal veins": "Meningeal veins", "Sollitary tract": "Solitary tract", "Genigulate ganglion": "Geniculate ganglion", "Arterior superior pancreaticoduodenal artery": "Anterior superior pancreaticoduodenal artery", "Interosseus intercarpal ligaments": "Interosseous intercarpal ligaments"}
+from commun import COQUILLES_TA2 as ANGLAIS_CORRIGES
 CHAMPS_HERITES = ("noms", "nombre", "action", "origine", "terminaison", "innervation", "sorte", "articulations", "provenance", "territoire", "muscle", "attache", "memo", "anecdote")
 elements_json = []
 for e in elements:
@@ -729,8 +748,16 @@ for e in elements:
     x["art"] = article(x["nom"])
     if any(p["objet"] in CONSTRUITS for p in e["_pieces"]):
         x["construit"] = True
+        # Ce sur quoi elle s'appuie : le tronc d'une branche, la veine où se jette un affluent, le vaisseau d'un plexus.
+        for p in e["_pieces"]:
+            a_el = element_d_objet(CONSTRUITS.get(p["objet"]))
+            if a_el and a_el["id"] != e["id"]:
+                x["appui"] = a_el["id"]
+                if e["couche"] == "artere" and a_el["couche"] == "artere" and not x.get("provenance"):
+                    x["provenance"] = a_el["id"]
+                break
         t = TEXTES_AJOUTS.get(e["anglais"]) or TEXTES_AJOUTS.get(re.sub(r"^(Left|Right) ", "", e["anglais"]))
-        if t and not x.get("memo"):
+        if t and not x.get("memo") and x["id"] not in AVEC_FICHE:
             x["resume"] = t["texte"]
     if x["anglais"] in ANGLAIS_CORRIGES:
         x["anglais"] = ANGLAIS_CORRIGES[x["anglais"]]
@@ -785,7 +812,14 @@ deja_ens = {norme(x["anglais"]) for x in ensembles} | {str(x.get("ta2")) for x i
 par_id_el = {x["id"]: x for x in elements_json}
 el_par_nom = {}
 for x in elements_json:
+    el_par_nom.setdefault(norme(x["anglais"]), x)
+for x in elements_json:
     el_par_nom.setdefault(norme(re.sub(r"\b(left|right)\b", "", x["anglais"], flags=re.I)), x)
+
+
+def el_nomme(n):
+    """L'élément d'un nom anglais : le nom exact d'abord (« Right superior intercostal vein »), puis sans le côté."""
+    return el_par_nom.get(norme(n)) or el_par_nom.get(norme(re.sub(r"\b(left|right)\b", "", n, flags=re.I)))
 ids_pris_tous = set(par_id_el) | {x["id"] for x in ensembles}
 # La couche d'un ensemble est celle de la majorité de ses membres, sauf pour ces organes faits de pièces de plusieurs couches.
 COUCHE_ENSEMBLE = {"Larynx": "viscere", "Eyeball": "viscere", "Thymus": "viscere", "Hypophysis": "viscere", "Pituitary gland": "viscere", "Parathyroid glands": "viscere", "Right lung": "viscere", "Left lung": "viscere", "Cerebellum": "encephale"}
@@ -861,9 +895,23 @@ for terme, noms in REGLES_ENSEMBLES.items():
     if not r:
         print("  (règle d'ensemble sans terme de la TA2 :", terme, ")")
         continue
-    membres = [el_par_nom[norme(n)]["id"] for n in noms if norme(n) in el_par_nom]
-    if len(membres) < len(noms):
-        print("  (ensemble", terme, ": membres introuvables", [n for n in noms if norme(n) not in el_par_nom], ")")
+    membres = []
+    for n in noms:
+        x = el_nomme(n)
+        if x and x["id"] not in membres:
+            membres.append(x["id"])
+    if len([n for n in noms if el_nomme(n)]) < len(noms):
+        print("  (ensemble", terme, ": membres introuvables", [n for n in noms if not el_nomme(n)], ")")
+    if len(membres) == 1:
+        # Un seul membre : c'est un autre nom de la même structure (« artère scapulaire dorsale » pour la branche
+        # profonde de la cervicale transverse) ; elle le porte, on la trouve et on la reconnaît sous ce nom aussi.
+        x = par_id_el[membres[0]]
+        x.setdefault("ta2_aussi", []).append(str(r["id"]))
+        autre = nettoyer(r["francais"] or terme)
+        if autre != x["nom"] and autre not in x.get("noms", []):
+            x.setdefault("noms", []).append(autre)
+        deja_ens.add(norme(terme))
+        continue
     x = nouvel_ensemble(terme, r, membres)
     if x:
         nouveaux_ens.append(x)
@@ -981,8 +1029,8 @@ CLASSES = {
         ("La bouche et les glandes salivaires", r"^(langue|gencive|palais-mou|uvule-du-palais|tonsille-palatine|glande-(parotide|submandibulaire|sublinguale)|canal-(porotidien|submandibulaire))"),
         ("Le pharynx et le larynx", r"^(nasopharynx|oropharynx|laryngopharynx|epiglotte)"),
         ("L'œil", r"^(cornee|sclere|iris|cristallin|retine|corps-vitre|chambre-anterieure|segment-(anterieur|posterieur)-du-globe|fibres-zonulaires|ligament-suspenseur-du-bulbe)"),
-        ("Les voies lacrymales, le nez et l'oreille", r"^(glande-lacrymale|canalicule-lacrymal|ampoule-du-canalicule|sac-lacrymal|canal-lacrymonasal|muqueuse-de-la-cavite-nasale|membrane-tympanique|trompe-auditive)"),
-        ("L'œsophage, l'estomac et l'intestin", r"^(oesophage|estomac|muqueuse-de-l-estomac|duodenum|jejunum|ileon|colon|caecum|rectum|appendice|meso-appendice|tenia)"),
+        ("Les voies lacrymales, le nez et l'oreille", r"^(glande-lacrymale|canalicule-lacrymal|ampoule-du-canalicule|sac-lacrymal|canal-lacrymonasal|muqueuse-de-la-cavite-nasale|membrane-tympanique|trompe-auditive|cochlee|conduits-semi-?circulaires)"),
+        ("L'œsophage, l'estomac et l'intestin", r"^(oesophage|estomac|muqueuse-de-l-estomac|duodenum|jejunum|ileon|colon|caecum|rectum|canal-anal|appendice|meso-appendice|tenia)"),
         ("Le foie et les voies biliaires", r"^(foie|segment-|vesicule-biliaire|canal-biliaire|canal-hepatique|canal-choledoque)"),
         ("Le pancréas, la rate et le péritoine", r"^(pancreas|canal-pancreatique|rate|grand-omentum|petit-omentum|mesocolon|mesentere|peritoine)"),
         ("Les glandes endocrines et le thymus", r"^(glande-(thyroide|parathyroide|pineale)|adenohypophyse|neurohypophyse|lobe-(droit|gauche)-du-thymus)"),
@@ -1002,6 +1050,7 @@ CLASSES = {
         ("Le tronc cérébral", r"^(mesencephale|pont$|moelle-allongee|olive|pyramide-de-la-moelle|colliculus|base-du-pedoncule|fosse-interpedonculaire|noyau-rouge|racine-sensitive-du-nerf-trijumeau)"),
         ("Le cervelet", r"^(lobule-(quadrangulaire|biventral|central|gracile|semilunaire)|aile-du-lobule|culmen|declive|flocculus|folium|nodule|pyramide-du-vermis|tuber|uvule-du-vermis|lingula|tonsille-du-cervelet|pedoncule-(du-flocculus|cerebelleux))"),
         ("Les ventricules et les méninges", r"^(ventricule|troisieme-ventricule|quatrieme-ventricule|aqueduc|plexus-choroide|faux-du-cerveau|tente-du-cervelet|dure-mere|canal-central)"),
+        ("Les faisceaux et commissures de l'encéphale", r"^(faisceau-(longitudinal|unciforme|occipitofrontal|lenticulaire|mamillo)|commissure-(habenulaire|des-colliculus|cerebelleuse|auditive|supra-optique))"),
         ("Les voies de la moelle spinale", r"^(tractus-|faisceau-|substance-blanche-de-la-moelle)"),
         ("Les autres structures de l'encéphale", r""),
     ],
@@ -1019,7 +1068,29 @@ INCONTOURNABLES = {
 }
 
 
+# Une structure construite de l'encéphale (un noyau, un faisceau) se range avec la structure qui la porte.
+CLASSE_PAR_APPUI = [
+    (r"^(thalamus|hypothalamus|troisieme-ventricule|corps-mamillaire|habenula|corps-genicule|commissure-posterieure|strie-medullaire)", "Le diencéphale"),
+    (r"^(mesencephale|pont$|moelle-allongee|olive|pyramide-de-la-moelle|colliculus|base-du-pedoncule|fosse-interpedonculaire|noyau-rouge|quatrieme-ventricule|aqueduc|racine-sensitive)", "Le tronc cérébral"),
+    (r"^(culmen|declive|folium|tuber|pyramide-du-vermis|uvule|nodule|lingula|lobule-|aile-du-lobule|flocculus|tonsille-du-cervelet|pedoncule-cerebelleux|pedoncule-du-flocculus|cervelet)", "Le cervelet"),
+    (r"^(corne-|substance-intermediaire|substance-blanche-de-la-moelle|canal-central|processus-reticulaire|dure-mere-spinale|noyau-(intermediolateral|intermediomedial|propre))", "La substance grise de la moelle spinale"),
+]
+
+
 def classe(couche, e):
+    if couche == "encephale" and e.get("construit") and re.search(r"^(faisceau|tractus|commissure|fibres)", e["id"]) and not re.search(r"^(corne-|substance-blanche-de-la-moelle|substance-intermediaire|canal-central)", e.get("appui") or ""):
+        for i, (t, _) in enumerate(CLASSES[couche]):
+            if t.startswith("Les faisceaux et commissures"):
+                return i, t
+    if couche == "encephale" and e.get("construit") and e.get("appui"):
+        for motif, titre in CLASSE_PAR_APPUI:
+            if re.search(motif, e["appui"]):
+                for i, (t, _) in enumerate(CLASSES[couche]):
+                    if t == titre:
+                        # (un faisceau de la moelle rejoint les voies, pas la substance grise)
+                        if titre.startswith("La substance grise") and re.search(r"^(faisceau|tractus|commissure-blanche)", e["id"]):
+                            break
+                        return i, t
     for i, (titre, motif) in enumerate(CLASSES[couche]):
         if re.search(motif, e["id"]):
             return i, titre
@@ -1046,6 +1117,10 @@ def parents(couche):
         lien = fi.get(champ)
         if isinstance(lien, dict) and lien.get(cle):
             sortie[i] = lien[cle]
+    # Les structures construites, tant qu'elles n'ont pas de fiche : leur appui (le tronc, la veine de drainage).
+    for x in elements_json:
+        if x["couche"] == couche and x.get("appui") and x["id"] not in sortie and par_id_json.get(x["appui"], {}).get("couche") == couche:
+            sortie[x["id"]] = x["appui"]
     return sortie
 
 
@@ -1195,7 +1270,19 @@ for cat, couche in CAT_COUCHE.items():
                     if n >= max(4, 0.7 * len(p)) and t in par_id_json:
                         titre = titre_arbre(par_id_json[t], couche)
                 nouveaux.append((p, titre))
+    # Une planche de moins de quatre structures rejoint sa voisine (une grande région qui n'en reçoit que deux ou
+    # trois) : une planche se joue, elle ne doit pas tenir en un geste.
+    fondues = []
     for p, titre in nouveaux:
+        if fondues and (len(p) < 4 or len(fondues[-1][0]) < 4) and len(fondues[-1][0]) + len(p) <= TAILLE + 6:
+            q, t = fondues[-1]
+            fondues[-1] = (q + p, t if t == titre else None)
+        else:
+            fondues.append((p, titre))
+    if len(fondues) > 1 and len(fondues[0][0]) < 4:
+        (q, _), (r, t) = fondues[0], fondues[1]
+        fondues[:2] = [(q + r, None)]
+    for p, titre in fondues:
         if titre:
             noms[str(len(niveaux))] = titre
         niveaux.append([e["id"] for e in p])

@@ -1,0 +1,613 @@
+{
+ "lot": "artere-ajouts-1",
+ "couche": "artere",
+ "structures": [
+  {
+   "id": "artere-alveolaire-superieure-moyenne",
+   "nom": "Artère alvéolaire supérieure moyenne",
+   "latin": "Arteria alveolaris superior media",
+   "anglais": "Middle superior alveolar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère alvéolaire supérieure moyenne",
+   "ta2": "4448",
+   "connu": {
+    "provenance": "artere-infra-orbitaire",
+    "description_du_trace": "Branche inconstante de l'artère infra-orbitaire, elle descend dans la paroi latérale du sinus maxillaire et irrigue les prémolaires et la muqueuse du sinus.",
+    "appui_dans_le_modele": {
+     "id": "artere-infra-orbitaire",
+     "nom": "Artère infra-orbitaire"
+    }
+   }
+  },
+  {
+   "id": "artere-alveolaire-supero-anterieure",
+   "nom": "Artère alvéolaire supéro-antérieure",
+   "latin": "Arteria alveolaris superior anterior",
+   "anglais": "Anterior superior alveolar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère alvéolaire supéro-antérieure",
+   "ta2": "4451",
+   "connu": {
+    "provenance": "artere-infra-orbitaire",
+    "description_du_trace": "Branche de l'artère infra-orbitaire dans le canal infra-orbitaire ; elle descend dans la paroi antérieure du maxillaire et irrigue les incisives, la canine et la muqueuse du sinus maxillaire.",
+    "appui_dans_le_modele": {
+     "id": "artere-infra-orbitaire",
+     "nom": "Artère infra-orbitaire"
+    }
+   }
+  },
+  {
+   "id": "artere-auriculaire-posterieure",
+   "nom": "Artère auriculaire postérieure",
+   "latin": "Arteria auricularis posterior",
+   "anglais": "Posterior auricular artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère auriculaire postérieure",
+   "ta2": "4405",
+   "connu": {
+    "provenance": "carotide-externe",
+    "description_du_trace": "Branche de la carotide externe au-dessus du ventre postérieur du digastrique ; elle monte derrière le pavillon de l'oreille, passe au niveau du foramen stylo-mastoïdien et irrigue le pavillon, la peau de la région mastoïdienne et le cuir chevelu.",
+    "appui_dans_le_modele": {
+     "id": "carotide-externe",
+     "nom": "Carotide externe"
+    }
+   }
+  },
+  {
+   "id": "artere-auriculaire-profonde",
+   "nom": "Artère auriculaire profonde",
+   "latin": "Arteria auricularis profunda",
+   "anglais": "Deep auricular artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère auriculaire profonde",
+   "ta2": "4423",
+   "connu": {
+    "provenance": "artere-maxillaire",
+    "description_du_trace": "Branche de l'artère maxillaire, elle traverse la paroi du méat acoustique externe et irrigue sa peau ainsi que la face externe de la membrane tympanique.",
+    "appui_dans_le_modele": {
+     "id": "artere-maxillaire",
+     "nom": "Artère maxillaire"
+    }
+   }
+  },
+  {
+   "id": "artere-caroticotympanique",
+   "nom": "Artère caroticotympanique",
+   "latin": "Arteriae caroticotympanicae",
+   "anglais": "Caroticotympanic arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère caroticotympanique",
+   "ta2": "4464",
+   "connu": {
+    "provenance": "carotide-interne",
+    "description_du_trace": "Une ou deux petites branches de la partie pétreuse de l'artère carotide interne, qui traversent la paroi du canal carotidien et irriguent la cavité tympanique.",
+    "appui_dans_le_modele": {
+     "id": "carotide-interne",
+     "nom": "Carotide interne"
+    }
+   }
+  },
+  {
+   "id": "artere-choroidienne-anterieure",
+   "nom": "Artère choroïdienne antérieure",
+   "latin": "Arteria chorioidea anterior arteria choroidea anterior",
+   "anglais": "Anterior choroidal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère choroïdienne antérieure",
+   "ta2": "4501",
+   "connu": {
+    "provenance": "carotide-interne",
+    "description_du_trace": "Branche de la carotide interne juste avant sa terminaison ; elle longe le tractus optique, entre dans la corne temporale du ventricule latéral par la fissure choroïdienne et irrigue le plexus choroïde, l'hippocampe et la capsule interne.",
+    "appui_dans_le_modele": {
+     "id": "carotide-interne",
+     "nom": "Carotide interne"
+    }
+   }
+  },
+  {
+   "id": "artere-cerebrale-precommuniquante",
+   "nom": "Artère cérébrale précommuniquante",
+   "latin": "Pars precommunicans arteriae posterioris cerebri",
+   "anglais": "Precommunicating cerebral artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère cérébrale précommuniquante",
+   "ta2": "4519",
+   "connu": {
+    "provenance": "carotide-interne",
+    "description_du_trace": "Segment A1 de l'artère cérébrale antérieure, entre la terminaison de la carotide interne et l'artère communicante antérieure, au-dessus du chiasma optique.",
+    "appui_dans_le_modele": {
+     "id": "carotide-interne",
+     "nom": "Carotide interne"
+    }
+   }
+  },
+  {
+   "id": "artere-dorsale-du-nez",
+   "nom": "Artère dorsale du nez",
+   "latin": "Arteria dorsalis nasi",
+   "anglais": "Dorsal nasal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère dorsale du nez",
+   "ta2": "4500",
+   "connu": {
+    "provenance": "artere-ophtalmique",
+    "description_du_trace": "Branche terminale de l'artère ophtalmique, elle sort de l'orbite au-dessus du ligament palpébral médial et irrigue la racine et le dos du nez ; elle s'anastomose avec l'artère angulaire.",
+    "appui_dans_le_modele": {
+     "id": "artere-ophtalmique",
+     "nom": "Artère ophtalmique"
+    }
+   }
+  },
+  {
+   "id": "artere-linguale",
+   "nom": "Artère linguale",
+   "latin": "Arteria lingualis",
+   "anglais": "Lingual artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère linguale",
+   "ta2": "4383",
+   "connu": {
+    "provenance": "carotide-externe",
+    "description_du_trace": "Née de la carotide externe en regard de la grande corne de l'os hyoïde, elle passe en dedans du muscle hyoglosse et irrigue la langue et le plancher de la bouche.",
+    "appui_dans_le_modele": {
+     "id": "carotide-externe",
+     "nom": "Carotide externe"
+    }
+   }
+  },
+  {
+   "id": "artere-linguale-pofonde",
+   "nom": "Artère linguale pofonde",
+   "latin": "Arteria lingualis profundis",
+   "anglais": "Deep lingual artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère linguale pofonde",
+   "ta2": "4387",
+   "connu": {
+    "description_du_trace": "Terminaison de l'artère linguale, elle monte vers la pointe de la langue sur sa face inférieure, entre le génioglosse et le muscle longitudinal inférieur.",
+    "appui_dans_le_modele": {
+     "id": "langue",
+     "nom": "Langue"
+    }
+   }
+  },
+  {
+   "id": "artere-masseterique",
+   "nom": "Artère massétérique",
+   "latin": "Arteria masseterica",
+   "anglais": "Masseteric artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère massétérique",
+   "ta2": "4439",
+   "connu": {
+    "provenance": "artere-maxillaire",
+    "description_du_trace": "Branche de l'artère maxillaire, elle passe dans l'échancrure sigmoïde de la mandibule et pénètre la face profonde du muscle masséter.",
+    "appui_dans_le_modele": {
+     "id": "artere-maxillaire",
+     "nom": "Artère maxillaire"
+    }
+   }
+  },
+  {
+   "id": "artere-meningee-posterieure",
+   "nom": "Artère méningée postérieure",
+   "latin": "Arteria meningea posterior",
+   "anglais": "Posterior meningeal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère méningée postérieure",
+   "ta2": "4379",
+   "connu": {
+    "provenance": "artere-pharyngienne-ascendante",
+    "description_du_trace": "Branche de l'artère pharyngienne ascendante, elle monte par le foramen jugulaire et irrigue la dure-mère de la fosse crânienne postérieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-pharyngienne-ascendante",
+     "nom": "Artère pharyngienne ascendante"
+    }
+   }
+  },
+  {
+   "id": "artere-palatine-ascendante",
+   "nom": "Artère palatine ascendante",
+   "latin": "Arteria palatina ascendens",
+   "anglais": "Ascending palatine artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère palatine ascendante",
+   "ta2": "4389",
+   "connu": {
+    "provenance": "artere-faciale",
+    "description_du_trace": "Branche de l'artère faciale, elle monte le long de la paroi latérale du pharynx puis sur le muscle élévateur du voile du palais, et irrigue le voile du palais et la trompe auditive.",
+    "appui_dans_le_modele": {
+     "id": "artere-faciale",
+     "nom": "Artère faciale"
+    }
+   }
+  },
+  {
+   "id": "artere-petite-palatine",
+   "nom": "Artère petite palatine",
+   "latin": "Arteriae palatinae minores",
+   "anglais": "Lesser palatine arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère petite palatine",
+   "ta2": "4458",
+   "connu": {
+    "provenance": "artere-palatine-descendante",
+    "description_du_trace": "Deux petites branches de l'artère palatine descendante qui sortent par les canaux palatins accessoires et irriguent le voile du palais et l'amygdale palatine.",
+    "appui_dans_le_modele": {
+     "id": "artere-palatine-descendante",
+     "nom": "Artère palatine descendante"
+    }
+   }
+  },
+  {
+   "id": "artere-sphenopalatine",
+   "nom": "Artère sphénopalatine",
+   "latin": "Arteria sphenopalatina",
+   "anglais": "Sphenopalatine artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère sphénopalatine",
+   "ta2": "4460",
+   "connu": {
+    "provenance": "artere-maxillaire",
+    "description_du_trace": "Branche terminale de l'artère maxillaire dans la fosse ptérygo-palatine ; elle entre dans la cavité nasale par le foramen sphéno-palatin et donne les branches nasales postéro-latérales et septales postérieures.",
+    "appui_dans_le_modele": {
+     "id": "artere-maxillaire",
+     "nom": "Artère maxillaire"
+    }
+   }
+  },
+  {
+   "id": "artere-stylomastoidienne",
+   "nom": "Artère stylomastoïdienne",
+   "latin": "Arteria stylomastoidea",
+   "anglais": "Stylomastoid artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère stylomastoïdienne",
+   "ta2": "4406",
+   "connu": {
+    "description_du_trace": "Branche de l'artère auriculaire postérieure, elle entre par le foramen stylo-mastoïdien dans le canal facial et irrigue le nerf facial, les cellules mastoïdiennes et la cavité tympanique.",
+    "appui_dans_le_modele": {
+     "id": "marteau",
+     "nom": "Marteau"
+    }
+   }
+  },
+  {
+   "id": "artere-sublinguale",
+   "nom": "Artère sublinguale",
+   "latin": "Arteria sublingualis",
+   "anglais": "Sublingual artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère sublinguale",
+   "ta2": "4386",
+   "connu": {
+    "description_du_trace": "Branche de l'artère linguale née au bord antérieur de l'hyoglosse ; elle longe le canal submandibulaire jusqu'à la glande sublinguale et irrigue aussi le plancher de la bouche et la gencive.",
+    "appui_dans_le_modele": {
+     "id": "langue",
+     "nom": "Langue"
+    }
+   }
+  },
+  {
+   "id": "artere-temporale-moyenne",
+   "nom": "Artère temporale moyenne",
+   "latin": "Arteria temporalis media",
+   "anglais": "Middle temporal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère temporale moyenne",
+   "ta2": "4419",
+   "connu": {
+    "provenance": "temporale-superficielle",
+    "description_du_trace": "Branche de l'artère temporale superficielle née au-dessus de l'arcade zygomatique ; elle perfore le fascia temporal et irrigue le muscle temporal.",
+    "appui_dans_le_modele": {
+     "id": "temporale-superficielle",
+     "nom": "Artère temporale superficielle"
+    }
+   }
+  },
+  {
+   "id": "artere-tympanique-anterieure",
+   "nom": "Artère tympanique antérieure",
+   "latin": "Arteria tympanica anterior",
+   "anglais": "Anterior tympanic artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère tympanique antérieure",
+   "ta2": "4425",
+   "connu": {
+    "provenance": "artere-maxillaire",
+    "description_du_trace": "Branche de la partie initiale de l'artère maxillaire, elle passe par la fissure pétro-tympanique et irrigue la membrane tympanique et la cavité tympanique.",
+    "appui_dans_le_modele": {
+     "id": "artere-maxillaire",
+     "nom": "Artère maxillaire"
+    }
+   }
+  },
+  {
+   "id": "artere-tympanique-inferieure",
+   "nom": "Artère tympanique inférieure",
+   "latin": "Arteria lympanica inferior",
+   "anglais": "Inferior tympanic artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère tympanique inférieure",
+   "ta2": "4381",
+   "connu": {
+    "provenance": "artere-pharyngienne-ascendante",
+    "description_du_trace": "Petite branche de l'artère pharyngienne ascendante, elle traverse le canalicule tympanique et irrigue la paroi médiale de la cavité tympanique.",
+    "appui_dans_le_modele": {
+     "id": "artere-pharyngienne-ascendante",
+     "nom": "Artère pharyngienne ascendante"
+    }
+   }
+  },
+  {
+   "id": "artere-tympanique-posterieure",
+   "nom": "Artère tympanique postérieure",
+   "latin": "Arteria tympanica posterior",
+   "anglais": "Posterior tympanic artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère tympanique postérieure",
+   "ta2": "4407",
+   "connu": {
+    "description_du_trace": "Branche de l'artère stylo-mastoïdienne, elle gagne la membrane tympanique par le canalicule de la corde du tympan et s'anastomose avec les autres artères tympaniques.",
+    "appui_dans_le_modele": {
+     "id": "marteau",
+     "nom": "Marteau"
+    }
+   }
+  },
+  {
+   "id": "artere-tympanique-superieure",
+   "nom": "Artère tympanique supérieure",
+   "latin": "Arteria tympanica superior",
+   "anglais": "Superior tympanic artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère tympanique supérieure",
+   "ta2": "4437",
+   "connu": {
+    "provenance": "artere-meningee-moyenne",
+    "description_du_trace": "Branche de l'artère méningée moyenne, elle suit le petit nerf pétreux dans le hiatus du canal facial et irrigue la paroi supérieure de la cavité tympanique.",
+    "appui_dans_le_modele": {
+     "id": "artere-meningee-moyenne",
+     "nom": "Artère méningée moyenne"
+    }
+   }
+  },
+  {
+   "id": "artere-zygomatico-orbitaire",
+   "nom": "Artère zygomatico-orbitaire",
+   "latin": "Arteria zygomaticoorbitalis",
+   "anglais": "Zygomatico-orbital artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère zygomatico-orbitaire",
+   "ta2": "4418",
+   "connu": {
+    "provenance": "temporale-superficielle",
+    "description_du_trace": "Branche de l'artère temporale superficielle, elle longe le bord supérieur de l'arcade zygomatique jusqu'au bord latéral de l'orbite et irrigue le muscle orbiculaire de l'œil.",
+    "appui_dans_le_modele": {
+     "id": "temporale-superficielle",
+     "nom": "Artère temporale superficielle"
+    }
+   }
+  },
+  {
+   "id": "arteres-centrales-anterolaterales",
+   "nom": "Artères centrales antérolatérales",
+   "latin": "Arteriae centrales anterclaterales",
+   "anglais": "Anterolateral central arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères centrales antérolatérales",
+   "ta2": "4510",
+   "connu": {
+    "provenance": "artere-cerebrale-moyenne",
+    "description_du_trace": "Artères lenticulo-striées nées du segment M1 de l'artère cérébrale moyenne ; elles pénètrent la substance perforée antérieure et irriguent le putamen, le globus pallidus, le noyau caudé et la capsule interne.",
+    "appui_dans_le_modele": {
+     "id": "artere-cerebrale-moyenne",
+     "nom": "Artère cérébrale moyenne"
+    }
+   }
+  },
+  {
+   "id": "arteres-centrales-posterolaterales",
+   "nom": "Artères centrales postérolatérales",
+   "latin": "Arteriae centrales posterolat. arteriae post. cerebri",
+   "anglais": "Posterolateral central arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères centrales postérolatérales",
+   "ta2": "4567",
+   "connu": {
+    "provenance": "artere-cerebrale-posterieure",
+    "description_du_trace": "Artères thalamo-géniculées nées du segment P2 de l'artère cérébrale postérieure ; elles irriguent la partie postéro-latérale du thalamus (pulvinar) et les corps géniculés.",
+    "appui_dans_le_modele": {
+     "id": "artere-cerebrale-posterieure",
+     "nom": "Artère cérébrale postérieure"
+    }
+   }
+  },
+  {
+   "id": "arteres-centrales-posteromediales",
+   "nom": "Artères centrales postéromédiales",
+   "latin": "Arteriae centrales posteromediales",
+   "anglais": "Posteromedial central arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères centrales postéromédiales",
+   "ta2": "4566",
+   "connu": {
+    "provenance": "artere-cerebrale-posterieure",
+    "description_du_trace": "Artères thalamo-perforantes nées du segment P1 de l'artère cérébrale postérieure ; elles traversent la substance perforée postérieure et irriguent le thalamus médial et le mésencéphale.",
+    "appui_dans_le_modele": {
+     "id": "artere-cerebrale-posterieure",
+     "nom": "Artère cérébrale postérieure"
+    }
+   }
+  },
+  {
+   "id": "arteres-palpebrales-laterales",
+   "nom": "Artères palpébrales latérales",
+   "latin": "Arteriae palpébrales latérales",
+   "anglais": "Lateral palpebral arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères palpébrales latérales",
+   "ta2": "4478",
+   "connu": {
+    "provenance": "artere-lacrymale",
+    "description_du_trace": "Deux petites branches de l'artère lacrymale, supérieure et inférieure, qui gagnent les paupières près de leur angle latéral et forment les arcades tarsiennes.",
+    "appui_dans_le_modele": {
+     "id": "artere-lacrymale",
+     "nom": "Artère lacrymale"
+    }
+   }
+  },
+  {
+   "id": "arteres-palpebrales-mediales",
+   "nom": "Artères palpébrales médiales",
+   "latin": "Arteriae palpebrales mediales",
+   "anglais": "Medial palpebral arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères palpébrales médiales",
+   "ta2": "4496",
+   "connu": {
+    "provenance": "artere-ophtalmique",
+    "description_du_trace": "Deux branches de l'artère ophtalmique, supérieure et inférieure, qui gagnent les paupières près de l'angle médial de l'œil et forment avec les latérales les arcades tarsiennes.",
+    "appui_dans_le_modele": {
+     "id": "artere-ophtalmique",
+     "nom": "Artère ophtalmique"
+    }
+   }
+  },
+  {
+   "id": "arteres-spinales-posterieures",
+   "nom": "Artères spinales postérieures",
+   "latin": "Arteriae spinales posteriores",
+   "anglais": "Posterior spinal arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères spinales postérieures",
+   "ta2": "4527",
+   "connu": {
+    "provenance": "vertebrale",
+    "description_du_trace": "Deux artères, nées de l'artère vertébrale ou de l'artère cérébelleuse postéro-inférieure, qui descendent de part et d'autre du sillon postéro-latéral de la moelle spinale en recevant les artères radiculaires et irriguent le tiers postérieur de la moelle.",
+    "appui_dans_le_modele": {
+     "id": "vertebrale",
+     "nom": "Artère vertébrale"
+    }
+   }
+  },
+  {
+   "id": "branches-centrales-anteromed-de-l-artere-communiquante-ant",
+   "nom": "Branches centrales antéroméd. de l'artère communiquante ant.",
+   "latin": "Rami centrales anteromed. arteriae communicants anterioris",
+   "anglais": "Anteromedial central branches-anterior communicating artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches centrales antéroméd. de l'artère communiquante ant.",
+   "ta2": "4518",
+   "connu": {
+    "provenance": "artere-communiquante-anterieure",
+    "description_du_trace": "Fines branches de la région de l'artère communicante antérieure qui pénètrent la substance perforée antérieure et irriguent l'hypothalamus antérieur, le septum et les colonnes du fornix.",
+    "appui_dans_le_modele": {
+     "id": "artere-communiquante-anterieure",
+     "nom": "Artère communiquante antérieure"
+    }
+   }
+  },
+  {
+   "id": "artere-cervicale-ascendante",
+   "nom": "Artère cervicale ascendante",
+   "latin": "Arteria cervicalis ascendens",
+   "anglais": "Ascending cervical artery",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Artère cervicale ascendante",
+   "ta2": "4597",
+   "connu": {
+    "provenance": "artere-thyroidienne-inferieure",
+    "description_du_trace": "Branche de l'artère thyroïdienne inférieure, elle monte sur le muscle scalène antérieur, en dedans du nerf phrénique, et irrigue les muscles profonds du cou et, par des rameaux spinaux, le canal vertébral.",
+    "appui_dans_le_modele": {
+     "id": "artere-thyroidienne-inferieure",
+     "nom": "Artère thyroïdienne inférieure"
+    }
+   }
+  },
+  {
+   "id": "artere-laryngee-inferieure",
+   "nom": "Artère laryngée inférieure",
+   "latin": "Arteria laryngea inferior",
+   "anglais": "Inferior laryngeal artery",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Artère laryngée inférieure",
+   "ta2": "4592",
+   "connu": {
+    "provenance": "artere-thyroidienne-inferieure",
+    "description_du_trace": "Branche de l'artère thyroïdienne inférieure, elle monte avec le nerf laryngé récurrent dans la gouttière trachéo-œsophagienne et pénètre dans le larynx derrière l'articulation cricothyroïdienne.",
+    "appui_dans_le_modele": {
+     "id": "artere-thyroidienne-inferieure",
+     "nom": "Artère thyroïdienne inférieure"
+    }
+   }
+  },
+  {
+   "id": "artere-laryngee-superieure",
+   "nom": "Artère laryngée supérieure",
+   "latin": "Arteria laryngea superior",
+   "anglais": "Superior laryngeal artery",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Artère laryngée supérieure",
+   "ta2": "4373",
+   "connu": {
+    "description_du_trace": "Branche de l'artère thyroïdienne supérieure, elle perfore la membrane thyro-hyoïdienne avec le nerf laryngé interne et irrigue la muqueuse et les muscles du larynx.",
+    "appui_dans_le_modele": {
+     "id": "cartilage-thyroide",
+     "nom": "Cartilage thyroïde"
+    }
+   }
+  },
+  {
+   "id": "artere-thyroidienne-superieure",
+   "nom": "Artère thyroïdienne supérieure",
+   "latin": "Arteria thyreoidea superior arteria thyroidea superior",
+   "anglais": "Superior thyroid artery",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Artère thyroïdienne supérieure",
+   "ta2": "4370",
+   "connu": {
+    "provenance": "carotide-externe",
+    "description_du_trace": "Première branche de la carotide externe, elle descend en avant vers le pôle supérieur du lobe thyroïdien, longe le bord latéral du cartilage thyroïde et irrigue la glande thyroïde.",
+    "appui_dans_le_modele": {
+     "id": "carotide-externe",
+     "nom": "Carotide externe"
+    }
+   }
+  }
+ ]
+}

@@ -496,8 +496,23 @@ def cotes_de(d):
     return {"deux": ["l", "r"], "gauche": ["l"], "droite": ["r"], "milieu": [None]}[c]
 
 
+def appui_de(d, refs, cote):
+    """L'objet sur lequel la structure s'appuie : le tronc d'une branche, la veine où se jette un affluent (le dernier
+    point d'un tracé de veine), le vaisseau qu'un plexus entoure, ce qui porte un ganglion ou un nœud."""
+    if d["forme"] in ("bande", "fuseau", "spirale", "anneaux", "coupe", "satellite"):
+        return None
+    specs = [x for x in refs if "objet" in x]
+    if not specs:
+        return None
+    sp = specs[-1] if (d["couche"] == "veine" and d["forme"] == "trace") else specs[0]
+    try:
+        return nom_objet(sp["objet"], cote)
+    except Erreur:
+        return None
+
+
 def construire(d, cote):
-    """→ (type, géométrie, collections, matières, courbe ou None)."""
+    """→ (type, géométrie, collections, matières, courbe ou None, objet d'appui)."""
     forme = d["forme"]
     if forme not in FORMES:
         raise Erreur(f"forme inconnue : {forme}")
@@ -514,9 +529,9 @@ def construire(d, cote):
             splines = [{**s, "points": [p[:3] + [round(p[3] * bevel / BISEAU, 3)] + p[4:] for p in s["points"]]} for s in splines]
         P, T = maillage(splines)
         courbe = {"bevel": BISEAU, "bevel_res": 4, "objet_bevel": None, "taper": None, "extrude": 0.0, "mode": "ROUND", "res": 12, "splines": splines}
-        return "CURVE", (P.astype(np.float32), T.astype(np.uint32)), cols + regions_de(refs, cote), mats, courbe
+        return "CURVE", (P.astype(np.float32), T.astype(np.uint32)), cols + regions_de(refs, cote), mats, courbe, appui_de(d, refs, cote)
     (P, T), refs = r
-    return "MESH", (P.astype(np.float32), T.astype(np.uint32)), cols + regions_de(refs, cote), mats, None
+    return "MESH", (P.astype(np.float32), T.astype(np.uint32)), cols + regions_de(refs, cote), mats, None, appui_de(d, refs, cote)
 
 
 def descriptions(fichiers=None):
@@ -572,7 +587,7 @@ if __name__ == "__main__":
         vus.add(d["nom"])
         for cote in cotes_de(d):
             try:
-                typ, (P, T), cols, mats, courbe = construire(d, cote)
+                typ, (P, T), cols, mats, courbe, appui = construire(d, cote)
             except (Erreur, KeyError, IndexError, ValueError, TypeError) as ex:
                 print(f"✗ {d['_lot']} : « {d['nom']} » ({cote or 'milieu'}) : {ex}")
                 erreurs += 1
@@ -596,6 +611,8 @@ if __name__ == "__main__":
             # La couche et la sorte sont dites par la description : l'étape 2 n'a pas à les deviner.
             o["couche"] = d["couche"]
             o["sorte"] = d.get("sorte") or SORTES.get((d["couche"], d["forme"])) or d["couche"]
+            if appui:
+                o["appui"] = appui
             if d.get("pudeur_ok"):
                 o["pudeur_ok"] = True
             objets.append(o)

@@ -67,6 +67,10 @@ function liees(e: Element): Element[] {
     l.push(...ELEMENTS.filter((x) => x.provenance === e.id));
   }
   if (e.couche === "os") pousser(e.articulations ?? []);
+  // Les structures construites : ce sur quoi elles s'appuient, et celles qui s'appuient sur elle (ses branches,
+  // ses affluents, les noyaux qu'elle porte).
+  pousser([e.appui]);
+  pousser(ELEMENTS.filter((x) => x.appui === e.id).map((x) => x.id));
   return l;
 }
 
@@ -260,6 +264,18 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
     if (choisi) stage.poignee.current?.viser([choisi.id], { marge: 1.7 });
     else stage.poignee.current?.vue("ensemble");
   }, [choisi, stage]);
+
+  // Échap referme : le repère montré, puis la structure choisie (sauf quand on écrit, ou qu'un dialogue est ouvert).
+  useEffect(() => {
+    const touche = (ev: KeyboardEvent) => {
+      if (ev.key !== "Escape" || !choisi) return;
+      const cible = ev.target as HTMLElement | null;
+      if (cible?.closest("input, textarea, select, dialog, [contenteditable='true']")) return;
+      nav.aller(repereChoisi ? `explorer/${choisi.id}` : "explorer");
+    };
+    window.addEventListener("keydown", touche);
+    return () => window.removeEventListener("keydown", touche);
+  }, [choisi, repereChoisi, nav]);
 
   // Et sa fiche vient sous les yeux (sur téléphone, elle est plus bas dans le panneau).
   const fiche = useRef<HTMLDivElement>(null);

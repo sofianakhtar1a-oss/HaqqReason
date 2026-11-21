@@ -1,0 +1,880 @@
+{
+ "lot": "lymphe-ajouts-2",
+ "couche": "lymphe",
+ "structures": [
+  {
+   "id": "lymphonoeuds-mesenteriques-inferieurs-paracoliques",
+   "nom": "Lymphonœuds mésentériques inférieurs paracoliques",
+   "latin": "Nodi mesenterici inferiores paracolici",
+   "anglais": "Paracolic inferior mesenteric nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds mésentériques inférieurs paracoliques",
+   "ta2": "5313",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœuds situés contre le bord médial du côlon descendant, dans le mésocôlon ; ils drainent le côlon et se jettent dans les nœuds mésentériques inférieurs.",
+    "appui_dans_le_modele": {
+     "id": "colon-descendant",
+     "nom": "Côlon descendant"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-mesenteriques-superieurs",
+   "nom": "Lymphonœuds mésentériques supérieurs",
+   "latin": "Nodi mesenterici superiores",
+   "anglais": "Superior mesenteric nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds mésentériques supérieurs",
+   "ta2": "5302",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-appendiculaires",
+      "nom": "Lymphonœuds appendiculaires"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-superieurs-centraux",
+      "nom": "Lymphonœuds mésentériques supérieurs centraux"
+     },
+     {
+      "id": "lymphonoeuds-ileocoliques",
+      "nom": "Lymphonœuds iléocoliques"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-juxta-intestinaux",
+      "nom": "Lymphonœuds mésentériques juxta-intestinaux"
+     },
+     {
+      "id": "lymphonoeuds-coliques-moyens",
+      "nom": "Lymphonœuds coliques moyens"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-paracoliques-superieurs",
+      "nom": "Lymphonœuds mésentériques paracoliques supérieurs"
+     },
+     {
+      "id": "lymphonoeuds-precaecaux",
+      "nom": "Lymphonœuds précaecaux"
+     },
+     {
+      "id": "lymphonoeuds-retrocaecaux",
+      "nom": "Lymphonœuds rétrocaecaux"
+     },
+     {
+      "id": "lymphonoeuds-coliques-droits",
+      "nom": "Lymphonœuds coliques droits"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-pancreaticoduodenaux-inferieurs",
+   "nom": "Lymphonœuds pancréaticoduodénaux inférieurs",
+   "latin": "Nodi pancreaticoduodenales inferiores",
+   "anglais": "Inferior pancreaticoduodenal nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds pancréaticoduodénaux inférieurs",
+   "ta2": "5298",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœuds placés dans le sillon entre le bas de la tête du pancréas et le duodénum, le long de l'artère pancréatico-duodénale inférieure ; ils drainent vers les nœuds mésentériques supérieurs.",
+    "appui_dans_le_modele": {
+     "id": "pancreas",
+     "nom": "Pancréas"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-pancreatiques",
+   "nom": "Lymphonœuds pancréatiques",
+   "latin": "Nodi pancreatic",
+   "anglais": "Pancreatic nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds pancréatiques",
+   "ta2": "5292",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-pancreatiques-inferieurs",
+      "nom": "Lymphonœuds pancréatiques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-pancreatiques-superieurs",
+      "nom": "Lymphonœuds pancréatiques supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-pyloriques",
+   "nom": "Lymphonœuds pyloriques",
+   "latin": "Nodi pylorici",
+   "anglais": "Pyloric nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds pyloriques",
+   "ta2": "5288",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-retropyloriques",
+      "nom": "Lymphonœuds rétropyloriques"
+     },
+     {
+      "id": "lymphonoeuds-subpyloriques",
+      "nom": "Lymphonœuds subpyloriques"
+     },
+     {
+      "id": "lymphonoeud-suprapylorique",
+      "nom": "Lymphonœud suprapylorique"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-visceraux-de-l-abdomen",
+   "nom": "Lymphonœuds viscéraux de l'abdomen",
+   "latin": "Nodi lymphoidei visceraies abdominis",
+   "anglais": "Visceral abdominal lymph nodes",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Lymphonœuds viscéraux de l'abdomen",
+   "ta2": "5281",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-retropyloriques",
+      "nom": "Lymphonœuds rétropyloriques"
+     },
+     {
+      "id": "lymphonoeuds-subpyloriques",
+      "nom": "Lymphonœuds subpyloriques"
+     },
+     {
+      "id": "lymphonoeud-suprapylorique",
+      "nom": "Lymphonœud suprapylorique"
+     },
+     {
+      "id": "lymphonoeuds-appendiculaires",
+      "nom": "Lymphonœuds appendiculaires"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-superieurs-centraux",
+      "nom": "Lymphonœuds mésentériques supérieurs centraux"
+     },
+     {
+      "id": "lymphonoeuds-coeliaques",
+      "nom": "Lymphonœuds coeliaques"
+     },
+     {
+      "id": "lymphonoeud-cystique",
+      "nom": "Lymphonœud cystique"
+     },
+     {
+      "id": "lymphonoeuds-ileocoliques",
+      "nom": "Lymphonœuds iléocoliques"
+     },
+     {
+      "id": "lymphonoeuds-pancreatiques-inferieurs",
+      "nom": "Lymphonœuds pancréatiques inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-lombaux-intermediaires",
+      "nom": "Lymphonœuds lombaux intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-juxta-intestinaux",
+      "nom": "Lymphonœuds mésentériques juxta-intestinaux"
+     },
+     {
+      "id": "lymphonoeuds-coliques-gauches",
+      "nom": "Lymphonœuds coliques gauches"
+     },
+     {
+      "id": "lymphonoeuds-coliques-moyens",
+      "nom": "Lymphonœuds coliques moyens"
+     },
+     {
+      "id": "lymphonoeuds-mesenteriques-paracoliques-superieurs",
+      "nom": "Lymphonœuds mésentériques paracoliques supérieurs"
+     },
+     {
+      "id": "lymphonoeuds-precaecaux",
+      "nom": "Lymphonœuds précaecaux"
+     },
+     {
+      "id": "lymphonoeuds-retrocaecaux",
+      "nom": "Lymphonœuds rétrocaecaux"
+     },
+     {
+      "id": "lymphonoeuds-coliques-droits",
+      "nom": "Lymphonœuds coliques droits"
+     },
+     {
+      "id": "lymphonoeuds-gastriques-droits",
+      "nom": "Lymphonœuds gastriques droits"
+     },
+     {
+      "id": "lymphonoeuds-gastro-omentaux-droits",
+      "nom": "Lymphonœuds gastro-omentaux droits"
+     },
+     {
+      "id": "lymphonoeuds-sigmoidiens",
+      "nom": "Lymphonœuds sigmoïdiens"
+     },
+     {
+      "id": "lymphonoeuds-spleniques",
+      "nom": "Lymphonœuds spléniques"
+     },
+     {
+      "id": "lymphonoeuds-pancreatiques-superieurs",
+      "nom": "Lymphonœuds pancréatiques supérieurs"
+     },
+     {
+      "id": "lymphonoeuds-pancreaticoduodenaux-superieurs",
+      "nom": "Lymphonœuds pancréaticoduodénaux supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-anorectaux-superieurs",
+   "nom": "Lymphonœuds anorectaux supérieurs",
+   "latin": "Nodi anorectales superiores",
+   "anglais": "Superior anorectal nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds anorectaux supérieurs",
+   "ta2": "5316",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœuds pararectaux le long de l'artère rectale supérieure, sur la face postérieure du haut du rectum ; ils drainent le rectum vers les nœuds mésentériques inférieurs.",
+    "appui_dans_le_modele": {
+     "id": "artere-anorectale-superieure",
+     "nom": "Artère anorectale supérieure"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-du-membre-inferieur",
+   "nom": "Lymphonœuds du membre inférieur",
+   "latin": "Nodi lymphoidei membri inferioris",
+   "anglais": "Lymph nodes of lower limb",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds du membre inférieur",
+   "ta2": "5347",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-tibial-anterieur",
+      "nom": "Lymphonœud tibial antérieur"
+     },
+     {
+      "id": "lymphonoeud-fibulaire",
+      "nom": "Lymphonœud fibulaire"
+     },
+     {
+      "id": "lymphonoeud-inguinal-profond-intermediaire",
+      "nom": "Lymphonœud inguinal profond intermédiaire"
+     },
+     {
+      "id": "lymphonoeud-tibial-posterieur",
+      "nom": "Lymphonœud tibial postérieur"
+     },
+     {
+      "id": "lymphonoeud-inguinal-profond-proximal",
+      "nom": "Lymphonœud inguinal profond proximal"
+     },
+     {
+      "id": "lymphonoeuds-poplites-profonds",
+      "nom": "Lymphonœuds poplités profonds"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-inferieurs",
+      "nom": "Lymphonœuds inguinaux superficiels inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-poplites-superficiels",
+      "nom": "Lymphonœuds poplités superficiels"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-superolateraux",
+      "nom": "Lymphonœuds inguinaux superficiels supérolatéraux"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-superomediaux",
+      "nom": "Lymphonœuds inguinaux superficiels supéromédiaux"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-du-pelvis",
+   "nom": "Lymphonœuds du pelvis",
+   "latin": "Nodi lymphoidei pelvis",
+   "anglais": "Pelvic lymph nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds du pelvis",
+   "ta2": "5317",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-lacunaire-intermediaire",
+      "nom": "Lymphonœud lacunaire intermédiaire"
+     },
+     {
+      "id": "lymphonoeud-lacunaire-lateral",
+      "nom": "Lymphonœud lacunaire latéral"
+     },
+     {
+      "id": "lymphonoeud-lacunaire-medial",
+      "nom": "Lymphonœud lacunaire médial"
+     },
+     {
+      "id": "lymphonoeuds-gluteaux-inferieurs",
+      "nom": "Lymphonœuds glutéaux inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-intermediaires",
+      "nom": "Lymphonœuds iliaques communs intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-externes-intermediaires",
+      "nom": "Lymphonœuds iliaques externes intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-lateraux",
+      "nom": "Lymphonœuds iliaques communs latéraux"
+     },
+     {
+      "id": "lymphonoeuds-sacraux-lateraux",
+      "nom": "Lymphonœuds sacraux latéraux"
+     },
+     {
+      "id": "lymphonoeuds-vesicaux-lateraux",
+      "nom": "Lymphonœuds vésicaux latéraux"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-mediaux",
+      "nom": "Lymphonœuds iliaques communs médiaux"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-externes-mediaux",
+      "nom": "Lymphonœuds iliaques externes médiaux"
+     },
+     {
+      "id": "lymphonoeuds-sacraux-medians",
+      "nom": "Lymphonœuds sacraux médians"
+     },
+     {
+      "id": "lymphonoeuds-obturateurs",
+      "nom": "Lymphonœuds obturateurs"
+     },
+     {
+      "id": "lymphonoeuds-anorectaux",
+      "nom": "Lymphonœuds anorectaux"
+     },
+     {
+      "id": "lymphonoeuds-retrovesicaux",
+      "nom": "Lymphonœuds rétrovésicaux"
+     },
+     {
+      "id": "lymphonoeuds-prevesicaux",
+      "nom": "Lymphonœuds prévésicaux"
+     },
+     {
+      "id": "lymphonoeuds-subaortiques",
+      "nom": "Lymphonœuds subaortiques"
+     },
+     {
+      "id": "lymphonoeuds-gluteaux-superieurs",
+      "nom": "Lymphonœuds glutéaux supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-gluteaux",
+   "nom": "Lymphonœuds glutéaux",
+   "latin": "Nodi glutei",
+   "anglais": "Gluteal nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds glutéaux",
+   "ta2": "5335",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-gluteaux-inferieurs",
+      "nom": "Lymphonœuds glutéaux inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-gluteaux-superieurs",
+      "nom": "Lymphonœuds glutéaux supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-iliaques-externes",
+   "nom": "Lymphonœuds iliaques externes",
+   "latin": "Nodi iliaci externi",
+   "anglais": "External iliac nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds iliaques externes",
+   "ta2": "5325",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-lacunaire-intermediaire",
+      "nom": "Lymphonœud lacunaire intermédiaire"
+     },
+     {
+      "id": "lymphonoeud-lacunaire-lateral",
+      "nom": "Lymphonœud lacunaire latéral"
+     },
+     {
+      "id": "lymphonoeud-lacunaire-medial",
+      "nom": "Lymphonœud lacunaire médial"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-externes-intermediaires",
+      "nom": "Lymphonœuds iliaques externes intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-externes-mediaux",
+      "nom": "Lymphonœuds iliaques externes médiaux"
+     },
+     {
+      "id": "lymphonoeuds-obturateurs",
+      "nom": "Lymphonœuds obturateurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-iliaques-externes-lateraux",
+   "nom": "Lymphonœuds iliaques externes latéraux",
+   "latin": "Nodi iliaci externi latérales",
+   "anglais": "Lateral external iliac nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds iliaques externes latéraux",
+   "ta2": "5328",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœuds de la chaîne iliaque externe, en dehors de l'artère ; ils drainent la région inguinale profonde et les muscles de la paroi abdominale.",
+    "appui_dans_le_modele": {
+     "id": "iliaque-externe",
+     "nom": "Artère iliaque externe"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-iliaques-internes",
+   "nom": "Lymphonœuds iliaques internes",
+   "latin": "Nodi iliaci interni",
+   "anglais": "Internal iliac nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds iliaques internes",
+   "ta2": "5334",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-gluteaux-inferieurs",
+      "nom": "Lymphonœuds glutéaux inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-sacraux-lateraux",
+      "nom": "Lymphonœuds sacraux latéraux"
+     },
+     {
+      "id": "lymphonoeuds-gluteaux-superieurs",
+      "nom": "Lymphonœuds glutéaux supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-inguinaux",
+   "nom": "Lymphonœuds inguinaux",
+   "latin": "Nodi inguinales",
+   "anglais": "Inguinal nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds inguinaux",
+   "ta2": "5348",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-inguinal-profond-intermediaire",
+      "nom": "Lymphonœud inguinal profond intermédiaire"
+     },
+     {
+      "id": "lymphonoeud-inguinal-profond-proximal",
+      "nom": "Lymphonœud inguinal profond proximal"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-inferieurs",
+      "nom": "Lymphonœuds inguinaux superficiels inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-superolateraux",
+      "nom": "Lymphonœuds inguinaux superficiels supérolatéraux"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-superomediaux",
+      "nom": "Lymphonœuds inguinaux superficiels supéromédiaux"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-inguinaux-superficiels",
+   "nom": "Lymphonœuds inguinaux superficiels",
+   "latin": "Nodi inguinales superfciales",
+   "anglais": "Superficial inguinal nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds inguinaux superficiels",
+   "ta2": "5349",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-inferieurs",
+      "nom": "Lymphonœuds inguinaux superficiels inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-superolateraux",
+      "nom": "Lymphonœuds inguinaux superficiels supérolatéraux"
+     },
+     {
+      "id": "lymphonoeuds-inguinaux-superficiels-superomediaux",
+      "nom": "Lymphonœuds inguinaux superficiels supéromédiaux"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-interiliaques",
+   "nom": "Lymphonœuds interiliaques",
+   "latin": "Nodi interiliaci",
+   "anglais": "Interiliac nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds interiliaques",
+   "ta2": "5332",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Petits nœuds placés dans l'angle entre l'artère iliaque externe et l'artère iliaque interne ; ils relient les chaînes iliaques externe et interne.",
+    "appui_dans_le_modele": {
+     "id": "iliaque-externe",
+     "nom": "Artère iliaque externe"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-paravesicaux",
+   "nom": "Lymphonœuds paravésicaux",
+   "latin": "Nodi paravesicales",
+   "anglais": "Paravesical nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds paravésicaux",
+   "ta2": "5340",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-vesicaux-lateraux",
+      "nom": "Lymphonœuds vésicaux latéraux"
+     },
+     {
+      "id": "lymphonoeuds-retrovesicaux",
+      "nom": "Lymphonœuds rétrovésicaux"
+     },
+     {
+      "id": "lymphonoeuds-prevesicaux",
+      "nom": "Lymphonœuds prévésicaux"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-parietaux-du-pelvis",
+   "nom": "Lymphonœuds pariétaux du pelvis",
+   "latin": "Nodi lymphoidei pariétales pelvis",
+   "anglais": "Parietal pelvic lymph nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds pariétaux du pelvis",
+   "ta2": "5318",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-lacunaire-intermediaire",
+      "nom": "Lymphonœud lacunaire intermédiaire"
+     },
+     {
+      "id": "lymphonoeud-lacunaire-lateral",
+      "nom": "Lymphonœud lacunaire latéral"
+     },
+     {
+      "id": "lymphonoeud-lacunaire-medial",
+      "nom": "Lymphonœud lacunaire médial"
+     },
+     {
+      "id": "lymphonoeuds-gluteaux-inferieurs",
+      "nom": "Lymphonœuds glutéaux inférieurs"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-intermediaires",
+      "nom": "Lymphonœuds iliaques communs intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-externes-intermediaires",
+      "nom": "Lymphonœuds iliaques externes intermédiaires"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-lateraux",
+      "nom": "Lymphonœuds iliaques communs latéraux"
+     },
+     {
+      "id": "lymphonoeuds-sacraux-lateraux",
+      "nom": "Lymphonœuds sacraux latéraux"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-communs-mediaux",
+      "nom": "Lymphonœuds iliaques communs médiaux"
+     },
+     {
+      "id": "lymphonoeuds-iliaques-externes-mediaux",
+      "nom": "Lymphonœuds iliaques externes médiaux"
+     },
+     {
+      "id": "lymphonoeuds-sacraux-medians",
+      "nom": "Lymphonœuds sacraux médians"
+     },
+     {
+      "id": "lymphonoeuds-obturateurs",
+      "nom": "Lymphonœuds obturateurs"
+     },
+     {
+      "id": "lymphonoeuds-subaortiques",
+      "nom": "Lymphonœuds subaortiques"
+     },
+     {
+      "id": "lymphonoeuds-gluteaux-superieurs",
+      "nom": "Lymphonœuds glutéaux supérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-pelviens-visceraux",
+   "nom": "Lymphonœuds pelviens viscéraux",
+   "latin": "Nodi iymphoidei viscérales",
+   "anglais": "Visceral pelvic lymph nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Lymphonœuds pelviens viscéraux",
+   "ta2": "5339",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-vesicaux-lateraux",
+      "nom": "Lymphonœuds vésicaux latéraux"
+     },
+     {
+      "id": "lymphonoeuds-anorectaux",
+      "nom": "Lymphonœuds anorectaux"
+     },
+     {
+      "id": "lymphonoeuds-retrovesicaux",
+      "nom": "Lymphonœuds rétrovésicaux"
+     },
+     {
+      "id": "lymphonoeuds-prevesicaux",
+      "nom": "Lymphonœuds prévésicaux"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noeuds-lymphatiques-inguinaux-profonds",
+   "nom": "Nœuds lymphatiques inguinaux profonds",
+   "latin": "Nodi inguinales profundi",
+   "anglais": "Deep inguinal nodes",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Nœuds lymphatiques inguinaux profonds",
+   "ta2": "5353",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeud-inguinal-profond-intermediaire",
+      "nom": "Lymphonœud inguinal profond intermédiaire"
+     },
+     {
+      "id": "lymphonoeud-inguinal-profond-proximal",
+      "nom": "Lymphonœud inguinal profond proximal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-axillaires",
+   "nom": "Lymphonœuds axillaires",
+   "latin": "Nodi axillares",
+   "anglais": "Axillary nodes",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Lymphonœuds axillaires",
+   "ta2": "5236",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-axillaires-anterieurs",
+      "nom": "Lymphonœuds axillaires antérieurs"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-apicaux",
+      "nom": "Lymphonœuds axillaires apicaux"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-centraux",
+      "nom": "Lymphonœuds axillaires centraux"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-lateraux",
+      "nom": "Lymphonœuds axillaires latéraux"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-posterieurs",
+      "nom": "Lymphonœuds axillaires postérieurs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeuds-du-membre-superieur",
+   "nom": "Lymphonœuds du membre supérieur",
+   "latin": "Nodi lymphoidei membri superioris",
+   "anglais": "Lymph nodes of upper limb",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Lymphonœuds du membre supérieur",
+   "ta2": "5235",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-axillaires-anterieurs",
+      "nom": "Lymphonœuds axillaires antérieurs"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-apicaux",
+      "nom": "Lymphonœuds axillaires apicaux"
+     },
+     {
+      "id": "lymphonoeuds-brachiaux",
+      "nom": "Lymphonœuds brachiaux"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-centraux",
+      "nom": "Lymphonœuds axillaires centraux"
+     },
+     {
+      "id": "lymphonoeuds-cubitaux",
+      "nom": "Lymphonœuds cubitaux"
+     },
+     {
+      "id": "lymphonoeuds-infraclaviculaires",
+      "nom": "Lymphonœuds infraclaviculaires"
+     },
+     {
+      "id": "lymphonoeuds-interpectoraux",
+      "nom": "Lymphonœuds interpectoraux"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-lateraux",
+      "nom": "Lymphonœuds axillaires latéraux"
+     },
+     {
+      "id": "lymphonoeuds-axillaires-posterieurs",
+      "nom": "Lymphonœuds axillaires postérieurs"
+     },
+     {
+      "id": "lymphonoeuds-supratrochleaires",
+      "nom": "Lymphonœuds supratrochléaires"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lymphonoeud-inguinal-profond-distal",
+   "nom": "Lymphonœud inguinal profond distal",
+   "latin": "Nodus inguinalis profundus distalis",
+   "anglais": "Distal deep inguinal node",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Lymphonœud inguinal profond distal",
+   "ta2": "5356",
+   "nature": "noeud",
+   "connu": {
+    "description_du_trace": "Nœud inguinal profond le plus bas, sur le côté médial de la veine fémorale, juste sous l'abouchement de la grande veine saphène ; il draine le membre inférieur.",
+    "appui_dans_le_modele": {
+     "id": "veine-femorale",
+     "nom": "Veine fémorale"
+    }
+   }
+  },
+  {
+   "id": "lymphonoeuds-poplites",
+   "nom": "Lymphonœuds poplités",
+   "latin": "Nodi poplitei",
+   "anglais": "Popliteal nodes",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Lymphonœuds poplités",
+   "ta2": "5357",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lymphonoeuds-poplites-profonds",
+      "nom": "Lymphonœuds poplités profonds"
+     },
+     {
+      "id": "lymphonoeuds-poplites-superficiels",
+      "nom": "Lymphonœuds poplités superficiels"
+     }
+    ]
+   }
+  }
+ ]
+}

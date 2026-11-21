@@ -1,0 +1,747 @@
+{
+ "lot": "veine-ajouts-3",
+ "couche": "veine",
+ "structures": [
+  {
+   "id": "veines-thalamo-striees-inferieures",
+   "nom": "Veines thalamo-striées inférieures",
+   "latin": "Venae thalamostriatae inferiores",
+   "anglais": "Inferior thalamostriate veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines thalamo-striées inférieures",
+   "ta2": "4920",
+   "connu": {
+    "description_du_trace": "Petites veines des noyaux gris centraux qui traversent la substance perforée antérieure et se jettent dans la veine basale.",
+    "appui_dans_le_modele": {
+     "id": "artere-cerebrale-anterieure",
+     "nom": "Artère cérébrale antérieure"
+    }
+   }
+  },
+  {
+   "id": "veines-tympaniques",
+   "nom": "Veines tympaniques",
+   "latin": "Venae tympanicae",
+   "anglais": "Tympanic veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines tympaniques",
+   "ta2": "4843",
+   "connu": {
+    "description_du_trace": "Elles naissent de la cavité du tympan et gagnent le plexus ptérygoïdien (par la fissure pétrotympanique) et le sinus pétreux supérieur.",
+    "appui_dans_le_modele": {
+     "id": "sinus-petreux-superieur",
+     "nom": "Sinus pétreux supérieur"
+    }
+   }
+  },
+  {
+   "id": "veines-emissaires",
+   "nom": "Veines émissaires",
+   "latin": "Emissaria",
+   "anglais": "Emissary veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines émissaires",
+   "ta2": "4872",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-emissaire-parietale",
+      "nom": "Veine émissaire pariétale"
+     },
+     {
+      "id": "veine-emissaire-mastoidienne",
+      "nom": "Veine émissaire mastoïdienne"
+     },
+     {
+      "id": "veine-emissaire-condylaire",
+      "nom": "Veine émissaire condylaire"
+     },
+     {
+      "id": "veine-emissaire-occipitale",
+      "nom": "Veine émissaire occipitale"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veine-cervicale-profonde",
+   "nom": "Veine cervicale profonde",
+   "latin": "Vena cervicalis profunda",
+   "anglais": "Deep cervical vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine cervicale profonde",
+   "ta2": "4785",
+   "connu": {
+    "description_du_trace": "Elle draine la région sous-occipitale, descend en arrière des apophyses transverses cervicales sous les muscles de la nuque, accompagne l'artère cervicale profonde et se jette dans la veine vertébrale à la base du cou.",
+    "appui_dans_le_modele": {
+     "id": "veine-vertebrale",
+     "nom": "Veine vertébrale"
+    }
+   }
+  },
+  {
+   "id": "veine-intercostale-supreme",
+   "nom": "Veine intercostale suprême",
+   "latin": "Vena intercostalis suprema",
+   "anglais": "Supreme intercostal vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine intercostale suprême",
+   "ta2": "4791",
+   "connu": {
+    "description_du_trace": "Elle draine le premier espace intercostal en arrière et se jette dans la veine vertébrale ou la veine brachiocéphalique.",
+    "appui_dans_le_modele": {
+     "id": "veine-vertebrale",
+     "nom": "Veine vertébrale"
+    }
+   }
+  },
+  {
+   "id": "veine-laryngee-inferieure",
+   "nom": "Veine laryngée inférieure",
+   "latin": "Vena laryngea inferior",
+   "anglais": "Inferior laryngeal vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine laryngée inférieure",
+   "ta2": "4797",
+   "connu": {
+    "description_du_trace": "Elle accompagne le nerf laryngé inférieur et l'artère laryngée inférieure le long de la trachée et rejoint la veine thyroïdienne inférieure.",
+    "appui_dans_le_modele": {
+     "id": "glande-thyroide",
+     "nom": "Glande thyroïde"
+    }
+   }
+  },
+  {
+   "id": "veine-laryngee-superieure",
+   "nom": "Veine laryngée supérieure",
+   "latin": "Vena laryngea superior",
+   "anglais": "Superior laryngeal vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine laryngée supérieure",
+   "ta2": "4813",
+   "connu": {
+    "description_du_trace": "Elle sort du larynx avec le nerf laryngé supérieur à travers la membrane thyrohyoïdienne et se jette dans la veine thyroïdienne supérieure.",
+    "appui_dans_le_modele": {
+     "id": "veine-thyroidienne-superieure",
+     "nom": "Veine thyroïdienne supérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-sternocleidomastoidienne",
+   "nom": "Veine sternocléïdomastoïdienne",
+   "latin": "Vena sternocleidomastoidea",
+   "anglais": "Sternocleidomastoid vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine sternocléïdomastoïdienne",
+   "ta2": "4815",
+   "connu": {
+    "description_du_trace": "Elle draine le muscle sterno-cléido-mastoïdien et rejoint la veine jugulaire interne.",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-interne",
+     "nom": "Veine jugulaire interne"
+    }
+   }
+  },
+  {
+   "id": "veine-thyroidienne-moyenne",
+   "nom": "Veine thyroïdienne moyenne",
+   "latin": "Vena thyreoidea media",
+   "anglais": "Middle thyroid vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine thyroïdienne moyenne",
+   "ta2": "4814",
+   "connu": {
+    "description_du_trace": "Elle naît du bord latéral du lobe thyroïdien, traverse le cou en avant de l'artère carotide commune et se jette dans la veine jugulaire interne.",
+    "appui_dans_le_modele": {
+     "id": "veine-jugulaire-interne",
+     "nom": "Veine jugulaire interne"
+    }
+   }
+  },
+  {
+   "id": "veine-vertebrale-anterieure",
+   "nom": "Veine vertébrale antérieure",
+   "latin": "Vena vertebralis anterior",
+   "anglais": "Anterior vertebral vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine vertébrale antérieure",
+   "ta2": "4782",
+   "connu": {
+    "description_du_trace": "Petite veine qui monte devant les corps vertébraux cervicaux, contre le muscle long du cou ; elle descend vers le pied du cou et se jette dans la veine vertébrale.",
+    "appui_dans_le_modele": {
+     "id": "veine-vertebrale",
+     "nom": "Veine vertébrale"
+    }
+   }
+  },
+  {
+   "id": "veines-cardiaques",
+   "nom": "Veines cardiaques",
+   "latin": "Venae cardiacae",
+   "anglais": "Cardiac veins",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Veines cardiaques",
+   "ta2": "4157",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "sinus-coronaire",
+      "nom": "Sinus coronaire"
+     },
+     {
+      "id": "grande-veine-cardiaque",
+      "nom": "Grande veine cardiaque"
+     },
+     {
+      "id": "veine-inferieure-du-ventricule-gauche",
+      "nom": "Veine inférieure du ventricule gauche"
+     },
+     {
+      "id": "veine-veine-inferieure-du-ventricule-gauche",
+      "nom": "Veine inférieure du ventricule gauche"
+     },
+     {
+      "id": "veine-cardiaque-moyenne",
+      "nom": "Veine cardiaque moyenne"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-intercostales-anterieures",
+   "nom": "Veines intercostales antérieures",
+   "latin": "Venae intercostales anteriores",
+   "anglais": "Anterior intercostal veins",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Veines intercostales antérieures",
+   "ta2": "4790",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-intercostale-superieure-gauche",
+      "nom": "Veine intercostale supérieure gauche"
+     },
+     {
+      "id": "veine-intercostale-superieure-droite",
+      "nom": "Veine intercostale supérieure droite"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-pulmonaires",
+   "nom": "Veines pulmonaires",
+   "latin": "Venae pulmonales",
+   "anglais": "Pulmonary veins",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Veines pulmonaires",
+   "ta2": "4107",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "veine-anterieure-du-poumon-gauche",
+      "nom": "Veine antérieure du poumon gauche"
+     },
+     {
+      "id": "veine-anterieure-du-poumon-droit",
+      "nom": "Veine antérieure du poumon droit"
+     },
+     {
+      "id": "veine-apicale-du-poumon-droit",
+      "nom": "Veine apicale du poumon droit"
+     },
+     {
+      "id": "veine-apicoposterieure-du-poumon-gauche",
+      "nom": "Veine apicopostérieure du poumon gauche"
+     },
+     {
+      "id": "veine-basale-inferieure-du-poumon-gauche",
+      "nom": "Veine basale inférieure du poumon gauche"
+     },
+     {
+      "id": "veine-basale-inferieure-du-poumon-droit",
+      "nom": "Veine basale inférieure du poumon droit"
+     },
+     {
+      "id": "veine-lingulaire-inferieure-du-poumon-gauche",
+      "nom": "Veine lingulaire inférieure du poumon gauche"
+     },
+     {
+      "id": "veine-laterale-du-poumon-droit",
+      "nom": "Veine latérale du poumon droit"
+     },
+     {
+      "id": "veine-pulmonaire-inferieure-gauche",
+      "nom": "Veine pulmonaire inférieure gauche"
+     },
+     {
+      "id": "veine-pulmonaire-superieure-gauche",
+      "nom": "Veine pulmonaire supérieure gauche"
+     },
+     {
+      "id": "veine-lingulaire-du-poumon-gauche",
+      "nom": "Veine lingulaire du poumon gauche"
+     },
+     {
+      "id": "veine-mediale-du-poumon-droit",
+      "nom": "Veine médiale du poumon droit"
+     },
+     {
+      "id": "veine-posterieure-du-poumon-droit",
+      "nom": "Veine postérieure du poumon droit"
+     },
+     {
+      "id": "veine-basale-superieure-du-poumon-gauche",
+      "nom": "Veine basale supérieure du poumon gauche"
+     },
+     {
+      "id": "veine-basale-superieure-du-poumon-droit",
+      "nom": "Veine basale supérieure du poumon droit"
+     },
+     {
+      "id": "veine-lingulaire-superieure-du-poumon-gauche",
+      "nom": "Veine lingulaire supérieure du poumon gauche"
+     },
+     {
+      "id": "veine-superieure-du-poumon-gauche",
+      "nom": "Veine supérieure du poumon gauche"
+     },
+     {
+      "id": "veine-superieure-du-poumon-droit",
+      "nom": "Veine supérieure du poumon droit"
+     }
+    ]
+   }
+  },
+  {
+   "id": "veines-spinales-anterieures",
+   "nom": "Veines spinales antérieures",
+   "latin": "Venae spinales anteriores",
+   "anglais": "Anterior spinal veins",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Veines spinales antérieures",
+   "ta2": "4945",
+   "connu": {
+    "description_du_trace": "Veines longitudinales de la face antérieure de la moelle spinale, l'une médiane dans la fissure médiane antérieure et deux antérolatérales ; elles se jettent dans les veines radiculaires.",
+    "appui_dans_le_modele": {
+     "id": "substance-blanche-de-la-moelle-epiniere",
+     "nom": "Substance blanche de la moëlle épinière"
+    }
+   }
+  },
+  {
+   "id": "veines-spinales-posterieures",
+   "nom": "Veines spinales postérieures",
+   "latin": "Venae spinales posteriores",
+   "anglais": "Posterior spinal veins",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Veines spinales postérieures",
+   "ta2": "4946",
+   "connu": {
+    "description_du_trace": "Veines longitudinales de la face postérieure de la moelle, médiane et postérolatérales, qui se jettent dans les veines radiculaires.",
+    "appui_dans_le_modele": {
+     "id": "substance-blanche-de-la-moelle-epiniere",
+     "nom": "Substance blanche de la moëlle épinière"
+    }
+   }
+  },
+  {
+   "id": "affluentes-oesophagiennes-de-la-veine-hemi-azygos-accessoire",
+   "nom": "Affluentes œsophagiennes de la veine hémi-azygos accessoire",
+   "latin": "Affluentes oesophageae venae hemiazygae accessoriae",
+   "anglais": "Oesophageal accessory hemi-azygos vein",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Affluentes œsophagiennes de la veine hémi-azygos accessoire",
+   "ta2": "4760",
+   "connu": {
+    "description_du_trace": "Affluentes de l'oesophage thoracique moyen : de petites veines viennent de la paroi oesophagienne et se jettent dans la veine hémi-azygos accessoire, à gauche de la colonne.",
+    "appui_dans_le_modele": {
+     "id": "veine-hemi-azygos-accessoire",
+     "nom": "Veine hémi-azygos accessoire"
+    }
+   }
+  },
+  {
+   "id": "petite-veine-cardiaque",
+   "nom": "Petite veine cardiaque",
+   "latin": "Vena parva cordis",
+   "anglais": "Small cardiac vein",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Petite veine cardiaque",
+   "ta2": "4166",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère coronaire droite dans le sillon atrioventriculaire droit, draine la face inférieure de l'atrium et du ventricule droits et se termine dans le sinus coronaire près de son ostium.",
+    "appui_dans_le_modele": {
+     "id": "sinus-coronaire",
+     "nom": "Sinus coronaire"
+    }
+   }
+  },
+  {
+   "id": "veine-brachiocephalique-oesophagienne",
+   "nom": "Veine brachiocéphalique œsophagienne",
+   "latin": "Affluentes oesophageae venae brachiocephalicae",
+   "anglais": "Oesophageal brachiocephalic vein",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine brachiocéphalique œsophagienne",
+   "ta2": "4779",
+   "connu": {
+    "description_du_trace": "Veines de la partie haute de l'oesophage thoracique qui contournent la trachée à gauche et se jettent dans la veine brachiocéphalique gauche.",
+    "appui_dans_le_modele": {
+     "id": "veine-brachiocephalique",
+     "nom": "Veine brachiocéphalique"
+    }
+   }
+  },
+  {
+   "id": "veine-hepatique-gauche",
+   "nom": "Veine hépatique gauche",
+   "latin": "Vena hepatica sinistra",
+   "anglais": "Left hepatic vein",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine hépatique gauche",
+   "ta2": "4997",
+   "connu": {
+    "description_du_trace": "Elle passe entre les segments latéraux gauches (II et III) du foie, dans la scissure ombilicale, et se jette dans la veine cave inférieure, le plus souvent avec la veine hépatique intermédiaire.",
+    "appui_dans_le_modele": {
+     "id": "veines-hepatiques",
+     "nom": "Veines hépatiques"
+    }
+   }
+  },
+  {
+   "id": "veine-lobaire-moyenne-du-poumon-droit",
+   "nom": "Veine lobaire moyenne du poumon droit",
+   "latin": "Vena lobaris media pulmonis dextri",
+   "anglais": "Middle lobar vein of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine lobaire moyenne du poumon droit",
+   "ta2": "4112",
+   "connu": {
+    "description_du_trace": "Elle draine le lobe moyen du poumon droit, par la réunion des veines latérale et médiale, et se jette dans la veine pulmonaire supérieure droite au hile.",
+    "appui_dans_le_modele": {
+     "id": "veine-pulmonaire-superieure-gauche",
+     "nom": "Veine pulmonaire supérieure gauche"
+    }
+   }
+  },
+  {
+   "id": "veine-marginale-gauche-du-coeur",
+   "nom": "Veine marginale gauche du cœur",
+   "latin": "Vena marginalis sinistra cordis",
+   "anglais": "Marginal vein of heart",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine marginale gauche du cœur",
+   "ta2": "4161",
+   "connu": {
+    "appui_dans_le_modele": {
+     "id": "grande-veine-cardiaque",
+     "nom": "Grande veine cardiaque"
+    }
+   }
+  },
+  {
+   "id": "veine-oblique-de-l-atrium-gauche",
+   "nom": "Veine oblique de l'atrium gauche",
+   "latin": "Vena obliqua atrii sinistri",
+   "anglais": "Oblique vein of left atrium",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine oblique de l'atrium gauche",
+   "ta2": "4163",
+   "connu": {
+    "description_du_trace": "Petite veine (veine de Marshall) qui descend sur la face postérieure de l'atrium gauche, dont elle draine la paroi, et rejoint le sinus coronaire près de la grande veine cardiaque.",
+    "appui_dans_le_modele": {
+     "id": "sinus-coronaire",
+     "nom": "Sinus coronaire"
+    }
+   }
+  },
+  {
+   "id": "veine-scapulaire-dorsale",
+   "nom": "Veine scapulaire dorsale",
+   "latin": "Vena scapularis dorsalis",
+   "anglais": "Dorsal scapular vein",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine scapulaire dorsale",
+   "ta2": "4955",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère et le nerf scapulaires dorsaux le long du bord médial de la scapula, sous les rhomboïdes, puis rejoint la veine sous-clavière.",
+    "appui_dans_le_modele": {
+     "id": "veine-sous-claviere",
+     "nom": "Veine sous-clavière"
+    }
+   }
+  },
+  {
+   "id": "veine-thoraco-acromiale",
+   "nom": "Veine thoraco-acromiale",
+   "latin": "Vena thoracoacromialis",
+   "anglais": "Thoraco-acromial vein",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine thoraco-acromiale",
+   "ta2": "4965",
+   "connu": {
+    "description_du_trace": "Elle accompagne l'artère thoraco-acromiale, perce la fascia clavipectorale et se jette dans la veine axillaire (ou céphalique)."
+   }
+  },
+  {
+   "id": "veine-thyroidienne-inferieure",
+   "nom": "Veine thyroïdienne inférieure",
+   "latin": "Vena thyreoidea inferior sinistra",
+   "anglais": "Inferior thyroid vein",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine thyroïdienne inférieure",
+   "ta2": "4795",
+   "connu": {
+    "description_du_trace": "Née du plexus thyroïdien du bord inférieur de la glande, elle descend devant la trachée et se jette dans la veine brachiocéphalique du même côté.",
+    "appui_dans_le_modele": {
+     "id": "veine-brachiocephalique",
+     "nom": "Veine brachiocéphalique"
+    }
+   }
+  },
+  {
+   "id": "veines-cardiaques-anterieures",
+   "nom": "Veines cardiaques antérieures",
+   "latin": "Venae anteriores cordis",
+   "anglais": "Anterior cardiac veins",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veines cardiaques antérieures",
+   "ta2": "4168",
+   "connu": {
+    "description_du_trace": "Deux à quatre petites veines de la face antérieure du ventricule droit qui franchissent le sillon coronaire et s'ouvrent directement dans l'atrium droit, sans passer par le sinus coronaire.",
+    "appui_dans_le_modele": {
+     "id": "atrium-droit",
+     "nom": "Atrium droit"
+    }
+   }
+  },
+  {
+   "id": "veines-intervertebrales",
+   "nom": "Veines intervertébrales",
+   "latin": "Venae intervertébrales",
+   "anglais": "Intervertebral veins",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veines intervertébrales",
+   "ta2": "4943",
+   "connu": {
+    "description_du_trace": "Elles quittent le canal vertébral par les foramens intervertébraux et relient les plexus veineux vertébraux internes aux veines segmentaires : vertébrale au cou, intercostales dans le thorax, lombaires plus bas.",
+    "appui_dans_le_modele": {
+     "id": "veines-lombaires",
+     "nom": "Veines lombaires"
+    }
+   }
+  },
+  {
+   "id": "veines-pericardiacophreniques",
+   "nom": "Veines péricardiacophréniques",
+   "latin": "Venae pericardiacophrenicae",
+   "anglais": "Pericardiacophrenic veins",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veines péricardiacophréniques",
+   "ta2": "4775",
+   "connu": {
+    "description_du_trace": "Elles accompagnent le nerf phrénique et l'artère péricardiacophrénique depuis le péricarde et le diaphragme, entre plèvre et péricarde, et se jettent dans la veine thoracique interne ou la veine brachiocéphalique.",
+    "appui_dans_le_modele": {
+     "id": "veine-brachiocephalique",
+     "nom": "Veine brachiocéphalique"
+    }
+   }
+  },
+  {
+   "id": "veines-thymiques",
+   "nom": "Veines thymiques",
+   "latin": "Venae thymicae",
+   "anglais": "Thymic veins",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veines thymiques",
+   "ta2": "4773",
+   "connu": {
+    "description_du_trace": "Petites veines du thymus : elles quittent les deux lobes et rejoignent la veine brachiocéphalique gauche, parfois les veines thyroïdiennes inférieures.",
+    "appui_dans_le_modele": {
+     "id": "veine-brachiocephalique",
+     "nom": "Veine brachiocéphalique"
+    }
+   }
+  },
+  {
+   "id": "veines-tracheales",
+   "nom": "Veines trachéales",
+   "latin": "Venae trachéales",
+   "anglais": "Tracheal veins",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veines trachéales",
+   "ta2": "4778",
+   "connu": {
+    "description_du_trace": "Petites veines de la trachée qui gagnent la veine brachiocéphalique de chaque côté, et aussi les veines thyroïdiennes inférieures.",
+    "appui_dans_le_modele": {
+     "id": "veine-brachiocephalique",
+     "nom": "Veine brachiocéphalique"
+    }
+   }
+  },
+  {
+   "id": "veine-arquee-du-rein-droit",
+   "nom": "Veine arquée du rein droit",
+   "latin": "Vena arcuata renis dextri",
+   "anglais": "Arcuate vein of right kidney",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine arquée du rein droit",
+   "ta2": "5004",
+   "connu": {
+    "description_du_trace": "Veines arquées : elles forment des arcades à la base des pyramides rénales, entre médullaire et cortex, reçoivent les veines interlobulaires et se jettent dans les veines interlobaires."
+   }
+  },
+  {
+   "id": "veine-arquee-du-rein-gauche",
+   "nom": "Veine arquée du rein gauche",
+   "latin": "Vena arcuata renis sinistri",
+   "anglais": "Arcuate vein of left kidney",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine arquée du rein gauche",
+   "ta2": "5010",
+   "connu": {
+    "description_du_trace": "Veines arquées : elles forment des arcades à la base des pyramides rénales, entre médullaire et cortex, reçoivent les veines interlobulaires et se jettent dans les veines interlobaires."
+   }
+  },
+  {
+   "id": "veine-gastrique-droite",
+   "nom": "Veine gastrique droite",
+   "latin": "Vena gastrica dextra",
+   "anglais": "Right gastric vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine gastrique droite",
+   "ta2": "5111",
+   "connu": {
+    "description_du_trace": "Elle longe la petite courbure de l'estomac vers le pylore, dans le petit omentum, et se jette directement dans la veine porte.",
+    "appui_dans_le_modele": {
+     "id": "veine-porte-du-foie",
+     "nom": "Veine porte du foie"
+    }
+   }
+  },
+  {
+   "id": "veine-gastrique-gauche",
+   "nom": "Veine gastrique gauche",
+   "latin": "Vena gastrica sinistra",
+   "anglais": "Left gastric vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine gastrique gauche",
+   "ta2": "5110",
+   "connu": {
+    "description_du_trace": "Elle longe la petite courbure de l'estomac avec l'artère gastrique gauche, reçoit des veines oesophagiennes et se jette dans la veine porte.",
+    "appui_dans_le_modele": {
+     "id": "veine-porte-du-foie",
+     "nom": "Veine porte du foie"
+    }
+   }
+  },
+  {
+   "id": "veine-hepatique-droite",
+   "nom": "Veine hépatique droite",
+   "latin": "Vena hepatica dextra",
+   "anglais": "Right hepatic vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine hépatique droite",
+   "ta2": "4995",
+   "connu": {
+    "description_du_trace": "Elle court entre les secteurs antérieur et postérieur du foie droit, dans le plan de la scissure portale droite, et se jette dans la veine cave inférieure sous le diaphragme.",
+    "appui_dans_le_modele": {
+     "id": "veines-hepatiques",
+     "nom": "Veines hépatiques"
+    }
+   }
+  },
+  {
+   "id": "veine-hepatique-intermediaire",
+   "nom": "Veine hépatique intermédiaire",
+   "latin": "Vena hepatica intermedia",
+   "anglais": "Intermediate hepatic vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine hépatique intermédiaire",
+   "ta2": "4996",
+   "connu": {
+    "description_du_trace": "Elle occupe la scissure portale principale, entre foie droit et foie gauche, et se jette dans la veine cave inférieure, souvent avec la veine hépatique gauche.",
+    "appui_dans_le_modele": {
+     "id": "veines-hepatiques",
+     "nom": "Veines hépatiques"
+    }
+   }
+  },
+  {
+   "id": "veine-ileocolique",
+   "nom": "Veine iléocolique",
+   "latin": "Vena ileocolica",
+   "anglais": "Ileocolic vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine iléocolique",
+   "ta2": "5119",
+   "connu": {
+    "description_du_trace": "Elle draine l'iléon terminal, le caecum et l'appendice, accompagne l'artère iléocolique et se jette dans la veine mésentérique supérieure.",
+    "appui_dans_le_modele": {
+     "id": "veine-mesenterique-superieure",
+     "nom": "Veine mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "veine-ombillicale",
+   "nom": "Veine ombillicale",
+   "latin": "Vena umbilicalis",
+   "anglais": "Umbilical vein",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Veine ombillicale",
+   "ta2": "5103",
+   "connu": {
+    "description_du_trace": "Veine du cordon ombilical chez le foetus ; chez l'adulte, oblitérée, elle forme le ligament rond du foie qui monte de l'ombilic dans le bord libre du ligament falciforme jusqu'à la branche gauche de la veine porte.",
+    "appui_dans_le_modele": {
+     "id": "veine-porte-du-foie",
+     "nom": "Veine porte du foie"
+    }
+   }
+  }
+ ]
+}

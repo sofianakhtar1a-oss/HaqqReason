@@ -1,0 +1,508 @@
+{
+ "lot": "ligament-ajouts-2",
+ "couche": "ligament",
+ "structures": [
+  {
+   "id": "ligament-sacrococcygien-anterieur",
+   "nom": "Ligament sacrococcygien antérieur",
+   "latin": "Ligamentum sacrococcygeum anterius",
+   "anglais": "Anterior sacrococcygeal ligament",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Ligament sacrococcygien antérieur",
+   "ta2": "1691",
+   "connu": {
+    "description_du_trace": "Prolongement du ligament longitudinal antérieur : il joint la face antérieure du sacrum à celle du coccyx."
+   }
+  },
+  {
+   "id": "ligament-sacrococcygien-lateral",
+   "nom": "Ligament sacrococcygien latéral",
+   "latin": "Ligamentum sacrococcygeum laterale",
+   "anglais": "Lateral sacrococcygeal ligament",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Ligament sacrococcygien latéral",
+   "ta2": "1692",
+   "connu": {
+    "description_du_trace": "Ligament qui va de l'angle inférolatéral du sacrum à la corne du coccyx et complète le foramen du cinquième nerf sacral."
+   }
+  },
+  {
+   "id": "ligament-sacrococcygien-posterieur-profond",
+   "nom": "Ligament sacrococcygien postérieur profond",
+   "latin": "Ligamentum sacrococcygeum posterius profundum",
+   "anglais": "Deep posterior sacrococcygeal ligament",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Ligament sacrococcygien postérieur profond",
+   "ta2": "1690",
+   "connu": {
+    "description_du_trace": "Prolongement du ligament longitudinal postérieur : de la face postérieure du dernier segment sacral à la face dorsale du coccyx, sous le ligament superficiel."
+   }
+  },
+  {
+   "id": "ligament-sacrococcygien-posterieur-superficiel",
+   "nom": "Ligament sacrococcygien postérieur superficiel",
+   "latin": "Ligamentum sacrococcygeum posterius superficiale",
+   "anglais": "Superficial posterior sacrococcygeal ligament",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Ligament sacrococcygien postérieur superficiel",
+   "ta2": "1689",
+   "connu": {
+    "description_du_trace": "Lame qui ferme le hiatus sacral : des bords du hiatus à la face dorsale du coccyx ; prolongement du ligament supraépineux."
+   }
+  },
+  {
+   "id": "ligament-coracoclaviculaire",
+   "nom": "Ligament coracoclaviculaire",
+   "latin": "Ligamentum coracoclaviculare",
+   "anglais": "Coracoclavicular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament coracoclaviculaire",
+   "ta2": "1747",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-conoide",
+      "nom": "Ligament conoïde"
+     },
+     {
+      "id": "ligament-trapezoide",
+      "nom": "Ligament trapézoïde"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligaments-glenohumeraux",
+   "nom": "Ligaments glénohuméraux",
+   "latin": "Ligamenta glenohumeralia",
+   "anglais": "Glenohumeral ligaments",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligaments glénohuméraux",
+   "ta2": "1766",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-glenohumeral-superieur",
+      "nom": "Ligament glénohuméral supérieur"
+     },
+     {
+      "id": "ligament-glenohumeral-moyen",
+      "nom": "Ligament glénohuméral moyen"
+     },
+     {
+      "id": "ligament-glenohumeral-inferieur",
+      "nom": "Ligament glénohuméral inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "court-ligament-radiolunatum",
+   "nom": "Court ligament radiolunatum",
+   "latin": "Ligamentum radiolunatum breve",
+   "anglais": "Short radiolunate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Court ligament radiolunatum",
+   "ta2": "1792",
+   "connu": {
+    "description_du_trace": "Faisceau court et robuste du ligament radiocarpien palmaire, du bord palmaire de la fosse lunatienne du radius à la face palmaire du lunatum."
+   }
+  },
+  {
+   "id": "ligament-radiocarpien-palmaire",
+   "nom": "Ligament radiocarpien palmaire",
+   "latin": "Ligamentum radiocarpeum palmare",
+   "anglais": "Palmar radiocarpal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament radiocarpien palmaire",
+   "ta2": "1788",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-radiocapitatum",
+      "nom": "Ligament radiocapitatum"
+     },
+     {
+      "id": "ligament-radio-scaphocapitatum",
+      "nom": "Ligament radio-scaphocapitatum"
+     },
+     {
+      "id": "long-ligament-radiolunatum",
+      "nom": "Long ligament radiolunatum"
+     },
+     {
+      "id": "court-ligament-radiolunatum",
+      "nom": "Court ligament radiolunatum"
+     },
+     {
+      "id": "ligament-radioscapholunatum",
+      "nom": "Ligament radioscapholunatum"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligament-radioscapholunatum",
+   "nom": "Ligament radioscapholunatum",
+   "latin": "Ligamentum radioscapholunatum",
+   "anglais": "Radioscapholunate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament radioscapholunatum",
+   "ta2": "1793",
+   "connu": {
+    "description_du_trace": "Ligament de Testut : mince cordon vasculaire qui monte du bord palmaire du radius, entre les fosses scaphoïdienne et lunatienne, à l'interstice scapho-lunaire ; il contribue peu à la stabilité."
+   }
+  },
+  {
+   "id": "ligament-ulnocarpien-palmaire",
+   "nom": "Ligament ulnocarpien palmaire",
+   "latin": "Ligamentum ulnocarpeum palmare",
+   "anglais": "Palmar ulnocarpal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament ulnocarpien palmaire",
+   "ta2": "1795",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-ulnolunatum",
+      "nom": "Ligament ulnolunatum"
+     },
+     {
+      "id": "ligament-ulnotriquetrum",
+      "nom": "Ligament ulnotriquetrum"
+     },
+     {
+      "id": "ligament-ulnocapitatum",
+      "nom": "Ligament ulnocapitatum"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligaments-intercarpiens-interosseux",
+   "nom": "Ligaments intercarpiens interosseux",
+   "latin": "Ligamenta intercarpea interossea",
+   "anglais": "Interosseus intercarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments intercarpiens interosseux",
+   "ta2": "1818",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-interosseux-scapholunatum",
+      "nom": "Ligament interosseux scapholunatum"
+     },
+     {
+      "id": "ligament-interosseux-lunotriquetral",
+      "nom": "Ligament interosseux lunotriquetral"
+     },
+     {
+      "id": "ligament-interosseux-capitohamatum",
+      "nom": "Ligament interosseux capitohamatum"
+     },
+     {
+      "id": "ligament-interosseux-trapeziotrapezoidal",
+      "nom": "Ligament interosseux trapeziotrapezoïdal"
+     },
+     {
+      "id": "ligament-interosseux-trapezoidocapitatum",
+      "nom": "Ligament interosseux trapezoïdocapitatum"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligaments-intercarpiens-palmaires",
+   "nom": "Ligaments intercarpiens palmaires",
+   "latin": "Ligamenta intercarpea palmaria",
+   "anglais": "Palmar intercarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments intercarpiens palmaires",
+   "ta2": "1808",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-scaphotriquetral-palmaire",
+      "nom": "Ligament scaphotriquétral palmaire"
+     },
+     {
+      "id": "ligament-lunotriquetral-palmaire",
+      "nom": "Ligament lunotriquetral palmaire"
+     },
+     {
+      "id": "ligament-hamatocapitatum",
+      "nom": "Ligament hamatocapitatum"
+     },
+     {
+      "id": "ligament-trapezoidocapitatum",
+      "nom": "Ligament trapézoïdocapitatum"
+     },
+     {
+      "id": "ligament-scaphocapitatum",
+      "nom": "Ligament scaphocapitatum"
+     },
+     {
+      "id": "ligament-triquetrocapitatum",
+      "nom": "Ligament triquetrocapitatum"
+     },
+     {
+      "id": "ligament-triquetrohamatum",
+      "nom": "Ligament triquetrohamatum"
+     },
+     {
+      "id": "ligament-scaphotrapeziotrapezoidal",
+      "nom": "Ligament scaphotrapéziotrapézoïdal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligaments-metacarpophalangiens-palmaires",
+   "nom": "Ligaments métacarpophalangiens palmaires",
+   "latin": "Ligamenta metacarpophalangea palmaria",
+   "anglais": "Palmar metacarpophalangeal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments métacarpophalangiens palmaires",
+   "ta2": "1837",
+   "connu": {
+    "description_du_trace": "Plaques fibrocartilagineuses de la face palmaire des articulations métacarpo-phalangiennes des doigts II à V ; elles glissent sur les têtes métacarpiennes et sont reliées entre elles par le ligament métacarpien transverse profond."
+   }
+  },
+  {
+   "id": "long-ligament-radiolunatum",
+   "nom": "Long ligament radiolunatum",
+   "latin": "Ligamentum radiolunatum longum",
+   "anglais": "Long radiolunate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Long ligament radiolunatum",
+   "ta2": "1791",
+   "connu": {
+    "description_du_trace": "Ligament radiocarpien palmaire qui part du bord palmaire du radius près du processus styloïde et rejoint la face palmaire du lunatum ; il soutient le lunatum en avant."
+   }
+  },
+  {
+   "id": "ligament-fabellofibulaire",
+   "nom": "Ligament fabellofibulaire",
+   "latin": "Ligamentum fabellofibulare",
+   "anglais": "Fabellofibular ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament fabellofibulaire",
+   "ta2": "1907",
+   "connu": {
+    "description_du_trace": "Cordon du coin postérolatéral du genou, tendu de la fabella (ou du condyle latéral du fémur) à l'apex de la tête de la fibula ; il stabilise le genou en arrière et en dehors."
+   }
+  },
+  {
+   "id": "ligament-femoropatellaire-medial",
+   "nom": "Ligament fémoropatellaire médial",
+   "latin": "Ligamentum patellofemorale mediale",
+   "anglais": "Medial patellofemoral ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament fémoropatellaire médial",
+   "ta2": "1903",
+   "connu": {
+    "description_du_trace": "Bande du rétinaculum médial qui va de la région de l'épicondyle médial du fémur au bord médial de la patella ; elle s'oppose à la luxation latérale de la patella."
+   }
+  },
+  {
+   "id": "ligament-meniscofemoral-anterieur",
+   "nom": "Ligament méniscofémoral antérieur",
+   "latin": "Ligamentum meniscofemorale anterius",
+   "anglais": "Anterior meniscofemoral ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament méniscofémoral antérieur",
+   "ta2": "1886",
+   "connu": {
+    "description_du_trace": "Ligament de Humphrey : de la corne postérieure du ménisque latéral, il passe en avant du ligament croisé postérieur et rejoint la face latérale du condyle médial du fémur."
+   }
+  },
+  {
+   "id": "ligament-meniscofemoral-posterieur",
+   "nom": "Ligament méniscofémoral postérieur",
+   "latin": "Ligamentum meniscofemorale posterius",
+   "anglais": "Posterior meniscofemoral ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament méniscofémoral postérieur",
+   "ta2": "1887",
+   "connu": {
+    "description_du_trace": "Ligament de Wrisberg : de la corne postérieure du ménisque latéral, il passe en arrière du ligament croisé postérieur et rejoint le condyle médial du fémur."
+   }
+  },
+  {
+   "id": "ligament-meniscotibial-lateral",
+   "nom": "Ligament méniscotibial latéral",
+   "latin": "Ligamentum meniscotibiale laterale",
+   "anglais": "Lateral meniscotibial ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament méniscotibial latéral",
+   "ta2": "1901",
+   "connu": {
+    "description_du_trace": "Ligament coronaire latéral : il fixe le bord périphérique du ménisque latéral au pourtour du plateau tibial ; il est lâche, ce qui laisse le ménisque très mobile."
+   }
+  },
+  {
+   "id": "ligament-meniscotibial-medial",
+   "nom": "Ligament méniscotibial médial",
+   "latin": "Ligamentum meniscotibiale mediale",
+   "anglais": "Medial meniscotibial ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament méniscotibial médial",
+   "ta2": "1902",
+   "connu": {
+    "description_du_trace": "Ligament coronaire médial : il fixe le bord périphérique du ménisque médial au pourtour du plateau tibial."
+   }
+  },
+  {
+   "id": "ligament-patellotibial",
+   "nom": "Ligament patellotibial",
+   "latin": "Ligamentum patellotibiale",
+   "anglais": "Patellotibial ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament patellotibial",
+   "ta2": "1905",
+   "connu": {
+    "description_du_trace": "Bandelette du rétinaculum médial de la patella qui relie le bord inférieur et médial de la patella au condyle médial du tibia."
+   }
+  },
+  {
+   "id": "menisque-articulaire",
+   "nom": "Ménisque articulaire",
+   "latin": "Meniscus articularis",
+   "anglais": "Meniscus",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ménisque articulaire",
+   "ta2": "1544",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "menisque-medial",
+      "nom": "Ménisque médial"
+     },
+     {
+      "id": "menisque-lateral",
+      "nom": "Ménisque latéral"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligament-bifurque",
+   "nom": "Ligament bifurqué",
+   "latin": "Ligamentum bifurcatum",
+   "anglais": "Bifurcate ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament bifurqué",
+   "ta2": "1931",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-calcaneocuboide",
+      "nom": "Ligament calcanéocuboïde"
+     },
+     {
+      "id": "ligament-calcaneonaviculaire",
+      "nom": "Ligament calcanéonaviculaire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligament-collateral-lateral-de-la-cheville",
+   "nom": "Ligament collatéral latéral de la cheville",
+   "latin": "Ligamentum collaterale laterale articulationis talocruralis",
+   "anglais": "Lateral collateral ligament of ankle",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament collatéral latéral de la cheville",
+   "ta2": "1918",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-talofibullaire-anterieur",
+      "nom": "Ligament talofibullaire antérieur"
+     },
+     {
+      "id": "ligament-calcaneofibullaire",
+      "nom": "Ligament calcaneofibullaire"
+     },
+     {
+      "id": "ligament-tibiofibullaire-posterieur",
+      "nom": "Ligament talo-fibulaire postérieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligament-collateral-medial-de-la-cheville",
+   "nom": "Ligament collatéral médial de la cheville",
+   "latin": "Ligamentum collaterale mediale articulationis talocruralis",
+   "anglais": "Medial collateral ligament of ankle",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament collatéral médial de la cheville",
+   "ta2": "1913",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "ligament-tibiotalaire-posterieur",
+      "nom": "Ligament tibiotalaire postérieur"
+     },
+     {
+      "id": "ligament-tibiocalcaneen",
+      "nom": "Ligament tibiocalcanéen"
+     },
+     {
+      "id": "ligament-tibionaviculaire",
+      "nom": "Ligament tibionaviculaire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ligament-tibiotalaire-anterieur",
+   "nom": "Ligament tibiotalaire antérieur",
+   "latin": "Ligamentum talotibiale anterius",
+   "anglais": "Anterior tibiotalar ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibiotalaire antérieur",
+   "ta2": "1916",
+   "connu": {
+    "description_du_trace": "Faisceau antérieur de la partie profonde du ligament collatéral médial (deltoïde) : de la malléole médiale à la face médiale du talus."
+   }
+  }
+ ]
+}

@@ -89,6 +89,33 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 
 **Total fait : 98 / 100.**
 
+## Deuxième chantier (21 novembre, 17 h) : poids sur 100
+
+Demande : le fond comme les autres modules (bleu ou blanc), la structure visée bien plus visible et le reste en
+transparence, 100 % de la nomenclature représentée dans chaque couche, et ce qui améliore l'expérience.
+
+« 100 % » se lit ainsi : chaque terme de la référence d'un corps d'homme adulte est représenté, par un modèle (Z-Anatomy,
+BodyParts3D ou un tracé), un ensemble (le groupe de ses membres) ou un repère (un point nommé sur sa structure).
+Restent hors du champ, listés et comptés sur la page « Sources et licences » : les organes génitaux externes (règle
+de pudeur), les structures féminines (le corps est celui d'un homme), les structures microscopiques ou cachées dans
+un organe (vaisseaux intrarénaux, plexus de la paroi digestive…), les variantes inconstantes et les termes de
+classement (« muscle biceps », « os compact »).
+
+| N° | Tâche | Poids | Fait |
+|---|---|---|---|
+| 2.1 | Thème du site : bleu (sombre) ou blanc (clair), bouton soleil ou lune | 8 | 8 |
+| 2.2 | Mise en avant : la structure visée pleine et liserée, le reste en transparence | 8 | 8 |
+| 2.3 | Hors champ argumenté : liste, raisons, affichage | 4 | 4 |
+| 2.4 | Ensembles de la nomenclature (groupes de Z-Anatomy et règles) | 10 | 9 |
+| 2.5 | Repères affichés, cherchables et comptés ; repères de l'encéphale (noyaux, faisceaux, sillons) | 14 | 10 |
+| 2.6 | Vaisseaux et nerfs tracés (branches, veines satellites, ganglions, plexus) | 16 | 12 |
+| 2.7 | Ligaments, muscles, os et oreille interne modélisés | 8 | 6 |
+| 2.8 | Fiches des nouvelles structures | 8 | 1 |
+| 2.9 | Audit du module et améliorations d'expérience | 12 | 5 |
+| 2.10 | Chaîne relancée, tests, captures, envoi, bilan | 12 | 2 |
+
+**Deuxième chantier : 65 / 100.**
+
 ## Journal
 
 - 20/11 18:40 — Début. Z-Anatomy récupéré, licence lue, `bpy` installé, les 7 184 objets exportés
@@ -168,6 +195,23 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   et des règles passent aussi : rien hors du module n'a bougé, sauf l'en-tête de cache des paquets et les textes par
   défaut du module. Restent hors de portée ici : l'oreille interne (il faut un modèle libre du labyrinthe osseux),
   une mesure de fluidité sur une vraie carte graphique, l'affinage de quelques axes articulaires.
+
+- 21/11 17:50 — Deuxième chantier. Le thème suit celui du site (bleu ou blanc, bouton soleil ou lune) et la
+  structure visée ressort, le reste en transparence (2e11338). La référence de la nomenclature est partagée
+  (`reference.py`) et dit, raison à l'appui, ce qui reste hors du champ (pudeur, corps féminin, microscopique,
+  classement, inconstant). 75 ensembles viennent des groupes de Z-Anatomy et de règles ; les repères se cherchent,
+  se listent sous leur structure et se montrent d'un point étiqueté, et les reliefs d'une fiche d'os se touchent
+  (e3dab04). `01d_ajouts.py` construit ce que les atlas n'ont pas d'après une description structure par structure
+  (branches, veines satellites, plexus, ganglions, nœuds, ligaments, muscles, oreille interne) ; cinq rédacteurs
+  décrivent les 720 termes qui manquent (artères, veines, nerfs, encéphale, divers).
+
+- 21/11 18:15 — Les 720 termes manquants sont tous décrits (644 structures, une centaine d'ensembles et quelques
+  synonymes) : 96 artères, 139 veines, 144 nerfs (dont 20 ganglions et 29 plexus), 174 structures de l'encéphale
+  (une centaine de noyaux posés dans leur porteur, faisceaux, commissures, sillons), 85 ligaments, muscles, nœuds et
+  organes, l'oreille interne et les vaisseaux testiculaires jusqu'à l'anneau inguinal profond. Chaque description a
+  été contrôlée par `01d_ajouts.py --verifier` et regardée région par région. Corrigé à la relecture : le plexus
+  lombal postérieur (réseau des rameaux postérieurs, pas les branches du plexus lombal). La chaîne entière tourne
+  (2 466 pièces au lieu de 1 708).
 
 ## Pour reprendre après une interruption
 

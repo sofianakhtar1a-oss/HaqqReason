@@ -5,7 +5,7 @@
 # Usage : python 02_classer.py   → ~/donnees-corps/classement.json
 import json, os, re, sys, collections
 import numpy as np
-from commun import DONNEES, objets_bruts, sommets, decouper, principale, norme, slug, lire_ta2
+from commun import CORRECTIONS_TA2, DONNEES, objets_bruts, sommets, decouper, principale, norme, slug, lire_ta2
 
 objs = objets_bruts()
 par_nom = {o["nom"]: o for o in objs}
@@ -66,7 +66,7 @@ HORS_TABLE = {
 PUDEUR = re.compile(r"penis|testis|testicular|epididymis|scrot|pubic hair|ductus deferens|ejaculatory duct|urethra|seminal gland", re.I)
 NON_COMMERCIAL = {"Cochlea": "oreille interne (CC BY-NC-SA)", "Vestibule": "oreille interne (CC BY-NC-SA)", "Kidney": "rein (CC BY-NC)", "Renal pelvis": "rein (CC BY-NC)"}
 ENVELOPPES = re.compile(r"^(Pleura|Greater omentum|Lesser omentum|Mesocolon|Meso-appendix|Spinal dura|Falx cerebri|Tentorium cerebelli|Gingiva|Mucosa of nasal cavity)$")
-ASYMETRIQUES = re.compile(r"atrium|ventricle|lung|coronary|colic|gastric|gastro-omental|hepatic|lobe|leaflet|segment|lobar|pulmonary artery|ascending lumbar|superior intercostal vein|subcostal vein|superior phrenic", re.I)
+ASYMETRIQUES = re.compile(r"atrium|ventricle|of heart|lung|coronary|colic|gastric|gastro-omental|hepatic|lobe|leaflet|segment|lobar|pulmonary artery|ascending lumbar|superior intercostal vein|subcostal vein|superior phrenic", re.I)
 
 
 def nom_ta2(base):
@@ -75,7 +75,7 @@ def nom_ta2(base):
         fr, la = HORS_TABLE[base]
         return {"id": None, "anglais": base, "latin": la, "francais": fr}
     b = re.sub(r"^\((.*)\)$", r"\1", base).strip()
-    essais = [b, b + " muscle", re.sub(r" muscle$", "", b), re.sub(r"^(Left|Right) ", "", b), re.sub(r"\s*\(.*?\)\s*", " ", b).strip()]
+    essais = [b, b + " muscle", re.sub(r" muscle$", "", b), re.sub(r"^(Left|Right) ", "", b), re.sub(r"\s*\(.*?\)\s*", " ", b).strip(), CORRECTIONS_TA2.get(b, b)]
     for e in essais:
         r = ta2.get(norme(e))
         if r:

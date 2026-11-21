@@ -1,0 +1,2908 @@
+{
+ "structures": [
+  {
+   "nom": "Anterior ligament of auricle",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -0.9,
+     8.8,
+     12.9
+    ]
+   },
+   "par": [
+    {
+     "repere": "Cartilages of ear",
+     "decale": [
+      -6.9,
+      9.8,
+      21.9
+     ]
+    }
+   ],
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -12.9,
+     8.8,
+     32.9
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1,
+   "texte": "Ruban fibreux qui fixe l'hélix et le tragus à la racine de l'arc zygomatique ; il maintient le pavillon contre le crâne en avant."
+  },
+  {
+   "nom": "Superior ligament of auricle",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     6.1,
+     24.8,
+     2.9
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -9.9,
+     27.8,
+     2.9
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1,
+   "texte": "Ruban fibreux qui relie le haut de l'hélix à l'aponévrose temporale, au-dessus du conduit acoustique externe ; il suspend le pavillon."
+  },
+  {
+   "nom": "Posterior ligament of auricle",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     0.1,
+     -5.2,
+     -5.1
+    ]
+   },
+   "par": [
+    {
+     "repere": "Cartilages of ear",
+     "decale": [
+      -9.9,
+      -12.2,
+      -6.1
+     ]
+    }
+   ],
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -19.9,
+     -18.2,
+     -7.1
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1,
+   "texte": "Ruban fibreux tendu de la convexité de la conque à la face latérale du processus mastoïde ; il retient le pavillon en arrière."
+  },
+  {
+   "nom": "Auricularis anterior muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -8.9,
+     14.8,
+     32.9
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     1.1,
+     10.8,
+     10.9
+    ]
+   },
+   "largeur_mm": 6,
+   "epaisseur_mm": 1.2,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Petit muscle triangulaire né de la galéa aponévrotique en avant de l'oreille ; il s'insère sur l'épine de l'hélix et tire le pavillon vers l'avant.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Auricularis superior muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -12.9,
+     49.8,
+     4.9
+    ]
+   },
+   "par": [
+    {
+     "repere": "Cartilages of ear",
+     "decale": [
+      -2.9,
+      37.8,
+      2.9
+     ]
+    }
+   ],
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     6.1,
+     23.8,
+     0.9
+    ]
+   },
+   "largeur_mm": 9,
+   "epaisseur_mm": 1.2,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Le plus grand des muscles extrinsèques : en éventail depuis la galéa aponévrotique, il rejoint la face supérieure du pavillon et l'élève.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Auricularis posterior muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -22.9,
+     -20.2,
+     -8.1
+    ]
+   },
+   "par": [
+    {
+     "repere": "Cartilages of ear",
+     "decale": [
+      -9.9,
+      -12.2,
+      -7.1
+     ]
+    }
+   ],
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     1.1,
+     -6.2,
+     -5.1
+    ]
+   },
+   "largeur_mm": 5,
+   "epaisseur_mm": 1.5,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Deux ou trois faisceaux nés du processus mastoïde qui se fixent sur la convexité de la conque ; ils tirent le pavillon vers l'arrière.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Helicis major muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     2.1,
+     11.8,
+     10.9
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     7.1,
+     22.8,
+     7.9
+    ]
+   },
+   "largeur_mm": 2.5,
+   "epaisseur_mm": 0.8,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Mince bandelette verticale sur le bord antérieur de l'hélix, au-dessus du tragus ; elle abaisse un peu l'hélix.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Helicis minor muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -1.9,
+     2.8,
+     8.9
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     1.1,
+     8.8,
+     9.9
+    ]
+   },
+   "largeur_mm": 2,
+   "epaisseur_mm": 0.8,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Petit faisceau oblique qui couvre la racine (crus) de l'hélix, devant la conque.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Tragicus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -2.9,
+     -7.2,
+     12.9
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -1.9,
+     -0.2,
+     12.9
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 0.8,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Mince bandelette verticale sur la face latérale du tragus.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Pyramidal muscle of auricle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -1.9,
+     -1.2,
+     11.9
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     1.1,
+     8.8,
+     10.9
+    ]
+   },
+   "largeur_mm": 2,
+   "epaisseur_mm": 0.8,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Faisceau inconstant qui monte de la base du tragus vers l'épine de l'hélix."
+  },
+  {
+   "nom": "Antitragicus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     0.1,
+     -12.2,
+     2.9
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     4.1,
+     -3.2,
+     -6.1
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 0.8,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     119.1,
+     7.8,
+     0.9
+    ]
+   },
+   "texte": "Petit muscle qui va de la face latérale de l'antitragus à la queue de l'hélix et à l'anthélix.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Transverse muscle of auricle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     1.1,
+     -2.2,
+     -6.1
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     9.1,
+     6.8,
+     -10.1
+    ]
+   },
+   "largeur_mm": 3.5,
+   "epaisseur_mm": 1,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -80.9,
+     -0.2,
+     -187.1
+    ]
+   },
+   "texte": "Sur la face postérieure du pavillon, des fibres tendues de la convexité de la conque à celle de la scapha ; il rapproche ces deux reliefs.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Oblique muscle of auricle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     2.1,
+     2.8,
+     -6.1
+    ]
+   },
+   "a": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     7.1,
+     14.8,
+     -2.1
+    ]
+   },
+   "largeur_mm": 3.5,
+   "epaisseur_mm": 1,
+   "face": {
+    "repere": "Cartilages of ear",
+    "decale": [
+     -80.9,
+     -0.2,
+     -187.1
+    ]
+   },
+   "texte": "Sur la face postérieure du pavillon, quelques fibres relient la convexité de la conque à celle de la fosse triangulaire.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Stapedius muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Stapes",
+    "centre": true,
+    "decale": [
+     2.0,
+     -5.8,
+     -11.3
+    ]
+   },
+   "par": [
+    {
+     "objet": "Stapes",
+     "centre": true,
+     "decale": [
+      1.7,
+      -0.8,
+      -7.3
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Stapes",
+    "centre": true,
+    "decale": [
+     0.7,
+     0.7,
+     -1.1
+    ]
+   },
+   "largeur_mm": 1.6,
+   "epaisseur_mm": 1.4,
+   "texte": "Le plus petit muscle du corps : logé dans l'éminence pyramidale de la paroi postérieure de la caisse du tympan, son tendon se fixe sur le col de l'étrier ; il amortit les sons forts en limitant les mouvements de l'étrier.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Medial temporomandibular ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Articular capsule of temporomandibular joint",
+    "centre": true,
+    "decale": [
+     -8.1,
+     6.6,
+     -4.5
+    ]
+   },
+   "a": {
+    "objet": "Articular capsule of temporomandibular joint",
+    "centre": true,
+    "decale": [
+     -4.6,
+     -2.4,
+     5.0
+    ]
+   },
+   "largeur_mm": 6,
+   "epaisseur_mm": 1.5,
+   "texte": "Renforcement de la face médiale de la capsule de l'articulation temporo-mandibulaire, tendu de la région de l'épine du sphénoïde au col du condyle de la mandibule."
+  },
+  {
+   "nom": "Thyro-epiglottic ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Epiglottis",
+    "centre": true,
+    "decale": [
+     0.0,
+     -14.8,
+     3.3
+    ]
+   },
+   "a": {
+    "objet": "Epiglottis",
+    "centre": true,
+    "decale": [
+     0.0,
+     -15.5,
+     7.3
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 1.5,
+   "texte": "Court ligament médian qui attache la tige de l'épiglotte à la face interne du cartilage thyroïde, sous l'incisure thyroïdienne."
+  },
+  {
+   "nom": "Hyo-epiglottic ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Epiglottis",
+    "centre": true,
+    "decale": [
+     0.0,
+     0.2,
+     4.6
+    ]
+   },
+   "a": {
+    "objet": "Epiglottis",
+    "centre": true,
+    "decale": [
+     0.0,
+     6.7,
+     8.6
+    ]
+   },
+   "largeur_mm": 3.5,
+   "epaisseur_mm": 1.2,
+   "texte": "Bande élastique médiane qui relie la face antérieure de l'épiglotte au bord supérieur du corps de l'os hyoïde."
+  },
+  {
+   "nom": "Vestibular ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Thyroid cartilage",
+    "centre": true,
+    "decale": [
+     1.3,
+     4.2,
+     15.6
+    ]
+   },
+   "a": {
+    "objet": "Thyroid cartilage",
+    "centre": true,
+    "decale": [
+     4.7,
+     1.7,
+     -1.8
+    ]
+   },
+   "largeur_mm": 2.5,
+   "epaisseur_mm": 1.2,
+   "texte": "Bord libre fibreux de la membrane quadrangulaire : de l'angle du cartilage thyroïde à la face antérolatérale de l'aryténoïde, il soutient le pli vestibulaire (fausse corde vocale)."
+  },
+  {
+   "nom": "Vocal ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Thyroid cartilage",
+    "centre": true,
+    "decale": [
+     1.1,
+     -1.8,
+     15.6
+    ]
+   },
+   "a": {
+    "objet": "Thyroid cartilage",
+    "centre": true,
+    "decale": [
+     3.5,
+     -3.7,
+     -0.8
+    ]
+   },
+   "largeur_mm": 2.5,
+   "epaisseur_mm": 1.5,
+   "texte": "Bord supérieur épaissi du cône élastique : de l'angle du cartilage thyroïde au processus vocal de l'aryténoïde, il forme l'ossature du pli vocal (corde vocale).",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Vocalis muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Thyroid cartilage",
+    "centre": true,
+    "decale": [
+     3.1,
+     -3.5,
+     15.2
+    ]
+   },
+   "a": {
+    "objet": "Thyroid cartilage",
+    "centre": true,
+    "decale": [
+     4.9,
+     -3.5,
+     -1.8
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 3,
+   "texte": "Partie médiale du muscle thyro-aryténoïdien, accolée au ligament vocal ; de l'angle du cartilage thyroïde au processus vocal, elle règle la tension de la corde vocale.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Cricotracheal ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Cricoid cartilage",
+    "centre": true,
+    "decale": [
+     10.5,
+     -6.0,
+     -0.1
+    ]
+   },
+   "par": [
+    {
+     "objet": "Cricoid cartilage",
+     "centre": true,
+     "decale": [
+      7.5,
+      -6.0,
+      7.4
+     ]
+    },
+    {
+     "objet": "Cricoid cartilage",
+     "centre": true,
+     "decale": [
+      -0.0,
+      -6.2,
+      9.6
+     ]
+    },
+    {
+     "objet": "Cricoid cartilage",
+     "centre": true,
+     "decale": [
+      -7.5,
+      -6.0,
+      7.4
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Cricoid cartilage",
+    "centre": true,
+    "decale": [
+     -10.5,
+     -6.0,
+     -0.1
+    ]
+   },
+   "largeur_mm": 2.5,
+   "epaisseur_mm": 1,
+   "texte": "Membrane fibreuse qui unit le bord inférieur du cartilage cricoïde au premier anneau de la trachée."
+  },
+  {
+   "nom": "Ceratocricoid ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Cricoid cartilage",
+    "centre": true,
+    "decale": [
+     11.6,
+     -1.5,
+     -5.0
+    ]
+   },
+   "a": {
+    "objet": "Cricoid cartilage",
+    "centre": true,
+    "decale": [
+     10.0,
+     3.0,
+     -6.6
+    ]
+   },
+   "largeur_mm": 2,
+   "epaisseur_mm": 1,
+   "texte": "Petit ligament qui tend de la corne inférieure du cartilage thyroïde à la face postérieure du cricoïde, au voisinage de l'articulation cricothyroïdienne."
+  },
+  {
+   "nom": "Crico-arytenoid ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Cricoid cartilage",
+    "centre": true,
+    "decale": [
+     4.6,
+     10.2,
+     -5.4
+    ]
+   },
+   "a": {
+    "objet": "Cricoid cartilage",
+    "centre": true,
+    "decale": [
+     3.0,
+     5.0,
+     -8.4
+    ]
+   },
+   "largeur_mm": 2.5,
+   "epaisseur_mm": 1,
+   "texte": "Ligament postérieur de l'articulation crico-aryténoïdienne : il relie la base de l'aryténoïde au bord supérieur de la lame du cricoïde."
+  },
+  {
+   "nom": "Lateral atlanto-occipital ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     36.5,
+     10.5,
+     3.5
+    ]
+   },
+   "a": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     37.2,
+     19.5,
+     4.5
+    ]
+   },
+   "largeur_mm": 5,
+   "epaisseur_mm": 1.5,
+   "texte": "Court ligament qui relie le processus transverse de l'atlas au processus jugulaire de l'os occipital ; il renforce la capsule de l'articulation atlanto-occipitale en dehors."
+  },
+  {
+   "nom": "Alar ligaments",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     4.0,
+     6.0,
+     8.5
+    ]
+   },
+   "a": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     12.8,
+     12.0,
+     5.5
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 3.5,
+   "texte": "Deux cordons obliques tendus des faces latérales du sommet de la dent de l'axis au bord médial des condyles de l'occipital ; ils limitent la rotation et l'inclinaison de la tête.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Apical ligament of dens",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     -0.0,
+     9.0,
+     9.5
+    ]
+   },
+   "a": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     -0.0,
+     11.0,
+     3.3
+    ]
+   },
+   "largeur_mm": 2.5,
+   "epaisseur_mm": 1.5,
+   "texte": "Mince cordon médian qui va du sommet de la dent de l'axis au bord antérieur du foramen magnum (basion) ; vestige de la corde dorsale."
+  },
+  {
+   "nom": "Anterior atlantodental ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     -0.0,
+     -6.0,
+     17.5
+    ]
+   },
+   "a": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     -0.0,
+     0.5,
+     15.3
+    ]
+   },
+   "largeur_mm": 5,
+   "epaisseur_mm": 1,
+   "texte": "Court faisceau qui attache la face antérieure de la dent de l'axis au bord inférieur de l'arc antérieur de l'atlas."
+  },
+  {
+   "nom": "Cruciform ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     -0.0,
+     11.5,
+     2.5
+    ]
+   },
+   "par": [
+    {
+     "objet": "Atlas (C1)",
+     "centre": true,
+     "decale": [
+      -0.0,
+      0.5,
+      -0.5
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     -0.0,
+     -21.5,
+     0.5
+    ]
+   },
+   "largeur_mm": 7,
+   "epaisseur_mm": 1,
+   "texte": "Croix fibreuse placée derrière la dent de l'axis : son bras vertical, en haut vers le basion et en bas vers le corps de l'axis, croise le ligament transverse de l'atlas qui en forme le bras horizontal.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Transverse ligament of atlas",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     -10.5,
+     1.0,
+     -0.7
+    ]
+   },
+   "par": [
+    {
+     "objet": "Atlas (C1)",
+     "centre": true,
+     "decale": [
+      -0.0,
+      1.0,
+      1.2
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Atlas (C1)",
+    "centre": true,
+    "decale": [
+     10.5,
+     1.0,
+     -0.7
+    ]
+   },
+   "largeur_mm": 5,
+   "epaisseur_mm": 1.5,
+   "texte": "Robuste bande horizontale tendue entre les tubercules médiaux des masses latérales de l'atlas ; elle plaque la dent de l'axis contre l'arc antérieur et empêche son recul vers la moelle.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Superficial posterior sacrococcygeal ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     -0.0,
+     42.4,
+     -18.8
+    ]
+   },
+   "a": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     -0.0,
+     -0.6,
+     -11.8
+    ]
+   },
+   "largeur_mm": 10,
+   "epaisseur_mm": 1.2,
+   "texte": "Lame qui ferme le hiatus sacral : des bords du hiatus à la face dorsale du coccyx ; prolongement du ligament supraépineux.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Deep posterior sacrococcygeal ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     -0.0,
+     37.4,
+     -5.0
+    ]
+   },
+   "a": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     -0.0,
+     2.4,
+     -9.8
+    ]
+   },
+   "largeur_mm": 8,
+   "epaisseur_mm": 1.2,
+   "texte": "Prolongement du ligament longitudinal postérieur : de la face postérieure du dernier segment sacral à la face dorsale du coccyx, sous le ligament superficiel.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Anterior sacrococcygeal ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     -0.0,
+     31.4,
+     10.0
+    ]
+   },
+   "a": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     -0.0,
+     -0.6,
+     5.2
+    ]
+   },
+   "largeur_mm": 8,
+   "epaisseur_mm": 1.2,
+   "texte": "Prolongement du ligament longitudinal antérieur : il joint la face antérieure du sacrum à celle du coccyx.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Lateral sacrococcygeal ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     24.5,
+     22.4,
+     2.5
+    ]
+   },
+   "a": {
+    "objet": "Coccyx",
+    "centre": true,
+    "decale": [
+     16.0,
+     9.4,
+     -2.0
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 1.2,
+   "texte": "Ligament qui va de l'angle inférolatéral du sacrum à la corne du coccyx et complète le foramen du cinquième nerf sacral.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Superior costotransverse ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Sixth rib",
+    "centre": true,
+    "decale": [
+     -53.3,
+     53.7,
+     -51.5
+    ]
+   },
+   "a": {
+    "objet": "Sixth rib",
+    "centre": true,
+    "decale": [
+     -51.8,
+     64.2,
+     -53.5
+    ]
+   },
+   "largeur_mm": 6,
+   "epaisseur_mm": 1.5,
+   "texte": "Ligament qui monte de la crête du col d'une côte (ici la sixième) au processus transverse de la vertèbre sus-jacente ; il existe à chaque articulation costo-vertébrale."
+  },
+  {
+   "nom": "Lateral costotransverse ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Sixth rib",
+    "centre": true,
+    "decale": [
+     -49.6,
+     45.4,
+     -60.1
+    ]
+   },
+   "a": {
+    "objet": "Sixth rib",
+    "centre": true,
+    "decale": [
+     -44.3,
+     43.2,
+     -63.7
+    ]
+   },
+   "largeur_mm": 5,
+   "epaisseur_mm": 1.5,
+   "texte": "Ligament court qui joint le sommet du processus transverse à la partie non articulaire du tubercule de la côte correspondante (ici la sixième) ; il renforce l'articulation costo-transversaire en dehors."
+  },
+  {
+   "nom": "Lumbocostal ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Twelfth rib",
+    "centre": true,
+    "decale": [
+     -15.5,
+     2.3,
+     3.6
+    ]
+   },
+   "a": {
+    "objet": "Twelfth rib",
+    "centre": true,
+    "decale": [
+     -12.8,
+     16.3,
+     -4.1
+    ]
+   },
+   "largeur_mm": 6,
+   "epaisseur_mm": 1.5,
+   "texte": "Bande fibreuse qui unit le sommet du processus transverse de la première vertèbre lombaire au bord inférieur de la douzième côte ; il limite l'écartement de cette côte."
+  },
+  {
+   "nom": "Intra-articular sternochondral ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Costal cartilage of second rib",
+    "centre": true,
+    "decale": [
+     -11.3,
+     -3.7,
+     10.8
+    ]
+   },
+   "a": {
+    "objet": "Costal cartilage of second rib",
+    "centre": true,
+    "decale": [
+     -15.3,
+     3.0,
+     8.0
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1,
+   "texte": "Lame fibreuse placée à l'intérieur de l'articulation sternocostale de la deuxième côte : elle relie le cartilage costal à l'angle du sternum et sépare la cavité articulaire en deux."
+  },
+  {
+   "nom": "Radiate sternochondral ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Costal cartilage of fourth rib",
+    "centre": true,
+    "decale": [
+     -18.9,
+     5.3,
+     7.6
+    ]
+   },
+   "a": {
+    "objet": "Costal cartilage of fourth rib",
+    "centre": true,
+    "decale": [
+     -35.9,
+     13.3,
+     12.1
+    ]
+   },
+   "largeur_mm": 9,
+   "epaisseur_mm": 1,
+   "texte": "Faisceaux en éventail sur la face antérieure de l'articulation sternocostale (ici celle du quatrième cartilage), qui rayonnent du cartilage costal vers le sternum."
+  },
+  {
+   "nom": "Xiphichondral ligaments",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Xiphoid process",
+    "centre": true,
+    "decale": [
+     3.5,
+     -6.0,
+     7.2
+    ]
+   },
+   "a": {
+    "objet": "Xiphoid process",
+    "centre": true,
+    "decale": [
+     9.2,
+     3.2,
+     4.2
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1,
+   "texte": "Bandelettes fibreuses qui unissent la face antérieure du processus xiphoïde au cartilage de la septième côte."
+  },
+  {
+   "nom": "Interchondral ligaments",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Costal cartilage of eighth rib",
+    "centre": true,
+    "decale": [
+     -28.6,
+     66.4,
+     13.2
+    ]
+   },
+   "par": [
+    {
+     "objet": "Costal cartilage of eighth rib",
+     "centre": true,
+     "decale": [
+      -13.5,
+      19.6,
+      13.9
+     ]
+    },
+    {
+     "objet": "Costal cartilage of eighth rib",
+     "centre": true,
+     "decale": [
+      -1.2,
+      -22.0,
+      -3.8
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Costal cartilage of eighth rib",
+    "centre": true,
+    "decale": [
+     11.5,
+     -57.1,
+     -8.0
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1.5,
+   "texte": "Ligaments qui unissent les bords adjacents des cartilages costaux 6 à 10 (articulations interchondrales), le long de l'arc costal."
+  },
+  {
+   "nom": "Long radiolunate ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Radius",
+    "centre": true,
+    "decale": [
+     21.1,
+     -102.5,
+     25.2
+    ]
+   },
+   "par": [
+    {
+     "objet": "Radius",
+     "centre": true,
+     "decale": [
+      11.1,
+      -107.0,
+      28.7
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Radius",
+    "centre": true,
+    "decale": [
+     -2.4,
+     -110.5,
+     29.7
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1.2,
+   "texte": "Ligament radiocarpien palmaire qui part du bord palmaire du radius près du processus styloïde et rejoint la face palmaire du lunatum ; il soutient le lunatum en avant."
+  },
+  {
+   "nom": "Short radiolunate ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Radius",
+    "centre": true,
+    "decale": [
+     2.1,
+     -100.0,
+     25.7
+    ]
+   },
+   "a": {
+    "objet": "Radius",
+    "centre": true,
+    "decale": [
+     -1.1,
+     -109.8,
+     29.0
+    ]
+   },
+   "largeur_mm": 5,
+   "epaisseur_mm": 1.5,
+   "texte": "Faisceau court et robuste du ligament radiocarpien palmaire, du bord palmaire de la fosse lunatienne du radius à la face palmaire du lunatum."
+  },
+  {
+   "nom": "Radioscapholunate ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Radius",
+    "centre": true,
+    "decale": [
+     10.1,
+     -103.5,
+     22.2
+    ]
+   },
+   "a": {
+    "objet": "Radius",
+    "centre": true,
+    "decale": [
+     5.9,
+     -109.8,
+     20.2
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 2,
+   "texte": "Ligament de Testut : mince cordon vasculaire qui monte du bord palmaire du radius, entre les fosses scaphoïdienne et lunatienne, à l'interstice scapho-lunaire ; il contribue peu à la stabilité."
+  },
+  {
+   "nom": "Palmar metacarpophalangeal ligaments",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Third metacarpal bone",
+    "centre": true,
+    "decale": [
+     22.7,
+     -39.4,
+     19.1
+    ]
+   },
+   "par": [
+    {
+     "objet": "Third metacarpal bone",
+     "centre": true,
+     "decale": [
+      2.0,
+      -37.4,
+      18.1
+     ]
+    },
+    {
+     "objet": "Third metacarpal bone",
+     "centre": true,
+     "decale": [
+      -14.4,
+      -32.9,
+      17.1
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Third metacarpal bone",
+    "centre": true,
+    "decale": [
+     -31.1,
+     -25.9,
+     19.5
+    ]
+   },
+   "largeur_mm": 9,
+   "epaisseur_mm": 2,
+   "texte": "Plaques fibrocartilagineuses de la face palmaire des articulations métacarpo-phalangiennes des doigts II à V ; elles glissent sur les têtes métacarpiennes et sont reliées entre elles par le ligament métacarpien transverse profond."
+  },
+  {
+   "nom": "Sesamoid bones of hand",
+   "couche": "os",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "First metacarpal bone",
+     "centre": true,
+     "decale": [
+      14.8,
+      -9.4,
+      17.8
+     ]
+    },
+    {
+     "objet": "First metacarpal bone",
+     "centre": true,
+     "decale": [
+      3.0,
+      -9.4,
+      17.2
+     ]
+    }
+   ],
+   "taille_mm": 4.5,
+   "texte": "Deux petits os arrondis, radial et ulnaire, enchâssés dans les tendons du court fléchisseur du pouce à la face palmaire de la tête du premier métacarpien ; ils protègent les tendons et accroissent le bras de levier de la flexion."
+  },
+  {
+   "nom": "Anterior meniscofemoral ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Lateral meniscus",
+    "centre": true,
+    "decale": [
+     -9.5,
+     1.7,
+     -11.8
+    ]
+   },
+   "a": {
+    "objet": "Lateral meniscus",
+    "centre": true,
+    "decale": [
+     -29.0,
+     15.7,
+     -7.8
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 2,
+   "texte": "Ligament de Humphrey : de la corne postérieure du ménisque latéral, il passe en avant du ligament croisé postérieur et rejoint la face latérale du condyle médial du fémur.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Posterior meniscofemoral ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Lateral meniscus",
+    "centre": true,
+    "decale": [
+     -8.5,
+     1.7,
+     -18.3
+    ]
+   },
+   "a": {
+    "objet": "Lateral meniscus",
+    "centre": true,
+    "decale": [
+     -30.0,
+     13.7,
+     -24.3
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 2,
+   "texte": "Ligament de Wrisberg : de la corne postérieure du ménisque latéral, il passe en arrière du ligament croisé postérieur et rejoint le condyle médial du fémur.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Medial meniscotibial ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Medial meniscus",
+    "centre": true,
+    "decale": [
+     -5.0,
+     1.3,
+     18.1
+    ]
+   },
+   "par": [
+    {
+     "objet": "Medial meniscus",
+     "centre": true,
+     "decale": [
+      -11.3,
+      -0.4,
+      4.8
+     ]
+    },
+    {
+     "objet": "Medial meniscus",
+     "centre": true,
+     "decale": [
+      -9.2,
+      -3.7,
+      -11.2
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Medial meniscus",
+    "centre": true,
+    "decale": [
+     -3.1,
+     -5.9,
+     -18.2
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 1,
+   "texte": "Ligament coronaire médial : il fixe le bord périphérique du ménisque médial au pourtour du plateau tibial."
+  },
+  {
+   "nom": "Lateral meniscotibial ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Lateral meniscus",
+    "centre": true,
+    "decale": [
+     9.4,
+     3.3,
+     11.6
+    ]
+   },
+   "par": [
+    {
+     "objet": "Lateral meniscus",
+     "centre": true,
+     "decale": [
+      14.1,
+      2.6,
+      4.6
+     ]
+    },
+    {
+     "objet": "Lateral meniscus",
+     "centre": true,
+     "decale": [
+      15.8,
+      -0.1,
+      -10.4
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Lateral meniscus",
+    "centre": true,
+    "decale": [
+     14.7,
+     -2.1,
+     -15.7
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 1,
+   "texte": "Ligament coronaire latéral : il fixe le bord périphérique du ménisque latéral au pourtour du plateau tibial ; il est lâche, ce qui laisse le ménisque très mobile."
+  },
+  {
+   "nom": "Medial patellofemoral ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Patella",
+    "centre": true,
+    "decale": [
+     -52.3,
+     16.6,
+     -26.5
+    ]
+   },
+   "par": [
+    {
+     "objet": "Patella",
+     "centre": true,
+     "decale": [
+      -51.3,
+      14.6,
+      -11.5
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Patella",
+    "centre": true,
+    "decale": [
+     -23.8,
+     12.6,
+     -2.0
+    ]
+   },
+   "largeur_mm": 8,
+   "epaisseur_mm": 1.5,
+   "texte": "Bande du rétinaculum médial qui va de la région de l'épicondyle médial du fémur au bord médial de la patella ; elle s'oppose à la luxation latérale de la patella.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Patellotibial ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Patella",
+    "centre": true,
+    "decale": [
+     -15.8,
+     -16.6,
+     1.0
+    ]
+   },
+   "a": {
+    "objet": "Patella",
+    "centre": true,
+    "decale": [
+     -33.8,
+     -31.4,
+     -8.0
+    ]
+   },
+   "largeur_mm": 6,
+   "epaisseur_mm": 1.5,
+   "texte": "Bandelette du rétinaculum médial de la patella qui relie le bord inférieur et médial de la patella au condyle médial du tibia."
+  },
+  {
+   "nom": "Fabellofibular ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Fibula",
+    "centre": true,
+    "decale": [
+     1.9,
+     186.4,
+     -16.0
+    ]
+   },
+   "a": {
+    "objet": "Fibula",
+    "centre": true,
+    "decale": [
+     6.4,
+     160.9,
+     -2.5
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 1.5,
+   "texte": "Cordon du coin postérolatéral du genou, tendu de la fabella (ou du condyle latéral du fémur) à l'apex de la tête de la fibula ; il stabilise le genou en arrière et en dehors."
+  },
+  {
+   "nom": "Anterior tibiotalar ligament",
+   "couche": "ligament",
+   "forme": "bande",
+   "cotes": "deux",
+   "de": {
+    "objet": "Talus",
+    "centre": true,
+    "decale": [
+     -24.6,
+     12.8,
+     8.0
+    ]
+   },
+   "a": {
+    "objet": "Talus",
+    "centre": true,
+    "decale": [
+     -13.9,
+     2.3,
+     11.7
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 1.5,
+   "texte": "Faisceau antérieur de la partie profonde du ligament collatéral médial (deltoïde) : de la malléole médiale à la face médiale du talus."
+  },
+  {
+   "nom": "Transversus menti muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Mandible",
+    "centre": true,
+    "decale": [
+     21.4,
+     -18.1,
+     18.0
+    ]
+   },
+   "par": [
+    {
+     "objet": "Mandible",
+     "centre": true,
+     "decale": [
+      9.9,
+      -22.6,
+      28.0
+     ]
+    },
+    {
+     "objet": "Mandible",
+     "centre": true,
+     "decale": [
+      -0.1,
+      -23.6,
+      31.0
+     ]
+    },
+    {
+     "objet": "Mandible",
+     "centre": true,
+     "decale": [
+      -10.1,
+      -22.6,
+      28.0
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Mandible",
+    "centre": true,
+    "decale": [
+     -21.6,
+     -18.1,
+     18.0
+    ]
+   },
+   "largeur_mm": 8,
+   "epaisseur_mm": 1.5,
+   "texte": "Faisceaux inconstants qui passent sous le menton d'un muscle abaisseur de l'angle de la bouche à l'autre ; ils se croisent sur la ligne médiane."
+  },
+  {
+   "nom": "Chondroglossus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     15.8,
+     -7.5,
+     -12.8
+    ]
+   },
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     9.5,
+     0.2,
+     -4.5
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 2,
+   "texte": "Faisceau du muscle hyoglosse né de la petite corne et du corps de l'os hyoïde, qui gagne le côté de la langue en dedans de l'hyoglosse ; il abaisse la langue.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Ceratoglossus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     20.5,
+     -8.3,
+     -30.2
+    ]
+   },
+   "par": [
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      16.0,
+      -3.3,
+      -16.0
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     14.5,
+     2.2,
+     -2.0
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 1.5,
+   "texte": "Faisceau du muscle hyoglosse né de la grande corne de l'os hyoïde, qui monte sur le côté de la langue ; il abaisse et rétracte la langue."
+  },
+  {
+   "nom": "Styloglossus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     38.5,
+     35.2,
+     -43.8
+    ]
+   },
+   "par": [
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      30.0,
+      19.7,
+      -31.0
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      21.5,
+      11.7,
+      -15.0
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     15.8,
+     8.2,
+     13.0
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 3,
+   "texte": "Né du processus styloïde, il descend vers l'avant et longe le bord latéral de la langue jusqu'à la pointe ; il rétracte et élève la langue (nerf hypoglosse).",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Superior longitudinal lingual muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     6.0,
+     20.7,
+     -14.0
+    ]
+   },
+   "par": [
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      5.5,
+      23.9,
+      7.0
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     4.5,
+     20.7,
+     28.5
+    ]
+   },
+   "largeur_mm": 11,
+   "epaisseur_mm": 2,
+   "face": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     6.0,
+     86.7,
+     5.0
+    ]
+   },
+   "texte": "Nappe de fibres longitudinales sous la muqueuse du dos de la langue, de la racine à la pointe ; elle raccourcit la langue et relève sa pointe.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Inferior longitudinal lingual muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     9.5,
+     -3.3,
+     -14.0
+    ]
+   },
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     8.5,
+     -2.3,
+     26.5
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 3,
+   "face": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     6.0,
+     86.7,
+     5.0
+    ]
+   },
+   "texte": "Cordon de fibres longitudinales de la face inférieure de la langue, entre le génioglosse et l'hyoglosse ; il raccourcit la langue et abaisse sa pointe.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Transversus linguae muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     1.0,
+     9.2,
+     5.0
+    ]
+   },
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     15.5,
+     9.2,
+     5.0
+    ]
+   },
+   "largeur_mm": 18,
+   "epaisseur_mm": 5,
+   "face": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     6.0,
+     86.7,
+     5.0
+    ]
+   },
+   "texte": "Nappe de fibres transversales tendue du septum médian de la langue à ses bords ; elle rétrécit et allonge la langue.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Verticalis linguae muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     10.5,
+     21.2,
+     13.0
+    ]
+   },
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     10.5,
+     -1.8,
+     13.0
+    ]
+   },
+   "largeur_mm": 12,
+   "epaisseur_mm": 3,
+   "face": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     200.0,
+     9.7,
+     13.0
+    ]
+   },
+   "texte": "Fibres verticales qui vont du dos de la langue à sa face inférieure, surtout vers les bords de la partie antérieure ; elles aplatissent et élargissent la langue.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Palatoglossus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     13.5,
+     35.2,
+     -15.0
+    ]
+   },
+   "par": [
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      18.5,
+      22.7,
+      -10.5
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Tongue",
+    "centre": true,
+    "decale": [
+     16.5,
+     9.2,
+     -5.5
+    ]
+   },
+   "largeur_mm": 4,
+   "epaisseur_mm": 2.5,
+   "texte": "Il forme l'arc palatoglosse : de l'aponévrose du palais mou, il descend sur le côté de la langue ; il rétrécit l'isthme du gosier et élève la base de la langue.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Salpingopharyngeus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Auditory tube",
+    "centre": true,
+    "decale": [
+     -8.6,
+     -3.3,
+     8.0
+    ]
+   },
+   "par": [
+    {
+     "objet": "Auditory tube",
+     "centre": true,
+     "decale": [
+      -3.6,
+      -23.8,
+      6.5
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Auditory tube",
+    "centre": true,
+    "decale": [
+     -3.1,
+     -44.8,
+     3.5
+    ]
+   },
+   "largeur_mm": 3,
+   "epaisseur_mm": 2,
+   "texte": "Mince muscle né du cartilage de la trompe auditive près de son ouverture pharyngienne ; il descend sur la paroi du pharynx pour se mêler au muscle palatopharyngien et élève le pharynx.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Superficial transverse perineal muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Hip bone",
+    "centre": true,
+    "decale": [
+     -21.3,
+     -96.1,
+     -16.8
+    ]
+   },
+   "a": {
+    "objet": "Hip bone",
+    "centre": true,
+    "decale": [
+     -63.3,
+     -102.1,
+     -21.8
+    ]
+   },
+   "largeur_mm": 6,
+   "epaisseur_mm": 2.5,
+   "texte": "Mince bande née de la face interne de la branche ischiale, près de la tubérosité, qui rejoint le centre tendineux du périnée ; elle le fixe.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Deep transverse perineal muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Hip bone",
+    "centre": true,
+    "decale": [
+     -37.8,
+     -87.1,
+     5.2
+    ]
+   },
+   "a": {
+    "objet": "Hip bone",
+    "centre": true,
+    "decale": [
+     -62.3,
+     -93.1,
+     -10.8
+    ]
+   },
+   "largeur_mm": 10,
+   "epaisseur_mm": 3,
+   "texte": "Lame musculaire du plan profond du périnée, de la branche ischio-pubienne au centre tendineux du périnée, sous la prostate ; elle fixe le centre tendineux.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Puboperinealis muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Pubo-analis muscle",
+    "centre": true,
+    "decale": [
+     -1.4,
+     12.1,
+     63.2
+    ]
+   },
+   "par": [
+    {
+     "objet": "Pubo-analis muscle",
+     "centre": true,
+     "decale": [
+      5.1,
+      0.1,
+      33.2
+     ]
+    },
+    {
+     "objet": "Pubo-analis muscle",
+     "centre": true,
+     "decale": [
+      4.6,
+      -5.9,
+      10.2
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Pubo-analis muscle",
+    "centre": true,
+    "decale": [
+     -11.4,
+     -22.9,
+     -10.8
+    ]
+   },
+   "largeur_mm": 5,
+   "epaisseur_mm": 3,
+   "texte": "Faisceau médial du muscle élévateur de l'anus : du corps du pubis, il longe la prostate et se termine sur le centre tendineux du périnée."
+  },
+  {
+   "nom": "Articularis cubiti muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Humerus",
+    "centre": true,
+    "decale": [
+     30.1,
+     -90.4,
+     -20.2
+    ]
+   },
+   "a": {
+    "objet": "Humerus",
+    "centre": true,
+    "decale": [
+     35.1,
+     -136.4,
+     -23.7
+    ]
+   },
+   "largeur_mm": 8,
+   "epaisseur_mm": 2.5,
+   "texte": "Petits faisceaux de la face postérieure de la diaphyse distale de l'humérus qui se fixent sur la capsule du coude ; ils la tendent pendant l'extension."
+  },
+  {
+   "nom": "Palmaris brevis muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Abductor digiti minimi of hand",
+    "centre": true,
+    "decale": [
+     13.3,
+     12.4,
+     3.5
+    ]
+   },
+   "a": {
+    "objet": "Abductor digiti minimi of hand",
+    "centre": true,
+    "decale": [
+     -6.7,
+     8.4,
+     0.5
+    ]
+   },
+   "largeur_mm": 18,
+   "epaisseur_mm": 1.2,
+   "texte": "Mince muscle cutané de l'éminence hypothénar, tendu du bord ulnaire de l'aponévrose palmaire à la peau du bord ulnaire de la main ; il creuse la paume.",
+   "sources": [
+    "wikipedia"
+   ]
+  },
+  {
+   "nom": "Articularis genus muscle",
+   "couche": "muscle",
+   "forme": "fuseau",
+   "cotes": "deux",
+   "de": {
+    "objet": "Femur",
+    "centre": true,
+    "decale": [
+     -7.2,
+     -131.9,
+     29.6
+    ]
+   },
+   "par": [
+    {
+     "objet": "Femur",
+     "centre": true,
+     "decale": [
+      -7.2,
+      -161.9,
+      28.9
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Femur",
+    "centre": true,
+    "decale": [
+     -7.2,
+     -186.9,
+     28.1
+    ]
+   },
+   "largeur_mm": 18,
+   "epaisseur_mm": 3,
+   "texte": "Faisceaux profonds du quadriceps qui vont de la face antérieure de la diaphyse distale du fémur à la capsule et à la bourse suprapatellaire ; ils les retirent pendant l'extension du genou."
+  },
+  {
+   "nom": "Caecum",
+   "couche": "viscere",
+   "forme": "ganglion",
+   "cotes": "droite",
+   "en": {
+    "objet": "Ascending colon",
+    "centre": true,
+    "decale": [
+     2.6,
+     -113.1,
+     1.2
+    ]
+   },
+   "taille_mm": [
+    46,
+    48,
+    52
+   ],
+   "texte": "Cul-de-sac initial du gros intestin, situé dans la fosse iliaque droite sous l'abouchement de l'iléon ; il se continue en haut par le côlon ascendant et porte l'appendice vermiforme."
+  },
+  {
+   "nom": "Anal canal",
+   "couche": "viscere",
+   "forme": "fuseau",
+   "cotes": "milieu",
+   "de": {
+    "objet": "Rectum",
+    "centre": true,
+    "decale": [
+     1.7,
+     -35.3,
+     2.8
+    ]
+   },
+   "par": [
+    {
+     "objet": "Rectum",
+     "centre": true,
+     "decale": [
+      1.1,
+      -52.3,
+      5.3
+     ]
+    }
+   ],
+   "a": {
+    "objet": "Rectum",
+    "centre": true,
+    "decale": [
+     0.5,
+     -69.3,
+     -2.2
+    ]
+   },
+   "largeur_mm": 20,
+   "epaisseur_mm": 19,
+   "texte": "Dernier segment du tube digestif, long de 3 à 4 cm : il prolonge le rectum à travers le plancher pelvien et s'ouvre à l'anus ; il est entouré des sphincters."
+  },
+  {
+   "nom": "Malar node",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Zygomatic bone",
+     "centre": true,
+     "decale": [
+      8.7,
+      11.0,
+      4.8
+     ]
+    }
+   ],
+   "taille_mm": 3.5,
+   "texte": "Petit nœud des nœuds faciaux, sur la saillie de la joue (os zygomatique) ; il draine la peau de la joue et de la paupière inférieure vers les nœuds sous-mandibulaires."
+  },
+  {
+   "nom": "Lingual nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      7.5,
+      -1.3,
+      2.0
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      9.5,
+      1.7,
+      15.0
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "centre": true,
+     "decale": [
+      6.0,
+      -5.3,
+      -6.0
+     ]
+    }
+   ],
+   "taille_mm": 3,
+   "texte": "Petits nœuds inconstants posés sur les muscles génioglosse et hyoglosse, sur la face inférieure de la langue ; ils drainent la langue vers les nœuds sous-mandibulaires et jugulaires."
+  },
+  {
+   "nom": "Prelaryngeal nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "milieu",
+   "en": [
+    {
+     "objet": "Median cricothyroid ligament",
+     "centre": true,
+     "decale": [
+      0.0,
+      0.9,
+      7.9
+     ]
+    },
+    {
+     "objet": "Median cricothyroid ligament",
+     "centre": true,
+     "decale": [
+      3.5,
+      5.4,
+      7.1
+     ]
+    }
+   ],
+   "taille_mm": 4,
+   "texte": "Un ou deux petits nœuds médians sur le ligament cricothyroïdien médian (nœud delphien) ; ils drainent le larynx et la glande thyroïde vers les nœuds pré-trachéaux."
+  },
+  {
+   "nom": "Anterior superior jugular node",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Internal jugular vein",
+     "centre": true,
+     "decale": [
+      -2.4,
+      3.7,
+      10.4
+     ]
+    },
+    {
+     "objet": "Internal jugular vein",
+     "centre": true,
+     "decale": [
+      -1.9,
+      -17.5,
+      13.6
+     ]
+    }
+   ],
+   "taille_mm": 5,
+   "texte": "Nœud de la chaîne jugulaire interne placé en avant de la veine, au niveau de l'os hyoïde, sous le nœud jugulo-digastrique ; il reçoit la lymphe de la tête et du cou."
+  },
+  {
+   "nom": "Jugulo-omohyoid node",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Internal jugular vein",
+     "centre": true,
+     "decale": [
+      2.2,
+      -65.6,
+      23.5
+     ]
+    },
+    {
+     "objet": "Internal jugular vein",
+     "centre": true,
+     "decale": [
+      0.7,
+      -76.2,
+      23.9
+     ]
+    }
+   ],
+   "taille_mm": 6,
+   "texte": "Nœud de la chaîne jugulaire interne situé là où le tendon intermédiaire du muscle omohyoïdien croise la veine ; il draine surtout la langue."
+  },
+  {
+   "nom": "Lateral inferior jugular node",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Internal jugular vein",
+     "centre": true,
+     "decale": [
+      5.4,
+      -83.2,
+      17.8
+     ]
+    },
+    {
+     "objet": "Internal jugular vein",
+     "centre": true,
+     "decale": [
+      3.8,
+      -93.8,
+      18.1
+     ]
+    }
+   ],
+   "taille_mm": 5,
+   "texte": "Nœud de la chaîne jugulaire interne, en dehors de la veine, à la base du cou près de la clavicule ; il se jette dans le tronc jugulaire."
+  },
+  {
+   "nom": "Paramammary nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Fifth rib",
+     "centre": true,
+     "decale": [
+      43.3,
+      -16.2,
+      93.0
+     ]
+    },
+    {
+     "objet": "Fifth rib",
+     "centre": true,
+     "decale": [
+      49.3,
+      -36.2,
+      85.0
+     ]
+    },
+    {
+     "objet": "Fifth rib",
+     "centre": true,
+     "decale": [
+      39.3,
+      3.8,
+      99.0
+     ]
+    }
+   ],
+   "taille_mm": 5,
+   "texte": "Nœuds situés le long du bord latéral du sein, sur la paroi thoracique antérolatérale (4e à 6e espaces) ; ils drainent le sein vers les nœuds axillaires."
+  },
+  {
+   "nom": "Bronchopulmonary nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Superior lobar bronchus",
+     "centre": true,
+     "decale": [
+      0.0,
+      -12.0,
+      -0.0
+     ]
+    },
+    {
+     "objet": "Inferior lobar bronchus",
+     "centre": true,
+     "decale": [
+      0.0,
+      12.0,
+      8.0
+     ]
+    },
+    {
+     "objet": "Inferior lobar bronchus",
+     "centre": true,
+     "decale": [
+      4.0,
+      6.0,
+      -8.0
+     ]
+    },
+    {
+     "objet": "Superior lobar bronchus",
+     "centre": true,
+     "decale": [
+      -6.0,
+      -4.0,
+      8.0
+     ]
+    }
+   ],
+   "taille_mm": 6,
+   "texte": "Nœuds du hile pulmonaire, à la division des bronches lobaires ; ils reçoivent la lymphe des poumons et la transmettent aux nœuds trachéo-bronchiques."
+  },
+  {
+   "nom": "Inferior pancreaticoduodenal nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "milieu",
+   "en": [
+    {
+     "objet": "Pancreas",
+     "centre": true,
+     "decale": [
+      -18.2,
+      -26.5,
+      17.3
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "centre": true,
+     "decale": [
+      -33.2,
+      -41.5,
+      15.3
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "centre": true,
+     "decale": [
+      -45.2,
+      -49.5,
+      7.3
+     ]
+    }
+   ],
+   "taille_mm": 5,
+   "texte": "Nœuds placés dans le sillon entre le bas de la tête du pancréas et le duodénum, le long de l'artère pancréatico-duodénale inférieure ; ils drainent vers les nœuds mésentériques supérieurs."
+  },
+  {
+   "nom": "Paracolic inferior mesenteric nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "gauche",
+   "en": [
+    {
+     "objet": "Descending colon",
+     "centre": true,
+     "decale": [
+      -41.1,
+      -56.0,
+      -7.4
+     ]
+    },
+    {
+     "objet": "Descending colon",
+     "centre": true,
+     "decale": [
+      -22.2,
+      -3.5,
+      -0.5
+     ]
+    },
+    {
+     "objet": "Descending colon",
+     "centre": true,
+     "decale": [
+      -3.4,
+      49.0,
+      6.5
+     ]
+    },
+    {
+     "objet": "Descending colon",
+     "centre": true,
+     "decale": [
+      15.4,
+      101.5,
+      13.5
+     ]
+    }
+   ],
+   "taille_mm": 5,
+   "texte": "Nœuds situés contre le bord médial du côlon descendant, dans le mésocôlon ; ils drainent le côlon et se jettent dans les nœuds mésentériques inférieurs."
+  },
+  {
+   "nom": "Superior anorectal nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "milieu",
+   "en": [
+    {
+     "objet": "Superior anorectal artery",
+     "centre": true,
+     "decale": [
+      5.2,
+      12.7,
+      2.7
+     ]
+    },
+    {
+     "objet": "Superior anorectal artery",
+     "centre": true,
+     "decale": [
+      1.8,
+      -11.4,
+      -21.3
+     ]
+    },
+    {
+     "objet": "Superior anorectal artery",
+     "centre": true,
+     "decale": [
+      9.0,
+      -41.0,
+      -28.3
+     ]
+    }
+   ],
+   "taille_mm": 4,
+   "texte": "Nœuds pararectaux le long de l'artère rectale supérieure, sur la face postérieure du haut du rectum ; ils drainent le rectum vers les nœuds mésentériques inférieurs."
+  },
+  {
+   "nom": "Lateral external iliac nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "External iliac artery",
+     "centre": true,
+     "decale": [
+      2.0,
+      24.9,
+      -4.5
+     ]
+    },
+    {
+     "objet": "External iliac artery",
+     "centre": true,
+     "decale": [
+      11.5,
+      -4.6,
+      -6.0
+     ]
+    },
+    {
+     "objet": "External iliac artery",
+     "centre": true,
+     "decale": [
+      17.2,
+      -31.8,
+      6.6
+     ]
+    }
+   ],
+   "taille_mm": 6,
+   "texte": "Nœuds de la chaîne iliaque externe, en dehors de l'artère ; ils drainent la région inguinale profonde et les muscles de la paroi abdominale."
+  },
+  {
+   "nom": "Interiliac nodes",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "External iliac artery",
+     "centre": true,
+     "decale": [
+      -7.4,
+      23.6,
+      -4.3
+     ]
+    },
+    {
+     "objet": "External iliac artery",
+     "centre": true,
+     "decale": [
+      -4.4,
+      8.3,
+      -6.7
+     ]
+    },
+    {
+     "objet": "External iliac artery",
+     "centre": true,
+     "decale": [
+      -2.7,
+      -4.5,
+      -7.5
+     ]
+    }
+   ],
+   "taille_mm": 5,
+   "texte": "Petits nœuds placés dans l'angle entre l'artère iliaque externe et l'artère iliaque interne ; ils relient les chaînes iliaques externe et interne."
+  },
+  {
+   "nom": "Distal deep inguinal node",
+   "couche": "lymphe",
+   "forme": "noeuds",
+   "cotes": "deux",
+   "en": [
+    {
+     "objet": "Femoral vein",
+     "centre": true,
+     "decale": [
+      -11.7,
+      94.0,
+      15.6
+     ]
+    }
+   ],
+   "taille_mm": 6,
+   "texte": "Nœud inguinal profond le plus bas, sur le côté médial de la veine fémorale, juste sous l'abouchement de la grande veine saphène ; il draine le membre inférieur."
+  }
+ ]
+}

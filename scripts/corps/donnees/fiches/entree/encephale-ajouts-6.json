@@ -1,0 +1,664 @@
+{
+ "lot": "encephale-ajouts-6",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "sillon-hippocampal",
+   "nom": "Sillon hippocampal",
+   "latin": "Sulcus hippocampalis",
+   "anglais": "Hippocampal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon hippocampal",
+   "ta2": "5522",
+   "connu": {
+    "description_du_trace": "Sillon, souvent oblitéré, qui sépare le gyrus dentatus de la corne d'Ammon et de la couche moléculaire de l'hippocampe.",
+    "appui_dans_le_modele": {
+     "id": "hippocampe",
+     "nom": "Hippocampe"
+    }
+   }
+  },
+  {
+   "id": "sillon-hypothalamique",
+   "nom": "Sillon hypothalamique",
+   "latin": "Sulcus hypothalamicus",
+   "anglais": "Hypothalamic sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon hypothalamique",
+   "ta2": "5779",
+   "connu": {
+    "description_du_trace": "Sillon de la paroi latérale du troisième ventricule, du trou interventriculaire à l'aqueduc du mésencéphale ; il sépare le thalamus, au-dessus, de l'hypothalamus, au-dessous.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "sillon-interlobaire",
+   "nom": "Sillon interlobaire",
+   "latin": "Sulci interlobares",
+   "anglais": "Interlobar sulci",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon interlobaire",
+   "ta2": "5434",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "sillon-collateral-transverse-posterieur",
+      "nom": "Sillon collatéral transverse postérieur"
+     },
+     {
+      "id": "sillon-occipital-anterieur",
+      "nom": "Sillon occipital antérieur"
+     },
+     {
+      "id": "sillon-central",
+      "nom": "Sillon central"
+     },
+     {
+      "id": "sillon-circulaire-de-l-insula",
+      "nom": "Sillon circulaire de l'insula"
+     },
+     {
+      "id": "scissure-collaterale",
+      "nom": "Scissure collatérale"
+     },
+     {
+      "id": "sillon-lateral-rameau-posterieur",
+      "nom": "Sillon latéral (rameau postérieur)"
+     },
+     {
+      "id": "sillon-parieto-occipital",
+      "nom": "Sillon pariéto-occipital"
+     },
+     {
+      "id": "sillon-subparietal",
+      "nom": "Sillon subpariétal"
+     },
+     {
+      "id": "sillon-intermediaire-primaire-de-jensen",
+      "nom": "Sillon intermédiaire primaire (de Jensen)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sillon-intermediaire-posterieur-de-la-moelle-epiniere",
+   "nom": "Sillon intermédiaire postérieur de la moëlle épinière",
+   "latin": "Sulcus intermedius posterior medullae spinalis",
+   "anglais": "Posterior intermediate sulcus of spinal cord",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon intermédiaire postérieur de la moëlle épinière",
+   "ta2": "6056",
+   "connu": {
+    "description_du_trace": "Sillon superficiel du cordon postérieur, aux niveaux cervical et thoracique supérieur, qui sépare le faisceau gracile (en dedans) du faisceau cunéiforme (en dehors).",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "sillon-lateral",
+   "nom": "Sillon latéral",
+   "latin": "Sulcus lateralis",
+   "anglais": "Lateral sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon latéral",
+   "ta2": "5436",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "rameau-anterieur-du-sillon-lateral",
+      "nom": "Rameau antérieur du sillon latéral"
+     },
+     {
+      "id": "rameau-ascendant-du-sillon-lateral",
+      "nom": "Rameau ascendant du sillon latéral"
+     },
+     {
+      "id": "sillon-lateral-rameau-posterieur",
+      "nom": "Sillon latéral (rameau postérieur)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sillon-median-de-la-fosse-rhomboide",
+   "nom": "Sillon médian de la fosse rhomboïde",
+   "latin": "Sulcus medianus fossae rhomboideae",
+   "anglais": "Median sulcus of rhomboid fossa",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon médian de la fosse rhomboïde",
+   "ta2": "5972",
+   "connu": {
+    "description_du_trace": "Sillon médian du plancher du quatrième ventricule, de l'aqueduc du mésencéphale à l'obex ; il sépare les deux éminences médianes.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "sillon-median-posterieur-de-la-moelle-epiniere",
+   "nom": "Sillon médian postérieur de la moëlle épinière",
+   "latin": "Sulcus medianus posterior medullae spinalis",
+   "anglais": "Posterior median sulcus of spinal cord",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon médian postérieur de la moëlle épinière",
+   "ta2": "6057",
+   "connu": {
+    "description_du_trace": "Sillon médian de la face postérieure de la moelle, prolongé en profondeur par le septum médian postérieur ; il sépare les deux faisceaux gracile.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "sillon-posterolateral-de-la-moelle-epiniere",
+   "nom": "Sillon postérolatéral de la moëlle épinière",
+   "latin": "Sulcus posterolateralis medullae spinalis",
+   "anglais": "Posterolateral sulcus of spinal cord",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon postérolatéral de la moëlle épinière",
+   "ta2": "6055",
+   "connu": {
+    "description_du_trace": "Sillon longitudinal où pénètrent les radicelles postérieures des nerfs spinaux ; il sépare les cordons latéral et postérieur.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "sillon-rhinal",
+   "nom": "Sillon rhinal",
+   "latin": "Sulcus rhinalis",
+   "anglais": "Rhinal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon rhinal",
+   "ta2": "5443",
+   "connu": {
+    "description_du_trace": "Sillon de la face médiale et basale du lobe temporal antérieur, prolongeant vers l'avant le sillon collatéral ; il limite en dehors le cortex entorhinal et l'uncus.",
+    "appui_dans_le_modele": {
+     "id": "scissure-collaterale",
+     "nom": "Scissure collatérale"
+    }
+   }
+  },
+  {
+   "id": "sillons-para-olfactifs",
+   "nom": "Sillons para-olfactifs",
+   "latin": "Sulci paraolfactorii",
+   "anglais": "Para-olfactory sulci",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillons para-olfactifs",
+   "ta2": "5511",
+   "connu": {
+    "description_du_trace": "Fins sillons verticaux qui délimitent les gyri para-olfactifs, sur la face médiale du lobe frontal, sous le rostre du corps calleux.",
+    "appui_dans_le_modele": {
+     "id": "noyaux-septaux",
+     "nom": "Noyaux septaux"
+    }
+   }
+  },
+  {
+   "id": "sillons-temporaux-transverses",
+   "nom": "Sillons temporaux transverses",
+   "latin": "Sulci termporales transversi",
+   "anglais": "Transverse temporal sulci",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillons temporaux transverses",
+   "ta2": "5492",
+   "connu": {
+    "description_du_trace": "Sillons peu profonds de la face supérieure du lobe temporal, derrière le gyrus temporal transverse antérieur : ils séparent les gyri de Heschl et se dirigent obliquement en avant et en dehors.",
+    "appui_dans_le_modele": {
+     "id": "gyrus-temporal-transverse",
+     "nom": "Gyrus temporal transverse"
+    }
+   }
+  },
+  {
+   "id": "subthalamus",
+   "nom": "Subthalamus",
+   "latin": "Subthalamus",
+   "anglais": "Subthalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Subthalamus",
+   "ta2": "5708",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-subthalamique",
+      "nom": "Noyau subthalamique"
+     },
+     {
+      "id": "noyaux-des-aires-perizonales",
+      "nom": "Noyaux des aires périzonales"
+     },
+     {
+      "id": "faisceau-lenticulaire",
+      "nom": "Faisceau lenticulaire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tractus-cerebello-olivaire",
+   "nom": "Tractus cérébello-olivaire",
+   "latin": "Tractus cerebelloolivaris",
+   "anglais": "Cerebello-olivary tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus cérébello-olivaire",
+   "ta2": "5871",
+   "connu": {
+    "description_du_trace": "Fibres du noyau dentelé qui quittent le cervelet par le pédoncule supérieur, croisent dans le mésencéphale et descendent par le faisceau tegmental central jusqu'à l'olive inférieure controlatérale.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "tractus-dentatothalamique",
+   "nom": "Tractus dentatothalamique",
+   "latin": "Tractus dentatothalamicus",
+   "anglais": "Dentatothalamic tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus dentatothalamique",
+   "ta2": "5847",
+   "connu": {
+    "description_du_trace": "Voie efférente du noyau dentelé : par le pédoncule cérébelleux supérieur elle croise (décussation) dans le mésencéphale et gagne le noyau ventral latéral du thalamus controlatéral, puis le cortex moteur.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "tractus-habenulo-interpedonculaire",
+   "nom": "Tractus habénulo-interpedonculaire",
+   "latin": "Tractus habenulointerpeduncularis",
+   "anglais": "Habenulo-interpeduncular tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus habénulo-interpedonculaire",
+   "ta2": "5750",
+   "connu": {
+    "description_du_trace": "Faisceau rétroflexe (de Meynert) : né de l'habenula, il descend en dedans du noyau rouge jusqu'au noyau interpédonculaire.",
+    "appui_dans_le_modele": {
+     "id": "habenula",
+     "nom": "Habénula"
+    }
+   }
+  },
+  {
+   "id": "tractus-hypothalamohypophysaire",
+   "nom": "Tractus hypothalamohypophysaire",
+   "latin": "Tractus hypothalamohypophysialis",
+   "anglais": "Hypothalamohypophysial tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus hypothalamohypophysaire",
+   "ta2": "5765",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "tractus-supra-optico-hypophysaire",
+      "nom": "Tractus supra-optico-hypophysaire"
+     },
+     {
+      "id": "tractus-paraventriculohypophysaire",
+      "nom": "Tractus paraventriculohypophysaire"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tractus-mesencephalique-du-nerf-trigeminal",
+   "nom": "Tractus mésencéphalique du nerf trigéminal",
+   "latin": "Tractus mesencephalicus nervi trigemini",
+   "anglais": "Mesencephalic tract of trigeminal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus mésencéphalique du nerf trigéminal",
+   "ta2": "5873",
+   "connu": {
+    "description_du_trace": "Fibres de la proprioception des muscles masticateurs, issues du noyau mésencéphalique du trijumeau, qui descendent vers le noyau moteur du trijumeau et la racine du nerf.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "tractus-olfactif",
+   "nom": "Tractus olfactif",
+   "latin": "Tractus olfactorius",
+   "anglais": "Olfactory tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus olfactif",
+   "ta2": "5539",
+   "connu": {
+    "description_du_trace": "Prolongement du bulbe olfactif sous le lobe frontal, couché dans le sillon olfactif ; il se divise en arrière en stries olfactives qui gagnent l'aire para-olfactive et l'amygdale.",
+    "appui_dans_le_modele": {
+     "id": "sillon-olfactif",
+     "nom": "Sillon olfactif"
+    }
+   }
+  },
+  {
+   "id": "tractus-olivocochleaire",
+   "nom": "Tractus olivocochléaire",
+   "latin": "Tractus olivocochlearis",
+   "anglais": "Olivocochlear tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus olivocochléaire",
+   "ta2": "5961",
+   "connu": {
+    "description_du_trace": "Faisceau efférent né de l'olive supérieure : il gagne la racine vestibulaire du nerf VIII et atteint les cellules ciliées de la cochlée (faisceau d'Oort).",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "tractus-olivocerebelleux",
+   "nom": "Tractus olivocérébelleux",
+   "latin": "Tractus olivocerebellaris",
+   "anglais": "Olivocerebellar tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus olivocérébelleux",
+   "ta2": "5853",
+   "connu": {
+    "description_du_trace": "Fibres grimpantes de l'olive inférieure : elles croisent la ligne médiane, entrent par le pédoncule cérébelleux inférieur controlatéral et se terminent sur les cellules de Purkinje.",
+    "appui_dans_le_modele": {
+     "id": "olive",
+     "nom": "Olive"
+    }
+   }
+  },
+  {
+   "id": "tractus-paraventriculohypophysaire",
+   "nom": "Tractus paraventriculohypophysaire",
+   "latin": "Tractus paraventriculohypophysialis",
+   "anglais": "Paraventriculohypophysial tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus paraventriculohypophysaire",
+   "ta2": "5767",
+   "connu": {
+    "description_du_trace": "Les axones des neurones du noyau paraventriculaire descendent, en dedans du précédent, par l'infundibulum vers la neurohypophyse.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "tractus-rubro-olivaire",
+   "nom": "Tractus rubro-olivaire",
+   "latin": "Tractus rubroolivaris",
+   "anglais": "Rubro-olivary tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus rubro-olivaire",
+   "ta2": "5870",
+   "connu": {
+    "description_du_trace": "Fibres du noyau rouge qui descendent dans le faisceau tegmental central jusqu'à l'olive inférieure du même côté ; elles ferment la boucle noyau rouge – olive – cervelet.",
+    "appui_dans_le_modele": {
+     "id": "noyau-rouge",
+     "nom": "Noyau rouge"
+    }
+   }
+  },
+  {
+   "id": "tractus-retinohypothalamique",
+   "nom": "Tractus rétinohypothalamique",
+   "latin": "Tractus retinohypothalamicus",
+   "anglais": "Retinohypothalamic tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus rétinohypothalamique",
+   "ta2": "5768",
+   "connu": {
+    "description_du_trace": "Branche de la voie optique qui quitte le chiasma pour le noyau suprachiasmatique : elle apporte l'information lumineuse qui synchronise l'horloge circadienne.",
+    "appui_dans_le_modele": {
+     "id": "chiasma-optique",
+     "nom": "Chiasma optique"
+    }
+   }
+  },
+  {
+   "id": "tractus-solitaire",
+   "nom": "Tractus solitaire",
+   "latin": "Tractus solitarius",
+   "anglais": "Solitary tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus solitaire",
+   "ta2": "6048",
+   "connu": {
+    "description_du_trace": "Faisceau de fibres visérales (faciale, glossopharyngienne, vagale) qui descend en dehors du noyau du tractus solitaire et s'y termine par des collatérales.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "tractus-spino-olivaire",
+   "nom": "Tractus spino-olivaire",
+   "latin": "Tractus spinoolivaris",
+   "anglais": "Spino-olivary tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus spino-olivaire",
+   "ta2": "6109",
+   "connu": {
+    "description_du_trace": "Voie de la moelle à l'olive inférieure (olives accessoires) : relais indirect de la proprioception vers le cervelet.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "tractus-spinomesencephalique",
+   "nom": "Tractus spinomésencéphalique",
+   "latin": "Tractus spinomesencephalicus",
+   "anglais": "Spinomesencephalic tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus spinomésencéphalique",
+   "ta2": "6106",
+   "connu": {
+    "description_du_trace": "Voie ascendante du cordon antéro-latéral vers le colliculus supérieur et la substance grise périaqueducale, qui règle la modulation descendante de la douleur.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "tractus-spinoreticulaire",
+   "nom": "Tractus spinoréticulaire",
+   "latin": "Tractus spinoreticularis",
+   "anglais": "Spinoreticular tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus spinoréticulaire",
+   "ta2": "6105",
+   "connu": {
+    "description_du_trace": "Voie ascendante du cordon antéro-latéral : elle porte la douleur diffuse de la moelle à la formation réticulée du bulbe et du pont (éveil, composante affective de la douleur).",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "tractus-supra-optico-hypophysaire",
+   "nom": "Tractus supra-optico-hypophysaire",
+   "latin": "Tractus supraopticohypophysialis",
+   "anglais": "Supraopticohypophysial tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus supra-optico-hypophysaire",
+   "ta2": "5766",
+   "connu": {
+    "description_du_trace": "Les axones des neurones du noyau supra-optique descendent par l'infundibulum jusqu'à la neurohypophyse, où ils libèrent ADH et ocytocine.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "tractus-tegmental-central",
+   "nom": "Tractus tegmental central",
+   "latin": "Tractus tegmentalis centralis",
+   "anglais": "Central tegmental tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus tegmental central",
+   "ta2": "5869",
+   "connu": {
+    "description_du_trace": "Faisceau du tegmentum, qui descend du mésencéphale à l'olive bulbaire et porte aussi des fibres ascendantes de la formation réticulée.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "tractus-trigeminothalamique-anterieur",
+   "nom": "Tractus trigéminothalamique antérieur",
+   "latin": "Tractus trigeminothalamicus anterior",
+   "anglais": "Anterior trigeminothalamic tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus trigéminothalamique antérieur",
+   "ta2": "5863",
+   "connu": {
+    "description_du_trace": "Tractus trigéminothalamique ventral : les fibres du noyau spinal du trijumeau croisent la ligne médiane et montent près du lemnisque médial jusqu'au noyau ventral postéro-médial controlatéral (douleur et température de la face).",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "tractus-trigeminothalamique-posterieur",
+   "nom": "Tractus trigéminothalamique postérieur",
+   "latin": "Tractus trigeminothalamicus poterior",
+   "anglais": "Posterior trigeminothalamic tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus trigéminothalamique postérieur",
+   "ta2": "5864",
+   "connu": {
+    "description_du_trace": "Tractus trigéminothalamique dorsal : fibres du noyau sensitif principal qui montent du même côté, près de la substance grise centrale, jusqu'au noyau ventral postéro-médial (tact fin de la face).",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "tractus-epineux-du-nerf-trijumeau",
+   "nom": "Tractus épineux du nerf trijumeau",
+   "latin": "Tractus spinalis nervi trigemini",
+   "anglais": "Spinal tract of trigeminal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus épineux du nerf trijumeau",
+   "ta2": "5872",
+   "connu": {
+    "description_du_trace": "Faisceau de fibres de la douleur et de la température de la face, qui descend en dehors du noyau spinal du trijumeau jusqu'au niveau C2-C3.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "vestibulocerebellum",
+   "nom": "Vestibulocerebellum",
+   "latin": "Vestibulocerebellum",
+   "anglais": "Vestibulocerebellum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Vestibulocerebellum",
+   "ta2": "5803",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "flocculus",
+      "nom": "Flocculus"
+     },
+     {
+      "id": "nodule-du-vermis",
+      "nom": "Nodule du vermis"
+     },
+     {
+      "id": "pedoncule-du-flocculus",
+      "nom": "Pédoncule du flocculus"
+     }
+    ]
+   }
+  },
+  {
+   "id": "faisceau-anterolateral",
+   "nom": "Faisceau antérolatéral",
+   "latin": "Fasciculus anterolateralis",
+   "anglais": "Anterolateral fasciculus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Faisceau antérolatéral",
+   "ta2": "6101",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "tractus-spinothalamique-anterieur",
+      "nom": "Tractus spinothalamique antérieur"
+     },
+     {
+      "id": "tractus-spinothalamique-lateral",
+      "nom": "Tractus spinothalamique latéral"
+     },
+     {
+      "id": "tractus-spinotectal",
+      "nom": "Tractus spinotectal"
+     }
+    ]
+   }
+  }
+ ]
+}

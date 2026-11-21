@@ -22,6 +22,7 @@ Les sources restent hors du dépôt ; seuls les scripts et les paquets finis son
 | 1 | `~/venv-bpy/bin/python -I 01_exporter.py -- <Startup.blend> ~/donnees-corps/brut <début> <fin>` par tranches de 1 500 objets | Chaque objet évalué par Blender (modificateurs appliqués), sans exécuter les scripts du fichier |
 | 1 bis | `python3 -I 01b_bodyparts.py` | Le rein, le rectum, l'iléon et le semi-épineux de la tête repris de BodyParts3D, placés sur leurs voisins |
 | 1 ter | `python3 -I 01c_traces.py` | Les nerfs que les deux atlas n'ont pas (phrénique, laryngé récurrent, glutéal inférieur), tracés en courbes de Bézier sur leurs repères anatomiques |
+| 1 quater | `python3 -I 01d_ajouts.py` | Les structures que les atlas n'ont pas (branches des vaisseaux et des nerfs, veines satellites, plexus, ganglions, nœuds, petits ligaments et muscles, noyaux et faisceaux de l'encéphale, oreille interne), construites d'après leur description dans `donnees/ajouts/*.json` (format : en-tête du script ; règles de rédaction : `donnees/ajouts/CONSIGNES.md`). `--verifier <fichier>` contrôle une description, `--apercu <fichier>` la construit à part pour un rendu de contrôle |
 | 2 | `python 02_classer.py` | Couche, sorte, côté, nom officiel TA2, exclusions (peau, pudeur, licences non commerciales) |
 | 3 | `~/venv-bpy/bin/python 03_geometrie.py` | Soudure, lissage, trois niveaux de détail, tendon et cartilage par sommet, vaisseaux et nerfs retracés |
 | 4 | `python 04_attributs.py` | Profondeur des muscles, occlusion ambiante précalculée (lancer de rayons : `rayons.c`) |
@@ -31,9 +32,9 @@ Les sources restent hors du dépôt ; seuls les scripts et les paquets finis son
 | 4 quinquies | `python 04e_squelette.py` | Le squelette articulé : 135 segments, les centres et les axes des articulations mesurés sur les os (`squelette.py`), et pour chaque sommet les deux segments qu'il suit (vingt minutes) |
 | 4 sexies | `python 04f_pouls.py` | La distance de chaque sommet d'artère au cœur le long de l'arbre artériel (pour l'onde du pouls) |
 | 5 | `python 05_paquets.py` | Les paquets compressés de `public/corps/` et le manifeste |
-| 6 | `python 06_catalogue.py` | Les éléments, les pièces, les insertions, les repères et les planches de `src/lib/corps/modele/` |
+| 6 | `python 06_catalogue.py` | Les éléments, les pièces, les insertions, les repères (posés sur leur structure) et les planches de `src/lib/corps/modele/` ; les ensembles de la nomenclature (groupes de Z-Anatomy, règles, `donnees/ajouts/ensembles-*.json` : un terme et ses membres, ou un autre nom d'une structure quand il n'y a qu'un membre) |
 | 7 | `python 07_fiches.py` | Les fiches du site, un fichier par couche (`src/lib/corps/fiches/`), et le bilan des références |
-| 8 | `python 08_couverture.py` | La part de la Terminologia Anatomica que le modèle montre, couche par couche |
+| 8 | `python 08_couverture.py` | La part de la Terminologia Anatomica que le modèle montre, couche par couche (par un modèle, un ensemble ou un repère) ; la référence et le hors champ sont dans `reference.py` |
 
 L'étape 4 réécrit les fichiers d'attributs : après elle, relancer 4 bis, 4 ter, 4 quinquies, 4 sexies, puis 5 et 6.
 
@@ -44,6 +45,8 @@ dans `src/lib/corps/mouvement/articulations.ts`.
 
 Les fiches : `fiches_lots.py` prépare les lots (`donnees/fiches/entree/`), la rédaction suit
 `donnees/fiches/CONSIGNES.md` et rend `donnees/fiches/sortie/<lot>.json`, que `valider_fiches.py` contrôle.
+`fiches_lots.py --manquantes` réunit en lots nouveaux (`<couche>-ajouts-<n>`) les structures arrivées depuis (après
+l'étape 6), sans toucher aux lots déjà distribués ; leur entrée donne la description qui a servi à les tracer.
 
 `donnees/` garde ce qui ne se recalcule pas : `heritage.json` (les fiches de la première version),
 `planches-publiees.json` (la composition des planches en ligne : elle ne change plus, la progression de chacun en

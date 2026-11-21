@@ -1,0 +1,4815 @@
+{
+ "Right hepatic artery": {
+  "couche": "artere",
+  "texte": "Branche droite de l'artère hépatique propre, elle gagne le lobe droit du foie en croisant en général derrière le canal hépatique commun ; elle donne l'artère cystique avant de se diviser en branches segmentaires antérieure et postérieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Cystic artery": {
+  "couche": "artere",
+  "texte": "Née de l'artère hépatique droite dans le triangle cystohépatique, elle atteint le col de la vésicule biliaire et se divise en rameaux qui en irriguent les deux faces.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Right artery of caudate lobe": {
+  "couche": "artere",
+  "texte": "Petite branche de l'artère hépatique droite qui, par le hile, gagne la partie droite du lobe caudé (segment I) en passant en arrière de la veine porte.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior segmental artery of liver": {
+  "couche": "artere",
+  "texte": "Branche de l'artère hépatique droite pour les segments antérieurs du foie droit : segment V, inférieur, et segment VIII, supérieur.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior segmental artery of liver": {
+  "couche": "artere",
+  "texte": "Branche de l'artère hépatique droite pour les segments postérieurs du foie droit : segment VI, inférieur, et segment VII, supérieur.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Left hepatic artery": {
+  "couche": "artere",
+  "texte": "Branche gauche de l'artère hépatique propre, elle monte vers le sillon ombilical pour irriguer le lobe gauche du foie et se divise en branches segmentaires médiale et latérale.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Left artery of caudate lobe": {
+  "couche": "artere",
+  "texte": "Petite branche de l'artère hépatique gauche qui rejoint la partie gauche du lobe caudé (segment I).",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Medial segmental artery of liver": {
+  "couche": "artere",
+  "texte": "Branche de l'artère hépatique gauche destinée au segment IV du foie (lobe carré), le long du sillon ombilical.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral segmental artery of liver": {
+  "couche": "artere",
+  "texte": "Branche de l'artère hépatique gauche pour le secteur latéral du lobe gauche : segment III en avant et segment II en arrière.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Dorsal pancreatic artery": {
+  "couche": "artere",
+  "texte": "Née à l'origine de l'artère splénique, elle descend derrière le col du pancréas et se divise à son bord inférieur en branches droite (prépancréatique) et gauche (pancréatique inférieure).",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior pancreatic artery": {
+  "couche": "artere",
+  "texte": "Branche gauche de l'artère pancréatique dorsale, elle longe le bord inférieur du corps du pancréas vers la queue et s'anastomose avec la grande artère pancréatique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Prepancreatic artery": {
+  "couche": "artere",
+  "texte": "Branche droite de l'artère pancréatique dorsale, elle passe en avant de la tête du pancréas et s'anastomose avec les arcades pancréaticoduodénales.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Great pancreatic artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère splénique à mi-parcours, elle plonge dans le parenchyme du corps du pancréas et s'anastomose avec l'artère pancréatique inférieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Arterior superior pancreaticoduodenal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère gastroduodénale, elle descend en avant de la tête du pancréas dans le sillon duodéno-pancréatique et s'anastomose avec l'artère pancréaticoduodénale antéro-inférieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior superior pancreaticoduodenal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère gastroduodénale, elle passe en avant du canal cholédoque puis descend en arrière de la tête du pancréas pour s'anastomoser avec la pancréaticoduodénale postéro-inférieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Retroduodenal arteries": {
+  "couche": "artere",
+  "texte": "Petites branches de l'artère gastroduodénale qui passent en arrière de la partie supérieure du duodénum et irriguent sa paroi ainsi que la partie basse du cholédoque.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior inferior pancreaticoduodenal artery": {
+  "couche": "artere",
+  "texte": "Branche postérieure de l'artère pancréaticoduodénale inférieure, elle remonte derrière la tête du pancréas pour s'anastomoser avec l'artère pancréaticoduodénale postéro-supérieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Short gastric arteries": {
+  "couche": "artere",
+  "texte": "Quatre à six petites branches de l'artère splénique qui gagnent le fundus de l'estomac par le ligament gastro-splénique et irriguent la partie haute de la grande courbure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior gastric artery": {
+  "couche": "artere",
+  "texte": "Branche inconstante de l'artère splénique qui monte en arrière de l'estomac et irrigue la face postérieure du corps et du fundus.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Left gastro-omental artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère splénique, elle descend dans le grand omentum à un travers de doigt de la grande courbure de l'estomac et s'anastomose avec l'artère gastro-omentale droite.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Right gastro-omental artery": {
+  "couche": "artere",
+  "texte": "Branche terminale de l'artère gastroduodénale, elle chemine le long de la grande courbure de l'estomac dans le grand omentum et s'anastomose avec la gastro-omentale gauche.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Jejunal arteries": {
+  "couche": "artere",
+  "texte": "Quatre à six branches nées du bord gauche de l'artère mésentérique supérieure ; elles cheminent dans le mésentère, s'unissent en arcades et irriguent le jéjunum.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Ileal arteries": {
+  "couche": "artere",
+  "texte": "Branches nées du bord gauche de l'artère mésentérique supérieure sous les jéjunales ; elles forment des arcades dans le mésentère et irriguent l'iléon.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior caecal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère iléo-colique, elle passe en avant de la jonction iléo-caecale et irrigue la face antérieure du caecum.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior caecal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère iléo-colique, elle passe en arrière de l'iléon terminal et irrigue la face postérieure du caecum.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Intercolic anastomotic artery": {
+  "couche": "artere",
+  "texte": "Anastomose entre les artères coliques voisines, le long du côlon ascendant ; elle participe à l'artère marginale du côlon qui assure la continuité de l'irrigation.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior segmental artery of kidney": {
+  "couche": "artere",
+  "texte": "Branche de la division antérieure de l'artère rénale, elle irrigue le segment supérieur, au pôle supérieur du rein.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior superior segmental artery of kidney": {
+  "couche": "artere",
+  "texte": "Branche de la division antérieure de l'artère rénale pour le segment antérosupérieur du rein.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior inferior segmental artery of kidney": {
+  "couche": "artere",
+  "texte": "Branche de la division antérieure de l'artère rénale pour le segment antéro-inférieur du rein.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior segmental artery of kidney": {
+  "couche": "artere",
+  "texte": "Branche de la division antérieure de l'artère rénale pour le segment inférieur, au pôle inférieur du rein.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior segmental artery of kidney": {
+  "couche": "artere",
+  "texte": "Prolongement de la division postérieure de l'artère rénale, elle passe derrière le bassinet et irrigue à elle seule le segment postérieur du rein.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior suprarenal arteries": {
+  "couche": "artere",
+  "texte": "Six à huit petites branches de l'artère phrénique inférieure, représentées ici depuis son origine ; elles gagnent la partie haute de la glande surrénale.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle suprarenal artery": {
+  "couche": "artere",
+  "texte": "Petite branche née directement de l'aorte abdominale au niveau de l'artère mésentérique supérieure ; elle gagne le bord médial de la glande surrénale.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Umbilical artery": {
+  "couche": "artere",
+  "texte": "Branche de la division antérieure de l'artère iliaque interne ; sa partie proximale, perméable, longe la paroi pelvienne et le bas-fond vésical, puis elle remonte, oblitérée, sous la paroi abdominale antérieure (ligament ombilical médial) jusqu'à l'ombilic.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior vesical arteries": {
+  "couche": "artere",
+  "texte": "Branches de la partie perméable de l'artère ombilicale pour le dôme et le corps de la vessie.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior vesical artery": {
+  "couche": "artere",
+  "texte": "Branche de la division antérieure de l'artère iliaque interne ; elle gagne la base de la vessie, la vésicule séminale et la prostate (chez la femme, elle correspond à l'artère vaginale).",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle anorectal artery": {
+  "couche": "artere",
+  "texte": "Branche de la division antérieure de l'artère iliaque interne, elle passe sur le plancher pelvien et irrigue la partie moyenne et basse du rectum en s'anastomosant avec les artères anorectales supérieure et inférieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior anorectal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère pudendale interne née dans la fosse ischio-anale ; elle traverse la graisse de la fosse et irrigue le canal anal et le sphincter externe de l'anus.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Perineal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère pudendale interne, elle chemine sous la symphyse et gagne le périnée superficiel, où elle irrigue les muscles superficiels, le bulbe du pénis et le scrotum.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral sacral arteries": {
+  "couche": "artere",
+  "texte": "Branches de la division postérieure de l'artère iliaque interne qui descendent en avant des foramens sacrés antérieurs ; leurs rameaux pénètrent dans le canal sacral pour irriguer les racines nerveuses et les méninges.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Deep circumflex iliac artery": {
+  "couche": "artere",
+  "texte": "Née de l'artère iliaque externe juste au-dessus du ligament inguinal, elle longe celui-ci vers l'épine iliaque antéro-supérieure puis la crête iliaque, en irrigant les muscles larges de l'abdomen et le muscle iliaque.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superficial circumflex iliac artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère fémorale sous le ligament inguinal, elle suit superficiellement celui-ci vers l'épine iliaque antéro-supérieure et irrigue la peau et les ganglions de la région inguinale.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior thyroid artery": {
+  "couche": "artere",
+  "texte": "Première branche de la carotide externe, elle descend en avant vers le pôle supérieur du lobe thyroïdien, longe le bord latéral du cartilage thyroïde et irrigue la glande thyroïde.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior laryngeal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère thyroïdienne supérieure, elle perfore la membrane thyro-hyoïdienne avec le nerf laryngé interne et irrigue la muqueuse et les muscles du larynx.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior laryngeal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère thyroïdienne inférieure, elle monte avec le nerf laryngé récurrent dans la gouttière trachéo-œsophagienne et pénètre dans le larynx derrière l'articulation cricothyroïdienne.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Oesophageal thyroid artery": {
+  "couche": "artere",
+  "texte": "Rameaux œsophagiens de l'artère thyroïdienne inférieure ; ils gagnent le segment cervical de l'œsophage et s'anastomosent avec les branches œsophagiennes de l'aorte.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Ascending cervical artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère thyroïdienne inférieure, elle monte sur le muscle scalène antérieur, en dedans du nerf phrénique, et irrigue les muscles profonds du cou et, par des rameaux spinaux, le canal vertébral.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lingual artery": {
+  "couche": "artere",
+  "texte": "Née de la carotide externe en regard de la grande corne de l'os hyoïde, elle passe en dedans du muscle hyoglosse et irrigue la langue et le plancher de la bouche.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Deep lingual artery": {
+  "couche": "artere",
+  "texte": "Terminaison de l'artère linguale, elle monte vers la pointe de la langue sur sa face inférieure, entre le génioglosse et le muscle longitudinal inférieur.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Sublingual artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère linguale née au bord antérieur de l'hyoglosse ; elle longe le canal submandibulaire jusqu'à la glande sublinguale et irrigue aussi le plancher de la bouche et la gencive.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Ascending palatine artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère faciale, elle monte le long de la paroi latérale du pharynx puis sur le muscle élévateur du voile du palais, et irrigue le voile du palais et la trompe auditive.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior auricular artery": {
+  "couche": "artere",
+  "texte": "Branche de la carotide externe au-dessus du ventre postérieur du digastrique ; elle monte derrière le pavillon de l'oreille, passe au niveau du foramen stylo-mastoïdien et irrigue le pavillon, la peau de la région mastoïdienne et le cuir chevelu.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Stylomastoid artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère auriculaire postérieure, elle entre par le foramen stylo-mastoïdien dans le canal facial et irrigue le nerf facial, les cellules mastoïdiennes et la cavité tympanique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior tympanic artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère stylo-mastoïdienne, elle gagne la membrane tympanique par le canalicule de la corde du tympan et s'anastomose avec les autres artères tympaniques.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior tympanic artery": {
+  "couche": "artere",
+  "texte": "Petite branche de l'artère pharyngienne ascendante, elle traverse le canalicule tympanique et irrigue la paroi médiale de la cavité tympanique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior tympanic artery": {
+  "couche": "artere",
+  "texte": "Branche de la partie initiale de l'artère maxillaire, elle passe par la fissure pétro-tympanique et irrigue la membrane tympanique et la cavité tympanique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Deep auricular artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère maxillaire, elle traverse la paroi du méat acoustique externe et irrigue sa peau ainsi que la face externe de la membrane tympanique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior tympanic artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère méningée moyenne, elle suit le petit nerf pétreux dans le hiatus du canal facial et irrigue la paroi supérieure de la cavité tympanique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Caroticotympanic arteries": {
+  "couche": "artere",
+  "texte": "Une ou deux petites branches de la partie pétreuse de l'artère carotide interne, qui traversent la paroi du canal carotidien et irriguent la cavité tympanique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior meningeal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère pharyngienne ascendante, elle monte par le foramen jugulaire et irrigue la dure-mère de la fosse crânienne postérieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Zygomatico-orbital artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère temporale superficielle, elle longe le bord supérieur de l'arcade zygomatique jusqu'au bord latéral de l'orbite et irrigue le muscle orbiculaire de l'œil.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle temporal artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère temporale superficielle née au-dessus de l'arcade zygomatique ; elle perfore le fascia temporal et irrigue le muscle temporal.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Masseteric artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère maxillaire, elle passe dans l'échancrure sigmoïde de la mandibule et pénètre la face profonde du muscle masséter.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior superior alveolar artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère infra-orbitaire dans le canal infra-orbitaire ; elle descend dans la paroi antérieure du maxillaire et irrigue les incisives, la canine et la muqueuse du sinus maxillaire.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle superior alveolar artery": {
+  "couche": "artere",
+  "texte": "Branche inconstante de l'artère infra-orbitaire, elle descend dans la paroi latérale du sinus maxillaire et irrigue les prémolaires et la muqueuse du sinus.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lesser palatine arteries": {
+  "couche": "artere",
+  "texte": "Deux petites branches de l'artère palatine descendante qui sortent par les canaux palatins accessoires et irriguent le voile du palais et l'amygdale palatine.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Sphenopalatine artery": {
+  "couche": "artere",
+  "texte": "Branche terminale de l'artère maxillaire dans la fosse ptérygo-palatine ; elle entre dans la cavité nasale par le foramen sphéno-palatin et donne les branches nasales postéro-latérales et septales postérieures.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral palpebral arteries": {
+  "couche": "artere",
+  "texte": "Deux petites branches de l'artère lacrymale, supérieure et inférieure, qui gagnent les paupières près de leur angle latéral et forment les arcades tarsiennes.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Medial palpebral arteries": {
+  "couche": "artere",
+  "texte": "Deux branches de l'artère ophtalmique, supérieure et inférieure, qui gagnent les paupières près de l'angle médial de l'œil et forment avec les latérales les arcades tarsiennes.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Dorsal nasal artery": {
+  "couche": "artere",
+  "texte": "Branche terminale de l'artère ophtalmique, elle sort de l'orbite au-dessus du ligament palpébral médial et irrigue la racine et le dos du nez ; elle s'anastomose avec l'artère angulaire.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Medial dorsal cutaneous branch-posterior intercostal artery": {
+  "couche": "artere",
+  "texte": "Rameau de la branche dorsale de l'artère intercostale postérieure ; il passe entre les processus transverses, contourne les muscles profonds du dos près des processus épineux et se termine dans la peau de la ligne médiane du dos.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral dorsal cutaneous branch-posterior intercostal artery": {
+  "couche": "artere",
+  "texte": "Rameau de la branche dorsale de l'artère intercostale postérieure ; il traverse les muscles érecteurs du rachis et gagne la peau de la région dorsale latérale.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pericardiacophrenic artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère thoracique interne, elle descend entre la plèvre et le péricarde avec le nerf phrénique et irrigue le péricarde, la plèvre et la partie centrale du diaphragme.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Medial mammary internal thoracic artery": {
+  "couche": "artere",
+  "texte": "Branches perforantes de l'artère thoracique interne dans les deuxième à quatrième espaces intercostaux ; elles traversent le muscle grand pectoral et irriguent la partie médiale de la glande mammaire et la peau.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior thoracic artery": {
+  "couche": "artere",
+  "texte": "Petite branche de la première partie de l'artère axillaire, elle longe le bord supérieur du petit pectoral et irrigue les muscles subclavier et pectoraux ainsi que les deux premiers espaces intercostaux.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Radial recurrent artery": {
+  "couche": "artere",
+  "texte": "Née de l'artère radiale au pli du coude, elle remonte entre le brachio-radial et le brachial et s'anastomose avec l'artère collatérale radiale dans le réseau du coude.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior ulnar recurrent artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère récurrente ulnaire, elle remonte devant l'épicondyle médial entre le brachial et le rond pronateur et s'anastomose avec l'artère collatérale ulnaire inférieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior ulnar recurrent artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère récurrente ulnaire, elle passe derrière l'épicondyle médial dans la gouttière du nerf ulnaire et s'anastomose avec les artères collatérales ulnaires supérieure et inférieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior interosseous artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère interosseuse commune, elle descend sur la face antérieure de la membrane interosseuse jusqu'au muscle carré pronateur et irrigue les muscles profonds de l'avant-bras ainsi que le radius et l'ulna.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Princeps pollicis artery": {
+  "couche": "artere",
+  "texte": "Née de l'artère radiale à l'entrée de la paume, elle descend le long de la face palmaire du premier métacarpien et se divise à la base de la phalange proximale en deux artères digitales palmaires propres du pouce.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Radialis indicis artery": {
+  "couche": "artere",
+  "texte": "Née de l'artère radiale ou de l'artère principale du pouce, elle longe le bord radial de l'index sur sa face palmaire et en irrigue la peau et les tissus.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Descending genicular artery": {
+  "couche": "artere",
+  "texte": "Née de l'artère fémorale dans le canal des adducteurs, elle descend avec le nerf saphène vers le côté médial du genou et participe au réseau articulaire du genou.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Saphenous descending genicular artery": {
+  "couche": "artere",
+  "texte": "Branche saphène de l'artère descendante du genou ; elle accompagne le nerf saphène et irrigue la peau de la face médiale du genou et de la jambe proximale.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Sural arteries": {
+  "couche": "artere",
+  "texte": "Deux branches de l'artère poplitée, médiale et latérale, qui entrent dans la face profonde des chefs médial et latéral du gastrocnémien et en assurent l'irrigation.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior tibial recurrent artery": {
+  "couche": "artere",
+  "texte": "Née de l'artère tibiale antérieure dès qu'elle franchit la membrane interosseuse, elle remonte dans le muscle tibial antérieur vers le côté latéral du genou et participe au réseau patellaire.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior lateral malleolar artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère tibiale antérieure au-dessus de la cheville ; elle passe sous les tendons extenseurs jusqu'à la malléole latérale et s'anastomose avec la branche perforante de l'artère fibulaire.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior medial malleolar artery": {
+  "couche": "artere",
+  "texte": "Branche de l'artère tibiale antérieure au-dessus de la cheville ; elle passe sous le tendon du tibial antérieur jusqu'à la malléole médiale et s'anastomose avec les rameaux malléolaires de l'artère tibiale postérieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Medial tarsal arteries": {
+  "couche": "artere",
+  "texte": "Deux ou trois petites branches de l'artère dorsale du pied qui gagnent le bord médial du pied et irriguent la peau, les articulations et les os du tarse.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Communicating artery of fibular artery": {
+  "couche": "artere",
+  "texte": "Branche communicante de l'artère fibulaire qui passe derrière le tibia, à quelques centimètres au-dessus de la cheville, et rejoint l'artère tibiale postérieure.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior choroidal artery": {
+  "couche": "artere",
+  "texte": "Branche de la carotide interne juste avant sa terminaison ; elle longe le tractus optique, entre dans la corne temporale du ventricule latéral par la fissure choroïdienne et irrigue le plexus choroïde, l'hippocampe et la capsule interne.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterolateral central arteries": {
+  "couche": "artere",
+  "texte": "Artères lenticulo-striées nées du segment M1 de l'artère cérébrale moyenne ; elles pénètrent la substance perforée antérieure et irriguent le putamen, le globus pallidus, le noyau caudé et la capsule interne.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Precommunicating cerebral artery": {
+  "couche": "artere",
+  "texte": "Segment A1 de l'artère cérébrale antérieure, entre la terminaison de la carotide interne et l'artère communicante antérieure, au-dessus du chiasma optique.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anteromedial central branches-anterior communicating artery": {
+  "couche": "artere",
+  "texte": "Fines branches de la région de l'artère communicante antérieure qui pénètrent la substance perforée antérieure et irriguent l'hypothalamus antérieur, le septum et les colonnes du fornix.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posteromedial central arteries": {
+  "couche": "artere",
+  "texte": "Artères thalamo-perforantes nées du segment P1 de l'artère cérébrale postérieure ; elles traversent la substance perforée postérieure et irriguent le thalamus médial et le mésencéphale.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterolateral central arteries": {
+  "couche": "artere",
+  "texte": "Artères thalamo-géniculées nées du segment P2 de l'artère cérébrale postérieure ; elles irriguent la partie postéro-latérale du thalamus (pulvinar) et les corps géniculés.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior spinal arteries": {
+  "couche": "artere",
+  "texte": "Deux artères, nées de l'artère vertébrale ou de l'artère cérébelleuse postéro-inférieure, qui descendent de part et d'autre du sillon postéro-latéral de la moelle spinale en recevant les artères radiculaires et irriguent le tiers postérieur de la moelle.",
+  "lot": "arteres.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior lumbar plexus": {
+  "couche": "nerf",
+  "texte": "Le réseau que forment, en arrière des processus transverses, les rameaux postérieurs des premiers nerfs lombaux ; il donne les rameaux des muscles profonds du dos et les nerfs cutanés glutéaux supérieurs (nerfs cluniaux supérieurs).",
+  "lot": "corrections.json"
+ },
+ "Anterior ligament of auricle": {
+  "couche": "ligament",
+  "texte": "Ruban fibreux qui fixe l'hélix et le tragus à la racine de l'arc zygomatique ; il maintient le pavillon contre le crâne en avant.",
+  "lot": "divers.json"
+ },
+ "Superior ligament of auricle": {
+  "couche": "ligament",
+  "texte": "Ruban fibreux qui relie le haut de l'hélix à l'aponévrose temporale, au-dessus du conduit acoustique externe ; il suspend le pavillon.",
+  "lot": "divers.json"
+ },
+ "Posterior ligament of auricle": {
+  "couche": "ligament",
+  "texte": "Ruban fibreux tendu de la convexité de la conque à la face latérale du processus mastoïde ; il retient le pavillon en arrière.",
+  "lot": "divers.json"
+ },
+ "Auricularis anterior muscle": {
+  "couche": "muscle",
+  "texte": "Petit muscle triangulaire né de la galéa aponévrotique en avant de l'oreille ; il s'insère sur l'épine de l'hélix et tire le pavillon vers l'avant.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Auricularis superior muscle": {
+  "couche": "muscle",
+  "texte": "Le plus grand des muscles extrinsèques : en éventail depuis la galéa aponévrotique, il rejoint la face supérieure du pavillon et l'élève.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Auricularis posterior muscle": {
+  "couche": "muscle",
+  "texte": "Deux ou trois faisceaux nés du processus mastoïde qui se fixent sur la convexité de la conque ; ils tirent le pavillon vers l'arrière.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Helicis major muscle": {
+  "couche": "muscle",
+  "texte": "Mince bandelette verticale sur le bord antérieur de l'hélix, au-dessus du tragus ; elle abaisse un peu l'hélix.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Helicis minor muscle": {
+  "couche": "muscle",
+  "texte": "Petit faisceau oblique qui couvre la racine (crus) de l'hélix, devant la conque.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Tragicus muscle": {
+  "couche": "muscle",
+  "texte": "Mince bandelette verticale sur la face latérale du tragus.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Pyramidal muscle of auricle": {
+  "couche": "muscle",
+  "texte": "Faisceau inconstant qui monte de la base du tragus vers l'épine de l'hélix.",
+  "lot": "divers.json"
+ },
+ "Antitragicus muscle": {
+  "couche": "muscle",
+  "texte": "Petit muscle qui va de la face latérale de l'antitragus à la queue de l'hélix et à l'anthélix.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Transverse muscle of auricle": {
+  "couche": "muscle",
+  "texte": "Sur la face postérieure du pavillon, des fibres tendues de la convexité de la conque à celle de la scapha ; il rapproche ces deux reliefs.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Oblique muscle of auricle": {
+  "couche": "muscle",
+  "texte": "Sur la face postérieure du pavillon, quelques fibres relient la convexité de la conque à celle de la fosse triangulaire.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Stapedius muscle": {
+  "couche": "muscle",
+  "texte": "Le plus petit muscle du corps : logé dans l'éminence pyramidale de la paroi postérieure de la caisse du tympan, son tendon se fixe sur le col de l'étrier ; il amortit les sons forts en limitant les mouvements de l'étrier.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Medial temporomandibular ligament": {
+  "couche": "ligament",
+  "texte": "Renforcement de la face médiale de la capsule de l'articulation temporo-mandibulaire, tendu de la région de l'épine du sphénoïde au col du condyle de la mandibule.",
+  "lot": "divers.json"
+ },
+ "Thyro-epiglottic ligament": {
+  "couche": "ligament",
+  "texte": "Court ligament médian qui attache la tige de l'épiglotte à la face interne du cartilage thyroïde, sous l'incisure thyroïdienne.",
+  "lot": "divers.json"
+ },
+ "Hyo-epiglottic ligament": {
+  "couche": "ligament",
+  "texte": "Bande élastique médiane qui relie la face antérieure de l'épiglotte au bord supérieur du corps de l'os hyoïde.",
+  "lot": "divers.json"
+ },
+ "Vestibular ligament": {
+  "couche": "ligament",
+  "texte": "Bord libre fibreux de la membrane quadrangulaire : de l'angle du cartilage thyroïde à la face antérolatérale de l'aryténoïde, il soutient le pli vestibulaire (fausse corde vocale).",
+  "lot": "divers.json"
+ },
+ "Vocal ligament": {
+  "couche": "ligament",
+  "texte": "Bord supérieur épaissi du cône élastique : de l'angle du cartilage thyroïde au processus vocal de l'aryténoïde, il forme l'ossature du pli vocal (corde vocale).",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Vocalis muscle": {
+  "couche": "muscle",
+  "texte": "Partie médiale du muscle thyro-aryténoïdien, accolée au ligament vocal ; de l'angle du cartilage thyroïde au processus vocal, elle règle la tension de la corde vocale.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Cricotracheal ligament": {
+  "couche": "ligament",
+  "texte": "Membrane fibreuse qui unit le bord inférieur du cartilage cricoïde au premier anneau de la trachée.",
+  "lot": "divers.json"
+ },
+ "Ceratocricoid ligament": {
+  "couche": "ligament",
+  "texte": "Petit ligament qui tend de la corne inférieure du cartilage thyroïde à la face postérieure du cricoïde, au voisinage de l'articulation cricothyroïdienne.",
+  "lot": "divers.json"
+ },
+ "Crico-arytenoid ligament": {
+  "couche": "ligament",
+  "texte": "Ligament postérieur de l'articulation crico-aryténoïdienne : il relie la base de l'aryténoïde au bord supérieur de la lame du cricoïde.",
+  "lot": "divers.json"
+ },
+ "Lateral atlanto-occipital ligament": {
+  "couche": "ligament",
+  "texte": "Court ligament qui relie le processus transverse de l'atlas au processus jugulaire de l'os occipital ; il renforce la capsule de l'articulation atlanto-occipitale en dehors.",
+  "lot": "divers.json"
+ },
+ "Alar ligaments": {
+  "couche": "ligament",
+  "texte": "Deux cordons obliques tendus des faces latérales du sommet de la dent de l'axis au bord médial des condyles de l'occipital ; ils limitent la rotation et l'inclinaison de la tête.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Apical ligament of dens": {
+  "couche": "ligament",
+  "texte": "Mince cordon médian qui va du sommet de la dent de l'axis au bord antérieur du foramen magnum (basion) ; vestige de la corde dorsale.",
+  "lot": "divers.json"
+ },
+ "Anterior atlantodental ligament": {
+  "couche": "ligament",
+  "texte": "Court faisceau qui attache la face antérieure de la dent de l'axis au bord inférieur de l'arc antérieur de l'atlas.",
+  "lot": "divers.json"
+ },
+ "Cruciform ligament": {
+  "couche": "ligament",
+  "texte": "Croix fibreuse placée derrière la dent de l'axis : son bras vertical, en haut vers le basion et en bas vers le corps de l'axis, croise le ligament transverse de l'atlas qui en forme le bras horizontal.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Transverse ligament of atlas": {
+  "couche": "ligament",
+  "texte": "Robuste bande horizontale tendue entre les tubercules médiaux des masses latérales de l'atlas ; elle plaque la dent de l'axis contre l'arc antérieur et empêche son recul vers la moelle.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Superficial posterior sacrococcygeal ligament": {
+  "couche": "ligament",
+  "texte": "Lame qui ferme le hiatus sacral : des bords du hiatus à la face dorsale du coccyx ; prolongement du ligament supraépineux.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Deep posterior sacrococcygeal ligament": {
+  "couche": "ligament",
+  "texte": "Prolongement du ligament longitudinal postérieur : de la face postérieure du dernier segment sacral à la face dorsale du coccyx, sous le ligament superficiel.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Anterior sacrococcygeal ligament": {
+  "couche": "ligament",
+  "texte": "Prolongement du ligament longitudinal antérieur : il joint la face antérieure du sacrum à celle du coccyx.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Lateral sacrococcygeal ligament": {
+  "couche": "ligament",
+  "texte": "Ligament qui va de l'angle inférolatéral du sacrum à la corne du coccyx et complète le foramen du cinquième nerf sacral.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Superior costotransverse ligament": {
+  "couche": "ligament",
+  "texte": "Ligament qui monte de la crête du col d'une côte (ici la sixième) au processus transverse de la vertèbre sus-jacente ; il existe à chaque articulation costo-vertébrale.",
+  "lot": "divers.json"
+ },
+ "Lateral costotransverse ligament": {
+  "couche": "ligament",
+  "texte": "Ligament court qui joint le sommet du processus transverse à la partie non articulaire du tubercule de la côte correspondante (ici la sixième) ; il renforce l'articulation costo-transversaire en dehors.",
+  "lot": "divers.json"
+ },
+ "Lumbocostal ligament": {
+  "couche": "ligament",
+  "texte": "Bande fibreuse qui unit le sommet du processus transverse de la première vertèbre lombaire au bord inférieur de la douzième côte ; il limite l'écartement de cette côte.",
+  "lot": "divers.json"
+ },
+ "Intra-articular sternochondral ligament": {
+  "couche": "ligament",
+  "texte": "Lame fibreuse placée à l'intérieur de l'articulation sternocostale de la deuxième côte : elle relie le cartilage costal à l'angle du sternum et sépare la cavité articulaire en deux.",
+  "lot": "divers.json"
+ },
+ "Radiate sternochondral ligament": {
+  "couche": "ligament",
+  "texte": "Faisceaux en éventail sur la face antérieure de l'articulation sternocostale (ici celle du quatrième cartilage), qui rayonnent du cartilage costal vers le sternum.",
+  "lot": "divers.json"
+ },
+ "Xiphichondral ligaments": {
+  "couche": "ligament",
+  "texte": "Bandelettes fibreuses qui unissent la face antérieure du processus xiphoïde au cartilage de la septième côte.",
+  "lot": "divers.json"
+ },
+ "Interchondral ligaments": {
+  "couche": "ligament",
+  "texte": "Ligaments qui unissent les bords adjacents des cartilages costaux 6 à 10 (articulations interchondrales), le long de l'arc costal.",
+  "lot": "divers.json"
+ },
+ "Long radiolunate ligament": {
+  "couche": "ligament",
+  "texte": "Ligament radiocarpien palmaire qui part du bord palmaire du radius près du processus styloïde et rejoint la face palmaire du lunatum ; il soutient le lunatum en avant.",
+  "lot": "divers.json"
+ },
+ "Short radiolunate ligament": {
+  "couche": "ligament",
+  "texte": "Faisceau court et robuste du ligament radiocarpien palmaire, du bord palmaire de la fosse lunatienne du radius à la face palmaire du lunatum.",
+  "lot": "divers.json"
+ },
+ "Radioscapholunate ligament": {
+  "couche": "ligament",
+  "texte": "Ligament de Testut : mince cordon vasculaire qui monte du bord palmaire du radius, entre les fosses scaphoïdienne et lunatienne, à l'interstice scapho-lunaire ; il contribue peu à la stabilité.",
+  "lot": "divers.json"
+ },
+ "Palmar metacarpophalangeal ligaments": {
+  "couche": "ligament",
+  "texte": "Plaques fibrocartilagineuses de la face palmaire des articulations métacarpo-phalangiennes des doigts II à V ; elles glissent sur les têtes métacarpiennes et sont reliées entre elles par le ligament métacarpien transverse profond.",
+  "lot": "divers.json"
+ },
+ "Sesamoid bones of hand": {
+  "couche": "os",
+  "texte": "Deux petits os arrondis, radial et ulnaire, enchâssés dans les tendons du court fléchisseur du pouce à la face palmaire de la tête du premier métacarpien ; ils protègent les tendons et accroissent le bras de levier de la flexion.",
+  "lot": "divers.json"
+ },
+ "Anterior meniscofemoral ligament": {
+  "couche": "ligament",
+  "texte": "Ligament de Humphrey : de la corne postérieure du ménisque latéral, il passe en avant du ligament croisé postérieur et rejoint la face latérale du condyle médial du fémur.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Posterior meniscofemoral ligament": {
+  "couche": "ligament",
+  "texte": "Ligament de Wrisberg : de la corne postérieure du ménisque latéral, il passe en arrière du ligament croisé postérieur et rejoint le condyle médial du fémur.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Medial meniscotibial ligament": {
+  "couche": "ligament",
+  "texte": "Ligament coronaire médial : il fixe le bord périphérique du ménisque médial au pourtour du plateau tibial.",
+  "lot": "divers.json"
+ },
+ "Lateral meniscotibial ligament": {
+  "couche": "ligament",
+  "texte": "Ligament coronaire latéral : il fixe le bord périphérique du ménisque latéral au pourtour du plateau tibial ; il est lâche, ce qui laisse le ménisque très mobile.",
+  "lot": "divers.json"
+ },
+ "Medial patellofemoral ligament": {
+  "couche": "ligament",
+  "texte": "Bande du rétinaculum médial qui va de la région de l'épicondyle médial du fémur au bord médial de la patella ; elle s'oppose à la luxation latérale de la patella.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Patellotibial ligament": {
+  "couche": "ligament",
+  "texte": "Bandelette du rétinaculum médial de la patella qui relie le bord inférieur et médial de la patella au condyle médial du tibia.",
+  "lot": "divers.json"
+ },
+ "Fabellofibular ligament": {
+  "couche": "ligament",
+  "texte": "Cordon du coin postérolatéral du genou, tendu de la fabella (ou du condyle latéral du fémur) à l'apex de la tête de la fibula ; il stabilise le genou en arrière et en dehors.",
+  "lot": "divers.json"
+ },
+ "Anterior tibiotalar ligament": {
+  "couche": "ligament",
+  "texte": "Faisceau antérieur de la partie profonde du ligament collatéral médial (deltoïde) : de la malléole médiale à la face médiale du talus.",
+  "lot": "divers.json"
+ },
+ "Transversus menti muscle": {
+  "couche": "muscle",
+  "texte": "Faisceaux inconstants qui passent sous le menton d'un muscle abaisseur de l'angle de la bouche à l'autre ; ils se croisent sur la ligne médiane.",
+  "lot": "divers.json"
+ },
+ "Chondroglossus muscle": {
+  "couche": "muscle",
+  "texte": "Faisceau du muscle hyoglosse né de la petite corne et du corps de l'os hyoïde, qui gagne le côté de la langue en dedans de l'hyoglosse ; il abaisse la langue.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Ceratoglossus muscle": {
+  "couche": "muscle",
+  "texte": "Faisceau du muscle hyoglosse né de la grande corne de l'os hyoïde, qui monte sur le côté de la langue ; il abaisse et rétracte la langue.",
+  "lot": "divers.json"
+ },
+ "Styloglossus muscle": {
+  "couche": "muscle",
+  "texte": "Né du processus styloïde, il descend vers l'avant et longe le bord latéral de la langue jusqu'à la pointe ; il rétracte et élève la langue (nerf hypoglosse).",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Superior longitudinal lingual muscle": {
+  "couche": "muscle",
+  "texte": "Nappe de fibres longitudinales sous la muqueuse du dos de la langue, de la racine à la pointe ; elle raccourcit la langue et relève sa pointe.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Inferior longitudinal lingual muscle": {
+  "couche": "muscle",
+  "texte": "Cordon de fibres longitudinales de la face inférieure de la langue, entre le génioglosse et l'hyoglosse ; il raccourcit la langue et abaisse sa pointe.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Transversus linguae muscle": {
+  "couche": "muscle",
+  "texte": "Nappe de fibres transversales tendue du septum médian de la langue à ses bords ; elle rétrécit et allonge la langue.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Verticalis linguae muscle": {
+  "couche": "muscle",
+  "texte": "Fibres verticales qui vont du dos de la langue à sa face inférieure, surtout vers les bords de la partie antérieure ; elles aplatissent et élargissent la langue.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Palatoglossus muscle": {
+  "couche": "muscle",
+  "texte": "Il forme l'arc palatoglosse : de l'aponévrose du palais mou, il descend sur le côté de la langue ; il rétrécit l'isthme du gosier et élève la base de la langue.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Salpingopharyngeus muscle": {
+  "couche": "muscle",
+  "texte": "Mince muscle né du cartilage de la trompe auditive près de son ouverture pharyngienne ; il descend sur la paroi du pharynx pour se mêler au muscle palatopharyngien et élève le pharynx.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Superficial transverse perineal muscle": {
+  "couche": "muscle",
+  "texte": "Mince bande née de la face interne de la branche ischiale, près de la tubérosité, qui rejoint le centre tendineux du périnée ; elle le fixe.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Deep transverse perineal muscle": {
+  "couche": "muscle",
+  "texte": "Lame musculaire du plan profond du périnée, de la branche ischio-pubienne au centre tendineux du périnée, sous la prostate ; elle fixe le centre tendineux.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Puboperinealis muscle": {
+  "couche": "muscle",
+  "texte": "Faisceau médial du muscle élévateur de l'anus : du corps du pubis, il longe la prostate et se termine sur le centre tendineux du périnée.",
+  "lot": "divers.json"
+ },
+ "Articularis cubiti muscle": {
+  "couche": "muscle",
+  "texte": "Petits faisceaux de la face postérieure de la diaphyse distale de l'humérus qui se fixent sur la capsule du coude ; ils la tendent pendant l'extension.",
+  "lot": "divers.json"
+ },
+ "Palmaris brevis muscle": {
+  "couche": "muscle",
+  "texte": "Mince muscle cutané de l'éminence hypothénar, tendu du bord ulnaire de l'aponévrose palmaire à la peau du bord ulnaire de la main ; il creuse la paume.",
+  "lot": "divers.json",
+  "sources": [
+   "wikipedia"
+  ]
+ },
+ "Articularis genus muscle": {
+  "couche": "muscle",
+  "texte": "Faisceaux profonds du quadriceps qui vont de la face antérieure de la diaphyse distale du fémur à la capsule et à la bourse suprapatellaire ; ils les retirent pendant l'extension du genou.",
+  "lot": "divers.json"
+ },
+ "Caecum": {
+  "couche": "viscere",
+  "texte": "Cul-de-sac initial du gros intestin, situé dans la fosse iliaque droite sous l'abouchement de l'iléon ; il se continue en haut par le côlon ascendant et porte l'appendice vermiforme.",
+  "lot": "divers.json"
+ },
+ "Anal canal": {
+  "couche": "viscere",
+  "texte": "Dernier segment du tube digestif, long de 3 à 4 cm : il prolonge le rectum à travers le plancher pelvien et s'ouvre à l'anus ; il est entouré des sphincters.",
+  "lot": "divers.json"
+ },
+ "Malar node": {
+  "couche": "lymphe",
+  "texte": "Petit nœud des nœuds faciaux, sur la saillie de la joue (os zygomatique) ; il draine la peau de la joue et de la paupière inférieure vers les nœuds sous-mandibulaires.",
+  "lot": "divers.json"
+ },
+ "Lingual nodes": {
+  "couche": "lymphe",
+  "texte": "Petits nœuds inconstants posés sur les muscles génioglosse et hyoglosse, sur la face inférieure de la langue ; ils drainent la langue vers les nœuds sous-mandibulaires et jugulaires.",
+  "lot": "divers.json"
+ },
+ "Prelaryngeal nodes": {
+  "couche": "lymphe",
+  "texte": "Un ou deux petits nœuds médians sur le ligament cricothyroïdien médian (nœud delphien) ; ils drainent le larynx et la glande thyroïde vers les nœuds pré-trachéaux.",
+  "lot": "divers.json"
+ },
+ "Anterior superior jugular node": {
+  "couche": "lymphe",
+  "texte": "Nœud de la chaîne jugulaire interne placé en avant de la veine, au niveau de l'os hyoïde, sous le nœud jugulo-digastrique ; il reçoit la lymphe de la tête et du cou.",
+  "lot": "divers.json"
+ },
+ "Jugulo-omohyoid node": {
+  "couche": "lymphe",
+  "texte": "Nœud de la chaîne jugulaire interne situé là où le tendon intermédiaire du muscle omohyoïdien croise la veine ; il draine surtout la langue.",
+  "lot": "divers.json"
+ },
+ "Lateral inferior jugular node": {
+  "couche": "lymphe",
+  "texte": "Nœud de la chaîne jugulaire interne, en dehors de la veine, à la base du cou près de la clavicule ; il se jette dans le tronc jugulaire.",
+  "lot": "divers.json"
+ },
+ "Paramammary nodes": {
+  "couche": "lymphe",
+  "texte": "Nœuds situés le long du bord latéral du sein, sur la paroi thoracique antérolatérale (4e à 6e espaces) ; ils drainent le sein vers les nœuds axillaires.",
+  "lot": "divers.json"
+ },
+ "Bronchopulmonary nodes": {
+  "couche": "lymphe",
+  "texte": "Nœuds du hile pulmonaire, à la division des bronches lobaires ; ils reçoivent la lymphe des poumons et la transmettent aux nœuds trachéo-bronchiques.",
+  "lot": "divers.json"
+ },
+ "Inferior pancreaticoduodenal nodes": {
+  "couche": "lymphe",
+  "texte": "Nœuds placés dans le sillon entre le bas de la tête du pancréas et le duodénum, le long de l'artère pancréatico-duodénale inférieure ; ils drainent vers les nœuds mésentériques supérieurs.",
+  "lot": "divers.json"
+ },
+ "Paracolic inferior mesenteric nodes": {
+  "couche": "lymphe",
+  "texte": "Nœuds situés contre le bord médial du côlon descendant, dans le mésocôlon ; ils drainent le côlon et se jettent dans les nœuds mésentériques inférieurs.",
+  "lot": "divers.json"
+ },
+ "Superior anorectal nodes": {
+  "couche": "lymphe",
+  "texte": "Nœuds pararectaux le long de l'artère rectale supérieure, sur la face postérieure du haut du rectum ; ils drainent le rectum vers les nœuds mésentériques inférieurs.",
+  "lot": "divers.json"
+ },
+ "Lateral external iliac nodes": {
+  "couche": "lymphe",
+  "texte": "Nœuds de la chaîne iliaque externe, en dehors de l'artère ; ils drainent la région inguinale profonde et les muscles de la paroi abdominale.",
+  "lot": "divers.json"
+ },
+ "Interiliac nodes": {
+  "couche": "lymphe",
+  "texte": "Petits nœuds placés dans l'angle entre l'artère iliaque externe et l'artère iliaque interne ; ils relient les chaînes iliaques externe et interne.",
+  "lot": "divers.json"
+ },
+ "Distal deep inguinal node": {
+  "couche": "lymphe",
+  "texte": "Nœud inguinal profond le plus bas, sur le côté médial de la veine fémorale, juste sous l'abouchement de la grande veine saphène ; il draine le membre inférieur.",
+  "lot": "divers.json"
+ },
+ "Sulcus of corpus callosum": {
+  "couche": "encephale",
+  "texte": "Gouttière profonde qui sépare la face supérieure du corps calleux du gyrus cingulaire, de son genou à son splénium, où elle se prolonge vers le sillon de l'hippocampe.",
+  "lot": "encephale.json"
+ },
+ "Rhinal sulcus": {
+  "couche": "encephale",
+  "texte": "Sillon de la face médiale et basale du lobe temporal antérieur, prolongeant vers l'avant le sillon collatéral ; il limite en dehors le cortex entorhinal et l'uncus.",
+  "lot": "encephale.json"
+ },
+ "Central sulcus of insula": {
+  "couche": "encephale",
+  "texte": "Sillon oblique de la face de l'insula, parallèle au sillon central du cerveau : il sépare les gyri courts, en avant, du long gyrus, en arrière.",
+  "lot": "encephale.json"
+ },
+ "Transverse temporal sulci": {
+  "couche": "encephale",
+  "texte": "Sillons peu profonds de la face supérieure du lobe temporal, derrière le gyrus temporal transverse antérieur : ils séparent les gyri de Heschl et se dirigent obliquement en avant et en dehors.",
+  "lot": "encephale.json"
+ },
+ "Dentate gyrus": {
+  "couche": "encephale",
+  "texte": "Fine bande de cortex dentelée qui borde le bord médial de l'hippocampe, entre la fimbria et le gyrus parahippocampique ; elle se continue en arrière par le gyrus fasciolaire.",
+  "lot": "encephale.json"
+ },
+ "Hippocampal sulcus": {
+  "couche": "encephale",
+  "texte": "Sillon, souvent oblitéré, qui sépare le gyrus dentatus de la corne d'Ammon et de la couche moléculaire de l'hippocampe.",
+  "lot": "encephale.json"
+ },
+ "Fasciolar gyrus": {
+  "couche": "encephale",
+  "texte": "Mince bande grise située derrière le splénium du corps calleux, prolongement postérieur du gyrus dentatus vers le gyrus supracalleux.",
+  "lot": "encephale.json"
+ },
+ "Paraterminal gyrus": {
+  "couche": "encephale",
+  "texte": "Petit gyrus de la face médiale du lobe frontal, juste devant la lame terminale et sous le rostre du corps calleux ; il fait partie de l'aire subcalleuse du système limbique.",
+  "lot": "encephale.json"
+ },
+ "Para-olfactory gyri": {
+  "couche": "encephale",
+  "texte": "Petits gyri de l'aire subcalleuse, devant le gyrus paraterminal, au pied de la face médiale du lobe frontal ; ils sont séparés par les sillons para-olfactifs.",
+  "lot": "encephale.json"
+ },
+ "Para-olfactory sulci": {
+  "couche": "encephale",
+  "texte": "Fins sillons verticaux qui délimitent les gyri para-olfactifs, sur la face médiale du lobe frontal, sous le rostre du corps calleux.",
+  "lot": "encephale.json"
+ },
+ "Anterior nuclei of thalamus": {
+  "couche": "encephale",
+  "texte": "Groupe de noyaux du pôle antérieur du thalamus, sous le tubercule antérieur ; il reçoit le faisceau mamillothalamique et projette sur le gyrus cingulaire (circuit de Papez, mémoire).",
+  "lot": "encephale.json"
+ },
+ "Mediodorsal nucleus": {
+  "couche": "encephale",
+  "texte": "Grand noyau de la face médiale du thalamus, relié au cortex préfrontal et au système limbique ; il intervient dans la mémoire, l'attention et l'émotion.",
+  "lot": "encephale.json"
+ },
+ "Intralaminar nuclei of thalamus": {
+  "couche": "encephale",
+  "texte": "Noyaux (centromédian, parafasciculaire…) logés dans la lame médullaire interne ; ils projettent largement sur le cortex et le striatum et règlent l'éveil et l'attention.",
+  "lot": "encephale.json"
+ },
+ "Ventral anterior nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau ventral antérieur du thalamus, relais du globus pallidus vers le cortex prémoteur ; il participe au contrôle du mouvement.",
+  "lot": "encephale.json"
+ },
+ "Ventral lateral nuclei": {
+  "couche": "encephale",
+  "texte": "Noyaux ventraux latéraux, relais du cervelet (noyau dentelé) et du pallidum vers le cortex moteur primaire.",
+  "lot": "encephale.json"
+ },
+ "Ventral medial nuclei": {
+  "couche": "encephale",
+  "texte": "Petit noyau ventral médial, contre la paroi du troisième ventricule ; relais gustatif et viscéral vers l'insula.",
+  "lot": "encephale.json"
+ },
+ "Ventral posterolateral nucleus": {
+  "couche": "encephale",
+  "texte": "Relais des sensibilités du corps (lemnisque médial et voie spinothalamique) vers le gyrus postcentral.",
+  "lot": "encephale.json"
+ },
+ "Ventral posteromedial nucleus": {
+  "couche": "encephale",
+  "texte": "Relais de la sensibilité de la face (voies trigéminothalamiques) et du goût vers le cortex somesthésique.",
+  "lot": "encephale.json"
+ },
+ "Ventral posterior inferior nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau situé sous le ventral postérieur, relais de la sensibilité vestibulaire.",
+  "lot": "encephale.json"
+ },
+ "Lateral dorsal nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau latéral dorsal, en haut du thalamus, associé au système limbique et au cortex cingulaire.",
+  "lot": "encephale.json"
+ },
+ "Lateral posterior nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau latéral postérieur, au-dessus du pulvinar, relié au cortex pariétal associatif.",
+  "lot": "encephale.json"
+ },
+ "Pulvinar nuclei": {
+  "couche": "encephale",
+  "texte": "Masse postérieure du thalamus qui surplombe les corps géniculés ; elle intègre des informations visuelles et associatives pour les cortex pariétal, temporal et occipital.",
+  "lot": "encephale.json"
+ },
+ "Periventricular nuclei of thalamus": {
+  "couche": "encephale",
+  "texte": "Mince couche de cellules appliquée contre la paroi du troisième ventricule.",
+  "lot": "encephale.json"
+ },
+ "Reticular nucleus of prethalamus": {
+  "couche": "encephale",
+  "texte": "Fine nappe de neurones inhibiteurs enveloppant la face latérale du thalamus, contre la capsule interne ; elle module les relais thalamo-corticaux.",
+  "lot": "encephale.json"
+ },
+ "Pregeniculate nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau (partie ventrale du corps géniculé latéral) situé juste devant celui-ci ; il reçoit des fibres rétiniennes et intervient dans les réflexes oculomoteurs.",
+  "lot": "encephale.json"
+ },
+ "Nuclei of perizonal fields": {
+  "couche": "encephale",
+  "texte": "Noyaux de la zone incertaine et des champs de Forel, nappe sous le thalamus, au-dessus du noyau subthalamique ; ils relient pallidum, thalamus et tronc cérébral.",
+  "lot": "encephale.json"
+ },
+ "Subthalamic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau en lentille accolé à la capsule interne, sous le thalamus ; élément excitateur des noyaux gris centraux, impliqué dans la maladie de Parkinson (cible de stimulation profonde).",
+  "lot": "encephale.json"
+ },
+ "Lateral habenular nucleus": {
+  "couche": "encephale",
+  "texte": "Partie latérale de l'habenula, relais limbique qui reçoit la strie médullaire et projette vers le noyau interpédonculaire et le mésencéphale.",
+  "lot": "encephale.json"
+ },
+ "Medial habenular nucleus": {
+  "couche": "encephale",
+  "texte": "Partie médiale de l'habenula, origine principale du tractus habénulo-interpédonculaire (faisceau rétroflexe).",
+  "lot": "encephale.json"
+ },
+ "Habenular commissure": {
+  "couche": "encephale",
+  "texte": "Mince commissure qui relie les deux habenulae, au-devant de la glande pinéale ; elle appartient à l'épithalamus.",
+  "lot": "encephale.json"
+ },
+ "Periventricular preoptic nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau de l'aire pré-optique, contre la paroi du troisième ventricule, au-dessus du chiasma optique ; il règle l'équilibre hydrique et la thermorégulation.",
+  "lot": "encephale.json"
+ },
+ "Medial preoptic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de l'aire pré-optique, en dehors du précédent ; son aire sexuellement dimorphe contrôle les comportements sexuels et la thermorégulation.",
+  "lot": "encephale.json"
+ },
+ "Lateral preoptic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau diffus de l'aire pré-optique latérale, en continuité avec l'hypothalamus latéral ; il participe à la régulation du sommeil et de la température.",
+  "lot": "encephale.json"
+ },
+ "Anterior periventricular hypothalamic nucleus": {
+  "couche": "encephale",
+  "texte": "Fine couche cellulaire de la paroi du troisième ventricule, dans l'hypothalamus antérieur ; relais neuroendocrine.",
+  "lot": "encephale.json"
+ },
+ "Suprachiasmatic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau situé juste au-dessus du chiasma optique, de part et d'autre du ventricule : horloge biologique principale, il règle les rythmes circadiens à partir des signaux lumineux de la rétine.",
+  "lot": "encephale.json"
+ },
+ "Supra-optic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de neurones à grandes cellules, au-dessus du tractus optique ; il synthétise l'hormone antidiurétique et l'ocytocine, libérées dans la neurohypophyse.",
+  "lot": "encephale.json"
+ },
+ "Paraventricular hypothalamic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau contre la paroi du troisième ventricule, au-dessus du noyau supra-optique ; il produit ocytocine, ADH et facteurs de libération, et commande des réponses autonomes et au stress.",
+  "lot": "encephale.json"
+ },
+ "Posterior periventricular hypothalamic nucleus": {
+  "couche": "encephale",
+  "texte": "Fine couche cellulaire de la paroi ventriculaire de l'hypothalamus postérieur, au-dessus des corps mamillaires.",
+  "lot": "encephale.json"
+ },
+ "Arcuate nucleus of hypothalamus": {
+  "couche": "encephale",
+  "texte": "Noyau infundibulaire au pied du troisième ventricule, au-dessus de l'éminence médiane ; il contrôle l'adénohypophyse et l'appétit.",
+  "lot": "encephale.json"
+ },
+ "Perifornical nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau entourant la colonne du fornix dans l'hypothalamus latéral ; relié à l'éveil, à l'appétit et aux réponses autonomes.",
+  "lot": "encephale.json"
+ },
+ "Dorsomedial hypothalamic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de l'hypothalamus tubéral, au-dessus du ventromédial ; il intervient dans le comportement alimentaire et les rythmes.",
+  "lot": "encephale.json"
+ },
+ "Ventromedial hypothalamic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau arrondi de l'hypothalamus tubéral, centre de la satiété.",
+  "lot": "encephale.json"
+ },
+ "Medial mamillary nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau principal du corps mamillaire : origine du faisceau mamillothalamique et du faisceau mamillotegmental, maillon du circuit de Papez (mémoire).",
+  "lot": "encephale.json"
+ },
+ "Lateral mamillary nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau situé en dehors du noyau mamillaire médial ; relais des informations vestibulaires et de l'orientation spatiale vers le thalamus antérieur.",
+  "lot": "encephale.json"
+ },
+ "Tuberomamillary nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de l'hypothalamus postérieur dont les neurones à histamine entretiennent l'éveil.",
+  "lot": "encephale.json"
+ },
+ "Lateral tuberal nucleus": {
+  "couche": "encephale",
+  "texte": "Amas de neurones de la région tubérale latérale, sur le trajet de l'hypothalamus latéral.",
+  "lot": "encephale.json"
+ },
+ "Posterior hypothalamic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de l'hypothalamus postérieur, au-dessus des corps mamillaires ; intervient dans la thermorégulation (production de chaleur) et la réponse sympathique.",
+  "lot": "encephale.json"
+ },
+ "Hypothalamic sulcus": {
+  "couche": "encephale",
+  "texte": "Sillon de la paroi latérale du troisième ventricule, du trou interventriculaire à l'aqueduc du mésencéphale ; il sépare le thalamus, au-dessus, de l'hypothalamus, au-dessous.",
+  "lot": "encephale.json"
+ },
+ "Habenular sulcus": {
+  "couche": "encephale",
+  "texte": "Sillon du bord dorsal de la paroi du troisième ventricule, sous la strie médullaire, qui sépare le thalamus de l'épithalamus (habenula).",
+  "lot": "encephale.json"
+ },
+ "Mamillothalamic fasciculus": {
+  "couche": "encephale",
+  "texte": "Faisceau de Vicq d'Azyr : il part du corps mamillaire, monte derrière la colonne du fornix et atteint les noyaux antérieurs du thalamus (circuit de Papez).",
+  "lot": "encephale.json"
+ },
+ "Mamillotegmental fasciculus": {
+  "couche": "encephale",
+  "texte": "Faisceau qui quitte le corps mamillaire en arrière et en bas pour gagner les noyaux tegmentaux dorsal et ventral du mésencéphale.",
+  "lot": "encephale.json"
+ },
+ "Habenulo-interpeduncular tract": {
+  "couche": "encephale",
+  "texte": "Faisceau rétroflexe (de Meynert) : né de l'habenula, il descend en dedans du noyau rouge jusqu'au noyau interpédonculaire.",
+  "lot": "encephale.json"
+ },
+ "Lenticular fasciculus": {
+  "couche": "encephale",
+  "texte": "Faisceau (champ H2 de Forel) né du pallidum interne : il traverse la capsule interne, passe au-dessus du noyau subthalamique puis rejoint le thalamus ventral antérieur et latéral.",
+  "lot": "encephale.json"
+ },
+ "Supraopticohypophysial tract": {
+  "couche": "encephale",
+  "texte": "Les axones des neurones du noyau supra-optique descendent par l'infundibulum jusqu'à la neurohypophyse, où ils libèrent ADH et ocytocine.",
+  "lot": "encephale.json"
+ },
+ "Paraventriculohypophysial tract": {
+  "couche": "encephale",
+  "texte": "Les axones des neurones du noyau paraventriculaire descendent, en dedans du précédent, par l'infundibulum vers la neurohypophyse.",
+  "lot": "encephale.json"
+ },
+ "Retinohypothalamic tract": {
+  "couche": "encephale",
+  "texte": "Branche de la voie optique qui quitte le chiasma pour le noyau suprachiasmatique : elle apporte l'information lumineuse qui synchronise l'horloge circadienne.",
+  "lot": "encephale.json"
+ },
+ "Dorsal supra-optic commissure": {
+  "couche": "encephale",
+  "texte": "Commissure de Meynert : mince bande de fibres qui croise la ligne médiane au-dessus du chiasma optique, dans l'hypothalamus.",
+  "lot": "encephale.json"
+ },
+ "Ventral supra-optic commissure": {
+  "couche": "encephale",
+  "texte": "Commissure de Gudden : elle croise la ligne médiane sous l'hypothalamus, en arrière du chiasma optique.",
+  "lot": "encephale.json"
+ },
+ "Olfactory tract": {
+  "couche": "encephale",
+  "texte": "Prolongement du bulbe olfactif sous le lobe frontal, couché dans le sillon olfactif ; il se divise en arrière en stries olfactives qui gagnent l'aire para-olfactive et l'amygdale.",
+  "lot": "encephale.json"
+ },
+ "Anterior olfactory nucleus": {
+  "couche": "encephale",
+  "texte": "Amas de neurones disséminés dans le bulbe et le pédoncule olfactifs ; il relaie l'information olfactive vers le bulbe opposé et le cortex piriforme.",
+  "lot": "encephale.json"
+ },
+ "Magnocellular nuclei of basal forebrain": {
+  "couche": "encephale",
+  "texte": "Noyaux à grandes cellules cholinergiques (dont le noyau basal de Meynert) de la substance innominée, sous le pallidum ; ils innervent tout le cortex et sont atteints dans la maladie d'Alzheimer.",
+  "lot": "encephale.json"
+ },
+ "Basolateral amygdaloid nuclei": {
+  "couche": "encephale",
+  "texte": "Grande partie latérale et postérieure de l'amygdale ; elle reçoit les afférences corticales et thalamiques et intervient dans l'apprentissage émotionnel de la peur.",
+  "lot": "encephale.json"
+ },
+ "Centromedial amygdaloid nuclei": {
+  "couche": "encephale",
+  "texte": "Partie dorsomédiale de l'amygdale, origine de la strie terminale ; elle commande les réponses autonomes et comportementales de l'émotion.",
+  "lot": "encephale.json"
+ },
+ "Bed nucleus of stria terminalis": {
+  "couche": "encephale",
+  "texte": "Noyau du lit de la strie terminale, derrière le septum et au-dessus de la commissure antérieure ; prolongement de l'amygdale centrale, il intervient dans l'anxiété et le stress.",
+  "lot": "encephale.json"
+ },
+ "Inferior longitudinal fasciculus": {
+  "couche": "encephale",
+  "texte": "Faisceau d'association qui longe la paroi latérale des cornes occipitale et temporale du ventricule latéral, du pôle occipital au pôle temporal ; il relie le cortex visuel aux régions temporales (reconnaissance visuelle, mémoire).",
+  "lot": "encephale.json"
+ },
+ "Superior longitudinal fasciculus": {
+  "couche": "encephale",
+  "texte": "Grand faisceau d'association qui arque au-dessus de l'insula : il relie le lobe frontal aux lobes pariétal, occipital et temporal (langage par son composant arqué, attention spatiale).",
+  "lot": "encephale.json"
+ },
+ "Uncinate fasciculus of cerebrum": {
+  "couche": "encephale",
+  "texte": "Faisceau en crochet qui relie le pôle temporal antérieur (et l'amygdale) au cortex orbitofrontal en contournant la vallée latérale ; il intervient dans la mémoire et l'émotion.",
+  "lot": "encephale.json"
+ },
+ "Inferior occipitofrontal fasciculus": {
+  "couche": "encephale",
+  "texte": "Long faisceau qui joint le lobe occipital au lobe frontal en passant par la capsule extrême, sous l'insula ; il participe au traitement visuel et sémantique.",
+  "lot": "encephale.json"
+ },
+ "Superior occipitofrontal fasciculus": {
+  "couche": "encephale",
+  "texte": "Faisceau profond longeant le bord supérieur du noyau caudé et du ventricule latéral, sous le corps calleux ; il relie les lobes frontal et pariétal.",
+  "lot": "encephale.json"
+ },
+ "Mesencephalic nucleus of midbrain": {
+  "couche": "encephale",
+  "texte": "Colonne grêle de neurones sensitifs en dehors de la substance grise périaqueducale, qui reçoit la proprioception des muscles masticateurs et des dents (neurones pseudo-unipolaires du trijumeau).",
+  "lot": "encephale.json"
+ },
+ "Nucleus of brachium of inferior colliculi": {
+  "couche": "encephale",
+  "texte": "Petit noyau du bras du colliculus inférieur, relais auditif entre le colliculus inférieur et le corps géniculé médial.",
+  "lot": "encephale.json"
+ },
+ "Parabigeminal nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau du tegmentum latéral, près du bras du colliculus supérieur, relié au colliculus supérieur et à la rétine (orientation du regard).",
+  "lot": "encephale.json"
+ },
+ "Lateroposterior tegmental nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau tegmental dorsolatéral, contre la substance grise périaqueducale, à la jonction mésencéphale-pont ; neurones cholinergiques de l'éveil et du sommeil paradoxal.",
+  "lot": "encephale.json"
+ },
+ "Pedunculopontine tegmental nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau cholinergique du tegmentum, le long du pédoncule cérébelleux supérieur ; il règle l'éveil, la locomotion et le sommeil paradoxal et se relie aux noyaux gris centraux.",
+  "lot": "encephale.json"
+ },
+ "Nuclei of anterior tegmental area": {
+  "couche": "encephale",
+  "texte": "Noyaux de l'aire tegmentale ventrale, près de la fosse interpédonculaire : neurones dopaminergiques du circuit de la récompense (voies mésolimbique et mésocorticale).",
+  "lot": "encephale.json"
+ },
+ "Interpeduncular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau impair au fond de la fosse interpédonculaire, qui reçoit le faisceau rétroflexe de l'habenula ; relais limbique vers le tronc cérébral.",
+  "lot": "encephale.json"
+ },
+ "Cuneiform nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau du tegmentum mésencéphalique dorsolatéral, au-dessus du pédoncule cérébelleux supérieur ; il intervient dans la locomotion et les réactions de défense.",
+  "lot": "encephale.json"
+ },
+ "Subcuneiform nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau situé sous le noyau cunéiforme, dans le prolongement caudal de la formation réticulée mésencéphalique.",
+  "lot": "encephale.json"
+ },
+ "Intracuneiform nucleus": {
+  "couche": "encephale",
+  "texte": "Petit amas de neurones entre le noyau cunéiforme et la substance grise périaqueducale.",
+  "lot": "encephale.json"
+ },
+ "Commissure of superior colliculi": {
+  "couche": "encephale",
+  "texte": "Fibres qui relient les deux colliculi supérieurs en arrière de l'aqueduc du mésencéphale ; elles coordonnent les mouvements oculaires.",
+  "lot": "encephale.json"
+ },
+ "Nuclei of inferior colliculus": {
+  "couche": "encephale",
+  "texte": "Noyaux central, péricentral et externe du colliculus inférieur, relais auditif obligatoire vers le corps géniculé médial.",
+  "lot": "encephale.json"
+ },
+ "Commissure of inferior colliculi": {
+  "couche": "encephale",
+  "texte": "Fibres qui relient les deux colliculi inférieurs et assurent l'intégration auditive entre les deux côtés.",
+  "lot": "encephale.json"
+ },
+ "Pretectal nuclei": {
+  "couche": "encephale",
+  "texte": "Noyaux du prétectum, au-devant du colliculus supérieur : relais du réflexe photomoteur (rétine vers noyau d'Edinger-Westphal).",
+  "lot": "encephale.json"
+ },
+ "Nucleus of posterior commissure": {
+  "couche": "encephale",
+  "texte": "Noyau de Darkschewitsch, au pied de la commissure postérieure ; intervient dans la coordination des mouvements oculaires verticaux.",
+  "lot": "encephale.json"
+ },
+ "Accessory nuclei of optic tract": {
+  "couche": "encephale",
+  "texte": "Noyaux terminaux du système optique accessoire, contre le pédoncule cérébral, qui reçoivent des fibres rétiniennes et règlent les mouvements de poursuite oculaire.",
+  "lot": "encephale.json"
+ },
+ "Interstitial nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau interstitiel de Cajal, dans le tegmentum rostral : centre d'intégration des mouvements oculaires verticaux et de la position de la tête.",
+  "lot": "encephale.json"
+ },
+ "Elliptic nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau du mésencéphale rostral, voisin du noyau oculomoteur et de la substance grise périaqueducale.",
+  "lot": "encephale.json"
+ },
+ "Pontine nuclei": {
+  "couche": "encephale",
+  "texte": "Amas de neurones de la partie basilaire du pont : ils reçoivent les fibres corticopontines et les envoient, par le pédoncule cérébelleux moyen, au cervelet controlatéral.",
+  "lot": "encephale.json"
+ },
+ "Principal sensory nucleus of trigeminal nerve": {
+  "couche": "encephale",
+  "texte": "Noyau sensitif principal du trijumeau, en dehors du noyau moteur, qui reçoit le tact discriminatif de la face.",
+  "lot": "encephale.json"
+ },
+ "Motor nucleus of trigeminal nerve": {
+  "couche": "encephale",
+  "texte": "Noyau moteur du trijumeau dont les axones innervent les muscles masticateurs, le mylo-hyoïdien, le ventre antérieur du digastrique et les tenseurs du voile et du tympan.",
+  "lot": "encephale.json"
+ },
+ "Superior vestibular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau vestibulaire de Bechterew, le plus haut du complexe vestibulaire ; il projette surtout vers les noyaux oculomoteurs par le faisceau longitudinal médial.",
+  "lot": "encephale.json"
+ },
+ "Lateral vestibular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau vestibulaire de Deiters, origine du tractus vestibulospinal latéral qui règle le tonus des extenseurs.",
+  "lot": "encephale.json"
+ },
+ "Medial vestibular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau vestibulaire médial, sous le plancher du quatrième ventricule ; origine du tractus vestibulospinal médial et relais des réflexes vestibulo-oculaires.",
+  "lot": "encephale.json"
+ },
+ "Inferior vestibular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau vestibulaire inférieur (descendant), à la jonction bulbo-pontique, relié au cervelet et à la formation réticulée.",
+  "lot": "encephale.json"
+ },
+ "Nuclei of trapezoid body": {
+  "couche": "encephale",
+  "texte": "Amas de neurones dans le corps trapézoïde, relais des voies auditives entre noyaux cochléaires et olive supérieure.",
+  "lot": "encephale.json"
+ },
+ "Superior olivary nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de la partie basse du pont, première station binaurale de la voie auditive : il localise les sons par comparaison entre les deux oreilles.",
+  "lot": "encephale.json"
+ },
+ "Nuclei of lateral lemniscus": {
+  "couche": "encephale",
+  "texte": "Noyaux disséminés sur le trajet du lemnisque latéral, relais de la voie auditive vers le colliculus inférieur.",
+  "lot": "encephale.json"
+ },
+ "Lacrimal nucleus": {
+  "couche": "encephale",
+  "texte": "Groupe de neurones parasympathiques préganglionnaires voisin du noyau salivaire supérieur ; ses axones empruntent le nerf facial pour la glande lacrymale.",
+  "lot": "encephale.json"
+ },
+ "Caerulean nucleus": {
+  "couche": "encephale",
+  "texte": "Locus cœruleus : petit noyau pigmenté sous le plancher du quatrième ventricule, source principale de noradrénaline du cerveau (éveil, attention, stress).",
+  "lot": "encephale.json"
+ },
+ "Parabrachial nuclei": {
+  "couche": "encephale",
+  "texte": "Noyaux autour du pédoncule cérébelleux supérieur : relais gustatif et viscéral, et centre de régulation respiratoire.",
+  "lot": "encephale.json"
+ },
+ "Posterior tegmental nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau tegmental dorsal de Gudden, contre le plancher du quatrième ventricule, lié au système limbique et à l'orientation de la tête.",
+  "lot": "encephale.json"
+ },
+ "Caudal pontine reticular nucleus": {
+  "couche": "encephale",
+  "texte": "Partie caudale de la formation réticulée pontique, origine du tractus réticulospinal médial ; elle facilite le tonus des extenseurs et participe au réflexe de sursaut.",
+  "lot": "encephale.json"
+ },
+ "Rostral pontine reticular nucleus": {
+  "couche": "encephale",
+  "texte": "Partie rostrale de la formation réticulée pontique, qui intervient dans l'éveil et le sommeil paradoxal.",
+  "lot": "encephale.json"
+ },
+ "Anterior tegmental nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau tegmental ventral de Gudden, relié aux corps mamillaires par le faisceau mamillotegmental.",
+  "lot": "encephale.json"
+ },
+ "Reticulotegmental nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de Bechterew, entre le tegmentum et la partie basilaire du pont : relais entre cortex et cervelet et centre des mouvements oculaires.",
+  "lot": "encephale.json"
+ },
+ "Median raphe nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau médian du raphé : neurones à sérotonine projetant vers l'hippocampe et le septum.",
+  "lot": "encephale.json"
+ },
+ "Posterior raphe nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau dorsal du raphé, sous l'aqueduc : principal foyer de neurones à sérotonine projetant vers le prosencéphale (humeur, sommeil).",
+  "lot": "encephale.json"
+ },
+ "Supragenual nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau situé au-dessus du genou du nerf facial, près de la ligne médiane, relié aux noyaux oculomoteurs.",
+  "lot": "encephale.json"
+ },
+ "Olivocochlear tract": {
+  "couche": "encephale",
+  "texte": "Faisceau efférent né de l'olive supérieure : il gagne la racine vestibulaire du nerf VIII et atteint les cellules ciliées de la cochlée (faisceau d'Oort).",
+  "lot": "encephale.json"
+ },
+ "Auditory commissure of pons": {
+  "couche": "encephale",
+  "texte": "Corps trapézoïde : fibres cochléaires qui croisent la ligne médiane dans la partie basse du tegmentum pontique et gagnent le lemnisque latéral controlatéral.",
+  "lot": "encephale.json"
+ },
+ "Gracile nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de la partie basse du bulbe, derrière le tubercule gracile : premier relais de la sensibilité tactile fine et proprioceptive du membre inférieur et du tronc (faisceau gracile).",
+  "lot": "encephale.json"
+ },
+ "Cuneate nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau du tubercule cunéiforme, en dehors du noyau gracile : relais de la sensibilité tactile fine et proprioceptive du membre supérieur (faisceau cunéiforme).",
+  "lot": "encephale.json"
+ },
+ "Accessory cuneate nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau cunéiforme accessoire (externe) : il transmet la proprioception du membre supérieur au cervelet par le pédoncule cérébelleux inférieur.",
+  "lot": "encephale.json"
+ },
+ "Spinal nucleus of trigeminal nerve": {
+  "couche": "encephale",
+  "texte": "Longue colonne de substance grise, du pont à la moelle cervicale haute (C2-C4), qui reçoit la douleur et la température de la face par le tractus spinal du trijumeau.",
+  "lot": "encephale.json"
+ },
+ "Retrofacial nucleus": {
+  "couche": "encephale",
+  "texte": "Partie rostrale de la colonne ambiguë, derrière le noyau facial ; intervient dans la respiration et le contrôle autonome.",
+  "lot": "encephale.json"
+ },
+ "Retroambiguus nucleus": {
+  "couche": "encephale",
+  "texte": "Colonne de neurones en arrière et au-dessous du noyau ambigu ; ses neurones expiratoires commandent les muscles abdominaux et intercostaux.",
+  "lot": "encephale.json"
+ },
+ "Arcuate nucleus of medulla oblongata": {
+  "couche": "encephale",
+  "texte": "Noyau appliqué à la face antérieure de la pyramide bulbaire, prolongement des noyaux du pont, relais vers le cervelet.",
+  "lot": "encephale.json"
+ },
+ "Subhypoglossal nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau situé sous le noyau de l'hypoglosse, avec lui dans le groupe périhypoglossal.",
+  "lot": "encephale.json"
+ },
+ "Intercalated nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau intercalé de Staderini, entre les noyaux de l'hypoglosse et du vague ; relais des mouvements oculaires et de la langue.",
+  "lot": "encephale.json"
+ },
+ "Prepositus nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau prépositus, sous le plancher du quatrième ventricule ; intégrateur neuronal de la position des yeux (avec le noyau vestibulaire médial).",
+  "lot": "encephale.json"
+ },
+ "Principal inferior olivary nucleus": {
+  "couche": "encephale",
+  "texte": "Lame plissée de substance grise dans l'olive : source des fibres grimpantes du cervelet controlatéral, indispensable à l'apprentissage moteur.",
+  "lot": "encephale.json"
+ },
+ "Posterior accessory olivary nucleus": {
+  "couche": "encephale",
+  "texte": "Lame dorsale des olives accessoires, associée au spinocérébellum.",
+  "lot": "encephale.json"
+ },
+ "Medial accessory olivary nucleus": {
+  "couche": "encephale",
+  "texte": "Lame médiale des olives accessoires, reliée au vermis cérébelleux.",
+  "lot": "encephale.json"
+ },
+ "Central reticular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de la formation réticulée de la partie basse du bulbe, qui participe à la régulation cardio-respiratoire et à la modulation de la douleur.",
+  "lot": "encephale.json"
+ },
+ "Gigantocellular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau à grandes cellules de la formation réticulée bulbaire, origine de fibres réticulospinales et d'afférences au thalamus ; il règle le tonus et l'éveil.",
+  "lot": "encephale.json"
+ },
+ "Lateral paragigantocellular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau ventrolatéral du bulbe rostral, au contact de la surface : il maintient la pression artérielle par ses projections sympathiques.",
+  "lot": "encephale.json"
+ },
+ "Parvocellular reticular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau à petites cellules de la formation réticulée, dorsolatéral, relais des réflexes de déglutition, de mastication et de la parole.",
+  "lot": "encephale.json"
+ },
+ "Posterior paragigantocellular nucleus": {
+  "couche": "encephale",
+  "texte": "Petit noyau réticulé proche de la ligne médiane, relié aux noyaux du raphé.",
+  "lot": "encephale.json"
+ },
+ "Lateral reticular nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau réticulé latéral du bulbe : relais de la moelle vers le cervelet (fibres moussues) par le pédoncule cérébelleux inférieur.",
+  "lot": "encephale.json"
+ },
+ "Pallidus raphe nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau pâle du raphé, sérotoninergique, qui projette vers la moelle et module le tonus moteur.",
+  "lot": "encephale.json"
+ },
+ "Obscurus raphe nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau obscur du raphé, sérotoninergique, projetant vers la moelle spinale (modulation de la douleur et du tonus).",
+  "lot": "encephale.json"
+ },
+ "Magnus raphe nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau du grand raphé : origine d'une voie descendante sérotoninergique qui inhibe la douleur dans la corne postérieure de la moelle.",
+  "lot": "encephale.json"
+ },
+ "Posterior paramedian nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau paramédian postérieur, au bord de la ligne médiane sous le plancher du quatrième ventricule, relais vers le cervelet.",
+  "lot": "encephale.json"
+ },
+ "Pyramidal tract": {
+  "couche": "encephale",
+  "texte": "Voie motrice principale : les fibres corticospinales traversent la capsule interne, la base du pédoncule cérébral et la partie basilaire du pont, forment la pyramide bulbaire puis décussent en bas du bulbe.",
+  "lot": "encephale.json"
+ },
+ "Sollitary tract": {
+  "couche": "encephale",
+  "texte": "Faisceau de fibres visérales (faciale, glossopharyngienne, vagale) qui descend en dehors du noyau du tractus solitaire et s'y termine par des collatérales.",
+  "lot": "encephale.json"
+ },
+ "Anterior trigeminothalamic tract": {
+  "couche": "encephale",
+  "texte": "Tractus trigéminothalamique ventral : les fibres du noyau spinal du trijumeau croisent la ligne médiane et montent près du lemnisque médial jusqu'au noyau ventral postéro-médial controlatéral (douleur et température de la face).",
+  "lot": "encephale.json"
+ },
+ "Posterior trigeminothalamic tract": {
+  "couche": "encephale",
+  "texte": "Tractus trigéminothalamique dorsal : fibres du noyau sensitif principal qui montent du même côté, près de la substance grise centrale, jusqu'au noyau ventral postéro-médial (tact fin de la face).",
+  "lot": "encephale.json"
+ },
+ "Medial longitudinal fasciculus": {
+  "couche": "encephale",
+  "texte": "Faisceau de fibres, près de la ligne médiane, sous le plancher du quatrième ventricule et de l'aqueduc ; il relie noyaux vestibulaires et noyaux oculomoteurs (III, IV, VI) et coordonne les mouvements des yeux et de la tête.",
+  "lot": "encephale.json"
+ },
+ "Posterior longitudinal fasciculus": {
+  "couche": "encephale",
+  "texte": "Faisceau périventriculaire de Schütz : voie descendante de l'hypothalamus vers les noyaux parasympathiques et moteurs du tronc cérébral (salivation, déglutition, comportement alimentaire).",
+  "lot": "encephale.json"
+ },
+ "Central tegmental tract": {
+  "couche": "encephale",
+  "texte": "Faisceau du tegmentum, qui descend du mésencéphale à l'olive bulbaire et porte aussi des fibres ascendantes de la formation réticulée.",
+  "lot": "encephale.json"
+ },
+ "Rubro-olivary tract": {
+  "couche": "encephale",
+  "texte": "Fibres du noyau rouge qui descendent dans le faisceau tegmental central jusqu'à l'olive inférieure du même côté ; elles ferment la boucle noyau rouge – olive – cervelet.",
+  "lot": "encephale.json"
+ },
+ "Spinal tract of trigeminal nerve": {
+  "couche": "encephale",
+  "texte": "Faisceau de fibres de la douleur et de la température de la face, qui descend en dehors du noyau spinal du trijumeau jusqu'au niveau C2-C3.",
+  "lot": "encephale.json"
+ },
+ "Mesencephalic tract of trigeminal nerve": {
+  "couche": "encephale",
+  "texte": "Fibres de la proprioception des muscles masticateurs, issues du noyau mésencéphalique du trijumeau, qui descendent vers le noyau moteur du trijumeau et la racine du nerf.",
+  "lot": "encephale.json"
+ },
+ "Basilar sulcus": {
+  "couche": "encephale",
+  "texte": "Gouttière médiane de la face antérieure du pont où chemine l'artère basilaire.",
+  "lot": "encephale.json"
+ },
+ "Medullopontine sulcus": {
+  "couche": "encephale",
+  "texte": "Sillon transversal qui sépare, à la face antérieure du tronc cérébral, le bord inférieur du pont de la pyramide et de l'olive ; les nerfs VI, VII et VIII en émergent.",
+  "lot": "encephale.json"
+ },
+ "Median sulcus of rhomboid fossa": {
+  "couche": "encephale",
+  "texte": "Sillon médian du plancher du quatrième ventricule, de l'aqueduc du mésencéphale à l'obex ; il sépare les deux éminences médianes.",
+  "lot": "encephale.json"
+ },
+ "Dentate nucleus": {
+  "couche": "encephale",
+  "texte": "Le plus grand des noyaux cérébelleux, en forme de sac plissé dans la substance blanche de l'hémisphère ; ses axones forment l'essentiel du pédoncule cérébelleux supérieur vers le thalamus et le noyau rouge.",
+  "lot": "encephale.json"
+ },
+ "Emboliform nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau cérébelleux situé entre le globuleux et le dentelé ; avec le globuleux il forme le noyau interposé (contrôle des membres).",
+  "lot": "encephale.json"
+ },
+ "Globose nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau cérébelleux de petits amas globuleux, en dedans de l'emboliforme ; régule la posture et les mouvements des membres.",
+  "lot": "encephale.json"
+ },
+ "Fastigial nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau le plus médial, au sommet du toit du quatrième ventricule ; il reçoit le vermis et commande l'axe du corps et les mouvements des yeux par les noyaux vestibulaires et réticulés.",
+  "lot": "encephale.json"
+ },
+ "Cerebellar commissure": {
+  "couche": "encephale",
+  "texte": "Fibres qui croisent la ligne médiane dans la substance blanche du vermis et relient les deux hémisphères cérébelleux.",
+  "lot": "encephale.json"
+ },
+ "Dentatothalamic tract": {
+  "couche": "encephale",
+  "texte": "Voie efférente du noyau dentelé : par le pédoncule cérébelleux supérieur elle croise (décussation) dans le mésencéphale et gagne le noyau ventral latéral du thalamus controlatéral, puis le cortex moteur.",
+  "lot": "encephale.json"
+ },
+ "Middle cerebellar peduncle": {
+  "couche": "encephale",
+  "texte": "Plus gros des pédoncules cérébelleux : il enserre la face latérale du pont et porte au cervelet controlatéral les fibres des noyaux du pont (cortex – pont – cervelet).",
+  "lot": "encephale.json"
+ },
+ "Inferior cerebellar peduncle": {
+  "couche": "encephale",
+  "texte": "Pédoncule qui unit le bulbe au cervelet en arrière du pédoncule moyen ; il porte surtout les fibres spino-cérébelleuses, olivocérébelleuses et vestibulocérébelleuses (corps restiforme).",
+  "lot": "encephale.json"
+ },
+ "Olivocerebellar tract": {
+  "couche": "encephale",
+  "texte": "Fibres grimpantes de l'olive inférieure : elles croisent la ligne médiane, entrent par le pédoncule cérébelleux inférieur controlatéral et se terminent sur les cellules de Purkinje.",
+  "lot": "encephale.json"
+ },
+ "Cerebello-olivary tract": {
+  "couche": "encephale",
+  "texte": "Fibres du noyau dentelé qui quittent le cervelet par le pédoncule supérieur, croisent dans le mésencéphale et descendent par le faisceau tegmental central jusqu'à l'olive inférieure controlatérale.",
+  "lot": "encephale.json"
+ },
+ "Uncinate fasciculus of cerebellum": {
+  "couche": "encephale",
+  "texte": "Faisceau en crochet de Russell : fibres du noyau fastigial qui contournent le pédoncule cérébelleux supérieur pour gagner les noyaux vestibulaires et la formation réticulée.",
+  "lot": "encephale.json"
+ },
+ "Anterolateral sulcus of spinal cord": {
+  "couche": "encephale",
+  "texte": "Sillon longitudinal de la face antéro-latérale de la moelle, par où émergent les radicelles antérieures des nerfs spinaux ; il sépare les cordons antérieur et latéral.",
+  "lot": "encephale.json"
+ },
+ "Posterolateral sulcus of spinal cord": {
+  "couche": "encephale",
+  "texte": "Sillon longitudinal où pénètrent les radicelles postérieures des nerfs spinaux ; il sépare les cordons latéral et postérieur.",
+  "lot": "encephale.json"
+ },
+ "Posterior intermediate sulcus of spinal cord": {
+  "couche": "encephale",
+  "texte": "Sillon superficiel du cordon postérieur, aux niveaux cervical et thoracique supérieur, qui sépare le faisceau gracile (en dedans) du faisceau cunéiforme (en dehors).",
+  "lot": "encephale.json"
+ },
+ "Posterior median sulcus of spinal cord": {
+  "couche": "encephale",
+  "texte": "Sillon médian de la face postérieure de la moelle, prolongé en profondeur par le septum médian postérieur ; il sépare les deux faisceaux gracile.",
+  "lot": "encephale.json"
+ },
+ "Posterior thoracic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau de Clarke : colonne de neurones à la base de la corne postérieure, de C8 à L3 ; elle reçoit la proprioception du membre inférieur et donne le tractus spinocérébelleux postérieur.",
+  "lot": "encephale.json"
+ },
+ "Sacral parasympathetic nucleus": {
+  "couche": "encephale",
+  "texte": "Noyau parasympathique sacral (S2-S4), dans la substance grise intermédiaire latérale ; ses axones forment les nerfs splanchniques pelviens qui commandent vessie, rectum et organes génitaux.",
+  "lot": "encephale.json"
+ },
+ "Medial motor nuclei of spinal nerves": {
+  "couche": "encephale",
+  "texte": "Colonne médiale de la corne antérieure, présente sur toute la hauteur de la moelle : ses motoneurones innervent les muscles axiaux du cou et du tronc.",
+  "lot": "encephale.json"
+ },
+ "Lateral motor nuclei of spinal nerves": {
+  "couche": "encephale",
+  "texte": "Colonne latérale de la corne antérieure, développée aux renflements cervical (C5-T1) et lombo-sacral (L2-S2) : ses motoneurones innervent les muscles des membres.",
+  "lot": "encephale.json"
+ },
+ "Nucleus of phrenic nerve": {
+  "couche": "encephale",
+  "texte": "Colonne de motoneurones de C3 à C5 dans la corne antérieure ; elle innerve le diaphragme par le nerf phrénique.",
+  "lot": "encephale.json"
+ },
+ "Nucleus of pudendal nerve": {
+  "couche": "encephale",
+  "texte": "Noyau d'Onuf (S2-S3) de la corne antérieure : ses motoneurones innervent les sphincters strié de l'urètre et de l'anus et les muscles du périnée par le nerf pudendal.",
+  "lot": "encephale.json"
+ },
+ "Spinoreticular tract": {
+  "couche": "encephale",
+  "texte": "Voie ascendante du cordon antéro-latéral : elle porte la douleur diffuse de la moelle à la formation réticulée du bulbe et du pont (éveil, composante affective de la douleur).",
+  "lot": "encephale.json"
+ },
+ "Spinomesencephalic tract": {
+  "couche": "encephale",
+  "texte": "Voie ascendante du cordon antéro-latéral vers le colliculus supérieur et la substance grise périaqueducale, qui règle la modulation descendante de la douleur.",
+  "lot": "encephale.json"
+ },
+ "Spino-olivary tract": {
+  "couche": "encephale",
+  "texte": "Voie de la moelle à l'olive inférieure (olives accessoires) : relais indirect de la proprioception vers le cervelet.",
+  "lot": "encephale.json"
+ },
+ "Anterior white commissure": {
+  "couche": "encephale",
+  "texte": "Mince bande de fibres qui croise la ligne médiane en avant de la commissure grise : elle porte les axones de la douleur et de la température vers le cordon antéro-latéral opposé.",
+  "lot": "encephale.json"
+ },
+ "Anterior grey commissure": {
+  "couche": "encephale",
+  "texte": "Pont de substance grise qui unit en avant du canal central les deux cornes antérieures.",
+  "lot": "encephale.json"
+ },
+ "Posterior grey commissure": {
+  "couche": "encephale",
+  "texte": "Pont de substance grise qui unit en arrière du canal central les deux cornes postérieures.",
+  "lot": "encephale.json"
+ },
+ "Posterior white commissure": {
+  "couche": "encephale",
+  "texte": "Mince bande de fibres blanches en arrière de la commissure grise postérieure, au fond du sillon médian postérieur, croisant la ligne médiane.",
+  "lot": "encephale.json"
+ },
+ "Trigeminal ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion sensitif du nerf trijumeau, en croissant, logé dans la cavité trigéminale sur l'apex de la partie pétreuse de l'os temporal ; il donne les nerfs ophtalmique, maxillaire et mandibulaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma",
+   "kenhub"
+  ]
+ },
+ "Lacrimal nerve": {
+  "couche": "nerf",
+  "texte": "Branche la plus latérale du nerf ophtalmique : elle entre dans l'orbite par la fissure orbitaire supérieure, longe le bord supérieur du muscle droit latéral, innerve la glande lacrymale puis la peau de la paupière supérieure.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Frontal nerve": {
+  "couche": "nerf",
+  "texte": "Plus grosse branche du nerf ophtalmique : elle passe par la fissure orbitaire supérieure, court sous le toit de l'orbite sur le muscle releveur de la paupière supérieure et se divise à mi-orbite en nerfs supra-orbitaire et supratrochléaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Supra-orbital nerve": {
+  "couche": "nerf",
+  "texte": "Branche latérale du nerf frontal : elle quitte l'orbite par l'incisure (ou le foramen) supra-orbitaire et monte sur le front, jusqu'au vertex, pour la peau du front, la paupière supérieure et le cuir chevelu.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Supratrochlear nerve": {
+  "couche": "nerf",
+  "texte": "Branche médiale du nerf frontal : elle passe au-dessus de la trochlée du muscle oblique supérieur, sort de l'orbite près de la glabelle et innerve la peau du front médial et de la paupière supérieure.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Nasociliary nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf ophtalmique qui entre dans l'orbite par la fissure orbitaire supérieure, croise au-dessus du nerf optique et longe la paroi médiale de l'orbite ; elle donne les nerfs ciliaires longs, ethmoïdaux et infratrochléaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Long ciliary nerves": {
+  "couche": "nerf",
+  "texte": "Deux fins nerfs nés du nerf nasociliaire qui longent le nerf optique, traversent la sclère à l'arrière du globe et innervent l'iris, le corps ciliaire et la cornée ; ils portent les fibres sympathiques du muscle dilatateur de la pupille.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior ethmoidal nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf nasociliaire qui traverse le foramen ethmoïdal postérieur et innerve les cellules ethmoïdales postérieures et le sinus sphénoïdal.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior ethmoidal nerve": {
+  "couche": "nerf",
+  "texte": "Branche terminale du nerf nasociliaire : elle passe par le foramen ethmoïdal antérieur dans la fosse crânienne antérieure, descend dans la cavité nasale par la lame criblée et se termine par le rameau nasal externe pour la peau du nez.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Infratrochlear nerve": {
+  "couche": "nerf",
+  "texte": "Branche terminale du nerf nasociliaire, sous la trochlée du muscle oblique supérieur ; elle innerve la peau des paupières près de l'angle médial de l'œil, la racine du nez et le sac lacrymal.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Ciliary ganglion": {
+  "couche": "nerf",
+  "texte": "Petit ganglion parasympathique de l'orbite, entre le nerf optique et le muscle droit latéral, à un centimètre environ en avant de la fissure orbitaire supérieure ; il relaie les fibres du nerf oculomoteur vers les muscles intrinsèques de l'œil.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Short ciliary nerves": {
+  "couche": "nerf",
+  "texte": "Une dizaine de fins nerfs partis du ganglion ciliaire qui entourent le nerf optique et traversent la sclère à l'arrière du globe ; ils innervent le muscle sphincter de la pupille et le muscle ciliaire (parasympathique) et portent la sensibilité de l'œil.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pterygopalatine ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion parasympathique situé dans la fosse ptérygopalatine, sous le nerf maxillaire ; il reçoit le nerf du canal ptérygoïdien et distribue des fibres sécrétoires aux glandes lacrymale, nasales et palatines.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Greater palatine nerve": {
+  "couche": "nerf",
+  "texte": "Branche du ganglion ptérygopalatin qui descend dans le canal grand palatin, sort par le foramen grand palatin et se dirige en avant dans la fibromuqueuse du palais dur jusqu'à la région des incisives.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle palatine nerve": {
+  "couche": "nerf",
+  "texte": "Branche descendante du ganglion ptérygopalatin qui sort par un foramen petit palatin et innerve la luette, les amygdales palatines et la muqueuse du voile du palais.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior palatine nerve": {
+  "couche": "nerf",
+  "texte": "Branche descendante du ganglion ptérygopalatin qui sort par un foramen petit palatin, derrière le foramen grand palatin, et innerve le voile du palais et l'amygdale palatine.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Nasopalatine nerve": {
+  "couche": "nerf",
+  "texte": "Branche du ganglion ptérygopalatin qui passe par le foramen sphénopalatin, traverse le toit de la cavité nasale, descend en avant sur le septum nasal (vomer) et émerge par le canal incisif pour la muqueuse du palais derrière les incisives.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pharyngeal nerve": {
+  "couche": "nerf",
+  "texte": "Fin rameau du ganglion ptérygopalatin qui traverse le canal palatovaginal et innerve la muqueuse du toit du nasopharynx, en arrière de l'orifice de la trompe auditive.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Zygomatic nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf maxillaire née dans la fosse ptérygopalatine ; elle entre dans l'orbite par la fissure orbitaire inférieure, longe sa paroi latérale et se divise en nerfs zygomaticotemporal et zygomaticofacial.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Zygomaticotemporal nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf zygomatique qui traverse le foramen zygomaticotemporal, monte dans la fosse temporale et innerve la peau de la tempe antérieure ; il porte des fibres sécrétoires vers la glande lacrymale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Zygomaticofacial nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf zygomatique qui traverse le foramen zygomaticofacial et innerve la peau de la pommette.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior superior alveolar nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf maxillaire qui descend sur la tubérosité de la maxille, entre par les foramens alvéolaires et innerve les molaires supérieures, la gencive voisine et le sinus maxillaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior dental plexus": {
+  "couche": "nerf",
+  "texte": "Réseau de rameaux alvéolaires supérieurs (postérieur, moyen et antérieur) situé dans l'os alvéolaire de la maxille, au-dessus des racines des dents supérieures, qu'il innerve ainsi que la gencive.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Infra-orbital nerve": {
+  "couche": "nerf",
+  "texte": "Prolongement du nerf maxillaire : il entre dans l'orbite par la fissure orbitaire inférieure, parcourt la gouttière puis le canal infra-orbitaires, émerge par le foramen infra-orbitaire et se divise en rameaux palpébraux, nasaux et labiaux supérieurs.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle superior alveolar nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf infra-orbitaire née dans le canal infra-orbitaire ; elle longe la paroi latérale du sinus maxillaire et innerve les prémolaires supérieures et la racine mésiovestibulaire de la première molaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior superior alveolar nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf infra-orbitaire née avant sa sortie ; elle chemine dans un canal de la paroi antérieure de la maxille et innerve les incisives et la canine supérieures, la gencive et la partie antérieure de la cavité nasale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Masseteric nerve": {
+  "couche": "nerf",
+  "texte": "Branche de la division antérieure du nerf mandibulaire : elle passe au-dessus du muscle ptérygoïdien latéral, traverse l'incisure mandibulaire et entre dans la face profonde du muscle masséter.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior deep temporal nerve": {
+  "couche": "nerf",
+  "texte": "Branche motrice de la division antérieure du nerf mandibulaire qui monte contre l'os temporal, sous le muscle temporal, et en innerve la partie postérieure.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior deep temporal nerve": {
+  "couche": "nerf",
+  "texte": "Branche motrice de la division antérieure du nerf mandibulaire (souvent née du nerf buccal) qui monte sur la fosse temporale et innerve la partie antérieure du muscle temporal.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Auriculotemporal nerve": {
+  "couche": "nerf",
+  "texte": "Branche de la division postérieure du nerf mandibulaire qui embrasse l'artère méningée moyenne, passe derrière le col de la mandibule, traverse la glande parotide et monte devant l'oreille avec l'artère temporale superficielle pour la peau de la tempe et du pavillon.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior auricular nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux du nerf auriculotemporal qui innervent la peau de la face antérieure du pavillon de l'oreille, du tragus et de l'hélix et le conduit acoustique externe.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Sublingual nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf lingual qui innerve la glande sublinguale et la muqueuse du plancher de la bouche et de la gencive linguale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior dental plexus": {
+  "couche": "nerf",
+  "texte": "Réseau de rameaux issus du nerf alvéolaire inférieur dans le canal mandibulaire, sous les racines des dents inférieures, qu'il innerve ainsi que la gencive.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Submandibular ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion parasympathique suspendu au nerf lingual, sur le muscle hyoglosse au-dessus de la glande submandibulaire ; il reçoit la corde du tympan et innerve les glandes submandibulaire et sublinguale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Submandibular nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux glandulaires du ganglion submandibulaire qui pénètrent dans la glande submandibulaire et portent les fibres sécrétoires parasympathiques.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Otic ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion parasympathique sous le foramen ovale, contre la face médiale du nerf mandibulaire ; il reçoit le nerf petit pétreux et innerve la glande parotide par le nerf auriculotemporal.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Genigulate ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion sensitif du nerf facial, au coude (genou) du canal facial dans la partie pétreuse de l'os temporal ; il contient les neurones du goût des deux tiers antérieurs de la langue (corde du tympan) et donne le nerf grand pétreux.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Greater petrosal nerve": {
+  "couche": "nerf",
+  "texte": "Branche parasympathique du nerf facial née du ganglion géniculé : elle sort par l'hiatus du canal du nerf grand pétreux, longe la face antérieure du rocher sous le ganglion trigéminal, traverse le foramen déchiré et rejoint le nerf pétreux profond pour former le nerf du canal ptérygoïdien, qui aboutit au ganglion ptérygopalatin.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior auricular nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf facial née juste sous le foramen stylomastoïdien ; elle monte entre le processus mastoïde et le pavillon de l'oreille et innerve le ventre occipital du muscle occipito-frontal et les muscles auriculaires postérieurs.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Parotid plexus": {
+  "couche": "nerf",
+  "texte": "Réseau de division du nerf facial à l'intérieur de la glande parotide (branches temporofaciale et cervicofaciale), d'où partent les rameaux temporaux, zygomatiques, buccaux, mandibulaire marginal et cervical pour les muscles de la face.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Vestibular ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion de Scarpa : renflement des neurones bipolaires du nerf vestibulaire dans le fond du méat acoustique interne, avant sa division en nerfs utriculaire, ampullaires et sacculaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Cochlear ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion spiral de la cochlée, enroulé dans le canal spiral du modiolus ; ses neurones bipolaires relaient les cellules ciliées de l'organe spiral vers le nerf cochléaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Utricular nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf vestibulaire pour la macule de l'utricule, dans la partie supéropostérieure du vestibule.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior ampullary nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf vestibulaire pour la crête ampullaire du conduit semi-circulaire antérieur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral ampullary nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf vestibulaire pour la crête ampullaire du conduit semi-circulaire latéral.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior ampullary nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf vestibulaire (portion inférieure) qui traverse le foramen singulier pour la crête ampullaire du conduit semi-circulaire postérieur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Saccular nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf vestibulaire (portion inférieure) pour la macule du saccule, dans la partie antéroinférieure du vestibule.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior ganglion of glossopharyngeal nerve": {
+  "couche": "nerf",
+  "texte": "Petit ganglion sensitif du nerf glossopharyngien, dans le foramen jugulaire ; il contient les neurones de la sensibilité générale de l'oreille, de la langue et du pharynx.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior ganglion of glossopharyngeal nerve": {
+  "couche": "nerf",
+  "texte": "Ganglion pétreux, plus grand que le supérieur, situé juste sous le foramen jugulaire dans la fossette pétreuse ; il donne les nerfs tympanique et du sinus carotidien.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Tympanic nerve": {
+  "couche": "nerf",
+  "texte": "Nerf de Jacobson, né du ganglion inférieur du glossopharyngien ; il monte par le canalicule tympanique inférieur dans la cavité du tympan et forme le plexus tympanique sur le promontoire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Tympanic plexus": {
+  "couche": "nerf",
+  "texte": "Réseau nerveux de la paroi médiale de la cavité du tympan (promontoire) formé par le nerf tympanique et les nerfs caroticotympaniques ; il innerve la muqueuse de l'oreille moyenne et de la trompe auditive et donne le nerf petit pétreux.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lesser petrosal nerve": {
+  "couche": "nerf",
+  "texte": "Nerf parasympathique issu du plexus tympanique ; il traverse le toit de la cavité du tympan, longe la face antérieure du rocher et sort par le foramen ovale (ou un canalicule voisin) vers le ganglion otique.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Carotid sinus nerve": {
+  "couche": "nerf",
+  "texte": "Nerf de Hering, branche du glossopharyngien qui descend le long de l'artère carotide interne jusqu'au sinus carotidien ; il porte l'information des barorécepteurs et des chimiorécepteurs du glomus carotidien.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior ganglion of vagus nerve": {
+  "couche": "nerf",
+  "texte": "Ganglion jugulaire du nerf vague, dans le foramen jugulaire ; il contient les neurones de la sensibilité cutanée de l'oreille externe et des méninges.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior ganglion of vagus nerve": {
+  "couche": "nerf",
+  "texte": "Ganglion plexiforme (noueux) du nerf vague, long d'environ 2,5 cm, sous le foramen jugulaire devant les processus transverses de l'atlas ; il contient les neurones sensitifs viscéraux et donne le nerf laryngé supérieur et le rameau pharyngien.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior laryngeal nerve": {
+  "couche": "nerf",
+  "texte": "Branche du ganglion inférieur du vague qui descend derrière l'artère carotide interne, puis se divise : le rameau interne traverse la membrane thyrohyoïdienne pour la muqueuse laryngée sus-glottique, le rameau externe descend vers le muscle cricothyroïdien.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pharyngeal plexus": {
+  "couche": "nerf",
+  "texte": "Réseau de la paroi latérale du pharynx, sur le muscle constricteur moyen, formé de rameaux du vague, du glossopharyngien et du sympathique cervical ; il innerve les muscles et la muqueuse du pharynx.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Suboccipital nerve": {
+  "couche": "nerf",
+  "texte": "Branche postérieure du premier nerf cervical (C1) : elle sort entre l'os occipital et l'arc postérieur de l'atlas, sous l'artère vertébrale, et innerve les muscles sous-occipitaux (grand et petit droits postérieurs de la tête, obliques supérieur et inférieur).",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Greater occipital nerve": {
+  "couche": "nerf",
+  "texte": "Branche médiale du rameau postérieur du deuxième nerf cervical (C2) : elle contourne le bord inférieur du muscle oblique inférieur de la tête, traverse le semi-épineux de la tête et le trapèze et monte avec l'artère occipitale pour la peau du cuir chevelu jusqu'au vertex.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Third occipital nerve": {
+  "couche": "nerf",
+  "texte": "Branche médiale du rameau postérieur de C3 : elle croise l'articulation zygapophysaire C2-C3, traverse le semi-épineux et le trapèze et innerve la peau de la nuque près de la protubérance occipitale externe.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lesser occipital nerve": {
+  "couche": "nerf",
+  "texte": "Branche du plexus cervical (C2-C3) : elle contourne le milieu du bord postérieur du muscle sternocléidomastoïdien (point nerveux du cou), monte le long de ce bord et innerve la peau du cuir chevelu derrière le pavillon de l'oreille.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Great auricular nerve": {
+  "couche": "nerf",
+  "texte": "Plus grosse branche cutanée ascendante du plexus cervical (C2-C3) : elle croise obliquement le muscle sternocléidomastoïdien et se divise en rameaux antérieur (peau de la parotide) et postérieur (lobule et face postérieure de l'oreille).",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Transverse cervical nerve": {
+  "couche": "nerf",
+  "texte": "Branche du plexus cervical (C2-C3) qui contourne le bord postérieur du muscle sternocléidomastoïdien, le croise transversalement sous le platysma et innerve la peau de la région cervicale antérieure.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Medial supraclavicular nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux du plexus cervical (C3-C4) qui descendent sur le muscle sternocléidomastoïdien et croisent la partie médiale de la clavicule pour la peau de la région sternale et de l'articulation sterno-claviculaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Intermediate supraclavicular nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux du plexus cervical (C3-C4) qui croisent la partie moyenne de la clavicule, parfois à travers l'os, pour la peau de la paroi thoracique antérieure sous la clavicule.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral supraclavicular nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux du plexus cervical (C3-C4) qui traversent le trapèze et la partie latérale de la clavicule pour la peau de l'épaule, au-dessus du deltoïde et de l'acromion.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior brachial cutaneous nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf radial née dans l'aisselle : elle passe sous la tête longue du triceps, devient sous-cutanée et descend sur la face postérieure du bras jusqu'à l'olécrane.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Intercostobrachial nerve": {
+  "couche": "nerf",
+  "texte": "Branche cutanée latérale du deuxième nerf intercostal : elle traverse le creux axillaire et se distribue à la peau de la face médiale du bras, avec le nerf cutané médial du bras.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Subcostal nerve": {
+  "couche": "nerf",
+  "texte": "Rameau antérieur du douzième nerf thoracique (T12), sous la douzième côte : il passe devant le muscle carré des lombes, traverse le muscle transverse de l'abdomen, chemine entre celui-ci et l'oblique interne et se termine dans le muscle pyramidal et la gaine du droit.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior gluteal cutaneous nerves": {
+  "couche": "nerf",
+  "texte": "Branches cutanées latérales des rameaux postérieurs de L1 à L3 : elles traversent les muscles du dos et le fascia thoraco-lombaire, croisent la crête iliaque et innervent la peau de la partie supérieure de la fesse.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle gluteal cutaneous nerves": {
+  "couche": "nerf",
+  "texte": "Branches cutanées latérales des rameaux postérieurs de S1 à S3 : elles sortent par les foramens sacrés postérieurs, traversent l'origine du grand glutéal et innervent la peau de la région glutéale médiale, devant le sacrum et le coccyx.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Sacral nerves": {
+  "couche": "nerf",
+  "texte": "Les cinq paires de nerfs sacraux (S1 à S5) : leurs racines descendent dans le canal sacral, les rameaux antérieurs de S1 à S4 sortent par les foramens sacrés antérieurs vers le plexus sacral, ceux de S5 par le hiatus sacral.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Coccygeal nerve": {
+  "couche": "nerf",
+  "texte": "Dernier nerf spinal (Co1) : il sort par le hiatus sacral, contourne la face latérale du coccyx, perfore le muscle coccygien et s'unit à S4-S5 dans le plexus coccygien.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Coccygeal plexus": {
+  "couche": "nerf",
+  "texte": "Petit réseau formé par une partie de S4, par S5 et par le nerf coccygien, sur la face pelvienne du muscle coccygien ; il donne les nerfs anococcygiens.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anococcygeal nerve": {
+  "couche": "nerf",
+  "texte": "Rameau du plexus coccygien qui perfore le ligament sacro-tubéral et innerve la peau entre le coccyx et l'anus.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior anal nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf pudendal dans le canal pudendal : elle traverse la fosse ischio-anale et innerve le sphincter externe de l'anus et la peau périanale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Perineal nerve": {
+  "couche": "nerf",
+  "texte": "Branche terminale du nerf pudendal qui se divise en rameaux superficiels (peau du périnée et du scrotum) et profond (muscles du périnée et bulbe du pénis).",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior anal nerves": {
+  "couche": "nerf",
+  "texte": "Fins rameaux issus des plexus pelviens, qui descendent le long du rectum et innervent la muqueuse du canal anal au-dessus de la ligne pectinée.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior cervical ganglion": {
+  "couche": "nerf",
+  "texte": "Le plus grand ganglion du tronc sympathique (environ 2,5 cm), fusiforme, devant les processus transverses de C2 et C3, derrière l'artère carotide interne ; il envoie les fibres sympathiques à la tête et au cou.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle cervical ganglion": {
+  "couche": "nerf",
+  "texte": "Petit ganglion inconstant du tronc sympathique cervical, au niveau de C6, près de l'artère thyroïdienne inférieure ; il donne le nerf cardiaque cervical moyen.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Cervicothoracic ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion étoilé : fusion du ganglion cervical inférieur et du premier ganglion thoracique, au col de la première côte, derrière l'origine de l'artère vertébrale ; il innerve le cœur, le membre supérieur et l'encéphale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Jugular nerve": {
+  "couche": "nerf",
+  "texte": "Rameau sympathique du ganglion cervical supérieur qui monte vers le foramen jugulaire pour joindre les ganglions du glossopharyngien et du vague.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Internal carotid nerve": {
+  "couche": "nerf",
+  "texte": "Prolongement ascendant du ganglion cervical supérieur : il pénètre dans le canal carotidien avec l'artère carotide interne et s'y divise en plexus carotidien interne.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "External carotid nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux sympathiques du ganglion cervical supérieur qui rejoignent l'artère carotide externe et forment son plexus.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Laryngopharyngeal nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux sympathiques du ganglion cervical supérieur qui se portent vers le plexus pharyngien et le larynx.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior cervical cardiac nerve": {
+  "couche": "nerf",
+  "texte": "Nerf né du ganglion cervical supérieur, qui descend derrière l'artère carotide commune et le long du tronc sympathique jusqu'au plexus cardiaque, en avant de la bifurcation trachéale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle cervical cardiac nerve": {
+  "couche": "nerf",
+  "texte": "Plus gros des nerfs cardiaques sympathiques, né du ganglion cervical moyen ; il descend dans le cou puis le médiastin jusqu'au plexus cardiaque.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior cervical cardiac nerve": {
+  "couche": "nerf",
+  "texte": "Nerf né du ganglion cervicothoracique (étoilé), qui descend derrière l'artère sous-clavière et la crosse de l'aorte jusqu'au plexus cardiaque.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Vertebral nerve": {
+  "couche": "nerf",
+  "texte": "Branche du ganglion cervicothoracique qui monte avec l'artère vertébrale dans les foramens transversaires jusqu'à C2 et donne les fibres sympathiques du plexus vertébral et de l'artère basilaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Vertebral plexus": {
+  "couche": "nerf",
+  "texte": "Plexus sympathique qui entoure l'artère vertébrale, dans les foramens transversaires, issu du nerf vertébral ; il se poursuit sur l'artère basilaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Subclavian plexus": {
+  "couche": "nerf",
+  "texte": "Plexus sympathique qui entoure l'artère sous-clavière, prolongé par le plexus autonome du membre supérieur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Brachial autonomic plexus": {
+  "couche": "nerf",
+  "texte": "Plexus autonome (sympathique) qui accompagne les artères axillaire et brachiale ; il innerve les vaisseaux et les glandes sudoripares du membre supérieur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Common carotid plexus": {
+  "couche": "nerf",
+  "texte": "Plexus sympathique qui entoure l'artère carotide commune, issu du tronc sympathique cervical et des nerfs carotidiens.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Internal carotid plexus": {
+  "couche": "nerf",
+  "texte": "Plexus sympathique issu du nerf carotidien interne, autour de l'artère carotide interne dans le canal carotidien ; il donne les nerfs pétreux profond et caroticotympaniques.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Cavernous plexus": {
+  "couche": "nerf",
+  "texte": "Prolongement du plexus carotidien interne dans le sinus caverneux, autour de la partie caverneuse de l'artère carotide interne ; il envoie des rameaux aux nerfs oculomoteurs, au ganglion ciliaire et à l'œil.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "External carotid plexus": {
+  "couche": "nerf",
+  "texte": "Plexus sympathique qui entoure l'artère carotide externe et ses branches, issu des nerfs carotidiens externes.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Deep petrosal nerve": {
+  "couche": "nerf",
+  "texte": "Branche sympathique du plexus carotidien interne qui traverse le foramen déchiré et rejoint le nerf grand pétreux pour former le nerf du canal ptérygoïdien.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Caroticotympanic nerves": {
+  "couche": "nerf",
+  "texte": "Deux fins rameaux sympathiques du plexus carotidien interne qui traversent la paroi du canal carotidien et rejoignent le plexus tympanique.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pineal nerve": {
+  "couche": "nerf",
+  "texte": "Nerfs coniaires : fibres sympathiques postganglionnaires nées du ganglion cervical supérieur qui gagnent le sinus caverneux puis la tente du cervelet et se distribuent à la glande pinéale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Thoracic cardiac nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux sympathiques des ganglions thoraciques T2 à T4 qui traversent le médiastin supérieur jusqu'au plexus cardiaque.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Thoracic pulmonary nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux sympathiques des ganglions thoraciques T2 à T4 (parfois T5) qui gagnent le plexus pulmonaire sur la face postérieure de la bronche principale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Oesophageal nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux sympathiques des ganglions thoraciques moyens qui rejoignent le plexus œsophagien, avec les rameaux des nerfs vagues.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Greater thoracic splanchnic nerve": {
+  "couche": "nerf",
+  "texte": "Nerf préganglionnaire issu des ganglions thoraciques T5 à T9 : il descend sur les corps vertébraux, traverse le pilier du diaphragme et se termine dans le ganglion cœliaque.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Thoracic splanchnic ganglion": {
+  "couche": "nerf",
+  "texte": "Petit ganglion inconstant sur le grand nerf splanchnique thoracique, près du diaphragme, où des neurones postganglionnaires s'intercalent.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lesser thoracic splanchnic nerve": {
+  "couche": "nerf",
+  "texte": "Nerf préganglionnaire issu des ganglions thoraciques T10-T11 : il traverse le diaphragme et se termine dans le ganglion aorticorénal, à l'origine de l'artère rénale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Least thoracic splanchnic nerve": {
+  "couche": "nerf",
+  "texte": "Nerf préganglionnaire issu du ganglion thoracique T12 : il traverse le diaphragme et rejoint le plexus rénal.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lumbar splanchnic nerves": {
+  "couche": "nerf",
+  "texte": "Quatre nerfs issus des ganglions lombaires du tronc sympathique, qui gagnent le plexus aortique abdominal, le plexus mésentérique inférieur et le plexus hypogastrique supérieur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior mesenteric ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion prévertébral situé à l'origine de l'artère mésentérique supérieure, qui relaie les fibres sympathiques vers l'intestin grêle et le côlon droit.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior mesenteric ganglion": {
+  "couche": "nerf",
+  "texte": "Ganglion prévertébral situé à l'origine de l'artère mésentérique inférieure, qui relaie les fibres sympathiques vers le côlon gauche, le rectum et les organes pelviens.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Cardiac plexus": {
+  "couche": "nerf",
+  "texte": "Réseau autonome du médiastin moyen, sous la crosse de l'aorte et en avant de la bifurcation trachéale, formé des nerfs cardiaques sympathiques et des rameaux cardiaques du vague ; il innerve le cœur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Oesophageal plexus": {
+  "couche": "nerf",
+  "texte": "Réseau formé des troncs des nerfs vagues et de rameaux sympathiques autour de la partie inférieure de l'œsophage ; il innerve la muqueuse et les muscles de l'œsophage.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pulmonary plexus": {
+  "couche": "nerf",
+  "texte": "Réseau du hile pulmonaire, en arrière des bronches principales, formé des nerfs vagues et sympathiques ; il innerve les bronches et les vaisseaux du poumon.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Thoracic aortic plexus": {
+  "couche": "nerf",
+  "texte": "Réseau autonome qui entoure l'aorte thoracique, formé de rameaux sympathiques du tronc et des nerfs splanchniques.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Abdominal aortic plexus": {
+  "couche": "nerf",
+  "texte": "Prolongement du plexus cœliaque autour de l'aorte abdominale, avec les nerfs splanchniques lombaires ; il se continue par le plexus hypogastrique supérieur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Coeliac plexus": {
+  "couche": "nerf",
+  "texte": "Le plus grand plexus du système autonome, autour de l'origine du tronc cœliaque, avec les ganglions cœliaques ; il distribue des fibres à l'estomac, au foie, à la rate, au pancréas et aux reins.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Hepatic plexus": {
+  "couche": "nerf",
+  "texte": "Réseau qui accompagne l'artère hépatique propre et la veine porte jusqu'au foie et à la vésicule biliaire.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Splenic plexus": {
+  "couche": "nerf",
+  "texte": "Réseau issu du plexus cœliaque qui accompagne l'artère splénique jusqu'au hile de la rate.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pancreatic plexus": {
+  "couche": "nerf",
+  "texte": "Réseau issu du plexus cœliaque, du plexus mésentérique supérieur et du vague, qui suit les artères pancréatiques et innerve le pancréas.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Suprarenal plexus": {
+  "couche": "nerf",
+  "texte": "Réseau issu des ganglions cœliaques et des nerfs splanchniques, qui pénètre dans la glande surrénale et innerve surtout la médullosurrénale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Renal plexus": {
+  "couche": "nerf",
+  "texte": "Réseau autour de l'artère rénale, issu du plexus cœliaque, des nerfs splanchniques et du plexus aortique, qui accompagne les vaisseaux dans le hile du rein.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Ureteric plexus": {
+  "couche": "nerf",
+  "texte": "Fin réseau autonome qui entoure l'uretère, issu des plexus rénal, aortique et hypogastriques.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior mesenteric plexus": {
+  "couche": "nerf",
+  "texte": "Réseau autour de l'artère mésentérique supérieure issu du plexus cœliaque ; il accompagne ses branches jusqu'à l'intestin grêle et au côlon jusqu'à l'angle gauche.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Intermesenteric plexus": {
+  "couche": "nerf",
+  "texte": "Partie du plexus aortique abdominal entre les origines des artères mésentériques supérieure et inférieure.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior mesenteric plexus": {
+  "couche": "nerf",
+  "texte": "Réseau autour de l'artère mésentérique inférieure qui innerve le côlon gauche et le haut du rectum.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Phrenic plexus": {
+  "couche": "nerf",
+  "texte": "Réseau qui accompagne l'artère phrénique inférieure vers la face inférieure du diaphragme ; il reçoit des fibres du nerf phrénique et rejoint le plexus cœliaque.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Iliac plexus": {
+  "couche": "nerf",
+  "texte": "Prolongement du plexus aortique autour des artères iliaques commune et externe.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Femoral plexus": {
+  "couche": "nerf",
+  "texte": "Prolongement du plexus iliaque autour de l'artère fémorale, qui innerve les vaisseaux de la cuisse.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior hypogastric plexus": {
+  "couche": "nerf",
+  "texte": "Réseau impair situé en avant de la bifurcation aortique, de L5 et du promontoire du sacrum, entre les artères iliaques communes ; il prolonge le plexus aortique et se divise en nerfs hypogastriques.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Hypogastric nerve": {
+  "couche": "nerf",
+  "texte": "Chacun des deux nerfs hypogastriques unit le plexus hypogastrique supérieur au plexus hypogastrique inférieur, en descendant devant le sacrum, le long du rectum.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior hypogastric plexus": {
+  "couche": "nerf",
+  "texte": "Plexus pelvien sur la paroi latérale du rectum, de la vessie et de la prostate ; il reçoit les nerfs hypogastriques et splanchniques pelviens et distribue des fibres à tous les organes pelviens.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pelvic splanchnic nerves": {
+  "couche": "nerf",
+  "texte": "Fibres parasympathiques préganglionnaires des rameaux antérieurs de S2 à S4 qui rejoignent le plexus hypogastrique inférieur ; elles innervent le côlon descendant, le rectum, la vessie et les organes génitaux.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Sacral splanchnic nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux sympathiques des ganglions sacraux du tronc sympathique, sur la face pelvienne du sacrum, qui rejoignent le plexus hypogastrique inférieur.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle anorectal plexus": {
+  "couche": "nerf",
+  "texte": "Partie du plexus hypogastrique inférieur qui accompagne l'artère rectale moyenne sur la paroi latérale du rectum.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Rectal plexus": {
+  "couche": "nerf",
+  "texte": "Réseau autonome entourant le rectum, issu des plexus mésentérique inférieur et hypogastrique inférieur, qui innerve ses muscles et sa muqueuse.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior anorectal plexus": {
+  "couche": "nerf",
+  "texte": "Prolongement du plexus mésentérique inférieur le long de l'artère rectale supérieure vers le haut du rectum.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Vesical plexus": {
+  "couche": "nerf",
+  "texte": "Réseau issu du plexus hypogastrique inférieur sur la face inférolatérale de la vessie, qui innerve le muscle détrusor et le trigone.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Prostatic plexus": {
+  "couche": "nerf",
+  "texte": "Réseau issu du plexus hypogastrique inférieur sur les faces latérales de la prostate ; ses nerfs caverneux innervent les corps érectiles du pénis.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Perforating cutaneous nerve": {
+  "couche": "nerf",
+  "texte": "Branche des rameaux antérieurs de S2-S3 qui perfore le ligament sacro-tubéral et le bord inférieur du grand glutéal et innerve la peau de la partie inféromédiale de la fesse.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior gluteal cutaneous nerves": {
+  "couche": "nerf",
+  "texte": "Rameaux du nerf cutané postérieur de la cuisse qui contournent le bord inférieur du grand glutéal et remontent innerver la peau de la partie inférieure de la fesse.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral sural cutaneous nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf fibulaire commun née dans la fosse poplitée : elle croise le chef latéral du gastrocnémien et innerve la peau de la face latérale de la jambe ; elle est unie au nerf sural par la branche surale communicante.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Crural interosseous nerve": {
+  "couche": "nerf",
+  "texte": "Branche du nerf tibial qui descend sur la face postérieure de la membrane interosseuse de la jambe et innerve la membrane, le périoste et la syndesmose tibiofibulaire distale.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral dorsal cutaneous nerve of foot": {
+  "couche": "nerf",
+  "texte": "Prolongement du nerf sural qui passe derrière la malléole latérale, longe le bord latéral du pied et se termine sur la face dorsale du cinquième orteil.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior nerve of lesser curvature": {
+  "couche": "nerf",
+  "texte": "Nerf de Latarjet antérieur : prolongement du tronc vagal antérieur, il descend le long de la petite courbure sur la face antérieure de l'estomac et se termine dans l'antre pylorique par des rameaux en « patte d'oie ».",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior nerve of lesser curvature": {
+  "couche": "nerf",
+  "texte": "Nerf de Latarjet postérieur : prolongement du tronc vagal postérieur, il longe la petite courbure sur la face postérieure de l'estomac et innerve l'antre et le pylore ; il donne aussi le rameau cœliaque.",
+  "lot": "nerfs.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Testicular artery": {
+  "couche": "artere",
+  "texte": "Branche de l'aorte abdominale née sous les artères rénales ; longue et grêle, elle descend sur le muscle grand psoas jusqu'à l'anneau inguinal profond, puis gagne le testicule par le cordon spermatique (partie non montrée).",
+  "lot": "oreille-et-coupes.json"
+ },
+ "Left testicular vein": {
+  "couche": "veine",
+  "texte": "Née du plexus pampiniforme du cordon spermatique, elle remonte dans l'abdomen et se jette dans la veine rénale gauche, à angle droit.",
+  "lot": "oreille-et-coupes.json"
+ },
+ "Right testicular vein": {
+  "couche": "veine",
+  "texte": "Née du plexus pampiniforme du cordon spermatique, elle remonte dans l'abdomen et se jette directement dans la veine cave inférieure, sous la veine rénale droite.",
+  "lot": "oreille-et-coupes.json"
+ },
+ "Cochlea": {
+  "couche": "viscere",
+  "texte": "L'organe de l'audition : un conduit osseux enroulé sur deux tours et trois quarts autour d'un axe, le modiolus, creusé dans la partie pétreuse de l'os temporal. Tracé d'après la place et la taille de la cochlée de Z-Anatomy.",
+  "lot": "oreille-et-coupes.json"
+ },
+ "Semicircular ducts": {
+  "couche": "viscere",
+  "texte": "Trois conduits en anneau, antérieur, postérieur et latéral, disposés presque à angle droit les uns des autres : ils sentent les rotations de la tête et servent à l'équilibre.",
+  "lot": "oreille-et-coupes.json"
+ },
+ "Middle lobar vein of right lung": {
+  "couche": "veine",
+  "texte": "Elle draine le lobe moyen du poumon droit, par la réunion des veines latérale et médiale, et se jette dans la veine pulmonaire supérieure droite au hile.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Left marginal vein of heart": {
+  "couche": "veine",
+  "texte": "Elle longe le bord gauche du ventricule gauche, qu'elle draine, et se jette dans la grande veine cardiaque au niveau du sillon atrioventriculaire gauche.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Oblique vein of left atrium": {
+  "couche": "veine",
+  "texte": "Petite veine (veine de Marshall) qui descend sur la face postérieure de l'atrium gauche, dont elle draine la paroi, et rejoint le sinus coronaire près de la grande veine cardiaque.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "wikipedia"
+  ]
+ },
+ "Small cardiac vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère coronaire droite dans le sillon atrioventriculaire droit, draine la face inférieure de l'atrium et du ventricule droits et se termine dans le sinus coronaire près de son ostium.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Right marginal vein of heart": {
+  "couche": "veine",
+  "texte": "Elle longe le bord droit (aigu) du ventricule droit et se jette dans l'atrium droit ou dans la petite veine cardiaque.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior cardiac veins": {
+  "couche": "veine",
+  "texte": "Deux à quatre petites veines de la face antérieure du ventricule droit qui franchissent le sillon coronaire et s'ouvrent directement dans l'atrium droit, sans passer par le sinus coronaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Thymic veins": {
+  "couche": "veine",
+  "texte": "Petites veines du thymus : elles quittent les deux lobes et rejoignent la veine brachiocéphalique gauche, parfois les veines thyroïdiennes inférieures.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Pericardiacophrenic veins": {
+  "couche": "veine",
+  "texte": "Elles accompagnent le nerf phrénique et l'artère péricardiacophrénique depuis le péricarde et le diaphragme, entre plèvre et péricarde, et se jettent dans la veine thoracique interne ou la veine brachiocéphalique.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Tracheal veins": {
+  "couche": "veine",
+  "texte": "Petites veines de la trachée qui gagnent la veine brachiocéphalique de chaque côté, et aussi les veines thyroïdiennes inférieures.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Oesophageal brachiocephalic vein": {
+  "couche": "veine",
+  "texte": "Veines de la partie haute de l'oesophage thoracique qui contournent la trachée à gauche et se jettent dans la veine brachiocéphalique gauche.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Oesophageal accessory hemi-azygos vein": {
+  "couche": "veine",
+  "texte": "Affluentes de l'oesophage thoracique moyen : de petites veines viennent de la paroi oesophagienne et se jettent dans la veine hémi-azygos accessoire, à gauche de la colonne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Anterior vertebral vein": {
+  "couche": "veine",
+  "texte": "Petite veine qui monte devant les corps vertébraux cervicaux, contre le muscle long du cou ; elle descend vers le pied du cou et se jette dans la veine vertébrale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Deep cervical vein": {
+  "couche": "veine",
+  "texte": "Elle draine la région sous-occipitale, descend en arrière des apophyses transverses cervicales sous les muscles de la nuque, accompagne l'artère cervicale profonde et se jette dans la veine vertébrale à la base du cou.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior thyroid vein": {
+  "couche": "veine",
+  "texte": "Née du plexus thyroïdien du bord inférieur de la glande, elle descend devant la trachée et se jette dans la veine brachiocéphalique du même côté.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior laryngeal vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne le nerf laryngé inférieur et l'artère laryngée inférieure le long de la trachée et rejoint la veine thyroïdienne inférieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Middle thyroid vein": {
+  "couche": "veine",
+  "texte": "Elle naît du bord latéral du lobe thyroïdien, traverse le cou en avant de l'artère carotide commune et se jette dans la veine jugulaire interne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Suprerior laryngeal vein": {
+  "couche": "veine",
+  "texte": "Elle sort du larynx avec le nerf laryngé supérieur à travers la membrane thyrohyoïdienne et se jette dans la veine thyroïdienne supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Sternocleidomastoid vein": {
+  "couche": "veine",
+  "texte": "Elle draine le muscle sterno-cléido-mastoïdien et rejoint la veine jugulaire interne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Pharyngeal veins": {
+  "couche": "veine",
+  "texte": "Elles forment un plexus sur la paroi postérieure du pharynx, puis des veines gagnent la veine jugulaire interne (parfois la veine faciale).",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Dorsal lingual veins": {
+  "couche": "veine",
+  "texte": "Elles drainent le dos et les bords de la langue et rejoignent la veine linguale sous le muscle hyoglosse.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Sublingual vein": {
+  "couche": "veine",
+  "texte": "Elle draine la glande sublinguale et le plancher de la bouche, puis rejoint la veine linguale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Deep lingual vein": {
+  "couche": "veine",
+  "texte": "Elle naît de la pointe de la langue, court sous la muqueuse de la face inférieure, de part et d'autre du frein, et se termine dans la veine linguale en arrière.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Supratrochlear veins": {
+  "couche": "veine",
+  "texte": "Elles drainent le front près de la ligne médiane, descendent vers la racine du nez et s'unissent à la veine supra-orbitaire pour former la veine angulaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Supra-orbital vein": {
+  "couche": "veine",
+  "texte": "Elle naît sur le front, près de l'éminence frontale, descend au-dessus de l'arcade sourcilière et rejoint la veine supratrochléaire pour former la veine angulaire ; une branche passe par l'incisure supra-orbitaire vers la veine ophtalmique supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior palpebral vein": {
+  "couche": "veine",
+  "texte": "Elles drainent la paupière supérieure et se jettent dans la veine angulaire, près de l'angle médial de l'oeil.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Inferior palpebral veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la paupière inférieure et rejoignent la veine faciale à la racine du nez.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Palpebral veins": {
+  "couche": "veine",
+  "texte": "Veines des paupières qui se jettent dans les veines ophtalmiques supérieure et inférieure, à la partie antérieure de l'orbite.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "External nasal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la peau et le cartilage du nez et se jettent dans la veine angulaire et la veine faciale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Nasofrontal vein": {
+  "couche": "veine",
+  "texte": "Elle relie la veine supratrochléaire (région frontale) à la veine ophtalmique supérieure à l'angle médial de l'orbite, faisant communiquer le système facial et le sinus caverneux.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Anterior ethmoidal vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère ethmoïdale antérieure et draine les cellules ethmoïdales antérieures et la muqueuse nasale vers la veine ophtalmique supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Posterior ethmoidal vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère ethmoïdale postérieure et draine les cellules ethmoïdales postérieures vers la veine ophtalmique supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Lacrimal vein": {
+  "couche": "veine",
+  "texte": "Elle naît de la glande lacrymale, longe le bord supérieur du muscle droit latéral et se jette dans la veine ophtalmique supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Deep facial vein": {
+  "couche": "veine",
+  "texte": "Elle relie le plexus ptérygoïdien à la veine faciale en passant sur le buccinateur et la face latérale du maxillaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior parotid veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la partie antérieure de la glande parotide et se jettent dans la veine faciale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Posterior parotid veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la partie postérieure de la glande parotide et se jettent dans la veine rétromandibulaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "External palatine vein": {
+  "couche": "veine",
+  "texte": "Elle quitte le voile du palais, passe près de l'amygdale palatine et se jette dans la veine faciale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Middle temporal vein": {
+  "couche": "veine",
+  "texte": "Née près de l'angle latéral de l'orbite, elle traverse le muscle temporal et son fascia, puis se jette dans la veine temporale superficielle au-dessus de l'arcade zygomatique.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Transverse facial vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère transverse de la face, au-dessus du canal parotidien, et se jette dans la veine temporale superficielle.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Deep temporal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent le muscle temporal avec les artères temporales profondes et se jettent dans le plexus ptérygoïdien (veines maxillaires).",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Anterior auricular veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la face antérieure du pavillon de l'oreille et se jettent dans la veine temporale superficielle.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Temporomandibular articular veins": {
+  "couche": "veine",
+  "texte": "Elles drainent l'articulation temporo-mandibulaire et se jettent dans la veine rétromandibulaire et la veine temporale superficielle.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Tympanic veins": {
+  "couche": "veine",
+  "texte": "Elles naissent de la cavité du tympan et gagnent le plexus ptérygoïdien (par la fissure pétrotympanique) et le sinus pétreux supérieur.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Stylomastoid vein": {
+  "couche": "veine",
+  "texte": "Elle sort du canal facial par le foramen stylomastoïdien, draine l'oreille moyenne et se jette dans la veine auriculaire postérieure ou la veine rétromandibulaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Marginal sinus": {
+  "couche": "veine",
+  "texte": "Petit sinus de la dure-mère qui entoure le foramen magnum dans son bord ; il relie le sinus occipital au sinus sigmoïde et au plexus basilaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Petrosquamous sinus": {
+  "couche": "veine",
+  "texte": "Petit sinus de la dure-mère qui suit la suture pétro-squameuse, à la face interne du temporal, et se jette dans le sinus transverse.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Sphenoparietal sinus": {
+  "couche": "veine",
+  "texte": "Il longe le bord postérieur de la petite aile du sphénoïde, reçoit les veines méningées et la veine cérébrale moyenne superficielle, et se jette dans la partie antérieure du sinus caverneux.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Frontal diploic vein": {
+  "couche": "veine",
+  "texte": "Veine du diploé de l'os frontal qui descend vers l'incisure supra-orbitaire et se jette dans la veine supra-orbitaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Anterior temporal diploic vein": {
+  "couche": "veine",
+  "texte": "Veine du diploé de la région frontale latérale et pariétale antérieure ; elle descend vers le ptérion et se jette dans le sinus sphéno-pariétal ou dans une veine temporale profonde.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Posterior temporal diploic vein": {
+  "couche": "veine",
+  "texte": "Veine du diploé de l'os pariétal postérieur ; elle gagne l'angle mastoïdien du pariétal et se jette dans le sinus transverse.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Occipital diploic vein": {
+  "couche": "veine",
+  "texte": "Veine du diploé de l'os occipital qui se jette dans le sinus transverse près du sinus sigmoïde ou dans la veine occipitale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Parietal emissary vein": {
+  "couche": "veine",
+  "texte": "Elle traverse le foramen pariétal et met en relation le sinus sagittal supérieur avec les veines du cuir chevelu.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Mastoid emissary vein": {
+  "couche": "veine",
+  "texte": "Elle traverse le foramen mastoïdien et relie le sinus sigmoïde à la veine auriculaire postérieure ou occipitale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Condylar emissary vein": {
+  "couche": "veine",
+  "texte": "Elle passe par le canal condylaire, en arrière du condyle occipital, et relie le sinus sigmoïde au plexus veineux vertébral externe.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Occipital emissary vein": {
+  "couche": "veine",
+  "texte": "Elle traverse l'os occipital près de la protubérance occipitale interne et relie le confluent des sinus à la veine occipitale du cuir chevelu.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Sphenoidal vein": {
+  "couche": "veine",
+  "texte": "Veine émissaire de la base du crâne qui relie le sinus caverneux au plexus ptérygoïdien par un foramen de la grande aile du sphénoïde.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "wikipedia"
+  ]
+ },
+ "Superficial petrosal vein": {
+  "couche": "veine",
+  "texte": "Petite veine de la face supérieure du rocher qui rejoint le sinus pétreux supérieur.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918"
+  ]
+ },
+ "Clival veins": {
+  "couche": "veine",
+  "texte": "Petites veines du clivus qui convergent vers le plexus veineux basilaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Middle meningeal veins": {
+  "couche": "veine",
+  "texte": "Deux veines accompagnent chaque branche de l'artère méningée moyenne dans les gouttières de la face interne de la voûte, sortent par le foramen épineux et se jettent dans le plexus ptérygoïdien.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Menyngeal veins": {
+  "couche": "veine",
+  "texte": "Veines de la dure-mère des fosses crâniennes postérieure et moyenne : elles rejoignent les sinus sigmoïde et pétreux inférieur puis la veine jugulaire interne au foramen jugulaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Frontopolar vein": {
+  "couche": "veine",
+  "texte": "Elle draine le pôle frontal et se jette dans la partie antérieure du sinus sagittal supérieur.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Frontal veins": {
+  "couche": "veine",
+  "texte": "Veines de la face convexe et médiale du lobe frontal qui montent vers le sinus sagittal supérieur et s'y ouvrent en obliquant vers l'avant.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Parietal veins": {
+  "couche": "veine",
+  "texte": "Veines des gyrus postcentral et pariétaux qui rejoignent le sinus sagittal supérieur.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Occipital veins": {
+  "couche": "veine",
+  "texte": "Veines du lobe occipital : les unes montent vers le sinus sagittal supérieur, les autres descendent vers le sinus transverse.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Superficial middle cerebral vein": {
+  "couche": "veine",
+  "texte": "Elle longe le sillon latéral sur la face externe de l'hémisphère, de l'arrière vers l'avant, contourne le pôle temporal et se jette dans le sinus caverneux ou le sinus sphéno-pariétal.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Superior anastomotic vein": {
+  "couche": "veine",
+  "texte": "Veine de Trolard : elle relie la veine cérébrale moyenne superficielle au sinus sagittal supérieur en passant sur la convexité, devant le sillon postcentral.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Inferior anastomotic vein": {
+  "couche": "veine",
+  "texte": "Veine de Labbé : elle relie la veine cérébrale moyenne superficielle au sinus transverse à travers le lobe temporal.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Orbitofrontal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la face orbitaire du lobe frontal et se jettent dans le sinus sagittal supérieur et dans la veine basale ou le sinus caverneux.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Temporal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la face inférieure et latérale du lobe temporal et rejoignent le sinus transverse, le sinus pétreux supérieur et le sinus caverneux.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Basal vein": {
+  "couche": "veine",
+  "texte": "Veine de Rosenthal : née près de la substance perforée antérieure, elle contourne le pédoncule cérébral et rejoint la grande veine cérébrale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Anterior cerebral vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère cérébrale antérieure, draine la face médiale du lobe frontal et le genou du corps calleux et se jette dans la veine basale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Deep middle cerebral vein": {
+  "couche": "veine",
+  "texte": "Elle chemine dans la profondeur du sillon latéral, sur l'insula, puis rejoint la veine basale à la base du cerveau.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Insular veins": {
+  "couche": "veine",
+  "texte": "Elles drainent le cortex de l'insula et se jettent dans la veine cérébrale moyenne profonde.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Inferior thalamostriate veins": {
+  "couche": "veine",
+  "texte": "Petites veines des noyaux gris centraux qui traversent la substance perforée antérieure et se jettent dans la veine basale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Inferior choroidal vein": {
+  "couche": "veine",
+  "texte": "Elle draine le plexus choroïde de la corne temporale du ventricule latéral et l'hippocampe, puis se jette dans la veine basale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Great cerebral vein": {
+  "couche": "veine",
+  "texte": "Veine de Galien : très courte, née de la réunion des deux veines cérébrales internes sous le splénium du corps calleux, elle se jette avec le sinus sagittal inférieur dans le sinus droit.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Internal cerebral vein": {
+  "couche": "veine",
+  "texte": "Elle court dans le toit du troisième ventricule, de part et d'autre de la ligne médiane, depuis le foramen interventriculaire jusqu'au-dessous du splénium où les deux veines forment la grande veine cérébrale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Superior choroid vein": {
+  "couche": "veine",
+  "texte": "Elle longe le plexus choroïde du ventricule latéral et se jette dans la veine cérébrale interne au foramen interventriculaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Superior thalamostriate vein": {
+  "couche": "veine",
+  "texte": "Elle suit le sillon entre le noyau caudé et le thalamus (stria terminalis) d'arrière en avant et se jette dans la veine cérébrale interne au foramen interventriculaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Lateral direct cerebral veins": {
+  "couche": "veine",
+  "texte": "Veines de la paroi latérale du ventricule latéral qui descendent vers la veine basale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Posterior vein of corpus callosum": {
+  "couche": "veine",
+  "texte": "Elle contourne le splénium du corps calleux d'arrière en avant et se jette dans la grande veine cérébrale ou la veine cérébrale interne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Pontomesencephalic vein": {
+  "couche": "veine",
+  "texte": "Elle passe sur la face antérieure de la jonction pont-mésencéphale et relie les veines du pont à la veine basale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Pontine veins": {
+  "couche": "veine",
+  "texte": "Elles drainent le pont et se jettent dans la veine pétreuse et le sinus pétreux supérieur.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Petrosal vein": {
+  "couche": "veine",
+  "texte": "Veine de Dandy : elle rassemble les veines du cervelet et du pont dans l'angle pontocérébelleux et se jette dans le sinus pétreux supérieur.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Superior vein of vermis": {
+  "couche": "veine",
+  "texte": "Elle draine le vermis supérieur et se jette dans le sinus droit (ou la grande veine cérébrale).",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Inferior vein of vermis": {
+  "couche": "veine",
+  "texte": "Elle draine le vermis inférieur et se jette dans le sinus droit, le sinus transverse ou le sinus occipital.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Superior veins of cerebellar hemisphere": {
+  "couche": "veine",
+  "texte": "Elles drainent la face supérieure de l'hémisphère cérébelleux et se jettent dans le sinus transverse, le sinus droit et le sinus pétreux supérieur.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Inferior veins of cerebellar hemisphere": {
+  "couche": "veine",
+  "texte": "Elles drainent la face inférieure de l'hémisphère cérébelleux et se jettent dans le sinus sigmoïde et le sinus transverse.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Precentral cerebellar vein": {
+  "couche": "veine",
+  "texte": "Elle naît dans le sillon entre la lingula et le lobule central du vermis et se jette dans la grande veine cérébrale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "radiopaedia"
+  ]
+ },
+ "Anterior spinal veins": {
+  "couche": "veine",
+  "texte": "Veines longitudinales de la face antérieure de la moelle spinale, l'une médiane dans la fissure médiane antérieure et deux antérolatérales ; elles se jettent dans les veines radiculaires.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Posterior spinal veins": {
+  "couche": "veine",
+  "texte": "Veines longitudinales de la face postérieure de la moelle, médiane et postérolatérales, qui se jettent dans les veines radiculaires.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Intervertebral veins": {
+  "couche": "veine",
+  "texte": "Elles quittent le canal vertébral par les foramens intervertébraux et relient les plexus veineux vertébraux internes aux veines segmentaires : vertébrale au cou, intercostales dans le thorax, lombaires plus bas.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Supreme intercostal vein": {
+  "couche": "veine",
+  "texte": "Elle draine le premier espace intercostal en arrière et se jette dans la veine vertébrale ou la veine brachiocéphalique.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Subcutaneous abdominal veins": {
+  "couche": "veine",
+  "texte": "Réseau veineux superficiel de la paroi abdominale antérieure, rayonnant autour de l'ombilic ; il se draine vers le haut dans la veine thoracique latérale et vers le bas dans les veines épigastrique et circonflexe iliaque superficielles.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Inferior phrenic veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la face inférieure du diaphragme : la droite se jette dans la veine cave inférieure, la gauche dans la veine rénale gauche ou la veine surrénale gauche.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Right hepatic vein": {
+  "couche": "veine",
+  "texte": "Elle court entre les secteurs antérieur et postérieur du foie droit, dans le plan de la scissure portale droite, et se jette dans la veine cave inférieure sous le diaphragme.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Intermediate hepatic vein": {
+  "couche": "veine",
+  "texte": "Elle occupe la scissure portale principale, entre foie droit et foie gauche, et se jette dans la veine cave inférieure, souvent avec la veine hépatique gauche.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Left hepatic vein": {
+  "couche": "veine",
+  "texte": "Elle passe entre les segments latéraux gauches (II et III) du foie, dans la scissure ombilicale, et se jette dans la veine cave inférieure, le plus souvent avec la veine hépatique intermédiaire.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Right suprarenal vein": {
+  "couche": "veine",
+  "texte": "Courte veine du hile de la glande surrénale droite qui se jette directement dans la veine cave inférieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Left suprarenal vein": {
+  "couche": "veine",
+  "texte": "Elle quitte le hile de la glande surrénale gauche, descend avec l'artère phrénique inférieure et se jette dans la veine rénale gauche.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Arcuate vein of right kidney": {
+  "couche": "veine",
+  "texte": "Veines arquées : elles forment des arcades à la base des pyramides rénales, entre médullaire et cortex, reçoivent les veines interlobulaires et se jettent dans les veines interlobaires.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Arcuate vein of left kidney": {
+  "couche": "veine",
+  "texte": "Veines arquées : elles forment des arcades à la base des pyramides rénales, entre médullaire et cortex, reçoivent les veines interlobulaires et se jettent dans les veines interlobaires.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Median sacral vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère sacrale médiane devant le sacrum et le coccyx et se jette dans la veine iliaque commune gauche, près de la confluence des iliaques.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Obturator veins": {
+  "couche": "veine",
+  "texte": "Elles accompagnent l'artère obturatrice, depuis le canal obturateur sur la paroi latérale du petit bassin, et se jettent dans la veine iliaque interne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Middle anorectal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent l'ampoule rectale, traversent les ligaments latéraux du rectum et se jettent dans la veine iliaque interne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Inferior anorectal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent le canal anal et la région périanale, traversent la fosse ischio-anale et se jettent dans la veine pudendale interne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superior anorectal vein": {
+  "couche": "veine",
+  "texte": "Elle prolonge le plexus rectal interne, accompagne l'artère rectale supérieure et se continue par la veine mésentérique inférieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Vesical veins": {
+  "couche": "veine",
+  "texte": "Elles naissent du plexus veineux vésical autour de la vessie et se jettent dans la veine iliaque interne.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pubic vein": {
+  "couche": "veine",
+  "texte": "Elle relie la veine épigastrique inférieure à la veine obturatrice en longeant la face postérieure du pubis (la « corona mortis » veineuse).",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "wikipedia"
+  ]
+ },
+ "Deep circumflex iliac vein": {
+  "couche": "veine",
+  "texte": "Elle longe le ligament inguinal puis la crête iliaque, avec l'artère circonflexe iliaque profonde, et se jette dans la veine iliaque externe.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Deep external pudendal vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère pudendale externe profonde et draine la peau du périnée et du scrotum ou des grandes lèvres ; elle rejoint la veine fémorale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Superficial circumflex iliac vein": {
+  "couche": "veine",
+  "texte": "Veine sous-cutanée qui longe le ligament inguinal vers l'épine iliaque antéro-supérieure et se jette dans la partie terminale de la veine grande saphène.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Left gastric vein": {
+  "couche": "veine",
+  "texte": "Elle longe la petite courbure de l'estomac avec l'artère gastrique gauche, reçoit des veines oesophagiennes et se jette dans la veine porte.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Right gastric vein": {
+  "couche": "veine",
+  "texte": "Elle longe la petite courbure de l'estomac vers le pylore, dans le petit omentum, et se jette directement dans la veine porte.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Prepyloric vein": {
+  "couche": "veine",
+  "texte": "Veine de Mayo : elle monte sur la face antérieure du pylore, repère chirurgical de la jonction gastroduodénale, et se jette dans la veine gastrique droite.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "wikipedia"
+  ]
+ },
+ "Short gastric veins": {
+  "couche": "veine",
+  "texte": "Quatre à six petites veines du fond de l'estomac qui passent dans le ligament gastro-splénique et se jettent dans la veine splénique ou dans ses branches.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Cystic veins": {
+  "couche": "veine",
+  "texte": "Elles drainent la vésicule biliaire et se jettent dans la branche droite de la veine porte ou directement dans le foie.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Umbilical vein": {
+  "couche": "veine",
+  "texte": "Veine du cordon ombilical chez le foetus ; chez l'adulte, oblitérée, elle forme le ligament rond du foie qui monte de l'ombilic dans le bord libre du ligament falciforme jusqu'à la branche gauche de la veine porte.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "wikipedia"
+  ]
+ },
+ "Para-umbilical veins": {
+  "couche": "veine",
+  "texte": "Petites veines qui accompagnent le ligament rond du foie et relient les veines de l'ombilic à la veine porte ; elles s'élargissent en cas d'hypertension portale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "kenhub"
+  ]
+ },
+ "Posterior superior pancreaticoduodenal vein": {
+  "couche": "veine",
+  "texte": "Elle passe derrière la tête du pancréas, accompagne l'artère du même nom et se jette directement dans la veine porte.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pancreaticoduodenal veins": {
+  "couche": "veine",
+  "texte": "Arcades veineuses antérieure et postérieure entre la tête du pancréas et le duodénum ; les veines supérieures rejoignent la veine porte, les inférieures la veine mésentérique supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pancreatic veins": {
+  "couche": "veine",
+  "texte": "Petites veines du corps et de la queue du pancréas qui se jettent dans la veine splénique, le long de la face postérieure de la glande.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Jejunal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent les anses jéjunales, cheminent dans le mésentère avec les artères et se jettent dans le bord gauche de la veine mésentérique supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Ileal veins": {
+  "couche": "veine",
+  "texte": "Elles drainent l'iléon et se jettent dans la veine mésentérique supérieure par le mésentère.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lleocolic vein": {
+  "couche": "veine",
+  "texte": "Elle draine l'iléon terminal, le caecum et l'appendice, accompagne l'artère iléocolique et se jette dans la veine mésentérique supérieure.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Appendicular vein": {
+  "couche": "veine",
+  "texte": "Elle draine l'appendice vermiforme dans le méso-appendice, derrière l'iléon terminal, et se jette dans la veine iléocolique.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Pectoral veins": {
+  "couche": "veine",
+  "texte": "Elles drainent les muscles grand et petit pectoraux et se jettent dans la veine axillaire, souvent avec la veine thoraco-acromiale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Dorsal scapular vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère et le nerf scapulaires dorsaux le long du bord médial de la scapula, sous les rhomboïdes, puis rejoint la veine sous-clavière.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Transverse cervical veins": {
+  "couche": "veine",
+  "texte": "Elles accompagnent l'artère cervicale transverse dans la région cervicale latérale et se jettent dans la veine jugulaire externe ou la veine sous-clavière.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Thoraco-acromial vein": {
+  "couche": "veine",
+  "texte": "Elle accompagne l'artère thoraco-acromiale, perce la fascia clavipectorale et se jette dans la veine axillaire (ou céphalique).",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Dorsal metacarpal veins": {
+  "couche": "veine",
+  "texte": "Quatre veines des espaces interosseux dorsaux, qui reçoivent les veines digitales dorsales et se jettent dans le réseau veineux dorsal de la main.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Palmar metacarpal veins": {
+  "couche": "veine",
+  "texte": "Elles accompagnent les artères métacarpiennes palmaires, de la paume vers les veines digitales, et se jettent dans l'arcade veineuse palmaire profonde.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Intercapitular veins of hand": {
+  "couche": "veine",
+  "texte": "Elles traversent les espaces entre les têtes des métacarpiens et relient le réseau veineux dorsal aux veines digitales palmaires.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Anterior interosseous veins": {
+  "couche": "veine",
+  "texte": "Deux veines accompagnent l'artère interosseuse antérieure sur la face antérieure de la membrane interosseuse et se jettent dans les veines ulnaires.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Posterior interosseous veins": {
+  "couche": "veine",
+  "texte": "Deux veines accompagnent l'artère interosseuse postérieure sur la face postérieure de la membrane interosseuse et se jettent dans les veines brachiales près du coude.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Accessory saphenous vein": {
+  "couche": "veine",
+  "texte": "Veine superficielle de la cuisse, postéro-médiale, parallèle à la veine grande saphène, qu'elle rejoint près de la crosse.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Medial marginal vein of foot": {
+  "couche": "veine",
+  "texte": "Elle longe le bord médial du pied depuis le gros orteil et se continue par la veine grande saphène en avant de la malléole médiale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Lateral marginal vein of foot": {
+  "couche": "veine",
+  "texte": "Elle longe le bord latéral du pied et se continue par la veine petite saphène derrière la malléole latérale.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Sural veins": {
+  "couche": "veine",
+  "texte": "Veines des muscles du mollet (gastrocnémiens et soléaire) qui se jettent dans la veine poplitée et les veines tibiales postérieures.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ },
+ "Dorsalis pedis veins": {
+  "couche": "veine",
+  "texte": "Veines satellites de l'artère dorsale du pied : elles drainent le dos du pied et se continuent par les veines tibiales antérieures.",
+  "lot": "veines.json",
+  "sources": [
+   "gray1918",
+   "tma"
+  ]
+ }
+}

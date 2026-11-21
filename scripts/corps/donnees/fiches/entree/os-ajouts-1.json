@@ -1,0 +1,234 @@
+{
+ "lot": "os-ajouts-1",
+ "couche": "os",
+ "structures": [
+  {
+   "id": "os-extracraniens-de-la-tete",
+   "nom": "Os extracrâniens de la tête",
+   "latin": "Ossa extracranialia capitis",
+   "anglais": "Extracranial bones of head",
+   "region": "cou",
+   "rang": 0,
+   "officiel": "Os extracrâniens de la tête",
+   "ta2": "834",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "hyoide",
+      "nom": "Os hyoïde"
+     },
+     {
+      "id": "mandibule",
+      "nom": "Mandibule"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cotes",
+   "nom": "Côtes",
+   "latin": "Costae",
+   "anglais": "Ribs",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Côtes",
+   "ta2": "1105",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "huitieme-cote",
+      "nom": "Huitième côte"
+     },
+     {
+      "id": "onzieme-cote",
+      "nom": "Onzième côte"
+     },
+     {
+      "id": "cinquieme-cote",
+      "nom": "Cinquième côte"
+     },
+     {
+      "id": "premiere-cote",
+      "nom": "Première côte"
+     },
+     {
+      "id": "quatrieme-cote",
+      "nom": "Quatrième côte"
+     },
+     {
+      "id": "neuvieme-cote",
+      "nom": "Neuvième côte"
+     },
+     {
+      "id": "deuxieme-cote",
+      "nom": "Deuxième côte"
+     },
+     {
+      "id": "septieme-cote",
+      "nom": "Septième côte"
+     },
+     {
+      "id": "sixieme-cote",
+      "nom": "Sixième côte"
+     },
+     {
+      "id": "dixieme-cote",
+      "nom": "Dixième côte"
+     },
+     {
+      "id": "troisieme-cote",
+      "nom": "Troisième côte"
+     },
+     {
+      "id": "douzieme-cote",
+      "nom": "Douzième côte"
+     }
+    ]
+   }
+  },
+  {
+   "id": "os-du-carpe",
+   "nom": "Os du carpe",
+   "latin": "Ossa carpi",
+   "anglais": "Carpal bones",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Os du carpe",
+   "ta2": "1249",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "scaphoide",
+      "nom": "Scaphoïde"
+     },
+     {
+      "id": "lunatum",
+      "nom": "Lunatum"
+     },
+     {
+      "id": "triquetrum",
+      "nom": "Triquetrum"
+     },
+     {
+      "id": "pisiforme",
+      "nom": "Pisiforme"
+     },
+     {
+      "id": "os-trapeze",
+      "nom": "Trapèze"
+     },
+     {
+      "id": "trapezoide",
+      "nom": "Trapézoïde"
+     },
+     {
+      "id": "capitatum",
+      "nom": "Capitatum"
+     },
+     {
+      "id": "hamatum",
+      "nom": "Hamatum"
+     }
+    ]
+   }
+  },
+  {
+   "id": "os-sesamoides-de-la-main",
+   "nom": "Os sésamoïdes de la main",
+   "latin": "Ossa sesamoidea manus",
+   "anglais": "Sesamoid bones of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Os sésamoïdes de la main",
+   "ta2": "1281",
+   "connu": {
+    "description_du_trace": "Deux petits os arrondis, radial et ulnaire, enchâssés dans les tendons du court fléchisseur du pouce à la face palmaire de la tête du premier métacarpien ; ils protègent les tendons et accroissent le bras de levier de la flexion.",
+    "appui_dans_le_modele": {
+     "id": "premier-metacarpien",
+     "nom": "Premier métacarpien"
+    }
+   }
+  },
+  {
+   "id": "os-du-tarse",
+   "nom": "Os du tarse",
+   "latin": "Ossa tarsi",
+   "anglais": "Tarsal bones",
+   "region": "pied",
+   "rang": 1,
+   "officiel": "Os du tarse",
+   "ta2": "1447",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "calcaneus",
+      "nom": "Calcanéus"
+     },
+     {
+      "id": "cuboide",
+      "nom": "Cuboïde"
+     },
+     {
+      "id": "os-cuneiforme-intermediaire",
+      "nom": "Os cunéiforme intermédiaire"
+     },
+     {
+      "id": "os-cuneiforme-lateral",
+      "nom": "Os cunéiforme latéral"
+     },
+     {
+      "id": "os-cuneiforme-medial",
+      "nom": "Os cunéiforme médial"
+     },
+     {
+      "id": "naviculaire",
+      "nom": "Naviculaire"
+     },
+     {
+      "id": "talus",
+      "nom": "Talus"
+     }
+    ]
+   }
+  },
+  {
+   "id": "os-metatarsiens",
+   "nom": "Os métatarsiens",
+   "latin": "Ossa metatarsi",
+   "anglais": "Metatarsal bones",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Os métatarsiens",
+   "ta2": "1495",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "cinquieme-metatarsien",
+      "nom": "Cinquième métatarsien"
+     },
+     {
+      "id": "premier-metatarsien",
+      "nom": "Premier métatarsien"
+     },
+     {
+      "id": "quatrieme-metatarsien",
+      "nom": "Quatrième métatarsien"
+     },
+     {
+      "id": "deuxieme-os-metatarsien",
+      "nom": "Deuxième os métatarsien"
+     },
+     {
+      "id": "troisieme-metatarsien",
+      "nom": "Troisième métatarsien"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -155,6 +155,9 @@ export function Coeurs({ n, sur = 3 }: { n: number; sur?: number }) {
 
 const NOM_COUCHE: Record<Couche, string> = { os: "Os", muscle: "Muscle", tendon: "Tendon", ligament: "Ligament", artere: "Artère", veine: "Veine", nerf: "Nerf", viscere: "Viscère", encephale: "Encéphale", lymphe: "Système lymphatique" };
 const PROFONDEURS = ["Superficiel", "Intermédiaire", "Profond"];
+/** Ce sur quoi s'appuie une structure construite : selon sa couche, ou ce qu'elle est (un plexus entoure, un ganglion est posé). */
+const APPUIS: Partial<Record<Couche, string>> = { artere: "Naît de", veine: "Se jette dans", nerf: "Naît de", lymphe: "Le long de", encephale: "Près de" };
+const libelleAppui = (e: Element) => (/^plexus\b/i.test(e.nom) ? "Autour de" : e.nature === "ganglion" || /^ganglion/i.test(e.nom) ? "Sur" : (APPUIS[e.couche] ?? "Sur"));
 const liste = (ids: string[] | undefined) => (ids ?? []).map((id) => nomDe(id)).join(", ");
 
 /**
@@ -195,6 +198,7 @@ export function Cartel({ e, complet = true, latin = true, actions, aller, jouer,
     if (e.territoire) lignes.push(["Irrigue", e.territoire]);
   }
   if (!fiche && e.resume) lignes.unshift(["En bref", e.resume]);
+  if (!fiche && e.appui && e.appui !== e.provenance) lignes.push([libelleAppui(e), nomDe(e.appui)]);
   if (e.membres?.length) {
     if (!aller) lignes.push(["Réunit", [...new Set(e.membres.map((id) => nomDe(id)))].join(", ")]);
   }

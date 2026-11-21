@@ -1,0 +1,238 @@
+{
+ "lot": "viscere-ajouts-1",
+ "couche": "viscere",
+ "structures": [
+  {
+   "id": "bulbe-oculaire",
+   "nom": "Bulbe oculaire",
+   "latin": "Bulbus oculi",
+   "anglais": "Eyeball",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Bulbe oculaire",
+   "ta2": "6735",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "chambre-anterieure-du-globe-oculaire",
+      "nom": "Chambre antérieure du globe oculaire"
+     },
+     {
+      "id": "segment-anterieur-du-globe-oculaire",
+      "nom": "Segment antérieur du globe oculaire"
+     },
+     {
+      "id": "cornee",
+      "nom": "Cornée"
+     },
+     {
+      "id": "iris",
+      "nom": "Iris"
+     },
+     {
+      "id": "cristallin",
+      "nom": "Cristallin"
+     },
+     {
+      "id": "segment-posterieur-du-globe-oculaire",
+      "nom": "Segment postérieur du globe oculaire"
+     },
+     {
+      "id": "retine",
+      "nom": "Rétine"
+     },
+     {
+      "id": "sclere",
+      "nom": "Sclère"
+     },
+     {
+      "id": "corps-vitre",
+      "nom": "Corps vitré"
+     },
+     {
+      "id": "fibres-zonulaires",
+      "nom": "Fibres zonulaires"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cochlee",
+   "nom": "Cochlée",
+   "latin": "Cochlea",
+   "anglais": "Cochlea",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Cochlée",
+   "ta2": "6964",
+   "nature": "sens",
+   "connu": {
+    "description_du_trace": "L'organe de l'audition : un conduit osseux enroulé sur deux tours et trois quarts autour d'un axe, le modiolus, creusé dans la partie pétreuse de l'os temporal. Tracé d'après la place et la taille de la cochlée de Z-Anatomy."
+   }
+  },
+  {
+   "id": "conduits-semicirculaires",
+   "nom": "Conduits semicirculaires",
+   "latin": "Ductus semicirculares",
+   "anglais": "Semicircular ducts",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Conduits semicirculaires",
+   "ta2": "7009",
+   "nature": "sens",
+   "connu": {
+    "description_du_trace": "Trois conduits en anneau, antérieur, postérieur et latéral, disposés presque à angle droit les uns des autres : ils sentent les rotations de la tête et servent à l'équilibre."
+   }
+  },
+  {
+   "id": "hypophyse",
+   "nom": "Hypophyse",
+   "latin": "Hypophysis",
+   "anglais": "Hypophysis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Hypophyse",
+   "ta2": "3853",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "adenohypophyse",
+      "nom": "Adénohypophyse"
+     },
+     {
+      "id": "neurohypophyse",
+      "nom": "Neurohypophyse"
+     }
+    ]
+   }
+  },
+  {
+   "id": "glandes-parathyroides",
+   "nom": "Glandes parathyroïdes",
+   "latin": "Glandulae parathyreoideae",
+   "anglais": "Parathyroid glands",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Glandes parathyroïdes",
+   "ta2": "3870",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "glande-parathyroide-inferieure",
+      "nom": "Glande parathyroïde inférieure"
+     },
+     {
+      "id": "glande-parathyroide-superieure",
+      "nom": "Glande parathyroïde supérieure"
+     }
+    ]
+   }
+  },
+  {
+   "id": "poumon-droit",
+   "nom": "Poumon droit",
+   "latin": "Pulmo dexter",
+   "anglais": "Right lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Poumon droit",
+   "ta2": "3283",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lobe-inferieur-du-poumon-droit",
+      "nom": "Lobe inférieur du poumon droit"
+     },
+     {
+      "id": "lobe-moyen-du-poumon-droit",
+      "nom": "Lobe moyen du poumon droit"
+     },
+     {
+      "id": "lobe-superieur-du-poumon-droit",
+      "nom": "Lobe supérieur du poumon droit"
+     }
+    ]
+   }
+  },
+  {
+   "id": "poumon-gauche",
+   "nom": "Poumon gauche",
+   "latin": "Pulmo sinister",
+   "anglais": "Left lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Poumon gauche",
+   "ta2": "3299",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lobe-inferieur-du-poumon-gauche",
+      "nom": "Lobe inférieur du poumon gauche"
+     },
+     {
+      "id": "lobe-superieur-du-poumon-gauche",
+      "nom": "Lobe supérieur du poumon gauche"
+     }
+    ]
+   }
+  },
+  {
+   "id": "thymus",
+   "nom": "Thymus",
+   "latin": "Thymus",
+   "anglais": "Thymus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Thymus",
+   "ta2": "5152",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lobe-gauche-du-thymus",
+      "nom": "Lobe gauche du thymus"
+     },
+     {
+      "id": "lobe-droit-du-thymus",
+      "nom": "Lobe droit du thymus"
+     }
+    ]
+   }
+  },
+  {
+   "id": "caecum",
+   "nom": "Caecum",
+   "latin": "Caecum",
+   "anglais": "Caecum",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Caecum",
+   "ta2": "2970",
+   "connu": {
+    "description_du_trace": "Cul-de-sac initial du gros intestin, situé dans la fosse iliaque droite sous l'abouchement de l'iléon ; il se continue en haut par le côlon ascendant et porte l'appendice vermiforme.",
+    "appui_dans_le_modele": {
+     "id": "colon-ascendant",
+     "nom": "Côlon ascendant"
+    }
+   }
+  },
+  {
+   "id": "canal-anal",
+   "nom": "Canal anal",
+   "latin": "Canalis analis",
+   "anglais": "Anal canal",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Canal anal",
+   "ta2": "3009",
+   "connu": {
+    "description_du_trace": "Dernier segment du tube digestif, long de 3 à 4 cm : il prolonge le rectum à travers le plancher pelvien et s'ouvre à l'anus ; il est entouré des sphincters."
+   }
+  }
+ ]
+}

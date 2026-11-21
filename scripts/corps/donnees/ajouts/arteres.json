@@ -1,0 +1,4858 @@
+{
+ "structures": [
+  {
+   "nom": "Right hepatic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    1.3,
+    0.9
+   ],
+   "points": [
+    {
+     "objet": "Proper hepatic artery",
+     "a": 0.35
+    },
+    {
+     "objet": "Liver",
+     "rel": [
+      0.3,
+      0.0,
+      0.4
+     ]
+    },
+    {
+     "objet": "Anterior medial segment of liver (V)",
+     "centre": true,
+     "decale": [
+      -10,
+      8,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche droite de l'artère hépatique propre, elle gagne le lobe droit du foie en croisant en général derrière le canal hépatique commun ; elle donne l'artère cystique avant de se diviser en branches segmentaires antérieure et postérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Cystic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Proper hepatic artery",
+     "a": 0.35
+    },
+    {
+     "objet": "Gallbladder",
+     "a": 0.95
+    },
+    {
+     "objet": "Gallbladder",
+     "a": 0.6,
+     "decale": [
+      -4,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Gallbladder",
+     "a": 0.25
+    }
+   ],
+   "texte": "Née de l'artère hépatique droite dans le triangle cystohépatique, elle atteint le col de la vésicule biliaire et se divise en rameaux qui en irriguent les deux faces.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Right artery of caudate lobe",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    0.6,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Proper hepatic artery",
+     "a": 0.35
+    },
+    {
+     "objet": "Liver",
+     "rel": [
+      0.05,
+      0.1,
+      -0.1
+     ],
+     "decale": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Posterior segment of liver (I)",
+     "centre": true
+    }
+   ],
+   "texte": "Petite branche de l'artère hépatique droite qui, par le hile, gagne la partie droite du lobe caudé (segment I) en passant en arrière de la veine porte.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior segmental artery of liver",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Anterior medial segment of liver (V)",
+      "centre": true,
+      "decale": [
+       -10,
+       8,
+       0
+      ]
+     },
+     {
+      "objet": "Anterior medial segment of liver (V)",
+      "centre": true
+     }
+    ],
+    [
+     {
+      "objet": "Anterior medial segment of liver (V)",
+      "centre": true,
+      "decale": [
+       -10,
+       8,
+       0
+      ]
+     },
+     {
+      "objet": "Posterior medial segment of liver (VIII)",
+      "centre": true,
+      "decale": [
+       0,
+       -4,
+       0
+      ]
+     }
+    ]
+   ],
+   "texte": "Branche de l'artère hépatique droite pour les segments antérieurs du foie droit : segment V, inférieur, et segment VIII, supérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior segmental artery of liver",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "droite",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Anterior medial segment of liver (V)",
+      "centre": true,
+      "decale": [
+       -10,
+       8,
+       0
+      ]
+     },
+     {
+      "objet": "Liver",
+      "rel": [
+       0.8,
+       -0.1,
+       0.0
+      ]
+     },
+     {
+      "objet": "Anterior lateral segment of liver (VI)",
+      "centre": true
+     }
+    ],
+    [
+     {
+      "objet": "Anterior medial segment of liver (V)",
+      "centre": true,
+      "decale": [
+       -10,
+       8,
+       0
+      ]
+     },
+     {
+      "objet": "Liver",
+      "rel": [
+       0.8,
+       0.2,
+       -0.2
+      ]
+     },
+     {
+      "objet": "Posterior lateral segment of liver (VII)",
+      "centre": true
+     }
+    ]
+   ],
+   "texte": "Branche de l'artère hépatique droite pour les segments postérieurs du foie droit : segment VI, inférieur, et segment VII, supérieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Left hepatic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "gauche",
+   "rayon": [
+    1.1,
+    0.8
+   ],
+   "points": [
+    {
+     "objet": "Proper hepatic artery",
+     "a": 0.2
+    },
+    {
+     "objet": "Liver",
+     "rel": [
+      -0.15,
+      0.0,
+      0.5
+     ]
+    },
+    {
+     "objet": "Left medial segment of liver (IV)",
+     "centre": true,
+     "decale": [
+      4,
+      6,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche gauche de l'artère hépatique propre, elle monte vers le sillon ombilical pour irriguer le lobe gauche du foie et se divise en branches segmentaires médiale et latérale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Left artery of caudate lobe",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "gauche",
+   "rayon": [
+    0.6,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Proper hepatic artery",
+     "a": 0.2
+    },
+    {
+     "objet": "Liver",
+     "rel": [
+      -0.1,
+      0.1,
+      0.0
+     ]
+    },
+    {
+     "objet": "Posterior segment of liver (I)",
+     "centre": true,
+     "decale": [
+      3,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Petite branche de l'artère hépatique gauche qui rejoint la partie gauche du lobe caudé (segment I).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Medial segmental artery of liver",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "gauche",
+   "rayon": [
+    0.8,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Left medial segment of liver (IV)",
+     "centre": true,
+     "decale": [
+      4,
+      6,
+      0
+     ]
+    },
+    {
+     "objet": "Left medial segment of liver (IV)",
+     "centre": true
+    }
+   ],
+   "texte": "Branche de l'artère hépatique gauche destinée au segment IV du foie (lobe carré), le long du sillon ombilical.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral segmental artery of liver",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "gauche",
+   "rayon": [
+    0.8,
+    0.5
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Left medial segment of liver (IV)",
+      "centre": true,
+      "decale": [
+       4,
+       6,
+       0
+      ]
+     },
+     {
+      "objet": "Left anterior lateral segment of liver (III)",
+      "centre": true
+     }
+    ],
+    [
+     {
+      "objet": "Left medial segment of liver (IV)",
+      "centre": true,
+      "decale": [
+       4,
+       6,
+       0
+      ]
+     },
+     {
+      "objet": "Liver",
+      "rel": [
+       -0.4,
+       0.3,
+       -0.2
+      ]
+     },
+     {
+      "objet": "Left posterior lateral segment of liver (II)",
+      "centre": true
+     }
+    ]
+   ],
+   "texte": "Branche de l'artère hépatique gauche pour le secteur latéral du lobe gauche : segment III en avant et segment II en arrière.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Dorsal pancreatic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.9,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "Splenic artery",
+     "a": 0.03
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.4,
+     "decale": [
+      0,
+      3,
+      -8
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.4,
+     "decale": [
+      0,
+      -8,
+      -4
+     ]
+    }
+   ],
+   "texte": "Née à l'origine de l'artère splénique, elle descend derrière le col du pancréas et se divise à son bord inférieur en branches droite (prépancréatique) et gauche (pancréatique inférieure).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior pancreatic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Pancreas",
+     "a": 0.4,
+     "decale": [
+      0,
+      -8,
+      -4
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.6,
+     "decale": [
+      0,
+      -8,
+      -4
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.8,
+     "decale": [
+      0,
+      -6,
+      -3
+     ]
+    }
+   ],
+   "texte": "Branche gauche de l'artère pancréatique dorsale, elle longe le bord inférieur du corps du pancréas vers la queue et s'anastomose avec la grande artère pancréatique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Prepancreatic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Pancreas",
+     "a": 0.4,
+     "decale": [
+      0,
+      -8,
+      -4
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.25,
+     "decale": [
+      0,
+      -3,
+      9
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.1,
+     "decale": [
+      0,
+      -2,
+      9
+     ]
+    }
+   ],
+   "texte": "Branche droite de l'artère pancréatique dorsale, elle passe en avant de la tête du pancréas et s'anastomose avec les arcades pancréaticoduodénales.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Great pancreatic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Splenic artery",
+     "a": 0.45
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.65,
+     "decale": [
+      0,
+      3,
+      -3
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "a": 0.62,
+     "decale": [
+      0,
+      -6,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère splénique à mi-parcours, elle plonge dans le parenchyme du corps du pancréas et s'anastomose avec l'artère pancréatique inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Arterior superior pancreaticoduodenal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Gastroduodenal artery",
+     "a": 0.45
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.85,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.95,
+      -0.5,
+      0.9
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.9,
+      -0.95,
+      0.8
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère gastroduodénale, elle descend en avant de la tête du pancréas dans le sillon duodéno-pancréatique et s'anastomose avec l'artère pancréaticoduodénale antéro-inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior superior pancreaticoduodenal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Gastroduodenal artery",
+     "a": 0.15
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.75,
+      0.5,
+      -0.7
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.85,
+      -0.2,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.85,
+      -0.8,
+      -0.8
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère gastroduodénale, elle passe en avant du canal cholédoque puis descend en arrière de la tête du pancréas pour s'anastomoser avec la pancréaticoduodénale postéro-inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Retroduodenal arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Gastroduodenal artery",
+      "a": 0.1
+     },
+     {
+      "objet": "Duodenum",
+      "rel": [
+       -0.5,
+       0.8,
+       -0.2
+      ]
+     },
+     {
+      "objet": "Duodenum",
+      "rel": [
+       -0.6,
+       0.5,
+       -0.5
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Gastroduodenal artery",
+      "a": 0.1
+     },
+     {
+      "objet": "Duodenum",
+      "rel": [
+       -0.3,
+       0.85,
+       -0.45
+      ]
+     },
+     {
+      "objet": "Duodenum",
+      "rel": [
+       -0.5,
+       0.7,
+       -0.7
+      ]
+     }
+    ]
+   ],
+   "texte": "Petites branches de l'artère gastroduodénale qui passent en arrière de la partie supérieure du duodénum et irriguent sa paroi ainsi que la partie basse du cholédoque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior inferior pancreaticoduodenal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Inferior pancreaticoduodenal artery",
+     "a": 0.2
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.5,
+      -0.4,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.85,
+      -0.2,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Pancreas",
+     "rel": [
+      -0.85,
+      0.3,
+      -0.85
+     ]
+    }
+   ],
+   "texte": "Branche postérieure de l'artère pancréaticoduodénale inférieure, elle remonte derrière la tête du pancréas pour s'anastomoser avec l'artère pancréaticoduodénale postéro-supérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Short gastric arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Splenic artery",
+      "a": 0.82
+     },
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.8,
+       0.55,
+       -0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Splenic artery",
+      "a": 0.9
+     },
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.85,
+       0.4,
+       0.0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Splenic artery",
+      "a": 0.95
+     },
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.88,
+       0.25,
+       0.15
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Splenic artery",
+      "a": 1.0
+     },
+     {
+      "objet": "Stomach",
+      "rel": [
+       0.85,
+       0.1,
+       0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Quatre à six petites branches de l'artère splénique qui gagnent le fundus de l'estomac par le ligament gastro-splénique et irriguent la partie haute de la grande courbure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior gastric artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Splenic artery",
+     "a": 0.4
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      0.25,
+      0.3,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      0.4,
+      0.55,
+      -0.8
+     ]
+    }
+   ],
+   "texte": "Branche inconstante de l'artère splénique qui monte en arrière de l'estomac et irrigue la face postérieure du corps et du fundus.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Left gastro-omental artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.0,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "Splenic artery",
+     "a": 0.88
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      0.95,
+      0.1,
+      0.5
+     ]
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      0.7,
+      -0.85,
+      0.9
+     ],
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      0.2,
+      -0.95,
+      0.95
+     ],
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      -0.1,
+      -0.95,
+      0.95
+     ],
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère splénique, elle descend dans le grand omentum à un travers de doigt de la grande courbure de l'estomac et s'anastomose avec l'artère gastro-omentale droite.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Right gastro-omental artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    1.0,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "Gastroduodenal artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      -0.87,
+      -0.9,
+      0.9
+     ],
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      -0.6,
+      -0.98,
+      0.95
+     ],
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    },
+    {
+     "objet": "Stomach",
+     "rel": [
+      -0.1,
+      -0.98,
+      0.95
+     ],
+     "decale": [
+      0,
+      -4,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche terminale de l'artère gastroduodénale, elle chemine le long de la grande courbure de l'estomac dans le grand omentum et s'anastomose avec la gastro-omentale gauche.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Jejunal arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.9,
+    0.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.3
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.5,
+       0.8,
+       0.0
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.85,
+       0.8,
+       0.0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.37
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.35,
+       0.7,
+       0.2
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.6,
+       0.9,
+       0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.44
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.2,
+       0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       0.3,
+       0.4,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.51
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       -0.1,
+       0.2,
+       0.3
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       -0.1,
+       0.15,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.58
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       -0.3,
+       -0.1,
+       0.3
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       -0.4,
+       -0.2,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.65
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       -0.6,
+       -0.1,
+       0.2
+      ]
+     },
+     {
+      "objet": "Jejunum",
+      "rel": [
+       -0.75,
+       -0.2,
+       0.2
+      ]
+     }
+    ]
+   ],
+   "texte": "Quatre à six branches nées du bord gauche de l'artère mésentérique supérieure ; elles cheminent dans le mésentère, s'unissent en arcades et irriguent le jéjunum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Ileal arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.7
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.7,
+       0.5,
+       0.1
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.8,
+       0.1,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.76
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.4,
+       0.3,
+       0.2
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.35,
+       -0.2,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.82
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.0,
+       0.2,
+       0.2
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       0.0,
+       -0.2,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.88
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       -0.35,
+       0.2,
+       0.2
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       -0.4,
+       -0.3,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Superior mesenteric artery",
+      "a": 0.94
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       -0.7,
+       0.3,
+       0.2
+      ]
+     },
+     {
+      "objet": "Ileum",
+      "rel": [
+       -0.8,
+       -0.2,
+       0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Branches nées du bord gauche de l'artère mésentérique supérieure sous les jéjunales ; elles forment des arcades dans le mésentère et irriguent l'iléon.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior caecal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Ileocolic artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Ascending colon",
+     "rel": [
+      -0.6,
+      -0.4,
+      0.9
+     ]
+    },
+    {
+     "objet": "Ascending colon",
+     "rel": [
+      0.0,
+      -0.85,
+      0.95
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère iléo-colique, elle passe en avant de la jonction iléo-caecale et irrigue la face antérieure du caecum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior caecal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Ileocolic artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Ascending colon",
+     "rel": [
+      -0.9,
+      -0.3,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Ascending colon",
+     "rel": [
+      -0.2,
+      -0.85,
+      -0.9
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère iléo-colique, elle passe en arrière de l'iléon terminal et irrigue la face postérieure du caecum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Intercolic anastomotic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "milieu",
+   "rayon": [
+    0.6,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Colic branch of ileocolic artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Right colic artery",
+     "a": 0.78
+    },
+    {
+     "objet": "Right colic artery",
+     "a": 0.9
+    }
+   ],
+   "texte": "Anastomose entre les artères coliques voisines, le long du côlon ascendant ; elle participe à l'artère marginale du côlon qui assure la continuité de l'irrigation.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior segmental artery of kidney",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Anterior branch of renal artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.0,
+      0.5,
+      0.2
+     ]
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.0,
+      0.85,
+      0.1
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure de l'artère rénale, elle irrigue le segment supérieur, au pôle supérieur du rein.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior superior segmental artery of kidney",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Anterior branch of renal artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.3,
+      0.4,
+      0.5
+     ]
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.6,
+      0.5,
+      0.4
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure de l'artère rénale pour le segment antérosupérieur du rein.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior inferior segmental artery of kidney",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Anterior branch of renal artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.3,
+      -0.4,
+      0.5
+     ]
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.6,
+      -0.45,
+      0.4
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure de l'artère rénale pour le segment antéro-inférieur du rein.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior segmental artery of kidney",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Anterior branch of renal artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.2,
+      -0.7,
+      0.2
+     ]
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.1,
+      -0.9,
+      0.1
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure de l'artère rénale pour le segment inférieur, au pôle inférieur du rein.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior segmental artery of kidney",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.45
+   ],
+   "points": [
+    {
+     "objet": "Posterior branch of renal artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.4,
+      0.0,
+      -0.5
+     ]
+    },
+    {
+     "objet": "Kidney",
+     "rel": [
+      0.6,
+      0.1,
+      -0.6
+     ]
+    }
+   ],
+   "texte": "Prolongement de la division postérieure de l'artère rénale, elle passe derrière le bassinet et irrigue à elle seule le segment postérieur du rein.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior suprarenal arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Abdominal aorta",
+      "a": 0.2
+     },
+     {
+      "objet": "Suprarenal gland",
+      "rel": [
+       -0.8,
+       0.5,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Suprarenal gland",
+      "rel": [
+       -0.2,
+       0.8,
+       -0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Abdominal aorta",
+      "a": 0.2
+     },
+     {
+      "objet": "Suprarenal gland",
+      "rel": [
+       -0.6,
+       0.6,
+       0.0
+      ]
+     },
+     {
+      "objet": "Suprarenal gland",
+      "rel": [
+       0.2,
+       0.8,
+       0.1
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Abdominal aorta",
+      "a": 0.2
+     },
+     {
+      "objet": "Suprarenal gland",
+      "rel": [
+       -0.5,
+       0.7,
+       -0.5
+      ]
+     },
+     {
+      "objet": "Suprarenal gland",
+      "rel": [
+       0.0,
+       0.9,
+       -0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Six à huit petites branches de l'artère phrénique inférieure, représentées ici depuis son origine ; elles gagnent la partie haute de la glande surrénale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle suprarenal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Abdominal aorta",
+     "a": 0.47
+    },
+    {
+     "objet": "Suprarenal gland",
+     "rel": [
+      -0.9,
+      0.0,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Suprarenal gland",
+     "rel": [
+      -0.4,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Petite branche née directement de l'aorte abdominale au niveau de l'artère mésentérique supérieure ; elle gagne le bord médial de la glande surrénale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Umbilical artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.3,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "Anterior division of internal iliac artery",
+     "a": 0.5
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      1.25,
+      0.3,
+      0.3
+     ]
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      0.95,
+      1.0,
+      0.9
+     ]
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      0.7,
+      1.5,
+      1.2
+     ]
+    },
+    {
+     "objet": "Inferior epigastric artery",
+     "a": 0.45,
+     "decale": [
+      -8,
+      0,
+      0
+     ]
+    },
+    {
+     "objet": "Inferior epigastric artery",
+     "a": 0.8,
+     "decale": [
+      -22,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure de l'artère iliaque interne ; sa partie proximale, perméable, longe la paroi pelvienne et le bas-fond vésical, puis elle remonte, oblitérée, sous la paroi abdominale antérieure (ligament ombilical médial) jusqu'à l'ombilic.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior vesical arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       1.25,
+       0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       0.9,
+       0.5,
+       0.4
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       0.5,
+       0.8,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       1.25,
+       0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       1.0,
+       0.4,
+       0.0
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       0.6,
+       0.7,
+       -0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       1.25,
+       0.3,
+       0.3
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       0.95,
+       0.6,
+       0.7
+      ]
+     },
+     {
+      "objet": "Urinary bladder",
+      "rel": [
+       0.45,
+       0.9,
+       0.5
+      ]
+     }
+    ]
+   ],
+   "texte": "Branches de la partie perméable de l'artère ombilicale pour le dôme et le corps de la vessie.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior vesical artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Anterior division of internal iliac artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      1.2,
+      -0.3,
+      -0.7
+     ]
+    },
+    {
+     "objet": "Urinary bladder",
+     "rel": [
+      0.6,
+      -0.8,
+      -0.8
+     ]
+    },
+    {
+     "objet": "Prostate",
+     "rel": [
+      0.6,
+      0.3,
+      -0.1
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure de l'artère iliaque interne ; elle gagne la base de la vessie, la vésicule séminale et la prostate (chez la femme, elle correspond à l'artère vaginale).",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle anorectal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Anterior division of internal iliac artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Rectum",
+     "rel": [
+      1.5,
+      -0.1,
+      -0.2
+     ]
+    },
+    {
+     "objet": "Rectum",
+     "rel": [
+      0.9,
+      -0.1,
+      -0.1
+     ]
+    }
+   ],
+   "texte": "Branche de la division antérieure de l'artère iliaque interne, elle passe sur le plancher pelvien et irrigue la partie moyenne et basse du rectum en s'anastomosant avec les artères anorectales supérieure et inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior anorectal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Internal pudendal artery",
+     "a": 0.75
+    },
+    {
+     "objet": "External anal sphincter",
+     "centre": true,
+     "decale": [
+      12,
+      5,
+      0
+     ]
+    },
+    {
+     "objet": "External anal sphincter",
+     "centre": true
+    }
+   ],
+   "texte": "Branche de l'artère pudendale interne née dans la fosse ischio-anale ; elle traverse la graisse de la fosse et irrigue le canal anal et le sphincter externe de l'anus.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Perineal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Internal pudendal artery",
+     "a": 0.9
+    },
+    {
+     "objet": "Internal pudendal artery",
+     "a": 0.9,
+     "decale": [
+      -10,
+      -3,
+      25
+     ]
+    },
+    {
+     "objet": "Corpus spongiosum of penis",
+     "a": 0.95,
+     "decale": [
+      14,
+      -2,
+      0
+     ]
+    },
+    {
+     "objet": "Corpus spongiosum of penis",
+     "a": 0.92,
+     "decale": [
+      5,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère pudendale interne, elle chemine sous la symphyse et gagne le périnée superficiel, où elle irrigue les muscles superficiels, le bulbe du pénis et le scrotum.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral sacral arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Posterior division of internal iliac artery",
+      "a": 0.4
+     },
+     {
+      "objet": "Sacrum",
+      "a": 0.72,
+      "decale": [
+       20,
+       0,
+       14
+      ]
+     },
+     {
+      "objet": "Sacrum",
+      "a": 0.65,
+      "decale": [
+       22,
+       0,
+       14
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Posterior division of internal iliac artery",
+      "a": 0.4
+     },
+     {
+      "objet": "Sacrum",
+      "a": 0.6,
+      "decale": [
+       22,
+       0,
+       14
+      ]
+     },
+     {
+      "objet": "Sacrum",
+      "a": 0.4,
+      "decale": [
+       22,
+       0,
+       14
+      ]
+     },
+     {
+      "objet": "Sacrum",
+      "a": 0.25,
+      "decale": [
+       18,
+       0,
+       14
+      ]
+     }
+    ]
+   ],
+   "texte": "Branches de la division postérieure de l'artère iliaque interne qui descendent en avant des foramens sacrés antérieurs ; leurs rameaux pénètrent dans le canal sacral pour irriguer les racines nerveuses et les méninges.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Deep circumflex iliac artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "External iliac artery",
+     "a": 0.93
+    },
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.55,
+     "decale": [
+      0,
+      8,
+      -4
+     ]
+    },
+    {
+     "repere": "Anterior superior iliac spine",
+     "decale": [
+      -8,
+      -4,
+      -5
+     ]
+    },
+    {
+     "repere": "Iliac crest",
+     "decale": [
+      -6,
+      0,
+      -3
+     ]
+    }
+   ],
+   "texte": "Née de l'artère iliaque externe juste au-dessus du ligament inguinal, elle longe celui-ci vers l'épine iliaque antéro-supérieure puis la crête iliaque, en irrigant les muscles larges de l'abdomen et le muscle iliaque.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superficial circumflex iliac artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Femoral artery",
+     "a": 0.05
+    },
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.45,
+     "decale": [
+      0,
+      -14,
+      8
+     ]
+    },
+    {
+     "objet": "Inguinal ligament",
+     "a": 0.8,
+     "decale": [
+      0,
+      -14,
+      8
+     ]
+    },
+    {
+     "repere": "Anterior superior iliac spine",
+     "decale": [
+      -5,
+      -10,
+      10
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère fémorale sous le ligament inguinal, elle suit superficiellement celui-ci vers l'épine iliaque antéro-supérieure et irrigue la peau et les ganglions de la région inguinale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior thyroid artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.2,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "External carotid artery",
+     "a": 0.04
+    },
+    {
+     "objet": "Thyroid cartilage",
+     "rel": [
+      1.35,
+      0.55,
+      0.4
+     ]
+    },
+    {
+     "objet": "Thyroid gland",
+     "rel": [
+      0.8,
+      0.8,
+      0.3
+     ]
+    },
+    {
+     "objet": "Thyroid gland",
+     "rel": [
+      0.4,
+      0.2,
+      0.6
+     ]
+    }
+   ],
+   "texte": "Première branche de la carotide externe, elle descend en avant vers le pôle supérieur du lobe thyroïdien, longe le bord latéral du cartilage thyroïde et irrigue la glande thyroïde.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior laryngeal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Thyroid cartilage",
+     "rel": [
+      1.35,
+      0.55,
+      0.4
+     ]
+    },
+    {
+     "objet": "Thyroid cartilage",
+     "rel": [
+      0.9,
+      0.95,
+      0.4
+     ]
+    },
+    {
+     "objet": "Thyroid cartilage",
+     "rel": [
+      0.4,
+      0.8,
+      0.0
+     ]
+    },
+    {
+     "objet": "Epiglottis",
+     "rel": [
+      0.9,
+      -0.4,
+      -0.5
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère thyroïdienne supérieure, elle perfore la membrane thyro-hyoïdienne avec le nerf laryngé interne et irrigue la muqueuse et les muscles du larynx.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior laryngeal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Inferior thyroid artery",
+     "a": 0.85
+    },
+    {
+     "objet": "Thyroid gland",
+     "rel": [
+      0.7,
+      0.9,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Cricoid cartilage",
+     "rel": [
+      1.0,
+      0.2,
+      -0.5
+     ]
+    },
+    {
+     "objet": "Cricoid cartilage",
+     "rel": [
+      0.4,
+      0.6,
+      -0.9
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère thyroïdienne inférieure, elle monte avec le nerf laryngé récurrent dans la gouttière trachéo-œsophagienne et pénètre dans le larynx derrière l'articulation cricothyroïdienne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Oesophageal thyroid artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Inferior thyroid artery",
+      "a": 0.5
+     },
+     {
+      "objet": "Inferior thyroid artery",
+      "a": 0.5,
+      "decale": [
+       -14,
+       -10,
+       0
+      ]
+     },
+     {
+      "objet": "Oesophagus",
+      "proche": true
+     }
+    ],
+    [
+     {
+      "objet": "Inferior thyroid artery",
+      "a": 0.35
+     },
+     {
+      "objet": "Inferior thyroid artery",
+      "a": 0.35,
+      "decale": [
+       -14,
+       -14,
+       0
+      ]
+     },
+     {
+      "objet": "Oesophagus",
+      "proche": true
+     }
+    ]
+   ],
+   "texte": "Rameaux œsophagiens de l'artère thyroïdienne inférieure ; ils gagnent le segment cervical de l'œsophage et s'anastomosent avec les branches œsophagiennes de l'aorte.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Ascending cervical artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Inferior thyroid artery",
+     "a": 0.12
+    },
+    {
+     "objet": "Scalenus anterior muscle",
+     "rel": [
+      0.0,
+      -0.5,
+      1.05
+     ]
+    },
+    {
+     "objet": "Scalenus anterior muscle",
+     "rel": [
+      0.2,
+      0.1,
+      1.05
+     ]
+    },
+    {
+     "objet": "Scalenus anterior muscle",
+     "rel": [
+      0.35,
+      0.6,
+      1.0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère thyroïdienne inférieure, elle monte sur le muscle scalène antérieur, en dedans du nerf phrénique, et irrigue les muscles profonds du cou et, par des rameaux spinaux, le canal vertébral.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lingual artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.4,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "External carotid artery",
+     "a": 0.15
+    },
+    {
+     "repere": "Greater horn of hyoid bone",
+     "decale": [
+      0,
+      5,
+      0
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.55,
+      -0.5,
+      -0.35
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.45,
+      -0.45,
+      0.1
+     ]
+    }
+   ],
+   "texte": "Née de la carotide externe en regard de la grande corne de l'os hyoïde, elle passe en dedans du muscle hyoglosse et irrigue la langue et le plancher de la bouche.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Deep lingual artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.45,
+      -0.45,
+      0.1
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.3,
+      -0.5,
+      0.6
+     ]
+    },
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.15,
+      -0.4,
+      0.95
+     ]
+    }
+   ],
+   "texte": "Terminaison de l'artère linguale, elle monte vers la pointe de la langue sur sa face inférieure, entre le génioglosse et le muscle longitudinal inférieur.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Sublingual artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Tongue",
+     "rel": [
+      0.45,
+      -0.45,
+      0.1
+     ]
+    },
+    {
+     "objet": "Sublingual gland",
+     "centre": true,
+     "decale": [
+      -4,
+      -3,
+      -6
+     ]
+    },
+    {
+     "objet": "Sublingual gland",
+     "centre": true
+    }
+   ],
+   "texte": "Branche de l'artère linguale née au bord antérieur de l'hyoglosse ; elle longe le canal submandibulaire jusqu'à la glande sublinguale et irrigue aussi le plancher de la bouche et la gencive.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Ascending palatine artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Facial artery",
+     "a": 0.04
+    },
+    {
+     "objet": "Soft palate",
+     "rel": [
+      1.6,
+      -2.5,
+      -0.9
+     ]
+    },
+    {
+     "objet": "Soft palate",
+     "rel": [
+      1.2,
+      -0.8,
+      -0.5
+     ]
+    },
+    {
+     "objet": "Soft palate",
+     "rel": [
+      0.6,
+      0.0,
+      -0.1
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère faciale, elle monte le long de la paroi latérale du pharynx puis sur le muscle élévateur du voile du palais, et irrigue le voile du palais et la trompe auditive.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior auricular artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "External carotid artery",
+     "a": 0.85
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      -9,
+      -7,
+      12
+     ]
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      3,
+      10,
+      -2
+     ]
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      6,
+      18,
+      -2
+     ]
+    },
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      8,
+      38,
+      -4
+     ]
+    }
+   ],
+   "texte": "Branche de la carotide externe au-dessus du ventre postérieur du digastrique ; elle monte derrière le pavillon de l'oreille, passe au niveau du foramen stylo-mastoïdien et irrigue le pavillon, la peau de la région mastoïdienne et le cuir chevelu.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Stylomastoid artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "repere": "Mastoid process",
+     "decale": [
+      -9,
+      -7,
+      12
+     ]
+    },
+    {
+     "objet": "Malleus",
+     "centre": true,
+     "decale": [
+      -1,
+      -7,
+      2
+     ]
+    },
+    {
+     "objet": "Malleus",
+     "centre": true,
+     "decale": [
+      0,
+      -2,
+      2
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère auriculaire postérieure, elle entre par le foramen stylo-mastoïdien dans le canal facial et irrigue le nerf facial, les cellules mastoïdiennes et la cavité tympanique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior tympanic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.35,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Malleus",
+     "centre": true,
+     "decale": [
+      -1,
+      -7,
+      2
+     ]
+    },
+    {
+     "objet": "Tympanic membrane",
+     "centre": true,
+     "decale": [
+      0,
+      2,
+      -3
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère stylo-mastoïdienne, elle gagne la membrane tympanique par le canalicule de la corde du tympan et s'anastomose avec les autres artères tympaniques.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Inferior tympanic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Ascending pharyngeal artery",
+     "a": 0.72
+    },
+    {
+     "objet": "Malleus",
+     "centre": true,
+     "decale": [
+      -12,
+      -12,
+      10
+     ]
+    },
+    {
+     "objet": "Malleus",
+     "centre": true,
+     "decale": [
+      -3,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Petite branche de l'artère pharyngienne ascendante, elle traverse le canalicule tympanique et irrigue la paroi médiale de la cavité tympanique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior tympanic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Maxillary artery",
+     "a": 0.1
+    },
+    {
+     "objet": "Tympanic membrane",
+     "centre": true,
+     "decale": [
+      0,
+      3,
+      4
+     ]
+    },
+    {
+     "objet": "Tympanic membrane",
+     "centre": true,
+     "decale": [
+      -2,
+      0,
+      2
+     ]
+    }
+   ],
+   "texte": "Branche de la partie initiale de l'artère maxillaire, elle passe par la fissure pétro-tympanique et irrigue la membrane tympanique et la cavité tympanique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Deep auricular artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Maxillary artery",
+     "a": 0.08
+    },
+    {
+     "objet": "Tympanic membrane",
+     "centre": true,
+     "decale": [
+      4,
+      -3,
+      4
+     ]
+    },
+    {
+     "objet": "Tympanic membrane",
+     "centre": true,
+     "decale": [
+      1.5,
+      0,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère maxillaire, elle traverse la paroi du méat acoustique externe et irrigue sa peau ainsi que la face externe de la membrane tympanique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior tympanic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "points": [
+    {
+     "objet": "Middle meningeal artery",
+     "a": 0.15
+    },
+    {
+     "objet": "Malleus",
+     "centre": true,
+     "decale": [
+      -8,
+      10,
+      8
+     ]
+    },
+    {
+     "objet": "Malleus",
+     "centre": true,
+     "decale": [
+      -2,
+      5,
+      0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère méningée moyenne, elle suit le petit nerf pétreux dans le hiatus du canal facial et irrigue la paroi supérieure de la cavité tympanique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Caroticotympanic arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Internal carotid artery",
+      "a": 0.55
+     },
+     {
+      "objet": "Malleus",
+      "centre": true,
+      "decale": [
+       -12,
+       -14,
+       -2
+      ]
+     },
+     {
+      "objet": "Malleus",
+      "centre": true,
+      "decale": [
+       -3,
+       -4,
+       -2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Internal carotid artery",
+      "a": 0.58
+     },
+     {
+      "objet": "Malleus",
+      "centre": true,
+      "decale": [
+       -12,
+       -11,
+       -5
+      ]
+     },
+     {
+      "objet": "Malleus",
+      "centre": true,
+      "decale": [
+       -3,
+       -6,
+       -4
+      ]
+     }
+    ]
+   ],
+   "texte": "Une ou deux petites branches de la partie pétreuse de l'artère carotide interne, qui traversent la paroi du canal carotidien et irriguent la cavité tympanique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior meningeal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Ascending pharyngeal artery",
+     "a": 0.8
+    },
+    {
+     "repere": "Jugular notch of occipital bone",
+     "decale": [
+      0,
+      -5,
+      10
+     ]
+    },
+    {
+     "repere": "Jugular notch of occipital bone"
+    },
+    {
+     "repere": "Jugular notch of occipital bone",
+     "decale": [
+      -4,
+      10,
+      -14
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère pharyngienne ascendante, elle monte par le foramen jugulaire et irrigue la dure-mère de la fosse crânienne postérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Zygomatico-orbital artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Superficial temporal artery",
+     "a": 0.12
+    },
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      1.1,
+      0.3,
+      -0.4
+     ]
+    },
+    {
+     "objet": "Zygomatic bone",
+     "rel": [
+      1.1,
+      0.5,
+      0.7
+     ]
+    },
+    {
+     "objet": "Orbital part of orbicularis oculi",
+     "rel": [
+      0.9,
+      0.2,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère temporale superficielle, elle longe le bord supérieur de l'arcade zygomatique jusqu'au bord latéral de l'orbite et irrigue le muscle orbiculaire de l'œil.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle temporal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Superficial temporal artery",
+     "a": 0.18
+    },
+    {
+     "objet": "Temporalis muscle",
+     "rel": [
+      0.7,
+      -0.2,
+      0.0
+     ]
+    },
+    {
+     "objet": "Temporalis muscle",
+     "rel": [
+      0.3,
+      0.1,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère temporale superficielle née au-dessus de l'arcade zygomatique ; elle perfore le fascia temporal et irrigue le muscle temporal.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Masseteric artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Maxillary artery",
+     "a": 0.3
+    },
+    {
+     "objet": "Maxillary artery",
+     "a": 0.3,
+     "decale": [
+      6,
+      2,
+      0
+     ]
+    },
+    {
+     "objet": "Deep part of masseter",
+     "rel": [
+      0.2,
+      0.7,
+      0.5
+     ]
+    },
+    {
+     "objet": "Deep part of masseter",
+     "rel": [
+      0.3,
+      0.0,
+      0.5
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère maxillaire, elle passe dans l'échancrure sigmoïde de la mandibule et pénètre la face profonde du muscle masséter.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior superior alveolar artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Infra-orbital artery",
+     "a": 0.6
+    },
+    {
+     "objet": "Maxilla",
+     "rel": [
+      0.1,
+      -0.5,
+      0.8
+     ]
+    },
+    {
+     "objet": "Maxilla",
+     "rel": [
+      -0.5,
+      -0.9,
+      0.85
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère infra-orbitaire dans le canal infra-orbitaire ; elle descend dans la paroi antérieure du maxillaire et irrigue les incisives, la canine et la muqueuse du sinus maxillaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Middle superior alveolar artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Infra-orbital artery",
+     "a": 0.15
+    },
+    {
+     "objet": "Maxilla",
+     "rel": [
+      0.6,
+      -0.6,
+      0.2
+     ]
+    },
+    {
+     "objet": "Maxilla",
+     "rel": [
+      0.4,
+      -0.9,
+      0.3
+     ]
+    }
+   ],
+   "texte": "Branche inconstante de l'artère infra-orbitaire, elle descend dans la paroi latérale du sinus maxillaire et irrigue les prémolaires et la muqueuse du sinus.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lesser palatine arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Descending palatine artery",
+      "a": 0.3
+     },
+     {
+      "objet": "Soft palate",
+      "rel": [
+       0.9,
+       0.5,
+       0.2
+      ]
+     },
+     {
+      "objet": "Soft palate",
+      "rel": [
+       0.7,
+       0.0,
+       -0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Descending palatine artery",
+      "a": 0.3
+     },
+     {
+      "objet": "Soft palate",
+      "rel": [
+       1.0,
+       0.4,
+       0.5
+      ]
+     },
+     {
+      "objet": "Soft palate",
+      "rel": [
+       0.6,
+       0.0,
+       0.1
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux petites branches de l'artère palatine descendante qui sortent par les canaux palatins accessoires et irriguent le voile du palais et l'amygdale palatine.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Sphenopalatine artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.7
+   ],
+   "points": [
+    {
+     "objet": "Maxillary artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Posterior septal branches of sphenopalatine artery",
+     "a": 0.0,
+     "decale": [
+      12,
+      -1,
+      3
+     ]
+    },
+    {
+     "objet": "Posterior septal branches of sphenopalatine artery",
+     "a": 0.0
+    }
+   ],
+   "texte": "Branche terminale de l'artère maxillaire dans la fosse ptérygo-palatine ; elle entre dans la cavité nasale par le foramen sphéno-palatin et donne les branches nasales postéro-latérales et septales postérieures.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral palpebral arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Lacrimal artery",
+      "a": 0.97
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.8,
+       0.55,
+       0.9
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.2,
+       0.65,
+       1.0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Lacrimal artery",
+      "a": 0.97
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.8,
+       -0.5,
+       0.9
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       0.2,
+       -0.6,
+       1.0
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux petites branches de l'artère lacrymale, supérieure et inférieure, qui gagnent les paupières près de leur angle latéral et forment les arcades tarsiennes.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Medial palpebral arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Ophthalmic artery",
+      "a": 1.0
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       -0.8,
+       0.55,
+       0.9
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       -0.1,
+       0.65,
+       1.0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Ophthalmic artery",
+      "a": 1.0
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       -0.8,
+       -0.5,
+       0.9
+      ]
+     },
+     {
+      "objet": "Palpebral part of orbicularis oculi",
+      "rel": [
+       -0.1,
+       -0.6,
+       1.0
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux branches de l'artère ophtalmique, supérieure et inférieure, qui gagnent les paupières près de l'angle médial de l'œil et forment avec les latérales les arcades tarsiennes.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Dorsal nasal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Ophthalmic artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Lacrimal sac",
+     "rel": [
+      0.5,
+      1.2,
+      1.2
+     ]
+    },
+    {
+     "objet": "Nasal bone",
+     "rel": [
+      0.9,
+      0.3,
+      1.2
+     ]
+    },
+    {
+     "objet": "Nasal bone",
+     "rel": [
+      0.6,
+      -0.3,
+      1.3
+     ]
+    }
+   ],
+   "texte": "Branche terminale de l'artère ophtalmique, elle sort de l'orbite au-dessus du ligament palpébral médial et irrigue la racine et le dos du nez ; elle s'anastomose avec l'artère angulaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Medial dorsal cutaneous branch-posterior intercostal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07
+    },
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07,
+     "decale": [
+      2,
+      0,
+      -18
+     ]
+    },
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07,
+     "decale": [
+      0,
+      0,
+      -40
+     ]
+    },
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07,
+     "decale": [
+      -4,
+      0,
+      -62
+     ]
+    }
+   ],
+   "texte": "Rameau de la branche dorsale de l'artère intercostale postérieure ; il passe entre les processus transverses, contourne les muscles profonds du dos près des processus épineux et se termine dans la peau de la ligne médiane du dos.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Lateral dorsal cutaneous branch-posterior intercostal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07
+    },
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07,
+     "decale": [
+      3,
+      0,
+      -18
+     ]
+    },
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07,
+     "decale": [
+      16,
+      0,
+      -40
+     ]
+    },
+    {
+     "objet": "Posterior intercostal arteries",
+     "a": 0.07,
+     "decale": [
+      30,
+      -3,
+      -62
+     ]
+    }
+   ],
+   "texte": "Rameau de la branche dorsale de l'artère intercostale postérieure ; il traverse les muscles érecteurs du rachis et gagne la peau de la région dorsale latérale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Pericardiacophrenic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Internal thoracic artery",
+     "a": 0.08
+    },
+    {
+     "objet": "Diaphragm",
+     "rel": [
+      0.5,
+      1.85,
+      0.4
+     ]
+    },
+    {
+     "objet": "Diaphragm",
+     "rel": [
+      0.62,
+      1.3,
+      0.35
+     ]
+    },
+    {
+     "objet": "Diaphragm",
+     "rel": [
+      0.55,
+      0.55,
+      0.3
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère thoracique interne, elle descend entre la plèvre et le péricarde avec le nerf phrénique et irrigue le péricarde, la plèvre et la partie centrale du diaphragme.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Medial mammary internal thoracic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.62
+     },
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.62,
+      "decale": [
+       4,
+       0,
+       10
+      ]
+     },
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.62,
+      "decale": [
+       10,
+       -2,
+       22
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.7
+     },
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.7,
+      "decale": [
+       4,
+       0,
+       10
+      ]
+     },
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.7,
+      "decale": [
+       10,
+       -2,
+       22
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.78
+     },
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.78,
+      "decale": [
+       4,
+       0,
+       10
+      ]
+     },
+     {
+      "objet": "Internal thoracic artery",
+      "a": 0.78,
+      "decale": [
+       10,
+       -2,
+       22
+      ]
+     }
+    ]
+   ],
+   "texte": "Branches perforantes de l'artère thoracique interne dans les deuxième à quatrième espaces intercostaux ; elles traversent le muscle grand pectoral et irriguent la partie médiale de la glande mammaire et la peau.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Superior thoracic artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.45
+   ],
+   "points": [
+    {
+     "objet": "Axillary artery",
+     "a": 0.12
+    },
+    {
+     "objet": "Pectoralis minor muscle",
+     "rel": [
+      -0.7,
+      0.9,
+      -0.3
+     ]
+    },
+    {
+     "objet": "Pectoralis minor muscle",
+     "rel": [
+      -0.3,
+      0.2,
+      0.4
+     ]
+    },
+    {
+     "objet": "Pectoralis minor muscle",
+     "rel": [
+      0.1,
+      -0.4,
+      0.6
+     ]
+    }
+   ],
+   "texte": "Petite branche de la première partie de l'artère axillaire, elle longe le bord supérieur du petit pectoral et irrigue les muscles subclavier et pectoraux ainsi que les deux premiers espaces intercostaux.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Radial recurrent artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Radial artery",
+     "a": 0.02
+    },
+    {
+     "objet": "Radial artery",
+     "a": 0.02,
+     "decale": [
+      7,
+      14,
+      0
+     ]
+    },
+    {
+     "objet": "Radial collateral artery",
+     "a": 0.97
+    }
+   ],
+   "texte": "Née de l'artère radiale au pli du coude, elle remonte entre le brachio-radial et le brachial et s'anastomose avec l'artère collatérale radiale dans le réseau du coude.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior ulnar recurrent artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "(Ulnar recurrent artery)",
+     "a": 0.0
+    },
+    {
+     "objet": "(Ulnar recurrent artery)",
+     "a": 0.0,
+     "decale": [
+      0,
+      10,
+      -8
+     ]
+    },
+    {
+     "objet": "Inferior ulnar collateral artery",
+     "a": 0.7
+    }
+   ],
+   "texte": "Branche de l'artère récurrente ulnaire, elle remonte devant l'épicondyle médial entre le brachial et le rond pronateur et s'anastomose avec l'artère collatérale ulnaire inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior ulnar recurrent artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "(Ulnar recurrent artery)",
+     "a": 0.0
+    },
+    {
+     "objet": "(Ulnar recurrent artery)",
+     "a": 0.0,
+     "decale": [
+      -1,
+      5,
+      -4
+     ]
+    },
+    {
+     "objet": "Inferior ulnar collateral artery",
+     "a": 1.0
+    }
+   ],
+   "texte": "Branche de l'artère récurrente ulnaire, elle passe derrière l'épicondyle médial dans la gouttière du nerf ulnaire et s'anastomose avec les artères collatérales ulnaires supérieure et inférieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior interosseous artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.6
+   ],
+   "points": [
+    {
+     "objet": "Common interosseous artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Posterior interosseous artery",
+     "a": 0.3,
+     "decale": [
+      0,
+      0,
+      12
+     ]
+    },
+    {
+     "objet": "Posterior interosseous artery",
+     "a": 0.6,
+     "decale": [
+      0,
+      0,
+      12
+     ]
+    },
+    {
+     "objet": "Pronator quadratus",
+     "proche": true
+    }
+   ],
+   "texte": "Branche de l'artère interosseuse commune, elle descend sur la face antérieure de la membrane interosseuse jusqu'au muscle carré pronateur et irrigue les muscles profonds de l'avant-bras ainsi que le radius et l'ulna.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Princeps pollicis artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.9,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Radial artery",
+     "a": 1.0
+    },
+    {
+     "objet": "First metacarpal bone",
+     "a": 0.8,
+     "decale": [
+      0,
+      0,
+      7
+     ]
+    },
+    {
+     "objet": "First metacarpal bone",
+     "a": 0.4,
+     "decale": [
+      0,
+      0,
+      7
+     ]
+    },
+    {
+     "objet": "First metacarpal bone",
+     "a": 0.0,
+     "decale": [
+      0,
+      0,
+      7
+     ]
+    },
+    {
+     "objet": "Proximal phalanx of first finger of hand",
+     "a": 0.9,
+     "decale": [
+      0,
+      0,
+      6
+     ]
+    }
+   ],
+   "texte": "Née de l'artère radiale à l'entrée de la paume, elle descend le long de la face palmaire du premier métacarpien et se divise à la base de la phalange proximale en deux artères digitales palmaires propres du pouce.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Radialis indicis artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Radial artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Second metacarpal bone",
+     "a": 0.95,
+     "decale": [
+      6,
+      0,
+      5
+     ]
+    },
+    {
+     "objet": "Second metacarpal bone",
+     "a": 0.5,
+     "decale": [
+      6,
+      0,
+      5
+     ]
+    },
+    {
+     "objet": "Second metacarpal bone",
+     "a": 0.0,
+     "decale": [
+      6,
+      0,
+      5
+     ]
+    },
+    {
+     "objet": "Proximal phalanx of second finger of hand",
+     "a": 0.5,
+     "decale": [
+      6,
+      0,
+      5
+     ]
+    }
+   ],
+   "texte": "Née de l'artère radiale ou de l'artère principale du pouce, elle longe le bord radial de l'index sur sa face palmaire et en irrigue la peau et les tissus.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Descending genicular artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.5
+   ],
+   "points": [
+    {
+     "objet": "Femoral artery",
+     "a": 0.88
+    },
+    {
+     "repere": "Adductor tubercle",
+     "decale": [
+      14,
+      40,
+      28
+     ]
+    },
+    {
+     "repere": "Adductor tubercle",
+     "decale": [
+      8,
+      8,
+      38
+     ]
+    },
+    {
+     "repere": "Adductor tubercle",
+     "decale": [
+      17,
+      -6,
+      40
+     ]
+    }
+   ],
+   "texte": "Née de l'artère fémorale dans le canal des adducteurs, elle descend avec le nerf saphène vers le côté médial du genou et participe au réseau articulaire du genou.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Saphenous descending genicular artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "points": [
+    {
+     "repere": "Adductor tubercle",
+     "decale": [
+      14,
+      40,
+      28
+     ]
+    },
+    {
+     "repere": "Adductor tubercle",
+     "decale": [
+      -3,
+      -15,
+      22
+     ]
+    },
+    {
+     "repere": "Medial condyle of tibia",
+     "decale": [
+      -6,
+      -20,
+      30
+     ]
+    },
+    {
+     "repere": "Medial condyle of tibia",
+     "decale": [
+      -6,
+      -50,
+      30
+     ]
+    }
+   ],
+   "texte": "Branche saphène de l'artère descendante du genou ; elle accompagne le nerf saphène et irrigue la peau de la face médiale du genou et de la jambe proximale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Sural arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.8,
+    0.45
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Popliteal artery",
+      "a": 0.35
+     },
+     {
+      "objet": "Popliteal artery",
+      "a": 0.35,
+      "decale": [
+       -12,
+       -5,
+       -5
+      ]
+     },
+     {
+      "objet": "Medial head of gastrocnemius",
+      "rel": [
+       0.1,
+       0.55,
+       -0.1
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Popliteal artery",
+      "a": 0.35
+     },
+     {
+      "objet": "Popliteal artery",
+      "a": 0.35,
+      "decale": [
+       14,
+       -5,
+       -5
+      ]
+     },
+     {
+      "objet": "Lateral head of gastrocnemius",
+      "rel": [
+       -0.1,
+       0.55,
+       -0.1
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux branches de l'artère poplitée, médiale et latérale, qui entrent dans la face profonde des chefs médial et latéral du gastrocnémien et en assurent l'irrigation.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior tibial recurrent artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Anterior tibial artery",
+     "a": 0.72
+    },
+    {
+     "repere": "Lateral condyle of tibia",
+     "decale": [
+      -3,
+      -10,
+      28
+     ]
+    },
+    {
+     "objet": "Patella",
+     "rel": [
+      1.3,
+      -0.3,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Née de l'artère tibiale antérieure dès qu'elle franchit la membrane interosseuse, elle remonte dans le muscle tibial antérieur vers le côté latéral du genou et participe au réseau patellaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior lateral malleolar artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Anterior tibial artery",
+     "a": 0.1
+    },
+    {
+     "repere": "Lateral malleolus",
+     "decale": [
+      -8,
+      10,
+      20
+     ]
+    },
+    {
+     "repere": "Lateral malleolus",
+     "decale": [
+      1,
+      2,
+      5
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère tibiale antérieure au-dessus de la cheville ; elle passe sous les tendons extenseurs jusqu'à la malléole latérale et s'anastomose avec la branche perforante de l'artère fibulaire.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior medial malleolar artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.3
+   ],
+   "points": [
+    {
+     "objet": "Anterior tibial artery",
+     "a": 0.08
+    },
+    {
+     "repere": "Medial malleolus",
+     "decale": [
+      4,
+      6,
+      18
+     ]
+    },
+    {
+     "repere": "Medial malleolus",
+     "decale": [
+      -2,
+      0,
+      8
+     ]
+    }
+   ],
+   "texte": "Branche de l'artère tibiale antérieure au-dessus de la cheville ; elle passe sous le tendon du tibial antérieur jusqu'à la malléole médiale et s'anastomose avec les rameaux malléolaires de l'artère tibiale postérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Medial tarsal arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Dorsalis pedis artery",
+      "a": 0.85
+     },
+     {
+      "objet": "Navicular bone",
+      "rel": [
+       -0.6,
+       1.0,
+       0.2
+      ]
+     },
+     {
+      "objet": "Navicular bone",
+      "rel": [
+       -1.2,
+       0.5,
+       0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Dorsalis pedis artery",
+      "a": 0.65
+     },
+     {
+      "objet": "Medial cuneiform bone",
+      "rel": [
+       -0.4,
+       1.0,
+       0.3
+      ]
+     },
+     {
+      "objet": "Medial cuneiform bone",
+      "rel": [
+       -1.1,
+       0.5,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Dorsalis pedis artery",
+      "a": 0.5
+     },
+     {
+      "objet": "Medial cuneiform bone",
+      "rel": [
+       -0.5,
+       0.9,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Medial cuneiform bone",
+      "rel": [
+       -1.2,
+       0.2,
+       -0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Deux ou trois petites branches de l'artère dorsale du pied qui gagnent le bord médial du pied et irriguent la peau, les articulations et les os du tarse.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Communicating artery of fibular artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Fibular artery",
+     "a": 0.75
+    },
+    {
+     "objet": "Fibular artery",
+     "a": 0.75,
+     "decale": [
+      -14,
+      1,
+      -1
+     ]
+    },
+    {
+     "objet": "Posterior tibial artery",
+     "a": 0.5
+    }
+   ],
+   "texte": "Branche communicante de l'artère fibulaire qui passe derrière le tibia, à quelques centimètres au-dessus de la cheville, et rejoint l'artère tibiale postérieure.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterior choroidal artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.7,
+    0.4
+   ],
+   "points": [
+    {
+     "objet": "Internal carotid artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Optic tract",
+     "a": 0.6
+    },
+    {
+     "objet": "Hippocampus",
+     "a": 0.2,
+     "decale": [
+      -4,
+      8,
+      0
+     ]
+    },
+    {
+     "objet": "Choroid plexus",
+     "a": 0.1
+    }
+   ],
+   "texte": "Branche de la carotide interne juste avant sa terminaison ; elle longe le tractus optique, entre dans la corne temporale du ventricule latéral par la fissure choroïdienne et irrigue le plexus choroïde, l'hippocampe et la capsule interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anterolateral central arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Middle cerebral artery (M1-segment)",
+      "a": 0.25
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       -0.3,
+       -0.6,
+       0.7
+      ]
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       -0.3,
+       0.2,
+       0.4
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Middle cerebral artery (M1-segment)",
+      "a": 0.4
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       0.1,
+       -0.6,
+       0.5
+      ]
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       0.1,
+       0.3,
+       0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Middle cerebral artery (M1-segment)",
+      "a": 0.55
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       0.5,
+       -0.6,
+       0.4
+      ]
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       0.5,
+       0.4,
+       0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Middle cerebral artery (M1-segment)",
+      "a": 0.7
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       0.8,
+       -0.5,
+       0.0
+      ]
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       0.7,
+       0.7,
+       0.0
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Middle cerebral artery (M1-segment)",
+      "a": 0.5
+     },
+     {
+      "objet": "Lentiform nucleus",
+      "rel": [
+       0.0,
+       -0.4,
+       0.5
+      ]
+     },
+     {
+      "objet": "Caudate nucleus",
+      "rel": [
+       0.2,
+       0.5,
+       0.4
+      ]
+     }
+    ]
+   ],
+   "texte": "Artères lenticulo-striées nées du segment M1 de l'artère cérébrale moyenne ; elles pénètrent la substance perforée antérieure et irriguent le putamen, le globus pallidus, le noyau caudé et la capsule interne.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Precommunicating cerebral artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    1.0,
+    0.8
+   ],
+   "points": [
+    {
+     "objet": "Internal carotid artery",
+     "a": 1.0
+    },
+    {
+     "objet": "Anterior cerebral artery",
+     "a": 0.0
+    },
+    {
+     "objet": "Anterior communicating artery",
+     "rel": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "texte": "Segment A1 de l'artère cérébrale antérieure, entre la terminaison de la carotide interne et l'artère communicante antérieure, au-dessus du chiasma optique.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Anteromedial central branches-anterior communicating artery",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.4,
+    0.25
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Anterior communicating artery",
+      "rel": [
+       0.9,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Anterior communicating artery",
+      "rel": [
+       0.9,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       -3,
+       6,
+       -4
+      ]
+     },
+     {
+      "objet": "Anterior communicating artery",
+      "rel": [
+       0.9,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       -5,
+       12,
+       -8
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Anterior communicating artery",
+      "rel": [
+       0.9,
+       0.0,
+       0.0
+      ]
+     },
+     {
+      "objet": "Anterior communicating artery",
+      "rel": [
+       0.9,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       -2,
+       5,
+       -6
+      ]
+     },
+     {
+      "objet": "Anterior communicating artery",
+      "rel": [
+       0.9,
+       0.0,
+       0.0
+      ],
+      "decale": [
+       -4,
+       9,
+       -14
+      ]
+     }
+    ]
+   ],
+   "texte": "Fines branches de la région de l'artère communicante antérieure qui pénètrent la substance perforée antérieure et irriguent l'hypothalamus antérieur, le septum et les colonnes du fornix.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posteromedial central arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Posterior cerebral artery",
+      "a": 0.08
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       -0.6,
+       -0.7,
+       0.2
+      ]
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       -0.6,
+       -0.3,
+       0.2
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Posterior cerebral artery",
+      "a": 0.1
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       -0.5,
+       -0.7,
+       -0.3
+      ]
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       -0.5,
+       -0.2,
+       -0.3
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Posterior cerebral artery",
+      "a": 0.1
+     },
+     {
+      "objet": "Midbrain",
+      "rel": [
+       0.0,
+       0.5,
+       -0.3
+      ]
+     }
+    ]
+   ],
+   "texte": "Artères thalamo-perforantes nées du segment P1 de l'artère cérébrale postérieure ; elles traversent la substance perforée postérieure et irriguent le thalamus médial et le mésencéphale.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterolateral central arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.5,
+    0.3
+   ],
+   "traces": [
+    [
+     {
+      "objet": "Posterior cerebral artery",
+      "a": 0.35
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       0.3,
+       -0.4,
+       -0.6
+      ]
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       0.0,
+       0.0,
+       -0.4
+      ]
+     }
+    ],
+    [
+     {
+      "objet": "Posterior cerebral artery",
+      "a": 0.45
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       0.5,
+       -0.2,
+       -0.8
+      ]
+     },
+     {
+      "objet": "Thalamus",
+      "rel": [
+       0.2,
+       0.2,
+       -0.5
+      ]
+     }
+    ]
+   ],
+   "texte": "Artères thalamo-géniculées nées du segment P2 de l'artère cérébrale postérieure ; elles irriguent la partie postéro-latérale du thalamus (pulvinar) et les corps géniculés.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  },
+  {
+   "nom": "Posterior spinal arteries",
+   "couche": "artere",
+   "forme": "trace",
+   "cotes": "deux",
+   "rayon": [
+    0.6,
+    0.35
+   ],
+   "points": [
+    {
+     "objet": "Vertebral artery",
+     "a": 0.8
+    },
+    {
+     "objet": "Medulla oblongata",
+     "rel": [
+      0.9,
+      -0.4,
+      -1.0
+     ]
+    },
+    {
+     "objet": "White matter of spinal cord",
+     "rel": [
+      0.4,
+      0.95,
+      0.67
+     ]
+    },
+    {
+     "objet": "White matter of spinal cord",
+     "rel": [
+      0.4,
+      0.61,
+      0.3
+     ]
+    },
+    {
+     "objet": "White matter of spinal cord",
+     "rel": [
+      0.4,
+      0.33,
+      -0.49
+     ]
+    },
+    {
+     "objet": "White matter of spinal cord",
+     "rel": [
+      0.4,
+      0.0,
+      -0.87
+     ]
+    },
+    {
+     "objet": "White matter of spinal cord",
+     "rel": [
+      0.4,
+      -0.33,
+      -0.57
+     ]
+    },
+    {
+     "objet": "White matter of spinal cord",
+     "rel": [
+      0.4,
+      -0.65,
+      0.02
+     ]
+    },
+    {
+     "objet": "White matter of spinal cord",
+     "rel": [
+      0.4,
+      -0.94,
+      0.53
+     ]
+    }
+   ],
+   "texte": "Deux artères, nées de l'artère vertébrale ou de l'artère cérébelleuse postéro-inférieure, qui descendent de part et d'autre du sillon postéro-latéral de la moelle spinale en recevant les artères radiculaires et irriguent le tiers postérieur de la moelle.",
+   "sources": [
+    "gray1918",
+    "tma"
+   ]
+  }
+ ]
+}

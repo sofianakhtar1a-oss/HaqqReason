@@ -16,6 +16,13 @@ L'Écorché est un atlas d'anatomie en 3D pour apprendre le corps humain, en fra
   nomme-la dans le texte.
 - `vocabulaire.json` : les articulations et les mouvements permis (voir « Les actions »).
 
+Les lots « `<couche>-ajouts-<n>` » réunissent des structures que les atlas n'avaient pas et que L'Écorché a
+construites d'après les manuels (une branche d'artère, un ganglion, un noyau…). Sous `connu`, la
+`description_du_trace` est le texte qui a servi à les placer, et `appui_dans_le_modele` la structure sur laquelle
+elles s'appuient (le tronc d'une branche, la veine où se jette un affluent, ce qui porte un noyau) : deux points de
+départ, à vérifier comme le reste. Un **ensemble** (`connu.membres`) a une fiche comme une structure : il est décrit
+comme un tout (le groupe de nœuds, le lobe, le plexus), et ses membres peuvent être cités par leur identifiant.
+
 ## Ce que tu rends
 
 Un seul fichier : `sortie/<lot>.json`, de la forme

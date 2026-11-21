@@ -1,0 +1,708 @@
+{
+ "lot": "nerf-ajouts-2",
+ "couche": "nerf",
+ "structures": [
+  {
+   "id": "nerf-lacrymal",
+   "nom": "Nerf lacrymal",
+   "latin": "Nervus lacrimalis",
+   "anglais": "Lacrimal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf lacrymal",
+   "ta2": "6198",
+   "connu": {
+    "description_du_trace": "Branche la plus latérale du nerf ophtalmique : elle entre dans l'orbite par la fissure orbitaire supérieure, longe le bord supérieur du muscle droit latéral, innerve la glande lacrymale puis la peau de la paupière supérieure.",
+    "appui_dans_le_modele": {
+     "id": "nerf-ophtalmique",
+     "nom": "Nerf ophtalmique"
+    }
+   }
+  },
+  {
+   "id": "nerf-masseterique",
+   "nom": "Nerf massétérique",
+   "latin": "Nervus massetericus",
+   "anglais": "Masseteric nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf massétérique",
+   "ta2": "6253",
+   "connu": {
+    "description_du_trace": "Branche de la division antérieure du nerf mandibulaire : elle passe au-dessus du muscle ptérygoïdien latéral, traverse l'incisure mandibulaire et entre dans la face profonde du muscle masséter.",
+    "appui_dans_le_modele": {
+     "id": "division-anterieure-du-nerf-mandibulaire",
+     "nom": "Division antérieure du nerf mandibulaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-nasociliaire",
+   "nom": "Nerf nasociliaire",
+   "latin": "Nervus nasociliaris",
+   "anglais": "Nasociliary nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf nasociliaire",
+   "ta2": "6204",
+   "connu": {
+    "description_du_trace": "Branche du nerf ophtalmique qui entre dans l'orbite par la fissure orbitaire supérieure, croise au-dessus du nerf optique et longe la paroi médiale de l'orbite ; elle donne les nerfs ciliaires longs, ethmoïdaux et infratrochléaire.",
+    "appui_dans_le_modele": {
+     "id": "nerf-ophtalmique",
+     "nom": "Nerf ophtalmique"
+    }
+   }
+  },
+  {
+   "id": "nerf-nasopalatin",
+   "nom": "Nerf nasopalatin",
+   "latin": "Nervus nasopalatinus",
+   "anglais": "Nasopalatine nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf nasopalatin",
+   "ta2": "6221",
+   "connu": {
+    "description_du_trace": "Branche du ganglion ptérygopalatin qui passe par le foramen sphénopalatin, traverse le toit de la cavité nasale, descend en avant sur le septum nasal (vomer) et émerge par le canal incisif pour la muqueuse du palais derrière les incisives.",
+    "appui_dans_le_modele": {
+     "id": "nerf-maxillaire",
+     "nom": "Nerf maxillaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-palatin-moyen",
+   "nom": "Nerf palatin moyen",
+   "latin": "Nervus palatinus medius",
+   "anglais": "Middle palatine nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf palatin moyen",
+   "ta2": "6228",
+   "connu": {
+    "description_du_trace": "Branche descendante du ganglion ptérygopalatin qui sort par un foramen petit palatin et innerve la luette, les amygdales palatines et la muqueuse du voile du palais.",
+    "appui_dans_le_modele": {
+     "id": "nerf-maxillaire",
+     "nom": "Nerf maxillaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-palatin-posterieur",
+   "nom": "Nerf palatin postérieur",
+   "latin": "Nervus palatinus posterior",
+   "anglais": "Posterior palatine nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf palatin postérieur",
+   "ta2": "6229",
+   "connu": {
+    "description_du_trace": "Branche descendante du ganglion ptérygopalatin qui sort par un foramen petit palatin, derrière le foramen grand palatin, et innerve le voile du palais et l'amygdale palatine.",
+    "appui_dans_le_modele": {
+     "id": "nerf-maxillaire",
+     "nom": "Nerf maxillaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-petit-occipital",
+   "nom": "Nerf petit occipital",
+   "latin": "Nervus occipitalis minor",
+   "anglais": "Lesser occipital nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf petit occipital",
+   "ta2": "6384",
+   "connu": {
+    "description_du_trace": "Branche du plexus cervical (C2-C3) : elle contourne le milieu du bord postérieur du muscle sternocléidomastoïdien (point nerveux du cou), monte le long de ce bord et innerve la peau du cuir chevelu derrière le pavillon de l'oreille.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-c2-c3",
+     "nom": "Disque intervertébral C2-C3"
+    }
+   }
+  },
+  {
+   "id": "nerf-petit-petreux",
+   "nom": "Nerf petit pétreux",
+   "latin": "Nervus petrosus minor",
+   "anglais": "Lesser petrosal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf petit pétreux",
+   "ta2": "6326",
+   "connu": {
+    "description_du_trace": "Nerf parasympathique issu du plexus tympanique ; il traverse le toit de la cavité du tympan, longe la face antérieure du rocher et sort par le foramen ovale (ou un canalicule voisin) vers le ganglion otique.",
+    "appui_dans_le_modele": {
+     "id": "cochlee",
+     "nom": "Cochlée"
+    }
+   }
+  },
+  {
+   "id": "nerf-pharyngien",
+   "nom": "Nerf pharyngien",
+   "latin": "Nervus pharyngeus",
+   "anglais": "Pharyngeal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf pharyngien",
+   "ta2": "6223",
+   "connu": {
+    "description_du_trace": "Fin rameau du ganglion ptérygopalatin qui traverse le canal palatovaginal et innerve la muqueuse du toit du nasopharynx, en arrière de l'orifice de la trompe auditive.",
+    "appui_dans_le_modele": {
+     "id": "nerf-maxillaire",
+     "nom": "Nerf maxillaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-pineal",
+   "nom": "Nerf pinéal",
+   "latin": "Nervus pinealis",
+   "anglais": "Pineal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf pinéal",
+   "ta2": "6649",
+   "connu": {
+    "description_du_trace": "Nerfs coniaires : fibres sympathiques postganglionnaires nées du ganglion cervical supérieur qui gagnent le sinus caverneux puis la tente du cervelet et se distribuent à la glande pinéale.",
+    "appui_dans_le_modele": {
+     "id": "carotide-interne",
+     "nom": "Carotide interne"
+    }
+   }
+  },
+  {
+   "id": "nerf-petreux-profond",
+   "nom": "Nerf pétreux profond",
+   "latin": "Nervus petrosus profundus",
+   "anglais": "Deep petrosal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf pétreux profond",
+   "ta2": "6647",
+   "connu": {
+    "description_du_trace": "Branche sympathique du plexus carotidien interne qui traverse le foramen déchiré et rejoint le nerf grand pétreux pour former le nerf du canal ptérygoïdien.",
+    "appui_dans_le_modele": {
+     "id": "carotide-interne",
+     "nom": "Carotide interne"
+    }
+   }
+  },
+  {
+   "id": "nerf-sacculaire",
+   "nom": "Nerf sacculaire",
+   "latin": "Nervus saccularis",
+   "anglais": "Saccular nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf sacculaire",
+   "ta2": "6317",
+   "connu": {
+    "description_du_trace": "Branche du nerf vestibulaire (portion inférieure) pour la macule du saccule, dans la partie antéroinférieure du vestibule.",
+    "appui_dans_le_modele": {
+     "id": "nerf-vestibulaire",
+     "nom": "Nerf vestibulaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-sublingual",
+   "nom": "Nerf sublingual",
+   "latin": "Nervus sublingualis",
+   "anglais": "Sublingual nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf sublingual",
+   "ta2": "6269",
+   "connu": {
+    "description_du_trace": "Branche du nerf lingual qui innerve la glande sublinguale et la muqueuse du plancher de la bouche et de la gencive linguale.",
+    "appui_dans_le_modele": {
+     "id": "nerf-lingual",
+     "nom": "Nerf lingual"
+    }
+   }
+  },
+  {
+   "id": "nerf-suboccipital",
+   "nom": "Nerf suboccipital",
+   "latin": "Nervus suboccipitalis",
+   "anglais": "Suboccipital nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf suboccipital",
+   "ta2": "6365",
+   "connu": {
+    "description_du_trace": "Branche postérieure du premier nerf cervical (C1) : elle sort entre l'os occipital et l'arc postérieur de l'atlas, sous l'artère vertébrale, et innerve les muscles sous-occipitaux (grand et petit droits postérieurs de la tête, obliques supérieur et inférieur).",
+    "appui_dans_le_modele": {
+     "id": "oblique-superieur-de-la-tete",
+     "nom": "Oblique supérieur de la tête"
+    }
+   }
+  },
+  {
+   "id": "nerf-supra-orbitaire",
+   "nom": "Nerf supra-orbitaire",
+   "latin": "Nervus supraorbitalis",
+   "anglais": "Supra-orbital nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf supra-orbitaire",
+   "ta2": "6200",
+   "connu": {
+    "description_du_trace": "Branche latérale du nerf frontal : elle quitte l'orbite par l'incisure (ou le foramen) supra-orbitaire et monte sur le front, jusqu'au vertex, pour la peau du front, la paupière supérieure et le cuir chevelu.",
+    "appui_dans_le_modele": {
+     "id": "elevateur-de-la-paupiere-superieure",
+     "nom": "Élévateur de la paupière supérieure"
+    }
+   }
+  },
+  {
+   "id": "nerf-supratrochleaire",
+   "nom": "Nerf supratrochléaire",
+   "latin": "Nervus supratrochlearis",
+   "anglais": "Supratrochlear nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf supratrochléaire",
+   "ta2": "6203",
+   "connu": {
+    "description_du_trace": "Branche médiale du nerf frontal : elle passe au-dessus de la trochlée du muscle oblique supérieur, sort de l'orbite près de la glabelle et innerve la peau du front médial et de la paupière supérieure.",
+    "appui_dans_le_modele": {
+     "id": "elevateur-de-la-paupiere-superieure",
+     "nom": "Élévateur de la paupière supérieure"
+    }
+   }
+  },
+  {
+   "id": "nerf-temporal-profond-anterieur",
+   "nom": "Nerf temporal profond antérieur",
+   "latin": "Nervus temporalis profundus anterior",
+   "anglais": "Anterior deep temporal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf temporal profond antérieur",
+   "ta2": "6256",
+   "connu": {
+    "description_du_trace": "Branche motrice de la division antérieure du nerf mandibulaire (souvent née du nerf buccal) qui monte sur la fosse temporale et innerve la partie antérieure du muscle temporal.",
+    "appui_dans_le_modele": {
+     "id": "nerf-buccal",
+     "nom": "Nerf buccal"
+    }
+   }
+  },
+  {
+   "id": "nerf-temporal-profond-posterieur",
+   "nom": "Nerf temporal profond postérieur",
+   "latin": "Nervus temporalis profundus posterior",
+   "anglais": "Posterior deep temporal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf temporal profond postérieur",
+   "ta2": "6255",
+   "connu": {
+    "description_du_trace": "Branche motrice de la division antérieure du nerf mandibulaire qui monte contre l'os temporal, sous le muscle temporal, et en innerve la partie postérieure.",
+    "appui_dans_le_modele": {
+     "id": "division-anterieure-du-nerf-mandibulaire",
+     "nom": "Division antérieure du nerf mandibulaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-transverse-du-cou",
+   "nom": "Nerf transverse du cou",
+   "latin": "Nervus transversus colli",
+   "anglais": "Transverse cervical nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf transverse du cou",
+   "ta2": "6388",
+   "connu": {
+    "description_du_trace": "Branche du plexus cervical (C2-C3) qui contourne le bord postérieur du muscle sternocléidomastoïdien, le croise transversalement sous le platysma et innerve la peau de la région cervicale antérieure.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-c3-c4",
+     "nom": "Disque intervertébral C3-C4"
+    }
+   }
+  },
+  {
+   "id": "nerf-troisieme-occipital",
+   "nom": "Nerf troisième occipital",
+   "latin": "Nervus occipitalis tertius",
+   "anglais": "Third occipital nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf troisième occipital",
+   "ta2": "6367",
+   "connu": {
+    "description_du_trace": "Branche médiale du rameau postérieur de C3 : elle croise l'articulation zygapophysaire C2-C3, traverse le semi-épineux et le trapèze et innerve la peau de la nuque près de la protubérance occipitale externe.",
+    "appui_dans_le_modele": {
+     "id": "vertebre-c3",
+     "nom": "Vertèbre C3"
+    }
+   }
+  },
+  {
+   "id": "nerf-tympanique",
+   "nom": "Nerf tympanique",
+   "latin": "Nervus tympanicus",
+   "anglais": "Tympanic nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf tympanique",
+   "ta2": "6323",
+   "connu": {
+    "description_du_trace": "Nerf de Jacobson, né du ganglion inférieur du glossopharyngien ; il monte par le canalicule tympanique inférieur dans la cavité du tympan et forme le plexus tympanique sur le promontoire.",
+    "appui_dans_le_modele": {
+     "id": "nerf-glossopharyngien-ix",
+     "nom": "Nerf glossopharyngien (IX)"
+    }
+   }
+  },
+  {
+   "id": "nerf-utriculaire",
+   "nom": "Nerf utriculaire",
+   "latin": "Nervus utricularis",
+   "anglais": "Utricular nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf utriculaire",
+   "ta2": "6312",
+   "connu": {
+    "description_du_trace": "Branche du nerf vestibulaire pour la macule de l'utricule, dans la partie supéropostérieure du vestibule.",
+    "appui_dans_le_modele": {
+     "id": "nerf-vestibulaire",
+     "nom": "Nerf vestibulaire"
+    }
+   }
+  },
+  {
+   "id": "nerf-vertebral",
+   "nom": "Nerf vertébral",
+   "latin": "Nervus vertebralis",
+   "anglais": "Vertebral nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf vertébral",
+   "ta2": "6626",
+   "connu": {
+    "description_du_trace": "Branche du ganglion cervicothoracique qui monte avec l'artère vertébrale dans les foramens transversaires jusqu'à C2 et donne les fibres sympathiques du plexus vertébral et de l'artère basilaire.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerf-zygomaticofacial",
+   "nom": "Nerf zygomaticofacial",
+   "latin": "Nervus zygomaticofacialis",
+   "anglais": "Zygomaticofacial nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf zygomaticofacial",
+   "ta2": "6234",
+   "connu": {
+    "description_du_trace": "Branche du nerf zygomatique qui traverse le foramen zygomaticofacial et innerve la peau de la pommette.",
+    "appui_dans_le_modele": {
+     "id": "zygomatique",
+     "nom": "Zygomatique"
+    }
+   }
+  },
+  {
+   "id": "nerf-zygomaticotemporal",
+   "nom": "Nerf zygomaticotemporal",
+   "latin": "Nervus zygomaticotemporalis",
+   "anglais": "Zygomaticotemporal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf zygomaticotemporal",
+   "ta2": "6232",
+   "connu": {
+    "description_du_trace": "Branche du nerf zygomatique qui traverse le foramen zygomaticotemporal, monte dans la fosse temporale et innerve la peau de la tempe antérieure ; il porte des fibres sécrétoires vers la glande lacrymale.",
+    "appui_dans_le_modele": {
+     "id": "zygomatique",
+     "nom": "Zygomatique"
+    }
+   }
+  },
+  {
+   "id": "nerf-zygomatique",
+   "nom": "Nerf zygomatique",
+   "latin": "Nervus zygomaticus",
+   "anglais": "Zygomatic nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf zygomatique",
+   "ta2": "6231",
+   "connu": {
+    "description_du_trace": "Branche du nerf maxillaire née dans la fosse ptérygopalatine ; elle entre dans l'orbite par la fissure orbitaire inférieure, longe sa paroi latérale et se divise en nerfs zygomaticotemporal et zygomaticofacial.",
+    "appui_dans_le_modele": {
+     "id": "nerf-maxillaire",
+     "nom": "Nerf maxillaire"
+    }
+   }
+  },
+  {
+   "id": "nerfs-auriculaires-anterieurs",
+   "nom": "Nerfs auriculaires antérieurs",
+   "latin": "Nervi auriculares anteriores",
+   "anglais": "Anterior auricular nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerfs auriculaires antérieurs",
+   "ta2": "6265",
+   "connu": {
+    "description_du_trace": "Rameaux du nerf auriculotemporal qui innervent la peau de la face antérieure du pavillon de l'oreille, du tragus et de l'hélix et le conduit acoustique externe.",
+    "appui_dans_le_modele": {
+     "id": "temporale-superficielle",
+     "nom": "Artère temporale superficielle"
+    }
+   }
+  },
+  {
+   "id": "nerfs-carotidiens-externes",
+   "nom": "Nerfs carotidiens externes",
+   "latin": "Nervi carotici externi",
+   "anglais": "External carotid nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerfs carotidiens externes",
+   "ta2": "6620",
+   "connu": {
+    "description_du_trace": "Rameaux sympathiques du ganglion cervical supérieur qui rejoignent l'artère carotide externe et forment son plexus.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerfs-laryngopharynges",
+   "nom": "Nerfs laryngopharyngés",
+   "latin": "Nervi laryngopharyngei",
+   "anglais": "Laryngopharyngeal nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerfs laryngopharyngés",
+   "ta2": "6621",
+   "connu": {
+    "description_du_trace": "Rameaux sympathiques du ganglion cervical supérieur qui se portent vers le plexus pharyngien et le larynx.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerfs-petits-palatins",
+   "nom": "Nerfs petits palatins",
+   "latin": "Nervi palatini minores",
+   "anglais": "Lesser palatine nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerfs petits palatins",
+   "ta2": "6227",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "nerf-palatin-moyen",
+      "nom": "Nerf palatin moyen"
+     },
+     {
+      "id": "nerf-palatin-posterieur",
+      "nom": "Nerf palatin postérieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerfs-submandibulaires",
+   "nom": "Nerfs submandibulaires",
+   "latin": "Nervi glandulares submandibulares",
+   "anglais": "Submandibular nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerfs submandibulaires",
+   "ta2": "6669",
+   "connu": {
+    "description_du_trace": "Rameaux glandulaires du ganglion submandibulaire qui pénètrent dans la glande submandibulaire et portent les fibres sécrétoires parasympathiques.",
+    "appui_dans_le_modele": {
+     "id": "nerf-lingual",
+     "nom": "Nerf lingual"
+    }
+   }
+  },
+  {
+   "id": "nerfs-temporaux-profonds",
+   "nom": "Nerfs temporaux profonds",
+   "latin": "Nervi temporales profundi",
+   "anglais": "Deep temporal nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerfs temporaux profonds",
+   "ta2": "6254",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "nerf-temporal-profond-anterieur",
+      "nom": "Nerf temporal profond antérieur"
+     },
+     {
+      "id": "nerf-temporal-profond-posterieur",
+      "nom": "Nerf temporal profond postérieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "plexus-caverneux",
+   "nom": "Plexus caverneux",
+   "latin": "Plexus cavernosus",
+   "anglais": "Cavernous plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus caverneux",
+   "ta2": "6650",
+   "connu": {
+    "description_du_trace": "Prolongement du plexus carotidien interne dans le sinus caverneux, autour de la partie caverneuse de l'artère carotide interne ; il envoie des rameaux aux nerfs oculomoteurs, au ganglion ciliaire et à l'œil.",
+    "appui_dans_le_modele": {
+     "id": "carotide-interne",
+     "nom": "Carotide interne"
+    }
+   }
+  },
+  {
+   "id": "plexus-cervical-posterieur",
+   "nom": "Plexus cervical postérieur",
+   "latin": "Plexus cervicalis posterior",
+   "anglais": "Posterior cervical plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus cervical postérieur",
+   "ta2": "6368",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "nerf-suboccipital",
+      "nom": "Nerf suboccipital"
+     },
+     {
+      "id": "nerf-grand-occipital",
+      "nom": "Nerf grand occipital"
+     },
+     {
+      "id": "nerf-troisieme-occipital",
+      "nom": "Nerf troisième occipital"
+     }
+    ]
+   }
+  },
+  {
+   "id": "plexus-dentaire-inferieur",
+   "nom": "Plexus dentaire inférieur",
+   "latin": "Plexus dentalis inferior",
+   "anglais": "Inferior dental plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus dentaire inférieur",
+   "ta2": "6276",
+   "connu": {
+    "description_du_trace": "Réseau de rameaux issus du nerf alvéolaire inférieur dans le canal mandibulaire, sous les racines des dents inférieures, qu'il innerve ainsi que la gencive.",
+    "appui_dans_le_modele": {
+     "id": "deuxieme-molaire-inferieure",
+     "nom": "Deuxième molaire inférieure"
+    }
+   }
+  },
+  {
+   "id": "plexus-dentaire-superieur",
+   "nom": "Plexus dentaire supérieur",
+   "latin": "Plexus dentalis superior",
+   "anglais": "Superior dental plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus dentaire supérieur",
+   "ta2": "6236",
+   "connu": {
+    "description_du_trace": "Réseau de rameaux alvéolaires supérieurs (postérieur, moyen et antérieur) situé dans l'os alvéolaire de la maxille, au-dessus des racines des dents supérieures, qu'il innerve ainsi que la gencive.",
+    "appui_dans_le_modele": {
+     "id": "deuxieme-molaire-superieure",
+     "nom": "Deuxième molaire supérieure"
+    }
+   }
+  },
+  {
+   "id": "plexus-nerveux-tympanique",
+   "nom": "Plexus nerveux tympanique",
+   "latin": "Plexus tympanicus",
+   "anglais": "Tympanic plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus nerveux tympanique",
+   "ta2": "6324",
+   "connu": {
+    "description_du_trace": "Réseau nerveux de la paroi médiale de la cavité du tympan (promontoire) formé par le nerf tympanique et les nerfs caroticotympaniques ; il innerve la muqueuse de l'oreille moyenne et de la trompe auditive et donne le nerf petit pétreux.",
+    "appui_dans_le_modele": {
+     "id": "cochlee",
+     "nom": "Cochlée"
+    }
+   }
+  },
+  {
+   "id": "plexus-parotidien",
+   "nom": "Plexus parotidien",
+   "latin": "Plexus intraparotideus",
+   "anglais": "Parotid plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus parotidien",
+   "ta2": "6301",
+   "connu": {
+    "description_du_trace": "Réseau de division du nerf facial à l'intérieur de la glande parotide (branches temporofaciale et cervicofaciale), d'où partent les rameaux temporaux, zygomatiques, buccaux, mandibulaire marginal et cervical pour les muscles de la face.",
+    "appui_dans_le_modele": {
+     "id": "nerf-facial-vii",
+     "nom": "Nerf facial (VII)"
+    }
+   }
+  },
+  {
+   "id": "plexus-pharyngien",
+   "nom": "Plexus pharyngien",
+   "latin": "Plexus pharyngeus",
+   "anglais": "Pharyngeal plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus pharyngien",
+   "ta2": "6338",
+   "connu": {
+    "description_du_trace": "Réseau de la paroi latérale du pharynx, sur le muscle constricteur moyen, formé de rameaux du vague, du glossopharyngien et du sympathique cervical ; il innerve les muscles et la muqueuse du pharynx.",
+    "appui_dans_le_modele": {
+     "id": "constricteur-superieur-du-pharynx",
+     "nom": "Constricteur supérieur du pharynx"
+    }
+   }
+  },
+  {
+   "id": "plexus-carotidien-commun",
+   "nom": "Plexus carotidien commun",
+   "latin": "Plexus caroticus communis",
+   "anglais": "Common carotid plexus",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Plexus carotidien commun",
+   "ta2": "6644",
+   "connu": {
+    "description_du_trace": "Plexus sympathique qui entoure l'artère carotide commune, issu du tronc sympathique cervical et des nerfs carotidiens.",
+    "appui_dans_le_modele": {
+     "id": "carotide-commune",
+     "nom": "Carotide commune"
+    }
+   }
+  }
+ ]
+}

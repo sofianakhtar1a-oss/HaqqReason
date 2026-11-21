@@ -1,0 +1,624 @@
+{
+ "lot": "encephale-ajouts-3",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "noyau-fastigial",
+   "nom": "Noyau fastigial",
+   "latin": "Nucleus fastigii",
+   "anglais": "Fastigial nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau fastigial",
+   "ta2": "5840",
+   "connu": {
+    "description_du_trace": "Noyau le plus médial, au sommet du toit du quatrième ventricule ; il reçoit le vermis et commande l'axe du corps et les mouvements des yeux par les noyaux vestibulaires et réticulés.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-gigantocellulaire",
+   "nom": "Noyau gigantocellulaire",
+   "latin": "Nucleus gigantocellularis",
+   "anglais": "Gigantocellular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau gigantocellulaire",
+   "ta2": "6028",
+   "connu": {
+    "description_du_trace": "Noyau à grandes cellules de la formation réticulée bulbaire, origine de fibres réticulospinales et d'afférences au thalamus ; il règle le tonus et l'éveil.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-globuleux",
+   "nom": "Noyau globuleux",
+   "latin": "Nucleus globosus",
+   "anglais": "Globose nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau globuleux",
+   "ta2": "5839",
+   "connu": {
+    "description_du_trace": "Noyau cérébelleux de petits amas globuleux, en dedans de l'emboliforme ; régule la posture et les mouvements des membres.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-gracile",
+   "nom": "Noyau gracile",
+   "latin": "Nucleus gracilis",
+   "anglais": "Gracile nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau gracile",
+   "ta2": "5998",
+   "connu": {
+    "description_du_trace": "Noyau de la partie basse du bulbe, derrière le tubercule gracile : premier relais de la sensibilité tactile fine et proprioceptive du membre inférieur et du tronc (faisceau gracile).",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-habenulaire-lateral",
+   "nom": "Noyau habenulaire latéral",
+   "latin": "Nucleus habenularis lateralis",
+   "anglais": "Lateral habenular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau habenulaire latéral",
+   "ta2": "5676",
+   "connu": {
+    "description_du_trace": "Partie latérale de l'habenula, relais limbique qui reçoit la strie médullaire et projette vers le noyau interpédonculaire et le mésencéphale.",
+    "appui_dans_le_modele": {
+     "id": "habenula",
+     "nom": "Habénula"
+    }
+   }
+  },
+  {
+   "id": "noyau-hypothalamique-dorsomedial",
+   "nom": "Noyau hypothalamique dorsomédial",
+   "latin": "Nucleus dorsomedialis hypothalami",
+   "anglais": "Dorsomedial hypothalamic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau hypothalamique dorsomédial",
+   "ta2": "5728",
+   "connu": {
+    "description_du_trace": "Noyau de l'hypothalamus tubéral, au-dessus du ventromédial ; il intervient dans le comportement alimentaire et les rythmes.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-hypothalamique-posterieur",
+   "nom": "Noyau hypothalamique postérieur",
+   "latin": "Nucleus posterior hypothalami",
+   "anglais": "Posterior hypothalamic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau hypothalamique postérieur",
+   "ta2": "5738",
+   "connu": {
+    "description_du_trace": "Noyau de l'hypothalamus postérieur, au-dessus des corps mamillaires ; intervient dans la thermorégulation (production de chaleur) et la réponse sympathique.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-hypothalamique-periventriculaire-anterieur",
+   "nom": "Noyau hypothalamique périventriculaire antérieur",
+   "latin": "Nucleus periventricularis anterior hypothalami",
+   "anglais": "Anterior periventricular hypothalamic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau hypothalamique périventriculaire antérieur",
+   "ta2": "5719",
+   "connu": {
+    "description_du_trace": "Fine couche cellulaire de la paroi du troisième ventricule, dans l'hypothalamus antérieur ; relais neuroendocrine.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-hypothalamique-periventriculaire-posterieur",
+   "nom": "Noyau hypothalamique périventriculaire postérieur",
+   "latin": "Nucleus periventricularis posterior hypothalami",
+   "anglais": "Posterior periventricular hypothalamic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau hypothalamique périventriculaire postérieur",
+   "ta2": "5725",
+   "connu": {
+    "description_du_trace": "Fine couche cellulaire de la paroi ventriculaire de l'hypothalamus postérieur, au-dessus des corps mamillaires.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-hypothalamique-ventromedial",
+   "nom": "Noyau hypothalamique ventromédial",
+   "latin": "Nucleus ventromedialis hypothalami",
+   "anglais": "Ventromedial hypothalamic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau hypothalamique ventromédial",
+   "ta2": "5729",
+   "connu": {
+    "description_du_trace": "Noyau arrondi de l'hypothalamus tubéral, centre de la satiété.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-intercale",
+   "nom": "Noyau intercalé",
+   "latin": "Nucleus intercalatus",
+   "anglais": "Intercalated nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau intercalé",
+   "ta2": "6019",
+   "connu": {
+    "description_du_trace": "Noyau intercalé de Staderini, entre les noyaux de l'hypoglosse et du vague ; relais des mouvements oculaires et de la langue.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-interpedonculaire",
+   "nom": "Noyau interpédonculaire",
+   "latin": "Nucleus interpeduncularis",
+   "anglais": "Interpeduncular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau interpédonculaire",
+   "ta2": "5897",
+   "connu": {
+    "description_du_trace": "Noyau impair au fond de la fosse interpédonculaire, qui reçoit le faisceau rétroflexe de l'habenula ; relais limbique vers le tronc cérébral.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-interstitiel",
+   "nom": "Noyau interstitiel",
+   "latin": "Nucleus interstitialis",
+   "anglais": "Interstitial nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau interstitiel",
+   "ta2": "5744",
+   "connu": {
+    "description_du_trace": "Noyau interstitiel de Cajal, dans le tegmentum rostral : centre d'intégration des mouvements oculaires verticaux et de la position de la tête.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-intracuneiforme",
+   "nom": "Noyau intracunéiforme",
+   "latin": "Nucleus intracuneiformis",
+   "anglais": "Intracuneiform nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau intracunéiforme",
+   "ta2": "5902",
+   "connu": {
+    "description_du_trace": "Petit amas de neurones entre le noyau cunéiforme et la substance grise périaqueducale.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-larcrymal",
+   "nom": "Noyau larcrymal",
+   "latin": "Nucleus lacrimalis",
+   "anglais": "Lacrimal nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau larcrymal",
+   "ta2": "5943",
+   "connu": {
+    "description_du_trace": "Groupe de neurones parasympathiques préganglionnaires voisin du noyau salivaire supérieur ; ses axones empruntent le nerf facial pour la glande lacrymale.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-mamillaire-medial",
+   "nom": "Noyau mamillaire médial",
+   "latin": "Nucleus mamillaris medialis",
+   "anglais": "Medial mamillary nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau mamillaire médial",
+   "ta2": "5732",
+   "connu": {
+    "description_du_trace": "Noyau principal du corps mamillaire : origine du faisceau mamillothalamique et du faisceau mamillotegmental, maillon du circuit de Papez (mémoire).",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-mammiliare-lateral",
+   "nom": "Noyau mammiliare latéral",
+   "latin": "Nucleus mamillaris lateralis",
+   "anglais": "Lateral mamillary nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau mammiliare latéral",
+   "ta2": "5733",
+   "connu": {
+    "description_du_trace": "Petit noyau situé en dehors du noyau mamillaire médial ; relais des informations vestibulaires et de l'orientation spatiale vers le thalamus antérieur.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-moteur-du-nerf-trigeminal",
+   "nom": "Noyau moteur du nerf trigéminal",
+   "latin": "Nucleus motorius nervi trigemini",
+   "anglais": "Motor nucleus of trigeminal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau moteur du nerf trigéminal",
+   "ta2": "5940",
+   "connu": {
+    "description_du_trace": "Noyau moteur du trijumeau dont les axones innervent les muscles masticateurs, le mylo-hyoïdien, le ventre antérieur du digastrique et les tenseurs du voile et du tympan.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-median-du-raphe",
+   "nom": "Noyau médian du raphé",
+   "latin": "Nucleus medianus raphes",
+   "anglais": "Median raphe nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau médian du raphé",
+   "ta2": "5956",
+   "connu": {
+    "description_du_trace": "Noyau médian du raphé : neurones à sérotonine projetant vers l'hippocampe et le septum.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-mediodorsal-du-thalamus",
+   "nom": "Noyau médiodorsal du thalamus",
+   "latin": "Nucleus mediodorsalis thalami",
+   "anglais": "Mediodorsal nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau médiodorsal du thalamus",
+   "ta2": "5681",
+   "connu": {
+    "noms": [
+     "Noyaux médiaux du thalamus"
+    ],
+    "description_du_trace": "Grand noyau de la face médiale du thalamus, relié au cortex préfrontal et au système limbique ; il intervient dans la mémoire, l'attention et l'émotion.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    },
+    "autres_noms": [
+     "Noyaux médiaux du thalamus"
+    ]
+   }
+  },
+  {
+   "id": "noyau-mesencephalique-du-nerf-trijumeau",
+   "nom": "Noyau mésencéphalique du nerf trijumeau",
+   "latin": "Nucleus mesencephalicus nervi trigemini",
+   "anglais": "Mesencephalic nucleus of midbrain",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau mésencéphalique du nerf trijumeau",
+   "ta2": "5887",
+   "connu": {
+    "description_du_trace": "Colonne grêle de neurones sensitifs en dehors de la substance grise périaqueducale, qui reçoit la proprioception des muscles masticateurs et des dents (neurones pseudo-unipolaires du trijumeau).",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-olfactif-anterieur",
+   "nom": "Noyau olfactif antérieur",
+   "latin": "Nucleus olfactorius anterior",
+   "anglais": "Anterior olfactory nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau olfactif antérieur",
+   "ta2": "5543",
+   "connu": {
+    "description_du_trace": "Amas de neurones disséminés dans le bulbe et le pédoncule olfactifs ; il relaie l'information olfactive vers le bulbe opposé et le cortex piriforme.",
+    "appui_dans_le_modele": {
+     "id": "sillon-olfactif",
+     "nom": "Sillon olfactif"
+    }
+   }
+  },
+  {
+   "id": "noyau-olivaire-accessoire-medial",
+   "nom": "Noyau olivaire accessoire médial",
+   "latin": "Nucleus olivaris accessorius medialis",
+   "anglais": "Medial accessory olivary nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau olivaire accessoire médial",
+   "ta2": "6025",
+   "connu": {
+    "description_du_trace": "Lame médiale des olives accessoires, reliée au vermis cérébelleux.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-olivaire-accessoire-posterieur",
+   "nom": "Noyau olivaire accessoire postérieur",
+   "latin": "Nucleus olivaris accessorius posterior",
+   "anglais": "Posterior accessory olivary nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau olivaire accessoire postérieur",
+   "ta2": "6024",
+   "connu": {
+    "description_du_trace": "Lame dorsale des olives accessoires, associée au spinocérébellum.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-olivaire-inferieur-principal",
+   "nom": "Noyau olivaire inférieur principal",
+   "latin": "Nucleus olivaris inferior principalis",
+   "anglais": "Principal inferior olivary nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau olivaire inférieur principal",
+   "ta2": "6022",
+   "connu": {
+    "description_du_trace": "Lame plissée de substance grise dans l'olive : source des fibres grimpantes du cervelet controlatéral, indispensable à l'apprentissage moteur.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-olivaire-superieur",
+   "nom": "Noyau olivaire supérieur",
+   "latin": "Nucleus olivaris superior",
+   "anglais": "Superior olivary nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau olivaire supérieur",
+   "ta2": "5937",
+   "connu": {
+    "description_du_trace": "Noyau de la partie basse du pont, première station binaurale de la voie auditive : il localise les sons par comparaison entre les deux oreilles.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyau-parabigeminal",
+   "nom": "Noyau parabigéminal",
+   "latin": "Nucleus parabigeminalis",
+   "anglais": "Parabigeminal nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau parabigéminal",
+   "ta2": "5889",
+   "connu": {
+    "description_du_trace": "Petit noyau du tegmentum latéral, près du bras du colliculus supérieur, relié au colliculus supérieur et à la rétine (orientation du regard).",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyau-paragigantocellulaire-lateral",
+   "nom": "Noyau paragigantocellulaire latéral",
+   "latin": "Nucleus paragigantocellularis lateralis",
+   "anglais": "Lateral paragigantocellular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau paragigantocellulaire latéral",
+   "ta2": "6029",
+   "connu": {
+    "description_du_trace": "Noyau ventrolatéral du bulbe rostral, au contact de la surface : il maintient la pression artérielle par ses projections sympathiques.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-paragigantocellulaire-posterieur",
+   "nom": "Noyau paragigantocellulaire postérieur",
+   "latin": "Nucleus paragigantocellularis posterior",
+   "anglais": "Posterior paragigantocellular nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau paragigantocellulaire postérieur",
+   "ta2": "6031",
+   "connu": {
+    "description_du_trace": "Petit noyau réticulé proche de la ligne médiane, relié aux noyaux du raphé.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-paramedian-posterieur",
+   "nom": "Noyau paramédian postérieur",
+   "latin": "Nucleus paramedianus posterior",
+   "anglais": "Posterior paramedian nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau paramédian postérieur",
+   "ta2": "6039",
+   "connu": {
+    "description_du_trace": "Noyau paramédian postérieur, au bord de la ligne médiane sous le plancher du quatrième ventricule, relais vers le cervelet.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "noyau-parasympathique-sacral",
+   "nom": "Noyau parasympathique sacral",
+   "latin": "Nucleus parasympathicus sacralis",
+   "anglais": "Sacral parasympathetic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau parasympathique sacral",
+   "ta2": "6076",
+   "connu": {
+    "description_du_trace": "Noyau parasympathique sacral (S2-S4), dans la substance grise intermédiaire latérale ; ses axones forment les nerfs splanchniques pelviens qui commandent vessie, rectum et organes génitaux.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "noyau-paraventriculaire-de-l-hypothalamus",
+   "nom": "Noyau paraventriculaire de l'hypothalamus",
+   "latin": "Nucleus paraventricularis",
+   "anglais": "Paraventricular hypothalamic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau paraventriculaire de l'hypothalamus",
+   "ta2": "5722",
+   "connu": {
+    "description_du_trace": "Noyau contre la paroi du troisième ventricule, au-dessus du noyau supra-optique ; il produit ocytocine, ADH et facteurs de libération, et commande des réponses autonomes et au stress.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-posterolateral",
+   "nom": "Noyau postérolatéral",
+   "latin": "Nucleus lateralis posterior",
+   "anglais": "Lateral posterior nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau postérolatéral",
+   "ta2": "5697",
+   "connu": {
+    "description_du_trace": "Noyau latéral postérieur, au-dessus du pulvinar, relié au cortex pariétal associatif.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyau-pre-optique-lateral",
+   "nom": "Noyau pré-optique latéral",
+   "latin": "Nucleus preopticus lateralis",
+   "anglais": "Lateral preoptic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau pré-optique latéral",
+   "ta2": "5713",
+   "connu": {
+    "description_du_trace": "Noyau diffus de l'aire pré-optique latérale, en continuité avec l'hypothalamus latéral ; il participe à la régulation du sommeil et de la température.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-pre-optique-medial",
+   "nom": "Noyau pré-optique médial",
+   "latin": "Nucleus preopticus medialis",
+   "anglais": "Medial preoptic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau pré-optique médial",
+   "ta2": "5712",
+   "connu": {
+    "description_du_trace": "Noyau de l'aire pré-optique, en dehors du précédent ; son aire sexuellement dimorphe contrôle les comportements sexuels et la thermorégulation.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "noyau-pre-optique-periventriculaire",
+   "nom": "Noyau pré-optique périventriculaire",
+   "latin": "Nucleus preopticus periventricularis",
+   "anglais": "Periventricular preoptic nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau pré-optique périventriculaire",
+   "ta2": "5711",
+   "connu": {
+    "description_du_trace": "Petit noyau de l'aire pré-optique, contre la paroi du troisième ventricule, au-dessus du chiasma optique ; il règle l'équilibre hydrique et la thermorégulation.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  }
+ ]
+}

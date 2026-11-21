@@ -1,0 +1,1633 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral sur Internet Archive",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "tma-ophtalmique": {
+   "titre": "TeachMeAnatomy, Ophthalmic nerve (V1)",
+   "url": "https://teachmeanatomy.info/head/nerves/ophthalmic-nerve/"
+  },
+  "tma-maxillaire": {
+   "titre": "TeachMeAnatomy, Maxillary nerve (V2)",
+   "url": "https://teachmeanatomy.info/head/nerves/maxillary-nerve/"
+  },
+  "tma-mandibulaire": {
+   "titre": "TeachMeAnatomy, Mandibular nerve (V3)",
+   "url": "https://teachmeanatomy.info/head/nerves/mandibular-nerve/"
+  },
+  "tma-facial": {
+   "titre": "TeachMeAnatomy, Facial nerve (CN VII)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/facial-nerve/"
+  },
+  "tma-glossopharyngien": {
+   "titre": "TeachMeAnatomy, Glossopharyngeal nerve (CN IX)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/glossopharyngeal-nerve/"
+  },
+  "tma-plexus-cervical": {
+   "titre": "TeachMeAnatomy, Cervical plexus",
+   "url": "https://teachmeanatomy.info/neck/nerves/cervical-plexus/"
+  },
+  "wp-lacrimal": {
+   "titre": "Wikipédia (en), Lacrimal nerve",
+   "url": "https://en.wikipedia.org/wiki/Lacrimal_nerve"
+  },
+  "wp-supraorbital": {
+   "titre": "Wikipédia (en), Supraorbital nerve",
+   "url": "https://en.wikipedia.org/wiki/Supraorbital_nerve"
+  },
+  "wp-supratrochlear": {
+   "titre": "Wikipédia (en), Supratrochlear nerve",
+   "url": "https://en.wikipedia.org/wiki/Supratrochlear_nerve"
+  },
+  "wp-nasociliary": {
+   "titre": "Wikipédia (en), Nasociliary nerve",
+   "url": "https://en.wikipedia.org/wiki/Nasociliary_nerve"
+  },
+  "wp-nasopalatine": {
+   "titre": "Wikipédia (en), Nasopalatine nerve",
+   "url": "https://en.wikipedia.org/wiki/Nasopalatine_nerve"
+  },
+  "wp-lesser-palatine": {
+   "titre": "Wikipédia (en), Lesser palatine nerves",
+   "url": "https://en.wikipedia.org/wiki/Lesser_palatine_nerves"
+  },
+  "wp-greater-palatine": {
+   "titre": "Wikipédia (en), Greater palatine nerve",
+   "url": "https://en.wikipedia.org/wiki/Greater_palatine_nerve"
+  },
+  "wp-pharyngeal-nerve": {
+   "titre": "Wikipédia (en), Pharyngeal nerve",
+   "url": "https://en.wikipedia.org/wiki/Pharyngeal_nerve"
+  },
+  "wp-zygomatic": {
+   "titre": "Wikipédia (en), Zygomatic nerve",
+   "url": "https://en.wikipedia.org/wiki/Zygomatic_nerve"
+  },
+  "wp-zygomaticotemporal": {
+   "titre": "Wikipédia (en), Zygomaticotemporal nerve",
+   "url": "https://en.wikipedia.org/wiki/Zygomaticotemporal_nerve"
+  },
+  "wp-zygomaticofacial": {
+   "titre": "Wikipédia (en), Zygomaticofacial nerve",
+   "url": "https://en.wikipedia.org/wiki/Zygomaticofacial_nerve"
+  },
+  "wp-masseteric": {
+   "titre": "Wikipédia (en), Masseteric nerve",
+   "url": "https://en.wikipedia.org/wiki/Masseteric_nerve"
+  },
+  "wp-deep-temporal": {
+   "titre": "Wikipédia (en), Deep temporal nerves",
+   "url": "https://en.wikipedia.org/wiki/Deep_temporal_nerves"
+  },
+  "wp-auriculotemporal": {
+   "titre": "Wikipédia (en), Auriculotemporal nerve",
+   "url": "https://en.wikipedia.org/wiki/Auriculotemporal_nerve"
+  },
+  "wp-lingual": {
+   "titre": "Wikipédia (en), Lingual nerve",
+   "url": "https://en.wikipedia.org/wiki/Lingual_nerve"
+  },
+  "wp-submandibular-ganglion": {
+   "titre": "Wikipédia (en), Submandibular ganglion",
+   "url": "https://en.wikipedia.org/wiki/Submandibular_ganglion"
+  },
+  "wp-suboccipital": {
+   "titre": "Wikipédia (en), Suboccipital nerve",
+   "url": "https://en.wikipedia.org/wiki/Suboccipital_nerve"
+  },
+  "wp-third-occipital": {
+   "titre": "Wikipédia (en), Third occipital nerve",
+   "url": "https://en.wikipedia.org/wiki/Third_occipital_nerve"
+  },
+  "wp-lesser-occipital": {
+   "titre": "Wikipédia (en), Lesser occipital nerve",
+   "url": "https://en.wikipedia.org/wiki/Lesser_occipital_nerve"
+  },
+  "wp-transverse-cervical": {
+   "titre": "Wikipédia (en), Transverse cervical nerve",
+   "url": "https://en.wikipedia.org/wiki/Transverse_cervical_nerve"
+  },
+  "wp-vestibular": {
+   "titre": "Wikipédia (en), Vestibular nerve",
+   "url": "https://en.wikipedia.org/wiki/Vestibular_nerve"
+  },
+  "wp-pharyngeal-plexus": {
+   "titre": "Wikipédia (en), Pharyngeal plexus",
+   "url": "https://en.wikipedia.org/wiki/Pharyngeal_plexus"
+  },
+  "wp-superior-dental-plexus": {
+   "titre": "Wikipédia (en), Superior dental plexus",
+   "url": "https://en.wikipedia.org/wiki/Superior_dental_plexus"
+  },
+  "wp-inferior-dental-plexus": {
+   "titre": "Wikipédia (en), Inferior dental plexus",
+   "url": "https://en.wikipedia.org/wiki/Inferior_dental_plexus"
+  },
+  "wp-parotid-plexus": {
+   "titre": "Wikipédia (en), Parotid plexus",
+   "url": "https://en.wikipedia.org/wiki/Parotid_plexus"
+  },
+  "wp-tympanic": {
+   "titre": "Wikipédia (en), Tympanic nerve",
+   "url": "https://en.wikipedia.org/wiki/Tympanic_nerve"
+  },
+  "wp-lesser-petrosal": {
+   "titre": "Wikipédia (en), Lesser petrosal nerve",
+   "url": "https://en.wikipedia.org/wiki/Lesser_petrosal_nerve"
+  },
+  "wp-deep-petrosal": {
+   "titre": "Wikipédia (en), Deep petrosal nerve",
+   "url": "https://en.wikipedia.org/wiki/Deep_petrosal_nerve"
+  },
+  "wp-pterygoid-canal": {
+   "titre": "Wikipédia (en), Nerve of pterygoid canal",
+   "url": "https://en.wikipedia.org/wiki/Nerve_of_pterygoid_canal"
+  },
+  "wp-internal-carotid-plexus": {
+   "titre": "Wikipédia (en), Internal carotid plexus",
+   "url": "https://en.wikipedia.org/wiki/Internal_carotid_plexus"
+  },
+  "wp-scg": {
+   "titre": "Wikipédia (en), Superior cervical ganglion",
+   "url": "https://en.wikipedia.org/wiki/Superior_cervical_ganglion"
+  },
+  "wp-stellate": {
+   "titre": "Wikipédia (en), Stellate ganglion",
+   "url": "https://en.wikipedia.org/wiki/Stellate_ganglion"
+  },
+  "wp-sympathetic-trunk": {
+   "titre": "Wikipédia (en), Sympathetic trunk",
+   "url": "https://en.wikipedia.org/wiki/Sympathetic_trunk"
+  },
+  "wp-pineal": {
+   "titre": "Wikipédia (en), Pineal gland",
+   "url": "https://en.wikipedia.org/wiki/Pineal_gland"
+  },
+  "wp-cavernous-sinus": {
+   "titre": "Wikipédia (en), Cavernous sinus",
+   "url": "https://en.wikipedia.org/wiki/Cavernous_sinus"
+  }
+ },
+ "fiches": [
+  {
+   "id": "nerf-lacrymal",
+   "resume": "Le plus petit des trois rameaux du nerf ophtalmique : il sent la glande lacrymale et la partie latérale de la paupière supérieure, et reçoit les fibres qui font sécréter les larmes.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-ophtalmique",
+    "texte": "Branche latérale du nerf ophtalmique, juste avant la fissure orbitaire supérieure",
+    "racines": [
+     "V1"
+    ]
+   },
+   "trajet": "Entre dans l'orbite par la fissure orbitaire supérieure, en dehors de l'anneau tendineux commun, longe le bord supérieur du droit latéral avec l'artère lacrymale, traverse la glande lacrymale puis perfore le septum orbitaire",
+   "orifices": [
+    "Fissure orbitaire supérieure"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Glande lacrymale, conjonctive et peau de la partie latérale de la paupière supérieure"
+   },
+   "autonome": "Reçoit, par un rameau du nerf zygomatique (via le zygomaticotemporal), les fibres parasympathiques post-ganglionnaires du ganglion ptérygopalatin : elles commandent la sécrétion lacrymale",
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité de la paupière supérieure latérale et de la conjonctive voisine ; la sécrétion lacrymale peut baisser si la voie parasympathique est interrompue",
+   "test": "Toucher la partie latérale de la paupière supérieure et comparer avec l'autre côté",
+   "clinique": "Il manque parfois : le zygomaticotemporal prend alors sa place, et réciproquement",
+   "memo": "Lacrymal : le plus latéral et le plus petit, il longe le droit latéral jusqu'à la glande des larmes",
+   "variantes": "Parfois absent, remplacé par le nerf zygomaticotemporal",
+   "sources": [
+    "gray1918",
+    "tma-ophtalmique",
+    "wp-lacrimal"
+   ],
+   "divergences": "Gray le fait finir dans la peau de la paupière supérieure en s'unissant à des filets du facial ; les sources récentes précisent la partie latérale de la paupière et du front"
+  },
+  {
+   "id": "nerf-masseterique",
+   "resume": "Le nerf moteur du masséter : il passe dans l'incisure mandibulaire pour entrer par la face profonde du muscle qui serre les dents.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "division-anterieure-du-nerf-mandibulaire",
+    "texte": "Branche motrice de la division antérieure du nerf mandibulaire, dans la fosse infratemporale",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Passe en dehors, au-dessus du ptérygoïdien latéral, devant l'articulation temporo-mandibulaire et derrière le tendon du temporal, franchit l'incisure mandibulaire avec l'artère massétérine et pénètre le masséter par sa face profonde",
+   "orifices": [
+    "Incisure mandibulaire"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau articulaire pour l'articulation temporo-mandibulaire"
+    }
+   ],
+   "moteur": {
+    "texte": "Le masséter, élévateur de la mandibule",
+    "muscles": [
+     "masseter"
+    ]
+   },
+   "sensitif": {
+    "texte": "Un rameau pour l'articulation temporo-mandibulaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Faiblesse du masséter du même côté : la mâchoire serre moins fort et la joue reste molle à la contraction",
+   "test": "Serrer les dents en palpant les deux masséters sur l'angle de la mandibule : le muscle atteint durcit moins",
+   "clinique": "Son axe moteur, proche de celui du facial, sert parfois de donneur dans le traitement chirurgical de la paralysie faciale",
+   "memo": "Massétérique : il passe l'échancrure de la mandibule pour atteindre son muscle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-masseteric",
+    "tma-mandibulaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-nasociliaire",
+   "resume": "Le rameau sensitif intermédiaire du nerf ophtalmique : il sent la cornée, l'iris et l'intérieur du nez, et croise le nerf optique pour gagner la paroi médiale de l'orbite.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-ophtalmique",
+    "texte": "Branche intermédiaire du nerf ophtalmique, dans la fente orbitaire supérieure",
+    "racines": [
+     "V1"
+    ]
+   },
+   "trajet": "Entre dans l'orbite par la fissure orbitaire supérieure et l'anneau tendineux commun, entre les deux chefs du droit latéral et les rameaux du nerf oculomoteur, croise le nerf optique, passe sous le droit supérieur et l'oblique supérieur jusqu'à la paroi médiale",
+   "orifices": [
+    "Fissure orbitaire supérieure",
+    "Foramen ethmoïdal antérieur"
+   ],
+   "branches": [
+    {
+     "nerf": "ganglion-ciliaire",
+     "texte": "Racine sensitive du ganglion ciliaire"
+    },
+    {
+     "nerf": "longs-nerfs-ciliaires",
+     "texte": "Longs nerfs ciliaires"
+    },
+    {
+     "nerf": "nerf-ethmoidal-posterieur",
+     "texte": "Nerf ethmoïdal postérieur"
+    },
+    {
+     "nerf": "nerf-ethmoidal-anterieur",
+     "texte": "Nerf ethmoïdal antérieur"
+    },
+    {
+     "nerf": "nerf-infratrochleaire",
+     "texte": "Nerf infratrochléaire"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Cornée, iris et corps ciliaire, paupières et angle médial de l'œil, cellules ethmoïdales et sinus sphénoïdal, muqueuse de la partie antérieure de la cavité nasale, peau de la pointe du nez"
+   },
+   "autonome": "Les longs nerfs ciliaires portent des fibres sympathiques pour le muscle dilatateur de la pupille",
+   "reflexe": {
+    "nom": "Réflexe cornéen (voie afférente)",
+    "racines": [
+     "V1"
+    ]
+   },
+   "atteinte": "Perte de la sensibilité cornéenne : le réflexe cornéen disparaît, la cornée n'est plus protégée et s'ulcère facilement ; anesthésie de la partie antérieure de la cavité nasale",
+   "test": "Effleurer la cornée avec un coton : les deux yeux doivent cligner (afférence V1, efférence VII)",
+   "clinique": "Une éruption de zona sur la pointe du nez (signe de Hutchinson) signale une atteinte de ce nerf et annonce souvent une atteinte de l'œil",
+   "memo": "Nasociliaire : du nez et des cils, il passe par-dessus le nerf optique",
+   "variantes": "Le nerf ethmoïdal postérieur manque chez environ 30 % des personnes",
+   "sources": [
+    "gray1918",
+    "wp-nasociliary",
+    "tma-ophtalmique"
+   ],
+   "divergences": "L'ordre des branches varie : Gray cite d'abord la racine du ganglion ciliaire, Wikipédia les nerfs ethmoïdaux en premier ; l'ordre donné suit la dernière"
+  },
+  {
+   "id": "nerf-nasopalatin",
+   "resume": "Le nerf de la muqueuse palatine derrière les incisives : il descend le long du septum nasal et sort par le canal incisif.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Branche sensitive du nerf maxillaire, qui traverse le ganglion ptérygopalatin sans y faire relais",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Sort de la fosse ptérygopalatine par le foramen sphénopalatin, croise le toit de la cavité nasale sous l'ostium du sinus sphénoïdal, descend en avant sur le septum dans le sillon du vomer, puis passe par le canal incisif",
+   "orifices": [
+    "Foramen sphénopalatin",
+    "Canal incisif"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Partie postéro-inférieure du septum nasal ; muqueuse et gencive de la partie antérieure du palais dur, derrière les incisives"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement de la muqueuse palatine juste derrière les incisives supérieures et du bas du septum nasal",
+   "test": "Effleurer la muqueuse derrière les incisives supérieures, de chaque côté de la papille incisive",
+   "clinique": "Il s'anesthésie à la papille incisive pour les soins de la région palatine antérieure ; son rameau gauche et son rameau droit s'anastomosent",
+   "memo": "Naso-palatin : il va du nez au palais, par le trou derrière les incisives",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-nasopalatine"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-palatin-moyen",
+   "resume": "Un fin nerf sensitif du voile du palais : il sent la luette et l'amygdale palatine, par un petit canal palatin.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Branche descendante du nerf maxillaire, issue du ganglion ptérygopalatin, en arrière du nerf grand palatin",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Descend dans un canal palatin accessoire, séparé du canal du nerf grand palatin, et sort par un foramen petit palatin, d'où il se porte vers le voile du palais",
+   "orifices": [
+    "Foramen petit palatin"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse du voile du palais, luette et amygdale palatine"
+   },
+   "autonome": "Fibres parasympathiques sécrétoires pour les glandes du palais",
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité du voile du palais, de la luette et de l'amygdale ; la motricité du voile n'est pas touchée, car il n'en est pas moteur",
+   "test": "Toucher le voile du palais avec un abaisse-langue et comparer les deux côtés",
+   "clinique": "Il forme avec les rameaux amygdaliens du glossopharyngien un plexus autour de l'amygdale",
+   "memo": "Palatin moyen : le fin nerf du milieu, pour la luette",
+   "variantes": "Souvent absent : le nerf palatin postérieur assure alors sa part",
+   "sources": [
+    "gray1918",
+    "wp-lesser-palatine"
+   ],
+   "divergences": "Gray distingue les nerfs palatins moyen et postérieur, Wikipédia les réunit sous « nerfs petits palatins » sortant par le foramen petit palatin"
+  },
+  {
+   "id": "nerf-palatin-posterieur",
+   "resume": "Un nerf sensitif du voile du palais : il sort par un foramen petit palatin, derrière le grand, pour le voile, la luette et l'amygdale.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Branche descendante du nerf maxillaire, issue du ganglion ptérygopalatin",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Descend dans le canal ptérygopalatin avec le nerf grand palatin puis s'en sépare, et sort par un foramen petit palatin, derrière le foramen grand palatin, pour la face postérieure du voile du palais",
+   "orifices": [
+    "Foramen petit palatin"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse du voile du palais, luette et amygdale palatine"
+   },
+   "autonome": "Fibres parasympathiques sécrétoires pour les glandes du palais",
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité du voile et de la luette ; le réflexe nauséeux n'est qu'amoindri, car sa voie afférente est surtout le glossopharyngien",
+   "test": "Toucher le voile du palais et comparer les deux côtés",
+   "clinique": "Il est anesthésié avec le nerf grand palatin au foramen grand palatin pour les soins de la voûte palatine postérieure",
+   "memo": "Palatin postérieur : le trou petit palatin, derrière le grand",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-lesser-palatine",
+    "wp-greater-palatine"
+   ],
+   "divergences": "Gray et Wikipédia ne s'accordent pas sur le nombre de foramens petits palatins : un pour chaque nerf chez Gray, un seul « foramen petit palatin » chez Wikipédia"
+  },
+  {
+   "id": "nerf-petit-occipital",
+   "resume": "Le nerf de la peau derrière l'oreille : il contourne le bord postérieur du sterno-cléido-mastoïdien et monte vers le cuir chevelu.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche cutanée du plexus cervical, issue du rameau antérieur de C2 (parfois aussi de C3)",
+    "racines": [
+     "C2",
+     "C3"
+    ]
+   },
+   "trajet": "Sort au milieu du bord postérieur du sterno-cléido-mastoïdien (point nerveux du cou), contourne le nerf accessoire, monte le long de ce bord puis traverse le fascia cervical profond près du crâne pour gagner le cuir chevelu derrière le pavillon",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du cuir chevelu derrière l'oreille, région mastoïdienne et partie postéro-supérieure du pavillon"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement ou douleur de la peau derrière l'oreille ; il peut être en cause dans une névralgie occipitale",
+   "test": "Comparer la sensibilité de la peau mastoïdienne et du cuir chevelu rétro-auriculaire des deux côtés",
+   "clinique": "Il est bloqué avec les autres nerfs cutanés du cou en infiltrant le milieu du bord postérieur du sterno-cléido-mastoïdien",
+   "memo": "Petit occipital : celui du cuir chevelu derrière l'oreille, né du bord postérieur du sterno-cléido-mastoïdien",
+   "variantes": "Il reçoit parfois des fibres de C3 ; il est parfois double",
+   "sources": [
+    "gray1918",
+    "tma-plexus-cervical",
+    "wp-lesser-occipital"
+   ],
+   "divergences": "Gray et TeachMeAnatomy donnent C2 (parfois C3) ; Wikipédia signale que les sources diffèrent sur la part de C3. On retient C2 comme racine constante"
+  },
+  {
+   "id": "nerf-petit-petreux",
+   "resume": "Le nerf parasympathique de la glande parotide : né dans l'oreille moyenne, il va jusqu'au ganglion otique.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "plexus-nerveux-tympanique",
+    "texte": "Branche du plexus tympanique, prolongement du nerf tympanique (noyau salivaire inférieur, par le glossopharyngien)",
+    "racines": [
+     "IX"
+    ]
+   },
+   "trajet": "Quitte la cavité du tympan, passe par l'hiatus du petit nerf pétreux sur la face antérieure du rocher, longe le plancher de la fosse moyenne du crâne puis sort par le canalicule innominé, près du foramen ovale, pour gagner le ganglion otique",
+   "orifices": [
+    "Hiatus du petit nerf pétreux",
+    "Canalicule innominé"
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres parasympathiques pré-ganglionnaires du glossopharyngien : relais dans le ganglion otique, puis fibres sécrétoires qui rejoignent la glande parotide par le nerf auriculo-temporal",
+   "reflexe": null,
+   "atteinte": "Sa section (neurectomie tympanique) réduit la sécrétion parotidienne ; une lésion du IX en amont a le même effet",
+   "test": null,
+   "clinique": "La section du nerf tympanique, qui l'alimente, a été utilisée contre le syndrome de Frey, où la sueur de la joue accompagne la salivation",
+   "memo": "Petit pétreux : il porte la salive parotidienne, de l'oreille moyenne au ganglion otique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-lesser-petrosal",
+    "tma-glossopharyngien"
+   ],
+   "divergences": "La structure d'appui du modèle (la cochlée) n'est pas son origine : il naît du plexus tympanique, sur la paroi médiale de la cavité du tympan. Le tracé initial le faisait sortir par le foramen ovale ; Wikipédia précise le canalicule innominé"
+  },
+  {
+   "id": "nerf-pharyngien",
+   "resume": "Un fin nerf sensitif du ganglion ptérygopalatin : il passe par le canal palatovaginal et sent le toit du rhinopharynx.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Petit rameau issu de la partie postérieure du ganglion ptérygopalatin, rattaché au nerf maxillaire",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Quitte le ganglion ptérygopalatin en arrière, traverse le canal palatovaginal (ptérygo-palatin) avec le rameau pharyngien de l'artère maxillaire, et atteint la muqueuse du rhinopharynx derrière l'orifice de la trompe auditive",
+   "orifices": [
+    "Canal palatovaginal"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse du toit et de la paroi postérieure du rhinopharynx, derrière l'orifice de la trompe auditive"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité du rhinopharynx supérieur, sans signe d'examen net",
+   "test": null,
+   "clinique": "Le rhinopharynx situé au-dessus de la trompe auditive est sous la dépendance de V2, non du plexus pharyngien",
+   "memo": "Pharyngien du ptérygopalatin : par le petit canal, vers le haut de la gorge",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-pharyngeal-nerve",
+    "wp-pharyngeal-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-pineal",
+   "resume": "Les fins nerfs coniaires de la glande pinéale : ils lui apportent des fibres sympathiques du ganglion cervical supérieur et règlent sa sécrétion de mélatonine.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "ganglion-cervical-superieur",
+    "texte": "Fibres sympathiques post-ganglionnaires du ganglion cervical supérieur, portées par le plexus carotidien interne",
+    "racines": null
+   },
+   "trajet": "Montent avec le plexus carotidien interne le long de la carotide interne, puis atteignent la glande pinéale par les nerfs coniaires ; leur trajet intracrânien précis n'est pas détaillé dans les sources lues",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sympathiques du ganglion cervical supérieur, principales ; des fibres parasympathiques des ganglions ptérygopalatin et otique sont décrites en plus",
+   "reflexe": null,
+   "atteinte": "L'interruption de la voie sympathique cervicale supérieure supprime le rythme nycthéméral de la mélatonine ; elle s'accompagne d'un syndrome de Claude Bernard-Horner",
+   "test": null,
+   "clinique": "La lumière perçue par la rétine passe par l'hypothalamus puis le ganglion cervical supérieur avant d'atteindre la glande : l'obscurité libère la sécrétion de mélatonine",
+   "memo": "Pinéal : un fil sympathique venu du cou, qui règle la mélatonine selon la lumière",
+   "variantes": null,
+   "sources": [
+    "wp-pineal",
+    "wp-scg",
+    "wp-internal-carotid-plexus",
+    "gray1918"
+   ],
+   "divergences": "Gray et les pages lues ne décrivent pas le chemin intracrânien exact des nerfs coniaires (sinus caverneux, tente du cervelet) : seul le trajet général est donné"
+  },
+  {
+   "id": "nerf-petreux-profond",
+   "resume": "La racine sympathique du nerf du canal ptérygoïdien : il vient du plexus carotidien interne et rejoint le grand nerf pétreux dans le foramen déchiré.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "plexus-carotidien-interne",
+    "texte": "Branche du plexus carotidien interne, fibres sympathiques post-ganglionnaires du ganglion cervical supérieur",
+    "racines": null
+   },
+   "trajet": "Quitte le plexus carotidien interne dans le canal carotidien, traverse le cartilage du foramen déchiré, se joint au grand nerf pétreux pour former le nerf du canal ptérygoïdien, qui gagne le ganglion ptérygopalatin sans y faire relais",
+   "orifices": [
+    "Canal carotidien",
+    "Foramen déchiré",
+    "Canal ptérygoïdien"
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sympathiques post-ganglionnaires : elles traversent le ganglion ptérygopalatin sans relais, puis suivent les branches du nerf maxillaire pour les vaisseaux et les glandes lacrymale, nasales et palatines",
+   "reflexe": null,
+   "atteinte": "Interruption de la voie sympathique vers la face profonde : vasodilatation et sécheresse relative de la muqueuse nasale et palatine ; rarement isolée en clinique",
+   "test": null,
+   "clinique": "Le nerf du canal ptérygoïdien (nerf vidien) a été visé par la chirurgie des rhinites vasomotrices rebelles",
+   "memo": "Pétreux profond : le sympathique qui rejoint le parasympathique du grand pétreux, pour former le nerf vidien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-deep-petrosal",
+    "wp-pterygoid-canal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-sacculaire",
+   "resume": "Le nerf du saccule : branche inférieure du nerf vestibulaire, il porte les messages des accélérations linéaires, surtout verticales.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-vestibulaire",
+    "texte": "Branche inférieure du nerf vestibulaire, issue des cellules bipolaires du ganglion vestibulaire (ganglion de Scarpa)",
+    "racines": [
+     "VIII"
+    ]
+   },
+   "trajet": "Part du ganglion vestibulaire, au fond du méat acoustique interne, traverse l'aire vestibulaire inférieure et atteint la macule du saccule, dans la partie antéro-inférieure du vestibule",
+   "orifices": [
+    "Aire vestibulaire inférieure"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Macule du saccule : accélération linéaire et position de la tête par rapport à la pesanteur"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Atteinte du nerf vestibulaire (névrite) : vertige rotatoire brutal, nausées, déséquilibre, nystagmus horizontal ; la compensation se fait en une à deux semaines",
+   "test": "Les potentiels évoqués myogéniques vestibulaires cervicaux (cVEMP) explorent la voie sacculaire",
+   "clinique": "La part inférieure du nerf vestibulaire est parfois épargnée dans la névrite : on dit « névrite supérieure » ou « inférieure » d'après les canaux atteints",
+   "memo": "Sacculaire : le nerf du saccule, en bas, par l'aire vestibulaire inférieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-vestibular"
+   ],
+   "divergences": "Les sources décrivent trois branches du nerf vestibulaire (supérieure, inférieure, postérieure) ; les noms « nerf sacculaire » et « nerf utriculaire » viennent de la Terminologia Anatomica"
+  },
+  {
+   "id": "nerf-sublingual",
+   "resume": "La partie du nerf lingual qui sent le plancher de la bouche et la gencive linguale et relaie la sécrétion de la glande sublinguale.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-lingual",
+    "texte": "Terminaison ou branche du nerf lingual, au-dessus du ganglion submandibulaire",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Longe le plancher de la bouche juste sous la muqueuse, en dedans de la glande sublinguale, vers la pointe de la langue",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse du plancher de la bouche et gencive linguale de la mandibule"
+   },
+   "autonome": "Les fibres parasympathiques de la corde du tympan, relayées dans le ganglion submandibulaire, y atteignent la glande sublinguale (certaines par retour dans le nerf lingual)",
+   "reflexe": null,
+   "atteinte": "Engourdissement ou douleur du plancher buccal et de la gencive linguale ; sécrétion de la glande sublinguale réduite",
+   "test": "Toucher le plancher de la bouche près du frein de la langue et comparer les deux côtés",
+   "clinique": "Le nerf lingual est exposé lors de l'extraction de la dent de sagesse et de la chirurgie du plancher buccal : environ 2 % de troubles temporaires, 0,2 % de définitifs",
+   "memo": "Sublingual : le nerf du dessous de la langue, tout contre la muqueuse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-lingual",
+    "wp-submandibular-ganglion"
+   ],
+   "divergences": "Wikipédia désigne par « nerf sublingual » la partie terminale du nerf lingual, sous la muqueuse ; Gray ne le nomme pas et dit seulement que le nerf lingual innerve la glande sublinguale"
+  },
+  {
+   "id": "nerf-suboccipital",
+   "resume": "Le nerf de C1 pour les petits muscles profonds de la nuque : il règle les mouvements fins de la tête sur l'atlas et l'axis.",
+   "sorte": "spinal",
+   "origine": {
+    "nerf": null,
+    "texte": "Rameau postérieur du premier nerf cervical (C1)",
+    "racines": [
+     "C1"
+    ]
+   },
+   "trajet": "Sort entre l'os occipital et l'arc postérieur de l'atlas, sous l'artère vertébrale, entre dans le triangle sous-occipital et se divise entre les quatre muscles sous-occipitaux ; un filet rejoint le rameau postérieur de C2",
+   "moteur": {
+    "texte": "Grand et petit droits postérieurs de la tête, obliques supérieur et inférieur de la tête",
+    "muscles": [
+     "grand-droit-posterieur-de-la-tete",
+     "petit-droit-posterieur-de-la-tete",
+     "oblique-superieur-de-la-tete",
+     "oblique-inferieur-de-la-tete"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Faiblesse discrète de l'extension et de la rotation fines de la tête ; la sensibilité de la peau est conservée",
+   "test": "Peu d'examen direct : repérer le triangle sous-occipital, sous le trapèze et le semi-épineux de la tête, en nuque détendue",
+   "clinique": "Il peut être comprimé dans le triangle sous-occipital par la contracture des muscles profonds de la nuque, à l'origine de céphalées",
+   "memo": "Sous-occipital : le nerf de C1, pour les quatre muscles du triangle sous l'occiput",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-suboccipital"
+   ],
+   "divergences": "Gray ajoute le semi-épineux de la tête aux muscles qu'il innerve ; les sources récentes n'en gardent que les quatre muscles sous-occipitaux"
+  },
+  {
+   "id": "nerf-supra-orbitaire",
+   "resume": "Le nerf sensitif du front : il sort de l'orbite par l'incisure supra-orbitaire et monte jusqu'au vertex.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-frontal",
+    "texte": "Branche latérale du nerf frontal, à mi-hauteur de l'orbite",
+    "racines": [
+     "V1"
+    ]
+   },
+   "trajet": "Passe au-dessus de l'élévateur de la paupière supérieure, sort par l'incisure (ou le foramen) supra-orbitaire avec l'artère du même nom, monte sous le corrugateur du sourcil et l'occipito-frontal, puis se divise en rameaux médial et latéral",
+   "orifices": [
+    "Incisure supra-orbitaire"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux médial et latéral du front et du cuir chevelu"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du front, paupière supérieure et sa conjonctive, cuir chevelu jusqu'au vertex, muqueuse du sinus frontal"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement du front et du cuir chevelu antérieur du même côté ; une compression à l'incisure donne une douleur à la pression locale, dans la névralgie supra-orbitaire",
+   "test": "Pression du pouce sur le rebord orbitaire, au tiers interne du sourcil, à la recherche d'une douleur ; sensibilité du front comparée de chaque côté",
+   "clinique": "L'incisure se palpe sur le rebord orbitaire supérieur : c'est le point d'injection du bloc supra-orbitaire pour les gestes du front",
+   "memo": "Supra-orbitaire : il sort au-dessus de l'orbite et monte sur tout le front",
+   "variantes": "Le canal est parfois un foramen fermé plutôt qu'une incisure",
+   "sources": [
+    "gray1918",
+    "wp-supraorbital",
+    "tma-ophtalmique"
+   ],
+   "divergences": "Gray arrête son territoire près de la suture lambdoïde, Wikipédia au vertex"
+  },
+  {
+   "id": "nerf-supratrochleaire",
+   "resume": "Le plus petit des deux rameaux du nerf frontal : il passe au-dessus de la trochlée et sent le bas du front et la paupière supérieure.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-frontal",
+    "texte": "Branche médiale du nerf frontal, à mi-hauteur de l'orbite",
+    "racines": [
+     "V1"
+    ]
+   },
+   "trajet": "Passe au-dessus de la trochlée de l'oblique supérieur, donne un filet descendant au nerf infratrochléaire, sort de l'orbite par l'incisure frontale près de la glabelle, et monte sous le corrugateur du sourcil et l'occipito-frontal",
+   "orifices": [
+    "Incisure frontale"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Partie médiale et basse du front, peau et conjonctive de la paupière supérieure"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement du bas du front près de la ligne médiane et de l'angle interne de la paupière supérieure",
+   "test": "Comparer la sensibilité de la peau juste au-dessus de la racine du nez, de chaque côté",
+   "clinique": "Il est souvent bloqué avec le nerf supra-orbitaire pour la chirurgie du front",
+   "memo": "Supra-trochléaire : il passe au-dessus de la poulie de l'oblique supérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-supratrochlear",
+    "tma-ophtalmique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-temporal-profond-anterieur",
+   "resume": "Le nerf moteur de la partie antérieure du temporal : il naît de la division antérieure du mandibulaire, souvent du nerf buccal.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "division-anterieure-du-nerf-mandibulaire",
+    "texte": "Branche motrice de la division antérieure du nerf mandibulaire, souvent par le nerf buccal",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Passe au-dessus du bord supérieur du ptérygoïdien latéral, monte dans la fosse temporale et pénètre la face profonde du muscle temporal par sa partie antérieure",
+   "moteur": {
+    "texte": "Partie antérieure du muscle temporal, élévateur de la mandibule",
+    "muscles": [
+     "muscle-temporal"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Faiblesse de la partie antérieure du temporal : la mandibule se ferme moins fort, le creux temporal est un peu moins comblé",
+   "test": "Serrer les dents en palpant le muscle temporal sur la tempe, comparer les deux côtés",
+   "clinique": "Il est blessé lors des voies d'abord de la fosse infratemporale, avec les autres nerfs de la division antérieure",
+   "memo": "Temporal profond antérieur : le plus en avant, souvent sorti du buccal",
+   "variantes": "Naît du nerf buccal ou directement du tronc antérieur ; un nerf temporal profond moyen s'y ajoute parfois",
+   "sources": [
+    "gray1918",
+    "wp-deep-temporal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-temporal-profond-posterieur",
+   "resume": "Le nerf moteur de la partie postérieure du temporal : il monte contre l'os temporal, sous le muscle.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "division-anterieure-du-nerf-mandibulaire",
+    "texte": "Branche motrice de la division antérieure du nerf mandibulaire (parfois par le nerf massétérique)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Passe au-dessus du bord supérieur du ptérygoïdien latéral, monte contre l'os temporal, sous le muscle temporal, et en innerve la partie postérieure par sa face profonde",
+   "moteur": {
+    "texte": "Partie postérieure du muscle temporal, élévateur et rétropulseur de la mandibule",
+    "muscles": [
+     "muscle-temporal"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Faiblesse de la partie postérieure du temporal : la fermeture et la rétropulsion de la mandibule sont affaiblies",
+   "test": "Serrer les dents en palpant la tempe, puis tirer la mandibule en arrière contre résistance",
+   "clinique": "Il peut être blessé avec les nerfs voisins lors des voies d'abord de la fosse infratemporale",
+   "memo": "Temporal profond postérieur : le fond de la tempe, sous le muscle",
+   "variantes": "Naît parfois du nerf massétérique",
+   "sources": [
+    "gray1918",
+    "wp-deep-temporal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-transverse-du-cou",
+   "resume": "Le nerf sensitif de la peau de la face antérieure du cou : il croise transversalement le sterno-cléido-mastoïdien.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche cutanée du plexus cervical, issue des rameaux antérieurs de C2 et C3",
+    "racines": [
+     "C2",
+     "C3"
+    ]
+   },
+   "trajet": "Sort au milieu du bord postérieur du sterno-cléido-mastoïdien (point nerveux du cou), le contourne, passe sous la veine jugulaire externe, perfore le fascia cervical et se divise sous le platysma en rameaux ascendant et descendant",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face antérieure et latérale du cou, du menton au sternum"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement de la peau antérieure du cou, fréquent après une incision cervicale (thyroïde, carotide) qui le coupe",
+   "test": "Comparer la sensibilité de la peau du cou, de chaque côté de la ligne médiane",
+   "clinique": "Il fait partie du bloc superficiel du plexus cervical, utilisé pour la chirurgie de la thyroïde, de la carotide et des lymphonœuds du cou",
+   "memo": "Transverse du cou : il traverse le sterno-cléido-mastoïdien en travers, vers l'avant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-plexus-cervical",
+    "wp-transverse-cervical"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-troisieme-occipital",
+   "resume": "Le nerf sensitif de la nuque basse : branche médiale du rameau postérieur de C3, il traverse le trapèze.",
+   "sorte": "spinal",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche médiale du rameau postérieur du troisième nerf cervical (C3)",
+    "racines": [
+     "C3"
+    ]
+   },
+   "trajet": "Croise en arrière l'articulation zygapophysaire C2-C3, passe sous le trapèze qu'il perfore, puis monte dans la peau de la partie basse de la nuque et de l'arrière de la tête, en dedans du grand nerf occipital",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la nuque et de la partie basse de l'arrière de la tête ; articulation zygapophysaire C2-C3"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement ou douleur de la nuque haute ; sa contribution à l'articulation C2-C3 en fait une source de céphalée cervicogénique",
+   "test": "Comparer la sensibilité de la peau sous la protubérance occipitale externe, de part et d'autre de la ligne médiane",
+   "clinique": "La céphalée cervicogénique d'origine C2-C3 se confirme par un bloc diagnostique de ce nerf, puis se traite par radiofréquence",
+   "memo": "Troisième occipital : le petit frère de C3, qui monte sous le trapèze vers l'occiput",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-third-occipital"
+   ],
+   "divergences": "L'appui du modèle est la vertèbre C3 ; l'innervation de l'articulation C2-C3 et la céphalée cervicogénique ne figurent pas dans les pages lues et reposent sur les manuels de clinique"
+  },
+  {
+   "id": "nerf-tympanique",
+   "resume": "Le nerf de Jacobson : né du glossopharyngien, il monte dans l'oreille moyenne, sent sa muqueuse et fournit les fibres sécrétoires de la parotide.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-glossopharyngien-ix",
+    "texte": "Branche du glossopharyngien, née du ganglion inférieur, dans la fosse jugulaire",
+    "racines": [
+     "IX"
+    ]
+   },
+   "trajet": "Monte par le canalicule tympanique, dans la crête osseuse entre le canal carotidien et le foramen jugulaire, entre dans la cavité du tympan et se divise sur le promontoire pour former le plexus tympanique",
+   "orifices": [
+    "Canalicule tympanique"
+   ],
+   "branches": [
+    {
+     "nerf": "plexus-nerveux-tympanique",
+     "texte": "Plexus tympanique, sur le promontoire, qui donne le nerf petit pétreux"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse de la cavité du tympan, face interne de la membrane tympanique, trompe auditive et cellules mastoïdiennes"
+   },
+   "autonome": "Fibres parasympathiques du noyau salivaire inférieur : elles forment le nerf petit pétreux, relayées dans le ganglion otique, puis atteignent la parotide",
+   "reflexe": null,
+   "atteinte": "Atteinte rarement isolée : perte de la sensibilité de l'oreille moyenne ; un glomus tympanique le comprime en donnant un acouphène pulsatile et une surdité",
+   "test": null,
+   "clinique": "Le paragangliome du promontoire (glomus tympanique) naît sur son trajet ; sa section (neurectomie tympanique) a été proposée contre le syndrome de Frey",
+   "memo": "Jacobson monte du foramen jugulaire vers l'oreille moyenne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-tympanic",
+    "tma-glossopharyngien"
+   ],
+   "divergences": "Gray le fait naître du ganglion pétreux, nom ancien du ganglion inférieur du IX ; TeachMeAnatomy dit simplement qu'il naît du IX au foramen jugulaire"
+  },
+  {
+   "id": "nerf-utriculaire",
+   "resume": "Le nerf de l'utricule : il fait partie de la branche supérieure du nerf vestibulaire et porte les accélérations linéaires, surtout horizontales.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-vestibulaire",
+    "texte": "Branche supérieure du nerf vestibulaire, issue des cellules bipolaires du ganglion vestibulaire (ganglion de Scarpa)",
+    "racines": [
+     "VIII"
+    ]
+   },
+   "trajet": "Part du ganglion vestibulaire, au fond du méat acoustique interne, traverse l'aire vestibulaire supérieure et atteint la macule de l'utricule, dans la partie supéro-postérieure du vestibule ; la même branche donne les nerfs ampullaires antérieur et latéral",
+   "orifices": [
+    "Aire vestibulaire supérieure"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Macule de l'utricule : accélération linéaire et position de la tête par rapport à la pesanteur"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Névrite vestibulaire : vertige rotatoire brutal, nausées, déséquilibre, nystagmus horizontal ; la compensation vient en une à deux semaines",
+   "test": "Les potentiels évoqués myogéniques vestibulaires oculaires (oVEMP) explorent la voie utriculaire ; le test d'impulsion céphalique explore les canaux voisins",
+   "clinique": "La branche supérieure est la plus souvent touchée par la névrite vestibulaire",
+   "memo": "Utriculaire : en haut et à plat, par l'aire vestibulaire supérieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-vestibular"
+   ],
+   "divergences": "Les sources décrivent la branche supérieure comme un tronc commun à l'utricule et aux ampoules antérieure et latérale ; le nerf utriculaire est le nom de la nomenclature officielle pour le contingent de l'utricule"
+  },
+  {
+   "id": "nerf-vertebral",
+   "resume": "Le nerf sympathique de l'artère vertébrale : il monte avec elle jusqu'au crâne et forme le plexus vertébral.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "ganglion-cervicothoracique",
+    "texte": "Branche du ganglion cervical inférieur (ganglion cervicothoracique ou étoilé), fibres sympathiques post-ganglionnaires",
+    "racines": null
+   },
+   "trajet": "Naît près de l'origine de l'artère vertébrale, monte avec elle dans les foramens transversaires des vertèbres cervicales et la suit jusqu'au crâne, où son plexus se prolonge sur les artères basilaire, cérébrale postérieure et cérébelleuses",
+   "orifices": [
+    "Foramens transversaires des vertèbres cervicales"
+   ],
+   "branches": [
+    {
+     "nerf": "plexus-vertebral",
+     "texte": "Plexus vertébral, autour de l'artère vertébrale"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sympathiques post-ganglionnaires pour la paroi de l'artère vertébrale et de ses prolongements (vasomotricité) ; des filets rejoignent les nerfs spinaux cervicaux inférieurs",
+   "reflexe": null,
+   "atteinte": "Atteinte isolée rare ; l'interruption de la chaîne sympathique cervicale au niveau du ganglion étoilé donne un syndrome de Claude Bernard-Horner",
+   "test": null,
+   "clinique": "Le bloc du ganglion étoilé, au niveau de C7, vise ce relais ; ses complications incluent le syndrome de Claude Bernard-Horner et l'injection intravasculaire, notamment dans l'artère vertébrale",
+   "memo": "Vertébral : le fil sympathique qui monte collé à l'artère vertébrale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-sympathetic-trunk",
+    "wp-stellate"
+   ],
+   "divergences": "Gray ne nomme pas un « nerf vertébral » mais décrit le plexus de l'artère vertébrale, issu du ganglion cervical inférieur et prolongé sur le tronc basilaire ; la limite à C2 donnée par le tracé du modèle n'est pas confirmée, le plexus continuant jusqu'au crâne"
+  },
+  {
+   "id": "nerf-zygomaticofacial",
+   "resume": "Le nerf sensitif de la pommette : il sort de l'os zygomatique par le foramen zygomatico-facial.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-zygomatique",
+    "texte": "Branche du nerf zygomatique (V2), dans l'orbite",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Longe l'angle inféro-latéral de l'orbite, traverse un canal de l'os zygomatique, sort par le foramen zygomatico-facial, perfore l'orbiculaire de l'œil et gagne la peau de la joue",
+   "orifices": [
+    "Foramen zygomatico-facial"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la pommette"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement de la peau de la pommette, fréquent après une fracture du zygomatique",
+   "test": "Comparer la sensibilité de la peau de la pommette, de chaque côté",
+   "clinique": "Il manque parfois ; il s'anastomose avec les rameaux zygomatiques du facial et les rameaux palpébraux inférieurs du nerf maxillaire",
+   "memo": "Zygomatico-facial : le trou de la pommette, pour la peau de la joue",
+   "variantes": "Parfois absent",
+   "sources": [
+    "gray1918",
+    "wp-zygomaticofacial",
+    "wp-zygomatic"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-zygomaticotemporal",
+   "resume": "Le nerf sensitif de la tempe : il sort de l'os zygomatique et monte dans la fosse temporale ; il guide aussi des fibres vers la glande lacrymale.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-zygomatique",
+    "texte": "Branche du nerf zygomatique (V2), dans l'orbite",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Longe la paroi latérale de l'orbite dans un sillon de l'os zygomatique, traverse le foramen zygomatico-temporal, monte entre les deux feuillets du fascia temporal et perfore le feuillet profond environ 2 cm au-dessus de l'arcade zygomatique",
+   "orifices": [
+    "Foramen zygomatico-temporal"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la tempe et du côté du front, au-dessus de l'arcade zygomatique"
+   },
+   "autonome": "Il porte vers le nerf lacrymal les fibres parasympathiques post-ganglionnaires du ganglion ptérygopalatin, qui commandent la sécrétion de la glande lacrymale",
+   "reflexe": null,
+   "atteinte": "Engourdissement de la tempe antérieure ; la sécrétion lacrymale baisse si la voie parasympathique est coupée",
+   "test": "Comparer la sensibilité de la peau de la tempe antérieure, de chaque côté",
+   "clinique": "Il remplace parfois le nerf lacrymal, et réciproquement ; il s'anastomose avec le facial et l'auriculo-temporal",
+   "memo": "Zygomatico-temporal : le trou de la tempe, et la route des larmes vers le lacrymal",
+   "variantes": "Peut remplacer le nerf lacrymal",
+   "sources": [
+    "gray1918",
+    "wp-zygomaticotemporal",
+    "wp-lacrimal"
+   ],
+   "divergences": "Gray cite la peau du côté du front ; Wikipédia celle de la tempe au-dessus de l'arcade zygomatique : même territoire décrit de deux façons"
+  },
+  {
+   "id": "nerf-zygomatique",
+   "resume": "Le nerf du maxillaire qui entre dans l'orbite par en bas et se divise en deux nerfs, vers la tempe et vers la pommette.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Branche du nerf maxillaire, née dans la fosse ptérygopalatine",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Entre dans l'orbite par la fissure orbitaire inférieure, longe sa paroi latérale et se divise en nerfs zygomatico-temporal et zygomatico-facial ; il peut aussi entrer dans l'os par le foramen zygomatico-orbitaire et s'y diviser",
+   "orifices": [
+    "Fissure orbitaire inférieure",
+    "Foramen zygomatico-orbitaire"
+   ],
+   "branches": [
+    {
+     "nerf": "nerf-zygomaticotemporal",
+     "texte": "Nerf zygomatico-temporal"
+    },
+    {
+     "nerf": "nerf-zygomaticofacial",
+     "texte": "Nerf zygomatico-facial"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau communicant avec le nerf lacrymal"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la pommette et de la tempe, par ses deux branches terminales"
+   },
+   "autonome": "Il achemine les fibres parasympathiques post-ganglionnaires du ganglion ptérygopalatin vers le nerf lacrymal, pour la sécrétion de la glande lacrymale",
+   "reflexe": null,
+   "atteinte": "Engourdissement de la pommette et de la tempe ; une atteinte haute diminue aussi la sécrétion lacrymale",
+   "test": "Comparer la sensibilité de la pommette et de la tempe avec le côté opposé",
+   "clinique": "Une fracture du zygomatique l'atteint volontiers",
+   "memo": "Zygomatique : il entre par le bas de l'orbite, puis se sépare en pommette et tempe",
+   "variantes": "Peut se diviser dans l'os zygomatique plutôt que dans l'orbite",
+   "sources": [
+    "gray1918",
+    "wp-zygomatic",
+    "tma-maxillaire"
+   ],
+   "divergences": "Gray le fait naître dans la fosse ptérygopalatine ; Wikipédia, au niveau du ganglion ptérygopalatin : les fibres du ganglion s'y joignent au nerf maxillaire"
+  },
+  {
+   "id": "nerfs-auriculaires-anterieurs",
+   "resume": "Les rameaux de l'auriculo-temporal pour le devant du pavillon et le conduit acoustique externe.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-auriculotemporal",
+    "texte": "Rameaux sensitifs du nerf auriculo-temporal, derrière le col de la mandibule",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Naissent de l'auriculo-temporal derrière le col de la mandibule, avant qu'il croise la racine de l'arcade zygomatique avec l'artère temporale superficielle, et gagnent la face antérieure du pavillon",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Face antérieure du pavillon de l'oreille, dont le tragus et la partie antérieure de l'hélix ; conduit acoustique externe et face externe de la membrane tympanique, par des rameaux voisins"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement du devant du pavillon et du conduit acoustique externe, sans autre déficit",
+   "test": "Effleurer le tragus et le devant de l'hélix et comparer avec l'autre côté",
+   "clinique": "Après une chirurgie de la parotide, la repousse anormale des fibres sécrétoires de l'auriculo-temporal vers les glandes sudoripares donne le syndrome de Frey",
+   "memo": "Auriculaires antérieurs : l'oreille vue de face, c'est le trijumeau",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-auriculotemporal",
+    "tma-mandibulaire"
+   ],
+   "divergences": "Les pages lues citent le pavillon et le conduit ; le tragus et l'hélix viennent des atlas et ne sont pas nommés par elles. L'appui du modèle (l'artère temporale superficielle) accompagne le nerf mais n'est pas sa structure d'origine"
+  },
+  {
+   "id": "nerfs-carotidiens-externes",
+   "resume": "Les rameaux sympathiques du ganglion cervical supérieur qui entourent la carotide externe et la suivent dans ses branches.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "ganglion-cervical-superieur",
+    "texte": "Branches antérieures du ganglion cervical supérieur, fibres sympathiques post-ganglionnaires",
+    "racines": null
+   },
+   "trajet": "Se détachent du ganglion cervical supérieur et forment des plexus sur la carotide commune, la carotide externe et leurs branches ; un filet gagne le ganglion submandibulaire, un autre suit l'artère méningée moyenne vers le ganglion otique",
+   "branches": [
+    {
+     "nerf": "plexus-carotidien-externe",
+     "texte": "Plexus carotidien externe"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sympathiques pour les vaisseaux de la face, de la tête et des glandes salivaires, par les ganglions submandibulaire et otique, sans relais",
+   "reflexe": null,
+   "atteinte": "Interruption : vasodilatation et sudation modifiées de la face, comme dans un syndrome de Claude Bernard-Horner",
+   "test": null,
+   "clinique": "Leur atteinte participe à l'anhidrose faciale du syndrome de Claude Bernard-Horner ; le ptosis et le myosis viennent de la voie qui suit la carotide interne",
+   "memo": "Carotidiens externes : le sympathique qui enrobe l'externe, vers la face",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-scg",
+    "wp-submandibular-ganglion"
+   ],
+   "divergences": "La part des fibres de la carotide externe dans l'anhidrose du syndrome de Claude Bernard-Horner vient de la clinique, non des pages lues"
+  },
+  {
+   "id": "nerfs-laryngopharynges",
+   "resume": "Les rameaux sympathiques médiaux du ganglion cervical supérieur qui rejoignent le plexus pharyngien et le larynx.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "ganglion-cervical-superieur",
+    "texte": "Branches médiales du ganglion cervical supérieur, fibres sympathiques post-ganglionnaires",
+    "racines": null
+   },
+   "trajet": "Descendent en dedans de la carotide interne, se joignent aux rameaux pharyngiens du glossopharyngien et du vague et au nerf laryngé externe, et forment le plexus pharyngien",
+   "branches": [
+    {
+     "nerf": "plexus-pharyngien",
+     "texte": "Plexus pharyngien"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sympathiques vasomotrices pour le pharynx et le larynx, mêlées aux fibres motrices et sensitives du plexus",
+   "reflexe": null,
+   "atteinte": "Interruption : modification de la vasomotricité de la muqueuse pharyngée, sans signe d'examen net",
+   "test": null,
+   "clinique": "Ils portent la vasomotricité du pharynx : à ne pas confondre avec les rameaux pharyngiens du vague, qui portent la motricité",
+   "memo": "Laryngo-pharyngés : le sympathique qui rejoint la gorge par le plexus pharyngien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-pharyngeal-plexus",
+    "wp-scg"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerfs-petits-palatins",
+   "resume": "Les nerfs sensitifs du voile du palais, de la luette et de l'amygdale : ils sortent par les petits foramens palatins, derrière le grand.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Branches descendantes du nerf maxillaire, issues du ganglion ptérygopalatin",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Descendent dans les canaux palatins accessoires, séparés du nerf grand palatin, sortent par les petits foramens palatins et courent en arrière sur le voile du palais",
+   "orifices": [
+    "Foramens petits palatins"
+   ],
+   "branches": [
+    {
+     "nerf": "nerf-palatin-moyen",
+     "texte": "Nerf palatin moyen"
+    },
+    {
+     "nerf": "nerf-palatin-posterieur",
+     "texte": "Nerf palatin postérieur"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse du voile du palais, luette et amygdale palatine"
+   },
+   "autonome": "Fibres parasympathiques sécrétoires pour les glandes palatines",
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité de la face orale du voile et de la luette ; la motricité du voile est conservée",
+   "test": "Toucher le voile du palais avec un abaisse-langue et comparer les deux côtés",
+   "clinique": "Ils s'anesthésient avec le nerf grand palatin pour les soins du palais postérieur",
+   "memo": "Les petits palatins : deux fils pour le voile, derrière le grand palatin",
+   "variantes": "Le nerf palatin moyen est inconstant",
+   "sources": [
+    "gray1918",
+    "wp-lesser-palatine",
+    "wp-greater-palatine"
+   ],
+   "divergences": "Gray distingue les nerfs palatins moyen et postérieur ; Wikipédia les décrit ensemble"
+  },
+  {
+   "id": "nerfs-submandibulaires",
+   "resume": "Les rameaux du ganglion submandibulaire qui entrent dans la glande submandibulaire et la font saliver.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "ganglion-submandibulaire",
+    "texte": "Rameaux post-ganglionnaires du ganglion submandibulaire, suspendu au nerf lingual",
+    "racines": [
+     "VII"
+    ]
+   },
+   "trajet": "Partent du ganglion, au-dessus de la glande submandibulaire sur l'hyoglosse, et entrent dans la glande ; certains gagnent la glande sublinguale et la muqueuse buccale",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sécrétoires parasympathiques post-ganglionnaires (relais du ganglion, fibres pré-ganglionnaires de la corde du tympan) ; des fibres sympathiques du plexus carotidien externe traversent sans relais",
+   "reflexe": null,
+   "atteinte": "Une interruption en amont (facial proximal, corde du tympan, nerf lingual) diminue la salivation submandibulaire du même côté",
+   "test": null,
+   "clinique": "Une paralysie faciale située avant la corde du tympan s'accompagne d'une perte du goût des deux tiers antérieurs de la langue et d'une salivation réduite",
+   "memo": "Submandibulaires : le relais de la corde du tympan, pour la salive sous la mâchoire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-submandibular-ganglion",
+    "wp-lingual"
+   ],
+   "divergences": "Gray appelle le ganglion « submaxillaire » et ne détaille pas ses racines sympathiques, que Wikipédia attribue au plexus carotidien externe"
+  },
+  {
+   "id": "nerfs-temporaux-profonds",
+   "resume": "Les nerfs moteurs du muscle temporal : deux, parfois trois, nés de la division antérieure du mandibulaire.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "division-anterieure-du-nerf-mandibulaire",
+    "texte": "Branches motrices de la division antérieure du nerf mandibulaire, dans la fosse infratemporale",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Passent au-dessus du bord supérieur du ptérygoïdien latéral, montent dans la fosse temporale et entrent par la face profonde du muscle temporal",
+   "branches": [
+    {
+     "nerf": "nerf-temporal-profond-anterieur",
+     "texte": "Nerf temporal profond antérieur"
+    },
+    {
+     "nerf": "nerf-temporal-profond-posterieur",
+     "texte": "Nerf temporal profond postérieur"
+    }
+   ],
+   "moteur": {
+    "texte": "Le muscle temporal, élévateur et rétropulseur de la mandibule",
+    "muscles": [
+     "muscle-temporal"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Faiblesse du temporal : la fermeture de la bouche perd de la force et le creux temporal se creuse",
+   "test": "Serrer les dents en palpant la tempe, comparer les deux côtés",
+   "clinique": "Le réflexe massétérin (réflexe mandibulaire) explore la voie du trijumeau (V3), dont ils font partie avec le nerf massétérique",
+   "memo": "Temporaux profonds : les deux fils sous le temporal, devant et derrière",
+   "variantes": "Un troisième nerf, moyen, existe parfois",
+   "sources": [
+    "gray1918",
+    "wp-deep-temporal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "plexus-caverneux",
+   "resume": "Le réseau sympathique de la carotide interne dans le sinus caverneux : il fournit les fibres sympathiques de l'œil et des nerfs de l'orbite.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "plexus-carotidien-interne",
+    "texte": "Branche médiale du nerf carotidien interne, prolongée par le plexus carotidien interne dans le sinus caverneux",
+    "racines": null
+   },
+   "trajet": "Entoure la partie caverneuse de l'artère carotide interne dans le sinus caverneux ; s'anastomose avec les nerfs oculomoteur, trochléaire, ophtalmique et abducens, et avec le ganglion ciliaire",
+   "branches": [
+    {
+     "nerf": "ganglion-ciliaire",
+     "texte": "Racine sympathique du ganglion ciliaire"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sympathiques post-ganglionnaires du ganglion cervical supérieur : vasomotricité de l'artère et de l'œil, et muscles lisses de l'orbite et de l'œil (dilatateur de la pupille, tarse supérieur)",
+   "reflexe": null,
+   "atteinte": "Une lésion dans le sinus caverneux donne un syndrome de Claude Bernard-Horner (ptosis, myosis) souvent associé à une atteinte des nerfs oculomoteurs ; la douleur faciale vient de V1 et V2",
+   "test": null,
+   "clinique": "Le syndrome du sinus caverneux (tumeur, anévrisme, fistule carotido-caverneuse, thrombophlébite, syndrome de Tolosa-Hunt) peut associer paralysie oculomotrice, perte de sensibilité faciale et pupille anormale",
+   "memo": "Caverneux : le sympathique qui enrobe la carotide dans le sinus, et donne ses fibres à l'œil",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-cavernous-sinus",
+    "wp-internal-carotid-plexus",
+    "wp-scg"
+   ],
+   "divergences": "Gray met la racine sympathique du ganglion ciliaire sur ce plexus ; les pages lues sur le sinus caverneux ne détaillent pas le plexus lui-même"
+  },
+  {
+   "id": "plexus-cervical-posterieur",
+   "resume": "Les rameaux postérieurs de C1 à C3 : le nerf suboccipital pour les petits muscles de la nuque, le grand nerf occipital et le troisième occipital pour la peau de la nuque.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": null,
+    "texte": "Rameaux postérieurs des trois premiers nerfs cervicaux, réunis par des anastomoses",
+    "racines": [
+     "C1",
+     "C2",
+     "C3"
+    ]
+   },
+   "trajet": "Sortent derrière le rachis cervical haut : C1 entre l'occipital et l'atlas, C2 entre l'atlas et l'axis sous l'oblique inférieur, C3 sous le trapèze ; leurs branches montent vers la nuque et le cuir chevelu",
+   "branches": [
+    {
+     "nerf": "nerf-suboccipital",
+     "texte": "Nerf suboccipital (C1)"
+    },
+    {
+     "nerf": "nerf-grand-occipital",
+     "texte": "Grand nerf occipital (C2)"
+    },
+    {
+     "nerf": "nerf-troisieme-occipital",
+     "texte": "Troisième nerf occipital (C3)"
+    }
+   ],
+   "moteur": {
+    "texte": "Muscles sous-occipitaux par le suboccipital ; muscles profonds de la nuque par les autres rameaux",
+    "muscles": [
+     "grand-droit-posterieur-de-la-tete",
+     "petit-droit-posterieur-de-la-tete",
+     "oblique-superieur-de-la-tete",
+     "oblique-inferieur-de-la-tete"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la nuque et du cuir chevelu jusqu'au vertex, par le grand occipital et le troisième occipital"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Névralgie d'Arnold (grand occipital) : douleur de la nuque et du crâne en éclair, avec dysesthésie du cuir chevelu ; faiblesse discrète des mouvements fins de la tête si le suboccipital est touché",
+   "test": "Pression sur le grand occipital, à mi-chemin entre la protubérance occipitale externe et la mastoïde : douleur reproduite",
+   "clinique": "Leur infiltration traite la névralgie occipitale et certaines céphalées cervicogéniques, avec le troisième occipital pour l'articulation C2-C3",
+   "memo": "Plexus cervical postérieur : les trois branches du dos de C1, C2, C3, pour la nuque",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-suboccipital",
+    "wp-third-occipital"
+   ],
+   "divergences": "Gray ne parle pas de plexus : il décrit des rameaux postérieurs réunis par des boucles. Le nom « plexus cervical postérieur » est celui de la Terminologia Anatomica. Les infiltrations du grand occipital ne figurent pas dans les pages lues"
+  },
+  {
+   "id": "plexus-dentaire-inferieur",
+   "resume": "Le réseau de rameaux du nerf alvéolaire inférieur, dans le canal mandibulaire, qui innerve les dents du bas et leur gencive.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "nerf-alveolaire-inferieur",
+    "texte": "Rameaux sensitifs du nerf alvéolaire inférieur, dans le canal mandibulaire",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Court dans le canal mandibulaire sous les racines des dents inférieures : un rameau pour chaque racine pénètre par l'apex ; la branche incisive prolonge le réseau vers la canine et les incisives",
+   "orifices": [
+    "Canal mandibulaire"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Molaires et prémolaires inférieures et leur gencive, puis canine et incisives par la branche incisive"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Douleur dentaire (pulpite) transmise par ce réseau ; anesthésie du bas des dents après un bloc du nerf alvéolaire inférieur, avec engourdissement de la lèvre et du menton",
+   "test": "Percussion ou froid sur une dent suspecte ; sensibilité de la lèvre et du menton après un bloc",
+   "clinique": "Les racines des molaires inférieures sont proches du canal : l'extraction de la dent de sagesse et les implants exposent le nerf et peuvent engourdir la lèvre",
+   "memo": "Plexus dentaire inférieur : un fil par racine, dans le canal de la mandibule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-inferior-dental-plexus",
+    "tma-mandibulaire"
+   ],
+   "divergences": "Wikipédia ne précise pas sa position exacte ; Gray décrit les rameaux dentaires inférieurs au-dessus du nerf, à l'apex des racines"
+  },
+  {
+   "id": "plexus-dentaire-superieur",
+   "resume": "Le réseau des nerfs alvéolaires supérieurs, dans le processus alvéolaire de la maxille, pour les dents du haut et leur gencive.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Réunion des nerfs alvéolaires supérieurs postérieur, moyen et antérieur, branches du nerf maxillaire et de l'infra-orbitaire",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Les trois nerfs alvéolaires supérieurs se rejoignent dans le processus alvéolaire de la maxille, sous le sinus maxillaire : le postérieur longe la tubérosité maxillaire, le moyen la paroi latérale du sinus, l'antérieur sa paroi antérieure",
+   "branches": [
+    {
+     "nerf": "nerf-alveolaire-posterosuperieur",
+     "texte": "Nerf alvéolaire postéro-supérieur"
+    },
+    {
+     "nerf": "nerf-alveolaire-superieur-moyen",
+     "texte": "Nerf alvéolaire supérieur moyen"
+    },
+    {
+     "nerf": "nerf-alveolaire-anterosuperior",
+     "texte": "Nerf alvéolaire antéro-supérieur"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Molaires (postérieur), prémolaires (moyen), canine et incisives (antérieur) supérieures, leur gencive, muqueuse du sinus maxillaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Douleur dentaire haute, parfois confondue avec une sinusite ; anesthésie des dents après un bloc de l'infra-orbitaire ou infiltration locale",
+   "test": "Percussion ou froid sur la dent ; pression sur la paroi du sinus en cas de doute",
+   "clinique": "L'infiltration à l'apex de la dent suffit pour anesthésier les dents hautes, car l'os maxillaire est fin",
+   "memo": "Plexus dentaire supérieur : trois fils, postérieur, moyen, antérieur, tressés au-dessus des racines",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-superior-dental-plexus",
+    "tma-maxillaire"
+   ],
+   "divergences": "Gray et Wikipédia concordent sur les trois nerfs ; Wikipédia le situe dans le processus alvéolaire, Gray le décrit sur les parois du sinus maxillaire"
+  },
+  {
+   "id": "plexus-nerveux-tympanique",
+   "resume": "Le réseau nerveux du promontoire de l'oreille moyenne : il sent la muqueuse tympanique et donne le petit nerf pétreux.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "nerf-tympanique",
+    "texte": "Formé par le nerf tympanique (IX) et les nerfs caroticotympaniques sympathiques",
+    "racines": [
+     "IX"
+    ]
+   },
+   "trajet": "Se dispose dans des sillons du promontoire, sur la paroi médiale de la cavité du tympan ; le nerf tympanique y rejoint les nerfs caroticotympaniques du plexus carotidien interne",
+   "branches": [
+    {
+     "nerf": "nerf-petit-petreux",
+     "texte": "Nerf petit pétreux, vers le ganglion otique"
+    },
+    {
+     "nerf": "nerf-grand-petreux",
+     "texte": "Rameau anastomotique avec le grand nerf pétreux"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse de la cavité du tympan, de la trompe auditive, des cellules mastoïdiennes et face interne de la membrane tympanique"
+   },
+   "autonome": "Fibres parasympathiques du noyau salivaire inférieur, qui rejoignent le petit nerf pétreux ; fibres sympathiques des nerfs caroticotympaniques",
+   "reflexe": null,
+   "atteinte": "Douleur de l'oreille moyenne ou de la trompe ; un paragangliome du promontoire (glomus tympanique) y donne un acouphène pulsatile",
+   "test": "Otoscopie : une masse rouge pulsatile du promontoire évoque un glomus tympanique",
+   "clinique": "La section du plexus ou du nerf tympanique a été tentée contre le syndrome de Frey",
+   "memo": "Plexus tympanique : le fil croisé sur le promontoire, au milieu de l'oreille moyenne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-tympanic",
+    "tma-glossopharyngien"
+   ],
+   "divergences": "L'appui du modèle (la cochlée) n'est pas son support : le plexus est sur le promontoire de la paroi médiale de la cavité du tympan, qui correspond au premier tour de la cochlée"
+  },
+  {
+   "id": "plexus-parotidien",
+   "resume": "La division du nerf facial dans la glande parotide : elle donne les nerfs moteurs des muscles de la face.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Division terminale du nerf facial, derrière la mandibule, après le foramen stylo-mastoïdien",
+    "racines": [
+     "VII"
+    ]
+   },
+   "trajet": "Après le foramen stylo-mastoïdien, le facial traverse la glande parotide, croise la carotide externe et se divise en branches temporo-faciale et cervico-faciale, qui s'anastomosent et se séparent en cinq groupes de rameaux",
+   "orifices": [
+    "Foramen stylo-mastoïdien"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux temporaux, pour le front et l'orbiculaire de l'œil"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux zygomatiques, pour l'orbiculaire de l'œil"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux buccaux, pour le buccinateur, la lèvre supérieure et le nez"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau marginal de la mandibule, pour la lèvre inférieure et le menton"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau cervical, pour le platysma"
+    }
+   ],
+   "moteur": {
+    "texte": "Muscles de la mimique de la face et du cou",
+    "muscles": [
+     "muscle-frontal",
+     "orbiculaire-oeil",
+     "corrugateur-du-sourcil",
+     "buccinateur",
+     "orbiculaire-bouche",
+     "grand-zygomatique",
+     "abaisseur-de-la-levre-inferieure",
+     "mentonnier",
+     "platysma"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion dans la parotide (tumeur, chirurgie, traumatisme) : paralysie faciale périphérique avec perte de la mimique du même côté, mais goût, larmes et audition intacts, car ces fibres naissent plus haut",
+   "test": "Demander de plisser le front, fermer les yeux, sourire, gonfler les joues et siffler",
+   "clinique": "La chirurgie de la parotide expose ce plexus : on le repère dès son origine pour le préserver, en le suivant vers ses branches",
+   "memo": "Plexus parotidien : la patte d'oie du facial, dans la parotide",
+   "variantes": "Le nombre de rameaux et leurs anastomoses varient beaucoup",
+   "sources": [
+    "gray1918",
+    "tma-facial",
+    "wp-parotid-plexus"
+   ],
+   "divergences": "Gray, TeachMeAnatomy et Wikipédia donnent les mêmes cinq groupes de rameaux ; la division préalable en troncs temporo-facial et cervico-facial vient des atlas. La glande parotide elle-même est innervée par l'auriculo-temporal, non par le facial"
+  },
+  {
+   "id": "plexus-pharyngien",
+   "resume": "Le réseau nerveux de la paroi du pharynx : il commande presque tous les muscles de la déglutition et sent la muqueuse.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "nerf-vague-x",
+    "texte": "Rameau pharyngien du vague (motricité) uni à des rameaux du glossopharyngien (sensibilité) et du sympathique cervical",
+    "racines": [
+     "IX",
+     "X"
+    ]
+   },
+   "trajet": "Se place sur la face externe du pharynx, surtout sur le constricteur moyen, formé de rameaux du vague, du glossopharyngien et du sympathique cervical ; ses fibres montent sur le constricteur supérieur ou descendent sur l'inférieur avant de gagner les muscles et la muqueuse",
+   "moteur": {
+    "texte": "Tous les muscles du pharynx sauf le stylo-pharyngien, et les muscles du voile du palais sauf le tenseur du voile",
+    "muscles": [
+     "constricteur-superieur-du-pharynx",
+     "constricteur-moyen-du-pharynx",
+     "constricteur-inferieur-du-pharynx",
+     "palatopharyngien",
+     "salpingopharyngien",
+     "palatoglosse"
+    ]
+   },
+   "sensitif": {
+    "texte": "Muqueuse de l'oropharynx et du laryngopharynx (le rhinopharynx au-dessus de la trompe relève de V2)"
+   },
+   "autonome": "Fibres sympathiques vasomotrices venues du ganglion cervical supérieur (nerfs laryngopharyngés)",
+   "reflexe": {
+    "nom": "Réflexe nauséeux (voie afférente par IX, efférente par X)",
+    "racines": [
+     "IX",
+     "X"
+    ]
+   },
+   "atteinte": "Dysphagie, régurgitation nasale, voix nasonnée, luette déviée du côté sain à l'émission du « a » ; le réflexe nauséeux est affaibli ou aboli",
+   "test": "Faire dire « aaah » en observant le voile et la luette ; toucher la paroi postérieure du pharynx pour le réflexe nauséeux",
+   "clinique": "Les troubles de la déglutition d'une lésion du vague (syndrome bulbaire, tumeur du foramen jugulaire) viennent de l'atteinte de ce plexus",
+   "memo": "Plexus pharyngien : IX sent, X commande, sympathique irrigue, tous sur le constricteur moyen",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-pharyngeal-plexus",
+    "tma-glossopharyngien"
+   ],
+   "divergences": "Gray attribue le rameau pharyngien du vague surtout à des fibres venues de la racine crânienne de l'accessoire ; Wikipédia hésite sur la part du XI. On retient le vague comme voie motrice"
+  },
+  {
+   "id": "plexus-carotidien-commun",
+   "resume": "Le réseau sympathique de l'artère carotide commune : il vient du ganglion cervical supérieur et prolonge le tronc sympathique le long de l'artère.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "ganglion-cervical-superieur",
+    "texte": "Rameaux antérieurs du ganglion cervical supérieur, avec les nerfs carotidiens, autour de la carotide commune",
+    "racines": null
+   },
+   "trajet": "Entoure l'artère carotide commune dans la gaine carotidienne, au-dessous de la bifurcation, puis se prolonge sur les plexus carotidiens externe et interne",
+   "branches": [
+    {
+     "nerf": "plexus-carotidien-externe",
+     "texte": "Plexus carotidien externe, sur la carotide externe"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Fibres sympathiques post-ganglionnaires pour la paroi de l'artère carotide commune ; elles dépendent des fibres pré-ganglionnaires des premiers segments thoraciques",
+   "reflexe": null,
+   "atteinte": "Lésion du sympathique le long de la carotide (dissection, tumeur, chirurgie cervicale) : syndrome de Claude Bernard-Horner avec ptosis et myosis",
+   "test": null,
+   "clinique": "Une douleur cervicale ou faciale brutale avec un Horner doit faire chercher une dissection carotidienne",
+   "memo": "Plexus carotidien commun : le sympathique qui gaine la carotide du cou, du ganglion supérieur jusqu'à la bifurcation",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-sympathetic-trunk",
+    "wp-scg"
+   ],
+   "divergences": "Gray décrit des plexus autour des carotides commune et externe, sans nommer un « plexus carotidien commun » ; le nom est celui de la Terminologia Anatomica. La dissection carotidienne comme cause de Horner est de pratique clinique, non des pages lues"
+  }
+ ]
+}

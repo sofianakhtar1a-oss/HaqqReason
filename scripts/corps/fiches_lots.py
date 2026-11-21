@@ -47,6 +47,13 @@ def contexte(e):
         connu["ensemble"] = {"id": e["ensemble"], "nom": nom(e["ensemble"])}
     if chefs.get(e["id"]):
         connu["parties_modelisees"] = sorted(set(chefs[e["id"]]))
+    # Une structure construite par L'Écorché : la description écrite pour la tracer, et ce sur quoi elle s'appuie.
+    if e.get("resume"):
+        connu["description_du_trace"] = e["resume"]
+    if e.get("appui"):
+        connu["appui_dans_le_modele"] = {"id": e["appui"], "nom": nom(e["appui"])}
+    if e.get("noms"):
+        connu["autres_noms"] = e["noms"]
     if e["id"] in peau:
         connu["profondeur_sous_la_peau_mm"] = peau[e["id"]]
     if connu:
@@ -81,6 +88,35 @@ def dans(e, couche, groupe):
     return GRANDE[e["region"]] in gs
 os.makedirs(os.path.join(FICHES, "entree"), exist_ok=True)
 bilan = []
+# --manquantes : les structures qui n'ont pas encore de fiche (ajoutées après la première rédaction) forment des lots
+# nouveaux, « <couche>-ajouts-<n> », de 40 structures au plus, rangées par région ; les lots existants ne bougent pas.
+if "--manquantes" in sys.argv:
+    MODELE_FICHES = os.path.abspath(os.path.join(ICI, "..", "..", "src", "lib", "corps", "fiches"))
+    deja = set()
+    for f in os.listdir(os.path.join(FICHES, "sortie")):
+        if f.endswith(".json"):
+            deja |= {x["id"] for x in json.load(open(os.path.join(FICHES, "sortie", f), encoding="utf-8")).get("fiches", []) if isinstance(x, dict)}
+    distribues = set()
+    for f in os.listdir(os.path.join(FICHES, "entree")):
+        if f.endswith(".json") and not f.startswith("_"):
+            distribues |= {x["id"] for x in json.load(open(os.path.join(FICHES, "entree", f), encoding="utf-8")).get("structures", [])}
+    ORDRE = ["tete", "cou", "thorax", "abdomen", "dos", "bassin", "epaule", "bras", "avant-bras", "main", "hanche", "cuisse", "jambe", "pied"]
+    for couche in LOTS:
+        els = [e for e in elements + ensembles if e["couche"] == couche and e["id"] not in deja and e["id"] not in distribues and not (couche == "tendon" and e.get("genere"))]
+        els.sort(key=lambda e: (ORDRE.index(e["region"]) if e["region"] in ORDRE else 99, e["rang"], e["nom"]))
+        if not els:
+            continue
+        n = max(1, -(-len(els) // 40))
+        pas = -(-len(els) // n)
+        k = 1
+        while os.path.exists(os.path.join(FICHES, "entree", f"{couche}-ajouts-{k}.json")):
+            k += 1
+        for i in range(n):
+            part = els[i * pas : (i + 1) * pas]
+            lot = f"{couche}-ajouts-{k + i}"
+            json.dump({"lot": lot, "couche": couche, "structures": [contexte(e) for e in part]}, open(os.path.join(FICHES, "entree", lot + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            bilan.append((lot, len(part)))
+    LOTS = {}
 for couche, regions in LOTS.items():
     for groupe in regions:
         gs = groupe.split("+")

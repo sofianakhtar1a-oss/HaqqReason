@@ -100,6 +100,8 @@ export type Element = {
   construit?: boolean;
   /** En bref : ce qu'elle est, d'où elle vient, ce qu'elle fait (pour une structure construite sans fiche). */
   resume?: string;
+  /** Pour une structure construite : ce sur quoi elle s'appuie (le tronc d'une branche, la veine où se jette un affluent). */
+  appui?: string;
   /** Le nombre de chefs ou de parties modélisés. */
   chefs?: number;
   /** Muscles : le nerf (identifiant), la loge, la famille d'action, les os d'origine et de terminaison (identifiants). */

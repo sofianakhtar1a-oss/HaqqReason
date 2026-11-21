@@ -61,7 +61,8 @@ for couche, termes in reference().items():
     sortie[couche] = x
     tout[couche] = [(l["id"], l["anglais"], l["francais"]) for l in manque]
 
-json.dump({"elements": len(elements) + len(ensembles), "raisons": RAISONS, "couches": sortie}, open(os.path.join(MODELE, "couverture.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+construits = sum(1 for e in elements if e.get("construit"))
+json.dump({"elements": len(elements) + len(ensembles), "ensembles": sum(1 for e in ensembles if e.get("membres")), "reperes": sum(1 for r in reperes if r.get("sur")), "construits": construits, "raisons": RAISONS, "couches": sortie}, open(os.path.join(MODELE, "couverture.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 # (pour le travail : la liste complète de ce qui manque, si on la demande)
 if os.environ.get("COUVERTURE_TOUT"):
     json.dump(tout, open(os.environ["COUVERTURE_TOUT"], "w", encoding="utf-8"), ensure_ascii=False, indent=0)

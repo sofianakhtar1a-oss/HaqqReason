@@ -1,0 +1,888 @@
+{
+ "lot": "encephale-ajouts-5",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "noyaux-amygdaliens-centromediaux",
+   "nom": "Noyaux amygdaliens centromédiaux",
+   "latin": "Nuclei centromediales amygdalae",
+   "anglais": "Centromedial amygdaloid nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux amygdaliens centromédiaux",
+   "ta2": "5552",
+   "connu": {
+    "description_du_trace": "Partie dorsomédiale de l'amygdale, origine de la strie terminale ; elle commande les réponses autonomes et comportementales de l'émotion.",
+    "appui_dans_le_modele": {
+     "id": "corps-amygdaloide",
+     "nom": "Corps amygdaloïde"
+    }
+   }
+  },
+  {
+   "id": "noyaux-anterieurs-du-thalamus",
+   "nom": "Noyaux antérieurs du thalamus",
+   "latin": "Nuclei anteriores thalami",
+   "anglais": "Anterior nuclei of thalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux antérieurs du thalamus",
+   "ta2": "5679",
+   "connu": {
+    "description_du_trace": "Groupe de noyaux du pôle antérieur du thalamus, sous le tubercule antérieur ; il reçoit le faisceau mamillothalamique et projette sur le gyrus cingulaire (circuit de Papez, mémoire).",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyaux-cerebelleux",
+   "nom": "Noyaux cérébelleux",
+   "latin": "Nuclei cerebelli",
+   "anglais": "Cerebellar nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux cérébelleux",
+   "ta2": "5835",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-dentele",
+      "nom": "Noyau dentelé"
+     },
+     {
+      "id": "noyau-emboliforme",
+      "nom": "Noyau emboliforme"
+     },
+     {
+      "id": "noyau-globuleux",
+      "nom": "Noyau globuleux"
+     },
+     {
+      "id": "noyau-fastigial",
+      "nom": "Noyau fastigial"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-des-aires-perizonales",
+   "nom": "Noyaux des aires périzonales",
+   "latin": "Nuclei campi perizonalis",
+   "anglais": "Nuclei of perizonal fields",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux des aires périzonales",
+   "ta2": "5706",
+   "connu": {
+    "description_du_trace": "Noyaux de la zone incertaine et des champs de Forel, nappe sous le thalamus, au-dessus du noyau subthalamique ; ils relient pallidum, thalamus et tronc cérébral.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyaux-des-corps-genicules",
+   "nom": "Noyaux des corps géniculés",
+   "latin": "Nuclei corporum geniculatorum",
+   "anglais": "Nuclei of geniculate bodies",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux des corps géniculés",
+   "ta2": "5700",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "corps-genicule-lateral",
+      "nom": "Corps géniculé latéral"
+     },
+     {
+      "id": "corps-genicule-medial",
+      "nom": "Corps géniculé médial"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-du-colliculus-inferieur",
+   "nom": "Noyaux du colliculus inférieur",
+   "latin": "Nuclei colliculi inferioris",
+   "anglais": "Nuclei of inferior colliculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux du colliculus inférieur",
+   "ta2": "5917",
+   "connu": {
+    "description_du_trace": "Noyaux central, péricentral et externe du colliculus inférieur, relais auditif obligatoire vers le corps géniculé médial.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyaux-du-raphe-de-la-moelle-allongee",
+   "nom": "Noyaux du raphé de la moëlle allongée",
+   "latin": "Nuclei raphes medullae oblongatae",
+   "anglais": "Raphe nuclei of medulla oblongata",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux du raphé de la moëlle allongée",
+   "ta2": "6035",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-du-raphe-pallidal",
+      "nom": "Noyau du raphé pallidal"
+     },
+     {
+      "id": "noyau-du-raphe-obscur",
+      "nom": "Noyau du raphé obscur"
+     },
+     {
+      "id": "noyau-du-grand-raphe",
+      "nom": "Noyau du grand raphé"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-du-raphe-du-pont",
+   "nom": "Noyaux du raphé du pont",
+   "latin": "Nuclei raphes pontis",
+   "anglais": "Pontine raphe nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux du raphé du pont",
+   "ta2": "5955",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-median-du-raphe",
+      "nom": "Noyau médian du raphé"
+     },
+     {
+      "id": "noyaux-posterieur-du-raphe",
+      "nom": "Noyaux postérieur du raphé"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-intralaminaires-du-thalamus",
+   "nom": "Noyaux intralaminaires du thalamus",
+   "latin": "Nuclei intralaminares thalami",
+   "anglais": "Intralaminar nuclei of thalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux intralaminaires du thalamus",
+   "ta2": "5685",
+   "connu": {
+    "description_du_trace": "Noyaux (centromédian, parafasciculaire…) logés dans la lame médullaire interne ; ils projettent largement sur le cortex et le striatum et règlent l'éveil et l'attention.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyaux-lateraux-du-thalamus",
+   "nom": "Noyaux latéraux du thalamus",
+   "latin": "Nuclei laterales thalami",
+   "anglais": "Lateral nuclei of thalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux latéraux du thalamus",
+   "ta2": "5686",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyaux-ventraux-anterieurs",
+      "nom": "Noyaux ventraux antérieurs"
+     },
+     {
+      "id": "noyaux-ventraux-lateraux",
+      "nom": "Noyaux ventraux latéraux"
+     },
+     {
+      "id": "noyaux-ventraux-mediaux",
+      "nom": "Noyaux ventraux médiaux"
+     },
+     {
+      "id": "noyau-ventral-posterolateral",
+      "nom": "Noyau ventral postérolatéral"
+     },
+     {
+      "id": "noyau-ventral-posteromedial",
+      "nom": "Noyau ventral postéromédial"
+     },
+     {
+      "id": "noyau-ventral-postero-inferieur",
+      "nom": "Noyau ventral postéro-inférieur"
+     },
+     {
+      "id": "noyau-dorsolateral",
+      "nom": "Noyau dorsolatéral"
+     },
+     {
+      "id": "noyau-posterolateral",
+      "nom": "Noyau postérolatéral"
+     },
+     {
+      "id": "noyau-du-pulvinar",
+      "nom": "Noyau du pulvinar"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-magnocellulaires-du-telencephale-basal",
+   "nom": "Noyaux magnocellulaires du télencéphale basal",
+   "latin": "Nuclei magnocellulares telencephali basalis",
+   "anglais": "Magnocellular nuclei of basal forebrain",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux magnocellulaires du télencéphale basal",
+   "ta2": "5545",
+   "connu": {
+    "description_du_trace": "Noyaux à grandes cellules cholinergiques (dont le noyau basal de Meynert) de la substance innominée, sous le pallidum ; ils innervent tout le cortex et sont atteints dans la maladie d'Alzheimer.",
+    "appui_dans_le_modele": {
+     "id": "noyau-lenticulaire",
+     "nom": "Noyau lenticulaire"
+    }
+   }
+  },
+  {
+   "id": "noyaux-moteurs-lateraux-des-nerfs-spinaux",
+   "nom": "Noyaux moteurs latéraux des nerfs spinaux",
+   "latin": "Nuclei motorii laterales nervorum spinalium",
+   "anglais": "Lateral motor nuclei of spinal nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux moteurs latéraux des nerfs spinaux",
+   "ta2": "6081",
+   "connu": {
+    "description_du_trace": "Colonne latérale de la corne antérieure, développée aux renflements cervical (C5-T1) et lombo-sacral (L2-S2) : ses motoneurones innervent les muscles des membres.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "noyaux-moteurs-mediaux-des-nerfs-spinaux",
+   "nom": "Noyaux moteurs médiaux des nerfs spinaux",
+   "latin": "Nuclei motorii mediales nervorum spinalium",
+   "anglais": "Medial motor nuclei of spinal nerves",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux moteurs médiaux des nerfs spinaux",
+   "ta2": "6080",
+   "connu": {
+    "description_du_trace": "Colonne médiale de la corne antérieure, présente sur toute la hauteur de la moelle : ses motoneurones innervent les muscles axiaux du cou et du tronc.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "noyaux-parabrachiaux",
+   "nom": "Noyaux parabrachiaux",
+   "latin": "Nuclei parabrachiales",
+   "anglais": "Parabrachial nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux parabrachiaux",
+   "ta2": "5945",
+   "connu": {
+    "description_du_trace": "Noyaux autour du pédoncule cérébelleux supérieur : relais gustatif et viscéral, et centre de régulation respiratoire.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyaux-pontins",
+   "nom": "Noyaux pontins",
+   "latin": "Nuclei pontis",
+   "anglais": "Pontine nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux pontins",
+   "ta2": "5926",
+   "connu": {
+    "description_du_trace": "Amas de neurones de la partie basilaire du pont : ils reçoivent les fibres corticopontines et les envoient, par le pédoncule cérébelleux moyen, au cervelet controlatéral.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyaux-posterieur-du-raphe",
+   "nom": "Noyaux postérieur du raphé",
+   "latin": "Nucleus posterior raphes",
+   "anglais": "Posterior raphe nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux postérieur du raphé",
+   "ta2": "5957",
+   "connu": {
+    "description_du_trace": "Noyau dorsal du raphé, sous l'aqueduc : principal foyer de neurones à sérotonine projetant vers le prosencéphale (humeur, sommeil).",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "noyaux-pretectaux",
+   "nom": "Noyaux prétectaux",
+   "latin": "Nuclei pretectales",
+   "anglais": "Pretectal nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux prétectaux",
+   "ta2": "5740",
+   "connu": {
+    "description_du_trace": "Noyaux du prétectum, au-devant du colliculus supérieur : relais du réflexe photomoteur (rétine vers noyau d'Edinger-Westphal).",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "noyaux-perihypoglossaux",
+   "nom": "Noyaux périhypoglossaux",
+   "latin": "Nuclei perihypoglossales",
+   "anglais": "Perihypoglossal nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux périhypoglossaux",
+   "ta2": "6017",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-subhypoglosse",
+      "nom": "Noyau subhypoglosse"
+     },
+     {
+      "id": "noyau-intercale",
+      "nom": "Noyau intercalé"
+     },
+     {
+      "id": "noyau-prepose",
+      "nom": "Noyau préposé"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-periventraux-du-thalamus",
+   "nom": "Noyaux périventraux du thalamus",
+   "latin": "Nuclei periventriculares thalami",
+   "anglais": "Periventricular nuclei of thalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux périventraux du thalamus",
+   "ta2": "5699",
+   "connu": {
+    "description_du_trace": "Mince couche de cellules appliquée contre la paroi du troisième ventricule.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyaux-strie-terminal",
+   "nom": "Noyaux strié terminal",
+   "latin": "Nucleus striae terminalis",
+   "anglais": "Bed nucleus of stria terminalis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux strié terminal",
+   "ta2": "5555",
+   "connu": {
+    "description_du_trace": "Noyau du lit de la strie terminale, derrière le septum et au-dessus de la commissure antérieure ; prolongement de l'amygdale centrale, il intervient dans l'anxiété et le stress.",
+    "appui_dans_le_modele": {
+     "id": "noyaux-septaux",
+     "nom": "Noyaux septaux"
+    }
+   }
+  },
+  {
+   "id": "noyaux-ventraux-anterieurs",
+   "nom": "Noyaux ventraux antérieurs",
+   "latin": "Nucleus ventralis anterior",
+   "anglais": "Ventral anterior nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux ventraux antérieurs",
+   "ta2": "5688",
+   "connu": {
+    "description_du_trace": "Noyau ventral antérieur du thalamus, relais du globus pallidus vers le cortex prémoteur ; il participe au contrôle du mouvement.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyaux-ventraux-du-thalamus",
+   "nom": "Noyaux ventraux du thalamus",
+   "latin": "Nuclei ventrales thalami",
+   "anglais": "Ventral nuclei of thalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux ventraux du thalamus",
+   "ta2": "5687",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyaux-ventraux-anterieurs",
+      "nom": "Noyaux ventraux antérieurs"
+     },
+     {
+      "id": "noyaux-ventraux-lateraux",
+      "nom": "Noyaux ventraux latéraux"
+     },
+     {
+      "id": "noyaux-ventraux-mediaux",
+      "nom": "Noyaux ventraux médiaux"
+     },
+     {
+      "id": "noyau-ventral-posterolateral",
+      "nom": "Noyau ventral postérolatéral"
+     },
+     {
+      "id": "noyau-ventral-posteromedial",
+      "nom": "Noyau ventral postéromédial"
+     },
+     {
+      "id": "noyau-ventral-postero-inferieur",
+      "nom": "Noyau ventral postéro-inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-ventraux-lateraux",
+   "nom": "Noyaux ventraux latéraux",
+   "latin": "Nuclei ventrales laterales",
+   "anglais": "Ventral lateral nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux ventraux latéraux",
+   "ta2": "5689",
+   "connu": {
+    "description_du_trace": "Noyaux ventraux latéraux, relais du cervelet (noyau dentelé) et du pallidum vers le cortex moteur primaire.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyaux-ventraux-mediaux",
+   "nom": "Noyaux ventraux médiaux",
+   "latin": "Nuclei ventrales mediales",
+   "anglais": "Ventral medial nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux ventraux médiaux",
+   "ta2": "5690",
+   "connu": {
+    "description_du_trace": "Petit noyau ventral médial, contre la paroi du troisième ventricule ; relais gustatif et viscéral vers l'insula.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "noyaux-ventraux-posterieurs",
+   "nom": "Noyaux ventraux postérieurs",
+   "latin": "Nuclei ventrales posteriores",
+   "anglais": "Ventral posterior nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux ventraux postérieurs",
+   "ta2": "5691",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-ventral-posterolateral",
+      "nom": "Noyau ventral postérolatéral"
+     },
+     {
+      "id": "noyau-ventral-posteromedial",
+      "nom": "Noyau ventral postéromédial"
+     },
+     {
+      "id": "noyau-ventral-postero-inferieur",
+      "nom": "Noyau ventral postéro-inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "prethalamus",
+   "nom": "Préthalamus",
+   "latin": "Prethalamus",
+   "anglais": "Prethalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Préthalamus",
+   "ta2": "5703",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-reticulaire-du-prethalamus",
+      "nom": "Noyau réticulaire du préthalamus"
+     },
+     {
+      "id": "noyau-pregenicule",
+      "nom": "Noyau prégéniculé"
+     },
+     {
+      "id": "noyaux-des-aires-perizonales",
+      "nom": "Noyaux des aires périzonales"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pedoncule-cerebelleux-inferieur",
+   "nom": "Pédoncule cérébelleux inférieur",
+   "latin": "Pedunculus cerebellaris inferior",
+   "anglais": "Inferior cerebellar peduncle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pédoncule cérébelleux inférieur",
+   "ta2": "5850",
+   "connu": {
+    "description_du_trace": "Pédoncule qui unit le bulbe au cervelet en arrière du pédoncule moyen ; il porte surtout les fibres spino-cérébelleuses, olivocérébelleuses et vestibulocérébelleuses (corps restiforme).",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "pedoncule-cerebelleux-moyen",
+   "nom": "Pédoncule cérébelleux moyen",
+   "latin": "Pedunculus cerebellaris medius",
+   "anglais": "Middle cerebellar peduncle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pédoncule cérébelleux moyen",
+   "ta2": "5848",
+   "connu": {
+    "description_du_trace": "Plus gros des pédoncules cérébelleux : il enserre la face latérale du pont et porte au cervelet controlatéral les fibres des noyaux du pont (cortex – pont – cervelet).",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "pedoncule-cerebral",
+   "nom": "Pédoncule cérébral",
+   "latin": "Pedunculus cerebri",
+   "anglais": "Cerebral peduncle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pédoncule cérébral",
+   "ta2": "5878",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-accessoire-du-nerf-oculomoteur",
+      "nom": "Noyau accessoire du nerf oculomoteur"
+     },
+     {
+      "id": "base-du-pedoncule",
+      "nom": "Base du pédoncule"
+     },
+     {
+      "id": "noyau-du-nerf-oculomoteur",
+      "nom": "Noyau du nerf oculomoteur"
+     },
+     {
+      "id": "noyau-du-nerf-trochleaire",
+      "nom": "Noyau du nerf trochléaire"
+     },
+     {
+      "id": "noyau-rouge",
+      "nom": "Noyau rouge"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sillon-anterolateral-de-la-moelle-epiniere",
+   "nom": "Sillon antérolatéral de la moëlle épinière",
+   "latin": "Sulcus anterolateralis medullae spinalis",
+   "anglais": "Anterolateral sulcus of spinal cord",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon antérolatéral de la moëlle épinière",
+   "ta2": "6054",
+   "connu": {
+    "description_du_trace": "Sillon longitudinal de la face antéro-latérale de la moelle, par où émergent les radicelles antérieures des nerfs spinaux ; il sépare les cordons antérieur et latéral.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "sillon-basilaire",
+   "nom": "Sillon basilaire",
+   "latin": "Sulcus basilaris",
+   "anglais": "Basilar sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon basilaire",
+   "ta2": "5923",
+   "connu": {
+    "description_du_trace": "Gouttière médiane de la face antérieure du pont où chemine l'artère basilaire.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "sillon-bulbopontin",
+   "nom": "Sillon bulbopontin",
+   "latin": "Sulcus bulbopontinus",
+   "anglais": "Medullopontine sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon bulbopontin",
+   "ta2": "5924",
+   "connu": {
+    "description_du_trace": "Sillon transversal qui sépare, à la face antérieure du tronc cérébral, le bord inférieur du pont de la pyramide et de l'olive ; les nerfs VI, VII et VIII en émergent.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "sillon-central-de-l-insula",
+   "nom": "Sillon central de l'insula",
+   "latin": "Sulcus centralis insulae",
+   "anglais": "Central sulcus of insula",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon central de l'insula",
+   "ta2": "5505",
+   "connu": {
+    "description_du_trace": "Sillon oblique de la face de l'insula, parallèle au sillon central du cerveau : il sépare les gyri courts, en avant, du long gyrus, en arrière.",
+    "appui_dans_le_modele": {
+     "id": "cortex-insulaire",
+     "nom": "Cortex insulaire"
+    }
+   }
+  },
+  {
+   "id": "sillon-cerebral",
+   "nom": "Sillon cérébral",
+   "latin": "Sulci cerebri",
+   "anglais": "Cerebral sulci",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon cérébral",
+   "ta2": "5433",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "sillon-occipital-anterieur",
+      "nom": "Sillon occipital antérieur"
+     },
+     {
+      "id": "sillon-calcarin",
+      "nom": "Sillon calcarin"
+     },
+     {
+      "id": "sillon-central",
+      "nom": "Sillon central"
+     },
+     {
+      "id": "sillon-cingulaire",
+      "nom": "Sillon cingulaire"
+     },
+     {
+      "id": "sillon-circulaire-de-l-insula",
+      "nom": "Sillon circulaire de l'insula"
+     },
+     {
+      "id": "scissure-collaterale",
+      "nom": "Scissure collatérale"
+     },
+     {
+      "id": "sillon-frontal-inferieur",
+      "nom": "Sillon frontal inférieur"
+     },
+     {
+      "id": "sillon-temporal-inferieur",
+      "nom": "Sillon temporal inférieur"
+     },
+     {
+      "id": "sillon-intraparietal",
+      "nom": "Sillon intrapariétal"
+     },
+     {
+      "id": "rameau-anterieur-du-sillon-lateral",
+      "nom": "Rameau antérieur du sillon latéral"
+     },
+     {
+      "id": "rameau-ascendant-du-sillon-lateral",
+      "nom": "Rameau ascendant du sillon latéral"
+     },
+     {
+      "id": "sillon-lateral-rameau-posterieur",
+      "nom": "Sillon latéral (rameau postérieur)"
+     },
+     {
+      "id": "sillon-lunaire",
+      "nom": "Sillon lunaire"
+     },
+     {
+      "id": "sillon-occipitotemporal",
+      "nom": "Sillon occipitotemporal"
+     },
+     {
+      "id": "sillon-olfactif",
+      "nom": "Sillon olfactif"
+     },
+     {
+      "id": "sillons-orbitaires",
+      "nom": "Sillons orbitaires"
+     },
+     {
+      "id": "encephale-sillons-orbitaires",
+      "nom": "Sillons orbitaires"
+     },
+     {
+      "id": "sillon-paracentral",
+      "nom": "Sillon paracentral"
+     },
+     {
+      "id": "sillon-parieto-occipital",
+      "nom": "Sillon pariéto-occipital"
+     },
+     {
+      "id": "sillon-postcentral",
+      "nom": "Sillon postcentral"
+     },
+     {
+      "id": "sillon-collateral-transverse-posterieur",
+      "nom": "Sillon collatéral transverse postérieur"
+     },
+     {
+      "id": "sillon-precentral",
+      "nom": "Sillon précentral"
+     },
+     {
+      "id": "sillon-subparietal",
+      "nom": "Sillon subpariétal"
+     },
+     {
+      "id": "sillon-intermediaire-primaire-de-jensen",
+      "nom": "Sillon intermédiaire primaire (de Jensen)"
+     },
+     {
+      "id": "sillon-frontal-superieur",
+      "nom": "Sillon frontal supérieur"
+     },
+     {
+      "id": "sillon-temporal-superieur",
+      "nom": "Sillon temporal supérieur"
+     },
+     {
+      "id": "sillon-occipital-transverse",
+      "nom": "Sillon occipital transverse"
+     },
+     {
+      "id": "sillon-du-corps-calleux",
+      "nom": "Sillon du corps calleux"
+     },
+     {
+      "id": "sillon-rhinal",
+      "nom": "Sillon rhinal"
+     },
+     {
+      "id": "sillons-para-olfactifs",
+      "nom": "Sillons para-olfactifs"
+     },
+     {
+      "id": "sillon-hippocampal",
+      "nom": "Sillon hippocampal"
+     },
+     {
+      "id": "sillons-temporaux-transverses",
+      "nom": "Sillons temporaux transverses"
+     },
+     {
+      "id": "sillon-central-de-l-insula",
+      "nom": "Sillon central de l'insula"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sillon-du-corps-calleux",
+   "nom": "Sillon du corps calleux",
+   "latin": "Sulcus corporis callosi",
+   "anglais": "Sulcus of corpus callosum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon du corps calleux",
+   "ta2": "5439",
+   "connu": {
+    "description_du_trace": "Gouttière profonde qui sépare la face supérieure du corps calleux du gyrus cingulaire, de son genou à son splénium, où elle se prolonge vers le sillon de l'hippocampe.",
+    "appui_dans_le_modele": {
+     "id": "corps-calleux",
+     "nom": "Corps calleux"
+    }
+   }
+  },
+  {
+   "id": "sillon-habenulaire",
+   "nom": "Sillon habénulaire",
+   "latin": "Sulcus habenularis",
+   "anglais": "Habenular sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon habénulaire",
+   "ta2": "5664",
+   "connu": {
+    "description_du_trace": "Sillon du bord dorsal de la paroi du troisième ventricule, sous la strie médullaire, qui sépare le thalamus de l'épithalamus (habenula).",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  }
+ ]
+}

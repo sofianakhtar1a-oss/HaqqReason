@@ -1,0 +1,589 @@
+{
+ "lot": "artere-ajouts-3",
+ "couche": "artere",
+ "structures": [
+  {
+   "id": "artere-surrenale-moyenne",
+   "nom": "Artère surrénale moyenne",
+   "latin": "Arteria suprarenalis media",
+   "anglais": "Middle suprarenal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère surrénale moyenne",
+   "ta2": "4268",
+   "connu": {
+    "provenance": "aorte-abdominale",
+    "description_du_trace": "Petite branche née directement de l'aorte abdominale au niveau de l'artère mésentérique supérieure ; elle gagne le bord médial de la glande surrénale.",
+    "appui_dans_le_modele": {
+     "id": "aorte-abdominale",
+     "nom": "Aorte abdominale"
+    }
+   }
+  },
+  {
+   "id": "artere-testiculaire",
+   "nom": "Artère testiculaire",
+   "latin": "Arteria testicularis",
+   "anglais": "Testicular artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère testiculaire",
+   "ta2": "4288",
+   "connu": {
+    "description_du_trace": "Branche de l'aorte abdominale née sous les artères rénales ; longue et grêle, elle descend sur le muscle grand psoas jusqu'à l'anneau inguinal profond, puis gagne le testicule par le cordon spermatique (partie non montrée)."
+   }
+  },
+  {
+   "id": "arteres-gastriques-courtes",
+   "nom": "Artères gastriques courtes",
+   "latin": "Arteriae gastricae breves",
+   "anglais": "Short gastric arteries",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artères gastriques courtes",
+   "ta2": "4251",
+   "connu": {
+    "provenance": "artere-splenique",
+    "description_du_trace": "Quatre à six petites branches de l'artère splénique qui gagnent le fundus de l'estomac par le ligament gastro-splénique et irriguent la partie haute de la grande courbure.",
+    "appui_dans_le_modele": {
+     "id": "artere-splenique",
+     "nom": "Artère splénique"
+    }
+   }
+  },
+  {
+   "id": "arteres-jejunales",
+   "nom": "Artères jéjunales",
+   "latin": "Arteriae jejunales",
+   "anglais": "Jejunal arteries",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artères jéjunales",
+   "ta2": "4256",
+   "connu": {
+    "provenance": "mesenterique-superieure",
+    "description_du_trace": "Quatre à six branches nées du bord gauche de l'artère mésentérique supérieure ; elles cheminent dans le mésentère, s'unissent en arcades et irriguent le jéjunum.",
+    "appui_dans_le_modele": {
+     "id": "mesenterique-superieure",
+     "nom": "Artère mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "arteres-retroduodenales",
+   "nom": "Artères rétroduodénales",
+   "latin": "Arteriae retroduodenales",
+   "anglais": "Retroduodenal arteries",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artères rétroduodénales",
+   "ta2": "4220",
+   "connu": {
+    "provenance": "artere-gastroduodenale",
+    "description_du_trace": "Petites branches de l'artère gastroduodénale qui passent en arrière de la partie supérieure du duodénum et irriguent sa paroi ainsi que la partie basse du cholédoque.",
+    "appui_dans_le_modele": {
+     "id": "artere-gastroduodenale",
+     "nom": "Artère gastroduodénale"
+    }
+   }
+  },
+  {
+   "id": "arteres-surrenales-superieures",
+   "nom": "Artères surrénales supérieures",
+   "latin": "Arteriae suprarénales superiores",
+   "anglais": "Superior suprarenal arteries",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artères surrénales supérieures",
+   "ta2": "4207",
+   "connu": {
+    "provenance": "aorte-abdominale",
+    "description_du_trace": "Six à huit petites branches de l'artère phrénique inférieure, représentées ici depuis son origine ; elles gagnent la partie haute de la glande surrénale.",
+    "appui_dans_le_modele": {
+     "id": "aorte-abdominale",
+     "nom": "Aorte abdominale"
+    }
+   }
+  },
+  {
+   "id": "grande-artere-pancreatique",
+   "nom": "Grande artère pancréatique",
+   "latin": "Arteria pancreatica maqna",
+   "anglais": "Great pancreatic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Grande artère pancréatique",
+   "ta2": "4244",
+   "connu": {
+    "provenance": "artere-splenique",
+    "description_du_trace": "Branche de l'artère splénique à mi-parcours, elle plonge dans le parenchyme du corps du pancréas et s'anastomose avec l'artère pancréatique inférieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-splenique",
+     "nom": "Artère splénique"
+    }
+   }
+  },
+  {
+   "id": "arteres-sacrales-laterales",
+   "nom": "Artères sacrales latérales",
+   "latin": "Arteriae sacrales latérales",
+   "anglais": "Lateral sacral arteries",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Artères sacrales latérales",
+   "ta2": "4308",
+   "connu": {
+    "provenance": "division-posterieure-de-l-artere-iliaque-interne",
+    "description_du_trace": "Branches de la division postérieure de l'artère iliaque interne qui descendent en avant des foramens sacrés antérieurs ; leurs rameaux pénètrent dans le canal sacral pour irriguer les racines nerveuses et les méninges.",
+    "appui_dans_le_modele": {
+     "id": "division-posterieure-de-l-artere-iliaque-interne",
+     "nom": "Division postérieure de l'artère iliaque interne"
+    }
+   }
+  },
+  {
+   "id": "artere-anorectale-inferieure",
+   "nom": "Artère anorectale inférieure",
+   "latin": "Arteria anorectalis inferior arteria rectalis inferior",
+   "anglais": "Inferior anorectal artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère anorectale inférieure",
+   "ta2": "4342",
+   "connu": {
+    "provenance": "artere-pudendale-interne",
+    "description_du_trace": "Branche de l'artère pudendale interne née dans la fosse ischio-anale ; elle traverse la graisse de la fosse et irrigue le canal anal et le sphincter externe de l'anus.",
+    "appui_dans_le_modele": {
+     "id": "artere-pudendale-interne",
+     "nom": "Artère pudendale interne"
+    }
+   }
+  },
+  {
+   "id": "artere-anorectale-moyenne",
+   "nom": "Artère anorectale moyenne",
+   "latin": "Arteria anorectalis media arteria rectalis media",
+   "anglais": "Middle anorectal artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère anorectale moyenne",
+   "ta2": "4338",
+   "connu": {
+    "provenance": "division-anterieure-de-l-artere-iliaque-interne",
+    "description_du_trace": "Branche de la division antérieure de l'artère iliaque interne, elle passe sur le plancher pelvien et irrigue la partie moyenne et basse du rectum en s'anastomosant avec les artères anorectales supérieure et inférieure.",
+    "appui_dans_le_modele": {
+     "id": "division-anterieure-de-l-artere-iliaque-interne",
+     "nom": "Division antérieure de l'artère iliaque interne"
+    }
+   }
+  },
+  {
+   "id": "artere-caecale-anterieure",
+   "nom": "Artère caecale antérieure",
+   "latin": "Arteria caecalis anterior",
+   "anglais": "Anterior caecal artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère caecale antérieure",
+   "ta2": "4259",
+   "connu": {
+    "provenance": "artere-ileocolique",
+    "description_du_trace": "Branche de l'artère iléo-colique, elle passe en avant de la jonction iléo-caecale et irrigue la face antérieure du caecum.",
+    "appui_dans_le_modele": {
+     "id": "artere-ileocolique",
+     "nom": "Artère iléocolique"
+    }
+   }
+  },
+  {
+   "id": "artere-caecale-posterieure",
+   "nom": "Artère caecale postérieure",
+   "latin": "Arteria caecalis posterior",
+   "anglais": "Posterior caecal artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère caecale postérieure",
+   "ta2": "4260",
+   "connu": {
+    "provenance": "artere-ileocolique",
+    "description_du_trace": "Branche de l'artère iléo-colique, elle passe en arrière de l'iléon terminal et irrigue la face postérieure du caecum.",
+    "appui_dans_le_modele": {
+     "id": "artere-ileocolique",
+     "nom": "Artère iléocolique"
+    }
+   }
+  },
+  {
+   "id": "artere-circonflexe-iliaque-profonde",
+   "nom": "Artère circonflexe iliaque profonde",
+   "latin": "Arteria circumflexa iliaca profunda",
+   "anglais": "Deep circumflex iliac artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère circonflexe iliaque profonde",
+   "ta2": "4364",
+   "connu": {
+    "provenance": "iliaque-externe",
+    "description_du_trace": "Née de l'artère iliaque externe juste au-dessus du ligament inguinal, elle longe celui-ci vers l'épine iliaque antéro-supérieure puis la crête iliaque, en irrigant les muscles larges de l'abdomen et le muscle iliaque.",
+    "appui_dans_le_modele": {
+     "id": "iliaque-externe",
+     "nom": "Artère iliaque externe"
+    }
+   }
+  },
+  {
+   "id": "artere-iliaque-circonflexe-superficielle",
+   "nom": "Artère iliaque circonflexe superficielle",
+   "latin": "Arteria circumflexa iliaca superficialis",
+   "anglais": "Superficial circumflex iliac artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère iliaque circonflexe superficielle",
+   "ta2": "4676",
+   "connu": {
+    "provenance": "femorale",
+    "description_du_trace": "Branche de l'artère fémorale sous le ligament inguinal, elle suit superficiellement celui-ci vers l'épine iliaque antéro-supérieure et irrigue la peau et les ganglions de la région inguinale.",
+    "appui_dans_le_modele": {
+     "id": "femorale",
+     "nom": "Artère fémorale"
+    }
+   }
+  },
+  {
+   "id": "artere-ombilicale",
+   "nom": "Artère ombilicale",
+   "latin": "Arteria umbilicalis",
+   "anglais": "Umbilical artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère ombilicale",
+   "ta2": "4316",
+   "connu": {
+    "provenance": "division-anterieure-de-l-artere-iliaque-interne",
+    "description_du_trace": "Branche de la division antérieure de l'artère iliaque interne ; sa partie proximale, perméable, longe la paroi pelvienne et le bas-fond vésical, puis elle remonte, oblitérée, sous la paroi abdominale antérieure (ligament ombilical médial) jusqu'à l'ombilic.",
+    "appui_dans_le_modele": {
+     "id": "division-anterieure-de-l-artere-iliaque-interne",
+     "nom": "Division antérieure de l'artère iliaque interne"
+    }
+   }
+  },
+  {
+   "id": "artere-perineale",
+   "nom": "Artère périnéale",
+   "latin": "Arteria perinealis",
+   "anglais": "Perineal artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère périnéale",
+   "ta2": "4343",
+   "connu": {
+    "provenance": "artere-pudendale-interne",
+    "description_du_trace": "Branche de l'artère pudendale interne, elle chemine sous la symphyse et gagne le périnée superficiel, où elle irrigue les muscles superficiels, le bulbe du pénis et le scrotum.",
+    "appui_dans_le_modele": {
+     "id": "artere-pudendale-interne",
+     "nom": "Artère pudendale interne"
+    }
+   }
+  },
+  {
+   "id": "artere-vesicale-inferieure",
+   "nom": "Artère vésicale inférieure",
+   "latin": "Arteria vesicalis inferior",
+   "anglais": "Inferior vesical artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère vésicale inférieure",
+   "ta2": "4328",
+   "connu": {
+    "provenance": "division-anterieure-de-l-artere-iliaque-interne",
+    "description_du_trace": "Branche de la division antérieure de l'artère iliaque interne ; elle gagne la base de la vessie, la vésicule séminale et la prostate (chez la femme, elle correspond à l'artère vaginale).",
+    "appui_dans_le_modele": {
+     "id": "division-anterieure-de-l-artere-iliaque-interne",
+     "nom": "Division antérieure de l'artère iliaque interne"
+    }
+   }
+  },
+  {
+   "id": "arteres-ileales",
+   "nom": "Artères iléales",
+   "latin": "Arteriae ileales",
+   "anglais": "Ileal arteries",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artères iléales",
+   "ta2": "4257",
+   "connu": {
+    "provenance": "mesenterique-superieure",
+    "description_du_trace": "Branches nées du bord gauche de l'artère mésentérique supérieure sous les jéjunales ; elles forment des arcades dans le mésentère et irriguent l'iléon.",
+    "appui_dans_le_modele": {
+     "id": "mesenterique-superieure",
+     "nom": "Artère mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "arteres-vesicales-superieures",
+   "nom": "Artères vésicales supérieures",
+   "latin": "Arteriae vesicales superiores",
+   "anglais": "Superior vesical arteries",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artères vésicales supérieures",
+   "ta2": "4320",
+   "connu": {
+    "description_du_trace": "Branches de la partie perméable de l'artère ombilicale pour le dôme et le corps de la vessie.",
+    "appui_dans_le_modele": {
+     "id": "vessie-urinaire",
+     "nom": "Vessie urinaire"
+    }
+   }
+  },
+  {
+   "id": "artere-recurrente-radiale",
+   "nom": "Artère récurrente radiale",
+   "latin": "Arteria recurrens radialis",
+   "anglais": "Radial recurrent artery",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Artère récurrente radiale",
+   "ta2": "4642",
+   "connu": {
+    "provenance": "radiale",
+    "description_du_trace": "Née de l'artère radiale au pli du coude, elle remonte entre le brachio-radial et le brachial et s'anastomose avec l'artère collatérale radiale dans le réseau du coude.",
+    "appui_dans_le_modele": {
+     "id": "radiale",
+     "nom": "Artère radiale"
+    }
+   }
+  },
+  {
+   "id": "artere-recurrente-ulnaire-anterieure",
+   "nom": "Artère récurrente ulnaire antérieure",
+   "latin": "Arteria recurrens ulnaris anterior",
+   "anglais": "Anterior ulnar recurrent artery",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Artère récurrente ulnaire antérieure",
+   "ta2": "4657",
+   "connu": {
+    "provenance": "artere-recurrente-ulnaire",
+    "description_du_trace": "Branche de l'artère récurrente ulnaire, elle remonte devant l'épicondyle médial entre le brachial et le rond pronateur et s'anastomose avec l'artère collatérale ulnaire inférieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-recurrente-ulnaire",
+     "nom": "Artère récurrente ulnaire"
+    }
+   }
+  },
+  {
+   "id": "artere-recurrente-ulnaire-posterieure",
+   "nom": "Artère récurrente ulnaire postérieure",
+   "latin": "Arteria recurrens ulnaris posterior",
+   "anglais": "Posterior ulnar recurrent artery",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Artère récurrente ulnaire postérieure",
+   "ta2": "4658",
+   "connu": {
+    "provenance": "artere-recurrente-ulnaire",
+    "description_du_trace": "Branche de l'artère récurrente ulnaire, elle passe derrière l'épicondyle médial dans la gouttière du nerf ulnaire et s'anastomose avec les artères collatérales ulnaires supérieure et inférieure.",
+    "appui_dans_le_modele": {
+     "id": "artere-recurrente-ulnaire",
+     "nom": "Artère récurrente ulnaire"
+    }
+   }
+  },
+  {
+   "id": "artere-interosseuse-anterieure",
+   "nom": "Artère interosseuse antérieure",
+   "latin": "Arteria interossea anterior",
+   "anglais": "Anterior interosseous artery",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Artère interosseuse antérieure",
+   "ta2": "4662",
+   "connu": {
+    "provenance": "artere-interosseuse-commune",
+    "description_du_trace": "Branche de l'artère interosseuse commune, elle descend sur la face antérieure de la membrane interosseuse jusqu'au muscle carré pronateur et irrigue les muscles profonds de l'avant-bras ainsi que le radius et l'ulna.",
+    "appui_dans_le_modele": {
+     "id": "artere-interosseuse-commune",
+     "nom": "Artère interosseuse commune"
+    }
+   }
+  },
+  {
+   "id": "artere-principale-du-pouce",
+   "nom": "Artère principale du pouce",
+   "latin": "Arteria princeps pollicis",
+   "anglais": "Princeps pollicis artery",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Artère principale du pouce",
+   "ta2": "4650",
+   "connu": {
+    "provenance": "radiale",
+    "description_du_trace": "Née de l'artère radiale à l'entrée de la paume, elle descend le long de la face palmaire du premier métacarpien et se divise à la base de la phalange proximale en deux artères digitales palmaires propres du pouce.",
+    "appui_dans_le_modele": {
+     "id": "radiale",
+     "nom": "Artère radiale"
+    }
+   }
+  },
+  {
+   "id": "artere-radiale-de-l-index",
+   "nom": "Artère radiale de l'index",
+   "latin": "Arteria radialis indicis",
+   "anglais": "Radialis indicis artery",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Artère radiale de l'index",
+   "ta2": "4651",
+   "connu": {
+    "provenance": "radiale",
+    "description_du_trace": "Née de l'artère radiale ou de l'artère principale du pouce, elle longe le bord radial de l'index sur sa face palmaire et en irrigue la peau et les tissus.",
+    "appui_dans_le_modele": {
+     "id": "radiale",
+     "nom": "Artère radiale"
+    }
+   }
+  },
+  {
+   "id": "artere-descendante-du-genou",
+   "nom": "Artère descendante du genou",
+   "latin": "Arteria descendens genus",
+   "anglais": "Descending genicular artery",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Artère descendante du genou",
+   "ta2": "4682",
+   "connu": {
+    "provenance": "femorale",
+    "description_du_trace": "Née de l'artère fémorale dans le canal des adducteurs, elle descend avec le nerf saphène vers le côté médial du genou et participe au réseau articulaire du genou.",
+    "appui_dans_le_modele": {
+     "id": "femorale",
+     "nom": "Artère fémorale"
+    }
+   }
+  },
+  {
+   "id": "artere-saphene-descendante-du-genou",
+   "nom": "Artère saphène descendante du genou",
+   "latin": "Ramus saphenus arteriae descendentis genus",
+   "anglais": "Saphenous descending genicular artery",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Artère saphène descendante du genou",
+   "ta2": "4683",
+   "connu": {
+    "description_du_trace": "Branche saphène de l'artère descendante du genou ; elle accompagne le nerf saphène et irrigue la peau de la face médiale du genou et de la jambe proximale."
+   }
+  },
+  {
+   "id": "arteres-surales",
+   "nom": "Artères surales",
+   "latin": "Arteriae surales",
+   "anglais": "Sural arteries",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Artères surales",
+   "ta2": "4703",
+   "connu": {
+    "provenance": "poplitee",
+    "description_du_trace": "Deux branches de l'artère poplitée, médiale et latérale, qui entrent dans la face profonde des chefs médial et latéral du gastrocnémien et en assurent l'irrigation.",
+    "appui_dans_le_modele": {
+     "id": "poplitee",
+     "nom": "Artère poplitée"
+    }
+   }
+  },
+  {
+   "id": "artere-recurrente-tibiale-anterieure",
+   "nom": "Artère récurrente tibiale antérieure",
+   "latin": "Arteria recurrens tibialis anterior",
+   "anglais": "Anterior tibial recurrent artery",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Artère récurrente tibiale antérieure",
+   "ta2": "4709",
+   "connu": {
+    "provenance": "tibiale-anterieure",
+    "description_du_trace": "Née de l'artère tibiale antérieure dès qu'elle franchit la membrane interosseuse, elle remonte dans le muscle tibial antérieur vers le côté latéral du genou et participe au réseau patellaire.",
+    "appui_dans_le_modele": {
+     "id": "tibiale-anterieure",
+     "nom": "Artère tibiale antérieure"
+    }
+   }
+  },
+  {
+   "id": "branche-communiquante-de-l-artere-fibulaire",
+   "nom": "Branche communiquante de l'artère fibulaire",
+   "latin": "Ramus communicans arteriae fibularis",
+   "anglais": "Communicating artery of fibular artery",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Branche communiquante de l'artère fibulaire",
+   "ta2": "4729",
+   "connu": {
+    "provenance": "fibulaire",
+    "description_du_trace": "Branche communicante de l'artère fibulaire qui passe derrière le tibia, à quelques centimètres au-dessus de la cheville, et rejoint l'artère tibiale postérieure.",
+    "appui_dans_le_modele": {
+     "id": "fibulaire",
+     "nom": "Artère fibulaire"
+    }
+   }
+  },
+  {
+   "id": "artere-malleolaire-anterolaterale",
+   "nom": "Artère malléolaire antérolatérale",
+   "latin": "Arteria malleolaris anterior lateralis",
+   "anglais": "Anterior lateral malleolar artery",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Artère malléolaire antérolatérale",
+   "ta2": "4711",
+   "connu": {
+    "provenance": "tibiale-anterieure",
+    "description_du_trace": "Branche de l'artère tibiale antérieure au-dessus de la cheville ; elle passe sous les tendons extenseurs jusqu'à la malléole latérale et s'anastomose avec la branche perforante de l'artère fibulaire.",
+    "appui_dans_le_modele": {
+     "id": "tibiale-anterieure",
+     "nom": "Artère tibiale antérieure"
+    }
+   }
+  },
+  {
+   "id": "artere-malleolaire-anteromediale",
+   "nom": "Artère malléolaire antéromédiale",
+   "latin": "Arteria malleolaris anterior medialis",
+   "anglais": "Anterior medial malleolar artery",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Artère malléolaire antéromédiale",
+   "ta2": "4712",
+   "connu": {
+    "provenance": "tibiale-anterieure",
+    "description_du_trace": "Branche de l'artère tibiale antérieure au-dessus de la cheville ; elle passe sous le tendon du tibial antérieur jusqu'à la malléole médiale et s'anastomose avec les rameaux malléolaires de l'artère tibiale postérieure.",
+    "appui_dans_le_modele": {
+     "id": "tibiale-anterieure",
+     "nom": "Artère tibiale antérieure"
+    }
+   }
+  },
+  {
+   "id": "arteres-tarsiennes-mediales",
+   "nom": "Artères tarsiennes médiales",
+   "latin": "Arteriae tarseae mediales",
+   "anglais": "Medial tarsal arteries",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Artères tarsiennes médiales",
+   "ta2": "4716",
+   "connu": {
+    "provenance": "dorsale-du-pied",
+    "description_du_trace": "Deux ou trois petites branches de l'artère dorsale du pied qui gagnent le bord médial du pied et irriguent la peau, les articulations et les os du tarse.",
+    "appui_dans_le_modele": {
+     "id": "dorsale-du-pied",
+     "nom": "Artère dorsale du pied"
+    }
+   }
+  }
+ ]
+}

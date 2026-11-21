@@ -1,0 +1,693 @@
+{
+ "lot": "nerf-ajouts-3",
+ "couche": "nerf",
+ "structures": [
+  {
+   "id": "ganglion-cervical-moyen",
+   "nom": "Ganglion cervical moyen",
+   "latin": "Ganglion cervicale medium",
+   "anglais": "Middle cervical ganglion",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ganglion cervical moyen",
+   "ta2": "6609",
+   "nature": "ganglion",
+   "connu": {
+    "description_du_trace": "Petit ganglion inconstant du tronc sympathique cervical, au niveau de C6, près de l'artère thyroïdienne inférieure ; il donne le nerf cardiaque cervical moyen.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "ganglion-cervicothoracique",
+   "nom": "Ganglion cervicothoracique",
+   "latin": "Ganglion cervicothoracicum",
+   "anglais": "Cervicothoracic ganglion",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Ganglion cervicothoracique",
+   "ta2": "6612",
+   "nature": "ganglion",
+   "connu": {
+    "description_du_trace": "Ganglion étoilé : fusion du ganglion cervical inférieur et du premier ganglion thoracique, au col de la première côte, derrière l'origine de l'artère vertébrale ; il innerve le cœur, le membre supérieur et l'encéphale.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerf-larynge-superieur",
+   "nom": "Nerf laryngé supérieur",
+   "latin": "Nervus laryngeus superior",
+   "anglais": "Superior laryngeal nerve",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Nerf laryngé supérieur",
+   "ta2": "6339",
+   "connu": {
+    "description_du_trace": "Branche du ganglion inférieur du vague qui descend derrière l'artère carotide interne, puis se divise : le rameau interne traverse la membrane thyrohyoïdienne pour la muqueuse laryngée sus-glottique, le rameau externe descend vers le muscle cricothyroïdien.",
+    "appui_dans_le_modele": {
+     "id": "nerf-vague-x",
+     "nom": "Nerf vague (X)"
+    }
+   }
+  },
+  {
+   "id": "plexus-aortique-thoracique",
+   "nom": "Plexus aortique thoracique",
+   "latin": "Plexus aorticus thoracicus",
+   "anglais": "Thoracic aortic plexus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Plexus aortique thoracique",
+   "ta2": "6658",
+   "connu": {
+    "description_du_trace": "Réseau autonome qui entoure l'aorte thoracique, formé de rameaux sympathiques du tronc et des nerfs splanchniques.",
+    "appui_dans_le_modele": {
+     "id": "aorte-thoracique",
+     "nom": "Aorte thoracique"
+    }
+   }
+  },
+  {
+   "id": "plexus-pulmonaire",
+   "nom": "Plexus pulmonaire",
+   "latin": "Plexus pulmonalis",
+   "anglais": "Pulmonary plexus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Plexus pulmonaire",
+   "ta2": "6691",
+   "connu": {
+    "description_du_trace": "Réseau du hile pulmonaire, en arrière des bronches principales, formé des nerfs vagues et sympathiques ; il innerve les bronches et les vaisseaux du poumon.",
+    "appui_dans_le_modele": {
+     "id": "bronche-principale",
+     "nom": "Bronche principale"
+    }
+   }
+  },
+  {
+   "id": "plexus-subclavier",
+   "nom": "Plexus subclavier",
+   "latin": "Plexus subclavius",
+   "anglais": "Subclavian plexus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Plexus subclavier",
+   "ta2": "6655",
+   "connu": {
+    "description_du_trace": "Plexus sympathique qui entoure l'artère sous-clavière, prolongé par le plexus autonome du membre supérieur.",
+    "appui_dans_le_modele": {
+     "id": "subclaviere",
+     "nom": "Artère subclavière"
+    }
+   }
+  },
+  {
+   "id": "plexus-oesophagien",
+   "nom": "Plexus œsophagien",
+   "latin": "Plexus oesophageus",
+   "anglais": "Oesophageal plexus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Plexus œsophagien",
+   "ta2": "6690",
+   "connu": {
+    "description_du_trace": "Réseau formé des troncs des nerfs vagues et de rameaux sympathiques autour de la partie inférieure de l'œsophage ; il innerve la muqueuse et les muscles de l'œsophage.",
+    "appui_dans_le_modele": {
+     "id": "oesophage",
+     "nom": "Œsophage"
+    }
+   }
+  },
+  {
+   "id": "ganglion-splanchniques-thoracique",
+   "nom": "Ganglion splanchniques thoracique",
+   "latin": "Ganglion thoracicum splanchicum",
+   "anglais": "Thoracic splanchnic ganglion",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Ganglion splanchniques thoracique",
+   "ta2": "6638",
+   "nature": "ganglion",
+   "connu": {
+    "description_du_trace": "Petit ganglion inconstant sur le grand nerf splanchnique thoracique, près du diaphragme, où des neurones postganglionnaires s'intercalent.",
+    "appui_dans_le_modele": {
+     "id": "aorte-thoracique",
+     "nom": "Aorte thoracique"
+    }
+   }
+  },
+  {
+   "id": "grand-nerf-splanchnique-thoracique",
+   "nom": "Grand nerf splanchnique thoracique",
+   "latin": "Nervus splanchnicus thoracicus major",
+   "anglais": "Greater thoracic splanchnic nerve",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Grand nerf splanchnique thoracique",
+   "ta2": "6631",
+   "connu": {
+    "description_du_trace": "Nerf préganglionnaire issu des ganglions thoraciques T5 à T9 : il descend sur les corps vertébraux, traverse le pilier du diaphragme et se termine dans le ganglion cœliaque.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerf-cardiaque-cervical-inferieur",
+   "nom": "Nerf cardiaque cervical inférieur",
+   "latin": "Nervus cardiacus cervicalis inferior",
+   "anglais": "Inferior cervical cardiac nerve",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Nerf cardiaque cervical inférieur",
+   "ta2": "6625",
+   "connu": {
+    "description_du_trace": "Nerf né du ganglion cervicothoracique (étoilé), qui descend derrière l'artère sous-clavière et la crosse de l'aorte jusqu'au plexus cardiaque.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerf-cardiaque-cervical-moyen",
+   "nom": "Nerf cardiaque cervical moyen",
+   "latin": "Nervus cardiacus cervicalis medius",
+   "anglais": "Middle cervical cardiac nerve",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Nerf cardiaque cervical moyen",
+   "ta2": "6623",
+   "connu": {
+    "description_du_trace": "Plus gros des nerfs cardiaques sympathiques, né du ganglion cervical moyen ; il descend dans le cou puis le médiastin jusqu'au plexus cardiaque.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerf-cardiaque-cervical-superieur",
+   "nom": "Nerf cardiaque cervical supérieur",
+   "latin": "Nervus cardiacus cervicalis superior",
+   "anglais": "Superior cervical cardiac nerve",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Nerf cardiaque cervical supérieur",
+   "ta2": "6622",
+   "connu": {
+    "description_du_trace": "Nerf né du ganglion cervical supérieur, qui descend derrière l'artère carotide commune et le long du tronc sympathique jusqu'au plexus cardiaque, en avant de la bifurcation trachéale.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerfs-cardiaques-thoraciques",
+   "nom": "Nerfs cardiaques thoraciques",
+   "latin": "Nervi cardiaci thoracici",
+   "anglais": "Thoracic cardiac nerves",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Nerfs cardiaques thoraciques",
+   "ta2": "6628",
+   "connu": {
+    "description_du_trace": "Rameaux sympathiques des ganglions thoraciques T2 à T4 qui traversent le médiastin supérieur jusqu'au plexus cardiaque.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerfs-pulmonaires-thoraciques",
+   "nom": "Nerfs pulmonaires thoraciques",
+   "latin": "Nervi pulmonales thoracici",
+   "anglais": "Thoracic pulmonary nerves",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Nerfs pulmonaires thoraciques",
+   "ta2": "6629",
+   "connu": {
+    "description_du_trace": "Rameaux sympathiques des ganglions thoraciques T2 à T4 (parfois T5) qui gagnent le plexus pulmonaire sur la face postérieure de la bronche principale.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerfs-visceraux-thoraciques",
+   "nom": "Nerfs viscéraux thoraciques",
+   "latin": "Nervi viscerales thoracici",
+   "anglais": "Thoracic visceral nerves",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Nerfs viscéraux thoraciques",
+   "ta2": "6627",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "nerfs-cardiaques-thoraciques",
+      "nom": "Nerfs cardiaques thoraciques"
+     },
+     {
+      "id": "nerfs-pulmonaires-thoraciques",
+      "nom": "Nerfs pulmonaires thoraciques"
+     },
+     {
+      "id": "nerfs-oesophagiens",
+      "nom": "Nerfs œsophagiens"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nerfs-oesophagiens",
+   "nom": "Nerfs œsophagiens",
+   "latin": "Nervi oesophagei",
+   "anglais": "Oesophageal nerves",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Nerfs œsophagiens",
+   "ta2": "6630",
+   "connu": {
+    "description_du_trace": "Rameaux sympathiques des ganglions thoraciques moyens qui rejoignent le plexus œsophagien, avec les rameaux des nerfs vagues.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "plexus-cardiaque",
+   "nom": "Plexus cardiaque",
+   "latin": "Plexus cardiacus",
+   "anglais": "Cardiac plexus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Plexus cardiaque",
+   "ta2": "6688",
+   "connu": {
+    "description_du_trace": "Réseau autonome du médiastin moyen, sous la crosse de l'aorte et en avant de la bifurcation trachéale, formé des nerfs cardiaques sympathiques et des rameaux cardiaques du vague ; il innerve le cœur.",
+    "appui_dans_le_modele": {
+     "id": "trachee",
+     "nom": "Trachée"
+    }
+   }
+  },
+  {
+   "id": "plexus-aortique-abdominal",
+   "nom": "Plexus aortique abdominal",
+   "latin": "Plexus aorticus abdominalis",
+   "anglais": "Abdominal aortic plexus",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Plexus aortique abdominal",
+   "ta2": "6695",
+   "connu": {
+    "description_du_trace": "Prolongement du plexus cœliaque autour de l'aorte abdominale, avec les nerfs splanchniques lombaires ; il se continue par le plexus hypogastrique supérieur.",
+    "appui_dans_le_modele": {
+     "id": "aorte-abdominale",
+     "nom": "Aorte abdominale"
+    }
+   }
+  },
+  {
+   "id": "ganglion-mesenterique-inferieur",
+   "nom": "Ganglion mésentérique inférieur",
+   "latin": "Ganglion mesentericum inferius",
+   "anglais": "Inferior mesenteric ganglion",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Ganglion mésentérique inférieur",
+   "ta2": "6642",
+   "nature": "ganglion",
+   "connu": {
+    "description_du_trace": "Ganglion prévertébral situé à l'origine de l'artère mésentérique inférieure, qui relaie les fibres sympathiques vers le côlon gauche, le rectum et les organes pelviens.",
+    "appui_dans_le_modele": {
+     "id": "artere-mesenterique-inferieure",
+     "nom": "Artère mésentérique inférieure"
+    }
+   }
+  },
+  {
+   "id": "ganglion-mesenterique-superieur",
+   "nom": "Ganglion mésentérique supérieur",
+   "latin": "Ganglion mesentericum superius",
+   "anglais": "Superior mesenteric ganglion",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Ganglion mésentérique supérieur",
+   "ta2": "6641",
+   "nature": "ganglion",
+   "connu": {
+    "description_du_trace": "Ganglion prévertébral situé à l'origine de l'artère mésentérique supérieure, qui relaie les fibres sympathiques vers l'intestin grêle et le côlon droit.",
+    "appui_dans_le_modele": {
+     "id": "mesenterique-superieure",
+     "nom": "Artère mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "nerf-anterieur-de-la-petite-courbature",
+   "nom": "Nerf antérieur de la petite courbature",
+   "latin": "Nervus anterior curvaturae minoris",
+   "anglais": "Anterior nerve of lesser curvature",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Nerf antérieur de la petite courbature",
+   "ta2": "6676",
+   "connu": {
+    "description_du_trace": "Nerf de Latarjet antérieur : prolongement du tronc vagal antérieur, il descend le long de la petite courbure sur la face antérieure de l'estomac et se termine dans l'antre pylorique par des rameaux en « patte d'oie »."
+   }
+  },
+  {
+   "id": "nerf-posterieur-de-la-petite-courbature",
+   "nom": "Nerf postérieur de la petite courbature",
+   "latin": "Nervus posterior curvaturae minoris",
+   "anglais": "Posterior nerve of lesser curvature",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Nerf postérieur de la petite courbature",
+   "ta2": "6681",
+   "connu": {
+    "description_du_trace": "Nerf de Latarjet postérieur : prolongement du tronc vagal postérieur, il longe la petite courbure sur la face postérieure de l'estomac et innerve l'antre et le pylore ; il donne aussi le rameau cœliaque."
+   }
+  },
+  {
+   "id": "nerf-subcostal",
+   "nom": "Nerf subcostal",
+   "latin": "Nervus subcostalis",
+   "anglais": "Subcostal nerve",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Nerf subcostal",
+   "ta2": "6485",
+   "connu": {
+    "description_du_trace": "Rameau antérieur du douzième nerf thoracique (T12), sous la douzième côte : il passe devant le muscle carré des lombes, traverse le muscle transverse de l'abdomen, chemine entre celui-ci et l'oblique interne et se termine dans le muscle pyramidal et la gaine du droit.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-t12-l1",
+     "nom": "Disque intervertébral T12-L1"
+    }
+   }
+  },
+  {
+   "id": "petit-nerf-splanchnique-thoracique",
+   "nom": "Petit nerf splanchnique thoracique",
+   "latin": "Nervus splanchnicus thoracicus minor",
+   "anglais": "Lesser thoracic splanchnic nerve",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Petit nerf splanchnique thoracique",
+   "ta2": "6632",
+   "connu": {
+    "description_du_trace": "Nerf préganglionnaire issu des ganglions thoraciques T10-T11 : il traverse le diaphragme et se termine dans le ganglion aorticorénal, à l'origine de l'artère rénale.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "plexus-coeliaque",
+   "nom": "Plexus cœliaque",
+   "latin": "Plexus coeliacus",
+   "anglais": "Coeliac plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus cœliaque",
+   "ta2": "6696",
+   "connu": {
+    "description_du_trace": "Le plus grand plexus du système autonome, autour de l'origine du tronc cœliaque, avec les ganglions cœliaques ; il distribue des fibres à l'estomac, au foie, à la rate, au pancréas et aux reins.",
+    "appui_dans_le_modele": {
+     "id": "tronc-coeliaque",
+     "nom": "Tronc cœliaque"
+    }
+   }
+  },
+  {
+   "id": "plexus-hepatique",
+   "nom": "Plexus hépatique",
+   "latin": "Plexus hepaticus",
+   "anglais": "Hepatic plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus hépatique",
+   "ta2": "6697",
+   "connu": {
+    "description_du_trace": "Réseau qui accompagne l'artère hépatique propre et la veine porte jusqu'au foie et à la vésicule biliaire.",
+    "appui_dans_le_modele": {
+     "id": "artere-hepatique-propre",
+     "nom": "Artère hépatique propre"
+    }
+   }
+  },
+  {
+   "id": "plexus-intermesenterique",
+   "nom": "Plexus intermésentérique",
+   "latin": "Plexus intermesentericus",
+   "anglais": "Intermesenteric plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus intermésentérique",
+   "ta2": "6708",
+   "connu": {
+    "description_du_trace": "Partie du plexus aortique abdominal entre les origines des artères mésentériques supérieure et inférieure.",
+    "appui_dans_le_modele": {
+     "id": "aorte-abdominale",
+     "nom": "Aorte abdominale"
+    }
+   }
+  },
+  {
+   "id": "plexus-mesenterique-inferieur",
+   "nom": "Plexus mésentérique inférieur",
+   "latin": "Plexus mesentericus inferior",
+   "anglais": "Inferior mesenteric plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus mésentérique inférieur",
+   "ta2": "6709",
+   "connu": {
+    "description_du_trace": "Réseau autour de l'artère mésentérique inférieure qui innerve le côlon gauche et le haut du rectum.",
+    "appui_dans_le_modele": {
+     "id": "artere-mesenterique-inferieure",
+     "nom": "Artère mésentérique inférieure"
+    }
+   }
+  },
+  {
+   "id": "plexus-mesenterique-superieur",
+   "nom": "Plexus mésentérique supérieur",
+   "latin": "Plexus mesentericus superior",
+   "anglais": "Superior mesenteric plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus mésentérique supérieur",
+   "ta2": "6705",
+   "connu": {
+    "description_du_trace": "Réseau autour de l'artère mésentérique supérieure issu du plexus cœliaque ; il accompagne ses branches jusqu'à l'intestin grêle et au côlon jusqu'à l'angle gauche.",
+    "appui_dans_le_modele": {
+     "id": "mesenterique-superieure",
+     "nom": "Artère mésentérique supérieure"
+    }
+   }
+  },
+  {
+   "id": "plexus-pancreatique",
+   "nom": "Plexus pancréatique",
+   "latin": "Plexus pancreaticus",
+   "anglais": "Pancreatic plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus pancréatique",
+   "ta2": "6700",
+   "connu": {
+    "description_du_trace": "Réseau issu du plexus cœliaque, du plexus mésentérique supérieur et du vague, qui suit les artères pancréatiques et innerve le pancréas.",
+    "appui_dans_le_modele": {
+     "id": "pancreas",
+     "nom": "Pancréas"
+    }
+   }
+  },
+  {
+   "id": "plexus-phrenique",
+   "nom": "Plexus phrénique",
+   "latin": "Plexus phrenicus",
+   "anglais": "Phrenic plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus phrénique",
+   "ta2": "6693",
+   "connu": {
+    "description_du_trace": "Réseau qui accompagne l'artère phrénique inférieure vers la face inférieure du diaphragme ; il reçoit des fibres du nerf phrénique et rejoint le plexus cœliaque.",
+    "appui_dans_le_modele": {
+     "id": "tronc-coeliaque",
+     "nom": "Tronc cœliaque"
+    }
+   }
+  },
+  {
+   "id": "plexus-renal",
+   "nom": "Plexus rénal",
+   "latin": "Plexus renalis",
+   "anglais": "Renal plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus rénal",
+   "ta2": "6702",
+   "connu": {
+    "description_du_trace": "Réseau autour de l'artère rénale, issu du plexus cœliaque, des nerfs splanchniques et du plexus aortique, qui accompagne les vaisseaux dans le hile du rein.",
+    "appui_dans_le_modele": {
+     "id": "renale",
+     "nom": "Artère rénale"
+    }
+   }
+  },
+  {
+   "id": "plexus-splenique",
+   "nom": "Plexus splénique",
+   "latin": "Plexus splenicus",
+   "anglais": "Splenic plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus splénique",
+   "ta2": "6698",
+   "connu": {
+    "description_du_trace": "Réseau issu du plexus cœliaque qui accompagne l'artère splénique jusqu'au hile de la rate.",
+    "appui_dans_le_modele": {
+     "id": "artere-splenique",
+     "nom": "Artère splénique"
+    }
+   }
+  },
+  {
+   "id": "plexus-surrenal",
+   "nom": "Plexus surrénal",
+   "latin": "Plexus suprarenalis",
+   "anglais": "Suprarenal plexus",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plexus surrénal",
+   "ta2": "6701",
+   "connu": {
+    "description_du_trace": "Réseau issu des ganglions cœliaques et des nerfs splanchniques, qui pénètre dans la glande surrénale et innerve surtout la médullosurrénale.",
+    "appui_dans_le_modele": {
+     "id": "tronc-coeliaque",
+     "nom": "Tronc cœliaque"
+    }
+   }
+  },
+  {
+   "id": "plus-petit-nerf-splanchnique-thoracique",
+   "nom": "Plus petit nerf splanchnique thoracique",
+   "latin": "Nervus splanchnicus thoracicus imus",
+   "anglais": "Least thoracic splanchnic nerve",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Plus petit nerf splanchnique thoracique",
+   "ta2": "6634",
+   "connu": {
+    "description_du_trace": "Nerf préganglionnaire issu du ganglion thoracique T12 : il traverse le diaphragme et rejoint le plexus rénal.",
+    "appui_dans_le_modele": {
+     "id": "tronc-sympathique",
+     "nom": "Tronc sympathique"
+    }
+   }
+  },
+  {
+   "id": "nerf-anococcygien",
+   "nom": "Nerf anococcygien",
+   "latin": "Nervus anococygeus",
+   "anglais": "Anococcygeal nerve",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Nerf anococcygien",
+   "ta2": "6599",
+   "connu": {
+    "description_du_trace": "Rameau du plexus coccygien qui perfore le ligament sacro-tubéral et innerve la peau entre le coccyx et l'anus.",
+    "appui_dans_le_modele": {
+     "id": "coccyx",
+     "nom": "Coccyx"
+    }
+   }
+  },
+  {
+   "id": "nerf-coccygien",
+   "nom": "Nerf coccygien",
+   "latin": "Nervus coccygeus",
+   "anglais": "Coccygeal nerve",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Nerf coccygien",
+   "ta2": "6513",
+   "connu": {
+    "description_du_trace": "Dernier nerf spinal (Co1) : il sort par le hiatus sacral, contourne la face latérale du coccyx, perfore le muscle coccygien et s'unit à S4-S5 dans le plexus coccygien.",
+    "appui_dans_le_modele": {
+     "id": "sacrum",
+     "nom": "Sacrum"
+    }
+   }
+  },
+  {
+   "id": "nerf-splanchniques-lombaires",
+   "nom": "Nerf splanchniques lombaires",
+   "latin": "Nervi splanchnici lumbales",
+   "anglais": "Lumbar splanchnic nerves",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Nerf splanchniques lombaires",
+   "ta2": "6635",
+   "connu": {
+    "description_du_trace": "Quatre nerfs issus des ganglions lombaires du tronc sympathique, qui gagnent le plexus aortique abdominal, le plexus mésentérique inférieur et le plexus hypogastrique supérieur.",
+    "appui_dans_le_modele": {
+     "id": "disque-intervertebral-l1-l2",
+     "nom": "Disque intervertébral L1-L2"
+    }
+   }
+  },
+  {
+   "id": "nerfs-sacraux",
+   "nom": "Nerfs sacraux",
+   "latin": "Nervi sacrales",
+   "anglais": "Sacral nerves",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Nerfs sacraux",
+   "ta2": "6507",
+   "connu": {
+    "description_du_trace": "Les cinq paires de nerfs sacraux (S1 à S5) : leurs racines descendent dans le canal sacral, les rameaux antérieurs de S1 à S4 sortent par les foramens sacrés antérieurs vers le plexus sacral, ceux de S5 par le hiatus sacral.",
+    "appui_dans_le_modele": {
+     "id": "queue-de-cheval",
+     "nom": "Queue-de-cheval"
+    }
+   }
+  },
+  {
+   "id": "plexus-lombal-posterieur",
+   "nom": "Plexus lombal postérieur",
+   "latin": "Plexus lumbalis posterior",
+   "anglais": "Posterior lumbar plexus",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Plexus lombal postérieur",
+   "ta2": "6494",
+   "connu": {
+    "description_du_trace": "Le réseau que forment, en arrière des processus transverses, les rameaux postérieurs des premiers nerfs lombaux ; il donne les rameaux des muscles profonds du dos et les nerfs cutanés glutéaux supérieurs (nerfs cluniaux supérieurs).",
+    "appui_dans_le_modele": {
+     "id": "vertebre-l1",
+     "nom": "Vertèbre L1"
+    }
+   }
+  }
+ ]
+}

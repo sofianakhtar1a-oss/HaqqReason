@@ -1,0 +1,1195 @@
+{
+ "sources": {
+  "tma-cervelet": {
+   "titre": "TeachMeAnatomy — The Cerebellum",
+   "url": "https://teachmeanatomy.info/neuro/structures/cerebellum/"
+  },
+  "wp-cerebellum": {
+   "titre": "Wikipedia (en) — Cerebellum",
+   "url": "https://en.wikipedia.org/wiki/Cerebellum"
+  },
+  "wp-fr-cervelet": {
+   "titre": "Wikipédia (fr) — Cervelet",
+   "url": "https://fr.wikipedia.org/wiki/Cervelet"
+  },
+  "wp-vermis": {
+   "titre": "Wikipedia (en) — Cerebellar vermis",
+   "url": "https://en.wikipedia.org/wiki/Cerebellar_vermis"
+  },
+  "wp-tonsil": {
+   "titre": "Wikipedia (en) — Cerebellar tonsil",
+   "url": "https://en.wikipedia.org/wiki/Cerebellar_tonsil"
+  },
+  "wp-flocculonodular": {
+   "titre": "Wikipedia (en) — Flocculonodular lobe",
+   "url": "https://en.wikipedia.org/wiki/Flocculonodular_lobe"
+  },
+  "wp-fastigial": {
+   "titre": "Wikipedia (en) — Fastigial nucleus",
+   "url": "https://en.wikipedia.org/wiki/Fastigial_nucleus"
+  },
+  "kenhub-noyaux-craniens": {
+   "titre": "Kenhub — Cranial nerve nuclei",
+   "url": "https://www.kenhub.com/en/library/anatomy/cranial-nerve-nuclei"
+  },
+  "wp-cranial-nuclei": {
+   "titre": "Wikipedia (en) — Cranial nerve nucleus",
+   "url": "https://en.wikipedia.org/wiki/Cranial_nerve_nucleus"
+  },
+  "wp-vestibular": {
+   "titre": "Wikipedia (en) — Vestibular nuclei",
+   "url": "https://en.wikipedia.org/wiki/Vestibular_nuclei"
+  },
+  "wp-cochlear": {
+   "titre": "Wikipedia (en) — Cochlear nucleus",
+   "url": "https://en.wikipedia.org/wiki/Cochlear_nucleus"
+  },
+  "wp-trigeminal-nuclei": {
+   "titre": "Wikipedia (en) — Trigeminal nuclei",
+   "url": "https://en.wikipedia.org/wiki/Trigeminal_nuclei"
+  },
+  "wp-solitary": {
+   "titre": "Wikipedia (en) — Solitary nucleus",
+   "url": "https://en.wikipedia.org/wiki/Solitary_nucleus"
+  },
+  "wp-awc": {
+   "titre": "Wikipedia (en) — Anterior white commissure",
+   "url": "https://en.wikipedia.org/wiki/Anterior_white_commissure"
+  },
+  "wp-spinal-cord": {
+   "titre": "Wikipedia (en) — Spinal cord",
+   "url": "https://en.wikipedia.org/wiki/Spinal_cord"
+  },
+  "wp-gray-commissure": {
+   "titre": "Wikipedia (en) — Gray commissure",
+   "url": "https://en.wikipedia.org/wiki/Gray_commissure"
+  },
+  "wp-posterior-commissure": {
+   "titre": "Wikipedia (en) — Posterior commissure",
+   "url": "https://en.wikipedia.org/wiki/Posterior_commissure"
+  },
+  "wp-trapezoid": {
+   "titre": "Wikipedia (en) — Trapezoid body",
+   "url": "https://en.wikipedia.org/wiki/Trapezoid_body"
+  },
+  "wp-ic": {
+   "titre": "Wikipedia (en) — Inferior colliculus",
+   "url": "https://en.wikipedia.org/wiki/Inferior_colliculus"
+  },
+  "wp-sc": {
+   "titre": "Wikipedia (en) — Superior colliculus",
+   "url": "https://en.wikipedia.org/wiki/Superior_colliculus"
+  },
+  "wp-habenula": {
+   "titre": "Wikipedia (en) — Habenula",
+   "url": "https://en.wikipedia.org/wiki/Habenula"
+  },
+  "wp-epithalamus": {
+   "titre": "Wikipedia (en) — Epithalamus",
+   "url": "https://en.wikipedia.org/wiki/Epithalamus"
+  },
+  "radiopaedia-meynert": {
+   "titre": "Radiopaedia — Meynert's commissure",
+   "url": "https://radiopaedia.org/articles/58727"
+  },
+  "radiopaedia-gudden": {
+   "titre": "Radiopaedia — Gudden's commissure",
+   "url": "https://www.radiopaedia.org/articles/guddens-commissure"
+  },
+  "wp-lenticular": {
+   "titre": "Wikipedia (en) — Lenticular fasciculus",
+   "url": "https://en.wikipedia.org/wiki/Lenticular_fasciculus"
+  },
+  "wp-gp": {
+   "titre": "Wikipedia (en) — Globus pallidus",
+   "url": "https://en.wikipedia.org/wiki/Globus_pallidus"
+  },
+  "wp-ilf": {
+   "titre": "Wikipedia (en) — Inferior longitudinal fasciculus",
+   "url": "https://en.wikipedia.org/wiki/Inferior_longitudinal_fasciculus"
+  },
+  "wp-mlf": {
+   "titre": "Wikipedia (en) — Medial longitudinal fasciculus",
+   "url": "https://en.wikipedia.org/wiki/Medial_longitudinal_fasciculus"
+  },
+  "wp-dlf": {
+   "titre": "Wikipedia (en) — Dorsal longitudinal fasciculus",
+   "url": "https://en.wikipedia.org/wiki/Dorsal_longitudinal_fasciculus"
+  },
+  "wp-hypothalamus": {
+   "titre": "Wikipedia (en) — Hypothalamus",
+   "url": "https://en.wikipedia.org/wiki/Hypothalamus"
+  },
+  "wp-slf": {
+   "titre": "Wikipedia (en) — Superior longitudinal fasciculus",
+   "url": "https://en.wikipedia.org/wiki/Superior_longitudinal_fasciculus"
+  },
+  "wp-mmt": {
+   "titre": "Wikipedia (en) — Mammillothalamic tract",
+   "url": "https://en.wikipedia.org/wiki/Mammillothalamic_tract"
+  },
+  "wp-mammillary": {
+   "titre": "Wikipedia (en) — Mammillary body",
+   "url": "https://en.wikipedia.org/wiki/Mammillary_body"
+  },
+  "wp-ofasc": {
+   "titre": "Wikipedia (en) — Inferior fronto-occipital fasciculus (Occipitofrontal fasciculus)",
+   "url": "https://en.wikipedia.org/wiki/Inferior_fronto-occipital_fasciculus"
+  },
+  "wp-pyramidal": {
+   "titre": "Wikipedia (en) — Pyramidal tracts",
+   "url": "https://en.wikipedia.org/wiki/Pyramidal_tracts"
+  },
+  "wp-corticospinal": {
+   "titre": "Wikipedia (en) — Corticospinal tract",
+   "url": "https://en.wikipedia.org/wiki/Corticospinal_tract"
+  },
+  "wp-uf": {
+   "titre": "Wikipedia (en) — Uncinate fasciculus",
+   "url": "https://en.wikipedia.org/wiki/Uncinate_fasciculus"
+  },
+  "wp-occipital": {
+   "titre": "Wikipedia (en) — Occipital lobe",
+   "url": "https://en.wikipedia.org/wiki/Occipital_lobe"
+  },
+  "wp-fusiform": {
+   "titre": "Wikipedia (en) — Fusiform gyrus",
+   "url": "https://en.wikipedia.org/wiki/Fusiform_gyrus"
+  },
+  "wp-subcallosal": {
+   "titre": "Wikipedia (en) — Subcallosal area",
+   "url": "https://en.wikipedia.org/wiki/Subcallosal_area"
+  },
+  "wp-septal": {
+   "titre": "Wikipedia (en) — Septal nuclei",
+   "url": "https://en.wikipedia.org/wiki/Septal_nuclei"
+  },
+  "wp-dentate": {
+   "titre": "Wikipedia (en) — Dentate gyrus",
+   "url": "https://en.wikipedia.org/wiki/Dentate_gyrus"
+  },
+  "wp-gyrus": {
+   "titre": "Wikipedia (en) — Gyrus",
+   "url": "https://en.wikipedia.org/wiki/Gyrus"
+  },
+  "wp-hippocampus": {
+   "titre": "Wikipedia (en) — Hippocampus",
+   "url": "https://en.wikipedia.org/wiki/Hippocampus"
+  }
+ },
+ "fiches": [
+  {
+   "id": "cervelet",
+   "resume": "Le « petit cerveau » de la fosse postérieure : il règle la précision, le rythme et l'équilibre des mouvements sans les déclencher.",
+   "partie": "cervelet",
+   "situation": "Dans la fosse postérieure du crâne, sous la tente du cervelet, en arrière du pont et de la moelle allongée dont le sépare le quatrième ventricule",
+   "fonction": "Compare le mouvement voulu au mouvement réel et le corrige : coordination, dosage de la force, équilibre, apprentissage moteur ; il participe aussi, plus modestement, à l'attention, au langage et aux émotions",
+   "connexions": {
+    "texte": "Deux hémisphères réunis par le vermis ; quatre noyaux profonds en sont la sortie. Pédoncule moyen : entrées venues du pont ; pédoncule inférieur : entrées spinales, vestibulaires et olivaires ; pédoncule supérieur : sorties vers le thalamus",
+    "structures": [
+     "pedoncule-cerebelleux-superieur",
+     "pedoncule-cerebelleux-moyen",
+     "pedoncule-cerebelleux-inferieur",
+     "noyaux-cerebelleux",
+     "pont"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères cérébelleuses supérieure (branche du tronc basilaire), inféro-antérieure (basilaire) et inféro-postérieure (branche de la vertébrale), anastomosées en surface",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebelleuse-infero-anterieure",
+     "artere-cerebelleuse-inferoposterieure",
+     "artere-basilaire"
+    ]
+   },
+   "atteinte": "Syndrome cérébelleux du côté de la lésion : ataxie, dysmétrie, adiadococinésie, tremblement d'intention, nystagmus, dysarthrie, hypotonie. Le vermis donne surtout l'ataxie du tronc et de la marche ; l'hémisphère, celle des membres",
+   "clinique": "Une masse de la fosse postérieure ou un œdème pousse les tonsilles vers le foramen magnum (engagement) et comprime le bulbe, urgence vitale",
+   "memo": "DANISH : Dysdiadococinésie, Ataxie, Nystagmus, tremblement Intentionnel, discours Scandé, Hypotonie",
+   "variantes": null,
+   "sources": [
+    "tma-cervelet",
+    "wp-cerebellum",
+    "wp-fr-cervelet"
+   ],
+   "divergences": "Les fissures et lobules sont comptés différemment selon les auteurs (dix lobules par convention ; Larsell ou terminologie anatomique) ; je suis la terminologie anatomique donnée par l'atlas"
+  },
+  {
+   "id": "lobe-cerebelleux-anterieur",
+   "resume": "La partie du cervelet située devant la fissure primaire : surtout vermis et zone intermédiaire, qui règlent la marche.",
+   "partie": "cervelet",
+   "situation": "Face supérieure du cervelet, en avant de la fissure primaire ; il comprend la lingula, le lobule central (avec son aile), le culmen et le lobule quadrangulaire antérieur",
+   "fonction": "Reçoit surtout les informations de position des membres et du tronc venues de la moelle (spinocérébellum) et ajuste le tonus et la coordination de la marche",
+   "connexions": {
+    "texte": "Entrées : voies spinocérébelleuses. Sorties : par le noyau fastigial (vermis) et les noyaux interposés vers les noyaux vestibulaires, la formation réticulée, le noyau rouge et le thalamus",
+    "structures": [
+     "tractus-spinocerebelleux-anterieur",
+     "tractus-spinocerebelleux-posterieur",
+     "noyau-fastigial",
+     "noyau-emboliforme",
+     "noyau-globuleux"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Surtout l'artère cérébelleuse supérieure",
+    "arteres": [
+     "artere-cerebelleuse-superieure"
+    ]
+   },
+   "atteinte": "Troubles de la marche et de la coordination des jambes, avec une démarche ébrieuse, du côté de la lésion ; classiquement l'atrophie du vermis supérieur de l'éthylisme chronique",
+   "memo": "L'avant, au-dessus de la fissure primaire : le cervelet des jambes et de la marche",
+   "variantes": null,
+   "sources": [
+    "wp-vermis",
+    "wp-cerebellum",
+    "tma-cervelet"
+   ],
+   "divergences": "Les références consultées ne s'accordent pas sur la place du lobule quadrangulaire : la fissure primaire le coupe, d'où un lobule antérieur et un lobule postérieur dans l'atlas"
+  },
+  {
+   "id": "lobe-posterieur-du-cervelet",
+   "resume": "La plus grande partie du cervelet, entre la fissure primaire et la fissure postérolatérale : elle planifie et affine les mouvements adroits.",
+   "partie": "cervelet",
+   "situation": "Du bord inférieur de la fissure primaire à la fissure postérolatérale : déclive, folium, tuber, pyramide et uvule au vermis ; lobules quadrangulaire postérieur, semi-lunaires, gracile, biventral et tonsille aux hémisphères",
+   "fonction": "Sa partie latérale, très développée chez l'humain, élabore les mouvements habiles et participe à des fonctions cognitives ; sa partie médiane règle posture et mouvements du tronc",
+   "connexions": {
+    "texte": "Entrées : cortex cérébral par les noyaux du pont (pédoncule moyen), olive inférieure. Sorties : noyaux dentelé, interposés et fastigial vers le thalamus, le noyau rouge et les noyaux vestibulaires",
+    "structures": [
+     "noyaux-pontins",
+     "pedoncule-cerebelleux-moyen",
+     "noyau-dentele",
+     "noyau-fastigial"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébelleuse supérieure pour la face supérieure, inféro-postérieure pour la face inférieure, inféro-antérieure pour sa partie antérieure",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebelleuse-inferoposterieure",
+     "artere-cerebelleuse-infero-anterieure"
+    ]
+   },
+   "atteinte": "Du côté de la lésion : dysmétrie, adiadococinésie, tremblement d'intention, dysarthrie et hypotonie des membres ; la compression des tonsilles par le foramen magnum menace le bulbe",
+   "memo": "Le grand lobe du milieu : il contient la tonsille, celle qui descend dans le foramen magnum",
+   "variantes": null,
+   "sources": [
+    "wp-cerebellum",
+    "wp-tonsil",
+    "tma-cervelet"
+   ],
+   "divergences": "L'uvule est rangée dans le lobe postérieur selon la terminologie anatomique ; certains auteurs la rattachent à la région vestibulaire, avec le nodule"
+  },
+  {
+   "id": "noyau-terminal-d-un-nerf-cranial",
+   "resume": "Les noyaux du tronc cérébral où aboutissent les fibres sensitives et sensorielles des nerfs crâniens.",
+   "partie": "tronc-cerebral",
+   "situation": "Dans le tronc cérébral, du mésencéphale à la moelle cervicale haute ; en dehors du sillon limitant du plancher du quatrième ventricule, les noyaux sensitifs sont latéraux par rapport aux noyaux moteurs",
+   "fonction": "Reçoit la sensibilité de la face (noyaux du trijumeau), le goût et la sensibilité viscérale (noyau du tractus solitaire), l'audition (noyaux cochléaires) et l'équilibre (noyaux vestibulaires)",
+   "connexions": {
+    "texte": "Les fibres du V, du VII, du IX, du X et du VIII y font relais avant de monter vers le thalamus, le cervelet ou les noyaux moteurs du tronc cérébral",
+    "structures": [
+     "noyau-mesencephalique-du-nerf-trijumeau",
+     "noyau-sensoriel-principal-du-nerf-trigeminal",
+     "noyau-spinal-du-nerf-trijumeau",
+     "noyau-du-tractus-solitaire",
+     "noyau-cochleaire-anterieur",
+     "noyau-cochleaire-posterieur",
+     "noyaux-vestibulaires"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères vertébrale, cérébelleuse inféro-postérieure (bulbe) et branches du tronc basilaire (pont)",
+    "arteres": [
+     "vertebrale",
+     "artere-cerebelleuse-inferoposterieure",
+     "artere-basilaire"
+    ]
+   },
+   "atteinte": "Selon le noyau : perte de la sensibilité thermo-algique de la face du même côté (noyau spinal du V), vertige et nystagmus (noyaux vestibulaires), surdité (noyaux cochléaires). Le syndrome de Wallenberg les touche ensemble",
+   "memo": "Terminal : les fibres y finissent leur route, avant le relais vers le thalamus",
+   "variantes": null,
+   "sources": [
+    "kenhub-noyaux-craniens",
+    "wp-cranial-nuclei",
+    "wp-solitary",
+    "wp-cochlear"
+   ],
+   "divergences": "Le qualificatif « terminal » n'est pas repris par Kenhub ni Wikipédia, qui parlent de noyaux sensitifs ; la liste ci-dessus suit la terminologie anatomique de l'atlas"
+  },
+  {
+   "id": "noyaux-des-nerfs-craniens",
+   "resume": "L'ensemble des amas de neurones du tronc cérébral qui émettent ou reçoivent les fibres des nerfs crâniens.",
+   "partie": "tronc-cerebral",
+   "situation": "Dans le tronc cérébral : noyaux des nerfs III et IV dans le mésencéphale, V moteur, VI, VII et VIII dans le pont, ambigu, vague, hypoglosse et solitaire dans le bulbe ; les nerfs I et II n'ont pas de noyau ici",
+   "fonction": "Commandent les muscles de l'œil, de la mâchoire, de la face, du pharynx, du larynx et de la langue, innervent les glandes et la pupille, et reçoivent la sensibilité de la tête, le goût, l'audition et l'équilibre",
+   "connexions": {
+    "texte": "Les noyaux moteurs, plus proches de la ligne médiane, reçoivent les fibres corticobulbaires ; les noyaux sensitifs, plus latéraux, projettent vers le thalamus. Tous sont en relation avec la formation réticulée",
+    "structures": [
+     "noyau-du-nerf-oculomoteur",
+     "noyau-du-nerf-trochleaire",
+     "noyau-du-nerf-abducens",
+     "noyau-moteur-du-nerf-trigeminal",
+     "noyau-moteur-du-nef-facial",
+     "noyau-ambigu",
+     "noyau-du-nerf-hypoglosse",
+     "noyau-du-tractus-solitaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches du tronc basilaire et des artères cérébrales postérieures pour le mésencéphale et le pont ; artères vertébrale et cérébelleuse inféro-postérieure pour le bulbe",
+    "arteres": [
+     "artere-basilaire",
+     "artere-cerebrale-posterieure",
+     "vertebrale",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Paralysie d'un nerf crânial avec, selon l'étage, un déficit croisé : syndrome de Weber (III), de Wallenberg (V, IX, X) ; le noyau du nerf IV est seul à innerver le côté opposé",
+   "clinique": "Les réflexes du tronc cérébral (photomoteur, cornéen, oculo-vestibulaire, nauséeux, toux) explorent ces noyaux et servent au constat de mort encéphalique",
+   "memo": "Les moteurs près de la ligne médiane, les sensitifs sur les côtés, séparés par le sillon limitant",
+   "variantes": null,
+   "sources": [
+    "kenhub-noyaux-craniens",
+    "wp-cranial-nuclei",
+    "wp-trigeminal-nuclei"
+   ],
+   "divergences": "Kenhub annonce 10 noyaux moteurs et 8 sensitifs mais en détaille 11 et 6 dans son tableau ; je ne donne donc aucun total. Le nerf XI relève du noyau ambigu selon Kenhub, de la corne antérieure cervicale selon l'enseignement classique"
+  },
+  {
+   "id": "pontocerebellum",
+   "resume": "Les parties latérales du cervelet, voisines du pont : elles préparent et planifient les mouvements habiles.",
+   "partie": "cervelet",
+   "situation": "Hémisphères cérébelleux latéraux : lobule quadrangulaire postérieur, lobules semi-lunaires supérieur et inférieur, lobule gracile",
+   "fonction": "Reçoit l'ordre du cortex cérébral par le pont et prépare la planification des mouvements fins et rapides ; participe à l'apprentissage moteur et à certaines fonctions cognitives",
+   "connexions": {
+    "texte": "Cortex cérébral, noyaux du pont, pédoncule cérébelleux moyen, cortex cérébelleux latéral, noyau dentelé, pédoncule supérieur, thalamus et noyau rouge",
+    "structures": [
+     "noyaux-pontins",
+     "pedoncule-cerebelleux-moyen",
+     "noyau-dentele",
+     "tractus-dentatothalamique",
+     "thalamus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères cérébelleuses supérieure et inféro-postérieure",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Du côté de la lésion : dysmétrie, tremblement d'intention, adiadococinésie, dysarthrie, hypotonie ; troubles de la planification et de l'humeur possibles (syndrome cérébelleux cognitivo-affectif)",
+   "memo": "Le cervelet du pont : il reçoit le projet du cortex et le peaufine",
+   "variantes": null,
+   "sources": [
+    "wp-cerebellum",
+    "tma-cervelet",
+    "wp-fr-cervelet"
+   ],
+   "divergences": "Pontocervelet, cérébrocervelet, néocervelet et cervelet latéral désignent la même zone selon les auteurs"
+  },
+  {
+   "id": "spinocerebellum",
+   "resume": "Le vermis et la zone voisine du cervelet : ils reçoivent la position du corps et règlent posture, tonus et marche.",
+   "partie": "cervelet",
+   "situation": "Vermis et zone intermédiaire (paravermienne) des hémisphères : lingula, lobule central et son aile, culmen, déclive, folium, tuber, pyramide, uvule, lobules quadrangulaire antérieur et biventral, tonsille",
+   "fonction": "Compare l'ordre moteur à l'information de position venue de la moelle et corrige le mouvement en cours ; le vermis règle le tronc et la posture, la zone intermédiaire les membres",
+   "connexions": {
+    "texte": "Entrées : voies spinocérébelleuses. Sorties : le vermis vers le noyau fastigial (noyaux vestibulaires, formation réticulée), la zone intermédiaire vers les noyaux interposés (noyau rouge, thalamus)",
+    "structures": [
+     "tractus-spinocerebelleux-anterieur",
+     "tractus-spinocerebelleux-posterieur",
+     "noyau-fastigial",
+     "noyau-emboliforme",
+     "noyau-globuleux"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères cérébelleuses supérieure et inféro-postérieure",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Lésion du vermis : ataxie du tronc, station debout instable, démarche ébrieuse ; lésion de la zone intermédiaire : troubles de la coordination des membres du même côté",
+   "memo": "Spino : il reçoit de la moelle ; vermis au milieu pour le tronc, les côtés pour les membres",
+   "variantes": null,
+   "sources": [
+    "wp-cerebellum",
+    "tma-cervelet",
+    "wp-vermis",
+    "wp-fastigial"
+   ],
+   "divergences": "La limite entre vermis, zone intermédiaire et zone latérale varie selon les auteurs, d'où des listes de lobules qui diffèrent légèrement"
+  },
+  {
+   "id": "commissure-blanche-anterieure",
+   "resume": "Le pont de fibres blanches en avant du canal central, par où la douleur et la température passent d'un côté de la moelle à l'autre.",
+   "partie": "moelle-spinale",
+   "situation": "Dans la moelle spinale, juste en avant de la commissure grise et du canal central, au fond du sillon médian antérieur",
+   "fonction": "Les axones des neurones de la douleur et de la température y croisent la ligne médiane, puis montent dans le cordon antéro-latéral opposé ; quelques fibres corticospinales antérieures s'y croisent aussi",
+   "connexions": {
+    "texte": "Les fibres spinothalamiques croisent environ deux segments au-dessus de leur entrée, puis rejoignent le faisceau antérolatéral du côté opposé",
+    "structures": [
+     "faisceau-anterolateral",
+     "canal-central",
+     "tractus-spinothalamique-lateral",
+     "tractus-corticospinal-anterieur"
+    ]
+   },
+   "atteinte": "Une lésion centrale (syringomyélie, par exemple) supprime la douleur et la température aux niveaux atteints, des deux côtés, en « cape » ou « veste », alors que le tact et la proprioception sont conservés",
+   "memo": "La commissure de la douleur : elle croise devant, le tact monte par derrière",
+   "variantes": null,
+   "sources": [
+    "wp-awc",
+    "wp-spinal-cord"
+   ],
+   "divergences": "Les références consultées ne décrivent pas la syringomyélie ; ce tableau clinique est l'enseignement classique"
+  },
+  {
+   "id": "commissure-blanche-posterieure",
+   "resume": "La fine bande de fibres blanches en arrière de la commissure grise postérieure, discrète et mal définie.",
+   "partie": "moelle-spinale",
+   "situation": "Dans la moelle spinale, en arrière de la commissure grise postérieure et du canal central, près du fond du sillon médian postérieur",
+   "fonction": "Réunit les deux moitiés de la moelle par de rares fibres croisées, surtout des fibres propres de la moelle ; sa fonction est mal connue et ne ressemble pas à celle de la commissure blanche antérieure",
+   "connexions": {
+    "texte": "Fibres qui croisent la ligne médiane derrière le canal central, entre les cornes postérieures",
+    "structures": [
+     "canal-central",
+     "commissure-grise-posterieure"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit : elle est touchée avec la substance grise centrale dans les lésions médullaires centrales",
+   "memo": "Derrière le canal, la petite sœur de la commissure antérieure, que l'on n'examine pas",
+   "variantes": null,
+   "sources": [
+    "wp-gray-commissure",
+    "wp-spinal-cord"
+   ],
+   "divergences": "Aucune référence consultée ne décrit cette commissure en détail : cette fiche reste prudente et s'en tient à sa situation, donnée par la terminologie anatomique"
+  },
+  {
+   "id": "commissure-cochleaire-du-pont",
+   "resume": "Le corps trapézoïde : les fibres de l'audition qui croisent la ligne médiane dans le pont.",
+   "partie": "tronc-cerebral",
+   "situation": "Dans la partie ventrale du tegmentum du pont, à la jonction pontobulbaire, derrière les noyaux du pont et en avant des lemnisques médiaux",
+   "fonction": "Les fibres du noyau cochléaire ventral y croisent vers le complexe olivaire supérieur du côté opposé ; ce croisement partiel sert à situer un son dans l'espace",
+   "connexions": {
+    "texte": "Naît des noyaux cochléaires ; atteint le noyau du corps trapézoïde et l'olive supérieure opposés, puis monte dans le lemnisque latéral controlatéral vers le colliculus inférieur",
+    "structures": [
+     "noyau-cochleaire-anterieur",
+     "noyau-du-corps-trapezoide",
+     "noyau-olivaire-superieur",
+     "noyau-du-lemnisque-lateral",
+     "colliculus-inferieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches circonférentielles du tronc basilaire et artère cérébelleuse inféro-antérieure",
+    "arteres": [
+     "artere-basilaire",
+     "artere-cerebelleuse-infero-anterieure"
+    ]
+   },
+   "atteinte": "Une lésion pontique isolée ne donne pas de surdité franche, car l'information auditive est répartie des deux côtés ; elle brouille la localisation des sons",
+   "memo": "Le trapèze de l'oreille : l'acrobate qui change de côté",
+   "variantes": null,
+   "sources": [
+    "wp-trapezoid",
+    "wp-cochlear"
+   ],
+   "divergences": "Le corps trapézoïde correspond à la strie acoustique ventrale ; les stries dorsale et intermédiaire, elles aussi croisées, suivent d'autres trajets"
+  },
+  {
+   "id": "commissure-cerebelleuse",
+   "resume": "Les fibres qui croisent la ligne médiane dans le vermis et relient les deux hémisphères cérébelleux.",
+   "partie": "cervelet",
+   "situation": "Dans la substance blanche du vermis, au toit du quatrième ventricule",
+   "fonction": "Met en relation les deux hémisphères cérébelleux, pour qu'ils coordonnent leur travail",
+   "connexions": {
+    "texte": "Fibres qui passent d'un hémisphère à l'autre à travers le vermis",
+    "structures": [
+     "quatrieme-ventricule",
+     "noyau-fastigial"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit : les signes cérébelleux dominent selon la zone du vermis atteinte",
+   "memo": "Le pont du cervelet : il relie droite et gauche à travers le vermis",
+   "variantes": null,
+   "sources": [
+    "wp-cerebellum",
+    "wp-fr-cervelet"
+   ],
+   "divergences": "Aucune référence consultée ne décrit cette commissure : fiche limitée à la situation et au rôle donnés par la terminologie anatomique ; à distinguer de la décussation des fibres cérébello-thalamiques dans le mésencéphale"
+  },
+  {
+   "id": "commissure-des-colliculi-inferieurs",
+   "resume": "Les fibres qui relient les deux colliculi inférieurs, relais de l'audition dans le toit du mésencéphale.",
+   "partie": "tronc-cerebral",
+   "situation": "Dans le tectum du mésencéphale, entre les deux colliculi inférieurs, en arrière de l'aqueduc",
+   "fonction": "Fait communiquer les deux colliculi inférieurs, ce qui permet de comparer les sons reçus des deux oreilles et de localiser leur source",
+   "connexions": {
+    "texte": "Relie les colliculi inférieurs droit et gauche ; chacun envoie ses fibres au corps géniculé médial par le bras du colliculus inférieur",
+    "structures": [
+     "colliculus-inferieur",
+     "corps-genicule-medial",
+     "mesencephale"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères cérébelleuse supérieure et cérébrale postérieure (branches quadrijumelles)",
+    "arteres": [
+     "artere-cerebelleuse-superieure",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Une lésion du tectum inférieur gêne la localisation des sons et l'audition complexe, sans surdité franche en raison de l'information auditive croisée",
+   "memo": "Les deux colliculi qui s'écoutent : l'inférieur est l'oreille du mésencéphale",
+   "variantes": null,
+   "sources": [
+    "wp-ic",
+    "wp-trapezoid"
+   ],
+   "divergences": "La page consultée sur le colliculus inférieur ne mentionne pas la commissure elle-même : son rôle est déduit de la fonction d'intégration binaurale du colliculus"
+  },
+  {
+   "id": "commissure-des-colliculi-superieurs",
+   "resume": "Les fibres qui relient les deux colliculi supérieurs, centres du regard et de l'orientation visuelle.",
+   "partie": "tronc-cerebral",
+   "situation": "Dans le tectum du mésencéphale, entre les deux colliculi supérieurs, en arrière de l'aqueduc et plus bas que la commissure postérieure",
+   "fonction": "Coordonne les deux colliculi supérieurs, dont les cartes du champ visuel contribuent aux saccades oculaires et à l'orientation de la tête vers un stimulus",
+   "connexions": {
+    "texte": "Relie les colliculi supérieurs droit et gauche ; ceux-ci projettent vers le tronc cérébral et la moelle (tractus tectospinal)",
+    "structures": [
+     "colliculus-superieur",
+     "mesencephale",
+     "tractus-tectospinal"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches quadrijumelles des artères cérébrale postérieure et cérébelleuse supérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-cerebelleuse-superieure"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit ; une lésion du tectum supérieur et de la région pinéale donne des troubles du regard vertical (syndrome de Parinaud)",
+   "memo": "Le pont du regard : les deux colliculi supérieurs décident ensemble où l'œil va",
+   "variantes": null,
+   "sources": [
+    "wp-sc",
+    "wp-posterior-commissure"
+   ],
+   "divergences": "La page consultée sur le colliculus supérieur ne traite pas la commissure ; la page sur la commissure postérieure rappelle que certaines fibres de la commissure de la région viennent du colliculus supérieur, sans trancher"
+  },
+  {
+   "id": "commissure-grise-anterieure",
+   "resume": "Le pont de substance grise qui unit, devant le canal central, les deux cornes antérieures.",
+   "partie": "moelle-spinale",
+   "situation": "Dans la moelle spinale, entre les deux moitiés de la substance grise, juste en avant du canal central et derrière la commissure blanche antérieure",
+   "fonction": "Relie les deux côtés de la substance grise ; elle correspond à la lame X de Rexed, d'interneurones qui font passer l'information d'un côté à l'autre",
+   "connexions": {
+    "texte": "Prolonge l'une dans l'autre les deux cornes antérieures et entoure en avant le canal central",
+    "structures": [
+     "canal-central",
+     "corne-anterieure-de-la-moelle-epiniere",
+     "commissure-blanche-anterieure"
+    ]
+   },
+   "atteinte": "Isolée, elle ne donne pas de syndrome propre ; elle est comprimée ou détruite par l'élargissement du canal central dans la syringomyélie",
+   "memo": "Le pont de gris devant le canal, collé contre le pont de blanc qui croise la douleur",
+   "variantes": null,
+   "sources": [
+    "wp-gray-commissure",
+    "wp-spinal-cord"
+   ],
+   "divergences": "La page Wikipédia consultée décrit la commissure grise sans la diviser en parties antérieure et postérieure ; la division suit la terminologie anatomique"
+  },
+  {
+   "id": "commissure-grise-posterieure",
+   "resume": "Le pont de substance grise qui unit, derrière le canal central, les deux cornes postérieures.",
+   "partie": "moelle-spinale",
+   "situation": "Dans la moelle spinale, entre les deux moitiés de la substance grise, juste en arrière du canal central et devant la commissure blanche postérieure",
+   "fonction": "Relie les deux côtés de la substance grise ; fait partie de la lame X de Rexed, d'interneurones qui font passer l'information d'un côté à l'autre",
+   "connexions": {
+    "texte": "Prolonge l'une dans l'autre les deux cornes postérieures et entoure en arrière le canal central",
+    "structures": [
+     "canal-central",
+     "corne-posterieure-de-la-moelle-epiniere",
+     "commissure-blanche-posterieure"
+    ]
+   },
+   "atteinte": "Isolée, elle ne donne pas de syndrome propre ; elle est atteinte avec la substance grise centrale dans les lésions centromédullaires",
+   "memo": "Derrière le canal, le gris qui relie les deux cornes postérieures, celles de la sensibilité",
+   "variantes": null,
+   "sources": [
+    "wp-gray-commissure",
+    "wp-spinal-cord"
+   ],
+   "divergences": "La page Wikipédia consultée décrit la commissure grise sans la diviser en parties antérieure et postérieure ; la division suit la terminologie anatomique"
+  },
+  {
+   "id": "commissure-habenulaire",
+   "resume": "La mince commissure qui relie les deux habénulae, juste devant la glande pinéale.",
+   "partie": "diencephale",
+   "situation": "Épithalamus, au bord postérieur du troisième ventricule, devant la glande pinéale, au-dessus du récessus pinéal",
+   "fonction": "Fait passer des fibres d'une habénula à l'autre, ce qui coordonne les deux côtés de ce relais entre le système limbique et le mésencéphale",
+   "connexions": {
+    "texte": "Relie les noyaux habénulaires droit et gauche, lesquels reçoivent la strie médullaire du thalamus et se projettent par le faisceau rétroflexe vers le noyau interpédonculaire",
+    "structures": [
+     "habenula",
+     "strie-medullaire-thalamique",
+     "noyau-habenulaire-lateral",
+     "noyan-habenulaire-medial",
+     "tractus-habenulo-interpedonculaire"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit ; la région est touchée avec la pinéale dans les tumeurs pinéales, qui peuvent comprimer la commissure postérieure et le tectum",
+   "memo": "Les rênes (habena) des deux côtés, nouées devant la pinéale",
+   "variantes": null,
+   "sources": [
+    "wp-habenula",
+    "wp-epithalamus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "commissure-supra-optique-dorsale",
+   "resume": "La commissure de Meynert : un mince faisceau de fibres qui croise la ligne médiane derrière le chiasma optique.",
+   "partie": "diencephale",
+   "situation": "Hypothalamus, immédiatement en arrière du chiasma optique, en position dorsale par rapport à la commissure de Gudden",
+   "fonction": "Relie, selon les auteurs, les noyaux sous-thalamiques et le pallidum aux corps géniculés latéraux et aux colliculi supérieurs ; son rôle fonctionnel reste mal établi",
+   "connexions": {
+    "texte": "Fibres croisées proposées entre noyau sous-thalamique, globus pallidus, corps géniculé latéral et colliculus supérieur",
+    "structures": [
+     "noyau-subthalamique",
+     "globus-pallidus",
+     "corps-genicule-lateral",
+     "colliculus-superieur",
+     "troisieme-ventricule"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit : elle n'est pas distinguée des autres fibres de la région chiasmatique",
+   "memo": "Meynert, dorsal : le plus haut des deux ponts derrière le chiasma, l'autre étant celui de Gudden",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-meynert",
+    "radiopaedia-gudden"
+   ],
+   "divergences": "Le trajet des fibres n'est pas établi : l'atlas la décrit « au-dessus du chiasma », alors que Radiopaedia la place derrière lui ; je retiens cette dernière position"
+  },
+  {
+   "id": "commissure-supra-optique-ventrale",
+   "resume": "La commissure de Gudden : un mince faisceau de fibres qui croise la ligne médiane derrière le chiasma optique, sous celle de Meynert.",
+   "partie": "diencephale",
+   "situation": "Hypothalamus, immédiatement en arrière du chiasma optique, en position ventrale par rapport à la commissure de Meynert",
+   "fonction": "Fonction mal établie : on y a vu une liaison entre les corps géniculés médiaux, ou des fibres de la formation réticulée qui suivent le faisceau longitudinal médial",
+   "connexions": {
+    "texte": "Trajet des fibres discuté : corps géniculés médiaux selon Jinkins et Gray, formation réticulée du pont selon Clarke",
+    "structures": [
+     "corps-genicule-medial",
+     "faisceau-longitudinal-medial",
+     "troisieme-ventricule"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit",
+   "memo": "Gudden, ventral : le pont du dessous, collé derrière le chiasma",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-gudden",
+    "radiopaedia-meynert"
+   ],
+   "divergences": "Les auteurs cités par Radiopaedia ne s'accordent pas sur l'origine des fibres (corps géniculés médiaux ou formation réticulée) : les deux hypothèses sont données"
+  },
+  {
+   "id": "epithalamus",
+   "resume": "La partie postérieure et dorsale du diencéphale : les habénulae, la glande pinéale et leurs fibres.",
+   "partie": "diencephale",
+   "situation": "Partie postérieure du toit du troisième ventricule, au-dessus du thalamus, devant le mésencéphale ; il comprend l'habénula, la commissure habénulaire, la strie médullaire, la glande pinéale et la commissure postérieure",
+   "fonction": "Relie le système limbique au mésencéphale (habénula) et règle les rythmes jour-nuit par la mélatonine de la glande pinéale",
+   "connexions": {
+    "texte": "La strie médullaire amène vers l'habénula les fibres du septum et de l'hypothalamus ; le faisceau rétroflexe les mène au noyau interpédonculaire",
+    "structures": [
+     "habenula",
+     "noyau-habenulaire-lateral",
+     "noyan-habenulaire-medial",
+     "commissure-habenulaire",
+     "strie-medullaire-thalamique"
+    ]
+   },
+   "atteinte": "Un dysfonctionnement est associé à des troubles de l'humeur et du sommeil ; une tumeur de la pinéale comprime le tectum et donne des troubles du regard vertical et une hydrocéphalie",
+   "memo": "Au-dessus du thalamus, comme le haut d'un toit : la pinéale et les rênes de l'habénula",
+   "variantes": null,
+   "sources": [
+    "wp-epithalamus",
+    "wp-habenula"
+   ],
+   "divergences": "La pinéale et la commissure postérieure sont comptées dans l'épithalamus par Wikipédia ; l'atlas ne les liste pas parmi les membres"
+  },
+  {
+   "id": "faisceau-lenticulaire",
+   "resume": "Un des deux faisceaux de sortie du pallidum interne vers le thalamus : le champ H2 de Forel.",
+   "partie": "voies",
+   "situation": "Naît du globus pallidus interne, traverse la capsule interne, passe au-dessus du noyau subthalamique (entre lui et la zona incerta) puis rejoint le champ H1 sous le thalamus",
+   "fonction": "Transmet au thalamus moteur la sortie des noyaux gris centraux, qui freine ou libère les mouvements volontaires ; il appartient avec l'anse lenticulaire au faisceau thalamique",
+   "connexions": {
+    "texte": "Pallidum interne vers le thalamus (noyaux ventraux antérieur et latéral), puis vers le cortex moteur et prémoteur",
+    "structures": [
+     "globus-pallidus",
+     "noyau-subthalamique",
+     "noyaux-ventraux-anterieurs",
+     "noyaux-ventraux-lateraux",
+     "thalamus"
+    ]
+   },
+   "atteinte": "Une lésion de cette voie est décrite avec des mouvements involontaires de type choréique ; la pallidotomie ou la stimulation du pallidum agit sur les tremblements et les dyskinésies de la maladie de Parkinson",
+   "memo": "Lenticulaire : né du noyau lenticulaire (le pallidum), il passe au-dessus du noyau subthalamique",
+   "variantes": null,
+   "sources": [
+    "wp-lenticular",
+    "wp-gp"
+   ],
+   "divergences": "Les pages consultées donnent l'origine, la cible thalamique et l'équivalence avec H2 de Forel, mais pas le trajet précis : le passage au-dessus du noyau subthalamique est celui de l'enseignement classique et du tracé de l'atlas"
+  },
+  {
+   "id": "faisceau-longitudinal-inferieur",
+   "resume": "Le long faisceau de la voie visuelle ventrale : il relie le cortex occipital au lobe temporal antérieur.",
+   "partie": "voies",
+   "situation": "Dans la substance blanche, le long de la paroi latérale et inférieure du ventricule latéral (cornes occipitale et temporale), du pôle occipital au pôle temporal",
+   "fonction": "Colonne vertébrale de la voie visuelle du « quoi » : reconnaissance des objets, des visages et des lieux, lecture, sens des mots et mémoire visuelle",
+   "connexions": {
+    "texte": "Relie le cortex visuel extrastrié (cunéus, gyrus lingual, gyrus occipital) au lobe temporal antérieur (gyrus fusiforme, gyrus temporal moyen) ; fibres dans les deux sens",
+    "structures": [
+     "pole-occipital",
+     "pole-temporal",
+     "gyrus-lingual",
+     "cuneus",
+     "ventricule-lateral"
+    ]
+   },
+   "atteinte": "Agnosie visuelle associative (voir sans reconnaître), prosopagnosie, alexie, amnésie visuelle ; le côté et l'étendue de la lésion modulent le tableau",
+   "memo": "Le faisceau du « quoi » : de l'arrière du cerveau (la vue) vers l'avant du temporal (le sens)",
+   "variantes": "Son existence a été contestée, notamment chez l'animal, avant que l'imagerie de diffusion ne la confirme chez l'humain",
+   "sources": [
+    "wp-ilf",
+    "wp-occipital"
+   ],
+   "divergences": "Le nombre de ses branches (quatre sur dissection : fusiforme, occipitale dorsolatérale, linguale, cunéale) varie selon les études"
+  },
+  {
+   "id": "faisceau-longitudinal-medial",
+   "resume": "Le câble du tronc cérébral qui synchronise les deux yeux entre eux et avec la tête.",
+   "partie": "tronc-cerebral",
+   "situation": "Près de la ligne médiane, sous le plancher du quatrième ventricule et sous l'aqueduc ; il traverse mésencéphale, pont et bulbe jusqu'à la moelle cervicale haute",
+   "fonction": "Relie les noyaux vestibulaires aux noyaux des nerfs III, IV et VI et coordonne les mouvements conjugués des yeux (regard horizontal, réflexe vestibulo-oculaire) avec ceux de la tête",
+   "connexions": {
+    "texte": "Ascendant : des noyaux vestibulaires aux noyaux oculomoteurs ; l'interneurone du noyau abducens passe par lui vers le noyau oculomoteur opposé (muscle droit médial). Descendant : colliculus supérieur, formation réticulée",
+    "structures": [
+     "noyaux-vestibulaires",
+     "noyau-du-nerf-oculomoteur",
+     "noyau-du-nerf-trochleaire",
+     "noyau-du-nerf-abducens",
+     "noyau-interstitiel",
+     "tractus-vestibulospinal-medial"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches paramédianes du tronc basilaire (pont) et artères cérébrales postérieures (mésencéphale)",
+    "arteres": [
+     "artere-basilaire",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Ophtalmoplégie internucléaire : à l'adduction, l'œil du côté de la lésion est lent ou immobile lors du regard vers le côté opposé, avec un nystagmus de l'œil qui s'abduit et une diplopie. Cause : sclérose en plaques (sujet jeune) ou accident vasculaire",
+   "memo": "Le fil qui lie les yeux : sans lui, l'œil ne suit pas son voisin",
+   "variantes": null,
+   "sources": [
+    "wp-mlf",
+    "wp-vestibular"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "faisceau-longitudinal-posterieur",
+   "resume": "Le faisceau de Schütz : la voie descendante de l'hypothalamus vers les noyaux végétatifs et moteurs du tronc cérébral.",
+   "partie": "voies",
+   "situation": "Naît de la zone médiane de l'hypothalamus, se rassemble dans la substance grise périaqueducale du mésencéphale puis descend sous le plancher du quatrième ventricule",
+   "fonction": "Relaie les ordres de l'hypothalamus aux noyaux végétatifs du tronc cérébral et aux motoneurones qui règlent la mastication, la déglutition, la salivation, les sécrétions digestives et les frissons",
+   "connexions": {
+    "texte": "Hypothalamus (surtout le noyau paraventriculaire), substance grise périaqueducale, formation réticulée, puis noyaux postérieur du vague, du tractus solitaire et salivaires",
+    "structures": [
+     "troisieme-ventricule",
+     "hypothalamus",
+     "noyau-posterieur-du-nerf-vague",
+     "noyau-du-tractus-solitaire",
+     "noyau-salivaire-superieur",
+     "noyau-salivaire-inferieur"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit dans les références consultées ; ses fonctions sont atteintes avec celles de l'hypothalamus postérieur et de la substance grise périaqueducale",
+   "memo": "Schütz, le faisceau des viscères : l'hypothalamus commande la salive, l'avaler et le frisson",
+   "variantes": null,
+   "sources": [
+    "wp-dlf",
+    "wp-hypothalamus"
+   ],
+   "divergences": "Le faisceau longitudinal dorsal (Schütz) et le faisceau longitudinal postérieur désignent la même voie ; ne pas le confondre avec le faisceau longitudinal médial, qui coordonne les yeux"
+  },
+  {
+   "id": "faisceau-longitudinal-superieur",
+   "resume": "Le grand faisceau qui arque au-dessus de l'insula : il relie le lobe frontal aux lobes pariétal, occipital et temporal.",
+   "partie": "voies",
+   "situation": "Dans la substance blanche hémisphérique, au-dessus et en dehors de l'insula et du putamen, latéralement au centre semi-ovale ; du lobe frontal par l'opercule vers l'extrémité postérieure du sillon latéral",
+   "fonction": "Intègre l'attention spatiale et le contrôle moteur, et par sa partie arquée relie les aires du langage temporale et frontale",
+   "connexions": {
+    "texte": "SLF I : cortex pariétal supérieur et frontal dorsal ; SLF II : pariétal inférieur et préfrontal dorsolatéral (attention spatiale) ; SLF III : gyrus supramarginal et prémoteur ventral (articulation de la parole)",
+    "structures": [
+     "gyrus-supramarginal",
+     "gyrus-precentral",
+     "gyrus-frontal-moyen",
+     "gyrus-temporal-superieur",
+     "cortex-insulaire"
+    ]
+   },
+   "atteinte": "Lésion du faisceau arqué (côté gauche) : aphasie de conduction, la répétition est altérée mais la compréhension préservée ; lésion du côté droit : négligence de l'espace gauche",
+   "memo": "Le fer à cheval au-dessus de l'insula : il relie l'avant (parler, agir) à l'arrière (comprendre, regarder)",
+   "variantes": "Le faisceau arqué est tantôt compté dans le faisceau longitudinal supérieur, tantôt décrit à part",
+   "sources": [
+    "wp-slf",
+    "wp-uf"
+   ],
+   "divergences": "La page consultée ne traite ni le faisceau arqué ni l'aphasie de conduction ni la négligence, que j'ajoute d'après l'enseignement classique ; le découpage en trois composantes (I, II, III) est celui de l'imagerie de diffusion"
+  },
+  {
+   "id": "faisceau-mamillotegmental",
+   "resume": "La petite branche du corps mamillaire qui descend vers les noyaux tegmentaux du mésencéphale.",
+   "partie": "voies",
+   "situation": "Quitte le corps mamillaire en arrière et en bas, dans le prolongement du faisceau mamillothalamique dont il se détache, et gagne le tegmentum du mésencéphale",
+   "fonction": "Relaie les informations limbiques venues de l'hippocampe par le fornix vers le tronc cérébral (noyaux tegmentaux dorsal et ventral), pour le comportement et les réactions végétatives",
+   "connexions": {
+    "texte": "Corps mamillaire vers les noyaux tegmentaux dorsal et ventral du mésencéphale ; les axones se divisent en une branche épaisse (faisceau mamillothalamique) et une branche fine descendante (mamillotegmentale)",
+    "structures": [
+     "corps-mamillaire",
+     "faisceau-mamillothalamique",
+     "noyau-tegmental-posterieur",
+     "noyau-tegmental-anterieur",
+     "fornix"
+    ]
+   },
+   "atteinte": "Aucun syndrome propre n'est décrit ; il est lésé avec les corps mamillaires dans le syndrome de Wernicke-Korsakoff (carence en thiamine)",
+   "memo": "La branche fine du faisceau de Vicq d'Azyr : celle qui descend au lieu de monter",
+   "variantes": null,
+   "sources": [
+    "wp-mmt",
+    "wp-mammillary",
+    "wp-hypothalamus"
+   ],
+   "divergences": "L'identification des noyaux tegmentaux dorsal et ventral (de Gudden) aux noyaux tegmental postérieur et antérieur de l'atlas suit la terminologie anatomique ; les pages consultées parlent seulement de noyaux tegmentaux dorsal et ventral"
+  },
+  {
+   "id": "faisceau-mamillothalamique",
+   "resume": "Le faisceau de Vicq d'Azyr : il monte du corps mamillaire au thalamus et fait partie du circuit de la mémoire.",
+   "partie": "voies",
+   "situation": "Naît du corps mamillaire, monte dans l'hypothalamus en arrière de la colonne du fornix, puis traverse le thalamus jusqu'aux noyaux antérieurs",
+   "fonction": "Assure la liaison du circuit de Papez : l'hippocampe projette par le fornix au corps mamillaire, puis ce faisceau au thalamus antérieur et au gyrus cingulaire ; il est nécessaire à la mémoire des faits",
+   "connexions": {
+    "texte": "Corps mamillaire (noyaux médial et latéral) vers les noyaux antérieurs du thalamus, puis le cortex cingulaire",
+    "structures": [
+     "corps-mamillaire",
+     "fornix",
+     "noyaux-anterieurs-du-thalamus",
+     "gyrus-cingulaire",
+     "hippocampe"
+    ]
+   },
+   "atteinte": "Une lésion bilatérale ou son infarctus donne une amnésie antérograde, comme dans le syndrome de Korsakoff",
+   "memo": "Vicq d'Azyr, le premier à le décrire : mamelon vers thalamus, le chemin du souvenir",
+   "variantes": null,
+   "sources": [
+    "wp-mmt",
+    "wp-mammillary"
+   ],
+   "divergences": "La page Wikipédia du faisceau cite aussi le noyau dorsomédial du thalamus parmi ses cibles ; la cible principale retenue est celle du noyau antérieur"
+  },
+  {
+   "id": "faisceau-occipitofrontal-inferieur",
+   "resume": "Le long faisceau qui joint le lobe occipital au lobe frontal en passant sous l'insula, par la capsule extrême.",
+   "partie": "voies",
+   "situation": "Dans la substance blanche hémisphérique, de l'occipital et du temporal postérieur au lobe frontal, par la capsule extrême sous l'insula et le long de la corne temporale du ventricule latéral",
+   "fonction": "Participe au traitement visuel et sémantique (sens des mots et des objets)",
+   "connexions": {
+    "texte": "Relie le cortex occipital et temporal postérieur au cortex préfrontal, en passant par la capsule extrême",
+    "structures": [
+     "lobe-occipital",
+     "lobe-frontal",
+     "cortex-insulaire",
+     "ventricule-lateral"
+    ]
+   },
+   "atteinte": "Aucun syndrome isolé n'est établi ; sa stimulation pendant une opération perturbe la compréhension du sens des mots (paraphasies sémantiques), signe de son rôle dans le langage",
+   "memo": "Le plus long raccourci du cerveau : de l'arrière au front, sans détour, sous l'insula",
+   "variantes": null,
+   "sources": [
+    "wp-ofasc",
+    "wp-uf"
+   ],
+   "divergences": "Wikipédia ne décrit ni la capsule extrême ni ses fonctions : ces points reposent sur l'enseignement classique et le tracé de l'atlas"
+  },
+  {
+   "id": "faisceau-occipitofrontal-superieur",
+   "resume": "Le faisceau classique qui longerait le bord supérieur du noyau caudé, que les études récentes ne retrouvent pas chez l'humain.",
+   "partie": "voies",
+   "situation": "Selon la description classique, en profondeur sous le corps calleux, le long du bord supérieur du noyau caudé et du ventricule latéral, entre les lobes frontal et pariétal",
+   "fonction": "Rôle non établi : la description ancienne le donne pour une liaison entre les lobes frontal et pariétal",
+   "connexions": {
+    "texte": "Description classique : fibres du lobe frontal à l'occipital et au pariétal, au contact du bord latéral du noyau caudé et de la couronne rayonnante",
+    "structures": [
+     "noyau-caude",
+     "corps-calleux",
+     "ventricule-lateral"
+    ]
+   },
+   "atteinte": "Aucun syndrome n'est rapporté",
+   "memo": "Le faisceau fantôme : décrit par les anciens, introuvable en imagerie moderne",
+   "variantes": null,
+   "sources": [
+    "wp-ofasc",
+    "wp-uf"
+   ],
+   "divergences": "Les études citées par Wikipédia concluent que ce faisceau n'existe plus comme tel chez l'humain ; les fibres décrites correspondent selon eux à d'autres faisceaux, dont le faisceau sous-calleux. L'atlas le garde parce que la terminologie anatomique le liste"
+  },
+  {
+   "id": "faisceau-pyramidal",
+   "resume": "La grande voie motrice volontaire : elle va du cortex moteur aux motoneurones, avec un croisement dans le bulbe.",
+   "partie": "voies",
+   "situation": "Cortex moteur, couronne rayonnante, bras postérieur de la capsule interne (en dehors du thalamus), base du pédoncule cérébral, partie basilaire du pont, pyramide du bulbe ; croisement à sa partie basse",
+   "fonction": "Commande les mouvements volontaires précis : les fibres corticospinales vont à la moelle (membres et tronc), les fibres corticobulbaires aux noyaux moteurs des nerfs crâniens",
+   "connexions": {
+    "texte": "Cellules pyramidales de la couche V du cortex moteur, prémoteur et sensitif. Environ 90 % des fibres croisent dans le bulbe et forment le faisceau corticospinal latéral (membres) ; le reste descend directement en faisceau antérieur et croise plus bas (tronc)",
+    "structures": [
+     "thalamus",
+     "base-du-pedoncule",
+     "pedoncule-cerebral",
+     "pyramide-de-la-moelle-allongee",
+     "faisceau-corticospinal-lateral",
+     "tractus-corticospinal-anterieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères cérébrale moyenne (branches lenticulo-striées) et choroïdienne antérieure pour la capsule interne ; branches du tronc basilaire pour le pont",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "artere-basilaire"
+    ]
+   },
+   "atteinte": "Syndrome pyramidal : paralysie, spasticité, hyperréflexie et signe de Babinski du côté opposé à une lésion située au-dessus du croisement ; du même côté si la lésion est médullaire",
+   "clinique": "Une lésion unilatérale des fibres corticobulbaires paralyse surtout le bas du visage ; une atteinte bilatérale donne le syndrome pseudobulbaire",
+   "memo": "Pyramidal : il passe par la pyramide du bulbe, où il change de côté",
+   "variantes": null,
+   "sources": [
+    "wp-pyramidal",
+    "wp-corticospinal"
+   ],
+   "divergences": "Les pourcentages de fibres croisées et directes varient d'une personne à l'autre (le faisceau latéral compte environ 90 % des fibres)"
+  },
+  {
+   "id": "faisceau-uncine-du-cerveau",
+   "resume": "Le faisceau en crochet qui joint le pôle temporal et l'amygdale au cortex orbitofrontal.",
+   "partie": "voies",
+   "situation": "Naît du lobe temporal antérieur et de l'amygdale, s'incurve derrière la capsule extrême en dedans de l'insula et gagne le gyrus orbitaire postérieur",
+   "fonction": "Intègre mémoire et émotion : les souvenirs du lobe temporal guideraient les décisions du lobe frontal ; il intervient dans l'apprentissage par inversion et dans le rappel des noms",
+   "connexions": {
+    "texte": "Pôle temporal, cortex parahippocampique antérieur et amygdale, vers le gyrus frontal inférieur et le cortex orbitofrontal, dans les deux sens",
+    "structures": [
+     "pole-temporal",
+     "corps-amygdaloide",
+     "gyri-orbitaires",
+     "cortex-insulaire"
+    ]
+   },
+   "atteinte": "Pas de syndrome propre : une lésion chirurgicale gêne le rappel des noms propres ; son altération est constatée dans la maladie d'Alzheimer, la démence sémantique, l'épilepsie temporale et la psychopathie",
+   "memo": "Unciné comme un crochet : il accroche l'émotion du temporal à la décision du front",
+   "variantes": null,
+   "sources": [
+    "wp-uf",
+    "wp-ofasc"
+   ],
+   "divergences": "Sa fonction exacte est inconnue ; son rôle dans le langage reste débattu"
+  },
+  {
+   "id": "fascicule-uncine-du-cervelet",
+   "resume": "Le faisceau en crochet de Russell : des fibres du noyau fastigial qui gagnent les noyaux vestibulaires et la formation réticulée.",
+   "partie": "cervelet",
+   "situation": "Dans la substance blanche du cervelet, depuis le noyau fastigial vers le toit du quatrième ventricule ; ses fibres contournent le pédoncule cérébelleux supérieur avant de descendre vers le tronc cérébral",
+   "fonction": "Transmet la sortie du vermis qui règle l'équilibre, la posture et le tonus des muscles axiaux et proximaux",
+   "connexions": {
+    "texte": "Noyau fastigial vers les noyaux vestibulaires (latéral et inférieur) et la formation réticulée du pont et du bulbe, vers les voies vestibulospinale et réticulospinale",
+    "structures": [
+     "noyau-fastigial",
+     "noyaux-vestibulaires",
+     "quatrieme-ventricule",
+     "pedoncule-cerebelleux-superieur"
+    ]
+   },
+   "atteinte": "Une lésion du noyau fastigial et du vermis donne une ataxie du tronc, une station debout instable et une démarche ébrieuse",
+   "memo": "Le crochet de Russell : il quitte le fastigial en faisant demi-tour pour aller vers le vestibule",
+   "variantes": null,
+   "sources": [
+    "wp-fastigial",
+    "wp-vermis"
+   ],
+   "divergences": "Les pages consultées ne parlent pas du faisceau en crochet : elles disent seulement que le noyau fastigial projette sur les noyaux vestibulaires et la formation réticulée par le corps juxtarestiforme. Le trajet « en crochet » reste donc de l'enseignement classique"
+  },
+  {
+   "id": "gyri-occipitaux-lateraux",
+   "resume": "Les circonvolutions de la face latérale du lobe occipital, séparées par le sillon occipital latéral.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe occipital, au bord de la scissure pariéto-occipitale : gyrus occipital supérieur au-dessus du sillon occipital latéral, gyrus occipital inférieur au-dessous",
+   "fonction": "Cortex visuel associatif (voie du « quoi ») : traite la forme des objets, au-delà du cortex visuel primaire du sillon calcarin",
+   "connexions": {
+    "texte": "Reçoivent le cortex visuel primaire et secondaire ; se projettent vers le lobe temporal par le faisceau longitudinal inférieur",
+    "structures": [
+     "gyrus-occipital-lateral",
+     "gyri-occipitaux-superieurs",
+     "gyrus-occipital-inferieur",
+     "faisceau-longitudinal-inferieur",
+     "sillon-calcarin"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères cérébrales postérieure et moyenne (branches occipitales et temporo-occipitales)",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Agnosie visuelle des objets, avec une vue conservée ; l'hémianopsie vient de l'atteinte du cortex visuel primaire, voisin, et non de ces gyri",
+   "memo": "Les rives latérales de la vue : le cortex voit, ici il reconnaît la forme",
+   "variantes": null,
+   "sources": [
+    "wp-occipital",
+    "wp-ilf"
+   ],
+   "divergences": "Wikipédia ne nomme pas les gyri occipitaux supérieur et inférieur ni ne leur donne de fonction précise : la fonction décrite est celle des aires extrastriées de la voie ventrale"
+  },
+  {
+   "id": "gyri-occipitotemporaux",
+   "resume": "Les deux circonvolutions de la face inférieure du cerveau, entre lobe occipital et lobe temporal : le fusiforme et sa voisine médiale.",
+   "partie": "telencephale",
+   "situation": "Face inférieure (basale) des lobes occipital et temporal : le gyrus latéral (fusiforme) entre le sillon occipitotemporal et la scissure collatérale, le gyrus médial en dedans de cette scissure, contre l'hippocampe",
+   "fonction": "Cortex de la voie visuelle ventrale : reconnaissance des visages, des corps et des mots (gyrus latéral), des lieux et des couleurs (gyrus médial)",
+   "connexions": {
+    "texte": "Reçoivent le cortex visuel et se projettent vers le lobe temporal et le cortex préfrontal, notamment par le faisceau longitudinal inférieur",
+    "structures": [
+     "gyrus-occipitotemporal-lateral",
+     "gyrus-occipitotemporal-medial",
+     "sillon-occipitotemporal",
+     "scissure-collaterale",
+     "faisceau-longitudinal-inferieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale postérieure (branches temporales inférieures et occipitales)",
+    "arteres": [
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Prosopagnosie (ne plus reconnaître les visages) lors d'une lésion du fusiforme, surtout bilatérale ; atteinte à gauche : alexie ; atteinte du gyrus lingual : achromatopsie",
+   "memo": "Fusiforme, en fuseau : la rive des visages, sous le temporal",
+   "variantes": null,
+   "sources": [
+    "wp-fusiform",
+    "wp-gyrus"
+   ],
+   "divergences": "Wikipédia identifie le gyrus occipitotemporal latéral au gyrus fusiforme mais ne nomme pas le gyrus médial ; l'usage anatomique y place les gyri lingual et parahippocampique. L'achromatopsie n'est pas dans les pages consultées"
+  },
+  {
+   "id": "gyri-para-olfactifs",
+   "resume": "Les petits gyri de l'aire subcalleuse, devant le gyrus paraterminal, au pied de la face médiale du lobe frontal.",
+   "partie": "telencephale",
+   "situation": "Face médiale du lobe frontal, sous le genou du corps calleux, devant le gyrus paraterminal dont le sépare le sillon para-olfactif postérieur ; ils recouvrent les noyaux septaux",
+   "fonction": "Font partie de l'aire septale, une région du système limbique ; leur rôle propre est mal connu",
+   "connexions": {
+    "texte": "Aire septale, en relation avec l'hippocampe, l'hypothalamus et l'habénula par les noyaux septaux sous-jacents",
+    "structures": [
+     "noyaux-septaux",
+     "gyrus-paraterminal",
+     "sillons-para-olfactifs",
+     "corps-calleux",
+     "hippocampe"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère cérébrale antérieure et de l'artère communicante antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Pas de syndrome propre ; les lésions de la région septale (rupture d'un anévrisme de la communicante antérieure) donnent une amnésie avec confabulations",
+   "memo": "À côté de l'olfaction mais sans odorat : un coin limbique, devant le gyrus paraterminal",
+   "variantes": null,
+   "sources": [
+    "wp-subcallosal",
+    "wp-septal"
+   ],
+   "divergences": "Wikipédia désigne la même région sous le nom d'aire subcalleuse ou parolfactive de Broca et signale que la terminologie anatomique la distingue du gyrus subcalleux ; elle ne dit rien de l'amnésie de l'anévrisme de la communicante antérieure, de l'enseignement classique"
+  },
+  {
+   "id": "gyrus-cerebral",
+   "resume": "Les crêtes de cortex entre les sillons : le plissement qui fait tenir une grande surface dans le crâne.",
+   "partie": "telencephale",
+   "situation": "Sur toute la surface du cerveau, entre les sillons, au sein de chaque lobe ; l'ensemble comprend aussi les gyri de la face médiale et de la face inférieure",
+   "fonction": "Plisser le cortex multiplie sa surface sans agrandir le crâne ; chaque gyrus est un repère : précentral (motricité), postcentral (sensibilité), frontal inférieur (parole), temporal transverse (audition)",
+   "connexions": {
+    "texte": "Les gyri se relient entre eux par des fibres courtes en U et par les faisceaux d'association (longitudinaux, unciné, occipitofrontal)",
+    "structures": [
+     "gyrus-precentral",
+     "gyrus-postcentral",
+     "gyrus-angulaire",
+     "gyrus-supramarginal",
+     "gyrus-cingulaire",
+     "gyrus-temporal-transverse"
+    ]
+   },
+   "atteinte": "Selon le gyrus : paralysie (précentral), anesthésie localisée (postcentral), aphasie (frontal inférieur et temporal supérieur). Malformations : lissencéphalie, pachygyrie et polymicrogyrie, avec épilepsie et déficience intellectuelle",
+   "memo": "Gyrus, la crête ; sillon, le creux : le cerveau est un tissu froissé pour tenir dans la boîte",
+   "variantes": "Le dessin des gyri varie beaucoup d'une personne à l'autre, d'un hémisphère à l'autre",
+   "sources": [
+    "wp-gyrus",
+    "wp-occipital"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-dentatus",
+   "resume": "La fine bande de cortex dentelée qui borde l'hippocampe : la porte d'entrée de la mémoire des faits.",
+   "partie": "telencephale",
+   "situation": "Face médiale du lobe temporal, entre la fimbria de l'hippocampe et le gyrus parahippocampique, dont le sépare le sillon hippocampique ; elle se prolonge en arrière par le gyrus fasciolaire",
+   "fonction": "Reçoit l'entrée principale du cortex entorhinal et distingue les souvenirs voisins (séparation des formes) ; une des rares zones où naissent de nouveaux neurones",
+   "connexions": {
+    "texte": "Entrée : cortex entorhinal par la voie perforante. Sortie : les fibres moussues vers CA3, puis CA1, puis le subiculum et le fornix",
+    "structures": [
+     "hippocampe",
+     "fornix",
+     "gyrus-fasciculaire",
+     "sillon-hippocampal",
+     "gyrus-cingulaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères choroïdienne antérieure et cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Perte de formation de nouveaux souvenirs lors d'une lésion hippocampique bilatérale (cas H.M.) ; sa dégénérescence précoce dans la maladie d'Alzheimer et la sclérose hippocampique dans l'épilepsie temporale",
+   "memo": "Dentatus, les dents : son bord dentelé rappelle une denture",
+   "variantes": null,
+   "sources": [
+    "wp-dentate",
+    "wp-hippocampus"
+   ],
+   "divergences": "L'inclusion du gyrus fasciolaire dans la formation hippocampique varie selon les auteurs ; la neurogenèse adulte chez l'humain est débattue"
+  }
+ ]
+}

@@ -1,0 +1,1112 @@
+{
+ "lot": "encephale-ajouts-1",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "cervelet",
+   "nom": "Cervelet",
+   "latin": "Cerebellum",
+   "anglais": "Cerebellum",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Cervelet",
+   "ta2": "5788",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lobule-quadrangulaire-anterieur",
+      "nom": "Lobule quadrangulaire antérieur"
+     },
+     {
+      "id": "lobule-biventral",
+      "nom": "Lobule biventral"
+     },
+     {
+      "id": "lobule-central",
+      "nom": "Lobule central"
+     },
+     {
+      "id": "culmen",
+      "nom": "Culmen"
+     },
+     {
+      "id": "declive",
+      "nom": "Déclive"
+     },
+     {
+      "id": "flocculus",
+      "nom": "Flocculus"
+     },
+     {
+      "id": "folium-vermis",
+      "nom": "Folium vermis"
+     },
+     {
+      "id": "lobule-gracile",
+      "nom": "Lobule gracile"
+     },
+     {
+      "id": "lobule-semilunaire-inferieur",
+      "nom": "Lobule semilunaire inférieur"
+     },
+     {
+      "id": "lingula-du-cervelet",
+      "nom": "Lingula du cervelet"
+     },
+     {
+      "id": "nodule-du-vermis",
+      "nom": "Nodule du vermis"
+     },
+     {
+      "id": "pedoncule-du-flocculus",
+      "nom": "Pédoncule du flocculus"
+     },
+     {
+      "id": "lobule-quadrangulaire-posterieur",
+      "nom": "Lobule quadrangulaire postérieur"
+     },
+     {
+      "id": "pyramide-du-vermis",
+      "nom": "Pyramide du vermis"
+     },
+     {
+      "id": "pedoncule-cerebelleux-superieur",
+      "nom": "Pédoncule cérébelleux supérieur"
+     },
+     {
+      "id": "lobule-semilunaire-superieur",
+      "nom": "Lobule semilunaire supérieur"
+     },
+     {
+      "id": "tonsille-du-cervelet",
+      "nom": "Tonsille du cervelet"
+     },
+     {
+      "id": "tuber-vermis",
+      "nom": "Tuber vermis"
+     },
+     {
+      "id": "uvule-du-vermis",
+      "nom": "Uvule du vermis"
+     },
+     {
+      "id": "aile-du-lobule-central",
+      "nom": "Aile du lobule central"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobe-cerebelleux-anterieur",
+   "nom": "Lobe cérébelleux antérieur",
+   "latin": "Lobus anterior cerebelli",
+   "anglais": "Anterior lobe of cerebellum",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Lobe cérébelleux antérieur",
+   "ta2": "5793",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lingula-du-cervelet",
+      "nom": "Lingula du cervelet"
+     },
+     {
+      "id": "lobule-central",
+      "nom": "Lobule central"
+     },
+     {
+      "id": "aile-du-lobule-central",
+      "nom": "Aile du lobule central"
+     },
+     {
+      "id": "culmen",
+      "nom": "Culmen"
+     },
+     {
+      "id": "lobule-quadrangulaire-anterieur",
+      "nom": "Lobule quadrangulaire antérieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lobe-posterieur-du-cervelet",
+   "nom": "Lobe postérieur du cervelet",
+   "latin": "Lobus posterior cerebelli",
+   "anglais": "Posterior lobe of cerebellum",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Lobe postérieur du cervelet",
+   "ta2": "5795",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "declive",
+      "nom": "Déclive"
+     },
+     {
+      "id": "folium-vermis",
+      "nom": "Folium vermis"
+     },
+     {
+      "id": "tuber-vermis",
+      "nom": "Tuber vermis"
+     },
+     {
+      "id": "pyramide-du-vermis",
+      "nom": "Pyramide du vermis"
+     },
+     {
+      "id": "uvule-du-vermis",
+      "nom": "Uvule du vermis"
+     },
+     {
+      "id": "lobule-quadrangulaire-posterieur",
+      "nom": "Lobule quadrangulaire postérieur"
+     },
+     {
+      "id": "lobule-semilunaire-superieur",
+      "nom": "Lobule semilunaire supérieur"
+     },
+     {
+      "id": "lobule-semilunaire-inferieur",
+      "nom": "Lobule semilunaire inférieur"
+     },
+     {
+      "id": "lobule-gracile",
+      "nom": "Lobule gracile"
+     },
+     {
+      "id": "lobule-biventral",
+      "nom": "Lobule biventral"
+     },
+     {
+      "id": "tonsille-du-cervelet",
+      "nom": "Tonsille du cervelet"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyau-terminal-d-un-nerf-cranial",
+   "nom": "Noyau terminal d'un nerf crânial",
+   "latin": "Nucleus terminationis nervi cranialis",
+   "anglais": "Terminal nucleus of cranial nerve",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Noyau terminal d'un nerf crânial",
+   "ta2": "5859",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-mesencephalique-du-nerf-trijumeau",
+      "nom": "Noyau mésencéphalique du nerf trijumeau"
+     },
+     {
+      "id": "noyau-sensoriel-principal-du-nerf-trigeminal",
+      "nom": "Noyau sensoriel principal du nerf trigéminal"
+     },
+     {
+      "id": "noyau-spinal-du-nerf-trijumeau",
+      "nom": "Noyau spinal du nerf trijumeau"
+     },
+     {
+      "id": "noyau-du-tractus-solitaire",
+      "nom": "Noyau du tractus solitaire"
+     },
+     {
+      "id": "noyau-cochleaire-anterieur",
+      "nom": "Noyau cochléaire antérieur"
+     },
+     {
+      "id": "noyau-cochleaire-posterieur",
+      "nom": "Noyau cochléaire postérieur"
+     },
+     {
+      "id": "noyaux-vestibulaires",
+      "nom": "Noyaux vestibulaires"
+     },
+     {
+      "id": "noyau-vestibulaire-superieur",
+      "nom": "Noyau vestibulaire supérieur"
+     },
+     {
+      "id": "noyau-vestibulaire-lateral",
+      "nom": "Noyau vestibulaire latéral"
+     },
+     {
+      "id": "noyau-vestibulaire-medial",
+      "nom": "Noyau vestibulaire médial"
+     },
+     {
+      "id": "noyau-vestibulaire-inferieur",
+      "nom": "Noyau vestibulaire inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "noyaux-des-nerfs-craniens",
+   "nom": "Noyaux des nerfs crâniens",
+   "latin": "Nuclei nervorum craniales",
+   "anglais": "Nuclei of cranial nerves",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Noyaux des nerfs crâniens",
+   "ta2": "5857",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "noyau-du-nerf-oculomoteur",
+      "nom": "Noyau du nerf oculomoteur"
+     },
+     {
+      "id": "noyau-accessoire-du-nerf-oculomoteur",
+      "nom": "Noyau accessoire du nerf oculomoteur"
+     },
+     {
+      "id": "noyau-du-nerf-trochleaire",
+      "nom": "Noyau du nerf trochléaire"
+     },
+     {
+      "id": "noyau-du-nerf-abducens",
+      "nom": "Noyau du nerf abducens"
+     },
+     {
+      "id": "noyau-moteur-du-nerf-trigeminal",
+      "nom": "Noyau moteur du nerf trigéminal"
+     },
+     {
+      "id": "noyau-moteur-du-nef-facial",
+      "nom": "Noyau moteur du nef facial"
+     },
+     {
+      "id": "noyau-salivaire-superieur",
+      "nom": "Noyau salivaire supérieur"
+     },
+     {
+      "id": "noyau-larcrymal",
+      "nom": "Noyau larcrymal"
+     },
+     {
+      "id": "noyau-salivaire-inferieur",
+      "nom": "Noyau salivaire inférieur"
+     },
+     {
+      "id": "noyau-ambigu",
+      "nom": "Noyau ambigu"
+     },
+     {
+      "id": "noyau-posterieur-du-nerf-vague",
+      "nom": "Noyau postérieur du nerf vague"
+     },
+     {
+      "id": "noyau-du-nerf-hypoglosse",
+      "nom": "Noyau du nerf hypoglosse"
+     },
+     {
+      "id": "noyau-du-nerf-accessoire",
+      "nom": "Noyau du nerf accessoire"
+     },
+     {
+      "id": "noyau-mesencephalique-du-nerf-trijumeau",
+      "nom": "Noyau mésencéphalique du nerf trijumeau"
+     },
+     {
+      "id": "noyau-sensoriel-principal-du-nerf-trigeminal",
+      "nom": "Noyau sensoriel principal du nerf trigéminal"
+     },
+     {
+      "id": "noyau-spinal-du-nerf-trijumeau",
+      "nom": "Noyau spinal du nerf trijumeau"
+     },
+     {
+      "id": "noyau-du-tractus-solitaire",
+      "nom": "Noyau du tractus solitaire"
+     },
+     {
+      "id": "noyau-cochleaire-anterieur",
+      "nom": "Noyau cochléaire antérieur"
+     },
+     {
+      "id": "noyau-cochleaire-posterieur",
+      "nom": "Noyau cochléaire postérieur"
+     },
+     {
+      "id": "noyaux-vestibulaires",
+      "nom": "Noyaux vestibulaires"
+     },
+     {
+      "id": "noyau-vestibulaire-superieur",
+      "nom": "Noyau vestibulaire supérieur"
+     },
+     {
+      "id": "noyau-vestibulaire-lateral",
+      "nom": "Noyau vestibulaire latéral"
+     },
+     {
+      "id": "noyau-vestibulaire-medial",
+      "nom": "Noyau vestibulaire médial"
+     },
+     {
+      "id": "noyau-vestibulaire-inferieur",
+      "nom": "Noyau vestibulaire inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pontocerebellum",
+   "nom": "Pontocerebellum",
+   "latin": "Pontocerebellum",
+   "anglais": "Pontocerebellum",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Pontocerebellum",
+   "ta2": "5801",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lobule-quadrangulaire-posterieur",
+      "nom": "Lobule quadrangulaire postérieur"
+     },
+     {
+      "id": "lobule-semilunaire-superieur",
+      "nom": "Lobule semilunaire supérieur"
+     },
+     {
+      "id": "lobule-semilunaire-inferieur",
+      "nom": "Lobule semilunaire inférieur"
+     },
+     {
+      "id": "lobule-gracile",
+      "nom": "Lobule gracile"
+     }
+    ]
+   }
+  },
+  {
+   "id": "spinocerebellum",
+   "nom": "Spinocerebellum",
+   "latin": "Spinocerebellum",
+   "anglais": "Spinocerebellum",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Spinocerebellum",
+   "ta2": "5802",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "lingula-du-cervelet",
+      "nom": "Lingula du cervelet"
+     },
+     {
+      "id": "lobule-central",
+      "nom": "Lobule central"
+     },
+     {
+      "id": "culmen",
+      "nom": "Culmen"
+     },
+     {
+      "id": "declive",
+      "nom": "Déclive"
+     },
+     {
+      "id": "folium-vermis",
+      "nom": "Folium vermis"
+     },
+     {
+      "id": "tuber-vermis",
+      "nom": "Tuber vermis"
+     },
+     {
+      "id": "pyramide-du-vermis",
+      "nom": "Pyramide du vermis"
+     },
+     {
+      "id": "uvule-du-vermis",
+      "nom": "Uvule du vermis"
+     },
+     {
+      "id": "aile-du-lobule-central",
+      "nom": "Aile du lobule central"
+     },
+     {
+      "id": "lobule-quadrangulaire-anterieur",
+      "nom": "Lobule quadrangulaire antérieur"
+     },
+     {
+      "id": "lobule-biventral",
+      "nom": "Lobule biventral"
+     },
+     {
+      "id": "tonsille-du-cervelet",
+      "nom": "Tonsille du cervelet"
+     }
+    ]
+   }
+  },
+  {
+   "id": "commissure-blanche-anterieure",
+   "nom": "Commissure blanche antérieure",
+   "latin": "Commissura alba anterior",
+   "anglais": "Anterior white commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure blanche antérieure",
+   "ta2": "6125",
+   "connu": {
+    "description_du_trace": "Mince bande de fibres qui croise la ligne médiane en avant de la commissure grise : elle porte les axones de la douleur et de la température vers le cordon antéro-latéral opposé.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "commissure-blanche-posterieure",
+   "nom": "Commissure blanche postérieure",
+   "latin": "Commissura alba posterior",
+   "anglais": "Posterior white commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure blanche postérieure",
+   "ta2": "6126",
+   "connu": {
+    "description_du_trace": "Mince bande de fibres blanches en arrière de la commissure grise postérieure, au fond du sillon médian postérieur, croisant la ligne médiane.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "commissure-cochleaire-du-pont",
+   "nom": "Commissure cochléaire du pont",
+   "latin": "Commissura cochlearis pontis",
+   "anglais": "Auditory commissure of pons",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure cochléaire du pont",
+   "ta2": "5965",
+   "connu": {
+    "description_du_trace": "Corps trapézoïde : fibres cochléaires qui croisent la ligne médiane dans la partie basse du tegmentum pontique et gagnent le lemnisque latéral controlatéral.",
+    "appui_dans_le_modele": {
+     "id": "pont",
+     "nom": "Pont"
+    }
+   }
+  },
+  {
+   "id": "commissure-cerebelleuse",
+   "nom": "Commissure cérébelleuse",
+   "latin": "Commissura cerebelli",
+   "anglais": "Cerebellar commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure cérébelleuse",
+   "ta2": "5843",
+   "connu": {
+    "description_du_trace": "Fibres qui croisent la ligne médiane dans la substance blanche du vermis et relient les deux hémisphères cérébelleux.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "commissure-des-colliculi-inferieurs",
+   "nom": "Commissure des colliculi inférieurs",
+   "latin": "Commissura colliculorum inferiorum",
+   "anglais": "Commissure of inferior colliculi",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure des colliculi inférieurs",
+   "ta2": "5919",
+   "connu": {
+    "description_du_trace": "Fibres qui relient les deux colliculi inférieurs et assurent l'intégration auditive entre les deux côtés.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "commissure-des-colliculi-superieurs",
+   "nom": "Commissure des colliculi supérieurs",
+   "latin": "Commissura colliculorum superiorum",
+   "anglais": "Commissure of superior colliculi",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure des colliculi supérieurs",
+   "ta2": "5915",
+   "connu": {
+    "description_du_trace": "Fibres qui relient les deux colliculi supérieurs en arrière de l'aqueduc du mésencéphale ; elles coordonnent les mouvements oculaires.",
+    "appui_dans_le_modele": {
+     "id": "mesencephale",
+     "nom": "Mésencéphale"
+    }
+   }
+  },
+  {
+   "id": "commissure-grise-anterieure",
+   "nom": "Commissure grise antérieure",
+   "latin": "Commissura grisea anterior",
+   "anglais": "Anterior grey commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure grise antérieure",
+   "ta2": "6122",
+   "connu": {
+    "description_du_trace": "Pont de substance grise qui unit en avant du canal central les deux cornes antérieures.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "commissure-grise-posterieure",
+   "nom": "Commissure grise postérieure",
+   "latin": "Commissura grisea posterior",
+   "anglais": "Posterior grey commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure grise postérieure",
+   "ta2": "6124",
+   "connu": {
+    "description_du_trace": "Pont de substance grise qui unit en arrière du canal central les deux cornes postérieures.",
+    "appui_dans_le_modele": {
+     "id": "canal-central",
+     "nom": "Canal central"
+    }
+   }
+  },
+  {
+   "id": "commissure-habenulaire",
+   "nom": "Commissure habénulaire",
+   "latin": "Commissura habenularum",
+   "anglais": "Habenular commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure habénulaire",
+   "ta2": "5748",
+   "connu": {
+    "description_du_trace": "Mince commissure qui relie les deux habenulae, au-devant de la glande pinéale ; elle appartient à l'épithalamus.",
+    "appui_dans_le_modele": {
+     "id": "habenula",
+     "nom": "Habénula"
+    }
+   }
+  },
+  {
+   "id": "commissure-supra-optique-dorsale",
+   "nom": "Commissure supra-optique dorsale",
+   "latin": "Commissura supraoptica dorsalis",
+   "anglais": "Dorsal supra-optic commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure supra-optique dorsale",
+   "ta2": "5760",
+   "connu": {
+    "description_du_trace": "Commissure de Meynert : mince bande de fibres qui croise la ligne médiane au-dessus du chiasma optique, dans l'hypothalamus.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "commissure-supra-optique-ventrale",
+   "nom": "Commissure supra-optique ventrale",
+   "latin": "Commissura supraoptica ventralis",
+   "anglais": "Ventral supra-optic commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure supra-optique ventrale",
+   "ta2": "5761",
+   "connu": {
+    "description_du_trace": "Commissure de Gudden : elle croise la ligne médiane sous l'hypothalamus, en arrière du chiasma optique.",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "epithalamus",
+   "nom": "Epithalamus",
+   "latin": "Epithalamus",
+   "anglais": "Epithalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Epithalamus",
+   "ta2": "5675",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "habenula",
+      "nom": "Habénula"
+     },
+     {
+      "id": "noyau-habenulaire-lateral",
+      "nom": "Noyau habenulaire latéral"
+     },
+     {
+      "id": "noyan-habenulaire-medial",
+      "nom": "Noyan habénulaire médial"
+     },
+     {
+      "id": "commissure-habenulaire",
+      "nom": "Commissure habénulaire"
+     },
+     {
+      "id": "strie-medullaire-thalamique",
+      "nom": "Strie médullaire thalamique"
+     }
+    ]
+   }
+  },
+  {
+   "id": "faisceau-lenticulaire",
+   "nom": "Faisceau lenticulaire",
+   "latin": "Fasciculus lenticularis",
+   "anglais": "Lenticular fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau lenticulaire",
+   "ta2": "5752",
+   "connu": {
+    "description_du_trace": "Faisceau (champ H2 de Forel) né du pallidum interne : il traverse la capsule interne, passe au-dessus du noyau subthalamique puis rejoint le thalamus ventral antérieur et latéral.",
+    "appui_dans_le_modele": {
+     "id": "globus-pallidus",
+     "nom": "Globus pallidus"
+    }
+   }
+  },
+  {
+   "id": "faisceau-longitudinal-inferieur",
+   "nom": "Faisceau longitudinal inférieur",
+   "latin": "Fasciculus longitudinalis inferior",
+   "anglais": "Inferior longitudinal fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau longitudinal inférieur",
+   "ta2": "5598",
+   "connu": {
+    "description_du_trace": "Faisceau d'association qui longe la paroi latérale des cornes occipitale et temporale du ventricule latéral, du pôle occipital au pôle temporal ; il relie le cortex visuel aux régions temporales (reconnaissance visuelle, mémoire).",
+    "appui_dans_le_modele": {
+     "id": "substance-blanche-du-telencephale",
+     "nom": "Substance blanche du télencéphale"
+    }
+   }
+  },
+  {
+   "id": "faisceau-longitudinal-medial",
+   "nom": "Faisceau longitudinal médial",
+   "latin": "Fasciculus longitudinalis medialis",
+   "anglais": "Medial longitudinal fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau longitudinal médial",
+   "ta2": "5867",
+   "connu": {
+    "description_du_trace": "Faisceau de fibres, près de la ligne médiane, sous le plancher du quatrième ventricule et de l'aqueduc ; il relie noyaux vestibulaires et noyaux oculomoteurs (III, IV, VI) et coordonne les mouvements des yeux et de la tête.",
+    "appui_dans_le_modele": {
+     "id": "moelle-allongee",
+     "nom": "Moelle allongée"
+    }
+   }
+  },
+  {
+   "id": "faisceau-longitudinal-posterieur",
+   "nom": "Faisceau longitudinal postérieur",
+   "latin": "Fasciculus longitudinalis posterior",
+   "anglais": "Posterior longitudinal fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau longitudinal postérieur",
+   "ta2": "5868",
+   "connu": {
+    "description_du_trace": "Faisceau périventriculaire de Schütz : voie descendante de l'hypothalamus vers les noyaux parasympathiques et moteurs du tronc cérébral (salivation, déglutition, comportement alimentaire).",
+    "appui_dans_le_modele": {
+     "id": "troisieme-ventricule",
+     "nom": "Troisième ventricule"
+    }
+   }
+  },
+  {
+   "id": "faisceau-longitudinal-superieur",
+   "nom": "Faisceau longitudinal supérieur",
+   "latin": "Fasciculus longitudinalis superior",
+   "anglais": "Superior longitudinal fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau longitudinal supérieur",
+   "ta2": "5599",
+   "connu": {
+    "description_du_trace": "Grand faisceau d'association qui arque au-dessus de l'insula : il relie le lobe frontal aux lobes pariétal, occipital et temporal (langage par son composant arqué, attention spatiale).",
+    "appui_dans_le_modele": {
+     "id": "substance-blanche-du-telencephale",
+     "nom": "Substance blanche du télencéphale"
+    }
+   }
+  },
+  {
+   "id": "faisceau-mamillotegmental",
+   "nom": "Faisceau mamillotegmental",
+   "latin": "Fasciculus mamillotegmentalis",
+   "anglais": "Mamillotegmental fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau mamillotegmental",
+   "ta2": "5758",
+   "connu": {
+    "description_du_trace": "Faisceau qui quitte le corps mamillaire en arrière et en bas pour gagner les noyaux tegmentaux dorsal et ventral du mésencéphale.",
+    "appui_dans_le_modele": {
+     "id": "corps-mamillaire",
+     "nom": "Corps mamillaire"
+    }
+   }
+  },
+  {
+   "id": "faisceau-mamillothalamique",
+   "nom": "Faisceau mamillothalamique",
+   "latin": "Fasciculus mamillothalamicus",
+   "anglais": "Mamillothalamic fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau mamillothalamique",
+   "ta2": "5757",
+   "connu": {
+    "description_du_trace": "Faisceau de Vicq d'Azyr : il part du corps mamillaire, monte derrière la colonne du fornix et atteint les noyaux antérieurs du thalamus (circuit de Papez).",
+    "appui_dans_le_modele": {
+     "id": "corps-mamillaire",
+     "nom": "Corps mamillaire"
+    }
+   }
+  },
+  {
+   "id": "faisceau-occipitofrontal-inferieur",
+   "nom": "Faisceau occipitofrontal inférieur",
+   "latin": "Fasciculus occipitofrontalis inferior",
+   "anglais": "Inferior occipitofrontal fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau occipitofrontal inférieur",
+   "ta2": "5601",
+   "connu": {
+    "description_du_trace": "Long faisceau qui joint le lobe occipital au lobe frontal en passant par la capsule extrême, sous l'insula ; il participe au traitement visuel et sémantique.",
+    "appui_dans_le_modele": {
+     "id": "substance-blanche-du-telencephale",
+     "nom": "Substance blanche du télencéphale"
+    }
+   }
+  },
+  {
+   "id": "faisceau-occipitofrontal-superieur",
+   "nom": "Faisceau occipitofrontal supérieur",
+   "latin": "Fasciculus occipitofrontalis superior",
+   "anglais": "Superior occipitofrontal fasciculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau occipitofrontal supérieur",
+   "ta2": "5602",
+   "connu": {
+    "description_du_trace": "Faisceau profond longeant le bord supérieur du noyau caudé et du ventricule latéral, sous le corps calleux ; il relie les lobes frontal et pariétal.",
+    "appui_dans_le_modele": {
+     "id": "substance-blanche-du-telencephale",
+     "nom": "Substance blanche du télencéphale"
+    }
+   }
+  },
+  {
+   "id": "faisceau-pyramidal",
+   "nom": "Faisceau pyramidal",
+   "latin": "Tractus pyramidalis",
+   "anglais": "Pyramidal tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau pyramidal",
+   "ta2": "6040",
+   "connu": {
+    "description_du_trace": "Voie motrice principale : les fibres corticospinales traversent la capsule interne, la base du pédoncule cérébral et la partie basilaire du pont, forment la pyramide bulbaire puis décussent en bas du bulbe.",
+    "appui_dans_le_modele": {
+     "id": "thalamus",
+     "nom": "Thalamus"
+    }
+   }
+  },
+  {
+   "id": "faisceau-uncine-du-cerveau",
+   "nom": "Faisceau unciné du cerveau",
+   "latin": "Fasciculus uncinatus cerebri",
+   "anglais": "Uncinate fasciculus of cerebrum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Faisceau unciné du cerveau",
+   "ta2": "5600",
+   "connu": {
+    "description_du_trace": "Faisceau en crochet qui relie le pôle temporal antérieur (et l'amygdale) au cortex orbitofrontal en contournant la vallée latérale ; il intervient dans la mémoire et l'émotion.",
+    "appui_dans_le_modele": {
+     "id": "substance-blanche-du-telencephale",
+     "nom": "Substance blanche du télencéphale"
+    }
+   }
+  },
+  {
+   "id": "fascicule-uncine-du-cervelet",
+   "nom": "Fascicule unciné du cervelet",
+   "latin": "Fasciculus uncinatus cerebelli",
+   "anglais": "Uncinate fasciculus of cerebellum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Fascicule unciné du cervelet",
+   "ta2": "5855",
+   "connu": {
+    "description_du_trace": "Faisceau en crochet de Russell : fibres du noyau fastigial qui contournent le pédoncule cérébelleux supérieur pour gagner les noyaux vestibulaires et la formation réticulée.",
+    "appui_dans_le_modele": {
+     "id": "quatrieme-ventricule",
+     "nom": "Quatrième ventricule"
+    }
+   }
+  },
+  {
+   "id": "gyri-occipitaux-lateraux",
+   "nom": "Gyri occipitaux latéraux",
+   "latin": "Gyri occipitales laterales",
+   "anglais": "Lateral occipital gyri",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyri occipitaux latéraux",
+   "ta2": "5482",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-occipital-lateral",
+      "nom": "Gyrus occipital latéral"
+     },
+     {
+      "id": "gyri-occipitaux-superieurs",
+      "nom": "Gyri occipitaux supérieurs"
+     },
+     {
+      "id": "gyrus-occipital-inferieur",
+      "nom": "Gyrus occipital inférieur"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gyri-occipitotemporaux",
+   "nom": "Gyri occipitotemporaux",
+   "latin": "Gyri occipitotemporales",
+   "anglais": "Occipitotemporal gyri",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyri occipitotemporaux",
+   "ta2": "5499",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-occipitotemporal-lateral",
+      "nom": "Gyrus occipitotemporal latéral"
+     },
+     {
+      "id": "gyrus-occipitotemporal-medial",
+      "nom": "Gyrus occipitotemporal médial"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gyri-para-olfactifs",
+   "nom": "Gyri para-olfactifs",
+   "latin": "Gyri paraolfactorii",
+   "anglais": "Para-olfactory gyri",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyri para-olfactifs",
+   "ta2": "5510",
+   "connu": {
+    "description_du_trace": "Petits gyri de l'aire subcalleuse, devant le gyrus paraterminal, au pied de la face médiale du lobe frontal ; ils sont séparés par les sillons para-olfactifs.",
+    "appui_dans_le_modele": {
+     "id": "noyaux-septaux",
+     "nom": "Noyaux septaux"
+    }
+   }
+  },
+  {
+   "id": "gyrus-cerebral",
+   "nom": "Gyrus cérébral",
+   "latin": "Gyri cerebri",
+   "anglais": "Cerebral gyri",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus cérébral",
+   "ta2": "5432",
+   "nature": "ensemble",
+   "connu": {
+    "membres": [
+     {
+      "id": "gyrus-angulaire",
+      "nom": "Gyrus angulaire"
+     },
+     {
+      "id": "gyrus-cingulaire",
+      "nom": "Gyrus cingulaire"
+     },
+     {
+      "id": "cuneus",
+      "nom": "Cunéus"
+     },
+     {
+      "id": "precuneus",
+      "nom": "Précuneus"
+     },
+     {
+      "id": "gyrus-occipital-inferieur",
+      "nom": "Gyrus occipital inférieur"
+     },
+     {
+      "id": "gyrus-temporal-inferieur",
+      "nom": "Gyrus temporal inférieur"
+     },
+     {
+      "id": "gyrus-occipital-lateral",
+      "nom": "Gyrus occipital latéral"
+     },
+     {
+      "id": "gyrus-occipitotemporal-lateral",
+      "nom": "Gyrus occipitotemporal latéral"
+     },
+     {
+      "id": "gyrus-lingual",
+      "nom": "Gyrus lingual"
+     },
+     {
+      "id": "gyrus-occipitotemporal-medial",
+      "nom": "Gyrus occipitotemporal médial"
+     },
+     {
+      "id": "gyrus-frontal-moyen",
+      "nom": "Gyrus frontal moyen"
+     },
+     {
+      "id": "gyrus-temporal-moyen",
+      "nom": "Gyrus temporal moyen"
+     },
+     {
+      "id": "partie-operculaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie operculaire du gyrus frontal inférieur"
+     },
+     {
+      "id": "partie-triangulaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie triangulaire du gyrus frontal inférieur"
+     },
+     {
+      "id": "partie-orbitaire-du-gyrus-frontal-inferieur",
+      "nom": "Partie orbitaire du gyrus frontal inférieur"
+     },
+     {
+      "id": "encephale-gyri-orbitaires",
+      "nom": "Gyri orbitaires"
+     },
+     {
+      "id": "gyri-orbitaires",
+      "nom": "Gyri orbitaires"
+     },
+     {
+      "id": "lobule-paracentral",
+      "nom": "Lobule paracentral"
+     },
+     {
+      "id": "gyrus-postcentral",
+      "nom": "Gyrus postcentral"
+     },
+     {
+      "id": "gyrus-precentral",
+      "nom": "Gyrus précentral"
+     },
+     {
+      "id": "gyrus-rectus",
+      "nom": "Gyrus rectus"
+     },
+     {
+      "id": "gyrus-frontal-superieur",
+      "nom": "Gyrus frontal supérieur"
+     },
+     {
+      "id": "gyri-occipitaux-superieurs",
+      "nom": "Gyri occipitaux supérieurs"
+     },
+     {
+      "id": "gyrus-temporal-superieur",
+      "nom": "Gyrus temporal supérieur"
+     },
+     {
+      "id": "gyrus-supramarginal",
+      "nom": "Gyrus supramarginal"
+     },
+     {
+      "id": "gyrus-temporal-transverse",
+      "nom": "Gyrus temporal transverse"
+     },
+     {
+      "id": "gyrus-et-sillon-frontopolaires-transverses",
+      "nom": "Gyrus et sillon frontopolaires transverses"
+     },
+     {
+      "id": "cortex-insulaire",
+      "nom": "Cortex insulaire"
+     },
+     {
+      "id": "gyrus-dentatus",
+      "nom": "Gyrus dentatus"
+     },
+     {
+      "id": "gyrus-fasciculaire",
+      "nom": "Gyrus fasciculaire"
+     },
+     {
+      "id": "gyrus-paraterminal",
+      "nom": "Gyrus paraterminal"
+     },
+     {
+      "id": "gyri-para-olfactifs",
+      "nom": "Gyri para-olfactifs"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gyrus-dentatus",
+   "nom": "Gyrus dentatus",
+   "latin": "Gyrus dentatus",
+   "anglais": "Dentate gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus dentatus",
+   "ta2": "5521",
+   "connu": {
+    "description_du_trace": "Fine bande de cortex dentelée qui borde le bord médial de l'hippocampe, entre la fimbria et le gyrus parahippocampique ; elle se continue en arrière par le gyrus fasciolaire.",
+    "appui_dans_le_modele": {
+     "id": "hippocampe",
+     "nom": "Hippocampe"
+    }
+   }
+  }
+ ]
+}
