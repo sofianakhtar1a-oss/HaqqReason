@@ -85,9 +85,9 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 4 |
 | 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 4 |
 | 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 4 |
-| 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 3 |
+| 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 4 |
 
-**Total fait : 97 / 100.**
+**Total fait : 98 / 100.**
 
 ## Journal
 
@@ -163,6 +163,11 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   dans les réglages. Vérifié dans le navigateur : coupes frontale et sagittale (la tranche prend le grain du tissu),
   chargement de la haute définition, nerfs vus de face à travers la chair translucide. Reste : l'oreille interne
   (aucun modèle libre), une mesure des images par seconde sur une vraie carte graphique, le bilan.
+
+- 21/11 13:55 — Bilan final rédigé (document « L'Écorché — bilan du grand chantier »). Les tests des modules, des comptes
+  et des règles passent aussi : rien hors du module n'a bougé, sauf l'en-tête de cache des paquets et les textes par
+  défaut du module. Restent hors de portée ici : l'oreille interne (il faut un modèle libre du labyrinthe osseux),
+  une mesure de fluidité sur une vraie carte graphique, l'affinage de quelques axes articulaires.
 
 ## Pour reprendre après une interruption
 
