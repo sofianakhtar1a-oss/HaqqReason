@@ -11,38 +11,67 @@ réduit et accessibilité respectés ; tests, typage, lint et build avant chaque
 
 ## État des lieux (scan du 21 novembre)
 
-- **Onglets** : Aujourd'hui (mot du jour, journée, reprise, thèmes, dictionnaire), Vocabulaire
-  (43 fichiers de thèmes, plus de 20 000 mots, répétition espacée), Écouter (vidéos YouTube ou
-  fichiers, sous-titres karaoké bilingues, mot touché traduit), Lire (PDF importés, mot touché
-  traduit à la volée par le serveur), Dictionnaire (mots gardés, exports CSV et Anki), Règles.
-- **Règles** : 152 leçons (Conjugaison 71, Grammaire 81, de A1 à C2), cinq étapes chacune
-  (déclic, démonstration, explication, défi, secret). Le défi compte **5 ou 6 questions** par
-  leçon (842 en tout : choix, écrire, toucher). La Machine à voyager dans le temps conjugue
-  plus de 570 verbes.
-- **Traduction au toucher** : PDF et vidéos analysés phrase par phrase par le serveur (Groq) ;
-  rien n'est enregistré d'avance, chaque phrase coûte une demande.
-- **Progression** : leçons (étoiles, XP) sur l'appareil et sur le compte (magasin « regles ») ;
-  cartes, dictionnaire, journal, médias et documents synchronisés.
+- **Onglets** : Aujourd'hui, Vocabulaire (43 fichiers de thèmes, plus de 20 000 mots, répétition
+  espacée), Écouter (vidéos, sous-titres karaoké, mot touché traduit), Lire (PDF, mot touché
+  traduit à la volée par le serveur), Dictionnaire, Règles.
+- **Règles** : 152 leçons (Conjugaison 71, Grammaire 81, de A1 à C2) ; le défi comptait **5 ou
+  6 questions** par leçon (842 en tout).
 - **Manques** : peu d'entraînement par leçon, aucun texte prêt à lire, pas de carnet d'erreurs,
-  pas d'examen de niveau ni de test de positionnement, pas de dictée.
+  pas d'examen ni de test de positionnement, pas de dictée, rien sur les faux amis.
+
+## Ce qui a été ajouté
+
+- **L'entraînement** (6ᵉ étape de chaque leçon) : 3 249 exercices corrigés, 20 à 24 par leçon,
+  du plus facile au plus difficile ; deux nouveaux types (remettre dans l'ordre, corriger la
+  phrase) ; modes guidé et examen ; bilan avec la correction de chaque question. Écrits puis
+  relus lot par lot (`scripts/langues/entrainement/`).
+- **Le carnet d'erreurs** : chaque exercice raté (défi, entraînement, examen) revient jusqu'à
+  deux réussites du premier coup. Synchronisé avec le compte (magasin `regles-suivi`).
+- **Les examens de niveau** : 12 examens (2 sections × 6 niveaux), 30 questions sans indice,
+  diplôme à 80 %, leçons à revoir.
+- **Le test de positionnement** : adaptatif (départ A2, 4 questions par niveau), il oriente vers
+  les leçons du prochain palier et les histoires du niveau.
+- **La bibliothèque d'histoires** (onglet Lire) : 18 histoires, 285 pages, 65 855 mots ; 13
+  originales (A1 à B2) et 5 classiques en texte intégral (Kipling ×2, Conan Doyle, Poe, Wells).
+  Chaque mot a sa traduction en contexte, préparée d'avance avec celle de chaque phrase ; la
+  liseuse propose la traduction sous les paragraphes, la lecture à voix haute, la taille du
+  texte, les mots clés de la page, les questions de compréhension ; la page en cours est
+  synchronisée (magasin `histoires`) ; une histoire ouverte se relit hors ligne. Relecture
+  croisée de chaque lot (`scripts/langues/histoires/`).
+- **Les dictées** (onglet Écouter) : six phrases par niveau, tirées des histoires, corrigées mot
+  à mot.
+- **Les faux amis** (onglet Vocabulaire) : 127 pièges, leur vrai sens, la traduction du mot
+  piège, un exemple, une astuce, un quiz.
+- **Aujourd'hui** : « Pour progresser » (l'histoire en cours, le carnet ou le test, la dictée).
 
 ## Plan pondéré
 
 | # | Tâche | Poids | Fait |
 |---|-------|------:|-----:|
 | 1 | Scan complet et plan | 3 | 3 |
-| 2 | Entraînement : moteur et écran (nouveaux exercices « remettre dans l'ordre » et « corriger la phrase », correction détaillée, bilan, progression synchronisée) | 10 | 0 |
-| 3 | Entraînement : 20 exercices corrigés de plus pour chacune des 152 leçons (≈ 3 000) | 20 | 0 |
-| 4 | Carnet d'erreurs : chaque erreur revient jusqu'à être maîtrisée | 5 | 0 |
-| 5 | Examens de niveau (A1 → C2) et test de positionnement | 6 | 0 |
-| 6 | Histoires : chaîne de fabrication (pages, phrases, mots, lexique, contrôles) | 6 | 0 |
-| 7 | Histoires : au moins 12 histoires de 10 à 30 pages, A1 → C2, traduites mot à mot | 22 | 0 |
-| 8 | Histoires : la liseuse (bibliothèque par niveau, mot touché traduit instantanément, phrase traduite, mode bilingue, lecture à voix haute, mots de la page, questions de compréhension, reprise synchronisée) | 14 | 0 |
-| 9 | Dictées (onglet Écouter) : écouter, écrire, correction mot à mot | 5 | 0 |
-| 10 | Accueil, textes modifiables par le créateur, documentation | 3 | 0 |
-| 11 | Vérifications : tests, typage, lint, build, captures téléphone et ordinateur, mise en ligne | 6 | 0 |
-| | **Total** | **100** | **3** |
+| 2 | Entraînement : moteur et écran | 10 | 10 |
+| 3 | Entraînement : 20 exercices corrigés de plus par leçon, relus | 20 | 20 |
+| 4 | Carnet d'erreurs | 5 | 5 |
+| 5 | Examens de niveau et test de positionnement | 6 | 6 |
+| 6 | Histoires : chaîne de fabrication | 6 | 6 |
+| 7 | Histoires : 12 histoires traduites mot à mot | 22 | 22 |
+| 8 | Histoires : la liseuse | 14 | 14 |
+| 9 | Dictées | 5 | 5 |
+| 10 | Accueil, textes modifiables, documentation | 3 | 3 |
+| 11 | Vérifications et mise en ligne | 6 | 6 |
+| 12 | Relecture croisée des histoires | 8 | 8 |
+| 13 | Six histoires de plus | 6 | 6 |
+| 14 | Les faux amis | 6 | 6 |
+| | **Total** | **120** | **120** |
 
 ## Journal
 
 - 21 nov. 20 h 25 — scan terminé, plan écrit.
+- 21 nov. 20 h 48 — 3 249 exercices écrits (22 lots), puis relus ; écran de l'entraînement.
+- 21 nov. 21 h 10 — entraînement en ligne (commit d355e8a).
+- 21 nov. 21 h 50 — 12 histoires traduites, liseuse ; en ligne (7730575).
+- 21 nov. 22 h 07 — carnet, examens, test de positionnement, dictées, accueil (6f62f89).
+- 21 nov. 22 h 46 — 6 histoires de plus, relecture de toutes les histoires, faux amis (f4e907f).
+- En attente d'une réponse : la relecture du lot d'exercices Conjugaison B1 est prête dans
+  /tmp, mais la copie dans le projet a été refusée au sous-agent par le système de permissions ;
+  elle n'a pas été contournée.

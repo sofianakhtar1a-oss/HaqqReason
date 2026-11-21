@@ -2,6 +2,7 @@
  * HaqqReason — service hors-ligne.
  * - Les pages publiques consultées sont gardées : elles restent lisibles sans connexion.
  * - Les favoris sont mis de côté dans un espace à part, jamais effacé automatiquement.
+ * - Une histoire du Truchement ouverte une fois se relit sans connexion.
  * - Le Portulan, quand le joueur le demande (Mes réglages → Hors ligne), est gardé tout entier
  *   dans un espace à lui : sa page, son code, ses drapeaux et ses cartes. Il se joue sans réseau.
  * - L'espace créateur, les API et les fichiers ne sont JAMAIS mis en cache.
@@ -40,6 +41,8 @@ const INTERDIT = /^\/(createur|api|fichiers|_next\/image|_next\/data)(\/|$)/;
 const PUBLIC = /^\/($|explorer|islam|debat|graphe|favoris|recherche|hors-ligne|langues|monde)/;
 /* Les fichiers du Portulan : drapeaux, emblèmes, cartes. Ils ne changent jamais d'adresse sans changer de nom. */
 const FICHIER_PORTULAN = /^\/monde\/.+\.(json|svg|webp|png)$/;
+/* Les histoires du Truchement : chaque version a son adresse (?v=…), une histoire ouverte se relit sans réseau. */
+const HISTOIRE = /^\/langues\/histoires\/[a-z0-9-]+\.json$/;
 
 async function limiter(nom, max) {
   const cache = await caches.open(nom);
@@ -99,6 +102,21 @@ self.addEventListener("fetch", (e) => {
           trouve ||
           fetch(requete).then((r) => {
             if (r.ok) caches.open(STATIQUE).then((c) => c.put(requete, r.clone()));
+            return r;
+          }),
+      ),
+    );
+    return;
+  }
+
+  // Une histoire : gardée seulement si c'est bien elle (jamais la page de connexion vers laquelle on a été renvoyé).
+  if (HISTOIRE.test(url.pathname) && url.searchParams.has("v")) {
+    e.respondWith(
+      caches.match(requete).then(
+        (trouve) =>
+          trouve ||
+          fetch(requete).then((r) => {
+            if (r.ok && !r.redirected && (r.headers.get("content-type") ?? "").includes("json")) caches.open(STATIQUE).then((c) => c.put(requete, r.clone()));
             return r;
           }),
       ),
