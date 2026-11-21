@@ -14,10 +14,15 @@ import type { M4, V3 } from "@/lib/corps/vec";
  *     fibres en relief, grain de l'os, cartilage et tendon fondus dans l'os et le muscle par des poids de sommet.
  *   • La lumière est celle d'un studio : trois boîtes à lumière qui suivent le regard, l'ombre de la principale,
  *     l'occlusion précalculée, puis un mappage tonal neutre.
+ *   • Le studio (quand l'appareil le tient) : l'image se fait hors écran, multi-échantillonnée ; une occlusion
+ *     d'écran assombrit les contacts entre les pièces (un muscle posé sur l'os) ; quand plus rien ne bouge, les
+ *     images suivantes s'accumulent, chacune décalée d'une fraction de pixel et vue d'un point de l'objectif :
+ *     les bords s'affinent, l'occlusion se lisse, et ce qui est loin du plan net se fond (la profondeur de champ
+ *     d'une photographie rapprochée).
  *   • Le toucher : on redessine les numéros des structures dans une image cachée et on lit le pixel sous le doigt.
  */
 
-export type Camera = { vue: M4; proj: M4; oeil: V3; yaw: number };
+export type Camera = { vue: M4; proj: M4; oeil: V3; yaw: number; /** La distance du plan net (la cible du regard), en mètres. */ focale?: number };
 
 export type Matiere = {
   /** Couleurs en linéaire : la matière principale, puis la secondaire (tendon d'un muscle, cartilage d'un os). */
@@ -558,6 +563,110 @@ void main() {
   sortie = vec4(c * a, a);
 }`;
 
+/* ---------- Le studio : les passes sur l'image entière ---------- */
+
+const PLEIN_SOMMETS = `#version 300 es
+out vec2 v_uv;
+void main() {
+  // Un seul triangle qui couvre l'écran.
+  vec2 p = vec2(float((gl_VertexID << 1) & 2), float(gl_VertexID & 2));
+  v_uv = p;
+  gl_Position = vec4(p * 2.0 - 1.0, 0.0, 1.0);
+}`;
+
+// L'occlusion d'écran : autour de chaque point, ce qui dépasse au-dessus de sa surface lui cache le ciel.
+const AO_FRAGMENTS = `#version 300 es
+precision highp float;
+in vec2 v_uv;
+uniform sampler2D u_prof;
+uniform vec4 u_projection; // P[0], P[5], proche, loin
+uniform vec2 u_taille;     // en pixels, à la pleine résolution
+uniform float u_rayon;     // en mètres
+uniform float u_graine;
+out vec4 sortie;
+float distance_(float d) {
+  float z = d * 2.0 - 1.0;
+  return 2.0 * u_projection.z * u_projection.w / (u_projection.w + u_projection.z - z * (u_projection.w - u_projection.z));
+}
+vec3 position(vec2 uv) {
+  float z = distance_(texture(u_prof, uv).r);
+  return vec3((uv * 2.0 - 1.0) * z / u_projection.xy, -z);
+}
+void main() {
+  float d = texture(u_prof, v_uv).r;
+  if (d >= 0.99999) { sortie = vec4(1.0); return; }
+  vec3 p = position(v_uv);
+  vec3 n = normalize(cross(dFdx(p), dFdy(p)));
+  if (n.z < 0.0) n = -n;
+  // Un motif de rotation de quatre sur quatre (fixe tant qu'on n'accumule pas : l'image ne scintille pas).
+  vec2 c = mod(floor(gl_FragCoord.xy), 4.0);
+  float angle = (c.x * 4.0 + c.y) * 0.3927 + u_graine * 2.3999;
+  float rPix = clamp(u_rayon * u_projection.x * 0.5 * u_taille.x / -p.z, 3.0, 90.0);
+  float occ = 0.0;
+  const int N = 12;
+  for (int i = 0; i < N; i++) {
+    float t = (float(i) + 0.5) / float(N);
+    float a = angle + t * 18.85;
+    vec2 uv = v_uv + vec2(cos(a), sin(a)) * t * rPix / u_taille;
+    vec3 q = position(uv);
+    vec3 v = q - p;
+    float l = length(v);
+    float w = 1.0 - smoothstep(u_rayon * 0.6, u_rayon * 1.4, l);
+    occ += max(0.0, dot(v, n) / (l + 1e-4) - 0.12) * w;
+  }
+  sortie = vec4(vec3(clamp(1.0 - 1.6 * occ / float(N), 0.0, 1.0)), 1.0);
+}`;
+
+// La composition : la couleur, assombrie par l'occlusion (lissée en tenant compte de la profondeur), mêlée à
+// l'histoire des images précédentes quand on accumule.
+const COMPO_FRAGMENTS = `#version 300 es
+precision highp float;
+in vec2 v_uv;
+uniform sampler2D u_couleur;
+uniform sampler2D u_ao;
+uniform sampler2D u_prof;
+uniform sampler2D u_histoire;
+uniform vec2 u_texelAo;
+uniform float u_force;
+uniform float u_poids;
+out vec4 sortie;
+void main() {
+  vec4 c = texture(u_couleur, v_uv);
+  float d0 = texture(u_prof, v_uv).r;
+  float somme = 0.0;
+  float poids = 0.0;
+  for (int y = -1; y <= 1; y++)
+    for (int x = -1; x <= 1; x++) {
+      vec2 uv = v_uv + vec2(float(x), float(y)) * u_texelAo * 1.5;
+      float w = 1.0 / (1.0 + 4000.0 * abs(texture(u_prof, uv).r - d0));
+      somme += texture(u_ao, uv).r * w;
+      poids += w;
+    }
+  float ao = somme / max(poids, 1e-4);
+  c.rgb *= mix(1.0, ao, u_force);
+  sortie = u_poids >= 0.999 ? c : mix(texture(u_histoire, v_uv), c, u_poids);
+}`;
+
+const COPIE_FRAGMENTS = `#version 300 es
+precision highp float;
+in vec2 v_uv;
+uniform sampler2D u_source;
+out vec4 sortie;
+void main() { sortie = texture(u_source, v_uv); }`;
+
+/** Combien d'images on accumule quand tout est immobile. */
+const ACCUMULATION = 16;
+/** Les décalages de Halton (2, 3), centrés : une fraction de pixel différente à chaque image. */
+const halton = (i: number, b: number) => {
+  let f = 1;
+  let r = 0;
+  for (let k = i; k > 0; k = Math.floor(k / b)) {
+    f /= b;
+    r += f * (k % b);
+  }
+  return r;
+};
+
 function compiler(gl: WebGL2RenderingContext, sommets: string, fragments: string, definitions = ""): WebGLProgram {
   const prog = gl.createProgram();
   const avec = (source: string) => source.replace("#version 300 es", `#version 300 es\n${definitions}`);
@@ -592,6 +701,26 @@ export type Reglages = {
   /** 1 : pièce fraîche (humide) ; 0,25 : pièce plastinée (satinée). */
   humide: number;
   exposition: number;
+  /** Le studio : image hors écran, occlusion d'écran, accumulation à l'arrêt. */
+  studio: boolean;
+  /** La force de l'occlusion d'écran (0 : aucune). */
+  occlusion: number;
+  /** Le rayon de l'objectif, en mètres (0 : tout est net) ; la profondeur de champ n'apparaît qu'en gros plan. */
+  ouverture: number;
+};
+
+type CiblesStudio = {
+  l: number;
+  h: number;
+  echantillons: number;
+  msaa: WebGLFramebuffer;
+  tampons: WebGLRenderbuffer[];
+  resolu: WebGLFramebuffer;
+  couleur: WebGLTexture;
+  prof: WebGLTexture;
+  ao: WebGLFramebuffer;
+  aoTex: WebGLTexture;
+  acc: { fbo: WebGLFramebuffer; tex: WebGLTexture }[];
 };
 
 export class RenduReel {
@@ -627,7 +756,20 @@ export class RenduReel {
   private ombreTaille = 0;
   readonly opacites: Record<string, number> = {};
   readonly matieres: Record<string, Matiere> = MATIERES;
-  readonly reglages: Reglages = { ombres: true, tailleOmbre: 2048, humide: 1, exposition: 1 };
+  readonly reglages: Reglages = { ombres: true, tailleOmbre: 2048, humide: 1, exposition: 1, studio: true, occlusion: 0.6, ouverture: 0 };
+  private studio: CiblesStudio | null = null;
+  /** Le studio a échoué sur cet appareil (une cible refusée) : on dessine à l'ancienne. */
+  private studioRefuse = false;
+  private progAO: WebGLProgram | null = null;
+  private progCompo: WebGLProgram | null = null;
+  private progCopie: WebGLProgram | null = null;
+  private videVao: WebGLVertexArrayObject | null = null;
+  /** Les images accumulées depuis le dernier changement, et laquelle des deux cibles reçoit la suivante. */
+  private accN = 0;
+  private accCourant = 0;
+  /** Chaque changement d'état (teinte, visibilité, pose, déplacement) l'augmente : l'accumulation repart de zéro. */
+  private version = 0;
+  private signature = "";
   laiton: V3 = [0.72, 0.5, 0.2];
   rayonSocle = 0.62;
   /** Le nombre de triangles envoyés à la dernière image (pour mesurer). */
@@ -663,6 +805,7 @@ export class RenduReel {
 
   /** Réserve l'état de `nb` structures (une fois la liste connue). */
   structures(nb: number) {
+    this.version++;
     this.nbStructures = nb;
     this.hauteur = Math.max(1, Math.ceil(nb / LARGEUR_ETAT));
     this.donneesEtat = new Uint8Array(LARGEUR_ETAT * this.hauteur * RANGS_ETAT * 4);
@@ -674,6 +817,7 @@ export class RenduReel {
 
   /** Monte un paquet sur la carte graphique (ou remplace son niveau de détail). `base` : le numéro de sa première structure. */
   installer(p: Paquet, base: number, zones?: Zones) {
+    this.version++;
     const gl = this.gl;
     const cle = `${p.paquet}/${p.paire ? "p" : "i"}`;
     const ancien = this.groupes.get(cle);
@@ -717,21 +861,36 @@ export class RenduReel {
     if (id < 0 || id >= this.nbStructures) return;
     const d = this.donneesEtat;
     const l = LARGEUR_ETAT * this.hauteur * 4;
-    if (e.teinte) d.set(e.teinte, id * 4);
-    if (e.visible !== undefined) d[l + id * 4] = Math.round(Math.max(0, Math.min(1, e.visible)) * 255);
-    if (e.survol !== undefined) d[l + id * 4 + 1] = e.survol ? 255 : 0;
-    if (e.pulse !== undefined) d[l + id * 4 + 2] = e.pulse ? 255 : 0;
-    if (e.choisi !== undefined) d[l + id * 4 + 3] = e.choisi ? 255 : 0;
-    if (e.propre) d.set(e.propre, 2 * l + id * 4);
-    if (e.coucheDesZones !== undefined) d[3 * l + id * 4] = e.coucheDesZones ? 255 : 0;
-    this.etatSale = true;
+    // On n'écrit (et l'image ne repart de zéro) que si quelque chose change vraiment.
+    let change = false;
+    const mettre = (i: number, v: number) => {
+      const x = ((Math.trunc(v) % 256) + 256) % 256;
+      if (d[i] !== x) {
+        d[i] = x;
+        change = true;
+      }
+    };
+    if (e.teinte) for (let k = 0; k < 4; k++) mettre(id * 4 + k, e.teinte[k]);
+    if (e.visible !== undefined) mettre(l + id * 4, Math.round(Math.max(0, Math.min(1, e.visible)) * 255));
+    if (e.survol !== undefined) mettre(l + id * 4 + 1, e.survol ? 255 : 0);
+    if (e.pulse !== undefined) mettre(l + id * 4 + 2, e.pulse ? 255 : 0);
+    if (e.choisi !== undefined) mettre(l + id * 4 + 3, e.choisi ? 255 : 0);
+    if (e.propre) for (let k = 0; k < 4; k++) mettre(2 * l + id * 4 + k, e.propre[k]);
+    if (e.coucheDesZones !== undefined) mettre(3 * l + id * 4, e.coucheDesZones ? 255 : 0);
+    if (change) {
+      this.etatSale = true;
+      this.version++;
+    }
   }
 
   /** Déplace une structure (dissection, vue éclatée), en mètres. */
   decaler(id: number, v: V3) {
     if (id < 0 || id >= this.nbStructures) return;
-    this.donneesDecal.set(v, id * 4);
+    const d = this.donneesDecal;
+    if (d[id * 4] === Math.fround(v[0]) && d[id * 4 + 1] === Math.fround(v[1]) && d[id * 4 + 2] === Math.fround(v[2])) return;
+    d.set(v, id * 4);
     this.decalSale = true;
+    this.version++;
   }
 
   /**
@@ -743,16 +902,28 @@ export class RenduReel {
     if (id < 0 || id >= this.nbStructures) return;
     const d = this.donneesDecal;
     const l = LARGEUR_ETAT * this.hauteur * 4;
-    if (e.gonfle !== undefined) d[id * 4 + 3] = e.gonfle;
-    if (e.origine) d.set(e.origine, l + id * 4);
-    if (e.raccourci !== undefined) d[l + id * 4 + 3] = e.raccourci;
-    if (e.terminaison) d.set(e.terminaison, 2 * l + id * 4);
-    if (e.rond !== undefined) d[2 * l + id * 4 + 3] = e.rond ? 1 : 0;
-    this.decalSale = true;
+    let change = false;
+    const mettre = (i: number, v: number) => {
+      const x = Math.fround(v);
+      if (d[i] !== x) {
+        d[i] = x;
+        change = true;
+      }
+    };
+    if (e.gonfle !== undefined) mettre(id * 4 + 3, e.gonfle);
+    if (e.origine) for (let k = 0; k < 3; k++) mettre(l + id * 4 + k, e.origine[k]);
+    if (e.raccourci !== undefined) mettre(l + id * 4 + 3, e.raccourci);
+    if (e.terminaison) for (let k = 0; k < 3; k++) mettre(2 * l + id * 4 + k, e.terminaison[k]);
+    if (e.rond !== undefined) mettre(2 * l + id * 4 + 3, e.rond ? 1 : 0);
+    if (change) {
+      this.decalSale = true;
+      this.version++;
+    }
   }
 
   /** Pose le squelette : 12 nombres par segment (voir mouvement/squelette.ts), ou null pour la position anatomique. */
   poser(matrices: Float32Array | null, axiaux = 0, lateraux = 0) {
+    this.version++;
     this.pose = matrices;
     this.segments = [axiaux, lateraux];
     this.poseSale = true;
@@ -980,7 +1151,12 @@ export class RenduReel {
     this.ombreTaille = t;
   }
 
-  dessiner(camera: Camera, temps: number) {
+  /** Encore des images à accumuler (tout est immobile, l'image s'affine) : la boucle doit continuer. */
+  affiner(): boolean {
+    return Boolean(this.studio) && this.reglages.studio && this.accN > 0 && this.accN < ACCUMULATION;
+  }
+
+  dessiner(camera: Camera, temps: number, o: { fige?: boolean } = {}) {
     const gl = this.gl;
     this.trianglesImage = 0;
     this.televerser();
@@ -1006,8 +1182,124 @@ export class RenduReel {
       gl.disable(gl.POLYGON_OFFSET_FILL);
       gl.bindFramebuffer(gl.FRAMEBUFFER, null);
     }
+    const cibles = this.reglages.studio && !this.studioRefuse ? this.preparerStudio() : null;
+    if (!cibles) {
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      gl.viewport(0, 0, this.canvas.width, this.canvas.height);
+      this.scene(camera, temps, lumiere);
+      return;
+    }
+    // Ce qui a changé depuis l'image d'avant : l'accumulation repart de zéro.
+    const sig = `${this.version}|${Array.from(camera.vue).join(",")}|${Array.from(camera.proj).join(",")}|${ORDRE.map((n) => (this.opacites[n] ?? 0).toFixed(3)).join(",")}|${this.coupe?.join(",") ?? ""}|${this.pouls.amplitude}|${this.reglages.humide}|${this.reglages.exposition}|${this.reglages.ouverture}|${this.reglages.occlusion}`;
+    if (!o.fige || sig !== this.signature) this.accN = 0;
+    this.signature = sig;
+    const n = this.accN;
+    // L'image n : décalée d'une fraction de pixel, vue d'un point de l'objectif (le plan net ne bouge pas).
+    let vue = camera;
+    if (n > 0) {
+      const jx = halton(n, 2) - 0.5;
+      const jy = halton(n, 3) - 0.5;
+      const proj = new Float32Array(camera.proj);
+      proj[8] += (2 * jx) / cibles.l;
+      proj[9] += (2 * jy) / cibles.h;
+      const ouv = this.reglages.ouverture;
+      const f = camera.focale ?? 0;
+      let mat = new Float32Array(camera.vue);
+      if (ouv > 0 && f > 0.05) {
+        // Un point du disque de l'objectif (suite de Vogel), et le cisaillement qui garde le plan net en place.
+        const r = ouv * Math.sqrt((n - 0.5) / (ACCUMULATION - 1));
+        const a = n * 2.39996;
+        const dx = r * Math.cos(a);
+        const dy = r * Math.sin(a);
+        mat = new Float32Array(camera.vue);
+        mat[12] -= dx;
+        mat[13] -= dy;
+        proj[8] -= (proj[0] * dx) / f;
+        proj[9] -= (proj[5] * dy) / f;
+      }
+      vue = { ...camera, vue: mat, proj };
+    }
+    // La scène, multi-échantillonnée, hors écran ; puis résolue en une couleur et une profondeur lisibles.
+    gl.bindFramebuffer(gl.FRAMEBUFFER, cibles.msaa);
+    gl.viewport(0, 0, cibles.l, cibles.h);
+    this.scene(vue, temps, lumiere);
+    gl.bindFramebuffer(gl.READ_FRAMEBUFFER, cibles.msaa);
+    gl.bindFramebuffer(gl.DRAW_FRAMEBUFFER, cibles.resolu);
+    gl.blitFramebuffer(0, 0, cibles.l, cibles.h, 0, 0, cibles.l, cibles.h, gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT, gl.NEAREST);
+    gl.bindFramebuffer(gl.READ_FRAMEBUFFER, null);
+    gl.bindFramebuffer(gl.DRAW_FRAMEBUFFER, null);
+    gl.disable(gl.DEPTH_TEST);
+    gl.disable(gl.BLEND);
+    gl.disable(gl.CULL_FACE);
+    gl.depthMask(false);
+    gl.bindVertexArray(this.videVao);
+    // L'occlusion, à mi-résolution.
+    const al = Math.max(1, cibles.l >> 1);
+    const ah = Math.max(1, cibles.h >> 1);
+    const ao = this.reglages.occlusion > 0.01;
+    if (ao) {
+      gl.bindFramebuffer(gl.FRAMEBUFFER, cibles.ao);
+      gl.viewport(0, 0, al, ah);
+      const p = this.progAO!;
+      gl.useProgram(p);
+      gl.activeTexture(gl.TEXTURE0);
+      gl.bindTexture(gl.TEXTURE_2D, cibles.prof);
+      gl.uniform1i(gl.getUniformLocation(p, "u_prof"), 0);
+      gl.uniform4f(gl.getUniformLocation(p, "u_projection"), vue.proj[0], vue.proj[5], 0.02, 30);
+      gl.uniform2f(gl.getUniformLocation(p, "u_taille"), cibles.l, cibles.h);
+      gl.uniform1f(gl.getUniformLocation(p, "u_rayon"), 0.035);
+      gl.uniform1f(gl.getUniformLocation(p, "u_graine"), n);
+      gl.drawArrays(gl.TRIANGLES, 0, 3);
+    }
+    // La composition, mêlée à l'histoire.
+    const dest = cibles.acc[this.accCourant];
+    const hist = cibles.acc[1 - this.accCourant];
+    gl.bindFramebuffer(gl.FRAMEBUFFER, dest.fbo);
+    gl.viewport(0, 0, cibles.l, cibles.h);
+    const pc = this.progCompo!;
+    gl.useProgram(pc);
+    const lier = (unite: number, tex: WebGLTexture, nom: string) => {
+      gl.activeTexture(gl.TEXTURE0 + unite);
+      gl.bindTexture(gl.TEXTURE_2D, tex);
+      gl.uniform1i(gl.getUniformLocation(pc, nom), unite);
+    };
+    lier(0, cibles.couleur, "u_couleur");
+    lier(1, cibles.aoTex, "u_ao");
+    lier(2, cibles.prof, "u_prof");
+    lier(3, hist.tex, "u_histoire");
+    gl.uniform2f(gl.getUniformLocation(pc, "u_texelAo"), 1 / al, 1 / ah);
+    gl.uniform1f(gl.getUniformLocation(pc, "u_force"), ao ? this.reglages.occlusion : 0);
+    gl.uniform1f(gl.getUniformLocation(pc, "u_poids"), 1 / (n + 1));
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    // À l'écran.
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
     gl.viewport(0, 0, this.canvas.width, this.canvas.height);
+    const pk = this.progCopie!;
+    gl.useProgram(pk);
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, dest.tex);
+    gl.uniform1i(gl.getUniformLocation(pk, "u_source"), 0);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    gl.bindVertexArray(null);
+    for (let k = 0; k < 4; k++) {
+      gl.activeTexture(gl.TEXTURE0 + k);
+      gl.bindTexture(gl.TEXTURE_2D, null);
+    }
+    gl.activeTexture(gl.TEXTURE0);
+    gl.enable(gl.DEPTH_TEST);
+    gl.depthMask(true);
+    gl.enable(gl.CULL_FACE);
+    this.accCourant = 1 - this.accCourant;
+    this.accN = Math.min(n + 1, ACCUMULATION);
+  }
+
+  /** Le socle, ce qui est plein, puis ce qui est translucide, dans la cible liée. */
+  private scene(camera: Camera, temps: number, lumiere: Float32Array) {
+    const gl = this.gl;
+    gl.enable(gl.DEPTH_TEST);
+    gl.depthMask(true);
     gl.clearColor(0, 0, 0, 0);
+    gl.clearDepth(1);
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     // Le socle : une ombre et deux anneaux de laiton sous les pieds.
     gl.enable(gl.BLEND);
@@ -1033,6 +1325,88 @@ export class RenduReel {
     gl.depthMask(true);
     gl.disable(gl.BLEND);
     gl.enable(gl.CULL_FACE);
+  }
+
+  /** Les cibles du studio, à la taille de l'image (null si l'appareil ne les accepte pas). */
+  private preparerStudio(): CiblesStudio | null {
+    const gl = this.gl;
+    const l = this.canvas.width;
+    const h = this.canvas.height;
+    if (this.studio && this.studio.l === l && this.studio.h === h) return this.studio;
+    try {
+      if (!this.progAO) {
+        this.progAO = compiler(gl, PLEIN_SOMMETS, AO_FRAGMENTS);
+        this.progCompo = compiler(gl, PLEIN_SOMMETS, COMPO_FRAGMENTS);
+        this.progCopie = compiler(gl, PLEIN_SOMMETS, COPIE_FRAGMENTS);
+        this.videVao = gl.createVertexArray();
+      }
+      this.liberer();
+      const flottant = Boolean(gl.getExtension("EXT_color_buffer_float"));
+      const echantillons = Math.min(4, gl.getParameter(gl.MAX_SAMPLES) as number);
+      const rb = (format: number) => {
+        const r = gl.createRenderbuffer()!;
+        gl.bindRenderbuffer(gl.RENDERBUFFER, r);
+        gl.renderbufferStorageMultisample(gl.RENDERBUFFER, echantillons, format, l, h);
+        return r;
+      };
+      const tex = (interne: number, format: number, type: number, tl: number, th: number, lisse: boolean) => {
+        const t = gl.createTexture()!;
+        gl.bindTexture(gl.TEXTURE_2D, t);
+        gl.texImage2D(gl.TEXTURE_2D, 0, interne, tl, th, 0, format, type, null);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, lisse ? gl.LINEAR : gl.NEAREST);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, lisse ? gl.LINEAR : gl.NEAREST);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+        return t;
+      };
+      const fbo = (couleur: WebGLTexture | WebGLRenderbuffer | null, prof: WebGLTexture | WebGLRenderbuffer | null, rendu: boolean) => {
+        const f = gl.createFramebuffer()!;
+        gl.bindFramebuffer(gl.FRAMEBUFFER, f);
+        if (couleur) {
+          if (rendu) gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.RENDERBUFFER, couleur as WebGLRenderbuffer);
+          else gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, couleur as WebGLTexture, 0);
+        }
+        if (prof) {
+          if (rendu) gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.RENDERBUFFER, prof as WebGLRenderbuffer);
+          else gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.TEXTURE_2D, prof as WebGLTexture, 0);
+        }
+        if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) !== gl.FRAMEBUFFER_COMPLETE) throw new Error("cible");
+        return f;
+      };
+      const couleurRb = rb(gl.RGBA8);
+      const profRb = rb(gl.DEPTH_COMPONENT24);
+      const msaa = fbo(couleurRb, profRb, true);
+      const couleur = tex(gl.RGBA8, gl.RGBA, gl.UNSIGNED_BYTE, l, h, true);
+      const prof = tex(gl.DEPTH_COMPONENT24, gl.DEPTH_COMPONENT, gl.UNSIGNED_INT, l, h, false);
+      const resolu = fbo(couleur, prof, false);
+      const aoTex = tex(gl.R8, gl.RED, gl.UNSIGNED_BYTE, Math.max(1, l >> 1), Math.max(1, h >> 1), true);
+      const ao = fbo(aoTex, null, false);
+      const acc = [0, 1].map(() => {
+        const t = flottant ? tex(gl.RGBA16F, gl.RGBA, gl.HALF_FLOAT, l, h, false) : tex(gl.RGBA8, gl.RGBA, gl.UNSIGNED_BYTE, l, h, false);
+        return { fbo: fbo(t, null, false), tex: t };
+      });
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      gl.bindRenderbuffer(gl.RENDERBUFFER, null);
+      gl.bindTexture(gl.TEXTURE_2D, null);
+      this.studio = { l, h, echantillons, msaa, tampons: [couleurRb, profRb], resolu, couleur, prof, ao, aoTex, acc };
+      this.accN = 0;
+      return this.studio;
+    } catch {
+      this.liberer();
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      this.studioRefuse = true;
+      return null;
+    }
+  }
+
+  private liberer() {
+    const gl = this.gl;
+    const c = this.studio;
+    if (!c) return;
+    for (const f of [c.msaa, c.resolu, c.ao, ...c.acc.map((a) => a.fbo)]) gl.deleteFramebuffer(f);
+    for (const t of [c.couleur, c.prof, c.aoTex, ...c.acc.map((a) => a.tex)]) gl.deleteTexture(t);
+    for (const r of c.tampons) gl.deleteRenderbuffer(r);
+    this.studio = null;
   }
 
   /** La structure sous le point (pixels de l'image), ou -1. */
@@ -1090,6 +1464,7 @@ export class RenduReel {
   /** Libère les tampons (la toile et son contexte partent avec l'élément). */
   detruire() {
     const gl = this.gl;
+    this.liberer();
     for (const g of this.groupes.values()) {
       gl.deleteVertexArray(g.vao);
       for (const t of g.tampons) gl.deleteBuffer(t);

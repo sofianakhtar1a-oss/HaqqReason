@@ -382,13 +382,15 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     const oeil: V3 = plus(c.cible, [c.dist * Math.cos(c.pitch) * Math.sin(c.yaw), c.dist * Math.sin(c.pitch), c.dist * Math.cos(c.pitch) * Math.cos(c.yaw)]);
     const vue = regarder(oeil, c.cible);
     const proj = perspective(FOV, largeur / Math.max(1, hauteur), 0.02, 30);
-    m.camera = { vue, proj, oeil, yaw: c.yaw };
-    m.r.dessiner(m.camera, t / 1000);
+    m.camera = { vue, proj, oeil, yaw: c.yaw, focale: c.dist };
+    m.r.dessiner(m.camera, t / 1000, { fige: !bouge && !m.pulses });
     placerEtiquette();
     if (bouge || m.pulses || m.besoin) {
       m.besoin = false;
       if (bouge || m.pulses) m.image = requestAnimationFrame(boucle);
     }
+    // Tout est immobile, mais l'image s'affine encore (le studio accumule) : une image de plus.
+    if (!m.image && m.r.affiner()) m.image = requestAnimationFrame(boucle);
     // Tout est immobile : si la rotation tranquille est permise, un réveil la lancera au bon moment.
     if (!m.image && props.rotation && !m.calmes && !m.reveil) {
       const attente = Math.max(50, 5000 - (performance.now() - m.dernierGeste) + 30);
@@ -720,6 +722,10 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       const dpr = Math.min(window.devicePixelRatio || 1, plafond);
       r.reglages.ombres = q < 2;
       r.reglages.tailleOmbre = q === 0 ? 2048 : 1024;
+      // Le studio (occlusion d'écran, accumulation, profondeur de champ en gros plan) tant que l'appareil suit.
+      r.reglages.studio = q < 2;
+      r.reglages.occlusion = q === 0 ? 0.6 : 0.45;
+      r.reglages.ouverture = q === 0 ? 0.0022 : 0;
       r.redimensionner(Math.max(1, Math.round(rect.width * dpr)), Math.max(1, Math.round(rect.height * dpr)));
       reveiller();
     };
