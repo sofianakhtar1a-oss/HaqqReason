@@ -174,7 +174,8 @@ function Categorie({ stage, categorie, nav }: { stage: Stage; categorie: Categor
   useEffect(() => {
     if (!niv) return;
     const ids = categorie === "corps" ? niv.nouveaux.filter((id) => (PAR_ID.get(id)?.rang ?? 9) <= 1).slice(0, 30) : niv.nouveaux;
-    stage.regler({ couches: couchesDe(categorie), decouvrir: categorie === "muscles" || categorie === "tendons" ? ids : null, profondeur: 0, etats: enLumiere(ids, TEINTE.laiton, false), isoler: null, rotation: false, etiquette: null, retrait: false });
+    // Les structures de la planche ressortent ; le reste du corps passe en transparence.
+    stage.regler({ couches: couchesDe(categorie), decouvrir: categorie === "muscles" || categorie === "tendons" ? ids : null, profondeur: 0, etats: enLumiere(ids, TEINTE.laiton, false), isoler: null, voiler: { ids, reste: 0.35 }, rotation: false, etiquette: null, retrait: false });
     stage.surChoix((s) => {
       if (s) nav.aller(`explorer/${s.element}`);
     });

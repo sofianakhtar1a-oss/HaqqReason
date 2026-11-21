@@ -1,8 +1,9 @@
 "use client";
 
-import { GraduationCap, Layers, Rotate3d, Settings, Trophy, Volume2, VolumeX } from "lucide-react";
+import { GraduationCap, Layers, Moon, Rotate3d, Settings, Sun, Trophy, Volume2, VolumeX } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
+import { basculerTheme } from "@/components/BoutonTheme";
 import { Logo } from "@/components/Logo";
 import { useAppareil } from "@/lib/corps/appareil";
 import type { CategorieId } from "@/lib/corps/niveaux";
@@ -54,6 +55,8 @@ export type EtatScene = {
   profondeur: number;
   etats: Record<string, EtatStructure>;
   isoler: string[] | null;
+  /** Les structures mises en avant : les autres passent en transparence (sans disparaître). */
+  voiler: { ids: string[]; reste?: number } | null;
   rotation: boolean;
   etiquette: { id: string; texte: string; sous?: string } | null;
   /** Le corps en retrait (derrière un écran de lecture). */
@@ -65,9 +68,9 @@ export type EtatScene = {
   vivant: { coeur?: boolean; souffle?: boolean } | null;
 };
 
-const SCENE_DEFAUT: EtatScene = { couches: COUCHES_DEFAUT, calques: {}, attaches: null, decouvrir: null, profondeur: 0, etats: {}, isoler: null, rotation: true, etiquette: null, retrait: false, coupe: null, eclate: 0, scalpel: false, vivant: null };
+const SCENE_DEFAUT: EtatScene = { couches: COUCHES_DEFAUT, calques: {}, attaches: null, decouvrir: null, profondeur: 0, etats: {}, isoler: null, voiler: null, rotation: true, etiquette: null, retrait: false, coupe: null, eclate: 0, scalpel: false, vivant: null };
 /** Ce qu'un écran qui ne le demande pas retrouve éteint. */
-const PASSAGERS: Partial<EtatScene> = { calques: {}, attaches: null, decouvrir: null, coupe: null, eclate: 0, scalpel: false, vivant: null };
+const PASSAGERS: Partial<EtatScene> = { calques: {}, attaches: null, decouvrir: null, voiler: null, coupe: null, eclate: 0, scalpel: false, vivant: null };
 
 export type Stage = {
   scene: Scene | null;
@@ -247,6 +250,10 @@ export function Ecorche() {
           <button type="button" className="ec-icone" onClick={() => regler({ son: !p.son })} aria-label={p.son ? "Couper le son" : "Remettre le son"} aria-pressed={!p.son}>
             {p.son ? <Volume2 size={18} aria-hidden="true" /> : <VolumeX size={18} aria-hidden="true" />}
           </button>
+          <button type="button" className="ec-icone" onClick={basculerTheme} aria-label="Changer de thème (clair ou sombre)">
+            <Sun size={18} className="ec-theme-soleil" aria-hidden="true" />
+            <Moon size={18} className="ec-theme-lune" aria-hidden="true" />
+          </button>
           <button type="button" className="ec-icone" onClick={() => setReglages(true)} aria-label="Réglages">
             <Settings size={18} aria-hidden="true" />
           </button>
@@ -268,6 +275,7 @@ export function Ecorche() {
             profondeur={vue.profondeur}
             etats={vue.etats}
             isoler={vue.isoler}
+            voiler={vue.voiler}
             rotation={vue.rotation && p.rotation}
             etiquette={vue.etiquette}
             onChoisir={(s) => choix.current?.(s)}

@@ -55,7 +55,8 @@ export function Fiches({ stage, nav }: { stage: Stage; nav: Navigation }) {
       return;
     }
     const { couches, calques, profondeur, decouvrir } = miseEnScene(el);
-    stage.regler({ couches, calques, profondeur, decouvrir, etats: { [el.id]: { teinte: retournee ? TEINTE.juste : TEINTE.laiton, pulse: !retournee } }, isoler: null, rotation: false, etiquette: retournee ? { id: el.id, texte: el.nom } : null, retrait: false });
+    // La structure de la fiche ressort, liserée ; le reste du corps passe en transparence, sans disparaître.
+    stage.regler({ couches, calques, profondeur, decouvrir, etats: { [el.id]: { teinte: retournee ? TEINTE.juste : TEINTE.laiton, pulse: !retournee, choisi: true } }, isoler: null, voiler: { ids: [el.id] }, rotation: false, etiquette: retournee ? { id: el.id, texte: el.nom } : null, retrait: false });
     stage.poignee.current?.viser([el.id], { marge: 1.6 });
   }, [el, retournee, stage]);
 

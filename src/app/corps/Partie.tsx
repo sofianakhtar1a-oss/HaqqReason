@@ -292,7 +292,8 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
           if (errone && !ids.includes(errone)) etats[errone] = { teinte: TEINTE.faux, pulse: false };
           const scene = miseEnSceneDe(ids);
           const enfoui = ids.some((x) => ["viscere", "encephale"].includes(PAR_ID.get(x)?.couche ?? ""));
-          stage.regler({ ...scene, etats, isoler: enfoui ? Object.keys(etats) : null, rotation: false, etiquette: { id: question.cible, texte: cible.nom }, retrait: false, vivant: question.apres?.pouls ? { coeur: true } : null });
+          if (etats[question.cible]) etats[question.cible] = { ...etats[question.cible], choisi: true };
+          stage.regler({ ...scene, etats, isoler: enfoui ? Object.keys(etats) : null, voiler: { ids: Object.keys(etats) }, rotation: false, etiquette: { id: question.cible, texte: cible.nom }, retrait: false, vivant: question.apres?.pouls ? { coeur: true } : null });
           cam?.viser(ids, { marge: ids.length > 2 ? 1.5 : question.apres?.jouer ? 3 : 1.9, cote: question.apres?.jouer ? "g" : undefined });
           const jouer = question.apres?.jouer;
           if (jouer && !calme) cam?.jouer(programmeDe(jouer.muscle, jouer.actions, "g", { toutes: true }));
@@ -302,7 +303,7 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
         if (question.geste) {
           const m = question.geste.muscle;
           const scene = miseEnScene(PAR_ID.get(m)!);
-          stage.regler({ ...scene, etats: question.geste.contracter ? { [m]: { teinte: TEINTE.laiton, pulse: true } } : {}, isoler: null, rotation: false, etiquette: null, retrait: false });
+          stage.regler({ ...scene, etats: question.geste.contracter ? { [m]: { teinte: TEINTE.laiton, pulse: true, choisi: true } } : {}, isoler: null, voiler: question.geste.contracter ? { ids: [m], reste: 0.4 } : null, rotation: false, etiquette: null, retrait: false });
           cam?.viser([m], { marge: 3.2, cote: "g" });
           const programme: Etape[] = programmeDe(m, [question.geste.action], "g", { toutes: true });
           const sansMuscle = question.geste.contracter ? programme : programme.map((x) => ({ ...x, actifs: {} }));
@@ -312,7 +313,7 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
           return;
         }
         if (question.reponse === "geste") {
-          stage.regler({ ...miseEnScene(cible), etats: { [cible.id]: { teinte: TEINTE.laiton, pulse: true } }, isoler: null, rotation: false, etiquette: null, retrait: false });
+          stage.regler({ ...miseEnScene(cible), etats: { [cible.id]: { teinte: TEINTE.laiton, pulse: true, choisi: true } }, isoler: null, voiler: { ids: [cible.id], reste: 0.4 }, rotation: false, etiquette: null, retrait: false });
           cam?.viser([cible.id], { marge: 3.4, cote: "g" });
           return;
         }
@@ -321,7 +322,7 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
           const etats: Record<string, EtatStructure> = {};
           if (question.reponse === "suite") for (const x of ids.slice(0, trouves)) etats[x] = { teinte: TEINTE.juste, pulse: false };
           if (question.reponse === "ordre" && question.montrer) etats[question.cible] = { teinte: TEINTE.laiton, pulse: true };
-          stage.regler({ ...miseEnSceneDe(ids.length ? ids : [question.cible]), etats, isoler: null, rotation: false, etiquette: null, retrait: false });
+          stage.regler({ ...miseEnSceneDe(ids.length ? ids : [question.cible]), etats, isoler: null, voiler: question.reponse === "ordre" && Object.keys(etats).length ? { ids: Object.keys(etats) } : null, rotation: false, etiquette: null, retrait: false });
           if (!trouves) cam?.viser(ids.length ? ids : [question.cible], { marge: 1.25, depuis: ids[ids.length - 1] ?? question.cible });
           return;
         }
@@ -335,7 +336,7 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
           );
           return;
         }
-        stage.regler({ ...(question.montrer ? miseEnScene(cible) : { couches: COUCHES_DEFAUT, calques: {}, profondeur: 0, decouvrir: null }), etats: question.montrer ? { [cible.id]: { teinte: TEINTE.laiton, pulse: true } } : {}, isoler: null, rotation: false, etiquette: null, retrait: false });
+        stage.regler({ ...(question.montrer ? miseEnScene(cible) : { couches: COUCHES_DEFAUT, calques: {}, profondeur: 0, decouvrir: null }), etats: question.montrer ? { [cible.id]: { teinte: TEINTE.laiton, pulse: true, choisi: true } } : {}, isoler: null, voiler: question.montrer ? { ids: [cible.id] } : null, rotation: false, etiquette: null, retrait: false });
         if (question.montrer) cam?.viser([cible.id], { marge: 1.8 });
         else cam?.vue("ensemble");
         return;
@@ -350,11 +351,10 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
       const enfoui = e.couche === "viscere" || e.couche === "encephale";
       const etats: Record<string, EtatStructure> = {};
       if (!apres) {
-        if (question.montrer) etats[question.cible] = { teinte: TEINTE.laiton, pulse: true };
+        if (question.montrer) etats[question.cible] = { teinte: TEINTE.laiton, pulse: true, choisi: true };
       } else {
         if (question.montrer && question.cible !== montre) etats[question.cible] = { teinte: TEINTE.voisin, pulse: false };
-        etats[montre] = { teinte: apres.verdict === "faux" ? TEINTE.faux : TEINTE.juste, pulse: apres.verdict !== "faux" };
-        if (apres.verdict === "faux") etats[montre] = { teinte: TEINTE.juste, pulse: true };
+        etats[montre] = { teinte: TEINTE.juste, pulse: true, choisi: true };
         const errone = apres.touche ?? (apres.choisi && PAR_ID.has(apres.choisi) ? apres.choisi : null);
         if (errone && errone !== montre) etats[errone] = { teinte: TEINTE.faux, pulse: false };
       }
@@ -366,6 +366,8 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
         decouvrir: voirTout || question.montrer || apres ? decouvrir : null,
         etats,
         isoler: enfoui && (question.montrer || apres) ? Object.keys(etats) : null,
+        // Ce qu'on désigne (ou la réponse) ressort ; le reste passe en transparence. Jamais quand il faut chercher.
+        voiler: (question.montrer || apres) && Object.keys(etats).length ? { ids: Object.keys(etats) } : null,
         rotation: false,
         etiquette: apres ? { id: montre, texte: PAR_ID.get(montre)?.nom ?? "" } : null,
         retrait: false,

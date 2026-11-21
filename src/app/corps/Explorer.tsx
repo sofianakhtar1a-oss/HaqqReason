@@ -189,9 +189,9 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
     if (atelier.coeur) c = { ...c, artere: c.artere || 1, viscere: c.viscere || 1 };
     if (atelier.souffle) c = { ...c, viscere: c.viscere || 1 };
     if (atelier.coeur || atelier.souffle) c = { ...c, muscle: c.muscle ? 0.16 : 0, tendon: c.tendon ? 0.2 : 0 };
-    // Une structure profonde (vaisseau, nerf, viscère, ligament…) se voit à travers la chair, qui devient translucide ;
-    // l'encéphale, à travers le crâne.
-    if (choisi && !["muscle", "tendon", "os"].includes(choisi.couche)) {
+    // Une structure profonde (os, vaisseau, nerf, viscère, ligament…) se voit à travers la chair, qui devient
+    // translucide ; l'encéphale, à travers le crâne.
+    if (choisi && !["muscle", "tendon"].includes(choisi.couche)) {
       c = { ...c, muscle: c.muscle ? Math.min(c.muscle, 0.24) : 0, tendon: c.tendon ? Math.min(c.tendon, 0.36) : 0 };
       if (choisi.couche === "encephale") c = { ...c, os: c.os ? Math.min(c.os, 0.26) : 0 };
     }
@@ -211,6 +211,9 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
       profondeur: profondeurVue,
       etats,
       isoler: isole && choisi ? [choisi.id, ...liees(choisi).map((x) => x.id)] : null,
+      // La structure choisie ressort : le reste du corps passe en demi-transparence (sauf quand un outil, la mémoire,
+      // les attaches ou l'isolement règlent déjà ce qu'on voit).
+      voiler: choisi && !isole && !memoire && !voirAttaches && !atelier.coupe && !atelier.scalpel && !atelier.eclate && !atelier.coeur && !atelier.souffle ? { ids: [choisi.id], reste: 0.35 } : null,
       rotation: !choisi,
       etiquette: survole
         ? { id: survole.element, texte: PAR_ID.get(survole.element)?.nom ?? "" }
@@ -223,7 +226,7 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
       scalpel: atelier.scalpel,
       vivant: atelier.coeur || atelier.souffle ? { coeur: atelier.coeur, souffle: atelier.souffle } : null,
     });
-  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, choisi, survole, geste, atelier.coupe, atelier.eclate, atelier.scalpel, atelier.coeur, atelier.souffle]);
+  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, memoire, choisi, survole, geste, atelier.coupe, atelier.eclate, atelier.scalpel, atelier.coeur, atelier.souffle]);
 
   useEffect(() => {
     stage.surChoix((s) => {

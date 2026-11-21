@@ -1,23 +1,39 @@
 /*
- * L'Écorché — la direction artistique : un cabinet d'anatomie, la nuit.
- * Le corps repose sur un socle de laiton, dans une vitrine vert-de-gris très sombre ; à côté, le registre
- * du préparateur : des planches numérotées en chiffres romains, des cartels comme ceux d'un musée,
- * le Garamond des grands atlas (et son italique pour le latin), une écriture sans empattement pour l'outil.
+ * L'Écorché — la direction artistique : un cabinet d'anatomie aux couleurs de HaqqReason.
+ * Comme les autres modules, il suit le thème du site : la nuit lapis-lazuli (sombre) ou le papier (clair), avec
+ * la feuille d'or pour accent. À côté du corps, le registre du préparateur : des planches numérotées en chiffres
+ * romains, des cartels comme ceux d'un musée, le Garamond des grands atlas (et son italique pour le latin),
+ * une écriture sans empattement pour l'outil.
  */
 
 .ec-racine {
-  --ec-nuit: #091211;
-  --ec-nuit-2: #0e1b19;
-  --ec-panneau: #0c1716;
-  --ec-filet: rgb(214 168 90 / 0.2);
-  --ec-filet-fort: rgb(214 168 90 / 0.45);
-  --ec-ivoire: #ece3cf;
-  --ec-sepia: #a9a491;
-  --ec-pale: #7d8a84;
-  --ec-laiton: #d6a85a;
-  --ec-laiton-clair: #f0cf8c;
+  --ec-nuit: #0b1233;
+  --ec-nuit-2: #111b4a;
+  --ec-panneau: #0e1742;
+  /* les couleurs en composantes, pour les voiles : rgb(var(--ec-…-rgb) / 0.1) */
+  --ec-nuit-rgb: 11 18 51;
+  --ec-voile-rgb: 255 255 255;
+  --ec-ombre-rgb: 2 5 22;
+  --ec-laiton-rgb: 233 190 106;
+  --ec-carmin-rgb: 224 88 92;
+  --ec-vert-rgb: 102 199 155;
+  --ec-filet: rgb(var(--ec-laiton-rgb) / 0.2);
+  --ec-filet-fort: rgb(var(--ec-laiton-rgb) / 0.45);
+  --ec-ivoire: #f4efe1;
+  --ec-sepia: #b9bbd3;
+  --ec-pale: #8d93b8;
+  --ec-laiton: #e9be6a;
+  --ec-laiton-clair: #f5d699;
+  --ec-sur-laiton: #1b1307;
   --ec-carmin: #e0585c;
   --ec-vert: #66c79b;
+  --ec-azur: #9fd2ef;
+  --ec-texte-vert: #c7f2db;
+  --ec-texte-rouge: #ffd2d2;
+  --ec-texte-jaune: #e8d98f;
+  --ec-fond:
+    radial-gradient(70rem 48rem at 72% 46%, #1e2f78 0%, rgb(26 40 108 / 0.55) 38%, transparent 70%),
+    linear-gradient(180deg, #111b4c 0%, #0a1030 100%);
   --ec-serif: "EB Garamond", "Crimson Pro", Georgia, serif;
   --ec-sans: "Instrument Sans Variable", "Instrument Sans", system-ui, sans-serif;
   --ec-tete: 3.5rem;
@@ -31,11 +47,38 @@
   font-family: var(--ec-sans);
   font-size: 0.97rem;
   line-height: 1.5;
-  background:
-    radial-gradient(70rem 48rem at 72% 46%, #173531 0%, rgb(16 34 32 / 0.6) 38%, transparent 70%),
-    linear-gradient(180deg, #0b1716 0%, #070e0d 100%);
+  background: var(--ec-fond);
   overflow: hidden;
   isolation: isolate;
+}
+/* Le thème clair : le papier et l'encre bleu nuit, l'or plus soutenu pour rester lisible. */
+[data-theme="light"] .ec-racine {
+  --ec-nuit: #edf0fb;
+  --ec-nuit-2: #ffffff;
+  --ec-panneau: #ffffff;
+  --ec-nuit-rgb: 255 255 255;
+  --ec-voile-rgb: 13 22 64;
+  --ec-ombre-rgb: 30 42 100;
+  --ec-laiton-rgb: 138 94 6;
+  --ec-carmin-rgb: 179 38 30;
+  --ec-vert-rgb: 10 115 85;
+  --ec-filet: rgb(13 22 64 / 0.13);
+  --ec-filet-fort: rgb(138 94 6 / 0.5);
+  --ec-ivoire: #0d1640;
+  --ec-sepia: #4a5380;
+  --ec-pale: #646d94;
+  --ec-laiton: #8a5e06;
+  --ec-laiton-clair: #a26d00;
+  --ec-sur-laiton: #ffffff;
+  --ec-carmin: #b3261e;
+  --ec-vert: #0a7355;
+  --ec-azur: #0b5f8c;
+  --ec-texte-vert: #0a5c44;
+  --ec-texte-rouge: #8c1d18;
+  --ec-texte-jaune: #6d5400;
+  --ec-fond:
+    radial-gradient(70rem 48rem at 72% 46%, #ffffff 0%, rgb(255 255 255 / 0.75) 40%, transparent 72%),
+    linear-gradient(180deg, #f3f5fd 0%, #e2e7f6 100%);
 }
 :root.ec-taille-115 .ec-racine {
   font-size: 1.1rem;
@@ -44,10 +87,16 @@
   font-size: 1.24rem;
 }
 :root.ec-contraste .ec-racine {
-  --ec-sepia: #d8d2bf;
-  --ec-pale: #b8c2bd;
-  --ec-filet: rgb(240 207 140 / 0.45);
-  --ec-panneau: #050b0a;
+  --ec-sepia: #dcdcec;
+  --ec-pale: #c1c5de;
+  --ec-filet: rgb(245 214 153 / 0.45);
+  --ec-panneau: #060a20;
+}
+:root.ec-contraste[data-theme="light"] .ec-racine {
+  --ec-sepia: #222a55;
+  --ec-pale: #333c66;
+  --ec-filet: rgb(13 22 64 / 0.4);
+  --ec-panneau: #ffffff;
 }
 
 .ec-racine :focus-visible {
@@ -67,7 +116,7 @@
   gap: 0.9rem;
   padding: 0 1rem;
   border-bottom: 1px solid var(--ec-filet);
-  background: rgb(7 13 12 / 0.7);
+  background: rgb(var(--ec-nuit-rgb) / 0.7);
   backdrop-filter: blur(10px);
   z-index: 5;
 }
@@ -115,11 +164,11 @@
 }
 .ec-onglet:hover {
   color: var(--ec-ivoire);
-  background: rgb(255 255 255 / 0.04);
+  background: rgb(var(--ec-voile-rgb) / 0.04);
 }
 .ec-onglet[aria-current="page"] {
   color: var(--ec-laiton-clair);
-  background: rgb(214 168 90 / 0.1);
+  background: rgb(var(--ec-laiton-rgb) / 0.1);
 }
 .ec-tete-actions {
   margin-left: auto;
@@ -173,9 +222,9 @@
   overscroll-behavior: contain;
   padding: 1.6rem 1.6rem 3rem;
   border-right: 1px solid var(--ec-filet);
-  background: linear-gradient(90deg, rgb(9 18 17 / 0.96), rgb(9 18 17 / 0.88));
+  background: linear-gradient(90deg, rgb(var(--ec-nuit-rgb) / 0.96), rgb(var(--ec-nuit-rgb) / 0.88));
   scrollbar-width: thin;
-  scrollbar-color: rgb(214 168 90 / 0.3) transparent;
+  scrollbar-color: rgb(var(--ec-laiton-rgb) / 0.3) transparent;
 }
 .ec-panneau > * {
   animation: ec-entree 0.28s ease both;
@@ -201,7 +250,7 @@
   outline: none;
 }
 .ecorche-toile:focus-visible {
-  box-shadow: inset 0 0 0 2px rgb(240 207 140 / 0.5);
+  box-shadow: inset 0 0 0 2px rgb(var(--ec-laiton-rgb) / 0.5);
 }
 .ecorche-etiquette {
   position: absolute;
@@ -221,7 +270,7 @@
   height: 8px;
   border-radius: 50%;
   background: var(--ec-laiton-clair);
-  box-shadow: 0 0 0 4px rgb(214 168 90 / 0.25);
+  box-shadow: 0 0 0 4px rgb(var(--ec-laiton-rgb) / 0.25);
 }
 .ecorche-etiquette::after {
   content: "";
@@ -242,10 +291,10 @@
   display: grid;
   padding: 0.25rem 0.7rem 0.3rem;
   white-space: nowrap;
-  background: rgb(7 13 12 / 0.88);
+  background: rgb(var(--ec-nuit-rgb) / 0.88);
   border: 1px solid var(--ec-filet-fort);
   border-radius: 4px;
-  box-shadow: 0 8px 24px rgb(0 0 0 / 0.35);
+  box-shadow: 0 8px 24px rgb(var(--ec-ombre-rgb) / 0.35);
 }
 .ecorche-etiquette[data-gauche="true"] > span {
   left: auto;
@@ -297,7 +346,7 @@
 .ec-chargement-barre {
   width: min(16rem, 60vw);
   height: 2px;
-  background: rgb(214 168 90 / 0.18);
+  background: rgb(var(--ec-laiton-rgb) / 0.18);
   overflow: hidden;
 }
 .ec-chargement-barre > span {
@@ -376,7 +425,7 @@
   color: var(--ec-laiton-clair);
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color: rgb(214 168 90 / 0.4);
+  text-decoration-color: rgb(var(--ec-laiton-rgb) / 0.4);
   text-underline-offset: 3px;
 }
 .ec-pastille {
@@ -389,7 +438,7 @@
 }
 .ec-pastille.est-or {
   background: var(--ec-laiton);
-  color: #1b1307;
+  color: var(--ec-sur-laiton);
   border-color: transparent;
 }
 
@@ -403,7 +452,7 @@
   padding: 0.55rem 0.95rem;
   border-radius: 8px;
   border: 1px solid var(--ec-filet);
-  background: rgb(255 255 255 / 0.03);
+  background: rgb(var(--ec-voile-rgb) / 0.03);
   color: var(--ec-ivoire);
   cursor: pointer;
   font-size: 0.9rem;
@@ -414,7 +463,7 @@
 }
 .ec-bouton:hover:not(:disabled) {
   border-color: var(--ec-filet-fort);
-  background: rgb(214 168 90 / 0.08);
+  background: rgb(var(--ec-laiton-rgb) / 0.08);
 }
 .ec-bouton:active:not(:disabled) {
   transform: translateY(1px);
@@ -426,7 +475,7 @@
 .ec-bouton.est-plein {
   background: var(--ec-laiton);
   border-color: var(--ec-laiton);
-  color: #1b1307;
+  color: var(--ec-sur-laiton);
   font-weight: 600;
 }
 .ec-bouton.est-plein:hover:not(:disabled) {
@@ -449,14 +498,14 @@
 }
 .ec-bouton.est-discret:hover:not(:disabled) {
   color: var(--ec-ivoire);
-  background: rgb(255 255 255 / 0.04);
+  background: rgb(var(--ec-voile-rgb) / 0.04);
 }
 .ec-bouton.est-juste {
-  border-color: rgb(102 199 155 / 0.6);
+  border-color: rgb(var(--ec-vert-rgb) / 0.6);
   color: var(--ec-vert);
 }
 .ec-bouton.est-faux {
-  border-color: rgb(224 88 92 / 0.55);
+  border-color: rgb(var(--ec-carmin-rgb) / 0.55);
   color: var(--ec-carmin);
 }
 .ec-bouton[aria-pressed="true"] {
@@ -482,7 +531,7 @@
   border-color: var(--ec-laiton);
 }
 .ec-puce[data-couche="muscle"] {
-  border-color: rgb(224 88 92 / 0.35);
+  border-color: rgb(var(--ec-carmin-rgb) / 0.35);
 }
 .ec-puce[data-couche="artere"] {
   border-color: rgb(235 70 70 / 0.5);
@@ -550,7 +599,7 @@
   color: #f08a4b;
 }
 .ec-gels svg {
-  color: #9fd2ef;
+  color: var(--ec-azur);
 }
 .ec-anneau {
   position: relative;
@@ -569,7 +618,7 @@
   stroke-width: 3;
 }
 .ec-anneau-fond {
-  stroke: rgb(214 168 90 / 0.16);
+  stroke: rgb(var(--ec-laiton-rgb) / 0.16);
 }
 .ec-anneau-plein {
   stroke: var(--ec-laiton);
@@ -590,7 +639,7 @@
   display: block;
   height: 3px;
   border-radius: 2px;
-  background: rgb(214 168 90 / 0.14);
+  background: rgb(var(--ec-laiton-rgb) / 0.14);
   overflow: hidden;
 }
 .ec-jauge.fine {
@@ -632,7 +681,7 @@
 }
 .ec-registre-ligne:hover,
 .ec-tableau-couches a:hover {
-  background: linear-gradient(90deg, rgb(214 168 90 / 0.08), transparent 80%);
+  background: linear-gradient(90deg, rgb(var(--ec-laiton-rgb) / 0.08), transparent 80%);
 }
 .ec-registre-nom {
   font-family: var(--ec-serif);
@@ -667,7 +716,7 @@
   padding: 0.9rem;
   border-radius: 10px;
   border: 1px solid var(--ec-filet);
-  background: rgb(255 255 255 / 0.02);
+  background: rgb(var(--ec-voile-rgb) / 0.02);
   cursor: pointer;
   transition:
     border-color 0.2s,
@@ -675,7 +724,7 @@
 }
 .ec-rapide:hover {
   border-color: var(--ec-filet-fort);
-  background: rgb(214 168 90 / 0.06);
+  background: rgb(var(--ec-laiton-rgb) / 0.06);
 }
 .ec-rapide svg {
   color: var(--ec-laiton);
@@ -712,10 +761,10 @@
   transition: background-color 0.2s;
 }
 .ec-planche:hover {
-  background: rgb(214 168 90 / 0.05);
+  background: rgb(var(--ec-laiton-rgb) / 0.05);
 }
 .ec-planche[aria-pressed="true"] {
-  background: linear-gradient(90deg, rgb(214 168 90 / 0.14), transparent);
+  background: linear-gradient(90deg, rgb(var(--ec-laiton-rgb) / 0.14), transparent);
 }
 .ec-planche[data-ouverte="false"] {
   color: var(--ec-pale);
@@ -745,7 +794,7 @@
 .ec-etoiles {
   display: inline-flex;
   gap: 2px;
-  color: rgb(214 168 90 / 0.3);
+  color: rgb(var(--ec-laiton-rgb) / 0.3);
 }
 .ec-etoiles .est-pleine {
   color: var(--ec-laiton-clair);
@@ -787,7 +836,7 @@
 .ec-coeurs {
   display: inline-flex;
   gap: 3px;
-  color: rgb(224 88 92 / 0.28);
+  color: rgb(var(--ec-carmin-rgb) / 0.28);
 }
 .ec-coeurs .est-pleine {
   color: var(--ec-carmin);
@@ -804,7 +853,7 @@
   display: block;
   height: 2px;
   margin: 0.9rem 0 0;
-  background: rgb(214 168 90 / 0.14);
+  background: rgb(var(--ec-laiton-rgb) / 0.14);
 }
 .ec-progression > span {
   display: block;
@@ -841,7 +890,7 @@
   margin: 0.9rem 0 0;
   padding: 0.75rem 0.9rem;
   border-left: 2px solid var(--ec-laiton);
-  background: rgb(214 168 90 / 0.06);
+  background: rgb(var(--ec-laiton-rgb) / 0.06);
   font-family: var(--ec-serif);
   font-size: 1.15rem;
   line-height: 1.4;
@@ -866,7 +915,7 @@
   padding: 0.75rem 0.85rem;
   border-radius: 10px;
   border: 1px solid var(--ec-filet);
-  background: rgb(255 255 255 / 0.025);
+  background: rgb(var(--ec-voile-rgb) / 0.025);
   text-align: left;
   font-family: var(--ec-serif);
   font-size: 1.16rem;
@@ -879,7 +928,7 @@
 }
 .ec-option:hover:not(:disabled) {
   border-color: var(--ec-filet-fort);
-  background: rgb(214 168 90 / 0.07);
+  background: rgb(var(--ec-laiton-rgb) / 0.07);
 }
 .ec-option.est-latin {
   font-style: italic;
@@ -901,14 +950,14 @@
   flex: 1;
 }
 .ec-option[data-etat="juste"] {
-  border-color: rgb(102 199 155 / 0.8);
-  background: rgb(102 199 155 / 0.12);
-  color: #c7f2db;
+  border-color: rgb(var(--ec-vert-rgb) / 0.8);
+  background: rgb(var(--ec-vert-rgb) / 0.12);
+  color: var(--ec-texte-vert);
 }
 .ec-option[data-etat="faux"] {
-  border-color: rgb(224 88 92 / 0.8);
-  background: rgb(224 88 92 / 0.12);
-  color: #ffd2d2;
+  border-color: rgb(var(--ec-carmin-rgb) / 0.8);
+  background: rgb(var(--ec-carmin-rgb) / 0.12);
+  color: var(--ec-texte-rouge);
 }
 .ec-option[data-etat="neutre"] {
   opacity: 0.4;
@@ -1193,7 +1242,7 @@
   padding: 0.22rem 0.6rem;
   border: 1px solid var(--ec-filet-fort);
   border-radius: 0.3rem;
-  background: rgb(214 168 90 / 0.08);
+  background: rgb(var(--ec-laiton-rgb) / 0.08);
   color: var(--ec-ivoire);
   font-size: 0.8rem;
   cursor: pointer;
@@ -1212,7 +1261,7 @@
 }
 .ec-action[aria-pressed="true"] {
   border-color: var(--ec-laiton-clair);
-  background: rgb(214 168 90 / 0.22);
+  background: rgb(var(--ec-laiton-rgb) / 0.22);
 }
 .ec-fiche-racines {
   display: inline-flex;
@@ -1223,7 +1272,7 @@
   padding: 0.05rem 0.32rem;
   border-radius: 0.2rem;
   background: rgb(232 217 143 / 0.14);
-  color: #e8d98f;
+  color: var(--ec-texte-jaune);
   font-size: 0.72rem;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
@@ -1297,11 +1346,13 @@
   border-radius: 50%;
   background: currentColor;
   opacity: 0.4;
+  /* un liseré, pour que l'ivoire de l'os se voie aussi sur le papier */
+  box-shadow: 0 0 0 1px rgb(var(--ec-voile-rgb) / 0.25);
 }
 .ec-couche[aria-pressed="true"] {
   color: var(--ec-ivoire);
   border-color: var(--ec-filet-fort);
-  background: rgb(255 255 255 / 0.04);
+  background: rgb(var(--ec-voile-rgb) / 0.04);
 }
 .ec-couche[aria-pressed="true"] .ec-couche-pastille {
   opacity: 1;
@@ -1355,7 +1406,7 @@
   cursor: pointer;
 }
 .ec-segment button[aria-checked="true"] {
-  background: rgb(214 168 90 / 0.16);
+  background: rgb(var(--ec-laiton-rgb) / 0.16);
   color: var(--ec-laiton-clair);
 }
 .ec-bascules,
@@ -1380,7 +1431,7 @@
 .ec-bascule[aria-pressed="true"] {
   color: var(--ec-laiton-clair);
   border-color: var(--ec-laiton);
-  background: rgb(214 168 90 / 0.1);
+  background: rgb(var(--ec-laiton-rgb) / 0.1);
 }
 /* L'atelier : bouger, couper, éclater, ôter, faire battre et respirer. */
 .ec-atelier {
@@ -1404,7 +1455,7 @@
   padding: 0.75rem 0.8rem 0.85rem;
   border: 1px solid var(--ec-filet);
   border-radius: 10px;
-  background: rgb(214 168 90 / 0.035);
+  background: rgb(var(--ec-laiton-rgb) / 0.035);
 }
 .ec-atelier-ligne {
   display: flex;
@@ -1451,12 +1502,12 @@
   border-radius: 2px;
   background:
     linear-gradient(to right, transparent calc(var(--zero) - 1px), var(--ec-laiton) calc(var(--zero) - 1px), var(--ec-laiton) calc(var(--zero) + 1px), transparent calc(var(--zero) + 1px)) center / 100% 12px no-repeat,
-    rgb(214 168 90 / 0.22);
+    rgb(var(--ec-laiton-rgb) / 0.22);
 }
 .ec-curseur input[type="range"]::-moz-range-track {
   height: 4px;
   border-radius: 2px;
-  background: rgb(214 168 90 / 0.22);
+  background: rgb(var(--ec-laiton-rgb) / 0.22);
 }
 .ec-curseur input[type="range"]::-webkit-slider-thumb {
   appearance: none;
@@ -1519,8 +1570,8 @@
   padding: 0.3rem;
   border-radius: 10px;
   border: 1px solid var(--ec-filet-fort);
-  background: #0b1514;
-  box-shadow: 0 18px 40px rgb(0 0 0 / 0.5);
+  background: var(--ec-panneau);
+  box-shadow: 0 18px 40px rgb(var(--ec-ombre-rgb) / 0.5);
 }
 .ec-suggestions button {
   display: grid;
@@ -1533,7 +1584,7 @@
   cursor: pointer;
 }
 .ec-suggestions button:hover {
-  background: rgb(214 168 90 / 0.1);
+  background: rgb(var(--ec-laiton-rgb) / 0.1);
 }
 .ec-suggestions b {
   font-family: var(--ec-serif);
@@ -1737,12 +1788,12 @@
   padding: 0;
   border-radius: 14px;
   border: 1px solid var(--ec-filet-fort);
-  background: #0b1514;
+  background: var(--ec-panneau);
   color: var(--ec-ivoire);
-  box-shadow: 0 30px 80px rgb(0 0 0 / 0.6);
+  box-shadow: 0 30px 80px rgb(var(--ec-ombre-rgb) / 0.6);
 }
 .ec-dialogue::backdrop {
-  background: rgb(3 7 7 / 0.65);
+  background: rgb(var(--ec-ombre-rgb) / 0.65);
   backdrop-filter: blur(3px);
 }
 .ec-dialogue header {
@@ -1823,7 +1874,7 @@
   width: 2.4rem;
   height: 1.35rem;
   border-radius: 999px;
-  background: rgb(255 255 255 / 0.12);
+  background: rgb(var(--ec-voile-rgb) / 0.12);
   position: relative;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -1907,7 +1958,7 @@
     position: sticky;
     bottom: 0.8rem;
     z-index: 2;
-    box-shadow: 0 10px 28px rgb(0 0 0 / 0.5);
+    box-shadow: 0 10px 28px rgb(var(--ec-ombre-rgb) / 0.5);
   }
   .ec-hero-titre {
     font-size: 1.9rem;
@@ -1919,7 +1970,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border-top: 1px solid var(--ec-filet);
-    background: rgb(7 13 12 / 0.92);
+    background: rgb(var(--ec-nuit-rgb) / 0.92);
     padding-bottom: env(safe-area-inset-bottom);
   }
   .ec-onglets-bas .ec-onglet {
@@ -1979,16 +2030,16 @@
 }
 .ec-ordre-choisi li:not(.est-vide) {
   border-style: solid;
-  background: rgb(214 168 90 / 0.07);
+  background: rgb(var(--ec-laiton-rgb) / 0.07);
 }
 .ec-ordre-choisi li.est-vide {
   border-color: var(--ec-filet);
 }
 .ec-ordre-choisi li[data-etat="juste"] {
-  border-color: rgb(102 199 155 / 0.6);
+  border-color: rgb(var(--ec-vert-rgb) / 0.6);
 }
 .ec-ordre-choisi li[data-etat="faux"] {
-  border-color: rgb(224 88 92 / 0.6);
+  border-color: rgb(var(--ec-carmin-rgb) / 0.6);
 }
 .ec-ordre-rang {
   flex: none;
@@ -2033,7 +2084,7 @@
 .ec-certitude .ec-puce[aria-checked="true"] {
   border-color: var(--ec-laiton);
   color: var(--ec-laiton-clair);
-  background: rgb(214 168 90 / 0.12);
+  background: rgb(var(--ec-laiton-rgb) / 0.12);
 }
 
 /* Le bilan d'un examen, et la carte de maîtrise : une jauge par facette. */
@@ -2072,7 +2123,7 @@
   padding: 0.85rem 0.95rem;
   border-radius: 12px;
   border: 1px solid var(--ec-filet);
-  background: rgb(255 255 255 / 0.02);
+  background: rgb(var(--ec-voile-rgb) / 0.02);
 }
 .ec-carte-maitrise h3 {
   margin: 0;
@@ -2093,9 +2144,21 @@
   grid-area: 1 / 1;
 }
 .ec-jauge.est-double > .est-vue {
-  background: rgb(214 168 90 / 0.4);
+  background: rgb(var(--ec-laiton-rgb) / 0.4);
 }
 .ec-facette-chiffre small {
   font-size: 0.78em;
   color: var(--ec-pale);
+}
+
+/* ---------------------------------------------------------------- le thème (soleil ou lune, comme les autres modules) */
+
+.ec-theme-lune {
+  display: none;
+}
+[data-theme="light"] .ec-theme-lune {
+  display: block;
+}
+[data-theme="light"] .ec-theme-soleil {
+  display: none;
 }

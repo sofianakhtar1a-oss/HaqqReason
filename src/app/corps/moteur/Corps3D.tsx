@@ -61,6 +61,8 @@ type Props = {
   etats?: Record<string, EtatStructure>;
   /** N'afficher que ces éléments (les autres deviennent des fantômes). */
   isoler?: string[] | null;
+  /** Mettre ces éléments en avant : les autres restent visibles, mais passent en transparence (`reste` : leur opacité). */
+  voiler?: { ids: string[]; reste?: number } | null;
   /** Ôter ce qui couvre ces éléments, et rien d'autre : la dissection qu'il faut pour les voir. */
   decouvrir?: string[] | null;
   rotation?: boolean;
@@ -814,6 +816,10 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     const structures = m.scene.structures;
     const n = structures.length;
     const garde = isoler && isoler.length ? new Set(isoler.flatMap((id) => m.parElement.get(id) ?? [])) : null;
+    // La mise en avant : ce qu'on regarde reste plein, le reste devient un voile qu'on devine encore.
+    const voiler = props.voiler;
+    const avant = !garde && voiler && voiler.ids.length ? new Set(voiler.ids.flatMap((id) => m.parElement.get(id) ?? [])) : null;
+    const reste = voiler?.reste ?? 0.3;
     // Ce qu'il faut ôter pour voir les éléments à découvrir : les pièces qui les couvrent (pas celles qu'on veut voir).
     const voulues = new Set((decouvrir ?? []).flatMap((id) => m.parElement.get(id) ?? []).map((i) => structures[i].de ?? i));
     const otees = new Set<number>();
@@ -835,6 +841,7 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         const voile = PAR_ID.get(s.element)?.voile;
         if (voile && !((props.calques?.[voile] ?? 0) > 0)) v = 0;
         else if (garde && !garde.has(i)) v = Math.min(v, 0.1);
+        else if (avant && !avant.has(i)) v = Math.min(v, reste);
       }
       vis[i] = v;
     }
@@ -863,7 +870,7 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     m.pulses = pulses && !m.calmes;
     reveiller(900);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [props.scene, props.etats, props.profondeur, props.isoler, props.attaches, props.calques, props.decouvrir]);
+  }, [props.scene, props.etats, props.profondeur, props.isoler, props.voiler, props.attaches, props.calques, props.decouvrir]);
 
   // Les couches, la rotation, l'étiquette, l'aspect de la pièce : une image de plus.
   useEffect(() => {
