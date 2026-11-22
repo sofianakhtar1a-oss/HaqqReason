@@ -14,9 +14,10 @@ import { versDocument } from "../src/lib/alambic/transcription/exports";
 import { deplacer, dupliquer, entrelacer, estIntacte, insererBlanche, inverser, pagesDe, pivoter, placeBlanche, retirer } from "../src/lib/alambic/pages";
 import { MODULES, resoudre } from "../src/lib/modules/modules";
 import * as zipjs from "@zip.js/zip.js";
-import { imagesDesPages, versRgba } from "../src/lib/alambic/extraction";
+import { imagesDesPages, pagesAvecGrandeImage, versRgba } from "../src/lib/alambic/extraction";
+import { assainirReprises, pagesHorsArbre } from "../src/lib/alambic/reprises";
 import { lireEntree } from "../src/lib/alambic/navigateur/archives";
-import { boiteDe, chercher, couverture, decouverts, enPixels, ibanValide, luhnValide, memeBoite, MOTIFS, motifDeRecherche, texteDePage, type Morceau, type PageTexte } from "../src/lib/alambic/caviardage";
+import { ajusterIban, boiteDe, chercher, couverture, decouverts, enPixels, fenetresCarte, ibanValide, luhnValide, memeBoite, MOTIFS, motifDeRecherche, texteDePage, type Morceau, type PageTexte } from "../src/lib/alambic/caviardage";
 
 // Les modules du projet chargent pdf-lib en CommonJS : on prend le même exemplaire (sinon ses classes diffèrent).
 const { degrees, PDFDocument, PDFHexString, PDFName, StandardFonts } = createRequire(import.meta.url)("@cantoo/pdf-lib") as typeof import("@cantoo/pdf-lib");
@@ -255,7 +256,7 @@ const iban = chercher([releve], "iban");
 ok("masquer : l'IBAN est trouvé en entier", iban.length === 1 && iban[0].texte === "FR76 3000 6000 0112 3456 7890 189", iban);
 ok("masquer : téléphone, e-mail, sécurité sociale", chercher([releve], "telephone")[0]?.texte === "06 12 34 56 78" && chercher([releve], "courriel")[0]?.texte === "jean.dupont@exemple.fr" && chercher([releve], "secu")[0]?.texte === "1 85 05 78 006 084 36");
 const cartes = chercher([releve], "carte");
-ok("masquer : seule une vraie carte bancaire est retenue", cartes.length === 1 && cartes[0].texte === "4111 1111 1111 1111", cartes);
+ok("masquer : la vraie carte, et la forme d'une carte (quatre fois quatre chiffres), mais pas les chiffres de l'IBAN", cartes.map((c) => c.texte).join("|") === "4111 1111 1111 1111|4970 1012 3456 7890", cartes.map((c) => c.texte));
 const sep = texteDePage(releve).texte;
 ok("masquer : une ligne par morceau en fin de ligne, rien entre deux morceaux collés", sep.split("\n").length === 6 && sep.endsWith("dupont"), sep);
 const vertical = boiteDe({ t: "ABCDEF", ox: 100, oy: 100, angle: Math.PI / 2, largeur: 60, hauteur: 10 }, 0, 6, { largeur: 600, hauteur: 800 });
@@ -271,17 +272,82 @@ ok("masquer : deux caches presque confondus sont le même", memeBoite({ x: 0.1, 
 // Lettres de largeurs inégales : « iii » étroit puis « MMM » large ; le cache de « MMM » doit commencer tôt.
 const inegal: Morceau = { t: "iiiMMM", ox: 0, oy: 50, angle: 0, largeur: 60, hauteur: 10, avances: [0, 3, 6, 9, 26, 43, 60] };
 const large = boiteDe(inegal, 3, 6, { largeur: 100, hauteur: 100 });
-ok("masquer : avec les largeurs mesurées, le cache tombe sur les bonnes lettres", Math.abs(large.x * 100 - (9 - 1.2)) < 0.01 && Math.abs((large.x + large.w) * 100 - (60 + 1.2)) < 0.01, large);
+ok("masquer : avec les largeurs mesurées, le cache tombe sur les bonnes lettres (plus un quart de corps)", Math.abs(large.x * 100 - (9 - 2.5)) < 0.01 && Math.abs((large.x + large.w) * 100 - (60 + 2.5)) < 0.01, large);
 const sansMesure = boiteDe({ ...inegal, avances: undefined }, 3, 6, { largeur: 100, hauteur: 100 });
-ok("masquer : sans elles, on suppose des lettres égales", Math.abs(sansMesure.x * 100 - (30 - 1.2)) < 0.01);
+ok("masquer : sans elles, on suppose des lettres égales", Math.abs(sansMesure.x * 100 - (30 - 2.5)) < 0.01);
 const caches = parNom.flatMap((t) => t.boites.map((boite) => ({ page: t.page, boite })));
 ok("masquer : texte entièrement sous ses caches", couverture(parNom[0].boites[0], caches.map((c) => c.boite)) === 1 && decouverts([releve], [motifDeRecherche("eleonore dupont")!], caches).length === 0);
 const deplaces = caches.map((c) => ({ ...c, boite: { ...c.boite, x: c.boite.x + c.boite.w * 0.5 } }));
 const restesDeplaces = decouverts([releve], [motifDeRecherche("eleonore dupont")!], deplaces);
 ok("masquer : un cache déplacé laisse le texte à découvert, et c'est signalé", restesDeplaces.length === 1 && restesDeplaces[0].texte === "Éléonore Dupont", restesDeplaces);
 ok("masquer : un IBAN sans cache est signalé", decouverts([releve], ["iban"], caches).map((r) => r.texte).join() === "FR76 3000 6000 0112 3456 7890 189");
+// Formes courantes relevées à la relecture.
+const formes: PageTexte = {
+  largeur: 600,
+  hauteur: 800,
+  morceaux: [
+    "Carte 4111 1111 1111 1111 12 25",
+    "Réf 123 4111 1111 1111 1111",
+    "Ancienne carte 4970 1012 3456 7890",
+    "RIB : FR76 30006 00001 12345678901 89 (clé)",
+    "Erreur : FR76 3000 6000 0112 3456 7890 188 BIC AGRIFRPP",
+    "Tél. (+33) 6 12 34 56 78",
+    "Portable 06\u201112\u201134\u201156\u201178",
+    "NIR 1 85 05 78 006 084 - 36",
+  ].map((t, i) => ligne(t, 50, 100 + i * 20)),
+};
+ok("carte : suivie de la date d'expiration, ou précédée d'une référence", chercher([formes], "carte").map((c) => c.texte).slice(0, 2).join("|") === "4111 1111 1111 1111|4111 1111 1111 1111", chercher([formes], "carte").map((c) => c.texte));
+ok("carte : quatre groupes de quatre chiffres, même si le contrôle échoue", chercher([formes], "carte").some((c) => c.texte === "4970 1012 3456 7890"));
+ok("carte : fenêtres de groupes entiers, ou d'un seul long groupe", fenetresCarte("123 4111 1111 1111 1111").join() === "4,23" && fenetresCarte("41111111111111111225").join() === "0,16", [fenetresCarte("123 4111 1111 1111 1111"), fenetresCarte("41111111111111111225")]);
+const ibans = chercher([formes], "iban").map((c) => c.texte);
+ok("IBAN : groupé comme un RIB (5 chiffres), et à la clé fausse (longueur du pays)", ibans.includes("FR76 30006 00001 12345678901 89") && ibans.includes("FR76 3000 6000 0112 3456 7890 188"), ibans);
+ok("IBAN : un code quelconque n'est pas pris pour un IBAN", ajusterIban("ab12 3456 7890 1234 5678") === 0);
+const tels = chercher([formes], "telephone").map((c) => c.texte);
+ok("téléphone : (+33) et tirets insécables", tels.some((t) => t.includes("(+33) 6 12 34 56 78")) && tels.some((t) => t.startsWith("06")), tels);
+ok("sécurité sociale : la clé séparée par un tiret est cachée aussi", chercher([formes], "secu")[0]?.texte === "1 85 05 78 006 084 - 36", chercher([formes], "secu"));
+const champ: PageTexte = { largeur: 600, hauteur: 800, morceaux: [ligne("IBAN :", 50, 100), { t: "FR76 3000 6000 0112 3456 7890 189", ox: 120, oy: 104, angle: 0, largeur: 300, hauteur: 16, cadre: { x0: 120, y0: 88, x1: 420, y1: 104 }, entier: true }] };
+const dansChamp = chercher([champ], "iban");
+ok("champ de formulaire : sa valeur est cherchée, et tout le champ est caché", dansChamp.length === 1 && dansChamp[0].boites[0].x * 600 < 120 && (dansChamp[0].boites[0].x + dansChamp[0].boites[0].w) * 600 > 420, dansChamp);
+ok("couverture : deux caches superposés ne comptent qu'une fois", Math.abs(couverture({ x: 0, y: 0, w: 1, h: 0.1 }, [{ x: 0, y: 0, w: 0.5, h: 0.1 }, { x: 0, y: 0, w: 0.5, h: 0.1 }]) - 0.5) < 0.01);
+ok("couverture : un petit cache sur un chiffre ne vaut pas pour tout le numéro", couverture({ x: 0.1, y: 0.1, w: 0.3, h: 0.02 }, [{ x: 0.1, y: 0.1, w: 0.03, h: 0.02 }]) < 0.2);
 const px = enPixels({ x: 0.5, y: 0.5, w: 0.6, h: 0.1 }, 1000, 500, 2);
 ok("masquer : en pixels, avec marge, sans sortir de l'image", px.x === 498 && px.x + px.w === 1000 && px.y === 248 && px.h === 54, px);
+
+// ---------------------------------------------------------------- masquer : rien d'une page masquée ne suit les pages gardées
+async function documentAPieges() {
+  const d = await PDFDocument.create();
+  const f = await d.embedFont(StandardFonts.Helvetica);
+  const [a, b, c] = [d.addPage([300, 300]), d.addPage([300, 300]), d.addPage([300, 300])];
+  a.drawText("Sommaire", { x: 20, y: 250, font: f, size: 12 });
+  b.drawText("SECRET 1 85 05 78 006 084 36", { x: 20, y: 250, font: f, size: 12 });
+  c.drawText("Annexe", { x: 20, y: 250, font: f, size: 12 });
+  const cx2 = d.context;
+  const lienInterne = cx2.register(cx2.obj({ Type: "Annot", Subtype: "Link", Rect: [10, 10, 50, 30], Dest: [b.ref, PDFName.of("Fit")] }));
+  const lienWeb = cx2.register(cx2.obj({ Type: "Annot", Subtype: "Link", Rect: [10, 40, 50, 60], A: { S: "URI", URI: PDFHexString.fromText("https://exemple.fr") } }));
+  const note = cx2.register(cx2.obj({ Type: "Annot", Subtype: "Text", Rect: [60, 10, 80, 30], Contents: PDFHexString.fromText("À relire"), P: a.ref }));
+  const piece = cx2.register(cx2.obj({ Type: "Annot", Subtype: "FileAttachment", Rect: [90, 10, 110, 30] }));
+  // Un champ partagé : un widget en page 1, l'autre en page 2 (masquée).
+  const champ = cx2.register(cx2.obj({ FT: "Tx", T: PDFHexString.fromText("nir"), V: PDFHexString.fromText("1 85 05 78 006 084 36") }));
+  const w1 = cx2.register(cx2.obj({ Type: "Annot", Subtype: "Widget", Rect: [120, 10, 200, 30], Parent: champ, P: a.ref }));
+  const w2 = cx2.register(cx2.obj({ Type: "Annot", Subtype: "Widget", Rect: [120, 10, 200, 30], Parent: champ, P: b.ref }));
+  (cx2.lookup(champ) as InstanceType<typeof import("@cantoo/pdf-lib").PDFDict>).set(PDFName.of("Kids"), cx2.obj([w1, w2]));
+  a.node.set(PDFName.of("Annots"), cx2.obj([lienInterne, lienWeb, note, piece, w1]));
+  b.node.set(PDFName.of("Annots"), cx2.obj([w2]));
+  return PDFDocument.load(await d.save());
+}
+async function copier(source: Awaited<ReturnType<typeof documentAPieges>>, indices: number[]) {
+  const sortie = await PDFDocument.create();
+  for (const p of await sortie.copyPages(source, indices)) sortie.addPage(p);
+  return PDFDocument.load(await sortie.save());
+}
+const brut = await copier(await documentAPieges(), [0, 2]);
+ok("masquer (témoin) : sans précaution, la page masquée entre en douce dans le fichier", pagesHorsArbre(brut) > 0, pagesHorsArbre(brut));
+const pieges = await documentAPieges();
+const retirees = assainirReprises(pieges, [0, 2]);
+const propre = await copier(pieges, [0, 2]);
+ok("masquer : après assainissement, aucune page hors de l'arbre", pagesHorsArbre(propre) === 0, pagesHorsArbre(propre));
+const restantes = (propre.getPage(0).node.lookup(PDFName.of("Annots")) as InstanceType<typeof import("@cantoo/pdf-lib").PDFArray> | undefined)?.asArray().map((v) => (propre.context.lookup(v as never) as InstanceType<typeof import("@cantoo/pdf-lib").PDFDict>).lookup(PDFName.of("Subtype"))?.toString());
+ok("masquer : lien interne, pièce jointe et champ partagé retirés ; lien web et note gardés", retirees === 3 && restantes?.join() === "/Link,/Text", { retirees, restantes });
 
 // ---------------------------------------------------------------- découper : les images d'un PDF
 const album = await PDFDocument.create();
@@ -319,6 +385,29 @@ ok("images d'un PDF : rouge, à demi transparent", t.genre === "pixels" && t.rgb
 const pal = trouve.images[2];
 ok("images d'un PDF : palette dépliée (blanc puis bleu)", pal.genre === "pixels" && pal.rgba[0] === 255 && pal.rgba[2] === 255 && pal.rgba[4] === 0 && pal.rgba[6] === 255, pal.genre === "pixels" ? [...pal.rgba.slice(0, 8)] : pal.genre);
 ok("images d'un PDF : seulement les pages demandées", imagesDesPages(albumLu, [2]).images.length === 2 && imagesDesPages(albumLu, [9]).images.length === 0);
+// Relecture : /Decode inversé en RVB, même image rangée deux fois, JPEG en CMJN, pages à grande image.
+const album2 = await PDFDocument.create();
+const cx3 = album2.context;
+const rouge = new Uint8Array(40 * 40 * 3);
+for (let i = 0; i < 40 * 40; i++) rouge[i * 3] = 255;
+const inversee = cx3.register(cx3.flateStream(rouge, { Type: "XObject", Subtype: "Image", Width: 40, Height: 40, ColorSpace: "DeviceRGB", BitsPerComponent: 8, Decode: [1, 0, 1, 0, 1, 0] }));
+const jumelle1 = cx3.register(cx3.flateStream(new Uint8Array(40 * 40).fill(90), { Type: "XObject", Subtype: "Image", Width: 40, Height: 40, ColorSpace: "DeviceGray", BitsPerComponent: 8 }));
+const jumelle2 = cx3.register(cx3.flateStream(new Uint8Array(40 * 40).fill(90), { Type: "XObject", Subtype: "Image", Width: 40, Height: 40, ColorSpace: "DeviceGray", BitsPerComponent: 8 }));
+const cmjnJpeg = cx3.register(cx3.stream(jpegFaux, { Type: "XObject", Subtype: "Image", Width: 80, Height: 64, ColorSpace: "DeviceCMYK", BitsPerComponent: 8, Filter: "DCTDecode" }));
+const grande = cx3.register(cx3.stream(new Uint8Array(10), { Type: "XObject", Subtype: "Image", Width: 2000, Height: 2800, ColorSpace: "DeviceGray", BitsPerComponent: 1, Filter: "CCITTFaxDecode" }));
+const q1 = album2.addPage([300, 300]);
+q1.node.setXObject(PDFName.of("Inv"), inversee);
+q1.node.setXObject(PDFName.of("J1"), jumelle1);
+q1.node.setXObject(PDFName.of("J2"), jumelle2);
+q1.node.setXObject(PDFName.of("Cmjn"), cmjnJpeg);
+album2.addPage([300, 300]).node.setXObject(PDFName.of("Scan"), grande);
+const album2Lu = await PDFDocument.load(await album2.save());
+const t2 = imagesDesPages(album2Lu, [1]);
+const inv = t2.images.find((i) => i.ref === inversee.toString());
+ok("images d'un PDF : /Decode inversé appliqué au RVB (rouge → cyan)", inv?.genre === "pixels" && inv.rgba[0] === 0 && inv.rgba[1] === 255 && inv.rgba[2] === 255, inv?.genre === "pixels" ? [...inv.rgba.slice(0, 4)] : inv);
+ok("images d'un PDF : la même image rangée deux fois n'est extraite qu'une fois", t2.images.filter((i) => i.ref === jumelle1.toString() || i.ref === jumelle2.toString()).length === 1, t2.images.map((i) => i.ref));
+ok("images d'un PDF : un JPEG en CMJN est signalé", t2.images.find((i) => i.ref === cmjnJpeg.toString())?.cmjn === true);
+ok("masquer : une page portant un scan est repérée", [...pagesAvecGrandeImage(album2Lu)].join() === "1");
 const gris1 = versRgba(new Uint8Array([0b10100000]), 3, 1, { comp: 1 }, 1, true);
 ok("images d'un PDF : gris sur 1 bit, avec inversion", gris1 !== null && gris1[0] === 0 && gris1[4] === 255 && gris1[8] === 0, gris1 && [...gris1]);
 

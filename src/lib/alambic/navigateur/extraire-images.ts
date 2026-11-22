@@ -26,6 +26,9 @@ export async function extraireImages(octets: Uint8Array, pages: number[], base: 
   const fichiers: { nom: string; blob: Blob }[] = [];
   const parPage = new Map<number, number>();
   let jpx = 0;
+  let cmjn = 0;
+  let opaques = 0;
+  let ratees = ignorees;
   for (let i = 0; i < images.length; i++) {
     annule(signal);
     const im = images[i];
@@ -33,23 +36,34 @@ export async function extraireImages(octets: Uint8Array, pages: number[], base: 
     const k = (parPage.get(im.page) ?? 0) + 1;
     parPage.set(im.page, k);
     const nom = `${base} - page ${im.page} - image ${k}`;
+    if (im.cmjn) cmjn++;
+    if (im.sansTransparence) opaques++;
     if (im.genre === "jpeg") fichiers.push({ nom: `${nom}.jpg`, blob: new Blob([im.octets.slice().buffer], { type: "image/jpeg" }) });
     else if (im.genre === "jpx") {
       jpx++;
       fichiers.push({ nom: `${nom}.jp2`, blob: new Blob([im.octets.slice().buffer], { type: "image/jp2" }) });
     } else {
-      const c = document.createElement("canvas");
-      c.width = im.largeur;
-      c.height = im.hauteur;
-      c.getContext("2d")!.putImageData(new ImageData(new Uint8ClampedArray(im.rgba), im.largeur, im.hauteur), 0, 0);
-      const png = await new Promise<Blob>((ok, ko) => c.toBlob((b) => (b ? ok(b) : ko(new Error("Une image n'a pas pu être enregistrée."))), "image/png"));
-      c.width = 0;
-      fichiers.push({ nom: `${nom}.png`, blob: png });
+      // Une image trop grande pour la mémoire du navigateur n'empêche pas d'enregistrer les autres.
+      try {
+        const c = document.createElement("canvas");
+        c.width = im.largeur;
+        c.height = im.hauteur;
+        c.getContext("2d")!.putImageData(new ImageData(new Uint8ClampedArray(im.rgba), im.largeur, im.hauteur), 0, 0);
+        const png = await new Promise<Blob | null>((ok) => c.toBlob(ok, "image/png"));
+        c.width = 0;
+        if (!png) throw new Error("toBlob");
+        fichiers.push({ nom: `${nom}.png`, blob: png });
+      } catch {
+        ratees++;
+      }
     }
   }
-  const avertissements = [`${images.length === 1 ? "L'image est sortie telle qu'elle est" : `Les ${images.length} images sont sorties telles qu'elles sont`} dans le PDF : les photos JPEG ne sont pas recompressées.`];
-  if (ignorees) avertissements.push(`${ignorees} autre${ignorees > 1 ? "s images n'ont" : " image n'a"} pas pu être extraite${ignorees > 1 ? "s" : ""} (fax, JBIG2…) : « Une image par page » les garde, avec la page entière.`);
+  if (!fichiers.length) throw new Error("Les images de ces pages sont trop grandes pour la mémoire de ton navigateur. « Une image par page » les garde, avec la page entière.");
+  const avertissements = [`${fichiers.length === 1 ? "L'image est sortie telle qu'elle est" : `Les ${fichiers.length} images sont sorties telles qu'elles sont`} dans le PDF : les photos JPEG ne sont pas recompressées.`];
+  if (ratees) avertissements.push(`${ratees} autre${ratees > 1 ? "s images n'ont" : " image n'a"} pas pu être extraite${ratees > 1 ? "s" : ""} (fax, JBIG2, trop grande…) : « Une image par page » les garde, avec la page entière.`);
   if (jpx) avertissements.push("Les images JPEG 2000 (.jp2) s'ouvrent avec Aperçu (Mac) ou GIMP, pas toujours dans un navigateur.");
+  if (cmjn) avertissements.push(`${cmjn > 1 ? `${cmjn} images sont` : "Une image est"} en couleurs d'imprimerie (CMJN) : hors d'un logiciel de mise en page, leurs couleurs peuvent paraître fausses.`);
+  if (opaques) avertissements.push(`${opaques > 1 ? `${opaques} images perdent leur` : "Une image perd sa"} transparence (fond opaque).`);
   if (fichiers.length === 1) {
     const f = fichiers[0];
     return { nom: f.nom, blob: f.blob, format: f.nom.endsWith(".jpg") ? "jpg" : f.nom.endsWith(".png") ? "png" : "jp2", avertissements };

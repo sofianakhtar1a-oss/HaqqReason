@@ -387,7 +387,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
           </div>
           <div className="alambic-option" role="radiogroup" aria-label="Ce qu'on obtient">
             <span>Résultat</span>
-            <div className="alambic-segments">
+            <div className="alambic-segments alambic-segments-grille">
               <button type="button" role="radio" aria-checked={mode === "un"} onClick={() => setMode("un")}>
                 Un seul PDF
               </button>

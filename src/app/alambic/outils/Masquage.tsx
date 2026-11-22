@@ -8,13 +8,13 @@
  */
 import { Check, EyeOff, ScanText, Search, ShieldAlert, SquareDashed, Trash2, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { chercher, decouverts, memeBoite, MOTIFS, motifDeRecherche, type IdMotif, type PageTexte } from "@/lib/alambic/caviardage";
+import { chercher, COUVERT, couverture, decouverts, MOTIFS, motifDeRecherche, type IdMotif, type PageTexte } from "@/lib/alambic/caviardage";
 import { tailleLisible } from "@/lib/alambic/formats";
 import type { Cadre, Couleur } from "@/lib/alambic/navigateur/masquer";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { borner, type BoiteVisible } from "@/lib/alambic/signature";
 import { CarteResultat } from "../CarteResultat";
-import { BonASavoir, EnTeteOutil, MessageErreur, Progression, reconnaitreTous, useTravail, ZoneDepot } from "../commun";
+import { BonASavoir, EnTeteOutil, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
 import { useReception, type Abonner } from "../reception";
 import { VignettePdf, type DocPdf } from "./VignettePdf";
 
@@ -109,7 +109,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
   const [messageDiscret, setMessageDiscret] = useState(false);
   const [resultat, setResultat] = useState<Resultat | null>(null);
   const [restes, setRestes] = useState<{ page: number; texte: string }[] | null>(null);
-  const { travail, erreur, setErreur, lancer } = useTravail();
+  const { travail, erreur, setErreur, lancer, annuler } = useTravail();
   const dessin = useRef<{ page: number; x: number; y: number; id: string; rect: DOMRect } | null>(null);
   const clicIgnore = useRef(false);
 
@@ -133,8 +133,10 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
     setRestes(null);
   };
 
-  const charger = (entrants: File[], mdp?: string) =>
-    lancer(async (avancer) => {
+  const charger = (entrants: File[], mdp?: string) => {
+    // Un nouveau fichier arrête ce qui tournait sur l'ancien (lecture, enregistrement).
+    annuler();
+    return lancer(async (avancer) => {
       const f = entrants[0];
       if (!f) return;
       toutRemettre();
@@ -172,6 +174,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
         throw e;
       }
     });
+  };
 
   useReception(abonner, (f) => void charger(f));
 
@@ -197,20 +200,20 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
     setRestes(null);
   }, []);
 
-  // Clavier : flèches pour ajuster le cache choisi, Suppr pour le retirer (hors saisie de texte).
+  // Clavier, quand un cache a le focus : flèches pour le déplacer, Maj + flèches pour sa taille,
+  // Suppr pour le retirer. Ailleurs, les flèches font défiler la page comme d'habitude.
   useEffect(() => {
     if (!choisi) return;
     const touche = (ev: KeyboardEvent) => {
       const cible = ev.target as HTMLElement;
-      if (cible.tagName === "INPUT" || cible.tagName === "TEXTAREA" || cible.tagName === "SELECT" || cible.isContentEditable) return;
-      if ((cible.tagName === "BUTTON" || cible.tagName === "A") && !cible.closest(".alambic-cache")) return;
+      if (!cible.closest?.(".alambic-cache")) return;
       const c = cadres.find((x) => x.id === choisi);
       if (!c) return;
-      const pas = ev.shiftKey ? 0.02 : 0.004;
+      const pas = 0.004;
       const d = { ArrowLeft: [-pas, 0], ArrowRight: [pas, 0], ArrowUp: [0, -pas], ArrowDown: [0, pas] }[ev.key];
       if (d) {
         ev.preventDefault();
-        changerBoite(c.id, borner({ ...c.boite, x: c.boite.x + d[0], y: c.boite.y + d[1] }));
+        changerBoite(c.id, ev.shiftKey ? borner({ ...c.boite, w: c.boite.w + d[0] * 2, h: c.boite.h + d[1] * 2 }) : borner({ ...c.boite, x: c.boite.x + d[0], y: c.boite.y + d[1] }));
       } else if (ev.key === "Delete" || ev.key === "Backspace") {
         ev.preventDefault();
         retirer(c.id);
@@ -275,6 +278,13 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
       }),
     );
   };
+  /** Un appui interrompu (alerte, geste du système) ne laisse pas de cache vide derrière lui. */
+  const surAnnulation = () => {
+    const d = dessin.current;
+    if (!d) return;
+    dessin.current = null;
+    setCadres((l) => l.filter((c) => c.id !== d.id || (c.boite.w > 0.002 && c.boite.h > 0.002)));
+  };
   const surClic = (ev: React.MouseEvent<HTMLDivElement>, page: number, t: TaillePage) => {
     if (clicIgnore.current) {
       clicIgnore.current = false;
@@ -297,9 +307,19 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
       setALire([0]);
       return null;
     }
-    const { lireTextePdf } = await import("@/lib/alambic/navigateur/masquer");
+    const [{ lireTextePdf }, { charger: chargerPdf }, { pagesAvecGrandeImage }] = await Promise.all([import("@/lib/alambic/navigateur/masquer"), import("@/lib/alambic/navigateur/pdf"), import("@/lib/alambic/extraction")]);
     const pages = await lireTextePdf(source.pdf.doc);
-    const vides = pages.flatMap((p, i) => (p.morceaux.reduce((s, m) => s + m.t.trim().length, 0) < 10 ? [i] : []));
+    // À lire : les pages sans texte, et celles où une grande image (un scan) côtoie peu de texte.
+    let grandes = new Set<number>();
+    try {
+      grandes = pagesAvecGrandeImage(await chargerPdf(source.octets));
+    } catch {
+      // structure illisible : on s'en tient au texte
+    }
+    const vides = pages.flatMap((p, i) => {
+      const lettres = p.morceaux.reduce((s, m) => s + m.t.trim().length, 0);
+      return lettres < 10 || (lettres < 400 && grandes.has(i)) ? [i] : [];
+    });
     setTexte(pages);
     setALire(vides);
     return { pages, vides };
@@ -320,6 +340,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
         return c;
       };
       const lues = await lireTexteImages(aLire.length, toile, ["fra", "eng"], avancer, signal);
+      verifierAnnulation(signal);
       const base: PageTexte[] = texte ?? source.pages.map((t) => ({ largeur: t.l, hauteur: t.h, morceaux: [] }));
       const completes = base.map((p, i) => {
         const k = aLire.indexOf(i);
@@ -346,7 +367,9 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
       const nouveaux: Cadre[] = [];
       for (const t of trouvailles)
         for (const boite of t.boites) {
-          if ([...cadres, ...nouveaux].some((c) => c.page === t.page && memeBoite(c.boite, boite))) continue;
+          // Déjà sous un cache (posé à la main ou par une autre recherche) : rien à ajouter.
+          const presents = [...cadres, ...nouveaux].filter((c) => c.page === t.page).map((c) => c.boite);
+          if (couverture(boite, presents) >= COUVERT) continue;
           nouveaux.push({ id: nouvelId(), page: t.page, boite, texte: t.texte });
         }
       const pagesTouchees = new Set(trouvailles.map((t) => t.page)).size;
@@ -356,7 +379,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
         return;
       }
       setCadres((l) => [...l, ...nouveaux]);
-      setRecherches((r) => [...r.filter((x) => x.cle !== cle), { cle, libelle, motif, ids: [...(r.find((x) => x.cle === cle)?.ids ?? []), ...nouveaux.map((c) => c.id)] }]);
+      if (nouveaux.length) setRecherches((r) => [...r.filter((x) => x.cle !== cle), { cle, libelle, motif, ids: [...(r.find((x) => x.cle === cle)?.ids ?? []), ...nouveaux.map((c) => c.id)] }]);
       setResultat(null);
       setRestes(null);
       setMessage(
@@ -396,6 +419,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
       if (!source || !fichier || !cadres.length) return;
       const m = await import("@/lib/alambic/navigateur/masquer");
       const utiles = cadres.filter((c) => c.boite.w > 0.002 && c.boite.h > 0.002);
+      if (!utiles.length) throw new Error("Les caches sont trop petits pour cacher quoi que ce soit : agrandis-les avant d'enregistrer.");
       const motifs = recherches.map((x) => x.motif);
       // Chaque texte cherché doit rester sous un cache (un cache retiré ou déplacé le laisserait lisible).
       const sansCache = texte && motifs.length ? decouverts(texte, motifs, utiles) : [];
@@ -406,6 +430,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
         return;
       }
       const r = await m.masquerPdf(source.octets, utiles, couleur, fichier.name, avancer, signal);
+      verifierAnnulation(signal);
       // Puis on relit le fichier produit : ce qu'on a cherché ne doit plus y être.
       avancer(0.97, "Vérification du fichier masqué");
       const relus = motifs.length ? await m.verifierPdf(new Uint8Array(await r.blob.arrayBuffer()), motifs) : [];
@@ -485,7 +510,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
                     ? "C'est une image : pour y chercher un mot, il faut d'abord la lire (sur ton appareil)."
                     : aLire.length === pages.length
                       ? "Ce PDF est un scan : pour y chercher un mot, il faut d'abord lire ses pages (sur ton appareil, quelques secondes par page)."
-                      : `${aLire.length} page${aLire.length > 1 ? "s sont des images" : " est une image"} : lis-${aLire.length > 1 ? "les" : "la"} pour y chercher aussi.`}
+                      : `${aLire.length} page${aLire.length > 1 ? "s sont surtout des images" : " est surtout une image"} : lis-${aLire.length > 1 ? "les" : "la"} pour y chercher aussi.`}
                 </p>
                 <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => void lireImages()} disabled={enCours}>
                   <ScanText className="size-4" aria-hidden="true" />
@@ -553,6 +578,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
                 onPointerDown={(ev) => surPointeur(ev, i)}
                 onPointerMove={surMouvement}
                 onPointerUp={(ev) => surLacher(ev, t)}
+                onPointerCancel={surAnnulation}
                 onClick={(ev) => surClic(ev, i, t)}
                 role="group"
                 aria-label={source.genre === "image" ? "Image" : `Page ${i + 1}`}
@@ -616,7 +642,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
           "Sur une pièce d'identité, cache aussi les deux lignes de chiffres et de chevrons du bas : elles répètent le nom, la date de naissance et le numéro.",
           "Les pages sans cache restent intactes : leur texte se sélectionne et leurs liens marchent.",
           "Le cache choisi devient transparent pour qu'on le place bien ; dans le fichier, tous les caches sont pleins.",
-          "Au clavier : flèches pour déplacer le cache choisi, Suppr pour le retirer.",
+          "Au clavier : Tab jusqu'à un cache, puis flèches pour le déplacer, Maj + flèches pour l'agrandir ou le réduire, Suppr pour le retirer.",
         ]}
       />
     </section>

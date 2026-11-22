@@ -7,7 +7,16 @@
 import { decodePDFRawStream, PDFArray, PDFDict, PDFHexString, PDFName, PDFNumber, PDFRawStream, PDFRef, PDFStream, PDFString, type PDFDocument } from "@cantoo/pdf-lib";
 import { defiltrerPng, masquesDImages } from "./allegement";
 
-type Placee = { ref: string; page: number; largeur: number; hauteur: number };
+type Placee = {
+  ref: string;
+  page: number;
+  largeur: number;
+  hauteur: number;
+  /** JPEG en couleurs d'imprimerie (CMJN) : ses couleurs peuvent paraître fausses hors d'un logiciel de PAO. */
+  cmjn?: boolean;
+  /** Sa transparence n'a pas pu être reprise (masque d'une autre taille ou compressé en JPEG). */
+  sansTransparence?: boolean;
+};
 export type ImageTrouvee = (Placee & { genre: "jpeg"; octets: Uint8Array }) | (Placee & { genre: "jpx"; octets: Uint8Array }) | (Placee & { genre: "pixels"; rgba: Uint8ClampedArray });
 
 const N = (n: string) => PDFName.of(n);
@@ -74,9 +83,9 @@ export function versRgba(donnees: Uint8Array, l: number, h: number, esp: Espace,
           rgba[o + 2] = esp.palette[k + 2] ?? 0;
         } else rgba[o] = rgba[o + 1] = rgba[o + 2] = esp.palette[k] ?? 0;
       } else if (esp.comp === 3) {
-        rgba[o] = ligne[x * 3];
-        rgba[o + 1] = ligne[x * 3 + 1];
-        rgba[o + 2] = ligne[x * 3 + 2];
+        rgba[o] = inverser ? 255 - ligne[x * 3] : ligne[x * 3];
+        rgba[o + 1] = inverser ? 255 - ligne[x * 3 + 1] : ligne[x * 3 + 1];
+        rgba[o + 2] = inverser ? 255 - ligne[x * 3 + 2] : ligne[x * 3 + 2];
       } else {
         let v = Math.round((echantillon(ligne, x, bits) * 255) / max);
         if (inverser) v = 255 - v;
@@ -105,15 +114,26 @@ function octetsBruts(doc: PDFDocument, flux: PDFRawStream, garderDernier: boolea
   return decodePDFRawStream(PDFRawStream.of(enveloppe, flux.getContents())).decode();
 }
 
+/** Le tableau /Decode inverse-t-il chaque composante ([1 0], [1 0 1 0 1 0]) ? */
+function inverse(decode: unknown, comp: number): boolean {
+  if (!(decode instanceof PDFArray) || decode.size() !== comp * 2) return false;
+  for (let i = 0; i < comp * 2; i++) {
+    const v = decode.lookup(i);
+    if (!(v instanceof PDFNumber) || v.asNumber() !== (i % 2 === 0 ? 1 : 0)) return false;
+  }
+  return true;
+}
+
 /** Pixels d'une image sans perte (Flate, LZW, RunLength ou sans filtre), ou null si on ne sait pas la lire. */
-function pixels(doc: PDFDocument, flux: PDFRawStream, l: number, h: number): Uint8ClampedArray | null {
+function pixels(doc: PDFDocument, flux: PDFRawStream, l: number, h: number): { rgba: Uint8ClampedArray; sansTransparence: boolean } | null {
   const d = flux.dict;
   const esp = espaceDe(doc, d.get(N("ColorSpace")));
   const bitsBrut = d.lookup(N("BitsPerComponent"));
   const bits = bitsBrut instanceof PDFNumber ? bitsBrut.asNumber() : 8;
   if (!esp) return null;
   const decode = d.lookup(N("Decode"));
-  const inverser = decode instanceof PDFArray && decode.size() >= 2 && (decode.lookup(0) as PDFNumber | undefined)?.asNumber?.() === 1 && (decode.lookup(1) as PDFNumber | undefined)?.asNumber?.() === 0;
+  // Seule l'inversion simple est comprise (gris ou RVB) ; tout autre /Decode, ou une palette décodée, est laissé de côté.
+  const inverser = !esp.palette && inverse(decode, esp.comp);
   if (decode && !inverser) return null;
   let brut = decodePDFRawStream(flux).decode();
   const parms = d.lookup(N("DecodeParms"));
@@ -125,19 +145,48 @@ function pixels(doc: PDFDocument, flux: PDFRawStream, l: number, h: number): Uin
   if (!rgba) return null;
   // Transparence (SMask) de même taille : elle devient la couche alpha.
   const masque = d.lookup(N("SMask"));
+  let sansTransparence = false;
   if (masque instanceof PDFRawStream) {
+    sansTransparence = true;
     const ml = (masque.dict.lookup(N("Width")) as PDFNumber | undefined)?.asNumber();
     const mh = (masque.dict.lookup(N("Height")) as PDFNumber | undefined)?.asNumber();
     if (ml === l && mh === h && !filtres(masque.dict).some((f) => f === N("DCTDecode") || f === N("JPXDecode"))) {
       try {
         const alpha = decodePDFRawStream(masque).decode();
-        if (alpha.length >= l * h) for (let i = 0; i < l * h; i++) rgba[i * 4 + 3] = alpha[i];
+        if (alpha.length >= l * h) {
+          for (let i = 0; i < l * h; i++) rgba[i * 4 + 3] = alpha[i];
+          sansTransparence = false;
+        }
       } catch {
         // masque illisible : l'image reste opaque
       }
     }
   }
-  return rgba;
+  return { rgba, sansTransparence };
+}
+
+/** Empreinte rapide (FNV-1a) : la même image rangée deux fois sous deux noms n'est extraite qu'une fois. */
+function empreinte(octets: Uint8Array | Uint8ClampedArray): string {
+  let h = 0x811c9dc5;
+  // Tout le contenu jusqu'à 16 Mo ; au-delà, un échantillon régulier (une très grande image décodée).
+  const pas = Math.max(1, Math.floor(octets.length / 16_000_000));
+  for (let i = 0; i < octets.length; i += pas) {
+    h ^= octets[i];
+    h = Math.imul(h, 0x01000193);
+  }
+  return `${octets.length}:${(h >>> 0).toString(36)}`;
+}
+
+/** Un JPEG en couleurs d'imprimerie (CMJN) ? */
+function enCmjn(doc: PDFDocument, d: PDFDict): boolean {
+  const cs = d.lookup(N("ColorSpace"));
+  if (cs === N("DeviceCMYK")) return true;
+  if (cs instanceof PDFArray && cs.lookup(0) === N("ICCBased")) {
+    const flux = cs.lookup(1);
+    const n = flux instanceof PDFStream ? flux.dict.lookup(N("N")) : undefined;
+    return n instanceof PDFNumber && n.asNumber() === 4;
+  }
+  return false;
 }
 
 /** Les images XObject utilisées par une page, y compris dans ses dessins (formulaires XObject) imbriqués. */
@@ -159,6 +208,27 @@ function refsDImages(doc: PDFDocument, ressources: PDFDict | undefined, vus: Set
 }
 
 /**
+ * Les pages (indices à partir de 0) qui portent une grande image (un scan, une photo de document) :
+ * leur texte, s'il y en a, ne dit pas tout ce qu'on voit. Rien n'est décodé, seules les tailles comptent.
+ */
+export function pagesAvecGrandeImage(doc: PDFDocument, pixelsMin = 300_000): Set<number> {
+  const resultat = new Set<number>();
+  doc.getPages().forEach((page, i) => {
+    for (const ref of refsDImages(doc, page.node.Resources(), new Set())) {
+      const flux = doc.context.lookup(ref);
+      if (!(flux instanceof PDFStream)) continue;
+      const l = (flux.dict.lookup(N("Width")) as PDFNumber | undefined)?.asNumber() ?? 0;
+      const h = (flux.dict.lookup(N("Height")) as PDFNumber | undefined)?.asNumber() ?? 0;
+      if (l * h >= pixelsMin) {
+        resultat.add(i);
+        break;
+      }
+    }
+  });
+  return resultat;
+}
+
+/**
  * Les images des pages données (numéros à partir de 1), chacune une seule fois, dans l'ordre des
  * pages. `ignorees` : images trouvées mais dans un format que le navigateur ne sait pas restituer
  * (fax CCITT, JBIG2, CMJN sans perte…).
@@ -166,8 +236,15 @@ function refsDImages(doc: PDFDocument, ressources: PDFDict | undefined, vus: Set
 export function imagesDesPages(doc: PDFDocument, pages: number[]): { images: ImageTrouvee[]; ignorees: number } {
   const masques = masquesDImages(doc);
   const vus = new Set<string>();
+  const empreintes = new Set<string>();
   const images: ImageTrouvee[] = [];
   let ignorees = 0;
+  const garder = (im: ImageTrouvee, contenu: Uint8Array | Uint8ClampedArray) => {
+    const e = empreinte(contenu);
+    if (empreintes.has(e)) return;
+    empreintes.add(e);
+    images.push(im);
+  };
   const toutes = doc.getPages();
   for (const n of pages) {
     const page = toutes[n - 1];
@@ -183,11 +260,13 @@ export function imagesDesPages(doc: PDFDocument, pages: number[]): { images: Ima
       if (l < COTE_MIN || h < COTE_MIN) continue;
       const dernier = filtres(d).at(-1);
       try {
-        if (dernier === N("DCTDecode")) images.push({ ref: ref.toString(), page: n, largeur: l, hauteur: h, genre: "jpeg", octets: octetsBruts(doc, flux, true) });
-        else if (dernier === N("JPXDecode")) images.push({ ref: ref.toString(), page: n, largeur: l, hauteur: h, genre: "jpx", octets: octetsBruts(doc, flux, true) });
-        else {
-          const rgba = pixels(doc, flux, l, h);
-          if (rgba) images.push({ ref: ref.toString(), page: n, largeur: l, hauteur: h, genre: "pixels", rgba });
+        if (dernier === N("DCTDecode") || dernier === N("JPXDecode")) {
+          const octets = octetsBruts(doc, flux, true);
+          const commun = { ref: ref.toString(), page: n, largeur: l, hauteur: h, cmjn: enCmjn(doc, d), sansTransparence: d.has(N("SMask")) };
+          garder(dernier === N("DCTDecode") ? { ...commun, genre: "jpeg", octets } : { ...commun, genre: "jpx", octets }, octets);
+        } else {
+          const lu = pixels(doc, flux, l, h);
+          if (lu) garder({ ref: ref.toString(), page: n, largeur: l, hauteur: h, genre: "pixels", rgba: lu.rgba, sansTransparence: lu.sansTransparence }, lu.rgba);
           else ignorees++;
         }
       } catch {

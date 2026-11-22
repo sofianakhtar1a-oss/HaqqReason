@@ -1182,3 +1182,17 @@ textarea.alambic-signe-champ {
 .alambic-masque-verifie {
   color: var(--encre);
 }
+
+/* Beaucoup de choix sur un téléphone (Découper › Résultat) : deux colonnes régulières plutôt qu'une pilule sur trois lignes. */
+@media (max-width: 40rem) {
+  .alambic-segments.alambic-segments-grille {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    border-radius: 1.2rem;
+  }
+  .alambic-segments.alambic-segments-grille button {
+    border-radius: 0.9rem;
+    text-align: center;
+  }
+}

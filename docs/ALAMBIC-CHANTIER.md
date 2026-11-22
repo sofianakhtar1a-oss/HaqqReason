@@ -28,7 +28,7 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   pas d'aperçu, pas de partage sur téléphone ; deux raisons de refus dépassées (« ce studio ne fait
   pas de transcription » alors que Transcrire existe).
 
-## Plan pondéré (total 142)
+## Plan pondéré (total 147)
 
 | # | Tâche | Poids | Fait |
 |---|-------|------:|-----:|
@@ -49,7 +49,8 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
 | 15 | Corrections issues de la relecture du code (20 points vérifiés un à un) | 6 | 6 |
 | 16 | Masquer des informations : caches tracés ou posés d'un toucher, « Masquer partout », motifs prêts (e-mail, téléphone, IBAN, sécurité sociale, carte), lecture des scans, vérification du fichier produit | 12 | 12 |
 | 17 | Découper › « Ses images » : les photos et illustrations d'un PDF à leur qualité d'origine (JPEG tels quels, transparence gardée) | 4 | 4 |
-| | **Total** | **142** | **141** |
+| 18 | Seconde relecture (Masquer, images d'un PDF) : fuite par les liens entre pages, champs de formulaire, motifs élargis, vérification plus stricte | 5 | 5 |
+| | **Total** | **147** | **146** |
 
 ## Journal
 
@@ -78,3 +79,11 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   relecture du fichier produit). Question fréquente n° 7 sur les rectangles noirs.
 - 22 nov. 23 h 42 — Découper sait aussi sortir les images d'un PDF (« Ses images ») : les JPEG à
   l'octet près, les autres en PNG (palette et transparence comprises), chaque image une seule fois.
+- 23 nov. 00 h 02 — seconde relecture, sur Masquer et les images d'un PDF. Corrigé : une page gardée
+  qui portait un lien vers une page masquée faisait entrer celle-ci, invisible mais lisible, dans le
+  fichier (liens, champs partagés et pièces jointes sont désormais retirés, et le fichier écrit est
+  contrôlé, sinon tout est redessiné) ; valeurs des champs de formulaire et notes cherchées aussi ;
+  cartes suivies d'une date, IBAN groupés comme un RIB ou à la clé fausse, « (+33) », tirets
+  insécables, clé de sécurité sociale après un tiret ; vérification par recouvrement réel (97 %) ;
+  pages mêlant texte et scan proposées à la lecture ; clavier limité au cache qui a le focus ;
+  extraction : /Decode en RVB, doublons, CMJN et transparence signalés.

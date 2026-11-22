@@ -27,6 +27,8 @@ export type Morceau = {
   finDeLigne?: boolean;
   /** Mot reconnu : son cadre droit (x0, y0) – (x1, y1). */
   cadre?: { x0: number; y0: number; x1: number; y1: number };
+  /** Valeur d'un champ de formulaire ou texte d'une annotation : on cache tout le cadre, la place des lettres y est inconnue. */
+  entier?: boolean;
   /**
    * Position de chaque bord de caractère le long de la ligne (n + 1 valeurs, de 0 à `largeur`) :
    * sans elle, on suppose des lettres de même largeur, ce qui décale les caches dans un texte courant.
@@ -46,16 +48,22 @@ export const MOTIFS: { id: IdMotif; nom: string; exemple: string }[] = [
   { id: "telephone", nom: "Téléphones", exemple: "06 12 34 56 78" },
   { id: "iban", nom: "IBAN", exemple: "FR76 3000 6000 0112 3456 7890 189" },
   { id: "secu", nom: "N° de sécurité sociale", exemple: "1 85 05 78 006 084 36" },
-  { id: "carte", nom: "Numéros de carte bancaire", exemple: "4970 1012 3456 7890" },
+  { id: "carte", nom: "Numéros de carte bancaire", exemple: "4970 1012 3456 7893" },
 ];
 
+// Séparateurs tolérés entre groupes de chiffres : espaces (insécables comprises), points, tirets de toutes sortes.
+const S = "[\\s.\\-\\u2010-\\u2015]";
 const EXPRESSIONS: Record<IdMotif, RegExp> = {
   courriel: /[a-z0-9._%+-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)+/g,
-  telephone: /(?:(?:\+|00)\d{2,3}[\s.-]?(?:\(0\)[\s.-]?)?[1-9]|\b0[1-9])(?:[\s.-]?\d{2}){4}(?!\d)/g,
-  iban: /\b[a-z]{2}\d{2}(?:\s?[a-z0-9]{4}){2,7}(?:\s?[a-z0-9]{1,3})?\b/g,
-  secu: /\b[1-478]\s?\d{2}\s?(?:0[1-9]|1[0-2]|[2-9]\d)\s?(?:\d{2}|2[ab])\s?\d{3}\s?\d{3}(?:\s?\d{2})?(?!\d)/g,
-  carte: /\b(?:\d[\s-]?){12,18}\d(?!\d)/g,
+  telephone: new RegExp(`(?:\\(?(?:\\+|00)\\d{2,3}\\)?${S}?(?:\\(0\\)${S}?)?[1-9]|\\b0[1-9])(?:${S}?\\d{2}){4}(?!\\d)`, "g"),
+  // Groupes de 4 (IBAN) ou de 5 (RIB) : on prend large, puis la clé ou la longueur du pays tranchent.
+  iban: new RegExp(`\\b[a-z]{2}\\d{2}(?:${S}?[a-z0-9]){11,30}`, "g"),
+  secu: new RegExp(`\\b[1-478]${S}{0,3}\\d{2}${S}{0,3}(?:0[1-9]|1[0-2]|[2-9]\\d)${S}{0,3}(?:\\d{2}|2[ab])${S}{0,3}\\d{3}${S}{0,3}\\d{3}(?:${S}{0,3}\\d{2})?(?!\\d)`, "g"),
+  carte: new RegExp(`\\b(?:\\d${S}?){12,30}\\d(?!\\d)`, "g"),
 };
+
+/** Longueur de l'IBAN des pays voisins : un IBAN à la clé fausse (faute de frappe, mauvaise lecture) est tout de même caché. */
+const LONGUEUR_IBAN: Record<string, number> = { fr: 27, mc: 27, be: 16, ch: 21, de: 22, es: 24, it: 27, lu: 20, gb: 22, nl: 18, pt: 25, ie: 22, at: 20 };
 
 /** Un IBAN est-il valide (clé « modulo 97 ») ? */
 export function ibanValide(brut: string): boolean {
@@ -95,7 +103,7 @@ export function motifDeRecherche(q: string): RegExp | null {
   if (lettres.length < 2) return null;
   let source = "";
   lettres.forEach((c, i) => {
-    if (i > 0) source += /\d/.test(c) && /\d/.test(lettres[i - 1]) ? "[\\s.\\-]*" : "\\s*";
+    if (i > 0) source += /\d/.test(c) && /\d/.test(lettres[i - 1]) ? "[\\s.\\-\\u2010-\\u2015]*" : "\\s*";
     source += c.replace(/[.*+?^${}()|[\]\\/-]/g, "\\$&");
   });
   return new RegExp(source, "g");
@@ -125,7 +133,7 @@ export function texteDePage(page: PageTexte): { texte: string; origine: ({ m: nu
 
 /** Entre deux morceaux : rien s'ils se touchent, une espace s'ils sont écartés, un saut de ligne sinon. */
 function separateur(a: Morceau, b: Morceau): "" | " " | "\n" {
-  if (a.finDeLigne) return "\n";
+  if (a.finDeLigne || a.entier || b.entier) return "\n";
   if (a.cadre && b.cadre) {
     const memeLigne = b.cadre.y0 < a.cadre.y1 && b.cadre.y1 > a.cadre.y0;
     return memeLigne ? " " : "\n";
@@ -146,7 +154,13 @@ function separateur(a: Morceau, b: Morceau): "" | " " | "\n" {
 export function boiteDe(m: Morceau, debut: number, fin: number, page: { largeur: number; hauteur: number }): BoiteVisible {
   const n = Math.max(1, [...m.t].length);
   let x0: number, y0: number, x1: number, y1: number;
-  if (m.cadre) {
+  if (m.cadre && m.entier) {
+    const marge = Math.min(4, (m.cadre.y1 - m.cadre.y0) * 0.1);
+    x0 = m.cadre.x0 - marge;
+    x1 = m.cadre.x1 + marge;
+    y0 = m.cadre.y0 - marge;
+    y1 = m.cadre.y1 + marge;
+  } else if (m.cadre) {
     const l = m.cadre.x1 - m.cadre.x0;
     const marge = (m.cadre.y1 - m.cadre.y0) * 0.12;
     x0 = m.cadre.x0 + (l * debut) / n - marge;
@@ -161,8 +175,9 @@ export function boiteDe(m: Morceau, debut: number, fin: number, page: { largeur:
     const uy = -c;
     const haut = m.hauteur * 0.95;
     const bas = m.hauteur * 0.3;
-    // Une petite marge de chaque côté : mieux vaut couvrir un peu trop qu'oublier le bord d'une lettre.
-    const marge = m.hauteur * 0.12;
+    // Une marge d'un quart de corps de chaque côté : les largeurs de lettres sont estimées (police
+    // de remplacement), et mieux vaut couvrir un peu trop qu'oublier le bord d'un chiffre.
+    const marge = m.hauteur * 0.25;
     const exactes = m.avances && m.avances.length === n + 1;
     const a = (exactes ? m.avances![debut] : (m.largeur * debut) / n) - marge;
     const b = (exactes ? m.avances![fin] : (m.largeur * fin) / n) + marge;
@@ -186,13 +201,63 @@ export function boiteDe(m: Morceau, debut: number, fin: number, page: { largeur:
   return { x: gx, y: gy, w: Math.min(1, x1 / L) - gx, h: Math.min(1, y1 / H) - gy };
 }
 
-/** Retire d'une trouvaille d'IBAN ce qui dépasse, jusqu'à retrouver un IBAN valide. */
-function ajusterIban(texte: string): number {
+/**
+ * La partie d'une trouvaille qui est l'IBAN : la plus longue dont la clé est juste ; à défaut (faute
+ * de frappe, mauvaise lecture), la longueur d'IBAN du pays. 0 si ce n'est pas un IBAN.
+ */
+export function ajusterIban(texte: string): number {
+  const compact = (t: string) => t.replace(/[^a-z0-9]/gi, "");
   for (let fin = texte.length; fin >= 15; fin--) {
-    if (/\s$/.test(texte.slice(0, fin))) continue;
-    if (ibanValide(texte.slice(0, fin))) return fin;
+    if (!/[a-z0-9]$/i.test(texte.slice(0, fin))) continue;
+    if (ibanValide(compact(texte.slice(0, fin)))) return fin;
+  }
+  const attendue = LONGUEUR_IBAN[texte.slice(0, 2).toLowerCase()];
+  if (!attendue) return 0;
+  let n = 0;
+  for (let i = 0; i < texte.length; i++) {
+    if (/[a-z0-9]/i.test(texte[i]) && ++n === attendue) return i + 1;
   }
   return 0;
+}
+
+/**
+ * Les numéros de carte dans une suite de chiffres : chaque fenêtre de 13 à 19 chiffres qui commence
+ * au début d'un groupe, finit à la fin d'un groupe (ou tient dans un seul groupe sans espace) et passe
+ * le contrôle de Luhn — la date d'expiration ou une référence voisine ne l'empêchent plus ; à défaut,
+ * quatre groupes de quatre chiffres, forme d'une carte même mal lue.
+ */
+export function fenetresCarte(texte: string): [number, number][] {
+  const chiffres: number[] = [];
+  const debutsDeGroupe = new Set<number>();
+  for (let i = 0; i < texte.length; i++) {
+    if (!/\d/.test(texte[i])) continue;
+    if (i === 0 || !/\d/.test(texte[i - 1])) debutsDeGroupe.add(chiffres.length);
+    chiffres.push(i);
+  }
+  const suite = chiffres.map((i) => texte[i]).join("");
+  // Fin d'un groupe : le chiffre suivant commence un autre groupe, ou il n'y en a plus.
+  const finDeGroupe = (n: number) => n === suite.length || debutsDeGroupe.has(n);
+  const fenetres: [number, number][] = [];
+  for (let k = 0; k < suite.length; ) {
+    let trouve = 0;
+    if (debutsDeGroupe.has(k))
+      for (let l = Math.min(19, suite.length - k); l >= 13; l--) {
+        const unSeulGroupe = ![...debutsDeGroupe].some((d) => d > k && d < k + l);
+        if ((finDeGroupe(k + l) || unSeulGroupe) && luhnValide(suite.slice(k, k + l))) {
+          trouve = l;
+          break;
+        }
+      }
+    if (trouve) {
+      fenetres.push([chiffres[k], chiffres[k + trouve - 1] + 1]);
+      k += trouve;
+    } else k++;
+  }
+  if (!fenetres.length) {
+    const forme = new RegExp(`\\d{4}${S}\\d{4}${S}\\d{4}${S}\\d{4}(?!\\d)`).exec(texte);
+    if (forme) fenetres.push([forme.index, forme.index + forme[0].length]);
+  }
+  return fenetres;
 }
 
 /** Les trouvailles d'une expression sur toutes les pages. */
@@ -204,44 +269,60 @@ export function chercher(pages: PageTexte[], motif: RegExp | IdMotif): Trouvaill
     const { texte, origine } = texteDePage(page);
     const re = new RegExp(expr.source, expr.flags.includes("g") ? expr.flags : `${expr.flags}g`);
     for (const r of texte.matchAll(re)) {
-      let longueur = r[0].length;
-      if (!longueur) continue;
-      if (id === "iban") longueur = ajusterIban(r[0]);
-      if (id === "carte" && !luhnValide(r[0])) continue;
-      if (!longueur) continue;
-      const debut = r.index ?? 0;
-      // Les caractères trouvés, regroupés par morceau.
-      const parMorceau = new Map<number, { de: number; a: number }>();
-      for (let k = debut; k < debut + longueur; k++) {
-        const o = origine[k];
-        if (!o) continue;
-        const p = parMorceau.get(o.m);
-        if (p) {
-          p.de = Math.min(p.de, o.i);
-          p.a = Math.max(p.a, o.i + 1);
-        } else parMorceau.set(o.m, { de: o.i, a: o.i + 1 });
+      if (!r[0].length) continue;
+      const depart = r.index ?? 0;
+      let portions: [number, number][] = [[0, r[0].length]];
+      if (id === "iban") {
+        const l = ajusterIban(r[0]);
+        portions = l ? [[0, l]] : [];
+      } else if (id === "carte") {
+        // Les chiffres qui suivent le début d'un IBAN (« FR76 ») sont l'IBAN, pas une carte.
+        portions = /[a-z]{2}\d{2}[\s.\-\u2010-\u2015]?$/.test(texte.slice(Math.max(0, depart - 6), depart)) ? [] : fenetresCarte(r[0]);
       }
-      const boites = [...parMorceau].map(([m, { de, a }]) => boiteDe(page.morceaux[m], de, a, page));
-      if (!boites.length) continue;
-      const brut = [...parMorceau].map(([m, { de, a }]) => [...page.morceaux[m].t].slice(de, a).join("")).join(" ");
-      trouvailles.push({ page: numero, boites, texte: brut.replace(/\s+/g, " ").trim() });
+      for (const [pa, pb] of portions) {
+        const debut = depart + pa;
+        const longueur = pb - pa;
+        // Les caractères trouvés, regroupés par morceau.
+        const parMorceau = new Map<number, { de: number; a: number }>();
+        for (let k = debut; k < debut + longueur; k++) {
+          const o = origine[k];
+          if (!o) continue;
+          const p = parMorceau.get(o.m);
+          if (p) {
+            p.de = Math.min(p.de, o.i);
+            p.a = Math.max(p.a, o.i + 1);
+          } else parMorceau.set(o.m, { de: o.i, a: o.i + 1 });
+        }
+        const boites = [...parMorceau].map(([m, { de, a }]) => boiteDe(page.morceaux[m], de, a, page));
+        if (!boites.length) continue;
+        const brut = [...parMorceau].map(([m, { de, a }]) => [...page.morceaux[m].t].slice(de, a).join("")).join(" ");
+        trouvailles.push({ page: numero, boites, texte: brut.replace(/\s+/g, " ").trim() });
+      }
     }
   });
   return trouvailles;
 }
 
-/** Part (0 à 1) de la boîte `b` recouverte par les caches donnés. */
+/**
+ * Part (0 à 1) de la boîte `b` recouverte par les caches donnés, mesurée sur une grille de points :
+ * deux caches superposés ne comptent qu'une fois.
+ */
 export function couverture(b: BoiteVisible, caches: BoiteVisible[]): number {
-  const aire = b.w * b.h;
-  if (aire <= 0) return 1;
-  let couvert = 0;
-  for (const c of caches) {
-    const ix = Math.max(0, Math.min(b.x + b.w, c.x + c.w) - Math.max(b.x, c.x));
-    const iy = Math.max(0, Math.min(b.y + b.h, c.y + c.h) - Math.max(b.y, c.y));
-    couvert += ix * iy;
-  }
-  return Math.min(1, couvert / aire);
+  if (b.w <= 0 || b.h <= 0) return 1;
+  const nx = 24;
+  const ny = 6;
+  let dedans = 0;
+  for (let i = 0; i < nx; i++)
+    for (let j = 0; j < ny; j++) {
+      const x = b.x + ((i + 0.5) / nx) * b.w;
+      const y = b.y + ((j + 0.5) / ny) * b.h;
+      if (caches.some((c) => x >= c.x && x <= c.x + c.w && y >= c.y && y <= c.y + c.h)) dedans++;
+    }
+  return dedans / (nx * ny);
 }
+
+/** Seuil au-delà duquel un texte est tenu pour caché (une mince bande de marge peut dépasser). */
+export const COUVERT = 0.97;
 
 /**
  * Ce qui, parmi les textes cherchés, n'est pas (ou plus) sous un cache : un cache retiré ou déplacé
@@ -253,7 +334,7 @@ export function decouverts(pages: PageTexte[], motifs: (RegExp | IdMotif)[], cac
   for (const m of motifs)
     for (const t of chercher(pages, m)) {
       const sur = caches.filter((c) => c.page === t.page).map((c) => c.boite);
-      if (t.boites.every((b) => couverture(b, sur) >= 0.85)) continue;
+      if (t.boites.every((b) => couverture(b, sur) >= COUVERT)) continue;
       const cle = `${t.page}|${t.texte}`;
       if (vus.has(cle)) continue;
       vus.add(cle);

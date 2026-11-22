@@ -60,6 +60,21 @@ export async function lireTextePdf(doc: DocPdf, signal?: AbortSignal): Promise<P
       const famille = (contenu.styles as Record<string, { fontFamily?: string } | undefined>)[it.fontName]?.fontFamily ?? "sans-serif";
       morceaux.push({ t: it.str, ox: tx[4], oy: tx[5], angle: Math.atan2(tx[1], tx[0]), largeur, hauteur: Math.hypot(tx[2], tx[3]), finDeLigne: it.hasEOL, avances: avancesDe(it.str, famille, largeur) });
     }
+    // Les valeurs des champs de formulaire et le texte des annotations ne sont pas dans la couche
+    // texte : on les ajoute, avec tout leur cadre (la place des lettres y est inconnue).
+    try {
+      for (const a of (await page.getAnnotations({ intent: "display" })) as { subtype?: string; fieldType?: string; fieldValue?: unknown; contentsObj?: { str?: string }; rect?: number[] }[]) {
+        if (a.subtype === "Popup" || !a.rect) continue;
+        const valeurs = [a.fieldType === "Tx" || a.fieldType === "Ch" ? a.fieldValue : null, a.contentsObj?.str].flat().filter((v): v is string => typeof v === "string" && v.trim() !== "");
+        if (!valeurs.length) continue;
+        const [x1, y1] = vue.convertToViewportPoint(a.rect[0], a.rect[1]) as number[];
+        const [x2, y2] = vue.convertToViewportPoint(a.rect[2], a.rect[3]) as number[];
+        const cadre = { x0: Math.min(x1, x2), y0: Math.min(y1, y2), x1: Math.max(x1, x2), y1: Math.max(y1, y2) };
+        morceaux.push({ t: valeurs.join(" "), ox: cadre.x0, oy: cadre.y1, angle: 0, largeur: cadre.x1 - cadre.x0, hauteur: cadre.y1 - cadre.y0, cadre, entier: true, finDeLigne: true });
+      }
+    } catch {
+      // annotations illisibles : la couche texte suffit
+    }
     pages.push({ largeur: vue.width, hauteur: vue.height, morceaux });
     page.cleanup();
   }
@@ -110,16 +125,19 @@ function peindre(ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext
  * les autres sont reprises sans changement. Le titre, l'auteur, les signets et les pièces jointes du
  * document ne sont pas repris : ils peuvent contenir ce qu'on veut cacher.
  */
-export async function masquerPdf(octets: Uint8Array, cadres: Cadre[], couleur: Couleur, nom: string, avancer: Avancer, signal?: AbortSignal): Promise<Resultat & { pagesAplaties: number }> {
-  const [{ ouvrir, charger }, { PDFDocument }] = await Promise.all([import("./pdf"), import("@cantoo/pdf-lib")]);
+export async function masquerPdf(octets: Uint8Array, cadres: Cadre[], couleur: Couleur, nom: string, avancer: Avancer, signal?: AbortSignal, toutAplatir = false): Promise<Resultat & { pagesAplaties: number }> {
+  const [{ ouvrir, charger }, { PDFDocument }, { assainirReprises, pagesHorsArbre }, { retirerOrphelins }] = await Promise.all([import("./pdf"), import("@cantoo/pdf-lib"), import("../reprises"), import("../allegement")]);
+  if (!cadres.length) throw new Error("Aucun cache à poser : le document serait enregistré sans rien de masqué.");
   avancer(0.02, "Lecture du PDF");
   const { doc, fermer } = await ouvrir(octets);
   try {
     const source: DocPdfLib = await charger(octets);
     const sortie = await PDFDocument.create();
     const total = source.getPageCount();
-    const masquees = new Set(cadres.map((c) => c.page));
+    const masquees = new Set(toutAplatir ? Array.from({ length: total }, (_, i) => i) : cadres.map((c) => c.page));
     const reprises = Array.from({ length: total }, (_, i) => i).filter((i) => !masquees.has(i));
+    // Les pages gardées ne doivent rien emporter d'une page masquée (liens, champs partagés…).
+    const retirees = assainirReprises(source, reprises);
     const copiees = new Map<number, Awaited<ReturnType<typeof sortie.copyPages>>[number]>();
     if (reprises.length) (await sortie.copyPages(source, reprises)).forEach((p, k) => copiees.set(reprises[k], p));
     let faites = 0;
@@ -151,17 +169,24 @@ export async function masquerPdf(octets: Uint8Array, cadres: Cadre[], couleur: C
     avancer(0.94, "Écriture du PDF");
     sortie.setProducer("HaqqReason — L'Alambic");
     sortie.setCreator("HaqqReason — L'Alambic");
+    retirerOrphelins(sortie);
     const fini = await sortie.save();
-    return {
-      nom: `${sansExtension(nom)} (masqué).pdf`,
-      blob: new Blob([fini.slice().buffer], { type: "application/pdf" }),
-      format: "pdf",
-      avertissements: [
-        `${masquees.size === 1 ? "La page masquée est devenue une image" : `Les ${masquees.size} pages masquées sont devenues des images`} : ce qui est caché a disparu du fichier, et leur texte ne se sélectionne plus.`,
-        "Titre, auteur, signets et pièces jointes du document n'ont pas été repris.",
-      ],
-      pagesAplaties: masquees.size,
-    };
+    // Contrôle du fichier écrit : aucune page ne doit s'y trouver hors de l'arbre des pages. Sinon,
+    // par sécurité, on recommence en redessinant toutes les pages.
+    if (pagesHorsArbre(await PDFDocument.load(fini, { updateMetadata: false })) !== 0) {
+      if (toutAplatir) throw new Error("Le fichier masqué n'a pas pu être vérifié : il n'a pas été produit.");
+      return masquerPdf(octets, cadres, couleur, nom, avancer, signal, true);
+    }
+    const avertissements = [
+      toutAplatir
+        ? "Par sécurité, toutes les pages ont été redessinées en images : ce qui est caché a disparu du fichier, et le texte ne se sélectionne plus."
+        : masquees.size === 1
+          ? "La page masquée est devenue une image : ce qui est caché a disparu du fichier, et son texte ne se sélectionne plus."
+          : `Les ${masquees.size} pages masquées sont devenues des images : ce qui est caché a disparu du fichier, et leur texte ne se sélectionne plus.`,
+      "Titre, auteur, signets et pièces jointes du document n'ont pas été repris.",
+    ];
+    if (retirees) avertissements.push(`${retirees} lien${retirees > 1 ? "s, champs ou pièces jointes qui menaient" : ", champ ou pièce jointe qui menait"} ailleurs dans le document ${retirees > 1 ? "ont été retirés" : "a été retiré"} des pages gardées.`);
+    return { nom: `${sansExtension(nom)} (masqué).pdf`, blob: new Blob([fini.slice().buffer], { type: "application/pdf" }), format: "pdf", avertissements, pagesAplaties: masquees.size };
   } finally {
     await fermer();
   }
@@ -179,13 +204,24 @@ const SORTIES: Record<string, { format: string; type: string; qualite?: number }
 export async function masquerImage(fichier: Blob, format: string, cadres: Cadre[], couleur: Couleur, nom: string): Promise<Resultat> {
   const { decoder } = await import("./images");
   const p = await decoder(fichier, format);
+  if (!cadres.length) throw new Error("Aucun cache à poser : l'image serait enregistrée sans rien de masqué.");
+  const s = SORTIES[format] ?? SORTIES.png;
+  const brute = document.createElement("canvas");
+  brute.width = p.largeur;
+  brute.height = p.hauteur;
+  brute.getContext("2d")!.putImageData(new ImageData(new Uint8ClampedArray(p.donnees), p.largeur, p.hauteur), 0, 0);
   const c = document.createElement("canvas");
   c.width = p.largeur;
   c.height = p.hauteur;
   const ctx = c.getContext("2d")!;
-  ctx.putImageData(new ImageData(new Uint8ClampedArray(p.donnees), p.largeur, p.hauteur), 0, 0);
+  // Le JPEG n'a pas de transparence : sans fond blanc, les zones transparentes deviendraient noires.
+  if (s.type === "image/jpeg") {
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, c.width, c.height);
+  }
+  ctx.drawImage(brute, 0, 0);
+  brute.width = 0;
   peindre(ctx, cadres, p.largeur, p.hauteur, couleur);
-  const s = SORTIES[format] ?? SORTIES.png;
   const blob = await new Promise<Blob>((ok, ko) => c.toBlob((b) => (b ? ok(b) : ko(new Error("L'image n'a pas pu être enregistrée."))), s.type, s.qualite));
   c.width = 0;
   const sortie = blob.type === s.type ? s.format : "png";
