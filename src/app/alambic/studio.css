@@ -1,0 +1,778 @@
+/* =====================================================================
+   L'Alambic — le studio complet : menu regroupé, recherche par intention,
+   suites d'un résultat, aperçu, résultats de la visite, nouveaux outils.
+   Même langue que le reste du module : verre, filets fins, or en signal.
+   ===================================================================== */
+
+/* ---------- le menu : recherche, puis trois familles ---------- */
+.alambic-grille .alambic-outils {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+.alambic-groupes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-width: 0;
+}
+.alambic-groupe {
+  display: grid;
+  gap: 0.35rem;
+}
+.alambic-groupe-nom {
+  padding-left: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+@media (min-width: 64rem) {
+  .alambic-outils .alambic-tuile {
+    padding: 0.6rem 0.85rem;
+    border-radius: 1rem;
+  }
+  .alambic-outils .alambic-tuile svg {
+    grid-row: auto;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .alambic-outils .alambic-tuile-nom {
+    font-size: 1rem;
+  }
+  /* L'aide de chaque outil apparaît sous l'outil choisi (et au survol, en bulle). */
+  .alambic-outils .alambic-tuile-aide {
+    display: none;
+    grid-column: 2;
+  }
+  .alambic-outils .alambic-tuile[aria-pressed="true"] .alambic-tuile-aide {
+    display: block;
+  }
+}
+/* Sur grand écran, le menu reste en vue ; s'il dépasse la hauteur de l'écran, seuls les outils défilent. */
+@media (min-width: 88rem) {
+  .alambic-groupes {
+    max-height: calc(100dvh - 6.5rem - var(--barre-vue));
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding-right: 0.15rem;
+  }
+}
+
+/* Téléphone et tablette : une seule ligne qui défile, famille après famille. */
+@media (max-width: 63.99rem) {
+  .alambic-groupes {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    margin-inline: calc(-1 * clamp(1rem, 2.5vw, 1.75rem));
+    padding: 0.15rem clamp(1rem, 2.5vw, 1.75rem) 0.35rem;
+    mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent);
+  }
+  .alambic-groupes::-webkit-scrollbar {
+    display: none;
+  }
+  .alambic-groupe {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex: none;
+  }
+  .alambic-groupe + .alambic-groupe {
+    padding-left: 0.6rem;
+    border-left: 1px solid var(--trait);
+  }
+  .alambic-groupe-nom {
+    padding-left: 0;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  .alambic-outils .alambic-tuile {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.5rem 0.95rem 0.5rem 0.75rem;
+    border-radius: 999px;
+    scroll-snap-align: center;
+    white-space: nowrap;
+  }
+  .alambic-outils .alambic-tuile svg {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+  .alambic-outils .alambic-tuile-nom {
+    font-size: 0.95rem;
+  }
+  .alambic-outils .alambic-tuile-aide {
+    display: none;
+  }
+}
+
+/* « Que veux-tu faire ? » */
+.alambic-recherche {
+  position: relative;
+}
+.alambic-recherche-champ {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.9rem;
+  padding: 0 0.5rem 0 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.alambic-recherche-champ:focus-within {
+  border-color: var(--or);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--or) 18%, transparent);
+}
+.alambic-recherche-champ input {
+  flex: 1;
+  min-width: 0;
+  min-height: 2.7rem;
+  background: transparent;
+  color: var(--encre);
+  outline: none;
+}
+.alambic-recherche-champ input::placeholder {
+  color: var(--encre-douce);
+}
+.alambic-recherche-liste {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  width: max(100%, min(26rem, calc(100vw - 2rem)));
+  padding: 0.35rem;
+  border-radius: 1.1rem;
+  background: color-mix(in srgb, var(--fond-haut) 55%, var(--fond));
+  box-shadow: 0 18px 48px -18px rgb(0 0 0 / 0.55);
+}
+.alambic-recherche-titre {
+  padding: 0.45rem 0.6rem 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.alambic-recherche-liste [role="option"] {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.65rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.alambic-recherche-liste [role="option"][aria-selected="true"] {
+  background: color-mix(in srgb, var(--or) 13%, transparent);
+}
+.alambic-recherche-outil {
+  flex: none;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.75rem;
+  color: var(--encre-douce);
+}
+
+/* ---------- dépôt : le survol d'un fichier se voit ---------- */
+.alambic-depot[data-glisse] {
+  border-style: solid;
+  border-color: var(--or);
+  background: color-mix(in srgb, var(--or) 12%, transparent);
+}
+.alambic-depot:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+/* ---------- résultat : partager, aperçu, continuer avec… ---------- */
+.alambic-resultat-suites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.alambic-suite {
+  position: relative;
+}
+.alambic-suite-menu {
+  position: absolute;
+  z-index: 25;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  display: grid;
+  gap: 0.15rem;
+  width: min(22rem, calc(100vw - 3rem));
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 0.35rem;
+  border-radius: 1.1rem;
+  background: color-mix(in srgb, var(--fond-haut) 55%, var(--fond));
+  box-shadow: 0 18px 48px -18px rgb(0 0 0 / 0.55);
+}
+.alambic-suite-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.8rem;
+  text-align: left;
+}
+.alambic-suite-menu button:hover,
+.alambic-suite-menu button:focus-visible {
+  background: color-mix(in srgb, var(--or) 12%, transparent);
+}
+
+/* ---------- aperçu ---------- */
+.alambic-apercu {
+  display: grid;
+  gap: 0.6rem;
+  justify-items: center;
+  padding: 0.75rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 40%, transparent);
+}
+.alambic-apercu-image {
+  max-width: 100%;
+  max-height: 26rem;
+  border-radius: 0.6rem;
+  object-fit: contain;
+  background:
+    repeating-conic-gradient(color-mix(in srgb, var(--encre-douce) 14%, transparent) 0 25%, transparent 0 50%) 0 0 / 16px 16px;
+}
+.alambic-apercu-page {
+  background: #fff;
+  box-shadow: 0 6px 22px -10px rgb(0 0 0 / 0.5);
+}
+.alambic-apercu-pages {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+.alambic-apercu-texte {
+  justify-self: stretch;
+  max-height: 20rem;
+  overflow: auto;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.8rem;
+  background: var(--surface);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.alambic-apercu-tableau {
+  justify-self: stretch;
+  max-height: 20rem;
+  overflow: auto;
+}
+.alambic-apercu-tableau table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.alambic-apercu-tableau caption {
+  padding-bottom: 0.4rem;
+  text-align: left;
+  color: var(--encre-douce);
+}
+.alambic-apercu-tableau th,
+.alambic-apercu-tableau td {
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid var(--trait);
+  text-align: left;
+  white-space: nowrap;
+}
+.alambic-apercu-archive {
+  justify-self: stretch;
+  display: grid;
+  gap: 0.2rem;
+  max-height: 20rem;
+  overflow: auto;
+}
+.alambic-apercu-archive li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+}
+.alambic-apercu-archive li:hover {
+  background: var(--surface);
+}
+
+/* ---------- plusieurs résultats ---------- */
+.alambic-resultats-liste {
+  display: grid;
+  gap: 0.35rem;
+}
+.alambic-resultats-liste li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.55rem 0.55rem 0.85rem;
+  border-radius: 0.9rem;
+  background: var(--surface);
+}
+
+/* ---------- erreurs avec une issue ---------- */
+.alambic-erreur {
+  display: grid;
+  gap: 0.6rem;
+}
+.alambic-erreur .bouton {
+  justify-self: start;
+}
+.alambic-deverrouiller {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--encre);
+}
+.alambic-deverrouiller .alambic-mdp-champ {
+  flex: 1 1 14rem;
+}
+
+/* ---------- « Bon à savoir » ---------- */
+.alambic-astuces {
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
+}
+.alambic-astuces summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--encre-douce);
+  list-style: none;
+}
+.alambic-astuces summary::-webkit-details-marker {
+  display: none;
+}
+.alambic-astuces[open] summary {
+  color: var(--encre);
+}
+.alambic-astuces ul {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0 1rem 0.9rem 2.35rem;
+  list-style: disc;
+  font-size: 0.92rem;
+  color: var(--encre-douce);
+}
+
+/* ---------- colonne de droite : résultats de la visite, questions ---------- */
+.alambic-etagere-liste {
+  display: grid;
+  gap: 0.35rem;
+}
+.alambic-etagere-liste li {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.2rem 0.35rem 0.55rem;
+  border-radius: 0.8rem;
+  background: var(--surface);
+}
+.alambic-etagere-suites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+.alambic-etagere-suites button {
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.72rem;
+  color: var(--encre-douce);
+}
+.alambic-etagere-suites button:hover {
+  border-color: var(--or);
+  color: var(--encre);
+}
+.alambic-faq details {
+  border-top: 1px solid var(--trait);
+  padding-top: 0.55rem;
+}
+.alambic-faq summary {
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.alambic-faq details p {
+  margin-top: 0.4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .alambic-groupes {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Organiser ---------- */
+.alambic-vignette {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.alambic-orga-barre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.6rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.alambic-orga-portee {
+  padding: 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.alambic-orga-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.75rem, 1fr));
+  gap: 0.75rem;
+}
+@media (max-width: 30rem) {
+  .alambic-orga-grille {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.alambic-orga-page {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.45rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  touch-action: manipulation;
+}
+.alambic-orga-page[data-choisie] {
+  border-color: var(--or);
+  background: color-mix(in srgb, var(--or) 10%, var(--surface));
+}
+.alambic-orga-page[data-glisse] {
+  z-index: 5;
+  box-shadow: 0 16px 40px -16px rgb(0 0 0 / 0.6);
+  opacity: 0.92;
+}
+.alambic-orga-vignette {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  border-radius: 0.7rem;
+}
+.alambic-orga-vignette:focus-visible {
+  outline: 2px solid var(--or);
+  outline-offset: 2px;
+}
+.alambic-orga-cadre {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--fond) 50%, transparent);
+}
+.alambic-orga-cadre img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 3px 12px -6px rgb(0 0 0 / 0.55);
+  transition: transform 0.25s ease;
+}
+.alambic-orga-blanche {
+  display: grid;
+  place-items: center;
+  max-width: 72%;
+  max-height: 100%;
+  height: 92%;
+  background: #fff;
+  color: #6b7280;
+  font-size: 0.75rem;
+  box-shadow: 0 3px 12px -6px rgb(0 0 0 / 0.55);
+}
+.alambic-orga-coche {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: var(--or);
+  color: var(--sur-or);
+}
+.alambic-orga-pied {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.alambic-orga-poignee {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+  color: var(--encre-douce);
+  cursor: grab;
+  touch-action: none;
+}
+.alambic-orga-poignee:active {
+  cursor: grabbing;
+}
+.alambic-orga-numero {
+  flex: 1;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+@media (prefers-reduced-motion: reduce) {
+  .alambic-orga-cadre img {
+    transition: none;
+  }
+}
+
+/* ---------- Déverrouiller : ce que demande le fichier ---------- */
+.alambic-carte-etat {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--or) 35%, var(--trait));
+  background: color-mix(in srgb, var(--or) 6%, var(--surface));
+}
+.alambic-carte-etat .bouton {
+  justify-self: start;
+}
+
+/* ---------- Alléger ---------- */
+.alambic-bilan {
+  justify-self: start;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--succes) 45%, var(--trait));
+  background: color-mix(in srgb, var(--succes) 9%, transparent);
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Nettoyer : ce que révèlent les fichiers ---------- */
+.alambic-traces {
+  display: grid;
+  gap: 0.75rem;
+}
+.alambic-traces-fichier {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0.75rem 0.75rem 0.85rem 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.alambic-traces-fichier[data-propre] {
+  border-color: color-mix(in srgb, var(--succes) 40%, var(--trait));
+}
+.alambic-traces-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.alambic-traces-alerte {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.8rem;
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+  color: var(--danger);
+  font-size: 0.92rem;
+}
+.alambic-traces-liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 0.35rem 1rem;
+}
+.alambic-traces-liste > div {
+  display: grid;
+  gap: 0.05rem;
+  padding: 0.35rem 0.55rem;
+  border-left: 2px solid var(--trait);
+  min-width: 0;
+}
+.alambic-traces-liste > div[data-sensible] {
+  border-left-color: var(--danger);
+}
+.alambic-traces-liste dt {
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+}
+.alambic-traces-liste dd {
+  font-size: 0.92rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.alambic-traces-remarques {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}
+.alambic-traces-remarques li {
+  display: flex;
+  gap: 0.45rem;
+}
+
+/* Les cartes de la colonne de droite ne débordent jamais : les noms longs se coupent. */
+.alambic-cotes > *,
+.alambic-carte > *,
+.alambic-etagere-liste li {
+  min-width: 0;
+}
+
+/* ---------- Filigraner ---------- */
+.alambic-marquage {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
+}
+@media (min-width: 72rem) {
+  .alambic-marquage {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  }
+  .alambic-marquage-apercu {
+    position: sticky;
+    top: calc(1rem + var(--barre-vue));
+  }
+}
+.alambic-marquage-reglages {
+  display: grid;
+  gap: 0.9rem;
+  min-width: 0;
+}
+.alambic-marquage-bloc {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+}
+.alambic-champ {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.alambic-champ .champ {
+  min-height: 2.75rem;
+  font-weight: 400;
+}
+.alambic-pastilles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.alambic-pastilles button {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.alambic-pastilles button[aria-pressed="true"] {
+  border-color: var(--or);
+  color: var(--encre);
+  background: color-mix(in srgb, var(--or) 12%, transparent);
+}
+.alambic-couleurs {
+  display: flex;
+  gap: 0.5rem;
+}
+.alambic-couleurs button {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--trait);
+  background: var(--teinte);
+}
+.alambic-couleurs button[aria-checked="true"] {
+  outline: 2px solid var(--or);
+  outline-offset: 2px;
+}
+.alambic-marquage-apercu {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  min-width: 0;
+  padding: 0.75rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 45%, transparent);
+}
+.alambic-marquage-toile {
+  max-width: 100%;
+  max-height: 70vh;
+  height: auto;
+  border-radius: 0.4rem;
+  box-shadow: 0 8px 26px -12px rgb(0 0 0 / 0.55);
+  background: #fff;
+}
+.alambic-marquage-attente {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1.3;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+/* Dans les colonnes étroites (réglages du filigrane), les curseurs gardent leur valeur sur la même ligne. */
+.alambic-marquage-bloc .alambic-option > span:first-child {
+  min-width: 5.5rem;
+}
+.alambic-marquage-bloc .alambic-option input[type="range"] {
+  min-width: 6rem;
+}
+.alambic-marquage-bloc .alambic-option .champ {
+  min-width: 9rem;
+}
+@media (max-width: 40rem) {
+  .alambic-orga-barre {
+    gap: 0.35rem;
+    padding: 0.5rem;
+  }
+  .alambic-orga-barre .bouton {
+    min-height: 2.35rem !important;
+    padding-inline: 0.75rem;
+    font-size: 0.88rem;
+  }
+  .alambic-orga-portee {
+    width: 100%;
+  }
+}

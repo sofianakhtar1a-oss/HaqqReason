@@ -3,35 +3,81 @@
 /*
  * Outils PDF, dans le navigateur : pages → images, images → PDF, fusion, découpe, vignettes.
  */
-import { PDFDocument } from "@cantoo/pdf-lib";
+import { PDFDict, PDFDocument, PDFName, PDFStream } from "@cantoo/pdf-lib";
 import { chargerPdfjs } from "@/lib/client/pdf";
+import { MotDePasseFaux, PdfProtege } from "../erreurs";
 import { encoder, pourPdf } from "./images";
 
-const OPTIONS_PDFJS = { cMapUrl: "/vendor/pdfjs/cmaps/", cMapPacked: true, standardFontDataUrl: "/vendor/pdfjs/standard_fonts/", wasmUrl: "/vendor/pdfjs/wasm/", iccUrl: "/vendor/pdfjs/iccs/", enableXfa: false };
+export const OPTIONS_PDFJS = { cMapUrl: "/vendor/pdfjs/cmaps/", cMapPacked: true, standardFontDataUrl: "/vendor/pdfjs/standard_fonts/", wasmUrl: "/vendor/pdfjs/wasm/", iccUrl: "/vendor/pdfjs/iccs/", enableXfa: false };
 
-export async function ouvrir(octets: Uint8Array) {
+/** Ouvre un PDF pour l'afficher (pdf.js). `motDePasse` : pour un PDF protégé dont on connaît le mot de passe. */
+export async function ouvrir(octets: Uint8Array, motDePasse?: string) {
   const pdfjs = await chargerPdfjs();
-  const tache = pdfjs.getDocument({ data: octets.slice(), ...OPTIONS_PDFJS });
+  const tache = pdfjs.getDocument({ data: octets.slice(), ...OPTIONS_PDFJS, ...(motDePasse !== undefined ? { password: motDePasse } : {}) });
   try {
     const doc = await tache.promise;
     return { doc, fermer: () => tache.destroy() };
   } catch (e) {
     await tache.destroy();
-    if ((e as { name?: string }).name === "PasswordException") throw new Error("Ce PDF est protégé par un mot de passe : ouvre-le et enregistre-le sans protection d'abord.");
+    if ((e as { name?: string }).name === "PasswordException") throw motDePasse ? new MotDePasseFaux() : new PdfProtege();
     throw new Error("Ce PDF est illisible : il est peut-être abîmé.");
   }
 }
 
-/** Charge un PDF pour le modifier ; message clair s'il est protégé. */
-export async function charger(octets: Uint8Array): Promise<PDFDocument> {
+/**
+ * Retire du document déchiffré ce qui ne servait qu'au chiffrement (dictionnaire de chiffrement,
+ * anciennes tables de renvoi) : le fichier enregistré ensuite s'ouvre sans mot de passe.
+ */
+function retirerChiffrement(doc: PDFDocument) {
+  for (const [ref, obj] of doc.context.enumerateIndirectObjects()) {
+    const dict = obj instanceof PDFDict ? obj : obj instanceof PDFStream ? obj.dict : null;
+    if (!dict) continue;
+    if (dict.get(PDFName.of("Type")) === PDFName.of("XRef") || dict.get(PDFName.of("Filter")) === PDFName.of("Standard") || dict.has(PDFName.of("Encrypt"))) doc.context.delete(ref);
+  }
+  doc.context.trailerInfo.Encrypt = undefined;
+}
+
+/**
+ * Charge un PDF pour le modifier. Un PDF qui s'ouvre sans mot de passe mais porte des restrictions
+ * (impression, copie) est ouvert tel quel ; un PDF qui demande un mot de passe lève PdfProtege
+ * (ou MotDePasseFaux si celui donné ne l'ouvre pas).
+ */
+export async function charger(octets: Uint8Array, motDePasse?: string): Promise<PDFDocument> {
+  let doc: PDFDocument;
   try {
-    const doc = await PDFDocument.load(octets, { updateMetadata: false });
-    if (doc.isEncrypted) throw new Error("chiffre");
-    return doc;
-  } catch (e) {
-    if ((e as Error).message === "chiffre" || /encrypt/i.test(String(e))) throw new Error("Ce PDF est protégé par un mot de passe : ouvre-le et enregistre-le sans protection d'abord.");
+    doc = await PDFDocument.load(octets, { updateMetadata: false, ignoreEncryption: true });
+  } catch {
     throw new Error("Ce PDF est illisible : il est peut-être abîmé.");
   }
+  if (!doc.isEncrypted) return doc;
+  // Mot de passe vide d'abord : beaucoup de PDF (relevés, documents officiels) ne sont que « restreints ».
+  for (const essai of motDePasse !== undefined ? [motDePasse, ""] : [""]) {
+    try {
+      const clair = await PDFDocument.load(octets, { updateMetadata: false, password: essai });
+      retirerChiffrement(clair);
+      return clair;
+    } catch {
+      // essai suivant
+    }
+  }
+  throw motDePasse ? new MotDePasseFaux() : new PdfProtege();
+}
+
+/** Le PDF demande-t-il un mot de passe pour s'ouvrir ? (Les PDF seulement « restreints » répondent non.) */
+export async function demandeMotDePasse(octets: Uint8Array): Promise<boolean> {
+  try {
+    await charger(octets);
+    return false;
+  } catch (e) {
+    if (e instanceof PdfProtege) return true;
+    throw e;
+  }
+}
+
+/** Les octets d'un PDF sans aucune protection (ni mot de passe, ni restriction), métadonnées gardées. */
+export async function dechiffrer(octets: Uint8Array, motDePasse: string): Promise<Uint8Array> {
+  const doc = await charger(octets, motDePasse);
+  return doc.save();
 }
 
 /** Rend une page en image. `echelle` 2 ≈ 144 points par pouce : net à l'écran et à l'impression courante. */

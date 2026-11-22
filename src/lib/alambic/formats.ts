@@ -77,6 +77,23 @@ export function format(id: string): Format {
   return x;
 }
 
+/** Formats que le studio manipule sans les convertir (Nettoyer, Alléger, Déverrouiller…). */
+const HORS_CATALOGUE: Record<string, { nom: string; famille: Famille }> = {
+  pptx: { nom: "PowerPoint", famille: "document" },
+  ods: { nom: "Classeur OpenDocument", famille: "donnees" },
+  odp: { nom: "Présentation OpenDocument", famille: "document" },
+};
+
+/** Nom lisible d'un format, même hors du catalogue de conversion ; « Fichier » s'il est inconnu. */
+export function nomDuFormat(id: string): string {
+  return PAR_ID.get(id)?.nom ?? HORS_CATALOGUE[id]?.nom ?? (id ? id.toUpperCase() : "Fichier");
+}
+
+/** Famille d'un format, même hors du catalogue (les inconnus sont rangés avec les archives). */
+export function familleDuFormat(id: string): Famille {
+  return PAR_ID.get(id)?.famille ?? HORS_CATALOGUE[id]?.famille ?? "archive";
+}
+
 export function famille(id: Famille) {
   return FAMILLES.find((x) => x.id === id)!;
 }

@@ -14,6 +14,7 @@ import { REGLAGES_PAR_DEFAUT } from "@/lib/atelier/modele";
 import { texteDuDocument } from "@/lib/document-schema";
 import { chargerPdfjs } from "@/lib/client/pdf";
 import { rtfVersHtml } from "../archives";
+import { PdfProtege } from "../erreurs";
 import { versEpub, versHtml, versOdt, versRtf } from "../ecrivains";
 import type { Noeud } from "../pm";
 
@@ -143,7 +144,14 @@ function epubVersHtml(entrees: Record<string, Uint8Array>): { html: string; titr
 async function pdfVersHtml(octets: Uint8Array, avancer: (f: number) => void): Promise<{ html: string; vide: boolean }> {
   const pdfjs = await chargerPdfjs();
   const tache = pdfjs.getDocument({ data: octets, cMapUrl: "/vendor/pdfjs/cmaps/", cMapPacked: true, standardFontDataUrl: "/vendor/pdfjs/standard_fonts/", wasmUrl: "/vendor/pdfjs/wasm/", iccUrl: "/vendor/pdfjs/iccs/", enableXfa: false });
-  const doc = await tache.promise;
+  let doc: Awaited<typeof tache.promise>;
+  try {
+    doc = await tache.promise;
+  } catch (e) {
+    await tache.destroy();
+    if ((e as { name?: string }).name === "PasswordException") throw new PdfProtege();
+    throw new Error("Ce PDF est illisible : il est peut-être abîmé.");
+  }
   const paragraphes: string[] = [];
   let caracteres = 0;
   try {

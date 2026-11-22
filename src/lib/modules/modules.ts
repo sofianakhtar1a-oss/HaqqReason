@@ -108,7 +108,7 @@ const ACCUEIL: DefModule = {
             titre: "L'Alambic",
             soustitre: "Studio de fichiers",
             marque: "Transformer",
-            texte: "Convertir d'un format à l'autre (documents, tableurs, images, sons, vidéos, archives), fusionner, découper et protéger par mot de passe. Tout se fait dans ton navigateur : aucun fichier n'est envoyé.",
+            texte: "Convertir d'un format à l'autre (documents, tableurs, images, sons, vidéos, archives), fusionner, découper, organiser, alléger, filigraner, signer, protéger et nettoyer tes fichiers, ou en reconnaître le texte. Tout se fait dans ton navigateur : aucun fichier n'est envoyé.",
           },
         },
         {
@@ -207,7 +207,7 @@ const CALAME: DefModule = {
 const ALAMBIC: DefModule = {
   id: "alambic",
   nom: "L'Alambic",
-  description: "Le studio de fichiers : ses outils (nom, aide, ordre, présence) et ses textes de présentation.",
+  description: "Le studio de fichiers : ses outils (nom, aide, ordre, présence), ses textes de présentation et ses questions fréquentes.",
   adresse: "/alambic",
   accent: "amethyste",
   sections: [
@@ -215,7 +215,7 @@ const ALAMBIC: DefModule = {
       titre: "Présentation",
       champs: [
         { cle: "meta.titre", libelle: "Titre de l'onglet du navigateur", defaut: "L'Alambic, studio de fichiers" },
-        { cle: "meta.description", libelle: "Description pour Google", defaut: "Convertir, fusionner, découper et protéger tes fichiers, dans ton navigateur : documents, tableurs, images, sons, vidéos et archives. Rien n'est envoyé.", long: true },
+        { cle: "meta.description", libelle: "Description pour Google", defaut: "Convertir, fusionner, découper, organiser, alléger, filigraner, signer, protéger et nettoyer tes fichiers, dans ton navigateur : documents, tableurs, images, sons, vidéos et archives. Rien n'est envoyé.", long: true },
         { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "L'Alambic" },
         { cle: "badge.local", libelle: "Pastille « rien n'est envoyé »", defaut: "Rien ne quitte ton appareil" },
         { cle: "badge.nuage", libelle: "Pastille de l'outil Transcrire", defaut: "Le son passe par Groq" },
@@ -231,12 +231,28 @@ const ALAMBIC: DefModule = {
         { cle: "nuage.texte", libelle: "Carte de Transcrire : texte", defaut: "Pour transcrire, le son est allégé ici puis envoyé à Groq, qui l'écoute avec Whisper. Les textes et leurs traductions sont rangés dans ta bibliothèque, qui te suit avec ton compte.", long: true },
       ],
     },
+    {
+      titre: "Questions fréquentes",
+      champs: [
+        { cle: "faq.titre", libelle: "Titre de la carte", defaut: "Questions fréquentes" },
+        { cle: "faq.1.q", libelle: "Question 1", defaut: "Mes fichiers sont-ils envoyés sur Internet ?" },
+        { cle: "faq.1.r", libelle: "Réponse 1", defaut: "Non. Ils sont lus et transformés par ton propre appareil : rien n'est envoyé, rien n'est gardé. Seul l'outil Transcrire envoie le son à Groq, et il l'annonce.", long: true },
+        { cle: "faq.2.q", libelle: "Question 2", defaut: "Y a-t-il une limite de taille ?" },
+        { cle: "faq.2.r", libelle: "Réponse 2", defaut: "Seulement celle de ton appareil : un ordinateur traite sans peine des vidéos de plusieurs gigaoctets ; un téléphone ancien peut manquer de mémoire pour les plus gros fichiers.", long: true },
+        { cle: "faq.3.q", libelle: "Question 3", defaut: "Mon PDF demande un mot de passe" },
+        { cle: "faq.3.r", libelle: "Réponse 3", defaut: "Si tu le connais, l'outil Déverrouiller retire la protection, et tous les outils l'acceptent ensuite. Sans le mot de passe, personne ne peut l'ouvrir : c'est le principe.", long: true },
+        { cle: "faq.4.q", libelle: "Question 4", defaut: "Le ZIP protégé ne s'ouvre pas sous Windows" },
+        { cle: "faq.4.r", libelle: "Réponse 4", defaut: "L'explorateur de Windows ne connaît pas le chiffrement AES-256. Ouvre-le avec 7-Zip ou WinRAR (gratuits), Keka ou The Unarchiver sur Mac, ou avec l'outil Déverrouiller, ici même.", long: true },
+        { cle: "faq.5.q", libelle: "Question 5", defaut: "Pourquoi certains formats sont grisés ?" },
+        { cle: "faq.5.r", libelle: "Réponse 5", defaut: "Parce que la conversion donnerait un fichier vide ou trompeur. Touche un format grisé : la raison s'affiche, souvent avec une autre façon d'y arriver.", long: true },
+      ],
+    },
   ],
   listes: [
     {
       id: "outils",
       titre: "Les outils",
-      aide: "Renomme un outil, change son texte d'aide ou sa place. Un outil masqué ou supprimé disparaît du menu (tu peux le remettre).",
+      aide: "Renomme un outil, change son texte d'aide ou sa place. Un outil masqué ou supprimé disparaît du menu (tu peux le remettre). Le menu range les outils en trois familles (Transformer, Pages et PDF, Sécurité) : l'ordre choisi ici vaut à l'intérieur de chacune.",
       nom: "nom",
       champs: [
         { cle: "nom", libelle: "Nom" },
@@ -247,7 +263,14 @@ const ALAMBIC: DefModule = {
         { id: "fusionner", valeurs: { nom: "Fusionner", aide: "Plusieurs fichiers, un seul PDF" } },
         { id: "decouper", valeurs: { nom: "Découper", aide: "Des pages, ou un passage d'un son, d'une vidéo" } },
         { id: "proteger", valeurs: { nom: "Protéger", aide: "Un mot de passe, chiffré en AES-256" } },
+        { id: "alleger", valeurs: { nom: "Alléger", aide: "Un PDF, une photo, une vidéo moins lourds" } },
+        { id: "reconnaitre", valeurs: { nom: "Reconnaître", aide: "Le texte d'une photo ou d'un scan" } },
         { id: "transcrire", valeurs: { nom: "Transcrire", aide: "Un son ou une vidéo devient un livre à lire" } },
+        { id: "organiser", valeurs: { nom: "Organiser", aide: "Pivoter, déplacer, retirer des pages" } },
+        { id: "filigraner", valeurs: { nom: "Filigraner", aide: "Un filigrane, des numéros de page" } },
+        { id: "signer", valeurs: { nom: "Signer", aide: "Signer, dater, remplir un formulaire" } },
+        { id: "deverrouiller", valeurs: { nom: "Déverrouiller", aide: "Retirer un mot de passe que tu connais" } },
+        { id: "nettoyer", valeurs: { nom: "Nettoyer", aide: "Effacer le lieu, l'auteur, l'appareil" } },
       ],
     },
   ],

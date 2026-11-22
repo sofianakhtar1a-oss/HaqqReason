@@ -5,6 +5,34 @@
  * GZIP par le navigateur lui-même (CompressionStream), TAR par ../archives.ts.
  */
 import { ecrireTar, lireTar } from "../archives";
+import { MESSAGE_ZIP_PROTEGE, MotDePasseFaux } from "../erreurs";
+
+/** Un ZIP contient-il des fichiers chiffrés ? */
+export async function zipChiffre(blob: Blob): Promise<boolean> {
+  const z = await zipjs();
+  const lecteur = new z.ZipReader(new z.BlobReader(blob));
+  try {
+    return (await lecteur.getEntries()).some((e) => e.encrypted);
+  } catch {
+    throw new Error("Ce ZIP est abîmé ou incomplet.");
+  } finally {
+    await lecteur.close();
+  }
+}
+
+/** Le contenu d'une archive, sans rien extraire : noms et tailles (pour l'aperçu). */
+export async function sommaireArchive(nom: string, format: string, blob: Blob): Promise<{ nom: string; taille: number; chiffre: boolean }[]> {
+  if (format === "zip") {
+    const z = await zipjs();
+    const lecteur = new z.ZipReader(new z.BlobReader(blob));
+    try {
+      return (await lecteur.getEntries()).filter((e) => !e.directory && !e.filename.startsWith("__MACOSX/")).map((e) => ({ nom: e.filename, taille: e.uncompressedSize, chiffre: Boolean(e.encrypted) }));
+    } finally {
+      await lecteur.close();
+    }
+  }
+  return (await lireArchive(nom, format, blob)).map((f) => ({ nom: f.nom, taille: f.blob.size, chiffre: false }));
+}
 
 export type FichierArchive = { nom: string; blob: Blob; date?: Date };
 
@@ -22,7 +50,7 @@ async function gunzip(blob: Blob): Promise<Blob> {
   }
 }
 
-export async function lireArchive(nom: string, format: string, blob: Blob): Promise<FichierArchive[]> {
+export async function lireArchive(nom: string, format: string, blob: Blob, motDePasse?: string): Promise<FichierArchive[]> {
   if (format === "zip") {
     const z = await zipjs();
     const lecteur = new z.ZipReader(new z.BlobReader(blob));
@@ -31,12 +59,17 @@ export async function lireArchive(nom: string, format: string, blob: Blob): Prom
       const sortie: FichierArchive[] = [];
       for (const e of entrees) {
         if (e.directory || e.filename.startsWith("__MACOSX/")) continue;
-        if (e.encrypted) throw new Error("Ce ZIP est protégé par un mot de passe.");
-        sortie.push({ nom: e.filename, blob: await e.getData!(new z.BlobWriter()), date: e.lastModDate });
+        if (e.encrypted && !motDePasse) throw new Error(MESSAGE_ZIP_PROTEGE);
+        try {
+          sortie.push({ nom: e.filename, blob: await e.getData!(new z.BlobWriter(), e.encrypted ? { password: motDePasse } : {}), date: e.lastModDate });
+        } catch (err) {
+          if (e.encrypted && /password/i.test(String((err as Error)?.message))) throw new MotDePasseFaux();
+          throw err;
+        }
       }
       return sortie;
     } catch (err) {
-      if (err instanceof Error && err.message.includes("mot de passe")) throw err;
+      if (err instanceof MotDePasseFaux || (err instanceof Error && err.message === MESSAGE_ZIP_PROTEGE)) throw err;
       throw new Error("Ce ZIP est abîmé ou incomplet.");
     } finally {
       await lecteur.close();

@@ -12,7 +12,7 @@
     "test:document": "tsx tests/test-document.mts",
     "postinstall": "node scripts/copier-ressources.mjs",
     "test:logique": "tsx tests/test-logique.mts",
-    "test:alambic": "tsx tests/test-alambic.mts",
+    "test:alambic": "tsx tests/test-alambic.mts && tsx tests/test-alambic-studio.mts && tsx tests/test-alambic-traces.mts",
     "test:transcription": "tsx tests/test-transcription.mts",
     "test:langues": "tsx tests/test-langues.mts",
     "test:vocabulaire": "tsx tests/test-vocabulaire.mts",

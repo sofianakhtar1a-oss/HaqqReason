@@ -12,7 +12,7 @@ const ok = (nom: string, cond: boolean, detail?: unknown) => {
 
 // Sans rien de publié : exactement les textes d'origine.
 const r0 = resoudre("alambic", null);
-ok("textes d'origine sans publication", r0.textes["tete.titre"] === "L'Alambic" && r0.listes.outils.length === 5 && r0.listes.outils[0].valeurs.nom === "Convertir");
+ok("textes d'origine sans publication", r0.textes["tete.titre"] === "L'Alambic" && r0.listes.outils.length === 12 && r0.listes.outils[0].valeurs.nom === "Convertir");
 ok("vocabulaire d'origine", resoudre("langues", null).themes?.length === 52);
 
 // Un texte modifié, un outil renommé, déplacé, un autre masqué, un troisième supprimé.
@@ -26,10 +26,10 @@ const r1 = resoudre("alambic", c);
 ok("texte modifié publié", r1.textes["tete.titre"] === "Le Laboratoire");
 ok(
   "ordre, nom, masquage et corbeille respectés",
-  r1.listes.outils.map((o) => o.id).join() === "transcrire,decouper,proteger" && r1.listes.outils[0].valeurs.nom === "Écouter",
+  r1.listes.outils.map((o) => o.id).join() === "transcrire,decouper,proteger,alleger,reconnaitre,organiser,filigraner,signer,deverrouiller,nettoyer" && r1.listes.outils[0].valeurs.nom === "Écouter",
   r1.listes.outils,
 );
-ok("un élément d'origine absent de la liste revient à la fin (ajout au code)", listeComplete(MODULES.alambic.listes[0], c).map((x) => x.id).join() === "transcrire,convertir,decouper,proteger");
+ok("un élément d'origine absent de la liste revient à la fin (ajout au code)", listeComplete(MODULES.alambic.listes[0], c).map((x) => x.id).join() === "transcrire,convertir,decouper,proteger,alleger,reconnaitre,organiser,filigraner,signer,deverrouiller,nettoyer");
 
 // Le vocabulaire : un mot ajouté, un mot vide refusé, un thème au nom manquant refusé.
 const themes = themesDOrigine();
