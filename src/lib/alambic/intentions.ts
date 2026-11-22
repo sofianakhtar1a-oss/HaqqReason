@@ -30,6 +30,7 @@ export const INTENTIONS: Intention[] = [
   { id: "supprimer-pages", titre: "Supprimer des pages d'un PDF", outil: "organiser", mots: "retirer enlever effacer supprimer pages page blanche pdf" },
   { id: "ordre-pages", titre: "Remettre les pages d'un PDF dans l'ordre", outil: "organiser", mots: "ordre reordonner deplacer trier classer pages pdf inverser" },
   { id: "extraire-pages", titre: "Extraire ou séparer des pages d'un PDF", outil: "decouper", mots: "extraire diviser separer scinder decouper couper garder pages pdf une par une" },
+  { id: "extraire-images", titre: "Récupérer les photos ou les images d'un PDF", outil: "decouper", reglage: "photos", mots: "extraire recuperer sortir enregistrer images photos illustrations dessins pdf qualite origine" },
   { id: "couper-video", titre: "Couper un passage d'une vidéo ou d'un son", outil: "decouper", mots: "couper decouper extrait passage raccourcir rogner trim video son audio musique mp3 mp4" },
   { id: "image-video", titre: "Enregistrer une image d'une vidéo", outil: "decouper", reglage: "image", mots: "capture photo image instant arret sur image video png jpg" },
   { id: "son-video", titre: "Extraire le son d'une vidéo en MP3", outil: "convertir", cible: "mp3", mots: "son audio musique bande son extraire mp3 video mp4 youtube" },

@@ -14,11 +14,12 @@ import { versDocument } from "../src/lib/alambic/transcription/exports";
 import { deplacer, dupliquer, entrelacer, estIntacte, insererBlanche, inverser, pagesDe, pivoter, placeBlanche, retirer } from "../src/lib/alambic/pages";
 import { MODULES, resoudre } from "../src/lib/modules/modules";
 import * as zipjs from "@zip.js/zip.js";
+import { imagesDesPages, versRgba } from "../src/lib/alambic/extraction";
 import { lireEntree } from "../src/lib/alambic/navigateur/archives";
 import { boiteDe, chercher, couverture, decouverts, enPixels, ibanValide, luhnValide, memeBoite, MOTIFS, motifDeRecherche, texteDePage, type Morceau, type PageTexte } from "../src/lib/alambic/caviardage";
 
 // Les modules du projet chargent pdf-lib en CommonJS : on prend le même exemplaire (sinon ses classes diffèrent).
-const { degrees, PDFDocument, PDFName, StandardFonts } = createRequire(import.meta.url)("@cantoo/pdf-lib") as typeof import("@cantoo/pdf-lib");
+const { degrees, PDFDocument, PDFHexString, PDFName, StandardFonts } = createRequire(import.meta.url)("@cantoo/pdf-lib") as typeof import("@cantoo/pdf-lib");
 
 let e = 0;
 const ok = (n: string, c: boolean, x: unknown = "") => {
@@ -53,6 +54,7 @@ ok("« enlever gps photo » → nettoyer", premier("enlever gps photo") === "gps
 ok("« copier le texte d'une photo » → reconnaître", premier("copier le texte d'une photo") === "ocr");
 ok("« cacher mon numéro de sécurité sociale » → masquer", premier("cacher mon numéro de sécurité sociale") === "masquer-numero", chercherIntentions("cacher mon numéro de sécurité sociale").map((x) => x.id));
 ok("« noircir l'IBAN d'un RIB » → masquer", premier("noircir l'iban d'un rib") === "masquer-numero", chercherIntentions("noircir l'iban d'un rib").map((x) => x.id));
+ok("« récupérer les photos d'un pdf » → découper, ses images", premier("récupérer les photos d'un pdf") === "extraire-images" && INTENTIONS.find((i) => i.id === "extraire-images")?.reglage === "photos", chercherIntentions("récupérer les photos d'un pdf").map((x) => x.id));
 ok("« flouter un visage sur une capture » → masquer", premier("flouter un visage sur une capture") === "cacher-capture", chercherIntentions("flouter un visage sur une capture").map((x) => x.id));
 ok("les fautes de frappe courantes passent (« compresser video »)", premier("compresser video") === "alleger-video");
 ok("rien pour une recherche vide ou hors sujet", chercherIntentions("").length === 0 && chercherIntentions("recette de couscous").length === 0);
@@ -280,6 +282,45 @@ ok("masquer : un cache déplacé laisse le texte à découvert, et c'est signal�
 ok("masquer : un IBAN sans cache est signalé", decouverts([releve], ["iban"], caches).map((r) => r.texte).join() === "FR76 3000 6000 0112 3456 7890 189");
 const px = enPixels({ x: 0.5, y: 0.5, w: 0.6, h: 0.1 }, 1000, 500, 2);
 ok("masquer : en pixels, avec marge, sans sortir de l'image", px.x === 498 && px.x + px.w === 1000 && px.y === 248 && px.h === 54, px);
+
+// ---------------------------------------------------------------- découper : les images d'un PDF
+const album = await PDFDocument.create();
+const cx = album.context;
+// Un JPEG (seul l'en-tête compte ici : il doit ressortir à l'octet près).
+const jpegFaux = new Uint8Array([0xff, 0xd8, 0xff, 0xc0, 0x00, 0x11, 0x08, 0x00, 0x40, 0x00, 0x50, 0x03, 1, 0x22, 0, 2, 0x11, 1, 3, 0x11, 1, 0xff, 0xd9]);
+const photo = await album.embedJpg(jpegFaux);
+const rvb = new Uint8Array(30 * 30 * 3);
+for (let i = 0; i < 30 * 30; i++) rvb[i * 3] = 255;
+const alpha = cx.register(cx.flateStream(new Uint8Array(30 * 30).fill(128), { Type: "XObject", Subtype: "Image", Width: 30, Height: 30, ColorSpace: "DeviceGray", BitsPerComponent: 8 }));
+const transparente = cx.register(cx.flateStream(rvb, { Type: "XObject", Subtype: "Image", Width: 30, Height: 30, ColorSpace: "DeviceRGB", BitsPerComponent: 8, SMask: alpha }));
+// Palette de deux couleurs, 4 bits par pixel : 0 = bleu, 1 = blanc.
+const indices = new Uint8Array(16 * 32).fill(0x10); // pixels pairs 1 (blanc), impairs 0 (bleu)
+const palette = cx.register(cx.flateStream(indices, { Type: "XObject", Subtype: "Image", Width: 32, Height: 32, BitsPerComponent: 4, ColorSpace: [PDFName.of("Indexed"), PDFName.of("DeviceRGB"), 1, PDFHexString.of("0000FFFFFFFF")] }));
+const minuscule = cx.register(cx.flateStream(new Uint8Array(10 * 10 * 3), { Type: "XObject", Subtype: "Image", Width: 10, Height: 10, ColorSpace: "DeviceRGB", BitsPerComponent: 8 }));
+const fax = cx.register(cx.stream(new Uint8Array(40), { Type: "XObject", Subtype: "Image", Width: 64, Height: 64, ColorSpace: "DeviceGray", BitsPerComponent: 1, Filter: "CCITTFaxDecode" }));
+const dessin = cx.register(cx.stream(new Uint8Array(0), { Type: "XObject", Subtype: "Form", BBox: [0, 0, 10, 10], Resources: { XObject: { Pal: palette } } }));
+const p1 = album.addPage([300, 300]);
+p1.node.setXObject(PDFName.of("Photo"), photo.ref);
+p1.node.setXObject(PDFName.of("Trans"), transparente);
+p1.node.setXObject(PDFName.of("Mini"), minuscule);
+p1.node.setXObject(PDFName.of("Fax"), fax);
+const p2 = album.addPage([300, 300]);
+p2.node.setXObject(PDFName.of("Dessin"), dessin);
+p2.node.setXObject(PDFName.of("Photo"), photo.ref);
+// Comme un vrai fichier : enregistré puis relu (pdf-lib n'écrit le JPEG qu'à l'enregistrement).
+const albumLu = await PDFDocument.load(await album.save());
+const trouve = imagesDesPages(albumLu, [1, 2]);
+ok("images d'un PDF : JPEG, transparente, palette dans un dessin ; ni la miniature, ni le masque, ni les doublons", trouve.images.map((i) => i.genre).join() === "jpeg,pixels,pixels" && trouve.images.map((i) => i.page).join() === "1,1,2", trouve.images.map((i) => `${i.genre}@${i.page}`));
+ok("images d'un PDF : le fax est compté comme non extractible", trouve.ignorees === 1, trouve.ignorees);
+const j = trouve.images[0];
+ok("images d'un PDF : le JPEG ressort à l'octet près", j.genre === "jpeg" && j.octets.length === jpegFaux.length && j.octets.every((v, i) => v === jpegFaux[i]));
+const t = trouve.images[1];
+ok("images d'un PDF : rouge, à demi transparent", t.genre === "pixels" && t.rgba[0] === 255 && t.rgba[1] === 0 && t.rgba[3] === 128, t.genre === "pixels" ? [...t.rgba.slice(0, 4)] : t.genre);
+const pal = trouve.images[2];
+ok("images d'un PDF : palette dépliée (blanc puis bleu)", pal.genre === "pixels" && pal.rgba[0] === 255 && pal.rgba[2] === 255 && pal.rgba[4] === 0 && pal.rgba[6] === 255, pal.genre === "pixels" ? [...pal.rgba.slice(0, 8)] : pal.genre);
+ok("images d'un PDF : seulement les pages demandées", imagesDesPages(albumLu, [2]).images.length === 2 && imagesDesPages(albumLu, [9]).images.length === 0);
+const gris1 = versRgba(new Uint8Array([0b10100000]), 3, 1, { comp: 1 }, 1, true);
+ok("images d'un PDF : gris sur 1 bit, avec inversion", gris1 !== null && gris1[0] === 0 && gris1[4] === 255 && gris1[8] === 0, gris1 && [...gris1]);
 
 console.log(`\n${e ? `${e} échec(s)` : "Tout est bon."}`);
 if (e) process.exit(1);

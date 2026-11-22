@@ -28,7 +28,7 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   pas d'aperçu, pas de partage sur téléphone ; deux raisons de refus dépassées (« ce studio ne fait
   pas de transcription » alors que Transcrire existe).
 
-## Plan pondéré (total 138)
+## Plan pondéré (total 142)
 
 | # | Tâche | Poids | Fait |
 |---|-------|------:|-----:|
@@ -48,7 +48,8 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
 | 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 14 |
 | 15 | Corrections issues de la relecture du code (20 points vérifiés un à un) | 6 | 6 |
 | 16 | Masquer des informations : caches tracés ou posés d'un toucher, « Masquer partout », motifs prêts (e-mail, téléphone, IBAN, sécurité sociale, carte), lecture des scans, vérification du fichier produit | 12 | 12 |
-| | **Total** | **138** | **137** |
+| 17 | Découper › « Ses images » : les photos et illustrations d'un PDF à leur qualité d'origine (JPEG tels quels, transparence gardée) | 4 | 4 |
+| | **Total** | **142** | **141** |
 
 ## Journal
 
@@ -70,8 +71,10 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   (masques de transparence et orientation EXIF dans Alléger, annulation des sons et vidéos, résultats
   retirés qui revenaient, travaux qui se chevauchent, sélection d'Organiser, aplatissement inutile du
   filigrane, fenêtre de signature au clavier, extraction d'un seul fichier d'un ZIP, fuites de mémoire).
-- 22 nov. 23 h 40 — nouvel outil Masquer (famille Sécurité) : ce qui est caché disparaît vraiment
+- 22 nov. 23 h 37 — nouvel outil Masquer (famille Sécurité) : ce qui est caché disparaît vraiment
   (pages concernées redessinées en images, informations du document retirées), recherche sans
   accents ni majuscules, largeurs des lettres mesurées pour des caches justes, lecture des scans et
   des photos avant d'y chercher, double vérification (chaque texte cherché sous un cache, puis
   relecture du fichier produit). Question fréquente n° 7 sur les rectangles noirs.
+- 22 nov. 23 h 42 — Découper sait aussi sortir les images d'un PDF (« Ses images ») : les JPEG à
+  l'octet près, les autres en PNG (palette et transparence comprises), chaque image une seule fois.

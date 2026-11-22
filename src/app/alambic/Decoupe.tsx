@@ -7,11 +7,12 @@ import { verdict, type Capacites } from "@/lib/alambic/graphe";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
 import { BonASavoir, MessageErreur } from "./commun";
+import { useAlambic } from "./contexte";
 import { ChampProtection } from "./ChampProtection";
 import { useReception, type Abonner } from "./reception";
 
 type DocPdf = Awaited<ReturnType<typeof import("@/lib/alambic/navigateur/pdf").ouvrir>>;
-type Mode = "un" | "chaque" | "images" | "groupes";
+type Mode = "un" | "chaque" | "images" | "groupes" | "photos";
 
 function enPlages(pages: number[]): string {
   const triees = [...pages].sort((a, b) => a - b);
@@ -77,7 +78,14 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
   const [pdf, setPdf] = useState<DocPdf | null>(null);
   const [choisies, setChoisies] = useState<number[]>([]);
   const [plages, setPlages] = useState("");
-  const [mode, setMode] = useState<Mode>("un");
+  const { intention } = useAlambic();
+  const [mode, setMode] = useState<Mode>(intention?.reglage === "photos" ? "photos" : "un");
+  // « Que veux-tu faire ? » › « Récupérer les photos d'un PDF » : le bon résultat est choisi d'avance.
+  const [intentionVue, setIntentionVue] = useState(intention);
+  if (intention !== intentionVue) {
+    setIntentionVue(intention);
+    if (intention?.reglage === "photos") setMode("photos");
+  }
   const [taillePaquet, setTaillePaquet] = useState(2);
   const [media, setMedia] = useState<{ url: string; duree: number } | null>(null);
   const [debut, setDebut] = useState(0);
@@ -201,7 +209,12 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
     try {
       let r: Resultat;
       const base = fichier.name.replace(/\.[^.]+$/, "");
-      if (fmt === "pdf" && mode === "groupes") {
+      if (fmt === "pdf" && mode === "photos") {
+        // Les images rangées dans le PDF (pages choisies, ou toutes), chacune dans son fichier.
+        const { extraireImages } = await import("@/lib/alambic/navigateur/extraire-images");
+        const liste = choisies.length ? choisies : Array.from({ length: total }, (_, i) => i + 1);
+        r = await extraireImages(new Uint8Array(await fichier.arrayBuffer()), liste, base, (a, etape) => setTravail({ avancement: a, etape }));
+      } else if (fmt === "pdf" && mode === "groupes") {
         // Toutes les N pages : les pages choisies (ou toutes) sont réparties en PDF de N pages.
         const { extraireParties } = await import("@/lib/alambic/navigateur/pdf");
         const { ecrireArchive } = await import("@/lib/alambic/navigateur/archives");
@@ -387,6 +400,9 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
               <button type="button" role="radio" aria-checked={mode === "groupes"} onClick={() => setMode("groupes")}>
                 Toutes les N pages
               </button>
+              <button type="button" role="radio" aria-checked={mode === "photos"} onClick={() => setMode("photos")}>
+                Ses images
+              </button>
             </div>
           </div>
           {mode === "groupes" && (
@@ -478,10 +494,14 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
                 </p>
               </>
             ) : (
-              <button type="button" className="bouton bouton-principal alambic-lancer" disabled={(pdf ? !choisies.length && mode !== "groupes" : !media?.duree) || (proteger && !motDePasse)} onClick={() => void decouper()}>
+              <button type="button" className="bouton bouton-principal alambic-lancer" disabled={(pdf ? !choisies.length && mode !== "groupes" && mode !== "photos" : !media?.duree) || (proteger && !motDePasse)} onClick={() => void decouper()}>
                 <Scissors className="size-5" aria-hidden="true" />
                 {pdf
-                  ? mode === "groupes"
+                  ? mode === "photos"
+                    ? choisies.length && choisies.length < total
+                      ? `Extraire les images de ${choisies.length} page${choisies.length > 1 ? "s" : ""}`
+                      : "Extraire toutes les images"
+                    : mode === "groupes"
                     ? `Découper en ${Math.ceil((choisies.length || total) / Math.max(1, taillePaquet))} PDF`
                     : choisies.length
                       ? `Extraire ${choisies.length} page${choisies.length > 1 ? "s" : ""}`
@@ -500,6 +520,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
         points={[
           "Écris les pages à garder comme « 1-3, 7, 10-fin », ou touche-les ; « Inverser » permet de retirer des pages plutôt que de les garder.",
           "« Toutes les N pages » coupe un long PDF en morceaux de même taille, à envoyer un par un.",
+          "« Ses images » récupère les photos et illustrations rangées dans le PDF, à leur qualité d'origine (les JPEG ne sont pas recompressés).",
           "Pour une vidéo : place le début et la fin avec les curseurs, ou « Début ici » / « Fin ici » pendant la lecture ; une image fixe s'enregistre à l'instant voulu.",
         ]}
       />
