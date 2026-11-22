@@ -8,7 +8,7 @@ import { bureautique } from "@/lib/alambic/outils";
 import type { Examen } from "@/lib/alambic/traces";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
-import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, sansExtension, useTravail, ZoneDepot } from "../commun";
+import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, sansExtension, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
 import { useReception, type Abonner } from "../reception";
 import { ICONES } from "../SelecteurFormat";
 
@@ -65,13 +65,14 @@ export function Nettoyage({ abonner }: { abonner: Abonner }) {
   const examensFinis = elements.every((e) => e.examen);
 
   const nettoyerTout = () =>
-    lancer(async (avancer) => {
+    lancer(async (avancer, signal) => {
       setResultats([]);
       setEchecs([]);
       const { nettoyer } = await import("@/lib/alambic/traces");
       const faits: { r: Resultat; avant: number }[] = [];
       const rates: typeof echecs = [];
       for (let i = 0; i < aNettoyer.length; i++) {
+        verifierAnnulation(signal);
         const e = aNettoyer[i];
         avancer(i / aNettoyer.length, `Nettoyage de « ${e.fichier.name} »`);
         try {
@@ -198,8 +199,8 @@ export function Nettoyage({ abonner }: { abonner: Abonner }) {
       <MessageErreur erreur={erreur} />
       {echecs.length > 0 && (
         <div className="message message-erreur alambic-erreur" role="alert">
-          {echecs.map((e) => (
-            <p key={e.nom}>
+          {echecs.map((e, i) => (
+            <p key={`${e.nom}-${i}`}>
               <strong>{e.nom} :</strong> {e.message}{" "}
               {e.protege && (
                 <button type="button" className="underline underline-offset-2" onClick={() => envoyer("deverrouiller", [e.fichier])}>

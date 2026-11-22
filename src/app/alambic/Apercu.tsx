@@ -37,15 +37,23 @@ export function Apercu({ blob, formatId, nom }: { blob: Blob; formatId: string; 
       liens.push(u);
       return u;
     };
+    // Un lien créé après la fermeture de l'aperçu est libéré aussitôt.
+    const garder = (u: string) => {
+      if (!vivant) {
+        URL.revokeObjectURL(u);
+        return null;
+      }
+      liens.push(u);
+      return u;
+    };
     (async () => {
       try {
         const famille = familleDuFormat(formatId);
         if (IMAGES_NATIVES.has(formatId)) return setContenu({ genre: "image", url: lien(formatId === "svg" ? new Blob([blob], { type: "image/svg+xml" }) : blob) });
         if (formatId === "tiff") {
           const { vignette } = await import("@/lib/alambic/navigateur/images");
-          const u = await vignette(blob, "tiff", 1200);
-          liens.push(u);
-          return vivant && setContenu({ genre: "image", url: u });
+          const u = garder(await vignette(blob, "tiff", 1200));
+          return u && setContenu({ genre: "image", url: u });
         }
         if (famille === "audio" || famille === "video") return setContenu({ genre: "media", url: lien(blob), video: famille === "video" });
         if (formatId === "pdf") {
@@ -53,9 +61,8 @@ export function Apercu({ blob, formatId, nom }: { blob: Blob; formatId: string; 
           const { doc, fermer } = await ouvrir(new Uint8Array(await blob.arrayBuffer()));
           try {
             const n = Math.min(Math.max(1, page), doc.numPages);
-            const u = await vignettePage(doc, n, 900);
-            liens.push(u);
-            if (vivant) setContenu({ genre: "pdf", url: u, page: n, pages: doc.numPages });
+            const u = garder(await vignettePage(doc, n, 900));
+            if (u) setContenu({ genre: "pdf", url: u, page: n, pages: doc.numPages });
           } finally {
             await fermer();
           }
@@ -174,8 +181,8 @@ function ContenuArchive({ blob, formatId, nom, entrees }: { blob: Blob; formatId
     setEnCours(cible);
     setErreur("");
     try {
-      const { lireArchive } = await import("@/lib/alambic/navigateur/archives");
-      const f = (await lireArchive(nom, formatId, blob)).find((x) => x.nom === cible);
+      const { lireEntree } = await import("@/lib/alambic/navigateur/archives");
+      const f = await lireEntree(nom, formatId, blob, cible);
       if (f) telecharger(f.blob, f.nom.split("/").pop() || f.nom);
     } catch (e) {
       setErreur((e as Error).message);

@@ -4,7 +4,7 @@ import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, us
 import { arrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { ArrowDown, ArrowUp, FilePlus2, GripVertical, Layers, LoaderCircle, X } from "lucide-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { format, tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
@@ -53,6 +53,17 @@ function Ligne({ piece, rang, total, onMonter, onDescendre, onRetirer }: { piece
 
 export function Fusion({ abonner }: { abonner: Abonner }) {
   const [pieces, setPieces] = useState<Piece[]>([]);
+  // Liens des vignettes : libérés quand un fichier est retiré, et tous en quittant l'outil.
+  const liensVignettes = useRef(new Set<string>());
+  useEffect(() => {
+    const liens = liensVignettes.current;
+    return () => liens.forEach((u) => URL.revokeObjectURL(u));
+  }, []);
+  const libererVignette = (url: string | null) => {
+    if (!url) return;
+    URL.revokeObjectURL(url);
+    liensVignettes.current.delete(url);
+  };
   const [refuses, setRefuses] = useState<string[]>([]);
   const [nom, setNom] = useState("Document fusionné");
   const [proteger, setProteger] = useState(false);
@@ -88,11 +99,13 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
         if (IMAGES.has(piece.format)) {
           const { vignette } = await import("@/lib/alambic/navigateur/images");
           const url = await vignette(piece.fichier, piece.format, 96);
+          liensVignettes.current.add(url);
           setPieces((p) => p.map((x) => (x.id === piece.id ? { ...x, vignette: url } : x)));
         } else if (piece.format === "pdf") {
           const { ouvrir, vignettePage } = await import("@/lib/alambic/navigateur/pdf");
           const { doc, fermer } = await ouvrir(new Uint8Array(await piece.fichier.arrayBuffer()));
           const url = await vignettePage(doc, 1, 96);
+          liensVignettes.current.add(url);
           const pages = doc.numPages;
           await fermer();
           setPieces((p) => p.map((x) => (x.id === piece.id ? { ...x, vignette: url, pages } : x)));
@@ -121,6 +134,8 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
     setErreur(null);
     setFichierFautif(null);
     setResultat(null);
+    // Le bouton se désactive dès le clic, avant même que le module soit chargé : pas de double lancement.
+    setTravail({ avancement: 0, etape: "Préparation" });
     try {
       const [{ assembler, assemblerAvecSignets, imageEnPage, imageSurA4 }, { PDFDocument }] = await Promise.all([import("@/lib/alambic/navigateur/pdf"), import("@cantoo/pdf-lib")]);
       const pdfs: Uint8Array[] = [];
@@ -226,6 +241,7 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
                     onDescendre={() => deplacer(i, i + 1)}
                     onRetirer={() => {
                       setResultat(null);
+                      libererVignette(p.vignette);
                       setPieces((x) => x.filter((y) => y.id !== p.id));
                     }}
                   />

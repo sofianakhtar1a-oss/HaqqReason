@@ -87,6 +87,8 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
   const [motDePasse, setMotDePasse] = useState("");
   const [travail, setTravail] = useState<{ avancement: number | null; etape: string } | null>(null);
   const [resultat, setResultat] = useState<Resultat | null>(null);
+  // Vrai seulement quand le résultat affiché a réellement été chiffré (une image capturée ne l'est pas).
+  const [chiffre, setChiffre] = useState(false);
   const [erreur, setErreur] = useState<unknown>(null);
   const [fichierFautif, setFichierFautif] = useState<File | null>(null);
   const choix = useRef<HTMLInputElement>(null);
@@ -106,10 +108,14 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
     setErreur(null);
   };
 
+  // Deux fichiers déposés coup sur coup : seul le dernier compte.
+  const dernierChargement = useRef(0);
   const charger = async (f: File) => {
+    const n = ++dernierChargement.current;
     vider();
     const { reconnaitre } = await import("@/lib/alambic/navigateur/moteur");
     const id = await reconnaitre(f);
+    if (n !== dernierChargement.current) return;
     if (!id || !(id === "pdf" || ["audio", "video"].includes(format(id).famille)) || id === "avi") {
       setErreur(id === "avi" ? "L'AVI ne se lit pas dans un navigateur : il ne peut pas être découpé ici." : "La découpe porte sur un PDF (pages) ou sur un son ou une vidéo (extrait).");
       return;
@@ -120,6 +126,10 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
       try {
         const { ouvrir } = await import("@/lib/alambic/navigateur/pdf");
         const o = await ouvrir(new Uint8Array(await f.arrayBuffer()));
+        if (n !== dernierChargement.current) {
+          void o.fermer();
+          return;
+        }
         setPdf(o);
         setChoisies([]);
         setPlages("");
@@ -136,6 +146,41 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
 
   useReception(abonner, (fichiers) => void charger(fichiers[0]));
 
+  /** Durée du son ou de la vidéo, même quand le fichier ne l'annonce pas d'emblée. */
+  const lireDuree = (el: HTMLMediaElement) => {
+    const retenir = (d: number) => {
+      setMedia((m) => (m ? { ...m, duree: d } : m));
+      setDebut(0);
+      setFin(d);
+    };
+    if (Number.isFinite(el.duration)) {
+      retenir(el.duration);
+      return;
+    }
+    // Un WebM enregistré par un téléphone n'annonce sa durée qu'une fois lu jusqu'au bout : on y saute.
+    const surChangement = () => {
+      if (!Number.isFinite(el.duration)) return;
+      el.removeEventListener("durationchange", surChangement);
+      el.currentTime = 0;
+      retenir(el.duration);
+    };
+    el.addEventListener("durationchange", surChangement);
+    el.currentTime = Number.MAX_SAFE_INTEGER;
+  };
+
+  // En quittant l'outil, le PDF ouvert et le lien du média sont libérés.
+  const aLiberer = useRef<{ pdf: typeof pdf; media: typeof media }>({ pdf: null, media: null });
+  useEffect(() => {
+    aLiberer.current = { pdf, media };
+  }, [pdf, media]);
+  useEffect(
+    () => () => {
+      void aLiberer.current.pdf?.fermer();
+      if (aLiberer.current.media) URL.revokeObjectURL(aLiberer.current.media.url);
+    },
+    [],
+  );
+
   const basculer = (n: number) => {
     setResultat(null);
     setChoisies((c) => {
@@ -151,24 +196,22 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
     if (!fichier || !fmt) return;
     setErreur(null);
     setResultat(null);
+    // Le bouton se désactive dès le clic, avant même que le module soit chargé : pas de double lancement.
+    setTravail({ avancement: null, etape: "Préparation" });
     try {
       let r: Resultat;
       const base = fichier.name.replace(/\.[^.]+$/, "");
       if (fmt === "pdf" && mode === "groupes") {
         // Toutes les N pages : les pages choisies (ou toutes) sont réparties en PDF de N pages.
-        const { extraire } = await import("@/lib/alambic/navigateur/pdf");
+        const { extraireParties } = await import("@/lib/alambic/navigateur/pdf");
         const { ecrireArchive } = await import("@/lib/alambic/navigateur/archives");
         const octets = new Uint8Array(await fichier.arrayBuffer());
         const liste = choisies.length ? choisies : Array.from({ length: total }, (_, i) => i + 1);
         const n = Math.max(1, taillePaquet);
         const paquets: number[][] = [];
         for (let i = 0; i < liste.length; i += n) paquets.push(liste.slice(i, i + n));
-        const fichiers = [];
-        for (let i = 0; i < paquets.length; i++) {
-          setTravail({ avancement: i / paquets.length, etape: `Partie ${i + 1} sur ${paquets.length}` });
-          const sortie = await extraire(octets, paquets[i]);
-          fichiers.push({ nom: `${base} - partie ${String(i + 1).padStart(String(paquets.length).length, "0")} (pages ${enPlages(paquets[i])}).pdf`, blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }) });
-        }
+        const sorties = await extraireParties(octets, paquets, (i) => setTravail({ avancement: i / paquets.length, etape: `Partie ${i + 1} sur ${paquets.length}` }));
+        const fichiers = sorties.map((sortie, i) => ({ nom: `${base} - partie ${String(i + 1).padStart(String(paquets.length).length, "0")} (pages ${enPlages(paquets[i])}).pdf`, blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }) }));
         if (fichiers.length === 1) r = { nom: fichiers[0].nom, blob: fichiers[0].blob, format: "pdf", avertissements: [] };
         else {
           setTravail({ avancement: 0.95, etape: "Rangement dans un ZIP" });
@@ -176,7 +219,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
         }
       } else if (fmt === "pdf") {
         if (!choisies.length) throw new Error("Choisis au moins une page.");
-        const { extraire, pageEnImage } = await import("@/lib/alambic/navigateur/pdf");
+        const { extraire, extraireParties, pageEnImage } = await import("@/lib/alambic/navigateur/pdf");
         const { ecrireArchive } = await import("@/lib/alambic/navigateur/archives");
         const octets = new Uint8Array(await fichier.arrayBuffer());
         if (mode === "un") {
@@ -184,14 +227,20 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
           const sortie = await extraire(octets, choisies);
           r = { nom: `${base} (pages ${enPlages(choisies)}).pdf`.replace(/[\\/:*?"<>|]/g, "-"), blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }), format: "pdf", avertissements: [] };
         } else {
-          const fichiers = [];
-          for (let i = 0; i < choisies.length; i++) {
-            const p = choisies[i];
-            setTravail({ avancement: i / choisies.length, etape: `Page ${p}` });
-            if (mode === "chaque") {
-              const sortie = await extraire(octets, [p]);
-              fichiers.push({ nom: `${base} - page ${p}.pdf`, blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }) });
-            } else fichiers.push({ nom: `${base} - page ${p}.png`, blob: await pageEnImage(pdf!.doc, p, "png") });
+          const fichiers: { nom: string; blob: Blob }[] = [];
+          if (mode === "chaque") {
+            const sorties = await extraireParties(
+              octets,
+              choisies.map((p) => [p]),
+              (i) => setTravail({ avancement: i / choisies.length, etape: `Page ${choisies[i]}` }),
+            );
+            sorties.forEach((sortie, i) => fichiers.push({ nom: `${base} - page ${choisies[i]}.pdf`, blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }) }));
+          } else {
+            for (let i = 0; i < choisies.length; i++) {
+              const p = choisies[i];
+              setTravail({ avancement: i / choisies.length, etape: `Page ${p}` });
+              fichiers.push({ nom: `${base} - page ${p}.png`, blob: await pageEnImage(pdf!.doc, p, "png") });
+            }
           }
           if (fichiers.length === 1) r = { nom: fichiers[0].nom, blob: fichiers[0].blob, format: mode === "chaque" ? "pdf" : "png", avertissements: [] };
           else {
@@ -219,6 +268,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
         const { proteger: chiffrer } = await import("@/lib/alambic/navigateur/moteur");
         r = await chiffrer(r, motDePasse, (a, etape) => setTravail({ avancement: a, etape }));
       }
+      setChiffre(Boolean(proteger && motDePasse));
       setResultat(r);
     } catch (e) {
       setFichierFautif(fichier);
@@ -354,9 +404,9 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
       {media && fmt && (
         <>
           {format(fmt).famille === "video" ? (
-            <video ref={lecteur} src={media.url} controls className="alambic-lecteur" onLoadedMetadata={(e) => { const d = e.currentTarget.duration; setMedia({ ...media, duree: d }); setDebut(0); setFin(d); }} />
+            <video ref={lecteur} src={media.url} controls className="alambic-lecteur" onLoadedMetadata={(e) => lireDuree(e.currentTarget)} />
           ) : (
-            <audio ref={lecteur} src={media.url} controls className="w-full" onLoadedMetadata={(e) => { const d = e.currentTarget.duration; setMedia({ ...media, duree: d }); setDebut(0); setFin(d); }} />
+            <audio ref={lecteur} src={media.url} controls className="w-full" onLoadedMetadata={(e) => lireDuree(e.currentTarget)} />
           )}
           {media.duree > 0 && (
             <div className="alambic-extrait">
@@ -378,6 +428,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
                     const blob = await new Promise<Blob | null>((ok) => c.toBlob(ok, "image/png"));
                     if (!blob) return;
                     const base = fichier?.name.replace(/\.[^.]+$/, "") ?? "video";
+                    setChiffre(false);
                     setResultat({ nom: `${base} - image à ${horloge(v.currentTime).replace(/[:,]/g, "-")}.png`, blob, format: "png", avertissements: [`L'image de l'instant ${horloge(v.currentTime)}, en ${v.videoWidth} × ${v.videoHeight}.`] });
                   }}
                 >
@@ -443,7 +494,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
       )}
 
       <MessageErreur erreur={erreur} fichier={fichierFautif} />
-      {resultat && <CarteResultat resultat={resultat} tailleAvant={resultat.format === fmt ? fichier?.size : undefined} protege={proteger && Boolean(motDePasse)} />}
+      {resultat && <CarteResultat resultat={resultat} tailleAvant={resultat.format === fmt ? fichier?.size : undefined} protege={chiffre} />}
 
       <BonASavoir
         points={[

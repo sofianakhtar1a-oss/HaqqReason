@@ -32,6 +32,8 @@ export function Protection({ abonner }: { abonner: Abonner }) {
   const proteger = async () => {
     setErreur(null);
     setResultat(null);
+    // Le bouton se désactive dès le clic, avant même que le module soit chargé : pas de double lancement.
+    setTravail({ avancement: null, etape: "Préparation" });
     try {
       const { protegerEnZip, protegerPdf } = await import("@/lib/alambic/navigateur/securite");
       if (seulPdf) {
@@ -74,7 +76,9 @@ export function Protection({ abonner }: { abonner: Abonner }) {
         className="sr-only"
         tabIndex={-1}
         onChange={(e) => {
-          setFichiers((f) => [...f, ...(e.target.files ?? [])]);
+          // Copie immédiate : la liste du champ est vidée juste après.
+          const choisis = [...(e.target.files ?? [])];
+          setFichiers((f) => [...f, ...choisis]);
           setResultat(null);
           e.target.value = "";
         }}
@@ -102,7 +106,9 @@ export function Protection({ abonner }: { abonner: Abonner }) {
         onDragOver={(e) => e.preventDefault()}
         onDrop={(e) => {
           e.preventDefault();
-          setFichiers((f) => [...f, ...e.dataTransfer.files]);
+          // Les fichiers déposés ne sont lisibles que pendant l'événement : on les copie tout de suite.
+          const deposes = [...e.dataTransfer.files];
+          setFichiers((f) => [...f, ...deposes]);
           setResultat(null);
         }}
       >

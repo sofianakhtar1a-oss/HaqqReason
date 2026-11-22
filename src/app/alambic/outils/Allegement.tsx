@@ -10,7 +10,7 @@ import { bureautique } from "@/lib/alambic/outils";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
-import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, ZoneDepot } from "../commun";
+import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
 import { useReception, type Abonner } from "../reception";
 import { ICONES } from "../SelecteurFormat";
 
@@ -79,6 +79,7 @@ export function Allegement({ abonner, capacites }: { abonner: Abonner; capacites
       const faits: { r: Resultat; avant: number }[] = [];
       const rates: Echec[] = [];
       for (let i = 0; i < elements.length; i++) {
+        verifierAnnulation(signal);
         const e = elements[i];
         const prefixe = elements.length > 1 ? `${i + 1}/${elements.length} · ` : "";
         try {
@@ -88,6 +89,7 @@ export function Allegement({ abonner, capacites }: { abonner: Abonner; capacites
           faits.push({ r, avant: e.fichier.size });
         } catch (err) {
           if ((err as Error)?.name === "AbortError") throw err;
+          verifierAnnulation(signal);
           rates.push({ nom: e.fichier.name, message: (err as Error)?.message || "L'allègement a échoué.", fichier: e.fichier, protege: estPdfProtege(err) });
         }
       }
@@ -223,8 +225,8 @@ export function Allegement({ abonner, capacites }: { abonner: Abonner; capacites
       <MessageErreur erreur={erreur} />
       {echecs.length > 0 && (
         <div className="message message-erreur alambic-erreur" role="alert">
-          {echecs.map((e) => (
-            <p key={e.nom}>
+          {echecs.map((e, i) => (
+            <p key={`${e.nom}-${i}`}>
               <strong>{e.nom} :</strong> {e.message}{" "}
               {e.protege && (
                 <button type="button" className="underline underline-offset-2" onClick={() => envoyer("deverrouiller", [e.fichier])}>

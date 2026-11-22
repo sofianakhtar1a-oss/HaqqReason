@@ -102,7 +102,7 @@ export async function marquerPdf(fichier: Blob, nom: string, o: OptionsMarquage,
   const octets = new Uint8Array(await fichier.arrayBuffer());
   const avertissements: string[] = [];
   let sortie: Uint8Array;
-  let inseparable = o.inseparable;
+  let inseparable = o.inseparable && Boolean(o.filigrane);
   if (!inseparable) {
     const { charger } = await import("./pdf");
     avancer(0.05, "Lecture du PDF");

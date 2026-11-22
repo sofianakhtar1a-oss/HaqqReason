@@ -3,7 +3,7 @@
  * allègement (calculs purs), filigrane (placements et repère du PDF), déchiffrement et organisation réels.
  */
 import { createRequire } from "node:module";
-import { dimensionsCibles, dimensionsVideo, defiltrerPng, retirerOrphelins, viserPoids } from "../src/lib/alambic/allegement";
+import { dimensionsCibles, dimensionsVideo, defiltrerPng, masquesDImages, retirerOrphelins, sansExif, viserPoids } from "../src/lib/alambic/allegement";
 import { couleurRvb, departPdf, placerFiligrane, poseNumero, posesMarquage, tailleVisible, texteIdentite, texteNumero, versRepereePdf } from "../src/lib/alambic/filigrane";
 import { chercherIntentions, INTENTIONS, POPULAIRES } from "../src/lib/alambic/intentions";
 import { ecrireOrganise } from "../src/lib/alambic/organiser-pdf";
@@ -13,6 +13,8 @@ import { verdict } from "../src/lib/alambic/graphe";
 import { versDocument } from "../src/lib/alambic/transcription/exports";
 import { deplacer, dupliquer, entrelacer, estIntacte, insererBlanche, inverser, pagesDe, pivoter, placeBlanche, retirer } from "../src/lib/alambic/pages";
 import { MODULES, resoudre } from "../src/lib/modules/modules";
+import * as zipjs from "@zip.js/zip.js";
+import { lireEntree } from "../src/lib/alambic/navigateur/archives";
 
 // Les modules du projet chargent pdf-lib en CommonJS : on prend le même exemplaire (sinon ses classes diffèrent).
 const { degrees, PDFDocument, PDFName, StandardFonts } = createRequire(import.meta.url)("@cantoo/pdf-lib") as typeof import("@cantoo/pdf-lib");
@@ -177,6 +179,45 @@ ok("organiser : il faut garder au moins une page", /au moins une/.test(refus));
 const orph = await PDFDocument.load(await source.save());
 orph.context.register(orph.context.obj({ Type: PDFName.of("Abandon") }));
 ok("les objets orphelins sont retirés, les pages restent", retirerOrphelins(orph) >= 1 && orph.getPageCount() === 3);
+
+// ---------------------------------------------------------------- alléger : masques et orientation
+const avecMasque = await PDFDocument.create();
+const ctxM = avecMasque.context;
+const masque = ctxM.register(ctxM.flateStream(new Uint8Array(64 * 64).fill(128), { Type: "XObject", Subtype: "Image", Width: 64, Height: 64, ColorSpace: "DeviceGray", BitsPerComponent: 8 }));
+const pochoir = ctxM.register(ctxM.flateStream(new Uint8Array(64 * 8), { Type: "XObject", Subtype: "Image", Width: 64, Height: 64, ImageMask: true }));
+ctxM.register(ctxM.flateStream(new Uint8Array(64 * 64 * 3), { Type: "XObject", Subtype: "Image", Width: 64, Height: 64, ColorSpace: "DeviceRGB", BitsPerComponent: 8, SMask: masque }));
+ctxM.register(ctxM.flateStream(new Uint8Array(64 * 64 * 3), { Type: "XObject", Subtype: "Image", Width: 64, Height: 64, ColorSpace: "DeviceRGB", BitsPerComponent: 8, Mask: pochoir }));
+const trouves = masquesDImages(avecMasque);
+ok("alléger : les masques de transparence sont repérés (SMask et Mask)", trouves.has(masque.toString()) && trouves.has(pochoir.toString()) && trouves.size === 2, [...trouves]);
+
+const segment = (marqueur: number, contenu: number[]) => [0xff, marqueur, (contenu.length + 2) >> 8, (contenu.length + 2) & 0xff, ...contenu];
+const exif = [0x45, 0x78, 0x69, 0x66, 0, 0, 0x4d, 0x4d, 0, 0x2a];
+const jfif = [0x4a, 0x46, 0x49, 0x46, 0, 1, 1];
+const corps = [0xff, 0xda, 0, 2, 1, 2, 3, 0xff, 0xd9];
+const jpeg = new Uint8Array([0xff, 0xd8, ...segment(0xe0, jfif), ...segment(0xe1, exif), ...segment(0xdb, [0, 1, 2]), ...corps]);
+const nu = sansExif(jpeg);
+ok("alléger : le bloc EXIF d'un JPEG est retiré, le reste est intact", nu.length === jpeg.length - (exif.length + 4) && nu[0] === 0xff && nu[1] === 0xd8 && nu[3] === 0xe0 && nu[2 + jfif.length + 4 + 1] === 0xdb && nu[nu.length - 1] === 0xd9, [...nu]);
+const sansBloc = new Uint8Array([0xff, 0xd8, ...segment(0xe0, jfif), ...corps]);
+ok("alléger : un JPEG sans EXIF ressort identique", sansExif(sansBloc) === sansBloc);
+ok("alléger : des octets qui ne sont pas un JPEG ne sont pas touchés", sansExif(new Uint8Array([1, 2, 3])).length === 3);
+
+// ---------------------------------------------------------------- aperçu d'un ZIP : un fichier à la fois
+zipjs.configure({ useWebWorkers: false });
+const ecrivainZip = new zipjs.ZipWriter(new zipjs.BlobWriter("application/zip"));
+await ecrivainZip.add("secret.txt", new zipjs.TextReader("Secret."), { password: "motdepasse" });
+await ecrivainZip.add("libre.txt", new zipjs.TextReader("Bonjour."));
+const mixte = await ecrivainZip.close();
+const libre = await lireEntree("mixte.zip", "zip", mixte, "libre.txt");
+ok("ZIP mixte : un fichier libre s'extrait sans mot de passe", (await libre?.blob.text()) === "Bonjour.");
+let refusSecret = "";
+try {
+  await lireEntree("mixte.zip", "zip", mixte, "secret.txt");
+} catch (err) {
+  refusSecret = (err as Error).message;
+}
+ok("ZIP mixte : un fichier chiffré demande le mot de passe", /mot de passe/.test(refusSecret), refusSecret);
+ok("ZIP mixte : avec le mot de passe, le fichier chiffré s'ouvre", (await (await lireEntree("mixte.zip", "zip", mixte, "secret.txt", "motdepasse"))?.blob.text()) === "Secret.");
+ok("ZIP : un nom absent donne null", (await lireEntree("mixte.zip", "zip", mixte, "rien.txt")) === null);
 
 console.log(`\n${e ? `${e} échec(s)` : "Tout est bon."}`);
 if (e) process.exit(1);

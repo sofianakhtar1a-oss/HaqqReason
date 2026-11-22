@@ -147,7 +147,11 @@ export function Alambic() {
     afficher(i.outil);
   };
 
+  // Un résultat n'est rangé qu'une fois : retiré de l'étagère, il n'y revient pas au rendu suivant.
+  const dejaNotes = useRef(new WeakSet<Blob>());
   const noter = useCallback((r: Resultat) => {
+    if (dejaNotes.current.has(r.blob)) return;
+    dejaNotes.current.add(r.blob);
     setRangements((liste) => (liste.some((x) => x.resultat.blob === r.blob) ? liste : [{ cle: ++compteur.current, resultat: r }, ...liste].slice(0, MAX_RESULTATS)));
   }, []);
 

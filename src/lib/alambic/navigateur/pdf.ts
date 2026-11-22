@@ -111,6 +111,9 @@ export async function vignettePage(doc: Awaited<ReturnType<typeof ouvrir>>["doc"
   await page.render({ canvasContext: ctx, viewport: vue, canvas: toile }).promise;
   page.cleanup();
   const blob = await new Promise<Blob>((ok) => toile.toBlob((b) => ok(b!), "image/png"));
+  // Libère tout de suite la mémoire de la toile (Safari la garde sinon, et les vignettes sont nombreuses).
+  toile.width = 0;
+  toile.height = 0;
   return URL.createObjectURL(blob);
 }
 
@@ -150,6 +153,24 @@ export async function extraire(octets: Uint8Array, pages: number[]): Promise<Uin
   copiees.forEach((p) => sortie.addPage(p));
   sortie.setProducer("HaqqReason — L'Alambic");
   return sortie.save();
+}
+
+/**
+ * Plusieurs extraits d'un même PDF (une page chacun, ou des groupes de pages) : le PDF n'est lu
+ * qu'une fois, au lieu d'une fois par extrait.
+ */
+export async function extraireParties(octets: Uint8Array, parties: number[][], avancer?: (i: number) => void): Promise<Uint8Array[]> {
+  const source = await charger(octets);
+  const sorties: Uint8Array[] = [];
+  for (let i = 0; i < parties.length; i++) {
+    avancer?.(i);
+    const sortie = await PDFDocument.create();
+    const copiees = await sortie.copyPages(source, parties[i].map((p) => p - 1));
+    copiees.forEach((p) => sortie.addPage(p));
+    sortie.setProducer("HaqqReason — L'Alambic");
+    sorties.push(await sortie.save());
+  }
+  return sorties;
 }
 
 export async function nombreDePages(octets: Uint8Array): Promise<number> {

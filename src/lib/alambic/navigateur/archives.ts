@@ -86,6 +86,32 @@ export async function lireArchive(nom: string, format: string, blob: Blob, motDe
   throw new Error("Ce format n'est pas une archive.");
 }
 
+/**
+ * Un seul fichier d'une archive. Pour un ZIP, seule cette entrée est décompressée : les autres
+ * (même chiffrées) ne sont pas touchées.
+ */
+export async function lireEntree(nom: string, format: string, blob: Blob, cible: string, motDePasse?: string): Promise<FichierArchive | null> {
+  if (format !== "zip") return (await lireArchive(nom, format, blob, motDePasse)).find((f) => f.nom === cible) ?? null;
+  const z = await zipjs();
+  const lecteur = new z.ZipReader(new z.BlobReader(blob));
+  try {
+    const e = (await lecteur.getEntries()).find((x) => x.filename === cible && !x.directory);
+    if (!e || e.directory) return null;
+    if (e.encrypted && !motDePasse) throw new Error(MESSAGE_ZIP_PROTEGE);
+    try {
+      return { nom: e.filename, blob: await e.getData!(new z.BlobWriter(), e.encrypted ? { password: motDePasse } : {}), date: e.lastModDate };
+    } catch (err) {
+      if (e.encrypted && /password/i.test(String((err as Error)?.message))) throw new MotDePasseFaux();
+      throw err;
+    }
+  } catch (err) {
+    if (err instanceof MotDePasseFaux || (err instanceof Error && err.message === MESSAGE_ZIP_PROTEGE)) throw err;
+    throw new Error("Ce ZIP est abîmé ou incomplet.");
+  } finally {
+    await lecteur.close();
+  }
+}
+
 export async function ecrireArchive(fichiers: FichierArchive[], format: string, avancer: (f: number) => void): Promise<Blob> {
   if (format === "zip") {
     const z = await zipjs();

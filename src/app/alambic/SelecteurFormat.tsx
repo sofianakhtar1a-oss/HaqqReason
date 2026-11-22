@@ -4,6 +4,7 @@ import { Archive, AudioLines, ChevronDown, Clapperboard, FileText, Image as Icon
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { FAMILLES, FORMATS, format, type Famille } from "@/lib/alambic/formats";
 import type { Verdict } from "@/lib/alambic/graphe";
+import { usePiegeFocus } from "./commun";
 
 export const ICONES: Record<Famille, typeof FileText> = {
   document: FileText,
@@ -69,7 +70,9 @@ function Choix({ role, valeur, verdicts, detecte, onChoisir, onFermer }: { role:
   const [q, setQ] = useState("");
   const [raison, setRaison] = useState<{ id: string; texte: string } | null>(null);
   const champ = useRef<HTMLInputElement>(null);
+  const boite = useRef<HTMLDivElement>(null);
   const titre = useId();
+  usePiegeFocus(boite, champ);
 
   useEffect(() => {
     champ.current?.focus();
@@ -92,7 +95,7 @@ function Choix({ role, valeur, verdicts, detecte, onChoisir, onFermer }: { role:
 
   return (
     <div className="alambic-choix-fond" role="presentation" onMouseDown={onFermer}>
-      <div className="alambic-choix verre" role="dialog" aria-modal="true" aria-labelledby={titre} onMouseDown={(e) => e.stopPropagation()}>
+      <div ref={boite} className="alambic-choix verre" role="dialog" aria-modal="true" aria-labelledby={titre} onMouseDown={(e) => e.stopPropagation()}>
         <header className="alambic-choix-tete">
           <div>
             <h2 id={titre} className="font-display text-xl font-bold">

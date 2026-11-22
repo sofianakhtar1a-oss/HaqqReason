@@ -10,7 +10,7 @@ import { FORMATS, format, nomDuFormat, tailleLisible } from "@/lib/alambic/forma
 import { destinationParDefaut, verdict, type Capacites, type Verdict } from "@/lib/alambic/graphe";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { ChampProtection } from "./ChampProtection";
-import { ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, ZoneDepot } from "./commun";
+import { ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "./commun";
 import { ICONES, SelecteurFormat } from "./SelecteurFormat";
 
 const TOUS = FORMATS.map((f) => f.id);
@@ -63,6 +63,7 @@ export function ConversionLot({ fichiers: depart, capacites, cibleVoulue, onFerm
       const faits: Resultat[] = [];
       const rates: { nom: string; message: string }[] = [];
       for (let i = 0; i < elements.length; i++) {
+        verifierAnnulation(signal);
         const e = elements[i];
         const prefixe = `${i + 1}/${elements.length} · ${e.fichier.name}`;
         if (!e.format) {
@@ -82,6 +83,7 @@ export function ConversionLot({ fichiers: depart, capacites, cibleVoulue, onFerm
           faits.push(r);
         } catch (err) {
           if ((err as Error)?.name === "AbortError") throw err;
+          verifierAnnulation(signal);
           rates.push({ nom: e.fichier.name, message: (err as Error)?.message || "La conversion a échoué." });
         }
       }
@@ -187,8 +189,8 @@ export function ConversionLot({ fichiers: depart, capacites, cibleVoulue, onFerm
             <strong>Laissé{echecs.length > 1 ? "s" : ""} de côté :</strong>
           </p>
           <ul className="grid gap-1 text-sm">
-            {echecs.map((x) => (
-              <li key={x.nom}>
+            {echecs.map((x, i) => (
+              <li key={`${x.nom}-${i}`}>
                 <strong>{x.nom}</strong> — {x.message}
               </li>
             ))}

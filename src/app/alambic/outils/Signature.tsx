@@ -228,12 +228,19 @@ export function Signature({ abonner }: { abonner: Abonner }) {
         if (mdp !== undefined) o = await dechiffrer(o, mdp);
         const ouvert = await ouvrir(o);
         const tailles: TaillePage[] = [];
-        for (let n = 1; n <= ouvert.doc.numPages; n++) {
-          const vue = (await ouvert.doc.getPage(n)).getViewport({ scale: 1 });
-          tailles.push({ l: vue.width, h: vue.height });
+        let lus: Awaited<ReturnType<typeof import("@/lib/alambic/navigateur/signer").lireFormulaire>>;
+        try {
+          for (let n = 1; n <= ouvert.doc.numPages; n++) {
+            const vue = (await ouvert.doc.getPage(n)).getViewport({ scale: 1 });
+            tailles.push({ l: vue.width, h: vue.height });
+          }
+          const { lireFormulaire } = await import("@/lib/alambic/navigateur/signer");
+          lus = await lireFormulaire(o);
+        } catch (e) {
+          // Le document ouvert ne servira pas : on le referme avant de signaler l'échec.
+          void ouvert.fermer();
+          throw e;
         }
-        const { lireFormulaire } = await import("@/lib/alambic/navigateur/signer");
-        const lus = await lireFormulaire(o);
         setFichier(f);
         setOctets(o);
         setPdf(ouvert);
@@ -292,12 +299,14 @@ export function Signature({ abonner }: { abonner: Abonner }) {
     setResultat(null);
   };
 
-  // Clavier : flèches pour ajuster, Suppr pour retirer (hors saisie de texte).
+  // Clavier : flèches pour ajuster, Suppr pour retirer (hors saisie de texte, et jamais derrière la fenêtre de signature).
   useEffect(() => {
-    if (!choisi) return;
+    if (!choisi || pad) return;
     const touche = (ev: KeyboardEvent) => {
       const cible = ev.target as HTMLElement;
-      if (cible.tagName === "INPUT" || cible.tagName === "TEXTAREA" || cible.tagName === "SELECT") return;
+      if (cible.tagName === "INPUT" || cible.tagName === "TEXTAREA" || cible.tagName === "SELECT" || cible.isContentEditable) return;
+      // Un bouton ou un lien des réglages garde ses touches : seule la barre de l'élément choisi les cède.
+      if ((cible.tagName === "BUTTON" || cible.tagName === "A") && !cible.closest(".alambic-signe-element")) return;
       const e = elements.find((x) => x.id === choisi);
       if (!e) return;
       const pas = ev.shiftKey ? 0.02 : 0.004;
@@ -312,7 +321,7 @@ export function Signature({ abonner }: { abonner: Abonner }) {
     };
     document.addEventListener("keydown", touche);
     return () => document.removeEventListener("keydown", touche);
-  }, [choisi, elements, changer]);
+  }, [choisi, elements, changer, pad]);
 
   const choisirSignature = (png: string) => {
     const img = new Image();

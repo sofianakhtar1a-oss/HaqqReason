@@ -4,7 +4,7 @@ import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, us
 import { rectSortingStrategy, SortableContext, sortableKeyboardCoordinates, useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import { ArrowDownUp, CheckCheck, Copy, GripVertical, LayoutGrid, RotateCcw, RotateCw, Save, SquareDashed, Trash2, Undo2, X } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { format as formatDe, tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { deplacer, dupliquer, estIntacte, insererBlanche, inverser, pagesDe, pivoter, placeBlanche, retirer, type PageOrdonnee } from "@/lib/alambic/pages";
@@ -85,7 +85,7 @@ function Carte({
 export function Organisation({ abonner }: { abonner: Abonner }) {
   const [sources, setSources] = useState<Source[]>([]);
   const [pages, setPages] = useState<PageOrdonnee[]>([]);
-  const [choisies, setChoisies] = useState<Set<string>>(new Set());
+  const [selection, setChoisies] = useState<Set<string>>(new Set());
   const [historique, setHistorique] = useState<PageOrdonnee[][]>([]);
   const [verrouille, setVerrouille] = useState<File | null>(null);
   const [refuses, setRefuses] = useState<string[]>([]);
@@ -99,7 +99,17 @@ export function Organisation({ abonner }: { abonner: Abonner }) {
   useEffect(() => {
     sourcesRef.current = sources;
   }, [sources]);
+  const pagesRef = useRef<PageOrdonnee[]>([]);
+  useEffect(() => {
+    pagesRef.current = pages;
+  }, [pages]);
   useEffect(() => () => sourcesRef.current.forEach((s) => void s.fermer()), []);
+
+  // Seules comptent les pages encore présentes : une page retirée sort aussi de la sélection.
+  const choisies = useMemo(() => {
+    const presentes = new Set(pages.map((p) => p.cle));
+    return new Set([...selection].filter((c) => presentes.has(c)));
+  }, [selection, pages]);
 
   /** Toute modification passe par ici : elle peut être annulée. */
   const modifier = (suivantes: PageOrdonnee[]) => {
@@ -137,6 +147,8 @@ export function Organisation({ abonner }: { abonner: Abonner }) {
           if (s) nouvelles.push(s);
         } catch (e) {
           if ((e as Error).name === "PdfProtege") setVerrouille(fichiers[i]);
+          // Les fichiers déjà ouverts de ce lot ne serviront pas : on les referme.
+          nouvelles.forEach((s) => void s.fermer());
           throw e;
         }
       }
@@ -144,8 +156,13 @@ export function Organisation({ abonner }: { abonner: Abonner }) {
       setVerrouille(null);
       setSources((s) => [...s, ...nouvelles]);
       const ajoutees = nouvelles.flatMap((s) => pagesDe(s.id, s.pages));
-      if (pages.length) modifier([...pages, ...ajoutees]);
-      else {
+      // Les pages ont pu changer pendant l'ouverture : on part de leur état du moment.
+      const actuelles = pagesRef.current;
+      if (actuelles.length) {
+        setHistorique((h) => [...h.slice(-MAX_HISTORIQUE + 1), actuelles]);
+        setPages([...actuelles, ...ajoutees]);
+        setResultat(null);
+      } else {
         setPages(ajoutees);
         setHistorique([]);
         setResultat(null);

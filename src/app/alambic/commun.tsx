@@ -98,25 +98,71 @@ const borne = (a: number) => Math.max(0, Math.min(1, a));
 export function useTravail() {
   const [travail, setTravail] = useState<Travail | null>(null);
   const [erreur, setErreur] = useState<unknown>(null);
-  const controleur = useRef<AbortController | null>(null);
+  // Plusieurs travaux peuvent se chevaucher (un fichier déposé pendant un autre) : chacun garde
+  // son contrôleur, la barre reste tant qu'il en reste un, et « Annuler » les arrête tous.
+  const controleurs = useRef(new Set<AbortController>());
+
+  useEffect(() => {
+    const encours = controleurs.current;
+    // Quitter l'outil arrête ce qui tourne encore : le résultat n'aurait plus nulle part où s'afficher.
+    return () => encours.forEach((c) => c.abort());
+  }, []);
 
   async function lancer<T>(fn: (avancer: Avancer, signal: AbortSignal) => Promise<T>): Promise<T | undefined> {
     const c = new AbortController();
-    controleur.current = c;
+    controleurs.current.add(c);
     setErreur(null);
     setTravail({ avancement: null, etape: "Préparation" });
     try {
-      return await fn((a, etape) => setTravail({ avancement: a === null ? null : borne(a), etape }), c.signal);
+      return await fn((a, etape) => {
+        if (!c.signal.aborted) setTravail({ avancement: a === null ? null : borne(a), etape });
+      }, c.signal);
     } catch (e) {
-      if ((e as Error)?.name !== "AbortError") setErreur(e);
+      if ((e as Error)?.name !== "AbortError" && !c.signal.aborted) setErreur(e);
       return undefined;
     } finally {
-      controleur.current = null;
-      setTravail(null);
+      controleurs.current.delete(c);
+      if (!controleurs.current.size) setTravail(null);
     }
   }
 
-  return { travail, erreur, setErreur, lancer, annuler: () => controleur.current?.abort() };
+  return { travail, erreur, setErreur, lancer, annuler: () => controleurs.current.forEach((c) => c.abort()) };
+}
+
+const FOCUSABLES = 'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]';
+
+/**
+ * Fenêtre modale au clavier : le focus y entre à l'ouverture (sur `premier`, sinon sur le premier
+ * élément atteignable), Tab tourne à l'intérieur sans passer derrière, et il revient à la fermeture là
+ * où il était.
+ */
+export function usePiegeFocus(boite: React.RefObject<HTMLElement | null>, premier?: React.RefObject<HTMLElement | null>) {
+  useEffect(() => {
+    const avant = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const atteignables = () => [...(boite.current?.querySelectorAll<HTMLElement>(FOCUSABLES) ?? [])].filter((x) => x.tabIndex >= 0 && x.getClientRects().length > 0);
+    (premier?.current ?? atteignables()[0])?.focus();
+    const tab = (e: KeyboardEvent) => {
+      const el = boite.current;
+      if (e.key !== "Tab" || !el) return;
+      const liste = atteignables();
+      if (!liste.length) return;
+      const debut = liste[0];
+      const fin = liste[liste.length - 1];
+      const dedans = el.contains(document.activeElement);
+      if (e.shiftKey && (!dedans || document.activeElement === debut)) {
+        e.preventDefault();
+        fin.focus();
+      } else if (!e.shiftKey && (!dedans || document.activeElement === fin)) {
+        e.preventDefault();
+        debut.focus();
+      }
+    };
+    document.addEventListener("keydown", tab);
+    return () => {
+      document.removeEventListener("keydown", tab);
+      if (avant?.isConnected) avant.focus({ preventScroll: true });
+    };
+  }, [boite, premier]);
 }
 
 /** Lève une interruption propre si l'utilisateur a annulé. */
@@ -224,12 +270,12 @@ export function BonASavoir({ points }: { points: ReactNode[] }) {
 }
 
 /** Plusieurs résultats d'un coup : chacun se télécharge, ou tous ensemble dans un ZIP. */
-export function ListeResultats({ resultats, nomZip, tailles }: { resultats: Resultat[]; nomZip: string; tailles?: (number | undefined)[] }) {
+export function ListeResultats({ resultats, nomZip, tailles, ranger = true }: { resultats: Resultat[]; nomZip: string; tailles?: (number | undefined)[]; ranger?: boolean }) {
   const { noter } = useAlambic();
   const [zip, setZip] = useState(false);
   useEffect(() => {
-    resultats.forEach(noter);
-  }, [resultats, noter]);
+    if (ranger) resultats.forEach(noter);
+  }, [resultats, noter, ranger]);
   if (!resultats.length) return null;
   const total = resultats.reduce((s, r) => s + r.blob.size, 0);
   return (

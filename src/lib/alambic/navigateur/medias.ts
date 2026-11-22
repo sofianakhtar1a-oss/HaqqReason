@@ -118,6 +118,10 @@ export async function convertirMedia(blob: Blob, cible: string, o: OptionsMedia,
   o.signal?.addEventListener("abort", annuler, { once: true });
   try {
     await conversion.execute();
+  } catch (e) {
+    // Mediabunny signale l'arrêt par sa propre erreur : on la ramène à une annulation ordinaire.
+    if (o.signal?.aborted) throw new DOMException("Annulé", "AbortError");
+    throw e;
   } finally {
     o.signal?.removeEventListener("abort", annuler);
   }

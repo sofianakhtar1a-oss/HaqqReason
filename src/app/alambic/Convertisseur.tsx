@@ -55,14 +55,18 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
   const v = source && cible ? verdicts[cible] : null;
   const enCours = etat.phase === "lecture" || etat.phase === "travail";
 
+  // Deux fichiers déposés coup sur coup : seul le dernier compte.
+  const dernierChargement = useRef(0);
   const charger = useCallback(
     async (f: File) => {
+      const n = ++dernierChargement.current;
       setResultat(null);
       setInvite(null);
       setEtat({ phase: "lecture", avancement: null, etape: "Reconnaissance du format" });
       setFichier(f);
       const { reconnaitre } = await import("@/lib/alambic/navigateur/moteur");
       const id = await reconnaitre(f);
+      if (n !== dernierChargement.current) return;
       setDetecte(id);
       setSource(id);
       const voulue = intention?.cible;
@@ -73,6 +77,8 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
   );
 
   const recevoir = async (fichiers: File[]) => {
+    // Pendant une conversion, un fichier collé ou déposé attendrait la fin : on ne mélange pas deux fichiers.
+    if (etat.phase === "travail") return;
     if (fichiers.length > 1) setLot(await reconnaitreTous(fichiers));
     else if (fichiers[0]) void charger(fichiers[0]);
   };

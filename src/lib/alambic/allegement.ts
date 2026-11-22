@@ -151,3 +151,51 @@ export function retirerOrphelins(doc: PDFDocument): number {
   }
   return retires;
 }
+
+/**
+ * Images qui servent de masque à une autre image (/SMask, ou /Mask quand c'est une image) : elles
+ * doivent rester en gris et sans perte, on ne les recompresse jamais.
+ */
+export function masquesDImages(doc: PDFDocument): Set<string> {
+  const masques = new Set<string>();
+  for (const [, o] of doc.context.enumerateIndirectObjects()) {
+    if (!(o instanceof PDFStream)) continue;
+    for (const [cle, v] of o.dict.entries()) {
+      const nom = cle.asString();
+      if ((nom === "/SMask" || nom === "/Mask") && v instanceof PDFRef) masques.add(v.toString());
+    }
+  }
+  return masques;
+}
+
+/**
+ * Retire les blocs EXIF d'un JPEG. Dans un PDF, les lecteurs ignorent l'orientation qu'ils indiquent ;
+ * le navigateur, lui, l'appliquerait en relisant l'image et la ferait pivoter.
+ */
+export function sansExif(jpeg: Uint8Array): Uint8Array {
+  if (jpeg.length < 4 || jpeg[0] !== 0xff || jpeg[1] !== 0xd8) return jpeg;
+  const gardes: Uint8Array[] = [jpeg.subarray(0, 2)];
+  let i = 2;
+  let retire = false;
+  while (i + 4 <= jpeg.length && jpeg[i] === 0xff) {
+    const marqueur = jpeg[i + 1];
+    // Début des données de l'image (ou fin) : tout le reste est gardé tel quel.
+    if (marqueur === 0xda || marqueur === 0xd9) break;
+    const longueur = (jpeg[i + 2] << 8) | jpeg[i + 3];
+    const fin = i + 2 + longueur;
+    if (longueur < 2 || fin > jpeg.length) break;
+    const exif = marqueur === 0xe1 && longueur >= 8 && jpeg[i + 4] === 0x45 && jpeg[i + 5] === 0x78 && jpeg[i + 6] === 0x69 && jpeg[i + 7] === 0x66;
+    if (exif) retire = true;
+    else gardes.push(jpeg.subarray(i, fin));
+    i = fin;
+  }
+  if (!retire) return jpeg;
+  gardes.push(jpeg.subarray(i));
+  const sortie = new Uint8Array(gardes.reduce((s, g) => s + g.length, 0));
+  let o = 0;
+  for (const g of gardes) {
+    sortie.set(g, o);
+    o += g.length;
+  }
+  return sortie;
+}

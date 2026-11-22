@@ -5,7 +5,7 @@
  * Rien n'est envoyé. Un résultat qui ne serait pas plus léger n'est jamais proposé : on garde l'original.
  */
 import { PDFArray, PDFDict, PDFName, PDFNumber, PDFRawStream, decodePDFRawStream, type PDFDocument } from "@cantoo/pdf-lib";
-import { dimensionsCibles, dimensionsVideo, defiltrerPng, REGLAGES_IMAGE, REGLAGES_MEDIA, REGLAGES_PDF, retirerOrphelins, viserPoids, type Niveau } from "../allegement";
+import { dimensionsCibles, dimensionsVideo, defiltrerPng, masquesDImages, REGLAGES_IMAGE, REGLAGES_MEDIA, REGLAGES_PDF, retirerOrphelins, sansExif, viserPoids, type Niveau } from "../allegement";
 import { nomDuFormat } from "../formats";
 import type { Capacites } from "../graphe";
 import { bureautique } from "../outils";
@@ -193,6 +193,7 @@ async function recompresserImages(doc: PDFDocument, niveau: Niveau, avancer: Ava
   const plusGrandCote = Math.max(...pages.map((p) => Math.max(p.getWidth(), p.getHeight())), 595);
   const maxPixels = Math.round((plusGrandCote / 72) * r.ppp);
   const images = doc.context.enumerateIndirectObjects().filter(([, o]) => o instanceof PDFRawStream && o.dict.lookup(NOMS("Subtype")) === NOMS("Image")) as [import("@cantoo/pdf-lib").PDFRef, PDFRawStream][];
+  const masques = masquesDImages(doc);
   let traitees = 0;
   let gagne = 0;
   for (let i = 0; i < images.length; i++) {
@@ -201,6 +202,8 @@ async function recompresserImages(doc: PDFDocument, niveau: Niveau, avancer: Ava
     avancer(0.1 + (i / Math.max(1, images.length)) * 0.75, `Image ${i + 1} sur ${images.length}`);
     const d = flux.dict;
     if (d.lookup(NOMS("ImageMask")) || d.has(NOMS("Decode")) || d.has(NOMS("Mask"))) continue;
+    // Le masque de transparence d'une autre image doit rester en gris et sans perte.
+    if (masques.has(ref.toString())) continue;
     const comp = composantes(doc, d);
     if (!comp) continue;
     // Les filtres s'enchaînent parfois (ASCII85 puis JPEG, chez ReportLab par exemple) : seul le dernier compte ici.
@@ -223,7 +226,7 @@ async function recompresserImages(doc: PDFDocument, niveau: Niveau, avancer: Ava
           enveloppe.delete(NOMS("DecodeParms"));
           jpeg = decodePDFRawStream(PDFRawStream.of(enveloppe, contenu)).decode();
         }
-        image = await createImageBitmap(new Blob([jpeg.slice().buffer], { type: "image/jpeg" }));
+        image = await createImageBitmap(new Blob([sansExif(jpeg).slice().buffer], { type: "image/jpeg" }));
       } else if (filtre === NOMS("FlateDecode") && niveau === "fort" && l * h >= 250_000) {
         // Images sans perte (captures, scans en couleur) : seulement en niveau Fort, elles deviennent des JPEG.
         let brut = decodePDFRawStream(flux).decode();
@@ -388,6 +391,10 @@ async function allegerMedia(fichier: Blob, format: string, nom: string, video: b
   o.signal?.addEventListener("abort", arreter, { once: true });
   try {
     await conversion.execute();
+  } catch (e) {
+    // Mediabunny signale l'arrêt par sa propre erreur : on la ramène à une annulation ordinaire.
+    annule(o.signal);
+    throw e;
   } finally {
     o.signal?.removeEventListener("abort", arreter);
   }

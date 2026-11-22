@@ -51,15 +51,15 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
 ## Journal
 
 - 22 nov. 21 h 31 — début du scan.
-- 22 nov. 22 h 45 — premier envoi : menu regroupé et recherche « Que veux-tu faire ? », « Continuer avec… »,
+- 22 nov. 22 h 26 — premier envoi : menu regroupé et recherche « Que veux-tu faire ? », « Continuer avec… »,
   aperçu, partage, résultats de la visite, questions fréquentes ; outils Organiser, Alléger, Filigraner,
   Déverrouiller, Nettoyer. Les PDF seulement « restreints » s'ouvrent désormais dans tous les outils.
   Signer et Reconnaître restent masqués jusqu'à leur fin.
-- 22 nov. 23 h 15 — deuxième envoi : Reconnaître le texte (Tesseract local, texte corrigeable, Word,
+- 22 nov. 22 h 47 — deuxième envoi : Reconnaître le texte (Tesseract local, texte corrigeable, Word,
   PDF cherchable ligne à ligne), Signer et remplir (champs de formulaire, signature dessinée ou
   photographiée, texte, date, coches), conversion de plusieurs fichiers d'un coup ; Convertir lit le
   texte des images, oriente les PDF scannés vers Reconnaître et les sons vers Transcrire.
-- 22 nov. 23 h 00 — troisième envoi : photos HEIC (lues par Safari) et AVIF ; Convertir règle la netteté
+- 22 nov. 22 h 57 — troisième envoi : photos HEIC (lues par Safari) et AVIF ; Convertir règle la netteté
   des pages et la taille des images ; Découper coupe toutes les N pages et enregistre l'image d'un
   instant d'une vidéo ; Fusionner met les photos sur des pages A4, ajoute un signet par fichier et
   numérote ; Protéger exige de retaper un mot de passe caché et règle les autorisations d'un PDF ;

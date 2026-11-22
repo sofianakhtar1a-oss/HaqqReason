@@ -7,6 +7,7 @@
 import { Eraser, ImageUp, PenLine, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 import { cadreUtile, detourerEncre } from "@/lib/alambic/signature";
+import { usePiegeFocus } from "../commun";
 
 const ENCRES = [
   { v: "#111827", n: "Noire" },
@@ -41,7 +42,17 @@ export function PadSignature({ onValider, onFermer }: { onValider: (png: string,
   const toile = useRef<HTMLCanvasElement>(null);
   const trace = useRef<{ x: number; y: number }[] | null>(null);
   const choix = useRef<HTMLInputElement>(null);
+  const boite = useRef<HTMLDivElement>(null);
+  const [erreurPhoto, setErreurPhoto] = useState<string | null>(null);
   const titre = useId();
+  usePiegeFocus(boite);
+
+  // Revenir au dessin repart d'une toile vierge : le bouton « Utiliser » doit l'être aussi.
+  const changerOnglet = (o: "dessin" | "photo") => {
+    if (o === onglet) return;
+    if (o === "dessin") setVide(true);
+    setOnglet(o);
+  };
 
   useEffect(() => {
     const touche = (e: KeyboardEvent) => {
@@ -86,7 +97,14 @@ export function PadSignature({ onValider, onFermer }: { onValider: (png: string,
   };
 
   const importer = async (f: File) => {
-    const bitmap = await createImageBitmap(f);
+    setErreurPhoto(null);
+    let bitmap: ImageBitmap;
+    try {
+      bitmap = await createImageBitmap(f);
+    } catch {
+      setErreurPhoto("Cette photo ne s'ouvre pas dans ton navigateur (une photo HEIC d'iPhone, par exemple). Choisis une photo JPEG ou PNG, ou fais une capture d'écran de la signature.");
+      return;
+    }
     const echelle = Math.min(1, 1600 / Math.max(bitmap.width, bitmap.height));
     const c = document.createElement("canvas");
     c.width = Math.round(bitmap.width * echelle);
@@ -104,7 +122,7 @@ export function PadSignature({ onValider, onFermer }: { onValider: (png: string,
 
   return (
     <div className="alambic-choix-fond" role="presentation" onMouseDown={onFermer}>
-      <div className="alambic-pad verre" role="dialog" aria-modal="true" aria-labelledby={titre} onMouseDown={(e) => e.stopPropagation()}>
+      <div ref={boite} className="alambic-pad verre" role="dialog" aria-modal="true" aria-labelledby={titre} onMouseDown={(e) => e.stopPropagation()}>
         <header className="alambic-choix-tete">
           <h2 id={titre} className="font-display text-xl font-bold">
             Ta signature
@@ -114,11 +132,11 @@ export function PadSignature({ onValider, onFermer }: { onValider: (png: string,
           </button>
         </header>
         <div className="alambic-segments" role="tablist" aria-label="Façon de créer la signature">
-          <button type="button" role="tab" aria-selected={onglet === "dessin"} onClick={() => setOnglet("dessin")}>
+          <button type="button" role="tab" aria-selected={onglet === "dessin"} onClick={() => changerOnglet("dessin")}>
             <PenLine className="mr-1 inline size-4" aria-hidden="true" />
             La dessiner
           </button>
-          <button type="button" role="tab" aria-selected={onglet === "photo"} onClick={() => setOnglet("photo")}>
+          <button type="button" role="tab" aria-selected={onglet === "photo"} onClick={() => changerOnglet("photo")}>
             <ImageUp className="mr-1 inline size-4" aria-hidden="true" />
             Importer une photo
           </button>
@@ -186,6 +204,11 @@ export function PadSignature({ onValider, onFermer }: { onValider: (png: string,
               {photo ? <img src={photo} alt="Signature importée" /> : <ImageUp className="size-8 text-or" strokeWidth={1.4} aria-hidden="true" />}
               <span className="text-sm text-encre-douce">{photo ? "Choisir une autre photo" : "Signe sur une feuille blanche, prends-la en photo de près : le blanc disparaît."}</span>
             </button>
+            {erreurPhoto && (
+              <p className="message message-erreur" role="alert">
+                {erreurPhoto}
+              </p>
+            )}
           </>
         )}
 

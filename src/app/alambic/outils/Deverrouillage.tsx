@@ -13,6 +13,9 @@ import { useReception, type Abonner } from "../reception";
 /** Ce que le fichier demande : un mot de passe, seulement le retrait de restrictions, ou rien. */
 type Etat = { genre: "pdf-mdp" } | { genre: "pdf-restreint" } | { genre: "pdf-libre" } | { genre: "zip-mdp" } | { genre: "zip-libre" } | { genre: "autre" };
 
+/** Au-delà, les fichiers extraits ne vont pas un par un dans « Tes résultats ». */
+const EXTRAITS_RANGES = 4;
+
 const formatParNom = (nom: string) => {
   const ext = extensionDe(nom);
   return FORMATS.find((f) => f.extensions.includes(ext))?.id ?? "";
@@ -84,7 +87,7 @@ export function Deverrouillage({ abonner }: { abonner: Abonner }) {
       avancer(0.6, "Rangement dans un ZIP sans mot de passe");
       const zip = await ecrireArchive(fichiers, "zip", (f) => avancer(0.6 + f * 0.4, "Rangement dans un ZIP sans mot de passe"));
       setResultat(resultatDe(`${sansExtension(fichier.name)} (déverrouillé).zip`, zip, "zip", "application/zip", [`${fichiers.length} fichier${fichiers.length > 1 ? "s" : ""} repris, sans mot de passe.`]));
-      setExtraits(fichiers.slice(0, 200).map((x) => resultatDe(x.nom.split("/").pop() || x.nom, x.blob, formatParNom(x.nom) || "zip", x.blob.type || "application/octet-stream")));
+      setExtraits(fichiers.slice(0, 200).map((x) => resultatDe(x.nom.split("/").pop() || x.nom, x.blob, formatParNom(x.nom) || extensionDe(x.nom), x.blob.type || "application/octet-stream")));
     });
 
   const vider = () => {
@@ -163,7 +166,8 @@ export function Deverrouillage({ abonner }: { abonner: Abonner }) {
       <MessageErreur erreur={erreur} />
 
       {resultat && <CarteResultat resultat={resultat} protege={false} />}
-      {extraits.length > 0 && <ListeResultats resultats={extraits} nomZip={`${sansExtension(fichier?.name ?? "Archive")} (fichiers).zip`} />}
+      {/* Beaucoup de fichiers extraits ne chassent pas tout le reste de « Tes résultats » : seul le ZIP déverrouillé y va. */}
+      {extraits.length > 0 && <ListeResultats resultats={extraits} nomZip={`${sansExtension(fichier?.name ?? "Archive")} (fichiers).zip`} ranger={extraits.length <= EXTRAITS_RANGES} />}
 
       <BonASavoir
         points={[

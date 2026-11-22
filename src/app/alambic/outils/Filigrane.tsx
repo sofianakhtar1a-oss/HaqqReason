@@ -7,7 +7,7 @@ import { tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
-import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, ZoneDepot } from "../commun";
+import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
 import { useReception, type Abonner } from "../reception";
 import type { DocPdf } from "./VignettePdf";
 
@@ -170,13 +170,15 @@ export function Filigrane({ abonner }: { abonner: Abonner }) {
     lancer(async (avancer, signal) => {
       setResultats([]);
       const { marquerPdf, marquerImage } = await import("@/lib/alambic/navigateur/filigraner");
-      const o = { ...options, inseparable: estPdf && inseparable, signal };
+      // Sans filigrane (numéros seuls), rien ne justifie d'aplatir les pages en images.
+      const o = { ...options, inseparable: estPdf && inseparable && Boolean(options.filigrane), signal };
       if (estPdf) {
         setResultats([await marquerPdf(fichiers[0].fichier, fichiers[0].fichier.name, o, avancer)]);
         return;
       }
       const faits: Resultat[] = [];
       for (let i = 0; i < fichiers.length; i++) {
+        verifierAnnulation(signal);
         avancer(i / fichiers.length, `Image ${i + 1} sur ${fichiers.length}`);
         faits.push(await marquerImage(fichiers[i].fichier, fichiers[i].format, fichiers[i].fichier.name, o));
       }
