@@ -15,6 +15,7 @@ import { deplacer, dupliquer, entrelacer, estIntacte, insererBlanche, inverser, 
 import { MODULES, resoudre } from "../src/lib/modules/modules";
 import * as zipjs from "@zip.js/zip.js";
 import { lireEntree } from "../src/lib/alambic/navigateur/archives";
+import { boiteDe, chercher, couverture, decouverts, enPixels, ibanValide, luhnValide, memeBoite, MOTIFS, motifDeRecherche, texteDePage, type Morceau, type PageTexte } from "../src/lib/alambic/caviardage";
 
 // Les modules du projet chargent pdf-lib en CommonJS : on prend le même exemplaire (sinon ses classes diffèrent).
 const { degrees, PDFDocument, PDFName, StandardFonts } = createRequire(import.meta.url)("@cantoo/pdf-lib") as typeof import("@cantoo/pdf-lib");
@@ -26,7 +27,7 @@ const ok = (n: string, c: boolean, x: unknown = "") => {
 };
 
 // ---------------------------------------------------------------- outils et familles
-ok("douze outils, chacun dans une famille", TOUS_LES_OUTILS.length === 12 && TOUS_LES_OUTILS.every((o) => GROUPES.some((g) => g.id === GROUPE_DE[o])));
+ok("treize outils, chacun dans une famille", TOUS_LES_OUTILS.length === 13 && TOUS_LES_OUTILS.every((o) => GROUPES.some((g) => g.id === GROUPE_DE[o])));
 ok("le mode créateur connaît chaque outil", TOUS_LES_OUTILS.every((o) => MODULES.alambic.listes[0].elements.some((x) => x.id === o)));
 const parDefaut = resoudre("alambic", null).listes.outils.map((x) => x.id);
 const ranges = parGroupes(parDefaut.map((id) => ({ id: id as (typeof TOUS_LES_OUTILS)[number] }))).flatMap((g) => g.outils.map((o) => o.id));
@@ -36,6 +37,8 @@ ok("un PDF passe à Organiser, Signer, Déverrouiller, Alléger, Filigraner, Rec
 ok("une vidéo ne passe ni à Organiser ni à Signer", !accepte("organiser", "mp4") && !accepte("signer", "mp4") && accepte("transcrire", "mp4") && accepte("alleger", "mp4"));
 ok("un PowerPoint (vu comme un ZIP) s'allège et se nettoie", accepte("alleger", "zip", "cours.pptx") && accepte("nettoyer", "zip", "cours.pptx") && !accepte("nettoyer", "zip", "photos.zip"));
 ok("bureautique reconnaît les formats hors catalogue", bureautique("zip", "a.ods") === "ods" && bureautique("docx") === "docx" && bureautique("zip", "a.zip") === null);
+ok("un PDF et une photo se masquent, pas une vidéo ni un Word", accepte("masquer", "pdf") && accepte("masquer", "jpg") && accepte("masquer", "heic") && !accepte("masquer", "mp4") && !accepte("masquer", "docx"));
+ok("Masquer est rangé avec la sécurité, juste avant Nettoyer", GROUPE_DE.masquer === "securite" && ranges.indexOf("masquer") === ranges.indexOf("nettoyer") - 1, ranges);
 ok("l'AVI n'est proposé nulle part sauf Protéger", TOUS_LES_OUTILS.filter((o) => accepte(o, "avi")).join() === "proteger");
 
 // ---------------------------------------------------------------- intentions
@@ -48,6 +51,9 @@ ok("« tourner les pages » → pivoter", premier("tourner les pages") === "pivo
 ok("« word en pdf » → convertir vers PDF", premier("word en pdf") === "word-en-pdf" && INTENTIONS.find((i) => i.id === "word-en-pdf")?.cible === "pdf");
 ok("« enlever gps photo » → nettoyer", premier("enlever gps photo") === "gps");
 ok("« copier le texte d'une photo » → reconnaître", premier("copier le texte d'une photo") === "ocr");
+ok("« cacher mon numéro de sécurité sociale » → masquer", premier("cacher mon numéro de sécurité sociale") === "masquer-numero", chercherIntentions("cacher mon numéro de sécurité sociale").map((x) => x.id));
+ok("« noircir l'IBAN d'un RIB » → masquer", premier("noircir l'iban d'un rib") === "masquer-numero", chercherIntentions("noircir l'iban d'un rib").map((x) => x.id));
+ok("« flouter un visage sur une capture » → masquer", premier("flouter un visage sur une capture") === "cacher-capture", chercherIntentions("flouter un visage sur une capture").map((x) => x.id));
 ok("les fautes de frappe courantes passent (« compresser video »)", premier("compresser video") === "alleger-video");
 ok("rien pour une recherche vide ou hors sujet", chercherIntentions("").length === 0 && chercherIntentions("recette de couscous").length === 0);
 ok("les suggestions populaires existent", POPULAIRES.every((p) => INTENTIONS.some((i) => i.id === p)));
@@ -218,6 +224,62 @@ try {
 ok("ZIP mixte : un fichier chiffré demande le mot de passe", /mot de passe/.test(refusSecret), refusSecret);
 ok("ZIP mixte : avec le mot de passe, le fichier chiffré s'ouvre", (await (await lireEntree("mixte.zip", "zip", mixte, "secret.txt", "motdepasse"))?.blob.text()) === "Secret.");
 ok("ZIP : un nom absent donne null", (await lireEntree("mixte.zip", "zip", mixte, "rien.txt")) === null);
+
+// ---------------------------------------------------------------- masquer : chercher et placer les caches
+const ligne = (t: string, x: number, y: number, fin = true): Morceau => ({ t, ox: x, oy: y, angle: 0, largeur: t.length * 6, hauteur: 12, finDeLigne: fin });
+const releve: PageTexte = {
+  largeur: 600,
+  hauteur: 800,
+  morceaux: [
+    ligne("Nom : Éléonore Dupont", 50, 100),
+    ligne("IBAN : FR76 3000 6000 0112 3456 7890 189", 50, 120),
+    ligne("Tél. 06 12 34 56 78, jean.dupont@exemple.fr", 50, 140),
+    ligne("N° SS : 1 85 05 78 006 084 36", 50, 160),
+    ligne("Carte 4111 1111 1111 1111, ancienne 4970 1012 3456 7890", 50, 180),
+    { t: "Du", ox: 50, oy: 200, angle: 0, largeur: 12, hauteur: 12 },
+    { t: "pont", ox: 62, oy: 200, angle: 0, largeur: 24, hauteur: 12, finDeLigne: true },
+  ],
+};
+ok("masquer : cinq motifs prêts, dont l'IBAN et la carte", MOTIFS.length === 5 && MOTIFS.some((m) => m.id === "iban"));
+ok("masquer : contrôle des IBAN et des cartes", ibanValide("FR76 3000 6000 0112 3456 7890 189") && !ibanValide("FR76 3000 6000 0112 3456 7890 188") && luhnValide("4111 1111 1111 1111") && !luhnValide("4970 1012 3456 7890"));
+ok("masquer : une recherche trop courte est refusée", motifDeRecherche(" a ") === null);
+const parNom = chercher([releve], motifDeRecherche("eleonore DUPONT")!);
+ok("masquer : sans majuscules ni accents, à travers les espaces", parNom.length === 1 && parNom[0].texte === "Éléonore Dupont", parNom);
+const b0 = parNom[0]?.boites[0];
+ok("masquer : le cache couvre le nom, pas l'étiquette", b0 && Math.abs(b0.x - (50 + 6 * 6) / 600) < 0.01 && b0.x + b0.w > (50 + 21 * 6) / 600 - 0.01 && b0.y < 100 / 800 && b0.y + b0.h > 100 / 800, b0);
+const coupe = chercher([releve], motifDeRecherche("dupont")!);
+ok("masquer : partout, même dans une adresse e-mail ; un mot coupé en deux morceaux donne deux caches", coupe.length === 3 && coupe[1].texte === "dupont" && coupe[2].boites.length === 2, coupe.map((c) => c.texte));
+const iban = chercher([releve], "iban");
+ok("masquer : l'IBAN est trouvé en entier", iban.length === 1 && iban[0].texte === "FR76 3000 6000 0112 3456 7890 189", iban);
+ok("masquer : téléphone, e-mail, sécurité sociale", chercher([releve], "telephone")[0]?.texte === "06 12 34 56 78" && chercher([releve], "courriel")[0]?.texte === "jean.dupont@exemple.fr" && chercher([releve], "secu")[0]?.texte === "1 85 05 78 006 084 36");
+const cartes = chercher([releve], "carte");
+ok("masquer : seule une vraie carte bancaire est retenue", cartes.length === 1 && cartes[0].texte === "4111 1111 1111 1111", cartes);
+const sep = texteDePage(releve).texte;
+ok("masquer : une ligne par morceau en fin de ligne, rien entre deux morceaux collés", sep.split("\n").length === 6 && sep.endsWith("dupont"), sep);
+const vertical = boiteDe({ t: "ABCDEF", ox: 100, oy: 100, angle: Math.PI / 2, largeur: 60, hauteur: 10 }, 0, 6, { largeur: 600, hauteur: 800 });
+ok("masquer : un texte vertical donne un cache vertical", vertical.h * 800 > 55 && vertical.w * 600 < 20, vertical);
+const mots: PageTexte = {
+  largeur: 1000,
+  hauteur: 600,
+  morceaux: ["FR76", "3000", "6000", "0112", "3456", "7890", "189"].map((t, i) => ({ t, ox: 100 + i * 70, oy: 330, angle: 0, largeur: 60, hauteur: 30, cadre: { x0: 100 + i * 70, y0: 300, x1: 160 + i * 70, y1: 330 } })),
+};
+const ocr = chercher([mots], "iban");
+ok("masquer : un IBAN lu mot à mot (photo) est trouvé, un cache par mot", ocr.length === 1 && ocr[0].boites.length === 7, ocr);
+ok("masquer : deux caches presque confondus sont le même", memeBoite({ x: 0.1, y: 0.1, w: 0.2, h: 0.05 }, { x: 0.101, y: 0.1, w: 0.2, h: 0.05 }) && !memeBoite({ x: 0.1, y: 0.1, w: 0.2, h: 0.05 }, { x: 0.5, y: 0.1, w: 0.2, h: 0.05 }));
+// Lettres de largeurs inégales : « iii » étroit puis « MMM » large ; le cache de « MMM » doit commencer tôt.
+const inegal: Morceau = { t: "iiiMMM", ox: 0, oy: 50, angle: 0, largeur: 60, hauteur: 10, avances: [0, 3, 6, 9, 26, 43, 60] };
+const large = boiteDe(inegal, 3, 6, { largeur: 100, hauteur: 100 });
+ok("masquer : avec les largeurs mesurées, le cache tombe sur les bonnes lettres", Math.abs(large.x * 100 - (9 - 1.2)) < 0.01 && Math.abs((large.x + large.w) * 100 - (60 + 1.2)) < 0.01, large);
+const sansMesure = boiteDe({ ...inegal, avances: undefined }, 3, 6, { largeur: 100, hauteur: 100 });
+ok("masquer : sans elles, on suppose des lettres égales", Math.abs(sansMesure.x * 100 - (30 - 1.2)) < 0.01);
+const caches = parNom.flatMap((t) => t.boites.map((boite) => ({ page: t.page, boite })));
+ok("masquer : texte entièrement sous ses caches", couverture(parNom[0].boites[0], caches.map((c) => c.boite)) === 1 && decouverts([releve], [motifDeRecherche("eleonore dupont")!], caches).length === 0);
+const deplaces = caches.map((c) => ({ ...c, boite: { ...c.boite, x: c.boite.x + c.boite.w * 0.5 } }));
+const restesDeplaces = decouverts([releve], [motifDeRecherche("eleonore dupont")!], deplaces);
+ok("masquer : un cache déplacé laisse le texte à découvert, et c'est signalé", restesDeplaces.length === 1 && restesDeplaces[0].texte === "Éléonore Dupont", restesDeplaces);
+ok("masquer : un IBAN sans cache est signalé", decouverts([releve], ["iban"], caches).map((r) => r.texte).join() === "FR76 3000 6000 0112 3456 7890 189");
+const px = enPixels({ x: 0.5, y: 0.5, w: 0.6, h: 0.1 }, 1000, 500, 2);
+ok("masquer : en pixels, avec marge, sans sortir de l'image", px.x === 498 && px.x + px.w === 1000 && px.y === 248 && px.h === 54, px);
 
 console.log(`\n${e ? `${e} échec(s)` : "Tout est bon."}`);
 if (e) process.exit(1);

@@ -28,25 +28,27 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   pas d'aperçu, pas de partage sur téléphone ; deux raisons de refus dépassées (« ce studio ne fait
   pas de transcription » alors que Transcrire existe).
 
-## Plan pondéré (total 120)
+## Plan pondéré (total 138)
 
 | # | Tâche | Poids | Fait |
 |---|-------|------:|-----:|
-| 1 | Socle : menu regroupé (12 outils, téléphone et ordinateur), « Continuer avec… », partager, aperçu, résultats de la visite | 12 | 11 |
-| 2 | Organiser un PDF : pivoter, réordonner, retirer, dupliquer, insérer une page blanche, ajouter un autre PDF | 9 | 8 |
-| 3 | Alléger : photos, PDF (images recompressées, texte gardé), vidéos, sons, Word/Excel/PowerPoint | 12 | 10 |
-| 4 | Filigraner et numéroter : aperçu en direct, préréglage « pièce d'identité », filigrane inséparable | 10 | 8 |
-| 5 | Signer et remplir : signature dessinée ou importée, texte, date, coche, champs de formulaire | 10 | 9 |
+| 1 | Socle : menu regroupé (13 outils, téléphone et ordinateur), « Continuer avec… », partager, aperçu, résultats de la visite | 12 | 12 |
+| 2 | Organiser un PDF : pivoter, réordonner, retirer, dupliquer, insérer une page blanche, ajouter un autre PDF | 9 | 9 |
+| 3 | Alléger : photos, PDF (images recompressées, texte gardé), vidéos, sons, Word/Excel/PowerPoint | 12 | 12 |
+| 4 | Filigraner et numéroter : aperçu en direct, préréglage « pièce d'identité », filigrane inséparable | 10 | 10 |
+| 5 | Signer et remplir : signature dessinée ou importée, texte, date, coche, champs de formulaire | 10 | 10 |
 | 6 | Déverrouiller : PDF et ZIP dont on connaît le mot de passe ; proposé par les autres outils | 6 | 6 |
-| 7 | Nettoyer les traces : examiner puis effacer (JPEG, PNG, WebP, PDF, Word/Excel/PowerPoint, OpenDocument, MP3) | 10 | 9 |
-| 8 | Reconnaître le texte (OCR) : photos et PDF scannés → texte, Word, PDF cherchable ; dans Convertir aussi | 9 | 8 |
+| 7 | Nettoyer les traces : examiner puis effacer (JPEG, PNG, WebP, PDF, Word/Excel/PowerPoint, OpenDocument, MP3) | 10 | 10 |
+| 8 | Reconnaître le texte (OCR) : photos et PDF scannés → texte, Word, PDF cherchable ; dans Convertir aussi | 9 | 9 |
 | 9 | Convertir plusieurs fichiers d'un coup, tout télécharger en ZIP | 6 | 6 |
-| 10 | « Que veux-tu faire ? » : recherche par intention et recettes | 5 | 4 |
-| 11 | Améliorations des outils existants (Découper, Fusionner, Convertir, Protéger) | 10 | 9 |
+| 10 | « Que veux-tu faire ? » : recherche par intention et recettes | 5 | 5 |
+| 11 | Améliorations des outils existants (Découper, Fusionner, Convertir, Protéger) | 10 | 10 |
 | 12 | Transcrire : exports Word, PDF, OpenDocument, EPUB, Markdown | 2 | 2 |
 | 13 | Aide « Bon à savoir », questions fréquentes, textes du mode créateur | 4 | 4 |
-| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 6 |
-| | **Total** | **120** | **100** |
+| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 14 |
+| 15 | Corrections issues de la relecture du code (20 points vérifiés un à un) | 6 | 6 |
+| 16 | Masquer des informations : caches tracés ou posés d'un toucher, « Masquer partout », motifs prêts (e-mail, téléphone, IBAN, sécurité sociale, carte), lecture des scans, vérification du fichier produit | 12 | 12 |
+| | **Total** | **138** | **137** |
 
 ## Journal
 
@@ -64,3 +66,12 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   instant d'une vidéo ; Fusionner met les photos sur des pages A4, ajoute un signet par fichier et
   numérote ; Protéger exige de retaper un mot de passe caché et règle les autorisations d'un PDF ;
   Transcrire exporte en Word, OpenDocument, PDF et livre numérique ; « Bon à savoir » partout.
+- 22 nov. 23 h 15 — relecture complète du code par un second regard : 20 défauts confirmés et corrigés
+  (masques de transparence et orientation EXIF dans Alléger, annulation des sons et vidéos, résultats
+  retirés qui revenaient, travaux qui se chevauchent, sélection d'Organiser, aplatissement inutile du
+  filigrane, fenêtre de signature au clavier, extraction d'un seul fichier d'un ZIP, fuites de mémoire).
+- 22 nov. 23 h 40 — nouvel outil Masquer (famille Sécurité) : ce qui est caché disparaît vraiment
+  (pages concernées redessinées en images, informations du document retirées), recherche sans
+  accents ni majuscules, largeurs des lettres mesurées pour des caches justes, lecture des scans et
+  des photos avant d'y chercher, double vérification (chaque texte cherché sous un cache, puis
+  relecture du fichier produit). Question fréquente n° 7 sur les rectangles noirs.

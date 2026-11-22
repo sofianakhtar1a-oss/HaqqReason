@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Captions, Cloud, Eraser, Layers, LayoutGrid, LockOpen, ScanText, Scissors, ShieldCheck, Shrink, Shuffle, Signature, Stamp, WifiOff, type LucideIcon } from "lucide-react";
+import { Captions, Cloud, Eraser, EyeOff, Layers, LayoutGrid, LockOpen, ScanText, Scissors, ShieldCheck, Shrink, Shuffle, Signature, Stamp, WifiOff, type LucideIcon } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
@@ -19,6 +19,7 @@ import { Decoupe } from "./Decoupe";
 import { Deverrouillage } from "./outils/Deverrouillage";
 import { Etagere, type Rangement } from "./Etagere";
 import { Filigrane } from "./outils/Filigrane";
+import { Masquage } from "./outils/Masquage";
 import { Fusion } from "./Fusion";
 import { Allegement } from "./outils/Allegement";
 import { Navigation } from "./Navigation";
@@ -45,6 +46,7 @@ const ICONES_OUTILS: Record<Outil, LucideIcon> = {
   deverrouiller: LockOpen,
   nettoyer: Eraser,
   reconnaitre: ScanText,
+  masquer: EyeOff,
 };
 
 /** Outils encore en préparation : présents dans le code, pas encore dans le menu. */
@@ -203,6 +205,7 @@ export function Alambic() {
             {outil === "signer" && !EN_PREPARATION.has("signer") && <OutilSignature abonner={abonner} />}
             {outil === "deverrouiller" && <Deverrouillage abonner={abonner} />}
             {outil === "nettoyer" && <Nettoyage abonner={abonner} />}
+            {outil === "masquer" && <Masquage abonner={abonner} />}
             {outil === "reconnaitre" && !EN_PREPARATION.has("reconnaitre") && <Reconnaissance abonner={abonner} />}
           </div>
 
@@ -252,7 +255,7 @@ export function Alambic() {
               <h2 id="titre-faq" className="font-display text-lg font-bold">
                 {t("faq.titre")}
               </h2>
-              {[1, 2, 3, 4, 5, 6].map((n) => (
+              {[1, 2, 3, 4, 5, 6, 7].map((n) => (
                 <details key={n}>
                   <summary>{t(`faq.${n}.q`)}</summary>
                   <p className="text-sm text-encre-douce">{t(`faq.${n}.r`)}</p>

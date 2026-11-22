@@ -19,7 +19,8 @@ export type Outil =
   | "signer"
   | "deverrouiller"
   | "nettoyer"
-  | "reconnaitre";
+  | "reconnaitre"
+  | "masquer";
 
 /** Tous les outils, dans l'ordre d'origine (le créateur peut les renommer, les déplacer, les masquer). */
 export const TOUS_LES_OUTILS: Outil[] = [
@@ -33,6 +34,7 @@ export const TOUS_LES_OUTILS: Outil[] = [
   "filigraner",
   "signer",
   "deverrouiller",
+  "masquer",
   "nettoyer",
   "reconnaitre",
 ];
@@ -60,6 +62,7 @@ export const GROUPE_DE: Record<Outil, Groupe> = {
   signer: "pages",
   proteger: "securite",
   deverrouiller: "securite",
+  masquer: "securite",
   nettoyer: "securite",
 };
 
@@ -111,5 +114,7 @@ export function accepte(outil: Outil, id: string, nom = ""): boolean {
       return ["jpg", "png", "webp", "pdf", "mp3"].includes(id) || bureautique(id, nom) !== null;
     case "reconnaitre":
       return id === "pdf" || ["png", "jpg", "webp", "bmp", "tiff", "gif", "heic", "avif"].includes(id);
+    case "masquer":
+      return id === "pdf" || ["png", "jpg", "webp", "heic", "avif"].includes(id);
   }
 }

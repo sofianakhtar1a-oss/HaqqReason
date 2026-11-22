@@ -1111,3 +1111,74 @@ textarea.alambic-signe-champ {
 .alambic-mdp-champ[data-faux] {
   border-color: var(--danger);
 }
+
+/* ---------- Masquer : caches et recherche ---------- */
+.alambic-masque-recherche {
+  gap: 0.65rem;
+}
+.alambic-masque-cherche {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.alambic-masque-cherche .champ {
+  flex: 1 1 14rem;
+  min-width: 0;
+  min-height: 2.75rem;
+}
+.alambic-masque-lire {
+  display: grid;
+  gap: 0.5rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--trait);
+}
+.alambic-masque-lire .bouton {
+  justify-self: start;
+}
+.alambic-masque-recherches {
+  display: grid;
+  gap: 0.3rem;
+}
+.alambic-masque-recherches li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  padding: 0.25rem 0.25rem 0.25rem 0.6rem;
+  border-radius: 0.8rem;
+  background: var(--surface);
+  font-size: 0.9rem;
+}
+.alambic-masque-pages[data-mode] .alambic-signe-page {
+  cursor: crosshair;
+}
+.alambic-signe-page .alambic-cache {
+  position: absolute;
+  min-width: 2px;
+  min-height: 2px;
+  touch-action: none;
+  cursor: move;
+  user-select: none;
+  /* Presque plein, comme dans le fichier ; le cache choisi s'éclaircit pour qu'on voie ce qu'il couvre. */
+  background: rgb(0 0 0 / 0.95);
+}
+.alambic-signe-page .alambic-cache[data-couleur="blanc"] {
+  background: rgb(255 255 255 / 0.97);
+  box-shadow: inset 0 0 0 1px rgb(17 24 39 / 0.45);
+}
+.alambic-signe-page .alambic-cache[data-choisi] {
+  outline: 2px dashed #b7791f;
+  outline-offset: 2px;
+  z-index: 5;
+  background: rgb(0 0 0 / 0.62);
+}
+.alambic-signe-page .alambic-cache[data-couleur="blanc"][data-choisi] {
+  background: rgb(255 255 255 / 0.62);
+}
+.alambic-signe-page .alambic-cache:focus-visible {
+  outline: 2px solid #b7791f;
+  outline-offset: 2px;
+}
+.alambic-masque-verifie {
+  color: var(--encre);
+}

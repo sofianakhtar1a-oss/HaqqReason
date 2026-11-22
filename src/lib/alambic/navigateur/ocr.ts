@@ -75,6 +75,42 @@ async function lireToile(o: Ouvrier, toile: HTMLCanvasElement): Promise<Omit<Pag
   return analyser(data as unknown as ResultatTesseract);
 }
 
+/** Un mot reconnu et son cadre, en pixels de l'image lue. */
+export type MotLu = { t: string; x0: number; y0: number; x1: number; y1: number };
+
+/**
+ * Les mots d'images (photos, pages scannées) et leur place : pour y chercher ce qu'il faut masquer.
+ * Tous les mots sont gardés, même incertains : mieux vaut un cache de trop qu'un numéro oublié.
+ * `toile(i)` dessine l'image i ; elle est libérée aussitôt lue.
+ */
+export async function lireMots(nombre: number, toile: (i: number) => Promise<HTMLCanvasElement>, langues: LangueOcr[], avancer: Avancer, signal?: AbortSignal): Promise<{ largeur: number; hauteur: number; mots: MotLu[] }[]> {
+  let courant = 0;
+  avancer(0, "Chargement de la reconnaissance (la première fois : quelques secondes)");
+  const o = await ouvrier(langues, (p) => avancer((courant + p) / nombre, nombre > 1 ? `Lecture de la page ${courant + 1} sur ${nombre}` : "Lecture du texte"));
+  const pages: { largeur: number; hauteur: number; mots: MotLu[] }[] = [];
+  try {
+    for (; courant < nombre; courant++) {
+      annule(signal);
+      const c = await toile(courant);
+      const { data } = await o.recognize(c, {}, { blocks: true });
+      const mots: MotLu[] = [];
+      for (const b of (data as unknown as ResultatTesseract).blocks ?? [])
+        for (const p of b.paragraphs)
+          for (const l of p.lines)
+            for (const w of l.words) {
+              const t = w.text.trim();
+              if (t) mots.push({ t, x0: w.bbox.x0, y0: w.bbox.y0, x1: w.bbox.x1, y1: w.bbox.y1 });
+            }
+      pages.push({ largeur: c.width, hauteur: c.height, mots });
+      c.width = 0;
+      c.height = 0;
+    }
+  } finally {
+    await o.terminate();
+  }
+  return pages;
+}
+
 /** Lit des images (photos, scans), une page par image. */
 export async function lireImages(fichiers: { fichier: Blob; format: string }[], langues: LangueOcr[], avancer: Avancer, signal?: AbortSignal): Promise<PageLue[]> {
   let courant = 0;
