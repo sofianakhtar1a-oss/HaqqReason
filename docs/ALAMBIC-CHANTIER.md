@@ -32,21 +32,21 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
 
 | # | Tâche | Poids | Fait |
 |---|-------|------:|-----:|
-| 1 | Socle : menu regroupé (12 outils, téléphone et ordinateur), « Continuer avec… », partager, aperçu, résultats de la visite | 12 | 10 |
+| 1 | Socle : menu regroupé (12 outils, téléphone et ordinateur), « Continuer avec… », partager, aperçu, résultats de la visite | 12 | 11 |
 | 2 | Organiser un PDF : pivoter, réordonner, retirer, dupliquer, insérer une page blanche, ajouter un autre PDF | 9 | 8 |
 | 3 | Alléger : photos, PDF (images recompressées, texte gardé), vidéos, sons, Word/Excel/PowerPoint | 12 | 10 |
 | 4 | Filigraner et numéroter : aperçu en direct, préréglage « pièce d'identité », filigrane inséparable | 10 | 8 |
-| 5 | Signer et remplir : signature dessinée ou importée, texte, date, coche, champs de formulaire | 10 | 0 |
+| 5 | Signer et remplir : signature dessinée ou importée, texte, date, coche, champs de formulaire | 10 | 8 |
 | 6 | Déverrouiller : PDF et ZIP dont on connaît le mot de passe ; proposé par les autres outils | 6 | 5 |
 | 7 | Nettoyer les traces : examiner puis effacer (JPEG, PNG, WebP, PDF, Word/Excel/PowerPoint, OpenDocument, MP3) | 10 | 9 |
-| 8 | Reconnaître le texte (OCR) : photos et PDF scannés → texte, Word, PDF cherchable ; dans Convertir aussi | 9 | 0 |
-| 9 | Convertir plusieurs fichiers d'un coup, tout télécharger en ZIP | 6 | 0 |
-| 10 | « Que veux-tu faire ? » : recherche par intention et recettes | 5 | 3 |
-| 11 | Améliorations des outils existants (Découper, Fusionner, Convertir, Protéger) | 10 | 1 |
+| 8 | Reconnaître le texte (OCR) : photos et PDF scannés → texte, Word, PDF cherchable ; dans Convertir aussi | 9 | 8 |
+| 9 | Convertir plusieurs fichiers d'un coup, tout télécharger en ZIP | 6 | 5 |
+| 10 | « Que veux-tu faire ? » : recherche par intention et recettes | 5 | 4 |
+| 11 | Améliorations des outils existants (Découper, Fusionner, Convertir, Protéger) | 10 | 3 |
 | 12 | Transcrire : exports Word, PDF, OpenDocument, EPUB, Markdown | 2 | 0 |
 | 13 | Aide « Bon à savoir », questions fréquentes, textes du mode créateur | 4 | 3 |
-| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 3 |
-| | **Total** | **120** | **60** |
+| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 5 |
+| | **Total** | **120** | **87** |
 
 ## Journal
 
@@ -55,3 +55,7 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   aperçu, partage, résultats de la visite, questions fréquentes ; outils Organiser, Alléger, Filigraner,
   Déverrouiller, Nettoyer. Les PDF seulement « restreints » s'ouvrent désormais dans tous les outils.
   Signer et Reconnaître restent masqués jusqu'à leur fin.
+- 22 nov. 23 h 15 — deuxième envoi : Reconnaître le texte (Tesseract local, texte corrigeable, Word,
+  PDF cherchable ligne à ligne), Signer et remplir (champs de formulaire, signature dessinée ou
+  photographiée, texte, date, coches), conversion de plusieurs fichiers d'un coup ; Convertir lit le
+  texte des images, oriente les PDF scannés vers Reconnaître et les sons vers Transcrire.

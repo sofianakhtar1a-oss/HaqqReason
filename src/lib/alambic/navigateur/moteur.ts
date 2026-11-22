@@ -124,6 +124,19 @@ export async function convertir(entree: Entree, cible: string, reglages: Reglage
       return fin(r.blob, r.avertissements);
     }
 
+    case "ocr": {
+      const { lireImages, documentLu, texteLu } = await import("./ocr");
+      const pages = await lireImages([{ fichier: entree.blob, format: entree.format }], ["fra", "eng"], (f, etape) => avancer(f === null ? null : f * 0.9, etape), reglages.signal);
+      const mots = texteLu(pages).split(/\s+/).filter(Boolean).length;
+      if (!mots) throw new Error("Aucun texte n'a été trouvé dans cette image. S'il y en a, essaie l'outil « Reconnaître » en choisissant la langue.");
+      const avertissements = [`${mots} mot${mots > 1 ? "s" : ""} reconnu${mots > 1 ? "s" : ""} : relis le texte, la lecture automatique peut se tromper.`];
+      if (cible === "txt") return fin(new Blob([texteLu(pages) + "\n"], { type: "text/plain;charset=utf-8" }), avertissements);
+      const { ecrireDocument } = await import("./documents");
+      avancer(0.95, `Écriture en ${format(cible).nom}`);
+      const ecrit = await ecrireDocument(documentLu(pages), cible, sansExtension(entree.nom));
+      return fin(ecrit.blob, [...avertissements, ...ecrit.avertissements]);
+    }
+
     case "archive": {
       const { ecrireArchive, lireArchive } = await import("./archives");
       const sourceArchive = format(entree.format).famille === "archive";

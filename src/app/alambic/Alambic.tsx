@@ -48,7 +48,7 @@ const ICONES_OUTILS: Record<Outil, LucideIcon> = {
 };
 
 /** Outils encore en préparation : présents dans le code, pas encore dans le menu. */
-const EN_PREPARATION = new Set<Outil>(["signer", "reconnaitre"]);
+const EN_PREPARATION = new Set<Outil>([]);
 
 /** Les outils sous les noms choisis par le créateur (mode créateur › L'Alambic), rangés par famille. */
 function useOutils(): FicheOutil[] {

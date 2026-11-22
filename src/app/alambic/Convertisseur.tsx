@@ -10,6 +10,9 @@ import { useAccesComplet } from "@/lib/client/acces";
 import { BoutonInverser } from "./BoutonInverser";
 import { CarteResultat } from "./CarteResultat";
 import { ChampProtection } from "./ChampProtection";
+import { MessageErreur, reconnaitreTous } from "./commun";
+import { useAlambic } from "./contexte";
+import { ConversionLot } from "./ConversionLot";
 import { useReception, type Abonner } from "./reception";
 import { ICONES, SelecteurFormat } from "./SelecteurFormat";
 
@@ -21,7 +24,7 @@ const QUALITES_MEDIA: { v: number | null; l: string }[] = [
   { v: 0.95, l: "Maximale" },
 ];
 
-type Etat = { phase: "repos" | "lecture" | "travail" | "fini" | "erreur"; avancement: number | null; etape: string; message?: string };
+type Etat = { phase: "repos" | "lecture" | "travail" | "fini" | "erreur"; avancement: number | null; etape: string; message?: string; cause?: unknown };
 
 export function Convertisseur({ capacites, abonner }: { capacites: Capacites; abonner: Abonner }) {
   const [fichier, setFichier] = useState<File | null>(null);
@@ -42,6 +45,9 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
   const annulation = useRef<AbortController | null>(null);
   const accesComplet = useAccesComplet();
   const router = useRouter();
+  const { intention } = useAlambic();
+  // Plusieurs fichiers d'un coup : ils passent en conversion par lot.
+  const [lot, setLot] = useState<{ fichier: File; format: string | null }[] | null>(null);
 
   const verdicts = useMemo<Record<string, Verdict>>(() => (source ? Object.fromEntries(TOUS.map((c) => [c, verdict(source, c, capacites)])) : {}), [source, capacites]);
   const v = source && cible ? verdicts[cible] : null;
@@ -57,14 +63,20 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
       const id = await reconnaitre(f);
       setDetecte(id);
       setSource(id);
-      setCible((actuelle) => (id && actuelle && verdict(id, actuelle, capacites).possible ? actuelle : id ? destinationParDefaut(id, TOUS, capacites) : null));
+      const voulue = intention?.cible;
+      setCible((actuelle) => (id && voulue && verdict(id, voulue, capacites).possible ? voulue : id && actuelle && verdict(id, actuelle, capacites).possible ? actuelle : id ? destinationParDefaut(id, TOUS, capacites) : null));
       setEtat({ phase: "repos", avancement: null, etape: "" });
     },
-    [capacites],
+    [capacites, intention],
   );
 
-  // Capture ou fichier collé sur la page (Ctrl+V).
-  useReception(abonner, (fichiers) => void charger(fichiers[0]));
+  const recevoir = async (fichiers: File[]) => {
+    if (fichiers.length > 1) setLot(await reconnaitreTous(fichiers));
+    else if (fichiers[0]) void charger(fichiers[0]);
+  };
+
+  // Capture ou fichier collé sur la page (Ctrl+V), ou fichiers passés par un autre outil.
+  useReception(abonner, (fichiers) => void recevoir(fichiers));
 
   const changerSource = (id: string) => {
     setSource(id);
@@ -113,7 +125,7 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
       setEtat({ phase: "fini", avancement: 1, etape: "" });
     } catch (e) {
       if ((e as Error).name === "AbortError") setEtat({ phase: "repos", avancement: null, etape: "" });
-      else setEtat({ phase: "erreur", avancement: null, etape: "", message: (e as Error).message || "La conversion a échoué." });
+      else setEtat({ phase: "erreur", avancement: null, etape: "", message: (e as Error).message || "La conversion a échoué.", cause: e });
     } finally {
       annulation.current = null;
     }
@@ -147,6 +159,8 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
   const IconeFichier = source ? ICONES[format(source).famille] : FileUp;
   const documentSource = source ? ["docx", "odt", "rtf", "txt", "md", "html", "epub", "pdf"].includes(source) : false;
 
+  if (lot) return <ConversionLot fichiers={lot} capacites={capacites} cibleVoulue={intention?.cible} onFermer={() => setLot(null)} />;
+
   return (
     <section
       className="alambic-convertir"
@@ -164,18 +178,17 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
       onDrop={(e) => {
         e.preventDefault();
         setGlisse(false);
-        const f = e.dataTransfer.files[0];
-        if (f) void charger(f);
+        void recevoir([...e.dataTransfer.files]);
       }}
     >
       <input
         ref={choix}
         type="file"
+        multiple
         className="sr-only"
         tabIndex={-1}
         onChange={(e) => {
-          const f = e.target.files?.[0];
-          if (f) void charger(f);
+          void recevoir([...(e.target.files ?? [])]);
           e.target.value = "";
         }}
       />
@@ -211,7 +224,7 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
         <button type="button" className="alambic-depot" onClick={() => choix.current?.click()}>
           <FileUp className="size-8 text-or" strokeWidth={1.4} aria-hidden="true" />
           <span className="font-display text-xl font-bold">{invite ?? "Dépose un fichier ici"}</span>
-          <span className="text-encre-douce">ou clique pour le choisir. Une capture copiée se colle aussi (Ctrl+V). Il est lu sur ton appareil : rien n&apos;est envoyé, quelle que soit sa taille.</span>
+          <span className="text-encre-douce">ou clique pour le choisir ; plusieurs à la fois se convertissent ensemble. Une capture copiée se colle aussi (Ctrl+V). Tout est lu sur ton appareil : rien n&apos;est envoyé, quelle que soit la taille.</span>
         </button>
       )}
 
@@ -299,11 +312,7 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
         )}
       </div>
 
-      {etat.phase === "erreur" && (
-        <p className="message message-erreur" role="alert">
-          {etat.message}
-        </p>
-      )}
+      {etat.phase === "erreur" && <MessageErreur erreur={etat.cause instanceof Error ? etat.cause : new Error(etat.message)} fichier={fichier} />}
 
       {resultat && (
         <CarteResultat resultat={resultat} tailleAvant={source && format(source).famille === format(resultat.format).famille ? fichier?.size : undefined} protege={proteger && Boolean(motDePasse)}>

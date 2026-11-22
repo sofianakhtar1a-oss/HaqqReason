@@ -14,7 +14,7 @@ import { REGLAGES_PAR_DEFAUT } from "@/lib/atelier/modele";
 import { texteDuDocument } from "@/lib/document-schema";
 import { chargerPdfjs } from "@/lib/client/pdf";
 import { rtfVersHtml } from "../archives";
-import { PdfProtege } from "../erreurs";
+import { PdfProtege, PdfScanne } from "../erreurs";
 import { versEpub, versHtml, versOdt, versRtf } from "../ecrivains";
 import type { Noeud } from "../pm";
 
@@ -237,7 +237,7 @@ export async function lireDocument(nom: string, format: string, blob: Blob, avan
     }
     case "pdf": {
       const lu = await pdfVersHtml(octets, avancer);
-      if (lu.vide) throw new Error("Ce PDF ne contient pas de texte : c'est sans doute un document scanné (une image de texte). Convertis-le plutôt en images.");
+      if (lu.vide) throw new PdfScanne();
       html = lu.html;
       break;
     }

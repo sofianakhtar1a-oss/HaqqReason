@@ -17,6 +17,7 @@ export type Moteur =
   | "image" // pixels
   | "media" // son et vidéo (WebCodecs)
   | "video-gif" // une vidéo devient un GIF animé
+  | "ocr" // le texte d'une image est reconnu (Tesseract, dans le navigateur)
   | "archive"; // compresser, extraire, changer d'archive
 
 export type Verdict =
@@ -33,6 +34,7 @@ const DONNEES = new Set(["xlsx", "csv", "json", "xml", "yaml", "sql"]);
 const IMAGES_LUES = new Set(["png", "jpg", "webp", "gif", "bmp", "ico", "svg", "tiff"]);
 const IMAGES_ECRITES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "ico"]);
 const VIDEO = new Set(["mp4", "webm", "mov", "mkv"]);
+const IMAGES_OCR = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff"]);
 const STRUCTURES = new Set(["json", "yaml", "xml"]);
 
 const AVI = "Les navigateurs ne savent ni lire ni écrire l'AVI : il ne se convertit pas ici. Sur ordinateur, VLC ou HandBrake le font.";
@@ -50,10 +52,10 @@ const ENTRE_FAMILLES: Partial<Record<`${Famille}>${Famille}`, string>> = {
   "image>video": "Une seule image ne fait pas une vidéo.",
   "image>donnees": "Une image n'a pas de lignes ni de colonnes de données.",
   "audio>image": "Un son ne contient pas d'image.",
-  "audio>document": "Transformer la parole en texte demande une transcription, que ce studio ne fait pas.",
+  "audio>document": "La parole ne se convertit pas : elle se transcrit. Utilise l'outil « Transcrire », qui en fait un texte à lire et à exporter.",
   "audio>donnees": "Un son n'a pas de lignes ni de colonnes de données.",
   "audio>video": "Un son seul ne fait pas une vidéo : il n'y a aucune image à montrer.",
-  "video>document": "Transformer une vidéo en texte demande une transcription, que ce studio ne fait pas.",
+  "video>document": "Une vidéo ne se convertit pas en texte : elle se transcrit. Utilise l'outil « Transcrire », qui en tire le texte et les sous-titres.",
   "video>donnees": "Une vidéo n'a pas de lignes ni de colonnes de données.",
   "archive>document": "Une archive contient des fichiers : extrais-la d'abord (en choisissant ZIP ou TAR), puis convertis-les un par un.",
   "archive>donnees": "Une archive contient des fichiers : extrais-la d'abord, puis convertis-les un par un.",
@@ -102,6 +104,11 @@ export function verdict(source: string, cible: string, capacites: Capacites = CA
     return { possible: true, moteur: "image", fidelite: notes.length && (source === "gif" || cible === "gif") ? "partielle" : "fidele", note: notes.join(" ") || "L'image est reprise telle quelle." };
   }
   if (fs === "image" && cible === "pdf") return { possible: true, moteur: "images-pdf", fidelite: "fidele", note: "L'image occupe une page à sa taille. Pour en réunir plusieurs, utilise « Fusionner »." };
+  if (fs === "image" && fc === "document") {
+    if (!IMAGES_OCR.has(source)) return { possible: false, raison: source === "svg" ? "Un dessin SVG contient déjà son texte : ouvre-le comme une page web (HTML) ou convertis-le en PNG." : "Cette image est trop petite pour contenir du texte à lire." };
+    if (!["txt", "docx", "odt", "md", "html", "rtf"].includes(cible)) return { possible: false, raison: "Le texte reconnu dans une image se met en Texte, Word, OpenDocument, Markdown, page web ou RTF." };
+    return { possible: true, moteur: "ocr", fidelite: "partielle", note: "Le texte de l'image est reconnu (français et anglais), sans sa mise en page : relis-le. Pour choisir les langues ou corriger avant d'enregistrer, utilise « Reconnaître »." };
+  }
 
   // Données
   if (fs === "donnees" && fc === "donnees") {

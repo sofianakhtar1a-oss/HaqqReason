@@ -4,9 +4,9 @@
  * Les morceaux communs aux outils de L'Alambic : en-tête, zone de dépôt, avancement, erreurs
  * qui proposent une issue (PDF protégé), « Bon à savoir », liste de résultats.
  */
-import { Download, FilePlus2, FileUp, Info, KeyRound, LoaderCircle, LockOpen, type LucideIcon } from "lucide-react";
+import { Download, FilePlus2, FileUp, Info, KeyRound, LoaderCircle, LockOpen, ScanText, type LucideIcon } from "lucide-react";
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
-import { estMotDePasseFaux, estPdfProtege, estZipProtege } from "@/lib/alambic/erreurs";
+import { estMotDePasseFaux, estPdfProtege, estPdfScanne, estZipProtege } from "@/lib/alambic/erreurs";
 import { nomDuFormat, tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { telecharger } from "./telecharger";
@@ -160,6 +160,12 @@ export function MessageErreur({ erreur, fichier, onMotDePasse }: { erreur: unkno
         <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => envoyer("deverrouiller", [fichier])}>
           <LockOpen className="size-4" aria-hidden="true" />
           Déverrouiller ce fichier
+        </button>
+      )}
+      {estPdfScanne(erreur) && fichier && outils.some((o) => o.id === "reconnaitre") && (
+        <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => envoyer("reconnaitre", [fichier])}>
+          <ScanText className="size-4" aria-hidden="true" />
+          Lire ce scan avec « Reconnaître »
         </button>
       )}
     </div>

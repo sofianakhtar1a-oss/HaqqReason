@@ -776,3 +776,322 @@
     width: 100%;
   }
 }
+
+/* ---------- Reconnaître ---------- */
+.alambic-segments button[aria-pressed="true"] {
+  background: var(--or);
+  color: var(--sur-or);
+}
+.alambic-lu {
+  display: grid;
+  gap: 0.85rem;
+}
+.alambic-lu-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.alambic-lu-texte {
+  min-height: 18rem;
+  max-height: 60vh;
+  resize: vertical;
+  font-family: var(--font-lecture, Georgia, serif);
+  font-size: 1rem;
+  line-height: 1.6;
+  unicode-bidi: plaintext;
+}
+
+/* ---------- Convertir plusieurs fichiers ---------- */
+.alambic-lot-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+.alambic-lot-cible {
+  display: grid;
+  max-width: 26rem;
+}
+.alambic-lot-cible .alambic-bloc {
+  min-height: 8.5rem;
+}
+.alambic-piece[data-ecarte] {
+  opacity: 0.6;
+}
+/* Les listes qu'on ne réordonne pas laissent défiler la page au doigt (seules les listes triables le bloquent). */
+ul.alambic-pieces .alambic-piece {
+  touch-action: auto;
+}
+
+/* ---------- Signer et remplir ---------- */
+.alambic-segments button[aria-selected="true"] {
+  background: var(--or);
+  color: var(--sur-or);
+}
+.alambic-signe-outils {
+  position: sticky;
+  top: calc(0.5rem + var(--barre-vue));
+  z-index: 12;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.45rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond-haut) 55%, var(--fond));
+  box-shadow: 0 10px 30px -18px rgb(0 0 0 / 0.6);
+}
+.alambic-signe-outil {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.5rem;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.alambic-signe-outil[aria-pressed="true"] {
+  border-color: var(--or);
+  background: var(--or);
+  color: var(--sur-or);
+}
+.alambic-signe-consigne {
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+.alambic-signe-gardees {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.alambic-signe-gardee {
+  position: relative;
+  display: inline-flex;
+  border-radius: 0.8rem;
+  border: 1px solid var(--trait);
+  background: #fff;
+}
+.alambic-signe-gardee[data-active] {
+  outline: 2px solid var(--or);
+  outline-offset: 2px;
+}
+.alambic-signe-gardee img {
+  height: 2.6rem;
+  max-width: 9rem;
+  padding: 0.2rem 0.5rem;
+  object-fit: contain;
+}
+.alambic-signe-oublier {
+  position: absolute;
+  top: -0.45rem;
+  right: -0.45rem;
+  display: grid;
+  place-items: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 999px;
+  background: var(--fond-haut);
+  border: 1px solid var(--trait);
+  color: var(--encre);
+}
+.alambic-signe-pages {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+.alambic-signe-page {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  max-width: 54rem;
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 30px -16px rgb(0 0 0 / 0.6);
+  overflow: hidden;
+  color: #111827;
+}
+.alambic-signe-pages[data-mode] .alambic-signe-page {
+  cursor: crosshair;
+}
+.alambic-signe-fond {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.alambic-signe-fond img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.alambic-signe-numero {
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.3rem;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  background: rgb(17 24 39 / 0.55);
+  color: #fff;
+  font-size: 0.72rem;
+  pointer-events: none;
+}
+.alambic-signe-champ {
+  position: absolute;
+  padding: 0 0.15em;
+  border: 1px solid rgb(29 78 216 / 0.45);
+  border-radius: 2px;
+  background: rgb(191 219 254 / 0.45);
+  color: #111827;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  outline: none;
+}
+.alambic-signe-champ:focus {
+  border-color: #1d4ed8;
+  background: rgb(191 219 254 / 0.75);
+}
+textarea.alambic-signe-champ {
+  resize: none;
+  padding-top: 0.1em;
+}
+.alambic-signe-champ[data-genre="case"] {
+  margin: 0;
+  accent-color: #1d3a8a;
+}
+.alambic-signe-element {
+  position: absolute;
+  touch-action: none;
+  cursor: move;
+  user-select: none;
+}
+.alambic-signe-element[data-choisi] {
+  outline: 1.5px dashed #b7791f;
+  outline-offset: 2px;
+  z-index: 5;
+}
+.alambic-signe-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+.alambic-signe-element svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.alambic-signe-element svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 0.12;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.alambic-signe-element[data-genre="coche"],
+.alambic-signe-element[data-genre="croix"] {
+  color: #111827;
+}
+.alambic-signe-element[data-genre="texte"] {
+  cursor: text;
+}
+.alambic-signe-element input {
+  display: block;
+  min-width: 3ch;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  outline: none;
+}
+.alambic-signe-element input::placeholder {
+  color: rgb(17 24 39 / 0.35);
+}
+.alambic-signe-barre {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  display: flex;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border-radius: 0.7rem;
+  background: #1f2433;
+  color: #fff;
+  box-shadow: 0 8px 20px -10px rgb(0 0 0 / 0.6);
+  white-space: nowrap;
+}
+.alambic-signe-barre button {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+.alambic-signe-barre button:hover {
+  background: rgb(255 255 255 / 0.12);
+}
+.alambic-signe-poignee {
+  cursor: move;
+  touch-action: none;
+}
+.alambic-signe-encre {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+  border: 2px solid #fff;
+}
+.alambic-signe-taille {
+  position: absolute;
+  right: -7px;
+  bottom: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #b7791f;
+  border: 2px solid #fff;
+  cursor: nwse-resize;
+  touch-action: none;
+}
+@media (pointer: coarse) {
+  .alambic-signe-taille {
+    right: -11px;
+    bottom: -11px;
+    width: 22px;
+    height: 22px;
+  }
+}
+.alambic-pad {
+  display: grid;
+  gap: 0.9rem;
+  width: min(40rem, calc(100vw - 1.5rem));
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+  padding: 1.1rem;
+  border-radius: 1.5rem;
+  background: color-mix(in srgb, var(--fond-haut) 55%, var(--fond));
+}
+.alambic-pad-toile {
+  width: 100%;
+  aspect-ratio: 3 / 1.15;
+  border-radius: 1rem;
+  border: 1px dashed color-mix(in srgb, var(--or) 50%, var(--trait));
+  background:
+    linear-gradient(to top, transparent calc(28% - 1px), rgb(17 24 39 / 0.18) calc(28% - 1px), rgb(17 24 39 / 0.18) 28%, transparent 28%),
+    #fff;
+  touch-action: none;
+  cursor: crosshair;
+}
+.alambic-pad-photo img {
+  max-height: 9rem;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 0.6rem;
+}

@@ -8,6 +8,8 @@ import { couleurRvb, departPdf, placerFiligrane, poseNumero, tailleVisible, text
 import { chercherIntentions, INTENTIONS, POPULAIRES } from "../src/lib/alambic/intentions";
 import { ecrireOrganise } from "../src/lib/alambic/organiser-pdf";
 import { accepte, bureautique, GROUPE_DE, GROUPES, parGroupes, TOUS_LES_OUTILS } from "../src/lib/alambic/outils";
+import { boiteVersPdf, borner, cadreUtile, detourerEncre, pointVersPdf, rectVersVisible, versRepereVisible } from "../src/lib/alambic/signature";
+import { verdict } from "../src/lib/alambic/graphe";
 import { deplacer, dupliquer, entrelacer, estIntacte, insererBlanche, inverser, pagesDe, pivoter, placeBlanche, retirer } from "../src/lib/alambic/pages";
 import { MODULES, resoudre } from "../src/lib/modules/modules";
 
@@ -93,6 +95,46 @@ ok("départ du texte : centré sur la pose", (() => {
   return Math.abs(d.x - 250) < 1e-6 && Math.abs(d.y - (842 - 400 - 7)) < 1e-6 && d.angle === 0;
 })());
 ok("couleurs", couleurRvb("#ff0000").join() === "1,0,0" && couleurRvb("pas une couleur").length === 3);
+
+// ---------------------------------------------------------------- signer : repères
+ok("le repère visible est l'inverse du repère PDF, à toutes les rotations", [0, 90, 180, 270].every((r) => {
+  const [x, y] = versRepereePdf(37, 61, 595, 842, r);
+  const [vx, vy] = versRepereVisible(x, y, 595, 842, r);
+  return Math.abs(vx - 37) < 1e-9 && Math.abs(vy - 61) < 1e-9;
+}));
+const proche = (a: Record<string, number>, b: Record<string, number>) => Object.keys(b).every((k) => Math.abs(a[k] - b[k]) < 1e-9);
+ok("un rectangle du PDF devient une boîte visible (sans rotation)", proche(rectVersVisible({ x: 59.5, y: 84.2, width: 119, height: 84.2 }, 595, 842, 0), { x: 0.1, y: 0.8, w: 0.2, h: 0.1 }), rectVersVisible({ x: 59.5, y: 84.2, width: 119, height: 84.2 }, 595, 842, 0));
+ok("une boîte visible revient au même rectangle (aller-retour, page pivotée)", [0, 90, 180, 270].every((r) => {
+  const b = { x: 0.2, y: 0.3, w: 0.25, h: 0.1 };
+  const p = boiteVersPdf(b, 595, 842, r);
+  // Le coin bas-gauche visible, puis le coin haut-droit obtenu en suivant l'angle de la page.
+  const t = (r * Math.PI) / 180;
+  const coinOppose = [p.x + Math.cos(t) * p.largeur - Math.sin(t) * p.hauteur, p.y + Math.sin(t) * p.largeur + Math.cos(t) * p.hauteur];
+  const [ax, ay] = versRepereVisible(p.x, p.y, 595, 842, r);
+  const [bx, by] = versRepereVisible(coinOppose[0], coinOppose[1], 595, 842, r);
+  const [lv, hv] = r % 180 ? [842, 595] : [595, 842];
+  return Math.abs(ax / lv - 0.2) < 1e-9 && Math.abs(ay / hv - 0.4) < 1e-9 && Math.abs(bx / lv - 0.45) < 1e-9 && Math.abs(by / hv - 0.3) < 1e-9;
+}));
+ok("point visible → PDF", pointVersPdf(0.5, 0.5, 600, 800, 0).join() === "300,400" && pointVersPdf(0, 0, 600, 800, 90).join() === "0,0");
+ok("une boîte reste dans la page", JSON.stringify(borner({ x: 0.95, y: -0.2, w: 0.2, h: 0.1 })) === JSON.stringify({ w: 0.2, h: 0.1, x: 0.8, y: 0 }));
+const encre = new Uint8ClampedArray([255, 255, 255, 255, 20, 20, 20, 255, 160, 160, 160, 255]);
+detourerEncre(encre);
+ok("signature photographiée : le papier devient transparent, l'encre reste", encre[3] === 0 && encre[7] === 255 && encre[11] > 0 && encre[11] < 255);
+const pixels = new Uint8ClampedArray(4 * 4 * 4);
+pixels[(1 * 4 + 2) * 4 + 3] = 255;
+pixels[(2 * 4 + 1) * 4 + 3] = 255;
+ok("cadre utile d'une signature", JSON.stringify(cadreUtile(pixels, 4, 4)) === JSON.stringify({ x: 1, y: 1, w: 2, h: 2 }) && cadreUtile(new Uint8ClampedArray(16), 2, 2) === null);
+
+// ---------------------------------------------------------------- convertir : nouveaux chemins
+ok("une photo de document se convertit en Word (lecture du texte)", (() => {
+  const v = verdict("png", "docx");
+  return v.possible && v.moteur === "ocr" && v.fidelite === "partielle";
+})());
+ok("un SVG ne passe pas par la lecture de texte, et dit pourquoi", !verdict("svg", "docx").possible);
+ok("un son vers un document renvoie vers « Transcrire »", (() => {
+  const v = verdict("mp3", "docx");
+  return !v.possible && /Transcrire/.test(v.raison);
+})());
 
 // ---------------------------------------------------------------- PDF réels : organiser, orphelins
 const source = await PDFDocument.create();
