@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { familleDuFormat, tailleLisible } from "@/lib/alambic/formats";
 import { telecharger } from "./telecharger";
 
-const IMAGES_NATIVES = new Set(["png", "jpg", "webp", "gif", "bmp", "ico", "svg"]);
+const IMAGES_NATIVES = new Set(["png", "jpg", "webp", "gif", "bmp", "ico", "svg", "avif", "heic"]);
 const TEXTES = new Set(["txt", "md", "csv", "json", "xml", "yaml", "sql", "html", "rtf"]);
 const DOCUMENTS = new Set(["docx", "odt", "epub"]);
 const ARCHIVES = new Set(["zip", "tar", "gz"]);

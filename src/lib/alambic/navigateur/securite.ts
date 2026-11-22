@@ -9,18 +9,44 @@
  */
 import { PDFDocument } from "@cantoo/pdf-lib";
 
-export async function protegerPdf(blob: Blob, motDePasse: string): Promise<Blob> {
+/** Ce que le lecteur du PDF a le droit de faire (respecté par les lecteurs PDF courants). */
+export type Autorisations = { imprimer: boolean; copier: boolean; modifier: boolean };
+export const TOUT_AUTORISE: Autorisations = { imprimer: true, copier: true, modifier: true };
+
+/** Un mot de passe « propriétaire » que personne ne connaît : les restrictions ne se lèvent qu'en repartant de l'original. */
+function cleAleatoire(): string {
+  const o = new Uint8Array(24);
+  crypto.getRandomValues(o);
+  return Array.from(o, (x) => x.toString(16).padStart(2, "0")).join("");
+}
+
+/**
+ * Chiffre un PDF. `motDePasse` vide : le PDF s'ouvre sans mot de passe mais garde ses restrictions
+ * (impression, copie, modification), ce qui n'a de sens que si l'une d'elles est retirée.
+ */
+export async function protegerPdf(blob: Blob, motDePasse: string, autorisations: Autorisations = TOUT_AUTORISE): Promise<Blob> {
+  const { charger } = await import("./pdf");
   let doc: PDFDocument;
   try {
-    doc = await PDFDocument.load(new Uint8Array(await blob.arrayBuffer()), { updateMetadata: false });
-  } catch {
+    doc = await charger(new Uint8Array(await blob.arrayBuffer()));
+  } catch (e) {
+    if ((e as Error).name === "PdfProtege") throw new Error("Ce PDF est déjà protégé par un mot de passe : déverrouille-le d'abord (outil « Déverrouiller ») pour en mettre un nouveau.");
     throw new Error("Ce PDF est illisible : il ne peut pas être protégé.");
   }
-  if (doc.isEncrypted) throw new Error("Ce PDF est déjà protégé par un mot de passe.");
+  const restreint = !autorisations.imprimer || !autorisations.copier || !autorisations.modifier;
   doc.encrypt({
     userPassword: motDePasse,
-    ownerPassword: motDePasse,
-    permissions: { printing: "highResolution", modifying: true, copying: true, annotating: true, fillingForms: true, contentAccessibility: true, documentAssembly: true },
+    // Sans restriction, le même mot de passe ouvre tout ; avec, le mot de passe « propriétaire » reste secret.
+    ownerPassword: restreint ? cleAleatoire() : motDePasse,
+    permissions: {
+      printing: autorisations.imprimer ? "highResolution" : false,
+      modifying: autorisations.modifier,
+      copying: autorisations.copier,
+      annotating: autorisations.modifier,
+      fillingForms: true,
+      contentAccessibility: true,
+      documentAssembly: autorisations.modifier,
+    },
   });
   const octets = await doc.save();
   return new Blob([octets.slice().buffer], { type: "application/pdf" });

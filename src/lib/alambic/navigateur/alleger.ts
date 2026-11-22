@@ -95,7 +95,8 @@ async function allegerImage(fichier: Blob, format: string, nom: string, o: Optio
   const transparente = (format === "png" || format === "webp") && aDeLaTransparence(essai);
 
   // Format d'arrivée : le même, sauf pour les formats sans compression (BMP, TIFF) ; JPEG si demandé.
-  let sortie = o.formatImage === "garder" ? (format === "bmp" || format === "tiff" ? "jpg" : format) : o.formatImage;
+  // BMP et TIFF ne compressent pas ; HEIC et AVIF ne s'écrivent pas dans un navigateur : ils deviennent JPEG.
+  let sortie = o.formatImage === "garder" ? (["bmp", "tiff", "heic", "avif"].includes(format) ? "jpg" : format) : o.formatImage;
   if (sortie === "jpg" && transparente) {
     sortie = "png";
     avertissements.push("Cette image a des zones transparentes : elle reste en PNG (le JPEG les rendrait blanches).");
@@ -141,7 +142,7 @@ async function allegerImage(fichier: Blob, format: string, nom: string, o: Optio
   source.close?.();
 
   if (dims.echelle < 1 || dims.largeur !== d0.largeur) avertissements.push(`Elle mesure maintenant ${dims.largeur} × ${dims.hauteur} pixels.`);
-  if (format === "jpg" || format === "webp" || format === "tiff") avertissements.push("Les informations cachées (lieu, appareil, date) sont retirées au passage.");
+  if (["jpg", "webp", "tiff", "heic", "avif"].includes(format)) avertissements.push("Les informations cachées (lieu, appareil, date) sont retirées au passage.");
   return { nom: `${sansExtension(nom)} (allégé).${sortie}`, blob, format: sortie, avertissements };
 }
 
@@ -460,7 +461,7 @@ async function allegerBureautique(fichier: Blob, format: string, nom: string, o:
 
 /* ---------------------------------------------------------------- aiguillage */
 
-const IMAGES = new Set(["jpg", "png", "webp", "bmp", "tiff"]);
+const IMAGES = new Set(["jpg", "png", "webp", "bmp", "tiff", "heic", "avif"]);
 const VIDEOS = new Set(["mp4", "webm", "mov", "mkv"]);
 const SONS = new Set(["mp3", "wav", "ogg", "flac", "aac", "m4a"]);
 

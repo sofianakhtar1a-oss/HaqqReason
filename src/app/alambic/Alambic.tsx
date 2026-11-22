@@ -248,7 +248,7 @@ export function Alambic() {
               <h2 id="titre-faq" className="font-display text-lg font-bold">
                 {t("faq.titre")}
               </h2>
-              {[1, 2, 3, 4, 5].map((n) => (
+              {[1, 2, 3, 4, 5, 6].map((n) => (
                 <details key={n}>
                   <summary>{t(`faq.${n}.q`)}</summary>
                   <p className="text-sm text-encre-douce">{t(`faq.${n}.r`)}</p>

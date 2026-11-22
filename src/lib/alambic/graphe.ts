@@ -31,10 +31,10 @@ export const CAPACITES_PAR_DEFAUT: Capacites = { aac: true, opus: true, h264: tr
 const LECTURE_DOC = new Set(["docx", "odt", "rtf", "txt", "md", "html", "epub", "pdf"]);
 const ECRITURE_DOC = new Set(["docx", "odt", "rtf", "txt", "md", "html", "epub", "pdf"]);
 const DONNEES = new Set(["xlsx", "csv", "json", "xml", "yaml", "sql"]);
-const IMAGES_LUES = new Set(["png", "jpg", "webp", "gif", "bmp", "ico", "svg", "tiff"]);
+const IMAGES_LUES = new Set(["png", "jpg", "webp", "gif", "bmp", "ico", "svg", "tiff", "heic", "avif"]);
 const IMAGES_ECRITES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "ico"]);
 const VIDEO = new Set(["mp4", "webm", "mov", "mkv"]);
-const IMAGES_OCR = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff"]);
+const IMAGES_OCR = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "heic", "avif"]);
 const STRUCTURES = new Set(["json", "yaml", "xml"]);
 
 const AVI = "Les navigateurs ne savent ni lire ni écrire l'AVI : il ne se convertit pas ici. Sur ordinateur, VLC ou HandBrake le font.";
@@ -94,6 +94,8 @@ export function verdict(source: string, cible: string, capacites: Capacites = CA
   // Images
   if (fs === "image" && fc === "image") {
     if (cible === "svg") return { possible: false, raison: "Une image en pixels ne devient pas un dessin vectoriel : il faudrait la redessiner." };
+    if (cible === "heic") return { possible: false, raison: "Les navigateurs ne savent pas écrire le HEIC (le format photo des iPhone) : choisis JPEG, qui s'ouvre partout, même sur iPhone." };
+    if (cible === "avif") return { possible: false, raison: "Les navigateurs ne savent pas encore écrire l'AVIF : choisis WebP, presque aussi léger." };
     if (!IMAGES_LUES.has(source) || !IMAGES_ECRITES.has(cible)) return { possible: false, raison: "Cette conversion n'est pas prise en charge." };
     const notes: string[] = [];
     if (source === "gif") notes.push("Pour un GIF animé, seule la première image est gardée.");
@@ -101,6 +103,7 @@ export function verdict(source: string, cible: string, capacites: Capacites = CA
     if (cible === "gif") notes.push("Les couleurs sont réduites à 256.");
     if (cible === "ico") notes.push("L'image est ramenée à 256 × 256 au plus.");
     if (source === "svg") notes.push("Le dessin est rendu en pixels, à sa taille d'origine (ou 1024 px).");
+    if (source === "heic") notes.push("Le HEIC se lit avec Safari (iPhone, iPad, Mac) ; ailleurs, il peut ne pas s'ouvrir.");
     return { possible: true, moteur: "image", fidelite: notes.length && (source === "gif" || cible === "gif") ? "partielle" : "fidele", note: notes.join(" ") || "L'image est reprise telle quelle." };
   }
   if (fs === "image" && cible === "pdf") return { possible: true, moteur: "images-pdf", fidelite: "fidele", note: "L'image occupe une page à sa taille. Pour en réunir plusieurs, utilise « Fusionner »." };
@@ -184,6 +187,8 @@ const PREFERENCES: Record<string, string[]> = {
   bmp: ["png", "jpg"],
   tiff: ["png", "jpg", "pdf"],
   ico: ["png"],
+  heic: ["jpg", "png", "pdf"],
+  avif: ["png", "jpg", "webp"],
   mp3: ["wav", "m4a"],
   wav: ["mp3", "flac"],
   ogg: ["mp3"],

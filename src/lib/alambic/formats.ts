@@ -51,6 +51,8 @@ export const FORMATS: Format[] = [
   f("bmp", "BMP", "image", ["bmp"], "image/bmp", "Image brute, non compressée"),
   f("tiff", "TIFF", "image", ["tif", "tiff"], "image/tiff", "Impression et numérisation"),
   f("ico", "ICO", "image", ["ico"], "image/x-icon", "Icône de site ou d'application"),
+  f("heic", "HEIC", "image", ["heic", "heif"], "image/heic", "Photos d'iPhone (lues par Safari)"),
+  f("avif", "AVIF", "image", ["avif"], "image/avif", "Très léger, lu par les navigateurs récents"),
 
   f("mp3", "MP3", "audio", ["mp3"], "audio/mpeg", "Le plus répandu"),
   f("wav", "WAV", "audio", ["wav"], "audio/wav", "Sans compression, qualité studio"),
@@ -141,6 +143,11 @@ export function detecter(nom: string, octets: Uint8Array, entrees?: string[]): s
   if (commence(octets, 0x1a, 0x45, 0xdf, 0xa3)) return parExtension === "mkv" ? "mkv" : parExtension === "webm" ? "webm" : ascii(octets, 0, 64).includes("webm") ? "webm" : "mkv";
   if (ascii(octets, 4, 8) === "ftyp") {
     const marque = ascii(octets, 8, 12);
+    // Images HEIF : HEIC (iPhone) ou AVIF ; « mif1 » est commun aux deux, les marques compatibles tranchent.
+    const tailleBoite = (octets[0] << 24) | (octets[1] << 16) | (octets[2] << 8) | octets[3];
+    const compatibles = ascii(octets, 16, Math.min(Math.max(16, tailleBoite), 64));
+    if (marque === "avif" || marque === "avis" || (marque === "mif1" && compatibles.includes("avif"))) return "avif";
+    if (["heic", "heix", "hevc", "hevx", "heim", "heis", "mif1", "msf1"].includes(marque)) return "heic";
     if (marque.startsWith("qt")) return "mov";
     if (marque.startsWith("M4A") || parExtension === "m4a") return "m4a";
     return parExtension === "mov" ? "mov" : "mp4";

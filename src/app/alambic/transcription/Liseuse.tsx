@@ -3,7 +3,7 @@
 import { ArrowDown, ArrowLeft, ArrowUp, Check, Copy, Download, Languages, MoonStar, SunMedium, Type, X } from "lucide-react";
 import { Fragment, memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { dureeLisible, versSrt, versTexte, versVtt } from "@/lib/alambic/transcription/exports";
+import { dureeLisible, versDocument, versSrt, versTexte, versVtt } from "@/lib/alambic/transcription/exports";
 import { motA, phraseA } from "@/lib/alambic/transcription/phrases";
 import { estRtl, nomLangue, type Phrase, type Transcription } from "@/lib/alambic/transcription/types";
 import { type Controle, controleVide, Horloge } from "./controle";
@@ -36,6 +36,15 @@ function reglagesInitiaux(): Reglages {
 
 function telecharger(nom: string, contenu: string, type: string) {
   const url = URL.createObjectURL(new Blob([contenu], { type: `${type};charset=utf-8` }));
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = nom;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+function telechargerFichier(nom: string, blob: Blob) {
+  const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
   a.download = nom;
@@ -292,6 +301,18 @@ export function Liseuse({ t, media, onFermer, onMaj, onRebrancher }: Props) {
 
   const sortieTexte = (avecTraduction: boolean) => telecharger(`${nomFichier(t.titre)}${avecTraduction ? " (bilingue)" : ""}.txt`, versTexte({ ...t, traductions }, avecTraduction), "text/plain");
   const nbTraduites = Object.keys(traductions).length;
+  const [ecriture, setEcriture] = useState<string | null>(null);
+  /** Word, OpenDocument, PDF ou livre numérique, écrits sur l'appareil par le moteur de L'Alambic. */
+  const sortieDocument = async (format: "docx" | "odt" | "pdf" | "epub", avecTraduction: boolean) => {
+    setEcriture(format);
+    try {
+      const { ecrireDocument } = await import("@/lib/alambic/navigateur/documents");
+      const { blob } = await ecrireDocument(versDocument({ ...t, traductions }, avecTraduction), format, t.titre);
+      telechargerFichier(`${nomFichier(t.titre)}${avecTraduction ? " (bilingue)" : ""}.${format}`, blob);
+    } finally {
+      setEcriture(null);
+    }
+  };
   const copier = async (avecTraduction: boolean) => {
     try {
       await navigator.clipboard.writeText(versTexte({ ...t, traductions }, avecTraduction));
@@ -407,6 +428,37 @@ export function Liseuse({ t, media, onFermer, onMaj, onRebrancher }: Props) {
                   <small>{nbTraduites ? `Avec la traduction (${Math.round((nbTraduites / t.phrases.length) * 100)} % traduit)` : "Active d'abord la traduction"}</small>
                 </span>
               </button>
+              <button type="button" role="menuitem" disabled={ecriture !== null} onClick={() => void sortieDocument("docx", nbTraduites > 0)}>
+                <span className="tr-export-ext">DOCX</span>
+                <span>
+                  {ecriture === "docx" ? "Écriture…" : "Document Word"}
+                  <small>{nbTraduites ? "Le texte, et sa traduction en italique sous chaque paragraphe" : "Le texte, en paragraphes, à retravailler"}</small>
+                </span>
+              </button>
+              <button type="button" role="menuitem" disabled={ecriture !== null} onClick={() => void sortieDocument("odt", nbTraduites > 0)}>
+                <span className="tr-export-ext">ODT</span>
+                <span>
+                  {ecriture === "odt" ? "Écriture…" : "OpenDocument"}
+                  <small>Pour LibreOffice</small>
+                </span>
+              </button>
+              {!estRtl(t.langue) && (
+                <button type="button" role="menuitem" disabled={ecriture !== null} onClick={() => void sortieDocument("pdf", nbTraduites > 0)}>
+                  <span className="tr-export-ext">PDF</span>
+                  <span>
+                    {ecriture === "pdf" ? "Écriture…" : "PDF à imprimer"}
+                    <small>Mis en page sur des feuilles A4</small>
+                  </span>
+                </button>
+              )}
+              <button type="button" role="menuitem" disabled={ecriture !== null} onClick={() => void sortieDocument("epub", nbTraduites > 0)}>
+                <span className="tr-export-ext">EPUB</span>
+                <span>
+                  {ecriture === "epub" ? "Écriture…" : "Livre numérique"}
+                  <small>Pour une liseuse ou Apple Livres</small>
+                </span>
+              </button>
+              <hr className="tr-menu-separation" />
               <button type="button" role="menuitem" onClick={() => telecharger(`${nomFichier(t.titre)}.srt`, versSrt(t.phrases), "application/x-subrip")}>
                 <span className="tr-export-ext">SRT</span>
                 <span>

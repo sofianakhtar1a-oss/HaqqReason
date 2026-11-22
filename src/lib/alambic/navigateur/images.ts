@@ -65,6 +65,9 @@ export async function decoder(blob: Blob, format: string): Promise<Pixels> {
     try {
       source = await createImageBitmap(blob);
     } catch {
+      if (format === "heic")
+        throw new Error("Ton navigateur ne sait pas lire le HEIC (photos d'iPhone). Ouvre L'Alambic avec Safari (iPhone, iPad ou Mac), ou règle l'iPhone sur Réglages › Appareil photo › Formats › « Le plus compatible » : il enregistrera en JPEG.");
+      if (format === "avif") throw new Error("Ton navigateur ne sait pas lire l'AVIF : mets-le à jour, ou essaie avec Chrome, Edge, Firefox ou Safari récents.");
       throw new Error("Ton navigateur n'arrive pas à lire cette image : elle est peut-être abîmée.");
     }
     l = source.width;
@@ -195,6 +198,19 @@ export async function encoder(p: Pixels, format: string, qualite = 0.9): Promise
     default:
       throw new Error("Ce format n'est pas une image.");
   }
+}
+
+/** Réduit une image pour que son plus grand côté ne dépasse pas `cote` (jamais agrandie). */
+export function redimensionner(p: Pixels, cote: number): Pixels {
+  const e = Math.min(1, cote / Math.max(p.largeur, p.hauteur));
+  if (e >= 1) return p;
+  const l = Math.max(1, Math.round(p.largeur * e));
+  const h = Math.max(1, Math.round(p.hauteur * e));
+  const c = toile(l, h);
+  const ctx = contexte(c);
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(versToile(p) as CanvasImageSource, 0, 0, l, h);
+  return { largeur: l, hauteur: h, donnees: ctx.getImageData(0, 0, l, h).data };
 }
 
 /** Une image prête à placer dans un PDF : JPEG tel quel, tout le reste en PNG. */

@@ -15,7 +15,7 @@ import { VignettePdf, type DocPdf } from "./VignettePdf";
 
 type Mode = "signature" | "texte" | "date" | "coche" | "croix" | null;
 type TaillePage = { l: number; h: number };
-const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff"]);
+const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "heic", "avif"]);
 const ENCRES = ["#111827", "#1d3a8a"];
 const MAX_GARDEES = 3;
 let compteur = 0;

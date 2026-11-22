@@ -13,7 +13,7 @@ import { useAlambic } from "../contexte";
 import { BonASavoir, EnTeteOutil, MessageErreur, Progression, reconnaitreTous, resultatDe, sansExtension, useTravail, ZoneDepot } from "../commun";
 import { useReception, type Abonner } from "../reception";
 
-const IMAGES = new Set(["jpg", "png", "webp", "bmp", "tiff", "gif"]);
+const IMAGES = new Set(["jpg", "png", "webp", "bmp", "tiff", "gif", "heic", "avif"]);
 const LANGUES: { id: LangueOcr; nom: string }[] = [
   { id: "fra", nom: "Français" },
   { id: "eng", nom: "Anglais" },

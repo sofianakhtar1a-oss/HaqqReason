@@ -19,7 +19,8 @@ const octets = (...b: number[]) => new Uint8Array([...b, ...new Array(600).fill(
 const texte = (t: string) => new TextEncoder().encode(t);
 
 // ---------------------------------------------------------------- formats
-ok("six familles et 36 formats au catalogue", new Set(FORMATS.map((f) => f.famille)).size === 6 && FORMATS.length === 36);
+ok("six familles et 38 formats au catalogue", new Set(FORMATS.map((f) => f.famille)).size === 6 && FORMATS.length === 38);
+ok("une photo d'iPhone (HEIC) et une image AVIF sont reconnues", detecter("IMG_0042.HEIC", texte("\0\0\0\x18ftypheic\0\0\0\0mif1heic")) === "heic" && detecter("x", texte("\0\0\0\x1cftypavif\0\0\0\0avifmif1miaf")) === "avif" && detecter("x", texte("\0\0\0\x1cftypmif1\0\0\0\0mif1avifmiaf")) === "avif");
 ok("un PDF est reconnu par son contenu, quel que soit son nom", detecter("photo.jpg", texte("%PDF-1.7 ...")) === "pdf");
 ok("un PNG est reconnu par sa signature", detecter("x", octets(0x89, 0x50, 0x4e, 0x47)) === "png");
 ok("un JPEG est reconnu par sa signature", detecter("x.bin", octets(0xff, 0xd8, 0xff, 0xe0)) === "jpg");

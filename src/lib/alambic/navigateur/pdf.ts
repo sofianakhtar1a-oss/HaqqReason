@@ -3,7 +3,7 @@
 /*
  * Outils PDF, dans le navigateur : pages → images, images → PDF, fusion, découpe, vignettes.
  */
-import { PDFDict, PDFDocument, PDFName, PDFStream } from "@cantoo/pdf-lib";
+import { PDFDict, PDFDocument, PDFHexString, PDFName, PDFStream } from "@cantoo/pdf-lib";
 import { chargerPdfjs } from "@/lib/client/pdf";
 import { MotDePasseFaux, PdfProtege } from "../erreurs";
 import { encoder, pourPdf } from "./images";
@@ -167,4 +167,44 @@ export async function assembler(pdfs: Uint8Array[], avancer: (f: number) => void
     avancer((i + 1) / pdfs.length);
   }
   return sortie.save();
+}
+
+/** Assemble des PDF et ajoute un signet par partie (la table des matières des lecteurs PDF). */
+export async function assemblerAvecSignets(parties: { octets: Uint8Array; titre: string }[], avancer: (f: number) => void): Promise<Uint8Array> {
+  const sortie = await PDFDocument.create();
+  sortie.setProducer("HaqqReason — L'Alambic");
+  const premieres: number[] = [];
+  for (let i = 0; i < parties.length; i++) {
+    const source = await charger(parties[i].octets);
+    premieres.push(sortie.getPageCount());
+    const pages = await sortie.copyPages(source, source.getPageIndices());
+    pages.forEach((p) => sortie.addPage(p));
+    avancer((i + 1) / parties.length);
+  }
+  const ctx = sortie.context;
+  const racine = ctx.nextRef();
+  const refs = parties.map(() => ctx.nextRef());
+  parties.forEach((p, i) => {
+    const page = sortie.getPage(Math.min(premieres[i], sortie.getPageCount() - 1));
+    const signet = ctx.obj({ Title: PDFHexString.fromText(p.titre), Parent: racine, Dest: [page.ref, "Fit"] }) as PDFDict;
+    if (i > 0) signet.set(PDFName.of("Prev"), refs[i - 1]);
+    if (i < parties.length - 1) signet.set(PDFName.of("Next"), refs[i + 1]);
+    ctx.assign(refs[i], signet);
+  });
+  ctx.assign(racine, ctx.obj({ Type: "Outlines", First: refs[0], Last: refs[refs.length - 1], Count: refs.length }));
+  sortie.catalog.set(PDFName.of("Outlines"), racine);
+  sortie.catalog.set(PDFName.of("PageMode"), PDFName.of("UseOutlines"));
+  return sortie.save();
+}
+
+/** Une image sur une page A4 (portrait ou paysage selon l'image), centrée, avec une marge. */
+export async function imageSurA4(pdf: PDFDocument, blob: Blob, format: string, marge = 28) {
+  const img = await pourPdf(blob, format);
+  const incrustee = img.type === "jpg" ? await pdf.embedJpg(img.octets) : await pdf.embedPng(img.octets);
+  const paysage = img.largeur > img.hauteur;
+  const [l, h] = paysage ? [841.89, 595.28] : [595.28, 841.89];
+  const echelle = Math.min((l - 2 * marge) / img.largeur, (h - 2 * marge) / img.hauteur);
+  const w = img.largeur * echelle;
+  const hh = img.hauteur * echelle;
+  pdf.addPage([l, h]).drawImage(incrustee, { x: (l - w) / 2, y: (h - hh) / 2, width: w, height: hh });
 }

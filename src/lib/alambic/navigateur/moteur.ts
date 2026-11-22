@@ -19,6 +19,10 @@ export type Reglages = {
   separateur: ";" | ",";
   extrait?: { debut: number; fin: number };
   signal?: AbortSignal;
+  /** PDF → images : points par pouce (144 par défaut). */
+  resolution?: number;
+  /** Images : plus grand côté voulu en pixels (sans agrandir) ; absent = taille d'origine. */
+  coteMax?: number;
 };
 
 const DOCUMENTS = new Set(["docx", "odt", "rtf", "txt", "md", "html", "epub", "pdf"]);
@@ -51,7 +55,7 @@ export async function convertir(entree: Entree, cible: string, reglages: Reglage
         const n = doc.numPages;
         if (n === 1) {
           avancer(0.3, "Rendu de la page");
-          return fin(await pageEnImage(doc, 1, cible));
+          return fin(await pageEnImage(doc, 1, cible, (reglages.resolution ?? 144) / 72));
         }
         const { ecrireArchive } = await import("./archives");
         const images = [];
@@ -59,7 +63,7 @@ export async function convertir(entree: Entree, cible: string, reglages: Reglage
         for (let p = 1; p <= n; p++) {
           if (reglages.signal?.aborted) throw new DOMException("Annulé", "AbortError");
           avancer((p - 1) / n * 0.9, `Rendu de la page ${p} sur ${n}`);
-          images.push({ nom: `${sansExtension(entree.nom)} - page ${String(p).padStart(chiffres, "0")}.${format(cible).extensions[0]}`, blob: await pageEnImage(doc, p, cible) });
+          images.push({ nom: `${sansExtension(entree.nom)} - page ${String(p).padStart(chiffres, "0")}.${format(cible).extensions[0]}`, blob: await pageEnImage(doc, p, cible, (reglages.resolution ?? 144) / 72) });
         }
         avancer(0.95, "Rangement dans un ZIP");
         return fin(await ecrireArchive(images, "zip", () => {}), [`${n} pages, donc ${n} images, réunies dans un ZIP.`], `${sansExtension(entree.nom)} - pages.zip`, "zip");
@@ -103,11 +107,17 @@ export async function convertir(entree: Entree, cible: string, reglages: Reglage
     }
 
     case "image": {
-      const { decoder, encoder } = await import("./images");
+      const { decoder, encoder, redimensionner } = await import("./images");
       avancer(0.2, "Lecture de l'image");
-      const pixels = await decoder(entree.blob, entree.format);
+      let pixels = await decoder(entree.blob, entree.format);
+      const avertissements = v.note && v.fidelite === "partielle" ? [v.note] : [];
+      if (reglages.coteMax && Math.max(pixels.largeur, pixels.hauteur) > reglages.coteMax) {
+        avancer(0.4, "Redimensionnement");
+        pixels = redimensionner(pixels, reglages.coteMax);
+        avertissements.push(`Elle mesure maintenant ${pixels.largeur} × ${pixels.hauteur} pixels.`);
+      }
       avancer(0.6, `Écriture en ${format(cible).nom}`);
-      return fin(await encoder(pixels, cible, reglages.qualite), v.note && v.fidelite === "partielle" ? [v.note] : []);
+      return fin(await encoder(pixels, cible, reglages.qualite), avertissements);
     }
 
     case "media": {

@@ -1,16 +1,17 @@
 "use client";
 
-import { FileUp, LoaderCircle, Scissors, X } from "lucide-react";
+import { Camera, FileUp, LoaderCircle, Scissors, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { FORMATS, format, tailleLisible } from "@/lib/alambic/formats";
 import { verdict, type Capacites } from "@/lib/alambic/graphe";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
+import { BonASavoir, MessageErreur } from "./commun";
 import { ChampProtection } from "./ChampProtection";
 import { useReception, type Abonner } from "./reception";
 
 type DocPdf = Awaited<ReturnType<typeof import("@/lib/alambic/navigateur/pdf").ouvrir>>;
-type Mode = "un" | "chaque" | "images";
+type Mode = "un" | "chaque" | "images" | "groupes";
 
 function enPlages(pages: number[]): string {
   const triees = [...pages].sort((a, b) => a - b);
@@ -77,6 +78,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
   const [choisies, setChoisies] = useState<number[]>([]);
   const [plages, setPlages] = useState("");
   const [mode, setMode] = useState<Mode>("un");
+  const [taillePaquet, setTaillePaquet] = useState(2);
   const [media, setMedia] = useState<{ url: string; duree: number } | null>(null);
   const [debut, setDebut] = useState(0);
   const [fin, setFin] = useState(0);
@@ -85,7 +87,8 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
   const [motDePasse, setMotDePasse] = useState("");
   const [travail, setTravail] = useState<{ avancement: number | null; etape: string } | null>(null);
   const [resultat, setResultat] = useState<Resultat | null>(null);
-  const [erreur, setErreur] = useState("");
+  const [erreur, setErreur] = useState<unknown>(null);
+  const [fichierFautif, setFichierFautif] = useState<File | null>(null);
   const choix = useRef<HTMLInputElement>(null);
   const lecteur = useRef<HTMLVideoElement & HTMLAudioElement>(null);
 
@@ -100,7 +103,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
     setFichier(null);
     setFmt(null);
     setResultat(null);
-    setErreur("");
+    setErreur(null);
   };
 
   const charger = async (f: File) => {
@@ -121,7 +124,8 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
         setChoisies([]);
         setPlages("");
       } catch (e) {
-        setErreur((e as Error).message);
+        setFichierFautif(f);
+        setErreur(e);
       }
     } else {
       const url = URL.createObjectURL(f);
@@ -145,12 +149,32 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
 
   const decouper = async () => {
     if (!fichier || !fmt) return;
-    setErreur("");
+    setErreur(null);
     setResultat(null);
     try {
       let r: Resultat;
       const base = fichier.name.replace(/\.[^.]+$/, "");
-      if (fmt === "pdf") {
+      if (fmt === "pdf" && mode === "groupes") {
+        // Toutes les N pages : les pages choisies (ou toutes) sont réparties en PDF de N pages.
+        const { extraire } = await import("@/lib/alambic/navigateur/pdf");
+        const { ecrireArchive } = await import("@/lib/alambic/navigateur/archives");
+        const octets = new Uint8Array(await fichier.arrayBuffer());
+        const liste = choisies.length ? choisies : Array.from({ length: total }, (_, i) => i + 1);
+        const n = Math.max(1, taillePaquet);
+        const paquets: number[][] = [];
+        for (let i = 0; i < liste.length; i += n) paquets.push(liste.slice(i, i + n));
+        const fichiers = [];
+        for (let i = 0; i < paquets.length; i++) {
+          setTravail({ avancement: i / paquets.length, etape: `Partie ${i + 1} sur ${paquets.length}` });
+          const sortie = await extraire(octets, paquets[i]);
+          fichiers.push({ nom: `${base} - partie ${String(i + 1).padStart(String(paquets.length).length, "0")} (pages ${enPlages(paquets[i])}).pdf`, blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }) });
+        }
+        if (fichiers.length === 1) r = { nom: fichiers[0].nom, blob: fichiers[0].blob, format: "pdf", avertissements: [] };
+        else {
+          setTravail({ avancement: 0.95, etape: "Rangement dans un ZIP" });
+          r = { nom: `${base} - ${fichiers.length} parties.zip`, blob: await ecrireArchive(fichiers, "zip", () => {}), format: "zip", avertissements: [`${fichiers.length} PDF de ${n} page${n > 1 ? "s" : ""} (le dernier peut en avoir moins), réunis dans un ZIP.`] };
+        }
+      } else if (fmt === "pdf") {
         if (!choisies.length) throw new Error("Choisis au moins une page.");
         const { extraire, pageEnImage } = await import("@/lib/alambic/navigateur/pdf");
         const { ecrireArchive } = await import("@/lib/alambic/navigateur/archives");
@@ -197,13 +221,14 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
       }
       setResultat(r);
     } catch (e) {
-      setErreur((e as Error).message);
+      setFichierFautif(fichier);
+      setErreur(e);
     } finally {
       setTravail(null);
     }
   };
 
-  const sortiePdf = fmt === "pdf" ? mode !== "images" && (mode === "un" || choisies.length === 1) : cibleMedia === "pdf";
+  const sortiePdf = fmt === "pdf" ? mode !== "images" && (mode === "un" || (mode === "chaque" && choisies.length === 1)) : cibleMedia === "pdf";
 
   return (
     <section className="alambic-outil" aria-labelledby="titre-decoupe">
@@ -309,8 +334,20 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
               <button type="button" role="radio" aria-checked={mode === "images"} onClick={() => setMode("images")}>
                 Une image par page
               </button>
+              <button type="button" role="radio" aria-checked={mode === "groupes"} onClick={() => setMode("groupes")}>
+                Toutes les N pages
+              </button>
             </div>
           </div>
+          {mode === "groupes" && (
+            <label className="alambic-option">
+              <span>Pages par PDF</span>
+              <input className="champ !w-28" type="number" min={1} max={Math.max(1, total)} value={taillePaquet} onChange={(e) => setTaillePaquet(Math.max(1, Math.min(Math.max(1, total), Number(e.target.value) || 1)))} />
+              <span className="w-full text-sm text-encre-douce">
+                {choisies.length ? `Les ${choisies.length} pages choisies` : `Les ${total} pages`} donnent {Math.ceil((choisies.length || total) / Math.max(1, taillePaquet))} PDF. Utile pour un document trop lourd à envoyer d&apos;un coup.
+              </span>
+            </label>
+          )}
         </>
       )}
 
@@ -327,6 +364,27 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
                 <input type="range" min={0} max={media.duree} step={0.1} value={debut} aria-label="Début de l'extrait" aria-valuetext={horloge(debut)} onChange={(e) => { setDebut(Math.min(Number(e.target.value), fin - 0.1)); setResultat(null); }} />
                 <input type="range" min={0} max={media.duree} step={0.1} value={fin} aria-label="Fin de l'extrait" aria-valuetext={horloge(fin)} onChange={(e) => { setFin(Math.max(Number(e.target.value), debut + 0.1)); setResultat(null); }} />
               </div>
+              {format(fmt).famille === "video" && (
+                <button
+                  type="button"
+                  className="bouton bouton-discret !min-h-10 justify-self-start"
+                  onClick={async () => {
+                    const v = lecteur.current as HTMLVideoElement | null;
+                    if (!v || !v.videoWidth) return;
+                    const c = document.createElement("canvas");
+                    c.width = v.videoWidth;
+                    c.height = v.videoHeight;
+                    c.getContext("2d")!.drawImage(v, 0, 0);
+                    const blob = await new Promise<Blob | null>((ok) => c.toBlob(ok, "image/png"));
+                    if (!blob) return;
+                    const base = fichier?.name.replace(/\.[^.]+$/, "") ?? "video";
+                    setResultat({ nom: `${base} - image à ${horloge(v.currentTime).replace(/[:,]/g, "-")}.png`, blob, format: "png", avertissements: [`L'image de l'instant ${horloge(v.currentTime)}, en ${v.videoWidth} × ${v.videoHeight}.`] });
+                  }}
+                >
+                  <Camera className="size-4" aria-hidden="true" />
+                  Enregistrer l&apos;image de cet instant
+                </button>
+              )}
               <div className="alambic-bornes">
                 <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => lecteur.current && setDebut(Math.min(lecteur.current.currentTime, fin - 0.1))}>
                   Début ici
@@ -369,21 +427,31 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
                 </p>
               </>
             ) : (
-              <button type="button" className="bouton bouton-principal alambic-lancer" disabled={(pdf ? !choisies.length : !media?.duree) || (proteger && !motDePasse)} onClick={() => void decouper()}>
+              <button type="button" className="bouton bouton-principal alambic-lancer" disabled={(pdf ? !choisies.length && mode !== "groupes" : !media?.duree) || (proteger && !motDePasse)} onClick={() => void decouper()}>
                 <Scissors className="size-5" aria-hidden="true" />
-                {pdf ? (choisies.length ? `Extraire ${choisies.length} page${choisies.length > 1 ? "s" : ""}` : "Choisis des pages") : "Extraire ce passage"}
+                {pdf
+                  ? mode === "groupes"
+                    ? `Découper en ${Math.ceil((choisies.length || total) / Math.max(1, taillePaquet))} PDF`
+                    : choisies.length
+                      ? `Extraire ${choisies.length} page${choisies.length > 1 ? "s" : ""}`
+                      : "Choisis des pages"
+                  : "Extraire ce passage"}
               </button>
             )}
           </div>
         </>
       )}
 
-      {erreur && (
-        <p className="message message-erreur" role="alert">
-          {erreur}
-        </p>
-      )}
-      {resultat && <CarteResultat resultat={resultat} tailleAvant={fichier?.size} protege={proteger && Boolean(motDePasse)} />}
+      <MessageErreur erreur={erreur} fichier={fichierFautif} />
+      {resultat && <CarteResultat resultat={resultat} tailleAvant={resultat.format === fmt ? fichier?.size : undefined} protege={proteger && Boolean(motDePasse)} />}
+
+      <BonASavoir
+        points={[
+          "Écris les pages à garder comme « 1-3, 7, 10-fin », ou touche-les ; « Inverser » permet de retirer des pages plutôt que de les garder.",
+          "« Toutes les N pages » coupe un long PDF en morceaux de même taille, à envoyer un par un.",
+          "Pour une vidéo : place le début et la fin avec les curseurs, ou « Début ici » / « Fin ici » pendant la lecture ; une image fixe s'enregistre à l'instant voulu.",
+        ]}
+      />
     </section>
   );
 }

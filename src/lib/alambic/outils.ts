@@ -68,7 +68,7 @@ export function parGroupes<T extends { id: Outil }>(outils: T[]): { groupe: (typ
   return GROUPES.map((groupe) => ({ groupe, outils: outils.filter((o) => GROUPE_DE[o.id] === groupe.id) })).filter((g) => g.outils.length > 0);
 }
 
-const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "ico", "svg"]);
+const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "ico", "svg", "heic", "avif"]);
 const DOCUMENTS = new Set(["docx", "odt", "rtf", "txt", "md", "html", "epub"]);
 /** Documents bureautiques rangés en ZIP : Word, Excel, PowerPoint, OpenDocument, EPUB. */
 export const BUREAUTIQUE = new Set(["docx", "xlsx", "pptx", "odt", "ods", "odp", "epub"]);
@@ -100,16 +100,16 @@ export function accepte(outil: Outil, id: string, nom = ""): boolean {
     case "organiser":
       return id === "pdf";
     case "alleger":
-      return id === "pdf" || ["jpg", "png", "webp", "bmp", "tiff"].includes(id) || sonOuVideo(id) || bureautique(id, nom) !== null;
+      return id === "pdf" || ["jpg", "png", "webp", "bmp", "tiff", "heic", "avif"].includes(id) || sonOuVideo(id) || bureautique(id, nom) !== null;
     case "filigraner":
-      return id === "pdf" || ["png", "jpg", "webp", "bmp", "tiff", "gif"].includes(id);
+      return id === "pdf" || ["png", "jpg", "webp", "bmp", "tiff", "gif", "heic", "avif"].includes(id);
     case "signer":
-      return id === "pdf" || ["png", "jpg", "webp"].includes(id);
+      return id === "pdf" || ["png", "jpg", "webp", "heic", "avif"].includes(id);
     case "deverrouiller":
       return id === "pdf" || id === "zip";
     case "nettoyer":
       return ["jpg", "png", "webp", "pdf", "mp3"].includes(id) || bureautique(id, nom) !== null;
     case "reconnaitre":
-      return id === "pdf" || ["png", "jpg", "webp", "bmp", "tiff", "gif"].includes(id);
+      return id === "pdf" || ["png", "jpg", "webp", "bmp", "tiff", "gif", "heic", "avif"].includes(id);
   }
 }

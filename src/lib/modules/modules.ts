@@ -245,6 +245,8 @@ const ALAMBIC: DefModule = {
         { cle: "faq.4.r", libelle: "Réponse 4", defaut: "L'explorateur de Windows ne connaît pas le chiffrement AES-256. Ouvre-le avec 7-Zip ou WinRAR (gratuits), Keka ou The Unarchiver sur Mac, ou avec l'outil Déverrouiller, ici même.", long: true },
         { cle: "faq.5.q", libelle: "Question 5", defaut: "Pourquoi certains formats sont grisés ?" },
         { cle: "faq.5.r", libelle: "Réponse 5", defaut: "Parce que la conversion donnerait un fichier vide ou trompeur. Touche un format grisé : la raison s'affiche, souvent avec une autre façon d'y arriver.", long: true },
+        { cle: "faq.6.q", libelle: "Question 6", defaut: "Et les photos d'iPhone (HEIC) ?" },
+        { cle: "faq.6.r", libelle: "Réponse 6", defaut: "Elles se lisent avec Safari (iPhone, iPad, Mac) et se convertissent en JPEG. Avec un autre navigateur, règle l'iPhone sur « Le plus compatible » (Réglages › Appareil photo › Formats) : il enregistre alors directement en JPEG.", long: true },
       ],
     },
   ],

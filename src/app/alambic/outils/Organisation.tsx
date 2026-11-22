@@ -15,7 +15,7 @@ import { useReception, type Abonner } from "../reception";
 import { VignettePdf, type DocPdf } from "./VignettePdf";
 
 type Source = { id: string; nom: string; octets: Uint8Array; doc: DocPdf; fermer: () => Promise<void>; pages: number; taille: number };
-const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "svg"]);
+const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "svg", "heic", "avif"]);
 const MAX_HISTORIQUE = 40;
 
 function Carte({

@@ -9,11 +9,12 @@ import { format, tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
 import { ChampProtection } from "./ChampProtection";
+import { BonASavoir, MessageErreur } from "./commun";
 import { useReception, type Abonner } from "./reception";
 import { ICONES } from "./SelecteurFormat";
 
-const ACCEPTES = new Set(["pdf", "png", "jpg", "webp", "gif", "bmp", "tiff", "svg", "ico", "docx", "odt", "rtf", "txt", "md", "html", "epub"]);
-const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "svg", "ico"]);
+const ACCEPTES = new Set(["pdf", "png", "jpg", "webp", "gif", "bmp", "tiff", "svg", "ico", "heic", "avif", "docx", "odt", "rtf", "txt", "md", "html", "epub"]);
+const IMAGES = new Set(["png", "jpg", "webp", "gif", "bmp", "tiff", "svg", "ico", "heic", "avif"]);
 
 type Piece = { id: string; fichier: File; format: string; vignette: string | null; pages: number | null };
 
@@ -55,10 +56,14 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
   const [refuses, setRefuses] = useState<string[]>([]);
   const [nom, setNom] = useState("Document fusionné");
   const [proteger, setProteger] = useState(false);
+  const [pagesImages, setPagesImages] = useState<"image" | "a4">("image");
+  const [signets, setSignets] = useState(true);
+  const [numeroter, setNumeroter] = useState(false);
   const [motDePasse, setMotDePasse] = useState("");
   const [travail, setTravail] = useState<{ avancement: number; etape: string } | null>(null);
   const [resultat, setResultat] = useState<Resultat | null>(null);
-  const [erreur, setErreur] = useState("");
+  const [erreur, setErreur] = useState<unknown>(null);
+  const [fichierFautif, setFichierFautif] = useState<File | null>(null);
   const choix = useRef<HTMLInputElement>(null);
   const capteurs = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 4 } }), useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates }));
 
@@ -113,18 +118,30 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
   };
 
   const fusionner = async () => {
-    setErreur("");
+    setErreur(null);
+    setFichierFautif(null);
     setResultat(null);
     try {
-      const [{ assembler, imageEnPage }, { PDFDocument }] = await Promise.all([import("@/lib/alambic/navigateur/pdf"), import("@cantoo/pdf-lib")]);
+      const [{ assembler, assemblerAvecSignets, imageEnPage, imageSurA4 }, { PDFDocument }] = await Promise.all([import("@/lib/alambic/navigateur/pdf"), import("@cantoo/pdf-lib")]);
       const pdfs: Uint8Array[] = [];
       for (let i = 0; i < pieces.length; i++) {
         const p = pieces[i];
         setTravail({ avancement: (i / pieces.length) * 0.8, etape: `Préparation de « ${p.fichier.name} »` });
-        if (p.format === "pdf") pdfs.push(new Uint8Array(await p.fichier.arrayBuffer()));
+        setFichierFautif(p.fichier);
+        if (p.format === "pdf") {
+          // Vérifié dès maintenant : un PDF protégé est nommé, et peut être déverrouillé sur place.
+          const { charger } = await import("@/lib/alambic/navigateur/pdf");
+          try {
+            await charger(new Uint8Array(await p.fichier.arrayBuffer()));
+          } catch (e) {
+            throw Object.assign(new Error(`« ${p.fichier.name} » : ${(e as Error).message}`), { name: (e as Error).name });
+          }
+          pdfs.push(new Uint8Array(await p.fichier.arrayBuffer()));
+        }
         else if (IMAGES.has(p.format)) {
           const doc = await PDFDocument.create();
-          await imageEnPage(doc, p.fichier, p.format);
+          if (pagesImages === "a4") await imageSurA4(doc, p.fichier, p.format);
+          else await imageEnPage(doc, p.fichier, p.format);
           pdfs.push(await doc.save());
         } else {
           const { lireDocument, ecrireDocument } = await import("@/lib/alambic/navigateur/documents");
@@ -136,18 +153,25 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
       setTravail({ avancement: 0.85, etape: "Assemblage" });
       let octets: Uint8Array;
       try {
-        octets = await assembler(pdfs, (f) => setTravail({ avancement: 0.85 + f * 0.1, etape: "Assemblage" }));
+        const avancer = (f: number) => setTravail({ avancement: 0.85 + f * 0.1, etape: "Assemblage" });
+        octets = signets && pieces.length > 1 ? await assemblerAvecSignets(pdfs.map((o, k) => ({ octets: o, titre: pieces[k].fichier.name.replace(/\.[^.]+$/, "") })), avancer) : await assembler(pdfs, avancer);
       } catch (e) {
         throw new Error((e as Error).message);
       }
-      let r: Resultat = { nom: `${nom.trim() || "Document fusionné"}.pdf`, blob: new Blob([octets.slice().buffer], { type: "application/pdf" }), format: "pdf", avertissements: [] };
+      let r: Resultat = { nom: `${nom.trim() || "Document fusionné"}.pdf`, blob: new Blob([octets.slice().buffer], { type: "application/pdf" }), format: "pdf", avertissements: signets && pieces.length > 1 ? ["Un signet par fichier : le volet « Signets » du lecteur PDF mène au début de chacun."] : [] };
+      if (numeroter) {
+        setTravail({ avancement: 0.96, etape: "Numérotation des pages" });
+        const { marquerPdf } = await import("@/lib/alambic/navigateur/filigraner");
+        const numerote = await marquerPdf(r.blob, r.nom, { filigrane: null, numeros: { format: "n/t", position: "bas-centre", debut: 1, sansPremiere: false }, inseparable: false }, () => {});
+        r = { ...r, blob: numerote.blob };
+      }
       if (proteger && motDePasse) {
         const { proteger: chiffrer } = await import("@/lib/alambic/navigateur/moteur");
         r = await chiffrer(r, motDePasse, (a, etape) => setTravail({ avancement: a ?? 0.97, etape }));
       }
       setResultat(r);
     } catch (e) {
-      setErreur((e as Error).message);
+      setErreur(e);
     } finally {
       setTravail(null);
     }
@@ -229,6 +253,32 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
             <span>Nom du PDF</span>
             <input className="champ" value={nom} onChange={(e) => setNom(e.target.value)} maxLength={120} />
           </label>
+          {pieces.some((p) => IMAGES.has(p.format)) && (
+            <div className="alambic-option" role="radiogroup" aria-label="Pages des images">
+              <span>Images</span>
+              <div className="alambic-segments">
+                <button type="button" role="radio" aria-checked={pagesImages === "image"} onClick={() => setPagesImages("image")}>
+                  Page à la taille de l&apos;image
+                </button>
+                <button type="button" role="radio" aria-checked={pagesImages === "a4"} onClick={() => setPagesImages("a4")}>
+                  Page A4, avec marge
+                </button>
+              </div>
+              {pagesImages === "a4" && <span className="w-full text-sm text-encre-douce">Chaque photo est centrée sur une page A4 (en paysage si elle est plus large que haute) : idéal pour imprimer des tickets ou des justificatifs.</span>}
+            </div>
+          )}
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            {pieces.length > 1 && (
+              <label className="flex items-center gap-2">
+                <input type="checkbox" checked={signets} onChange={(e) => setSignets(e.target.checked)} />
+                Un signet par fichier
+              </label>
+            )}
+            <label className="flex items-center gap-2">
+              <input type="checkbox" checked={numeroter} onChange={(e) => setNumeroter(e.target.checked)} />
+              Numéroter les pages
+            </label>
+          </div>
           <ChampProtection actif={proteger} onActif={setProteger} motDePasse={motDePasse} onMotDePasse={setMotDePasse} formatPdf={proteger ? true : null} />
           <div className="alambic-actions">
             {travail ? (
@@ -250,12 +300,16 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
           </div>
         </>
       )}
-      {erreur && (
-        <p className="message message-erreur" role="alert">
-          {erreur}
-        </p>
-      )}
+      <MessageErreur erreur={erreur} fichier={fichierFautif} />
       {resultat && <CarteResultat resultat={resultat} protege={proteger && Boolean(motDePasse)} />}
+
+      <BonASavoir
+        points={[
+          "Fais glisser les fichiers par leur poignée pour choisir l'ordre ; au clavier, Espace puis les flèches.",
+          "Un Word, un texte ou une page web sont d'abord mis en pages, puis réunis avec le reste.",
+          "Pour retirer ou pivoter des pages ensuite, passe le résultat à « Organiser ».",
+        ]}
+      />
     </section>
   );
 }

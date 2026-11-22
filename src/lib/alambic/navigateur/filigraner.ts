@@ -149,6 +149,8 @@ export async function marquerPdf(fichier: Blob, nom: string, o: OptionsMarquage,
 }
 
 const SORTIES: Record<string, { format: string; type: string; qualite?: number }> = {
+  heic: { format: "jpg", type: "image/jpeg", qualite: 0.92 },
+  avif: { format: "jpg", type: "image/jpeg", qualite: 0.92 },
   jpg: { format: "jpg", type: "image/jpeg", qualite: 0.92 },
   webp: { format: "webp", type: "image/webp", qualite: 0.92 },
   png: { format: "png", type: "image/png" },

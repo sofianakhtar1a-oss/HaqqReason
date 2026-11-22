@@ -6,6 +6,7 @@ import { tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
 import { ChampProtection } from "./ChampProtection";
+import { BonASavoir, MessageErreur } from "./commun";
 import { useReception, type Abonner } from "./reception";
 
 export function Protection({ abonner }: { abonner: Abonner }) {
@@ -13,7 +14,9 @@ export function Protection({ abonner }: { abonner: Abonner }) {
   const [motDePasse, setMotDePasse] = useState("");
   const [travail, setTravail] = useState<{ avancement: number | null; etape: string } | null>(null);
   const [resultat, setResultat] = useState<Resultat | null>(null);
-  const [erreur, setErreur] = useState("");
+  const [erreur, setErreur] = useState<unknown>(null);
+  const [autorisations, setAutorisations] = useState({ imprimer: true, copier: true, modifier: true });
+  const [sansOuverture, setSansOuverture] = useState(false);
   const choix = useRef<HTMLInputElement>(null);
 
   useReception(abonner, (entrants) => {
@@ -22,16 +25,23 @@ export function Protection({ abonner }: { abonner: Abonner }) {
   });
 
   const seulPdf = fichiers.length === 1 && /\.pdf$/i.test(fichiers[0].name);
+  const restreint = !autorisations.imprimer || !autorisations.copier || !autorisations.modifier;
+  // Un PDF peut s'ouvrir sans mot de passe et garder ses restrictions (impression, copie, modification).
+  const sansMotDePasse = seulPdf && sansOuverture && restreint;
 
   const proteger = async () => {
-    setErreur("");
+    setErreur(null);
     setResultat(null);
     try {
       const { protegerEnZip, protegerPdf } = await import("@/lib/alambic/navigateur/securite");
       if (seulPdf) {
         setTravail({ avancement: null, etape: "Chiffrement AES-256 du PDF" });
-        const blob = await protegerPdf(fichiers[0], motDePasse);
-        setResultat({ nom: fichiers[0].name.replace(/\.pdf$/i, " (protégé).pdf"), blob, format: "pdf", avertissements: [] });
+        const blob = await protegerPdf(fichiers[0], sansMotDePasse ? "" : motDePasse, autorisations);
+        const interdits = [!autorisations.imprimer && "l'impression", !autorisations.copier && "la copie du texte", !autorisations.modifier && "les modifications"].filter(Boolean);
+        const avertissements = interdits.length
+          ? [`Interdits : ${interdits.join(", ")}. Les lecteurs PDF courants respectent ces restrictions ; seul le mot de passe d'ouverture protège vraiment le contenu.`]
+          : [];
+        setResultat({ nom: fichiers[0].name.replace(/\.pdf$/i, sansMotDePasse ? " (restreint).pdf" : " (protégé).pdf"), blob, format: "pdf", avertissements });
       } else {
         setTravail({ avancement: 0, etape: "Chiffrement AES-256" });
         const blob = await protegerEnZip(fichiers.map((f) => ({ nom: f.name, blob: f })), motDePasse, (a) => setTravail({ avancement: a, etape: "Chiffrement AES-256" }));
@@ -39,7 +49,7 @@ export function Protection({ abonner }: { abonner: Abonner }) {
         setResultat({ nom, blob, format: "zip", avertissements: ["Le ZIP chiffré en AES-256 s'ouvre avec 7-Zip, WinRAR, Keka ou The Unarchiver ; l'explorateur de Windows, lui, ne sait pas ouvrir ce type de ZIP."] });
       }
     } catch (e) {
-      setErreur((e as Error).message);
+      setErreur(e);
     } finally {
       setTravail(null);
     }
@@ -103,7 +113,30 @@ export function Protection({ abonner }: { abonner: Abonner }) {
 
       {fichiers.length > 0 && (
         <>
-          <ChampProtection actif onActif={() => {}} toujours motDePasse={motDePasse} onMotDePasse={setMotDePasse} formatPdf={seulPdf} />
+          {!sansMotDePasse && <ChampProtection actif onActif={() => {}} toujours motDePasse={motDePasse} onMotDePasse={setMotDePasse} formatPdf={seulPdf} />}
+          {seulPdf && (
+            <fieldset className="alambic-autorisations">
+              <legend>Ce que la personne pourra faire</legend>
+              {(
+                [
+                  ["imprimer", "Imprimer"],
+                  ["copier", "Copier le texte"],
+                  ["modifier", "Modifier, annoter, réorganiser"],
+                ] as const
+              ).map(([cle, nom]) => (
+                <label key={cle} className="flex items-center gap-2">
+                  <input type="checkbox" checked={autorisations[cle]} onChange={(e) => setAutorisations({ ...autorisations, [cle]: e.target.checked })} />
+                  {nom}
+                </label>
+              ))}
+              {restreint && (
+                <label className="flex items-start gap-2 text-sm">
+                  <input type="checkbox" className="mt-1" checked={sansOuverture} onChange={(e) => setSansOuverture(e.target.checked)} />
+                  <span>Pas de mot de passe pour l&apos;ouvrir : seulement ces restrictions (par exemple, un document à lire mais à ne pas imprimer).</span>
+                </label>
+              )}
+            </fieldset>
+          )}
           <div className="alambic-actions">
             {travail ? (
               <>
@@ -116,7 +149,7 @@ export function Protection({ abonner }: { abonner: Abonner }) {
                 </p>
               </>
             ) : (
-              <button type="button" className="bouton bouton-principal alambic-lancer" disabled={!motDePasse} onClick={() => void proteger()}>
+              <button type="button" className="bouton bouton-principal alambic-lancer" disabled={!motDePasse && !sansMotDePasse} onClick={() => void proteger()}>
                 <ShieldCheck className="size-5" aria-hidden="true" />
                 {seulPdf ? "Protéger le PDF" : fichiers.length > 1 ? `Protéger les ${fichiers.length} fichiers` : "Protéger le fichier"}
               </button>
@@ -124,12 +157,17 @@ export function Protection({ abonner }: { abonner: Abonner }) {
           </div>
         </>
       )}
-      {erreur && (
-        <p className="message message-erreur" role="alert">
-          {erreur}
-        </p>
-      )}
-      {resultat && <CarteResultat resultat={resultat} protege />}
+      <MessageErreur erreur={erreur} fichier={seulPdf ? fichiers[0] : null} />
+      {resultat && <CarteResultat resultat={resultat} protege={!resultat.nom.includes("(restreint)")} />}
+
+      <BonASavoir
+        points={[
+          "Le mot de passe ne quitte pas ton appareil et n'est gardé nulle part : note-le avant de fermer la page. Perdu, le fichier ne s'ouvre plus, pour personne.",
+          "Un PDF est chiffré tel quel ; tout autre fichier (ou plusieurs) est rangé dans un ZIP chiffré, à ouvrir avec 7-Zip, WinRAR, Keka ou The Unarchiver.",
+          "Pour transmettre le mot de passe, utilise un autre moyen que le fichier : un SMS si le fichier part par e-mail, par exemple.",
+          "Les restrictions d'un PDF (impression, copie) sont respectées par les lecteurs courants, mais ne remplacent pas un mot de passe d'ouverture.",
+        ]}
+      />
     </section>
   );
 }

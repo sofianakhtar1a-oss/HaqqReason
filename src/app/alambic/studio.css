@@ -1095,3 +1095,19 @@ textarea.alambic-signe-champ {
   background: #fff;
   border-radius: 0.6rem;
 }
+
+/* ---------- Protéger : autorisations ---------- */
+.alambic-autorisations {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+}
+.alambic-autorisations legend {
+  padding: 0 0.35rem;
+  font-weight: 600;
+}
+.alambic-mdp-champ[data-faux] {
+  border-color: var(--danger);
+}

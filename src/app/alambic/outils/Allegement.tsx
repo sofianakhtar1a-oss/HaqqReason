@@ -18,7 +18,7 @@ type Genre = "image" | "pdf" | "video" | "son" | "bureau";
 type Element = { id: string; fichier: File; format: string; genre: Genre };
 type Echec = { nom: string; message: string; fichier: File; protege: boolean };
 
-const GENRES: Record<string, Genre> = { jpg: "image", png: "image", webp: "image", bmp: "image", tiff: "image", pdf: "pdf", mp4: "video", webm: "video", mov: "video", mkv: "video", mp3: "son", wav: "son", ogg: "son", flac: "son", aac: "son", m4a: "son" };
+const GENRES: Record<string, Genre> = { jpg: "image", png: "image", webp: "image", bmp: "image", tiff: "image", heic: "image", avif: "image", pdf: "pdf", mp4: "video", webm: "video", mov: "video", mkv: "video", mp3: "son", wav: "son", ogg: "son", flac: "son", aac: "son", m4a: "son" };
 const genreDe = (format: string | null, nom: string): Genre | null => (format ? (GENRES[format] ?? (bureautique(format, nom) ? "bureau" : null)) : null);
 
 /** Ce que fait chaque niveau, pour les familles de fichiers présentes. */

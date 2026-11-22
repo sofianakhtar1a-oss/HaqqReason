@@ -10,7 +10,7 @@ import { useAccesComplet } from "@/lib/client/acces";
 import { BoutonInverser } from "./BoutonInverser";
 import { CarteResultat } from "./CarteResultat";
 import { ChampProtection } from "./ChampProtection";
-import { MessageErreur, reconnaitreTous } from "./commun";
+import { BonASavoir, MessageErreur, reconnaitreTous } from "./commun";
 import { useAlambic } from "./contexte";
 import { ConversionLot } from "./ConversionLot";
 import { useReception, type Abonner } from "./reception";
@@ -35,6 +35,8 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
   const [qualite, setQualite] = useState(0.8);
   const [qualiteMedia, setQualiteMedia] = useState<number | null>(null);
   const [separateur, setSeparateur] = useState<";" | ",">(";");
+  const [resolution, setResolution] = useState(144);
+  const [coteMax, setCoteMax] = useState(0);
   const [proteger, setProteger] = useState(false);
   const [motDePasse, setMotDePasse] = useState("");
   const [etat, setEtat] = useState<Etat>({ phase: "repos", avancement: null, etape: "" });
@@ -119,7 +121,7 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
     const avancer = (a: number | null, etape: string) => setEtat({ phase: "travail", avancement: a === null ? null : Math.max(0, Math.min(1, a)), etape });
     try {
       const { convertir: lancer, proteger: chiffrer } = await import("@/lib/alambic/navigateur/moteur");
-      let r = await lancer({ nom: fichier.name, blob: fichier, format: source }, cible, { qualite, qualiteMedia, separateur, signal: controleur.signal }, capacites, avancer);
+      let r = await lancer({ nom: fichier.name, blob: fichier, format: source }, cible, { qualite, qualiteMedia, separateur, signal: controleur.signal, resolution, coteMax: coteMax || undefined }, capacites, avancer);
       if (proteger && motDePasse) r = await chiffrer(r, motDePasse, avancer);
       setResultat(r);
       setEtat({ phase: "fini", avancement: 1, etape: "" });
@@ -267,6 +269,42 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
               </span>
             </div>
           )}
+          {v.moteur === "pdf-images" && (
+            <div className="alambic-option" role="radiogroup" aria-label="Netteté des images">
+              <span>Netteté</span>
+              <div className="alambic-segments">
+                {[
+                  [96, "Écran"],
+                  [144, "Standard"],
+                  [300, "Impression"],
+                ].map(([ppp, nom]) => (
+                  <button key={ppp} type="button" role="radio" aria-checked={resolution === ppp} onClick={() => setResolution(Number(ppp))}>
+                    {nom}
+                  </button>
+                ))}
+              </div>
+              <span className="w-full text-sm text-encre-douce">{resolution} points par pouce : {resolution >= 300 ? "net pour imprimer, mais lourd." : resolution <= 96 ? "léger, pour un écran ou un message." : "net à l'écran, raisonnable en poids."}</span>
+            </div>
+          )}
+          {v.moteur === "image" && (
+            <div className="alambic-option" role="radiogroup" aria-label="Taille de l'image">
+              <span>Taille</span>
+              <div className="alambic-segments">
+                {[
+                  [0, "D'origine"],
+                  [3840, "3 840 px"],
+                  [1920, "1 920 px"],
+                  [1280, "1 280 px"],
+                  [640, "640 px"],
+                ].map(([cote, nom]) => (
+                  <button key={cote} type="button" role="radio" aria-checked={coteMax === cote} onClick={() => setCoteMax(Number(cote))}>
+                    {nom}
+                  </button>
+                ))}
+              </div>
+              {coteMax > 0 && <span className="w-full text-sm text-encre-douce">Le plus grand côté ne dépassera pas {coteMax.toLocaleString("fr-FR")} pixels ; une image plus petite reste telle quelle.</span>}
+            </div>
+          )}
           {cible === "csv" && (
             <div className="alambic-option" role="radiogroup" aria-label="Séparateur">
               <span>Séparateur</span>
@@ -324,6 +362,14 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
           )}
         </CarteResultat>
       )}
+      <BonASavoir
+        points={[
+          "Le format d'arrivée le plus utile est proposé d'office ; les formats grisés disent pourquoi en un toucher.",
+          "Dépose plusieurs fichiers à la fois pour les convertir ensemble, puis tout télécharger en un ZIP.",
+          "Le sceau entre les deux formats inverse le sens : après une conversion, il repart du fichier obtenu.",
+          "Une photo de document peut devenir un Word ou un texte : son texte est lu sur ton appareil.",
+        ]}
+      />
     </section>
   );
 }

@@ -36,17 +36,17 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
 | 2 | Organiser un PDF : pivoter, réordonner, retirer, dupliquer, insérer une page blanche, ajouter un autre PDF | 9 | 8 |
 | 3 | Alléger : photos, PDF (images recompressées, texte gardé), vidéos, sons, Word/Excel/PowerPoint | 12 | 10 |
 | 4 | Filigraner et numéroter : aperçu en direct, préréglage « pièce d'identité », filigrane inséparable | 10 | 8 |
-| 5 | Signer et remplir : signature dessinée ou importée, texte, date, coche, champs de formulaire | 10 | 8 |
-| 6 | Déverrouiller : PDF et ZIP dont on connaît le mot de passe ; proposé par les autres outils | 6 | 5 |
+| 5 | Signer et remplir : signature dessinée ou importée, texte, date, coche, champs de formulaire | 10 | 9 |
+| 6 | Déverrouiller : PDF et ZIP dont on connaît le mot de passe ; proposé par les autres outils | 6 | 6 |
 | 7 | Nettoyer les traces : examiner puis effacer (JPEG, PNG, WebP, PDF, Word/Excel/PowerPoint, OpenDocument, MP3) | 10 | 9 |
 | 8 | Reconnaître le texte (OCR) : photos et PDF scannés → texte, Word, PDF cherchable ; dans Convertir aussi | 9 | 8 |
-| 9 | Convertir plusieurs fichiers d'un coup, tout télécharger en ZIP | 6 | 5 |
+| 9 | Convertir plusieurs fichiers d'un coup, tout télécharger en ZIP | 6 | 6 |
 | 10 | « Que veux-tu faire ? » : recherche par intention et recettes | 5 | 4 |
-| 11 | Améliorations des outils existants (Découper, Fusionner, Convertir, Protéger) | 10 | 3 |
-| 12 | Transcrire : exports Word, PDF, OpenDocument, EPUB, Markdown | 2 | 0 |
-| 13 | Aide « Bon à savoir », questions fréquentes, textes du mode créateur | 4 | 3 |
-| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 5 |
-| | **Total** | **120** | **87** |
+| 11 | Améliorations des outils existants (Découper, Fusionner, Convertir, Protéger) | 10 | 9 |
+| 12 | Transcrire : exports Word, PDF, OpenDocument, EPUB, Markdown | 2 | 2 |
+| 13 | Aide « Bon à savoir », questions fréquentes, textes du mode créateur | 4 | 4 |
+| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 6 |
+| | **Total** | **120** | **100** |
 
 ## Journal
 
@@ -59,3 +59,8 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   PDF cherchable ligne à ligne), Signer et remplir (champs de formulaire, signature dessinée ou
   photographiée, texte, date, coches), conversion de plusieurs fichiers d'un coup ; Convertir lit le
   texte des images, oriente les PDF scannés vers Reconnaître et les sons vers Transcrire.
+- 22 nov. 23 h 00 — troisième envoi : photos HEIC (lues par Safari) et AVIF ; Convertir règle la netteté
+  des pages et la taille des images ; Découper coupe toutes les N pages et enregistre l'image d'un
+  instant d'une vidéo ; Fusionner met les photos sur des pages A4, ajoute un signet par fichier et
+  numérote ; Protéger exige de retaper un mot de passe caché et règle les autorisations d'un PDF ;
+  Transcrire exporte en Word, OpenDocument, PDF et livre numérique ; « Bon à savoir » partout.

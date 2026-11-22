@@ -1,4 +1,5 @@
 /* Exports : texte propre, sous-titres SRT et WebVTT. Code pur, testé à part. */
+import type { Noeud } from "../pm";
 import { type Mot, type Phrase, type Transcription, texteDe } from "./types";
 
 const MAX_LIGNE = 42;
@@ -93,4 +94,24 @@ export function dureeLisible(s: number): string {
   const m = Math.floor((total % 3600) / 60);
   const sec = total % 60;
   return h ? `${h}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}` : `${m}:${String(sec).padStart(2, "0")}`;
+}
+
+/** La transcription en document (Word, PDF, livre numérique…) : un titre, puis les paragraphes ; la traduction en italique sous chacun. */
+export function versDocument(t: Pick<Transcription, "titre" | "phrases" | "traductions">, avecTraduction = false): Noeud {
+  const paragraphes = new Map<number, Phrase[]>();
+  for (const p of t.phrases) paragraphes.set(p.paragraphe, [...(paragraphes.get(p.paragraphe) ?? []), p]);
+  const content: Noeud[] = [{ type: "heading", attrs: { level: 2 }, content: [{ type: "text", text: t.titre || "Transcription" }] }];
+  for (const ps of paragraphes.values()) {
+    const original = ps.map(texteDe).join(" ").trim();
+    if (original) content.push({ type: "paragraph", content: [{ type: "text", text: original }] });
+    if (avecTraduction) {
+      const fr = ps
+        .map((p) => t.traductions[p.id])
+        .filter(Boolean)
+        .join(" ")
+        .trim();
+      if (fr) content.push({ type: "paragraph", content: [{ type: "text", text: fr, marks: [{ type: "italic" }] }] });
+    }
+  }
+  return { type: "doc", content };
 }

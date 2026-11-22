@@ -10,6 +10,7 @@ import { ecrireOrganise } from "../src/lib/alambic/organiser-pdf";
 import { accepte, bureautique, GROUPE_DE, GROUPES, parGroupes, TOUS_LES_OUTILS } from "../src/lib/alambic/outils";
 import { boiteVersPdf, borner, cadreUtile, detourerEncre, pointVersPdf, rectVersVisible, versRepereVisible } from "../src/lib/alambic/signature";
 import { verdict } from "../src/lib/alambic/graphe";
+import { versDocument } from "../src/lib/alambic/transcription/exports";
 import { deplacer, dupliquer, entrelacer, estIntacte, insererBlanche, inverser, pagesDe, pivoter, placeBlanche, retirer } from "../src/lib/alambic/pages";
 import { MODULES, resoudre } from "../src/lib/modules/modules";
 
@@ -135,6 +136,19 @@ ok("un son vers un document renvoie vers « Transcrire »", (() => {
   const v = verdict("mp3", "docx");
   return !v.possible && /Transcrire/.test(v.raison);
 })());
+
+// ---------------------------------------------------------------- transcription en document
+const transcription = {
+  titre: "Cours",
+  phrases: [
+    { id: 1, debut: 0, fin: 1, paragraphe: 0, mots: [{ t: "Hello", d: 0, f: 0.5 }, { t: "world.", d: 0.5, f: 1 }] },
+    { id: 2, debut: 1, fin: 2, paragraphe: 1, mots: [{ t: "Bye.", d: 1, f: 2 }] },
+  ],
+  traductions: { 1: "Bonjour le monde." } as Record<number, string>,
+};
+const docT = versDocument(transcription, true);
+ok("transcription → document : titre, paragraphes, traduction en italique", docT.content?.length === 4 && docT.content[0].type === "heading" && docT.content[2].content?.[0].marks?.[0].type === "italic" && docT.content[3].content?.[0].text === "Bye.", docT.content);
+ok("transcription → document sans traduction", versDocument(transcription).content?.length === 3);
 
 // ---------------------------------------------------------------- PDF réels : organiser, orphelins
 const source = await PDFDocument.create();

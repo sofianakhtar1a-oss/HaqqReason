@@ -11,7 +11,7 @@ import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, re
 import { useReception, type Abonner } from "../reception";
 import type { DocPdf } from "./VignettePdf";
 
-const IMAGES = new Set(["jpg", "png", "webp", "bmp", "tiff", "gif"]);
+const IMAGES = new Set(["jpg", "png", "webp", "bmp", "tiff", "gif", "heic", "avif"]);
 const COULEURS = [
   { v: "#6b7280", n: "Gris" },
   { v: "#c0392b", n: "Rouge" },

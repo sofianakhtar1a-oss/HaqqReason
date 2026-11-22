@@ -24,9 +24,16 @@ export function ChampProtection({
 }) {
   const [visible, setVisible] = useState(false);
   const [copie, setCopie] = useState(false);
+  // Ce qui est tapé ; l'outil ne reçoit le mot de passe qu'une fois confirmé (une faute de frappe
+  // dans un mot de passe caché rendrait le fichier impossible à rouvrir).
+  const [saisie, setSaisie] = useState(motDePasse);
+  const [confirmation, setConfirmation] = useState("");
+  const [genere, setGenere] = useState(false);
   const id = useId();
-  const force = useMemo(() => evaluer(motDePasse), [motDePasse]);
+  const force = useMemo(() => evaluer(saisie), [saisie]);
   const ouvert = toujours || actif;
+  const confirme = !saisie || visible || genere || confirmation === saisie;
+  const transmettre = (s: string, c: string, v: boolean, g: boolean) => onMotDePasse(!s || v || g || c === s ? s : "");
 
   return (
     <div className="alambic-protection" data-ouvert={ouvert || undefined}>
@@ -50,9 +57,11 @@ export function ChampProtection({
             <input
               id={id}
               type={visible ? "text" : "password"}
-              value={motDePasse}
+              value={saisie}
               onChange={(e) => {
-                onMotDePasse(e.target.value);
+                setSaisie(e.target.value);
+                setGenere(false);
+                transmettre(e.target.value, confirmation, visible, false);
                 setCopie(false);
               }}
               placeholder="Choisis un mot de passe"
@@ -60,7 +69,15 @@ export function ChampProtection({
               spellCheck={false}
               aria-describedby={`${id}-force`}
             />
-            <button type="button" className="bouton-icone !size-9" onClick={() => setVisible((v) => !v)} aria-label={visible ? "Cacher le mot de passe" : "Afficher le mot de passe"}>
+            <button
+              type="button"
+              className="bouton-icone !size-9"
+              onClick={() => {
+                setVisible(!visible);
+                transmettre(saisie, confirmation, !visible, genere);
+              }}
+              aria-label={visible ? "Cacher le mot de passe" : "Afficher le mot de passe"}
+            >
               {visible ? <EyeOff className="size-4" aria-hidden="true" /> : <Eye className="size-4" aria-hidden="true" />}
             </button>
             <button
@@ -69,8 +86,11 @@ export function ChampProtection({
               title="Générer un mot de passe très fort"
               aria-label="Générer un mot de passe très fort"
               onClick={() => {
-                onMotDePasse(genererMotDePasse(tirage));
+                const neuf = genererMotDePasse(tirage);
+                setSaisie(neuf);
+                setGenere(true);
                 setVisible(true);
+                onMotDePasse(neuf);
                 setCopie(false);
               }}
             >
@@ -79,12 +99,12 @@ export function ChampProtection({
             <button
               type="button"
               className="bouton-icone !size-9"
-              disabled={!motDePasse}
+              disabled={!saisie}
               aria-label="Copier le mot de passe"
               title="Copier"
               onClick={async () => {
                 try {
-                  await navigator.clipboard.writeText(motDePasse);
+                  await navigator.clipboard.writeText(saisie);
                   setCopie(true);
                 } catch {
                   setCopie(false);
@@ -95,13 +115,35 @@ export function ChampProtection({
             </button>
           </div>
 
-          <div id={`${id}-force`} className="alambic-force" data-niveau={motDePasse ? force.niveau : undefined} aria-live="polite">
+          {saisie && !visible && !genere && (
+            <div className="alambic-mdp-champ" data-faux={confirmation && confirmation !== saisie ? true : undefined}>
+              <KeyRound className="size-4 shrink-0 text-encre-douce" aria-hidden="true" />
+              <label htmlFor={`${id}-confirmation`} className="sr-only">
+                Confirme le mot de passe
+              </label>
+              <input
+                id={`${id}-confirmation`}
+                type="password"
+                value={confirmation}
+                onChange={(e) => {
+                  setConfirmation(e.target.value);
+                  transmettre(saisie, e.target.value, visible, genere);
+                }}
+                placeholder="Retape-le pour confirmer"
+                autoComplete="new-password"
+                spellCheck={false}
+              />
+              {confirme && <Check className="size-4 shrink-0 text-succes" aria-label="Les deux saisies sont identiques" />}
+            </div>
+          )}
+          {saisie && !confirme && confirmation && <p className="text-sm text-danger">Les deux saisies ne sont pas identiques.</p>}
+          <div id={`${id}-force`} className="alambic-force" data-niveau={saisie ? force.niveau : undefined} aria-live="polite">
             <div className="alambic-force-barres" aria-hidden="true">
               {[0, 1, 2, 3, 4].map((i) => (
-                <span key={i} data-allume={motDePasse && i <= force.niveau ? true : undefined} />
+                <span key={i} data-allume={saisie && i <= force.niveau ? true : undefined} />
               ))}
             </div>
-            {motDePasse ? (
+            {saisie ? (
               <p className="text-sm">
                 <strong>{force.libelle}.</strong> <span className="text-encre-douce">Temps estimé pour le deviner : {force.duree}.</span>
               </p>
