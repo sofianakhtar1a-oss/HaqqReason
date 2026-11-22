@@ -45,12 +45,12 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
 | 11 | Améliorations des outils existants (Découper, Fusionner, Convertir, Protéger) | 10 | 10 |
 | 12 | Transcrire : exports Word, PDF, OpenDocument, EPUB, Markdown | 2 | 2 |
 | 13 | Aide « Bon à savoir », questions fréquentes, textes du mode créateur | 4 | 4 |
-| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 14 |
+| 14 | Vérification : tests, typage, lint, build, parcours dans le navigateur, captures, relecture | 15 | 15 |
 | 15 | Corrections issues de la relecture du code (20 points vérifiés un à un) | 6 | 6 |
 | 16 | Masquer des informations : caches tracés ou posés d'un toucher, « Masquer partout », motifs prêts (e-mail, téléphone, IBAN, sécurité sociale, carte), lecture des scans, vérification du fichier produit | 12 | 12 |
 | 17 | Découper › « Ses images » : les photos et illustrations d'un PDF à leur qualité d'origine (JPEG tels quels, transparence gardée) | 4 | 4 |
 | 18 | Seconde relecture (Masquer, images d'un PDF) : fuite par les liens entre pages, champs de formulaire, motifs élargis, vérification plus stricte | 5 | 5 |
-| | **Total** | **147** | **146** |
+| | **Total** | **147** | **147** |
 
 ## Journal
 
@@ -87,3 +87,7 @@ Transcrire) ; tests, typage, lint et build avant chaque envoi.
   insécables, clé de sécurité sociale après un tiret ; vérification par recouvrement réel (97 %) ;
   pages mêlant texte et scan proposées à la lecture ; clavier limité au cache qui a le focus ;
   extraction : /Decode en RVB, doublons, CMJN et transparence signalés.
+- 23 nov. 00 h 03 — chantier terminé : 13 outils, 267 vérifications automatiques, parcours complets
+  dans le navigateur (ordinateur et téléphone, thèmes clair et sombre), mise en ligne confirmée.
+  Limite connue : les photos HEIC ne se lisent qu'avec Safari (aucun décodeur universel ajouté,
+  pour ne pas alourdir le site d'une bibliothèque sous licence LGPL).
