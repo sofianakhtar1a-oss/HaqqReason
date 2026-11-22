@@ -5,7 +5,7 @@
  * pour que le filigrane ne puisse pas être retiré) et sur des images.
  */
 import { degrees, rgb, StandardFonts, type PDFFont } from "@cantoo/pdf-lib";
-import { couleurRvb, departPdf, placerFiligrane, poseNumero, tailleVisible, type Pose, type ReglagesFiligrane, type ReglagesNumeros } from "../filigrane";
+import { couleurRvb, departPdf, posesMarquage, tailleVisible, type Pose, type ReglagesFiligrane, type ReglagesNumeros } from "../filigrane";
 import type { Resultat } from "./moteur";
 
 export type OptionsMarquage = {
@@ -53,12 +53,9 @@ function poser(ctx: Ctx, p: Pose, echelle: number, couleur: string, opacite: num
  * (en points pour un PDF, en pixels pour une image), à l'échelle donnée.
  */
 export function dessiner(ctx: Ctx, largeur: number, hauteur: number, index: number, total: number, o: Pick<OptionsMarquage, "filigrane" | "numeros">, echelle = 1) {
-  const mesure = mesureToile(ctx);
-  if (o.filigrane) for (const p of placerFiligrane(largeur, hauteur, o.filigrane, mesure)) poser(ctx, p, echelle, o.filigrane.couleur, o.filigrane.opacite);
-  if (o.numeros) {
-    const p = poseNumero(largeur, hauteur, index, total, o.numeros, mesure);
-    if (p) poser(ctx, p, echelle, NUMERO_COULEUR, 1);
-  }
+  const poses = posesMarquage(largeur, hauteur, index, total, o.filigrane, o.numeros, mesureToile(ctx));
+  if (o.filigrane) for (const p of poses.filigrane) poser(ctx, p, echelle, o.filigrane.couleur, o.filigrane.opacite);
+  if (poses.numero) poser(ctx, poses.numero, echelle, NUMERO_COULEUR, 1);
 }
 
 /** Les caractères que la police intégrée aux lecteurs PDF ne sait pas écrire (arabe, emoji…). */
@@ -131,11 +128,9 @@ export async function marquerPdf(fichier: Blob, nom: string, o: OptionsMarquage,
           const d = departPdf(p, largeur, boite.width, boite.height, rotation);
           page.drawText(p.texte, { x: d.x + boite.x, y: d.y + boite.y, size: p.taillePolice, font: police, color: couleur, opacity: opacite, rotate: degrees(d.angle) });
         };
-        if (o.filigrane) for (const p of placerFiligrane(lv, hv, o.filigrane, mesure)) ecrire(p, rgb(r, g, b), o.filigrane.opacite);
-        if (o.numeros) {
-          const p = poseNumero(lv, hv, i, pages.length, o.numeros, mesure);
-          if (p) ecrire(p, rgb(0.17, 0.18, 0.23), 1);
-        }
+        const poses = posesMarquage(lv, hv, i, pages.length, o.filigrane, o.numeros, mesure);
+        if (o.filigrane) for (const p of poses.filigrane) ecrire(p, rgb(r, g, b), o.filigrane.opacite);
+        if (poses.numero) ecrire(poses.numero, rgb(0.17, 0.18, 0.23), 1);
       });
       avancer(0.92, "Écriture du PDF");
       sortie = await doc.save();

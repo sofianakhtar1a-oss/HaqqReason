@@ -4,7 +4,7 @@
  */
 import { createRequire } from "node:module";
 import { dimensionsCibles, dimensionsVideo, defiltrerPng, retirerOrphelins, viserPoids } from "../src/lib/alambic/allegement";
-import { couleurRvb, departPdf, placerFiligrane, poseNumero, tailleVisible, texteIdentite, texteNumero, versRepereePdf } from "../src/lib/alambic/filigrane";
+import { couleurRvb, departPdf, placerFiligrane, poseNumero, posesMarquage, tailleVisible, texteIdentite, texteNumero, versRepereePdf } from "../src/lib/alambic/filigrane";
 import { chercherIntentions, INTENTIONS, POPULAIRES } from "../src/lib/alambic/intentions";
 import { ecrireOrganise } from "../src/lib/alambic/organiser-pdf";
 import { accepte, bureautique, GROUPE_DE, GROUPES, parGroupes, TOUS_LES_OUTILS } from "../src/lib/alambic/outils";
@@ -87,6 +87,10 @@ ok("pas de numéro sur la couverture, mais elle compte", poseNumero(595, 842, 0,
 ok("numéro en bas à droite, dans la page", (() => {
   const p = poseNumero(595, 842, 2, 5, { format: "page-n", position: "bas-droite", debut: 1, sansPremiere: false }, mesure)!;
   return p.x > 450 && p.x < 595 && p.y > 780 && p.y < 842;
+})());
+ok("un filigrane « en bas » remonte au-dessus d'un numéro en bas", (() => {
+  const m = posesMarquage(595, 842, 0, 3, { texte: "COPIE", disposition: "bas", couleur: "#000", opacite: 1, taille: 1 }, { format: "n", position: "bas-centre", debut: 1, sansPremiere: false }, mesure);
+  return m.numero !== null && m.filigrane[0].y < m.numero.y - m.numero.taillePolice * 1.5;
 })());
 ok("taille visible d'une page pivotée", tailleVisible(595, 842, 90).join() === "842,595" && tailleVisible(595, 842, 180).join() === "595,842");
 ok("repère du PDF sans rotation : y retourné", versRepereePdf(10, 20, 595, 842, 0).join() === "10,822");

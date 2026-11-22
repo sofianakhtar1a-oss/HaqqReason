@@ -116,6 +116,20 @@ export function poseNumero(largeur: number, hauteur: number, index: number, tota
   return { texte, x, y, angle: 0, taillePolice };
 }
 
+/**
+ * Filigrane et numéro d'une même page, sans qu'ils se chevauchent : un filigrane « en bas » remonte
+ * au-dessus d'un numéro placé en bas.
+ */
+export function posesMarquage(largeur: number, hauteur: number, index: number, total: number, filigrane: ReglagesFiligrane | null, numeros: ReglagesNumeros | null, mesurer: Mesure): { filigrane: Pose[]; numero: Pose | null } {
+  const numero = numeros ? poseNumero(largeur, hauteur, index, total, numeros, mesurer) : null;
+  let poses = filigrane ? placerFiligrane(largeur, hauteur, filigrane, mesurer) : [];
+  if (filigrane?.disposition === "bas" && numeros?.position.startsWith("bas")) {
+    const ecart = Math.max(6, Math.min(largeur, hauteur) * 0.0175) * 2.2;
+    poses = poses.map((p) => ({ ...p, y: p.y - ecart }));
+  }
+  return { filigrane: poses, numero };
+}
+
 /** Taille visible d'une page pivotée (90° ou 270° : largeur et hauteur s'échangent). */
 export function tailleVisible(largeur: number, hauteur: number, rotation: number): [number, number] {
   const r = ((rotation % 360) + 360) % 360;
