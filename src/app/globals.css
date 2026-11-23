@@ -3240,9 +3240,11 @@ a.carte-lien:hover .carte-lien-lecture {
   background: color-mix(in srgb, var(--danger) 12%, var(--fond));
 }
 @media (pointer: coarse) {
-  /* Au doigt, la poubelle flottante gêne plus qu'elle n'aide : le panneau du bloc suffit. */
+  /* Au doigt : la poubelle du bloc choisi, assez grande pour être touchée sans viser. */
   .bloc-poubelle {
-    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.8rem;
   }
 }
 

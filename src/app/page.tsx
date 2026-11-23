@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen, Heart, Lightbulb, MessagesSquare, Network, PenLine, Scale, Sparkles } from "lucide-react";
 import { BoutonTheme } from "@/components/BoutonTheme";
@@ -8,6 +9,10 @@ import { BoutonPauseScene } from "@/components/scene/BoutonPauseScene";
 import { Ciel } from "@/components/scene/Ciel";
 import { MarqueAccueil } from "@/lib/client/acces";
 import { googleConfigure } from "@/lib/compte/jeton";
+import { contenuAffiche } from "@/lib/modules/donnees";
+import { remplir } from "@/lib/modules/modules";
+import { chargerModule, chiffresVocabulaire } from "@/lib/modules/page";
+import { BandeauApercu } from "@/lib/modules/textes-client";
 
 /** Chaque lettre du titre se pose à son tour (les lecteurs d'écran lisent le mot entier). */
 function Lettres({ texte, depart = 0 }: { texte: string; depart?: number }) {
@@ -20,9 +25,40 @@ function Lettres({ texte, depart = 0 }: { texte: string; depart?: number }) {
 
 const delai = (secondes: number) => ({ "--delai": `${secondes}s` }) as React.CSSProperties;
 
-export default function Accueil() {
+type Props = { searchParams?: Promise<Record<string, string | string[] | undefined>> };
+
+/** La description pour les moteurs de recherche, choisie par le créateur (page d'entrée du site). */
+export async function generateMetadata(): Promise<Metadata> {
+  const resolu = await contenuAffiche("entree", false);
+  return { description: resolu.textes["meta.description"] };
+}
+
+export default async function Accueil({ searchParams }: Props) {
+  // Les textes sous le titre viennent du mode créateur (modifiables, masquables, supprimables).
+  const { resolu, apercu } = await chargerModule("entree", searchParams);
+  const textes = resolu.listes.textes ?? [];
+  const besoinChiffres = textes.some((t) => t.valeurs.texte?.includes("{mots}"));
+  const vars = besoinChiffres ? await chiffresVocabulaire().catch(() => ({ mots: "23 902", themes: 0 })) : undefined;
+  const soustitre = textes.find((t) => t.id === "soustitre")?.valeurs.texte;
+  const presentation = textes.find((t) => t.id === "presentation")?.valeurs.texte;
+  const ordre = textes.map((t) => t.id);
+  const blocSoustitre = soustitre ? (
+    <p key="soustitre" className="apparait mt-5 max-w-[30ch] font-display text-2xl font-medium leading-snug text-encre-douce md:text-[1.75rem]" style={delai(0.5)}>
+      {remplir(soustitre, vars)}
+    </p>
+  ) : null;
+  const blocPresentation = presentation ? (
+    <p key="presentation" className="apparait faits-accueil mt-5 max-w-[46ch] text-encre-douce" style={delai(0.65)}>
+      {remplir(presentation, vars)}
+    </p>
+  ) : null;
+  // Le trait doré sépare la phrase du texte ; il reste tant qu'au moins l'un des deux est affiché.
+  const trait = soustitre || presentation ? <span key="trait" className="trait-or" aria-hidden="true" /> : null;
+  const sousLeTitre = ordre.indexOf("presentation") < ordre.indexOf("soustitre") && presentation && soustitre ? [blocPresentation, trait, blocSoustitre] : [blocSoustitre, trait, blocPresentation];
+
   return (
     <main className="accueil relative flex flex-1 flex-col overflow-hidden">
+      {apercu && <BandeauApercu id="entree" />}
       <MarqueAccueil />
       <Ciel />
       <div className="apparait absolute right-5 top-5 z-10 flex gap-2 sm:right-8" style={delai(1.15)}>
@@ -44,15 +80,9 @@ export default function Accueil() {
               <span className="etincelle left-[1.1em] -top-[0.12em] scale-75" style={{ "--delai": "4.6s", "--cycle": "9s" } as React.CSSProperties} aria-hidden="true" />
             </span>
           </h1>
-          <p className="apparait mt-5 max-w-[30ch] font-display text-2xl font-medium leading-snug text-encre-douce md:text-[1.75rem]" style={delai(0.5)}>
-            La vérité de l&apos;islam, établie par la preuve et par la raison.
-          </p>
-          <span className="trait-or" aria-hidden="true" />
-          <p className="apparait faits-accueil mt-5 max-w-[46ch] text-encre-douce" style={delai(0.65)}>
-            Une bibliothèque d&apos;apologétique et trois ateliers : écrire, convertir ses fichiers, apprendre 23 902 mots d&apos;anglais du A1 au C2.
-          </p>
+          {sousLeTitre}
 
-          <nav aria-label="Choix du mode" className="mt-8 grid gap-4 sm:grid-cols-2">
+          <nav aria-label="Entrer" className="mt-8 grid max-w-md gap-4">
             <Link
               href="/utilisateur"
               className="verre carte-vivante apparait group rounded-3xl p-6 transition-colors hover:border-or"
@@ -71,21 +101,6 @@ export default function Accueil() {
                   ? "Écrire, apprendre, convertir ses fichiers, lire la bibliothèque. Avec ton compte Google : ton travail te suit partout."
                   : "Écrire, apprendre, convertir ses fichiers, ou lire la bibliothèque. Aucun mot de passe."}
               </span>
-            </Link>
-            <Link
-              href="/createur/connexion"
-              className="verre carte-vivante apparait group rounded-3xl p-6 transition-colors hover:border-or"
-              style={delai(0.9)}
-              data-inclinaison="8"
-              data-cible
-              data-accent="or"
-              data-portail="Mode créateur"
-              data-portail-sur="Espace protégé"
-            >
-              <span className="carte-lueur" aria-hidden="true" />
-              <PenLine className="carte-icone size-7 text-or" strokeWidth={1.5} aria-hidden="true" />
-              <span className="mt-4 block font-display text-xl font-bold">Mode créateur</span>
-              <span className="mt-1 block text-encre-douce">Écrire, organiser, publier. Protégé par mot de passe.</span>
             </Link>
           </nav>
           <nav aria-label="Outils" className="mt-6 flex flex-wrap gap-2">
@@ -124,6 +139,11 @@ export default function Accueil() {
           Conditions d&apos;utilisation
         </Link>
         <BoutonPauseScene />
+        {/* L'accès créateur reste là, mais discret : les visiteurs n'ont rien à y faire. */}
+        <Link href="/createur/connexion" className="lien-createur" data-cible>
+          <PenLine className="size-3.5" aria-hidden="true" />
+          Espace créateur
+        </Link>
       </nav>
     </main>
   );

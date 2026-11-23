@@ -25,7 +25,7 @@ export default async function EspaceCreateur() {
   const compte = await exigerCreateur();
   const [appareils, etats, contributions, articles] = await Promise.all([
     listerAppareils(),
-    resumeModules(["accueil", "calame", "alambic", "langues", "monde", "corps"]),
+    resumeModules(["entree", "accueil", "calame", "alambic", "langues", "monde", "corps"]),
     etatContributions(),
     Promise.all(
       (["preuves", "islam"] as const).map((e) =>
@@ -117,7 +117,16 @@ export default async function EspaceCreateur() {
           ))}
         </nav>
 
-        <Link href="/createur/module/accueil" className="verre mt-5 flex items-center gap-4 rounded-3xl p-5 hover:border-or">
+        <Link href="/createur/module/entree" className="verre mt-5 flex items-center gap-4 rounded-3xl p-5 hover:border-or">
+          <LayoutTemplate className="size-6 shrink-0 text-or" aria-hidden="true" />
+          <span className="min-w-0 flex-1">
+            <span className="block font-semibold">La page d&apos;entrée du site</span>
+            <span className="block text-sm text-encre-douce">La phrase sous « HaqqReason » et le texte sous le trait doré : les changer, les masquer ou les supprimer.</span>
+          </span>
+          <span className="text-sm font-semibold text-encre-douce">{statut("entree")}</span>
+        </Link>
+
+        <Link href="/createur/module/accueil" className="verre mt-3 flex items-center gap-4 rounded-3xl p-5 hover:border-or">
           <LayoutTemplate className="size-6 shrink-0 text-or" aria-hidden="true" />
           <span className="min-w-0 flex-1">
             <span className="block font-semibold">La page « Par où veux-tu commencer ? »</span>

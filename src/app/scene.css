@@ -1056,6 +1056,17 @@ html[data-scene-pause] :is(.atmosphere-nappe, .etincelle) {
 .pause-scene:active {
   transform: translateY(1px);
 }
+/* L'accès créateur : toujours là, mais en retrait (petit, pâle, au bout du pied de page). */
+.pied-accueil .lien-createur {
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: color-mix(in srgb, var(--encre-douce) 85%, transparent);
+  transition: color 0.2s ease;
+}
+.pied-accueil .lien-createur:hover,
+.pied-accueil .lien-createur:focus-visible {
+  color: var(--encre);
+}
 .faits-accueil {
   font-size: 1.0625rem;
   line-height: 1.55;

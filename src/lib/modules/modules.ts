@@ -12,8 +12,8 @@
 import { THEMES } from "@/lib/langues/themes/index";
 import type { Entree, Niveau, Theme } from "@/lib/langues/types";
 
-export type ModuleId = "accueil" | "calame" | "alambic" | "langues" | "monde" | "corps";
-export const IDS_MODULES: ModuleId[] = ["accueil", "calame", "alambic", "langues", "monde", "corps"];
+export type ModuleId = "entree" | "accueil" | "calame" | "alambic" | "langues" | "monde" | "corps";
+export const IDS_MODULES: ModuleId[] = ["entree", "accueil", "calame", "alambic", "langues", "monde", "corps"];
 
 export type Champ = { cle: string; libelle: string; defaut: string; long?: boolean; aide?: string; nombre?: { min: number; max: number } };
 export type Section = { titre: string; champs: Champ[] };
@@ -508,7 +508,42 @@ const CORPS: DefModule = {
   listes: [],
 };
 
-export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES, monde: MONDE, corps: CORPS };
+/** La toute première page du site (« / ») : la phrase sous « HaqqReason » et le texte sous le trait doré. */
+const ENTREE: DefModule = {
+  id: "entree",
+  nom: "Page d'entrée du site",
+  description: "La toute première page : la phrase sous « HaqqReason » et le texte sous le trait doré.",
+  adresse: "/",
+  accent: "or",
+  sections: [
+    {
+      titre: "Pour les moteurs de recherche",
+      champs: [
+        {
+          cle: "meta.description",
+          libelle: "Description pour Google",
+          defaut: "Bibliothèque d'apologétique islamique : la véracité de l'islam, la défense de l'islam et la réfutation des autres croyances.",
+          long: true,
+        },
+      ],
+    },
+  ],
+  listes: [
+    {
+      id: "textes",
+      titre: "Les textes sous le titre",
+      aide: "Change chaque texte, masque-le ou supprime-le : un texte supprimé va dans la corbeille du module, d'où tu peux le rétablir. Dans un texte, {mots} est remplacé par le nombre réel de mots du Truchement.",
+      nom: "nom",
+      champs: [{ cle: "texte", libelle: "Texte", long: true }],
+      elements: [
+        { id: "soustitre", valeurs: { nom: "Sous-titre (la grande phrase)", texte: "Pour toute personne qui cherche la vérité et veut se cultiver, musulmane ou non." } },
+        { id: "presentation", valeurs: { nom: "Texte sous le trait doré", texte: "Une bibliothèque d'apologétique et trois ateliers : écrire, convertir ses fichiers, apprendre {mots} mots d'anglais du A1 au C2." } },
+      ],
+    },
+  ],
+};
+
+export const MODULES: Record<ModuleId, DefModule> = { entree: ENTREE, accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES, monde: MONDE, corps: CORPS };
 export const estModule = (id: string): id is ModuleId => (IDS_MODULES as string[]).includes(id);
 
 export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart", "Clapperboard", "Coffee", "Cpu", "Factory", "Hammer", "Lightbulb", "MapPin", "Newspaper", "Plug", "ShieldCheck", "Sparkles", "Sprout", "Tent", "Trophy", "UserRound", "Vote", "Wallet", "Zap", "PersonStanding", "Shirt", "PawPrint", "Scale", "TrendingUp", "Brain", "Clock", "Puzzle", "Quote", "Link2", "Activity", "Palette", "Feather", "Blocks", "Shapes", "Gauge", "Gem"];

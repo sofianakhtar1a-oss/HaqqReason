@@ -3,7 +3,7 @@
 import type { Editor } from "@tiptap/core";
 import { NodeSelection } from "@tiptap/pm/state";
 import { useEditorState } from "@tiptap/react";
-import { Plus, Trash2 } from "lucide-react";
+import { Plus } from "lucide-react";
 import { useState } from "react";
 import { DEGRES_HADITH, ENCADRES, LARGEURS_IMAGE, lienSur } from "@/lib/document-schema";
 import { FAMILLES_SOPHISMES, SOPHISMES, sophismeParCle } from "@/lib/sophismes";
@@ -94,18 +94,6 @@ export function PanneauBloc({ editor }: { editor: Editor }) {
       })
       .run();
   };
-  const supprimer = () => {
-    editor
-      .chain()
-      .focus()
-      .command(({ tr }) => {
-        const noeud = tr.doc.nodeAt(bloc.pos);
-        if (!noeud) return false;
-        tr.delete(bloc.pos, bloc.pos + noeud.nodeSize);
-        return true;
-      })
-      .run();
-  };
   const a = (cle: string) => String(bloc.attrs[cle] ?? "");
 
   return (
@@ -123,7 +111,7 @@ export function PanneauBloc({ editor }: { editor: Editor }) {
       <h2 id="titre-bloc" className="text-lg font-bold">
         {NOMS[bloc.type]}
       </h2>
-      <p className="aide text-sm">Échap pour revenir au texte.</p>
+      <p className="aide text-sm">Échap pour revenir au texte. Pour retirer ce bloc : la petite poubelle, à son coin.</p>
 
       {bloc.type === "verset" && (
         <Champ
@@ -350,10 +338,6 @@ export function PanneauBloc({ editor }: { editor: Editor }) {
         </p>
       )}
 
-      <button type="button" className="bouton bouton-danger w-full !min-h-10" onClick={supprimer}>
-        <Trash2 className="size-4" aria-hidden="true" />
-        Supprimer ce bloc
-      </button>
     </section>
   );
 }
