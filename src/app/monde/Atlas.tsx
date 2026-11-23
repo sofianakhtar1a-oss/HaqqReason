@@ -3,6 +3,8 @@
 import { Search } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { MarquePremium } from "@/components/premium/MarquePremium";
+import { utiliser } from "@/lib/client/premium";
 import { CONTINENTS, formatPopulation, formatSuperficie, motCapitale, PAR_CODE } from "@/lib/monde/atlas";
 import { NOMBRE_PAYS } from "@/lib/monde/chiffres";
 import { PAYS } from "@/lib/monde/donnees";
@@ -39,11 +41,17 @@ export function Atlas({ ouvert, onOuvrir, aller }: { ouvert: string | null; onOu
       .sort((a, b) => (tri === "nom" ? collation.compare(a.nom, b.nom) : tri === "population" ? (b.population ?? -1) - (a.population ?? -1) : (b.superficie ?? -1) - (a.superficie ?? -1)));
   }, [requete, continent, statut, tri]);
 
+  /** Ouvrir la fiche d'un pays : une utilisation de l'atlas. */
+  const ouvrirFiche = async (code: string) => {
+    if (await utiliser("portulan.atlas")) onOuvrir(code);
+  };
+
   return (
     <div className="pt-atlas">
       <header className="pt-section-tete">
         <div>
           <h2 className="pt-titre">{t("atlas.titre")}</h2>
+          <MarquePremium fonction="portulan.atlas" />
           <p className="pt-chapo">{t("atlas.chapo", { pays: NOMBRE_PAYS })}</p>
         </div>
       </header>
@@ -92,7 +100,7 @@ export function Atlas({ ouvert, onOuvrir, aller }: { ouvert: string | null; onOu
       <ul className="pt-atlas-grille">
         {liste.map((p) => (
           <li key={p.code}>
-            <button type="button" className="pt-atlas-carte" onClick={() => onOuvrir(p.code)}>
+            <button type="button" className="pt-atlas-carte" onClick={() => void ouvrirFiche(p.code)}>
               <Drapeau code={p.code} />
               <span className="pt-atlas-nom">{p.nom}</span>
               <span className="pt-atlas-capitale">{p.capitale ? `${motCapitale(p)} : ${p.capitale}` : "—"}</span>
@@ -116,7 +124,8 @@ export function Atlas({ ouvert, onOuvrir, aller }: { ouvert: string | null; onOu
         <p>Les frontières suivent le tracé de Natural Earth, corrigé selon les positions de l&apos;ONU pour trois territoires : la Crimée est rattachée à l&apos;Ukraine, le plateau du Golan à la Syrie, et le Sahara occidental est dessiné en entier. Les capitales au statut contesté ne sont pas posées en question ; leur fiche explique pourquoi.</p>
       </footer>
 
-      {ouvert && PAR_CODE.has(ouvert) && <FenetreFiche code={ouvert} onFermer={() => onOuvrir(null)} onChoisir={(c) => {
+      {ouvert && PAR_CODE.has(ouvert) && <FenetreFiche code={ouvert} onFermer={() => onOuvrir(null)} onChoisir={async (c) => {
+        if (!(await utiliser("portulan.atlas"))) return;
         history.replaceState(null, "", `#atlas/${c}`);
         window.dispatchEvent(new HashChangeEvent("hashchange"));
       }} onCarte={(c) => aller(`carte/${c}`)} />}

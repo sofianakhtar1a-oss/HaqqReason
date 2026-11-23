@@ -2,6 +2,8 @@
 
 import { GraduationCap, Layers, Moon, Rotate3d, Settings, Sun, Trophy, Volume2, VolumeX } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
+import { utiliser } from "@/lib/client/premium";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { basculerTheme } from "@/components/BoutonTheme";
 import { Logo } from "@/components/Logo";
@@ -180,19 +182,45 @@ export function Ecorche() {
     window.addEventListener("popstate", retour);
     return () => window.removeEventListener("popstate", retour);
   }, []);
+  // Lancer une partie d'un jeu : une utilisation de « ecorche.jeux » (un seul appel à la fois si l'on touche deux fois).
+  const verifieJeu = useRef(false);
+  const autoriserJeu = useCallback(async () => {
+    if (verifieJeu.current) return false;
+    verifieJeu.current = true;
+    try {
+      return await utiliser("ecorche.jeux");
+    } finally {
+      verifieJeu.current = false;
+    }
+  }, []);
+  // Entrer dans l'explorateur 3D : une utilisation par ouverture de l'onglet (pas à chaque structure touchée).
+  const verifieExplorer = useRef(false);
+  useEffect(() => {
+    if (route.onglet !== "explorer") {
+      verifieExplorer.current = false;
+      return;
+    }
+    if (verifieExplorer.current) return;
+    verifieExplorer.current = true;
+    void utiliser("ecorche.explorer").then((ok) => {
+      if (!ok) aller("apprendre");
+    });
+  }, [route.onglet, aller]);
   const nav = useMemo<Navigation>(
     () => ({
       aller,
-      jouer: (l) => {
+      jouer: async (l) => {
+        if (!(await autoriserJeu())) return;
         ouvrirPartie();
         setPartie({ ...l, graine: l.graine ?? Date.now() % 1_000_000_007 });
       },
-      jeu: (j) => {
+      jeu: async (j) => {
+        if (!(await autoriserJeu())) return;
         ouvrirPartie();
         setJeu({ ...j, graine: j.graine ?? Date.now() % 1_000_000_007 });
       },
     }),
-    [aller, ouvrirPartie],
+    [aller, ouvrirPartie, autoriserJeu],
   );
 
   // Les réglages de lecture valent pour toute la page ; on les retire en partant.
@@ -209,7 +237,10 @@ export function Ecorche() {
 
   const enJeu = partie !== null || jeu !== null;
   const ecran = partie ? (
-    <Partie key={partie.graine} lancement={partie} stage={stage} fermer={fermerPartie} relancer={(l) => setPartie({ ...l, graine: Date.now() % 1_000_000_007 })} />
+    <Partie key={partie.graine} lancement={partie} stage={stage} fermer={fermerPartie} relancer={async (l) => {
+        if (!(await autoriserJeu())) return;
+        setPartie({ ...l, graine: Date.now() % 1_000_000_007 });
+      }} />
   ) : jeu ? (
     jeu.sorte === "nomme" ? (
       <NommeLesTous key={jeu.graine} jeu={jeu} stage={stage} fermer={fermerPartie} />
@@ -242,6 +273,8 @@ export function Ecorche() {
               <a key={id} href={`#${id}`} className="ec-onglet" aria-current={route.onglet === id ? "page" : undefined}>
                 <Icone size={17} aria-hidden="true" />
                 <span>{nom}</span>
+                {id === "explorer" && <MarquePremium fonction="ecorche.explorer" compacte />}
+                {id === "fiches" && <MarquePremium fonction="ecorche.fiches" compacte />}
               </a>
             ))}
           </nav>
@@ -321,6 +354,8 @@ export function Ecorche() {
             <a key={id} href={`#${id}`} className="ec-onglet" aria-current={route.onglet === id ? "page" : undefined}>
               <Icone size={20} aria-hidden="true" />
               <span>{nom}</span>
+              {id === "explorer" && <MarquePremium fonction="ecorche.explorer" compacte />}
+              {id === "fiches" && <MarquePremium fonction="ecorche.fiches" compacte />}
             </a>
           ))}
         </nav>

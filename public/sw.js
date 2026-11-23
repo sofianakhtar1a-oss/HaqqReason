@@ -41,8 +41,9 @@ const INTERDIT = /^\/(createur|api|fichiers|_next\/image|_next\/data)(\/|$)/;
 const PUBLIC = /^\/($|explorer|islam|debat|graphe|favoris|recherche|hors-ligne|langues|monde)/;
 /* Les fichiers du Portulan : drapeaux, emblèmes, cartes. Ils ne changent jamais d'adresse sans changer de nom. */
 const FICHIER_PORTULAN = /^\/monde\/.+\.(json|svg|webp|png)$/;
-/* Les histoires du Truchement : chaque version a son adresse (?v=…), une histoire ouverte se relit sans réseau. */
-const HISTOIRE = /^\/langues\/histoires\/[a-z0-9-]+\.json$/;
+/* Les histoires du Truchement : chaque version a son adresse (?v=…), une histoire ouverte se relit sans réseau.
+   Elles sont servies par le serveur après vérification des droits Premium ; un refus (402) n'est jamais gardé. */
+const HISTOIRE = /^\/api\/langues\/histoires\/[a-z0-9-]+$/;
 
 async function limiter(nom, max) {
   const cache = await caches.open(nom);
@@ -93,7 +94,9 @@ self.addEventListener("fetch", (e) => {
   const requete = e.request;
   if (requete.method !== "GET") return;
   const url = new URL(requete.url);
-  if (url.origin !== self.location.origin || INTERDIT.test(url.pathname)) return;
+  // Les histoires passent par /api/ (vérification des droits) mais se relisent hors ligne : seule exception.
+  const histoire = HISTOIRE.test(url.pathname) && url.searchParams.has("v");
+  if (url.origin !== self.location.origin || (!histoire && INTERDIT.test(url.pathname))) return;
 
   if (url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/icones/")) {
     e.respondWith(
@@ -110,7 +113,7 @@ self.addEventListener("fetch", (e) => {
   }
 
   // Une histoire : gardée seulement si c'est bien elle (jamais la page de connexion vers laquelle on a été renvoyé).
-  if (HISTOIRE.test(url.pathname) && url.searchParams.has("v")) {
+  if (histoire) {
     e.respondWith(
       caches.match(requete).then(
         (trouve) =>

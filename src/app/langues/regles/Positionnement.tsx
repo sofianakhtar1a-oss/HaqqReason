@@ -2,6 +2,7 @@
 
 import { ArrowLeft, BookOpen, Compass, LoaderCircle, Play, Sparkles } from "lucide-react";
 import { useState } from "react";
+import { utiliser } from "@/lib/client/premium";
 import { HISTOIRES } from "@/lib/langues/histoires/catalogue";
 import { exercicesDuNiveau, type ExerciceRange, melangerAvec } from "@/lib/regles/banque";
 import { NOMS_NIVEAUX, SECTIONS } from "@/lib/regles/index";
@@ -95,7 +96,11 @@ export function Positionnement({ onRetour, onOuvrir, onHistoires }: { onRetour: 
               {precedent.dernier ? ` (le ${new Date(precedent.dernier).toLocaleDateString("fr-FR", { day: "numeric", month: "long" })})` : ""}.
             </p>
           )}
-          <button type="button" className="bouton bouton-principal" disabled={charge} onClick={() => void ajouterBloc(DEPART, [])}>
+          <button type="button" className="bouton bouton-principal" disabled={charge} onClick={() =>
+              void utiliser("truchement.positionnement").then((ok) => {
+                if (ok) void ajouterBloc(DEPART, []);
+              })
+            }>
             {charge ? <LoaderCircle className="size-4 animate-spin" aria-hidden="true" /> : <Play className="size-4" fill="currentColor" aria-hidden="true" />}
             Commencer le test
           </button>

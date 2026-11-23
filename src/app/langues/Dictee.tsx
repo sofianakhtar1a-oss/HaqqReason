@@ -2,14 +2,14 @@
 
 import { ArrowLeft, ArrowRight, Check, Ear, Lightbulb, List, LoaderCircle, Play, RotateCcw, Shuffle, Turtle, Volume2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { chargerDictees, DICTEES_PAR_NIVEAU, type DicteeNumerotee, serieDicteeNumero } from "@/lib/langues/dictees";
-import { chargerHistoire, HISTOIRES } from "@/lib/langues/histoires/catalogue";
+import { MarquePremium } from "@/components/premium/MarquePremium";
+import { chargerDictee, chargerDictees, chargerSurprise, DICTEES_PAR_NIVEAU, type DicteeNumerotee, DicteeReservee, serieDicteeNumero, type TitreDictee } from "@/lib/langues/dictees";
+import { NOMBRE_PHRASES as PHRASES_SURPRISE } from "@/lib/langues/dictees/surprise";
 import { motsDe } from "@/lib/langues/histoires/texte";
 import { NIVEAUX, type Niveau } from "@/lib/langues/types";
 import { parler, taire, voixDisponible } from "@/lib/langues/voix";
 import { enregistrerSerie, useSuivi } from "@/lib/regles/suivi";
 import { differences } from "@/lib/regles/verifier";
-import { melanger } from "./regles/Exercices";
 import "./dictee.css";
 
 /*
@@ -19,37 +19,10 @@ import "./dictee.css";
  * hasard des histoires du niveau).
  */
 
-export const NOMBRE_PHRASES = 6;
-const LONGUEURS: Record<Niveau, [number, number]> = { A1: [4, 9], A2: [5, 11], B1: [6, 14], B2: [7, 16], C1: [8, 18], C2: [8, 20] };
+export const NOMBRE_PHRASES = PHRASES_SURPRISE;
 export const serieDictee = (niveau: Niveau) => `d:${niveau}`;
 
 type PhraseDictee = { en: string; fr: string };
-
-/** Une phrase à dicter : sans guillemets, sans nom propre difficile, sans chiffres ni tirets. */
-function phraseDictable(en: string) {
-  return !/[0-9—–()[\];:]/.test(en);
-}
-const nettoyer = (en: string) => en.replace(/[“”"‘]/g, "").replace(/’/g, "'").replace(/\s+/g, " ").trim();
-
-async function tirerPhrases(niveau: Niveau): Promise<PhraseDictee[]> {
-  const ids = HISTOIRES.filter((h) => h.niveau === niveau).map((h) => h.id);
-  const histoires = await Promise.all(ids.map((id) => chargerHistoire(id).catch(() => null)));
-  const [min, max] = LONGUEURS[niveau];
-  const candidates: PhraseDictee[] = [];
-  for (const h of histoires) {
-    if (!h) continue;
-    for (const page of h.pages)
-      for (const para of page.p)
-        for (const [en, fr, g] of para) {
-          const n = motsDe(en).length;
-          const nomPropre = g.some((k) => k !== null && h.gloses[k]?.[2] === "np");
-          if (n >= min && n <= max && !nomPropre && phraseDictable(en)) candidates.push({ en: nettoyer(en), fr });
-        }
-  }
-  const melangees = melanger(candidates);
-  const vues = new Set<string>();
-  return melangees.filter((p) => !vues.has(p.en) && vues.add(p.en)).slice(0, NOMBRE_PHRASES);
-}
 
 type Resultat = { ecrit: string; justes: number; total: number };
 
@@ -69,25 +42,34 @@ export function Dictee({ niveau, numero, onFermer, onOuvrirNumero }: { niveau: N
   const [termine, setTermine] = useState(false);
   const champ = useRef<HTMLTextAreaElement>(null);
   const voix = voixDisponible();
+  // La fermeture, gardée à part : la changer ne doit pas relancer le chargement (ni recompter une dictée).
+  const fermer = useRef(onFermer);
+  useEffect(() => {
+    fermer.current = onFermer;
+  }, [onFermer]);
 
   useEffect(() => {
     let vivant = true;
+    // Réservée à Premium (ou essais utilisés) : la fenêtre Premium est ouverte, on revient à la liste.
+    const refus = (e: unknown, message: string) => {
+      if (!vivant) return;
+      if (e instanceof DicteeReservee) fermer.current();
+      else setErreur(e instanceof Error && e.message ? e.message : message);
+    };
     if (numero) {
       // Une dictée numérotée : toujours le même texte, choisi dans la liste du niveau.
-      chargerDictees(niveau).then(
-        (liste) => {
+      chargerDictee(niveau, numero).then(
+        (d) => {
           if (!vivant) return;
-          const d = liste.find((x) => x.n === numero);
-          if (!d) return setErreur(`La dictée n° ${numero} du niveau ${niveau} n'existe pas.`);
           setFiche(d);
           setPhrases(d.phrases.map(([en, fr]) => ({ en, fr })));
         },
-        () => vivant && setErreur("La dictée n'a pas pu se charger. Vérifie ta connexion."),
+        (e) => refus(e, "La dictée n'a pas pu se charger. Vérifie ta connexion."),
       );
     } else
-      tirerPhrases(niveau).then(
+      chargerSurprise(niveau).then(
         (p) => vivant && (p.length ? setPhrases(p) : setErreur("Aucune phrase n'est disponible pour ce niveau.")),
-        () => vivant && setErreur("Les phrases n'ont pas pu se charger. Vérifie ta connexion."),
+        (e) => refus(e, "Les phrases n'ont pas pu se charger. Vérifie ta connexion."),
       );
     return () => {
       vivant = false;
@@ -365,7 +347,7 @@ const pourcent = (r?: { meilleur: number; total: number }) => (r ? Math.round((r
 export function ChoixDictee({ onOuvrir, niveauTest }: { onOuvrir: (niveau: Niveau, numero?: number) => void; niveauTest?: string }) {
   const { series } = useSuivi();
   const [niveau, setNiveau] = useState<Niveau>(() => niveauDeDepart(niveauTest));
-  const [liste, setListe] = useState<DicteeNumerotee[] | null>(null);
+  const [liste, setListe] = useState<TitreDictee[] | null>(null);
   const [vue, setVue] = useState<Niveau | null>(null);
 
   useEffect(() => {
@@ -421,10 +403,13 @@ export function ChoixDictee({ onOuvrir, niveauTest }: { onOuvrir: (niveau: Nivea
       </ul>
 
       <div className="dc-liste-tete">
-        <h4 className="dc-liste-titre">Niveau {niveau}</h4>
+        <h4 className="dc-liste-titre">
+          Niveau {niveau} <MarquePremium fonction="truchement.dictees" />
+        </h4>
         <button type="button" className="bouton dc-surprise" data-niveau={niveau} onClick={() => onOuvrir(niveau)}>
           <Shuffle className="size-4" aria-hidden="true" />
           Dictée surprise{surprise !== null ? ` · record ${surprise} %` : ""}
+          <MarquePremium fonction="truchement.dictee-surprise" />
         </button>
       </div>
       {!pret ? (

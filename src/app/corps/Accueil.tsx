@@ -2,6 +2,7 @@
 
 import { Activity, ChevronLeft, Crosshair, Flame, GraduationCap, Lock, Play, Shield, Snowflake, Sparkles, Target, Timer, Type, Zap } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
 import { CATEGORIES, type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, niveauxDe, titreDuJoueur } from "@/lib/corps/niveaux";
 import { aReviserAvant, etoiles, facettesDues, jourDeParis, maitrise, niveauCourant, niveauOuvert, niveauxReussis, useEcorche } from "@/lib/corps/progression";
@@ -79,6 +80,7 @@ function Vestibule({ stage, nav }: { stage: Stage; nav: Navigation }) {
         <button type="button" className="ec-bouton" onClick={() => nav.jouer({ sorte: "defi", titre: "Le défi du jour", jour })}>
           <Target size={16} aria-hidden="true" />
           {defiFait ? `Défi du jour : ${e.records[`defi:${jour}`]}/10` : "Le défi du jour"}
+          <MarquePremium fonction="ecorche.jeux" compacte />
         </button>
       </div>
 
@@ -123,31 +125,37 @@ function Vestibule({ stage, nav }: { stage: Stage; nav: Navigation }) {
           <button type="button" className="ec-rapide" onClick={() => nav.jouer({ sorte: "eclair", titre: "Éclair", categorie: "corps" })}>
             <Zap size={20} aria-hidden="true" />
             <b>Éclair</b>
+            <MarquePremium fonction="ecorche.jeux" compacte />
             <span>Une minute, le plus de bonnes réponses. {e.records.eclair ? `Record : ${e.records.eclair}` : ""}</span>
           </button>
           <button type="button" className="ec-rapide" onClick={() => nav.jouer({ sorte: "survie", titre: "Survie", categorie: "corps" })}>
             <Shield size={20} aria-hidden="true" />
             <b>Survie</b>
+            <MarquePremium fonction="ecorche.jeux" compacte />
             <span>Trois vies, des questions de plus en plus dures. {e.records.survie ? `Record : ${e.records.survie}` : ""}</span>
           </button>
           <button type="button" className="ec-rapide" onClick={() => nav.jouer({ sorte: "fonctions", titre: "Les fonctions", categorie: "corps" })}>
             <Activity size={20} aria-hidden="true" />
             <b>Les fonctions</b>
+            <MarquePremium fonction="ecorche.jeux" compacte />
             <span>Le geste d’un muscle, son nerf, le chemin du sang, le pouls, la clinique.</span>
           </button>
           <button type="button" className="ec-rapide" onClick={() => nav.jouer({ sorte: "examen", titre: "L'examen final" })}>
             <GraduationCap size={20} aria-hidden="true" />
             <b>L’examen final</b>
+            <MarquePremium fonction="ecorche.jeux" compacte />
             <span>Quarante questions sur tout le corps ; réussi à 80 %. {e.records.examen ? `Meilleur : ${e.records.examen} %` : ""}</span>
           </button>
           <button type="button" className="ec-rapide" onClick={() => nav.jeu({ sorte: "nomme", categorie: "muscles", grande: "membre-sup" })}>
             <Type size={20} aria-hidden="true" />
             <b>Nomme-les tous</b>
+            <MarquePremium fonction="ecorche.jeux" compacte />
             <span>Écris tous les noms d’une région avant la fin du temps.</span>
           </button>
           <button type="button" className="ec-rapide" onClick={() => nav.jeu({ sorte: "muet", categorie: "os", grande: "tronc" })}>
             <Crosshair size={20} aria-hidden="true" />
             <b>Le corps muet</b>
+            <MarquePremium fonction="ecorche.jeux" compacte />
             <span>Un nom, un toucher : retrouve chaque structure sur le corps.</span>
           </button>
         </div>
@@ -225,6 +233,7 @@ function Categorie({ stage, categorie, nav }: { stage: Stage; categorie: Categor
               <button type="button" className="ec-bouton est-plein est-grand" onClick={() => lancer(methode)}>
                 <Play size={17} aria-hidden="true" />
                 {etoiles(e, categorie, niv.n) > 0 ? "Rejouer la planche" : "Commencer la planche"}
+                <MarquePremium fonction="ecorche.jeux" compacte />
               </button>
               <label className="ec-champ">
                 <span>Méthode</span>
@@ -249,16 +258,16 @@ function Categorie({ stage, categorie, nav }: { stage: Stage; categorie: Categor
               <p className="ec-note">Ou, sur toute la couche :</p>
               <div className="ec-boutons">
                 <button type="button" className="ec-bouton" onClick={() => nav.jeu({ sorte: "muet", categorie: categorie as Jeu["categorie"], grande: REGIONS.find((r) => r.id === PAR_ID.get(niv.nouveaux[0])?.region)?.grande ?? "tronc" })}>
-                  <Crosshair size={15} aria-hidden="true" /> Le corps muet
+                  <Crosshair size={15} aria-hidden="true" /> Le corps muet <MarquePremium fonction="ecorche.jeux" compacte />
                 </button>
                 <button type="button" className="ec-bouton" onClick={() => nav.jeu({ sorte: "nomme", categorie: categorie as Jeu["categorie"], grande: REGIONS.find((r) => r.id === PAR_ID.get(niv.nouveaux[0])?.region)?.grande ?? "tronc" })}>
-                  <Type size={15} aria-hidden="true" /> Nomme-les tous
+                  <Type size={15} aria-hidden="true" /> Nomme-les tous <MarquePremium fonction="ecorche.jeux" compacte />
                 </button>
                 <button type="button" className="ec-bouton" onClick={() => nav.jouer({ sorte: "eclair", titre: `Éclair · ${def.nom}`, categorie })}>
-                  <Timer size={15} aria-hidden="true" /> Éclair
+                  <Timer size={15} aria-hidden="true" /> Éclair <MarquePremium fonction="ecorche.jeux" compacte />
                 </button>
                 <button type="button" className="ec-bouton" onClick={() => nav.jouer({ sorte: "fonctions", titre: `Les fonctions · ${def.nom}`, categorie })}>
-                  <Activity size={15} aria-hidden="true" /> Les fonctions
+                  <Activity size={15} aria-hidden="true" /> Les fonctions <MarquePremium fonction="ecorche.jeux" compacte />
                 </button>
               </div>
             </div>

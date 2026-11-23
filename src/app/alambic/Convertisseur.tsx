@@ -12,6 +12,8 @@ import { CarteResultat } from "./CarteResultat";
 import { ChampProtection } from "./ChampProtection";
 import { BonASavoir, MessageErreur, reconnaitreTous } from "./commun";
 import { useAlambic } from "./contexte";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { ConversionLot } from "./ConversionLot";
 import { useReception, type Abonner } from "./reception";
 import { ICONES, SelecteurFormat } from "./SelecteurFormat";
@@ -120,6 +122,7 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
 
   const convertir = async () => {
     if (!fichier || !source || !cible) return;
+    if (!(await utiliser("alambic.convertir"))) return;
     const controleur = new AbortController();
     annulation.current = controleur;
     setResultat(null);
@@ -346,6 +349,7 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
           <button type="button" className="bouton bouton-principal alambic-lancer" disabled={!fichier || !v?.possible || enCours || (proteger && !motDePasse)} onClick={() => void convertir()}>
             <Sparkles className="size-5" aria-hidden="true" />
             {cible && fichier ? `Convertir en ${format(cible).nom}` : "Convertir"}
+            <MarquePremium fonction="alambic.convertir" />
           </button>
         )}
         {documentSource && fichier && accesComplet && etat.phase !== "travail" && (

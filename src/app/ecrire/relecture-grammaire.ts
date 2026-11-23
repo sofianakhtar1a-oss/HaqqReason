@@ -2,6 +2,7 @@
 
 import type { Editor } from "@tiptap/core";
 import { useSyncExternalStore } from "react";
+import { utiliser } from "@/lib/client/premium";
 import { lirePreferences } from "@/lib/atelier/preferences";
 import { relireDocument, type Avancement } from "./extensions/grammaire";
 
@@ -45,6 +46,7 @@ export const etatRelecture = () => etat;
 /** Lance la relecture du document entier ou de la sélection. Renvoie le nombre de remarques (ou null). */
 export async function lancerRelecture(editor: Editor, portee: Portee, sansCitations: boolean): Promise<number | null> {
   if (etat.enCours) return null;
+  if (!(await utiliser("calame.grammaire"))) return null;
   const { from, to, empty } = editor.state.selection;
   const plage = portee === "selection" && !empty ? { de: from, a: to } : null;
   controleur = new AbortController();

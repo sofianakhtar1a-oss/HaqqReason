@@ -1,0 +1,695 @@
+/* =====================================================================
+   L'offre Premium : la feuille d'or.
+   Un or plus profond que celui du site, travaillé comme une dorure : un dégradé
+   qui va du blanc d'or à l'or bruni, et un reflet qui passe une fois, lentement.
+   ===================================================================== */
+
+:root,
+[data-theme="dark"] {
+  --or-premium-1: #fff3cf;
+  --or-premium-2: #f3d48a;
+  --or-premium-3: #e3b45c;
+  --or-premium-4: #b98a34;
+  --or-premium-5: #8c6420;
+  --or-premium-texte: #f0cd7d;
+  --or-premium-fond: rgba(233, 190, 106, 0.1);
+  --or-premium-trait: rgba(233, 190, 106, 0.5);
+  --sur-or-premium: #261a05;
+}
+[data-theme="light"] {
+  --or-premium-1: #e8c472;
+  --or-premium-2: #c99a3f;
+  --or-premium-3: #a87a1d;
+  --or-premium-4: #86600c;
+  --or-premium-5: #5e4206;
+  --or-premium-texte: #7a5508;
+  --or-premium-fond: rgba(168, 122, 29, 0.08);
+  --or-premium-trait: rgba(138, 94, 6, 0.45);
+  --sur-or-premium: #1f1503;
+}
+
+/* Les lettres d'or (« Accès premium ») */
+.texte-or {
+  background: linear-gradient(100deg, var(--or-premium-2), var(--or-premium-1) 30%, var(--or-premium-3) 55%, var(--or-premium-4) 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+[data-theme="light"] .texte-or {
+  background: linear-gradient(100deg, var(--or-premium-3), var(--or-premium-5) 45%, var(--or-premium-4));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* ---------- Dans l'en-tête : la pastille de l'abonné ---------- */
+.lien-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.75rem;
+  padding: 0.15rem 0.15rem 0.15rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--or-premium-trait);
+  background:
+    linear-gradient(110deg, transparent 40%, rgba(255, 246, 220, 0.18) 50%, transparent 60%) no-repeat 120% 0 / 250% 100%,
+    var(--or-premium-fond);
+  box-shadow: 0 0.4rem 1.6rem -0.9rem var(--or-premium-3);
+  text-decoration: none;
+  transition: background-position 0.9s ease, box-shadow 0.2s ease;
+}
+.lien-premium:hover,
+.lien-premium:focus-visible {
+  background-position: -20% 0, 0 0;
+  box-shadow: 0 0.6rem 2rem -0.8rem var(--or-premium-3);
+}
+.lien-premium[aria-current="page"] {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--or-premium-3) 30%, transparent);
+}
+.lien-premium-texte {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: var(--or-premium-texte);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .lien-premium-texte {
+    background: linear-gradient(100deg, var(--or-premium-2), var(--or-premium-1) 35%, var(--or-premium-3) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  [data-theme="light"] .lien-premium-texte {
+    background: linear-gradient(100deg, var(--or-premium-4), var(--or-premium-5) 50%, var(--or-premium-4));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+/* Un en-tête déjà plein : l'anneau d'or et la couronne seulement. Ceux des modules : le texte attend un très grand écran. */
+.lien-premium[data-texte="jamais"] {
+  padding: 0;
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+}
+.lien-premium[data-texte="jamais"] .lien-premium-texte {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+@media (max-width: 99.99rem) {
+  .lien-premium[data-texte="large"] {
+    padding: 0;
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+  }
+  .lien-premium[data-texte="large"] .lien-premium-texte {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}
+/* Sur un petit écran, la couronne et l'anneau d'or suffisent : le texte se lit dans « Mon compte ». */
+@media (max-width: 639px) {
+  .lien-premium {
+    padding: 0;
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+  }
+  .lien-premium-texte {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}
+.pastille-compte[data-premium] {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--fond), var(--fond)) padding-box,
+    conic-gradient(from 210deg, var(--or-premium-1), var(--or-premium-3), var(--or-premium-5), var(--or-premium-2), var(--or-premium-1)) border-box;
+  color: var(--or-premium-texte);
+}
+.pastille-couronne {
+  position: absolute;
+  top: -0.45rem;
+  right: -0.35rem;
+  display: grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: linear-gradient(140deg, var(--or-premium-1), var(--or-premium-3) 55%, var(--or-premium-4));
+  color: var(--sur-or-premium);
+  border: 2px solid var(--fond);
+}
+
+/* ---------- Le sceau à la couronne ---------- */
+.sceau-premium {
+  display: inline-grid;
+  place-items: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 999px;
+  color: var(--sur-or-premium);
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.7), transparent 40%),
+    linear-gradient(145deg, var(--or-premium-1), var(--or-premium-3) 50%, var(--or-premium-5));
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--or-premium-3) 16%, transparent),
+    0 1rem 2.5rem -1rem var(--or-premium-3);
+}
+
+/* ---------- Le bouton d'or plein ---------- */
+.bouton-premium {
+  background-color: var(--or-premium-3);
+  background-image:
+    linear-gradient(110deg, transparent 43%, rgba(255, 250, 238, 0.55) 50%, transparent 57%),
+    linear-gradient(135deg, var(--or-premium-2), var(--or-premium-3) 45%, var(--or-premium-4));
+  background-size: 250% 100%, 100% 100%;
+  background-position: 97% 0, 0 0;
+  color: var(--sur-or-premium);
+}
+.bouton-premium:hover:not(:disabled) {
+  background-position: 3% 0, 0 0;
+}
+
+/* ---------- Les petites marques (« Premium », « 2 sur 3 ») ---------- */
+.marque-premium,
+.marque-essais {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.marque-premium {
+  color: var(--sur-or-premium);
+  background: linear-gradient(135deg, var(--or-premium-2), var(--or-premium-3) 55%, var(--or-premium-4));
+}
+.marque-premium[data-epuise] {
+  filter: saturate(0.85);
+}
+.marque-essais {
+  color: var(--or-premium-texte);
+  border: 1px solid var(--or-premium-trait);
+  background: var(--or-premium-fond);
+}
+
+/* Dans un bouton d'or, la marque prend la couleur du texte du bouton (sinon l'or disparaîtrait sur l'or). */
+.bouton-principal .marque-essais,
+.bouton-principal .marque-premium {
+  border-color: transparent;
+  background: color-mix(in srgb, var(--sur-or, #1d1503) 14%, transparent);
+  color: inherit;
+}
+
+/* ---------- La fenêtre Premium ---------- */
+.fenetre-premium {
+  width: min(29rem, calc(100vw - 1.5rem));
+  max-height: calc(100dvh - 1.5rem);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border-radius: 1.4rem;
+  border: 1px solid var(--or-premium-trait);
+  background:
+    radial-gradient(26rem 14rem at 50% -4rem, color-mix(in srgb, var(--or-premium-3) 20%, transparent), transparent 70%),
+    var(--fond-haut);
+  color: var(--encre);
+  box-shadow: 0 2rem 5rem -1.5rem rgba(0, 0, 0, 0.6);
+}
+.fenetre-premium::backdrop {
+  background: rgba(5, 8, 25, 0.62);
+  backdrop-filter: blur(4px);
+}
+.fenetre-premium[open] {
+  animation: fenetre-premium-entree 0.32s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes fenetre-premium-entree {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.98);
+  }
+}
+.fenetre-premium-corps {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 0.9rem;
+  padding: 2rem 1.5rem 1.5rem;
+  text-align: center;
+}
+.fenetre-premium-fermer {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  color: var(--encre-douce);
+}
+.fenetre-premium-fermer:hover {
+  background: var(--surface-forte);
+  color: var(--encre);
+}
+.fenetre-premium-titre {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+.fenetre-premium-message {
+  max-width: 34ch;
+  color: var(--encre-douce);
+  text-wrap: pretty;
+}
+.fenetre-premium-prix {
+  max-width: 36ch;
+  font-size: 0.95rem;
+}
+.fenetre-premium-prix strong {
+  color: var(--or-premium-texte);
+  font-weight: 800;
+}
+.fenetre-premium-avantages {
+  display: grid;
+  gap: 0.45rem;
+  width: 100%;
+  max-width: 22rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: left;
+  font-size: 0.92rem;
+}
+.fenetre-premium-avantages li {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+}
+.fenetre-premium-avantages svg {
+  flex: none;
+  margin-top: 0.2rem;
+  color: var(--or-premium-texte);
+}
+.fenetre-premium-actions {
+  display: grid;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 22rem;
+  margin-top: 0.3rem;
+}
+
+/* ---------- Le grand badge (« Mon compte », page Premium) ---------- */
+.badge-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1rem 0.45rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--or-premium-trait);
+  background:
+    linear-gradient(110deg, transparent 38%, rgba(255, 246, 220, 0.22) 50%, transparent 62%) no-repeat -60% 0 / 250% 100%,
+    var(--or-premium-fond);
+  animation: badge-premium-reflet 5.5s ease-in-out 1.2s 1 both;
+}
+.badge-premium .sceau-premium {
+  width: 2.1rem;
+  height: 2.1rem;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--or-premium-3) 16%, transparent);
+}
+.badge-premium-texte {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+}
+@keyframes badge-premium-reflet {
+  from {
+    background-position: 160% 0, 0 0;
+  }
+  to {
+    background-position: -60% 0, 0 0;
+  }
+}
+
+/* ---------- La page Premium ---------- */
+.premium-entete {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.premium-entete h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+.premium-entete p {
+  max-width: 46ch;
+  font-size: 1.12rem;
+  color: var(--encre-douce);
+  text-wrap: pretty;
+}
+.premium-offres {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 720px) {
+  .premium-offres {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.offre-premium {
+  position: relative;
+  display: grid;
+  gap: 0.35rem;
+  padding: 1.4rem 3.2rem 1.3rem 1.4rem;
+  border-radius: 1.3rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+.offre-premium:hover {
+  border-color: var(--or-premium-trait);
+}
+.offre-premium:has(input:checked) {
+  border-color: var(--or-premium-3);
+  background:
+    radial-gradient(22rem 10rem at 100% 0, color-mix(in srgb, var(--or-premium-3) 16%, transparent), transparent 70%),
+    var(--surface-forte);
+  box-shadow: 0 0 0 1px var(--or-premium-3), 0 1.2rem 3rem -1.6rem var(--or-premium-3);
+}
+.offre-premium:has(input:focus-visible) {
+  outline: 2px solid var(--or);
+  outline-offset: 3px;
+}
+.offre-premium input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.offre-premium-nom {
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.offre-premium-prix {
+  font-family: var(--font-display);
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+.offre-premium-prix small {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.offre-premium-detail {
+  color: var(--encre-douce);
+  font-size: 0.95rem;
+}
+.offre-premium-gain {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.offre-premium-coche {
+  position: absolute;
+  bottom: 1.1rem;
+  right: 1.1rem;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--trait);
+  color: transparent;
+}
+.offre-premium:has(input:checked) .offre-premium-coche {
+  border-color: transparent;
+  background: linear-gradient(140deg, var(--or-premium-1), var(--or-premium-3) 55%, var(--or-premium-4));
+  color: var(--sur-or-premium);
+}
+.premium-consentements {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.premium-consentement {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.85rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.premium-consentement input {
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.15rem;
+  accent-color: var(--or-premium-3);
+}
+.premium-consentement a {
+  color: var(--or-premium-texte);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.premium-garanties {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: var(--encre-douce);
+  font-size: 0.9rem;
+}
+.premium-garanties li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.premium-garanties svg {
+  flex: none;
+  margin-top: 0.15rem;
+  color: var(--or-premium-texte);
+}
+
+/* Ce que chaque module offre, gratuit et Premium, en cartes (pas en tableau). */
+.premium-modules {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+@media (min-width: 860px) {
+  .premium-modules {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.premium-module {
+  padding: 1.2rem 1.25rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.premium-module h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.premium-parties {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+.premium-partie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.2rem 0.8rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--trait);
+  font-size: 0.93rem;
+}
+.premium-partie-regles {
+  display: grid;
+  justify-items: end;
+  text-align: right;
+}
+.premium-partie-gratuit {
+  color: var(--encre-douce);
+}
+.premium-partie-premium {
+  font-weight: 700;
+  color: var(--or-premium-texte);
+}
+
+/* ---------- Mouvements réduits : l'or reste, le reflet ne passe plus ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .lien-premium,
+  .offre-premium,
+  .bouton-premium {
+    transition: none;
+  }
+  .badge-premium,
+  .fenetre-premium[open] {
+    animation: none;
+  }
+}
+html[data-scene-pause] .badge-premium {
+  animation: none;
+}
+
+/* ---------- Couleurs forcées (contraste élevé du système) ---------- */
+@media (forced-colors: active) {
+  .texte-or,
+  .lien-premium-texte {
+    background: none;
+    color: CanvasText;
+  }
+  .marque-premium,
+  .sceau-premium,
+  .pastille-couronne {
+    forced-color-adjust: none;
+    background: Highlight;
+    color: HighlightText;
+  }
+}
+
+/* ---------- Le panneau du créateur ---------- */
+.reglage-premium-module {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.reglage-premium-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.reglage-premium-mode {
+  position: relative;
+  display: inline-flex;
+}
+.reglage-premium-mode input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.reglage-premium-mode span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.reglage-premium-mode input:checked + span {
+  border-color: var(--or-premium-3);
+  background: var(--or-premium-fond);
+  color: var(--or-premium-texte);
+  box-shadow: inset 0 0 0 1px var(--or-premium-3);
+}
+.reglage-premium-mode input:focus-visible + span {
+  outline: 2px solid var(--or);
+  outline-offset: 2px;
+}
+.reglage-premium-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.reglage-premium-ligne > div:first-child {
+  flex: 1 1 16rem;
+}
+.reglage-premium-controles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.reglage-premium-controles {
+  justify-content: flex-end;
+}
+.reglage-premium-controles .champ {
+  width: auto;
+  min-height: 2.5rem;
+  padding-block: 0.35rem;
+}
+.reglage-premium-controles select.champ {
+  min-width: 9.75rem;
+}
+.reglage-premium-controles input.champ {
+  width: 4.75rem;
+  min-width: 0;
+}
+.reglage-premium-barre {
+  position: sticky;
+  bottom: 0.75rem;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond-haut) 88%, transparent);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1rem 2.5rem -1.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* Les questions de la page Premium : légères, elles s'ouvrent à la demande. */
+.premium-question {
+  padding: 0.95rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.premium-question summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.premium-question[open] summary {
+  color: var(--or-premium-texte);
+}

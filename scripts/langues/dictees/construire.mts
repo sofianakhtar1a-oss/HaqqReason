@@ -1,5 +1,6 @@
 /*
- * Range les dictées contrôlées dans le site : src/lib/langues/dictees/<niveau>.json
+ * Range les dictées contrôlées dans le site : donnees/langues/dictees/<niveau>.json
+ * (hors du dossier public : servies par /api/langues/dictees/…, après vérification des droits Premium)
  * (forme compacte : [anglais, traduction] pour chaque phrase). Un niveau qui ne passe pas le
  * contrôle n'est pas rangé.
  *   npx tsx scripts/langues/dictees/construire.mts
@@ -19,6 +20,6 @@ for (const niveau of NIVEAUX) {
   }
   const f = JSON.parse(readFileSync(`${DOSSIER}/sortie/${niveau}.json`, "utf8")) as FichierDictees;
   const site = f.dictees.map((d) => ({ n: d.n, titre: d.titre.trim(), piege: d.piege.trim(), phrases: d.phrases.map((ph) => [ph.en.trim(), ph.fr.trim()]) }));
-  writeFileSync(`src/lib/langues/dictees/${niveau}.json`, `${JSON.stringify(site)}\n`);
+  writeFileSync(`donnees/langues/dictees/${niveau}.json`, `${JSON.stringify(site)}\n`);
   console.log(`RANGÉ ${niveau} : ${r.dictees} dictées, ${r.mots} mots`);
 }

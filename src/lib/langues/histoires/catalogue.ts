@@ -1,3 +1,4 @@
+import { refusPremium } from "@/lib/client/premium";
 import type { Exercice } from "@/lib/regles/types";
 import type { Niveau } from "../types";
 import donnees from "./catalogue.json";
@@ -5,7 +6,8 @@ import type { Glose } from "./texte";
 
 /*
  * La bibliothèque des histoires : les fiches (titre, niveau, résumé, taille), toujours présentes,
- * et le texte de chaque histoire (public/langues/histoires/<id>.json), chargé quand on l'ouvre.
+ * et le texte de chaque histoire (donnees/langues/histoires/<id>.json, servi par
+ * /api/langues/histoires/<id> après vérification des droits Premium), chargé quand on l'ouvre.
  * Fabriquées par scripts/langues/histoires/ (consignes, contrôle, construction).
  */
 
@@ -45,13 +47,23 @@ export const ficheHistoire = (id: string) => HISTOIRES.find((h) => h.id === id);
 
 const chargees = new Map<string, Promise<Histoire>>();
 
+/** Refus Premium : l'histoire est réservée, ou les essais gratuits de la période sont utilisés. */
+export class HistoireReservee extends Error {
+  constructor() {
+    super("Cette histoire fait partie de l'accès Premium.");
+    this.name = "HistoireReservee";
+  }
+}
+
 /** Le texte d'une histoire ; une seule demande par visite (puis le cache du navigateur prend le relais). */
 export function chargerHistoire(id: string): Promise<Histoire> {
   const fiche = ficheHistoire(id);
   if (!fiche) return Promise.reject(new Error("Cette histoire n'existe pas."));
   let p = chargees.get(id);
   if (!p) {
-    p = fetch(`/langues/histoires/${id}.json?v=${fiche.version}`).then(async (r) => {
+    p = fetch(`/api/langues/histoires/${encodeURIComponent(id)}?v=${fiche.version}`, { credentials: "same-origin" }).then(async (r) => {
+      // Réservée : la fenêtre Premium s'ouvre (elle dit pourquoi et quand les essais reviennent).
+      if (await refusPremium(r)) throw new HistoireReservee();
       if (!r.ok) throw new Error("L'histoire n'a pas pu se charger. Vérifie ta connexion.");
       return (await r.json()) as Histoire;
     });

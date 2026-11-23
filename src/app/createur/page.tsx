@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BarChart3, BookOpen, BookOpenText, Compass, Eye, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench, PersonStanding } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, BookOpenText, Compass, Crown, Eye, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench, PersonStanding } from "lucide-react";
 import { listerAppareils } from "@/lib/appareils";
 import { etatContributions } from "@/lib/contributions/donnees";
 import { resumeModules } from "@/lib/modules/donnees";
+import { lireConfigPremium, offreActive } from "@/lib/premium/config";
 import { exigerCreateur } from "@/lib/session";
 import { dbAdmin } from "@/lib/supabase";
 import { confirmerAppareil, signalerAppareil } from "./actions";
@@ -34,6 +35,9 @@ export default async function EspaceCreateur() {
     ),
   ]);
   const parEspace = { preuves: articles[0].count ?? 0, islam: articles[1].count ?? 0 };
+  const configPremium = await lireConfigPremium();
+  const premiumAllume = configPremium.active;
+  const premiumEnService = await offreActive(configPremium);
   const nbArticles = (n: number) => `${n} article${n > 1 ? "s" : ""}`;
   const inconnus = appareils.filter((a) => !a.confirme);
 
@@ -133,6 +137,17 @@ export default async function EspaceCreateur() {
             <span className="block text-sm text-encre-douce">Son titre, son introduction, et la carte de chaque espace (texte, ordre, présence).</span>
           </span>
           <span className="text-sm font-semibold text-encre-douce">{statut("accueil")}</span>
+        </Link>
+
+        <Link href="/createur/premium" className="verre mt-3 flex items-center gap-4 rounded-3xl p-5 hover:border-or">
+          <span className="sceau-premium shrink-0" style={{ width: "2.6rem", height: "2.6rem" }} aria-hidden="true">
+            <Crown className="size-5" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block font-semibold">L&apos;offre Premium</span>
+            <span className="block text-sm text-encre-douce">Les prix, ce qui est gratuit, limité ou réservé dans chaque module, les comptes offerts, les abonnés.</span>
+          </span>
+          <span className="text-sm font-semibold text-encre-douce">{premiumEnService ? "En service" : premiumAllume ? "En attente" : "Éteinte"}</span>
         </Link>
 
         <nav aria-label="Réglages du site" className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

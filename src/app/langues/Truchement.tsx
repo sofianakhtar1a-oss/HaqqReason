@@ -8,6 +8,7 @@ import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
 import { useAccesComplet } from "@/lib/client/acces";
+import { utiliser } from "@/lib/client/premium";
 import { mouvementReduit } from "@/lib/langues/feux";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
@@ -160,9 +161,35 @@ export function Truchement() {
     [aller],
   );
   const ouvrirTheme = useCallback((id: string | null) => detail("vocabulaire")(id), [detail]);
-  const ouvrirMedia = useCallback((id: string | null) => detail("ecouter")(id), [detail]);
-  const ouvrirDocument = useCallback((id: string | null) => detail("lire")(id), [detail]);
-  const ouvrirRegles = useCallback((id: string | null) => detail("regles")(id), [detail]);
+  /*
+   * L'offre Premium : ouvrir une vidéo ou un son en immersion, un PDF à lire, ou une leçon des règles
+   * demande d'abord au serveur (qui compte les parties limitées). Les dictées et les histoires sont
+   * vérifiées par le serveur lui-même, au moment où il envoie leur texte.
+   */
+  const ouvrirMedia = useCallback(
+    (id: string | null) => {
+      if (id && !id.startsWith("dictee/")) void utiliser("truchement.immersion", id).then((ok) => ok && detail("ecouter")(id));
+      else detail("ecouter")(id);
+    },
+    [detail],
+  );
+  const ouvrirDocument = useCallback(
+    (id: string | null) => {
+      if (id && !id.startsWith("histoire/")) void utiliser("truchement.lire", id).then((ok) => ok && detail("lire")(id));
+      else detail("lire")(id);
+    },
+    [detail],
+  );
+  const ouvrirRegles = useCallback(
+    (id: string | null) => {
+      // Une leçon (section/leçon) ; la carte d'une section, les examens et le test de niveau ont leur propre règle.
+      if (id && id.includes("/")) void utiliser("truchement.regles").then((ok) => ok && detail("regles")(id));
+      else detail("regles")(id);
+    },
+    [detail],
+  );
+  const lancerSeance = useCallback((l: Lancement) => void utiliser("truchement.vocabulaire").then((ok) => ok && setSeance(l)), []);
+  const lancerRevision = useCallback((l: Lancement) => void utiliser("truchement.dictionnaire").then((ok) => ok && setSeance(l)), []);
   /** Dans les Règles, passer d'une leçon à la carte ou à la leçon suivante remplace l'écran au lieu de l'empiler. */
   const remplacerRegles = useCallback(
     (chemin: string) => {
@@ -215,11 +242,11 @@ export function Truchement() {
           <div className="lg-chargement" aria-hidden="true" />
         ) : (
           <>
-            {route.onglet === "accueil" && <Accueil lancer={setSeance} aller={aller} />}
-            {route.onglet === "vocabulaire" && <Vocabulaire themeId={route.detail} onOuvrir={ouvrirTheme} lancer={setSeance} />}
+            {route.onglet === "accueil" && <Accueil lancer={lancerSeance} aller={aller} />}
+            {route.onglet === "vocabulaire" && <Vocabulaire themeId={route.detail} onOuvrir={ouvrirTheme} lancer={lancerSeance} />}
             {route.onglet === "ecouter" && <Ecouter ouvert={route.detail} onOuvrir={ouvrirMedia} />}
             {route.onglet === "lire" && <Lire ouvert={route.detail} onOuvrir={ouvrirDocument} />}
-            {route.onglet === "dictionnaire" && <Dictionnaire lancer={setSeance} />}
+            {route.onglet === "dictionnaire" && <Dictionnaire lancer={lancerRevision} />}
             {route.onglet === "regles" && <Regles detail={route.detail} onOuvrir={ouvrirRegles} onRemplacer={remplacerRegles} />}
           </>
         )}

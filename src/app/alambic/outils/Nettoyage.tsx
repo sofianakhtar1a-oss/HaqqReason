@@ -9,6 +9,8 @@ import type { Examen } from "@/lib/alambic/traces";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
 import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, sansExtension, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 import { ICONES } from "../SelecteurFormat";
 
@@ -64,8 +66,9 @@ export function Nettoyage({ abonner }: { abonner: Abonner }) {
   const totalTraces = aNettoyer.reduce((s, e) => s + (e.examen?.traces.length ?? 0), 0);
   const examensFinis = elements.every((e) => e.examen);
 
-  const nettoyerTout = () =>
-    lancer(async (avancer, signal) => {
+  const nettoyerTout = async () => {
+    if (!(await utiliser("alambic.nettoyer"))) return;
+    await lancer(async (avancer, signal) => {
       setResultats([]);
       setEchecs([]);
       const { nettoyer } = await import("@/lib/alambic/traces");
@@ -89,6 +92,7 @@ export function Nettoyage({ abonner }: { abonner: Abonner }) {
       setResultats(faits);
       setEchecs(rates);
     });
+  };
 
   const enCours = travail !== null;
 
@@ -189,6 +193,7 @@ export function Nettoyage({ abonner }: { abonner: Abonner }) {
             <button type="button" className="bouton bouton-principal alambic-lancer" onClick={() => void nettoyerTout()}>
               <Eraser className="size-5" aria-hidden="true" />
               {aNettoyer.length > 1 ? `Effacer les ${totalTraces} traces des ${aNettoyer.length} fichiers` : `Effacer ${totalTraces > 1 ? `les ${totalTraces} traces` : "la trace"}`}
+              <MarquePremium fonction="alambic.nettoyer" />
             </button>
           ) : (
             <p className="message message-succes">Rien à effacer : ces fichiers ne contiennent aucune trace connue.</p>

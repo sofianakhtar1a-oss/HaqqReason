@@ -11,6 +11,8 @@ import { deplacer, dupliquer, estIntacte, insererBlanche, inverser, pagesDe, piv
 import { CarteResultat } from "../CarteResultat";
 import { ChampProtection } from "../ChampProtection";
 import { BonASavoir, EnTeteOutil, MessageErreur, Progression, reconnaitreTous, resultatDe, sansExtension, useTravail, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 import { VignettePdf, type DocPdf } from "./VignettePdf";
 
@@ -220,8 +222,9 @@ export function Organisation({ abonner }: { abonner: Abonner }) {
     modifier(insererBlanche(pages, place, taille));
   };
 
-  const enregistrer = () =>
-    lancer(async (avancer) => {
+  const enregistrer = async () => {
+    if (!(await utiliser("alambic.organiser"))) return;
+    await lancer(async (avancer) => {
       setResultat(null);
       const [{ charger }, { ecrireOrganise }] = await Promise.all([import("@/lib/alambic/navigateur/pdf"), import("@/lib/alambic/organiser-pdf")]);
       const utilisees = sources.filter((s) => pages.some((p) => p.source === s.id));
@@ -240,6 +243,7 @@ export function Organisation({ abonner }: { abonner: Abonner }) {
       }
       setResultat(r);
     });
+  };
 
   const docDe = (p: PageOrdonnee) => (p.source ? (sources.find((s) => s.id === p.source)?.doc ?? null) : null);
   const n = choisies.size;
@@ -358,6 +362,7 @@ export function Organisation({ abonner }: { abonner: Abonner }) {
               <button type="button" className="bouton bouton-principal alambic-lancer" onClick={() => void enregistrer()} disabled={(proteger && !motDePasse) || (intacte && !proteger)}>
                 <Save className="size-5" aria-hidden="true" />
                 {intacte && !proteger ? "Aucune modification pour l'instant" : `Enregistrer le PDF (${pages.length} page${pages.length > 1 ? "s" : ""})`}
+                <MarquePremium fonction="alambic.organiser" />
               </button>
             )}
           </div>

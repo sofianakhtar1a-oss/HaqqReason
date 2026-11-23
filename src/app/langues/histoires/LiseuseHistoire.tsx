@@ -1,10 +1,10 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, BookmarkCheck, BookmarkPlus, CircleHelp, Languages, LoaderCircle, Minus, Plus, Square, Turtle, Volume2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookmarkCheck, BookmarkPlus, CircleHelp, Crown, Languages, LoaderCircle, Minus, Plus, Square, Turtle, Volume2 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Analyse, Phrase } from "@/lib/alambic/transcription/types";
 import { idMot, nouveauMot } from "@/lib/langues/dictionnaire";
-import { chargerHistoire, ficheHistoire, HISTOIRES, type Histoire, type PhraseHistoire } from "@/lib/langues/histoires/catalogue";
+import { chargerHistoire, ficheHistoire, HISTOIRES, type Histoire, HistoireReservee, type PhraseHistoire } from "@/lib/langues/histoires/catalogue";
 import { noterFin, noterPage, noterQuiz, useLectures, valeurLocale } from "@/lib/langues/histoires/progression";
 import { motsDe, NATURES_GLOSE } from "@/lib/langues/histoires/texte";
 import type { OrigineMot } from "@/lib/langues/types";
@@ -42,6 +42,7 @@ export function LiseuseHistoire({ id, onFermer, onOuvrir }: { id: string; onFerm
   const fiche = ficheHistoire(id);
   const [h, setH] = useState<Histoire | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
+  const [reservee, setReservee] = useState(false);
   const [essai, setEssai] = useState(0);
   const [page, setPage] = useState(() => Math.max(0, (valeurLocale(id)?.page ?? 1) - 1));
   const [vue, setVue] = useState<Vue>("lecture");
@@ -67,7 +68,12 @@ export function LiseuseHistoire({ id, onFermer, onOuvrir }: { id: string; onFerm
         setErreur(null);
         setPage((p) => Math.min(p, x.pages.length - 1));
       },
-      (e: unknown) => vivant && setErreur(e instanceof Error ? e.message : "L'histoire n'a pas pu se charger."),
+      (e: unknown) => {
+        if (!vivant) return;
+        // Réservée à Premium (ou essais du mois utilisés) : la fenêtre Premium vient de s'ouvrir.
+        if (e instanceof HistoireReservee) setReservee(true);
+        else setErreur(e instanceof Error ? e.message : "L'histoire n'a pas pu se charger.");
+      },
     );
     return () => {
       vivant = false;
@@ -277,7 +283,23 @@ export function LiseuseHistoire({ id, onFermer, onOuvrir }: { id: string; onFerm
       </EnTete>
       <span className="hs-avancee" style={{ "--p": `${((page + 1) / total) * 100}%` } as React.CSSProperties} aria-hidden="true" />
 
-      {erreur ? (
+      {reservee ? (
+        <div className="hs-erreur" role="status">
+          <span className="sceau-premium" aria-hidden="true">
+            <Crown className="size-6" />
+          </span>
+          <p>Cette histoire fait partie de l&apos;accès Premium.</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a className="bouton bouton-principal bouton-premium" href={`/premium?depuis=${fiche.niveau.startsWith("B") ? "truchement.histoires-b" : fiche.niveau.startsWith("C") ? "truchement.histoires-c" : "truchement.histoires-a"}`}>
+              <Crown className="size-5" aria-hidden="true" />
+              Découvrir Premium
+            </a>
+            <button type="button" className="bouton" onClick={onFermer}>
+              Choisir une autre histoire
+            </button>
+          </div>
+        </div>
+      ) : erreur ? (
         <div className="hs-erreur" role="alert">
           <p>{erreur}</p>
           <button type="button" className="bouton" onClick={() => setEssai((e) => e + 1)}>

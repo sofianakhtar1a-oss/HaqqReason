@@ -3,6 +3,7 @@
 import type { Editor } from "@tiptap/core";
 import { BookA, ChevronLeft, ChevronRight, Eraser, Plus, SpellCheck, Square, X } from "lucide-react";
 import { useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { modifierPreferences } from "@/lib/atelier/preferences";
 import { usePreferences, useRevision } from "../crochets";
 import {
@@ -140,6 +141,7 @@ export function PanneauGrammaire({ editor }: { editor: Editor }) {
         <button type="button" className="bouton bouton-principal bouton-petit" onClick={() => lancer("tout")} disabled={enCours || occupe}>
           <SpellCheck className="size-4" aria-hidden="true" />
           Relire tout le document
+          <MarquePremium fonction="calame.grammaire" compacte />
         </button>
         <button type="button" className="bouton bouton-discret bouton-petit" onClick={() => lancer("selection")} disabled={enCours || occupe || selectionVide} title={selectionVide ? "Sélectionne d'abord un passage" : undefined}>
           Relire la sélection

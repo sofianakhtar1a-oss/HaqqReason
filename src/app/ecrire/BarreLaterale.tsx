@@ -3,6 +3,7 @@
 import type { Editor } from "@tiptap/core";
 import { useEffect, useMemo, useState } from "react";
 import { Archive, ArchiveRestore, ArrowDown, ArrowLeft, ArrowRight, ArrowUp, CheckSquare, ChevronDown, ChevronRight, Columns2, Copy, FilePlus2, FileText, Folder, FolderOpen, FolderPlus, GripVertical, LayoutGrid, ListTree, LockKeyhole, MoreHorizontal, Pin, RotateCcw, Search, Trash2, Upload, Users, ClipboardPaste } from "lucide-react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { extrasDe, STATUTS_DOCUMENT, type DocumentAtelier } from "@/lib/atelier/modele";
 import { pagesEstimees } from "@/lib/atelier/pagination";
 import { modifierPreferences, TRIS, type Tri } from "@/lib/atelier/preferences";
@@ -284,6 +285,7 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
         <button type="button" className="bouton bouton-principal bouton-petit flex-1" onClick={surNouveau}>
           <FilePlus2 className="size-4" aria-hidden="true" />
           {t("nouveau")}
+          <MarquePremium fonction="calame.ecrire" compacte />
         </button>
         {surColler && (
           <button type="button" className="bouton bouton-discret bouton-petit" onClick={surColler} title="Nouveau document avec ce que tu as copié (texte, lien, image)" aria-label="Coller dans un nouveau document">

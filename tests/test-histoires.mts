@@ -31,7 +31,7 @@ let pages = 0;
 for (const fiche of HISTOIRES) {
   const { problemes } = controlerHistoire(fiche.id);
   ok(`${fiche.id} : la source passe le contrôle`, problemes.length === 0, problemes.slice(0, 3));
-  const texte = readFileSync(`public/langues/histoires/${fiche.id}.json`, "utf8");
+  const texte = readFileSync(`donnees/langues/histoires/${fiche.id}.json`, "utf8");
   ok(`${fiche.id} : la bibliothèque connaît la dernière version`, createHash("sha1").update(texte).digest("hex").slice(0, 10) === fiche.version);
   const h = JSON.parse(texte) as Histoire;
   ok(`${fiche.id} : au moins 10 pages`, h.pages.length >= 10, h.pages.length);
@@ -61,7 +61,7 @@ for (const n of NIVEAUX) {
   const { problemes } = controlerNiveau(n);
   ok(`dictées ${n} : la source passe le contrôle`, problemes.length === 0, problemes.slice(0, 3));
   const source = JSON.parse(readFileSync(`scripts/langues/dictees/sortie/${n}.json`, "utf8")) as FichierDictees;
-  const site = JSON.parse(readFileSync(`src/lib/langues/dictees/${n}.json`, "utf8")) as { n: number; titre: string; piege: string; phrases: [string, string][] }[];
+  const site = JSON.parse(readFileSync(`donnees/langues/dictees/${n}.json`, "utf8")) as { n: number; titre: string; piege: string; phrases: [string, string][] }[];
   ok(`dictées ${n} : ${NOMBRE_DICTEES} dictées numérotées de 1 à ${NOMBRE_DICTEES}`, site.length === NOMBRE_DICTEES && site.every((d, k) => d.n === k + 1), site.map((d) => d.n));
   for (const d of site) {
     ok(`dictée ${n} n° ${d.n} : ${PHRASES_PAR_DICTEE} phrases traduites`, d.phrases.length === PHRASES_PAR_DICTEE && d.phrases.every(([en, fr]) => en.trim() && fr.trim()));

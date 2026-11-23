@@ -7,6 +7,8 @@ import { verdict, type Capacites } from "@/lib/alambic/graphe";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
 import { BonASavoir, MessageErreur } from "./commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useAlambic } from "./contexte";
 import { ChampProtection } from "./ChampProtection";
 import { useReception, type Abonner } from "./reception";
@@ -202,6 +204,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
 
   const decouper = async () => {
     if (!fichier || !fmt) return;
+    if (!(await utiliser("alambic.decouper"))) return;
     setErreur(null);
     setResultat(null);
     // Le bouton se désactive dès le clic, avant même que le module soit chargé : pas de double lancement.
@@ -299,7 +302,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
         <Scissors className="size-7 text-or" strokeWidth={1.4} aria-hidden="true" />
         <div>
           <h2 id="titre-decoupe" className="font-display text-2xl font-bold">
-            Découper et extraire
+            Découper et extraire <MarquePremium fonction="alambic.decouper" />
           </h2>
           <p className="text-encre-douce">Garde les pages voulues d&apos;un PDF, ou un passage précis d&apos;un son ou d&apos;une vidéo.</p>
         </div>
@@ -507,6 +510,7 @@ export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner:
                       ? `Extraire ${choisies.length} page${choisies.length > 1 ? "s" : ""}`
                       : "Choisis des pages"
                   : "Extraire ce passage"}
+                <MarquePremium fonction="alambic.decouper" />
               </button>
             )}
           </div>

@@ -9,6 +9,8 @@ import { borner, dateDuJour, type BoiteVisible } from "@/lib/alambic/signature";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
 import { BonASavoir, EnTeteOutil, MessageErreur, Progression, reconnaitreTous, resultatDe, sansExtension, useTravail, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 import { PadSignature } from "./PadSignature";
 import { VignettePdf, type DocPdf } from "./VignettePdf";
@@ -333,8 +335,9 @@ export function Signature({ abonner }: { abonner: Abonner }) {
   const modifiees = Object.fromEntries(Object.entries(valeurs).filter(([nom, v]) => champs.find((c) => c.nom === nom)?.valeur !== v));
   const rien = !elements.length && !Object.keys(modifiees).length && !figer;
 
-  const enregistrer = () =>
-    lancer(async (avancer) => {
+  const enregistrer = async () => {
+    if (!(await utiliser("alambic.signer"))) return;
+    await lancer(async (avancer) => {
       if (!octets || !fichier) return;
       avancer(null, "Écriture du PDF");
       const { enregistrerSigne } = await import("@/lib/alambic/navigateur/signer");
@@ -343,6 +346,7 @@ export function Signature({ abonner }: { abonner: Abonner }) {
       if (elements.length) avertissements.push("Signature, textes et coches font maintenant partie des pages.");
       setResultat(resultatDe(`${sansExtension(fichier.name)} (signé).pdf`, r.octets, "pdf", "application/pdf", avertissements));
     });
+  };
 
   const vider = () => {
     setPdf(null);
@@ -483,6 +487,7 @@ export function Signature({ abonner }: { abonner: Abonner }) {
               <button type="button" className="bouton bouton-principal alambic-lancer" onClick={() => void enregistrer()} disabled={rien}>
                 <Save className="size-5" aria-hidden="true" />
                 {rien ? "Rien d'ajouté pour l'instant" : "Enregistrer le PDF signé"}
+                <MarquePremium fonction="alambic.signer" />
               </button>
             )}
           </div>

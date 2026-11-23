@@ -10,6 +10,8 @@ import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
 import { ChampProtection } from "./ChampProtection";
 import { BonASavoir, MessageErreur } from "./commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "./reception";
 import { ICONES } from "./SelecteurFormat";
 
@@ -131,6 +133,7 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
   };
 
   const fusionner = async () => {
+    if (!(await utiliser("alambic.fusionner"))) return;
     setErreur(null);
     setFichierFautif(null);
     setResultat(null);
@@ -198,7 +201,7 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
         <Layers className="size-7 text-or" strokeWidth={1.4} aria-hidden="true" />
         <div>
           <h2 id="titre-fusion" className="font-display text-2xl font-bold">
-            Fusionner en un seul PDF
+            Fusionner en un seul PDF <MarquePremium fonction="alambic.fusionner" />
           </h2>
           <p className="text-encre-douce">PDF, images, Word, OpenDocument, texte… Chaque fichier est mis en pages, puis tout est réuni dans l&apos;ordre que tu choisis.</p>
         </div>
@@ -311,6 +314,7 @@ export function Fusion({ abonner }: { abonner: Abonner }) {
               <button type="button" className="bouton bouton-principal alambic-lancer" disabled={pieces.length < 1 || (proteger && !motDePasse)} onClick={() => void fusionner()}>
                 <Layers className="size-5" aria-hidden="true" />
                 {pieces.length < 2 ? "Mettre en PDF" : `Fusionner les ${pieces.length} fichiers`}
+                <MarquePremium fonction="alambic.fusionner" />
               </button>
             )}
           </div>

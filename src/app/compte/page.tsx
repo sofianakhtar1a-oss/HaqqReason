@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { ArrowLeft, Cloud, Smartphone } from "lucide-react";
+import { ArrowLeft, Cloud, Crown, Smartphone } from "lucide-react";
 import { EnTete } from "@/components/EnTete";
 import { placeDuCompte } from "@/lib/compte/donnees";
 import { PLAFOND_DONNEES, PLAFOND_FICHIERS } from "@/lib/compte/limites";
 import { compteCourant, compteVerifie } from "@/lib/compte/session";
+import { abonnementActif } from "@/lib/premium/abonnements";
+import { prixLisible } from "@/lib/premium/catalogue";
+import { contextePremium } from "@/lib/premium/droits";
+import { BoutonPortail } from "./MonAbonnement";
 import { Deconnexion, EtatSynchronisation, SuppressionCompte } from "./PanneauCompte";
 
 export const metadata: Metadata = { title: "Mon compte", robots: { index: false } };
 
+const date = (iso: string | null | undefined) => (iso ? new Intl.DateTimeFormat("fr-FR", { dateStyle: "long", timeZone: "Europe/Paris" }).format(new Date(iso)) : "");
 const mo = (octets: number) => (octets < 100_000 ? "moins de 0,1 Mo" : `${(octets / 1_000_000).toLocaleString("fr-FR", { maximumFractionDigits: 1 })} Mo`);
 
 function Jauge({ libelle, utilise, plafond }: { libelle: string; utilise: number; plafond: number }) {
@@ -36,7 +41,10 @@ export default async function PageCompte({ searchParams }: Props) {
   // Base injoignable : on affiche quand même la page avec ce que dit le jeton, sans la place occupée.
   const compte = verifie === "indisponible" ? await compteCourant() : verifie;
   if (!compte) redirect("/connexion?retour=%2Fcompte");
-  const [place, sp] = await Promise.all([verifie === "indisponible" ? null : placeDuCompte(compte.id), searchParams]);
+  const [place, sp, premium] = await Promise.all([verifie === "indisponible" ? null : placeDuCompte(compte.id), searchParams, contextePremium(compte)]);
+  const abo = premium.abonnement;
+  const aboActif = abo && abonnementActif(abo) ? abo : null;
+  const montrerAbonnement = Boolean(premium.premium || premium.offre || abo?.stripe_client);
 
   return (
     <>
@@ -51,6 +59,14 @@ export default async function PageCompte({ searchParams }: Props) {
           {compte.nom}
           {compte.email && compte.email !== compte.nom ? ` · ${compte.email}` : ""}
         </p>
+        {premium.premium && premium.source !== "createur" && (
+          <span className="badge-premium mt-4">
+            <span className="sceau-premium" aria-hidden="true">
+              <Crown className="size-4" />
+            </span>
+            <span className="badge-premium-texte texte-or">Accès premium</span>
+          </span>
+        )}
 
         {sp.erreur === "suppression" && (
           <p className="message message-erreur mt-6" role="alert">
@@ -58,7 +74,64 @@ export default async function PageCompte({ searchParams }: Props) {
           </p>
         )}
 
-        <section className="verre panneau mt-8" aria-label="Synchronisation">
+        {sp.erreur === "abonnement" && (
+          <p className="message message-erreur mt-6" role="alert">
+            Ton abonnement Premium n&apos;a pas pu être résilié pour l&apos;instant : le compte n&apos;a donc pas été supprimé. Réessaie dans un moment.
+          </p>
+        )}
+        {sp.abonnement === "repris" && (
+          <p className="message mt-6" role="status">
+            C&apos;est noté : ton abonnement continue comme avant.
+          </p>
+        )}
+
+        {montrerAbonnement && (
+          <section className="verre panneau mt-8" aria-labelledby="titre-abonnement">
+            <h2 id="titre-abonnement" className="font-display text-xl font-bold">
+              Mon abonnement
+            </h2>
+            {aboActif ? (
+              <>
+                <p className="mt-2 text-encre-douce">
+                  HaqqReason Premium, {aboActif.formule === "annee" ? "à l'année" : "au mois"}
+                  {aboActif.montant ? ` (${prixLisible(aboActif.montant)} ${aboActif.formule === "annee" ? "par an" : "par mois"})` : ""}.{" "}
+                  {aboActif.resiliation_fin_periode
+                    ? `Résilié : ton accès reste ouvert jusqu'au ${date(aboActif.fin_periode)}, puis plus rien n'est prélevé.`
+                    : aboActif.statut === "past_due"
+                      ? "Le dernier paiement n'est pas passé : Stripe va réessayer. Vérifie ta carte pour garder ton accès."
+                      : aboActif.statut === "trialing"
+                        ? `Essai gratuit jusqu'au ${date(aboActif.fin_periode)}.`
+                        : `Prochain renouvellement le ${date(aboActif.fin_periode)}.`}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <BoutonPortail />
+                  <Link href="/premium/resiliation" className="bouton bouton-discret">
+                    {aboActif.resiliation_fin_periode ? "Garder mon abonnement" : "Résilier votre contrat"}
+                  </Link>
+                </div>
+              </>
+            ) : premium.source === "offert" ? (
+              <p className="mt-2 text-encre-douce">{premium.offertJusqu ? `Un accès Premium t'est offert jusqu'au ${date(`${premium.offertJusqu}T12:00:00Z`)}.` : "Un accès Premium t'est offert, sans date de fin."}</p>
+            ) : (
+              <>
+                <p className="mt-2 text-encre-douce">
+                  {premium.offre ? "Tu utilises la version gratuite. Premium ouvre tout, sans limite." : "Pas d'abonnement en cours."}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  {premium.offre && (
+                    <Link href="/premium" className="bouton bouton-principal bouton-premium">
+                      <Crown className="size-5" aria-hidden="true" />
+                      Découvrir Premium
+                    </Link>
+                  )}
+                  {abo?.stripe_client && <BoutonPortail />}
+                </div>
+              </>
+            )}
+          </section>
+        )}
+
+        <section className={`verre panneau ${montrerAbonnement ? "mt-5" : "mt-8"}`} aria-label="Synchronisation">
           <EtatSynchronisation />
         </section>
 
@@ -117,6 +190,7 @@ export default async function PageCompte({ searchParams }: Props) {
           </h2>
           <p className="mt-2 text-encre-douce">
             Tout ce qui est enregistré sur ton compte est effacé du serveur, définitivement, et retiré de cet appareil. Si tu veux garder un document, exporte-le d&apos;abord depuis Le Calame.
+            {aboActif ? " Ton abonnement Premium est résilié aussitôt, sans remboursement de la période en cours." : ""}
           </p>
           <SuppressionCompte />
         </section>

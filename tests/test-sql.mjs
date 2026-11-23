@@ -949,6 +949,63 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   ok("020 : supprimer un compte marche toujours", (await compter(`select count(*)::int n from utilisateurs where id = '${u}'`)) === 0);
 }
 
+// 021 : l'offre Premium (abonnements recopiés de Stripe, compteurs sans dépassement)
+{
+  const premium = readFileSync(new URL("../supabase/migrations/021_premium.sql", import.meta.url), "utf8");
+  await db.exec(premium);
+  await db.exec(premium);
+  ok("021 : le script se relance sans erreur", true);
+  const u = (await db.query(`select * from compte_ouvrir('google-pr1', 'pr1@exemple.fr', 'Inès P')`)).rows[0].id;
+  const consommer = async (fonction, periode, limite, element = "") =>
+    (await db.query(`select premium_consommer($1, $2, $3, $4, $5) r`, [u, fonction, periode, limite, element])).rows[0].r;
+
+  const essais = [];
+  for (let i = 0; i < 4; i++) essais.push(await consommer("truchement.dictees", "s-2026-w48", 3));
+  ok("021 : trois utilisations passent, la quatrième est refusée", essais.map((e) => e.ok).join() === "true,true,true,false" && essais[3].utilise === 3);
+  const nouvelle = await consommer("truchement.dictees", "s-2026-w49", 3);
+  ok("021 : une nouvelle période repart de zéro", nouvelle.ok && nouvelle.utilise === 1);
+  ok("021 : la période passée est effacée", Number((await db.query(`select count(*)::int n from usages_premium where compte = $1 and periode = 's-2026-w48'`, [u])).rows[0].n) === 0);
+
+  const a = await consommer("truchement.histoires-b", "m-2026-11", 2, "le-phare");
+  const a2 = await consommer("truchement.histoires-b", "m-2026-11", 2, "le-phare");
+  const b = await consommer("truchement.histoires-b", "m-2026-11", 2, "la-forge");
+  const c = await consommer("truchement.histoires-b", "m-2026-11", 2, "le-verger");
+  const b2 = await consommer("truchement.histoires-b", "m-2026-11", 2, "la-forge");
+  ok("021 : rouvrir la même histoire ne coûte rien", a.ok && a2.ok && a2.deja && a2.utilise === 1);
+  ok("021 : deux histoires différentes, puis refus", b.ok && b.utilise === 2 && !c.ok && b2.ok && b2.deja);
+  ok("021 : limite nulle ou négative refusée", !(await consommer("alambic.convertir", "j-2026-11-23", 0)).ok && !(await consommer("alambic.convertir", "j-2026-11-23", -2)).ok);
+  const inconnu = (await db.query(`select premium_consommer('00000000-0000-0000-0000-000000000000', 'alambic.convertir', 'j-2026-11-23', 5, '') r`)).rows[0].r;
+  ok("021 : un compte inconnu ne compte rien", !inconnu.ok);
+  let mauvaiseFonction = false;
+  try { await consommer("Pas Une Fonction", "total", 3); } catch { mauvaiseFonction = true; }
+  ok("021 : un nom de fonction illisible est refusé", mauvaiseFonction);
+
+  await db.exec(`insert into abonnements_premium (compte, stripe_client, stripe_abonnement, statut, formule, fin_periode) values ('${u}', 'cus_TEST123', 'sub_TEST123', 'active', 'mois', now() + interval '30 days')`);
+  let mauvaisClient = false;
+  try { await db.exec(`update abonnements_premium set stripe_client = 'pas-un-client' where compte = '${u}'`); } catch { mauvaisClient = true; }
+  ok("021 : un identifiant Stripe mal formé est refusé", mauvaisClient);
+  await db.exec(`insert into evenements_stripe (id, type) values ('evt_1ABC', 'invoice.paid') on conflict do nothing`);
+  await db.exec(`insert into evenements_stripe (id, type) values ('evt_1ABC', 'invoice.paid') on conflict do nothing`);
+  ok("021 : un avis de Stripe n'est rangé qu'une fois", Number((await db.query(`select count(*)::int n from evenements_stripe`)).rows[0].n) === 1);
+
+  for (const role of ["anon", "authenticated"]) {
+    await refuse(`021 : ${role} ne lit pas les abonnements`, `set role ${role}; select * from abonnements_premium;`);
+    await db.exec("reset role");
+    await refuse(`021 : ${role} ne lit pas les compteurs`, `set role ${role}; select * from usages_premium;`);
+    await db.exec("reset role");
+    await refuse(`021 : ${role} n'écrit pas d'abonnement`, `set role ${role}; insert into abonnements_premium (compte, statut) values ('${u}', 'active');`);
+    await db.exec("reset role");
+    await refuse(`021 : ${role} ne lit pas les avis de Stripe`, `set role ${role}; select * from evenements_stripe;`);
+    await db.exec("reset role");
+    let appel = false;
+    try { await db.exec(`set role ${role}; select premium_consommer('${u}', 'alambic.convertir', 'total', 99, '');`); } catch { appel = true; }
+    await db.exec("reset role");
+    ok(`021 : ${role} ne peut pas appeler le compteur`, appel);
+  }
+  await db.exec(`delete from utilisateurs where id = '${u}'`);
+  ok("021 : supprimer le compte efface son abonnement et ses compteurs", Number((await db.query(`select (select count(*) from abonnements_premium where compte = $1) + (select count(*) from usages_premium where compte = $1) n`, [u])).rows[0].n) === 0);
+}
+
 {
   const ancienne = new PGlite({ extensions: { unaccent, pg_trgm } });
   await ancienne.exec(`create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;

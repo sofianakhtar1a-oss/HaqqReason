@@ -7,6 +7,8 @@ import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "./CarteResultat";
 import { ChampProtection } from "./ChampProtection";
 import { BonASavoir, MessageErreur } from "./commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "./reception";
 
 export function Protection({ abonner }: { abonner: Abonner }) {
@@ -30,6 +32,7 @@ export function Protection({ abonner }: { abonner: Abonner }) {
   const sansMotDePasse = seulPdf && sansOuverture && restreint;
 
   const proteger = async () => {
+    if (!(await utiliser("alambic.proteger"))) return;
     setErreur(null);
     setResultat(null);
     // Le bouton se désactive dès le clic, avant même que le module soit chargé : pas de double lancement.
@@ -63,7 +66,7 @@ export function Protection({ abonner }: { abonner: Abonner }) {
         <ShieldCheck className="size-7 text-or" strokeWidth={1.4} aria-hidden="true" />
         <div>
           <h2 id="titre-protection" className="font-display text-2xl font-bold">
-            Protéger par un mot de passe
+            Protéger par un mot de passe <MarquePremium fonction="alambic.proteger" />
           </h2>
           <p className="text-encre-douce">Un PDF est chiffré tel quel ; tout autre fichier, ou plusieurs ensemble, sont rangés dans un ZIP chiffré. AES-256 dans les deux cas, sur ton appareil.</p>
         </div>
@@ -158,6 +161,7 @@ export function Protection({ abonner }: { abonner: Abonner }) {
               <button type="button" className="bouton bouton-principal alambic-lancer" disabled={!motDePasse && !sansMotDePasse} onClick={() => void proteger()}>
                 <ShieldCheck className="size-5" aria-hidden="true" />
                 {seulPdf ? "Protéger le PDF" : fichiers.length > 1 ? `Protéger les ${fichiers.length} fichiers` : "Protéger le fichier"}
+                <MarquePremium fonction="alambic.proteger" />
               </button>
             )}
           </div>

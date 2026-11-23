@@ -7,6 +7,7 @@ import { eclat, pluieDeLettres } from "@/lib/langues/feux";
 import { bonneReponseCabinet, cabinet, CABINETS, detailElement, element, elementsAvant, jugerCabinet, libelleMethode, METHODES, methodesDe, methodesDuNiveau, niveauxCabinet, nombreNiveaux, partieCabinet, type QuestionCabinet, resumeElement, texteOption, texteParleCabinet, urlEmbleme } from "@/lib/monde/cabinets";
 import { envoyerReponse } from "@/lib/monde/compte-client";
 import { nouvelleGraine } from "@/lib/monde/hasard";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { COEURS } from "@/lib/monde/niveaux";
 import { baseCabinet, gainDe } from "@/lib/monde/points";
 import { aReviserCabinet, type Bilan, boiteCabinet, etoilesCabinet, finirNiveauCabinet, niveauCourantCabinet, niveauOuvertCabinet, niveauxReussisCabinet, noterCabinet, noterJournal, useMonde } from "@/lib/monde/progression";
@@ -196,6 +197,7 @@ export function EcranCabinet({ id, onRetour, lancer }: { id: CabinetId; onRetour
                   <span className="pt-escale-grade">
                     <span className="pt-escale-num">Niveau {n}</span>
                     {bornes ? ` ${bornes}` : ""}
+                    {n > 5 && <MarquePremium fonction="portulan.niveaux-avances" compacte />}
                   </span>
                   <span className="pt-escale-pays">
                     {liste.slice(0, 3).map(apercu).join(", ")}

@@ -8,6 +8,8 @@ import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
 import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 import type { DocPdf } from "./VignettePdf";
 
@@ -166,8 +168,9 @@ export function Filigrane({ abonner }: { abonner: Abonner }) {
     void import("@/lib/alambic/navigateur/filigraner").then(({ dessiner }) => dessiner(ctx, apercu.largeur, apercu.hauteur, pageApercu - 1, pdf?.doc.numPages ?? 1, o, apercu.echelle));
   }, [apercu, cleOptions, pageApercu, pdf]);
 
-  const appliquer = () =>
-    lancer(async (avancer, signal) => {
+  const appliquer = async () => {
+    if (!(await utiliser("alambic.filigraner"))) return;
+    await lancer(async (avancer, signal) => {
       setResultats([]);
       const { marquerPdf, marquerImage } = await import("@/lib/alambic/navigateur/filigraner");
       // Sans filigrane (numéros seuls), rien ne justifie d'aplatir les pages en images.
@@ -184,6 +187,7 @@ export function Filigrane({ abonner }: { abonner: Abonner }) {
       }
       setResultats(faits);
     });
+  };
 
   const vider = () => {
     setPdf(null);
@@ -375,6 +379,7 @@ export function Filigrane({ abonner }: { abonner: Abonner }) {
             <button type="button" className="bouton bouton-principal alambic-lancer" onClick={() => void appliquer()} disabled={!pret || (prereglage === "identite" && avecFiligrane && !destinataire.trim())}>
               <Stamp className="size-5" aria-hidden="true" />
               {prereglage === "identite" && avecFiligrane && !destinataire.trim() ? "Indique le destinataire" : fichiers.length > 1 ? `Marquer les ${fichiers.length} images` : "Appliquer"}
+              <MarquePremium fonction="alambic.filigraner" />
             </button>
           )}
         </div>

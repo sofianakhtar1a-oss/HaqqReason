@@ -1,13 +1,15 @@
 "use client";
 
 import { FileWarning, LockOpen, ShieldOff, X } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { estMotDePasseFaux } from "@/lib/alambic/erreurs";
 import { extensionDe, FORMATS, tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { Apercu } from "../Apercu";
 import { CarteResultat } from "../CarteResultat";
 import { BonASavoir, ChampDeverrouillage, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, resultatDe, sansExtension, useTravail, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 
 /** Ce que le fichier demande : un mot de passe, seulement le retrait de restrictions, ou rien. */
@@ -28,6 +30,14 @@ export function Deverrouillage({ abonner }: { abonner: Abonner }) {
   const [resultat, setResultat] = useState<Resultat | null>(null);
   const [extraits, setExtraits] = useState<Resultat[]>([]);
   const { travail, erreur, setErreur, lancer } = useTravail();
+  // Le fichier pour lequel le droit d'usage est déjà pris : un mot de passe faux, réessayé, ne compte pas deux fois.
+  const autorise = useRef<File | null>(null);
+  const permettre = async () => {
+    if (fichier && autorise.current === fichier) return true;
+    if (!(await utiliser("alambic.deverrouiller"))) return false;
+    autorise.current = fichier;
+    return true;
+  };
 
   const charger = (f: File) =>
     lancer(async () => {
@@ -57,8 +67,9 @@ export function Deverrouillage({ abonner }: { abonner: Abonner }) {
 
   useReception(abonner, (fichiers) => void charger(fichiers[0]));
 
-  const deverrouillerPdf = (mdp: string) =>
-    lancer(async (avancer) => {
+  const deverrouillerPdf = async (mdp: string) => {
+    if (!(await permettre())) return;
+    await lancer(async (avancer) => {
       if (!fichier) return;
       avancer(null, "Déchiffrement du PDF");
       const { dechiffrer } = await import("@/lib/alambic/navigateur/pdf");
@@ -70,9 +81,11 @@ export function Deverrouillage({ abonner }: { abonner: Abonner }) {
         throw e;
       }
     });
+  };
 
-  const ouvrirZip = (mdp?: string) =>
-    lancer(async (avancer) => {
+  const ouvrirZip = async (mdp?: string) => {
+    if (!(await permettre())) return;
+    await lancer(async (avancer) => {
       if (!fichier) return;
       avancer(null, "Ouverture de l'archive");
       const { lireArchive, ecrireArchive } = await import("@/lib/alambic/navigateur/archives");
@@ -89,6 +102,7 @@ export function Deverrouillage({ abonner }: { abonner: Abonner }) {
       setResultat(resultatDe(`${sansExtension(fichier.name)} (déverrouillé).zip`, zip, "zip", "application/zip", [`${fichiers.length} fichier${fichiers.length > 1 ? "s" : ""} repris, sans mot de passe.`]));
       setExtraits(fichiers.slice(0, 200).map((x) => resultatDe(x.nom.split("/").pop() || x.nom, x.blob, formatParNom(x.nom) || extensionDe(x.nom), x.blob.type || "application/octet-stream")));
     });
+  };
 
   const vider = () => {
     setFichier(null);
@@ -135,6 +149,7 @@ export function Deverrouillage({ abonner }: { abonner: Abonner }) {
           <button type="button" className="bouton bouton-principal" onClick={() => void deverrouillerPdf("")} disabled={travail !== null}>
             <ShieldOff className="size-4" aria-hidden="true" />
             Retirer les restrictions
+            <MarquePremium fonction="alambic.deverrouiller" />
           </button>
         </div>
       )}

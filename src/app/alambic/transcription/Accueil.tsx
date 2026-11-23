@@ -2,6 +2,7 @@
 
 import { AudioLines, Cloud, FlaskConical, Link2, LoaderCircle, Trash2, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import type { Resume } from "@/lib/alambic/transcription/bibliotheque";
 import { apercuYoutube, type ApercuYoutube } from "@/lib/alambic/transcription/client";
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
@@ -67,7 +68,7 @@ export function Accueil({ fichier, onFichier, onLancer, bibliotheque, onOuvrir, 
     >
       <header className="tr-entete">
         <h2 id="tr-titre" className="tr-entete-titre">
-          Transcrire
+          Transcrire <MarquePremium fonction="alambic.transcrire" />
         </h2>
         <p className="tr-entete-aide">Un cours, un podcast, une conférence : le son devient un texte à lire, à écouter et à comprendre, mot à mot.</p>
       </header>
@@ -181,6 +182,7 @@ export function Accueil({ fichier, onFichier, onLancer, bibliotheque, onOuvrir, 
         <button type="button" className="bouton bouton-principal alambic-lancer" disabled={!source} onClick={() => source && onLancer(source, langue)}>
           <FlaskConical className="size-5" aria-hidden="true" />
           Transcrire
+          <MarquePremium fonction="alambic.transcrire" />
         </button>
         <p className="tr-note">
           <Cloud className="size-4 shrink-0" aria-hidden="true" />

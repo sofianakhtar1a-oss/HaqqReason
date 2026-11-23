@@ -3,6 +3,8 @@
 import { BookOpen, Bot, Check, Clock, Coins, Compass, Copy, DraftingCompass, Earth, Flag, Footprints, Globe2, GraduationCap, Library, Link2, LogIn, Map as IconeCarte, Mountain, Navigation, Sailboat, Scroll, Search, Share2, Ship, Sprout, Swords, Tent, Trophy, Users, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { MarquePremium } from "@/components/premium/MarquePremium";
+import { utiliser } from "@/lib/client/premium";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
 import { pays } from "@/lib/monde/atlas";
 import { CAMPAGNE, CLE_CAMPAGNE, adversaire as choisirExplorateur, EXPLORATEURS, type Explorateur, jouerVirtuel, suivantCampagne } from "@/lib/monde/bots";
@@ -139,11 +141,19 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
     if (!duel && !salonCode && !classe && !ami) return;
     void (async () => {
       if (duel) {
+        if (!(await utiliser("portulan.duels"))) {
+          history.replaceState(null, "", "#duels");
+          return;
+        }
         const r = await appel({ action: "rejoindre", code: duel[1] });
         if ("erreur" in r) setMessage(MESSAGES[r.erreur] ?? MESSAGES.indisponible);
         else setRencontre({ sorte: "en-ligne", duel: r });
         history.replaceState(null, "", "#duels");
       } else if (salonCode) {
+        if (!(await utiliser("portulan.duels"))) {
+          history.replaceState(null, "", "#duels");
+          return;
+        }
         const r = await appelSalon({ action: "rejoindre", code: salonCode[1] });
         if ("erreur" in r) setMessage(MESSAGES[r.erreur] ?? MESSAGES.indisponible);
         else setSalon(r);
@@ -160,6 +170,7 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
 
   /** Un duel à distance : je joue maintenant, puis j'envoie le lien ; l'autre a 24 heures. */
   const aDistance = async () => {
+    if (!(await utiliser("portulan.duels"))) return;
     setMessage(null);
     const r = await appel({ action: "ouvrir", mode, asynchrone: true, nombre, duree });
     if ("erreur" in r) setMessage(r.erreur === "indisponible" ? "Les duels à distance ouvrent très bientôt." : (MESSAGES[r.erreur] ?? MESSAGES.indisponible));
@@ -181,6 +192,7 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
 
   const virtuel = (e: Explorateur) => setRencontre({ sorte: "virtuel", mode, graine: nouvelleGraine(), explorateur: e });
   const creer = async () => {
+    if (!(await utiliser("portulan.duels"))) return;
     setMessage(null);
     // Un duel réglé (le nombre de questions, leur temps) ; sans la base de la migration 018, le duel classique.
     let r = await appel({ action: "ouvrir", mode, asynchrone: false, nombre, duree });
@@ -189,24 +201,28 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
     else setRencontre({ sorte: "en-ligne", duel: r });
   };
   const creerSalon = async () => {
+    if (!(await utiliser("portulan.duels"))) return;
     setMessage(null);
     const r = await appelSalon({ action: "creer", mode, formule, nombre: nombreSalon, taille });
     if ("erreur" in r) setMessage(r.erreur === "indisponible" ? "Les salons ouvrent très bientôt." : (MESSAGES[r.erreur] ?? MESSAGES.indisponible));
     else setSalon(r);
   };
   const rejoindreSalon = async () => {
+    if (!(await utiliser("portulan.duels"))) return;
     setMessage(null);
     const r = await appelSalon({ action: "rejoindre", code: codeSalon.trim().toUpperCase() });
     if ("erreur" in r) setMessage(r.erreur === "introuvable" ? "Aucun salon avec ce code." : r.erreur === "ferme" ? "Ce salon a déjà commencé." : (MESSAGES[r.erreur] ?? MESSAGES.indisponible));
     else setSalon(r);
   };
   const rejoindre = async () => {
+    if (!(await utiliser("portulan.duels"))) return;
     setMessage(null);
     const r = await appel({ action: "rejoindre", code: code.trim().toUpperCase() });
     if ("erreur" in r) setMessage(MESSAGES[r.erreur] ?? MESSAGES.indisponible);
     else setRencontre({ sorte: "en-ligne", duel: r });
   };
   const auHasard = async () => {
+    if (!(await utiliser("portulan.duels"))) return;
     setMessage(null);
     setCherche(true);
     const r = await appel({ action: "hasard", mode });
@@ -279,6 +295,7 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
         <section className="pt-duel-bloc" aria-labelledby="pt-duel-ami">
           <Users className="pt-duel-icone" aria-hidden="true" />
           <h3 id="pt-duel-ami">Défier un ami</h3>
+          <MarquePremium fonction="portulan.duels" />
           <p>Un code à six caractères : ton ami l&apos;entre, le duel commence. Ou à distance : tu joues maintenant, il a 24 heures pour jouer à son tour.</p>
           <div className="pt-outil-actions">
             <button type="button" className="bouton bouton-principal" onClick={creer} disabled={!enLigne}>
@@ -306,6 +323,7 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
         <section className="pt-duel-bloc" aria-labelledby="pt-duel-hasard">
           <Globe2 className="pt-duel-icone" aria-hidden="true" />
           <h3 id="pt-duel-hasard">Adversaire au hasard</h3>
+          <MarquePremium fonction="portulan.duels" />
           <p>Un autre joueur connecté, sur les mêmes questions. Personne en vue ? Un explorateur virtuel prend le relais.</p>
           <button type="button" className="bouton bouton-principal" onClick={auHasard} disabled={!enLigne || cherche}>
             <Search className="size-4" aria-hidden="true" />
@@ -315,6 +333,7 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
         <section className="pt-duel-bloc" aria-labelledby="pt-duel-salon">
           <Users className="pt-duel-icone" aria-hidden="true" />
           <h3 id="pt-duel-salon">Un salon de 3 à 8</h3>
+          <MarquePremium fonction="portulan.duels" />
           <p>Les mêmes questions pour tous. En classique, les points décident ; à élimination, le dernier sort toutes les trois questions.</p>
           <div className="pt-salon-reglages" role="group" aria-label="Le salon">
             <span className="pt-segments">

@@ -2,6 +2,7 @@
 
 import { Check, RotateCcw, Undo2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { PAR_ID } from "@/lib/corps/catalogue";
 import { CATEGORIES, type CategorieId, IDS_CATEGORIES, niveauxDe } from "@/lib/corps/niveaux";
 import { QUEL } from "@/lib/corps/quiz";
@@ -77,6 +78,7 @@ export function Fiches({ stage, nav }: { stage: Stage; nav: Navigation }) {
   return (
     <div className="ec-fiches">
       <h1 className="ec-page-titre">Les fiches</h1>
+      <MarquePremium fonction="ecorche.fiches" />
       <p className="ec-page-chapo">Une structure s’allume : trouve son nom, puis retourne la fiche. Ce que tu sais s’éloigne, ce qui t’échappe revient vite.</p>
       <div className="ec-segment" role="radiogroup" aria-label="Le paquet">
         {PAQUETS.map((x) => (
@@ -129,7 +131,7 @@ export function Fiches({ stage, nav }: { stage: Stage; nav: Navigation }) {
             </>
           ) : (
             <>
-              <Cartel e={el} latin={e.profil.latin} />
+              <Cartel e={el} compter latin={e.profil.latin} />
               <div className="ec-boutons ec-fiche-choix">
                 <button type="button" className="ec-bouton est-faux" onClick={() => noter(false)}>
                   <X size={16} aria-hidden="true" /> Je ne savais pas

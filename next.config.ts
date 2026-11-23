@@ -18,6 +18,12 @@ const nextConfig: NextConfig = {
   cacheComponents: false,
   poweredByHeader: false,
   reactStrictMode: true,
+  // Le texte des histoires et des dictées est rangé hors du dossier public (donnees/langues/) : il ne sort
+  // que par ses routes, après vérification des droits Premium. Ces fichiers voyagent avec elles.
+  outputFileTracingIncludes: {
+    "/api/langues/histoires/**/*": ["./donnees/langues/histoires/**/*.json"],
+    "/api/langues/dictees/**/*": ["./donnees/langues/**/*.json"],
+  },
   experimental: {
     // Un long article (avec son historique d'enregistrement) peut dépasser la limite par défaut de 1 Mo.
     serverActions: { bodySizeLimit: "4mb" },

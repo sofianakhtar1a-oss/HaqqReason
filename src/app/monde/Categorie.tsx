@@ -4,6 +4,7 @@ import { ArrowLeft, BookOpen, Crown, Lock, Map as IconeCarte, Sailboat } from "l
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CONTINENTS, NOM_CONTINENT, pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion, typesDe } from "@/lib/monde/categories";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { grade, NB_NIVEAUX, niveauxDe, QUESTIONS_PAR_NIVEAU } from "@/lib/monde/niveaux";
 import { boite, etoiles, maitrise, niveauCourant, niveauOuvert, niveauxReussis, useMonde } from "@/lib/monde/progression";
 import { ICONES_CATEGORIES } from "./Accueil";
@@ -201,6 +202,7 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
                 <span className="pt-escale-corps">
                   <span className="pt-escale-grade">
                     <span className="pt-escale-num">Niveau {n}</span> {g.nom}
+                    {n > 5 && <MarquePremium fonction="portulan.niveaux-avances" compacte />}
                   </span>
                   <span className="pt-escale-pays">
                     {apercu.join(", ")}

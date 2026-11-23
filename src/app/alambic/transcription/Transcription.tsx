@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { utiliser } from "@/lib/client/premium";
 import { useArrivees } from "@/lib/client/synchro/useArrivees";
 import { enregistrer, enregistrerMedia, lire, lireMedia, lister, type Resume, supprimer } from "@/lib/alambic/transcription/bibliotheque";
 import { type Etape, transcrireFichier, transcrireYoutube } from "@/lib/alambic/transcription/client";
@@ -69,6 +70,9 @@ export function Transcription({ abonner }: { abonner: Abonner }) {
   }, [phase.nom, rafraichir]);
 
   const lancer = async (source: { fichier: File } | { youtube: string }, langue: Langue | null) => {
+    // Un identifiant YouTube est stable et sûr ; un fichier n'en a pas.
+    const element = "youtube" in source && /^[A-Za-z0-9_-]{1,64}$/.test(source.youtube) ? `youtube:${source.youtube}` : undefined;
+    if (!(await utiliser("alambic.transcrire", element))) return;
     setErreur(null);
     const controle = new AbortController();
     annulation.current = controle;

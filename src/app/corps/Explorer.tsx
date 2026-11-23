@@ -417,6 +417,7 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
         <div ref={fiche} className="ec-fiche-choisie">
           <Cartel
             e={choisi}
+            compter
             latin={e.profil.latin}
             aller={choisir}
             jouer={(a) => jouer([a])}

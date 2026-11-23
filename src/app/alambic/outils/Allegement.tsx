@@ -11,6 +11,8 @@ import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
 import { BonASavoir, EnTeteOutil, ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 import { ICONES } from "../SelecteurFormat";
 
@@ -71,8 +73,9 @@ export function Allegement({ abonner, capacites }: { abonner: Abonner; capacites
   const genres = useMemo(() => new Set(elements.map((e) => e.genre)), [elements]);
   const avecImages = genres.has("image");
 
-  const lancerTout = () =>
-    lancer(async (avancer, signal) => {
+  const lancerTout = async () => {
+    if (!(await utiliser("alambic.alleger"))) return;
+    await lancer(async (avancer, signal) => {
       setResultats([]);
       setEchecs([]);
       const { alleger } = await import("@/lib/alambic/navigateur/alleger");
@@ -96,6 +99,7 @@ export function Allegement({ abonner, capacites }: { abonner: Abonner; capacites
       setResultats(faits);
       setEchecs(rates);
     });
+  };
 
   const totalAvant = resultats.reduce((s, x) => s + x.avant, 0);
   const totalApres = resultats.reduce((s, x) => s + x.r.blob.size, 0);
@@ -216,6 +220,7 @@ export function Allegement({ abonner, capacites }: { abonner: Abonner; capacites
               <button type="button" className="bouton bouton-principal alambic-lancer" onClick={() => void lancerTout()}>
                 <Shrink className="size-5" aria-hidden="true" />
                 {elements.length > 1 ? `Alléger les ${elements.length} fichiers` : "Alléger"}
+                <MarquePremium fonction="alambic.alleger" />
               </button>
             )}
           </div>

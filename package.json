@@ -24,7 +24,8 @@
     "test:corps": "tsx tests/test-corps.mts",
     "test:calame": "tsx tests/test-calame.mts",
     "captures:monde": "node scripts/monde/captures.mjs",
-    "test:histoires": "tsx tests/test-histoires.mts"
+    "test:histoires": "tsx tests/test-histoires.mts",
+    "test:premium": "tsx tests/test-premium.mts"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",
@@ -80,6 +81,7 @@
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "server-only": "^0.0.1",
+    "stripe": "^23.2.0",
     "tesseract.js": "^7.0.0",
     "topojson-client": "^3.1.0",
     "turndown": "^7.2.5",

@@ -11,6 +11,8 @@ import { useAccesComplet } from "@/lib/client/acces";
 import { CarteResultat } from "../CarteResultat";
 import { useAlambic } from "../contexte";
 import { BonASavoir, EnTeteOutil, MessageErreur, Progression, reconnaitreTous, resultatDe, sansExtension, useTravail, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 
 const IMAGES = new Set(["jpg", "png", "webp", "bmp", "tiff", "gif", "heic", "avif"]);
@@ -81,14 +83,16 @@ export function Reconnaissance({ abonner }: { abonner: Abonner }) {
 
   const estPdf = fichiers[0]?.format === "pdf";
 
-  const lire = () =>
-    lancer(async (avancer, signal) => {
+  const lire = async () => {
+    if (!(await utiliser("alambic.reconnaitre"))) return;
+    await lancer(async (avancer, signal) => {
       setResultat(null);
       const { lireImages, lirePdf, texteLu } = await import("@/lib/alambic/navigateur/ocr");
       const lues = estPdf ? await lirePdf(new Uint8Array(await fichiers[0].fichier.arrayBuffer()), langues, avancer, signal, forcer) : await lireImages(fichiers, langues, avancer, signal);
       setPages(lues);
       setTexte(texteLu(lues));
     });
+  };
 
   const base = sansExtension(fichiers[0]?.fichier.name ?? "Texte reconnu");
 
@@ -196,6 +200,7 @@ export function Reconnaissance({ abonner }: { abonner: Abonner }) {
               <button type="button" className="bouton bouton-principal alambic-lancer" onClick={() => void lire()}>
                 <ScanText className="size-5" aria-hidden="true" />
                 Reconnaître le texte
+                <MarquePremium fonction="alambic.reconnaitre" />
               </button>
             )}
           </div>

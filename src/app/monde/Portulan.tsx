@@ -8,6 +8,7 @@ import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
 import { useAccesComplet } from "@/lib/client/acces";
+import { utiliser } from "@/lib/client/premium";
 import { article } from "@/lib/monde/collection";
 import { lireScore } from "@/lib/monde/compte-client";
 import { useMonde } from "@/lib/monde/progression";
@@ -124,6 +125,23 @@ export function Portulan() {
   const [partie, setPartie] = useState<Lancement | null>(null);
   const accesComplet = useAccesComplet();
   const monde = useMonde();
+
+  // Avant de lancer un niveau (jeux de pays ou cabinets) : les niveaux 1 à 5 d'un côté, 6 à 15 de l'autre.
+  // Les autres parties (tour du monde, défis, routes…) et la reprise d'une partie déjà comptée restent ouvertes.
+  const verifie = useRef(false);
+  const lancerPartie = useCallback(async (l: Lancement) => {
+    if ((l.sorte === "niveau" || l.sorte === "cabinet") && l.niveau && !l.reprise) {
+      if (verifie.current) return;
+      verifie.current = true;
+      try {
+        const ok = l.niveau <= 5 ? await utiliser("portulan.niveaux") : await utiliser("portulan.niveaux-avances", `${l.sorte === "cabinet" ? l.cabinet : l.categorie}:${l.niveau}`);
+        if (!ok) return;
+      } finally {
+        verifie.current = false;
+      }
+    }
+    setPartie(l);
+  }, []);
 
   useEffect(() => {
     const lire = () => setRoute(lireRoute(ONGLETS));
@@ -252,7 +270,7 @@ export function Portulan() {
           </div>
         ) : (
           <>
-            {route.onglet === "accueil" && <Accueil categorie={route.detail} onCategorie={detail("accueil")} lancer={setPartie} aller={aller} />}
+            {route.onglet === "accueil" && <Accueil categorie={route.detail} onCategorie={detail("accueil")} lancer={lancerPartie} aller={aller} />}
             {route.onglet === "carte" && <Explorer focus={route.detail} onFocus={detail("carte")} />}
             {route.onglet === "fiches" && <Fiches />}
             {route.onglet === "atlas" && (SUJETS_HISTOIRE as string[]).includes(route.detail ?? "") ? (
@@ -274,9 +292,9 @@ export function Portulan() {
         ))}
       </nav>
 
-      {partie && monte && partie.sorte === "cabinet" && <PartieCabinet key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
-      {partie && monte && partie.sorte === "nomme" && <NommeLesTous key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
-      {partie && monte && partie.sorte !== "cabinet" && partie.sorte !== "nomme" && <Partie key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
+      {partie && monte && partie.sorte === "cabinet" && <PartieCabinet key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => void lancerPartie(l)} />}
+      {partie && monte && partie.sorte === "nomme" && <NommeLesTous key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => void lancerPartie(l)} />}
+      {partie && monte && partie.sorte !== "cabinet" && partie.sorte !== "nomme" && <Partie key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => void lancerPartie(l)} />}
       {aide && monte && <AideClavier onFermer={fermerAide} />}
     </div>
   );

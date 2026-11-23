@@ -3,6 +3,7 @@
 import type { Editor } from "@tiptap/core";
 import { AlertTriangle, BookOpen, CheckCircle2, FileArchive, FileCode2, FileDown, FileType2, Globe, Printer, Share2, TextSelect } from "lucide-react";
 import { useEffect, useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { choisirDossier, dossierPossible, ecrireReglage, FREQUENCES, lireReglage, sauvegarderMaintenant, type Frequence } from "../sauvegarde-auto";
 import { allerARemarque, verifierDocument, type Remarque } from "../verification";
 import type { FormatPartage } from "../sorties";
@@ -191,6 +192,7 @@ export function PanneauSortie({ editor, pages, enCours, surAction, publication =
         <button type="button" className="bouton bouton-discret w-full" onClick={() => surAction({ quoi: "pdf-direct" })} disabled={occupe}>
           <FileDown className="size-4" aria-hidden="true" />
           {enCours === "pdf-direct" ? "Préparation des pages…" : "PDF direct, avec signets et liens"}
+          <MarquePremium fonction="calame.export-pdf" compacte />
         </button>
         <button type="button" className="bouton bouton-discret w-full" onClick={() => surAction({ quoi: "epub" })} disabled={occupe}>
           <BookOpen className="size-4" aria-hidden="true" />

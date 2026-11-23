@@ -46,6 +46,15 @@ const SECTIONS: SectionTexte[] = [
     ],
   },
   {
+    titre: "Si tu t'abonnes à Premium",
+    paragraphes: [
+      "Le paiement est traité par Stripe (Stripe Payments Europe, en Irlande), sur sa propre page sécurisée : ton numéro de carte, son code et sa date d'expiration sont saisis chez Stripe et n'arrivent jamais sur le site.",
+      "Le site garde seulement l'identifiant de client que Stripe lui attribue, l'état de ton abonnement (formule, prix, date de fin, résiliation demandée ou non) et les deux cases cochées avant le paiement, avec leur date. Stripe garde, de son côté, les informations de paiement et les factures, comme la loi l'y oblige.",
+      "Pour les parties limitées de la version gratuite (par exemple trois dictées par semaine), le site compte tes utilisations sur ton compte ; seule la période en cours est gardée.",
+      "Si tu supprimes ton compte, l'abonnement est résilié et ces informations sont effacées du site ; les factures restent chez Stripe pour la durée légale de conservation.",
+    ],
+  },
+  {
     titre: "Sécurité et cookies",
     paragraphes: [
       "Ta connexion est gardée dans un cookie signé, illisible par les scripts de la page, qui dure 60 jours et se prolonge quand tu reviens. Un second cookie de dix minutes sert seulement pendant l'aller-retour chez Google.",
@@ -78,7 +87,7 @@ export default function PageConfidentialite() {
     <PageTexte
       titre="Confidentialité"
       intro="Ce que HaqqReason garde sur toi quand tu te connectes avec Google, pourquoi, où, et comment tout effacer."
-      misAJour="18 novembre 2026"
+      misAJour="23 novembre 2026"
       sections={SECTIONS}
     />
   );

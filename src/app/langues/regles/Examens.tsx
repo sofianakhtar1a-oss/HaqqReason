@@ -2,6 +2,8 @@
 
 import { ArrowLeft, Award, GraduationCap, LoaderCircle, Play } from "lucide-react";
 import { useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
+import { utiliser } from "@/lib/client/premium";
 import { composerExamen, exercicesDuNiveau, type ExerciceRange } from "@/lib/regles/banque";
 import { NOMS_NIVEAUX, SECTIONS } from "@/lib/regles/index";
 import { enregistrerSerie, noterReponses, type ResultatSerie, serieExamen, useSuivi } from "@/lib/regles/suivi";
@@ -27,6 +29,8 @@ export function Examens({ onRetour, onLecon }: { onRetour: () => void; onLecon: 
   const [charge, setCharge] = useState<string | null>(null);
 
   const lancer = async (section: Section, niveau: Niveau) => {
+    // L'offre Premium : un examen lancé compte (les examens et diplômes peuvent être réservés).
+    if (!(await utiliser("truchement.examens"))) return;
     setCharge(`${section.id}/${niveau}`);
     try {
       const ranges = composerExamen(await exercicesDuNiveau(section.id, niveau), NOMBRE);
@@ -135,7 +139,7 @@ export function Examens({ onRetour, onLecon }: { onRetour: () => void; onLecon: 
       <div className="lg-section-tete">
         <div>
           <h2 id="titre-examens" className="lg-titre">
-            Les examens de niveau
+            Les examens de niveau <MarquePremium fonction="truchement.examens" />
           </h2>
           <p className="lg-chapo">
             Trente questions tirées de toutes les leçons d&apos;un niveau, sans indice, comme le jour d&apos;un vrai examen. La correction complète arrive à la fin, et à {Math.round(SEUIL_DIPLOME * 100)} % de bonnes réponses, le diplôme du niveau est à toi.

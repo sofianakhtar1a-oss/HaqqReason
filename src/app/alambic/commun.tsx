@@ -6,6 +6,7 @@
  */
 import { Download, FilePlus2, FileUp, Info, KeyRound, LoaderCircle, LockOpen, ScanText, type LucideIcon } from "lucide-react";
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { estMotDePasseFaux, estPdfProtege, estPdfScanne, estZipProtege } from "@/lib/alambic/erreurs";
 import { nomDuFormat, tailleLisible } from "@/lib/alambic/formats";
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
@@ -18,7 +19,7 @@ export function EnTeteOutil({ Icone, titre, id, children }: { Icone: LucideIcon;
       <Icone className="size-7 text-or" strokeWidth={1.4} aria-hidden="true" />
       <div>
         <h2 id={id} className="font-display text-2xl font-bold">
-          {titre}
+          {titre} <MarquePremium fonction={`alambic.${id.replace(/^titre-/, "")}`} />
         </h2>
         <p className="text-encre-douce">{children}</p>
       </div>

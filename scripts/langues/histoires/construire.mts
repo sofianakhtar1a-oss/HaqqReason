@@ -1,6 +1,8 @@
 /*
  * Range les histoires contrôlées dans le site :
- *   public/langues/histoires/<id>.json        (le texte, les traductions, les gloses de chaque mot)
+ *   donnees/langues/histoires/<id>.json       (le texte, les traductions, les gloses de chaque mot ;
+ *                                              hors du dossier public : servi par /api/langues/histoires/<id>
+ *                                              après vérification des droits Premium)
  *   src/lib/langues/histoires/catalogue.json  (la bibliothèque : titres, niveaux, résumés, tailles)
  * Une histoire qui ne passe pas le contrôle n'est pas rangée.
  *   npx tsx scripts/langues/histoires/construire.mts
@@ -89,7 +91,7 @@ const CONTENU = new Set(["n", "v", "a", "d", "x", ""]);
 type PhraseFinale = [en: string, fr: string, g: (number | null)[]];
 type PageFinale = { t?: string; tf?: string; p: PhraseFinale[][]; m: number[] };
 
-const SITE = "public/langues/histoires";
+const SITE = "donnees/langues/histoires";
 mkdirSync(SITE, { recursive: true });
 const catalogue: Record<string, unknown>[] = [];
 const presentes = existsSync(`${DOSSIER}/sortie`) ? readdirSync(`${DOSSIER}/sortie`) : [];

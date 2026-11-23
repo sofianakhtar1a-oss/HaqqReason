@@ -2,6 +2,7 @@
 
 import { BookOpen, Check, Clock3, Play, Sparkles } from "lucide-react";
 import { useMemo, useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { HISTOIRES, type FicheHistoire } from "@/lib/langues/histoires/catalogue";
 import { type Lecture, useLectures } from "@/lib/langues/histoires/progression";
 import { NIVEAUX, type Niveau } from "@/lib/langues/types";
@@ -107,6 +108,8 @@ export function Bibliotheque({ onOuvrir }: { onOuvrir: (id: string) => void }) {
               <strong>{n}</strong>
               <span>{NOMS_NIVEAUX_LECTURE[n]}</span>
               {n === estime && <span className="hs-ton-niveau">ton niveau</span>}
+              {/* L'offre Premium : « Premium » ou les histoires gratuites qui restent ce mois-ci (rien si c'est libre). */}
+              <MarquePremium fonction={n.startsWith("A") ? "truchement.histoires-a" : n.startsWith("B") ? "truchement.histoires-b" : "truchement.histoires-c"} compacte={n !== "B1" && n !== "C1"} />
             </button>
           );
         })}

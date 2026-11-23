@@ -21,7 +21,7 @@ Trois chaînes produisent des données relues, contrôlées, puis rangées dans 
    `textes/<id>.txt` ; la traduction suit la partie B des consignes.
 3. Relecture croisée : `RELECTURE.md`.
 4. `npx tsx scripts/langues/histoires/valider.mts [id] [pages-NN]` contrôle (chaque mot glosé,
-   anglais d'un classique inchangé) ; `construire.mts` écrit `public/langues/histoires/<id>.json`
+   anglais d'un classique inchangé) ; `construire.mts` écrit `donnees/langues/histoires/<id>.json` (hors du dossier public, servi par `/api/langues/histoires/<id>` après vérification des droits Premium)
    et `src/lib/langues/histoires/catalogue.json` (ordre de la bibliothèque : `ORDRE`).
 5. `npm run test:histoires` vérifie tout, y compris que le catalogue connaît la dernière version.
 

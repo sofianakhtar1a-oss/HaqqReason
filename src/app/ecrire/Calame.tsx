@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Feather, LoaderCircle } from "lucide-react";
+import { utiliser } from "@/lib/client/premium";
 import {
   ajouterFichier,
   dupliquerDocument,
@@ -186,6 +187,7 @@ export function Calame() {
   );
 
   const nouveau = useCallback(async () => {
+    if (!(await utiliser("calame.ecrire"))) return;
     const doc = documentVide(nouvelIdentifiant());
     // Le jeu de styles choisi pour les nouveaux documents (onglet « Styles »).
     const jeu = lirePreferences().jeuParDefaut;

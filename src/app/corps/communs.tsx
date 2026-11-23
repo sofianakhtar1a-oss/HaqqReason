@@ -1,9 +1,10 @@
 "use client";
 
 import { Heart, Star, Volume2 } from "lucide-react";
-import { useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { NOMS_NATURES, PAR_ID, nomDe } from "@/lib/corps/catalogue";
 import { useFiche } from "@/lib/corps/fiches";
+import { toutEstOuvert, utiliser } from "@/lib/client/premium";
 import { calqueDElement } from "@/lib/corps/modele/modele";
 import { nomRegion, nomSorte } from "@/lib/corps/quiz";
 import type { Action } from "@/lib/corps/mouvement/gestes";
@@ -164,9 +165,30 @@ const liste = (ids: string[] | undefined) => (ids ?? []).map((id) => nomDe(id)).
  * Le cartel d'une structure : comme l'étiquette d'une pièce de musée, puis tout ce qu'il faut savoir.
  * `aller` : ouvrir une structure citée ; `jouer` : montrer sur le corps une action du muscle.
  */
-export function Cartel({ e, complet = true, latin = true, actions, aller, jouer, reperes }: { e: Element; complet?: boolean; latin?: boolean; actions?: React.ReactNode; aller?: (id: string) => void; jouer?: (a: Action) => void; reperes?: React.ComponentProps<typeof FicheEnrichie>["reperes"] }) {
+/**
+ * Ouvrir la fiche détaillée d'une structure : une utilisation de « ecorche.fiches » (la même structure rouverte
+ * dans la période ne compte pas). Tant que le serveur n'a pas répondu, on montre la fiche si l'offre est éteinte
+ * ou si la personne a tout ouvert ; un refus ouvre la fenêtre Premium et la fiche détaillée reste fermée.
+ */
+function useDroitFiche(id: string, actif: boolean): boolean {
+  const [reponse, setReponse] = useState<{ id: string; ok: boolean } | null>(null);
+  useEffect(() => {
+    if (!actif) return;
+    let vivant = true;
+    void utiliser("ecorche.fiches", id).then((ok) => vivant && setReponse({ id, ok }));
+    return () => {
+      vivant = false;
+    };
+  }, [id, actif]);
+  if (!actif) return true;
+  return reponse?.id === id ? reponse.ok : toutEstOuvert();
+}
+
+export function Cartel({ e, complet = true, latin = true, actions, aller, jouer, reperes, compter = false }: { e: Element; complet?: boolean; latin?: boolean; compter?: boolean; actions?: React.ReactNode; aller?: (id: string) => void; jouer?: (a: Action) => void; reperes?: React.ComponentProps<typeof FicheEnrichie>["reperes"] }) {
   // La fiche enrichie, quand elle est rédigée, remplace ce que la première version et l'atlas en disaient.
-  const { fiche } = useFiche(complet ? e.id : null);
+  // `compter` : le cartel s'ouvre à la demande (explorateur, fiches) ; dans une partie, c'est la correction d'une réponse.
+  const droitFiche = useDroitFiche(e.id, compter && complet);
+  const { fiche } = useFiche(complet && droitFiche ? e.id : null);
   const lignes: [string, React.ReactNode][] = [];
   if (fiche) {
     if (e.loge) lignes.push(["Groupe", e.loge]);

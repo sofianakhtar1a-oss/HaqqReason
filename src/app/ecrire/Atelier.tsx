@@ -62,6 +62,7 @@ import { DialogueProposer } from "./DialogueProposer";
 import { construirePdfDirect } from "./pdf-direct";
 import { nomDeFichier, telecharger } from "./exporter";
 import { EVENEMENT_PDF_COTE, type DemandePdfCote } from "./VuesLocales";
+import { utiliser } from "@/lib/client/premium";
 import { exporterPaquet, exporterPdf } from "./exporter";
 import { useAccesComplet } from "@/lib/client/acces";
 import { extensionsContenu } from "./extensions-calame";
@@ -601,6 +602,7 @@ export function Atelier(props: Props) {
   const exporter = useCallback(
     async (quoi: "pdf" | "docx" | "md" | "calame") => {
       if (!editor) return;
+      if ((quoi === "pdf" || quoi === "docx") && !(await utiliser(quoi === "pdf" ? "calame.export-pdf" : "calame.export-word"))) return;
       await enregistrer();
       const stocke = (await lireDocument(doc.id)) ?? doc;
       const aJour: DocumentAtelier = {
@@ -632,6 +634,7 @@ export function Atelier(props: Props) {
   const sortir = useCallback(
     async (action: ActionSortie) => {
       if (!editor) return;
+      if ((action.quoi === "selection" || action.quoi === "pages" || action.quoi === "livret" || action.quoi === "pdf-direct") && !(await utiliser("calame.export-pdf"))) return;
       const flux = scene.current?.querySelector<HTMLElement>(".calame-flux") ?? null;
       if (action.quoi === "selection") {
         const s = window.getSelection();

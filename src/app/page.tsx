@@ -64,7 +64,7 @@ export default async function Accueil({ searchParams }: Props) {
       <div className="apparait absolute right-5 top-5 z-10 flex gap-2 sm:right-8" style={delai(1.15)}>
         <BoutonRecherche />
         <BoutonTheme />
-        <BoutonCompte />
+        <BoutonCompte texte="toujours" />
       </div>
 
       <Astrolabe className="pointer-events-none absolute -right-[16vw] -top-[16vw] w-[64vw] max-w-none opacity-45 md:-right-[14rem] md:top-1/2 md:w-[52rem] md:-translate-y-1/2 md:opacity-90" />

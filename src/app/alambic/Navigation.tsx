@@ -5,6 +5,7 @@
  * Sur téléphone, les outils défilent sur une ligne ; sur ordinateur, ils forment une colonne.
  */
 import { Search, Sparkles, X } from "lucide-react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { chercherIntentions, intention as intentionDe, POPULAIRES, type Intention } from "@/lib/alambic/intentions";
 import { parGroupes, type Outil } from "@/lib/alambic/outils";
@@ -36,7 +37,9 @@ export function Navigation({ outils, actif, onChoisir, onIntention }: { outils: 
             {liste.map(({ id, nom, aide, Icone }) => (
               <button key={id} type="button" className="alambic-tuile" data-outil={id} aria-pressed={actif === id} onClick={() => onChoisir(id)} title={aide || undefined}>
                 <Icone className="size-6" strokeWidth={1.5} aria-hidden="true" />
-                <span className="alambic-tuile-nom">{nom}</span>
+                <span className="alambic-tuile-nom">
+                  {nom} <MarquePremium fonction={`alambic.${id}`} compacte />
+                </span>
                 <span className="alambic-tuile-aide">{aide}</span>
               </button>
             ))}

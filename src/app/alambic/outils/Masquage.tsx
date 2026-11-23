@@ -15,6 +15,8 @@ import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { borner, type BoiteVisible } from "@/lib/alambic/signature";
 import { CarteResultat } from "../CarteResultat";
 import { BonASavoir, EnTeteOutil, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "../commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { useReception, type Abonner } from "../reception";
 import { VignettePdf, type DocPdf } from "./VignettePdf";
 
@@ -414,8 +416,9 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
 
   /* ---------------------------------------------------------------- enregistrer */
 
-  const enregistrer = () =>
-    lancer(async (avancer, signal) => {
+  const enregistrer = async () => {
+    if (!(await utiliser("alambic.masquer"))) return;
+    await lancer(async (avancer, signal) => {
       if (!source || !fichier || !cadres.length) return;
       const m = await import("@/lib/alambic/navigateur/masquer");
       const utiles = cadres.filter((c) => c.boite.w > 0.002 && c.boite.h > 0.002);
@@ -444,6 +447,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
       setRestes(motifs.length ? restes : null);
       setResultat(r);
     });
+  };
 
   const enCours = travail !== null;
   const pages = source?.pages ?? [];
@@ -612,6 +616,7 @@ export function Masquage({ abonner }: { abonner: Abonner }) {
               <button type="button" className="bouton bouton-principal alambic-lancer" onClick={() => void enregistrer()} disabled={!cadres.length}>
                 <EyeOff className="size-5" aria-hidden="true" />
                 {cadres.length ? `Enregistrer avec ${cadres.length} cache${cadres.length > 1 ? "s" : ""}` : "Aucun cache pour l'instant"}
+                <MarquePremium fonction="alambic.masquer" />
               </button>
             )}
           </div>

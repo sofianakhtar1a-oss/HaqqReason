@@ -11,6 +11,8 @@ import { destinationParDefaut, verdict, type Capacites, type Verdict } from "@/l
 import type { Resultat } from "@/lib/alambic/navigateur/moteur";
 import { ChampProtection } from "./ChampProtection";
 import { ListeResultats, MessageErreur, Progression, reconnaitreTous, useTravail, verifierAnnulation, ZoneDepot } from "./commun";
+import { utiliser } from "@/lib/client/premium";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { ICONES, SelecteurFormat } from "./SelecteurFormat";
 
 const TOUS = FORMATS.map((f) => f.id);
@@ -54,8 +56,9 @@ export function ConversionLot({ fichiers: depart, capacites, cibleVoulue, onFerm
     });
   };
 
-  const convertirTout = () =>
-    lancer(async (avancer, signal) => {
+  const convertirTout = async () => {
+    if (!(await utiliser("alambic.lot"))) return;
+    await lancer(async (avancer, signal) => {
       if (!cible) return;
       setResultats([]);
       setEchecs([]);
@@ -90,6 +93,7 @@ export function ConversionLot({ fichiers: depart, capacites, cibleVoulue, onFerm
       setResultats(faits);
       setEchecs(rates);
     });
+  };
 
   const possibles = cible ? elements.filter((e) => e.format && verdict(e.format, cible, capacites).possible).length : 0;
 
@@ -97,7 +101,7 @@ export function ConversionLot({ fichiers: depart, capacites, cibleVoulue, onFerm
     <section className="alambic-outil" aria-label="Convertir plusieurs fichiers">
       <div className="alambic-lot-tete">
         <p className="font-display text-xl font-bold">
-          {elements.length} fichier{elements.length > 1 ? "s" : ""} à convertir
+          {elements.length} fichier{elements.length > 1 ? "s" : ""} à convertir <MarquePremium fonction="alambic.lot" />
         </p>
         <button type="button" className="bouton bouton-discret !min-h-10" onClick={onFermer} disabled={travail !== null}>
           Revenir à un seul fichier
@@ -178,6 +182,7 @@ export function ConversionLot({ fichiers: depart, capacites, cibleVoulue, onFerm
           <button type="button" className="bouton bouton-principal alambic-lancer" disabled={!v?.possible || (proteger && !motDePasse)} onClick={() => void convertirTout()}>
             <Sparkles className="size-5" aria-hidden="true" />
             {cible ? `Convertir ${possibles > 1 ? `les ${possibles} fichiers` : "le fichier"} en ${format(cible).nom}` : "Convertir"}
+            <MarquePremium fonction="alambic.lot" />
           </button>
         )}
       </div>

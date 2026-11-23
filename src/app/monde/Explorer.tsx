@@ -7,6 +7,8 @@ import { coloriage, type Legende, soleilAuZenith } from "@/lib/monde/calques";
 import { coordonnees, JEUX } from "@/lib/monde/carte-outils";
 import { PAYS } from "@/lib/monde/donnees";
 import { distanceKm, type LatLng } from "@/lib/monde/geo";
+import { MarquePremium } from "@/components/premium/MarquePremium";
+import { utiliser } from "@/lib/client/premium";
 import { useMonde } from "@/lib/monde/progression";
 import { normaliser } from "@/lib/monde/texte";
 import type { ContinentId } from "@/lib/monde/types";
@@ -179,12 +181,14 @@ export function Explorer({ focus, onFocus }: { focus: string | null; onFocus: (c
     return [...debut, ...dedans].slice(0, 8).map((x) => PAR_CODE.get(x.code)!);
   }, [requete]);
 
-  const ouvrir = (code: string | null) => {
+  const ouvrir = async (code: string | null) => {
     setRequete("");
     // Un outil ouvert reçoit les pays qu'on cherche (la distance, la vraie taille).
     if (code && outil === "distance") return distance.ajouter(code);
     if (code && outil === "taille") return taille.ajouter(code);
     if (code === choisi) return;
+    // Ouvrir la fiche d'un pays : une utilisation de l'atlas.
+    if (code && !(await utiliser("portulan.atlas"))) return;
     // Remplacer le pays affiché, sans empiler un écran par pays touché.
     if (code && choisi) {
       history.replaceState(null, "", `#carte/${code}`);
@@ -240,6 +244,7 @@ export function Explorer({ focus, onFocus }: { focus: string | null; onFocus: (c
       <aside className="pt-explorer-vide">
         <p>Touche un pays sur le globe, ou cherche-le par son nom ou sa capitale.</p>
         <p className="pt-explorer-astuce">Les petits points dorés sont les micro-États et les îles trop petites pour se voir : touche-les aussi.</p>
+        <MarquePremium fonction="portulan.atlas" />
         <MonPays code={monPays} onVoir={(c) => ouvrir(c)} />
         <section className="pt-explorer-menu" aria-labelledby="pt-menu-outils">
           <h3 id="pt-menu-outils">Les outils</h3>

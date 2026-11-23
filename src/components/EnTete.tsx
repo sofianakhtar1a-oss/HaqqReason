@@ -45,7 +45,7 @@ export function EnTete({
         <BoutonRecherche />
         {children}
         <BoutonTheme />
-        {compte && <BoutonCompte />}
+        {compte && <BoutonCompte texte={outils ? "jamais" : "toujours"} />}
         {compte && <SortieEspaces />}
       </div>
     </header>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { MarquePremium } from "@/components/premium/MarquePremium";
 import { Download, FileDown, FileText, Hash, Palette, Ruler, Sparkles, Type, type LucideIcon } from "lucide-react";
 import {
   BORNES_JETON,
@@ -281,10 +282,12 @@ export function Inspecteur({ reglages, surReglages, stats, surExport, enCours, s
             <button type="button" className="bouton bouton-principal w-full" onClick={() => surExport("pdf")}>
               <FileDown className="size-4" aria-hidden="true" />
               Imprimer ou enregistrer en PDF
+              <MarquePremium fonction="calame.export-pdf" />
             </button>
             <button type="button" className="bouton bouton-discret w-full" onClick={() => surExport("docx")} disabled={enCours !== ""}>
               <FileText className="size-4" aria-hidden="true" />
               {enCours === "docx" ? "Préparation…" : "Exporter en Word (.docx)"}
+              <MarquePremium fonction="calame.export-word" />
             </button>
             <button type="button" className="bouton bouton-discret w-full" onClick={() => surExport("md")}>
               <Hash className="size-4" aria-hidden="true" />

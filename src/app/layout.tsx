@@ -9,9 +9,11 @@ import "./globals.css";
 import "./scene.css";
 import "./modules.css";
 import "./finitions.css";
+import "./premium.css";
 import { BarreVueUtilisateur } from "@/components/compte/BarreVueUtilisateur";
 import { Synchronisation } from "@/components/compte/Synchronisation";
 import { InstallationRequise } from "@/components/InstallationRequise";
+import { FenetrePremium } from "@/components/premium/FenetrePremium";
 import { PaletteRecherche } from "@/components/PaletteRecherche";
 import { ServiceHorsLigne } from "@/components/ServiceHorsLigne";
 import { FilDOr } from "@/components/scene/FilDOr";
@@ -22,6 +24,7 @@ import { Ouverture, SCRIPT_OUVERTURE } from "@/components/scene/Ouverture";
 import { googleConfigure } from "@/lib/compte/jeton";
 import { compteCourant } from "@/lib/compte/session";
 import { variablesManquantes } from "@/lib/env";
+import { attributsPremium } from "@/lib/premium/page";
 import { adresseDuSite } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -54,6 +57,8 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   const compte = manquantes.length === 0 ? await compteCourant() : null;
   // Posé par le proxy, jamais par le navigateur : le créateur regarde le site comme un utilisateur.
   const vueUtilisateur = enTetes.get("x-vue-utilisateur") === "1";
+  // L'offre Premium : en service ou non, abonné ou non (pour le badge doré et les cadenas).
+  const premium = manquantes.length === 0 ? await attributsPremium(compte, vueUtilisateur) : {};
 
   return (
     <html
@@ -64,6 +69,10 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       data-compte-nom={compte?.nom}
       data-compte-email={compte?.email}
       data-vue={vueUtilisateur ? "utilisateur" : undefined}
+      data-offre={premium.offre}
+      data-premium={premium.premium}
+      data-prix-mois={premium.prixMois}
+      data-prix-annee={premium.prixAnnee}
       suppressHydrationWarning
     >
       <body className="flex min-h-dvh flex-col antialiased">
@@ -79,6 +88,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         {compte && <Synchronisation />}
         {manquantes.length > 0 ? <InstallationRequise manquantes={manquantes} /> : children}
         {manquantes.length === 0 && <PaletteRecherche />}
+        {premium.offre && <FenetrePremium />}
         <ServiceHorsLigne />
         {/* La porte de lumière lit sa durée dans les réglages, sans retenir l'affichage de la page. */}
         {manquantes.length === 0 && (
