@@ -43,7 +43,7 @@ Demande du 23 novembre 2026, 18 h 10. Le pourcentage du bilan horaire se lit ici
 - [x] Tests (droits, périodes, consommation, signature du webhook, configuration) — 4
 - [x] Guide de mise en route (compte Stripe, banque, clé restreinte, webhook, Vercel, SQL, double authentification) — 4
 - [x] Essais bureau et mobile, clair et sombre (paiement, panneau, badge, fenêtre Premium) — 4
-- [ ] Typage, lint, build, commit, déploiement vérifié — 3
+- [x] Typage, lint, build, commit, déploiement vérifié — 3
 
 ## Décisions
 
@@ -60,3 +60,4 @@ Demande du 23 novembre 2026, 18 h 10. Le pourcentage du bilan horaire se lit ici
 - 23 nov. 19 h 15 — Pages : /premium, /premium/merci (vérifié auprès de Stripe), /premium/resiliation (trois clics, confirmation téléchargeable), /conditions-vente (générées), confidentialité, « Mon abonnement », badge doré, suppression de compte qui résilie d'abord.
 - 23 nov. 19 h 20 — Verrous : Le Truchement (histoires et dictées déplacées dans donnees/langues/ et servies par le serveur après vérification ; dictée surprise tirée par le serveur), L'Alambic (14 outils), Le Calame (Word, PDF, relecture, nouveau document), Le Portulan (niveaux, duels, fiches), L'Écorché (jeux, explorateur, fiches).
 - 23 nov. 19 h 30 — Essais Playwright sur le site d'essai (offre allumée avec une clé factice, puis éteinte) : fenêtre Premium, 3 dictées puis refus, rouvrir une dictée gratuite, histoires C1 refusées puis ouvertes pour un abonné, badge doré (bureau, mobile, clair, sombre), panneau du créateur, résiliation ; offre éteinte : aucune marque, aucun verrou. Webhook : signature fausse refusée, avis rejoué reconnu.
+- 23 nov. 19 h 37 — En ligne (2949fca, déploiement réussi) ; en production, /premium annonce « L'offre Premium ouvre bientôt » : rien ne change pour les visiteurs tant que l'offre n'est pas allumée. Reste à faire par Sofian : docs/GUIDE-PREMIUM.md.
