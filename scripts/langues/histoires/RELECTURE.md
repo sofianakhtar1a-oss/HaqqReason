@@ -22,6 +22,19 @@ Pour chaque phrase, vérifie :
 3. **Les questions** (`meta.json`, si confié) : une seule bonne réponse (la première), fidèles à
    l'histoire, indices et corrections en phrases complètes.
 
+Outils (depuis /home/claude/haqqreason) :
+
+- `npx tsx scripts/langues/histoires/apercu.mts <id> pages-NN.json` affiche chaque phrase, sa
+  traduction et les gloses des mots pleins (« · » glose de la phrase, « ° » glose du lexique du
+  lot ; les mots-outils ne sont pas affichés). Il signale des pistes : « ? » le sens de la glose
+  n'apparaît pas dans la traduction (sens faux, ou traduction libre), « ≈ » il y figure sous une
+  autre forme (accord, temps). Ce ne sont que des pistes : vérifie-les toutes, puis relis le reste.
+  `--pistes` n'affiche que les phrases qui en ont.
+- `npx tsx scripts/langues/histoires/accorder.mts <id> --ecrire` accorde d'office les gloses
+  d'adjectifs à la traduction (« petit » → « petite » quand la phrase dit « une petite maison »).
+- Une glose du lexique fausse dans une seule phrase : ajoute le mot au `g` de cette phrase (la
+  glose de la phrase l'emporte sur le lexique). Fausse partout : corrige le lexique.
+
 Ensuite : `npx tsx scripts/langues/histoires/valider.mts <id> <lot>` jusqu'à « 0 problème(s) ».
 Travaille dans un dossier temporaire à ton nom, jamais dans un dossier partagé. Pas de git, aucun
 autre fichier du dépôt modifié. Réponds en trois lignes : le nombre de phrases dont tu as corrigé

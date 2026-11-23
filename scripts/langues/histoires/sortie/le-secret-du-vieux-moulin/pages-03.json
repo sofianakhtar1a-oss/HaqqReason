@@ -1,0 +1,3081 @@
+{
+  "debut": 11,
+  "lexique": {
+    "friends": [
+      "amis",
+      "friend",
+      "n",
+      "ami"
+    ],
+    "village": [
+      "village",
+      "village",
+      "n"
+    ],
+    "mr": [
+      "monsieur (M.)",
+      "Mr",
+      "n"
+    ],
+    "door": [
+      "porte",
+      "door",
+      "n"
+    ],
+    "singh": [
+      "Singh (nom de famille)",
+      "Singh",
+      "np"
+    ],
+    "man": [
+      "homme",
+      "man",
+      "n"
+    ],
+    "harrow": [
+      "Harrow (nom de famille)",
+      "Harrow",
+      "np"
+    ],
+    "mill": [
+      "moulin",
+      "mill",
+      "n"
+    ],
+    "project": [
+      "projet",
+      "project",
+      "n"
+    ],
+    "water": [
+      "eau",
+      "water",
+      "n"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "priya": [
+      "Priya (prénom)",
+      "Priya",
+      "np"
+    ],
+    "small": [
+      "petite",
+      "small",
+      "a"
+    ],
+    "room": [
+      "pièce",
+      "room",
+      "n"
+    ],
+    "old": [
+      "vieux",
+      "old",
+      "a"
+    ],
+    "amara": [
+      "Amara (prénom)",
+      "Amara",
+      "np"
+    ],
+    "tom": [
+      "Tom (prénom)",
+      "Tom",
+      "np"
+    ],
+    "notebook": [
+      "carnet",
+      "notebook",
+      "n"
+    ],
+    "march": [
+      "mars",
+      "March",
+      "n"
+    ],
+    "shaft": [
+      "arbre (axe)",
+      "shaft",
+      "n"
+    ],
+    "ashby": [
+      "Ashby (nom du village)",
+      "Ashby",
+      "np"
+    ],
+    "school": [
+      "école",
+      "school",
+      "n"
+    ],
+    "science": [
+      "sciences",
+      "science",
+      "n"
+    ],
+    "asked": [
+      "demanda",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "mrs": [
+      "madame (Mme)",
+      "Mrs",
+      "n"
+    ],
+    "obi": [
+      "Obi (nom de famille)",
+      "Obi",
+      "np"
+    ],
+    "long": [
+      "longue",
+      "long",
+      "a"
+    ],
+    "dark": [
+      "sombre",
+      "dark",
+      "a"
+    ],
+    "broken": [
+      "cassée",
+      "break",
+      "v",
+      "casser"
+    ],
+    "perfectly": [
+      "parfaitement",
+      "perfectly",
+      "d"
+    ],
+    "iron": [
+      "fer",
+      "iron",
+      "n"
+    ],
+    "sixty": [
+      "soixante",
+      "sixty",
+      "a"
+    ],
+    "tractor": [
+      "tracteur",
+      "tractor",
+      "n"
+    ],
+    "days": [
+      "jours",
+      "day",
+      "n",
+      "jour"
+    ],
+    "wheel": [
+      "roue",
+      "wheel",
+      "n"
+    ],
+    "saturday": [
+      "samedi",
+      "Saturday",
+      "n"
+    ],
+    "december": [
+      "décembre",
+      "December",
+      "n"
+    ],
+    "people": [
+      "gens, on",
+      "people",
+      "n"
+    ],
+    "tables": [
+      "tables",
+      "table",
+      "n",
+      "table"
+    ],
+    "fenwick": [
+      "Fenwick (nom de famille)",
+      "Fenwick",
+      "np"
+    ],
+    "bell": [
+      "Bell (nom de famille)",
+      "Bell",
+      "np"
+    ],
+    "hall": [
+      "salle",
+      "hall",
+      "n"
+    ],
+    "phone": [
+      "téléphone",
+      "phone",
+      "n"
+    ],
+    "penhale": [
+      "Penhale (nom de famille)",
+      "Penhale",
+      "np"
+    ],
+    "turn": [
+      "tourner",
+      "turn",
+      "v"
+    ],
+    "stage": [
+      "scène",
+      "stage",
+      "n"
+    ],
+    "children": [
+      "enfants",
+      "child",
+      "n",
+      "enfant"
+    ],
+    "torch": [
+      "lampe de poche",
+      "torch",
+      "n"
+    ],
+    "choir": [
+      "chorale",
+      "choir",
+      "n"
+    ],
+    "time": [
+      "fois",
+      "time",
+      "n"
+    ],
+    "river": [
+      "rivière",
+      "river",
+      "n"
+    ],
+    "path": [
+      "chemin, sentier",
+      "path",
+      "n"
+    ],
+    "lanterns": [
+      "lanternes",
+      "lantern",
+      "n",
+      "lanterne"
+    ],
+    "arthur": [
+      "Arthur (prénom)",
+      "Arthur",
+      "np"
+    ],
+    "eyes": [
+      "yeux",
+      "eye",
+      "n",
+      "œil"
+    ],
+    "light": [
+      "lumière",
+      "light",
+      "n"
+    ],
+    "turned": [
+      "tourna",
+      "turn",
+      "v",
+      "tourner"
+    ],
+    "say": [
+      "dire",
+      "say",
+      "v",
+      "dire"
+    ],
+    "colby": [
+      "Colby (nom de famille)",
+      "Colby",
+      "np"
+    ],
+    "young": [
+      "jeune",
+      "young",
+      "a"
+    ],
+    "person": [
+      "personne",
+      "person",
+      "n"
+    ],
+    "wants": [
+      "veut",
+      "want",
+      "v",
+      "vouloir"
+    ],
+    "come": [
+      "venir",
+      "come",
+      "v"
+    ],
+    "dray": [
+      "Dray (nom de famille)",
+      "Dray",
+      "np"
+    ],
+    "van": [
+      "camionnette",
+      "van",
+      "n"
+    ]
+  },
+  "pages": [
+    {
+      "p": [
+        [
+          {
+            "en": "The next afternoon, the three friends were waiting outside the village library when Mr Singh unlocked the door.",
+            "fr": "Le lendemain après-midi, les trois amis attendaient devant la bibliothèque du village quand M. Singh ouvrit la porte.",
+            "g": {
+              "next": [
+                "lendemain (the next)",
+                "next",
+                "a"
+              ],
+              "afternoon": [
+                "après-midi",
+                "afternoon",
+                "n"
+              ],
+              "were": [
+                "(were waiting : attendaient)",
+                "be",
+                "v",
+                "être"
+              ],
+              "waiting": [
+                "attendaient",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "outside": [
+                "devant",
+                "outside",
+                "r"
+              ],
+              "library": [
+                "bibliothèque",
+                "library",
+                "n"
+              ],
+              "singh": [
+                "Singh (nom de famille)",
+                "Singh",
+                "np"
+              ],
+              "unlocked": [
+                "ouvrit (avec la clé)",
+                "unlock",
+                "v",
+                "déverrouiller"
+              ]
+            }
+          },
+          {
+            "en": "Mr Singh was a round, cheerful man who knew every book in the building and, it was said, every secret in the village.",
+            "fr": "M. Singh était un homme rond et jovial qui connaissait chaque livre du bâtiment et, disait-on, chaque secret du village.",
+            "g": {
+              "round": [
+                "rond",
+                "round",
+                "a"
+              ],
+              "cheerful": [
+                "jovial",
+                "cheerful",
+                "a"
+              ],
+              "knew": [
+                "connaissait",
+                "know",
+                "v",
+                "connaître"
+              ],
+              "every": [
+                "chaque",
+                "every",
+                "t"
+              ],
+              "book": [
+                "livre",
+                "book",
+                "n"
+              ],
+              "building": [
+                "bâtiment",
+                "building",
+                "n"
+              ],
+              "it": [
+                "on (it was said : disait-on)",
+                "it",
+                "p"
+              ],
+              "was": [
+                "(it was said : disait-on)",
+                "be",
+                "v",
+                "être"
+              ],
+              "said": [
+                "(it was said : disait-on)",
+                "say",
+                "v",
+                "dire"
+              ],
+              "secret": [
+                "secret",
+                "secret",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“A spare shaft for Harrow Mill?” he repeated, scratching his chin. “That's an unusual request. Why do you want to know?”",
+            "fr": "« Un arbre de rechange pour le moulin de Harrow ? répéta-t-il en se grattant le menton. C'est une demande inhabituelle. Pourquoi voulez-vous le savoir ? »",
+            "g": {
+              "spare": [
+                "de rechange",
+                "spare",
+                "a"
+              ],
+              "shaft": [
+                "arbre",
+                "shaft",
+                "n"
+              ],
+              "repeated": [
+                "répéta",
+                "repeat",
+                "v",
+                "répéter"
+              ],
+              "scratching": [
+                "se grattant",
+                "scratch",
+                "v",
+                "gratter"
+              ],
+              "chin": [
+                "menton",
+                "chin",
+                "n"
+              ],
+              "unusual": [
+                "inhabituelle",
+                "unusual",
+                "a"
+              ],
+              "request": [
+                "demande",
+                "request",
+                "n"
+              ],
+              "want": [
+                "voulez",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "to": [
+                "(want to : voulez)",
+                "to",
+                "x"
+              ],
+              "know": [
+                "savoir",
+                "know",
+                "v",
+                "savoir"
+              ]
+            }
+          },
+          {
+            "en": "“It's for a school project about water power,” said Priya, which was almost true. She felt her ears getting hot.",
+            "fr": "« C'est pour un projet scolaire sur l'énergie de l'eau », dit Priya, ce qui était presque vrai. Elle sentit ses oreilles devenir brûlantes.",
+            "g": {
+              "school": [
+                "scolaire",
+                "school",
+                "n"
+              ],
+              "power": [
+                "énergie",
+                "power",
+                "n"
+              ],
+              "which": [
+                "ce qui",
+                "which",
+                "p"
+              ],
+              "almost": [
+                "presque",
+                "almost",
+                "d"
+              ],
+              "true": [
+                "vrai",
+                "true",
+                "a"
+              ],
+              "felt": [
+                "sentit",
+                "feel",
+                "v",
+                "sentir"
+              ],
+              "ears": [
+                "oreilles",
+                "ear",
+                "n",
+                "oreille"
+              ],
+              "getting": [
+                "devenir",
+                "get",
+                "v",
+                "devenir"
+              ],
+              "hot": [
+                "brûlantes",
+                "hot",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“We do have the Harrow papers,” said Mr Singh. “Nobody has read them for years. Follow me.”",
+            "fr": "« Nous avons bien les papiers des Harrow, dit M. Singh. Personne ne les a lus depuis des années. Suivez-moi. »",
+            "g": {
+              "do": [
+                "bien (insistance)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "have": [
+                "avons",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "papers": [
+                "papiers",
+                "paper",
+                "n",
+                "papier"
+              ],
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "read": [
+                "lus",
+                "read",
+                "v",
+                "lire"
+              ],
+              "them": [
+                "les",
+                "them",
+                "p"
+              ],
+              "years": [
+                "années",
+                "year",
+                "n",
+                "an"
+              ],
+              "follow": [
+                "suivez",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "me": [
+                "moi",
+                "me",
+                "p"
+              ],
+              "for": [
+                "depuis",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "In a small room downstairs, he lifted down a dusty grey box. Inside were ledgers, letters and a bundle of old photographs.",
+            "fr": "Dans une petite pièce en bas, il descendit une boîte grise couverte de poussière. À l'intérieur se trouvaient des registres, des lettres et une liasse de vieilles photographies.",
+            "g": {
+              "downstairs": [
+                "en bas",
+                "downstairs",
+                "d"
+              ],
+              "lifted": [
+                "descendit (lifted down)",
+                "lift",
+                "v",
+                "soulever"
+              ],
+              "down": [
+                "(lifted down : descendit)",
+                "down",
+                "x"
+              ],
+              "dusty": [
+                "couverte de poussière",
+                "dusty",
+                "a"
+              ],
+              "grey": [
+                "grise",
+                "grey",
+                "a"
+              ],
+              "box": [
+                "boîte",
+                "box",
+                "n"
+              ],
+              "inside": [
+                "à l'intérieur",
+                "inside",
+                "d"
+              ],
+              "were": [
+                "se trouvaient",
+                "be",
+                "v",
+                "être"
+              ],
+              "ledgers": [
+                "registres comptables",
+                "ledger",
+                "n",
+                "registre"
+              ],
+              "letters": [
+                "lettres",
+                "letter",
+                "n",
+                "lettre"
+              ],
+              "bundle": [
+                "liasse",
+                "bundle",
+                "n"
+              ],
+              "photographs": [
+                "photographies",
+                "photograph",
+                "n",
+                "photographie"
+              ],
+              "old": [
+                "vieilles",
+                "old",
+                "a",
+                "vieux"
+              ]
+            }
+          },
+          {
+            "en": "For an hour, they read in silence. Amara found bills for flour, Tom found a photograph of a miller with an enormous moustache, and Priya found a thin brown notebook marked “Repairs and Spares”.",
+            "fr": "Pendant une heure, ils lurent en silence. Amara trouva des factures de farine, Tom une photo d'un meunier à l'énorme moustache, et Priya un mince carnet brun intitulé « Réparations et pièces de rechange ».",
+            "g": {
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "hour": [
+                "heure",
+                "hour",
+                "n"
+              ],
+              "read": [
+                "lurent",
+                "read",
+                "v",
+                "lire"
+              ],
+              "silence": [
+                "silence",
+                "silence",
+                "n"
+              ],
+              "found": [
+                "trouva",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "bills": [
+                "factures",
+                "bill",
+                "n",
+                "facture"
+              ],
+              "flour": [
+                "farine",
+                "flour",
+                "n"
+              ],
+              "photograph": [
+                "photo",
+                "photograph",
+                "n"
+              ],
+              "miller": [
+                "meunier",
+                "miller",
+                "n"
+              ],
+              "enormous": [
+                "énorme",
+                "enormous",
+                "a"
+              ],
+              "moustache": [
+                "moustache",
+                "moustache",
+                "n"
+              ],
+              "thin": [
+                "mince",
+                "thin",
+                "a"
+              ],
+              "brown": [
+                "brun",
+                "brown",
+                "a"
+              ],
+              "marked": [
+                "intitulé",
+                "mark",
+                "v",
+                "marquer"
+              ],
+              "repairs": [
+                "réparations",
+                "repair",
+                "n",
+                "réparation"
+              ],
+              "spares": [
+                "pièces de rechange",
+                "spare",
+                "n",
+                "pièce de rechange"
+              ]
+            }
+          },
+          {
+            "en": "“Listen to this!” she said suddenly. “‘March 1962. The spare main shaft, kept in the loft, has been lent to Ashby School for its Science Exhibition. To be returned in September.’”",
+            "fr": "« Écoutez ça ! dit-elle soudain. “Mars 1962. L'arbre principal de rechange, rangé dans le grenier, a été prêté à l'école d'Ashby pour son Exposition scientifique. À rendre en septembre.” »",
+            "g": {
+              "listen": [
+                "écoutez",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "suddenly": [
+                "soudain",
+                "suddenly",
+                "d"
+              ],
+              "spare": [
+                "de rechange",
+                "spare",
+                "a"
+              ],
+              "main": [
+                "principal",
+                "main",
+                "a"
+              ],
+              "kept": [
+                "rangé",
+                "keep",
+                "v",
+                "garder"
+              ],
+              "loft": [
+                "grenier",
+                "loft",
+                "n"
+              ],
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(has been lent : a été)",
+                "be",
+                "v",
+                "être"
+              ],
+              "lent": [
+                "prêté",
+                "lend",
+                "v",
+                "prêter"
+              ],
+              "exhibition": [
+                "exposition",
+                "exhibition",
+                "n"
+              ],
+              "returned": [
+                "à rendre",
+                "return",
+                "v",
+                "rendre"
+              ],
+              "september": [
+                "septembre",
+                "September",
+                "n"
+              ],
+              "to": [
+                "(to be returned : à rendre)",
+                "to",
+                "x"
+              ],
+              "science": [
+                "scientifique",
+                "science",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“And was it returned?” asked Amara. Priya turned the page. At the bottom, in different handwriting, someone had written: “Not returned. Ask the school.”",
+            "fr": "« Et l'a-t-on rendu ? » demanda Amara. Priya tourna la page. En bas, d'une autre écriture, quelqu'un avait écrit : « Non rendu. Demander à l'école. »",
+            "g": {
+              "was": [
+                "(was returned : a-t-on rendu)",
+                "be",
+                "v",
+                "être"
+              ],
+              "returned": [
+                "rendu",
+                "return",
+                "v",
+                "rendre"
+              ],
+              "turned": [
+                "tourna",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "page": [
+                "page",
+                "page",
+                "n"
+              ],
+              "bottom": [
+                "bas",
+                "bottom",
+                "n"
+              ],
+              "different": [
+                "autre",
+                "different",
+                "a"
+              ],
+              "handwriting": [
+                "écriture",
+                "handwriting",
+                "n"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "written": [
+                "écrit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "ask": [
+                "demander",
+                "ask",
+                "v",
+                "demander"
+              ]
+            }
+          },
+          {
+            "en": "Mr Singh looked over his glasses. “If you find anything exciting, you will tell me, won't you?” he said with a twinkle. “I do like a mystery with a happy ending.”",
+            "fr": "M. Singh regarda par-dessus ses lunettes. « Si vous trouvez quelque chose de passionnant, vous me le direz, n'est-ce pas ? dit-il avec un pétillement dans les yeux. J'aime beaucoup les mystères qui ont une fin heureuse. »",
+            "g": {
+              "looked": [
+                "regarda",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "over": [
+                "par-dessus",
+                "over",
+                "r"
+              ],
+              "glasses": [
+                "lunettes",
+                "glass",
+                "n",
+                "verre"
+              ],
+              "find": [
+                "trouvez",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "exciting": [
+                "passionnant",
+                "exciting",
+                "a"
+              ],
+              "tell": [
+                "direz",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "won't": [
+                "n'est-ce pas",
+                "will",
+                "v"
+              ],
+              "twinkle": [
+                "pétillement",
+                "twinkle",
+                "n"
+              ],
+              "do": [
+                "beaucoup (insistance)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "like": [
+                "aime",
+                "like",
+                "v",
+                "aimer"
+              ],
+              "mystery": [
+                "mystères",
+                "mystery",
+                "n",
+                "mystère"
+              ],
+              "happy": [
+                "heureuse",
+                "happy",
+                "a"
+              ],
+              "ending": [
+                "fin",
+                "ending",
+                "n"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 8 — The Hunt for a Spare",
+      "titreFr": "Chapitre 8 — À la recherche d'une pièce de rechange"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "The next morning, Priya found the school caretaker, Mrs Obi, before the lessons began.",
+            "fr": "Le lendemain matin, Priya trouva la gardienne de l'école, Mme Obi, avant que les cours commencent.",
+            "g": {
+              "next": [
+                "lendemain (the next)",
+                "next",
+                "a"
+              ],
+              "morning": [
+                "matin",
+                "morning",
+                "n"
+              ],
+              "found": [
+                "trouva",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "school": [
+                "école",
+                "school",
+                "n"
+              ],
+              "caretaker": [
+                "gardienne",
+                "caretaker",
+                "n"
+              ],
+              "obi": [
+                "Obi (nom de famille)",
+                "Obi",
+                "np"
+              ],
+              "before": [
+                "avant que",
+                "before",
+                "c"
+              ],
+              "lessons": [
+                "cours",
+                "lesson",
+                "n",
+                "leçon"
+              ],
+              "began": [
+                "commencent",
+                "begin",
+                "v",
+                "commencer"
+              ]
+            }
+          },
+          {
+            "en": "“An iron shaft from 1962?” said Mrs Obi, thinking hard. “Well, now you mention it, there's something long and heavy in the old workshop store. Nobody has opened that door since I started working here.”",
+            "fr": "« Un arbre en fer de 1962 ? dit Mme Obi, en réfléchissant bien. Eh bien, maintenant que vous le dites, il y a quelque chose de long et de lourd dans l'ancienne réserve de l'atelier. Personne n'a ouvert cette porte depuis que j'ai commencé à travailler ici. »",
+            "g": {
+              "iron": [
+                "en fer",
+                "iron",
+                "n"
+              ],
+              "thinking": [
+                "réfléchissant",
+                "think",
+                "v",
+                "penser"
+              ],
+              "hard": [
+                "bien (thinking hard)",
+                "hard",
+                "d"
+              ],
+              "well": [
+                "eh bien",
+                "well",
+                "d"
+              ],
+              "mention": [
+                "le dites",
+                "mention",
+                "v",
+                "mentionner"
+              ],
+              "it": [
+                "le",
+                "it",
+                "p"
+              ],
+              "there's": [
+                "il y a",
+                "be",
+                "v",
+                "être"
+              ],
+              "heavy": [
+                "lourd",
+                "heavy",
+                "a"
+              ],
+              "workshop": [
+                "atelier",
+                "workshop",
+                "n"
+              ],
+              "store": [
+                "réserve",
+                "store",
+                "n"
+              ],
+              "opened": [
+                "ouvert",
+                "open",
+                "v",
+                "ouvrir"
+              ],
+              "since": [
+                "depuis que",
+                "since",
+                "c"
+              ],
+              "started": [
+                "ai commencé",
+                "start",
+                "v",
+                "commencer"
+              ],
+              "working": [
+                "travailler",
+                "work",
+                "v",
+                "travailler"
+              ],
+              "long": [
+                "long",
+                "long",
+                "a"
+              ],
+              "old": [
+                "ancienne",
+                "old",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "After school, she led them down a dark corridor and unlocked a door. The room smelled of dust and old paint, and it was full of broken chairs, a stuffed owl with one eye, and a long shape wrapped in sacking.",
+            "fr": "Après les cours, elle les mena le long d'un couloir sombre et ouvrit une porte. La pièce sentait la poussière et la vieille peinture, et elle était pleine de chaises cassées, d'une chouette empaillée à un seul œil, et d'une longue forme enveloppée dans de la toile de jute.",
+            "g": {
+              "led": [
+                "mena",
+                "lead",
+                "v",
+                "conduire"
+              ],
+              "down": [
+                "(led down : le long de)",
+                "down",
+                "r"
+              ],
+              "corridor": [
+                "couloir",
+                "corridor",
+                "n"
+              ],
+              "unlocked": [
+                "ouvrit (avec la clé)",
+                "unlock",
+                "v",
+                "déverrouiller"
+              ],
+              "smelled": [
+                "sentait",
+                "smell",
+                "v",
+                "sentir"
+              ],
+              "of": [
+                "(smelled of : sentait)",
+                "of",
+                "x"
+              ],
+              "dust": [
+                "poussière",
+                "dust",
+                "n"
+              ],
+              "paint": [
+                "peinture",
+                "paint",
+                "n"
+              ],
+              "full": [
+                "pleine",
+                "full",
+                "a"
+              ],
+              "chairs": [
+                "chaises",
+                "chair",
+                "n",
+                "chaise"
+              ],
+              "stuffed": [
+                "empaillée",
+                "stuffed",
+                "a"
+              ],
+              "owl": [
+                "chouette",
+                "owl",
+                "n"
+              ],
+              "eye": [
+                "œil",
+                "eye",
+                "n"
+              ],
+              "shape": [
+                "forme",
+                "shape",
+                "n"
+              ],
+              "wrapped": [
+                "enveloppée",
+                "wrap",
+                "v",
+                "envelopper"
+              ],
+              "sacking": [
+                "toile de jute",
+                "sacking",
+                "n"
+              ],
+              "one": [
+                "seul",
+                "one",
+                "a"
+              ],
+              "old": [
+                "vieille",
+                "old",
+                "a",
+                "vieux"
+              ],
+              "school": [
+                "les cours (after school)",
+                "school",
+                "n"
+              ],
+              "broken": [
+                "cassées",
+                "break",
+                "v",
+                "casser"
+              ]
+            }
+          },
+          {
+            "en": "Tom pulled the cloth away. Underneath, dark and slightly rusty but perfectly whole, lay a four-metre iron shaft. A paper label still hung from one end: “HARROW MILL — RETURN TO OWNER”.",
+            "fr": "Tom retira la toile. Dessous, sombre et un peu rouillé mais parfaitement intact, reposait un arbre de fer de quatre mètres. Une étiquette en papier pendait encore à un bout : « MOULIN DE HARROW — À RENDRE AU PROPRIÉTAIRE ».",
+            "g": {
+              "pulled": [
+                "retira (pulled away)",
+                "pull",
+                "v",
+                "tirer"
+              ],
+              "cloth": [
+                "toile",
+                "cloth",
+                "n"
+              ],
+              "away": [
+                "(pulled away : retira)",
+                "away",
+                "x"
+              ],
+              "underneath": [
+                "dessous",
+                "underneath",
+                "d"
+              ],
+              "slightly": [
+                "un peu",
+                "slightly",
+                "d"
+              ],
+              "rusty": [
+                "rouillé",
+                "rusty",
+                "a"
+              ],
+              "whole": [
+                "intact",
+                "whole",
+                "a"
+              ],
+              "lay": [
+                "reposait",
+                "lie",
+                "v",
+                "être allongé"
+              ],
+              "four-metre": [
+                "de quatre mètres",
+                "four-metre",
+                "a"
+              ],
+              "label": [
+                "étiquette",
+                "label",
+                "n"
+              ],
+              "still": [
+                "encore",
+                "still",
+                "d"
+              ],
+              "hung": [
+                "pendait",
+                "hang",
+                "v",
+                "pendre"
+              ],
+              "end": [
+                "bout",
+                "end",
+                "n"
+              ],
+              "return": [
+                "rendre",
+                "return",
+                "v"
+              ],
+              "owner": [
+                "propriétaire",
+                "owner",
+                "n"
+              ],
+              "paper": [
+                "en papier",
+                "paper",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“It has been waiting sixty years for someone to ask,” said Amara, laughing.",
+            "fr": "« Il attend depuis soixante ans que quelqu'un pose la question », dit Amara en riant.",
+            "g": {
+              "has": [
+                "(has been waiting : attend)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(has been waiting : attend)",
+                "be",
+                "v",
+                "être"
+              ],
+              "waiting": [
+                "attend",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "for": [
+                "(wait for : attendre que)",
+                "for",
+                "x"
+              ],
+              "years": [
+                "ans",
+                "year",
+                "n",
+                "an"
+              ],
+              "ask": [
+                "pose la question",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "laughing": [
+                "en riant",
+                "laugh",
+                "v",
+                "rire"
+              ]
+            }
+          },
+          {
+            "en": "It was far too heavy for three teenagers, so Tom called Mr Foster, the farmer next door, who arrived with his tractor and trailer. He took one look at Priya's face and asked no questions.",
+            "fr": "Il était bien trop lourd pour trois adolescents, alors Tom appela M. Foster, le fermier voisin, qui arriva avec son tracteur et sa remorque. Il jeta un coup d'œil au visage de Priya et ne posa aucune question.",
+            "g": {
+              "far": [
+                "bien",
+                "far",
+                "d"
+              ],
+              "heavy": [
+                "lourd",
+                "heavy",
+                "a"
+              ],
+              "teenagers": [
+                "adolescents",
+                "teenager",
+                "n",
+                "adolescent"
+              ],
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ],
+              "called": [
+                "appela",
+                "call",
+                "v",
+                "appeler"
+              ],
+              "foster": [
+                "Foster (nom de famille)",
+                "Foster",
+                "np"
+              ],
+              "farmer": [
+                "fermier",
+                "farmer",
+                "n"
+              ],
+              "next": [
+                "voisin (next door)",
+                "next",
+                "a"
+              ],
+              "door": [
+                "(next door : voisin)",
+                "door",
+                "n"
+              ],
+              "arrived": [
+                "arriva",
+                "arrive",
+                "v",
+                "arriver"
+              ],
+              "tractor": [
+                "tracteur",
+                "tractor",
+                "n"
+              ],
+              "trailer": [
+                "remorque",
+                "trailer",
+                "n"
+              ],
+              "took": [
+                "jeta (took a look)",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "one": [
+                "un",
+                "one",
+                "t"
+              ],
+              "look": [
+                "coup d'œil",
+                "look",
+                "n"
+              ],
+              "priya's": [
+                "de Priya",
+                "Priya",
+                "np"
+              ],
+              "face": [
+                "visage",
+                "face",
+                "n"
+              ],
+              "asked": [
+                "posa",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "no": [
+                "aucune",
+                "no",
+                "t"
+              ],
+              "questions": [
+                "questions",
+                "question",
+                "n",
+                "question"
+              ]
+            }
+          },
+          {
+            "en": "On the lane to the mill, they met Mr Colby, a member of the council, walking his spaniel. “That's a very large science project,” he said, frowning.",
+            "fr": "Sur le chemin du moulin, ils croisèrent M. Colby, un conseiller municipal, qui promenait son épagneul. « Voilà un très gros projet scientifique », dit-il en fronçant les sourcils.",
+            "g": {
+              "lane": [
+                "chemin",
+                "lane",
+                "n"
+              ],
+              "met": [
+                "croisèrent",
+                "meet",
+                "v",
+                "rencontrer"
+              ],
+              "colby": [
+                "Colby (nom de famille)",
+                "Colby",
+                "np"
+              ],
+              "member": [
+                "conseiller (member of the council)",
+                "member",
+                "n"
+              ],
+              "council": [
+                "municipal (member of the council)",
+                "council",
+                "n"
+              ],
+              "walking": [
+                "promenait",
+                "walk",
+                "v",
+                "promener"
+              ],
+              "spaniel": [
+                "épagneul",
+                "spaniel",
+                "n"
+              ],
+              "science": [
+                "scientifique",
+                "science",
+                "n"
+              ],
+              "large": [
+                "gros",
+                "large",
+                "a"
+              ],
+              "frowning": [
+                "fronçant les sourcils",
+                "frown",
+                "v",
+                "froncer les sourcils"
+              ],
+              "that's": [
+                "voilà",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "“It's about water,” said Priya sweetly, and the tractor drove on.",
+            "fr": "« Il porte sur l'eau », dit Priya d'une voix douce, et le tracteur continua son chemin.",
+            "g": {
+              "it's": [
+                "il porte (it's about)",
+                "be",
+                "v",
+                "être"
+              ],
+              "sweetly": [
+                "d'une voix douce",
+                "sweetly",
+                "d"
+              ],
+              "drove": [
+                "continua son chemin (drove on)",
+                "drive",
+                "v",
+                "conduire"
+              ],
+              "on": [
+                "(drove on : continua son chemin)",
+                "on",
+                "x"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "At the mill, Mr Penhale's face lit up like a lantern. Two days later, the new shaft was in place, the wheel turned smoothly, and the generator began to hum. “She's alive,” he whispered.",
+            "fr": "Au moulin, le visage de M. Penhale s'illumina comme une lanterne. Deux jours plus tard, le nouvel arbre était en place, la roue tournait sans à-coups, et le générateur se mit à ronronner. « Elle est vivante », murmura-t-il.",
+            "g": {
+              "penhale's": [
+                "de Penhale",
+                "Penhale",
+                "np"
+              ],
+              "face": [
+                "visage",
+                "face",
+                "n"
+              ],
+              "lit": [
+                "s'illumina (lit up)",
+                "light",
+                "v",
+                "éclairer"
+              ],
+              "up": [
+                "(lit up : s'illumina)",
+                "up",
+                "x"
+              ],
+              "lantern": [
+                "lanterne",
+                "lantern",
+                "n"
+              ],
+              "later": [
+                "plus tard",
+                "later",
+                "d"
+              ],
+              "new": [
+                "nouvel",
+                "new",
+                "a"
+              ],
+              "shaft": [
+                "arbre",
+                "shaft",
+                "n"
+              ],
+              "was": [
+                "était",
+                "be",
+                "v",
+                "être"
+              ],
+              "place": [
+                "(in place : en place)",
+                "place",
+                "n"
+              ],
+              "in": [
+                "(in place : en place)",
+                "in",
+                "r"
+              ],
+              "turned": [
+                "tournait",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "smoothly": [
+                "sans à-coups",
+                "smoothly",
+                "d"
+              ],
+              "generator": [
+                "générateur",
+                "generator",
+                "n"
+              ],
+              "began": [
+                "se mit",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "to": [
+                "(began to : se mit à)",
+                "to",
+                "x"
+              ],
+              "hum": [
+                "ronronner",
+                "hum",
+                "v",
+                "ronronner"
+              ],
+              "she's": [
+                "elle est",
+                "be",
+                "v",
+                "être"
+              ],
+              "alive": [
+                "vivante",
+                "alive",
+                "a"
+              ],
+              "whispered": [
+                "murmura",
+                "whisper",
+                "v",
+                "murmurer"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "On Saturday the twentieth of December, the village hall was full of lanterns, and every lantern held a small candle in a glass jar.",
+            "fr": "Le samedi vingt décembre, la salle des fêtes était pleine de lanternes, et chaque lanterne contenait une petite bougie dans un bocal en verre.",
+            "g": {
+              "on": [
+                "(on Saturday : le samedi)",
+                "on",
+                "r"
+              ],
+              "twentieth": [
+                "vingt",
+                "twentieth",
+                "a"
+              ],
+              "hall": [
+                "salle des fêtes",
+                "hall",
+                "n"
+              ],
+              "full": [
+                "pleine",
+                "full",
+                "a"
+              ],
+              "lanterns": [
+                "lanternes",
+                "lantern",
+                "n",
+                "lanterne"
+              ],
+              "held": [
+                "contenait",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "lantern": [
+                "lanterne",
+                "lantern",
+                "n"
+              ],
+              "candle": [
+                "bougie",
+                "candle",
+                "n"
+              ],
+              "glass": [
+                "en verre",
+                "glass",
+                "n"
+              ],
+              "jar": [
+                "bocal",
+                "jar",
+                "n"
+              ],
+              "every": [
+                "chaque",
+                "every",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "More than a hundred people sat at long tables with bowls of hot soup. Mrs Fenwick climbed onto the stage and tapped the microphone, which did not work.",
+            "fr": "Plus d'une centaine de personnes étaient assises à de longues tables, devant des bols de soupe chaude. Mme Fenwick monta sur la scène et tapota le micro, qui ne fonctionnait pas.",
+            "g": {
+              "more": [
+                "plus",
+                "more",
+                "t"
+              ],
+              "than": [
+                "de",
+                "than",
+                "r"
+              ],
+              "sat": [
+                "étaient assises",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "at": [
+                "à",
+                "at",
+                "r"
+              ],
+              "long": [
+                "longues",
+                "long",
+                "a"
+              ],
+              "bowls": [
+                "bols",
+                "bowl",
+                "n",
+                "bol"
+              ],
+              "soup": [
+                "soupe",
+                "soup",
+                "n"
+              ],
+              "hot": [
+                "chaude",
+                "hot",
+                "a"
+              ],
+              "climbed": [
+                "monta",
+                "climb",
+                "v",
+                "monter"
+              ],
+              "onto": [
+                "sur",
+                "onto",
+                "r"
+              ],
+              "stage": [
+                "scène",
+                "stage",
+                "n"
+              ],
+              "tapped": [
+                "tapota",
+                "tap",
+                "v",
+                "tapoter"
+              ],
+              "microphone": [
+                "micro",
+                "microphone",
+                "n"
+              ],
+              "which": [
+                "qui",
+                "which",
+                "p"
+              ],
+              "of": [
+                "(bowls of : bols de)",
+                "of",
+                "r"
+              ],
+              "did": [
+                "(négation passée)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "work": [
+                "fonctionnait",
+                "work",
+                "v",
+                "fonctionner"
+              ],
+              "people": [
+                "personnes",
+                "people",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Welcome, everyone,” she called. “We don't have electricity this year, but we have a good choir, a very good soup, and each other.”",
+            "fr": "« Bienvenue à tous, lança-t-elle. Nous n'avons pas d'électricité cette année, mais nous avons une bonne chorale, une très bonne soupe, et nous sommes là les uns pour les autres. »",
+            "g": {
+              "welcome": [
+                "bienvenue",
+                "welcome",
+                "n"
+              ],
+              "everyone": [
+                "à tous",
+                "everyone",
+                "p"
+              ],
+              "called": [
+                "lança",
+                "call",
+                "v",
+                "appeler"
+              ],
+              "have": [
+                "avons",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "electricity": [
+                "électricité",
+                "electricity",
+                "n"
+              ],
+              "year": [
+                "année",
+                "year",
+                "n"
+              ],
+              "choir": [
+                "chorale",
+                "choir",
+                "n"
+              ],
+              "good": [
+                "bonne",
+                "good",
+                "a"
+              ],
+              "soup": [
+                "soupe",
+                "soup",
+                "n"
+              ],
+              "each": [
+                "les uns (each other)",
+                "each",
+                "p"
+              ],
+              "other": [
+                "les autres (each other)",
+                "other",
+                "p"
+              ],
+              "have#2": [
+                "sommes là (have each other)",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          },
+          {
+            "en": "People clapped kindly. Mr Bell asked for a torch to read the programme.",
+            "fr": "Les gens applaudirent gentiment. M. Bell demanda une lampe de poche pour lire le programme.",
+            "g": {
+              "people": [
+                "gens",
+                "people",
+                "n"
+              ],
+              "clapped": [
+                "applaudirent",
+                "clap",
+                "v",
+                "applaudir"
+              ],
+              "kindly": [
+                "gentiment",
+                "kindly",
+                "d"
+              ],
+              "asked": [
+                "demanda",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "for": [
+                "(asked for : demanda)",
+                "for",
+                "x"
+              ],
+              "torch": [
+                "lampe de poche",
+                "torch",
+                "n"
+              ],
+              "to": [
+                "pour",
+                "to",
+                "x"
+              ],
+              "read": [
+                "lire",
+                "read",
+                "v",
+                "lire"
+              ],
+              "programme": [
+                "programme",
+                "programme",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "At the back of the hall, Priya, Tom and Amara kept their eyes on the clock. It was ten to seven, and Priya held her phone tightly to her ear.",
+            "fr": "Au fond de la salle, Priya, Tom et Amara ne quittaient pas l'horloge des yeux. Il était sept heures moins dix, et Priya serrait fermement son téléphone contre son oreille.",
+            "g": {
+              "back": [
+                "fond",
+                "back",
+                "n"
+              ],
+              "kept": [
+                "ne quittaient pas (kept eyes on)",
+                "keep",
+                "v",
+                "garder"
+              ],
+              "eyes": [
+                "yeux",
+                "eye",
+                "n",
+                "œil"
+              ],
+              "on": [
+                "(kept eyes on : ne quittaient pas des yeux)",
+                "on",
+                "r"
+              ],
+              "clock": [
+                "horloge",
+                "clock",
+                "n"
+              ],
+              "it": [
+                "il",
+                "it",
+                "p"
+              ],
+              "was": [
+                "était",
+                "be",
+                "v",
+                "être"
+              ],
+              "ten": [
+                "dix",
+                "ten",
+                "a"
+              ],
+              "to": [
+                "(ten to seven : sept heures moins dix)",
+                "to",
+                "r"
+              ],
+              "seven": [
+                "sept heures",
+                "seven",
+                "a"
+              ],
+              "held": [
+                "serrait",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "tightly": [
+                "fermement",
+                "tightly",
+                "d"
+              ],
+              "ear": [
+                "oreille",
+                "ear",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "That afternoon, Mr Penhale had checked every connection three times, and then he had slipped away to the mill.",
+            "fr": "Cet après-midi-là, M. Penhale avait vérifié chaque branchement trois fois, puis il s'était éclipsé vers le moulin.",
+            "g": {
+              "afternoon": [
+                "après-midi",
+                "afternoon",
+                "n"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "checked": [
+                "vérifié",
+                "check",
+                "v",
+                "vérifier"
+              ],
+              "every": [
+                "chaque",
+                "every",
+                "t"
+              ],
+              "connection": [
+                "branchement",
+                "connection",
+                "n"
+              ],
+              "times": [
+                "fois",
+                "time",
+                "n"
+              ],
+              "had#2": [
+                "s'était",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "slipped": [
+                "éclipsé (slipped away)",
+                "slip",
+                "v",
+                "glisser"
+              ],
+              "away": [
+                "(slipped away : éclipsé)",
+                "away",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "“Ready?” said a crackly voice on the phone. “On the count of three, then. One... two... three!”",
+            "fr": "« Prêts ? dit une voix grésillante au téléphone. Au compte de trois, alors. Un... deux... trois ! »",
+            "g": {
+              "ready": [
+                "prêts",
+                "ready",
+                "a"
+              ],
+              "crackly": [
+                "grésillante",
+                "crackly",
+                "a"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ],
+              "count": [
+                "compte",
+                "count",
+                "n"
+              ],
+              "then": [
+                "alors",
+                "then",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Far away, in the dark, the wheel began to turn. For a moment, nothing happened. Then the lamps above the stage flickered, hummed, and burst into bright light.",
+            "fr": "Très loin, dans le noir, la roue se mit à tourner. Pendant un instant, rien ne se passa. Puis les lampes au-dessus de la scène vacillèrent, bourdonnèrent et s'embrasèrent d'une vive lumière.",
+            "g": {
+              "far": [
+                "très loin",
+                "far",
+                "d"
+              ],
+              "away": [
+                "(far away : très loin)",
+                "away",
+                "d"
+              ],
+              "dark": [
+                "noir",
+                "dark",
+                "n"
+              ],
+              "began": [
+                "se mit",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "to": [
+                "(began to : se mit à)",
+                "to",
+                "x"
+              ],
+              "moment": [
+                "instant",
+                "moment",
+                "n"
+              ],
+              "happened": [
+                "se passa",
+                "happen",
+                "v",
+                "se passer"
+              ],
+              "lamps": [
+                "lampes",
+                "lamp",
+                "n",
+                "lampe"
+              ],
+              "above": [
+                "au-dessus de",
+                "above",
+                "r"
+              ],
+              "flickered": [
+                "vacillèrent",
+                "flicker",
+                "v",
+                "vaciller"
+              ],
+              "hummed": [
+                "bourdonnèrent",
+                "hum",
+                "v",
+                "ronronner"
+              ],
+              "burst": [
+                "s'embrasèrent (burst into)",
+                "burst",
+                "v",
+                "jaillir"
+              ],
+              "bright": [
+                "vive",
+                "bright",
+                "a"
+              ],
+              "light": [
+                "lumière",
+                "light",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "A hundred people gasped. The children cheered, Mr Bell dropped his torch, and Mrs Fenwick put both hands over her mouth.",
+            "fr": "Une centaine de personnes poussèrent un cri de surprise. Les enfants lancèrent des hourras, M. Bell laissa tomber sa lampe de poche, et Mme Fenwick se couvrit la bouche des deux mains.",
+            "g": {
+              "gasped": [
+                "poussèrent un cri de surprise",
+                "gasp",
+                "v",
+                "haleter"
+              ],
+              "cheered": [
+                "lancèrent des hourras",
+                "cheer",
+                "v",
+                "acclamer"
+              ],
+              "dropped": [
+                "laissa tomber",
+                "drop",
+                "v",
+                "laisser tomber"
+              ],
+              "put": [
+                "se couvrit (put ... over)",
+                "put",
+                "v",
+                "mettre"
+              ],
+              "both": [
+                "deux",
+                "both",
+                "t"
+              ],
+              "hands": [
+                "mains",
+                "hand",
+                "n",
+                "main"
+              ],
+              "over": [
+                "(put over : se couvrit)",
+                "over",
+                "r"
+              ],
+              "mouth": [
+                "bouche",
+                "mouth",
+                "n"
+              ],
+              "people": [
+                "personnes",
+                "people",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“But... how?” she whispered. “Who did this?”",
+            "fr": "« Mais... comment ? murmura-t-elle. Qui a fait ça ? »",
+            "g": {
+              "whispered": [
+                "murmura-t-elle",
+                "whisper",
+                "v",
+                "murmurer"
+              ],
+              "who": [
+                "qui",
+                "who",
+                "p"
+              ],
+              "did": [
+                "a fait",
+                "do",
+                "v",
+                "faire"
+              ]
+            }
+          },
+          {
+            "en": "“A friend,” said Tom, smiling. “It's a gift. He has been working on it since March.”",
+            "fr": "« Un ami, dit Tom en souriant. C'est un cadeau. Il y travaille depuis mars. »",
+            "g": {
+              "friend": [
+                "ami",
+                "friend",
+                "n"
+              ],
+              "smiling": [
+                "en souriant",
+                "smile",
+                "v",
+                "sourire"
+              ],
+              "gift": [
+                "cadeau",
+                "gift",
+                "n"
+              ],
+              "has": [
+                "(has been working : travaille)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(has been working : travaille)",
+                "be",
+                "v",
+                "être"
+              ],
+              "working": [
+                "travaille",
+                "work",
+                "v",
+                "travailler"
+              ],
+              "on": [
+                "à",
+                "on",
+                "r"
+              ],
+              "since": [
+                "depuis",
+                "since",
+                "r"
+              ],
+              "march": [
+                "mars",
+                "March",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "The choir began to sing, and this time, everybody could read the words.",
+            "fr": "La chorale se mit à chanter, et cette fois, tout le monde pouvait lire les paroles.",
+            "g": {
+              "began": [
+                "se mit",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "to": [
+                "(began to : se mit à)",
+                "to",
+                "x"
+              ],
+              "sing": [
+                "chanter",
+                "sing",
+                "v",
+                "chanter"
+              ],
+              "everybody": [
+                "tout le monde",
+                "everybody",
+                "p"
+              ],
+              "could": [
+                "pouvait",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "read": [
+                "lire",
+                "read",
+                "v",
+                "lire"
+              ],
+              "words": [
+                "paroles",
+                "word",
+                "n",
+                "mot"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 9 — Winter Evening",
+      "titreFr": "Chapitre 9 — La Soirée d'hiver"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "After the concert, half the village followed the three friends along the river path, carrying their lanterns like a long, golden snake.",
+            "fr": "Après le concert, la moitié du village suivit les trois amis le long du sentier de la rivière, portant ses lanternes comme un long serpent doré.",
+            "g": {
+              "concert": [
+                "concert",
+                "concert",
+                "n"
+              ],
+              "half": [
+                "moitié",
+                "half",
+                "n"
+              ],
+              "followed": [
+                "suivit",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "along": [
+                "le long de",
+                "along",
+                "r"
+              ],
+              "carrying": [
+                "portant",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "golden": [
+                "doré",
+                "golden",
+                "a"
+              ],
+              "snake": [
+                "serpent",
+                "snake",
+                "n"
+              ],
+              "long": [
+                "long",
+                "long",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "At the mill, the wheel was turning gently in the light of a hundred lanterns, and Mr Penhale was waiting outside, leaning on his stick.",
+            "fr": "Au moulin, la roue tournait doucement à la lumière d'une centaine de lanternes, et M. Penhale attendait dehors, appuyé sur sa canne.",
+            "g": {
+              "was": [
+                "(was turning : tournait)",
+                "be",
+                "v",
+                "être"
+              ],
+              "turning": [
+                "tournait",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "gently": [
+                "doucement",
+                "gently",
+                "d"
+              ],
+              "light": [
+                "lumière",
+                "light",
+                "n"
+              ],
+              "was#2": [
+                "(was waiting : attendait)",
+                "be",
+                "v",
+                "être"
+              ],
+              "waiting": [
+                "attendait",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "outside": [
+                "dehors",
+                "outside",
+                "d"
+              ],
+              "leaning": [
+                "appuyé",
+                "lean",
+                "v",
+                "s'appuyer"
+              ],
+              "on": [
+                "(leaning on : appuyé sur)",
+                "on",
+                "x"
+              ],
+              "stick": [
+                "canne",
+                "stick",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Arthur Penhale!” said Mrs Fenwick, with tears in her eyes. “Margaret's brother! I should have guessed. So you are the ghost of Harrow Mill!”",
+            "fr": "« Arthur Penhale ! dit Mme Fenwick, les larmes aux yeux. Le frère de Margaret ! J'aurais dû deviner. Alors c'est vous, le fantôme du moulin de Harrow ! »",
+            "g": {
+              "tears": [
+                "larmes",
+                "tear",
+                "n",
+                "larme"
+              ],
+              "margaret's": [
+                "de Margaret",
+                "Margaret",
+                "np"
+              ],
+              "brother": [
+                "frère",
+                "brother",
+                "n"
+              ],
+              "should": [
+                "aurais dû",
+                "shall",
+                "v"
+              ],
+              "have": [
+                "(should have : aurais dû)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "guessed": [
+                "deviner",
+                "guess",
+                "v",
+                "deviner"
+              ],
+              "ghost": [
+                "fantôme",
+                "ghost",
+                "n"
+              ],
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "“I only wanted the hall to have some light,” he said. “But without these three, the wheel would still be broken.”",
+            "fr": "« Je voulais seulement que la salle ait un peu de lumière, dit-il. Mais sans ces trois-là, la roue serait encore cassée. »",
+            "g": {
+              "wanted": [
+                "voulais",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "have": [
+                "ait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "some": [
+                "un peu de",
+                "some",
+                "t"
+              ],
+              "without": [
+                "sans",
+                "without",
+                "r"
+              ],
+              "these": [
+                "ces",
+                "these",
+                "t"
+              ],
+              "would": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "still": [
+                "encore",
+                "still",
+                "d"
+              ],
+              "broken": [
+                "cassée",
+                "broken",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "Everybody turned and applauded. Tom went red, Amara smiled, and Priya, who always had a sentence ready, found that she had nothing to say.",
+            "fr": "Tout le monde se tourna vers eux et applaudit. Tom devint rouge, Amara sourit, et Priya, qui avait toujours une phrase toute prête, s'aperçut qu'elle n'avait rien à dire.",
+            "g": {
+              "applauded": [
+                "applaudit",
+                "applaud",
+                "v",
+                "applaudir"
+              ],
+              "went": [
+                "devint",
+                "go",
+                "v",
+                "aller"
+              ],
+              "red": [
+                "rouge",
+                "red",
+                "a"
+              ],
+              "smiled": [
+                "sourit",
+                "smile",
+                "v",
+                "sourire"
+              ],
+              "sentence": [
+                "phrase",
+                "sentence",
+                "n"
+              ],
+              "ready": [
+                "prête",
+                "ready",
+                "a"
+              ],
+              "found": [
+                "s'aperçut",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "had#2": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "say": [
+                "dire",
+                "say",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "Mr Colby, the councillor, stepped forward. “We told the hall to wait,” he said. “I'm sorry. The council will pay for the cable and the parts.”",
+            "fr": "M. Colby, le conseiller, s'avança. « Nous avions dit à la salle d'attendre, dit-il. Je suis désolé. La mairie paiera le câble et les pièces. »",
+            "g": {
+              "councillor": [
+                "conseiller",
+                "councillor",
+                "n"
+              ],
+              "stepped": [
+                "s'avança (stepped forward)",
+                "step",
+                "v",
+                "faire un pas"
+              ],
+              "forward": [
+                "(stepped forward : s'avança)",
+                "forward",
+                "x"
+              ],
+              "told": [
+                "avions dit",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "to": [
+                "(told to : d'attendre)",
+                "to",
+                "x"
+              ],
+              "wait": [
+                "attendre",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "sorry": [
+                "désolé",
+                "sorry",
+                "a"
+              ],
+              "council": [
+                "mairie",
+                "council",
+                "n"
+              ],
+              "pay": [
+                "paiera",
+                "pay",
+                "v",
+                "payer"
+              ],
+              "cable": [
+                "câble",
+                "cable",
+                "n"
+              ],
+              "parts": [
+                "pièces",
+                "part",
+                "n",
+                "pièce"
+              ]
+            }
+          },
+          {
+            "en": "Mr Penhale shook his head. “Keep the money. I ask for one thing only: let any young person who wants to learn come here on Saturday mornings.”",
+            "fr": "M. Penhale secoua la tête. « Gardez l'argent. Je ne demande qu'une chose : que tout jeune qui veut apprendre puisse venir ici le samedi matin. »",
+            "g": {
+              "shook": [
+                "secoua",
+                "shake",
+                "v",
+                "secouer"
+              ],
+              "head": [
+                "tête",
+                "head",
+                "n"
+              ],
+              "keep": [
+                "gardez",
+                "keep",
+                "v",
+                "garder"
+              ],
+              "money": [
+                "argent",
+                "money",
+                "n"
+              ],
+              "ask": [
+                "demande",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "for": [
+                "(ask for : demander)",
+                "for",
+                "x"
+              ],
+              "one": [
+                "une",
+                "one",
+                "t"
+              ],
+              "thing": [
+                "chose",
+                "thing",
+                "n"
+              ],
+              "only": [
+                "ne ... que",
+                "only",
+                "d"
+              ],
+              "let": [
+                "que (let any : que tout jeune puisse)",
+                "let",
+                "v",
+                "laisser"
+              ],
+              "learn": [
+                "apprendre",
+                "learn",
+                "v",
+                "apprendre"
+              ],
+              "saturday": [
+                "samedi",
+                "Saturday",
+                "n"
+              ],
+              "mornings": [
+                "matin",
+                "morning",
+                "n",
+                "matin"
+              ],
+              "person": [
+                "(young person : jeune)",
+                "person",
+                "n"
+              ],
+              "young": [
+                "jeune (young person)",
+                "young",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“And I'll bring a sign,” said Mr Dray, taking a small brass plate out of his van. It read: “HARROW MILL — THE LIGHT MILL”.",
+            "fr": "« Et moi, j'apporterai une enseigne », dit M. Dray en sortant de sa camionnette une petite plaque de laiton. On y lisait : « MOULIN DE HARROW — LE MOULIN DE LUMIÈRE ».",
+            "g": {
+              "i'll": [
+                "je (futur)",
+                "will",
+                "v"
+              ],
+              "bring": [
+                "apporterai",
+                "bring",
+                "v",
+                "apporter"
+              ],
+              "sign": [
+                "enseigne",
+                "sign",
+                "n"
+              ],
+              "taking": [
+                "sortant",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "out": [
+                "(taking out : sortant)",
+                "out",
+                "x"
+              ],
+              "brass": [
+                "laiton",
+                "brass",
+                "n"
+              ],
+              "plate": [
+                "plaque",
+                "plate",
+                "n"
+              ],
+              "read": [
+                "lisait",
+                "read",
+                "v",
+                "lire"
+              ],
+              "it": [
+                "on (it read : on y lisait)",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "That winter, ten children came to the mill every Saturday, and Mr Penhale taught them to measure, mend and build.",
+            "fr": "Cet hiver-là, dix enfants venaient au moulin chaque samedi, et M. Penhale leur apprenait à mesurer, réparer et construire.",
+            "g": {
+              "winter": [
+                "hiver",
+                "winter",
+                "n"
+              ],
+              "children": [
+                "enfants",
+                "child",
+                "n",
+                "enfant"
+              ],
+              "came": [
+                "venaient",
+                "come",
+                "v",
+                "venir"
+              ],
+              "taught": [
+                "apprenait",
+                "teach",
+                "v",
+                "enseigner"
+              ],
+              "measure": [
+                "mesurer",
+                "measure",
+                "v",
+                "mesurer"
+              ],
+              "mend": [
+                "réparer",
+                "mend",
+                "v",
+                "réparer"
+              ],
+              "build": [
+                "construire",
+                "build",
+                "v",
+                "construire"
+              ]
+            }
+          },
+          {
+            "en": "Priya wrote the story: “The Ghost Who Lit the Village”.",
+            "fr": "Priya écrivit l'histoire : « Le fantôme qui éclaira le village ».",
+            "g": {
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "story": [
+                "histoire",
+                "story",
+                "n"
+              ],
+              "ghost": [
+                "fantôme",
+                "ghost",
+                "n"
+              ],
+              "lit": [
+                "éclaira",
+                "light",
+                "v",
+                "éclairer"
+              ],
+              "village": [
+                "village",
+                "village",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "The wheel kept turning in the cold night, and this time, nobody needed to whisper.",
+            "fr": "La roue continuait de tourner dans la nuit froide, et cette fois, personne n'avait besoin de chuchoter.",
+            "g": {
+              "kept": [
+                "continuait",
+                "keep",
+                "v",
+                "garder"
+              ],
+              "turning": [
+                "de tourner",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "cold": [
+                "froide",
+                "cold",
+                "a"
+              ],
+              "night": [
+                "nuit",
+                "night",
+                "n"
+              ],
+              "needed": [
+                "avait besoin de",
+                "need",
+                "v",
+                "avoir besoin de"
+              ],
+              "whisper": [
+                "chuchoter",
+                "whisper",
+                "v",
+                "chuchoter"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Epilogue — The Light Mill",
+      "titreFr": "Épilogue — Le moulin de lumière"
+    }
+  ]
+}

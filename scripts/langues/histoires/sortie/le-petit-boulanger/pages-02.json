@@ -1,0 +1,3024 @@
+{
+ "debut": 7,
+ "lexique": {
+  "afternoon": [
+   "après-midi",
+   "afternoon",
+   "n"
+  ],
+  "amy": [
+   "Amy (prénom)",
+   "Amy",
+   "np"
+  ],
+  "arrive": [
+   "arrivent",
+   "arrive",
+   "v",
+   "arriver"
+  ],
+  "asks": [
+   "demande",
+   "ask",
+   "v",
+   "demander"
+  ],
+  "bake": [
+   "cuisent",
+   "bake",
+   "v",
+   "cuire"
+  ],
+  "baker": [
+   "boulanger",
+   "baker",
+   "n"
+  ],
+  "bakery": [
+   "boulangerie",
+   "bakery",
+   "n"
+  ],
+  "barks": [
+   "aboie",
+   "bark",
+   "v",
+   "aboyer"
+  ],
+  "baskets": [
+   "paniers",
+   "basket",
+   "n",
+   "panier"
+  ],
+  "best": [
+   "meilleur",
+   "best",
+   "a"
+  ],
+  "big": [
+   "grand",
+   "big",
+   "a"
+  ],
+  "blue": [
+   "bleus",
+   "blue",
+   "a"
+  ],
+  "bread": [
+   "pain",
+   "bread",
+   "n"
+  ],
+  "brings": [
+   "apporte",
+   "bring",
+   "v",
+   "apporter"
+  ],
+  "brown": [
+   "Brown (nom de famille)",
+   "Brown",
+   "np"
+  ],
+  "butter": [
+   "beurre",
+   "butter",
+   "n"
+  ],
+  "careful": [
+   "prudent",
+   "careful",
+   "a"
+  ],
+  "carries": [
+   "porte",
+   "carry",
+   "v",
+   "porter"
+  ],
+  "carry": [
+   "porter",
+   "carry",
+   "v"
+  ],
+  "chair": [
+   "chaise",
+   "chair",
+   "n"
+  ],
+  "cheers": [
+   "acclame",
+   "cheer",
+   "v",
+   "acclamer"
+  ],
+  "cheese": [
+   "fromage",
+   "cheese",
+   "n"
+  ],
+  "chen": [
+   "Chen (nom de famille)",
+   "Chen",
+   "np"
+  ],
+  "children": [
+   "enfants",
+   "child",
+   "n",
+   "enfant"
+  ],
+  "claps": [
+   "applaudit",
+   "clap",
+   "v",
+   "applaudir"
+  ],
+  "clean": [
+   "propre",
+   "clean",
+   "a"
+  ],
+  "clock": [
+   "horloge",
+   "clock",
+   "n"
+  ],
+  "closes": [
+   "ferme",
+   "close",
+   "v",
+   "fermer"
+  ],
+  "come": [
+   "venir",
+   "come",
+   "v"
+  ],
+  "comes": [
+   "vient",
+   "come",
+   "v",
+   "venir"
+  ],
+  "crunchy": [
+   "croustillant",
+   "crunchy",
+   "a"
+  ],
+  "cuts": [
+   "coupe",
+   "cut",
+   "v",
+   "couper"
+  ],
+  "dance": [
+   "dansent",
+   "dance",
+   "v",
+   "danser"
+  ],
+  "daughter": [
+   "fille",
+   "daughter",
+   "n"
+  ],
+  "delicious": [
+   "délicieux",
+   "delicious",
+   "a"
+  ],
+  "dog": [
+   "chien",
+   "dog",
+   "n"
+  ],
+  "door": [
+   "porte",
+   "door",
+   "n"
+  ],
+  "dough": [
+   "pâte",
+   "dough",
+   "n"
+  ],
+  "drops": [
+   "gouttes",
+   "drop",
+   "n",
+   "goutte"
+  ],
+  "dry": [
+   "sec",
+   "dry",
+   "a"
+  ],
+  "eats": [
+   "mange",
+   "eat",
+   "v",
+   "manger"
+  ],
+  "fall": [
+   "tombent",
+   "fall",
+   "v",
+   "tomber"
+  ],
+  "fifty": [
+   "cinquante",
+   "fifty",
+   "a"
+  ],
+  "fills": [
+   "remplit",
+   "fill",
+   "v",
+   "remplir"
+  ],
+  "fix": [
+   "réparer",
+   "fix",
+   "v"
+  ],
+  "flags": [
+   "drapeaux",
+   "flag",
+   "n",
+   "drapeau"
+  ],
+  "flower": [
+   "fleurs",
+   "flower",
+   "n"
+  ],
+  "flowers": [
+   "fleurs",
+   "flower",
+   "n",
+   "fleur"
+  ],
+  "follows": [
+   "suit",
+   "follow",
+   "v",
+   "suivre"
+  ],
+  "friends": [
+   "amis",
+   "friend",
+   "n",
+   "ami"
+  ],
+  "fruit": [
+   "fruits",
+   "fruit",
+   "n",
+   "fruit"
+  ],
+  "gives": [
+   "donne",
+   "give",
+   "v",
+   "donner"
+  ],
+  "glass": [
+   "verre",
+   "glass",
+   "n"
+  ],
+  "goes": [
+   "fait",
+   "go",
+   "v",
+   "aller"
+  ],
+  "golden": [
+   "dorés",
+   "golden",
+   "a"
+  ],
+  "grey": [
+   "gris",
+   "grey",
+   "a"
+  ],
+  "guests": [
+   "invités",
+   "guest",
+   "n",
+   "invité"
+  ],
+  "hall": [
+   "Hall (nom de famille)",
+   "Hall",
+   "np"
+  ],
+  "happy": [
+   "content",
+   "happy",
+   "a"
+  ],
+  "help": [
+   "aide",
+   "help",
+   "n"
+  ],
+  "helpers": [
+   "aides",
+   "helper",
+   "n",
+   "aide"
+  ],
+  "hold": [
+   "tiennent",
+   "hold",
+   "v",
+   "tenir"
+  ],
+  "hooray": [
+   "hourra",
+   "hooray",
+   "d"
+  ],
+  "hot": [
+   "chaud",
+   "hot",
+   "a"
+  ],
+  "huge": [
+   "énorme",
+   "huge",
+   "a"
+  ],
+  "idea": [
+   "idée",
+   "idea",
+   "n"
+  ],
+  "kitchen": [
+   "cuisine",
+   "kitchen",
+   "n"
+  ],
+  "laughs": [
+   "rit",
+   "laugh",
+   "v",
+   "rire"
+  ],
+  "lights": [
+   "lumières",
+   "light",
+   "n",
+   "lumière"
+  ],
+  "little": [
+   "petite",
+   "little",
+   "a"
+  ],
+  "loaf": [
+   "pain",
+   "loaf",
+   "n"
+  ],
+  "loaves": [
+   "pains",
+   "loaf",
+   "n",
+   "pain"
+  ],
+  "lola": [
+   "Lola (prénom)",
+   "Lola",
+   "np"
+  ],
+  "looks": [
+   "regarde",
+   "look",
+   "v",
+   "regarder"
+  ],
+  "make": [
+   "préparent",
+   "make",
+   "v",
+   "faire"
+  ],
+  "makes": [
+   "fait",
+   "make",
+   "v",
+   "faire"
+  ],
+  "max": [
+   "Max (prénom du chien)",
+   "Max",
+   "np"
+  ],
+  "middle": [
+   "milieu",
+   "middle",
+   "n"
+  ],
+  "minute": [
+   "minute",
+   "minute",
+   "n"
+  ],
+  "minutes": [
+   "minutes",
+   "minute",
+   "n",
+   "minute"
+  ],
+  "mmm": [
+   "miam",
+   "mmm",
+   "d"
+  ],
+  "monday": [
+   "lundi",
+   "Monday",
+   "n"
+  ],
+  "mr": [
+   "Monsieur",
+   "Mr",
+   "n"
+  ],
+  "mrs": [
+   "Madame",
+   "Mrs",
+   "n"
+  ],
+  "music": [
+   "musique",
+   "music",
+   "n"
+  ],
+  "name": [
+   "nom",
+   "name",
+   "n"
+  ],
+  "need": [
+   "avons besoin de",
+   "need",
+   "v",
+   "avoir besoin de"
+  ],
+  "needs": [
+   "a besoin de",
+   "need",
+   "v",
+   "avoir besoin de"
+  ],
+  "neighbours": [
+   "voisins",
+   "neighbour",
+   "n",
+   "voisin"
+  ],
+  "o'clock": [
+   "heures",
+   "o'clock",
+   "d"
+  ],
+  "old": [
+   "âgé",
+   "old",
+   "a"
+  ],
+  "opens": [
+   "ouvre",
+   "open",
+   "v",
+   "ouvrir"
+  ],
+  "oven": [
+   "four",
+   "oven",
+   "n"
+  ],
+  "party": [
+   "fête",
+   "party",
+   "n"
+  ],
+  "people": [
+   "personnes",
+   "people",
+   "n"
+  ],
+  "perfect": [
+   "parfaits",
+   "perfect",
+   "a"
+  ],
+  "piece": [
+   "morceau",
+   "piece",
+   "n"
+  ],
+  "pizza": [
+   "pizza",
+   "pizza",
+   "n"
+  ],
+  "pizzas": [
+   "pizzas",
+   "pizza",
+   "n",
+   "pizza"
+  ],
+  "plays": [
+   "joue",
+   "play",
+   "v",
+   "jouer"
+  ],
+  "pushes": [
+   "pousse",
+   "push",
+   "v",
+   "pousser"
+  ],
+  "puts": [
+   "met",
+   "put",
+   "v",
+   "mettre"
+  ],
+  "radio": [
+   "radio",
+   "radio",
+   "n"
+  ],
+  "rain": [
+   "pluie",
+   "rain",
+   "n"
+  ],
+  "ready": [
+   "prêt",
+   "ready",
+   "a"
+  ],
+  "red": [
+   "rouge",
+   "red",
+   "a"
+  ],
+  "restaurant": [
+   "restaurant",
+   "restaurant",
+   "n"
+  ],
+  "road": [
+   "route",
+   "road",
+   "n"
+  ],
+  "rolls": [
+   "pains (petits pains)",
+   "roll",
+   "n",
+   "petit pain"
+  ],
+  "rossi": [
+   "Rossi (nom de famille)",
+   "Rossi",
+   "np"
+  ],
+  "round": [
+   "ronds",
+   "round",
+   "a"
+  ],
+  "runs": [
+   "court",
+   "run",
+   "v",
+   "courir"
+  ],
+  "sami": [
+   "Sami (prénom)",
+   "Sami",
+   "np"
+  ],
+  "saturday": [
+   "samedi",
+   "Saturday",
+   "n"
+  ],
+  "says": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "shelves": [
+   "étagères",
+   "shelf",
+   "n",
+   "étagère"
+  ],
+  "shop": [
+   "boutique",
+   "shop",
+   "n"
+  ],
+  "shout": [
+   "crient",
+   "shout",
+   "v",
+   "crier"
+  ],
+  "shouts": [
+   "crie",
+   "shout",
+   "v",
+   "crier"
+  ],
+  "sings": [
+   "chante",
+   "sing",
+   "v",
+   "chanter"
+  ],
+  "sits": [
+   "s'assoit",
+   "sit",
+   "v",
+   "s'asseoir"
+  ],
+  "sky": [
+   "ciel",
+   "sky",
+   "n"
+  ],
+  "sleeps": [
+   "dort",
+   "sleep",
+   "v",
+   "dormir"
+  ],
+  "slowly": [
+   "lentement",
+   "slowly",
+   "d"
+  ],
+  "small": [
+   "petit",
+   "small",
+   "a"
+  ],
+  "smell": [
+   "odeur",
+   "smell",
+   "n"
+  ],
+  "smiles": [
+   "sourit",
+   "smile",
+   "v",
+   "sourire"
+  ],
+  "soft": [
+   "mous",
+   "soft",
+   "a"
+  ],
+  "song": [
+   "chanson",
+   "song",
+   "n"
+  ],
+  "sound": [
+   "bruit",
+   "sound",
+   "n"
+  ],
+  "special": [
+   "spécial",
+   "special",
+   "a"
+  ],
+  "stands": [
+   "se tient debout",
+   "stand",
+   "v",
+   "se tenir debout"
+  ],
+  "stars": [
+   "étoiles",
+   "star",
+   "n",
+   "étoile"
+  ],
+  "stays": [
+   "reste",
+   "stay",
+   "v",
+   "rester"
+  ],
+  "stops": [
+   "s'arrête",
+   "stop",
+   "v",
+   "s'arrêter"
+  ],
+  "street": [
+   "rue",
+   "street",
+   "n"
+  ],
+  "strong": [
+   "fortes",
+   "strong",
+   "a"
+  ],
+  "sun": [
+   "soleil",
+   "sun",
+   "n"
+  ],
+  "t": [
+   "T (lettre)",
+   "T",
+   "n"
+  ],
+  "table": [
+   "table",
+   "table",
+   "n"
+  ],
+  "tables": [
+   "tables",
+   "table",
+   "n",
+   "table"
+  ],
+  "takes": [
+   "prend",
+   "take",
+   "v",
+   "prendre"
+  ],
+  "thank": [
+   "merci",
+   "thank",
+   "v",
+   "remercier"
+  ],
+  "theo": [
+   "Théo (prénom)",
+   "Theo",
+   "np"
+  ],
+  "tired": [
+   "fatigué",
+   "tired",
+   "a"
+  ],
+  "tray": [
+   "plateau",
+   "tray",
+   "n"
+  ],
+  "trays": [
+   "plateaux",
+   "tray",
+   "n",
+   "plateau"
+  ],
+  "trolley": [
+   "chariot",
+   "trolley",
+   "n"
+  ],
+  "turns": [
+   "devient",
+   "turn",
+   "v",
+   "devenir"
+  ],
+  "umbrella": [
+   "parapluie",
+   "umbrella",
+   "n"
+  ],
+  "umbrellas": [
+   "parapluies",
+   "umbrella",
+   "n",
+   "parapluie"
+  ],
+  "wait": [
+   "attendons",
+   "wait",
+   "v",
+   "attendre"
+  ],
+  "walk": [
+   "marchent",
+   "walk",
+   "v",
+   "marcher"
+  ],
+  "walks": [
+   "marche",
+   "walk",
+   "v",
+   "marcher"
+  ],
+  "wants": [
+   "veut",
+   "want",
+   "v",
+   "vouloir"
+  ],
+  "warm": [
+   "chaud",
+   "warm",
+   "a"
+  ],
+  "water": [
+   "eau",
+   "water",
+   "n"
+  ],
+  "window": [
+   "fenêtre",
+   "window",
+   "n"
+  ],
+  "wonderful": [
+   "merveilleusement bon",
+   "wonderful",
+   "a"
+  ],
+  "world": [
+   "monde",
+   "world",
+   "n"
+  ],
+  "years": [
+   "ans",
+   "year",
+   "n",
+   "an"
+  ],
+  "yellow": [
+   "jaunes",
+   "yellow",
+   "a"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Theo goes into the street and shouts.",
+      "fr": "Théo va dans la rue et crie.",
+      "g": {
+       "goes": [
+        "va",
+        "go",
+        "v",
+        "aller"
+       ],
+       "into": [
+        "dans",
+        "into",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Please help us, everyone!”",
+      "fr": "« Aidez-nous, s'il vous plaît, tout le monde ! »",
+      "g": {
+       "please": [
+        "s'il vous plaît",
+        "please",
+        "d"
+       ],
+       "help": [
+        "aidez",
+        "help",
+        "v",
+        "aider"
+       ],
+       "us": [
+        "nous",
+        "us",
+        "p"
+       ],
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“We need to carry bread for the party!”",
+      "fr": "« Nous devons porter du pain pour la fête ! »",
+      "g": {
+       "need": [
+        "devons (need to)",
+        "need",
+        "v",
+        "avoir besoin de"
+       ],
+       "to": [
+        "(need to : devons)",
+        "to",
+        "x"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Mr Chen comes out of his fruit shop.",
+      "fr": "Monsieur Chen sort de son magasin de fruits.",
+      "g": {
+       "comes": [
+        "sort (comes out of)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "out": [
+        "(comes out of : sort de)",
+        "out",
+        "d"
+       ],
+       "of": [
+        "(comes out of : sort de)",
+        "of",
+        "r"
+       ],
+       "shop": [
+        "magasin",
+        "shop",
+        "n"
+       ],
+       "his": [
+        "son",
+        "his",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "He has a big trolley.",
+      "fr": "Il a un grand chariot.",
+      "g": {
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“I can carry the trays,” he says.",
+      "fr": "« Je peux porter les plateaux », dit-il.",
+      "g": {
+       "can": [
+        "peux",
+        "can",
+        "v"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Lola comes from the flower shop.",
+      "fr": "Lola vient de la boutique de fleurs.",
+      "g": {
+       "from": [
+        "de",
+        "from",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "She brings two big baskets.",
+      "fr": "Elle apporte deux grands paniers.",
+      "g": {
+       "big": [
+        "grands",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“My baskets are very strong,” she says.",
+      "fr": "« Mes paniers sont très solides », dit-elle.",
+      "g": {
+       "my": [
+        "mes",
+        "my",
+        "p"
+       ],
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ],
+       "strong": [
+        "solides",
+        "strong",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mr Brown and his daughter Amy come too.",
+      "fr": "Monsieur Brown et sa fille Amy viennent aussi.",
+      "g": {
+       "come": [
+        "viennent",
+        "come",
+        "v"
+       ],
+       "his": [
+        "sa",
+        "his",
+        "p"
+       ],
+       "too": [
+        "aussi",
+        "too",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Amy is six years old.",
+      "fr": "Amy a six ans.",
+      "g": {
+       "is": [
+        "a (is … years old)",
+        "be",
+        "v",
+        "être"
+       ],
+       "years": [
+        "ans (years old)",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "(years old : ans)",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“I can help too!” she says.",
+      "fr": "« Moi aussi, je peux aider ! » dit-elle.",
+      "g": {
+       "can": [
+        "peux",
+        "can",
+        "v"
+       ],
+       "help": [
+        "aider",
+        "help",
+        "v",
+        "aider"
+       ],
+       "too": [
+        "aussi (moi aussi)",
+        "too",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Soon, ten people are in the street.",
+      "fr": "Bientôt, dix personnes sont dans la rue.",
+      "g": {
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Sami takes the loaves out of the oven.",
+      "fr": "Sami sort les pains du four.",
+      "g": {
+       "takes": [
+        "sort (takes out of)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "out": [
+        "(takes … out of : sort … de)",
+        "out",
+        "d"
+       ],
+       "of": [
+        "(takes … out of : sort … de)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Everyone puts the loaves on big trays.",
+      "fr": "Tout le monde met les pains sur de grands plateaux.",
+      "g": {
+       "on": [
+        "sur",
+        "on",
+        "r"
+       ],
+       "big": [
+        "grands",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Be careful!” says Sami.",
+      "fr": "« Faites attention ! » dit Sami.",
+      "g": {
+       "be": [
+        "faites (be careful : faites attention)",
+        "be",
+        "v"
+       ],
+       "careful": [
+        "attention (be careful)",
+        "careful",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“The loaves are very soft.”",
+      "fr": "« Les pains sont très mous. »",
+      "g": {
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Amy carries a small tray.",
+      "fr": "Amy porte un petit plateau.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "She walks very slowly.",
+      "fr": "Elle marche très lentement."
+     },
+     {
+      "en": "The tray looks too big for her!",
+      "fr": "Le plateau a l'air trop grand pour elle !",
+      "g": {
+       "looks": [
+        "a l'air",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "too": [
+        "trop",
+        "too",
+        "d"
+       ],
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ],
+       "her": [
+        "elle",
+        "her",
+        "p"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 4 — The street helps",
+   "titreFr": "Chapitre 4 — La rue aide"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "The line of helpers crosses the street.",
+      "fr": "La file d'aides traverse la rue.",
+      "g": {
+       "line": [
+        "file",
+        "line",
+        "n"
+       ],
+       "of": [
+        "d'",
+        "of",
+        "r"
+       ],
+       "crosses": [
+        "traverse",
+        "cross",
+        "v",
+        "traverser"
+       ]
+      }
+     },
+     {
+      "en": "Mr Chen pushes the trolley.",
+      "fr": "Monsieur Chen pousse le chariot."
+     },
+     {
+      "en": "Lola and Mr Brown carry the baskets.",
+      "fr": "Lola et Monsieur Brown portent les paniers.",
+      "g": {
+       "carry": [
+        "portent",
+        "carry",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Amy walks next to Theo.",
+      "fr": "Amy marche à côté de Théo.",
+      "g": {
+       "next": [
+        "à côté (next to)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "A brown dog follows them.",
+      "fr": "Un chien marron les suit.",
+      "g": {
+       "brown": [
+        "marron",
+        "brown",
+        "a"
+       ],
+       "them": [
+        "les",
+        "them",
+        "p"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "His name is Max.",
+      "fr": "Il s'appelle Max.",
+      "g": {
+       "his": [
+        "il (his name is)",
+        "his",
+        "p"
+       ],
+       "name": [
+        "s'appelle (his name is)",
+        "name",
+        "n"
+       ],
+       "is": [
+        "(his name is : s'appelle)",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Max wants a loaf too!",
+      "fr": "Max veut un pain aussi !",
+      "g": {
+       "too": [
+        "aussi",
+        "too",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“No, Max!” laughs Lola.",
+      "fr": "« Non, Max ! » rit Lola.",
+      "g": {
+       "no": [
+        "non",
+        "no",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "“This bread is not for you.”",
+      "fr": "« Ce pain n'est pas pour toi. »",
+      "g": {
+       "this": [
+        "ce",
+        "this",
+        "t"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ],
+       "you": [
+        "toi",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Everybody laughs, and Max barks.",
+      "fr": "Tout le monde rit, et Max aboie.",
+      "g": {
+       "everybody": [
+        "tout le monde",
+        "everybody",
+        "p"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mrs Rossi is at the door of her restaurant.",
+      "fr": "Madame Rossi est à la porte de son restaurant.",
+      "g": {
+       "at": [
+        "à",
+        "at",
+        "r"
+       ],
+       "of": [
+        "de",
+        "of",
+        "r"
+       ],
+       "her": [
+        "son",
+        "her",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“Come in, come in!” she says.",
+      "fr": "« Entrez, entrez ! » dit-elle.",
+      "g": {
+       "come": [
+        "entrez (come in)",
+        "come",
+        "v"
+       ],
+       "in": [
+        "(come in : entrez)",
+        "in",
+        "r"
+       ],
+       "come#2": [
+        "entrez (come in)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "in#2": [
+        "(come in : entrez)",
+        "in",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The kitchen is very big and very clean.",
+      "fr": "La cuisine est très grande et très propre.",
+      "g": {
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "very": [
+        "très",
+        "very",
+        "d"
+       ],
+       "very#2": [
+        "très",
+        "very",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "There is a huge oven in the middle.",
+      "fr": "Il y a un énorme four au milieu.",
+      "g": {
+       "there": [
+        "il y a (there is)",
+        "there",
+        "d"
+       ],
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "in": [
+        "au (in the middle : au milieu)",
+        "in",
+        "r"
+       ],
+       "the": [
+        "(in the middle : au milieu)",
+        "the",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "It has three shelves inside.",
+      "fr": "Il a trois étagères à l'intérieur.",
+      "g": {
+       "it": [
+        "il",
+        "it",
+        "p"
+       ],
+       "has": [
+        "a",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "inside": [
+        "à l'intérieur",
+        "inside",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Sami puts the loaves on the shelves.",
+      "fr": "Sami pose les pains sur les étagères.",
+      "g": {
+       "puts": [
+        "pose",
+        "put",
+        "v",
+        "poser, mettre"
+       ],
+       "on": [
+        "sur",
+        "on",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mrs Rossi closes the oven door.",
+      "fr": "Madame Rossi ferme la porte du four."
+     },
+     {
+      "en": "“Now we wait,” she says.",
+      "fr": "« Maintenant, nous attendons », dit-elle."
+     },
+     {
+      "en": "“The bread takes thirty minutes.”",
+      "fr": "« Le pain met trente minutes à cuire. »",
+      "g": {
+       "takes": [
+        "met (takes thirty minutes)",
+        "take",
+        "v",
+        "prendre"
+       ]
+      }
+     },
+     {
+      "en": "Theo looks at the clock.",
+      "fr": "Théo regarde l'horloge.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Soon, a warm smell fills the kitchen.",
+      "fr": "Bientôt, une odeur chaude remplit la cuisine.",
+      "g": {
+       "warm": [
+        "chaude",
+        "warm",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Everyone sits near the oven.",
+      "fr": "Tout le monde s'assoit près du four.",
+      "g": {
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ],
+       "near": [
+        "près de",
+        "near",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Theo looks at the clock every minute.",
+      "fr": "Théo regarde l'horloge à chaque minute.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ],
+       "every": [
+        "chaque",
+        "every",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "“Is it ready now?” he asks.",
+      "fr": "« C'est prêt maintenant ? » demande-t-il.",
+      "g": {
+       "is": [
+        "c'est (is it)",
+        "be",
+        "v",
+        "être"
+       ],
+       "it": [
+        "(is it : c'est)",
+        "it",
+        "p"
+       ],
+       "asks": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“Not yet,” says Mrs Rossi.",
+      "fr": "« Pas encore », dit Madame Rossi.",
+      "g": {
+       "not": [
+        "pas (not yet : pas encore)",
+        "not",
+        "d"
+       ],
+       "yet": [
+        "encore (not yet : pas encore)",
+        "yet",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "“Wait five more minutes, please.”",
+      "fr": "« Attendez encore cinq minutes, s'il vous plaît. »",
+      "g": {
+       "wait": [
+        "attendez",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "more": [
+        "encore (five more : encore cinq)",
+        "more",
+        "t"
+       ],
+       "please": [
+        "s'il vous plaît",
+        "please",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Amy sings a little song.",
+      "fr": "Amy chante une petite chanson."
+     },
+     {
+      "en": "Lola gives everyone a glass of water.",
+      "fr": "Lola donne un verre d'eau à tout le monde.",
+      "g": {
+       "everyone": [
+        "à tout le monde",
+        "everyone",
+        "p"
+       ],
+       "of": [
+        "d'",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Max sleeps under a table.",
+      "fr": "Max dort sous une table.",
+      "g": {
+       "under": [
+        "sous",
+        "under",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "At last, the oven makes a small sound.",
+      "fr": "Enfin, le four fait un petit bruit.",
+      "g": {
+       "at": [
+        "enfin (at last)",
+        "at",
+        "r"
+       ],
+       "last": [
+        "(at last : enfin)",
+        "last",
+        "a"
+       ],
+       "makes": [
+        "fait",
+        "make",
+        "v",
+        "faire"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Sami opens the door.",
+      "fr": "Sami ouvre la porte."
+     }
+    ],
+    [
+     {
+      "en": "A big smell of hot bread comes out.",
+      "fr": "Une forte odeur de pain chaud en sort.",
+      "g": {
+       "big": [
+        "forte (big smell)",
+        "big",
+        "a"
+       ],
+       "of": [
+        "de",
+        "of",
+        "r"
+       ],
+       "comes": [
+        "sort (comes out)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "out": [
+        "(comes out : sort)",
+        "out",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The loaves are golden and round.",
+      "fr": "Les pains sont dorés et ronds.",
+      "g": {
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "They all smell wonderful!",
+      "fr": "Ils sentent tous merveilleusement bon !",
+      "g": {
+       "they": [
+        "ils",
+        "they",
+        "p"
+       ],
+       "all": [
+        "tous",
+        "all",
+        "t"
+       ],
+       "smell": [
+        "sentent",
+        "smell",
+        "v",
+        "sentir"
+       ],
+       "wonderful": [
+        "merveilleusement bon",
+        "wonderful",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“They are perfect!” says Sami.",
+      "fr": "« Ils sont parfaits ! » dit Sami.",
+      "g": {
+       "they": [
+        "ils",
+        "they",
+        "p"
+       ],
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Everyone claps and shouts, “Hooray!”",
+      "fr": "Tout le monde applaudit et crie : « Hourra ! »",
+      "g": {
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Theo takes a small piece of hot bread.",
+      "fr": "Théo prend un petit morceau de pain chaud.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "of": [
+        "de",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It is soft inside and crunchy outside.",
+      "fr": "Il est moelleux à l'intérieur et croustillant à l'extérieur.",
+      "g": {
+       "it": [
+        "il",
+        "it",
+        "p"
+       ],
+       "soft": [
+        "moelleux",
+        "soft",
+        "a"
+       ],
+       "inside": [
+        "à l'intérieur",
+        "inside",
+        "r"
+       ],
+       "outside": [
+        "à l'extérieur",
+        "outside",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“This is the best bread in the world!”",
+      "fr": "« C'est le meilleur pain du monde ! »",
+      "g": {
+       "this": [
+        "c' (this is : c'est)",
+        "this",
+        "t"
+       ],
+       "is": [
+        "c'est (this is)",
+        "be",
+        "v",
+        "être"
+       ],
+       "in": [
+        "du (in the world : du monde)",
+        "in",
+        "r"
+       ],
+       "the": [
+        "(in the world : du monde)",
+        "the",
+        "t"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 5 — The smell of bread",
+   "titreFr": "Chapitre 5 — L'odeur du pain"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "The first fifty loaves are on a big table.",
+      "fr": "Les cinquante premiers pains sont sur une grande table.",
+      "g": {
+       "first": [
+        "premiers",
+        "first",
+        "a"
+       ],
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ],
+       "on": [
+        "sur",
+        "on",
+        "r"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Fifty loaves are not enough.",
+      "fr": "Cinquante pains ne suffisent pas.",
+      "g": {
+       "are": [
+        "ne suffisent (are not enough)",
+        "be",
+        "v",
+        "être"
+       ],
+       "not": [
+        "pas (are not enough)",
+        "not",
+        "d"
+       ],
+       "enough": [
+        "(are not enough : ne suffisent pas)",
+        "enough",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "“We need more bread,” says Sami.",
+      "fr": "« Nous avons besoin de plus de pain », dit Sami.",
+      "g": {
+       "need": [
+        "avons besoin de",
+        "need",
+        "v",
+        "avoir besoin de"
+       ],
+       "more": [
+        "plus de",
+        "more",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "At the bakery, there is more dough.",
+      "fr": "À la boulangerie, il y a encore de la pâte.",
+      "g": {
+       "at": [
+        "à",
+        "at",
+        "r"
+       ],
+       "there": [
+        "il y a (there is)",
+        "there",
+        "d"
+       ],
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "more": [
+        "encore de la",
+        "more",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "The helpers carry the dough to the restaurant.",
+      "fr": "Les aides portent la pâte au restaurant.",
+      "g": {
+       "carry": [
+        "portent",
+        "carry",
+        "v"
+       ],
+       "to": [
+        "à",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Sami and Mrs Rossi bake all afternoon.",
+      "fr": "Sami et Madame Rossi font cuire du pain tout l'après-midi.",
+      "g": {
+       "bake": [
+        "font cuire",
+        "bake",
+        "v",
+        "cuire"
+       ],
+       "all": [
+        "tout",
+        "all",
+        "t"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Theo, Amy and Lola make the rolls.",
+      "fr": "Théo, Amy et Lola préparent les petits pains.",
+      "g": {
+       "rolls": [
+        "petits pains",
+        "roll",
+        "n",
+        "petit pain"
+       ]
+      }
+     },
+     {
+      "en": "The kitchen is hot, but everyone is happy.",
+      "fr": "La cuisine est chaude, mais tout le monde est content.",
+      "g": {
+       "hot": [
+        "chaude",
+        "hot",
+        "a"
+       ],
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "At four o'clock, the sky turns grey.",
+      "fr": "À quatre heures, le ciel devient gris.",
+      "g": {
+       "at": [
+        "à",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Amy looks out of the window.",
+      "fr": "Amy regarde par la fenêtre.",
+      "g": {
+       "looks": [
+        "regarde (looks out of)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "out": [
+        "(looks out of : regarde par)",
+        "out",
+        "d"
+       ],
+       "of": [
+        "(looks out of : regarde par)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“It is raining!” she shouts.",
+      "fr": "« Il pleut ! » crie-t-elle.",
+      "g": {
+       "it": [
+        "il",
+        "it",
+        "p"
+       ],
+       "is": [
+        "(is raining : pleut)",
+        "be",
+        "v",
+        "être"
+       ],
+       "raining": [
+        "pleut (is raining)",
+        "rain",
+        "v",
+        "pleuvoir"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Our bread!” says Theo.",
+      "fr": "« Notre pain ! » dit Théo.",
+      "g": {
+       "our": [
+        "notre",
+        "our",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“The loaves can't get wet!”",
+      "fr": "« Les pains ne doivent pas être mouillés ! »",
+      "g": {
+       "can't": [
+        "ne doivent pas",
+        "can",
+        "v"
+       ],
+       "get": [
+        "être (get wet)",
+        "get",
+        "v",
+        "obtenir, devenir"
+       ],
+       "wet": [
+        "mouillés (get wet)",
+        "wet",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Everyone looks at the street.",
+      "fr": "Tout le monde regarde la rue.",
+      "g": {
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ],
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Big drops of rain fall on the road.",
+      "fr": "De grosses gouttes de pluie tombent sur la route.",
+      "g": {
+       "big": [
+        "grosses",
+        "big",
+        "a"
+       ],
+       "of": [
+        "de",
+        "of",
+        "r"
+       ],
+       "on": [
+        "sur",
+        "on",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Lola has an idea.",
+      "fr": "Lola a une idée.",
+      "g": {
+       "has": [
+        "a",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     },
+     {
+      "en": "“I have umbrellas in my shop!”",
+      "fr": "« J'ai des parapluies dans ma boutique ! »",
+      "g": {
+       "have": [
+        "ai",
+        "have",
+        "v"
+       ],
+       "my": [
+        "ma",
+        "my",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "She runs to her shop and comes back.",
+      "fr": "Elle court à sa boutique et revient.",
+      "g": {
+       "to": [
+        "à",
+        "to",
+        "r"
+       ],
+       "her": [
+        "sa",
+        "her",
+        "p"
+       ],
+       "comes": [
+        "revient (comes back)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "back": [
+        "(comes back : revient)",
+        "back",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "She has six big umbrellas, red, blue and yellow.",
+      "fr": "Elle a six grands parapluies, rouges, bleus et jaunes.",
+      "g": {
+       "has": [
+        "a",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "big": [
+        "grands",
+        "big",
+        "a"
+       ],
+       "red": [
+        "rouges",
+        "red",
+        "a"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Now everyone has an umbrella.",
+      "fr": "Maintenant, chacun a un parapluie.",
+      "g": {
+       "everyone": [
+        "chacun",
+        "everyone",
+        "p"
+       ],
+       "has": [
+        "a",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     },
+     {
+      "en": "The helpers hold the umbrellas over the trays.",
+      "fr": "Les aides tiennent les parapluies au-dessus des plateaux.",
+      "g": {
+       "over": [
+        "au-dessus de",
+        "over",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The bread stays dry.",
+      "fr": "Le pain reste sec.",
+      "g": {
+       "stays": [
+        "reste",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "dry": [
+        "sec",
+        "dry",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Slowly, the helpers walk to the party tables.",
+      "fr": "Lentement, les aides marchent vers les tables de la fête.",
+      "g": {
+       "walk": [
+        "marchent",
+        "walk",
+        "v",
+        "marcher"
+       ],
+       "to": [
+        "vers",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It is five minutes to six.",
+      "fr": "Il est six heures moins cinq.",
+      "g": {
+       "it": [
+        "il",
+        "it",
+        "p"
+       ],
+       "five": [
+        "(five minutes to six : moins cinq)",
+        "five",
+        "a"
+       ],
+       "minutes": [
+        "(five minutes to six : moins cinq)",
+        "minute",
+        "n",
+        "minute"
+       ],
+       "to": [
+        "(five minutes to six : moins cinq)",
+        "to",
+        "r"
+       ],
+       "six": [
+        "six heures (moins cinq)",
+        "six",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The tables are in the middle of the street.",
+      "fr": "Les tables sont au milieu de la rue.",
+      "g": {
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ],
+       "in": [
+        "au (in the middle of : au milieu de)",
+        "in",
+        "r"
+       ],
+       "the": [
+        "(in the middle of : au milieu de)",
+        "the",
+        "t"
+       ],
+       "middle": [
+        "milieu (in the middle of)",
+        "middle",
+        "n"
+       ],
+       "of": [
+        "(in the middle of : au milieu de)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "There are flags, lights and big flowers.",
+      "fr": "Il y a des drapeaux, des lumières et de grandes fleurs.",
+      "g": {
+       "there": [
+        "il y a (there are)",
+        "there",
+        "d"
+       ],
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "big": [
+        "grandes",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mr Chen plays music on his old radio.",
+      "fr": "Monsieur Chen joue de la musique sur sa vieille radio.",
+      "g": {
+       "on": [
+        "sur",
+        "on",
+        "r"
+       ],
+       "his": [
+        "sa",
+        "his",
+        "p"
+       ],
+       "old": [
+        "vieille",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The children dance in the street.",
+      "fr": "Les enfants dansent dans la rue."
+     },
+     {
+      "en": "Then the rain stops, and the sun comes out.",
+      "fr": "Puis la pluie s'arrête, et le soleil apparaît.",
+      "g": {
+       "then": [
+        "puis",
+        "then",
+        "c"
+       ],
+       "comes": [
+        "apparaît (comes out)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "out": [
+        "(comes out : apparaît)",
+        "out",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The helpers arrive just in time!",
+      "fr": "Les aides arrivent juste à temps !",
+      "g": {
+       "just": [
+        "juste (just in time : juste à temps)",
+        "just",
+        "d"
+       ],
+       "in": [
+        "(just in time : juste à temps)",
+        "in",
+        "r"
+       ],
+       "time": [
+        "(just in time : juste à temps)",
+        "time",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Hooray!” shout the guests.",
+      "fr": "« Hourra ! » crient les invités."
+     },
+     {
+      "en": "Sami cuts the bread, and everyone eats.",
+      "fr": "Sami coupe le pain, et tout le monde mange.",
+      "g": {
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "There is bread with butter and bread with cheese.",
+      "fr": "Il y a du pain avec du beurre et du pain avec du fromage.",
+      "g": {
+       "there": [
+        "il y a (there is)",
+        "there",
+        "d"
+       ],
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Rossi brings big pizzas from her restaurant.",
+      "fr": "Madame Rossi apporte de grandes pizzas de son restaurant.",
+      "g": {
+       "big": [
+        "grandes",
+        "big",
+        "a"
+       ],
+       "from": [
+        "de",
+        "from",
+        "r"
+       ],
+       "her": [
+        "son",
+        "her",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Everyone says, “Mmm, delicious!”",
+      "fr": "Tout le monde dit : « Miam, délicieux ! »",
+      "g": {
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Max eats a little bread under the table.",
+      "fr": "Max mange un peu de pain sous la table.",
+      "g": {
+       "a": [
+        "un peu de (a little)",
+        "a",
+        "t"
+       ],
+       "little": [
+        "(a little : un peu de)",
+        "little",
+        "a"
+       ],
+       "under": [
+        "sous",
+        "under",
+        "r"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 6 — The party",
+   "titreFr": "Chapitre 6 — La fête"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Sami stands on a chair.",
+      "fr": "Sami se tient debout sur une chaise.",
+      "g": {
+       "on": [
+        "sur",
+        "on",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Thank you, everyone!” he says.",
+      "fr": "« Merci à tous ! » dit-il.",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ],
+       "everyone": [
+        "à tous",
+        "everyone",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“You are the best neighbours!”",
+      "fr": "« Vous êtes les meilleurs voisins ! »",
+      "g": {
+       "you": [
+        "vous",
+        "you",
+        "p"
+       ],
+       "are": [
+        "êtes",
+        "be",
+        "v",
+        "être"
+       ],
+       "best": [
+        "meilleurs",
+        "best",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Mrs Rossi, thank you for your big oven.”",
+      "fr": "« Madame Rossi, merci pour votre grand four. »",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ],
+       "your": [
+        "votre",
+        "your",
+        "p"
+       ],
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Now we have bread for everyone!”",
+      "fr": "« Maintenant, nous avons du pain pour tout le monde ! »",
+      "g": {
+       "have": [
+        "avons",
+        "have",
+        "v"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ],
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Everyone claps and cheers.",
+      "fr": "Tout le monde applaudit et crie de joie.",
+      "g": {
+       "everyone": [
+        "tout le monde",
+        "everyone",
+        "p"
+       ],
+       "cheers": [
+        "crie de joie",
+        "cheer",
+        "v",
+        "acclamer"
+       ]
+      }
+     },
+     {
+      "en": "“And thank you, Theo,” says Sami.",
+      "fr": "« Et merci, Théo », dit Sami.",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“It is your idea.”",
+      "fr": "« C'est ton idée. »",
+      "g": {
+       "it": [
+        "(it is : c'est)",
+        "it",
+        "p"
+       ],
+       "is": [
+        "c'est (it is)",
+        "be",
+        "v",
+        "être"
+       ],
+       "your": [
+        "ton",
+        "your",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Theo is red and very happy.",
+      "fr": "Théo est tout rouge et très heureux.",
+      "g": {
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "happy": [
+        "heureux",
+        "happy",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Sami gives him a special loaf.",
+      "fr": "Sami lui donne un pain spécial.",
+      "g": {
+       "him": [
+        "lui",
+        "him",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "It has a big T on top.",
+      "fr": "Il porte un grand T sur le dessus.",
+      "g": {
+       "it": [
+        "il",
+        "it",
+        "p"
+       ],
+       "has": [
+        "porte",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ],
+       "on": [
+        "sur (on top : sur le dessus)",
+        "on",
+        "r"
+       ],
+       "top": [
+        "(on top : sur le dessus)",
+        "top",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“On Monday, Mr Hall comes to fix the oven.”",
+      "fr": "« Lundi, Monsieur Hall vient réparer le four. »",
+      "g": {
+       "on": [
+        "(on Monday : lundi)",
+        "on",
+        "r"
+       ],
+       "monday": [
+        "lundi (on Monday)",
+        "Monday",
+        "n"
+       ],
+       "comes": [
+        "vient",
+        "come",
+        "v",
+        "venir"
+       ],
+       "to": [
+        "(to fix : réparer)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“But today, I have the best friends!”",
+      "fr": "« Mais aujourd'hui, j'ai les meilleurs amis ! »",
+      "g": {
+       "have": [
+        "ai",
+        "have",
+        "v"
+       ],
+       "best": [
+        "meilleurs",
+        "best",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Rossi smiles at Sami and Theo.",
+      "fr": "Madame Rossi sourit à Sami et à Théo.",
+      "g": {
+       "at": [
+        "à",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Come again next Saturday,” she says.",
+      "fr": "« Revenez samedi prochain », dit-elle.",
+      "g": {
+       "come": [
+        "revenez (come again)",
+        "come",
+        "v"
+       ],
+       "again": [
+        "(come again : revenez)",
+        "again",
+        "d"
+       ],
+       "next": [
+        "prochain",
+        "next",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“We can make bread and pizza together.”",
+      "fr": "« Nous pouvons faire du pain et des pizzas ensemble. »",
+      "g": {
+       "can": [
+        "pouvons",
+        "can",
+        "v"
+       ],
+       "make": [
+        "faire",
+        "make",
+        "v",
+        "faire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The stars come out over the street.",
+      "fr": "Les étoiles apparaissent au-dessus de la rue.",
+      "g": {
+       "come": [
+        "apparaissent (come out)",
+        "come",
+        "v"
+       ],
+       "out": [
+        "(come out : apparaissent)",
+        "out",
+        "d"
+       ],
+       "over": [
+        "au-dessus de",
+        "over",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Theo eats his special loaf.",
+      "fr": "Théo mange son pain spécial.",
+      "g": {
+       "his": [
+        "son",
+        "his",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Max sits next to him.",
+      "fr": "Max s'assoit à côté de lui.",
+      "g": {
+       "next": [
+        "à côté (next to)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ],
+       "him": [
+        "lui",
+        "him",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Theo is tired, but he is very happy.",
+      "fr": "Théo est fatigué, mais il est très heureux.",
+      "g": {
+       "happy": [
+        "heureux",
+        "happy",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "A baker needs an oven, but he needs friends too.",
+      "fr": "Un boulanger a besoin d'un four, mais il a aussi besoin d'amis.",
+      "g": {
+       "needs#2": [
+        "a besoin de",
+        "need",
+        "v",
+        "avoir besoin de"
+       ],
+       "too": [
+        "aussi",
+        "too",
+        "d"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

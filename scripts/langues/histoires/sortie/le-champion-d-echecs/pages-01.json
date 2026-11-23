@@ -1,0 +1,3288 @@
+{
+  "debut": 1,
+  "lexique": {
+    "grey": [
+      "gris",
+      "grey",
+      "a"
+    ],
+    "tuesday": [
+      "mardi",
+      "Tuesday",
+      "n"
+    ],
+    "march": [
+      "mars",
+      "March",
+      "n"
+    ],
+    "hana": [
+      "Hana (prénom)",
+      "Hana",
+      "np"
+    ],
+    "envelope": [
+      "enveloppe",
+      "envelope",
+      "n"
+    ],
+    "kitchen": [
+      "cuisine",
+      "kitchen",
+      "n"
+    ],
+    "table": [
+      "table",
+      "table",
+      "n"
+    ],
+    "name": [
+      "nom",
+      "name",
+      "n"
+    ],
+    "tidy": [
+      "nettes",
+      "tidy",
+      "a",
+      "net, soigné"
+    ],
+    "letters": [
+      "lettres",
+      "letter",
+      "n",
+      "lettre"
+    ],
+    "opened": [
+      "ouvrit",
+      "open",
+      "v",
+      "ouvrir"
+    ],
+    "quickly": [
+      "vite",
+      "quickly",
+      "d"
+    ],
+    "eyes": [
+      "yeux",
+      "eye",
+      "n",
+      "œil"
+    ],
+    "line": [
+      "ligne",
+      "line",
+      "n"
+    ],
+    "mum": [
+      "maman",
+      "mum",
+      "n"
+    ],
+    "shouted": [
+      "cria",
+      "shout",
+      "v",
+      "crier"
+    ],
+    "national": [
+      "national",
+      "national",
+      "a"
+    ],
+    "junior": [
+      "junior",
+      "junior",
+      "a"
+    ],
+    "chess": [
+      "échecs",
+      "chess",
+      "n"
+    ],
+    "championship": [
+      "championnat",
+      "championship",
+      "n"
+    ],
+    "mother": [
+      "mère",
+      "mother",
+      "n"
+    ],
+    "hurried": [
+      "accourut",
+      "hurry",
+      "v",
+      "se hâter"
+    ],
+    "garden": [
+      "jardin",
+      "garden",
+      "n"
+    ],
+    "wiping": [
+      "essuyant",
+      "wipe",
+      "v",
+      "essuyer"
+    ],
+    "hands": [
+      "mains",
+      "hand",
+      "n",
+      "main"
+    ],
+    "jeans": [
+      "jean",
+      "jeans",
+      "n"
+    ],
+    "regional": [
+      "régionale",
+      "regional",
+      "a"
+    ],
+    "final": [
+      "finale",
+      "final",
+      "n"
+    ],
+    "month": [
+      "mois",
+      "month",
+      "n"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "sure": [
+      "sûre",
+      "sure",
+      "a",
+      "sûr"
+    ],
+    "mistake": [
+      "erreur",
+      "mistake",
+      "n"
+    ],
+    "laughed": [
+      "rit",
+      "laugh",
+      "v",
+      "rire"
+    ],
+    "players": [
+      "joueurs",
+      "player",
+      "n",
+      "joueur"
+    ],
+    "letter": [
+      "lettre",
+      "letter",
+      "n"
+    ],
+    "hugged": [
+      "serra dans ses bras",
+      "hug",
+      "v",
+      "serrer dans ses bras"
+    ],
+    "tightly": [
+      "fort",
+      "tightly",
+      "d"
+    ],
+    "hardly": [
+      "à peine",
+      "hardly",
+      "d"
+    ],
+    "breathe": [
+      "respirer",
+      "breathe",
+      "v"
+    ],
+    "years": [
+      "ans",
+      "year",
+      "n",
+      "an"
+    ],
+    "old": [
+      "ans (âgée de)",
+      "old",
+      "a",
+      "vieux, âgé"
+    ],
+    "grandfather": [
+      "grand-père",
+      "grandfather",
+      "n"
+    ],
+    "rules": [
+      "règles",
+      "rule",
+      "n",
+      "règle"
+    ],
+    "wooden": [
+      "en bois",
+      "wooden",
+      "a"
+    ],
+    "same": [
+      "même",
+      "same",
+      "a"
+    ],
+    "thing": [
+      "chose",
+      "thing",
+      "n"
+    ],
+    "honestly": [
+      "honnêtement",
+      "honestly",
+      "d"
+    ],
+    "lose": [
+      "perdre",
+      "lose",
+      "v"
+    ],
+    "ashamed": [
+      "honteux",
+      "ashamed",
+      "a"
+    ],
+    "night": [
+      "nuit",
+      "night",
+      "n"
+    ],
+    "sleep": [
+      "dormir",
+      "sleep",
+      "v"
+    ],
+    "bed": [
+      "lit",
+      "bed",
+      "n"
+    ],
+    "imagined": [
+      "imagina",
+      "imagine",
+      "v",
+      "imaginer"
+    ],
+    "huge": [
+      "immense",
+      "huge",
+      "a"
+    ],
+    "hall": [
+      "salle",
+      "hall",
+      "n"
+    ],
+    "full": [
+      "remplie",
+      "full",
+      "a",
+      "plein"
+    ],
+    "clever": [
+      "brillants, intelligents",
+      "clever",
+      "a"
+    ],
+    "stomach": [
+      "estomac, ventre",
+      "stomach",
+      "n"
+    ],
+    "whispered": [
+      "murmura",
+      "whisper",
+      "v",
+      "chuchoter"
+    ],
+    "ceiling": [
+      "plafond",
+      "ceiling",
+      "n"
+    ],
+    "course": [
+      "(of course : bien sûr)",
+      "course",
+      "n"
+    ],
+    "pillow": [
+      "oreiller",
+      "pillow",
+      "n"
+    ],
+    "fingers": [
+      "doigts",
+      "finger",
+      "n",
+      "doigt"
+    ],
+    "moving": [
+      "bougeaient",
+      "move",
+      "v",
+      "bouger"
+    ],
+    "imaginary": [
+      "imaginaire",
+      "imaginary",
+      "a"
+    ],
+    "game": [
+      "partie",
+      "game",
+      "n",
+      "jeu, partie"
+    ],
+    "weeks": [
+      "semaines",
+      "week",
+      "n",
+      "semaine"
+    ],
+    "mr": [
+      "monsieur (M.)",
+      "Mr",
+      "n"
+    ],
+    "santos": [
+      "Santos (nom de famille)",
+      "Santos",
+      "np"
+    ],
+    "coach": [
+      "entraîneur",
+      "coach",
+      "n"
+    ],
+    "harrogate": [
+      "Harrogate (ville)",
+      "Harrogate",
+      "np"
+    ],
+    "small": [
+      "petite",
+      "small",
+      "a",
+      "petit"
+    ],
+    "car": [
+      "voiture",
+      "car",
+      "n"
+    ],
+    "remember": [
+      "souviens-toi",
+      "remember",
+      "v",
+      "se souvenir"
+    ],
+    "children": [
+      "enfants",
+      "child",
+      "n",
+      "enfant"
+    ],
+    "tournament": [
+      "tournoi",
+      "tournament",
+      "n"
+    ],
+    "big": [
+      "grand",
+      "big",
+      "a"
+    ],
+    "conference": [
+      "congrès",
+      "conference",
+      "n"
+    ],
+    "centre": [
+      "centre",
+      "centre",
+      "n"
+    ],
+    "glass": [
+      "verre",
+      "glass",
+      "n"
+    ],
+    "roof": [
+      "toit",
+      "roof",
+      "n"
+    ],
+    "tables": [
+      "tables",
+      "table",
+      "n",
+      "table"
+    ],
+    "chessboard": [
+      "échiquier",
+      "chessboard",
+      "n"
+    ],
+    "quieter": [
+      "plus silencieux",
+      "quiet",
+      "a",
+      "silencieux"
+    ],
+    "library": [
+      "bibliothèque",
+      "library",
+      "n"
+    ],
+    "rule": [
+      "règle",
+      "rule",
+      "n"
+    ],
+    "smiled": [
+      "sourit",
+      "smile",
+      "v",
+      "sourire"
+    ],
+    "talk": [
+      "parler",
+      "talk",
+      "v"
+    ],
+    "waiting": [
+      "attendait",
+      "wait",
+      "v",
+      "attendre"
+    ],
+    "boy": [
+      "garçon",
+      "boy",
+      "n"
+    ],
+    "messy": [
+      "en bataille",
+      "messy",
+      "a",
+      "en désordre"
+    ],
+    "hair": [
+      "cheveux",
+      "hair",
+      "n"
+    ],
+    "bench": [
+      "banc",
+      "bench",
+      "n"
+    ],
+    "tried": [
+      "essaya",
+      "try",
+      "v",
+      "essayer"
+    ],
+    "open": [
+      "ouvrir",
+      "open",
+      "v"
+    ],
+    "bottle": [
+      "bouteille",
+      "bottle",
+      "n"
+    ],
+    "water": [
+      "eau",
+      "water",
+      "n"
+    ],
+    "tobi": [
+      "Tobi (prénom)",
+      "Tobi",
+      "np"
+    ],
+    "going": [
+      "(going to : vais)",
+      "go",
+      "v",
+      "aller"
+    ],
+    "admitted": [
+      "avoua",
+      "admit",
+      "v",
+      "avouer"
+    ],
+    "round": [
+      "ronde",
+      "round",
+      "n"
+    ],
+    "crying": [
+      "pleurer",
+      "cry",
+      "v",
+      "pleurer"
+    ],
+    "proud": [
+      "fière",
+      "proud",
+      "a",
+      "fier"
+    ],
+    "knot": [
+      "nœud",
+      "knot",
+      "n"
+    ],
+    "little": [
+      "peu",
+      "little",
+      "d"
+    ],
+    "o'clock": [
+      "heures",
+      "o'clock",
+      "d"
+    ],
+    "woman": [
+      "femme",
+      "woman",
+      "n"
+    ],
+    "jacket": [
+      "veste",
+      "jacket",
+      "n"
+    ],
+    "stage": [
+      "estrade",
+      "stage",
+      "n"
+    ],
+    "mrs": [
+      "madame (Mme)",
+      "Mrs",
+      "n"
+    ],
+    "okonkwo": [
+      "Okonkwo (nom de famille)",
+      "Okonkwo",
+      "np"
+    ],
+    "chief": [
+      "principale",
+      "chief",
+      "a",
+      "principal"
+    ],
+    "arbiter": [
+      "arbitre",
+      "arbiter",
+      "n"
+    ],
+    "microphone": [
+      "micro",
+      "microphone",
+      "n"
+    ],
+    "person": [
+      "personne",
+      "person",
+      "n"
+    ],
+    "problem": [
+      "problème",
+      "problem",
+      "n"
+    ],
+    "raise": [
+      "levez",
+      "raise",
+      "v",
+      "lever"
+    ],
+    "hand": [
+      "main",
+      "hand",
+      "n"
+    ],
+    "button": [
+      "bouton",
+      "button",
+      "n"
+    ],
+    "clocks": [
+      "pendules",
+      "clock",
+      "n",
+      "pendule"
+    ],
+    "tall": [
+      "grand",
+      "tall",
+      "a"
+    ],
+    "seventeen": [
+      "dix-sept",
+      "seventeen",
+      "a"
+    ],
+    "sorry": [
+      "pardon",
+      "sorry",
+      "a"
+    ],
+    "muttered": [
+      "marmonna",
+      "mutter",
+      "v",
+      "marmonner"
+    ],
+    "red": [
+      "rouge",
+      "red",
+      "a"
+    ],
+    "face": [
+      "visage",
+      "face",
+      "n"
+    ],
+    "remembered": [
+      "se souvint",
+      "remember",
+      "v",
+      "se souvenir"
+    ],
+    "grandfather's": [
+      "de son grand-père",
+      "grandfather",
+      "n",
+      "grand-père"
+    ],
+    "words": [
+      "paroles",
+      "word",
+      "n",
+      "mot"
+    ],
+    "player": [
+      "joueur",
+      "player",
+      "n"
+    ],
+    "noticed": [
+      "remarqué",
+      "notice",
+      "v",
+      "remarquer"
+    ],
+    "opponent": [
+      "adversaire",
+      "opponent",
+      "n"
+    ],
+    "careless": [
+      "négligent",
+      "careless",
+      "a"
+    ],
+    "pawn": [
+      "pion",
+      "pawn",
+      "n"
+    ],
+    "purpose": [
+      "(on purpose : exprès)",
+      "purpose",
+      "n"
+    ],
+    "greedily": [
+      "avidement",
+      "greedily",
+      "d"
+    ],
+    "trapped": [
+      "piégée",
+      "trap",
+      "v",
+      "piéger"
+    ],
+    "horror": [
+      "horreur",
+      "horror",
+      "n"
+    ],
+    "checkmate": [
+      "échec et mat",
+      "checkmate",
+      "n"
+    ],
+    "quietly": [
+      "doucement",
+      "quietly",
+      "d"
+    ],
+    "believe": [
+      "croire",
+      "believe",
+      "v"
+    ],
+    "voice": [
+      "voix",
+      "voice",
+      "n"
+    ],
+    "long": [
+      "long",
+      "long",
+      "a"
+    ],
+    "fight": [
+      "combat",
+      "fight",
+      "n"
+    ],
+    "girl": [
+      "fille",
+      "girl",
+      "n"
+    ],
+    "wales": [
+      "pays de Galles",
+      "Wales",
+      "np"
+    ],
+    "lucky": [
+      "chanceuse",
+      "lucky",
+      "a",
+      "chanceux"
+    ],
+    "winning": [
+      "gagnait",
+      "win",
+      "v",
+      "gagner"
+    ],
+    "time": [
+      "temps",
+      "time",
+      "n"
+    ],
+    "felt": [
+      "se sentit",
+      "feel",
+      "v",
+      "sentir"
+    ],
+    "guilty": [
+      "coupable",
+      "guilty",
+      "a"
+    ],
+    "shrugged": [
+      "haussa les épaules",
+      "shrug",
+      "v",
+      "hausser les épaules"
+    ],
+    "part": [
+      "partie",
+      "part",
+      "n"
+    ],
+    "evening": [
+      "soir",
+      "evening",
+      "n"
+    ],
+    "results": [
+      "résultats",
+      "result",
+      "n",
+      "résultat"
+    ],
+    "lobby": [
+      "hall d'entrée",
+      "lobby",
+      "n"
+    ],
+    "games": [
+      "parties",
+      "game",
+      "n",
+      "jeu, partie"
+    ],
+    "quiet": [
+      "discret, silencieux",
+      "quiet",
+      "a"
+    ],
+    "called": [
+      "nommé",
+      "call",
+      "v",
+      "appeler"
+    ],
+    "dmitri": [
+      "Dmitri (prénom)",
+      "Dmitri",
+      "np"
+    ],
+    "volkov": [
+      "Volkov (nom de famille)",
+      "Volkov",
+      "np"
+    ],
+    "french": [
+      "française",
+      "French",
+      "a",
+      "français"
+    ],
+    "camille": [
+      "Camille (prénom)",
+      "Camille",
+      "np"
+    ],
+    "laurent": [
+      "Laurent (nom de famille)",
+      "Laurent",
+      "np"
+    ],
+    "top": [
+      "tête",
+      "top",
+      "n"
+    ],
+    "cried": [
+      "s'écria",
+      "cry",
+      "v",
+      "s'écrier, pleurer"
+    ],
+    "beginner": [
+      "débutante",
+      "beginner",
+      "n"
+    ],
+    "laughing": [
+      "riant",
+      "laugh",
+      "v",
+      "rire"
+    ],
+    "new": [
+      "nouvelle",
+      "new",
+      "a",
+      "nouveau"
+    ],
+    "happier": [
+      "plus heureux",
+      "happy",
+      "a",
+      "heureux"
+    ],
+    "list": [
+      "liste",
+      "list",
+      "n"
+    ],
+    "pairings": [
+      "appariements",
+      "pairing",
+      "n",
+      "appariement"
+    ],
+    "eyebrows": [
+      "sourcils",
+      "eyebrow",
+      "n",
+      "sourcil"
+    ],
+    "fifteen": [
+      "quinze",
+      "fifteen",
+      "a"
+    ],
+    "rating": [
+      "classement",
+      "rating",
+      "n"
+    ],
+    "points": [
+      "points",
+      "point",
+      "n",
+      "point"
+    ],
+    "number": [
+      "nombre",
+      "number",
+      "n"
+    ],
+    "probably": [
+      "probablement",
+      "probably",
+      "d"
+    ],
+    "necessarily": [
+      "nécessairement",
+      "necessarily",
+      "d"
+    ],
+    "pieces": [
+      "pièces",
+      "piece",
+      "n",
+      "pièce"
+    ],
+    "dinner": [
+      "dîner",
+      "dinner",
+      "n"
+    ],
+    "understand": [
+      "comprendre",
+      "understand",
+      "v"
+    ],
+    "strange": [
+      "étrange",
+      "strange",
+      "a"
+    ],
+    "minutes": [
+      "minutes",
+      "minute",
+      "n",
+      "minute"
+    ],
+    "perfect": [
+      "parfait",
+      "perfect",
+      "a"
+    ],
+    "fork": [
+      "fourchette",
+      "fork",
+      "n"
+    ],
+    "proof": [
+      "preuve",
+      "proof",
+      "n"
+    ],
+    "afraid": [
+      "effrayé, qui a peur",
+      "afraid",
+      "a"
+    ],
+    "simply": [
+      "simplement",
+      "simply",
+      "d"
+    ],
+    "genius": [
+      "génie",
+      "genius",
+      "n"
+    ],
+    "accept": [
+      "accepter",
+      "accept",
+      "v"
+    ],
+    "honest": [
+      "honnête",
+      "honest",
+      "a"
+    ],
+    "think": [
+      "penser",
+      "think",
+      "v"
+    ],
+    "closed": [
+      "ferma",
+      "close",
+      "v",
+      "fermer"
+    ],
+    "listened": [
+      "écouta",
+      "listen",
+      "v",
+      "écouter"
+    ],
+    "rain": [
+      "pluie",
+      "rain",
+      "n"
+    ],
+    "window": [
+      "fenêtre",
+      "window",
+      "n"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "nineteen": [
+      "dix-neuf",
+      "nineteen",
+      "a"
+    ],
+    "waited": [
+      "attendit",
+      "wait",
+      "v",
+      "attendre"
+    ],
+    "arrived": [
+      "arriva",
+      "arrive",
+      "v",
+      "arriver"
+    ],
+    "exactly": [
+      "exactement",
+      "exactly",
+      "d"
+    ],
+    "minute": [
+      "minute",
+      "minute",
+      "n"
+    ],
+    "thin": [
+      "mince",
+      "thin",
+      "a"
+    ],
+    "pale": [
+      "pâle",
+      "pale",
+      "a"
+    ],
+    "politely": [
+      "poliment",
+      "politely",
+      "d"
+    ],
+    "cold": [
+      "froide",
+      "cold",
+      "a",
+      "froid"
+    ],
+    "careful": [
+      "prudente",
+      "careful",
+      "a",
+      "prudent"
+    ],
+    "defence": [
+      "défense",
+      "defence",
+      "n"
+    ],
+    "months": [
+      "mois",
+      "month",
+      "n",
+      "mois"
+    ],
+    "calm": [
+      "calme",
+      "calm",
+      "a"
+    ],
+    "eleventh": [
+      "onzième",
+      "eleventh",
+      "a"
+    ],
+    "toilets": [
+      "toilettes",
+      "toilet",
+      "n",
+      "toilettes"
+    ],
+    "brilliant": [
+      "brillant",
+      "brilliant",
+      "a"
+    ],
+    "move": [
+      "coup",
+      "move",
+      "n",
+      "coup, déplacement"
+    ],
+    "frowned": [
+      "fronça les sourcils",
+      "frown",
+      "v",
+      "froncer les sourcils"
+    ],
+    "idea": [
+      "idée",
+      "idea",
+      "n"
+    ],
+    "middle": [
+      "milieu",
+      "middle",
+      "n"
+    ],
+    "suddenly": [
+      "soudain",
+      "suddenly",
+      "d"
+    ],
+    "murmured": [
+      "murmura",
+      "murmur",
+      "v",
+      "murmurer"
+    ],
+    "save": [
+      "sauver",
+      "save",
+      "v"
+    ],
+    "looked": [
+      "regarda",
+      "look",
+      "v",
+      "regarder"
+    ],
+    "brilliance": [
+      "brio",
+      "brilliance",
+      "n"
+    ]
+  },
+  "pages": [
+    {
+      "titre": "Chapter 1 — The Letter",
+      "titreFr": "Chapitre 1 — La lettre",
+      "p": [
+        [
+          {
+            "en": "On a grey Tuesday in March, Hana found an envelope on the kitchen table.",
+            "fr": "Un mardi gris de mars, Hana trouva une enveloppe sur la table de la cuisine.",
+            "g": {
+              "found": [
+                "trouva",
+                "find",
+                "v",
+                "trouver"
+              ]
+            }
+          },
+          {
+            "en": "Her name was written on it in tidy blue letters.",
+            "fr": "Son nom y était écrit en jolies lettres bleues bien nettes.",
+            "g": {
+              "written": [
+                "écrit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "blue": [
+                "bleues",
+                "blue",
+                "a",
+                "bleu"
+              ]
+            }
+          },
+          {
+            "en": "She opened it quickly, and her eyes grew wider with every line.",
+            "fr": "Elle l'ouvrit vite, et ses yeux s'écarquillaient à chaque ligne.",
+            "g": {
+              "grew": [
+                "s'écarquillaient (grew wider)",
+                "grow",
+                "v",
+                "grandir"
+              ],
+              "wider": [
+                "(grew wider : s'écarquillaient)",
+                "wide",
+                "a",
+                "large"
+              ],
+              "every": [
+                "chaque",
+                "every",
+                "t"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Mum!” she shouted. “I've been invited to the National Junior Chess Championship!”",
+            "fr": "« Maman ! cria-t-elle. J'ai été invitée au Championnat national junior d'échecs ! »",
+            "g": {
+              "been": [
+                "été",
+                "be",
+                "v",
+                "être"
+              ],
+              "invited": [
+                "invitée",
+                "invite",
+                "v",
+                "inviter"
+              ]
+            }
+          },
+          {
+            "en": "Her mother hurried in from the garden, wiping her hands on her jeans.",
+            "fr": "Sa mère accourut du jardin en s'essuyant les mains sur son jean."
+          },
+          {
+            "en": "“The regional final was only a month ago,” she said. “Are you sure it isn't a mistake?”",
+            "fr": "« La finale régionale n'a eu lieu qu'il y a un mois, dit-elle. Tu es sûre que ce n'est pas une erreur ? »",
+            "g": {
+              "ago": [
+                "il y a",
+                "ago",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Read it yourself,” Hana laughed. “I came second, and the first two players are invited.”",
+            "fr": "« Lis-la toi-même, rit Hana. Je suis arrivée deuxième, et les deux premiers joueurs sont invités. »",
+            "g": {
+              "read": [
+                "lis",
+                "read",
+                "v",
+                "lire"
+              ],
+              "came": [
+                "suis arrivée",
+                "come",
+                "v",
+                "venir"
+              ],
+              "second": [
+                "deuxième",
+                "second",
+                "a"
+              ],
+              "first": [
+                "premiers",
+                "first",
+                "a"
+              ],
+              "invited": [
+                "invités",
+                "invite",
+                "v",
+                "inviter"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Her mother read the letter twice, and then she hugged her so tightly that Hana could hardly breathe.",
+            "fr": "Sa mère lut la lettre deux fois, puis la serra si fort dans ses bras que Hana pouvait à peine respirer.",
+            "g": {
+              "read": [
+                "lut",
+                "read",
+                "v",
+                "lire"
+              ],
+              "so": [
+                "si",
+                "so",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Hana had been playing chess since she was six years old.",
+            "fr": "Hana jouait aux échecs depuis l'âge de six ans.",
+            "g": {
+              "had": [
+                "(had been playing : jouait)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(had been playing : jouait)",
+                "be",
+                "v",
+                "être"
+              ],
+              "playing": [
+                "(had been playing : jouait)",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "since": [
+                "depuis",
+                "since",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "Her grandfather had taught her the rules on a wooden board in his garden, and he had always told her the same thing.",
+            "fr": "Son grand-père lui avait appris les règles sur un échiquier en bois dans son jardin, et il lui avait toujours dit la même chose.",
+            "g": {
+              "taught": [
+                "avait appris",
+                "teach",
+                "v",
+                "enseigner"
+              ],
+              "board": [
+                "échiquier",
+                "board",
+                "n",
+                "planche, plateau"
+              ],
+              "told": [
+                "avait dit",
+                "tell",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "“The board never lies, Hana. If you play honestly, you can lose, but you can never be ashamed.”",
+            "fr": "« L'échiquier ne ment jamais, Hana. Si tu joues honnêtement, tu peux perdre, mais tu ne pourras jamais avoir honte. »",
+            "g": {
+              "board": [
+                "échiquier",
+                "board",
+                "n",
+                "planche, plateau"
+              ],
+              "lies": [
+                "ment",
+                "lie",
+                "v",
+                "mentir"
+              ],
+              "play": [
+                "joues",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "ashamed": [
+                "avoir honte",
+                "ashamed",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "That night she could not sleep.",
+            "fr": "Cette nuit-là, elle ne put pas dormir."
+          },
+          {
+            "en": "She lay in bed and imagined a huge hall full of clever players, and her stomach turned over.",
+            "fr": "Allongée dans son lit, elle imagina une immense salle remplie de joueurs brillants, et son estomac se retourna.",
+            "g": {
+              "lay": [
+                "était allongée",
+                "lie",
+                "v",
+                "être allongé"
+              ],
+              "turned": [
+                "se retourna",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "over": [
+                "(turned over : se retourna)",
+                "over",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“What if I freeze?” she whispered to the ceiling.",
+            "fr": "« Et si je me figeais ? » murmura-t-elle au plafond.",
+            "g": {
+              "what": [
+                "(what if : et si)",
+                "what",
+                "p"
+              ],
+              "if": [
+                "(what if : et si)",
+                "if",
+                "c"
+              ],
+              "freeze": [
+                "me figeais",
+                "freeze",
+                "v",
+                "se figer"
+              ]
+            }
+          },
+          {
+            "en": "The ceiling, of course, did not answer.",
+            "fr": "Le plafond, bien sûr, ne répondit pas.",
+            "g": {
+              "answer": [
+                "répondit",
+                "answer",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "But under the pillow, her fingers were already moving, playing the first moves of an imaginary game.",
+            "fr": "Mais sous l'oreiller, ses doigts remuaient déjà, jouant les premiers coups d'une partie imaginaire.",
+            "g": {
+              "playing": [
+                "jouant",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "first": [
+                "premiers",
+                "first",
+                "a"
+              ],
+              "moves": [
+                "coups",
+                "move",
+                "n",
+                "coup, déplacement"
+              ],
+              "moving": [
+                "remuaient",
+                "move",
+                "v",
+                "bouger"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Three weeks later, Hana, her mother and Mr Santos, her coach, drove to Harrogate in a small blue car.",
+            "fr": "Trois semaines plus tard, Hana, sa mère et M. Santos, son entraîneur, allèrent en voiture à Harrogate dans une petite voiture bleue.",
+            "g": {
+              "later": [
+                "plus tard",
+                "later",
+                "d"
+              ],
+              "drove": [
+                "se rendirent en voiture",
+                "drive",
+                "v",
+                "conduire"
+              ],
+              "to": [
+                "à",
+                "to",
+                "r"
+              ],
+              "blue": [
+                "bleue",
+                "blue",
+                "a",
+                "bleu"
+              ]
+            }
+          },
+          {
+            "en": "“Remember,” he said, “they are just children with the same nerves as you.”",
+            "fr": "« Souviens-toi, dit-il, ce sont simplement des enfants qui ont le même trac que toi. »",
+            "g": {
+              "just": [
+                "simplement",
+                "just",
+                "d"
+              ],
+              "nerves": [
+                "trac",
+                "nerve",
+                "n",
+                "nerf"
+              ],
+              "as": [
+                "que",
+                "as",
+                "c"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "The tournament was held in a big conference centre with a glass roof.",
+            "fr": "Le tournoi avait lieu dans un grand centre de congrès au toit de verre.",
+            "g": {
+              "was": [
+                "(was held : avait lieu)",
+                "be",
+                "v",
+                "être"
+              ],
+              "held": [
+                "(was held : avait lieu)",
+                "hold",
+                "v",
+                "tenir"
+              ]
+            }
+          },
+          {
+            "en": "Inside, a hundred and twenty tables had been placed in perfect lines, and a chessboard stood on each one.",
+            "fr": "À l'intérieur, cent vingt tables avaient été disposées en lignes parfaites, et sur chacune se dressait un échiquier.",
+            "g": {
+              "placed": [
+                "disposées",
+                "place",
+                "v",
+                "placer"
+              ],
+              "perfect": [
+                "parfaites",
+                "perfect",
+                "a",
+                "parfait"
+              ],
+              "lines": [
+                "lignes",
+                "line",
+                "n",
+                "ligne"
+              ],
+              "stood": [
+                "se dressait",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "one": [
+                "(each one : chacune)",
+                "one",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“It is quieter than a library,” she whispered.",
+            "fr": "« C'est plus silencieux qu'une bibliothèque », murmura-t-elle."
+          },
+          {
+            "en": "“That is the first rule,” Mr Santos smiled.",
+            "fr": "« C'est la première règle », sourit M. Santos.",
+            "g": {
+              "first": [
+                "première",
+                "first",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Players must not talk during a game, and phones are forbidden in the playing hall.”",
+            "fr": "« Les joueurs ne doivent pas parler pendant une partie, et les téléphones sont interdits dans la salle de jeu. »",
+            "g": {
+              "phones": [
+                "téléphones",
+                "phone",
+                "n",
+                "téléphone"
+              ],
+              "forbidden": [
+                "interdits",
+                "forbid",
+                "v",
+                "interdire"
+              ],
+              "playing": [
+                "de jeu",
+                "playing",
+                "a"
+              ],
+              "hall": [
+                "salle",
+                "hall",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "While she was waiting, a boy with messy hair sat down next to her on a bench.",
+            "fr": "Pendant qu'elle attendait, un garçon aux cheveux en bataille s'assit à côté d'elle sur un banc.",
+            "g": {
+              "while": [
+                "pendant que",
+                "while",
+                "c"
+              ],
+              "sat": [
+                "s'assit",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sat down : s'assit)",
+                "down",
+                "d"
+              ],
+              "next": [
+                "à côté",
+                "next",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "His hands were shaking as he tried to open a bottle of water.",
+            "fr": "Ses mains tremblaient tandis qu'il essayait d'ouvrir une bouteille d'eau.",
+            "g": {
+              "shaking": [
+                "tremblaient",
+                "shake",
+                "v",
+                "trembler"
+              ],
+              "as": [
+                "tandis que",
+                "as",
+                "c"
+              ],
+              "tried": [
+                "essayait",
+                "try",
+                "v",
+                "essayer"
+              ]
+            }
+          },
+          {
+            "en": "“I'm Tobi,” he said. “This is my first national tournament, and I think I'm going to be sick.”",
+            "fr": "« Moi, c'est Tobi, dit-il. C'est mon premier tournoi national, et je crois que je vais être malade. »",
+            "g": {
+              "first": [
+                "premier",
+                "first",
+                "a"
+              ],
+              "think": [
+                "crois",
+                "think",
+                "v",
+                "penser"
+              ],
+              "sick": [
+                "malade",
+                "sick",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Same here,” Hana admitted.",
+            "fr": "« Pareil pour moi », avoua Hana.",
+            "g": {
+              "same": [
+                "pareil",
+                "same",
+                "a"
+              ],
+              "here": [
+                "(same here : pareil pour moi)",
+                "here",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“If I get through round one without crying, I'll be proud of myself.”",
+            "fr": "« Si j'arrive au bout de la première ronde sans pleurer, je serai fière de moi. »",
+            "g": {
+              "get": [
+                "arrive",
+                "get",
+                "v",
+                "obtenir, arriver"
+              ],
+              "through": [
+                "(get through : arriver au bout de)",
+                "through",
+                "r"
+              ],
+              "one": [
+                "première",
+                "one",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "They both laughed, and the knot in her stomach loosened a little.",
+            "fr": "Ils rirent tous les deux, et le nœud qu'elle avait dans le ventre se desserra un peu.",
+            "g": {
+              "both": [
+                "tous les deux",
+                "both",
+                "p"
+              ],
+              "loosened": [
+                "se desserra",
+                "loosen",
+                "v",
+                "desserrer"
+              ],
+              "laughed": [
+                "rirent",
+                "laugh",
+                "v",
+                "rire"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "At nine o'clock, a woman in a green jacket stepped onto a small stage.",
+            "fr": "À neuf heures, une femme en veste verte monta sur une petite estrade.",
+            "g": {
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ],
+              "stepped": [
+                "monta",
+                "step",
+                "v",
+                "marcher, monter"
+              ]
+            }
+          },
+          {
+            "en": "“I am Mrs Okonkwo, the chief arbiter,” she said into the microphone.",
+            "fr": "« Je suis Mme Okonkwo, l'arbitre principale », dit-elle dans le micro."
+          },
+          {
+            "en": "“An arbiter is the person who makes sure that the rules are followed.",
+            "fr": "« Un arbitre est la personne qui veille à ce que les règles soient respectées.",
+            "g": {
+              "makes": [
+                "veille",
+                "make",
+                "v",
+                "faire"
+              ],
+              "sure": [
+                "(makes sure : veille)",
+                "sure",
+                "a"
+              ],
+              "followed": [
+                "respectées",
+                "follow",
+                "v",
+                "suivre"
+              ]
+            }
+          },
+          {
+            "en": "If you have a problem, raise your hand and I will come at once.”",
+            "fr": "Si vous avez un problème, levez la main et je viendrai tout de suite. »",
+            "g": {
+              "come": [
+                "viendrai",
+                "come",
+                "v",
+                "venir"
+              ],
+              "at": [
+                "(at once : tout de suite)",
+                "at",
+                "r"
+              ],
+              "once": [
+                "(at once : tout de suite)",
+                "once",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Then she pressed a button, and a hundred and twenty clocks began to tick.",
+            "fr": "Puis elle appuya sur un bouton, et cent vingt pendules se mirent à faire tic-tac.",
+            "g": {
+              "pressed": [
+                "appuya",
+                "press",
+                "v",
+                "appuyer"
+              ],
+              "began": [
+                "se mirent",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "tick": [
+                "faire tic-tac",
+                "tick",
+                "v"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "titre": "Chapter 2 — First Rounds",
+      "titreFr": "Chapitre 2 — Les premières rondes",
+      "p": [
+        [
+          {
+            "en": "In round one, Hana played against a tall boy who looked about seventeen.",
+            "fr": "À la première ronde, Hana joua contre un grand garçon qui paraissait avoir environ dix-sept ans.",
+            "g": {
+              "one": [
+                "première",
+                "one",
+                "a"
+              ],
+              "played": [
+                "joua",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "looked": [
+                "paraissait",
+                "look",
+                "v",
+                "regarder, paraître"
+              ],
+              "about": [
+                "environ",
+                "about",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Her hands were shaking so much that she knocked over her own bishop.",
+            "fr": "Ses mains tremblaient tellement qu'elle renversa son propre fou.",
+            "g": {
+              "shaking": [
+                "tremblaient",
+                "shake",
+                "v",
+                "trembler"
+              ],
+              "so": [
+                "tellement",
+                "so",
+                "d"
+              ],
+              "much": [
+                "(so much : tellement)",
+                "much",
+                "d"
+              ],
+              "knocked": [
+                "renversa",
+                "knock",
+                "v",
+                "cogner"
+              ],
+              "over": [
+                "(knocked over : renversa)",
+                "over",
+                "d"
+              ],
+              "own": [
+                "propre",
+                "own",
+                "a"
+              ],
+              "bishop": [
+                "fou (pièce d'échecs)",
+                "bishop",
+                "n",
+                "évêque, fou"
+              ]
+            }
+          },
+          {
+            "en": "“Sorry,” she muttered, and she put it back on its square with a red face.",
+            "fr": "« Pardon », marmonna-t-elle, et elle le remit sur sa case, le visage rouge.",
+            "g": {
+              "put": [
+                "remit",
+                "put",
+                "v",
+                "mettre"
+              ],
+              "back": [
+                "(put back : remit)",
+                "back",
+                "d"
+              ],
+              "square": [
+                "case",
+                "square",
+                "n",
+                "carré, case"
+              ]
+            }
+          },
+          {
+            "en": "Then she remembered her grandfather's words: play the board, not the player.",
+            "fr": "Puis elle se souvint des paroles de son grand-père : joue l'échiquier, pas le joueur.",
+            "g": {
+              "play": [
+                "joue",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "board": [
+                "échiquier",
+                "board",
+                "n",
+                "planche, plateau"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "After twenty moves, Hana had noticed that her opponent was careless with his knights.",
+            "fr": "Après vingt coups, Hana avait remarqué que son adversaire était négligent avec ses cavaliers.",
+            "g": {
+              "moves": [
+                "coups",
+                "move",
+                "n",
+                "coup"
+              ],
+              "knights": [
+                "cavaliers (pièces d'échecs)",
+                "knight",
+                "n",
+                "chevalier, cavalier"
+              ]
+            }
+          },
+          {
+            "en": "She gave up a pawn on purpose, and he took it greedily.",
+            "fr": "Elle sacrifia exprès un pion, et il le prit avidement.",
+            "g": {
+              "gave": [
+                "sacrifia (gave up)",
+                "give",
+                "v",
+                "donner"
+              ],
+              "up": [
+                "(gave up : sacrifia)",
+                "up",
+                "d"
+              ],
+              "took": [
+                "prit",
+                "take",
+                "v",
+                "prendre"
+              ]
+            }
+          },
+          {
+            "en": "Two moves later, his queen was trapped, and he stared at the board in horror.",
+            "fr": "Deux coups plus tard, sa dame était piégée, et il fixa l'échiquier avec horreur.",
+            "g": {
+              "moves": [
+                "coups",
+                "move",
+                "n",
+                "coup"
+              ],
+              "later": [
+                "plus tard",
+                "later",
+                "d"
+              ],
+              "queen": [
+                "dame (pièce d'échecs)",
+                "queen",
+                "n",
+                "reine, dame"
+              ],
+              "stared": [
+                "fixa",
+                "stare",
+                "v",
+                "fixer du regard"
+              ],
+              "board": [
+                "échiquier",
+                "board",
+                "n",
+                "planche, plateau"
+              ]
+            }
+          },
+          {
+            "en": "“Checkmate,” Hana said quietly, and she could hardly believe her own voice.",
+            "fr": "« Échec et mat », dit doucement Hana, et elle avait du mal à croire en sa propre voix.",
+            "g": {
+              "own": [
+                "propre",
+                "own",
+                "a"
+              ],
+              "hardly": [
+                "avait du mal à",
+                "hardly",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "She won her second game too, after a long fight against a girl from Wales.",
+            "fr": "Elle gagna aussi sa deuxième partie, après un long combat contre une fille du pays de Galles.",
+            "g": {
+              "won": [
+                "gagna",
+                "win",
+                "v",
+                "gagner"
+              ],
+              "second": [
+                "deuxième",
+                "second",
+                "a"
+              ],
+              "too": [
+                "aussi",
+                "too",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "In the third round, she was lucky: her opponent, who was winning, ran out of time and lost on the clock.",
+            "fr": "À la troisième ronde, elle eut de la chance : son adversaire, qui était en train de gagner, n'eut plus de temps et perdit à la pendule.",
+            "g": {
+              "ran": [
+                "(ran out of : n'eut plus de)",
+                "run",
+                "v",
+                "courir"
+              ],
+              "out": [
+                "(ran out of : n'eut plus de)",
+                "out",
+                "d"
+              ],
+              "of": [
+                "(ran out of : n'eut plus de)",
+                "of",
+                "r"
+              ],
+              "lost": [
+                "perdit",
+                "lose",
+                "v",
+                "perdre"
+              ],
+              "clock": [
+                "pendule (d'échecs)",
+                "clock",
+                "n",
+                "horloge, pendule"
+              ],
+              "lucky": [
+                "eut de la chance (was lucky)",
+                "lucky",
+                "a",
+                "chanceux"
+              ],
+              "winning": [
+                "était en train de gagner",
+                "win",
+                "v",
+                "gagner"
+              ]
+            }
+          },
+          {
+            "en": "Hana felt guilty, but Mr Santos shrugged.",
+            "fr": "Hana se sentit coupable, mais M. Santos haussa les épaules."
+          },
+          {
+            "en": "“Time is part of the game,” he said. “She should have been watching it.”",
+            "fr": "« Le temps fait partie du jeu, dit-il. Elle aurait dû le surveiller. »",
+            "g": {
+              "game": [
+                "jeu",
+                "game",
+                "n",
+                "jeu, partie"
+              ],
+              "been": [
+                "(should have been : aurait dû)",
+                "be",
+                "v",
+                "être"
+              ],
+              "watching": [
+                "surveiller",
+                "watch",
+                "v",
+                "surveiller"
+              ],
+              "part": [
+                "(part of : fait partie de)",
+                "part",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "That evening, the results were put up on a big board in the lobby.",
+            "fr": "Ce soir-là, les résultats furent affichés sur un grand panneau dans le hall d'entrée.",
+            "g": {
+              "put": [
+                "affichés (put up)",
+                "put",
+                "v",
+                "mettre"
+              ],
+              "up": [
+                "(put up : affichés)",
+                "up",
+                "d"
+              ],
+              "board": [
+                "panneau",
+                "board",
+                "n",
+                "planche, plateau, panneau"
+              ]
+            }
+          },
+          {
+            "en": "Only three players had won all their games: a quiet boy called Dmitri Volkov, a French girl called Camille Laurent, and Hana.",
+            "fr": "Seuls trois joueurs avaient gagné toutes leurs parties : un garçon discret nommé Dmitri Volkov, une Française nommée Camille Laurent, et Hana.",
+            "g": {
+              "only": [
+                "seuls",
+                "only",
+                "a"
+              ],
+              "won": [
+                "gagné",
+                "win",
+                "v",
+                "gagner"
+              ],
+              "girl": [
+                "(French girl : Française)",
+                "girl",
+                "n"
+              ],
+              "french": [
+                "Française",
+                "French",
+                "a",
+                "français"
+              ]
+            }
+          },
+          {
+            "en": "“You are in the top three!” Tobi cried. “You, a beginner!”",
+            "fr": "« Tu fais partie du trio de tête ! s'écria Tobi. Toi, une débutante ! »"
+          },
+          {
+            "en": "“I am not a beginner,” Hana said, laughing. “I am just new.”",
+            "fr": "« Je ne suis pas une débutante, dit Hana en riant. Je suis juste nouvelle. »",
+            "g": {
+              "just": [
+                "juste",
+                "just",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Tobi himself had won two games and lost one, but he looked happier than before.",
+            "fr": "Tobi lui-même avait gagné deux parties et en avait perdu une, mais il avait l'air plus heureux qu'avant.",
+            "g": {
+              "won": [
+                "gagné",
+                "win",
+                "v",
+                "gagner"
+              ],
+              "lost": [
+                "perdu",
+                "lose",
+                "v",
+                "perdre"
+              ],
+              "looked": [
+                "avait l'air",
+                "look",
+                "v",
+                "regarder, avoir l'air"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Mr Santos studied the list of pairings for round four, and his eyebrows went up.",
+            "fr": "M. Santos étudia la liste des appariements de la quatrième ronde, et ses sourcils se levèrent.",
+            "g": {
+              "studied": [
+                "étudia",
+                "study",
+                "v",
+                "étudier"
+              ],
+              "four": [
+                "quatrième",
+                "four",
+                "a"
+              ],
+              "went": [
+                "se levèrent",
+                "go",
+                "v",
+                "aller"
+              ],
+              "up": [
+                "(went up : se levèrent)",
+                "up",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Tomorrow you play Camille Laurent,” he said. “She is fifteen, and her rating is two hundred points higher than yours.”",
+            "fr": "« Demain, tu joues contre Camille Laurent, dit-il. Elle a quinze ans, et son classement est supérieur de deux cents points au tien. »",
+            "g": {
+              "play": [
+                "joues",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "higher": [
+                "supérieur",
+                "high",
+                "a",
+                "haut"
+              ]
+            }
+          },
+          {
+            "en": "“A rating is the number that measures how strong a player is,” he added.",
+            "fr": "« Un classement est le nombre qui mesure la force d'un joueur », ajouta-t-il.",
+            "g": {
+              "measures": [
+                "mesure",
+                "measure",
+                "v",
+                "mesurer"
+              ],
+              "how": [
+                "(how strong : à quel point… fort)",
+                "how",
+                "c"
+              ],
+              "strong": [
+                "(how strong : la force)",
+                "strong",
+                "a"
+              ],
+              "added": [
+                "ajouta",
+                "add",
+                "v",
+                "ajouter"
+              ]
+            }
+          },
+          {
+            "en": "“So I will probably lose,” said Hana.",
+            "fr": "« Donc je vais probablement perdre », dit Hana.",
+            "g": {
+              "so": [
+                "donc",
+                "so",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "“Not necessarily. A rating does not move the pieces.”",
+            "fr": "« Pas forcément. Un classement ne déplace pas les pièces. »",
+            "g": {
+              "move": [
+                "déplace",
+                "move",
+                "v",
+                "déplacer"
+              ],
+              "necessarily": [
+                "forcément",
+                "necessarily",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "At dinner, Tobi sat down beside her with a worried face.",
+            "fr": "Au dîner, Tobi s'assit près d'elle, l'air inquiet.",
+            "g": {
+              "sat": [
+                "s'assit",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sat down : s'assit)",
+                "down",
+                "d"
+              ],
+              "worried": [
+                "inquiet",
+                "worried",
+                "a"
+              ],
+              "face": [
+                "(worried face : l'air)",
+                "face",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“I played Camille in round two,” he said. “I lost, and I still don't understand how.”",
+            "fr": "« J'ai joué contre Camille à la deuxième ronde, dit-il. J'ai perdu, et je ne comprends toujours pas comment. »",
+            "g": {
+              "played": [
+                "ai joué",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "two": [
+                "deuxième",
+                "two",
+                "a"
+              ],
+              "lost": [
+                "ai perdu",
+                "lose",
+                "v",
+                "perdre"
+              ],
+              "still": [
+                "toujours",
+                "still",
+                "d"
+              ],
+              "understand": [
+                "comprends",
+                "understand",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“She must be very strong.”",
+            "fr": "« Elle doit être très forte. »",
+            "g": {
+              "strong": [
+                "forte",
+                "strong",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Yes, but it was strange. She left the table after almost every move, and she came back two or three minutes later.",
+            "fr": "« Oui, mais c'était bizarre. Elle quittait la table après presque chaque coup, et elle revenait deux ou trois minutes plus tard.",
+            "g": {
+              "left": [
+                "quittait",
+                "leave",
+                "v",
+                "quitter"
+              ],
+              "move": [
+                "coup",
+                "move",
+                "n",
+                "coup, déplacement"
+              ],
+              "came": [
+                "revenait",
+                "come",
+                "v",
+                "venir"
+              ],
+              "back": [
+                "(came back : revenait)",
+                "back",
+                "d"
+              ],
+              "later": [
+                "plus tard",
+                "later",
+                "d"
+              ],
+              "strange": [
+                "bizarre",
+                "strange",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "And her moves were perfect, like a computer's.”",
+            "fr": "Et ses coups étaient parfaits, comme ceux d'un ordinateur. »",
+            "g": {
+              "moves": [
+                "coups",
+                "move",
+                "n",
+                "coup"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "computer's": [
+                "ceux d'un ordinateur",
+                "computer",
+                "n",
+                "ordinateur"
+              ],
+              "perfect": [
+                "parfaits",
+                "perfect",
+                "a",
+                "parfait"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Hana put down her fork.",
+            "fr": "Hana posa sa fourchette.",
+            "g": {
+              "put": [
+                "posa",
+                "put",
+                "v",
+                "mettre, poser"
+              ],
+              "down": [
+                "(put down : posa)",
+                "down",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Tobi, are you saying that she cheats?”",
+            "fr": "« Tobi, tu dis qu'elle triche ? »",
+            "g": {
+              "saying": [
+                "dis",
+                "say",
+                "v",
+                "dire"
+              ],
+              "cheats": [
+                "triche",
+                "cheat",
+                "v",
+                "tricher"
+              ]
+            }
+          },
+          {
+            "en": "“No, no,” Tobi said quickly. “I am only saying what I saw.",
+            "fr": "« Non, non, dit vite Tobi. Je dis seulement ce que j'ai vu.",
+            "g": {
+              "only": [
+                "seulement",
+                "only",
+                "d"
+              ],
+              "saying": [
+                "dis",
+                "say",
+                "v",
+                "dire"
+              ],
+              "what": [
+                "ce que",
+                "what",
+                "p"
+              ],
+              "saw": [
+                "ai vu",
+                "see",
+                "v",
+                "voir"
+              ]
+            }
+          },
+          {
+            "en": "Maybe she just likes walking. I would never accuse anybody without proof.”",
+            "fr": "Peut-être qu'elle aime simplement marcher. Je n'accuserais jamais personne sans preuve. »",
+            "g": {
+              "just": [
+                "simplement",
+                "just",
+                "d"
+              ],
+              "likes": [
+                "aime",
+                "like",
+                "v",
+                "aimer"
+              ],
+              "walking": [
+                "marcher",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "accuse": [
+                "accuserais",
+                "accuse",
+                "v",
+                "accuser"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "That night, Hana lay awake again, but this time she was not afraid of the hall.",
+            "fr": "Cette nuit-là, Hana resta de nouveau éveillée, mais cette fois elle n'avait pas peur de la salle.",
+            "g": {
+              "lay": [
+                "resta",
+                "lie",
+                "v",
+                "être allongé"
+              ],
+              "awake": [
+                "éveillée",
+                "awake",
+                "a"
+              ],
+              "time": [
+                "fois",
+                "time",
+                "n",
+                "temps, fois"
+              ],
+              "hall": [
+                "salle",
+                "hall",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "She told herself that if Camille was simply a genius, she would have to play her best and accept the result.",
+            "fr": "Elle se dit que si Camille était simplement un génie, elle devrait jouer de son mieux et accepter le résultat.",
+            "g": {
+              "told": [
+                "dit",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "would": [
+                "(would have to : devrait)",
+                "would",
+                "v"
+              ],
+              "have": [
+                "(would have to : devrait)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "play": [
+                "jouer",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "best": [
+                "mieux",
+                "best",
+                "d",
+                "bien"
+              ],
+              "result": [
+                "résultat",
+                "result",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "And if Camille was not honest?",
+            "fr": "Et si Camille n'était pas honnête ?"
+          },
+          {
+            "en": "Hana did not want to think about it.",
+            "fr": "Hana ne voulait pas y penser.",
+            "g": {
+              "want": [
+                "voulait",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "about": [
+                "à",
+                "about",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "She closed her eyes and listened to the rain on the window until, at last, she fell asleep.",
+            "fr": "Elle ferma les yeux et écouta la pluie sur la fenêtre jusqu'à ce qu'enfin elle s'endorme.",
+            "g": {
+              "at": [
+                "(at last : enfin)",
+                "at",
+                "r"
+              ],
+              "last": [
+                "(at last : enfin)",
+                "last",
+                "a"
+              ],
+              "fell": [
+                "(fell asleep : s'endorme)",
+                "fall",
+                "v",
+                "tomber"
+              ],
+              "asleep": [
+                "(fell asleep : s'endorme)",
+                "asleep",
+                "a"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "titre": "Chapter 3 — A Strange Opponent",
+      "titreFr": "Chapitre 3 — Une adversaire étrange",
+      "p": [
+        [
+          {
+            "en": "The next morning, Hana sat at table nineteen and waited.",
+            "fr": "Le lendemain matin, Hana s'assit à la table dix-neuf et attendit.",
+            "g": {
+              "next": [
+                "lendemain",
+                "next",
+                "a",
+                "suivant"
+              ],
+              "sat": [
+                "s'assit",
+                "sit",
+                "v",
+                "s'asseoir"
+              ]
+            }
+          },
+          {
+            "en": "Camille arrived exactly one minute before the start.",
+            "fr": "Camille arriva exactement une minute avant le début.",
+            "g": {
+              "one": [
+                "une",
+                "one",
+                "a"
+              ],
+              "start": [
+                "début",
+                "start",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "She was tall and thin, with dark hair tied back, and she looked very pale.",
+            "fr": "Elle était grande et mince, les cheveux foncés attachés en arrière, et elle paraissait très pâle.",
+            "g": {
+              "tall": [
+                "grande",
+                "tall",
+                "a",
+                "grand"
+              ],
+              "dark": [
+                "foncés",
+                "dark",
+                "a",
+                "sombre, foncé"
+              ],
+              "tied": [
+                "attachés",
+                "tie",
+                "v",
+                "attacher"
+              ],
+              "back": [
+                "(tied back : attachés en arrière)",
+                "back",
+                "d"
+              ],
+              "looked": [
+                "paraissait",
+                "look",
+                "v",
+                "regarder, paraître"
+              ]
+            }
+          },
+          {
+            "en": "“Good luck,” she said politely, and her handshake was cold and damp.",
+            "fr": "« Bonne chance », dit-elle poliment, et sa poignée de main était froide et moite.",
+            "g": {
+              "good": [
+                "bonne",
+                "good",
+                "a",
+                "bon"
+              ],
+              "luck": [
+                "chance",
+                "luck",
+                "n"
+              ],
+              "handshake": [
+                "poignée de main",
+                "handshake",
+                "n"
+              ],
+              "damp": [
+                "moite",
+                "damp",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Camille had the white pieces, so she moved first.",
+            "fr": "Camille avait les blancs, donc elle joua en premier.",
+            "g": {
+              "white": [
+                "blancs (les blancs)",
+                "white",
+                "a",
+                "blanc"
+              ],
+              "so": [
+                "donc",
+                "so",
+                "c"
+              ],
+              "moved": [
+                "joua",
+                "move",
+                "v",
+                "jouer, déplacer"
+              ],
+              "first": [
+                "en premier",
+                "first",
+                "d"
+              ],
+              "pieces": [
+                "(white pieces : blancs)",
+                "piece",
+                "n",
+                "pièce"
+              ]
+            }
+          },
+          {
+            "en": "She opened with a pawn, and Hana answered with the careful defence she had practised for months.",
+            "fr": "Elle ouvrit avec un pion, et Hana répondit par la défense prudente qu'elle avait travaillée pendant des mois.",
+            "g": {
+              "answered": [
+                "répondit",
+                "answer",
+                "v",
+                "répondre"
+              ],
+              "practised": [
+                "travaillée",
+                "practise",
+                "v",
+                "s'entraîner à"
+              ]
+            }
+          },
+          {
+            "en": "For ten moves the game was calm.",
+            "fr": "Pendant dix coups, la partie fut calme.",
+            "g": {
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "moves": [
+                "coups",
+                "move",
+                "n",
+                "coup"
+              ]
+            }
+          },
+          {
+            "en": "Then Hana made her eleventh move, and Camille stood up at once.",
+            "fr": "Puis Hana joua son onzième coup, et Camille se leva aussitôt.",
+            "g": {
+              "made": [
+                "joua",
+                "make",
+                "v",
+                "faire"
+              ],
+              "move": [
+                "coup",
+                "move",
+                "n",
+                "coup, déplacement"
+              ],
+              "stood": [
+                "se leva",
+                "stand",
+                "v",
+                "se tenir debout"
+              ],
+              "up": [
+                "(stood up : se leva)",
+                "up",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "She walked towards the toilets, and her clock kept running.",
+            "fr": "Elle se dirigea vers les toilettes, et sa pendule continuait de tourner.",
+            "g": {
+              "walked": [
+                "se dirigea",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "clock": [
+                "pendule",
+                "clock",
+                "n",
+                "horloge, pendule"
+              ],
+              "kept": [
+                "continuait",
+                "keep",
+                "v",
+                "continuer, garder"
+              ],
+              "running": [
+                "de tourner",
+                "run",
+                "v",
+                "courir, tourner"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "She came back four minutes later, sat down and played a brilliant move without hesitating.",
+            "fr": "Elle revint quatre minutes plus tard, s'assit et joua un coup brillant sans hésiter.",
+            "g": {
+              "came": [
+                "revint",
+                "come",
+                "v",
+                "venir"
+              ],
+              "back": [
+                "(came back : revint)",
+                "back",
+                "d"
+              ],
+              "later": [
+                "plus tard",
+                "later",
+                "d"
+              ],
+              "sat": [
+                "s'assit",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sat down : s'assit)",
+                "down",
+                "d"
+              ],
+              "played": [
+                "joua",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "hesitating": [
+                "hésiter",
+                "hesitate",
+                "v",
+                "hésiter"
+              ]
+            }
+          },
+          {
+            "en": "Hana frowned.",
+            "fr": "Hana fronça les sourcils."
+          },
+          {
+            "en": "It was a clever idea: Camille's knight jumped into the middle of the board, and suddenly it attacked two of Hana's pieces at once.",
+            "fr": "C'était une idée astucieuse : le cavalier de Camille bondit au milieu de l'échiquier, et soudain il attaqua deux pièces de Hana à la fois.",
+            "g": {
+              "clever": [
+                "astucieuse",
+                "clever",
+                "a"
+              ],
+              "camille's": [
+                "de Camille",
+                "Camille",
+                "np"
+              ],
+              "knight": [
+                "cavalier (pièce d'échecs)",
+                "knight",
+                "n",
+                "chevalier, cavalier"
+              ],
+              "jumped": [
+                "bondit",
+                "jump",
+                "v",
+                "sauter"
+              ],
+              "board": [
+                "échiquier",
+                "board",
+                "n",
+                "planche, plateau"
+              ],
+              "attacked": [
+                "attaqua",
+                "attack",
+                "v",
+                "attaquer"
+              ],
+              "hana's": [
+                "de Hana",
+                "Hana",
+                "np"
+              ],
+              "at": [
+                "(at once : à la fois)",
+                "at",
+                "r"
+              ],
+              "once": [
+                "(at once : à la fois)",
+                "once",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“A fork,” Hana murmured.",
+            "fr": "« Une fourchette », murmura Hana.",
+            "g": {
+              "fork": [
+                "fourchette (attaque double)",
+                "fork",
+                "n",
+                "fourchette"
+              ]
+            }
+          },
+          {
+            "en": "She had to sacrifice a bishop to save her queen.",
+            "fr": "Elle dut sacrifier un fou pour sauver sa dame.",
+            "g": {
+              "had": [
+                "(had to : dut)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "sacrifice": [
+                "sacrifier",
+                "sacrifice",
+                "v"
+              ],
+              "bishop": [
+                "fou (pièce d'échecs)",
+                "bishop",
+                "n",
+                "évêque, fou"
+              ],
+              "queen": [
+                "dame (pièce d'échecs)",
+                "queen",
+                "n",
+                "reine, dame"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Hana looked at the clock.",
+            "fr": "Hana regarda la pendule.",
+            "g": {
+              "clock": [
+                "pendule",
+                "clock",
+                "n",
+                "horloge, pendule"
+              ]
+            }
+          },
+          {
+            "en": "She had forty minutes on it, and Camille had almost fifty.",
+            "fr": "Il lui restait quarante minutes, et Camille en avait presque cinquante.",
+            "g": {
+              "had": [
+                "il lui restait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "on": [
+                "(on it : sur celle-ci)",
+                "on",
+                "r"
+              ],
+              "almost": [
+                "presque",
+                "almost",
+                "d"
+              ],
+              "had#2": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          },
+          {
+            "en": "“Stay calm,” she told herself. “One move at a time.”",
+            "fr": "« Reste calme, se dit-elle. Un coup à la fois. »",
+            "g": {
+              "stay": [
+                "reste",
+                "stay",
+                "v",
+                "rester"
+              ],
+              "told": [
+                "se dit",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "move": [
+                "coup",
+                "move",
+                "n",
+                "coup, déplacement"
+              ],
+              "at": [
+                "(at a time : à la fois)",
+                "at",
+                "r"
+              ],
+              "time": [
+                "(at a time : à la fois)",
+                "time",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Her mother was somewhere in the gallery, but she did not dare to look for her.",
+            "fr": "Sa mère était quelque part dans les tribunes, mais elle n'osait pas la chercher des yeux.",
+            "g": {
+              "gallery": [
+                "tribunes",
+                "gallery",
+                "n"
+              ],
+              "dare": [
+                "osait",
+                "dare",
+                "v",
+                "oser"
+              ],
+              "look": [
+                "(look for : chercher)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "for": [
+                "(look for : chercher)",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "But there was something strange about Camille's sudden brilliance, and Hana could not stop thinking about it.",
+            "fr": "Mais il y avait quelque chose d'étrange dans le brio soudain de Camille, et Hana ne parvenait pas à cesser d'y penser.",
+            "g": {
+              "about": [
+                "(about it : y)",
+                "about",
+                "r"
+              ],
+              "camille's": [
+                "de Camille",
+                "Camille",
+                "np"
+              ],
+              "sudden": [
+                "soudain",
+                "sudden",
+                "a"
+              ],
+              "stop": [
+                "cesser",
+                "stop",
+                "v",
+                "cesser"
+              ],
+              "thinking": [
+                "penser",
+                "think",
+                "v",
+                "penser"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ]
+}

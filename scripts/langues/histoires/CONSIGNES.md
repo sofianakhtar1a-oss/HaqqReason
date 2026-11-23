@@ -114,7 +114,7 @@ existantes), les pages et, pour un texte classique, que l'anglais n'a pas chang�
 Contenu sain et familial : pas d'alcool, pas de relation amoureuse, pas de violence gratuite,
 pas de jeux d'argent, pas de sujet religieux polémique, rien sur le poids ou les régimes.
 
-## A. Écrire une histoire originale (A1 à B2)
+## A. Écrire une histoire originale (A1 à C2)
 
 Tu écris toi-même l'histoire, page par page, avec ses traductions et ses gloses.
 
@@ -124,13 +124,18 @@ Tu écris toi-même l'histoire, page par page, avec ses traductions et ses glose
 | A2 | 13 | 150 à 190 | prétérit, going to, comparatifs, should, present perfect simple ; phrases de 15 mots au plus |
 | B1 | 14 | 200 à 240 | tous les temps courants, conditionnels 1 et 2, passif simple, discours rapporté ; vocabulaire plus riche |
 | B2 | 15 | 230 à 270 | verbes à particule, expressions idiomatiques, conditionnel 3, modaux de déduction, relatives ; style vivant |
+| C1 | 15 | 260 à 300 | inversion, phrases clivées, conditionnels mixtes, participiales, verbes à particule et idiomes avancés, vocabulaire précis et nuancé, registres variés (dialogue, récit, ironie légère) |
+| C2 | 15 | 280 à 320 | prose littéraire : vocabulaire rare et exact, syntaxe ample et maîtrisée, discours indirect libre, sous-entendus, humour ou ironie fins, images ; le niveau d'une bonne nouvelle publiée |
 
 - Une vraie histoire : des personnages attachants, un problème, des rebondissements, une fin
   qui fait plaisir. Des chapitres (titre en anglais et en français), des dialogues.
 - Chaque page se lit seule (une scène, un moment), et donne envie de tourner la page.
 - Des personnages aux prénoms variés (français, britanniques, d'ailleurs).
 - Écris l'histoire en plusieurs lots si elle est longue (par exemple pages 1 à 5, puis 6 à
-  10…) : `pages-01.json`, `pages-02.json`… avec le bon `debut`.
+  10…) : `pages-01.json`, `pages-02.json`… avec le bon `debut`. Au plus 6 pages par lot en A1
+  et A2, 5 en B1 et B2, 4 en C1 et C2.
+- En C1 et C2, la langue est celle d'un auteur, pas d'un manuel : un texte qu'un lecteur anglais
+  lirait pour le plaisir. Les mots rares et les tournures figurées reçoivent une glose précise.
 
 ## B. Traduire un texte classique (domaine public)
 

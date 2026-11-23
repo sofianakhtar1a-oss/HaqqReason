@@ -1,0 +1,59 @@
+{
+  "id": "le-lexicographe",
+  "titre": "The Lexicographer",
+  "titreFr": "Le lexicographe",
+  "auteur": "HaqqReason",
+  "niveau": "C2",
+  "genre": "Comédie littéraire",
+  "resume": "À quatre-vingt-un ans, Ambrose Pelling, rédacteur de dictionnaire depuis cinquante-neuf ans, n'a plus qu'une obsession : un mot, « quarnish », glissé dans l'édition de 1934 de la maison Marchbanks sans le moindre témoin pour l'attester. La dernière édition imprimée part sous presse vendredi à six heures. Sa jeune assistante, Ada, descend dans la cave aux millions de fiches, affronte un dictionnaire rival, un directeur de l'« engagement » serré dans un costume trop étroit, et prend le train vers un village où nul ne semble avoir jamais entendu ce mot. Une comédie pleine d'esprit et de tendresse, et une méditation sur ce qui fait, au juste, qu'un mot existe.",
+  "questions": [
+    {
+      "q": "What rule does Mr Pelling say a word must satisfy before the dictionary admits it?",
+      "o": ["Three written witnesses, by three different authors, in three different years", "One quotation from a celebrated novelist", "The signature of the managing director"],
+      "i": "Relis le deuxième chapitre : un dictionnaire, dit-il, est un registre, comme un voyageur à la frontière.",
+      "e": "Pelling explique qu'un mot n'est admis que s'il peut produire au moins trois témoins écrits, de trois auteurs différents, en trois années différentes. C'est la règle que Miss Strang appliquait avec la sérénité d'un magistrat."
+    },
+    {
+      "q": "What did Ada discover on the back of the only slip for quarnish?",
+      "o": ["A name, Alice, scored out so fiercely that the card had torn", "A date and an address in Cumberland", "A drawing of a lamp"],
+      "i": "Elle retourne la fiche et la tient devant sa lampe torche.",
+      "e": "Au dos de la fiche, une main plus petite avait ajouté un nom puis l'avait raturé si violemment que la fiche s'était déchirée ; à travers la déchirure, Ada lit « Alice »."
+    },
+    {
+      "q": "Why did Pelling at first believe that Lorimer's, the rival dictionary, had fallen into a trap?",
+      "o": ["He thought Marchbanks had planted a false entry that a rival then copied", "He thought Lorimer's had stolen the manuscript", "He thought Lorimer's had printed the word by mistake"],
+      "i": "Pense aux quatre façons qu'il énumère pour qu'un mot que personne n'emploie entre dans un dictionnaire.",
+      "e": "Pelling suppose d'abord que l'entrée est un piège, une fausse entrée plantée pour confondre les plagiaires. Mais il se ravise : Lorimer's a ajouté un témoin (une citation de A. Penhallow, 1912), ce qu'un simple copieur n'aurait pas fait."
+    },
+    {
+      "q": "What did Mr Dobson say when Ada asked him whether the word meant anything to him?",
+      "o": ["That he had never heard it, though he knew many local words", "That it was what his grandmother called the evening light", "That it was the name of a local farm"],
+      "i": "Il est facteur retraité et bibliothécaire, et sa famille vit dans la vallée depuis huit générations.",
+      "e": "M. Dobson répond qu'il n'a jamais entendu ce mot, bien que sa famille vive dans la vallée depuis huit générations et connaisse des mots pour la pluie « que vous ne croiriez pas ». Le mot n'a donc jamais été du dialecte."
+    },
+    {
+      "q": "What did Euphemia Strang confess in the letter hidden in the back of the book?",
+      "o": ["That she had labelled an invented word as Cumberland dialect to get it into the dictionary", "That she had copied the word from a rival dictionary", "That she had misread a handwritten note and invented the entry by mistake"],
+      "i": "« A wicked thing for a good word » : relis la lettre, et le « mensonge de deux syllabes ».",
+      "e": "Miss Strang avoue qu'Alice Penhallow avait inventé le mot elle-même et que, ne pouvant l'admettre comme invention, elle l'a étiqueté « dialecte du Cumberland », un mensonge de deux syllabes. Elle a écrit « Ne pas demander » sur la fiche tout en rêvant qu'on le lui demande."
+    },
+    {
+      "q": "Why did Mr Fenwick-Boyce say the word could not stay in the Ninth Edition?",
+      "o": ["There was only one genuine witness; the other uses all derived from the dictionary", "He found the word ugly and hard to pronounce", "The company could not afford to print any more pages"],
+      "i": "Il a lu les Principes d'inclusion et cite la règle de Pelling lui-même.",
+      "e": "Pour Fenwick-Boyce, il n'y a qu'un témoin authentique (Penhallow) et trente et un échos dérivés du dictionnaire. Une règle pliée pour un mot l'est pour onze mille ; il pose donc une condition : deux témoins indépendants de plus avant six heures."
+    },
+    {
+      "q": "How did the schoolgirl Nell use the word quarnish?",
+      "o": ["For the glow on the ceiling after you switch off a tablet", "For a noisy argument between friends", "For the smell of a freshly printed book"],
+      "i": "Elle l'a appris dans le dictionnaire de l'école, mais le dictionnaire parle de mur.",
+      "e": "Nell emploie le mot pour la lueur au plafond quand on a éteint sa tablette et qu'on fait semblant de dormir. Le dictionnaire disait « mur » : elle a donc fait faire au mot quelque chose de neuf, et c'est ce qui prouve qu'il vit."
+    },
+    {
+      "q": "What finally served as the third witness for the word?",
+      "o": ["Pelling's own spontaneous use of it, written down on a slip by Ada", "A poem found in an old pamphlet", "A letter sent by the crossword compiler"],
+      "i": "Il est six heures et Mrs Baptiste vient d'emporter la lampe verte.",
+      "e": "Quand Mme Baptiste emporte la lampe, Pelling murmure « Quarnish » sans y penser ; Ada note aussitôt la citation sur une fiche, avec la mention « et voulu ». Fenwick-Boyce, qui l'a entendu, accepte : « en gras »."
+    }
+  ]
+}

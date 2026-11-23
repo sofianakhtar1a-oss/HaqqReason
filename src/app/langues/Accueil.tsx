@@ -6,7 +6,8 @@ import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { elementDe, elementDEntree } from "@/lib/langues/dictionnaire";
 import { cleJour, estDue } from "@/lib/langues/srs";
 import { type DocumentLangue, listerDocuments, listerMedias, type MediaLangue } from "@/lib/langues/stockage";
-import type { Entree } from "@/lib/langues/types";
+import { chargerDictees, DICTEES_PAR_NIVEAU, serieDicteeNumero } from "@/lib/langues/dictees";
+import { type Entree, NIVEAUX, type Niveau } from "@/lib/langues/types";
 import { useTextes } from "@/lib/modules/textes-client";
 import { HISTOIRES } from "@/lib/langues/histoires/catalogue";
 import { useLectures } from "@/lib/langues/histoires/progression";
@@ -248,16 +249,42 @@ function Progresser({ aller }: { aller: (hash: string) => void }) {
             <ArrowRight className="size-4" aria-hidden="true" />
           </button>
         )}
-        <button type="button" className="lg-progresser-carte" onClick={() => aller(`ecouter/dictee/${niveau ?? "A1"}`)}>
-          <Ear className="size-6 text-accent" aria-hidden="true" />
-          <span className="min-w-0 flex-1">
-            <span className="lg-progresser-etiquette">La dictée</span>
-            <span className="lg-element-titre">Six phrases à écouter, niveau {niveau ?? "A1"}</span>
-            <span className="lg-element-infos">Chaque mot corrigé, puis la traduction.</span>
-          </span>
-          <ArrowRight className="size-4" aria-hidden="true" />
-        </button>
+        <CarteDictee niveau={niveau && (NIVEAUX as string[]).includes(niveau) ? (niveau as Niveau) : "A1"} aller={aller} />
       </div>
     </section>
+  );
+}
+
+/** La dictée à faire : la première dictée numérotée du niveau qui n'est pas encore faite, sinon une dictée surprise. */
+function CarteDictee({ niveau, aller }: { niveau: Niveau; aller: (hash: string) => void }) {
+  const { series } = useSuivi();
+  const suivante = Array.from({ length: DICTEES_PAR_NIVEAU }, (_, k) => k + 1).find((n) => !series[serieDicteeNumero(niveau, n)]);
+  const cle = `${niveau}/${suivante ?? ""}`;
+  const [titre, setTitre] = useState<{ cle: string; titre: string } | null>(null);
+  useEffect(() => {
+    if (!suivante) return;
+    let vivant = true;
+    chargerDictees(niveau).then(
+      (liste) => {
+        const d = liste.find((x) => x.n === suivante);
+        if (vivant && d) setTitre({ cle: `${niveau}/${suivante}`, titre: d.titre });
+      },
+      () => undefined,
+    );
+    return () => {
+      vivant = false;
+    };
+  }, [niveau, suivante]);
+  const nom = titre?.cle === cle ? titre.titre : null;
+  return (
+    <button type="button" className="lg-progresser-carte" onClick={() => aller(suivante ? `ecouter/dictee/${niveau}/${suivante}` : `ecouter/dictee/${niveau}`)}>
+      <Ear className="size-6 text-accent" aria-hidden="true" />
+      <span className="min-w-0 flex-1">
+        <span className="lg-progresser-etiquette">La dictée</span>
+        <span className="lg-element-titre">{suivante ? `Dictée n° ${suivante}${nom ? ` · ${nom}` : ""}` : `Dictée surprise, niveau ${niveau}`}</span>
+        <span className="lg-element-infos">{suivante ? `Niveau ${niveau} · huit phrases, chaque mot corrigé, puis la traduction.` : `Les ${DICTEES_PAR_NIVEAU} dictées du niveau sont faites : en voici une au hasard.`}</span>
+      </span>
+      <ArrowRight className="size-4" aria-hidden="true" />
+    </button>
   );
 }

@@ -11,6 +11,7 @@ import { ecrire, ecrireBlob, listerMedias, lireUn, type MediaLangue, supprimerMe
 import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
 import { NIVEAUX, type Niveau } from "@/lib/langues/types";
+import { SERIE_POSITIONNEMENT, useSuivi } from "@/lib/regles/suivi";
 import { ChoixDictee, Dictee } from "./Dictee";
 import "./histoires/histoires.css";
 import "./regles/regles.css";
@@ -28,7 +29,7 @@ type Travail = { nom: string; etape: Etape; progression: number; apercu: string[
 
 const MAGASINS_MEDIAS = ["langues-medias", "reprise"] as const;
 
-/** Adresse d'une dictée : #ecouter/dictee/<niveau>. */
+/** Adresse d'une dictée : #ecouter/dictee/<niveau> (la dictée surprise), #ecouter/dictee/<niveau>/<n> (la dictée n° n). */
 const DICTEE = "dictee/";
 
 export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (id: string | null) => void }) {
@@ -42,6 +43,8 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
   const [langue, setLangue] = useState<"en" | "fr">("en");
   const annulation = useRef<AbortController | null>(null);
   const t = useTextes("langues");
+  // Le niveau trouvé par le test de positionnement : les dictées s'ouvrent d'abord à ce niveau.
+  const niveauTest = useSuivi().series[SERIE_POSITIONNEMENT]?.niveau;
 
   const recharger = useCallback(() => void listerMedias().then(setMedias).catch(() => setMedias([])), []);
   useEffect(recharger, [recharger]);
@@ -107,8 +110,11 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
   };
 
   if (ouvert?.startsWith(DICTEE)) {
-    const niveau = ouvert.slice(DICTEE.length) as Niveau;
-    if (NIVEAUX.includes(niveau)) return <Dictee key={niveau} niveau={niveau} onFermer={() => onOuvrir(null)} />;
+    const [niv, num] = ouvert.slice(DICTEE.length).split("/");
+    const niveau = niv as Niveau;
+    const numero = num && /^\d+$/.test(num) ? Number(num) : undefined;
+    if (NIVEAUX.includes(niveau))
+      return <Dictee key={`${niveau}/${numero ?? ""}`} niveau={niveau} numero={numero} onFermer={() => onOuvrir(null)} onOuvrirNumero={(n) => onOuvrir(`${DICTEE}${niveau}/${n}`)} />;
   }
   if (courant && courant.id === ouvert) return <Immersion key={courant.id} media={courant} onFermer={() => { onOuvrir(null); recharger(); }} />;
 
@@ -123,7 +129,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
         </div>
       </div>
 
-      <ChoixDictee onOuvrir={(niveau) => onOuvrir(`${DICTEE}${niveau}`)} />
+      <ChoixDictee niveauTest={niveauTest} onOuvrir={(niveau, numero) => onOuvrir(`${DICTEE}${niveau}${numero ? `/${numero}` : ""}`)} />
 
       {travail ? (
         <div className="lg-travail" role="status">

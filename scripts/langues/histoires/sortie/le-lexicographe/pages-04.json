@@ -1,0 +1,2573 @@
+{
+  "debut": 13,
+  "lexique": {
+    "o'clock": [
+      "heures",
+      "o'clock",
+      "d"
+    ],
+    "friday": [
+      "vendredi",
+      "Friday",
+      "n"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "floor": [
+      "étage",
+      "floor",
+      "n"
+    ],
+    "marchbanks": [
+      "Marchbanks (nom du dictionnaire et de la maison)",
+      "Marchbanks",
+      "np"
+    ],
+    "house": [
+      "House (nom d'un bâtiment)",
+      "house",
+      "n",
+      "maison"
+    ],
+    "fenwick-boyce": [
+      "Fenwick-Boyce (nom)",
+      "Fenwick-Boyce",
+      "np"
+    ],
+    "best": [
+      "meilleur",
+      "good",
+      "a",
+      "bon"
+    ],
+    "chair": [
+      "fauteuil",
+      "chair",
+      "n"
+    ],
+    "knee": [
+      "genou",
+      "knee",
+      "n"
+    ],
+    "small": [
+      "petit",
+      "small",
+      "a"
+    ],
+    "bright": [
+      "brillant",
+      "bright",
+      "a"
+    ],
+    "mr": [
+      "monsieur",
+      "Mr",
+      "n"
+    ],
+    "pelling": [
+      "Pelling (nom)",
+      "Pelling",
+      "np"
+    ],
+    "hands": [
+      "mains",
+      "hand",
+      "n",
+      "main"
+    ],
+    "ada": [
+      "Ada (prénom)",
+      "Ada",
+      "np"
+    ],
+    "corner": [
+      "d'angle",
+      "corner",
+      "n",
+      "coin"
+    ],
+    "triangle": [
+      "triangle",
+      "triangle",
+      "n"
+    ],
+    "cat": [
+      "chat",
+      "cat",
+      "n"
+    ],
+    "letter": [
+      "lettre",
+      "letter",
+      "n"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "unexpected": [
+      "inattendu",
+      "unexpected",
+      "a"
+    ],
+    "danger": [
+      "danger",
+      "danger",
+      "n"
+    ],
+    "word": [
+      "mot",
+      "word",
+      "n"
+    ],
+    "citations": [
+      "citations",
+      "citation",
+      "n",
+      "citation"
+    ],
+    "authors": [
+      "auteurs",
+      "author",
+      "n",
+      "auteur"
+    ],
+    "different": [
+      "différents",
+      "different",
+      "a",
+      "différent"
+    ],
+    "dictionary": [
+      "dictionnaire",
+      "dictionary",
+      "n"
+    ],
+    "own": [
+      "propre",
+      "own",
+      "a"
+    ],
+    "rule": [
+      "règle",
+      "rule",
+      "n"
+    ],
+    "novel": [
+      "roman",
+      "novel",
+      "n"
+    ],
+    "thirty-one": [
+      "trente et une",
+      "thirty-one",
+      "a"
+    ],
+    "minutes": [
+      "minutes",
+      "minute",
+      "n",
+      "minute"
+    ],
+    "witness": [
+      "témoin",
+      "witness",
+      "n"
+    ],
+    "echoes": [
+      "échos",
+      "echo",
+      "n",
+      "écho"
+    ],
+    "look": [
+      "regarder",
+      "look",
+      "v"
+    ],
+    "mother": [
+      "mère",
+      "mother",
+      "n"
+    ],
+    "witnesses": [
+      "témoins",
+      "witness",
+      "n",
+      "témoin"
+    ],
+    "take": [
+      "prendre",
+      "take",
+      "v"
+    ],
+    "put": [
+      "mettrai",
+      "put",
+      "v",
+      "mettre"
+    ],
+    "stop": [
+      "arrêter",
+      "stop",
+      "v"
+    ],
+    "years": [
+      "ans",
+      "year",
+      "n",
+      "an"
+    ],
+    "telephone": [
+      "téléphone",
+      "telephone",
+      "n"
+    ],
+    "wethercote": [
+      "Wethercote (village)",
+      "Wethercote",
+      "np"
+    ],
+    "library": [
+      "bibliothèque",
+      "library",
+      "n"
+    ],
+    "voice": [
+      "voix",
+      "voice",
+      "n"
+    ],
+    "single": [
+      "seul",
+      "single",
+      "a"
+    ],
+    "silence": [
+      "silence",
+      "silence",
+      "n"
+    ],
+    "hear": [
+      "entendre",
+      "hear",
+      "v"
+    ],
+    "parcel": [
+      "colis",
+      "parcel",
+      "n"
+    ],
+    "address": [
+      "adresse",
+      "address",
+      "n"
+    ],
+    "nell": [
+      "Nell (prénom)",
+      "Nell",
+      "np"
+    ],
+    "quarnish": [
+      "quarnish (mot fantôme)",
+      "quarnish",
+      "n"
+    ],
+    "patience": [
+      "patience",
+      "patience",
+      "n"
+    ],
+    "wall": [
+      "mur",
+      "wall",
+      "n"
+    ],
+    "page": [
+      "page",
+      "page",
+      "n"
+    ],
+    "number": [
+      "numéro",
+      "number",
+      "n"
+    ],
+    "little": [
+      "un peu",
+      "little",
+      "d",
+      "peu"
+    ],
+    "noun": [
+      "nom",
+      "noun",
+      "n"
+    ],
+    "ceiling": [
+      "plafond",
+      "ceiling",
+      "n"
+    ],
+    "definition": [
+      "définition",
+      "definition",
+      "n"
+    ],
+    "photograph": [
+      "photographie",
+      "photograph",
+      "n"
+    ],
+    "long": [
+      "longuement",
+      "long",
+      "d",
+      "long"
+    ],
+    "year": [
+      "an",
+      "year",
+      "n"
+    ],
+    "see": [
+      "voir",
+      "see",
+      "v"
+    ],
+    "woman": [
+      "femme",
+      "woman",
+      "n"
+    ],
+    "lamp": [
+      "lampe",
+      "lamp",
+      "n"
+    ],
+    "room": [
+      "pièce",
+      "room",
+      "n"
+    ],
+    "pale": [
+      "pâle",
+      "pale",
+      "a"
+    ],
+    "green": [
+      "verte",
+      "green",
+      "a",
+      "vert"
+    ],
+    "line": [
+      "ligne",
+      "line",
+      "n"
+    ],
+    "card": [
+      "fiche",
+      "card",
+      "n",
+      "carte"
+    ],
+    "thing": [
+      "chose",
+      "thing",
+      "n"
+    ],
+    "slip": [
+      "fiche",
+      "slip",
+      "n",
+      "fiche (slip)"
+    ],
+    "life": [
+      "vie",
+      "life",
+      "n"
+    ],
+    "ninth": [
+      "neuvième",
+      "ninth",
+      "a"
+    ],
+    "edition": [
+      "édition",
+      "edition",
+      "n"
+    ],
+    "light": [
+      "lueur",
+      "light",
+      "n",
+      "lumière"
+    ]
+  },
+  "pages": [
+    {
+      "p": [
+        [
+          {
+            "en": "At ten o'clock on Friday morning the third floor of Marchbanks House held a hearing, since it had been entered in the company calendar as a Sync.",
+            "fr": "À dix heures, le vendredi matin, le troisième étage de Marchbanks House tint une audience, puisqu'elle avait été inscrite à l'agenda de la maison sous le nom de « Synchro ».",
+            "g": {
+              "held": [
+                "tint",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "entered": [
+                "inscrite",
+                "enter",
+                "v",
+                "inscrire"
+              ],
+              "sync": [
+                "Synchro (réunion)",
+                "sync",
+                "n"
+              ],
+              "calendar": [
+                "agenda",
+                "calendar",
+                "n"
+              ],
+              "company": [
+                "maison",
+                "company",
+                "n"
+              ],
+              "hearing": [
+                "audience",
+                "hearing",
+                "n"
+              ],
+              "since": [
+                "puisque",
+                "since",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "Fenwick-Boyce presided from the best chair, a tablet on his knee like a small bright shield; Mr Pelling sat opposite, with both hands folded on a walking stick; and Ada held the third corner of the triangle, beside the cat, who lay across the proofs of the letter Q with the indifference of a paperweight.",
+            "fr": "Fenwick-Boyce présidait depuis le meilleur fauteuil, une tablette sur le genou comme un petit bouclier brillant ; M. Pelling était assis en face, les deux mains croisées sur une canne ; et Ada occupait le troisième sommet du triangle, à côté du chat, qui était couché en travers des épreuves de la lettre Q avec l'indifférence d'un presse-papiers.",
+            "g": {
+              "presided": [
+                "présidait",
+                "preside",
+                "v",
+                "présider"
+              ],
+              "sat": [
+                "était assis",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "folded": [
+                "croisées",
+                "fold",
+                "v",
+                "plier"
+              ],
+              "held": [
+                "occupait",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "beside": [
+                "à côté de",
+                "beside",
+                "r"
+              ],
+              "lay": [
+                "couché",
+                "lie",
+                "v",
+                "être couché"
+              ],
+              "proofs": [
+                "épreuves",
+                "proof",
+                "n",
+                "épreuve"
+              ],
+              "paperweight": [
+                "presse-papiers",
+                "paperweight",
+                "n"
+              ],
+              "shield": [
+                "bouclier",
+                "shield",
+                "n"
+              ],
+              "tablet": [
+                "tablette",
+                "tablet",
+                "n"
+              ],
+              "stick": [
+                "canne (walking stick)",
+                "stick",
+                "n"
+              ],
+              "walking": [
+                "(walking stick : canne)",
+                "walking",
+                "n"
+              ],
+              "opposite": [
+                "en face",
+                "opposite",
+                "d"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "indifference": [
+                "indifférence",
+                "indifference",
+                "n"
+              ],
+              "q": [
+                "Q",
+                "Q",
+                "n"
+              ],
+              "corner": [
+                "sommet",
+                "corner",
+                "n",
+                "coin"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“I have read the Inclusion Principles,” said Fenwick-Boyce, and Ada felt a chill, for it was the unexpected danger of consultants that some of them did the reading.",
+            "fr": "« J'ai lu les Principes d'inclusion », dit Fenwick-Boyce, et Ada eut un frisson, car c'était le danger inattendu des consultants que certains d'entre eux fassent leurs lectures.",
+            "g": {
+              "read": [
+                "lu",
+                "read",
+                "v",
+                "lire"
+              ],
+              "felt": [
+                "eut",
+                "feel",
+                "v",
+                "sentir"
+              ],
+              "chill": [
+                "frisson",
+                "chill",
+                "n"
+              ],
+              "consultants": [
+                "consultants",
+                "consultant",
+                "n",
+                "consultant"
+              ],
+              "principles": [
+                "Principes",
+                "principle",
+                "n",
+                "principe"
+              ],
+              "inclusion": [
+                "d'inclusion",
+                "inclusion",
+                "n"
+              ],
+              "some": [
+                "certains",
+                "some",
+                "p"
+              ],
+              "did": [
+                "fassent",
+                "do",
+                "v",
+                "faire"
+              ],
+              "reading": [
+                "leurs lectures",
+                "reading",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“A word is admitted on three independent citations, by three distinct authors, in three different years, none derived from any dictionary.",
+            "fr": "« Un mot est admis sur trois citations indépendantes, de trois auteurs distincts, en trois années différentes, dont aucune ne dérive d'un dictionnaire.",
+            "g": {
+              "admitted": [
+                "admis",
+                "admit",
+                "v",
+                "admettre"
+              ],
+              "independent": [
+                "indépendantes",
+                "independent",
+                "a",
+                "indépendant"
+              ],
+              "distinct": [
+                "distincts",
+                "distinct",
+                "a",
+                "distinct"
+              ],
+              "derived": [
+                "dérive",
+                "derive",
+                "v",
+                "dériver"
+              ],
+              "none": [
+                "dont aucune",
+                "none",
+                "p"
+              ],
+              "any": [
+                "un",
+                "any",
+                "t"
+              ],
+              "years": [
+                "années",
+                "year",
+                "n",
+                "an"
+              ],
+              "different": [
+                "différentes",
+                "different",
+                "a",
+                "différent"
+              ]
+            }
+          },
+          {
+            "en": "Your own rule, Mr Pelling; I have merely put it in a bullet point.”",
+            "fr": "C'est votre propre règle, monsieur Pelling ; je l'ai simplement mise en liste à puces. »",
+            "g": {
+              "merely": [
+                "simplement",
+                "merely",
+                "d"
+              ],
+              "bullet": [
+                "puces (bullet point : liste à puces)",
+                "bullet",
+                "n"
+              ],
+              "point": [
+                "(bullet point : liste à puces)",
+                "point",
+                "n"
+              ],
+              "put": [
+                "mise",
+                "put",
+                "v",
+                "mettre"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Ada laid out her evidence, the novel, the letter and the thirty-one echoes, in eleven minutes, and the cat slept through it.",
+            "fr": "Ada exposa ses preuves, le roman, la lettre et les trente et un échos, en onze minutes, et le chat dormit pendant tout ce temps.",
+            "g": {
+              "laid": [
+                "exposa (laid out)",
+                "lay",
+                "v",
+                "poser"
+              ],
+              "out": [
+                "(laid out : exposa)",
+                "out",
+                "d"
+              ],
+              "evidence": [
+                "preuves",
+                "evidence",
+                "n"
+              ],
+              "echoes": [
+                "échos",
+                "echo",
+                "n",
+                "écho"
+              ],
+              "slept": [
+                "dormit",
+                "sleep",
+                "v",
+                "dormir"
+              ],
+              "through": [
+                "pendant",
+                "through",
+                "r"
+              ],
+              "it": [
+                "(slept through it : pendant tout ce temps)",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“So we have one genuine witness,” said Fenwick-Boyce, scrolling, “who invented the word, and thirty-one echoes, which Mr Pelling himself, I understand, has called the dictionary quoting itself.”",
+            "fr": "« Nous avons donc un seul témoin authentique, dit Fenwick-Boyce en faisant défiler l'écran, qui a inventé le mot, et trente et un échos, que M. Pelling lui-même, si j'ai bien compris, a qualifiés de dictionnaire qui se cite lui-même. »",
+            "g": {
+              "genuine": [
+                "authentique",
+                "genuine",
+                "a"
+              ],
+              "scrolling": [
+                "en faisant défiler",
+                "scroll",
+                "v",
+                "faire défiler"
+              ],
+              "invented": [
+                "inventé",
+                "invent",
+                "v",
+                "inventer"
+              ],
+              "understand": [
+                "ai compris",
+                "understand",
+                "v",
+                "comprendre"
+              ],
+              "called": [
+                "a qualifiés de",
+                "call",
+                "v",
+                "appeler"
+              ],
+              "quoting": [
+                "qui se cite",
+                "quote",
+                "v",
+                "citer"
+              ],
+              "himself": [
+                "lui-même",
+                "himself",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“I said that at midnight,” said Pelling. “I was tired and wrong.”",
+            "fr": "« J'ai dit cela à minuit, dit Pelling. J'étais fatigué et dans l'erreur. »",
+            "g": {
+              "midnight": [
+                "minuit",
+                "midnight",
+                "n"
+              ],
+              "tired": [
+                "fatigué",
+                "tired",
+                "a"
+              ],
+              "wrong": [
+                "dans l'erreur",
+                "wrong",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Were you wrong?” “I was tired.”",
+            "fr": "« Étiez-vous dans l'erreur ? — J'étais fatigué. »",
+            "g": {
+              "wrong": [
+                "dans l'erreur",
+                "wrong",
+                "a"
+              ],
+              "tired": [
+                "fatigué",
+                "tired",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Fenwick-Boyce had the grace to look at the carpet.",
+            "fr": "Fenwick-Boyce eut la grâce de regarder le tapis.",
+            "g": {
+              "grace": [
+                "grâce",
+                "grace",
+                "n"
+              ],
+              "carpet": [
+                "tapis",
+                "carpet",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“I am not a monster,” he said. “I have a mother and a thesaurus. But a rule that is bent for one word is bent for eleven thousand, and I have a deadline.”",
+            "fr": "« Je ne suis pas un monstre, dit-il. J'ai une mère et un dictionnaire de synonymes. Mais une règle qu'on plie pour un mot, on la plie pour onze mille, et j'ai une échéance. »",
+            "g": {
+              "monster": [
+                "monstre",
+                "monster",
+                "n"
+              ],
+              "thesaurus": [
+                "dictionnaire de synonymes",
+                "thesaurus",
+                "n"
+              ],
+              "bent": [
+                "plie",
+                "bend",
+                "v",
+                "plier"
+              ],
+              "deadline": [
+                "échéance",
+                "deadline",
+                "n"
+              ],
+              "eleven": [
+                "onze",
+                "eleven",
+                "a"
+              ],
+              "thousand": [
+                "mille",
+                "thousand",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "He rose. “Bring me two more witnesses who did not take the word from a dictionary, before six this evening, and I shall put it in myself, in bold.”",
+            "fr": "Il se leva. « Apportez-moi deux autres témoins qui n'ont pas pris le mot dans un dictionnaire, avant dix-huit heures ce soir, et je l'y mettrai moi-même, en gras. »",
+            "g": {
+              "rose": [
+                "se leva",
+                "rise",
+                "v",
+                "se lever"
+              ],
+              "bring": [
+                "apportez",
+                "bring",
+                "v",
+                "apporter"
+              ],
+              "bold": [
+                "en gras",
+                "bold",
+                "n"
+              ],
+              "evening": [
+                "soir",
+                "evening",
+                "n"
+              ],
+              "take": [
+                "pris",
+                "take",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Done,” said Pelling, before Ada could stop him; and only in the corridor afterwards did she understand that he had staked eighty-one years on a single afternoon.",
+            "fr": "« Entendu », dit Pelling avant qu'Ada ait pu l'arrêter ; et ce n'est que dans le couloir, ensuite, qu'elle comprit qu'il venait de miser quatre-vingt-un ans sur un seul après-midi.",
+            "g": {
+              "done": [
+                "entendu",
+                "do",
+                "v",
+                "faire"
+              ],
+              "staked": [
+                "venait de miser",
+                "stake",
+                "v",
+                "miser"
+              ],
+              "eighty-one": [
+                "quatre-vingt-un",
+                "eighty-one",
+                "a"
+              ],
+              "corridor": [
+                "couloir",
+                "corridor",
+                "n"
+              ],
+              "afterwards": [
+                "ensuite",
+                "afterwards",
+                "d"
+              ],
+              "understand": [
+                "comprit",
+                "understand",
+                "v",
+                "comprendre"
+              ],
+              "single": [
+                "seul",
+                "single",
+                "a"
+              ],
+              "afternoon": [
+                "après-midi",
+                "afternoon",
+                "n"
+              ],
+              "could": [
+                "ait pu",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "only": [
+                "(only in : ce n'est que dans)",
+                "only",
+                "d"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 8 — The Hearing",
+      "titreFr": "Chapitre 8 — L'audience"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "The telephone at Wethercote library was answered on the ninth ring, by a voice that said, “Library. Ask inside — I mean, speak up.”",
+            "fr": "Au téléphone de la bibliothèque de Wethercote, on décrocha à la neuvième sonnerie, et une voix dit : « Bibliothèque. Demandez à l'intérieur… je veux dire, parlez plus fort. »",
+            "g": {
+              "answered": [
+                "décrocha (answered)",
+                "answer",
+                "v",
+                "répondre"
+              ],
+              "ninth": [
+                "neuvième",
+                "ninth",
+                "a"
+              ],
+              "ring": [
+                "sonnerie",
+                "ring",
+                "n"
+              ],
+              "ask": [
+                "demandez",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "inside": [
+                "à l'intérieur",
+                "inside",
+                "d"
+              ],
+              "mean": [
+                "veux dire",
+                "mean",
+                "v",
+                "signifier"
+              ],
+              "speak": [
+                "parlez",
+                "speak",
+                "v",
+                "parler"
+              ],
+              "up": [
+                "plus fort (speak up)",
+                "up",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Ada explained, rapidly and in a single breath, and there followed a silence in which she could hear Mr Dobson turning the matter over like a parcel with no address.",
+            "fr": "Ada expliqua, rapidement et d'une seule traite, et il s'ensuivit un silence pendant lequel elle l'entendit retourner la question comme un colis sans adresse.",
+            "g": {
+              "explained": [
+                "expliqua",
+                "explain",
+                "v",
+                "expliquer"
+              ],
+              "rapidly": [
+                "rapidement",
+                "rapidly",
+                "d"
+              ],
+              "breath": [
+                "traite (in a single breath : d'une seule traite)",
+                "breath",
+                "n"
+              ],
+              "followed": [
+                "s'ensuivit",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "mr": [
+                "monsieur",
+                "Mr",
+                "n"
+              ],
+              "dobson": [
+                "Dobson",
+                "Dobson",
+                "np"
+              ],
+              "turning": [
+                "retourner",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "over": [
+                "(turning over : retourner)",
+                "over",
+                "d"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "matter": [
+                "question",
+                "matter",
+                "n"
+              ],
+              "single": [
+                "seule",
+                "single",
+                "a",
+                "seul"
+              ],
+              "hear": [
+                "entendit",
+                "hear",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "The school was a quarter of a mile uphill, he observed, but he had walked a postal round in worse.",
+            "fr": "L'école se trouvait à quatre cents mètres, en montée, fit-il remarquer, mais il avait fait sa tournée de facteur par bien pire.",
+            "g": {
+              "quarter": [
+                "(a quarter of a mile : quatre cents mètres)",
+                "quarter",
+                "n"
+              ],
+              "mile": [
+                "(a quarter of a mile : quatre cents mètres)",
+                "mile",
+                "n"
+              ],
+              "uphill": [
+                "en montée",
+                "uphill",
+                "d"
+              ],
+              "observed": [
+                "fit-il remarquer",
+                "observe",
+                "v",
+                "observer"
+              ],
+              "walked": [
+                "fait (walked a round : fait une tournée)",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "postal": [
+                "postales",
+                "postal",
+                "a",
+                "postal"
+              ],
+              "round": [
+                "tournée",
+                "round",
+                "n",
+                "tournée"
+              ],
+              "worse": [
+                "bien pire",
+                "bad",
+                "a",
+                "mauvais"
+              ],
+              "school": [
+                "école",
+                "school",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Twenty minutes later a small, brisk voice came on the line.",
+            "fr": "Vingt minutes plus tard, une petite voix vive se fit entendre au bout du fil.",
+            "g": {
+              "twenty": [
+                "vingt",
+                "twenty",
+                "a"
+              ],
+              "later": [
+                "plus tard",
+                "late",
+                "d",
+                "tard"
+              ],
+              "brisk": [
+                "vive",
+                "brisk",
+                "a"
+              ],
+              "came": [
+                "se fit entendre",
+                "come",
+                "v",
+                "venir"
+              ],
+              "line": [
+                "fil",
+                "line",
+                "n"
+              ],
+              "small": [
+                "petite",
+                "small",
+                "a",
+                "petit"
+              ]
+            }
+          },
+          {
+            "en": "“Hello. Are you the dictionary lady?”",
+            "fr": "« Bonjour. C'est vous, la dame du dictionnaire ? »",
+            "g": {
+              "hello": [
+                "bonjour",
+                "hello",
+                "n"
+              ],
+              "lady": [
+                "dame",
+                "lady",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Nell,” said Ada, “do you know the word quarnish?”",
+            "fr": "« Nell, dit Ada, connais-tu le mot quarnish ? »",
+            "g": {
+              "know": [
+                "connais",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "do": [
+                "(do you know : connais-tu)",
+                "do",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Course I do,” said Nell, with the withering patience of nine.",
+            "fr": "« Évidemment », dit Nell, avec la patience cinglante de ses neuf ans.",
+            "g": {
+              "course": [
+                "évidemment (course : of course)",
+                "course",
+                "n"
+              ],
+              "withering": [
+                "cinglante",
+                "withering",
+                "a"
+              ],
+              "nine": [
+                "neuf ans",
+                "nine",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“It's the glow on the ceiling when you've turned your tablet off and you're pretending to be asleep.”",
+            "fr": "« C'est la lueur au plafond quand on a éteint sa tablette et qu'on fait semblant de dormir. »",
+            "g": {
+              "glow": [
+                "lueur",
+                "glow",
+                "n"
+              ],
+              "ceiling": [
+                "plafond",
+                "ceiling",
+                "n"
+              ],
+              "you've": [
+                "on a",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "turned": [
+                "éteint (turned off)",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "off": [
+                "(turned off : éteint)",
+                "off",
+                "d"
+              ],
+              "tablet": [
+                "tablette",
+                "tablet",
+                "n"
+              ],
+              "you're": [
+                "on",
+                "you",
+                "p"
+              ],
+              "pretending": [
+                "fait semblant",
+                "pretend",
+                "v",
+                "faire semblant"
+              ],
+              "asleep": [
+                "(to be asleep : dormir)",
+                "asleep",
+                "a"
+              ],
+              "to": [
+                "de",
+                "to",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "Ada sat down on the nearest chair. “And where did you learn it?”",
+            "fr": "Ada s'assit sur la chaise la plus proche. « Et où l'as-tu appris ? »",
+            "g": {
+              "sat": [
+                "s'assit",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sat down : s'assit)",
+                "down",
+                "d"
+              ],
+              "nearest": [
+                "la plus proche",
+                "near",
+                "a",
+                "proche"
+              ],
+              "chair": [
+                "chaise",
+                "chair",
+                "n"
+              ],
+              "learn": [
+                "appris",
+                "learn",
+                "v",
+                "apprendre"
+              ],
+              "did": [
+                "(did you learn : as-tu appris)",
+                "do",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“School dictionary. It says wall, but it obviously means that.”",
+            "fr": "« Dans le dictionnaire de l'école. Il dit mur, mais ça veut évidemment dire ça. »",
+            "g": {
+              "school": [
+                "de l'école",
+                "school",
+                "n"
+              ],
+              "dictionary": [
+                "dictionnaire",
+                "dictionary",
+                "n"
+              ],
+              "says": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "obviously": [
+                "évidemment",
+                "obviously",
+                "d"
+              ],
+              "means": [
+                "veut dire",
+                "mean",
+                "v",
+                "signifier"
+              ],
+              "that": [
+                "ça",
+                "that",
+                "p"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Ten minutes later, Ada's telephone gave a small shudder, and on it appeared a photograph of a page of the Wethercote Wire, number fourteen, a little crooked, as if taken by somebody leaning on a gate.",
+            "fr": "Dix minutes plus tard, le téléphone d'Ada eut un petit frémissement, et y apparut la photographie d'une page de la Wethercote Wire, numéro quatorze, un peu de travers, comme prise par quelqu'un appuyé à une barrière.",
+            "g": {
+              "ada's": [
+                "d'Ada",
+                "Ada",
+                "np"
+              ],
+              "shudder": [
+                "frémissement",
+                "shudder",
+                "n"
+              ],
+              "appeared": [
+                "apparut",
+                "appear",
+                "v",
+                "apparaître"
+              ],
+              "photograph": [
+                "photographie",
+                "photograph",
+                "n"
+              ],
+              "wire": [
+                "Wire (journal de l'école)",
+                "Wire",
+                "np"
+              ],
+              "fourteen": [
+                "quatorze",
+                "fourteen",
+                "a"
+              ],
+              "crooked": [
+                "de travers",
+                "crooked",
+                "a"
+              ],
+              "taken": [
+                "prise",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "leaning": [
+                "appuyé",
+                "lean",
+                "v",
+                "s'appuyer"
+              ],
+              "gate": [
+                "barrière",
+                "gate",
+                "n"
+              ],
+              "gave": [
+                "eut",
+                "give",
+                "v",
+                "donner"
+              ]
+            }
+          },
+          {
+            "en": "WORD OF THE WEEK, by Nell Dobson, Year 5. QUARNISH (noun): the light that is left behind.",
+            "fr": "MOT DE LA SEMAINE, par Nell Dobson, CM1. QUARNISH (nom) : la lumière qui reste derrière.",
+            "g": {
+              "week": [
+                "semaine",
+                "week",
+                "n"
+              ],
+              "year": [
+                "CM1 (Year 5)",
+                "year",
+                "n"
+              ],
+              "left": [
+                "reste",
+                "leave",
+                "v",
+                "laisser"
+              ],
+              "behind": [
+                "derrière",
+                "behind",
+                "d"
+              ],
+              "dobson": [
+                "Dobson",
+                "Dobson",
+                "np"
+              ],
+              "nell": [
+                "Nell",
+                "Nell",
+                "np"
+              ],
+              "light": [
+                "lumière",
+                "light",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Example: There was a lovely quarnish on my ceiling after Dad took the torch away. Not to be confused with a quarrel, which is louder.",
+            "fr": "Exemple : Il y avait un joli quarnish sur mon plafond après que papa a emporté la lampe de poche. À ne pas confondre avec une querelle, qui est plus bruyante.",
+            "g": {
+              "example": [
+                "exemple",
+                "example",
+                "n"
+              ],
+              "lovely": [
+                "joli",
+                "lovely",
+                "a"
+              ],
+              "dad": [
+                "papa",
+                "dad",
+                "n"
+              ],
+              "took": [
+                "a emporté (took away)",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "away": [
+                "(took away : a emporté)",
+                "away",
+                "d"
+              ],
+              "torch": [
+                "lampe de poche",
+                "torch",
+                "n"
+              ],
+              "confused": [
+                "confondre",
+                "confuse",
+                "v",
+                "confondre"
+              ],
+              "louder": [
+                "plus bruyante",
+                "loud",
+                "a",
+                "bruyant"
+              ],
+              "quarrel": [
+                "querelle",
+                "quarrel",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Ada read it aloud to Pelling, who sat very straight.",
+            "fr": "Ada le lut à voix haute à Pelling, qui était assis très droit.",
+            "g": {
+              "read": [
+                "lut",
+                "read",
+                "v",
+                "lire"
+              ],
+              "aloud": [
+                "à voix haute",
+                "aloud",
+                "d"
+              ],
+              "sat": [
+                "était assis",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "straight": [
+                "droit",
+                "straight",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“She has it wrong,” he said. “The definition says wall.”",
+            "fr": "« Elle se trompe, dit-il. La définition dit mur. »",
+            "g": {
+              "wrong": [
+                "erreur (has it wrong : se trompe)",
+                "wrong",
+                "a"
+              ],
+              "says": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "has": [
+                "(has it wrong : se trompe)",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          },
+          {
+            "en": "“She has it right enough to use it,” said Ada. “She isn't quoting you, Mr Pelling. She was handed a word and she has made it do something new.”",
+            "fr": "« Elle l'a assez bien compris pour l'employer, dit Ada. Elle ne vous cite pas, monsieur Pelling. On lui a remis un mot et elle lui a fait faire quelque chose de neuf. »",
+            "g": {
+              "right": [
+                "bien (has it right : l'a bien compris)",
+                "right",
+                "a"
+              ],
+              "enough": [
+                "assez",
+                "enough",
+                "d"
+              ],
+              "handed": [
+                "remis",
+                "hand",
+                "v",
+                "remettre"
+              ],
+              "made": [
+                "fait",
+                "make",
+                "v",
+                "faire"
+              ],
+              "quoting": [
+                "cite",
+                "quote",
+                "v",
+                "citer"
+              ],
+              "new": [
+                "neuf",
+                "new",
+                "a"
+              ],
+              "use": [
+                "employer",
+                "use",
+                "v"
+              ],
+              "isn't": [
+                "ne… pas",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "Pelling looked at the photograph for a long time, through the magnifying glass.",
+            "fr": "Pelling regarda longuement la photographie à travers la loupe.",
+            "g": {
+              "looked": [
+                "regarda",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "time": [
+                "(a long time : longuement)",
+                "time",
+                "n"
+              ],
+              "magnifying": [
+                "grossissante",
+                "magnifying",
+                "a"
+              ],
+              "glass": [
+                "loupe",
+                "glass",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Last March,” he said. “Not 1912, and not this year. Two witnesses, in two different years, who could never have met.”",
+            "fr": "« En mars de l'an dernier, dit-il. Ni en 1912, ni cette année. Deux témoins, en deux années différentes, qui n'auraient jamais pu se rencontrer. »",
+            "g": {
+              "last": [
+                "(last March : mars de l'an dernier)",
+                "last",
+                "a"
+              ],
+              "march": [
+                "mars",
+                "March",
+                "n"
+              ],
+              "witnesses": [
+                "témoins",
+                "witness",
+                "n",
+                "témoin"
+              ],
+              "different": [
+                "différentes",
+                "different",
+                "a",
+                "différent"
+              ],
+              "met": [
+                "se rencontrer",
+                "meet",
+                "v",
+                "rencontrer"
+              ],
+              "years": [
+                "années",
+                "year",
+                "n",
+                "an"
+              ]
+            }
+          },
+          {
+            "en": "His voice was not quite steady. “And a quarter past four.”",
+            "fr": "Sa voix n'était pas tout à fait assurée. « Et il est quatre heures et quart. »",
+            "g": {
+              "steady": [
+                "assurée",
+                "steady",
+                "a"
+              ],
+              "quite": [
+                "tout à fait",
+                "quite",
+                "d"
+              ],
+              "quarter": [
+                "quart",
+                "quarter",
+                "n"
+              ],
+              "past": [
+                "(a quarter past four : quatre heures et quart)",
+                "past",
+                "r"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 9 — Ask Inside",
+      "titreFr": "Chapitre 9 — Demandez à l'intérieur"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "By five o'clock the third witness had still not appeared.",
+            "fr": "À dix-sept heures, le troisième témoin n'avait toujours pas paru.",
+            "g": {
+              "still": [
+                "toujours",
+                "still",
+                "d"
+              ],
+              "appeared": [
+                "paru",
+                "appear",
+                "v",
+                "apparaître"
+              ],
+              "third": [
+                "troisième",
+                "third",
+                "a"
+              ],
+              "o'clock": [
+                "heures",
+                "o'clock",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "At five to six Fenwick-Boyce came in, holding the file like a waiter bringing a bill that nobody wishes to see.",
+            "fr": "À six heures moins cinq, Fenwick-Boyce entra, tenant le fichier comme un serveur qui apporte une addition que personne ne souhaite voir.",
+            "g": {
+              "came": [
+                "entra (came in)",
+                "come",
+                "v",
+                "venir"
+              ],
+              "in": [
+                "(came in : entra)",
+                "in",
+                "d"
+              ],
+              "holding": [
+                "tenant",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "waiter": [
+                "serveur",
+                "waiter",
+                "n"
+              ],
+              "bringing": [
+                "qui apporte",
+                "bring",
+                "v",
+                "apporter"
+              ],
+              "bill": [
+                "addition",
+                "bill",
+                "n"
+              ],
+              "wishes": [
+                "souhaite",
+                "wish",
+                "v",
+                "souhaiter"
+              ],
+              "file": [
+                "fichier",
+                "file",
+                "n"
+              ],
+              "to": [
+                "(five to six : six heures moins cinq)",
+                "to",
+                "x"
+              ],
+              "five": [
+                "(five to six : six heures moins cinq)",
+                "five",
+                "a"
+              ],
+              "six": [
+                "(five to six : six heures moins cinq)",
+                "six",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Pelling stood at the window with his hands behind him.",
+            "fr": "Pelling se tenait à la fenêtre, les mains dans le dos.",
+            "g": {
+              "stood": [
+                "se tenait",
+                "stand",
+                "v",
+                "se tenir debout"
+              ],
+              "window": [
+                "fenêtre",
+                "window",
+                "n"
+              ],
+              "hands": [
+                "mains",
+                "hand",
+                "n",
+                "main"
+              ],
+              "behind": [
+                "dans le dos (behind him)",
+                "behind",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "At six precisely, Mrs Baptiste came in with her dusters, said “Excuse me, Mr Pelling,” in the voice of a woman who had said it every evening for nineteen years, unplugged the green lamp and carried it out.",
+            "fr": "À six heures précises, Mme Baptiste entra avec ses chiffons, dit « Excusez-moi, monsieur Pelling » du ton d'une femme qui l'avait dit chaque soir depuis dix-neuf ans, débrancha la lampe verte et l'emporta.",
+            "g": {
+              "came": [
+                "entra (came in)",
+                "come",
+                "v",
+                "venir"
+              ],
+              "in": [
+                "(came in : entra)",
+                "in",
+                "d"
+              ],
+              "dusters": [
+                "chiffons à poussière",
+                "duster",
+                "n",
+                "chiffon à poussière"
+              ],
+              "excuse": [
+                "excusez",
+                "excuse",
+                "v",
+                "excuser"
+              ],
+              "unplugged": [
+                "débrancha",
+                "unplug",
+                "v",
+                "débrancher"
+              ],
+              "carried": [
+                "emporta (carried out)",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "out": [
+                "(carried out : emporta)",
+                "out",
+                "d"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ],
+              "nineteen": [
+                "dix-neuf",
+                "nineteen",
+                "a"
+              ],
+              "evening": [
+                "soir",
+                "evening",
+                "n"
+              ],
+              "precisely": [
+                "précises",
+                "precisely",
+                "d"
+              ],
+              "baptiste": [
+                "Baptiste",
+                "Baptiste",
+                "np"
+              ],
+              "mrs": [
+                "madame",
+                "Mrs",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "said#2": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "voice": [
+                "(in the voice of : du ton de)",
+                "voice",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "The room dimmed, and on the wall the light stayed behind, pale and green and entirely unnecessary, like the last line of a letter.",
+            "fr": "La pièce s'assombrit, et sur le mur la lumière resta, pâle et verte et tout à fait inutile, comme la dernière ligne d'une lettre.",
+            "g": {
+              "dimmed": [
+                "s'assombrit",
+                "dim",
+                "v",
+                "s'assombrir"
+              ],
+              "stayed": [
+                "resta (stayed behind)",
+                "stay",
+                "v",
+                "rester"
+              ],
+              "behind": [
+                "(stayed behind : resta)",
+                "behind",
+                "d"
+              ],
+              "entirely": [
+                "tout à fait",
+                "entirely",
+                "d"
+              ],
+              "unnecessary": [
+                "inutile",
+                "unnecessary",
+                "a"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "light": [
+                "lumière",
+                "light",
+                "n"
+              ],
+              "last": [
+                "dernière",
+                "last",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Ah,” said Pelling softly, to nobody. “Quarnish.”",
+            "fr": "« Ah, dit doucement Pelling, à personne. Quarnish. »",
+            "g": {
+              "softly": [
+                "doucement",
+                "softly",
+                "d"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Ada's pencil was already moving.",
+            "fr": "Le crayon d'Ada bougeait déjà.",
+            "g": {
+              "ada's": [
+                "d'Ada",
+                "Ada",
+                "np"
+              ],
+              "pencil": [
+                "crayon",
+                "pencil",
+                "n"
+              ],
+              "moving": [
+                "bougeait",
+                "move",
+                "v",
+                "bouger"
+              ],
+              "already": [
+                "déjà",
+                "already",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "On a blank card she wrote: A. Pelling, spoken, Marchbanks House, Friday, six o'clock, unprompted; and then, after a moment, she added the one thing that no slip in the cellar had ever carried: and meant.",
+            "fr": "Sur une fiche vierge, elle écrivit : A. Pelling, oral, Marchbanks House, vendredi, six heures, spontané ; puis, après un instant, elle ajouta la seule chose qu'aucune fiche de la cave n'avait jamais portée : et voulu.",
+            "g": {
+              "blank": [
+                "vierge",
+                "blank",
+                "a"
+              ],
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "a#2": [
+                "A. (initiale du prénom)",
+                "A.",
+                "np"
+              ],
+              "spoken": [
+                "oral",
+                "spoken",
+                "a"
+              ],
+              "unprompted": [
+                "spontané",
+                "unprompted",
+                "a"
+              ],
+              "added": [
+                "ajouta",
+                "add",
+                "v",
+                "ajouter"
+              ],
+              "carried": [
+                "portée",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "meant": [
+                "voulu",
+                "mean",
+                "v",
+                "vouloir dire"
+              ],
+              "moment": [
+                "instant",
+                "moment",
+                "n"
+              ],
+              "cellar": [
+                "cave",
+                "cellar",
+                "n"
+              ],
+              "house": [
+                "House",
+                "house",
+                "n"
+              ],
+              "marchbanks": [
+                "Marchbanks",
+                "Marchbanks",
+                "np"
+              ],
+              "friday": [
+                "vendredi",
+                "Friday",
+                "n"
+              ],
+              "six": [
+                "six",
+                "six",
+                "a"
+              ],
+              "o'clock": [
+                "heures",
+                "o'clock",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Fenwick-Boyce had heard it too.",
+            "fr": "Fenwick-Boyce l'avait entendu aussi.",
+            "g": {
+              "heard": [
+                "entendu",
+                "hear",
+                "v",
+                "entendre"
+              ],
+              "too": [
+                "aussi",
+                "too",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "He looked at the card, then at the wall, where the glow was thinning towards nothing; and the Director of Engagement, who had never in his working life been engaged by anything, said, “It is, I suppose, content.”",
+            "fr": "Il regarda la fiche, puis le mur, où la lueur s'amenuisait vers rien ; et le directeur de l'Engagement, qui n'avait jamais, de toute sa vie professionnelle, été captivé par quoi que ce soit, dit : « C'est, je suppose, du contenu. »",
+            "g": {
+              "looked": [
+                "regarda",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "thinning": [
+                "s'amenuisait",
+                "thin",
+                "v",
+                "s'amincir"
+              ],
+              "engaged": [
+                "captivé (jeu sur « engagement »)",
+                "engage",
+                "v",
+                "engager"
+              ],
+              "engagement": [
+                "l'Engagement",
+                "engagement",
+                "n",
+                "engagement"
+              ],
+              "working": [
+                "professionnelle",
+                "working",
+                "a"
+              ],
+              "suppose": [
+                "suppose",
+                "suppose",
+                "v"
+              ],
+              "content": [
+                "contenu",
+                "content",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "been": [
+                "été",
+                "be",
+                "v",
+                "être"
+              ],
+              "anything": [
+                "quoi que ce soit",
+                "anything",
+                "p"
+              ],
+              "glow": [
+                "lueur",
+                "glow",
+                "n"
+              ],
+              "director": [
+                "directeur",
+                "director",
+                "n"
+              ],
+              "then": [
+                "puis",
+                "then",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "It was the first time the word had ever sounded like praise.",
+            "fr": "C'était la première fois que le mot sonnait comme un éloge.",
+            "g": {
+              "first": [
+                "première",
+                "first",
+                "a",
+                "premier"
+              ],
+              "sounded": [
+                "sonnait",
+                "sound",
+                "v",
+                "sonner"
+              ],
+              "praise": [
+                "éloge",
+                "praise",
+                "n"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "time": [
+                "fois",
+                "time",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“In bold.”",
+            "fr": "« En gras. »",
+            "g": {
+              "bold": [
+                "gras",
+                "bold",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "The Ninth Edition went to press at six minutes past six, and there, in bold, it stood: “quarnish, n. 1. The pale light that lingers on a wall after a lamp has been carried out of the room. 2. (of children) The glow on a ceiling when a screen is switched off.”",
+            "fr": "La neuvième édition partit sous presse à six heures six, et là, en gras, on lisait : « quarnish, n. 1. La pâle lueur qui s'attarde sur un mur après qu'on a emporté la lampe hors de la pièce. 2. (chez les enfants) La lueur au plafond quand on éteint un écran. »",
+            "g": {
+              "went": [
+                "partit",
+                "go",
+                "v",
+                "aller"
+              ],
+              "press": [
+                "presse",
+                "press",
+                "n"
+              ],
+              "minutes": [
+                "minutes",
+                "minute",
+                "n",
+                "minute"
+              ],
+              "past": [
+                "(six minutes past six : six heures six)",
+                "past",
+                "r"
+              ],
+              "stood": [
+                "on lisait",
+                "stand",
+                "v",
+                "se tenir debout"
+              ],
+              "there": [
+                "là",
+                "there",
+                "d"
+              ],
+              "n": [
+                "n. (nom)",
+                "n.",
+                "n"
+              ],
+              "lingers": [
+                "s'attarde",
+                "linger",
+                "v",
+                "s'attarder"
+              ],
+              "carried": [
+                "emporté",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "out": [
+                "(carried out : emporté)",
+                "out",
+                "d"
+              ],
+              "children": [
+                "enfants",
+                "child",
+                "n",
+                "enfant"
+              ],
+              "switched": [
+                "éteint (switched off)",
+                "switch",
+                "v",
+                "changer"
+              ],
+              "off": [
+                "(switched off : éteint)",
+                "off",
+                "d"
+              ],
+              "screen": [
+                "écran",
+                "screen",
+                "n"
+              ],
+              "glow": [
+                "lueur",
+                "glow",
+                "n"
+              ],
+              "bold": [
+                "gras",
+                "bold",
+                "n"
+              ],
+              "six": [
+                "six",
+                "six",
+                "a"
+              ],
+              "six#2": [
+                "six",
+                "six",
+                "a"
+              ],
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          },
+          {
+            "en": "Afterwards, alone at the window, Ada thought that she had been given a better definition of a word than any in the nine million slips below: what remains on the wall, for a little while, after the voice has been carried out of the room.",
+            "fr": "Plus tard, seule à la fenêtre, Ada songea qu'on venait de lui donner une meilleure définition d'un mot que toutes celles des neuf millions de fiches d'en bas : ce qui reste sur le mur, un petit moment, après qu'on a emporté la voix hors de la pièce.",
+            "g": {
+              "afterwards": [
+                "plus tard",
+                "afterwards",
+                "d"
+              ],
+              "alone": [
+                "seule",
+                "alone",
+                "a"
+              ],
+              "window": [
+                "fenêtre",
+                "window",
+                "n"
+              ],
+              "thought": [
+                "songea",
+                "think",
+                "v",
+                "penser"
+              ],
+              "given": [
+                "venait de lui donner",
+                "give",
+                "v",
+                "donner"
+              ],
+              "better": [
+                "meilleure",
+                "good",
+                "a",
+                "bon"
+              ],
+              "definition": [
+                "définition",
+                "definition",
+                "n"
+              ],
+              "below": [
+                "d'en bas",
+                "below",
+                "d"
+              ],
+              "remains": [
+                "reste",
+                "remain",
+                "v",
+                "rester"
+              ],
+              "little": [
+                "petit",
+                "little",
+                "a"
+              ],
+              "while": [
+                "moment",
+                "while",
+                "n"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ],
+              "carried": [
+                "emporté",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "out": [
+                "(carried out : emporté)",
+                "out",
+                "d"
+              ],
+              "nine": [
+                "neuf",
+                "nine",
+                "a"
+              ],
+              "slips": [
+                "fiches",
+                "slip",
+                "n",
+                "fiche"
+              ],
+              "than": [
+                "que",
+                "than",
+                "c"
+              ],
+              "any": [
+                "toutes celles",
+                "any",
+                "p"
+              ],
+              "been": [
+                "(been given : venait de lui donner)",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "She did not write it down.",
+            "fr": "Elle ne le nota pas.",
+            "g": {
+              "write": [
+                "nota",
+                "write",
+                "v"
+              ],
+              "down": [
+                "(write down : nota)",
+                "down",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Some definitions, she judged, deserve to be asked for.",
+            "fr": "Certaines définitions, jugea-t-elle, méritent qu'on les demande.",
+            "g": {
+              "judged": [
+                "jugea-t-elle",
+                "judge",
+                "v",
+                "juger"
+              ],
+              "deserve": [
+                "méritent",
+                "deserve",
+                "v",
+                "mériter"
+              ],
+              "asked": [
+                "demande",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "for": [
+                "(asked for : demande)",
+                "for",
+                "r"
+              ],
+              "some": [
+                "certaines",
+                "some",
+                "t"
+              ],
+              "definitions": [
+                "définitions",
+                "definition",
+                "n",
+                "définition"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 10 — Quarnish",
+      "titreFr": "Chapitre 10 — Quarnish"
+    }
+  ]
+}

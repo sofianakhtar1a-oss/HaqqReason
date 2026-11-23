@@ -1,0 +1,2785 @@
+{
+  "debut": 1,
+  "lexique": {
+    "week": [
+      "semaine",
+      "week",
+      "n"
+    ],
+    "internship": [
+      "stage",
+      "internship",
+      "n"
+    ],
+    "calder": [
+      "Calder (nom de lieu)",
+      "Calder",
+      "np"
+    ],
+    "valley": [
+      "vallée",
+      "valley",
+      "n"
+    ],
+    "courier": [
+      "Courier (nom du journal)",
+      "courier",
+      "np"
+    ],
+    "tamsin": [
+      "Tamsin (prénom)",
+      "Tamsin",
+      "np"
+    ],
+    "okoye": [
+      "Okoye (nom de famille)",
+      "Okoye",
+      "np"
+    ],
+    "things": [
+      "choses",
+      "thing",
+      "n",
+      "chose"
+    ],
+    "coffee": [
+      "café",
+      "coffee",
+      "n"
+    ],
+    "machine": [
+      "machine",
+      "machine",
+      "n"
+    ],
+    "editor": [
+      "rédacteur en chef",
+      "editor",
+      "n"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "thank": [
+      "merci (thank you)",
+      "thank",
+      "v",
+      "remercier"
+    ],
+    "absolutely": [
+      "absolument",
+      "absolutely",
+      "d"
+    ],
+    "rhys": [
+      "Rhys (prénom)",
+      "Rhys",
+      "np"
+    ],
+    "ellory's": [
+      "de Ellory",
+      "Ellory",
+      "np"
+    ],
+    "chair": [
+      "chaise",
+      "chair",
+      "n"
+    ],
+    "journalist": [
+      "journaliste",
+      "journalist",
+      "n"
+    ],
+    "actually": [
+      "réellement",
+      "actually",
+      "d"
+    ],
+    "day": [
+      "journée",
+      "day",
+      "n"
+    ],
+    "grey": [
+      "gris",
+      "grey",
+      "a"
+    ],
+    "thursday": [
+      "jeudi",
+      "Thursday",
+      "n"
+    ],
+    "october": [
+      "octobre",
+      "October",
+      "n"
+    ],
+    "desmond": [
+      "Desmond (prénom)",
+      "Desmond",
+      "np"
+    ],
+    "pryce": [
+      "Pryce (nom de famille)",
+      "Pryce",
+      "np"
+    ],
+    "printed": [
+      "imprimé",
+      "printed",
+      "a"
+    ],
+    "email": [
+      "courriel",
+      "email",
+      "n"
+    ],
+    "keyboard": [
+      "clavier",
+      "keyboard",
+      "n"
+    ],
+    "glance": [
+      "regard",
+      "glance",
+      "n"
+    ],
+    "read": [
+      "lisez",
+      "read",
+      "v",
+      "lire"
+    ],
+    "tell": [
+      "dites",
+      "tell",
+      "v",
+      "dire"
+    ],
+    "message": [
+      "message",
+      "message",
+      "n"
+    ],
+    "brief": [
+      "bref",
+      "brief",
+      "a"
+    ],
+    "unsigned": [
+      "non signé",
+      "unsigned",
+      "a"
+    ],
+    "claimed": [
+      "affirmait",
+      "claim",
+      "v",
+      "affirmer"
+    ],
+    "thirteen": [
+      "treize",
+      "thirteen",
+      "a"
+    ],
+    "pounds": [
+      "livres (sterling)",
+      "pound",
+      "n",
+      "livre"
+    ],
+    "vanished": [
+      "avaient disparu",
+      "vanish",
+      "v",
+      "disparaître"
+    ],
+    "accounts": [
+      "comptes",
+      "account",
+      "n",
+      "compte"
+    ],
+    "willowbrook": [
+      "Willowbrook (nom de lieu)",
+      "Willowbrook",
+      "np"
+    ],
+    "youth": [
+      "jeunes",
+      "youth",
+      "n"
+    ],
+    "orchestra": [
+      "orchestre",
+      "orchestra",
+      "n"
+    ],
+    "association": [
+      "association",
+      "association",
+      "n"
+    ],
+    "small": [
+      "petite",
+      "small",
+      "a"
+    ],
+    "charity": [
+      "association caritative",
+      "charity",
+      "n"
+    ],
+    "raised": [
+      "collectait",
+      "raise",
+      "v",
+      "lever, collecter"
+    ],
+    "money": [
+      "argent",
+      "money",
+      "n"
+    ],
+    "instruments": [
+      "instruments",
+      "instrument",
+      "n",
+      "instrument"
+    ],
+    "music": [
+      "musique",
+      "music",
+      "n"
+    ],
+    "lessons": [
+      "cours",
+      "lesson",
+      "n",
+      "leçon"
+    ],
+    "year": [
+      "année",
+      "year",
+      "n"
+    ],
+    "long-awaited": [
+      "très attendue",
+      "long-awaited",
+      "a"
+    ],
+    "concert": [
+      "concert",
+      "concert",
+      "n"
+    ],
+    "tour": [
+      "tournée",
+      "tour",
+      "n"
+    ],
+    "vienna": [
+      "Vienne",
+      "Vienna",
+      "np"
+    ],
+    "named": [
+      "nommait",
+      "name",
+      "v",
+      "nommer"
+    ],
+    "association's": [
+      "de l'association",
+      "association",
+      "n"
+    ],
+    "treasurer": [
+      "trésorière",
+      "treasurer",
+      "n"
+    ],
+    "mrs": [
+      "Mme",
+      "Mrs",
+      "n"
+    ],
+    "odile": [
+      "Odile (prénom)",
+      "Odile",
+      "np"
+    ],
+    "fontaine": [
+      "Fontaine (nom de famille)",
+      "Fontaine",
+      "np"
+    ],
+    "teach": [
+      "enseigner",
+      "teach",
+      "v"
+    ],
+    "ashgrove": [
+      "Ashgrove (nom de lieu)",
+      "Ashgrove",
+      "np"
+    ],
+    "primary": [
+      "primaire",
+      "primary",
+      "a"
+    ],
+    "school": [
+      "école",
+      "school",
+      "n"
+    ],
+    "precisely": [
+      "précisément",
+      "precisely",
+      "d"
+    ],
+    "true": [
+      "vrai",
+      "true",
+      "a"
+    ],
+    "asked": [
+      "demanda",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "assume": [
+      "présumer",
+      "assume",
+      "v"
+    ],
+    "filing": [
+      "de classement",
+      "filing",
+      "a"
+    ],
+    "cabinet": [
+      "meuble, classeur",
+      "cabinet",
+      "n"
+    ],
+    "arms": [
+      "bras",
+      "arm",
+      "n",
+      "bras"
+    ],
+    "court": [
+      "tribunal",
+      "court",
+      "n"
+    ],
+    "talk": [
+      "parler",
+      "talk",
+      "v"
+    ],
+    "circumstances": [
+      "circonstances",
+      "circumstance",
+      "n",
+      "circonstance"
+    ],
+    "use": [
+      "employez",
+      "use",
+      "v",
+      "employer"
+    ],
+    "word": [
+      "mot",
+      "word",
+      "n"
+    ],
+    "theft": [
+      "vol",
+      "theft",
+      "n"
+    ],
+    "door": [
+      "porte",
+      "door",
+      "n"
+    ],
+    "rule": [
+      "règle",
+      "rule",
+      "n"
+    ],
+    "story": [
+      "histoire",
+      "story",
+      "n"
+    ],
+    "woman": [
+      "femme",
+      "woman",
+      "n"
+    ],
+    "children": [
+      "enfants",
+      "child",
+      "n",
+      "enfant"
+    ],
+    "play": [
+      "jouer",
+      "play",
+      "v"
+    ],
+    "violin": [
+      "violon",
+      "violin",
+      "n"
+    ],
+    "headline": [
+      "gros titre",
+      "headline",
+      "n"
+    ],
+    "single": [
+      "seul",
+      "single",
+      "a"
+    ],
+    "figure": [
+      "chiffre",
+      "figure",
+      "n"
+    ],
+    "mother": [
+      "mère",
+      "mother",
+      "n"
+    ],
+    "dressmaker": [
+      "couturière",
+      "dressmaker",
+      "n"
+    ],
+    "saying": [
+      "dicton",
+      "saying",
+      "n"
+    ],
+    "moments": [
+      "moments",
+      "moment",
+      "n",
+      "moment"
+    ],
+    "measure": [
+      "mesurer",
+      "measure",
+      "v"
+    ],
+    "cut": [
+      "couper",
+      "cut",
+      "v"
+    ],
+    "notebook": [
+      "carnet",
+      "notebook",
+      "n"
+    ],
+    "draughty": [
+      "plein de courants d'air",
+      "draughty",
+      "a"
+    ],
+    "hall": [
+      "salle",
+      "hall",
+      "n"
+    ],
+    "st": [
+      "Saint",
+      "St",
+      "np"
+    ],
+    "aidan's": [
+      "de Saint-Aidan",
+      "Aidan",
+      "np"
+    ],
+    "church": [
+      "église",
+      "church",
+      "n"
+    ],
+    "rehearsal": [
+      "répétition",
+      "rehearsal",
+      "n"
+    ],
+    "audibly": [
+      "de façon audible",
+      "audibly",
+      "d"
+    ],
+    "gareth": [
+      "Gareth (prénom)",
+      "Gareth",
+      "np"
+    ],
+    "whitlock": [
+      "Whitlock (nom de famille)",
+      "Whitlock",
+      "np"
+    ],
+    "chairman": [
+      "président",
+      "chairman",
+      "n"
+    ],
+    "handshake": [
+      "poignée de main",
+      "handshake",
+      "n"
+    ],
+    "fraction": [
+      "fraction",
+      "fraction",
+      "n"
+    ],
+    "frank": [
+      "franc",
+      "frank",
+      "a"
+    ],
+    "steering": [
+      "guidant",
+      "steer",
+      "v",
+      "guider"
+    ],
+    "trestle": [
+      "à tréteaux",
+      "trestle",
+      "n"
+    ],
+    "table": [
+      "table",
+      "table",
+      "n"
+    ],
+    "folders": [
+      "chemises",
+      "folder",
+      "n",
+      "chemise"
+    ],
+    "pleasure": [
+      "plaisir",
+      "pleasure",
+      "n"
+    ],
+    "colleague": [
+      "collègue",
+      "colleague",
+      "n"
+    ],
+    "friend": [
+      "amie",
+      "friend",
+      "n"
+    ],
+    "figures": [
+      "chiffres",
+      "figure",
+      "n",
+      "chiffre"
+    ],
+    "refuse": [
+      "refusent",
+      "refuse",
+      "v",
+      "refuser"
+    ],
+    "duty": [
+      "devoir",
+      "duty",
+      "n"
+    ],
+    "opened": [
+      "ouvrit",
+      "open",
+      "v",
+      "ouvrir"
+    ],
+    "printout": [
+      "listing",
+      "printout",
+      "n"
+    ],
+    "finger": [
+      "doigt",
+      "finger",
+      "n"
+    ],
+    "column": [
+      "colonne",
+      "column",
+      "n"
+    ],
+    "fourteen": [
+      "quatorze",
+      "fourteen",
+      "a"
+    ],
+    "account": [
+      "compte",
+      "account",
+      "n"
+    ],
+    "twelfth": [
+      "douze (le douzième)",
+      "twelfth",
+      "a"
+    ],
+    "march": [
+      "mars",
+      "March",
+      "n"
+    ],
+    "vouch": [
+      "se porter garant",
+      "vouch",
+      "v"
+    ],
+    "sixty": [
+      "soixante",
+      "sixty",
+      "a"
+    ],
+    "genuine": [
+      "véritable",
+      "genuine",
+      "a"
+    ],
+    "repair": [
+      "réparation",
+      "repair",
+      "n"
+    ],
+    "bill": [
+      "facture",
+      "bill",
+      "n"
+    ],
+    "remainder": [
+      "reste",
+      "remainder",
+      "n"
+    ],
+    "simply": [
+      "tout simplement",
+      "simply",
+      "d"
+    ],
+    "sign": [
+      "signer",
+      "sign",
+      "v"
+    ],
+    "people": [
+      "personnes",
+      "person",
+      "n",
+      "personne"
+    ],
+    "assure": [
+      "assure",
+      "assure",
+      "v",
+      "assurer"
+    ],
+    "harrogate": [
+      "Harrogate (nom de ville)",
+      "Harrogate",
+      "np"
+    ],
+    "bottom": [
+      "fond, bas",
+      "bottom",
+      "n"
+    ],
+    "folder": [
+      "chemise",
+      "folder",
+      "n"
+    ],
+    "photocopied": [
+      "photocopiée",
+      "photocopied",
+      "a"
+    ],
+    "letter": [
+      "lettre",
+      "letter",
+      "n"
+    ],
+    "letterhead": [
+      "papier à en-tête",
+      "letterhead",
+      "n"
+    ],
+    "dated": [
+      "datée",
+      "dated",
+      "a"
+    ],
+    "instructed": [
+      "ordonnait à",
+      "instruct",
+      "v",
+      "ordonner"
+    ],
+    "bank": [
+      "banque",
+      "bank",
+      "n"
+    ],
+    "transfer": [
+      "virer",
+      "transfer",
+      "v"
+    ],
+    "blue": [
+      "bleue",
+      "blue",
+      "a"
+    ],
+    "ink": [
+      "encre",
+      "ink",
+      "n"
+    ],
+    "signature": [
+      "signature",
+      "signature",
+      "n"
+    ],
+    "o": [
+      "O. (initiale)",
+      "O",
+      "np"
+    ],
+    "copy": [
+      "copie",
+      "copy",
+      "n"
+    ],
+    "bank's": [
+      "de la banque",
+      "bank",
+      "n"
+    ],
+    "archive": [
+      "archives",
+      "archive",
+      "n"
+    ],
+    "proof": [
+      "preuve",
+      "proof",
+      "n"
+    ],
+    "thought": [
+      "songea",
+      "think",
+      "v",
+      "penser"
+    ],
+    "exactly": [
+      "précisément",
+      "exactly",
+      "d"
+    ],
+    "floor": [
+      "sol, parquet",
+      "floor",
+      "n"
+    ],
+    "polish": [
+      "produit d'entretien",
+      "polish",
+      "n"
+    ],
+    "boiled": [
+      "bouillis",
+      "boiled",
+      "a"
+    ],
+    "vegetables": [
+      "légumes",
+      "vegetable",
+      "n",
+      "légume"
+    ],
+    "room": [
+      "salle",
+      "room",
+      "n"
+    ],
+    "recorders": [
+      "flûtes à bec",
+      "recorder",
+      "n",
+      "flûte à bec"
+    ],
+    "noisy": [
+      "bruyante",
+      "noisy",
+      "a"
+    ],
+    "reluctance": [
+      "réticence",
+      "reluctance",
+      "n"
+    ],
+    "party": [
+      "fête",
+      "party",
+      "n"
+    ],
+    "corridor": [
+      "couloir",
+      "corridor",
+      "n"
+    ],
+    "wall": [
+      "mur",
+      "wall",
+      "n"
+    ],
+    "hand-painted": [
+      "peinte à la main",
+      "hand-painted",
+      "a"
+    ],
+    "banner": [
+      "banderole",
+      "banner",
+      "n"
+    ],
+    "letters": [
+      "lettres",
+      "letter",
+      "n",
+      "lettre"
+    ],
+    "optimistic": [
+      "optimiste",
+      "optimistic",
+      "a"
+    ],
+    "red": [
+      "rouge",
+      "red",
+      "a"
+    ],
+    "slight": [
+      "menue",
+      "slight",
+      "a"
+    ],
+    "upright": [
+      "droite",
+      "upright",
+      "a"
+    ],
+    "fifty-eight": [
+      "cinquante-huit ans",
+      "fifty-eight",
+      "a"
+    ],
+    "silver": [
+      "argentés",
+      "silver",
+      "a"
+    ],
+    "hair": [
+      "cheveux",
+      "hair",
+      "n"
+    ],
+    "severely": [
+      "sévèrement",
+      "severely",
+      "d"
+    ],
+    "discourage": [
+      "décourager",
+      "discourage",
+      "v"
+    ],
+    "argument": [
+      "discussion, dispute",
+      "argument",
+      "n"
+    ],
+    "tamsin's": [
+      "de Tamsin",
+      "Tamsin",
+      "np"
+    ],
+    "introduction": [
+      "présentation",
+      "introduction",
+      "n"
+    ],
+    "flicker": [
+      "signe fugace",
+      "flicker",
+      "n"
+    ],
+    "surprise": [
+      "surprise",
+      "surprise",
+      "n"
+    ],
+    "mr": [
+      "M.",
+      "Mr",
+      "n"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "kind": [
+      "aimable",
+      "kind",
+      "a"
+    ],
+    "reporter": [
+      "journaliste",
+      "reporter",
+      "n"
+    ],
+    "write": [
+      "écrire",
+      "write",
+      "v"
+    ],
+    "piano": [
+      "piano",
+      "piano",
+      "n"
+    ],
+    "great": [
+      "grand",
+      "great",
+      "a"
+    ],
+    "care": [
+      "soin",
+      "care",
+      "n"
+    ],
+    "fragile": [
+      "fragile",
+      "fragile",
+      "a"
+    ],
+    "life": [
+      "vie",
+      "life",
+      "n"
+    ],
+    "miss": [
+      "mademoiselle",
+      "Miss",
+      "n"
+    ],
+    "see": [
+      "voir",
+      "see",
+      "v"
+    ],
+    "paper": [
+      "document",
+      "paper",
+      "n",
+      "papier"
+    ],
+    "say": [
+      "dire",
+      "say",
+      "v"
+    ],
+    "phone": [
+      "téléphone",
+      "phone",
+      "n"
+    ],
+    "teacher": [
+      "enseignante",
+      "teacher",
+      "n"
+    ],
+    "moment": [
+      "moment",
+      "moment",
+      "n"
+    ],
+    "face": [
+      "visage",
+      "face",
+      "n"
+    ],
+    "quick": [
+      "rapide",
+      "quick",
+      "a"
+    ],
+    "imitation": [
+      "imitation",
+      "imitation",
+      "n"
+    ],
+    "bell": [
+      "cloche",
+      "bell",
+      "n"
+    ],
+    "shrieking": [
+      "qui poussaient des cris aigus",
+      "shrieking",
+      "a"
+    ],
+    "witnesses": [
+      "témoins",
+      "witness",
+      "n",
+      "témoin"
+    ],
+    "tune": [
+      "accorder",
+      "tune",
+      "v"
+    ],
+    "leave": [
+      "laisse",
+      "leave",
+      "v",
+      "laisser"
+    ],
+    "instrument": [
+      "instrument",
+      "instrument",
+      "n"
+    ],
+    "ellory": [
+      "Ellory (nom de famille)",
+      "Ellory",
+      "np"
+    ],
+    "crumpled": [
+      "chiffonnée",
+      "crumpled",
+      "a"
+    ],
+    "tie": [
+      "cravate",
+      "tie",
+      "n"
+    ],
+    "cheese": [
+      "fromage",
+      "cheese",
+      "n"
+    ],
+    "sandwich": [
+      "sandwich",
+      "sandwich",
+      "n"
+    ],
+    "opinions": [
+      "opinions",
+      "opinion",
+      "n",
+      "opinion"
+    ],
+    "notes": [
+      "notes",
+      "note",
+      "n",
+      "note"
+    ],
+    "silence": [
+      "silence",
+      "silence",
+      "n"
+    ],
+    "slowly": [
+      "lentement",
+      "slowly",
+      "d"
+    ],
+    "man": [
+      "homme",
+      "man",
+      "n"
+    ],
+    "wine": [
+      "vin",
+      "wine",
+      "n"
+    ],
+    "years": [
+      "ans",
+      "year",
+      "n",
+      "année"
+    ],
+    "signatories": [
+      "signataires",
+      "signatory",
+      "n",
+      "signataire"
+    ],
+    "call": [
+      "dirais, appellerais",
+      "call",
+      "v",
+      "appeler"
+    ],
+    "convenient": [
+      "commode",
+      "convenient",
+      "a"
+    ],
+    "document": [
+      "document",
+      "document",
+      "n"
+    ],
+    "everybody's": [
+      "de tout le monde",
+      "everybody",
+      "p"
+    ],
+    "easier": [
+      "plus facile",
+      "easy",
+      "a",
+      "facile"
+    ],
+    "lies": [
+      "ment",
+      "lie",
+      "v",
+      "mentir"
+    ],
+    "politely": [
+      "poliment, avec politesse",
+      "politely",
+      "d"
+    ],
+    "sheet": [
+      "feuille",
+      "sheet",
+      "n"
+    ],
+    "desk": [
+      "bureau",
+      "desk",
+      "n"
+    ],
+    "headings": [
+      "titres",
+      "heading",
+      "n",
+      "titre"
+    ],
+    "ledger": [
+      "registre comptable",
+      "ledger",
+      "n"
+    ],
+    "question": [
+      "point d'interrogation (question mark)",
+      "question",
+      "n"
+    ],
+    "mark": [
+      "(question mark : point d'interrogation)",
+      "mark",
+      "n"
+    ],
+    "start": [
+      "commencer",
+      "start",
+      "v"
+    ],
+    "looking": [
+      "regarde",
+      "look",
+      "v",
+      "regarder"
+    ],
+    "hardly": [
+      "presque",
+      "hardly",
+      "d"
+    ],
+    "asks": [
+      "demande",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "numbers": [
+      "chiffres",
+      "number",
+      "n",
+      "chiffre"
+    ],
+    "typed": [
+      "saisi",
+      "type",
+      "v",
+      "saisir"
+    ],
+    "person": [
+      "personne",
+      "person",
+      "n"
+    ],
+    "error": [
+      "erreur",
+      "error",
+      "n"
+    ],
+    "coat": [
+      "manteau",
+      "coat",
+      "n"
+    ],
+    "guilty": [
+      "coupable",
+      "guilty",
+      "a"
+    ],
+    "know": [
+      "sais",
+      "know",
+      "v",
+      "savoir"
+    ],
+    "monday": [
+      "lundi",
+      "Monday",
+      "n"
+    ],
+    "beacon": [
+      "Beacon (nom de journal)",
+      "Beacon",
+      "np"
+    ],
+    "website": [
+      "site web",
+      "website",
+      "n"
+    ],
+    "tuesday": [
+      "mardi",
+      "Tuesday",
+      "n"
+    ],
+    "let": [
+      "laissé",
+      "let",
+      "v",
+      "laisser"
+    ],
+    "fact": [
+      "fait",
+      "fact",
+      "n"
+    ],
+    "eat": [
+      "mange",
+      "eat",
+      "v",
+      "manger"
+    ],
+    "tedious": [
+      "fastidieuse",
+      "tedious",
+      "a"
+    ],
+    "tedium": [
+      "minutie fastidieuse",
+      "tedium",
+      "n"
+    ],
+    "takes": [
+      "demande",
+      "take",
+      "v",
+      "prendre"
+    ],
+    "energy": [
+      "énergie",
+      "energy",
+      "n"
+    ],
+    "questions": [
+      "questions",
+      "question",
+      "n",
+      "question"
+    ]
+  },
+  "pages": [
+    {
+      "p": [
+        [
+          {
+            "en": "By the third week of her internship at the Calder Valley Courier, Tamsin Okoye had learned three things: the coffee machine had a temper, the editor never said thank you, and nobody, absolutely nobody, touched Rhys Ellory’s chair.",
+            "fr": "À la troisième semaine de son stage au Calder Valley Courier, Tamsin Okoye avait appris trois choses : la machine à café avait mauvais caractère, le rédacteur en chef ne disait jamais merci, et personne, absolument personne, ne touchait à la chaise de Rhys Ellory.",
+            "g": {
+              "temper": [
+                "mauvais caractère (had a temper)",
+                "temper",
+                "n"
+              ],
+              "had": [
+                "avait (had a temper)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "had#2": [
+                "(had a temper : avait mauvais caractère)",
+                "have",
+                "v"
+              ],
+              "learned": [
+                "avait appris",
+                "learn",
+                "v",
+                "apprendre"
+              ],
+              "touched": [
+                "touchait à",
+                "touch",
+                "v",
+                "toucher"
+              ],
+              "said": [
+                "disait",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "She had not yet learned what a journalist actually did all day.",
+            "fr": "Elle n’avait pas encore appris ce que faisait réellement un journaliste de ses journées.",
+            "g": {
+              "learned": [
+                "appris",
+                "learn",
+                "v",
+                "apprendre"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "That changed on a grey Thursday in October, when Desmond Pryce, the editor, dropped a printed email on her keyboard without so much as a glance.",
+            "fr": "Cela changea un jeudi gris d’octobre, quand Desmond Pryce, le rédacteur en chef, laissa tomber un courriel imprimé sur son clavier sans même un regard.",
+            "g": {
+              "changed": [
+                "changea",
+                "change",
+                "v",
+                "changer"
+              ],
+              "dropped": [
+                "laissa tomber",
+                "drop",
+                "v",
+                "laisser tomber"
+              ]
+            }
+          },
+          {
+            "en": "“Read that,” he said. “Then tell me what you make of it.”",
+            "fr": "« Lisez ça, dit-il. Ensuite, dites-moi ce que vous en pensez. »",
+            "g": {
+              "make": [
+                "pensez (make of)",
+                "make",
+                "v",
+                "faire"
+              ],
+              "of": [
+                "(make of : pensez)",
+                "of",
+                "r"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "The message was brief and unsigned. It claimed that thirteen thousand pounds had vanished from the accounts of the Willowbrook Youth Orchestra Association, a small charity that raised money for instruments, music lessons and, this year, a long-awaited concert tour of Vienna.",
+            "fr": "Le message était bref et anonyme. Il affirmait que treize mille livres avaient disparu des comptes de l’Association de l’orchestre de jeunes de Willowbrook, une petite association caritative qui collectait des fonds pour des instruments, des cours de musique et, cette année, une tournée de concerts à Vienne tant attendue.",
+            "g": {
+              "unsigned": [
+                "anonyme",
+                "unsigned",
+                "a"
+              ],
+              "raised": [
+                "collectait (raised money)",
+                "raise",
+                "v",
+                "lever, collecter"
+              ],
+              "money": [
+                "des fonds (raised money)",
+                "money",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "It named the association’s treasurer, Mrs Odile Fontaine, who also happened to teach music at Ashgrove Primary School.",
+            "fr": "Il nommait la trésorière de l’association, Mme Odile Fontaine, qui, par hasard, enseignait aussi la musique à l’école primaire d’Ashgrove.",
+            "g": {
+              "happened": [
+                "par hasard (happened to)",
+                "happen",
+                "v",
+                "arriver"
+              ],
+              "to": [
+                "(happened to : par hasard)",
+                "to",
+                "x"
+              ],
+              "teach": [
+                "enseignait",
+                "teach",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Thirteen thousand, one hundred and forty pounds,” Desmond said. “Precisely.”",
+            "fr": "« Treize mille cent quarante livres, dit Desmond. Précisément. »"
+          }
+        ],
+        [
+          {
+            "en": "“Is it true?” Tamsin asked.",
+            "fr": "« Est-ce vrai ? » demanda Tamsin."
+          },
+          {
+            "en": "“That, Okoye, is what we are not paying you to assume.” He leaned against the filing cabinet, arms folded. “A year ago I would have sent Rhys. But Rhys is in court all week, and you are standing there looking keen.”",
+            "fr": "« Ça, Okoye, c’est ce que nous ne vous payons pas pour présumer. » Il s’adossa au classeur, les bras croisés. « Il y a un an, j’aurais envoyé Rhys. Mais Rhys est au tribunal toute la semaine, et vous êtes là, l’air enthousiaste. »",
+            "g": {
+              "paying": [
+                "payons",
+                "pay",
+                "v",
+                "payer"
+              ],
+              "leaned": [
+                "s'adossa",
+                "lean",
+                "v",
+                "s'appuyer"
+              ],
+              "folded": [
+                "croisés",
+                "fold",
+                "v",
+                "plier"
+              ],
+              "standing": [
+                "êtes là (standing there)",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "there": [
+                "(standing there : êtes là)",
+                "there",
+                "d"
+              ],
+              "looking": [
+                "l'air (looking keen)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "keen": [
+                "enthousiaste",
+                "keen",
+                "a"
+              ],
+              "sent": [
+                "envoyé (would have sent)",
+                "send",
+                "v",
+                "envoyer"
+              ],
+              "have": [
+                "(would have sent : aurais envoyé)",
+                "have",
+                "v"
+              ],
+              "year": [
+                "an",
+                "year",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Do I get to talk to her?”",
+            "fr": "« Est-ce que je pourrai lui parler ? »",
+            "g": {
+              "get": [
+                "pourrai (get to)",
+                "get",
+                "v",
+                "obtenir"
+              ],
+              "to": [
+                "(get to : pourrai)",
+                "to",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "“You talk to everyone, you write down everything, and you do not, under any circumstances, use the word ‘theft’ until a court has.” He paused at the door. “Rule one: a story is only as good as the paper behind it.”",
+            "fr": "« Vous parlez à tout le monde, vous notez tout, et vous n’employez en aucun cas le mot “vol” avant qu’un tribunal ne l’ait fait. » Il marqua une pause à la porte. « Règle numéro un : une histoire ne vaut que par les documents qui la soutiennent. »",
+            "g": {
+              "write": [
+                "notez (write down)",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "down": [
+                "(write down : notez)",
+                "down",
+                "x"
+              ],
+              "paused": [
+                "marqua une pause",
+                "pause",
+                "v",
+                "faire une pause"
+              ],
+              "paper": [
+                "documents (le papier)",
+                "paper",
+                "n",
+                "papier"
+              ],
+              "good": [
+                "(as good as : aussi bon que)",
+                "good",
+                "a"
+              ],
+              "circumstances": [
+                "en aucun cas (under any circumstances)",
+                "circumstance",
+                "n",
+                "circonstance"
+              ]
+            }
+          },
+          {
+            "en": "Tamsin looked down at the email again. Somewhere in the valley, a woman who taught children to play the violin had just become a headline, and nobody had yet checked a single figure.",
+            "fr": "Tamsin baissa de nouveau les yeux sur le courriel. Quelque part dans la vallée, une femme qui apprenait aux enfants à jouer du violon venait de devenir un gros titre, et personne n’avait encore vérifié un seul chiffre.",
+            "g": {
+              "looked": [
+                "baissa les yeux (looked down)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "down": [
+                "(looked down : baissa les yeux)",
+                "down",
+                "x"
+              ],
+              "taught": [
+                "apprenait",
+                "teach",
+                "v",
+                "enseigner"
+              ],
+              "become": [
+                "devenir",
+                "become",
+                "v"
+              ],
+              "checked": [
+                "vérifié",
+                "check",
+                "v",
+                "vérifier"
+              ]
+            }
+          },
+          {
+            "en": "Her mother, a dressmaker, had a saying for such moments: measure twice, cut once.",
+            "fr": "Sa mère, couturière, avait un dicton pour ces moments-là : mesurer deux fois, couper une fois."
+          },
+          {
+            "en": "Tamsin reached for her notebook.",
+            "fr": "Tamsin attrapa son carnet.",
+            "g": {
+              "reached": [
+                "attrapa (reached for)",
+                "reach",
+                "v",
+                "atteindre"
+              ],
+              "for": [
+                "(reached for : attrapa)",
+                "for",
+                "x"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 1 — A Tip-Off",
+      "titreFr": "Chapitre 1 — Un tuyau"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "The Willowbrook Association met in the draughty hall behind St Aidan’s church, where a rehearsal was audibly going wrong next door. Gareth Whitlock, the chairman, greeted Tamsin with a handshake that lasted a fraction too long.",
+            "fr": "L’association de Willowbrook se réunissait dans la salle pleine de courants d’air derrière l’église Saint-Aidan, où, à côté, une répétition tournait mal, et cela s’entendait. Gareth Whitlock, le président, accueillit Tamsin d’une poignée de main qui se prolongea un tout petit peu trop.",
+            "g": {
+              "met": [
+                "se réunissait",
+                "meet",
+                "v",
+                "se réunir"
+              ],
+              "going": [
+                "tournait (go wrong)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "wrong": [
+                "mal (go wrong)",
+                "wrong",
+                "a"
+              ],
+              "greeted": [
+                "accueillit",
+                "greet",
+                "v",
+                "accueillir"
+              ],
+              "lasted": [
+                "se prolongea",
+                "last",
+                "v",
+                "durer"
+              ],
+              "long": [
+                "trop longtemps (too long)",
+                "long",
+                "d"
+              ],
+              "audibly": [
+                "cela s'entendait",
+                "audibly",
+                "d"
+              ],
+              "door": [
+                "à côté (next door)",
+                "door",
+                "n"
+              ],
+              "next": [
+                "(next door : à côté)",
+                "next",
+                "a"
+              ],
+              "fraction": [
+                "un peu (a fraction too long)",
+                "fraction",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“I shall be frank,” he said, steering her towards a trestle table stacked with folders. “I take no pleasure in this. Odile is a colleague, even a friend. But when the figures refuse to add up, one has a duty.”",
+            "fr": "« Je serai franc, dit-il en la guidant vers une table à tréteaux couverte de chemises. Je n’y prends aucun plaisir. Odile est une collègue, voire une amie. Mais quand les chiffres refusent de concorder, on a un devoir. »",
+            "g": {
+              "add": [
+                "concorder (add up)",
+                "add",
+                "v",
+                "ajouter"
+              ],
+              "up": [
+                "(add up : concorder)",
+                "up",
+                "x"
+              ],
+              "stacked": [
+                "couverte, empilée",
+                "stack",
+                "v",
+                "empiler"
+              ],
+              "take": [
+                "prends (take pleasure)",
+                "take",
+                "v",
+                "prendre"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "He opened a printout and ran a finger down a column. “Fourteen thousand, six hundred pounds left our account on the twelfth of March. We can vouch for one thousand, four hundred and sixty of it, a genuine repair bill. The remainder, thirteen thousand, one hundred and forty, has simply gone.”",
+            "fr": "Il ouvrit un relevé imprimé et fit glisser un doigt le long d’une colonne. « Quatorze mille six cents livres ont quitté notre compte le douze mars. Nous pouvons en justifier mille quatre cent soixante, une véritable facture de réparation. Le reste, treize mille cent quarante, s’est tout simplement volatilisé. »",
+            "g": {
+              "ran": [
+                "fit glisser",
+                "run",
+                "v",
+                "courir"
+              ],
+              "left": [
+                "ont quitté",
+                "leave",
+                "v",
+                "quitter"
+              ],
+              "gone": [
+                "volatilisé (has gone)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "has": [
+                "(has gone : s'est volatilisé)",
+                "have",
+                "v"
+              ],
+              "printout": [
+                "relevé imprimé",
+                "printout",
+                "n"
+              ],
+              "vouch": [
+                "justifier (vouch for)",
+                "vouch",
+                "v"
+              ],
+              "genuine": [
+                "véritable",
+                "genuine",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Who can sign for the account?”",
+            "fr": "« Qui peut signer pour le compte ? »"
+          },
+          {
+            "en": "“Two people. Myself and Odile. And I, I assure you, was in Harrogate that week.”",
+            "fr": "« Deux personnes. Moi-même et Odile. Et moi, je vous assure, j’étais à Harrogate cette semaine-là. »"
+          }
+        ],
+        [
+          {
+            "en": "From the bottom folder he drew out a photocopied letter and slid it across the table as though it might bite. It was typed on the association’s letterhead, dated the second of March, and it instructed the bank to transfer thirteen thousand, one hundred and forty pounds to an account ending in 4471.",
+            "fr": "De la chemise du dessous, il tira une lettre photocopiée et la fit glisser sur la table comme si elle risquait de mordre. Elle était tapée sur le papier à en-tête de l’association, datée du deux mars, et ordonnait à la banque de virer treize mille cent quarante livres sur un compte se terminant par 4471.",
+            "g": {
+              "drew": [
+                "tira",
+                "draw",
+                "v",
+                "tirer"
+              ],
+              "out": [
+                "(drew out : tira)",
+                "out",
+                "x"
+              ],
+              "slid": [
+                "fit glisser",
+                "slide",
+                "v",
+                "glisser"
+              ],
+              "across": [
+                "sur (toute la largeur de)",
+                "across",
+                "r"
+              ],
+              "bite": [
+                "mordre",
+                "bite",
+                "v"
+              ],
+              "typed": [
+                "tapée",
+                "type",
+                "v",
+                "taper"
+              ],
+              "ending": [
+                "se terminant",
+                "end",
+                "v",
+                "finir"
+              ],
+              "bottom": [
+                "du dessous (bottom folder)",
+                "bottom",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "At the bottom, in blue ink, was a signature: O. Fontaine.",
+            "fr": "En bas, à l’encre bleue, figurait une signature : O. Fontaine.",
+            "g": {
+              "bottom": [
+                "en bas (at the bottom)",
+                "bottom",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“A copy reached me from the bank’s archive,” Whitlock said. “The account in question, I regret to say, is not the association’s.”",
+            "fr": "« Une copie m’est parvenue depuis les archives de la banque, dit Whitlock. Le compte en question, hélas, n’est pas celui de l’association. »",
+            "g": {
+              "reached": [
+                "est parvenue",
+                "reach",
+                "v",
+                "parvenir"
+              ],
+              "regret": [
+                "hélas (regret to say)",
+                "regret",
+                "v"
+              ],
+              "say": [
+                "(regret to say : hélas)",
+                "say",
+                "v"
+              ],
+              "question": [
+                "en question",
+                "question",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "Tamsin read the letter twice, then copied the figures into her notebook. It looked like proof, and that, she thought, was exactly what bothered her.",
+            "fr": "Tamsin lut la lettre deux fois, puis recopia les chiffres dans son carnet. Cela ressemblait à une preuve, et c’était précisément cela, songea-t-elle, qui la troublait.",
+            "g": {
+              "looked": [
+                "ressemblait (looked like)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "bothered": [
+                "troublait",
+                "bother",
+                "v",
+                "déranger"
+              ],
+              "copied": [
+                "recopia",
+                "copy",
+                "v",
+                "copier"
+              ],
+              "read": [
+                "lut",
+                "read",
+                "v",
+                "lire"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Ashgrove Primary smelled of floor polish and boiled vegetables. Tamsin waited outside the music room while twenty-odd children packed away their recorders with the noisy reluctance of people leaving a party.",
+            "fr": "L’école primaire d’Ashgrove sentait le produit pour parquet et les légumes bouillis. Tamsin attendit devant la salle de musique pendant qu’une vingtaine d’enfants rangeaient leurs flûtes à bec avec la bruyante réticence de gens qui quittent une fête.",
+            "g": {
+              "smelled": [
+                "sentait",
+                "smell",
+                "v",
+                "sentir"
+              ],
+              "waited": [
+                "attendit",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "packed": [
+                "rangeaient",
+                "pack",
+                "v",
+                "ranger"
+              ],
+              "away": [
+                "(packed away : rangeaient)",
+                "away",
+                "x"
+              ],
+              "leaving": [
+                "quittent",
+                "leave",
+                "v",
+                "quitter"
+              ],
+              "twenty-odd": [
+                "une vingtaine",
+                "twenty-odd",
+                "a"
+              ],
+              "people": [
+                "gens",
+                "person",
+                "n",
+                "personne"
+              ]
+            }
+          },
+          {
+            "en": "On the corridor wall, a hand-painted banner promised VIENNA OR BUST in letters of optimistic red.",
+            "fr": "Sur le mur du couloir, une banderole peinte à la main proclamait VIENNE COÛTE QUE COÛTE en lettres d’un rouge optimiste.",
+            "g": {
+              "bust": [
+                "coûte que coûte (Vienna or bust)",
+                "bust",
+                "n"
+              ],
+              "promised": [
+                "proclamait",
+                "promise",
+                "v",
+                "promettre"
+              ],
+              "or": [
+                "(Vienna or bust : coûte que coûte)",
+                "or",
+                "c"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Odile Fontaine turned out to be a slight, upright woman of fifty-eight with silver hair pinned back so severely that it seemed to discourage argument. She listened to Tamsin’s introduction without a flicker of surprise.",
+            "fr": "Odile Fontaine se révéla être une femme menue et droite de cinquante-huit ans, aux cheveux argentés tirés en arrière si sévèrement qu’ils semblaient décourager toute discussion. Elle écouta la présentation de Tamsin sans le moindre signe de surprise.",
+            "g": {
+              "turned": [
+                "se révéla (turned out)",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "out": [
+                "(turned out : se révéla)",
+                "out",
+                "x"
+              ],
+              "pinned": [
+                "tirés, fixés (pinned back)",
+                "pin",
+                "v",
+                "épingler"
+              ],
+              "back": [
+                "(pinned back : tirés en arrière)",
+                "back",
+                "d"
+              ],
+              "seemed": [
+                "semblaient",
+                "seem",
+                "v",
+                "sembler"
+              ],
+              "listened": [
+                "écouta",
+                "listen",
+                "v",
+                "écouter"
+              ]
+            }
+          },
+          {
+            "en": "“Mr Whitlock telephoned me this morning,” she said. “He was kind enough to warn me that a reporter might call.”",
+            "fr": "« M. Whitlock m’a téléphoné ce matin, dit-elle. Il a eu la gentillesse de me prévenir qu’un journaliste pourrait m’appeler. »",
+            "g": {
+              "telephoned": [
+                "a téléphoné",
+                "telephone",
+                "v",
+                "téléphoner"
+              ],
+              "warn": [
+                "prévenir",
+                "warn",
+                "v"
+              ],
+              "call": [
+                "appeler",
+                "call",
+                "v",
+                "appeler"
+              ],
+              "kind": [
+                "gentillesse (kind enough)",
+                "kind",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“I would rather hear your side before I write anything,” Tamsin said. “Did you instruct the bank to move thirteen thousand pounds?”",
+            "fr": "« Je préférerais entendre votre version avant d’écrire quoi que ce soit, dit Tamsin. Avez-vous demandé à la banque de virer treize mille livres ? »",
+            "g": {
+              "hear": [
+                "entendre",
+                "hear",
+                "v"
+              ],
+              "side": [
+                "version (side of the story)",
+                "side",
+                "n",
+                "côté"
+              ],
+              "instruct": [
+                "demander",
+                "instruct",
+                "v",
+                "ordonner"
+              ],
+              "move": [
+                "virer",
+                "move",
+                "v",
+                "déplacer"
+              ]
+            }
+          },
+          {
+            "en": "“No.”",
+            "fr": "« Non. »"
+          },
+          {
+            "en": "“Do you know who might have done so?”",
+            "fr": "« Savez-vous qui aurait pu le faire ? »",
+            "g": {
+              "know": [
+                "savez",
+                "know",
+                "v",
+                "savoir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Mrs Fontaine closed the piano lid with great care, as if it contained something fragile. “I know what I have signed in my life, Miss Okoye, and I know what I have not. I should like to see the paper before I say another word.”",
+            "fr": "Mme Fontaine referma le couvercle du piano avec grand soin, comme s’il renfermait quelque chose de fragile. « Je sais ce que j’ai signé dans ma vie, mademoiselle Okoye, et ce que je n’ai pas signé. J’aimerais voir le document avant d’ajouter un mot. »",
+            "g": {
+              "closed": [
+                "referma",
+                "close",
+                "v",
+                "fermer"
+              ],
+              "lid": [
+                "couvercle",
+                "lid",
+                "n"
+              ],
+              "contained": [
+                "renfermait",
+                "contain",
+                "v",
+                "contenir"
+              ],
+              "signed": [
+                "signé",
+                "sign",
+                "v",
+                "signer"
+              ],
+              "know": [
+                "sais",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "know#2": [
+                "sais",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "say": [
+                "ajouter (say another word)",
+                "say",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "Tamsin held out her phone, where she had photographed the letter. The teacher studied it for a long moment, and something passed over her face, too quick to name.",
+            "fr": "Tamsin lui tendit son téléphone, où elle avait photographié la lettre. L’enseignante l’étudia un long moment, et quelque chose passa sur son visage, trop vite pour qu’on puisse le nommer.",
+            "g": {
+              "held": [
+                "tendit (held out)",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "out": [
+                "(held out : tendit)",
+                "out",
+                "x"
+              ],
+              "photographed": [
+                "photographié",
+                "photograph",
+                "v"
+              ],
+              "studied": [
+                "étudia",
+                "study",
+                "v",
+                "étudier"
+              ],
+              "passed": [
+                "passa",
+                "pass",
+                "v",
+                "passer"
+              ],
+              "name": [
+                "nommer",
+                "name",
+                "v"
+              ],
+              "long": [
+                "long",
+                "long",
+                "a"
+              ],
+              "quick": [
+                "trop vite (too quick)",
+                "quick",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“That is my signature,” she said at last. “Or else it is a very good imitation of it.”",
+            "fr": "« C’est ma signature, dit-elle enfin. Ou bien c’en est une très bonne imitation. »",
+            "g": {
+              "good": [
+                "bonne",
+                "good",
+                "a",
+                "bon"
+              ]
+            }
+          },
+          {
+            "en": "“Which?”",
+            "fr": "« Laquelle des deux ? »"
+          },
+          {
+            "en": "“That, Miss Okoye, is rather what you are here to find out.” The bell rang, and the corridor filled with small, shrieking witnesses. “You will forgive me. I have a violin to tune, and I never leave an instrument half finished.”",
+            "fr": "« C’est plutôt ce que vous êtes venue découvrir, mademoiselle Okoye. » La sonnerie retentit, et le couloir se remplit de petits témoins qui poussaient des cris aigus. « Vous me pardonnerez. J’ai un violon à accorder, et je ne laisse jamais un instrument à moitié terminé. »",
+            "g": {
+              "find": [
+                "découvrir (find out)",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "out": [
+                "(find out : découvrir)",
+                "out",
+                "x"
+              ],
+              "rang": [
+                "retentit",
+                "ring",
+                "v",
+                "sonner"
+              ],
+              "filled": [
+                "se remplit",
+                "fill",
+                "v",
+                "remplir"
+              ],
+              "forgive": [
+                "pardonnerez",
+                "forgive",
+                "v",
+                "pardonner"
+              ],
+              "finished": [
+                "terminé",
+                "finish",
+                "v",
+                "terminer"
+              ],
+              "half": [
+                "à moitié",
+                "half",
+                "d"
+              ],
+              "small": [
+                "petits",
+                "small",
+                "a",
+                "petit"
+              ],
+              "bell": [
+                "sonnerie",
+                "bell",
+                "n"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 2 — The Treasurer",
+      "titreFr": "Chapitre 2 — La trésorière"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Back at the Courier, Rhys Ellory had returned from court with a crumpled tie, a cheese sandwich and strong opinions. He read Tamsin’s notes in silence, chewing slowly, like a man tasting wine.",
+            "fr": "De retour au Courier, Rhys Ellory était rentré du tribunal avec une cravate chiffonnée, un sandwich au fromage et des opinions bien tranchées. Il lut les notes de Tamsin en silence, mâchant lentement, comme un homme qui goûte un vin.",
+            "g": {
+              "returned": [
+                "était rentré",
+                "return",
+                "v",
+                "rentrer"
+              ],
+              "chewing": [
+                "mâchant",
+                "chew",
+                "v",
+                "mâcher"
+              ],
+              "tasting": [
+                "goûte",
+                "taste",
+                "v",
+                "goûter"
+              ],
+              "strong": [
+                "bien tranchées",
+                "strong",
+                "a",
+                "fort"
+              ],
+              "read": [
+                "lut",
+                "read",
+                "v",
+                "lire"
+              ],
+              "back": [
+                "de retour (back at)",
+                "back",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Rhys, who had spent thirty years reporting on council meetings, regarded enthusiasm as a mild and curable infection.",
+            "fr": "Rhys, qui avait passé trente ans à couvrir des réunions de conseil municipal, considérait l’enthousiasme comme une infection bénigne et guérissable.",
+            "g": {
+              "spent": [
+                "passé",
+                "spend",
+                "v",
+                "passer"
+              ],
+              "reporting": [
+                "couvrir (comme journaliste)",
+                "report",
+                "v",
+                "rapporter"
+              ],
+              "council": [
+                "conseil municipal",
+                "council",
+                "n"
+              ],
+              "meetings": [
+                "réunions",
+                "meeting",
+                "n",
+                "réunion"
+              ],
+              "regarded": [
+                "considérait",
+                "regard",
+                "v",
+                "considérer"
+              ],
+              "enthusiasm": [
+                "enthousiasme",
+                "enthusiasm",
+                "n"
+              ],
+              "mild": [
+                "bénigne",
+                "mild",
+                "a"
+              ],
+              "curable": [
+                "guérissable",
+                "curable",
+                "a"
+              ],
+              "infection": [
+                "infection",
+                "infection",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Two signatories, one letter, thirteen thousand pounds,” he said. “Most people would call that open and shut.”",
+            "fr": "« Deux signataires, une lettre, treize mille livres, dit-il. La plupart des gens diraient que l’affaire est entendue. »",
+            "g": {
+              "open": [
+                "entendue (open and shut)",
+                "open",
+                "a",
+                "ouvert"
+              ],
+              "shut": [
+                "(open and shut : entendue)",
+                "shut",
+                "a"
+              ],
+              "call": [
+                "diraient",
+                "call",
+                "v",
+                "appeler"
+              ],
+              "people": [
+                "gens",
+                "person",
+                "n",
+                "personne"
+              ]
+            }
+          },
+          {
+            "en": "“Would you?”",
+            "fr": "« Et vous ? »"
+          },
+          {
+            "en": "“I would call it convenient. Never trust a document that makes everybody’s life easier. Paper lies, Tamsin. It simply does so more politely than people.”",
+            "fr": "« Moi, je dirais que c’est commode. Ne te fie jamais à un document qui simplifie la vie de tout le monde. Le papier ment, Tamsin. Il le fait simplement avec plus de politesse que les gens. »",
+            "g": {
+              "trust": [
+                "te fie à",
+                "trust",
+                "v",
+                "faire confiance"
+              ],
+              "makes": [
+                "simplifie (makes easier)",
+                "make",
+                "v",
+                "faire"
+              ],
+              "does": [
+                "le fait (does so)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "so": [
+                "(does so : le fait)",
+                "so",
+                "d"
+              ],
+              "easier": [
+                "(makes easier : simplifie)",
+                "easy",
+                "a",
+                "facile"
+              ],
+              "people": [
+                "gens",
+                "person",
+                "n",
+                "personne"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "She pinned a sheet of paper above her desk and wrote three headings: THE LETTER, THE LEDGER, THE TREASURER. Under each she added a question mark.",
+            "fr": "Elle épingla une feuille au-dessus de son bureau et y inscrivit trois titres : LA LETTRE, LE REGISTRE, LA TRÉSORIÈRE. Sous chacun, elle ajouta un point d’interrogation.",
+            "g": {
+              "pinned": [
+                "épingla",
+                "pin",
+                "v",
+                "épingler"
+              ],
+              "wrote": [
+                "inscrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "added": [
+                "ajouta",
+                "add",
+                "v",
+                "ajouter"
+              ],
+              "paper": [
+                "papier",
+                "paper",
+                "n",
+                "papier"
+              ]
+            }
+          },
+          {
+            "en": "“Where do I start?”",
+            "fr": "« Par où commencer ? »"
+          },
+          {
+            "en": "“Where nobody is looking. Everyone stares at the signature. Hardly anyone asks where the ledger came from, or who typed the numbers into it.”",
+            "fr": "« Là où personne ne regarde. Tout le monde fixe la signature. Presque personne ne demande d’où vient le registre, ni qui y a saisi les chiffres. »",
+            "g": {
+              "stares": [
+                "fixe",
+                "stare",
+                "v",
+                "fixer du regard"
+              ],
+              "came": [
+                "vient",
+                "come",
+                "v",
+                "venir"
+              ],
+              "typed": [
+                "a saisi",
+                "type",
+                "v",
+                "taper"
+              ]
+            }
+          },
+          {
+            "en": "“Why does it matter who typed them?”",
+            "fr": "« Pourquoi importe-t-il de savoir qui les a saisis ? »",
+            "g": {
+              "matter": [
+                "importe",
+                "matter",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Because a person who types can also err, and an error, unlike a theft, has no motive. It has only a tired afternoon and a pair of tired eyes.”",
+            "fr": "« Parce que celui qui saisit peut aussi se tromper, et une erreur, contrairement à un vol, n’a pas de mobile. Elle n’a qu’un après-midi de fatigue et une paire d’yeux fatigués. »",
+            "g": {
+              "err": [
+                "se tromper",
+                "err",
+                "v"
+              ],
+              "unlike": [
+                "contrairement à",
+                "unlike",
+                "r"
+              ],
+              "motive": [
+                "mobile",
+                "motive",
+                "n"
+              ],
+              "afternoon": [
+                "après-midi",
+                "afternoon",
+                "n"
+              ],
+              "eyes": [
+                "yeux",
+                "eye",
+                "n",
+                "œil"
+              ],
+              "pair": [
+                "paire",
+                "pair",
+                "n"
+              ],
+              "tired": [
+                "fatigue",
+                "tired",
+                "a"
+              ],
+              "tired#2": [
+                "fatigués",
+                "tired",
+                "a"
+              ],
+              "types": [
+                "saisit",
+                "type",
+                "v",
+                "taper"
+              ],
+              "person": [
+                "celui (a person who)",
+                "person",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Desmond Pryce drifted past, coat already on. “Well? Is she guilty?”",
+            "fr": "Desmond Pryce passa en flânant, déjà son manteau sur le dos. « Alors ? Est-elle coupable ? »",
+            "g": {
+              "drifted": [
+                "passa en flânant (drifted past)",
+                "drift",
+                "v",
+                "dériver"
+              ],
+              "past": [
+                "(drifted past : passa en flânant)",
+                "past",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“I do not know yet.”",
+            "fr": "« Je ne sais pas encore. »"
+          },
+          {
+            "en": "“Then you have until Monday to find out. The Valley Beacon website will have found Mrs Fontaine by Tuesday, and the Beacon has never let a fact stand between it and a headline.”",
+            "fr": "« Alors vous avez jusqu’à lundi pour le découvrir. Le site du Valley Beacon aura trouvé Mme Fontaine d’ici mardi, et le Beacon n’a jamais laissé un fait se mettre entre lui et un gros titre. »",
+            "g": {
+              "valley": [
+                "Valley (nom du journal)",
+                "Valley",
+                "np"
+              ],
+              "found": [
+                "aura trouvé (will have found)",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "find": [
+                "découvrir (find out)",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "out": [
+                "(find out : découvrir)",
+                "out",
+                "x"
+              ],
+              "stand": [
+                "se mettre (stand between)",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "between": [
+                "entre",
+                "between",
+                "r"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "When the door had swung shut behind him, Rhys offered her half of the sandwich. “Eat,” he said. “Tomorrow you will need to be tedious, and tedium takes energy.”",
+            "fr": "Quand la porte se fut refermée derrière lui, Rhys lui offrit la moitié du sandwich. « Mange, dit-il. Demain, il te faudra être fastidieuse, et la minutie demande de l’énergie. »",
+            "g": {
+              "swung": [
+                "s'était refermée",
+                "swing",
+                "v",
+                "pivoter"
+              ],
+              "shut": [
+                "(swung shut : se refermer)",
+                "shut",
+                "a"
+              ],
+              "offered": [
+                "offrit",
+                "offer",
+                "v",
+                "offrir"
+              ],
+              "half": [
+                "moitié",
+                "half",
+                "n"
+              ],
+              "need": [
+                "faudra",
+                "need",
+                "v",
+                "avoir besoin"
+              ]
+            }
+          },
+          {
+            "en": "Tamsin ate, and began to draw up a list of the dullest questions she could think of.",
+            "fr": "Tamsin mangea et se mit à dresser la liste des questions les plus ennuyeuses auxquelles elle pouvait penser.",
+            "g": {
+              "ate": [
+                "mangea",
+                "eat",
+                "v",
+                "manger"
+              ],
+              "began": [
+                "se mit à",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "draw": [
+                "dresser (draw up)",
+                "draw",
+                "v",
+                "tirer"
+              ],
+              "up": [
+                "(draw up : dresser)",
+                "up",
+                "x"
+              ],
+              "list": [
+                "liste",
+                "list",
+                "n"
+              ],
+              "dullest": [
+                "plus ennuyeuses",
+                "dull",
+                "a",
+                "ennuyeux"
+              ],
+              "think": [
+                "penser (think of)",
+                "think",
+                "v"
+              ],
+              "of": [
+                "(think of : penser à)",
+                "of",
+                "x"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 3 — Paper Lies Politely",
+      "titreFr": "Chapitre 3 — Le papier ment poliment"
+    }
+  ]
+}

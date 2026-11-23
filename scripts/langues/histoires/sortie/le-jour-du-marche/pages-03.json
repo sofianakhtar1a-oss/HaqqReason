@@ -1,0 +1,1812 @@
+{
+ "debut": 11,
+ "lexique": {
+  "adam": [
+   "Adam (prénom)",
+   "Adam",
+   "np"
+  ],
+  "air": [
+   "air",
+   "air",
+   "n"
+  ],
+  "bags": [
+   "sachets",
+   "bag",
+   "n",
+   "sachet"
+  ],
+  "bianchi": [
+   "Bianchi (nom de famille)",
+   "Bianchi",
+   "np"
+  ],
+  "blanket": [
+   "couverture",
+   "blanket",
+   "n"
+  ],
+  "blankets": [
+   "couvertures",
+   "blanket",
+   "n",
+   "couverture"
+  ],
+  "buy": [
+   "acheter",
+   "buy",
+   "v"
+  ],
+  "completely": [
+   "complètement",
+   "completely",
+   "d"
+  ],
+  "dad": [
+   "papa",
+   "dad",
+   "n"
+  ],
+  "daisy": [
+   "Daisy (nom de la chienne)",
+   "Daisy",
+   "np"
+  ],
+  "dog": [
+   "chien",
+   "dog",
+   "n"
+  ],
+  "envelope": [
+   "enveloppe",
+   "envelope",
+   "n"
+  ],
+  "fifteen": [
+   "quinze",
+   "fifteen",
+   "a"
+  ],
+  "heaters": [
+   "radiateurs",
+   "heater",
+   "n",
+   "radiateur"
+  ],
+  "jars": [
+   "pots",
+   "jar",
+   "n",
+   "pot"
+  ],
+  "léa": [
+   "Léa (prénom)",
+   "Léa",
+   "np"
+  ],
+  "market": [
+   "marché",
+   "market",
+   "n"
+  ],
+  "mensah": [
+   "Mensah (nom de famille)",
+   "Mensah",
+   "np"
+  ],
+  "minute": [
+   "minute",
+   "minute",
+   "n"
+  ],
+  "minutes": [
+   "minutes",
+   "minute",
+   "n",
+   "minute"
+  ],
+  "moment": [
+   "moment",
+   "moment",
+   "n"
+  ],
+  "monday": [
+   "lundi",
+   "Monday",
+   "n"
+  ],
+  "money": [
+   "argent",
+   "money",
+   "n"
+  ],
+  "month": [
+   "mois",
+   "month",
+   "n"
+  ],
+  "mr": [
+   "M.",
+   "Mr",
+   "n"
+  ],
+  "mrs": [
+   "Mme",
+   "Mrs",
+   "n"
+  ],
+  "name": [
+   "nom",
+   "name",
+   "n"
+  ],
+  "napkin": [
+   "serviette",
+   "napkin",
+   "n"
+  ],
+  "o'clock": [
+   "heures",
+   "o'clock",
+   "d"
+  ],
+  "okafor": [
+   "Okafor (nom de famille)",
+   "Okafor",
+   "np"
+  ],
+  "paws": [
+   "Paws (nom du refuge)",
+   "paw",
+   "n",
+   "patte"
+  ],
+  "pencil": [
+   "crayon",
+   "pencil",
+   "n"
+  ],
+  "people": [
+   "gens",
+   "people",
+   "n"
+  ],
+  "photo": [
+   "photo",
+   "photo",
+   "n"
+  ],
+  "pounds": [
+   "livres (monnaie)",
+   "pound",
+   "n",
+   "livre"
+  ],
+  "puppy": [
+   "chiot",
+   "puppy",
+   "n"
+  ],
+  "rain": [
+   "pluie",
+   "rain",
+   "n"
+  ],
+  "rex": [
+   "Rex (nom du chien)",
+   "Rex",
+   "np"
+  ],
+  "school": [
+   "école",
+   "school",
+   "n"
+  ],
+  "sell": [
+   "vendre",
+   "sell",
+   "v"
+  ],
+  "shelter": [
+   "refuge",
+   "shelter",
+   "n"
+  ],
+  "small": [
+   "petit",
+   "small",
+   "a"
+  ],
+  "smile": [
+   "sourire",
+   "smile",
+   "n"
+  ],
+  "square": [
+   "place",
+   "square",
+   "n"
+  ],
+  "sticky": [
+   "collant",
+   "sticky",
+   "a"
+  ],
+  "sun": [
+   "soleil",
+   "sun",
+   "n"
+  ],
+  "table": [
+   "table",
+   "table",
+   "n"
+  ],
+  "tent": [
+   "tente",
+   "tent",
+   "n"
+  ],
+  "twins": [
+   "jumeaux",
+   "twin",
+   "n",
+   "jumeau"
+  ],
+  "winter": [
+   "hiver",
+   "winter",
+   "n"
+  ],
+  "workman": [
+   "ouvrier",
+   "workman",
+   "n"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "By four o'clock, the market was getting quiet.",
+      "fr": "À quatre heures, le marché devenait calme.",
+      "g": {
+       "getting": [
+        "devenait",
+        "get",
+        "v",
+        "devenir"
+       ],
+       "quiet": [
+        "calme",
+        "quiet",
+        "a"
+       ],
+       "by": [
+        "(by four o'clock : à)",
+        "by",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The last customer left with a smile and a strawberry gift box.",
+      "fr": "Le dernier client partit avec un sourire et un coffret cadeau à la fraise.",
+      "g": {
+       "last": [
+        "dernier",
+        "last",
+        "a",
+        "dernier"
+       ],
+       "customer": [
+        "client",
+        "customer",
+        "n"
+       ],
+       "left": [
+        "partit",
+        "leave",
+        "v",
+        "partir"
+       ],
+       "strawberry": [
+        "à la fraise",
+        "strawberry",
+        "n",
+        "fraise"
+       ],
+       "gift": [
+        "cadeau",
+        "gift",
+        "n"
+       ],
+       "box": [
+        "coffret",
+        "box",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The table was completely empty. There was nothing left to sell.",
+      "fr": "La table était complètement vide. Il ne restait plus rien à vendre.",
+      "g": {
+       "was": [
+        "(il ne restait)",
+        "be",
+        "v",
+        "être"
+       ],
+       "empty": [
+        "vide",
+        "empty",
+        "a"
+       ],
+       "there": [
+        "il",
+        "there",
+        "d"
+       ],
+       "nothing": [
+        "plus rien",
+        "nothing",
+        "p"
+       ],
+       "left": [
+        "restait",
+        "leave",
+        "v",
+        "rester"
+       ],
+       "to": [
+        "à",
+        "to",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "“We did it!” shouted Adam. “Everything has gone!”",
+      "fr": "« On a réussi ! » cria Adam. « Tout est parti ! »",
+      "g": {
+       "did": [
+        "a réussi (did it : on a réussi)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "it": [
+        "(did it : réussi)",
+        "it",
+        "p"
+       ],
+       "shouted": [
+        "cria",
+        "shout",
+        "v",
+        "crier"
+       ],
+       "has": [
+        "est (has gone : est parti)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "gone": [
+        "parti",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mr Mensah put a tin of coins and notes on the table.",
+      "fr": "M. Mensah posa sur la table une boîte en métal pleine de pièces et de billets.",
+      "g": {
+       "put": [
+        "posa",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "tin": [
+        "boîte en métal",
+        "tin",
+        "n"
+       ],
+       "of": [
+        "pleine de",
+        "of",
+        "r"
+       ],
+       "coins": [
+        "pièces",
+        "coin",
+        "n",
+        "pièce"
+       ],
+       "notes": [
+        "billets",
+        "note",
+        "n",
+        "billet"
+       ]
+      }
+     },
+     {
+      "en": "“Now we must count the money,” he said. “Slowly and carefully.”",
+      "fr": "« Maintenant, nous devons compter l'argent », dit-il. « Lentement et avec soin. »",
+      "g": {
+       "count": [
+        "compter",
+        "count",
+        "v",
+        "compter"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "slowly": [
+        "lentement",
+        "slowly",
+        "d"
+       ],
+       "carefully": [
+        "avec soin",
+        "carefully",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Léa took the pencil and the napkin again.",
+      "fr": "Léa reprit le crayon et la serviette.",
+      "g": {
+       "took": [
+        "reprit (took again : reprit)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "again": [
+        "(took again : reprit)",
+        "again",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“We sold twenty-five gift boxes at four pounds each,” she said. “That is one hundred pounds.”",
+      "fr": "« Nous avons vendu vingt-cinq coffrets cadeaux à quatre livres chacun », dit-elle. « Cela fait cent livres. »",
+      "g": {
+       "sold": [
+        "avons vendu",
+        "sell",
+        "v",
+        "vendre"
+       ],
+       "twenty-five": [
+        "vingt-cinq",
+        "twenty-five",
+        "a"
+       ],
+       "gift": [
+        "cadeaux",
+        "gift",
+        "n"
+       ],
+       "boxes": [
+        "coffrets",
+        "box",
+        "n",
+        "coffret"
+       ],
+       "at": [
+        "à",
+        "at",
+        "r"
+       ],
+       "each": [
+        "chacun",
+        "each",
+        "d"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "that": [
+        "cela",
+        "that",
+        "p"
+       ],
+       "is": [
+        "fait (that is : cela fait)",
+        "be",
+        "v",
+        "être"
+       ],
+       "one": [
+        "(one hundred : cent)",
+        "one",
+        "t"
+       ],
+       "hundred": [
+        "cent (one hundred)",
+        "hundred",
+        "t"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Some people bought jars or bags alone,” said Adam.",
+      "fr": "« Certaines personnes ont acheté des pots ou des sachets seuls », dit Adam.",
+      "g": {
+       "some": [
+        "certaines",
+        "some",
+        "t"
+       ],
+       "bought": [
+        "ont acheté",
+        "buy",
+        "v",
+        "acheter"
+       ],
+       "alone": [
+        "seuls",
+        "alone",
+        "d"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "people": [
+        "personnes",
+        "people",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“We sold them for three pounds and two pounds again.”",
+      "fr": "« Nous les avons vendus à trois livres et à deux livres, comme avant. »",
+      "g": {
+       "sold": [
+        "avons vendu",
+        "sell",
+        "v",
+        "vendre"
+       ],
+       "them": [
+        "les",
+        "they",
+        "p"
+       ],
+       "for": [
+        "à",
+        "for",
+        "r"
+       ],
+       "again": [
+        "(comme avant)",
+        "again",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Ten jars at three pounds each make thirty pounds,” said Mr Mensah.",
+      "fr": "« Dix pots à trois livres chacun font trente livres », dit M. Mensah.",
+      "g": {
+       "at": [
+        "à",
+        "at",
+        "r"
+       ],
+       "each": [
+        "chacun",
+        "each",
+        "d"
+       ],
+       "make": [
+        "font",
+        "make",
+        "v",
+        "faire"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“And fifteen bags at two pounds each make thirty pounds,” said Dad.",
+      "fr": "« Et quinze sachets à deux livres chacun font trente livres », dit Papa.",
+      "g": {
+       "at": [
+        "à",
+        "at",
+        "r"
+       ],
+       "each": [
+        "chacun",
+        "each",
+        "d"
+       ],
+       "make": [
+        "font",
+        "make",
+        "v",
+        "faire"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Léa wrote the numbers on the napkin: one hundred plus thirty plus thirty.",
+      "fr": "Léa écrivit les nombres sur la serviette : cent plus trente plus trente.",
+      "g": {
+       "wrote": [
+        "écrivit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "numbers": [
+        "nombres",
+        "number",
+        "n",
+        "nombre"
+       ],
+       "one": [
+        "(one hundred : cent)",
+        "one",
+        "t"
+       ],
+       "hundred": [
+        "cent (one hundred)",
+        "hundred",
+        "t"
+       ],
+       "plus": [
+        "plus",
+        "plus",
+        "c"
+       ],
+       "plus#2": [
+        "plus",
+        "plus",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "Her hand was shaking. “One hundred and sixty pounds!” she cried.",
+      "fr": "Sa main tremblait. « Cent soixante livres ! » s'écria-t-elle.",
+      "g": {
+       "hand": [
+        "main",
+        "hand",
+        "n"
+       ],
+       "shaking": [
+        "tremblait",
+        "shake",
+        "v",
+        "trembler"
+       ],
+       "one": [
+        "(one hundred : cent)",
+        "one",
+        "t"
+       ],
+       "hundred": [
+        "cent (one hundred)",
+        "hundred",
+        "t"
+       ],
+       "sixty": [
+        "soixante",
+        "sixty",
+        "a"
+       ],
+       "cried": [
+        "s'écria",
+        "cry",
+        "v",
+        "s'écrier"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "For a moment, nobody said a word.",
+      "fr": "Pendant un moment, personne ne dit un mot.",
+      "g": {
+       "for": [
+        "pendant",
+        "for",
+        "r"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "word": [
+        "mot",
+        "word",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Then Adam jumped into the air and Mr Mensah laughed loudly.",
+      "fr": "Puis Adam sauta en l'air et M. Mensah rit bruyamment.",
+      "g": {
+       "then": [
+        "puis",
+        "then",
+        "c"
+       ],
+       "jumped": [
+        "sauta",
+        "jump",
+        "v",
+        "sauter"
+       ],
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "loudly": [
+        "bruyamment",
+        "loudly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“You only needed one hundred and fifty,” said Dad.",
+      "fr": "« Il ne vous fallait que cent cinquante livres », dit Papa.",
+      "g": {
+       "only": [
+        "que (ne… que)",
+        "only",
+        "d"
+       ],
+       "needed": [
+        "fallait",
+        "need",
+        "v",
+        "avoir besoin de"
+       ],
+       "one": [
+        "(one hundred : cent)",
+        "one",
+        "t"
+       ],
+       "hundred": [
+        "cent (one hundred)",
+        "hundred",
+        "t"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Now you have ten pounds more!”",
+      "fr": "« Maintenant, vous avez dix livres de plus ! »",
+      "g": {
+       "have": [
+        "avez",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "more": [
+        "de plus",
+        "more",
+        "d"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 4 — Counting the Money",
+   "titreFr": "Chapitre 4 — Compter l'argent"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Dad phoned Mrs Okafor and told her the good news.",
+      "fr": "Papa téléphona à Mme Okafor et lui annonça la bonne nouvelle.",
+      "g": {
+       "phoned": [
+        "téléphona",
+        "phone",
+        "v",
+        "téléphoner"
+       ],
+       "told": [
+        "annonça",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "her": [
+        "lui",
+        "her",
+        "p"
+       ],
+       "good": [
+        "bonne",
+        "good",
+        "a",
+        "bon"
+       ],
+       "news": [
+        "nouvelle",
+        "news",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Ten minutes later, she arrived at the market with Daisy on a lead.",
+      "fr": "Dix minutes plus tard, elle arriva au marché avec Daisy en laisse.",
+      "g": {
+       "arrived": [
+        "arriva",
+        "arrive",
+        "v",
+        "arriver"
+       ],
+       "on": [
+        "en",
+        "on",
+        "r"
+       ],
+       "lead": [
+        "laisse",
+        "lead",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Is it true?” she asked. “Did you really sell all those things in the rain?”",
+      "fr": "« Est-ce vrai ? » demanda-t-elle. « Avez-vous vraiment vendu tout cela sous la pluie ? »",
+      "g": {
+       "true": [
+        "vrai",
+        "true",
+        "a"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "did": [
+        "(auxiliaire interrogatif)",
+        "do",
+        "v"
+       ],
+       "all": [
+        "tout (all those things : tout cela)",
+        "all",
+        "t"
+       ],
+       "those": [
+        "(all those things : tout cela)",
+        "those",
+        "t"
+       ],
+       "things": [
+        "(all those things : tout cela)",
+        "thing",
+        "n",
+        "chose"
+       ],
+       "sell": [
+        "vendu",
+        "sell",
+        "v",
+        "vendre"
+       ]
+      }
+     },
+     {
+      "en": "Léa gave her a big brown envelope with all the money inside.",
+      "fr": "Léa lui donna une grande enveloppe marron avec tout l'argent dedans.",
+      "g": {
+       "gave": [
+        "donna",
+        "give",
+        "v",
+        "donner"
+       ],
+       "her": [
+        "lui",
+        "her",
+        "p"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a",
+        "grand"
+       ],
+       "brown": [
+        "marron",
+        "brown",
+        "a"
+       ],
+       "all": [
+        "tout",
+        "all",
+        "t"
+       ],
+       "inside": [
+        "dedans",
+        "inside",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Okafor opened it, and her eyes filled with tears.",
+      "fr": "Mme Okafor l'ouvrit, et ses yeux se remplirent de larmes.",
+      "g": {
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "it": [
+        "l'",
+        "it",
+        "p"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "filled": [
+        "se remplirent (filled with : se remplirent de)",
+        "fill",
+        "v",
+        "remplir"
+       ],
+       "with": [
+        "de",
+        "with",
+        "r"
+       ],
+       "tears": [
+        "larmes",
+        "tear",
+        "n",
+        "larme"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“This is more than we need,” she whispered.",
+      "fr": "« C'est plus que ce dont nous avons besoin », chuchota-t-elle.",
+      "g": {
+       "this": [
+        "c'",
+        "this",
+        "p"
+       ],
+       "more": [
+        "plus (more than : plus que)",
+        "more",
+        "d"
+       ],
+       "than": [
+        "que",
+        "than",
+        "c"
+       ],
+       "need": [
+        "avons besoin",
+        "need",
+        "v",
+        "avoir besoin de"
+       ],
+       "whispered": [
+        "chuchota",
+        "whisper",
+        "v",
+        "chuchoter"
+       ]
+      }
+     },
+     {
+      "en": "“We can buy new heaters and warm blankets for every dog.”",
+      "fr": "« Nous pouvons acheter de nouveaux radiateurs et des couvertures chaudes pour chaque chien. »",
+      "g": {
+       "new": [
+        "nouveaux",
+        "new",
+        "a",
+        "nouveau"
+       ],
+       "warm": [
+        "chaudes",
+        "warm",
+        "a",
+        "chaud"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ],
+       "every": [
+        "chaque",
+        "every",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "“And the extra ten pounds?” asked Adam.",
+      "fr": "« Et les dix livres de plus ? » demanda Adam.",
+      "g": {
+       "extra": [
+        "de plus",
+        "extra",
+        "a"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“Toys!” she laughed. “Every dog should have a toy this winter.”",
+      "fr": "« Des jouets ! » rit-elle. « Chaque chien devrait avoir un jouet cet hiver. »",
+      "g": {
+       "toys": [
+        "jouets",
+        "toy",
+        "n",
+        "jouet"
+       ],
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "every": [
+        "chaque",
+        "every",
+        "t"
+       ],
+       "should": [
+        "devrait",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "have": [
+        "avoir",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "toy": [
+        "jouet",
+        "toy",
+        "n",
+        "jouet"
+       ],
+       "this": [
+        "cet",
+        "this",
+        "t"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mr Mensah showed her the photo of his old dog.",
+      "fr": "M. Mensah lui montra la photo de son vieux chien.",
+      "g": {
+       "showed": [
+        "montra",
+        "show",
+        "v",
+        "montrer"
+       ],
+       "her": [
+        "lui",
+        "her",
+        "p"
+       ],
+       "old": [
+        "vieux",
+        "old",
+        "a",
+        "vieux"
+       ]
+      }
+     },
+     {
+      "en": "“Rex!” she said. “I remember him. He was the kindest dog I have ever met.”",
+      "fr": "« Rex ! » dit-elle. « Je me souviens de lui. C'était le chien le plus gentil que j'aie jamais rencontré. »",
+      "g": {
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "remember": [
+        "me souviens de",
+        "remember",
+        "v",
+        "se souvenir"
+       ],
+       "him": [
+        "lui",
+        "him",
+        "p"
+       ],
+       "kindest": [
+        "le plus gentil",
+        "kind",
+        "a",
+        "gentil"
+       ],
+       "have": [
+        "ai",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "ever": [
+        "jamais",
+        "ever",
+        "d"
+       ],
+       "met": [
+        "rencontré",
+        "meet",
+        "v",
+        "rencontrer"
+       ]
+      }
+     },
+     {
+      "en": "“Today he helped the shelter again,” said Mr Mensah, “and he was not even here.”",
+      "fr": "« Aujourd'hui, il a de nouveau aidé le refuge », dit M. Mensah, « et il n'était même pas là. »",
+      "g": {
+       "helped": [
+        "a aidé",
+        "help",
+        "v",
+        "aider"
+       ],
+       "again": [
+        "de nouveau",
+        "again",
+        "d"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "even": [
+        "même",
+        "even",
+        "d"
+       ],
+       "here": [
+        "là",
+        "here",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Daisy walked to Adam and licked his hand.",
+      "fr": "Daisy s'approcha d'Adam et lui lécha la main.",
+      "g": {
+       "walked": [
+        "s'approcha (walked to : s'approcha de)",
+        "walk",
+        "v",
+        "marcher"
+       ],
+       "to": [
+        "(walked to : s'approcha de)",
+        "to",
+        "r"
+       ],
+       "licked": [
+        "lécha",
+        "lick",
+        "v",
+        "lécher"
+       ],
+       "hand": [
+        "main",
+        "hand",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Everybody laughed, and the sun shone on the wet market square.",
+      "fr": "Tout le monde rit, et le soleil brilla sur la place mouillée du marché.",
+      "g": {
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "shone": [
+        "brilla",
+        "shine",
+        "v",
+        "briller"
+       ],
+       "wet": [
+        "mouillée",
+        "wet",
+        "a",
+        "mouillé"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "On Monday after school, the twins went back to the shelter.",
+      "fr": "Le lundi après l'école, les jumeaux retournèrent au refuge.",
+      "g": {
+       "went": [
+        "retournèrent (went back : retournèrent)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "back": [
+        "(went back : retournèrent)",
+        "back",
+        "d"
+       ],
+       "to": [
+        "à",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "A workman was putting up the new heaters on the walls.",
+      "fr": "Un ouvrier installait les nouveaux radiateurs sur les murs.",
+      "g": {
+       "putting": [
+        "installait (putting up : installait)",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "up": [
+        "(putting up : installait)",
+        "up",
+        "d"
+       ],
+       "new": [
+        "nouveaux",
+        "new",
+        "a",
+        "nouveau"
+       ],
+       "walls": [
+        "murs",
+        "wall",
+        "n",
+        "mur"
+       ]
+      }
+     },
+     {
+      "en": "The rooms were already warmer than before.",
+      "fr": "Les pièces étaient déjà plus chaudes qu'avant.",
+      "g": {
+       "rooms": [
+        "pièces",
+        "room",
+        "n",
+        "pièce"
+       ],
+       "were": [
+        "étaient",
+        "be",
+        "v",
+        "être"
+       ],
+       "warmer": [
+        "plus chaudes",
+        "warm",
+        "a",
+        "chaud"
+       ]
+      }
+     },
+     {
+      "en": "Daisy was lying on a thick, soft blanket, and she looked very happy.",
+      "fr": "Daisy était couchée sur une épaisse couverture douce, et elle avait l'air très heureuse.",
+      "g": {
+       "lying": [
+        "couchée (was lying : était couchée)",
+        "lie",
+        "v",
+        "être couché"
+       ],
+       "thick": [
+        "épaisse",
+        "thick",
+        "a",
+        "épais"
+       ],
+       "soft": [
+        "douce",
+        "soft",
+        "a",
+        "doux"
+       ],
+       "looked": [
+        "avait l'air",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "happy": [
+        "heureuse",
+        "happy",
+        "a",
+        "heureux"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Look at the smallest puppy,” said Mrs Okafor. “He hasn't got a name yet.”",
+      "fr": "« Regardez le plus petit chiot », dit Mme Okafor. « Il n'a pas encore de nom. »",
+      "g": {
+       "look": [
+        "regardez",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regardez)",
+        "at",
+        "r"
+       ],
+       "smallest": [
+        "le plus petit",
+        "small",
+        "a",
+        "petit"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "hasn't": [
+        "n'a pas (hasn't got)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "got": [
+        "(hasn't got : n'a pas)",
+        "get",
+        "v",
+        "obtenir"
+       ],
+       "yet": [
+        "pas encore (hasn't … yet)",
+        "yet",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Can you choose one?”",
+      "fr": "« Pouvez-vous en choisir un ? »",
+      "g": {
+       "choose": [
+        "choisir",
+        "choose",
+        "v"
+       ],
+       "one": [
+        "en (choose one : en choisir un)",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "The twins hugged Daisy and thought for a minute. “Biscuit?” said Léa.",
+      "fr": "Les jumeaux serrèrent Daisy dans leurs bras et réfléchirent une minute. « Biscuit ? » dit Léa.",
+      "g": {
+       "hugged": [
+        "serrèrent dans leurs bras",
+        "hug",
+        "v",
+        "serrer dans ses bras"
+       ],
+       "thought": [
+        "réfléchirent",
+        "think",
+        "v",
+        "penser"
+       ],
+       "for": [
+        "pendant",
+        "for",
+        "r"
+       ],
+       "biscuit": [
+        "Biscuit (nom proposé)",
+        "biscuit",
+        "n",
+        "biscuit"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“No, we should call him Jam,” said Adam. “He is small, sweet and a little sticky!”",
+      "fr": "« Non, nous devrions l'appeler Confiture », dit Adam. « Il est petit, doux et un peu collant ! »",
+      "g": {
+       "should": [
+        "devrions",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "call": [
+        "appeler",
+        "call",
+        "v",
+        "appeler"
+       ],
+       "him": [
+        "le",
+        "him",
+        "p"
+       ],
+       "jam": [
+        "Confiture (nom du chiot)",
+        "jam",
+        "n",
+        "confiture"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "sweet": [
+        "doux",
+        "sweet",
+        "a",
+        "sucré"
+       ],
+       "little": [
+        "peu (a little : un peu)",
+        "little",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The puppy barked and licked Léa's hand, and everybody agreed.",
+      "fr": "Le chiot aboya et lécha la main de Léa, et tout le monde fut d'accord.",
+      "g": {
+       "barked": [
+        "aboya",
+        "bark",
+        "v",
+        "aboyer"
+       ],
+       "licked": [
+        "lécha",
+        "lick",
+        "v",
+        "lécher"
+       ],
+       "léa's": [
+        "de Léa",
+        "Léa",
+        "np"
+       ],
+       "hand": [
+        "main",
+        "hand",
+        "n"
+       ],
+       "agreed": [
+        "fut d'accord",
+        "agree",
+        "v",
+        "être d'accord"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Just then, Mr Mensah arrived with old Rex.",
+      "fr": "À cet instant, M. Mensah arriva avec le vieux Rex.",
+      "g": {
+       "just": [
+        "(just then : à cet instant)",
+        "just",
+        "d"
+       ],
+       "then": [
+        "(just then : à cet instant)",
+        "then",
+        "d"
+       ],
+       "arrived": [
+        "arriva",
+        "arrive",
+        "v",
+        "arriver"
+       ],
+       "old": [
+        "vieux",
+        "old",
+        "a",
+        "vieux"
+       ]
+      }
+     },
+     {
+      "en": "“I have good news,” he said. “Mrs Bianchi wants us at the market every month.”",
+      "fr": "« J'ai une bonne nouvelle », dit-il. « Mme Bianchi veut nous voir au marché tous les mois. »",
+      "g": {
+       "have": [
+        "ai",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "good": [
+        "bonne",
+        "good",
+        "a",
+        "bon"
+       ],
+       "news": [
+        "nouvelle",
+        "news",
+        "n"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "wants": [
+        "veut",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "every": [
+        "tous les (every month)",
+        "every",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "“With gift boxes?” asked Léa.",
+      "fr": "« Avec des coffrets cadeaux ? » demanda Léa.",
+      "g": {
+       "gift": [
+        "cadeaux",
+        "gift",
+        "n"
+       ],
+       "boxes": [
+        "coffrets",
+        "box",
+        "n",
+        "coffret"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“With gift boxes,” he said. “And next time, we are going to bring a bigger tent!”",
+      "fr": "« Avec des coffrets cadeaux », dit-il. « Et la prochaine fois, nous allons apporter une plus grande tente ! »",
+      "g": {
+       "gift": [
+        "cadeaux",
+        "gift",
+        "n"
+       ],
+       "boxes": [
+        "coffrets",
+        "box",
+        "n",
+        "coffret"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "next": [
+        "prochaine",
+        "next",
+        "a"
+       ],
+       "time": [
+        "fois",
+        "time",
+        "n"
+       ],
+       "going": [
+        "allons",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(going to : aller + verbe)",
+        "to",
+        "x"
+       ],
+       "bring": [
+        "apporter",
+        "bring",
+        "v"
+       ],
+       "bigger": [
+        "plus grande",
+        "big",
+        "a",
+        "grand"
+       ]
+      }
+     },
+     {
+      "en": "That winter, every dog at Happy Paws was warm and happy.",
+      "fr": "Cet hiver-là, chaque chien de Happy Paws avait chaud et était heureux.",
+      "g": {
+       "that": [
+        "cet",
+        "that",
+        "t"
+       ],
+       "every": [
+        "chaque",
+        "every",
+        "t"
+       ],
+       "dog": [
+        "chien",
+        "dog",
+        "n",
+        "chien"
+       ],
+       "happy": [
+        "Happy (nom du refuge)",
+        "happy",
+        "a",
+        "heureux"
+       ],
+       "was": [
+        "(was warm : avait chaud)",
+        "be",
+        "v",
+        "être"
+       ],
+       "warm": [
+        "(was warm : avait chaud)",
+        "warm",
+        "a",
+        "chaud"
+       ],
+       "happy#2": [
+        "heureux",
+        "happy",
+        "a",
+        "heureux"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 5 — A Warm Winter",
+   "titreFr": "Chapitre 5 — Un hiver au chaud"
+  }
+ ]
+}

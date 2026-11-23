@@ -1,0 +1,19 @@
+{
+  "id": "le-mystere-du-musee",
+  "titre": "The Museum Mystery",
+  "titreFr": "Le mystère du musée",
+  "auteur": "HaqqReason",
+  "niveau": "A2",
+  "genre": "Enquête",
+  "resume": "Un samedi de pluie, Nadia et son cousin Oliver visitent le petit musée de leur ville. Mais le plus beau tableau, celui du vieux bateau, a disparu du mur, et l'exposition du maire a lieu dans une semaine ! Taches de peinture fraîche, cadre abîmé, gardien nerveux : les deux détectives en herbe suivent les indices, se trompent de piste... et découvrent une vérité à laquelle ils ne s'attendaient pas.",
+  "questions": [
+    { "q": "Pourquoi Nadia et Oliver vont-ils au musée ?", "o": ["Il pleut et ils ne peuvent pas aller à la plage", "Ils ont un cours d'histoire", "Ils veulent acheter un tableau"], "i": "Relis le début de la première page.", "e": "Il pleut le samedi matin, alors Nadia propose à son cousin de visiter son endroit préféré : le musée de la ville." },
+    { "q": "Qu'est-ce qui a disparu dans la salle trois ?", "o": ["Le tableau L'Étoile d'argent, qui montre un vieux voilier", "Une pièce romaine", "Le vieux vélo"], "i": "Regarde ce que Nadia veut montrer à Oliver.", "e": "Le célèbre tableau L'Étoile d'argent n'est plus sur le mur : il ne reste qu'un carré propre et un crochet." },
+    { "q": "Pourquoi Mme Patel ne veut-elle pas appeler la police tout de suite ?", "o": ["Les journaux le sauraient et le maire pourrait tout annuler", "Elle trouve le tableau sans valeur", "Elle sait déjà qui l'a pris"], "i": "Écoute ce que dit la directrice sur le maire.", "e": "Mme Patel a peur que les journaux en parlent et que le maire annule l'exposition prévue samedi prochain." },
+    { "q": "Quel est le premier indice trouvé par Oliver ?", "o": ["Des taches de peinture fraîche sur le sol", "Une clé dorée", "Une lettre"], "i": "Oliver marche lentement le long du mur, les yeux sur le sol.", "e": "Oliver découvre des taches de peinture encore humide qui forment une piste jusqu'à une porte réservée au personnel." },
+    { "q": "Que trouve Nadia sous le banc ?", "o": ["Un morceau de cadre doré, cassé", "Un pinceau", "Un sandwich"], "i": "Elle s'assoit sur un banc pour réfléchir.", "e": "Sous le banc, Nadia trouve un morceau de bois doré qui vient du cadre du tableau." },
+    { "q": "Pourquoi M. Quinn, le photographe, n'est-il pas coupable ?", "o": ["Son grand sac contient seulement du matériel photo et son déjeuner", "Il est parti avant l'ouverture", "Il ne connaît pas le musée"], "i": "Oliver lui demande ce qu'il y a dans son sac.", "e": "Dans son sac, M. Quinn n'a qu'un trépied, deux objectifs et un sandwich. Il leur parle aussi d'une petite voiture verte garée près de la porte latérale." },
+    { "q": "Pourquoi Mme Lopez a-t-elle de la peinture bleue sur les mains ?", "o": ["Elle a peint la nouvelle salle d'atelier", "Elle a pris le tableau", "Elle répare le cadre"], "i": "Les enfants visitent la petite salle aux murs bleus.", "e": "Mme Lopez a peint en bleu la salle des cours de dessin pour l'exposition ; ce bleu est plus vif que la peinture trouvée sur le sol." },
+    { "q": "Que s'est-il passé vendredi dernier, d'après M. Bell ?", "o": ["Son échelle a heurté le cadre et le tableau est tombé", "Un voleur est entré par la fenêtre", "Le maire a visité le musée"], "i": "Relis ce que raconte le gardien sur la page 11.", "e": "M. Bell déplaçait une échelle quand elle a heurté le cadre : un coin s'est cassé et le ciel du tableau a été éraflé. Ce matin, il a emporté le tableau chez lui pour le réparer en secret." }
+  ]
+}

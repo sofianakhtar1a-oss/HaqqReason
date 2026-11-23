@@ -1,0 +1,5256 @@
+{
+  "debut": 6,
+  "lexique": {
+    "booth": [
+      "cabine",
+      "booth",
+      "n"
+    ],
+    "ceiling": [
+      "plafond",
+      "ceiling",
+      "n"
+    ],
+    "chairs": [
+      "chaises",
+      "chair",
+      "n",
+      "chaise"
+    ],
+    "cubic": [
+      "cubes",
+      "cubic",
+      "a"
+    ],
+    "door": [
+      "porte",
+      "door",
+      "n"
+    ],
+    "hall": [
+      "salle",
+      "hall",
+      "n"
+    ],
+    "hand": [
+      "main",
+      "hand",
+      "n"
+    ],
+    "headset": [
+      "casque",
+      "headset",
+      "n"
+    ],
+    "interpreter": [
+      "interprète",
+      "interpreter",
+      "n"
+    ],
+    "inès": [
+      "Inès (prénom)",
+      "Inès",
+      "np"
+    ],
+    "karimov": [
+      "Karimov (nom)",
+      "Karimov",
+      "np"
+    ],
+    "know": [
+      "sais",
+      "know",
+      "v",
+      "savoir"
+    ],
+    "late": [
+      "en retard",
+      "late",
+      "a"
+    ],
+    "leo": [
+      "Leo (prénom)",
+      "Leo",
+      "np"
+    ],
+    "lund": [
+      "Lund (nom)",
+      "Lund",
+      "np"
+    ],
+    "lund's": [
+      "de Mme Lund",
+      "Lund",
+      "np"
+    ],
+    "man": [
+      "homme",
+      "man",
+      "n"
+    ],
+    "metres": [
+      "mètres",
+      "metre",
+      "n",
+      "mètre"
+    ],
+    "microphone": [
+      "micro",
+      "microphone",
+      "n"
+    ],
+    "minutes": [
+      "minutes",
+      "minute",
+      "n",
+      "minute"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "ms": [
+      "Mme (madame)",
+      "Ms",
+      "n"
+    ],
+    "nose": [
+      "nez",
+      "nose",
+      "n"
+    ],
+    "pad": [
+      "bloc",
+      "pad",
+      "n"
+    ],
+    "pen": [
+      "stylo",
+      "pen",
+      "n"
+    ],
+    "people": [
+      "gens",
+      "person",
+      "n",
+      "personne"
+    ],
+    "priya": [
+      "Priya (prénom)",
+      "Priya",
+      "np"
+    ],
+    "tomasz": [
+      "Tomasz (prénom)",
+      "Tomasz",
+      "np"
+    ],
+    "watch": [
+      "montre",
+      "watch",
+      "n"
+    ],
+    "window": [
+      "vitre",
+      "window",
+      "n"
+    ],
+    "years": [
+      "ans",
+      "year",
+      "n",
+      "an"
+    ],
+    "young": [
+      "jeune",
+      "young",
+      "a"
+    ]
+  },
+  "pages": [
+    {
+      "titre": "Chapter 4 — The Wrong Word",
+      "titreFr": "Chapitre 4 — Le mot qui n'allait pas",
+      "p": [
+        [
+          {
+            "en": "Inès snatched up her pen, wrote BELOW in capital letters and pushed the pad under Tomasz’s nose.",
+            "fr": "Inès attrapa son stylo, écrivit « EN DESSOUS » en majuscules et glissa le bloc sous le nez de Tomasz.",
+            "g": {
+              "snatched": [
+                "attrapa",
+                "snatch",
+                "v",
+                "attraper"
+              ],
+              "up": [
+                "(snatched up : attrapa)",
+                "up",
+                "x"
+              ],
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "below": [
+                "EN DESSOUS",
+                "below",
+                "r"
+              ],
+              "capital": [
+                "majuscules",
+                "capital",
+                "a"
+              ],
+              "letters": [
+                "(capital letters : majuscules)",
+                "letter",
+                "n",
+                "lettre"
+              ],
+              "pushed": [
+                "glissa",
+                "push",
+                "v",
+                "pousser"
+              ],
+              "under": [
+                "sous",
+                "under",
+                "r"
+              ],
+              "tomasz's": [
+                "de Tomasz",
+                "Tomasz",
+                "np"
+              ],
+              "and": [
+                "et",
+                "and",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "But he was staring at the screen, his eyes half closed, already translating the next sentence, and he did not see it.",
+            "fr": "Mais il fixait l’écran, les yeux à moitié fermés, traduisant déjà la phrase suivante, et il ne la vit pas.",
+            "g": {
+              "staring": [
+                "fixait",
+                "stare",
+                "v",
+                "fixer"
+              ],
+              "screen": [
+                "écran",
+                "screen",
+                "n"
+              ],
+              "closed": [
+                "fermés",
+                "closed",
+                "a"
+              ],
+              "translating": [
+                "traduisant",
+                "translate",
+                "v",
+                "traduire"
+              ],
+              "next": [
+                "suivante",
+                "next",
+                "a"
+              ],
+              "sentence": [
+                "phrase",
+                "sentence",
+                "n"
+              ],
+              "see": [
+                "vit",
+                "see",
+                "v",
+                "voir"
+              ],
+              "it": [
+                "la",
+                "it",
+                "p"
+              ],
+              "eyes": [
+                "yeux",
+                "eye",
+                "n",
+                "œil"
+              ],
+              "half": [
+                "à moitié",
+                "half",
+                "d"
+              ],
+              "already": [
+                "déjà",
+                "already",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "She could have pressed the red button and spoken up, but an interpreter who interrupts a live session breaks the first rule of the profession, and Inès was too stunned to move.",
+            "fr": "Elle aurait pu appuyer sur le bouton rouge et prendre la parole, mais une interprète qui interrompt une séance en direct viole la première règle du métier, et Inès était trop abasourdie pour bouger.",
+            "g": {
+              "could": [
+                "aurait pu",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "have": [
+                "(could have : aurait pu)",
+                "have",
+                "v"
+              ],
+              "pressed": [
+                "appuyer",
+                "press",
+                "v",
+                "appuyer"
+              ],
+              "spoken": [
+                "prendre la parole",
+                "speak",
+                "v",
+                "parler"
+              ],
+              "up": [
+                "(spoken up : prendre la parole)",
+                "up",
+                "x"
+              ],
+              "who": [
+                "qui",
+                "who",
+                "p"
+              ],
+              "interrupts": [
+                "interrompt",
+                "interrupt",
+                "v",
+                "interrompre"
+              ],
+              "live": [
+                "en direct",
+                "live",
+                "a"
+              ],
+              "breaks": [
+                "viole",
+                "break",
+                "v",
+                "briser"
+              ],
+              "first": [
+                "première",
+                "first",
+                "a"
+              ],
+              "rule": [
+                "règle",
+                "rule",
+                "n"
+              ],
+              "profession": [
+                "métier",
+                "profession",
+                "n"
+              ],
+              "stunned": [
+                "abasourdie",
+                "stunned",
+                "a"
+              ],
+              "move": [
+                "bouger",
+                "move",
+                "v"
+              ],
+              "too": [
+                "trop",
+                "too",
+                "d"
+              ],
+              "to": [
+                "pour",
+                "to",
+                "x"
+              ],
+              "button": [
+                "bouton",
+                "button",
+                "n"
+              ],
+              "red": [
+                "rouge",
+                "red",
+                "a"
+              ],
+              "session": [
+                "séance",
+                "session",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Ms Lund leaned towards her microphone, and a satisfied smile appeared on her face.",
+            "fr": "Mme Lund se pencha vers son micro, et un sourire satisfait apparut sur son visage.",
+            "g": {
+              "leaned": [
+                "se pencha",
+                "lean",
+                "v",
+                "se pencher"
+              ],
+              "towards": [
+                "vers",
+                "towards",
+                "r"
+              ],
+              "satisfied": [
+                "satisfait",
+                "satisfied",
+                "a"
+              ],
+              "smile": [
+                "sourire",
+                "smile",
+                "n"
+              ],
+              "appeared": [
+                "apparut",
+                "appear",
+                "v",
+                "apparaître"
+              ],
+              "face": [
+                "visage",
+                "face",
+                "n"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“Mr Chairman, if I understand correctly, the Kessalic delegation proposes a ceiling of forty cubic metres per second. That is a very reasonable proposal, and Norvane is happy to accept it.”",
+            "fr": "« Monsieur le président, si je comprends bien, la délégation kessalique propose un plafond de quarante mètres cubes par seconde. C’est une proposition tout à fait raisonnable, et la Norvane l’accepte volontiers. »",
+            "g": {
+              "understand": [
+                "comprends",
+                "understand",
+                "v",
+                "comprendre"
+              ],
+              "correctly": [
+                "bien",
+                "correctly",
+                "d"
+              ],
+              "proposes": [
+                "propose",
+                "propose",
+                "v",
+                "proposer"
+              ],
+              "ceiling": [
+                "plafond",
+                "ceiling",
+                "n"
+              ],
+              "per": [
+                "par",
+                "per",
+                "r"
+              ],
+              "reasonable": [
+                "raisonnable",
+                "reasonable",
+                "a"
+              ],
+              "proposal": [
+                "proposition",
+                "proposal",
+                "n"
+              ],
+              "happy": [
+                "volontiers (happy to)",
+                "happy",
+                "a"
+              ],
+              "accept": [
+                "accepte",
+                "accept",
+                "v"
+              ],
+              "it": [
+                "l'",
+                "it",
+                "p"
+              ],
+              "that": [
+                "c'",
+                "that",
+                "p"
+              ],
+              "is": [
+                "est",
+                "be",
+                "v"
+              ],
+              "very": [
+                "tout à fait",
+                "very",
+                "d"
+              ],
+              "chairman": [
+                "président",
+                "chairman",
+                "n"
+              ],
+              "mr": [
+                "Monsieur",
+                "Mr",
+                "n"
+              ],
+              "delegation": [
+                "délégation",
+                "delegation",
+                "n"
+              ],
+              "kessalic": [
+                "kessalique",
+                "Kessalic",
+                "a"
+              ],
+              "norvane": [
+                "Norvane (pays)",
+                "Norvane",
+                "np"
+              ],
+              "is#2": [
+                "(is happy to accept : accepte volontiers)",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "A murmur of surprise rolled across the Kessalic side of the room.",
+            "fr": "Un murmure de surprise parcourut le côté kessalique de la salle.",
+            "g": {
+              "murmur": [
+                "murmure",
+                "murmur",
+                "n"
+              ],
+              "surprise": [
+                "surprise",
+                "surprise",
+                "n"
+              ],
+              "rolled": [
+                "parcourut",
+                "roll",
+                "v",
+                "rouler"
+              ],
+              "across": [
+                "(rolled across : parcourut)",
+                "across",
+                "r"
+              ],
+              "side": [
+                "côté",
+                "side",
+                "n"
+              ],
+              "room": [
+                "salle",
+                "room",
+                "n"
+              ],
+              "kessalic": [
+                "kessalique",
+                "Kessalic",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "Mr Karimov slowly took off his glasses. “A ceiling?” he said in Kessalic, and in Inès’s headset his voice sounded dangerously quiet.",
+            "fr": "M. Karimov ôta lentement ses lunettes. « Un plafond ? » dit-il en kessalique, et dans le casque d’Inès sa voix paraissait dangereusement calme.",
+            "g": {
+              "slowly": [
+                "lentement",
+                "slowly",
+                "d"
+              ],
+              "took": [
+                "ôta (took off)",
+                "take",
+                "v",
+                "enlever"
+              ],
+              "off": [
+                "(took off : ôta)",
+                "off",
+                "x"
+              ],
+              "glasses": [
+                "lunettes",
+                "glasses",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "sounded": [
+                "paraissait",
+                "sound",
+                "v",
+                "sembler"
+              ],
+              "dangerously": [
+                "dangereusement",
+                "dangerously",
+                "d"
+              ],
+              "quiet": [
+                "calme",
+                "quiet",
+                "a"
+              ],
+              "headset": [
+                "casque",
+                "headset",
+                "n"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ],
+              "karimov": [
+                "Karimov",
+                "Karimov",
+                "np"
+              ],
+              "inès's": [
+                "d'Inès",
+                "Inès",
+                "np"
+              ],
+              "kessalic": [
+                "kessalique",
+                "Kessalic",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“I asked for a floor. A floor, Ms Lund! Do you take us for fools?”",
+            "fr": "« J’ai demandé un plancher. Un plancher, madame Lund ! Vous nous prenez pour des imbéciles ? »",
+            "g": {
+              "asked": [
+                "ai demandé",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "floor": [
+                "plancher (un seuil minimum)",
+                "floor",
+                "n"
+              ],
+              "floor#2": [
+                "plancher",
+                "floor",
+                "n"
+              ],
+              "take": [
+                "prenez (take for : prendre pour)",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "for": [
+                "(asked for : ai demandé)",
+                "for",
+                "r"
+              ],
+              "fools": [
+                "imbéciles",
+                "fool",
+                "n",
+                "imbécile"
+              ],
+              "do": [
+                "(auxiliaire de question : ne se traduit pas)",
+                "do",
+                "v"
+              ],
+              "ms": [
+                "madame",
+                "Ms",
+                "n"
+              ],
+              "lund": [
+                "Lund",
+                "Lund",
+                "np"
+              ],
+              "for#2": [
+                "(take … for : prendre pour)",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Tomasz translated the words faithfully, still without understanding why the room had turned to ice.",
+            "fr": "Tomasz traduisit fidèlement les mots, sans comprendre encore pourquoi la salle s’était glacée.",
+            "g": {
+              "translated": [
+                "traduisit",
+                "translate",
+                "v",
+                "traduire"
+              ],
+              "faithfully": [
+                "fidèlement",
+                "faithfully",
+                "d"
+              ],
+              "still": [
+                "encore",
+                "still",
+                "d"
+              ],
+              "without": [
+                "sans",
+                "without",
+                "r"
+              ],
+              "understanding": [
+                "comprendre",
+                "understand",
+                "v",
+                "comprendre"
+              ],
+              "why": [
+                "pourquoi",
+                "why",
+                "d"
+              ],
+              "had": [
+                "s'était glacée (had turned to ice)",
+                "have",
+                "v"
+              ],
+              "turned": [
+                "(had turned to ice : s'était glacée)",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "ice": [
+                "(had turned to ice : s'était glacée)",
+                "ice",
+                "n"
+              ],
+              "to": [
+                "(had turned to ice : s'était glacée)",
+                "to",
+                "r"
+              ],
+              "room": [
+                "salle",
+                "room",
+                "n"
+              ],
+              "words": [
+                "mots",
+                "word",
+                "n",
+                "mot"
+              ]
+            }
+          },
+          {
+            "en": "Ms Lund’s face went hard. “I only repeated what your own interpreter told me, Mr Karimov. If you wish to withdraw your proposal, say so.”",
+            "fr": "Le visage de Mme Lund se durcit. « Je n’ai fait que répéter ce que votre propre interprète m’a dit, monsieur Karimov. Si vous souhaitez retirer votre proposition, dites-le. »",
+            "g": {
+              "lund's": [
+                "de Mme Lund",
+                "Lund",
+                "np"
+              ],
+              "face": [
+                "visage",
+                "face",
+                "n"
+              ],
+              "went": [
+                "se durcit",
+                "go",
+                "v",
+                "aller"
+              ],
+              "hard": [
+                "(went hard : se durcit)",
+                "hard",
+                "a"
+              ],
+              "only": [
+                "ne… que",
+                "only",
+                "d"
+              ],
+              "repeated": [
+                "ai répété",
+                "repeat",
+                "v",
+                "répéter"
+              ],
+              "what": [
+                "ce que",
+                "what",
+                "p"
+              ],
+              "own": [
+                "propre",
+                "own",
+                "a"
+              ],
+              "told": [
+                "a dit",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "wish": [
+                "souhaitez",
+                "wish",
+                "v",
+                "souhaiter"
+              ],
+              "withdraw": [
+                "retirer",
+                "withdraw",
+                "v"
+              ],
+              "say": [
+                "dites",
+                "say",
+                "v",
+                "dire"
+              ],
+              "so": [
+                "-le",
+                "so",
+                "d"
+              ],
+              "mr": [
+                "monsieur",
+                "Mr",
+                "n"
+              ],
+              "karimov": [
+                "Karimov",
+                "Karimov",
+                "np"
+              ],
+              "interpreter": [
+                "interprète",
+                "interpreter",
+                "n"
+              ],
+              "proposal": [
+                "proposition",
+                "proposal",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Mr Okoro struck the table with his gavel. “We shall adjourn until tomorrow morning,” he said. “Perhaps by then everyone will have calmed down.”",
+            "fr": "M. Okoro frappa la table de son marteau. « Nous allons suspendre la séance jusqu’à demain matin, dit-il. Peut-être que d’ici là tout le monde se sera calmé. »",
+            "g": {
+              "struck": [
+                "frappa",
+                "strike",
+                "v",
+                "frapper"
+              ],
+              "gavel": [
+                "marteau",
+                "gavel",
+                "n"
+              ],
+              "shall": [
+                "allons (we shall : nous allons)",
+                "shall",
+                "v",
+                "devoir"
+              ],
+              "adjourn": [
+                "suspendre la séance",
+                "adjourn",
+                "v"
+              ],
+              "until": [
+                "jusqu'à",
+                "until",
+                "r"
+              ],
+              "tomorrow": [
+                "demain",
+                "tomorrow",
+                "d"
+              ],
+              "morning": [
+                "matin",
+                "morning",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "by": [
+                "d'ici",
+                "by",
+                "r"
+              ],
+              "then": [
+                "là",
+                "then",
+                "d"
+              ],
+              "calmed": [
+                "se sera calmé",
+                "calm",
+                "v",
+                "calmer"
+              ],
+              "down": [
+                "(calmed down : se sera calmé)",
+                "down",
+                "x"
+              ],
+              "everyone": [
+                "tout le monde",
+                "everyone",
+                "p"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ],
+              "okoro": [
+                "Okoro",
+                "Okoro",
+                "np"
+              ],
+              "table": [
+                "table",
+                "table",
+                "n"
+              ],
+              "perhaps": [
+                "peut-être",
+                "perhaps",
+                "d"
+              ],
+              "will": [
+                "(will have calmed down : se sera calmé)",
+                "will",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "Chairs scraped, papers rustled, and within two minutes both delegations had left through opposite doors.",
+            "fr": "Les chaises raclèrent, les papiers bruissèrent, et en deux minutes les deux délégations étaient sorties par des portes opposées.",
+            "g": {
+              "scraped": [
+                "raclèrent",
+                "scrape",
+                "v",
+                "racler"
+              ],
+              "rustled": [
+                "bruissèrent",
+                "rustle",
+                "v",
+                "bruire"
+              ],
+              "papers": [
+                "papiers",
+                "paper",
+                "n",
+                "papier"
+              ],
+              "within": [
+                "en",
+                "within",
+                "r"
+              ],
+              "had": [
+                "étaient",
+                "have",
+                "v"
+              ],
+              "left": [
+                "sorties",
+                "leave",
+                "v",
+                "partir"
+              ],
+              "through": [
+                "par",
+                "through",
+                "r"
+              ],
+              "opposite": [
+                "opposées",
+                "opposite",
+                "a"
+              ],
+              "doors": [
+                "portes",
+                "door",
+                "n",
+                "porte"
+              ],
+              "delegations": [
+                "délégations",
+                "delegation",
+                "n",
+                "délégation"
+              ],
+              "minutes": [
+                "minutes",
+                "minute",
+                "n",
+                "minute"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Inside Booth Four, nobody moved. Tomasz slowly took off his headset. “What did I say?” he asked.",
+            "fr": "Dans la cabine quatre, personne ne bougea. Tomasz ôta lentement son casque. « Qu’est-ce que j’ai dit ? » demanda-t-il.",
+            "g": {
+              "took": [
+                "ôta (took off)",
+                "take",
+                "v",
+                "enlever"
+              ],
+              "off": [
+                "(took off : ôta)",
+                "off",
+                "x"
+              ],
+              "moved": [
+                "bougea",
+                "move",
+                "v",
+                "bouger"
+              ],
+              "asked": [
+                "demanda",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "say": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "did": [
+                "(auxiliaire de question : ne se traduit pas)",
+                "do",
+                "v"
+              ],
+              "inside": [
+                "Dans",
+                "inside",
+                "r"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ],
+              "slowly": [
+                "lentement",
+                "slowly",
+                "d"
+              ],
+              "what": [
+                "qu'est-ce que",
+                "what",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Inès turned the pad round. BELOW. And underneath, in smaller letters: tarun, not taran.",
+            "fr": "Inès retourna le bloc. EN DESSOUS. Et dessous, en lettres plus petites : tarun, pas taran.",
+            "g": {
+              "turned": [
+                "retourna",
+                "turn",
+                "v",
+                "retourner"
+              ],
+              "round": [
+                "(turned round : retourna)",
+                "round",
+                "x"
+              ],
+              "below": [
+                "EN DESSOUS",
+                "below",
+                "r"
+              ],
+              "underneath": [
+                "dessous",
+                "underneath",
+                "d"
+              ],
+              "smaller": [
+                "plus petites",
+                "small",
+                "a",
+                "petit"
+              ],
+              "letters": [
+                "lettres",
+                "letter",
+                "n",
+                "lettre"
+              ],
+              "tarun": [
+                "tarun (« en dessous » en kessalique)",
+                "tarun",
+                "n"
+              ],
+              "taran": [
+                "taran (« au-dessus » en kessalique)",
+                "taran",
+                "n"
+              ],
+              "not": [
+                "pas",
+                "not",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "He read it three times. The colour drained from his face.",
+            "fr": "Il le lut trois fois. La couleur quitta son visage.",
+            "g": {
+              "read": [
+                "lut",
+                "read",
+                "v",
+                "lire"
+              ],
+              "it": [
+                "le",
+                "it",
+                "p"
+              ],
+              "times": [
+                "fois",
+                "time",
+                "n",
+                "fois"
+              ],
+              "colour": [
+                "couleur",
+                "colour",
+                "n"
+              ],
+              "drained": [
+                "quitta",
+                "drain",
+                "v",
+                "se vider"
+              ],
+              "face": [
+                "visage",
+                "face",
+                "n"
+              ],
+              "three": [
+                "trois",
+                "three",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Below,” he whispered. “He said below, and I said above.” He covered his face with both hands. “Twenty years, Inès. Twenty years, and I...”",
+            "fr": "« En dessous, murmura-t-il. Il a dit en dessous, et moi j’ai dit au-dessus. » Il se couvrit le visage de ses deux mains. « Vingt ans, Inès. Vingt ans, et moi... »",
+            "g": {
+              "below": [
+                "en dessous",
+                "below",
+                "r"
+              ],
+              "whispered": [
+                "murmura-t-il",
+                "whisper",
+                "v",
+                "murmurer"
+              ],
+              "said": [
+                "a dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "said#2": [
+                "ai dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "above": [
+                "au-dessus",
+                "above",
+                "r"
+              ],
+              "covered": [
+                "se couvrit",
+                "cover",
+                "v",
+                "couvrir"
+              ],
+              "both": [
+                "deux",
+                "both",
+                "t"
+              ],
+              "hands": [
+                "mains",
+                "hand",
+                "n",
+                "main"
+              ],
+              "face": [
+                "visage",
+                "face",
+                "n"
+              ],
+              "twenty": [
+                "vingt",
+                "twenty",
+                "a"
+              ],
+              "twenty#2": [
+                "vingt",
+                "twenty",
+                "a"
+              ],
+              "years": [
+                "ans",
+                "year",
+                "n",
+                "an"
+              ],
+              "years#2": [
+                "ans",
+                "year",
+                "n",
+                "an"
+              ],
+              "with": [
+                "de",
+                "with",
+                "r"
+              ],
+              "and": [
+                "et",
+                "and",
+                "c"
+              ],
+              "inès": [
+                "Inès",
+                "Inès",
+                "np"
+              ]
+            }
+          },
+          {
+            "en": "“It’s the cold,” she said gently. “Your nose is blocked, the headset was crackling. It might have been anyone.”",
+            "fr": "« C’est le rhume, dit-elle doucement. Ton nez est bouché, le casque grésillait. Cela aurait pu arriver à n’importe qui. »",
+            "g": {
+              "cold": [
+                "rhume",
+                "cold",
+                "n"
+              ],
+              "gently": [
+                "doucement",
+                "gently",
+                "d"
+              ],
+              "blocked": [
+                "bouché",
+                "blocked",
+                "a"
+              ],
+              "crackling": [
+                "grésillait",
+                "crackle",
+                "v",
+                "grésiller"
+              ],
+              "might": [
+                "aurait pu",
+                "might",
+                "v",
+                "pouvoir"
+              ],
+              "have": [
+                "(might have : aurait pu)",
+                "have",
+                "v"
+              ],
+              "been": [
+                "arriver à",
+                "be",
+                "v",
+                "être"
+              ],
+              "anyone": [
+                "n'importe qui",
+                "anyone",
+                "p"
+              ],
+              "it's": [
+                "c'est",
+                "it",
+                "p"
+              ],
+              "it": [
+                "cela",
+                "it",
+                "p"
+              ],
+              "nose": [
+                "nez",
+                "nose",
+                "n"
+              ],
+              "your": [
+                "ton",
+                "your",
+                "t"
+              ],
+              "headset": [
+                "casque",
+                "headset",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "“It wasn’t anyone. It was me.” He lowered his hands. “If I had listened to you, none of this would have happened.”",
+            "fr": "« Ce n’était pas n’importe qui. C’était moi. » Il baissa les mains. « Si je t’avais écoutée, rien de tout cela ne serait arrivé. »",
+            "g": {
+              "wasn't": [
+                "n'était pas",
+                "be",
+                "v",
+                "être"
+              ],
+              "anyone": [
+                "n'importe qui",
+                "anyone",
+                "p"
+              ],
+              "was": [
+                "c'était",
+                "be",
+                "v",
+                "être"
+              ],
+              "lowered": [
+                "baissa",
+                "lower",
+                "v",
+                "baisser"
+              ],
+              "hands": [
+                "mains",
+                "hand",
+                "n",
+                "main"
+              ],
+              "had": [
+                "avais",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "listened": [
+                "écoutée",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "to": [
+                "(listened to : écoutée)",
+                "to",
+                "r"
+              ],
+              "none": [
+                "rien",
+                "none",
+                "p"
+              ],
+              "this": [
+                "cela",
+                "this",
+                "p"
+              ],
+              "would": [
+                "ne serait",
+                "would",
+                "v",
+                "devoir"
+              ],
+              "have": [
+                "(would have happened : serait arrivé)",
+                "have",
+                "v"
+              ],
+              "happened": [
+                "arrivé",
+                "happen",
+                "v",
+                "arriver"
+              ],
+              "it": [
+                "c'",
+                "it",
+                "p"
+              ],
+              "me": [
+                "moi",
+                "me",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“And if I had pressed the button, it wouldn’t have happened either,” said Inès. “Let’s not count who is guilty. Let’s fix it.”",
+            "fr": "« Et si j’avais appuyé sur le bouton, cela ne serait pas arrivé non plus, dit Inès. Ne comptons pas qui est coupable. Réparons ça. »",
+            "g": {
+              "had": [
+                "avais",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "pressed": [
+                "appuyé",
+                "press",
+                "v",
+                "appuyer"
+              ],
+              "button": [
+                "bouton",
+                "button",
+                "n"
+              ],
+              "wouldn't": [
+                "ne serait pas",
+                "would",
+                "v",
+                "devoir"
+              ],
+              "have": [
+                "(wouldn't have : ne serait pas)",
+                "have",
+                "v"
+              ],
+              "happened": [
+                "arrivé",
+                "happen",
+                "v",
+                "arriver"
+              ],
+              "either": [
+                "non plus",
+                "either",
+                "d"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "let's": [
+                "ne comptons pas",
+                "let's",
+                "v"
+              ],
+              "let's#2": [
+                "réparons",
+                "let's",
+                "v"
+              ],
+              "count": [
+                "comptons",
+                "count",
+                "v",
+                "compter"
+              ],
+              "guilty": [
+                "coupable",
+                "guilty",
+                "a"
+              ],
+              "fix": [
+                "réparer",
+                "fix",
+                "v"
+              ],
+              "it": [
+                "ça",
+                "it",
+                "p"
+              ],
+              "who": [
+                "qui",
+                "who",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "The door swung open. Priya stood there, her phone still in her hand. “Norvane’s delegation has just asked for a plane at ten tomorrow morning. They think Kessaly has been playing games. Will somebody tell me what went wrong?”",
+            "fr": "La porte s’ouvrit à la volée. Priya se tenait là, son téléphone encore à la main. « La délégation de la Norvane vient de demander un avion pour dix heures demain matin. Ils pensent que Kessaly leur joue des tours. Quelqu’un peut-il me dire ce qui a mal tourné ? »",
+            "g": {
+              "swung": [
+                "s'ouvrit à la volée",
+                "swing",
+                "v",
+                "se balancer"
+              ],
+              "open": [
+                "(swung open : s'ouvrit à la volée)",
+                "open",
+                "a"
+              ],
+              "stood": [
+                "se tenait",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "has": [
+                "vient de",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "just": [
+                "(has just : vient de)",
+                "just",
+                "d"
+              ],
+              "asked": [
+                "demander",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "plane": [
+                "avion",
+                "plane",
+                "n"
+              ],
+              "at": [
+                "pour",
+                "at",
+                "r"
+              ],
+              "tomorrow": [
+                "demain",
+                "tomorrow",
+                "d"
+              ],
+              "morning": [
+                "matin",
+                "morning",
+                "n"
+              ],
+              "think": [
+                "pensent",
+                "think",
+                "v",
+                "penser"
+              ],
+              "been": [
+                "(has been playing : joue)",
+                "be",
+                "v"
+              ],
+              "playing": [
+                "joue des tours",
+                "play",
+                "v",
+                "jouer"
+              ],
+              "games": [
+                "(playing games : jouer des tours)",
+                "game",
+                "n",
+                "jeu"
+              ],
+              "will": [
+                "peut",
+                "will",
+                "v"
+              ],
+              "tell": [
+                "dire",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "went": [
+                "a mal tourné (went wrong)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "wrong": [
+                "(went wrong : a mal tourné)",
+                "wrong",
+                "a"
+              ],
+              "what": [
+                "ce qui",
+                "what",
+                "p"
+              ],
+              "norvane's": [
+                "de la Norvane",
+                "Norvane",
+                "np"
+              ],
+              "delegation": [
+                "délégation",
+                "delegation",
+                "n"
+              ],
+              "kessaly": [
+                "Kessaly (pays)",
+                "Kessaly",
+                "np"
+              ],
+              "somebody": [
+                "quelqu'un",
+                "somebody",
+                "p"
+              ],
+              "priya": [
+                "Priya",
+                "Priya",
+                "np"
+              ],
+              "phone": [
+                "téléphone",
+                "phone",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "They told her. Priya listened with her arms crossed, and when they had finished, she let out a long breath.",
+            "fr": "Ils lui racontèrent. Priya écouta les bras croisés, et quand ils eurent fini, elle laissa échapper un long soupir.",
+            "g": {
+              "told": [
+                "racontèrent",
+                "tell",
+                "v",
+                "raconter"
+              ],
+              "listened": [
+                "écouta",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "arms": [
+                "bras",
+                "arm",
+                "n",
+                "bras"
+              ],
+              "crossed": [
+                "croisés",
+                "crossed",
+                "a"
+              ],
+              "finished": [
+                "eurent fini",
+                "finish",
+                "v",
+                "finir"
+              ],
+              "had": [
+                "(had finished : eurent fini)",
+                "have",
+                "v"
+              ],
+              "let": [
+                "laissa échapper (let out)",
+                "let",
+                "v",
+                "laisser"
+              ],
+              "out": [
+                "(let out : laissa échapper)",
+                "out",
+                "x"
+              ],
+              "breath": [
+                "soupir",
+                "breath",
+                "n"
+              ],
+              "long": [
+                "long",
+                "long",
+                "a"
+              ],
+              "when": [
+                "quand",
+                "when",
+                "c"
+              ],
+              "priya": [
+                "Priya",
+                "Priya",
+                "np"
+              ]
+            }
+          },
+          {
+            "en": "“Interpreters do not take part in negotiations. We are the bridge, not the traffic. But there is one thing we may do: correct our own mistakes, openly, through the chairman.”",
+            "fr": "« Les interprètes ne participent pas aux négociations. Nous sommes le pont, pas la circulation. Mais il y a une chose que nous pouvons faire : corriger nos propres erreurs, ouvertement, par l’intermédiaire du président. »",
+            "g": {
+              "take": [
+                "participent",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "part": [
+                "(take part : participent)",
+                "part",
+                "n"
+              ],
+              "negotiations": [
+                "négociations",
+                "negotiation",
+                "n",
+                "négociation"
+              ],
+              "bridge": [
+                "pont",
+                "bridge",
+                "n"
+              ],
+              "traffic": [
+                "circulation",
+                "traffic",
+                "n"
+              ],
+              "but": [
+                "mais",
+                "but",
+                "c"
+              ],
+              "may": [
+                "pouvons",
+                "may",
+                "v",
+                "pouvoir"
+              ],
+              "correct": [
+                "corriger",
+                "correct",
+                "v"
+              ],
+              "own": [
+                "propres",
+                "own",
+                "a"
+              ],
+              "mistakes": [
+                "erreurs",
+                "mistake",
+                "n",
+                "erreur"
+              ],
+              "openly": [
+                "ouvertement",
+                "openly",
+                "d"
+              ],
+              "through": [
+                "par l'intermédiaire de",
+                "through",
+                "r"
+              ],
+              "chairman": [
+                "président",
+                "chairman",
+                "n"
+              ],
+              "one": [
+                "une",
+                "one",
+                "t"
+              ],
+              "thing": [
+                "chose",
+                "thing",
+                "n"
+              ],
+              "do": [
+                "(do not : ne… pas)",
+                "do",
+                "v"
+              ],
+              "not#2": [
+                "pas",
+                "not",
+                "d"
+              ],
+              "interpreters": [
+                "interprètes",
+                "interpreter",
+                "n",
+                "interprète"
+              ],
+              "do#2": [
+                "faire",
+                "do",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Then I’ll do it,” said Tomasz at once. “First thing tomorrow.”",
+            "fr": "« Alors je le ferai, dit Tomasz aussitôt. Dès demain matin. »",
+            "g": {
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "at": [
+                "(at once : aussitôt)",
+                "at",
+                "r"
+              ],
+              "once": [
+                "aussitôt",
+                "once",
+                "d"
+              ],
+              "first": [
+                "dès",
+                "first",
+                "a"
+              ],
+              "thing": [
+                "(first thing : dès)",
+                "thing",
+                "n"
+              ],
+              "tomorrow": [
+                "demain matin",
+                "tomorrow",
+                "d"
+              ],
+              "then": [
+                "alors",
+                "then",
+                "d"
+              ],
+              "i'll": [
+                "je",
+                "I",
+                "p"
+              ],
+              "it": [
+                "le",
+                "it",
+                "p"
+              ],
+              "do": [
+                "ferai",
+                "do",
+                "v",
+                "faire"
+              ]
+            }
+          },
+          {
+            "en": "“Too late,” said Priya. “By tomorrow morning Ms Lund will be at the airport. And without proof, it will be your word against what everybody heard with their own ears.”",
+            "fr": "« Trop tard, dit Priya. Demain matin, Mme Lund sera à l’aéroport. Et sans preuve, ce sera votre parole contre ce que tout le monde a entendu de ses propres oreilles. »",
+            "g": {
+              "too": [
+                "trop",
+                "too",
+                "d"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "by": [
+                "(by tomorrow : demain)",
+                "by",
+                "r"
+              ],
+              "morning": [
+                "matin",
+                "morning",
+                "n"
+              ],
+              "airport": [
+                "aéroport",
+                "airport",
+                "n"
+              ],
+              "proof": [
+                "preuve",
+                "proof",
+                "n"
+              ],
+              "word": [
+                "parole",
+                "word",
+                "n"
+              ],
+              "against": [
+                "contre",
+                "against",
+                "r"
+              ],
+              "heard": [
+                "a entendu",
+                "hear",
+                "v",
+                "entendre"
+              ],
+              "own": [
+                "propres",
+                "own",
+                "a"
+              ],
+              "ears": [
+                "oreilles",
+                "ear",
+                "n",
+                "oreille"
+              ],
+              "everybody": [
+                "tout le monde",
+                "everybody",
+                "p"
+              ],
+              "will": [
+                "sera",
+                "will",
+                "v"
+              ],
+              "it": [
+                "ce",
+                "it",
+                "p"
+              ],
+              "their": [
+                "ses",
+                "their",
+                "t"
+              ],
+              "ms": [
+                "Mme",
+                "Ms",
+                "n"
+              ],
+              "lund": [
+                "Lund",
+                "Lund",
+                "np"
+              ],
+              "late": [
+                "tard",
+                "late",
+                "a"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "titre": "Chapter 5 — The Recording",
+      "titreFr": "Chapitre 5 — L'enregistrement",
+      "p": [
+        [
+          {
+            "en": "“Proof,” Inès repeated, and slowly something came back to her.",
+            "fr": "« Une preuve », répéta Inès, et peu à peu un souvenir lui revint.",
+            "g": {
+              "repeated": [
+                "répéta",
+                "repeat",
+                "v",
+                "répéter"
+              ],
+              "slowly": [
+                "peu à peu",
+                "slowly",
+                "d"
+              ],
+              "something": [
+                "un souvenir",
+                "something",
+                "p"
+              ],
+              "came": [
+                "revint",
+                "come",
+                "v",
+                "venir"
+              ],
+              "back": [
+                "(came back : revint)",
+                "back",
+                "x"
+              ],
+              "proof": [
+                "une preuve",
+                "proof",
+                "n"
+              ],
+              "inès": [
+                "Inès",
+                "Inès",
+                "np"
+              ]
+            }
+          },
+          {
+            "en": "On her first morning, a technician had pointed at a tiny red light above the booth window. “Everything said in this hall is recorded,” he had told her, “every language, every channel, for the official minutes.”",
+            "fr": "Le premier matin, un technicien lui avait montré un minuscule voyant rouge au-dessus de la vitre de la cabine. « Tout ce qui est dit dans cette salle est enregistré, lui avait-il expliqué, toutes les langues, tous les canaux, pour le procès-verbal officiel. »",
+            "g": {
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "pointed": [
+                "montré",
+                "point",
+                "v",
+                "montrer"
+              ],
+              "at": [
+                "(pointed at : montré)",
+                "at",
+                "r"
+              ],
+              "light": [
+                "voyant",
+                "light",
+                "n"
+              ],
+              "above": [
+                "au-dessus de",
+                "above",
+                "r"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "recorded": [
+                "enregistré",
+                "record",
+                "v",
+                "enregistrer"
+              ],
+              "told": [
+                "expliqué",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "channel": [
+                "canaux",
+                "channel",
+                "n"
+              ],
+              "every": [
+                "toutes",
+                "every",
+                "t"
+              ],
+              "every#2": [
+                "tous",
+                "every",
+                "t"
+              ],
+              "official": [
+                "officiel",
+                "official",
+                "a"
+              ],
+              "minutes": [
+                "procès-verbal",
+                "minutes",
+                "n"
+              ],
+              "technician": [
+                "technicien",
+                "technician",
+                "n"
+              ],
+              "first": [
+                "premier",
+                "first",
+                "a"
+              ],
+              "tiny": [
+                "minuscule",
+                "tiny",
+                "a"
+              ],
+              "language": [
+                "langues",
+                "language",
+                "n",
+                "langue"
+              ],
+              "for": [
+                "pour",
+                "for",
+                "r"
+              ],
+              "on": [
+                "le",
+                "on",
+                "r"
+              ],
+              "red": [
+                "rouge",
+                "red",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "She jumped to her feet. “Tomasz, where do those recordings go?”",
+            "fr": "Elle se leva d’un bond. « Tomasz, où vont ces enregistrements ? »",
+            "g": {
+              "jumped": [
+                "se leva d'un bond (jumped to her feet)",
+                "jump",
+                "v",
+                "bondir"
+              ],
+              "to": [
+                "(jumped to her feet : se leva d'un bond)",
+                "to",
+                "r"
+              ],
+              "feet": [
+                "(jumped to her feet : se leva d'un bond)",
+                "foot",
+                "n",
+                "pied"
+              ],
+              "where": [
+                "où",
+                "where",
+                "d"
+              ],
+              "those": [
+                "ces",
+                "those",
+                "t"
+              ],
+              "recordings": [
+                "enregistrements",
+                "recording",
+                "n",
+                "enregistrement"
+              ],
+              "go": [
+                "vont",
+                "go",
+                "v",
+                "aller"
+              ],
+              "do": [
+                "(auxiliaire de question : ne se traduit pas)",
+                "do",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "Ten minutes later they were in a windowless room in the basement, where cables hung from the ceiling like vines and a young man with headphones round his neck was eating an apple.",
+            "fr": "Dix minutes plus tard, ils se trouvaient dans une pièce sans fenêtre au sous-sol, où des câbles pendaient du plafond comme des lianes et un jeune homme, des écouteurs autour du cou, mangeait une pomme.",
+            "g": {
+              "later": [
+                "plus tard",
+                "later",
+                "d"
+              ],
+              "windowless": [
+                "sans fenêtre",
+                "windowless",
+                "a"
+              ],
+              "basement": [
+                "sous-sol",
+                "basement",
+                "n"
+              ],
+              "cables": [
+                "câbles",
+                "cable",
+                "n",
+                "câble"
+              ],
+              "hung": [
+                "pendaient",
+                "hang",
+                "v",
+                "pendre"
+              ],
+              "ceiling": [
+                "plafond",
+                "ceiling",
+                "n"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "vines": [
+                "lianes",
+                "vine",
+                "n",
+                "liane"
+              ],
+              "headphones": [
+                "des écouteurs",
+                "headphones",
+                "n"
+              ],
+              "round": [
+                "autour de",
+                "round",
+                "r"
+              ],
+              "neck": [
+                "cou",
+                "neck",
+                "n"
+              ],
+              "eating": [
+                "mangeait",
+                "eat",
+                "v",
+                "manger"
+              ],
+              "apple": [
+                "pomme",
+                "apple",
+                "n"
+              ],
+              "where": [
+                "où",
+                "where",
+                "c"
+              ],
+              "was": [
+                "(was eating : mangeait)",
+                "be",
+                "v"
+              ],
+              "room": [
+                "pièce",
+                "room",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“I’m Leo,” he said. “Let me guess. Somebody has said something they regret.”",
+            "fr": "« Je m’appelle Leo, dit-il. Laissez-moi deviner. Quelqu’un a dit quelque chose qu’il regrette. »",
+            "g": {
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "said#2": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "let": [
+                "laissez",
+                "let",
+                "v",
+                "laisser"
+              ],
+              "me": [
+                "-moi",
+                "me",
+                "p"
+              ],
+              "guess": [
+                "deviner",
+                "guess",
+                "v"
+              ],
+              "regret": [
+                "regrette",
+                "regret",
+                "v",
+                "regretter"
+              ],
+              "somebody": [
+                "quelqu'un",
+                "somebody",
+                "p"
+              ],
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "they": [
+                "il",
+                "they",
+                "p"
+              ],
+              "i'm": [
+                "je m'appelle",
+                "I",
+                "p"
+              ],
+              "leo": [
+                "Leo (prénom)",
+                "Leo",
+                "np"
+              ]
+            }
+          },
+          {
+            "en": "“Sort of,” said Inès. “We need this afternoon’s session: the Kessalic floor channel and the English channel, side by side.”",
+            "fr": "« En quelque sorte, dit Inès. Il nous faut la séance de cet après-midi : le canal kessalique de la salle et le canal anglais, côte à côte. »",
+            "g": {
+              "sort": [
+                "en quelque sorte",
+                "sort",
+                "n"
+              ],
+              "of": [
+                "(sort of : en quelque sorte)",
+                "of",
+                "r"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "need": [
+                "faut",
+                "need",
+                "v",
+                "avoir besoin"
+              ],
+              "floor": [
+                "de la salle",
+                "floor",
+                "n"
+              ],
+              "channel": [
+                "canal",
+                "channel",
+                "n"
+              ],
+              "channel#2": [
+                "canal",
+                "channel",
+                "n"
+              ],
+              "side": [
+                "côte",
+                "side",
+                "n"
+              ],
+              "by": [
+                "à (side by side : côte à côte)",
+                "by",
+                "r"
+              ],
+              "side#2": [
+                "côte",
+                "side",
+                "n"
+              ],
+              "kessalic": [
+                "kessalique",
+                "Kessalic",
+                "a"
+              ],
+              "english": [
+                "anglais",
+                "English",
+                "a"
+              ],
+              "this": [
+                "(this afternoon’s : de cet après-midi)",
+                "this",
+                "t"
+              ],
+              "session": [
+                "séance",
+                "session",
+                "n"
+              ],
+              "afternoon's": [
+                "de cet après-midi",
+                "afternoon",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Leo whistled. “The archive is slow. Give me a few hours.”",
+            "fr": "Leo siffla. « L’archive est lente. Donnez-moi quelques heures. »",
+            "g": {
+              "whistled": [
+                "siffla",
+                "whistle",
+                "v",
+                "siffler"
+              ],
+              "archive": [
+                "archive",
+                "archive",
+                "n"
+              ],
+              "slow": [
+                "lente",
+                "slow",
+                "a"
+              ],
+              "give": [
+                "donnez",
+                "give",
+                "v",
+                "donner"
+              ],
+              "me": [
+                "-moi",
+                "me",
+                "p"
+              ],
+              "a": [
+                "(a few : quelques)",
+                "a",
+                "t"
+              ],
+              "few": [
+                "quelques",
+                "few",
+                "t"
+              ],
+              "hours": [
+                "heures",
+                "hour",
+                "n",
+                "heure"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "So they waited. Tomasz sat on an upturned crate, unscrewed his thermos and, for the first time, almost laughed.",
+            "fr": "Alors ils attendirent. Tomasz s’assit sur une caisse retournée, dévissa sa thermos et, pour la première fois, faillit rire.",
+            "g": {
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ],
+              "waited": [
+                "attendirent",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "sat": [
+                "s'assit",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "upturned": [
+                "retournée",
+                "upturned",
+                "a"
+              ],
+              "crate": [
+                "caisse",
+                "crate",
+                "n"
+              ],
+              "unscrewed": [
+                "dévissa",
+                "unscrew",
+                "v",
+                "dévisser"
+              ],
+              "thermos": [
+                "thermos",
+                "thermos",
+                "n"
+              ],
+              "time": [
+                "fois",
+                "time",
+                "n"
+              ],
+              "first": [
+                "première",
+                "first",
+                "a"
+              ],
+              "almost": [
+                "faillit",
+                "almost",
+                "d"
+              ],
+              "laughed": [
+                "rire",
+                "laugh",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Twenty years ago, I told a room full of professors that the river had three daughters instead of three tributaries,” he said. “They never forgave me.”",
+            "fr": "« Il y a vingt ans, j’ai dit à une salle pleine de professeurs que le fleuve avait trois filles au lieu de trois affluents, dit-il. Ils ne m’ont jamais pardonné. »",
+            "g": {
+              "ago": [
+                "il y a",
+                "ago",
+                "d"
+              ],
+              "told": [
+                "ai dit",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "full": [
+                "pleine",
+                "full",
+                "a"
+              ],
+              "professors": [
+                "professeurs",
+                "professor",
+                "n",
+                "professeur"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "daughters": [
+                "filles",
+                "daughter",
+                "n",
+                "fille"
+              ],
+              "instead": [
+                "au lieu de",
+                "instead",
+                "d"
+              ],
+              "of": [
+                "(full of : pleine de)",
+                "of",
+                "r"
+              ],
+              "tributaries": [
+                "affluents",
+                "tributary",
+                "n",
+                "affluent"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "forgave": [
+                "ont pardonné",
+                "forgive",
+                "v",
+                "pardonner"
+              ],
+              "never": [
+                "jamais",
+                "never",
+                "d"
+              ],
+              "river": [
+                "fleuve",
+                "river",
+                "n"
+              ],
+              "three": [
+                "trois",
+                "three",
+                "a"
+              ],
+              "three#2": [
+                "trois",
+                "three",
+                "a"
+              ],
+              "room": [
+                "salle",
+                "room",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Did you get over it?” asked Inès.",
+            "fr": "« Vous vous en êtes remis ? » demanda Inès.",
+            "g": {
+              "get": [
+                "êtes remis (get over)",
+                "get",
+                "v",
+                "devenir"
+              ],
+              "over": [
+                "(get over : êtes remis)",
+                "over",
+                "x"
+              ],
+              "it": [
+                "en",
+                "it",
+                "p"
+              ],
+              "asked": [
+                "demanda",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "did": [
+                "(auxiliaire de question : ne se traduit pas)",
+                "do",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Yes, because I owned up to it straight away. Nobody ever got over a mistake by hiding it.”",
+            "fr": "« Oui, parce que je l’ai reconnu tout de suite. Personne ne s’est jamais remis d’une erreur en la cachant. »",
+            "g": {
+              "owned": [
+                "ai reconnu",
+                "own",
+                "v",
+                "posséder"
+              ],
+              "up": [
+                "(owned up : ai reconnu)",
+                "up",
+                "x"
+              ],
+              "to": [
+                "(owned up to : reconnaître)",
+                "to",
+                "r"
+              ],
+              "it": [
+                "l'",
+                "it",
+                "p"
+              ],
+              "straight": [
+                "tout de suite",
+                "straight",
+                "d"
+              ],
+              "away": [
+                "(straight away : tout de suite)",
+                "away",
+                "d"
+              ],
+              "got": [
+                "s'est remis",
+                "get",
+                "v",
+                "obtenir"
+              ],
+              "over": [
+                "(got over : se remettre de)",
+                "over",
+                "r"
+              ],
+              "hiding": [
+                "cachant",
+                "hide",
+                "v",
+                "cacher"
+              ],
+              "by": [
+                "en",
+                "by",
+                "r"
+              ],
+              "it#2": [
+                "la",
+                "it",
+                "p"
+              ],
+              "ever": [
+                "jamais",
+                "ever",
+                "d"
+              ],
+              "mistake": [
+                "erreur",
+                "mistake",
+                "n"
+              ],
+              "because": [
+                "parce que",
+                "because",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "At eleven o’clock that night, Leo’s voice rang out: “Got it!”",
+            "fr": "À onze heures, ce soir-là, la voix de Leo retentit : « Je l’ai ! »",
+            "g": {
+              "o'clock": [
+                "heures",
+                "o'clock",
+                "d"
+              ],
+              "eleven": [
+                "onze",
+                "eleven",
+                "a"
+              ],
+              "rang": [
+                "retentit",
+                "ring",
+                "v",
+                "retentir"
+              ],
+              "out": [
+                "(rang out : retentit)",
+                "out",
+                "x"
+              ],
+              "got": [
+                "ai",
+                "get",
+                "v",
+                "obtenir"
+              ],
+              "it": [
+                "l'",
+                "it",
+                "p"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ],
+              "leo's": [
+                "de Leo",
+                "Leo",
+                "np"
+              ],
+              "that": [
+                "ce soir-là (that night)",
+                "that",
+                "t"
+              ],
+              "night": [
+                "(that night : ce soir-là)",
+                "night",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "First came Mr Karimov’s voice, slow and heavy. “Tarun,” he said. Below. A heartbeat later, Tomasz’s English followed: “...never run above forty...”",
+            "fr": "D’abord vint la voix de M. Karimov, lente et grave. « Tarun », dit-il. En dessous. Un battement de cœur plus tard, l’anglais de Tomasz suivit : « ... ne doit jamais couler au-dessus de quarante... »",
+            "g": {
+              "first": [
+                "d'abord",
+                "first",
+                "d"
+              ],
+              "came": [
+                "vint",
+                "come",
+                "v",
+                "venir"
+              ],
+              "heavy": [
+                "grave",
+                "heavy",
+                "a"
+              ],
+              "slow": [
+                "lente",
+                "slow",
+                "a"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "later": [
+                "plus tard",
+                "later",
+                "d"
+              ],
+              "followed": [
+                "suivit",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "run": [
+                "couler",
+                "run",
+                "v",
+                "couler"
+              ],
+              "never": [
+                "ne… jamais",
+                "never",
+                "d"
+              ],
+              "above": [
+                "au-dessus de",
+                "above",
+                "r"
+              ],
+              "below": [
+                "en dessous",
+                "below",
+                "r"
+              ],
+              "tarun": [
+                "Tarun (« en dessous »)",
+                "tarun",
+                "n"
+              ],
+              "heartbeat": [
+                "battement de cœur",
+                "heartbeat",
+                "n"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ],
+              "karimov's": [
+                "de M. Karimov",
+                "Karimov",
+                "np"
+              ],
+              "tomasz's": [
+                "de Tomasz",
+                "Tomasz",
+                "np"
+              ],
+              "english": [
+                "anglais",
+                "English",
+                "n"
+              ],
+              "forty": [
+                "quarante",
+                "forty",
+                "a"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Nobody spoke. “There it is,” said Tomasz hoarsely.",
+            "fr": "Personne ne parla. « Voilà », dit Tomasz d’une voix rauque.",
+            "g": {
+              "spoke": [
+                "parla",
+                "speak",
+                "v",
+                "parler"
+              ],
+              "there": [
+                "voilà",
+                "there",
+                "d"
+              ],
+              "it": [
+                "(there it is : voilà)",
+                "it",
+                "p"
+              ],
+              "is": [
+                "(there it is : voilà)",
+                "is",
+                "v"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "hoarsely": [
+                "d'une voix rauque",
+                "hoarsely",
+                "d"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Leo saved a short clip with the two voices side by side. “Anyone with ears can hear it,” he said, “but proof only helps if the right people listen.”",
+            "fr": "Leo enregistra un court extrait avec les deux voix côte à côte. « N’importe qui ayant des oreilles peut l’entendre, dit-il, mais une preuve ne sert que si les bonnes personnes l’écoutent. »",
+            "g": {
+              "saved": [
+                "enregistra",
+                "save",
+                "v",
+                "enregistrer"
+              ],
+              "short": [
+                "court",
+                "short",
+                "a"
+              ],
+              "clip": [
+                "extrait",
+                "clip",
+                "n"
+              ],
+              "voices": [
+                "voix",
+                "voice",
+                "n",
+                "voix"
+              ],
+              "side": [
+                "côte",
+                "side",
+                "n"
+              ],
+              "side#2": [
+                "côte",
+                "side",
+                "n"
+              ],
+              "by": [
+                "à (côte à côte)",
+                "by",
+                "r"
+              ],
+              "anyone": [
+                "n'importe qui",
+                "anyone",
+                "p"
+              ],
+              "ears": [
+                "oreilles",
+                "ear",
+                "n",
+                "oreille"
+              ],
+              "hear": [
+                "entendre",
+                "hear",
+                "v"
+              ],
+              "it": [
+                "l'",
+                "it",
+                "p"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "only": [
+                "ne… que",
+                "only",
+                "d"
+              ],
+              "helps": [
+                "sert",
+                "help",
+                "v",
+                "aider"
+              ],
+              "right": [
+                "bonnes",
+                "right",
+                "a"
+              ],
+              "listen": [
+                "écoutent",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "proof": [
+                "preuve",
+                "proof",
+                "n"
+              ],
+              "two": [
+                "deux",
+                "two",
+                "a"
+              ],
+              "with": [
+                "ayant",
+                "with",
+                "r"
+              ],
+              "but": [
+                "mais",
+                "but",
+                "c"
+              ],
+              "if": [
+                "si",
+                "if",
+                "c"
+              ],
+              "people": [
+                "personnes",
+                "person",
+                "n",
+                "personne"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "titre": "Chapter 6 — Five Minutes",
+      "titreFr": "Chapitre 6 — Cinq minutes",
+      "p": [
+        [
+          {
+            "en": "It was nearly midnight when Inès wrote to Leyla: “We have a recording. Please ask Mr Karimov to listen.”",
+            "fr": "Il était presque minuit quand Inès écrivit à Leyla : « Nous avons un enregistrement. Demandez à M. Karimov de l’écouter, s’il vous plaît. »",
+            "g": {
+              "nearly": [
+                "presque",
+                "nearly",
+                "d"
+              ],
+              "midnight": [
+                "minuit",
+                "midnight",
+                "n"
+              ],
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "to": [
+                "à",
+                "to",
+                "r"
+              ],
+              "to#2": [
+                "de",
+                "to",
+                "x"
+              ],
+              "recording": [
+                "enregistrement",
+                "recording",
+                "n"
+              ],
+              "please": [
+                "s'il vous plaît",
+                "please",
+                "d"
+              ],
+              "ask": [
+                "demandez",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ],
+              "karimov": [
+                "Karimov",
+                "Karimov",
+                "np"
+              ],
+              "listen": [
+                "l'écouter",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "leyla": [
+                "Leyla",
+                "Leyla",
+                "np"
+              ],
+              "when": [
+                "quand",
+                "when",
+                "c"
+              ],
+              "inès": [
+                "Inès",
+                "Inès",
+                "np"
+              ]
+            }
+          },
+          {
+            "en": "The answer came back within a minute. “He won’t open his door. He says the interpreter is the last person on earth he wants to see. His car leaves at half past eight.”",
+            "fr": "La réponse arriva en moins d’une minute. « Il ne veut pas ouvrir sa porte. Il dit que l’interprète est la dernière personne au monde qu’il veut voir. Sa voiture part à huit heures et demie. »",
+            "g": {
+              "answer": [
+                "réponse",
+                "answer",
+                "n"
+              ],
+              "came": [
+                "arriva",
+                "come",
+                "v",
+                "venir"
+              ],
+              "back": [
+                "(came back : arriva)",
+                "back",
+                "x"
+              ],
+              "within": [
+                "en moins de",
+                "within",
+                "r"
+              ],
+              "won't": [
+                "ne veut pas",
+                "won't",
+                "v"
+              ],
+              "open": [
+                "ouvrir",
+                "open",
+                "v",
+                "ouvrir"
+              ],
+              "says": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "last": [
+                "dernière",
+                "last",
+                "a"
+              ],
+              "person": [
+                "personne",
+                "person",
+                "n"
+              ],
+              "earth": [
+                "monde",
+                "earth",
+                "n"
+              ],
+              "on": [
+                "(on earth : au monde)",
+                "on",
+                "r"
+              ],
+              "wants": [
+                "veut",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "see": [
+                "voir",
+                "see",
+                "v"
+              ],
+              "leaves": [
+                "part",
+                "leave",
+                "v",
+                "partir"
+              ],
+              "half": [
+                "et demie",
+                "half",
+                "n"
+              ],
+              "past": [
+                "(half past : et demie)",
+                "past",
+                "r"
+              ],
+              "car": [
+                "voiture",
+                "car",
+                "n"
+              ],
+              "door": [
+                "porte",
+                "door",
+                "n"
+              ],
+              "minute": [
+                "minute",
+                "minute",
+                "n"
+              ],
+              "he": [
+                "il",
+                "he",
+                "p"
+              ],
+              "his": [
+                "sa",
+                "his",
+                "t"
+              ],
+              "his#2": [
+                "sa",
+                "his",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "Inès stared at her phone. “Then we start with the other side.”",
+            "fr": "Inès fixa son téléphone. « Alors nous commençons par l’autre camp. »",
+            "g": {
+              "stared": [
+                "fixa",
+                "stare",
+                "v",
+                "fixer"
+              ],
+              "at": [
+                "(stared at : fixa)",
+                "at",
+                "r"
+              ],
+              "phone": [
+                "téléphone",
+                "phone",
+                "n"
+              ],
+              "then": [
+                "alors",
+                "then",
+                "d"
+              ],
+              "start": [
+                "commençons",
+                "start",
+                "v",
+                "commencer"
+              ],
+              "with": [
+                "par",
+                "with",
+                "r"
+              ],
+              "other": [
+                "autre",
+                "other",
+                "a"
+              ],
+              "side": [
+                "camp",
+                "side",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "At half past seven the next morning, the lobby looked like a railway station.",
+            "fr": "À sept heures et demie le lendemain matin, le hall ressemblait à une gare.",
+            "g": {
+              "half": [
+                "et demie",
+                "half",
+                "n"
+              ],
+              "past": [
+                "(half past : et demie)",
+                "past",
+                "r"
+              ],
+              "seven": [
+                "sept",
+                "seven",
+                "a"
+              ],
+              "next": [
+                "lendemain",
+                "next",
+                "a"
+              ],
+              "morning": [
+                "matin",
+                "morning",
+                "n"
+              ],
+              "looked": [
+                "ressemblait",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "like": [
+                "à",
+                "like",
+                "r"
+              ],
+              "railway": [
+                "(railway station : gare)",
+                "railway",
+                "a"
+              ],
+              "station": [
+                "(railway station : gare)",
+                "station",
+                "n"
+              ],
+              "lobby": [
+                "hall",
+                "lobby",
+                "n"
+              ],
+              "at": [
+                "à",
+                "at",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Norvane’s delegates stood in a line beside the revolving door, surrounded by suitcases, and Ms Lund, in a long grey coat, was checking her watch.",
+            "fr": "Les délégués de la Norvane se tenaient en ligne près de la porte tournante, entourés de valises, et Mme Lund, dans un long manteau gris, consultait sa montre.",
+            "g": {
+              "norvane's": [
+                "de la Norvane",
+                "Norvane",
+                "np"
+              ],
+              "delegates": [
+                "délégués",
+                "delegate",
+                "n",
+                "délégué"
+              ],
+              "stood": [
+                "se tenaient",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "line": [
+                "ligne",
+                "line",
+                "n"
+              ],
+              "beside": [
+                "près de",
+                "beside",
+                "r"
+              ],
+              "revolving": [
+                "tournante",
+                "revolving",
+                "a"
+              ],
+              "surrounded": [
+                "entourés",
+                "surround",
+                "v",
+                "entourer"
+              ],
+              "by": [
+                "de",
+                "by",
+                "r"
+              ],
+              "suitcases": [
+                "valises",
+                "suitcase",
+                "n",
+                "valise"
+              ],
+              "long": [
+                "long",
+                "long",
+                "a"
+              ],
+              "grey": [
+                "gris",
+                "grey",
+                "a"
+              ],
+              "coat": [
+                "manteau",
+                "coat",
+                "n"
+              ],
+              "checking": [
+                "consultait",
+                "check",
+                "v",
+                "vérifier"
+              ],
+              "watch": [
+                "montre",
+                "watch",
+                "n"
+              ],
+              "door": [
+                "porte",
+                "door",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Inès crossed the marble floor with Tomasz and Leo close behind her. Her knees felt like jelly.",
+            "fr": "Inès traversa le sol de marbre, Tomasz et Leo juste derrière elle. Ses genoux étaient en coton.",
+            "g": {
+              "crossed": [
+                "traversa",
+                "cross",
+                "v",
+                "traverser"
+              ],
+              "marble": [
+                "marbre",
+                "marble",
+                "n"
+              ],
+              "floor": [
+                "sol",
+                "floor",
+                "n"
+              ],
+              "close": [
+                "juste",
+                "close",
+                "d"
+              ],
+              "behind": [
+                "derrière",
+                "behind",
+                "r"
+              ],
+              "knees": [
+                "genoux",
+                "knee",
+                "n",
+                "genou"
+              ],
+              "felt": [
+                "étaient",
+                "feel",
+                "v",
+                "sentir"
+              ],
+              "like": [
+                "(felt like jelly : étaient en coton)",
+                "like",
+                "r"
+              ],
+              "jelly": [
+                "coton (felt like jelly : étaient en coton)",
+                "jelly",
+                "n"
+              ],
+              "with": [
+                "avec",
+                "with",
+                "r"
+              ],
+              "her": [
+                "elle",
+                "her",
+                "p"
+              ],
+              "her#2": [
+                "ses",
+                "her",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“Ms Lund? Five minutes. Please.”",
+            "fr": "« Madame Lund ? Cinq minutes. S’il vous plaît. »",
+            "g": {
+              "five": [
+                "cinq",
+                "five",
+                "a"
+              ],
+              "please": [
+                "s'il vous plaît",
+                "please",
+                "d"
+              ],
+              "ms": [
+                "Madame",
+                "Ms",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“You’re one of the interpreters.” Ms Lund did not look up from her watch. “I’m sorry, but I have a taxi in ten minutes and a government waiting for an explanation.”",
+            "fr": "« Vous êtes l’une des interprètes. » Mme Lund ne leva pas les yeux de sa montre. « Je suis désolée, mais j’ai un taxi dans dix minutes et un gouvernement qui attend une explication. »",
+            "g": {
+              "interpreters": [
+                "interprètes",
+                "interpreter",
+                "n",
+                "interprète"
+              ],
+              "look": [
+                "leva les yeux",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "up": [
+                "(look up : lever les yeux)",
+                "up",
+                "x"
+              ],
+              "from": [
+                "de",
+                "from",
+                "r"
+              ],
+              "sorry": [
+                "désolée",
+                "sorry",
+                "a"
+              ],
+              "taxi": [
+                "taxi",
+                "taxi",
+                "n"
+              ],
+              "in": [
+                "dans",
+                "in",
+                "r"
+              ],
+              "waiting": [
+                "qui attend",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "for": [
+                "(waiting for : attend)",
+                "for",
+                "r"
+              ],
+              "explanation": [
+                "explication",
+                "explanation",
+                "n"
+              ],
+              "government": [
+                "gouvernement",
+                "government",
+                "n"
+              ],
+              "but": [
+                "mais",
+                "but",
+                "c"
+              ],
+              "did": [
+                "(did not : ne… pas)",
+                "do",
+                "v"
+              ],
+              "i'm": [
+                "je suis",
+                "I",
+                "p"
+              ],
+              "one": [
+                "l'une",
+                "one",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“You said yes to something Mr Karimov never said,” said Inès. Her voice shook, but she did not look away.",
+            "fr": "« Vous avez dit oui à quelque chose que M. Karimov n’a jamais dit », déclara Inès. Sa voix tremblait, mais elle ne détourna pas les yeux.",
+            "g": {
+              "said": [
+                "avez dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "said#2": [
+                "a dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "something": [
+                "quelque chose",
+                "something",
+                "p"
+              ],
+              "never": [
+                "n'… jamais",
+                "never",
+                "d"
+              ],
+              "shook": [
+                "tremblait",
+                "shake",
+                "v",
+                "trembler"
+              ],
+              "look": [
+                "détourna",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "away": [
+                "(look away : détourner les yeux)",
+                "away",
+                "d"
+              ],
+              "yes": [
+                "oui",
+                "yes",
+                "d"
+              ],
+              "said#3": [
+                "déclara",
+                "say",
+                "v",
+                "dire"
+              ],
+              "but": [
+                "mais",
+                "but",
+                "c"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Ms Lund’s eyebrows rose. “That is a serious accusation against your own colleague.”",
+            "fr": "Les sourcils de Mme Lund se levèrent. « C’est une accusation grave contre votre propre collègue. »",
+            "g": {
+              "eyebrows": [
+                "sourcils",
+                "eyebrow",
+                "n",
+                "sourcil"
+              ],
+              "rose": [
+                "se levèrent",
+                "rise",
+                "v",
+                "se lever"
+              ],
+              "serious": [
+                "grave",
+                "serious",
+                "a"
+              ],
+              "accusation": [
+                "accusation",
+                "accusation",
+                "n"
+              ],
+              "against": [
+                "contre",
+                "against",
+                "r"
+              ],
+              "own": [
+                "propre",
+                "own",
+                "a"
+              ],
+              "colleague": [
+                "collègue",
+                "colleague",
+                "n"
+              ],
+              "that": [
+                "c'",
+                "that",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“I know,” said Tomasz, stepping forward. His eyes were red and he looked ten years older. “It was my mistake, Ms Lund. Not Mr Karimov’s, not Miss Marchetti’s. Mine. Let me prove it.”",
+            "fr": "« Je sais, dit Tomasz en s’avançant. Il avait les yeux rouges et paraissait avoir dix ans de plus. C’était mon erreur, madame Lund. Pas celle de M. Karimov, pas celle de Mlle Marchetti. La mienne. Laissez-moi le prouver. »",
+            "g": {
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "stepping": [
+                "en s'avançant",
+                "step",
+                "v",
+                "avancer"
+              ],
+              "forward": [
+                "(stepping forward : en s'avançant)",
+                "forward",
+                "d"
+              ],
+              "looked": [
+                "paraissait",
+                "look",
+                "v",
+                "paraître"
+              ],
+              "older": [
+                "de plus (ten years older)",
+                "old",
+                "a",
+                "vieux"
+              ],
+              "mistake": [
+                "erreur",
+                "mistake",
+                "n"
+              ],
+              "mine": [
+                "La mienne",
+                "mine",
+                "p"
+              ],
+              "let": [
+                "laissez",
+                "let",
+                "v",
+                "laisser"
+              ],
+              "me": [
+                "-moi",
+                "me",
+                "p"
+              ],
+              "prove": [
+                "prouver",
+                "prove",
+                "v"
+              ],
+              "it": [
+                "c'",
+                "it",
+                "p"
+              ],
+              "red": [
+                "rouges",
+                "red",
+                "a"
+              ],
+              "eyes": [
+                "yeux",
+                "eye",
+                "n",
+                "œil"
+              ],
+              "ten": [
+                "dix",
+                "ten",
+                "a"
+              ],
+              "years": [
+                "ans",
+                "year",
+                "n",
+                "an"
+              ],
+              "karimov's": [
+                "de M. Karimov",
+                "Karimov",
+                "np"
+              ],
+              "marchetti's": [
+                "de Mlle Marchetti",
+                "Marchetti",
+                "np"
+              ],
+              "miss": [
+                "Mlle",
+                "Miss",
+                "n"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ],
+              "not": [
+                "pas",
+                "not",
+                "d"
+              ],
+              "not#2": [
+                "pas",
+                "not",
+                "d"
+              ],
+              "ms": [
+                "madame",
+                "Ms",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Behind them, a porter’s trolley rattled past, and Norvane’s advisers stared at their shoes.",
+            "fr": "Derrière eux, un chariot de porteur passa en cliquetant, et les conseillers de la Norvane regardèrent leurs chaussures.",
+            "g": {
+              "behind": [
+                "derrière",
+                "behind",
+                "r"
+              ],
+              "porter's": [
+                "de porteur",
+                "porter",
+                "n"
+              ],
+              "trolley": [
+                "chariot",
+                "trolley",
+                "n"
+              ],
+              "rattled": [
+                "en cliquetant",
+                "rattle",
+                "v",
+                "cliqueter"
+              ],
+              "past": [
+                "passa",
+                "past",
+                "d"
+              ],
+              "norvane's": [
+                "de la Norvane",
+                "Norvane",
+                "np"
+              ],
+              "advisers": [
+                "conseillers",
+                "adviser",
+                "n",
+                "conseiller"
+              ],
+              "stared": [
+                "regardèrent fixement",
+                "stare",
+                "v",
+                "fixer"
+              ],
+              "at": [
+                "(stared at : regardèrent fixement)",
+                "at",
+                "r"
+              ],
+              "shoes": [
+                "chaussures",
+                "shoe",
+                "n",
+                "chaussure"
+              ]
+            }
+          },
+          {
+            "en": "Ms Lund studied the three of them for a long moment. Then she looked at her watch again. “You have five minutes. Not one more.”",
+            "fr": "Mme Lund les observa tous les trois un long moment. Puis elle regarda de nouveau sa montre. « Vous avez cinq minutes. Pas une de plus. »",
+            "g": {
+              "studied": [
+                "observa",
+                "study",
+                "v",
+                "observer"
+              ],
+              "long": [
+                "long",
+                "long",
+                "a"
+              ],
+              "moment": [
+                "moment",
+                "moment",
+                "n"
+              ],
+              "then": [
+                "puis",
+                "then",
+                "d"
+              ],
+              "looked": [
+                "regarda",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looked at : regarda)",
+                "at",
+                "r"
+              ],
+              "again": [
+                "de nouveau",
+                "again",
+                "d"
+              ],
+              "five": [
+                "cinq",
+                "five",
+                "a"
+              ],
+              "one": [
+                "une",
+                "one",
+                "p"
+              ],
+              "more": [
+                "de plus",
+                "more",
+                "d"
+              ],
+              "not": [
+                "pas",
+                "not",
+                "d"
+              ],
+              "three": [
+                "trois",
+                "three",
+                "a"
+              ],
+              "watch": [
+                "montre",
+                "watch",
+                "n"
+              ],
+              "them": [
+                "les",
+                "them",
+                "p"
+              ],
+              "minutes": [
+                "minutes",
+                "minute",
+                "n",
+                "minute"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Leo put his laptop on a luggage trolley and handed Ms Lund a pair of headphones.",
+            "fr": "Leo posa son ordinateur sur un chariot à bagages et tendit à Mme Lund une paire d’écouteurs.",
+            "g": {
+              "put": [
+                "posa",
+                "put",
+                "v",
+                "poser"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "luggage": [
+                "à bagages",
+                "luggage",
+                "n"
+              ],
+              "trolley": [
+                "chariot",
+                "trolley",
+                "n"
+              ],
+              "handed": [
+                "tendit",
+                "hand",
+                "v",
+                "tendre"
+              ],
+              "pair": [
+                "paire",
+                "pair",
+                "n"
+              ],
+              "of": [
+                "de",
+                "of",
+                "r"
+              ],
+              "headphones": [
+                "écouteurs",
+                "headphones",
+                "n"
+              ],
+              "laptop": [
+                "ordinateur",
+                "laptop",
+                "n"
+              ],
+              "leo": [
+                "Leo",
+                "Leo",
+                "np"
+              ],
+              "ms": [
+                "Mme",
+                "Ms",
+                "n"
+              ],
+              "lund": [
+                "Lund",
+                "Lund",
+                "np"
+              ],
+              "his": [
+                "son",
+                "his",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "She listened with her eyes closed. Mr Karimov’s voice, then Tomasz’s. Leo replayed it twice, more slowly, and a third time with the words on the screen: tarun, below.",
+            "fr": "Elle écouta les yeux fermés. La voix de M. Karimov, puis celle de Tomasz. Leo la repassa deux fois, plus lentement, puis une troisième fois avec les mots à l’écran : tarun, en dessous.",
+            "g": {
+              "listened": [
+                "écouta",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "with": [
+                "les",
+                "with",
+                "r"
+              ],
+              "eyes": [
+                "yeux",
+                "eye",
+                "n",
+                "œil"
+              ],
+              "closed": [
+                "fermés",
+                "closed",
+                "a"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ],
+              "then": [
+                "puis",
+                "then",
+                "d"
+              ],
+              "tomasz's": [
+                "celle de Tomasz",
+                "Tomasz",
+                "np"
+              ],
+              "replayed": [
+                "repassa",
+                "replay",
+                "v",
+                "repasser"
+              ],
+              "it": [
+                "la",
+                "it",
+                "p"
+              ],
+              "twice": [
+                "deux fois",
+                "twice",
+                "d"
+              ],
+              "more": [
+                "plus",
+                "more",
+                "d"
+              ],
+              "slowly": [
+                "lentement",
+                "slowly",
+                "d"
+              ],
+              "third": [
+                "troisième",
+                "third",
+                "a"
+              ],
+              "time": [
+                "fois",
+                "time",
+                "n"
+              ],
+              "words": [
+                "mots",
+                "word",
+                "n",
+                "mot"
+              ],
+              "screen": [
+                "écran",
+                "screen",
+                "n"
+              ],
+              "below": [
+                "en dessous",
+                "below",
+                "r"
+              ],
+              "tarun": [
+                "tarun",
+                "tarun",
+                "n"
+              ],
+              "on": [
+                "à",
+                "on",
+                "r"
+              ],
+              "karimov's": [
+                "de M. Karimov",
+                "Karimov",
+                "np"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "When she took the headphones off, her hands were not quite steady.",
+            "fr": "Quand elle ôta les écouteurs, ses mains n’étaient pas tout à fait fermes.",
+            "g": {
+              "took": [
+                "ôta",
+                "take",
+                "v",
+                "enlever"
+              ],
+              "off": [
+                "(took off : ôta)",
+                "off",
+                "x"
+              ],
+              "hands": [
+                "mains",
+                "hand",
+                "n",
+                "main"
+              ],
+              "steady": [
+                "fermes",
+                "steady",
+                "a"
+              ],
+              "quite": [
+                "tout à fait",
+                "quite",
+                "d"
+              ],
+              "not": [
+                "ne… pas",
+                "not",
+                "d"
+              ],
+              "headphones": [
+                "écouteurs",
+                "headphones",
+                "n"
+              ],
+              "when": [
+                "quand",
+                "when",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "“So for a whole day,” she said slowly, “I have been congratulating myself on an agreement that never existed. And he must have thought I was laughing at him.”",
+            "fr": "« Ainsi, pendant toute une journée, dit-elle lentement, je me suis félicitée d’un accord qui n’a jamais existé. Et il a dû croire que je me moquais de lui. »",
+            "g": {
+              "so": [
+                "ainsi",
+                "so",
+                "d"
+              ],
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "whole": [
+                "toute",
+                "whole",
+                "a"
+              ],
+              "day": [
+                "journée",
+                "day",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "slowly": [
+                "lentement",
+                "slowly",
+                "d"
+              ],
+              "have": [
+                "(have been congratulating : me suis félicitée)",
+                "have",
+                "v"
+              ],
+              "been": [
+                "(have been congratulating : me suis félicitée)",
+                "be",
+                "v"
+              ],
+              "congratulating": [
+                "me suis félicitée",
+                "congratulate",
+                "v",
+                "féliciter"
+              ],
+              "myself": [
+                "(congratulating myself : me suis félicitée)",
+                "myself",
+                "p"
+              ],
+              "on": [
+                "de",
+                "on",
+                "r"
+              ],
+              "agreement": [
+                "accord",
+                "agreement",
+                "n"
+              ],
+              "that": [
+                "qui",
+                "that",
+                "p"
+              ],
+              "never": [
+                "n'… jamais",
+                "never",
+                "d"
+              ],
+              "existed": [
+                "a existé",
+                "exist",
+                "v",
+                "exister"
+              ],
+              "must": [
+                "a dû",
+                "must",
+                "v",
+                "devoir (déduction)"
+              ],
+              "have#2": [
+                "(must have thought : a dû croire)",
+                "have",
+                "v"
+              ],
+              "thought": [
+                "croire",
+                "think",
+                "v",
+                "penser"
+              ],
+              "laughing": [
+                "me moquais",
+                "laugh",
+                "v",
+                "rire"
+              ],
+              "at": [
+                "(laughing at : se moquer de)",
+                "at",
+                "r"
+              ],
+              "him": [
+                "lui",
+                "him",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“He did,” said Inès. “He thought you had twisted his words on purpose.”",
+            "fr": "« C’est ce qu’il a cru, dit Inès. Il pensait que vous aviez déformé ses mots exprès. »",
+            "g": {
+              "did": [
+                "(He did : c'est ce qu'il a cru)",
+                "do",
+                "v"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "thought": [
+                "pensait",
+                "think",
+                "v",
+                "penser"
+              ],
+              "had": [
+                "aviez",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "twisted": [
+                "déformé",
+                "twist",
+                "v",
+                "déformer"
+              ],
+              "words": [
+                "mots",
+                "word",
+                "n",
+                "mot"
+              ],
+              "on": [
+                "exprès",
+                "on",
+                "r"
+              ],
+              "purpose": [
+                "(on purpose : exprès)",
+                "purpose",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Ms Lund pressed her fingers against her forehead. “If I had watched his face instead of listening to the translation, I would have seen it. He looked like a man who had been deeply insulted.”",
+            "fr": "Mme Lund pressa ses doigts contre son front. « Si j’avais regardé son visage au lieu d’écouter la traduction, je l’aurais vu. Il avait l’air d’un homme qui avait été profondément insulté. »",
+            "g": {
+              "pressed": [
+                "pressa",
+                "press",
+                "v",
+                "presser"
+              ],
+              "fingers": [
+                "doigts",
+                "finger",
+                "n",
+                "doigt"
+              ],
+              "against": [
+                "contre",
+                "against",
+                "r"
+              ],
+              "forehead": [
+                "front",
+                "forehead",
+                "n"
+              ],
+              "had": [
+                "avais",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "watched": [
+                "regardé",
+                "watch",
+                "v",
+                "regarder"
+              ],
+              "face": [
+                "visage",
+                "face",
+                "n"
+              ],
+              "instead": [
+                "au lieu de",
+                "instead",
+                "d"
+              ],
+              "of": [
+                "(instead of : au lieu de)",
+                "of",
+                "r"
+              ],
+              "listening": [
+                "écouter",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "to": [
+                "(listening to : écouter)",
+                "to",
+                "r"
+              ],
+              "translation": [
+                "traduction",
+                "translation",
+                "n"
+              ],
+              "would": [
+                "aurais",
+                "would",
+                "v",
+                "devoir"
+              ],
+              "have": [
+                "(would have seen : aurais vu)",
+                "have",
+                "v"
+              ],
+              "seen": [
+                "vu",
+                "see",
+                "v",
+                "voir"
+              ],
+              "it": [
+                "l'",
+                "it",
+                "p"
+              ],
+              "looked": [
+                "avait l'air",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "like": [
+                "de",
+                "like",
+                "r"
+              ],
+              "man": [
+                "homme",
+                "man",
+                "n"
+              ],
+              "who": [
+                "qui",
+                "who",
+                "p"
+              ],
+              "had#2": [
+                "avait été (had been)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(had been : avait été)",
+                "be",
+                "v",
+                "être"
+              ],
+              "deeply": [
+                "profondément",
+                "deeply",
+                "d"
+              ],
+              "insulted": [
+                "insulté",
+                "insult",
+                "v",
+                "insulter"
+              ]
+            }
+          },
+          {
+            "en": "She straightened. “But let me be honest. Even if the word was ‘below’, I cannot promise forty in every year. In a drought, my dam may hold less than that, and my government would never agree.”",
+            "fr": "Elle se redressa. « Mais permettez-moi d’être honnête. Même si le mot était “en dessous”, je ne peux pas promettre quarante chaque année. En cas de sécheresse, mon barrage peut contenir moins que cela, et mon gouvernement n’accepterait jamais. »",
+            "g": {
+              "straightened": [
+                "se redressa",
+                "straighten",
+                "v",
+                "se redresser"
+              ],
+              "but": [
+                "mais",
+                "but",
+                "c"
+              ],
+              "let": [
+                "permettez (let me be)",
+                "let",
+                "v",
+                "laisser"
+              ],
+              "me": [
+                "(let me be honest : permettez-moi)",
+                "me",
+                "p"
+              ],
+              "be": [
+                "(let me be honest : d'être)",
+                "be",
+                "v"
+              ],
+              "honest": [
+                "honnête",
+                "honest",
+                "a"
+              ],
+              "even": [
+                "même",
+                "even",
+                "d"
+              ],
+              "if": [
+                "si",
+                "if",
+                "c"
+              ],
+              "word": [
+                "mot",
+                "word",
+                "n"
+              ],
+              "was": [
+                "était",
+                "be",
+                "v",
+                "être"
+              ],
+              "below": [
+                "en dessous",
+                "below",
+                "r"
+              ],
+              "promise": [
+                "promettre",
+                "promise",
+                "v",
+                "promettre"
+              ],
+              "forty": [
+                "quarante",
+                "forty",
+                "a"
+              ],
+              "every": [
+                "chaque",
+                "every",
+                "t"
+              ],
+              "year": [
+                "année",
+                "year",
+                "n"
+              ],
+              "drought": [
+                "sécheresse",
+                "drought",
+                "n"
+              ],
+              "dam": [
+                "barrage",
+                "dam",
+                "n"
+              ],
+              "may": [
+                "peut",
+                "may",
+                "v",
+                "pouvoir"
+              ],
+              "hold": [
+                "contenir",
+                "hold",
+                "v",
+                "contenir"
+              ],
+              "less": [
+                "moins",
+                "less",
+                "d"
+              ],
+              "that": [
+                "cela",
+                "that",
+                "p"
+              ],
+              "would": [
+                "n'accepterait",
+                "would",
+                "v",
+                "devoir"
+              ],
+              "never": [
+                "jamais",
+                "never",
+                "d"
+              ],
+              "agree": [
+                "(would never agree : n'accepterait jamais)",
+                "agree",
+                "v"
+              ],
+              "government": [
+                "gouvernement",
+                "government",
+                "n"
+              ],
+              "cannot": [
+                "ne peux pas",
+                "cannot",
+                "v"
+              ],
+              "in": [
+                "en",
+                "in",
+                "r"
+              ],
+              "in#2": [
+                "En cas de",
+                "in",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“That is a problem for the negotiating table,” said Inès. “Today’s problem is that nobody will be sitting at it.”",
+            "fr": "« C’est un problème pour la table des négociations, dit Inès. Le problème d’aujourd’hui, c’est que personne ne sera assis à cette table. »",
+            "g": {
+              "problem": [
+                "problème",
+                "problem",
+                "n"
+              ],
+              "negotiating": [
+                "des négociations",
+                "negotiating",
+                "a"
+              ],
+              "table": [
+                "table",
+                "table",
+                "n"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "today's": [
+                "d'aujourd'hui",
+                "today",
+                "d"
+              ],
+              "problem#2": [
+                "problème",
+                "problem",
+                "n"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ],
+              "sitting": [
+                "assis",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "at": [
+                "à",
+                "at",
+                "r"
+              ],
+              "it": [
+                "cette table",
+                "it",
+                "p"
+              ],
+              "will": [
+                "ne sera",
+                "will",
+                "v"
+              ],
+              "be": [
+                "(will be sitting : sera assis)",
+                "be",
+                "v"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "that#2": [
+                "c'",
+                "that",
+                "p"
+              ],
+              "is": [
+                "est",
+                "is",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "Ms Lund looked at the suitcases, then at the revolving door, where a taxi had just pulled up. For a second, nobody breathed. “Cancel it,” she told an adviser. “We stay until noon. But I am not the one who needs convincing.”",
+            "fr": "Mme Lund regarda les valises, puis la porte tournante, devant laquelle un taxi venait de s’arrêter. Pendant une seconde, personne ne respira. « Annulez-le, dit-elle à un conseiller. Nous restons jusqu’à midi. Mais ce n’est pas moi qu’il faut convaincre. »",
+            "g": {
+              "looked": [
+                "regarda",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looked at : regarda)",
+                "at",
+                "r"
+              ],
+              "at#2": [
+                "(looked at : regarda)",
+                "at",
+                "r"
+              ],
+              "suitcases": [
+                "valises",
+                "suitcase",
+                "n",
+                "valise"
+              ],
+              "revolving": [
+                "tournante",
+                "revolving",
+                "a"
+              ],
+              "door": [
+                "porte",
+                "door",
+                "n"
+              ],
+              "where": [
+                "devant laquelle",
+                "where",
+                "c"
+              ],
+              "taxi": [
+                "taxi",
+                "taxi",
+                "n"
+              ],
+              "had": [
+                "venait de",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "just": [
+                "(had just : venait de)",
+                "just",
+                "d"
+              ],
+              "pulled": [
+                "s'arrêter",
+                "pull",
+                "v",
+                "tirer"
+              ],
+              "up": [
+                "(pulled up : s'arrêter)",
+                "up",
+                "x"
+              ],
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "second": [
+                "seconde",
+                "second",
+                "n"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ],
+              "breathed": [
+                "respira",
+                "breathe",
+                "v",
+                "respirer"
+              ],
+              "cancel": [
+                "annulez",
+                "cancel",
+                "v",
+                "annuler"
+              ],
+              "it": [
+                "-le",
+                "it",
+                "p"
+              ],
+              "told": [
+                "dit",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "adviser": [
+                "conseiller",
+                "adviser",
+                "n"
+              ],
+              "stay": [
+                "restons",
+                "stay",
+                "v",
+                "rester"
+              ],
+              "until": [
+                "jusqu'à",
+                "until",
+                "r"
+              ],
+              "noon": [
+                "midi",
+                "noon",
+                "n"
+              ],
+              "but": [
+                "mais",
+                "but",
+                "c"
+              ],
+              "not": [
+                "pas",
+                "not",
+                "d"
+              ],
+              "one": [
+                "celle",
+                "one",
+                "p"
+              ],
+              "who": [
+                "qui",
+                "who",
+                "p"
+              ],
+              "needs": [
+                "qu'il faut",
+                "need",
+                "v",
+                "avoir besoin"
+              ],
+              "convincing": [
+                "convaincre",
+                "convince",
+                "v",
+                "convaincre"
+              ],
+              "i": [
+                "ce n'est",
+                "I",
+                "p"
+              ],
+              "am": [
+                "(am not the one : ce n'est pas moi)",
+                "be",
+                "v"
+              ],
+              "then": [
+                "puis",
+                "then",
+                "d"
+              ],
+              "ms": [
+                "Mme",
+                "Ms",
+                "n"
+              ],
+              "lund": [
+                "Lund",
+                "Lund",
+                "np"
+              ]
+            }
+          },
+          {
+            "en": "Inès’s phone buzzed. It was Leyla: “He is at the end of the jetty by the lake. The car comes at half past eight. Hurry!”",
+            "fr": "Le téléphone d’Inès vibra. C’était Leyla : « Il est au bout de la jetée, près du lac. La voiture vient à huit heures et demie. Dépêchez-vous ! »",
+            "g": {
+              "buzzed": [
+                "vibra",
+                "buzz",
+                "v",
+                "vibrer"
+              ],
+              "phone": [
+                "téléphone",
+                "phone",
+                "n"
+              ],
+              "was": [
+                "c'était",
+                "be",
+                "v",
+                "être"
+              ],
+              "it": [
+                "(it was : c'était)",
+                "it",
+                "p"
+              ],
+              "end": [
+                "bout",
+                "end",
+                "n"
+              ],
+              "jetty": [
+                "jetée",
+                "jetty",
+                "n"
+              ],
+              "by": [
+                "près de",
+                "by",
+                "r"
+              ],
+              "lake": [
+                "lac",
+                "lake",
+                "n"
+              ],
+              "car": [
+                "voiture",
+                "car",
+                "n"
+              ],
+              "comes": [
+                "vient",
+                "come",
+                "v",
+                "venir"
+              ],
+              "half": [
+                "et demie",
+                "half",
+                "n"
+              ],
+              "past": [
+                "(half past : et demie)",
+                "past",
+                "r"
+              ],
+              "hurry": [
+                "Dépêchez-vous",
+                "hurry",
+                "v",
+                "se dépêcher"
+              ],
+              "inès's": [
+                "d'Inès",
+                "Inès",
+                "np"
+              ],
+              "leyla": [
+                "Leyla",
+                "Leyla",
+                "np"
+              ],
+              "at": [
+                "à",
+                "at",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Inès looked at the clock above the desk. It was ten past eight.",
+            "fr": "Inès regarda l’horloge au-dessus du comptoir. Il était huit heures dix.",
+            "g": {
+              "looked": [
+                "regarda",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looked at : regarda)",
+                "at",
+                "r"
+              ],
+              "clock": [
+                "horloge",
+                "clock",
+                "n"
+              ],
+              "above": [
+                "au-dessus de",
+                "above",
+                "r"
+              ],
+              "desk": [
+                "comptoir",
+                "desk",
+                "n"
+              ],
+              "it": [
+                "il",
+                "it",
+                "p"
+              ],
+              "was": [
+                "était",
+                "be",
+                "v",
+                "être"
+              ],
+              "ten": [
+                "dix",
+                "ten",
+                "a"
+              ],
+              "past": [
+                "(ten past : et dix)",
+                "past",
+                "r"
+              ],
+              "eight": [
+                "huit heures",
+                "eight",
+                "a"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ]
+}

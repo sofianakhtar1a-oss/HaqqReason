@@ -1,0 +1,1930 @@
+{
+  "debut": 11,
+  "lexique": {
+    "loud": [
+      "fort",
+      "loud",
+      "a"
+    ],
+    "shouted": [
+      "cria",
+      "shout",
+      "v",
+      "crier"
+    ],
+    "whistle": [
+      "sifflet",
+      "whistle",
+      "n"
+    ],
+    "mrs": [
+      "Mme",
+      "Mrs",
+      "n"
+    ],
+    "message": [
+      "message",
+      "message",
+      "n"
+    ],
+    "birds": [
+      "oiseaux",
+      "bird",
+      "n",
+      "oiseau"
+    ],
+    "south": [
+      "sud",
+      "south",
+      "n"
+    ],
+    "river": [
+      "rivière",
+      "river",
+      "n"
+    ],
+    "shh": [
+      "chut",
+      "shh",
+      "x"
+    ],
+    "sam": [
+      "Sam (prénom)",
+      "Sam",
+      "np"
+    ],
+    "hand": [
+      "main",
+      "hand",
+      "n"
+    ],
+    "sun": [
+      "soleil",
+      "sun",
+      "n"
+    ],
+    "biscuit": [
+      "biscuit",
+      "biscuit",
+      "n"
+    ],
+    "shelter": [
+      "abri",
+      "shelter",
+      "n"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "brown": [
+      "Brown (nom de famille)",
+      "Brown",
+      "np"
+    ],
+    "forest": [
+      "forêt",
+      "forest",
+      "n"
+    ],
+    "water": [
+      "eau",
+      "water",
+      "n"
+    ],
+    "hour": [
+      "heure",
+      "hour",
+      "n"
+    ],
+    "page": [
+      "page",
+      "page",
+      "n"
+    ],
+    "apple": [
+      "pomme",
+      "apple",
+      "n"
+    ],
+    "inès": [
+      "Inès (prénom)",
+      "Inès",
+      "np"
+    ],
+    "white": [
+      "blanc",
+      "white",
+      "a"
+    ],
+    "whistles": [
+      "sifflets",
+      "whistle",
+      "n",
+      "sifflet"
+    ],
+    "patel": [
+      "Patel (nom de famille)",
+      "Patel",
+      "np"
+    ],
+    "stag": [
+      "cerf",
+      "stag",
+      "n"
+    ],
+    "campfire": [
+      "feu de camp",
+      "campfire",
+      "n"
+    ],
+    "compass": [
+      "boussole",
+      "compass",
+      "n"
+    ],
+    "scouts": [
+      "scouts",
+      "scout",
+      "n",
+      "scout"
+    ],
+    "mr": [
+      "M.",
+      "Mr",
+      "n"
+    ],
+    "trees": [
+      "arbres",
+      "tree",
+      "n",
+      "arbre"
+    ],
+    "afternoon": [
+      "après-midi",
+      "afternoon",
+      "n"
+    ],
+    "lake": [
+      "lac",
+      "lake",
+      "n"
+    ],
+    "camp": [
+      "camp",
+      "camp",
+      "n"
+    ],
+    "asked": [
+      "demanda",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "scout": [
+      "scout",
+      "scout",
+      "n"
+    ],
+    "children": [
+      "enfants",
+      "child",
+      "n",
+      "enfant"
+    ],
+    "night": [
+      "nuit",
+      "night",
+      "n"
+    ],
+    "small": [
+      "petit",
+      "small",
+      "a"
+    ],
+    "photos": [
+      "photos",
+      "photo",
+      "n",
+      "photo"
+    ],
+    "big": [
+      "grand",
+      "big",
+      "a"
+    ],
+    "red": [
+      "rouge",
+      "red",
+      "a"
+    ],
+    "photo": [
+      "photo",
+      "photo",
+      "n"
+    ],
+    "phone": [
+      "téléphone",
+      "phone",
+      "n"
+    ],
+    "blurry": [
+      "floue",
+      "blurry",
+      "a",
+      "flou"
+    ],
+    "jack": [
+      "Jack (prénom)",
+      "Jack",
+      "np"
+    ],
+    "sorry": [
+      "désolé",
+      "sorry",
+      "a"
+    ],
+    "camera": [
+      "appareil photo",
+      "camera",
+      "n"
+    ]
+  },
+  "pages": [
+    {
+      "p": [
+        [
+          {
+            "en": "When Sam woke up, the forest was pink and gold.",
+            "fr": "Quand Sam se réveilla, la forêt était rose et dorée.",
+            "g": {
+              "woke": [
+                "se réveilla (woke up)",
+                "wake",
+                "v",
+                "se réveiller"
+              ],
+              "up": [
+                "(woke up : se réveilla)",
+                "up",
+                "d"
+              ],
+              "pink": [
+                "rose",
+                "pink",
+                "a"
+              ],
+              "gold": [
+                "dorée",
+                "gold",
+                "a",
+                "doré"
+              ]
+            }
+          },
+          {
+            "en": "Birds were singing, and a white mist floated over the river.",
+            "fr": "Les oiseaux chantaient, et une brume blanche flottait au-dessus de la rivière.",
+            "g": {
+              "singing": [
+                "chantaient",
+                "sing",
+                "v",
+                "chanter"
+              ],
+              "mist": [
+                "brume"
+              ],
+              "floated": [
+                "flottait",
+                "float",
+                "v",
+                "flotter"
+              ],
+              "over": [
+                "au-dessus de",
+                "over",
+                "r"
+              ],
+              "white": [
+                "blanche",
+                "white",
+                "a",
+                "blanc"
+              ]
+            }
+          },
+          {
+            "en": "“I’m stiff, cold and hungry,” he said.",
+            "fr": "« Je suis courbatu, j'ai froid et j'ai faim », dit-il.",
+            "g": {
+              "stiff": [
+                "courbatu",
+                "stiff",
+                "a"
+              ],
+              "cold": [
+                "j'ai froid (cold)",
+                "cold",
+                "a",
+                "froid"
+              ],
+              "hungry": [
+                "j'ai faim (hungry)",
+                "hungry",
+                "a",
+                "affamé"
+              ]
+            }
+          },
+          {
+            "en": "“But I’m alive!”",
+            "fr": "« Mais je suis vivant ! »",
+            "g": {
+              "alive": [
+                "vivant"
+              ],
+              "but": [
+                "mais"
+              ]
+            }
+          },
+          {
+            "en": "They ate the green apple and the last biscuit.",
+            "fr": "Ils mangèrent la pomme verte et le dernier biscuit.",
+            "g": {
+              "ate": [
+                "mangèrent",
+                "eat",
+                "v",
+                "manger"
+              ],
+              "last": [
+                "dernier",
+                "last",
+                "a"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ]
+            }
+          },
+          {
+            "en": "“Mrs Brown always says to leave a note,” said Inès.",
+            "fr": "« Mme Brown dit toujours de laisser un mot », dit Inès.",
+            "g": {
+              "says": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "to": [
+                "de",
+                "to",
+                "x"
+              ],
+              "leave": [
+                "laisser",
+                "leave",
+                "v",
+                "laisser"
+              ],
+              "note": [
+                "mot"
+              ]
+            }
+          },
+          {
+            "en": "She wrote a message on a page of her notebook.",
+            "fr": "Elle écrivit un message sur une page de son carnet.",
+            "g": {
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "notebook": [
+                "carnet"
+              ]
+            }
+          },
+          {
+            "en": "It said, “We are safe.",
+            "fr": "Il disait : « Nous sommes en sécurité.",
+            "g": {
+              "said": [
+                "disait",
+                "say",
+                "v",
+                "dire"
+              ],
+              "safe": [
+                "en sécurité",
+                "safe",
+                "a",
+                "sûr"
+              ],
+              "it": [
+                "il",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "We went south along the river.”",
+            "fr": "Nous sommes partis vers le sud le long de la rivière. »",
+            "g": {
+              "went": [
+                "sommes partis",
+                "go",
+                "v",
+                "aller"
+              ],
+              "along": [
+                "le long de",
+                "along",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "She put the note under a heavy stone near the shelter.",
+            "fr": "Elle posa le mot sous une lourde pierre près de l'abri.",
+            "g": {
+              "put": [
+                "posa",
+                "put",
+                "v",
+                "poser"
+              ],
+              "note": [
+                "mot"
+              ],
+              "heavy": [
+                "lourde",
+                "heavy",
+                "a",
+                "lourd"
+              ],
+              "stone": [
+                "pierre"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Then they walked along the river, and the sun climbed higher.",
+            "fr": "Puis ils marchèrent le long de la rivière, et le soleil monta plus haut.",
+            "g": {
+              "walked": [
+                "marchèrent",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "climbed": [
+                "monta",
+                "climb",
+                "v",
+                "monter"
+              ],
+              "higher": [
+                "plus haut",
+                "high",
+                "a",
+                "haut"
+              ],
+              "then": [
+                "puis",
+                "then",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "The water was deeper and wider than yesterday, and it ran faster.",
+            "fr": "L'eau était plus profonde et plus large qu'hier, et elle coulait plus vite.",
+            "g": {
+              "deeper": [
+                "plus profonde",
+                "deep",
+                "a",
+                "profond"
+              ],
+              "wider": [
+                "plus large",
+                "wide",
+                "a",
+                "large"
+              ],
+              "than": [
+                "qu'",
+                "than",
+                "c"
+              ],
+              "ran": [
+                "coulait",
+                "run",
+                "v",
+                "courir"
+              ],
+              "faster": [
+                "plus vite",
+                "fast",
+                "d",
+                "vite"
+              ],
+              "it": [
+                "elle",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "After an hour, Sam stopped and held up his hand.",
+            "fr": "Au bout d'une heure, Sam s'arrêta et leva la main.",
+            "g": {
+              "after": [
+                "au bout de",
+                "after",
+                "r"
+              ],
+              "stopped": [
+                "s'arrêta",
+                "stop",
+                "v",
+                "s'arrêter"
+              ],
+              "held": [
+                "leva (held up)",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "up": [
+                "(held up : leva)",
+                "up",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Shh!",
+            "fr": "« Chut !"
+          },
+          {
+            "en": "Did you hear that?”",
+            "fr": "Tu as entendu ? »",
+            "g": {
+              "hear": [
+                "entendu",
+                "hear",
+                "v",
+                "entendre"
+              ],
+              "did": [
+                "(question au passé)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "that": [
+                "ça",
+                "that",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Far away, someone was blowing a whistle.",
+            "fr": "Au loin, quelqu'un soufflait dans un sifflet.",
+            "g": {
+              "far": [
+                "au loin",
+                "far",
+                "d"
+              ],
+              "away": [
+                "(far away : au loin)",
+                "away",
+                "d"
+              ],
+              "blowing": [
+                "soufflait dans (blowing a whistle)",
+                "blow",
+                "v",
+                "souffler"
+              ]
+            }
+          },
+          {
+            "en": "Three loud blasts!",
+            "fr": "Trois coups de sifflet forts !",
+            "g": {
+              "three": [
+                "trois"
+              ],
+              "blasts": [
+                "coups de sifflet",
+                "blast",
+                "n",
+                "coup"
+              ],
+              "loud": [
+                "forts",
+                "loud",
+                "a",
+                "fort"
+              ]
+            }
+          },
+          {
+            "en": "“It’s them!” shouted Inès.",
+            "fr": "« C'est eux ! » cria Inès.",
+            "g": {
+              "it's": [
+                "c'est",
+                "it",
+                "p"
+              ],
+              "them": [
+                "eux",
+                "they",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“They’ve come to find us!”",
+            "fr": "« Ils sont venus nous chercher ! »",
+            "g": {
+              "they've": [
+                "ils sont",
+                "they",
+                "p"
+              ],
+              "come": [
+                "venus",
+                "come",
+                "v",
+                "venir"
+              ],
+              "find": [
+                "chercher",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "us": [
+                "nous",
+                "we",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "They took out their whistles and blew as hard as they could.",
+            "fr": "Ils sortirent leurs sifflets et soufflèrent aussi fort qu'ils le purent.",
+            "g": {
+              "took": [
+                "sortirent (took out)",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "out": [
+                "(took out : sortirent)",
+                "out",
+                "d"
+              ],
+              "blew": [
+                "soufflèrent",
+                "blow",
+                "v",
+                "souffler"
+              ],
+              "hard": [
+                "fort",
+                "hard",
+                "d"
+              ],
+              "could": [
+                "purent",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "as": [
+                "aussi",
+                "as",
+                "d"
+              ],
+              "as#2": [
+                "qu'",
+                "as",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "Then they heard running feet and voices.",
+            "fr": "Puis ils entendirent des pas qui couraient et des voix.",
+            "g": {
+              "heard": [
+                "entendirent",
+                "hear",
+                "v",
+                "entendre"
+              ],
+              "running": [
+                "qui couraient",
+                "run",
+                "v",
+                "courir"
+              ],
+              "feet": [
+                "pas",
+                "foot",
+                "n",
+                "pied"
+              ],
+              "voices": [
+                "voix",
+                "voice",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Sam!",
+            "fr": "« Sam !"
+          },
+          {
+            "en": "Inès!",
+            "fr": "Inès !"
+          },
+          {
+            "en": "Where are you?”",
+            "fr": "Où êtes-vous ? »",
+            "g": {
+              "are": [
+                "êtes",
+                "be",
+                "v",
+                "être"
+              ],
+              "you": [
+                "vous",
+                "you",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“Here!” they shouted together.",
+            "fr": "« Ici ! » crièrent-ils ensemble.",
+            "g": {
+              "shouted": [
+                "crièrent",
+                "shout",
+                "v",
+                "crier"
+              ]
+            }
+          },
+          {
+            "en": "“We’re here!”",
+            "fr": "« Nous sommes ici ! »",
+            "g": {
+              "we're": [
+                "nous sommes",
+                "we",
+                "p"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 6 — The River",
+      "titreFr": "Chapitre 6 — La rivière"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Mrs Brown ran out of the trees with Mr Patel and Jack, another scout.",
+            "fr": "Mme Brown sortit des arbres en courant, avec M. Patel et Jack, un autre scout.",
+            "g": {
+              "ran": [
+                "sortit en courant",
+                "run",
+                "v",
+                "courir"
+              ],
+              "out": [
+                "(ran out : sortit)",
+                "out",
+                "d"
+              ],
+              "of": [
+                "des (out of)",
+                "of",
+                "r"
+              ],
+              "mr": [
+                "M.",
+                "Mr",
+                "n"
+              ],
+              "patel": [
+                "Patel (nom)",
+                "Patel",
+                "np"
+              ],
+              "jack": [
+                "Jack (prénom)",
+                "Jack",
+                "np"
+              ],
+              "another": [
+                "un autre",
+                "another",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "She hugged both children very tightly.",
+            "fr": "Elle serra très fort les deux enfants dans ses bras.",
+            "g": {
+              "hugged": [
+                "serra dans ses bras",
+                "hug",
+                "v",
+                "serrer dans ses bras"
+              ],
+              "both": [
+                "les deux",
+                "both",
+                "p"
+              ],
+              "tightly": [
+                "fort",
+                "tightly",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Are you hurt?” she asked.",
+            "fr": "« Vous êtes blessés ? » demanda-t-elle.",
+            "g": {
+              "are": [
+                "êtes",
+                "be",
+                "v",
+                "être"
+              ],
+              "you": [
+                "vous",
+                "you",
+                "p"
+              ],
+              "hurt": [
+                "blessés",
+                "hurt",
+                "a",
+                "blessé"
+              ]
+            }
+          },
+          {
+            "en": "“No,” said Sam.",
+            "fr": "« Non », dit Sam."
+          },
+          {
+            "en": "“We’re only wet and hungry.",
+            "fr": "« On est juste mouillés et affamés.",
+            "g": {
+              "we're": [
+                "on est",
+                "we",
+                "p"
+              ],
+              "only": [
+                "juste",
+                "only",
+                "d"
+              ],
+              "wet": [
+                "mouillés",
+                "wet",
+                "a",
+                "mouillé"
+              ],
+              "hungry": [
+                "affamés",
+                "hungry",
+                "a",
+                "affamé"
+              ]
+            }
+          },
+          {
+            "en": "We followed the river, like you said.”",
+            "fr": "On a suivi la rivière, comme vous l'avez dit. »",
+            "g": {
+              "followed": [
+                "a suivi",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "we": [
+                "on",
+                "we",
+                "p"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "c"
+              ],
+              "said": [
+                "l'avez dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "you": [
+                "vous",
+                "you",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Mr Patel gave them blankets and a flask of hot chocolate.",
+            "fr": "M. Patel leur donna des couvertures et une bouteille isotherme de chocolat chaud.",
+            "g": {
+              "gave": [
+                "donna",
+                "give",
+                "v",
+                "donner"
+              ],
+              "blankets": [
+                "couvertures",
+                "blanket",
+                "n",
+                "couverture"
+              ],
+              "flask": [
+                "bouteille isotherme",
+                "flask",
+                "n"
+              ],
+              "hot": [
+                "chaud",
+                "hot",
+                "a"
+              ],
+              "chocolate": [
+                "chocolat"
+              ]
+            }
+          },
+          {
+            "en": "“We looked for you all night,” said Mrs Brown.",
+            "fr": "« Nous vous avons cherchés toute la nuit », dit Mme Brown.",
+            "g": {
+              "looked": [
+                "avons cherchés (looked for)",
+                "look",
+                "v",
+                "chercher"
+              ],
+              "for": [
+                "(looked for : avons cherchés)",
+                "for",
+                "r"
+              ],
+              "you": [
+                "vous",
+                "you",
+                "p"
+              ],
+              "all": [
+                "toute",
+                "all",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "“Everybody was so worried.”",
+            "fr": "« Tout le monde était tellement inquiet. »",
+            "g": {
+              "so": [
+                "tellement",
+                "so",
+                "d"
+              ],
+              "worried": [
+                "inquiet",
+                "worried",
+                "a"
+              ],
+              "everybody": [
+                "tout le monde",
+                "everybody",
+                "p"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "The walk back was easy, because the river led them straight to the lake.",
+            "fr": "Le retour fut facile, car la rivière les mena tout droit au lac.",
+            "g": {
+              "walk": [
+                "retour (walk back)",
+                "walk",
+                "n",
+                "marche"
+              ],
+              "back": [
+                "(walk back : retour)",
+                "back",
+                "d"
+              ],
+              "easy": [
+                "facile"
+              ],
+              "led": [
+                "mena",
+                "lead",
+                "v",
+                "mener"
+              ],
+              "straight": [
+                "tout droit",
+                "straight",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "At the camp, thirty scouts were waiting by the lake.",
+            "fr": "Au camp, trente scouts attendaient au bord du lac.",
+            "g": {
+              "at": [
+                "à",
+                "at",
+                "r"
+              ],
+              "were": [
+                "(were waiting : attendaient)",
+                "be",
+                "v",
+                "être"
+              ],
+              "waiting": [
+                "attendaient",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "by": [
+                "au bord de",
+                "by",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "When they saw Sam and Inès, they cheered and clapped.",
+            "fr": "Quand ils virent Sam et Inès, ils poussèrent des cris de joie et applaudirent.",
+            "g": {
+              "saw": [
+                "virent",
+                "see",
+                "v",
+                "voir"
+              ],
+              "cheered": [
+                "poussèrent des cris de joie",
+                "cheer",
+                "v",
+                "acclamer"
+              ],
+              "clapped": [
+                "applaudirent",
+                "clap",
+                "v",
+                "applaudir"
+              ]
+            }
+          },
+          {
+            "en": "Priya, the cook, gave them pancakes with honey.",
+            "fr": "Priya, la cuisinière, leur donna des crêpes au miel.",
+            "g": {
+              "priya": [
+                "Priya (prénom)",
+                "Priya",
+                "np"
+              ],
+              "cook": [
+                "cuisinière",
+                "cook",
+                "n"
+              ],
+              "gave": [
+                "donna",
+                "give",
+                "v",
+                "donner"
+              ],
+              "pancakes": [
+                "crêpes",
+                "pancake",
+                "n"
+              ],
+              "honey": [
+                "miel"
+              ]
+            }
+          },
+          {
+            "en": "Sam ate five, and Inès ate four.",
+            "fr": "Sam en mangea cinq, et Inès en mangea quatre.",
+            "g": {
+              "ate": [
+                "en mangea",
+                "eat",
+                "v",
+                "manger"
+              ],
+              "ate#2": [
+                "en mangea",
+                "eat",
+                "v",
+                "manger"
+              ],
+              "five": [
+                "cinq"
+              ],
+              "four": [
+                "quatre"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "That afternoon, Mrs Brown called everyone around the campfire.",
+            "fr": "Cet après-midi-là, Mme Brown réunit tout le monde autour du feu de camp.",
+            "g": {
+              "called": [
+                "réunit",
+                "call",
+                "v",
+                "appeler"
+              ],
+              "around": [
+                "autour de",
+                "around",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“Sam and Inès made two mistakes,” she said.",
+            "fr": "« Sam et Inès ont fait deux erreurs », dit-elle.",
+            "g": {
+              "made": [
+                "ont fait",
+                "make",
+                "v",
+                "faire"
+              ],
+              "mistakes": [
+                "erreurs",
+                "mistake",
+                "n",
+                "erreur"
+              ]
+            }
+          },
+          {
+            "en": "“They followed the stag, and they went too far.”",
+            "fr": "« Ils ont suivi le cerf, et ils sont allés trop loin. »",
+            "g": {
+              "followed": [
+                "ont suivi",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "went": [
+                "sont allés",
+                "go",
+                "v",
+                "aller"
+              ],
+              "too": [
+                "trop",
+                "too",
+                "d"
+              ],
+              "far": [
+                "loin",
+                "far",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“But then they did everything right.",
+            "fr": "« Mais ensuite, ils ont tout fait comme il fallait.",
+            "g": {
+              "did": [
+                "ont fait",
+                "do",
+                "v",
+                "faire"
+              ],
+              "right": [
+                "comme il fallait",
+                "right",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "They stayed calm, used the whistle and left a note.”",
+            "fr": "Ils sont restés calmes, ont utilisé le sifflet et ont laissé un mot. »",
+            "g": {
+              "stayed": [
+                "sont restés",
+                "stay",
+                "v",
+                "rester"
+              ],
+              "calm": [
+                "calmes",
+                "calm",
+                "a",
+                "calme"
+              ],
+              "used": [
+                "ont utilisé",
+                "use",
+                "v",
+                "utiliser"
+              ],
+              "left": [
+                "ont laissé",
+                "leave",
+                "v",
+                "laisser"
+              ],
+              "note": [
+                "mot",
+                "note",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“They used the compass and the stars, followed the river and built a shelter.”",
+            "fr": "« Ils ont utilisé la boussole et les étoiles, suivi la rivière et construit un abri. »",
+            "g": {
+              "used": [
+                "ont utilisé",
+                "use",
+                "v",
+                "utiliser"
+              ],
+              "stars": [
+                "étoiles",
+                "star",
+                "n",
+                "étoile"
+              ],
+              "followed": [
+                "suivi",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "built": [
+                "construit",
+                "build",
+                "v",
+                "construire"
+              ]
+            }
+          },
+          {
+            "en": "“They learned everything this weekend, and they used all of it.",
+            "fr": "« Ils ont tout appris ce week-end, et ils se sont servis de tout.",
+            "g": {
+              "learned": [
+                "ont appris",
+                "learn",
+                "v",
+                "apprendre"
+              ],
+              "weekend": [
+                "week-end"
+              ],
+              "used": [
+                "se sont servis",
+                "use",
+                "v",
+                "utiliser"
+              ],
+              "all": [
+                "de tout (all of it)",
+                "all",
+                "p"
+              ],
+              "of": [
+                "(all of it : de tout)",
+                "of",
+                "r"
+              ],
+              "it": [
+                "(all of it : de tout)",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "I am very proud of them.”",
+            "fr": "Je suis très fière d'eux. »",
+            "g": {
+              "proud": [
+                "fière",
+                "proud",
+                "a"
+              ],
+              "of": [
+                "(proud of : d'eux)",
+                "of",
+                "r"
+              ],
+              "them": [
+                "d'eux (proud of them)",
+                "they",
+                "p"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 7 — Home Again",
+      "titreFr": "Chapitre 7 — De retour"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Sam stood up, and his ears were red.",
+            "fr": "Sam se leva, et ses oreilles étaient rouges.",
+            "g": {
+              "stood": [
+                "se leva (stood up)",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "up": [
+                "(stood up : se leva)",
+                "up",
+                "d"
+              ],
+              "ears": [
+                "oreilles",
+                "ear",
+                "n",
+                "oreille"
+              ],
+              "red": [
+                "rouges",
+                "red",
+                "a",
+                "rouge"
+              ]
+            }
+          },
+          {
+            "en": "“I’m sorry, everybody,” he said.",
+            "fr": "« Je suis désolé, tout le monde », dit-il."
+          },
+          {
+            "en": "“From now on, I’m going to listen to every lesson.”",
+            "fr": "« Désormais, je vais écouter chaque leçon. »",
+            "g": {
+              "from": [
+                "(from now on : désormais)",
+                "from",
+                "r"
+              ],
+              "now": [
+                "(from now on : désormais)",
+                "now",
+                "d"
+              ],
+              "on": [
+                "désormais (from now on)",
+                "on",
+                "d"
+              ],
+              "going": [
+                "vais (futur proche)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "to": [
+                "(going to : vais)",
+                "to",
+                "x"
+              ],
+              "listen": [
+                "écouter (listen to)",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "to#2": [
+                "(listen to : écouter)",
+                "to",
+                "r"
+              ],
+              "every": [
+                "chaque",
+                "every",
+                "t"
+              ],
+              "lesson": [
+                "leçon"
+              ]
+            }
+          },
+          {
+            "en": "“Even the long ones,” added Inès, and everybody laughed.",
+            "fr": "« Même les longues », ajouta Inès, et tout le monde rit.",
+            "g": {
+              "even": [
+                "même",
+                "even",
+                "d"
+              ],
+              "long": [
+                "longues",
+                "long",
+                "a",
+                "long"
+              ],
+              "ones": [
+                "(long ones : longues)",
+                "one",
+                "p"
+              ],
+              "added": [
+                "ajouta",
+                "add",
+                "v",
+                "ajouter"
+              ],
+              "laughed": [
+                "rit",
+                "laugh",
+                "v",
+                "rire"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Then Mrs Brown gave each of them a small green badge.",
+            "fr": "Puis Mme Brown donna à chacun d'eux un petit badge vert.",
+            "g": {
+              "then": [
+                "puis",
+                "then",
+                "d"
+              ],
+              "gave": [
+                "donna",
+                "give",
+                "v",
+                "donner"
+              ],
+              "each": [
+                "chacun d'eux (each of them)",
+                "each",
+                "p"
+              ],
+              "of": [
+                "(each of them : d'eux)",
+                "of",
+                "r"
+              ],
+              "them": [
+                "(each of them : d'eux)",
+                "they",
+                "p"
+              ],
+              "badge": [
+                "badge"
+              ],
+              "green": [
+                "vert",
+                "green",
+                "a",
+                "vert"
+              ]
+            }
+          },
+          {
+            "en": "It showed a compass and the words “Forest Explorer”.",
+            "fr": "Il montrait une boussole et les mots « Explorateur de la forêt ».",
+            "g": {
+              "showed": [
+                "montrait",
+                "show",
+                "v",
+                "montrer"
+              ],
+              "words": [
+                "mots",
+                "word",
+                "n",
+                "mot"
+              ],
+              "explorer": [
+                "Explorateur (Explorer)",
+                "explorer",
+                "n",
+                "explorateur"
+              ]
+            }
+          },
+          {
+            "en": "“One last thing,” said Sam, with a big smile.",
+            "fr": "« Une dernière chose », dit Sam avec un grand sourire.",
+            "g": {
+              "last": [
+                "dernière",
+                "last",
+                "a"
+              ],
+              "thing": [
+                "chose"
+              ],
+              "smile": [
+                "sourire",
+                "smile",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Look at my photos!”",
+            "fr": "« Regardez mes photos ! »",
+            "g": {
+              "look": [
+                "regardez",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(look at : regardez)",
+                "at",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "He showed his phone to everyone.",
+            "fr": "Il montra son téléphone à tout le monde.",
+            "g": {
+              "showed": [
+                "montra",
+                "show",
+                "v",
+                "montrer"
+              ]
+            }
+          },
+          {
+            "en": "The first photo was blurry.",
+            "fr": "La première photo était floue.",
+            "g": {
+              "first": [
+                "première",
+                "first",
+                "a",
+                "premier"
+              ]
+            }
+          },
+          {
+            "en": "The second one was blurry too.",
+            "fr": "La deuxième aussi était floue.",
+            "g": {
+              "second": [
+                "deuxième",
+                "second",
+                "a"
+              ],
+              "one": [
+                "(second one : deuxième)",
+                "one",
+                "p"
+              ],
+              "too": [
+                "aussi",
+                "too",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "The third photo showed the stag from behind, running away through the trees.",
+            "fr": "La troisième photo montrait le cerf de dos, qui s'enfuyait à travers les arbres.",
+            "g": {
+              "third": [
+                "troisième"
+              ],
+              "showed": [
+                "montrait",
+                "show",
+                "v",
+                "montrer"
+              ],
+              "from": [
+                "(from behind : de dos)",
+                "from",
+                "r"
+              ],
+              "behind": [
+                "de dos (from behind)",
+                "behind",
+                "d"
+              ],
+              "running": [
+                "s'enfuyait",
+                "run",
+                "v",
+                "courir"
+              ],
+              "away": [
+                "(running away : s'enfuyait)",
+                "away",
+                "d"
+              ],
+              "through": [
+                "à travers",
+                "through",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“A great picture of a deer’s bottom!” laughed Jack.",
+            "fr": "« Une magnifique photo d'un derrière de cerf ! » rit Jack.",
+            "g": {
+              "great": [
+                "magnifique",
+                "great",
+                "a"
+              ],
+              "picture": [
+                "photo"
+              ],
+              "deer's": [
+                "de cerf",
+                "deer",
+                "n",
+                "cerf"
+              ],
+              "bottom": [
+                "derrière"
+              ],
+              "laughed": [
+                "rit",
+                "laugh",
+                "v",
+                "rire"
+              ]
+            }
+          },
+          {
+            "en": "“Mine is better,” said Inès, and she smiled.",
+            "fr": "« La mienne est meilleure », dit Inès, et elle sourit.",
+            "g": {
+              "mine": [
+                "la mienne",
+                "mine",
+                "p"
+              ],
+              "better": [
+                "meilleure",
+                "good",
+                "a",
+                "bon"
+              ],
+              "smiled": [
+                "sourit",
+                "smile",
+                "v",
+                "sourire"
+              ]
+            }
+          },
+          {
+            "en": "Her photo showed the stag looking straight at the camera, in golden light.",
+            "fr": "Sa photo montrait le cerf regardant droit dans l'objectif, dans une lumière dorée.",
+            "g": {
+              "showed": [
+                "montrait",
+                "show",
+                "v",
+                "montrer"
+              ],
+              "looking": [
+                "regardant",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looking at : dans)",
+                "at",
+                "r"
+              ],
+              "straight": [
+                "droit",
+                "straight",
+                "d"
+              ],
+              "golden": [
+                "dorée",
+                "golden",
+                "a"
+              ],
+              "light": [
+                "lumière"
+              ]
+            }
+          },
+          {
+            "en": "Sam and Inès looked at each other and smiled.",
+            "fr": "Sam et Inès se regardèrent et sourirent.",
+            "g": {
+              "looked": [
+                "regardèrent",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looked at each other : se)",
+                "at",
+                "r"
+              ],
+              "each": [
+                "(each other : se)",
+                "each",
+                "p"
+              ],
+              "other": [
+                "se regardèrent (each other)",
+                "other",
+                "p"
+              ],
+              "smiled": [
+                "sourirent",
+                "smile",
+                "v",
+                "sourire"
+              ]
+            }
+          },
+          {
+            "en": "They were still best friends, and now they were real explorers.",
+            "fr": "Ils étaient toujours meilleurs amis, et maintenant ils étaient de vrais explorateurs.",
+            "g": {
+              "were": [
+                "étaient",
+                "be",
+                "v",
+                "être"
+              ],
+              "still": [
+                "toujours",
+                "still",
+                "d"
+              ],
+              "best": [
+                "meilleurs",
+                "good",
+                "a",
+                "bon"
+              ],
+              "friends": [
+                "amis",
+                "friend",
+                "n",
+                "ami"
+              ],
+              "now": [
+                "maintenant",
+                "now",
+                "d"
+              ],
+              "real": [
+                "vrais",
+                "real",
+                "a",
+                "vrai"
+              ],
+              "explorers": [
+                "explorateurs",
+                "explorer",
+                "n",
+                "explorateur"
+              ]
+            }
+          },
+          {
+            "en": "That night, Sam did not draw on his hand.",
+            "fr": "Cette nuit-là, Sam ne dessina pas sur sa main.",
+            "g": {
+              "night": [
+                "nuit"
+              ],
+              "did": [
+                "(did not : ne… pas)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "draw": [
+                "dessina",
+                "draw",
+                "v",
+                "dessiner"
+              ]
+            }
+          },
+          {
+            "en": "He listened to every single word.",
+            "fr": "Il écouta absolument chaque mot.",
+            "g": {
+              "listened": [
+                "écouta",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "every": [
+                "chaque",
+                "every",
+                "t"
+              ],
+              "single": [
+                "(every single : absolument chaque)",
+                "single",
+                "a"
+              ],
+              "word": [
+                "mot"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ]
+}

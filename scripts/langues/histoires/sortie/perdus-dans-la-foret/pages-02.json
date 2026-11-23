@@ -1,0 +1,3247 @@
+{
+  "debut": 6,
+  "lexique": {
+    "same": [
+      "même",
+      "same",
+      "a"
+    ],
+    "white": [
+      "blanc",
+      "white",
+      "a"
+    ],
+    "whistle": [
+      "sifflet",
+      "whistle",
+      "n"
+    ],
+    "loud": [
+      "fort",
+      "loud",
+      "a"
+    ],
+    "ground": [
+      "sol",
+      "ground",
+      "n"
+    ],
+    "forest": [
+      "forêt",
+      "forest",
+      "n"
+    ],
+    "trees": [
+      "arbres",
+      "tree",
+      "n",
+      "arbre"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "inès": [
+      "Inès (prénom)",
+      "Inès",
+      "np"
+    ],
+    "tree": [
+      "arbre",
+      "tree",
+      "n"
+    ],
+    "minutes": [
+      "minutes",
+      "minute",
+      "n",
+      "minute"
+    ],
+    "photo": [
+      "photo",
+      "photo",
+      "n"
+    ],
+    "sam": [
+      "Sam (prénom)",
+      "Sam",
+      "np"
+    ],
+    "rule": [
+      "règle",
+      "rule",
+      "n"
+    ],
+    "sky": [
+      "ciel",
+      "sky",
+      "n"
+    ],
+    "pocket": [
+      "poche",
+      "pocket",
+      "n"
+    ],
+    "compass": [
+      "boussole",
+      "compass",
+      "n"
+    ],
+    "mrs": [
+      "Mme",
+      "Mrs",
+      "n"
+    ],
+    "minute": [
+      "minute",
+      "minute",
+      "n"
+    ],
+    "needle": [
+      "aiguille",
+      "needle",
+      "n"
+    ],
+    "south": [
+      "sud",
+      "south",
+      "n"
+    ],
+    "river": [
+      "rivière",
+      "river",
+      "n"
+    ],
+    "red": [
+      "rouge",
+      "red",
+      "a"
+    ],
+    "dinner": [
+      "dîner",
+      "dinner",
+      "n"
+    ],
+    "hand": [
+      "main",
+      "hand",
+      "n"
+    ],
+    "downstream": [
+      "vers l'aval",
+      "downstream",
+      "d"
+    ],
+    "camp": [
+      "camp",
+      "camp",
+      "n"
+    ],
+    "brown": [
+      "Brown (nom de famille)",
+      "Brown",
+      "np"
+    ],
+    "water": [
+      "eau",
+      "water",
+      "n"
+    ],
+    "hour": [
+      "heure",
+      "hour",
+      "n"
+    ],
+    "noise": [
+      "bruit",
+      "noise",
+      "n"
+    ],
+    "suddenly": [
+      "soudain",
+      "suddenly",
+      "d"
+    ],
+    "perfect": [
+      "parfait",
+      "perfect",
+      "a"
+    ],
+    "big": [
+      "grand",
+      "big",
+      "a"
+    ],
+    "notebook": [
+      "carnet",
+      "notebook",
+      "n"
+    ],
+    "branches": [
+      "branches",
+      "branch",
+      "n",
+      "branche"
+    ],
+    "wind": [
+      "vent",
+      "wind",
+      "n"
+    ],
+    "walk": [
+      "marcher",
+      "walk",
+      "v"
+    ],
+    "storm": [
+      "orage",
+      "storm",
+      "n"
+    ],
+    "thunder": [
+      "tonnerre",
+      "thunder",
+      "n"
+    ],
+    "shelter": [
+      "abri",
+      "shelter",
+      "n"
+    ],
+    "good": [
+      "bon",
+      "good",
+      "a"
+    ],
+    "asked": [
+      "demanda",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "jacket": [
+      "veste",
+      "jacket",
+      "n"
+    ],
+    "rain": [
+      "pluie",
+      "rain",
+      "n"
+    ],
+    "bank": [
+      "berge",
+      "bank",
+      "n"
+    ],
+    "huge": [
+      "énorme",
+      "huge",
+      "a"
+    ],
+    "small": [
+      "petit",
+      "small",
+      "a"
+    ],
+    "roof": [
+      "toit",
+      "roof",
+      "n"
+    ],
+    "thick": [
+      "épais",
+      "thick",
+      "a"
+    ],
+    "wet": [
+      "mouillé",
+      "wet",
+      "a"
+    ],
+    "idea": [
+      "idée",
+      "idea",
+      "n"
+    ],
+    "ferns": [
+      "fougères",
+      "fern",
+      "n",
+      "fougère"
+    ],
+    "friends": [
+      "amis",
+      "friend",
+      "n",
+      "ami"
+    ],
+    "cold": [
+      "froid",
+      "cold",
+      "a"
+    ],
+    "leaves": [
+      "feuilles",
+      "leaf",
+      "n",
+      "feuille"
+    ],
+    "sandwich": [
+      "sandwich",
+      "sandwich",
+      "n"
+    ],
+    "trunk": [
+      "tronc",
+      "trunk",
+      "n"
+    ],
+    "bag": [
+      "sac",
+      "bag",
+      "n"
+    ],
+    "bright": [
+      "brillant",
+      "bright",
+      "a"
+    ],
+    "stars": [
+      "étoiles",
+      "star",
+      "n",
+      "étoile"
+    ],
+    "north": [
+      "nord",
+      "north",
+      "n"
+    ]
+  },
+  "pages": [
+    {
+      "p": [
+        [
+          {
+            "en": "They tried to walk back the same way.",
+            "fr": "Ils essayèrent de revenir par le même chemin.",
+            "g": {
+              "tried": [
+                "essayèrent",
+                "try",
+                "v",
+                "essayer"
+              ],
+              "walk": [
+                "revenir (walk back)",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "back": [
+                "(walk back : revenir)",
+                "back",
+                "d"
+              ],
+              "way": [
+                "chemin",
+                "way",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "But leaves covered the ground, and there were no footprints.",
+            "fr": "Mais des feuilles couvraient le sol, et il n'y avait aucune trace de pas.",
+            "g": {
+              "leaves": [
+                "des feuilles",
+                "leaf",
+                "n",
+                "feuille"
+              ],
+              "covered": [
+                "couvraient",
+                "cover",
+                "v",
+                "couvrir"
+              ],
+              "there": [
+                "(there were : il y avait)",
+                "there",
+                "d"
+              ],
+              "were": [
+                "il y avait (there were)",
+                "be",
+                "v",
+                "être"
+              ],
+              "no": [
+                "aucune",
+                "no",
+                "t"
+              ],
+              "footprints": [
+                "trace de pas",
+                "footprint",
+                "n",
+                "empreinte de pas"
+              ]
+            }
+          },
+          {
+            "en": "The forest was getting darker and colder.",
+            "fr": "La forêt devenait de plus en plus sombre et froide.",
+            "g": {
+              "getting": [
+                "devenait",
+                "get",
+                "v",
+                "devenir"
+              ],
+              "darker": [
+                "plus sombre",
+                "dark",
+                "a",
+                "sombre"
+              ],
+              "colder": [
+                "plus froide",
+                "cold",
+                "a",
+                "froid"
+              ],
+              "and": [
+                "(darker and colder : de plus en plus)",
+                "and",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "The shadows were getting longer between the trees.",
+            "fr": "Les ombres s'allongeaient entre les arbres.",
+            "g": {
+              "shadows": [
+                "ombres",
+                "shadow",
+                "n",
+                "ombre"
+              ],
+              "getting": [
+                "s'allongeaient",
+                "get",
+                "v",
+                "devenir"
+              ],
+              "longer": [
+                "(getting longer : s'allongeaient)",
+                "long",
+                "a",
+                "long"
+              ]
+            }
+          },
+          {
+            "en": "After twenty minutes, they reached a fallen tree with white mushrooms on it.",
+            "fr": "Au bout de vingt minutes, ils atteignirent un arbre tombé avec des champignons blancs dessus.",
+            "g": {
+              "after": [
+                "au bout de",
+                "after",
+                "r"
+              ],
+              "reached": [
+                "atteignirent",
+                "reach",
+                "v",
+                "atteindre"
+              ],
+              "fallen": [
+                "tombé",
+                "fall",
+                "a",
+                "tomber"
+              ],
+              "mushrooms": [
+                "champignons",
+                "mushroom",
+                "n"
+              ],
+              "on": [
+                "(on it : dessus)",
+                "on",
+                "r"
+              ],
+              "it": [
+                "dessus (on it)",
+                "it",
+                "p"
+              ],
+              "white": [
+                "blancs",
+                "white",
+                "a",
+                "blanc"
+              ]
+            }
+          },
+          {
+            "en": "“I know this tree!” said Sam.",
+            "fr": "« Je connais cet arbre ! » dit Sam.",
+            "g": {
+              "know": [
+                "connais",
+                "know",
+                "v",
+                "connaître"
+              ],
+              "this": [
+                "cet",
+                "this",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "“We passed it ten minutes ago.”",
+            "fr": "« On l'a dépassé il y a dix minutes. »",
+            "g": {
+              "we": [
+                "on",
+                "we",
+                "p"
+              ],
+              "passed": [
+                "a dépassé",
+                "pass",
+                "v",
+                "passer"
+              ],
+              "it": [
+                "l'",
+                "it",
+                "p"
+              ],
+              "ten": [
+                "dix"
+              ],
+              "ago": [
+                "il y a",
+                "ago",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“We’re walking in circles,” said Inès.",
+            "fr": "« On tourne en rond », dit Inès.",
+            "g": {
+              "we're": [
+                "on",
+                "we",
+                "p"
+              ],
+              "walking": [
+                "tourne (walking in circles)",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "in": [
+                "(in circles : en rond)",
+                "in",
+                "r"
+              ],
+              "circles": [
+                "en rond (in circles)",
+                "circle",
+                "n",
+                "cercle"
+              ]
+            }
+          },
+          {
+            "en": "They sat down on the tree and looked at each other.",
+            "fr": "Ils s'assirent sur l'arbre et se regardèrent.",
+            "g": {
+              "sat": [
+                "s'assirent",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sat down : s'assirent)",
+                "down",
+                "d"
+              ],
+              "looked": [
+                "regardèrent",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looked at each other : se)",
+                "at",
+                "r"
+              ],
+              "each": [
+                "(each other : se)",
+                "each",
+                "p"
+              ],
+              "other": [
+                "se regardèrent (each other)",
+                "other",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“I’m sorry,” said Sam.",
+            "fr": "« Je suis désolé », dit Sam.",
+            "g": {
+              "sorry": [
+                "désolé",
+                "sorry",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“It’s my fault.",
+            "fr": "« C'est ma faute.",
+            "g": {
+              "it's": [
+                "c'est",
+                "it",
+                "p"
+              ],
+              "fault": [
+                "faute"
+              ]
+            }
+          },
+          {
+            "en": "I wanted that photo too much.”",
+            "fr": "Je voulais trop cette photo. »",
+            "g": {
+              "wanted": [
+                "voulais",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "that": [
+                "cette",
+                "that",
+                "t"
+              ],
+              "too": [
+                "trop",
+                "too",
+                "d"
+              ],
+              "much": [
+                "(too much : trop)",
+                "much",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Never mind,” said Inès.",
+            "fr": "« Ce n'est pas grave », dit Inès.",
+            "g": {
+              "never": [
+                "(never mind : ce n'est pas grave)",
+                "never",
+                "d"
+              ],
+              "mind": [
+                "ce n'est pas grave (never mind)",
+                "mind",
+                "v",
+                "faire attention"
+              ]
+            }
+          },
+          {
+            "en": "“Let’s remember the rules.",
+            "fr": "« Rappelons-nous les règles.",
+            "g": {
+              "remember": [
+                "rappelons-nous",
+                "remember",
+                "v",
+                "se souvenir"
+              ],
+              "rules": [
+                "règles",
+                "rule",
+                "n",
+                "règle"
+              ]
+            }
+          },
+          {
+            "en": "What should we do first?”",
+            "fr": "Que devons-nous faire d'abord ? »",
+            "g": {
+              "what": [
+                "que",
+                "what",
+                "p"
+              ],
+              "do": [
+                "faire",
+                "do",
+                "v",
+                "faire"
+              ],
+              "first": [
+                "d'abord",
+                "first",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Stay calm,” said Sam.",
+            "fr": "« Restons calmes », dit Sam.",
+            "g": {
+              "calm": [
+                "calmes",
+                "calm",
+                "a",
+                "calme"
+              ],
+              "stay": [
+                "restons",
+                "stay",
+                "v",
+                "rester"
+              ]
+            }
+          },
+          {
+            "en": "He took a deep breath.",
+            "fr": "Il prit une profonde inspiration.",
+            "g": {
+              "took": [
+                "prit",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "deep": [
+                "profonde",
+                "deep",
+                "a",
+                "profond"
+              ],
+              "breath": [
+                "inspiration (breath)",
+                "breath",
+                "n",
+                "souffle"
+              ]
+            }
+          },
+          {
+            "en": "Inès put her hand on his shoulder.",
+            "fr": "Inès posa la main sur son épaule.",
+            "g": {
+              "put": [
+                "posa",
+                "put",
+                "v",
+                "poser"
+              ],
+              "hand": [
+                "main"
+              ],
+              "shoulder": [
+                "épaule"
+              ]
+            }
+          },
+          {
+            "en": "“We are not going to panic,” she said.",
+            "fr": "« Nous n'allons pas paniquer », dit-elle.",
+            "g": {
+              "are": [
+                "(are not going to : n'allons pas)",
+                "be",
+                "v",
+                "être"
+              ],
+              "going": [
+                "n'allons pas (futur proche)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "to": [
+                "(going to : n'allons)",
+                "to",
+                "x"
+              ],
+              "panic": [
+                "paniquer",
+                "panic",
+                "v",
+                "paniquer"
+              ],
+              "said": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "“Then we use the whistle,” said Inès.",
+            "fr": "« Ensuite, on utilise le sifflet », dit Inès.",
+            "g": {
+              "then": [
+                "ensuite",
+                "then",
+                "d"
+              ],
+              "we": [
+                "on",
+                "we",
+                "p"
+              ],
+              "use": [
+                "utilise",
+                "use",
+                "v",
+                "utiliser"
+              ]
+            }
+          },
+          {
+            "en": "Sam felt a little afraid, but he smiled bravely.",
+            "fr": "Sam avait un peu peur, mais il sourit courageusement.",
+            "g": {
+              "felt": [
+                "avait peur (felt afraid)",
+                "feel",
+                "v",
+                "ressentir"
+              ],
+              "a": [
+                "(a little : un peu)",
+                "a",
+                "t"
+              ],
+              "little": [
+                "un peu (a little)",
+                "little",
+                "d"
+              ],
+              "afraid": [
+                "(felt afraid : peur)",
+                "afraid",
+                "a"
+              ],
+              "smiled": [
+                "sourit",
+                "smile",
+                "v",
+                "sourire"
+              ],
+              "bravely": [
+                "courageusement",
+                "bravely",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "They blew three loud blasts and listened carefully.",
+            "fr": "Ils soufflèrent trois coups de sifflet forts et écoutèrent attentivement.",
+            "g": {
+              "blew": [
+                "soufflèrent",
+                "blow",
+                "v",
+                "souffler"
+              ],
+              "blasts": [
+                "coups de sifflet",
+                "blast",
+                "n",
+                "coup"
+              ],
+              "listened": [
+                "écoutèrent",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "carefully": [
+                "attentivement",
+                "carefully",
+                "d"
+              ],
+              "loud": [
+                "forts",
+                "loud",
+                "a",
+                "fort"
+              ]
+            }
+          },
+          {
+            "en": "Only the wind answered.",
+            "fr": "Seul le vent répondit.",
+            "g": {
+              "only": [
+                "seul",
+                "only",
+                "a"
+              ],
+              "wind": [
+                "vent"
+              ],
+              "answered": [
+                "répondit",
+                "answer",
+                "v",
+                "répondre"
+              ]
+            }
+          },
+          {
+            "en": "They tried again, but nobody came.",
+            "fr": "Ils réessayèrent, mais personne ne vint.",
+            "g": {
+              "tried": [
+                "réessayèrent",
+                "try",
+                "v",
+                "essayer"
+              ],
+              "came": [
+                "vint",
+                "come",
+                "v",
+                "venir"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 3 — Lost",
+      "titreFr": "Chapitre 3 — Perdus"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "“We’re too far away,” said Inès.",
+            "fr": "« On est trop loin », dit Inès.",
+            "g": {
+              "we're": [
+                "on est",
+                "we",
+                "p"
+              ],
+              "far": [
+                "loin",
+                "far",
+                "a",
+                "loin"
+              ],
+              "away": [
+                "(too far away : loin)",
+                "away",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Now we need the compass.”",
+            "fr": "« Maintenant, il nous faut la boussole. »",
+            "g": {
+              "need": [
+                "il nous faut",
+                "need",
+                "v",
+                "avoir besoin de"
+              ],
+              "we": [
+                "(we need : il nous faut)",
+                "we",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Sam took the compass out of his pocket and held it flat in his hand.",
+            "fr": "Sam sortit la boussole de sa poche et la tint à plat dans sa main.",
+            "g": {
+              "took": [
+                "sortit (took out)",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "out": [
+                "(took out : sortit)",
+                "out",
+                "d"
+              ],
+              "of": [
+                "de",
+                "of",
+                "r"
+              ],
+              "held": [
+                "tint",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "it": [
+                "la",
+                "it",
+                "p"
+              ],
+              "flat": [
+                "à plat",
+                "flat",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "For the first time in an hour, Sam smiled.",
+            "fr": "Pour la première fois en une heure, Sam sourit.",
+            "g": {
+              "first": [
+                "première",
+                "first",
+                "a",
+                "premier"
+              ],
+              "time": [
+                "fois (first time)",
+                "time",
+                "n",
+                "fois"
+              ],
+              "hour": [
+                "heure"
+              ],
+              "smiled": [
+                "sourit",
+                "smile",
+                "v",
+                "sourire"
+              ]
+            }
+          },
+          {
+            "en": "The red needle moved from left to right, and then it stopped.",
+            "fr": "L'aiguille rouge oscilla de gauche à droite, puis s'arrêta.",
+            "g": {
+              "moved": [
+                "oscilla",
+                "move",
+                "v",
+                "bouger"
+              ],
+              "left": [
+                "gauche",
+                "left",
+                "n"
+              ],
+              "right": [
+                "droite",
+                "right",
+                "n"
+              ],
+              "stopped": [
+                "s'arrêta",
+                "stop",
+                "v",
+                "s'arrêter"
+              ],
+              "it": [
+                "(it stopped : elle)",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“I remember the map. The camp is south,” said Inès.",
+            "fr": "« Je me souviens de la carte : le camp est au sud », dit Inès.",
+            "g": {
+              "remember": [
+                "me souviens de (remember)",
+                "remember",
+                "v",
+                "se souvenir"
+              ],
+              "map": [
+                "carte",
+                "map",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“So we walk away from the needle.”",
+            "fr": "« Donc on marche à l'opposé de l'aiguille. »",
+            "g": {
+              "so": [
+                "donc",
+                "so",
+                "c"
+              ],
+              "walk": [
+                "marche à l'opposé de (walk away from)",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "away": [
+                "(walk away from : marche à l'opposé de)",
+                "away",
+                "d"
+              ],
+              "from": [
+                "(away from : à l'opposé de)",
+                "from",
+                "r"
+              ],
+              "we": [
+                "on",
+                "we",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "They walked for half an hour, and Sam checked the compass every minute.",
+            "fr": "Ils marchèrent pendant une demi-heure, et Sam consulta la boussole toutes les minutes.",
+            "g": {
+              "walked": [
+                "marchèrent",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "half": [
+                "(half an hour : demi-heure)",
+                "half",
+                "n",
+                "moitié"
+              ],
+              "checked": [
+                "consulta",
+                "check",
+                "v",
+                "vérifier"
+              ],
+              "every": [
+                "toutes les",
+                "every",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "The trees were thicker now, and the ground went down.",
+            "fr": "Les arbres étaient plus épais maintenant, et le sol descendait.",
+            "g": {
+              "thicker": [
+                "plus épais",
+                "thick",
+                "a",
+                "épais"
+              ],
+              "went": [
+                "descendait (went down)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "down": [
+                "(went down : descendait)",
+                "down",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Suddenly, Inès heard a noise.",
+            "fr": "Soudain, Inès entendit un bruit.",
+            "g": {
+              "heard": [
+                "entendit",
+                "hear",
+                "v",
+                "entendre"
+              ]
+            }
+          },
+          {
+            "en": "“Listen!",
+            "fr": "« Écoute !",
+            "g": {
+              "listen": [
+                "écoute",
+                "listen",
+                "v",
+                "écouter"
+              ]
+            }
+          },
+          {
+            "en": "Is that water?”",
+            "fr": "C'est de l'eau ? »",
+            "g": {
+              "is": [
+                "(is that : c'est)",
+                "be",
+                "v",
+                "être"
+              ],
+              "that": [
+                "(is that : c'est)",
+                "that",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "They pushed through the bushes and found a fast, clear river.",
+            "fr": "Ils se frayèrent un passage dans les buissons et trouvèrent une rivière rapide et claire.",
+            "g": {
+              "pushed": [
+                "se frayèrent un passage",
+                "push",
+                "v",
+                "pousser"
+              ],
+              "through": [
+                "(pushed through : dans)",
+                "through",
+                "r"
+              ],
+              "bushes": [
+                "buissons",
+                "bush",
+                "n",
+                "buisson"
+              ],
+              "found": [
+                "trouvèrent",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "fast": [
+                "rapide",
+                "fast",
+                "a"
+              ],
+              "clear": [
+                "claire",
+                "clear",
+                "a",
+                "clair"
+              ]
+            }
+          },
+          {
+            "en": "“Mrs Brown’s rule!” cried Inès.",
+            "fr": "« La règle de Mme Brown ! » s'écria Inès.",
+            "g": {
+              "mrs": [
+                "Mme",
+                "Mrs",
+                "n"
+              ],
+              "brown's": [
+                "de Mme Brown (Brown)",
+                "Brown",
+                "np"
+              ],
+              "cried": [
+                "s'écria",
+                "cry",
+                "v",
+                "crier"
+              ]
+            }
+          },
+          {
+            "en": "“Follow the river downstream!”",
+            "fr": "« Suivons la rivière vers l'aval ! »",
+            "g": {
+              "follow": [
+                "suivons",
+                "follow",
+                "v",
+                "suivre"
+              ]
+            }
+          },
+          {
+            "en": "“Well done, Sam!” said Inès.",
+            "fr": "« Bravo, Sam ! » dit Inès.",
+            "g": {
+              "well": [
+                "bravo (well done)",
+                "well",
+                "d"
+              ],
+              "done": [
+                "(well done : bravo)",
+                "do",
+                "v",
+                "faire"
+              ]
+            }
+          },
+          {
+            "en": "“You see?",
+            "fr": "« Tu vois ?",
+            "g": {
+              "you": [
+                "tu",
+                "you",
+                "p"
+              ],
+              "see": [
+                "vois",
+                "see",
+                "v",
+                "voir"
+              ]
+            }
+          },
+          {
+            "en": "Lessons are useful.”",
+            "fr": "Les leçons sont utiles. »",
+            "g": {
+              "lessons": [
+                "leçons",
+                "lesson",
+                "n",
+                "leçon"
+              ],
+              "useful": [
+                "utiles",
+                "useful",
+                "a",
+                "utile"
+              ]
+            }
+          },
+          {
+            "en": "Sam checked the compass again.",
+            "fr": "Sam consulta de nouveau la boussole.",
+            "g": {
+              "checked": [
+                "consulta",
+                "check",
+                "v",
+                "vérifier"
+              ],
+              "again": [
+                "de nouveau",
+                "again",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "The water was flowing south.",
+            "fr": "L'eau coulait vers le sud.",
+            "g": {
+              "flowing": [
+                "coulait",
+                "flow",
+                "v",
+                "couler"
+              ]
+            }
+          },
+          {
+            "en": "“It matches!”",
+            "fr": "« Ça correspond ! »",
+            "g": {
+              "it": [
+                "ça",
+                "it",
+                "p"
+              ],
+              "matches": [
+                "correspond",
+                "match",
+                "v",
+                "correspondre"
+              ]
+            }
+          },
+          {
+            "en": "“We’re going to be home for dinner!” said Sam.",
+            "fr": "« On va être de retour pour le dîner ! » dit Sam.",
+            "g": {
+              "we're": [
+                "on",
+                "we",
+                "p"
+              ],
+              "going": [
+                "va (futur proche)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "to": [
+                "(going to : va)",
+                "to",
+                "x"
+              ],
+              "be": [
+                "être de retour (be home)",
+                "be",
+                "v",
+                "être"
+              ],
+              "home": [
+                "(be home : être de retour)",
+                "home",
+                "n"
+              ],
+              "for": [
+                "pour",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "But above the trees, the sky was turning dark grey.",
+            "fr": "Mais au-dessus des arbres, le ciel devenait gris foncé.",
+            "g": {
+              "above": [
+                "au-dessus de",
+                "above",
+                "r"
+              ],
+              "turning": [
+                "devenait",
+                "turn",
+                "v",
+                "devenir"
+              ],
+              "dark": [
+                "foncé",
+                "dark",
+                "a",
+                "sombre"
+              ],
+              "grey": [
+                "gris",
+                "grey",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "Far away, thunder rumbled.",
+            "fr": "Au loin, le tonnerre gronda.",
+            "g": {
+              "far": [
+                "au loin",
+                "far",
+                "d"
+              ],
+              "away": [
+                "(far away : au loin)",
+                "away",
+                "d"
+              ],
+              "thunder": [
+                "tonnerre"
+              ],
+              "rumbled": [
+                "gronda",
+                "rumble",
+                "v",
+                "gronder"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "They followed the river for ten minutes.",
+            "fr": "Ils suivirent la rivière pendant dix minutes.",
+            "g": {
+              "followed": [
+                "suivirent",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Then the first big drops of rain fell.",
+            "fr": "Puis les premières grosses gouttes de pluie tombèrent.",
+            "g": {
+              "then": [
+                "puis",
+                "then",
+                "d"
+              ],
+              "first": [
+                "premières",
+                "first",
+                "a",
+                "premier"
+              ],
+              "big": [
+                "grosses",
+                "big",
+                "a",
+                "grand"
+              ],
+              "drops": [
+                "gouttes",
+                "drop",
+                "n",
+                "goutte"
+              ],
+              "fell": [
+                "tombèrent",
+                "fall",
+                "v",
+                "tomber"
+              ]
+            }
+          },
+          {
+            "en": "Soon it was raining hard, and the wind shook the trees.",
+            "fr": "Bientôt, il pleuvait à verse, et le vent secouait les arbres.",
+            "g": {
+              "it": [
+                "il",
+                "it",
+                "p"
+              ],
+              "hard": [
+                "à verse",
+                "hard",
+                "d"
+              ],
+              "shook": [
+                "secouait",
+                "shake",
+                "v",
+                "secouer"
+              ],
+              "raining": [
+                "pleuvait",
+                "rain",
+                "v",
+                "pleuvoir"
+              ]
+            }
+          },
+          {
+            "en": "Thunder cracked above them, much louder than before.",
+            "fr": "Le tonnerre éclata au-dessus d'eux, bien plus fort qu'avant.",
+            "g": {
+              "cracked": [
+                "éclata",
+                "crack",
+                "v",
+                "éclater"
+              ],
+              "above": [
+                "au-dessus de",
+                "above",
+                "r"
+              ],
+              "louder": [
+                "plus fort",
+                "loud",
+                "a",
+                "fort"
+              ],
+              "than": [
+                "qu'",
+                "than",
+                "c"
+              ],
+              "before": [
+                "avant",
+                "before",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“We can’t walk next to the river in this storm!” shouted Inès.",
+            "fr": "« On ne peut pas marcher au bord de la rivière pendant cet orage ! » cria Inès.",
+            "g": {
+              "we": [
+                "on",
+                "we",
+                "p"
+              ],
+              "next": [
+                "(next to : au bord de)",
+                "next",
+                "a"
+              ],
+              "to": [
+                "au bord de (next to)",
+                "to",
+                "r"
+              ],
+              "in": [
+                "pendant",
+                "in",
+                "r"
+              ],
+              "shouted": [
+                "cria",
+                "shout",
+                "v",
+                "crier"
+              ]
+            }
+          },
+          {
+            "en": "“The bank is slippery, and it is dangerous under tall trees.”",
+            "fr": "« La berge est glissante, et c'est dangereux sous de grands arbres. »",
+            "g": {
+              "bank": [
+                "berge",
+                "bank",
+                "n"
+              ],
+              "slippery": [
+                "glissante",
+                "slippery",
+                "a",
+                "glissant"
+              ],
+              "it": [
+                "c'",
+                "it",
+                "p"
+              ],
+              "is": [
+                "est",
+                "be",
+                "v",
+                "être"
+              ],
+              "dangerous": [
+                "dangereux"
+              ],
+              "tall": [
+                "grands",
+                "tall",
+                "a",
+                "grand"
+              ]
+            }
+          },
+          {
+            "en": "“So what should we do?” asked Sam.",
+            "fr": "« Alors, que devrions-nous faire ? » demanda Sam.",
+            "g": {
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ],
+              "what": [
+                "que",
+                "what",
+                "p"
+              ],
+              "should": [
+                "devrions",
+                "should",
+                "v",
+                "devoir"
+              ],
+              "do": [
+                "faire",
+                "do",
+                "v",
+                "faire"
+              ]
+            }
+          },
+          {
+            "en": "His jacket was already wet.",
+            "fr": "Sa veste était déjà mouillée.",
+            "g": {
+              "wet": [
+                "mouillée",
+                "wet",
+                "a",
+                "mouillé"
+              ]
+            }
+          },
+          {
+            "en": "“We should build a shelter,” said Inès.",
+            "fr": "« Nous devrions construire un abri », dit Inès.",
+            "g": {
+              "should": [
+                "devrions",
+                "should",
+                "v",
+                "devoir"
+              ],
+              "build": [
+                "construire",
+                "build",
+                "v",
+                "construire"
+              ]
+            }
+          },
+          {
+            "en": "“Right now, before it gets worse.”",
+            "fr": "« Tout de suite, avant que ça empire. »",
+            "g": {
+              "right": [
+                "(right now : tout de suite)",
+                "right",
+                "d"
+              ],
+              "now": [
+                "tout de suite (right now)",
+                "now",
+                "d"
+              ],
+              "it": [
+                "ça",
+                "it",
+                "p"
+              ],
+              "gets": [
+                "empire",
+                "get",
+                "v",
+                "empirer"
+              ],
+              "worse": [
+                "(gets worse : empire)",
+                "bad",
+                "a",
+                "mauvais"
+              ]
+            }
+          },
+          {
+            "en": "They left the river and looked for a good place.",
+            "fr": "Ils quittèrent la rivière et cherchèrent un bon endroit.",
+            "g": {
+              "left": [
+                "quittèrent",
+                "leave",
+                "v",
+                "quitter"
+              ],
+              "looked": [
+                "cherchèrent (looked for)",
+                "look",
+                "v",
+                "chercher"
+              ],
+              "for": [
+                "(looked for : cherchèrent)",
+                "for",
+                "r"
+              ],
+              "place": [
+                "endroit"
+              ]
+            }
+          },
+          {
+            "en": "On the way, Sam dropped his compass in the mud, but he picked it up.",
+            "fr": "En chemin, Sam laissa tomber sa boussole dans la boue, mais il la ramassa.",
+            "g": {
+              "way": [
+                "chemin",
+                "way",
+                "n"
+              ],
+              "on": [
+                "(on the way : en)",
+                "on",
+                "r"
+              ],
+              "the": [
+                "(on the way : en chemin)",
+                "the",
+                "t"
+              ],
+              "dropped": [
+                "laissa tomber",
+                "drop",
+                "v",
+                "laisser tomber"
+              ],
+              "mud": [
+                "boue"
+              ],
+              "picked": [
+                "ramassa (picked up)",
+                "pick",
+                "v",
+                "ramasser"
+              ],
+              "up": [
+                "(picked up : ramassa)",
+                "up",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Fifty metres from the bank, they found a huge fallen tree.",
+            "fr": "À cinquante mètres de la berge, ils trouvèrent un énorme arbre tombé.",
+            "g": {
+              "fifty": [
+                "cinquante"
+              ],
+              "metres": [
+                "mètres",
+                "metre",
+                "n",
+                "mètre"
+              ],
+              "found": [
+                "trouvèrent",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "fallen": [
+                "tombé",
+                "fall",
+                "a",
+                "tomber"
+              ]
+            }
+          },
+          {
+            "en": "Its trunk was thick, and its roots made a big wall.",
+            "fr": "Son tronc était épais, et ses racines formaient un grand mur.",
+            "g": {
+              "trunk": [
+                "tronc"
+              ],
+              "thick": [
+                "épais"
+              ],
+              "roots": [
+                "racines",
+                "root",
+                "n",
+                "racine"
+              ],
+              "made": [
+                "formaient",
+                "make",
+                "v",
+                "faire"
+              ],
+              "wall": [
+                "mur"
+              ]
+            }
+          },
+          {
+            "en": "“Perfect!” said Inès.",
+            "fr": "« Parfait ! » dit Inès."
+          },
+          {
+            "en": "“Lean branches against it, like Mrs Brown showed us.”",
+            "fr": "« Appuyons des branches contre l'arbre, comme Mme Brown nous l'a montré. »",
+            "g": {
+              "lean": [
+                "appuyons",
+                "lean",
+                "v",
+                "appuyer"
+              ],
+              "it": [
+                "l'arbre",
+                "it",
+                "p"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "c"
+              ],
+              "showed": [
+                "a montré",
+                "show",
+                "v",
+                "montrer"
+              ],
+              "us": [
+                "nous",
+                "we",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Sam smiled in the rain.",
+            "fr": "Sam sourit sous la pluie.",
+            "g": {
+              "smiled": [
+                "sourit",
+                "smile",
+                "v",
+                "sourire"
+              ],
+              "in": [
+                "sous",
+                "in",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“To be honest, I only half listened to that lesson.”",
+            "fr": "« Pour être honnête, je n'ai écouté cette leçon qu'à moitié. »",
+            "g": {
+              "to": [
+                "(to be honest : pour être honnête)",
+                "to",
+                "x"
+              ],
+              "be": [
+                "(to be honest : être honnête)",
+                "be",
+                "v",
+                "être"
+              ],
+              "honest": [
+                "honnête"
+              ],
+              "only": [
+                "(only half : qu')",
+                "only",
+                "d"
+              ],
+              "half": [
+                "à moitié (only half)",
+                "half",
+                "d"
+              ],
+              "listened": [
+                "ai écouté",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "to#2": [
+                "(listened to : écouté)",
+                "to",
+                "r"
+              ],
+              "lesson": [
+                "leçon"
+              ]
+            }
+          },
+          {
+            "en": "“I know,” said Inès.",
+            "fr": "« Je sais », dit Inès.",
+            "g": {
+              "know": [
+                "sais",
+                "know",
+                "v",
+                "savoir"
+              ]
+            }
+          },
+          {
+            "en": "“That’s why I wrote everything in my notebook!”",
+            "fr": "« C'est pour ça que j'ai tout écrit dans mon carnet ! »",
+            "g": {
+              "that's": [
+                "c'est",
+                "that",
+                "p"
+              ],
+              "why": [
+                "pour ça que (that's why)",
+                "why",
+                "d"
+              ],
+              "wrote": [
+                "ai écrit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "everything": [
+                "tout"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 4 — The Storm",
+      "titreFr": "Chapitre 4 — L'orage"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "They collected long branches from the ground.",
+            "fr": "Ils ramassèrent de longues branches sur le sol.",
+            "g": {
+              "collected": [
+                "ramassèrent",
+                "collect",
+                "v",
+                "ramasser"
+              ],
+              "long": [
+                "longues",
+                "long",
+                "a",
+                "long"
+              ],
+              "from": [
+                "sur",
+                "from",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Some were heavy, but the friends carried them together.",
+            "fr": "Certaines étaient lourdes, mais les amis les portèrent ensemble.",
+            "g": {
+              "some": [
+                "certaines",
+                "some",
+                "p"
+              ],
+              "heavy": [
+                "lourdes",
+                "heavy",
+                "a",
+                "lourd"
+              ],
+              "carried": [
+                "portèrent",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "them": [
+                "les",
+                "they",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Sam leaned the branches against the trunk, and Inès filled the gaps with sticks.",
+            "fr": "Sam appuya les branches contre le tronc, et Inès remplit les trous avec des bâtons.",
+            "g": {
+              "leaned": [
+                "appuya",
+                "lean",
+                "v",
+                "appuyer"
+              ],
+              "filled": [
+                "remplit",
+                "fill",
+                "v",
+                "remplir"
+              ],
+              "gaps": [
+                "trous",
+                "gap",
+                "n",
+                "trou"
+              ],
+              "sticks": [
+                "bâtons",
+                "stick",
+                "n",
+                "bâton"
+              ]
+            }
+          },
+          {
+            "en": "“Now the leaves,” said Inès.",
+            "fr": "« Maintenant, les feuilles », dit Inès.",
+            "g": {
+              "leaves": [
+                "feuilles",
+                "leaf",
+                "n",
+                "feuille"
+              ]
+            }
+          },
+          {
+            "en": "“We need a thick layer to stop the rain.”",
+            "fr": "« Il nous faut une couche épaisse pour arrêter la pluie. »",
+            "g": {
+              "we": [
+                "(we need : il nous faut)",
+                "we",
+                "p"
+              ],
+              "need": [
+                "il nous faut",
+                "need",
+                "v",
+                "avoir besoin de"
+              ],
+              "layer": [
+                "couche"
+              ],
+              "to": [
+                "pour",
+                "to",
+                "x"
+              ],
+              "stop": [
+                "arrêter",
+                "stop",
+                "v",
+                "arrêter"
+              ],
+              "thick": [
+                "épaisse",
+                "thick",
+                "a",
+                "épais"
+              ]
+            }
+          },
+          {
+            "en": "They covered the roof with wet ferns and pine needles.",
+            "fr": "Ils couvrirent le toit de fougères mouillées et d'aiguilles de pin.",
+            "g": {
+              "covered": [
+                "couvrirent",
+                "cover",
+                "v",
+                "couvrir"
+              ],
+              "with": [
+                "de",
+                "with",
+                "r"
+              ],
+              "needles": [
+                "aiguilles",
+                "needle",
+                "n",
+                "aiguille"
+              ],
+              "pine": [
+                "de pin",
+                "pine",
+                "n",
+                "pin"
+              ],
+              "wet": [
+                "mouillées",
+                "wet",
+                "a",
+                "mouillé"
+              ]
+            }
+          },
+          {
+            "en": "“We should put leaves on the floor, too,” said Sam.",
+            "fr": "« On devrait aussi mettre des feuilles sur le sol », dit Sam.",
+            "g": {
+              "we": [
+                "on",
+                "we",
+                "p"
+              ],
+              "should": [
+                "devrait",
+                "should",
+                "v",
+                "devoir"
+              ],
+              "put": [
+                "mettre",
+                "put",
+                "v",
+                "mettre"
+              ],
+              "floor": [
+                "sol",
+                "floor",
+                "n"
+              ],
+              "too": [
+                "aussi",
+                "too",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“The ground is cold.”",
+            "fr": "« Le sol est froid. »",
+            "g": {
+              "ground": [
+                "sol",
+                "ground",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Good idea!” said Inès.",
+            "fr": "« Bonne idée ! » dit Inès.",
+            "g": {
+              "good": [
+                "bonne",
+                "good",
+                "a",
+                "bon"
+              ]
+            }
+          },
+          {
+            "en": "“You listened more than you think.”",
+            "fr": "« Tu as plus écouté que tu ne le crois. »",
+            "g": {
+              "you": [
+                "tu",
+                "you",
+                "p"
+              ],
+              "listened": [
+                "as écouté",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "more": [
+                "plus",
+                "more",
+                "d"
+              ],
+              "than": [
+                "que",
+                "than",
+                "c"
+              ],
+              "think": [
+                "crois",
+                "think",
+                "v",
+                "croire"
+              ]
+            }
+          },
+          {
+            "en": "A bright flash lit the forest, and thunder shook the ground.",
+            "fr": "Un éclair lumineux illumina la forêt, et le tonnerre fit trembler le sol.",
+            "g": {
+              "bright": [
+                "lumineux",
+                "bright",
+                "a",
+                "brillant"
+              ],
+              "flash": [
+                "éclair",
+                "flash",
+                "n"
+              ],
+              "lit": [
+                "illumina",
+                "light",
+                "v",
+                "illuminer"
+              ],
+              "shook": [
+                "fit trembler",
+                "shake",
+                "v",
+                "secouer"
+              ],
+              "ground": [
+                "sol"
+              ]
+            }
+          },
+          {
+            "en": "They crawled inside and sat close together.",
+            "fr": "Ils se glissèrent à l'intérieur et s'assirent serrés l'un contre l'autre.",
+            "g": {
+              "crawled": [
+                "se glissèrent (à quatre pattes)",
+                "crawl",
+                "v",
+                "ramper"
+              ],
+              "inside": [
+                "à l'intérieur",
+                "inside",
+                "d"
+              ],
+              "sat": [
+                "s'assirent",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "close": [
+                "serrés",
+                "close",
+                "a",
+                "proche"
+              ],
+              "together": [
+                "l'un contre l'autre",
+                "together",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "The shelter was small, but it was dry.",
+            "fr": "L'abri était petit, mais il était sec.",
+            "g": {
+              "dry": [
+                "sec"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "The storm roared for an hour.",
+            "fr": "L'orage gronda pendant une heure.",
+            "g": {
+              "roared": [
+                "gronda",
+                "roar",
+                "v",
+                "gronder"
+              ],
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Rain hit the roof, but no water came in.",
+            "fr": "La pluie frappa le toit, mais aucune eau n'entra.",
+            "g": {
+              "hit": [
+                "frappa",
+                "hit",
+                "v",
+                "frapper"
+              ],
+              "came": [
+                "entra (came in)",
+                "come",
+                "v",
+                "venir"
+              ],
+              "in": [
+                "(came in : entra)",
+                "in",
+                "d"
+              ],
+              "no": [
+                "aucune",
+                "no",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "“It works!” whispered Sam.",
+            "fr": "« Ça marche ! » murmura Sam.",
+            "g": {
+              "it": [
+                "ça",
+                "it",
+                "p"
+              ],
+              "works": [
+                "marche",
+                "work",
+                "v",
+                "marcher"
+              ],
+              "whispered": [
+                "murmura",
+                "whisper",
+                "v",
+                "murmurer"
+              ]
+            }
+          },
+          {
+            "en": "“Our shelter really works!”",
+            "fr": "« Notre abri marche vraiment ! »",
+            "g": {
+              "works": [
+                "marche",
+                "work",
+                "v",
+                "marcher"
+              ]
+            }
+          },
+          {
+            "en": "In her small bag, Inès found a squashed cheese sandwich and a green apple.",
+            "fr": "Dans son petit sac, Inès trouva un sandwich au fromage écrasé et une pomme verte.",
+            "g": {
+              "found": [
+                "trouva",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "squashed": [
+                "écrasé",
+                "squashed",
+                "a"
+              ],
+              "cheese": [
+                "fromage"
+              ],
+              "apple": [
+                "pomme"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ],
+              "small": [
+                "petit",
+                "small",
+                "a",
+                "petit"
+              ]
+            }
+          },
+          {
+            "en": "Sam had two chocolate biscuits in his pocket.",
+            "fr": "Sam avait deux biscuits au chocolat dans sa poche.",
+            "g": {
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "biscuits": [
+                "biscuits",
+                "biscuit",
+                "n",
+                "biscuit"
+              ],
+              "chocolate": [
+                "(chocolate biscuits : au chocolat)",
+                "chocolate",
+                "n",
+                "chocolat"
+              ]
+            }
+          },
+          {
+            "en": "They shared everything equally.",
+            "fr": "Ils partagèrent tout à parts égales.",
+            "g": {
+              "shared": [
+                "partagèrent",
+                "share",
+                "v",
+                "partager"
+              ],
+              "equally": [
+                "à parts égales",
+                "equally",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“This is the best sandwich I’ve ever eaten,” said Sam.",
+            "fr": "« C'est le meilleur sandwich que j'aie jamais mangé », dit Sam.",
+            "g": {
+              "this": [
+                "c'",
+                "this",
+                "p"
+              ],
+              "best": [
+                "meilleur",
+                "good",
+                "a",
+                "bon"
+              ],
+              "i've": [
+                "j'aie",
+                "I",
+                "p"
+              ],
+              "ever": [
+                "jamais",
+                "ever",
+                "d"
+              ],
+              "eaten": [
+                "mangé",
+                "eat",
+                "v",
+                "manger"
+              ]
+            }
+          },
+          {
+            "en": "Inès laughed.",
+            "fr": "Inès éclata de rire.",
+            "g": {
+              "laughed": [
+                "éclata de rire",
+                "laugh",
+                "v",
+                "rire"
+              ]
+            }
+          },
+          {
+            "en": "“It’s the only sandwich you’ve had today!”",
+            "fr": "« C'est le seul sandwich que tu aies mangé aujourd'hui ! »",
+            "g": {
+              "it's": [
+                "c'est",
+                "it",
+                "p"
+              ],
+              "only": [
+                "seul",
+                "only",
+                "a"
+              ],
+              "you've": [
+                "tu aies",
+                "you",
+                "p"
+              ],
+              "had": [
+                "mangé",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "“Do you think they are looking for us?” asked Sam quietly.",
+            "fr": "« Tu crois qu'ils nous cherchent ? » demanda Sam à voix basse.",
+            "g": {
+              "do": [
+                "(marque la question)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "think": [
+                "crois",
+                "think",
+                "v",
+                "croire"
+              ],
+              "they": [
+                "ils",
+                "they",
+                "p"
+              ],
+              "looking": [
+                "cherchent (looking for)",
+                "look",
+                "v",
+                "chercher"
+              ],
+              "for": [
+                "(looking for : cherchent)",
+                "for",
+                "r"
+              ],
+              "us": [
+                "nous",
+                "we",
+                "p"
+              ],
+              "quietly": [
+                "à voix basse",
+                "quietly",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“I’m sure,” said Inès.",
+            "fr": "« J'en suis sûre », dit Inès.",
+            "g": {
+              "sure": [
+                "sûre",
+                "sure",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Mrs Brown is going to be very worried, but she knows the forest.”",
+            "fr": "« Mme Brown va être très inquiète, mais elle connaît la forêt. »",
+            "g": {
+              "going": [
+                "va (futur proche)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "to": [
+                "(going to : va)",
+                "to",
+                "x"
+              ],
+              "be": [
+                "être",
+                "be",
+                "v",
+                "être"
+              ],
+              "worried": [
+                "inquiète",
+                "worried",
+                "a"
+              ],
+              "knows": [
+                "connaît",
+                "know",
+                "v",
+                "connaître"
+              ]
+            }
+          },
+          {
+            "en": "“We should stay here tonight.",
+            "fr": "« Nous devrions rester ici cette nuit.",
+            "g": {
+              "should": [
+                "devrions",
+                "should",
+                "v",
+                "devoir"
+              ],
+              "stay": [
+                "rester",
+                "stay",
+                "v",
+                "rester"
+              ],
+              "tonight": [
+                "cette nuit",
+                "tonight",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "A shelter is safer than a dark forest.”",
+            "fr": "Un abri est plus sûr qu'une forêt sombre. »",
+            "g": {
+              "safer": [
+                "plus sûr",
+                "safe",
+                "a",
+                "sûr"
+              ],
+              "dark": [
+                "sombre",
+                "dark",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "After a while, the thunder moved away, and the rain stopped.",
+            "fr": "Au bout d'un moment, le tonnerre s'éloigna et la pluie s'arrêta.",
+            "g": {
+              "after": [
+                "au bout de",
+                "after",
+                "r"
+              ],
+              "while": [
+                "(a while : moment)",
+                "while",
+                "n",
+                "moment"
+              ],
+              "moved": [
+                "s'éloigna (moved away)",
+                "move",
+                "v",
+                "bouger"
+              ],
+              "away": [
+                "(moved away : s'éloigna)",
+                "away",
+                "d"
+              ],
+              "stopped": [
+                "s'arrêta",
+                "stop",
+                "v",
+                "s'arrêter"
+              ]
+            }
+          },
+          {
+            "en": "Sam crawled outside and looked up.",
+            "fr": "Sam sortit à quatre pattes et leva les yeux.",
+            "g": {
+              "crawled": [
+                "sortit à quatre pattes",
+                "crawl",
+                "v",
+                "ramper"
+              ],
+              "outside": [
+                "(crawled outside : sortit)",
+                "outside",
+                "d"
+              ],
+              "looked": [
+                "leva les yeux (looked up)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "up": [
+                "(looked up : leva les yeux)",
+                "up",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Inès, come and look!” he called.",
+            "fr": "« Inès, viens voir ! » appela-t-il.",
+            "g": {
+              "come": [
+                "viens",
+                "come",
+                "v",
+                "venir"
+              ],
+              "look": [
+                "voir",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "called": [
+                "appela-t-il",
+                "call",
+                "v",
+                "appeler"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Thousands of stars shone above the trees, brighter than any stars in town.",
+            "fr": "Des milliers d'étoiles brillaient au-dessus des arbres, plus brillantes que celles de la ville.",
+            "g": {
+              "thousands": [
+                "des milliers",
+                "thousand",
+                "n",
+                "millier"
+              ],
+              "shone": [
+                "brillaient",
+                "shine",
+                "v",
+                "briller"
+              ],
+              "above": [
+                "au-dessus de",
+                "above",
+                "r"
+              ],
+              "brighter": [
+                "plus brillantes",
+                "bright",
+                "a",
+                "brillant"
+              ],
+              "than": [
+                "que",
+                "than",
+                "c"
+              ],
+              "any": [
+                "(any stars : celles)",
+                "any",
+                "d"
+              ],
+              "stars": [
+                "étoiles",
+                "star",
+                "n",
+                "étoile"
+              ],
+              "town": [
+                "ville"
+              ]
+            }
+          },
+          {
+            "en": "“Look, the Plough!” said Inès.",
+            "fr": "« Regarde, la Charrue (la Grande Casserole) ! » dit Inès.",
+            "g": {
+              "look": [
+                "regarde",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "plough": [
+                "Charrue (la Grande Casserole)",
+                "Plough",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Follow the two end stars to the Pole Star.”",
+            "fr": "« Suis les deux étoiles du bout jusqu'à l'étoile Polaire. »",
+            "g": {
+              "follow": [
+                "suis",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "end": [
+                "du bout",
+                "end",
+                "n",
+                "bout"
+              ],
+              "pole": [
+                "(Pole Star : Polaire)",
+                "pole",
+                "n",
+                "pôle"
+              ],
+              "star": [
+                "étoile Polaire (Pole Star)",
+                "star",
+                "n",
+                "étoile"
+              ],
+              "to": [
+                "jusqu'à",
+                "to",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“That bright one is north,” she said.",
+            "fr": "« Cette étoile brillante, c'est le nord », dit-elle.",
+            "g": {
+              "that": [
+                "cette",
+                "that",
+                "t"
+              ],
+              "one": [
+                "étoile (that one)",
+                "one",
+                "p"
+              ],
+              "is": [
+                "c'est (is north)",
+                "be",
+                "v",
+                "être"
+              ],
+              "bright": [
+                "brillante",
+                "bright",
+                "a",
+                "brillant"
+              ]
+            }
+          },
+          {
+            "en": "“Now check your compass.”",
+            "fr": "« Maintenant, vérifie ta boussole. »",
+            "g": {
+              "check": [
+                "vérifie",
+                "check",
+                "v",
+                "vérifier"
+              ],
+              "your": [
+                "ta",
+                "your",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "Sam held the compass under the stars.",
+            "fr": "Sam tint la boussole sous les étoiles.",
+            "g": {
+              "held": [
+                "tint",
+                "hold",
+                "v",
+                "tenir"
+              ]
+            }
+          },
+          {
+            "en": "The red needle pointed at the Pole Star.",
+            "fr": "L'aiguille rouge pointait vers l'étoile Polaire.",
+            "g": {
+              "pointed": [
+                "pointait vers (pointed at)",
+                "point",
+                "v",
+                "pointer"
+              ],
+              "at": [
+                "(pointed at : pointait vers)",
+                "at",
+                "r"
+              ],
+              "pole": [
+                "(Pole Star : Polaire)",
+                "pole",
+                "n",
+                "pôle"
+              ],
+              "star": [
+                "étoile Polaire (Pole Star)",
+                "star",
+                "n",
+                "étoile"
+              ]
+            }
+          },
+          {
+            "en": "“It still works!” he said.",
+            "fr": "« Elle marche encore ! » dit-il.",
+            "g": {
+              "it": [
+                "elle",
+                "it",
+                "p"
+              ],
+              "still": [
+                "encore",
+                "still",
+                "d"
+              ],
+              "works": [
+                "marche",
+                "work",
+                "v",
+                "marcher"
+              ]
+            }
+          },
+          {
+            "en": "“I dropped it in the mud, and I was afraid it was broken.”",
+            "fr": "« Je l'ai laissée tomber dans la boue, et j'avais peur qu'elle soit cassée. »",
+            "g": {
+              "dropped": [
+                "ai laissée tomber",
+                "drop",
+                "v",
+                "laisser tomber"
+              ],
+              "it": [
+                "l'",
+                "it",
+                "p"
+              ],
+              "mud": [
+                "boue"
+              ],
+              "was": [
+                "avais (was afraid : avais peur)",
+                "be",
+                "v",
+                "être"
+              ],
+              "afraid": [
+                "peur (was afraid)",
+                "afraid",
+                "a"
+              ],
+              "it#2": [
+                "elle",
+                "it",
+                "p"
+              ],
+              "was#2": [
+                "soit (was broken : soit cassée)",
+                "be",
+                "v",
+                "être"
+              ],
+              "broken": [
+                "cassée",
+                "broken",
+                "a",
+                "cassé"
+              ]
+            }
+          },
+          {
+            "en": "“Good,” said Inès.",
+            "fr": "« Bien », dit Inès.",
+            "g": {
+              "good": [
+                "bien",
+                "good",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“So the river flows south, and the camp is south.",
+            "fr": "« Donc la rivière coule vers le sud, et le camp est au sud.",
+            "g": {
+              "so": [
+                "donc",
+                "so",
+                "c"
+              ],
+              "flows": [
+                "coule",
+                "flow",
+                "v",
+                "couler"
+              ]
+            }
+          },
+          {
+            "en": "We’ll follow it at dawn.”",
+            "fr": "On la suivra à l'aube. »",
+            "g": {
+              "we'll": [
+                "on",
+                "we",
+                "p"
+              ],
+              "follow": [
+                "suivra",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "it": [
+                "la",
+                "it",
+                "p"
+              ],
+              "dawn": [
+                "aube"
+              ]
+            }
+          },
+          {
+            "en": "They went back inside the shelter.",
+            "fr": "Ils retournèrent à l'intérieur de l'abri.",
+            "g": {
+              "went": [
+                "retournèrent (went back)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "back": [
+                "(went back : retournèrent)",
+                "back",
+                "d"
+              ],
+              "inside": [
+                "à l'intérieur de",
+                "inside",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Every half hour, they blew three blasts on the whistle.",
+            "fr": "Toutes les demi-heures, ils soufflèrent trois coups dans le sifflet.",
+            "g": {
+              "every": [
+                "toutes les",
+                "every",
+                "t"
+              ],
+              "half": [
+                "(half hour : demi-heure)",
+                "half",
+                "n",
+                "moitié"
+              ],
+              "blew": [
+                "soufflèrent",
+                "blow",
+                "v",
+                "souffler"
+              ],
+              "blasts": [
+                "coups",
+                "blast",
+                "n",
+                "coup"
+              ],
+              "on": [
+                "dans",
+                "on",
+                "r"
+              ],
+              "hour": [
+                "(half hour : demi-heures)",
+                "hour",
+                "n",
+                "heure"
+              ]
+            }
+          },
+          {
+            "en": "Sam and Inès slept close together, and an owl hooted softly all night.",
+            "fr": "Sam et Inès dormirent serrés l'un contre l'autre, et une chouette hulula doucement toute la nuit.",
+            "g": {
+              "slept": [
+                "dormirent",
+                "sleep",
+                "v",
+                "dormir"
+              ],
+              "close": [
+                "serrés",
+                "close",
+                "a",
+                "proche"
+              ],
+              "together": [
+                "l'un contre l'autre",
+                "together",
+                "d"
+              ],
+              "owl": [
+                "chouette"
+              ],
+              "hooted": [
+                "hulula",
+                "hoot",
+                "v",
+                "hululer"
+              ],
+              "softly": [
+                "doucement",
+                "softly",
+                "d"
+              ],
+              "night": [
+                "nuit"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 5 — The Stars",
+      "titreFr": "Chapitre 5 — Les étoiles"
+    }
+  ]
+}

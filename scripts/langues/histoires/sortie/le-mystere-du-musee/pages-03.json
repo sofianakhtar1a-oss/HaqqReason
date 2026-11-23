@@ -1,0 +1,1566 @@
+{
+ "debut": 11,
+ "lexique": {
+  "mr": [
+   "M.",
+   "Mr",
+   "n"
+  ],
+  "bell": [
+   "Bell (nom)",
+   "Bell",
+   "np"
+  ],
+  "asked": [
+   "demanda",
+   "ask",
+   "v",
+   "demander"
+  ],
+  "nadia": [
+   "Nadia (prénom)",
+   "Nadia",
+   "np"
+  ],
+  "old": [
+   "vieux",
+   "old",
+   "a"
+  ],
+  "guard": [
+   "gardien",
+   "guard",
+   "n"
+  ],
+  "said": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "friday": [
+   "vendredi",
+   "Friday",
+   "n"
+  ],
+  "wall": [
+   "mur",
+   "wall",
+   "n"
+  ],
+  "frame": [
+   "cadre",
+   "frame",
+   "n"
+  ],
+  "painting": [
+   "tableau",
+   "painting",
+   "n"
+  ],
+  "favourite": [
+   "préféré",
+   "favourite",
+   "a"
+  ],
+  "museum": [
+   "musée",
+   "museum",
+   "n"
+  ],
+  "morning": [
+   "matin",
+   "morning",
+   "n"
+  ],
+  "paint": [
+   "peinture",
+   "paint",
+   "n"
+  ],
+  "floor": [
+   "sol",
+   "floor",
+   "n"
+  ],
+  "mrs": [
+   "Mme",
+   "Mrs",
+   "n"
+  ],
+  "patel": [
+   "Patel (nom)",
+   "Patel",
+   "np"
+  ],
+  "oliver": [
+   "Oliver (prénom)",
+   "Oliver",
+   "np"
+  ],
+  "slowly": [
+   "lentement",
+   "slowly",
+   "d"
+  ],
+  "room": [
+   "salle",
+   "room",
+   "n"
+  ],
+  "ladder": [
+   "échelle",
+   "ladder",
+   "n"
+  ],
+  "see": [
+   "voir",
+   "see",
+   "v"
+  ],
+  "bell's": [
+   "de Bell",
+   "Bell",
+   "np"
+  ],
+  "garage": [
+   "garage",
+   "garage",
+   "n"
+  ],
+  "sky": [
+   "ciel",
+   "sky",
+   "n"
+  ],
+  "scratch": [
+   "éraflure",
+   "scratch",
+   "n"
+  ],
+  "sea": [
+   "mer",
+   "sea",
+   "n"
+  ],
+  "town": [
+   "ville",
+   "town",
+   "n"
+  ],
+  "brother": [
+   "frère",
+   "brother",
+   "n"
+  ],
+  "frames": [
+   "cadres",
+   "frame",
+   "n",
+   "cadre"
+  ],
+  "corner": [
+   "coin",
+   "corner",
+   "n"
+  ],
+  "eyes": [
+   "yeux",
+   "eye",
+   "n",
+   "œil"
+  ],
+  "smiled": [
+   "sourit",
+   "smile",
+   "v",
+   "sourire"
+  ],
+  "saturday": [
+   "samedi",
+   "Saturday",
+   "n"
+  ],
+  "sun": [
+   "soleil",
+   "sun",
+   "n"
+  ],
+  "full": [
+   "plein",
+   "full",
+   "a"
+  ],
+  "mayor": [
+   "maire",
+   "mayor",
+   "n"
+  ],
+  "painter": [
+   "peintre",
+   "painter",
+   "n"
+  ],
+  "oliver's": [
+   "d’Oliver",
+   "Oliver",
+   "np"
+  ],
+  "ship": [
+   "bateau",
+   "ship",
+   "n"
+  ],
+  "lopez": [
+   "Lopez (nom)",
+   "Lopez",
+   "np"
+  ],
+  "museums": [
+   "musées",
+   "museum",
+   "n",
+   "musée"
+  ],
+  "stuffed": [
+   "empaillé",
+   "stuffed",
+   "a"
+  ],
+  "fox": [
+   "renard",
+   "fox",
+   "n"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "“Mr Bell, are you all right?” asked Nadia softly.",
+      "fr": "« Monsieur Bell, vous allez bien ? » demanda doucement Nadia.",
+      "g": {
+       "right": [
+        "bien",
+        "right",
+        "a"
+       ],
+       "softly": [
+        "doucement",
+        "softly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The old guard looked up, and his eyes were red.",
+      "fr": "Le vieux gardien releva la tête, et ses yeux étaient rouges.",
+      "g": {
+       "looked": [
+        "releva la tête (looked up)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "up": [
+        "(looked up : releva la tête)",
+        "up",
+        "x"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "red": [
+        "rouges",
+        "red",
+        "a",
+        "rouge"
+       ]
+      }
+     },
+     {
+      "en": "“I have done something terrible,” he said in a small voice.",
+      "fr": "« J’ai fait quelque chose de terrible », dit-il d’une petite voix.",
+      "g": {
+       "done": [
+        "fait",
+        "do",
+        "v",
+        "faire"
+       ],
+       "terrible": [
+        "terrible",
+        "terrible",
+        "a"
+       ],
+       "voice": [
+        "voix",
+        "voice",
+        "n"
+       ],
+       "in": [
+        "d’",
+        "in",
+        "r"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a",
+        "petit"
+       ]
+      }
+     },
+     {
+      "en": "“Last Friday, I was moving a ladder after closing time.”",
+      "fr": "« Vendredi dernier, je déplaçais une échelle après la fermeture. »",
+      "g": {
+       "last": [
+        "dernier",
+        "last",
+        "a"
+       ],
+       "moving": [
+        "déplaçais",
+        "move",
+        "v",
+        "déplacer"
+       ],
+       "ladder": [
+        "échelle",
+        "ladder",
+        "n"
+       ],
+       "closing": [
+        "fermeture",
+        "closing",
+        "n"
+       ],
+       "time": [
+        "(closing time : la fermeture)",
+        "time",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“It hit the frame, and The Silver Star fell off the wall.”",
+      "fr": "« Elle a heurté le cadre, et L’Étoile d’argent est tombée du mur. »",
+      "g": {
+       "hit": [
+        "a heurté",
+        "hit",
+        "v",
+        "heurter"
+       ],
+       "frame": [
+        "cadre",
+        "frame",
+        "n"
+       ],
+       "the#2": [
+        "L’",
+        "the",
+        "t"
+       ],
+       "silver": [
+        "d’argent",
+        "silver",
+        "a",
+        "argent"
+       ],
+       "star": [
+        "Étoile",
+        "star",
+        "n",
+        "étoile"
+       ],
+       "fell": [
+        "est tombée (fell off)",
+        "fall",
+        "v",
+        "tomber"
+       ],
+       "off": [
+        "(fell off : est tombée de)",
+        "off",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "“One corner of the frame broke, and there was a long scratch in the sky.”",
+      "fr": "« Un coin du cadre s’est cassé, et il y avait une longue éraflure dans le ciel. »",
+      "g": {
+       "one": [
+        "un",
+        "one",
+        "t"
+       ],
+       "corner": [
+        "coin",
+        "corner",
+        "n"
+       ],
+       "broke": [
+        "s’est cassé",
+        "break",
+        "v",
+        "casser"
+       ],
+       "scratch": [
+        "éraflure",
+        "scratch",
+        "n"
+       ],
+       "sky": [
+        "ciel",
+        "sky",
+        "n"
+       ],
+       "long": [
+        "longue",
+        "long",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“I was so ashamed. I have worked here for thirty years.”",
+      "fr": "« J’avais tellement honte. Je travaille ici depuis trente ans. »",
+      "g": {
+       "so": [
+        "tellement",
+        "so",
+        "d"
+       ],
+       "ashamed": [
+        "honte",
+        "ashamed",
+        "a"
+       ],
+       "worked": [
+        "travaille (have worked)",
+        "work",
+        "v",
+        "travailler"
+       ],
+       "for": [
+        "depuis",
+        "for",
+        "r"
+       ],
+       "thirty": [
+        "trente",
+        "thirty",
+        "n"
+       ],
+       "years": [
+        "ans",
+        "year",
+        "n",
+        "an"
+       ]
+      }
+     },
+     {
+      "en": "“The painting is my favourite in the whole museum.”",
+      "fr": "« Ce tableau est mon préféré de tout le musée. »",
+      "g": {
+       "whole": [
+        "tout",
+        "whole",
+        "a",
+        "entier"
+       ]
+      }
+     },
+     {
+      "en": "“I have never broken anything before.”",
+      "fr": "« Je n’ai jamais rien cassé auparavant. »",
+      "g": {
+       "broken": [
+        "cassé",
+        "break",
+        "v",
+        "casser"
+       ],
+       "anything": [
+        "rien",
+        "anything",
+        "p"
+       ],
+       "before": [
+        "auparavant",
+        "before",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“At home, I paint pictures on Sundays. I thought I could repair it.”",
+      "fr": "« Chez moi, je peins des tableaux le dimanche. J’ai pensé que je pourrais le réparer. »",
+      "g": {
+       "home": [
+        "chez moi",
+        "home",
+        "n",
+        "maison"
+       ],
+       "paint": [
+        "peins",
+        "paint",
+        "v",
+        "peindre"
+       ],
+       "pictures": [
+        "tableaux",
+        "picture",
+        "n",
+        "tableau"
+       ],
+       "sundays": [
+        "le dimanche",
+        "Sunday",
+        "n",
+        "dimanche"
+       ],
+       "thought": [
+        "ai pensé",
+        "think",
+        "v",
+        "penser"
+       ],
+       "repair": [
+        "réparer",
+        "repair",
+        "v",
+        "réparer"
+       ]
+      }
+     },
+     {
+      "en": "“This morning, I took the painting home. The light is better there.”",
+      "fr": "« Ce matin, j’ai emporté le tableau chez moi. La lumière y est meilleure. »",
+      "g": {
+       "took": [
+        "ai emporté",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "home": [
+        "chez moi",
+        "home",
+        "d",
+        "maison"
+       ],
+       "light": [
+        "lumière",
+        "light",
+        "n"
+       ],
+       "better": [
+        "meilleure",
+        "good",
+        "a",
+        "bon"
+       ],
+       "there": [
+        "y",
+        "there",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“The paint on the floor fell from my little pot.”",
+      "fr": "« La peinture sur le sol est tombée de mon petit pot. »",
+      "g": {
+       "fell": [
+        "est tombée",
+        "fall",
+        "v",
+        "tomber"
+       ],
+       "on": [
+        "sur",
+        "on",
+        "r"
+       ],
+       "pot": [
+        "pot",
+        "pot",
+        "n"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "floor": [
+        "sol",
+        "floor",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Nadia sat down next to him.",
+      "fr": "Nadia s’assit à côté de lui.",
+      "g": {
+       "sat": [
+        "s’assit (sat down)",
+        "sit",
+        "v",
+        "s’asseoir"
+       ],
+       "down": [
+        "(sat down : s’assit)",
+        "down",
+        "x"
+       ],
+       "next": [
+        "à côté de (next to)",
+        "next",
+        "d"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "“Why did you not tell Mrs Patel?” she asked gently.",
+      "fr": "« Pourquoi n’avez-vous rien dit à Mme Patel ? » demanda-t-elle gentiment.",
+      "g": {
+       "tell": [
+        "dit",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "gently": [
+        "gentiment",
+        "gently",
+        "d"
+       ],
+       "mrs": [
+        "Mme",
+        "Mrs",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“I was afraid. She could be angry, and I could lose my job.”",
+      "fr": "« J’avais peur. Elle pourrait être en colère, et je pourrais perdre mon travail. »",
+      "g": {
+       "afraid": [
+        "peur",
+        "afraid",
+        "a"
+       ],
+       "angry": [
+        "en colère",
+        "angry",
+        "a"
+       ],
+       "lose": [
+        "perdre",
+        "lose",
+        "v",
+        "perdre"
+       ],
+       "job": [
+        "travail",
+        "job",
+        "n"
+       ],
+       "could": [
+        "pourrait",
+        "could",
+        "v",
+        "pouvoir"
+       ],
+       "could#2": [
+        "pourrais",
+        "could",
+        "v",
+        "pouvoir"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "“I think Mrs Patel is more worried about the painting than angry,” said Oliver.",
+      "fr": "« Je crois que Mme Patel est plus inquiète pour le tableau qu’en colère », dit Oliver.",
+      "g": {
+       "think": [
+        "crois",
+        "think",
+        "v",
+        "penser"
+       ],
+       "worried": [
+        "inquiète",
+        "worried",
+        "a",
+        "inquiet"
+       ],
+       "more": [
+        "plus",
+        "more",
+        "d"
+       ],
+       "angry": [
+        "en colère",
+        "angry",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“You should tell her the truth. We can come with you.”",
+      "fr": "« Vous devriez lui dire la vérité. Nous pouvons venir avec vous. »",
+      "g": {
+       "should": [
+        "devriez",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "tell": [
+        "dire",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "truth": [
+        "vérité",
+        "truth",
+        "n"
+       ],
+       "come": [
+        "venir",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     },
+     {
+      "en": "Mr Bell took off his glasses and cleaned them slowly.",
+      "fr": "M. Bell enleva ses lunettes et les nettoya lentement.",
+      "g": {
+       "took": [
+        "enleva (took off)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "off": [
+        "(took off : enleva)",
+        "off",
+        "x"
+       ],
+       "glasses": [
+        "lunettes",
+        "glasses",
+        "n"
+       ],
+       "cleaned": [
+        "nettoya",
+        "clean",
+        "v",
+        "nettoyer"
+       ]
+      }
+     },
+     {
+      "en": "“You are right,” he said at last. “A secret is heavier than a painting.”",
+      "fr": "« Vous avez raison, dit-il enfin. Un secret est plus lourd qu’un tableau. »",
+      "g": {
+       "right": [
+        "raison",
+        "right",
+        "a",
+        "correct"
+       ],
+       "at": [
+        "(at last : enfin)",
+        "at",
+        "x"
+       ],
+       "last": [
+        "(at last : enfin)",
+        "last",
+        "a",
+        "dernier"
+       ],
+       "heavier": [
+        "plus lourd",
+        "heavy",
+        "a",
+        "lourd"
+       ],
+       "secret": [
+        "secret",
+        "secret",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "They went back into the museum together.",
+      "fr": "Ils retournèrent ensemble dans le musée.",
+      "g": {
+       "went": [
+        "retournèrent (went back)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "back": [
+        "(went back : retournèrent)",
+        "back",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Patel was standing in Room Three, looking at the empty wall.",
+      "fr": "Mme Patel se tenait dans la salle trois et regardait le mur vide.",
+      "g": {
+       "standing": [
+        "se tenait",
+        "stand",
+        "v",
+        "se tenir"
+       ],
+       "looking": [
+        "regardait (looking at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looking at : regardait)",
+        "at",
+        "x"
+       ],
+       "empty": [
+        "vide",
+        "empty",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Mrs Patel,” said Mr Bell, “I took the painting. Please let me explain.”",
+      "fr": "« Madame Patel, dit M. Bell, c’est moi qui ai pris le tableau. Laissez-moi vous expliquer. »",
+      "g": {
+       "took": [
+        "ai pris",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "let": [
+        "laissez",
+        "let",
+        "v",
+        "laisser"
+       ],
+       "explain": [
+        "expliquer",
+        "explain",
+        "v",
+        "expliquer"
+       ],
+       "mrs": [
+        "Madame",
+        "Mrs",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He told her everything about the ladder, the broken frame and the scratch.",
+      "fr": "Il lui raconta tout : l’échelle, le cadre cassé et l’éraflure.",
+      "g": {
+       "told": [
+        "raconta",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "her": [
+        "lui",
+        "her",
+        "p"
+       ],
+       "everything": [
+        "tout",
+        "everything",
+        "p"
+       ],
+       "broken": [
+        "cassé",
+        "break",
+        "v",
+        "casser"
+       ],
+       "scratch": [
+        "éraflure",
+        "scratch",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The room was very quiet for a long moment.",
+      "fr": "La salle resta très silencieuse pendant un long moment.",
+      "g": {
+       "quiet": [
+        "silencieuse",
+        "quiet",
+        "a",
+        "silencieux"
+       ],
+       "moment": [
+        "moment",
+        "moment",
+        "n"
+       ],
+       "long": [
+        "long",
+        "long",
+        "a"
+       ],
+       "was": [
+        "resta",
+        "be",
+        "v",
+        "être"
+       ],
+       "room": [
+        "salle",
+        "room",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Patel listened without a word.",
+      "fr": "Mme Patel écouta sans dire un mot.",
+      "g": {
+       "listened": [
+        "écouta",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "word": [
+        "mot",
+        "word",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Then, to everybody’s surprise, she took a long breath and smiled.",
+      "fr": "Puis, à la surprise générale, elle respira longuement et sourit.",
+      "g": {
+       "took": [
+        "respira (took a breath)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "breath": [
+        "(took a breath : respira)",
+        "breath",
+        "n",
+        "souffle"
+       ],
+       "everybody's": [
+        "de tout le monde",
+        "everybody",
+        "p"
+       ],
+       "surprise": [
+        "surprise",
+        "surprise",
+        "n"
+       ],
+       "smiled": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ],
+       "long": [
+        "longuement",
+        "long",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Mr Bell, you should have told me on Friday,” she said kindly.",
+      "fr": "« Monsieur Bell, vous auriez dû me le dire vendredi », dit-elle avec bonté.",
+      "g": {
+       "should": [
+        "auriez dû (should have)",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "have": [
+        "(should have : auriez dû)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "told": [
+        "(should have told : dire)",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "on": [
+        "(le)",
+        "on",
+        "r"
+       ],
+       "kindly": [
+        "avec bonté",
+        "kindly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Accidents happen. But I would like to see the painting now.”",
+      "fr": "« Les accidents arrivent. Mais j’aimerais voir le tableau maintenant. »",
+      "g": {
+       "accidents": [
+        "accidents",
+        "accident",
+        "n",
+        "accident"
+       ],
+       "happen": [
+        "arrivent",
+        "happen",
+        "v",
+        "arriver"
+       ],
+       "would": [
+        "(conditionnel)",
+        "would",
+        "v"
+       ],
+       "like": [
+        "aimerais",
+        "like",
+        "v",
+        "aimer"
+       ]
+      }
+     },
+     {
+      "en": "“It is only two streets away,” said Mr Bell. “Please follow me.”",
+      "fr": "« C’est à seulement deux rues d’ici », dit M. Bell. « Suivez-moi, je vous prie. »",
+      "g": {
+       "streets": [
+        "rues",
+        "street",
+        "n",
+        "rue"
+       ],
+       "away": [
+        "d’ici",
+        "away",
+        "d"
+       ],
+       "follow": [
+        "suivez",
+        "follow",
+        "v",
+        "suivre"
+       ],
+       "only": [
+        "seulement",
+        "only",
+        "d"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 5 — The best exhibition",
+   "titreFr": "Chapitre 5 — La plus belle exposition",
+   "p": [
+    [
+     {
+      "en": "In Mr Bell’s garage, The Silver Star stood on a wooden easel.",
+      "fr": "Dans le garage de M. Bell, L’Étoile d’argent était posée sur un chevalet en bois.",
+      "g": {
+       "the": [
+        "L’",
+        "the",
+        "t"
+       ],
+       "silver": [
+        "d’argent",
+        "silver",
+        "a",
+        "argent"
+       ],
+       "star": [
+        "Étoile",
+        "star",
+        "n",
+        "étoile"
+       ],
+       "stood": [
+        "était posée",
+        "stand",
+        "v",
+        "se tenir"
+       ],
+       "easel": [
+        "chevalet",
+        "easel",
+        "n"
+       ],
+       "wooden": [
+        "en bois",
+        "wooden",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Patel came closer and stared at the sky.",
+      "fr": "Mme Patel s’approcha et fixa le ciel du regard.",
+      "g": {
+       "came": [
+        "s’approcha (came closer)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "closer": [
+        "(came closer : s’approcha)",
+        "close",
+        "a",
+        "proche"
+       ],
+       "stared": [
+        "fixa du regard (stared at)",
+        "stare",
+        "v",
+        "fixer"
+       ],
+       "at": [
+        "(stared at : fixa du regard)",
+        "at",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "“I cannot see the scratch,” she said. “The sea looks even better than before!”",
+      "fr": "« Je ne vois pas l’éraflure », dit-elle. « La mer a l’air encore plus belle qu’avant ! »",
+      "g": {
+       "see": [
+        "vois",
+        "see",
+        "v",
+        "voir"
+       ],
+       "looks": [
+        "a l’air",
+        "look",
+        "v",
+        "avoir l’air"
+       ],
+       "better": [
+        "plus belle",
+        "good",
+        "a",
+        "bon"
+       ],
+       "even": [
+        "encore",
+        "even",
+        "d"
+       ],
+       "before": [
+        "qu’avant",
+        "before",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“I am not angry, Mr Bell. You are the best guard and the best painter in town.”",
+      "fr": "« Je ne suis pas fâchée, monsieur Bell. Vous êtes le meilleur gardien et le meilleur peintre de la ville. »",
+      "g": {
+       "angry": [
+        "fâchée",
+        "angry",
+        "a"
+       ],
+       "best": [
+        "meilleur",
+        "good",
+        "a",
+        "bon"
+       ],
+       "best#2": [
+        "meilleur",
+        "good",
+        "a",
+        "bon"
+       ],
+       "painter": [
+        "peintre",
+        "painter",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“My brother makes frames. He can mend the corner by Thursday.”",
+      "fr": "« Mon frère fabrique des cadres. Il peut réparer le coin d’ici jeudi. »",
+      "g": {
+       "makes": [
+        "fabrique",
+        "make",
+        "v",
+        "faire"
+       ],
+       "mend": [
+        "réparer",
+        "mend",
+        "v",
+        "réparer"
+       ],
+       "by": [
+        "d’ici",
+        "by",
+        "r"
+       ],
+       "thursday": [
+        "jeudi",
+        "Thursday",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mr Bell wiped his eyes and smiled for the first time that day.",
+      "fr": "M. Bell s’essuya les yeux et sourit pour la première fois de la journée.",
+      "g": {
+       "wiped": [
+        "s’essuya",
+        "wipe",
+        "v",
+        "essuyer"
+       ],
+       "first": [
+        "première",
+        "first",
+        "a"
+       ],
+       "time": [
+        "fois",
+        "time",
+        "n"
+       ],
+       "that": [
+        "(that day : de la journée)",
+        "that",
+        "t"
+       ],
+       "day": [
+        "journée",
+        "day",
+        "n",
+        "jour"
+       ]
+      }
+     },
+     {
+      "en": "On the next Saturday, the sun shone, and the museum was full of visitors.",
+      "fr": "Le samedi suivant, le soleil brillait, et le musée était plein de visiteurs.",
+      "g": {
+       "on": [
+        "le",
+        "on",
+        "r"
+       ],
+       "next": [
+        "suivant",
+        "next",
+        "a"
+       ],
+       "shone": [
+        "brillait",
+        "shine",
+        "v",
+        "briller"
+       ],
+       "visitors": [
+        "visiteurs",
+        "visitor",
+        "n",
+        "visiteur"
+       ]
+      }
+     },
+     {
+      "en": "The painting hung in Room Three again, in its beautiful new frame.",
+      "fr": "Le tableau était de nouveau accroché dans la salle trois, dans son beau cadre neuf.",
+      "g": {
+       "hung": [
+        "était accroché",
+        "hang",
+        "v",
+        "accrocher"
+       ],
+       "again": [
+        "de nouveau",
+        "again",
+        "d"
+       ],
+       "frame": [
+        "cadre",
+        "frame",
+        "n"
+       ],
+       "beautiful": [
+        "beau",
+        "beautiful",
+        "a"
+       ],
+       "new": [
+        "neuf",
+        "new",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The mayor cut the ribbon, and everybody clapped.",
+      "fr": "Le maire coupa le ruban, et tout le monde applaudit.",
+      "g": {
+       "cut": [
+        "coupa",
+        "cut",
+        "v",
+        "couper"
+       ],
+       "ribbon": [
+        "ruban",
+        "ribbon",
+        "n"
+       ],
+       "clapped": [
+        "applaudit",
+        "clap",
+        "v",
+        "applaudir"
+       ]
+      }
+     },
+     {
+      "en": "Then Mrs Patel thanked “Mr Bell, our guard and our painter, and two young detectives.”",
+      "fr": "Puis Mme Patel remercia « M. Bell, notre gardien et notre peintre, ainsi que deux jeunes détectives ».",
+      "g": {
+       "thanked": [
+        "remercia",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "young": [
+        "jeunes",
+        "young",
+        "a"
+       ],
+       "detectives": [
+        "détectives",
+        "detective",
+        "n",
+        "détective"
+       ],
+       "our": [
+        "notre",
+        "our",
+        "t"
+       ],
+       "our#2": [
+        "notre",
+        "our",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "Oliver’s drawing of the ship hung in the new blue room, and Mrs Lopez smiled.",
+      "fr": "Le dessin du bateau par Oliver était accroché dans la nouvelle salle bleue, et Mme Lopez sourit.",
+      "g": {
+       "drawing": [
+        "dessin",
+        "drawing",
+        "n"
+       ],
+       "hung": [
+        "était accroché",
+        "hang",
+        "v",
+        "accrocher"
+       ],
+       "smiled": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ],
+       "new": [
+        "nouvelle",
+        "new",
+        "a",
+        "nouveau"
+       ],
+       "blue": [
+        "bleue",
+        "blue",
+        "a",
+        "bleu"
+       ]
+      }
+     },
+     {
+      "en": "“I was wrong,” said Oliver. “Museums are not boring!”",
+      "fr": "« Je me trompais, dit Oliver. Les musées ne sont pas ennuyeux ! »",
+      "g": {
+       "wrong": [
+        "me trompais (was wrong)",
+        "wrong",
+        "a",
+        "faux"
+       ],
+       "boring": [
+        "ennuyeux",
+        "boring",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Next time we should find another mystery,” he added.",
+      "fr": "« La prochaine fois, nous devrions trouver un autre mystère », ajouta-t-il.",
+      "g": {
+       "next": [
+        "prochaine",
+        "next",
+        "a"
+       ],
+       "time": [
+        "fois",
+        "time",
+        "n"
+       ],
+       "should": [
+        "devrions",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "find": [
+        "trouver",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "another": [
+        "un autre",
+        "another",
+        "p"
+       ],
+       "mystery": [
+        "mystère",
+        "mystery",
+        "n"
+       ],
+       "added": [
+        "ajouta",
+        "add",
+        "v",
+        "ajouter"
+       ]
+      }
+     },
+     {
+      "en": "Nadia looked at the stuffed fox and whispered, “Is it looking at us?”",
+      "fr": "Nadia regarda le renard empaillé et murmura : « Est-ce qu’il nous regarde ? »",
+      "g": {
+       "looked": [
+        "regarda (looked at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looked at : regarda)",
+        "at",
+        "x"
+       ],
+       "whispered": [
+        "murmura",
+        "whisper",
+        "v",
+        "murmurer"
+       ],
+       "looking": [
+        "regarde (looking at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at#2": [
+        "(looking at : regarde)",
+        "at",
+        "x"
+       ],
+       "us": [
+        "nous",
+        "we",
+        "p"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

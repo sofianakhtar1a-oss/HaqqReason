@@ -1,7 +1,8 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, Check, Ear, LoaderCircle, Play, RotateCcw, Turtle, Volume2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Ear, Lightbulb, List, LoaderCircle, Play, RotateCcw, Shuffle, Turtle, Volume2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { chargerDictees, DICTEES_PAR_NIVEAU, type DicteeNumerotee, serieDicteeNumero } from "@/lib/langues/dictees";
 import { chargerHistoire, HISTOIRES } from "@/lib/langues/histoires/catalogue";
 import { motsDe } from "@/lib/langues/histoires/texte";
 import { NIVEAUX, type Niveau } from "@/lib/langues/types";
@@ -13,7 +14,9 @@ import "./dictee.css";
 
 /*
  * Les dictées : une phrase anglaise lue par la voix du navigateur, on l'écrit, puis la correction mot à mot
- * (juste, en trop, oublié) et la traduction. Les phrases viennent des histoires du niveau choisi.
+ * (juste, en trop, oublié) et la traduction. Deux sortes : les 20 dictées numérotées de chaque niveau (un
+ * petit texte de 8 phrases, que l'on choisit librement), et la dictée surprise (six phrases tirées au
+ * hasard des histoires du niveau).
  */
 
 export const NOMBRE_PHRASES = 6;
@@ -50,8 +53,13 @@ async function tirerPhrases(niveau: Niveau): Promise<PhraseDictee[]> {
 
 type Resultat = { ecrit: string; justes: number; total: number };
 
-export function Dictee({ niveau, onFermer }: { niveau: Niveau; onFermer: () => void }) {
+/** Le niveau choisi en dernier dans la liste des dictées (gardé sur l'appareil). */
+const CLE_NIVEAU = "truchement:dictees:niveau";
+
+export function Dictee({ niveau, numero, onFermer, onOuvrirNumero }: { niveau: Niveau; numero?: number; onFermer: () => void; onOuvrirNumero?: (n: number) => void }) {
   const [phrases, setPhrases] = useState<PhraseDictee[] | null>(null);
+  const [fiche, setFiche] = useState<DicteeNumerotee | null>(null);
+  const [voirPiege, setVoirPiege] = useState(false);
   const [erreur, setErreur] = useState<string | null>(null);
   const [n, setN] = useState(0);
   const [valeur, setValeur] = useState("");
@@ -64,15 +72,28 @@ export function Dictee({ niveau, onFermer }: { niveau: Niveau; onFermer: () => v
 
   useEffect(() => {
     let vivant = true;
-    tirerPhrases(niveau).then(
-      (p) => vivant && (p.length ? setPhrases(p) : setErreur("Aucune phrase n'est disponible pour ce niveau.")),
-      () => vivant && setErreur("Les phrases n'ont pas pu se charger. Vérifie ta connexion."),
-    );
+    if (numero) {
+      // Une dictée numérotée : toujours le même texte, choisi dans la liste du niveau.
+      chargerDictees(niveau).then(
+        (liste) => {
+          if (!vivant) return;
+          const d = liste.find((x) => x.n === numero);
+          if (!d) return setErreur(`La dictée n° ${numero} du niveau ${niveau} n'existe pas.`);
+          setFiche(d);
+          setPhrases(d.phrases.map(([en, fr]) => ({ en, fr })));
+        },
+        () => vivant && setErreur("La dictée n'a pas pu se charger. Vérifie ta connexion."),
+      );
+    } else
+      tirerPhrases(niveau).then(
+        (p) => vivant && (p.length ? setPhrases(p) : setErreur("Aucune phrase n'est disponible pour ce niveau.")),
+        () => vivant && setErreur("Les phrases n'ont pas pu se charger. Vérifie ta connexion."),
+      );
     return () => {
       vivant = false;
       taire();
     };
-  }, [niveau, tour]);
+  }, [niveau, numero, tour]);
 
   const phrase = phrases?.[n];
   const ecouter = (lent = false) => phrase && void parler(phrase.en, lent ? 0.62 : 0.88);
@@ -87,7 +108,7 @@ export function Dictee({ niveau, onFermer }: { niveau: Niveau; onFermer: () => v
     setCorrige(true);
     if (n === (phrases?.length ?? 0) - 1) {
       const tous = [...resultats, { ecrit: valeur, justes, total }];
-      enregistrerSerie(serieDictee(niveau), { juste: tous.reduce((s, x) => s + x.justes, 0), total: tous.reduce((s, x) => s + x.total, 0) });
+      enregistrerSerie(numero ? serieDicteeNumero(niveau, numero) : serieDictee(niveau), { juste: tous.reduce((s, x) => s + x.justes, 0), total: tous.reduce((s, x) => s + x.total, 0) });
     }
   };
 
@@ -107,19 +128,28 @@ export function Dictee({ niveau, onFermer }: { niveau: Niveau; onFermer: () => v
 
   return (
     <section className="dc" aria-labelledby="titre-dictee">
-      <button type="button" className="hs-retour dc-retour" onClick={onFermer}>
+      <button type="button" className="hs-retour dc-retour" onClick={onFermer} aria-label={numero ? "Toutes les dictées" : "Écouter"}>
         <ArrowLeft className="size-4" aria-hidden="true" />
-        <span>Écouter</span>
+        <span>{numero ? "Toutes les dictées" : "Écouter"}</span>
       </button>
       <div className="dc-tete" data-niveau={niveau}>
         <Ear className="size-7" aria-hidden="true" />
         <div>
-          <p className="dc-niveau">Dictée · niveau {niveau}</p>
+          <p className="dc-niveau">{numero ? `Dictée n° ${numero}${fiche ? ` · ${fiche.titre}` : ""} · niveau ${niveau}` : `Dictée surprise · niveau ${niveau}`}</p>
           <h2 id="titre-dictee" className="dc-titre">
             {fini ? "Ta dictée est finie" : phrases ? `Phrase ${n + 1} sur ${phrases.length}` : "La dictée se prépare"}
           </h2>
         </div>
       </div>
+      {fiche && !fini && (
+        <div className="dc-piege">
+          <button type="button" className="dc-piege-bouton" aria-expanded={voirPiege} onClick={() => setVoirPiege((v) => !v)}>
+            <Lightbulb className="size-4" aria-hidden="true" />
+            {voirPiege ? "Cacher le piège" : "Le piège de cette dictée"}
+          </button>
+          {voirPiege && <p className="dc-piege-texte">{fiche.piege}</p>}
+        </div>
+      )}
 
       {!voix && <p className="lg-erreur">Ton navigateur ne sait pas lire à voix haute : essaie avec Chrome, Edge ou Safari.</p>}
       {erreur ? (
@@ -135,6 +165,9 @@ export function Dictee({ niveau, onFermer }: { niveau: Niveau; onFermer: () => v
         <Bilan
           phrases={phrases}
           resultats={resultats}
+          numero={numero}
+          piege={fiche?.piege}
+          onSuivante={numero && numero < DICTEES_PAR_NIVEAU && onOuvrirNumero ? () => onOuvrirNumero(numero + 1) : undefined}
           onRecommencer={() => {
             setPhrases(null);
             setResultats([]);
@@ -250,7 +283,7 @@ function Correction({ ecrit, phrase, resultat, onEcouter }: { ecrit: string; phr
   );
 }
 
-function Bilan({ phrases, resultats, onRecommencer, onFermer }: { phrases: PhraseDictee[]; resultats: Resultat[]; onRecommencer: () => void; onFermer: () => void }) {
+function Bilan({ phrases, resultats, numero, piege, onSuivante, onRecommencer, onFermer }: { phrases: PhraseDictee[]; resultats: Resultat[]; numero?: number; piege?: string; onSuivante?: () => void; onRecommencer: () => void; onFermer: () => void }) {
   const justes = resultats.reduce((s, r) => s + r.justes, 0);
   const total = resultats.reduce((s, r) => s + r.total, 0);
   const pct = Math.round((justes / Math.max(1, total)) * 100);
@@ -262,6 +295,12 @@ function Bilan({ phrases, resultats, onRecommencer, onFermer }: { phrases: Phras
       <p className="dc-bilan-texte">
         {pct >= 95 ? "Une oreille d'or : l'anglais parlé n'a plus de secret pour toi à ce niveau." : pct >= 75 ? "Très bien : relis les mots oubliés, ce sont souvent les petits mots qu'on n'entend pas." : "Chaque dictée affine ton oreille. Réécoute les phrases ci-dessous en lisant le texte."}
       </p>
+      {piege && (
+        <p className="dc-piege-texte dc-piege-bilan">
+          <Lightbulb className="mr-1 inline size-4" aria-hidden="true" />
+          {piege}
+        </p>
+      )}
       <ol className="dc-bilan-liste">
         {phrases.map((p, k) => (
           <li key={k} data-parfait={resultats[k]?.justes === resultats[k]?.total || undefined}>
@@ -273,41 +312,154 @@ function Bilan({ phrases, resultats, onRecommencer, onFermer }: { phrases: Phras
         ))}
       </ol>
       <div className="rg-actions">
-        <button type="button" className="bouton bouton-principal" onClick={onRecommencer}>
-          <RotateCcw className="size-4" aria-hidden="true" />
-          Nouvelle dictée
-        </button>
-        <button type="button" className="bouton" onClick={onFermer}>
-          Changer de niveau
-        </button>
+        {numero ? (
+          <>
+            {onSuivante && (
+              <button type="button" className="bouton bouton-principal" onClick={onSuivante}>
+                Dictée n° {numero + 1}
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </button>
+            )}
+            <button type="button" className={onSuivante ? "bouton" : "bouton bouton-principal"} onClick={onRecommencer}>
+              <RotateCcw className="size-4" aria-hidden="true" />
+              Refaire cette dictée
+            </button>
+            <button type="button" className="bouton" onClick={onFermer}>
+              <List className="size-4" aria-hidden="true" />
+              Choisir une autre dictée
+            </button>
+          </>
+        ) : (
+          <>
+            <button type="button" className="bouton bouton-principal" onClick={onRecommencer}>
+              <RotateCcw className="size-4" aria-hidden="true" />
+              Nouvelle dictée
+            </button>
+            <button type="button" className="bouton" onClick={onFermer}>
+              Changer de niveau
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
 }
 
-/** Le choix du niveau, en tête de l'onglet Écouter. */
-export function ChoixDictee({ onOuvrir }: { onOuvrir: (niveau: Niveau) => void }) {
+/** Le niveau proposé en premier : le dernier choisi, sinon celui du test, sinon A1. */
+function niveauDeDepart(niveauTest?: string): Niveau {
+  try {
+    const garde = localStorage.getItem(CLE_NIVEAU);
+    if (garde && (NIVEAUX as string[]).includes(garde)) return garde as Niveau;
+  } catch {
+    // stockage indisponible : on continue sans
+  }
+  return niveauTest && (NIVEAUX as string[]).includes(niveauTest) ? (niveauTest as Niveau) : "A1";
+}
+
+const pourcent = (r?: { meilleur: number; total: number }) => (r ? Math.round((r.meilleur / Math.max(1, r.total)) * 100) : null);
+
+/**
+ * Le choix d'une dictée, en tête de l'onglet Écouter : un niveau, puis n'importe laquelle de ses
+ * 20 dictées (aucune n'attend que les précédentes soient faites), ou la dictée surprise.
+ */
+export function ChoixDictee({ onOuvrir, niveauTest }: { onOuvrir: (niveau: Niveau, numero?: number) => void; niveauTest?: string }) {
   const { series } = useSuivi();
+  const [niveau, setNiveau] = useState<Niveau>(() => niveauDeDepart(niveauTest));
+  const [liste, setListe] = useState<DicteeNumerotee[] | null>(null);
+  const [vue, setVue] = useState<Niveau | null>(null);
+
+  useEffect(() => {
+    let vivant = true;
+    chargerDictees(niveau).then(
+      (l) => {
+        if (!vivant) return;
+        setListe(l);
+        setVue(niveau);
+      },
+      () => {
+        if (!vivant) return;
+        setListe([]);
+        setVue(niveau);
+      },
+    );
+    return () => {
+      vivant = false;
+    };
+  }, [niveau]);
+
+  const choisirNiveau = (niv: Niveau) => {
+    setNiveau(niv);
+    try {
+      localStorage.setItem(CLE_NIVEAU, niv);
+    } catch {
+      // stockage indisponible : le choix vaut pour cette visite
+    }
+  };
+  const faites = (niv: Niveau) => Array.from({ length: DICTEES_PAR_NIVEAU }, (_, k) => series[serieDicteeNumero(niv, k + 1)]).filter(Boolean).length;
+  const surprise = pourcent(series[serieDictee(niveau)]);
+  const pret = liste && vue === niveau;
+
   return (
     <section className="dc-choix" aria-labelledby="titre-dictees">
       <h3 id="titre-dictees" className="dc-choix-titre">
         <Ear className="size-5" aria-hidden="true" />
         Les dictées
       </h3>
-      <p className="dc-choix-texte">Écoute une phrase, écris-la : la correction te montre chaque mot juste, oublié ou en trop, puis la traduction. Six phrases tirées des histoires, à ton niveau.</p>
-      <ul className="dc-niveaux">
+      <p className="dc-choix-texte">Écoute, écris, puis vois chaque mot juste, oublié ou en trop, et la traduction. {DICTEES_PAR_NIVEAU} dictées par niveau, de la plus simple à la plus exigeante : choisis celle que tu veux, dans l&apos;ordre que tu veux.</p>
+      <ul className="dc-niveaux" aria-label="Niveau des dictées">
         {NIVEAUX.map((niv) => {
-          const r = series[serieDictee(niv)];
+          const f = faites(niv);
           return (
             <li key={niv}>
-              <button type="button" data-niveau={niv} onClick={() => onOuvrir(niv)}>
+              <button type="button" data-niveau={niv} aria-pressed={niv === niveau} onClick={() => choisirNiveau(niv)}>
                 <strong>{niv}</strong>
-                <span>{r ? `Record : ${Math.round((r.meilleur / Math.max(1, r.total)) * 100)} %` : "Commencer"}</span>
+                <span>{f ? `${f} sur ${DICTEES_PAR_NIVEAU} faites` : `${DICTEES_PAR_NIVEAU} dictées`}</span>
               </button>
             </li>
           );
         })}
       </ul>
+
+      <div className="dc-liste-tete">
+        <h4 className="dc-liste-titre">Niveau {niveau}</h4>
+        <button type="button" className="bouton dc-surprise" data-niveau={niveau} onClick={() => onOuvrir(niveau)}>
+          <Shuffle className="size-4" aria-hidden="true" />
+          Dictée surprise{surprise !== null ? ` · record ${surprise} %` : ""}
+        </button>
+      </div>
+      {!pret ? (
+        <p className="dc-charge" role="status">
+          <LoaderCircle className="size-5 animate-spin" aria-hidden="true" />
+          Les dictées se chargent…
+        </p>
+      ) : !liste.length ? (
+        <p className="dc-choix-texte">Les dictées numérotées de ce niveau arrivent bientôt : en attendant, essaie la dictée surprise.</p>
+      ) : (
+        <ol className="dc-liste" aria-label={`Les ${liste.length} dictées du niveau ${niveau}`}>
+          {liste.map((d) => {
+            const r = series[serieDicteeNumero(niveau, d.n)];
+            const pct = pourcent(r);
+            return (
+              <li key={d.n}>
+                <button
+                  type="button"
+                  className="dc-dictee"
+                  data-niveau={niveau}
+                  data-etat={pct === null ? undefined : pct >= 95 ? "parfaite" : "faite"}
+                  onClick={() => onOuvrir(niveau, d.n)}
+                  aria-label={`Dictée ${d.n} : ${d.titre}${pct === null ? ", pas encore faite" : `, record ${pct} %`}`}
+                >
+                  <span className="dc-dictee-n" aria-hidden="true">
+                    {d.n}
+                  </span>
+                  <span className="dc-dictee-titre">{d.titre}</span>
+                  <span className="dc-dictee-etat">{pct === null ? "À faire" : `${pct} %`}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ol>
+      )}
     </section>
   );
 }

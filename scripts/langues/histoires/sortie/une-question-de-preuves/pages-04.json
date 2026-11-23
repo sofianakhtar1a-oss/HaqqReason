@@ -1,0 +1,2227 @@
+{
+  "debut": 13,
+  "lexique": {
+    "train": [
+      "train",
+      "train",
+      "n"
+    ],
+    "mrs": [
+      "Mme",
+      "Mrs",
+      "n"
+    ],
+    "fontaine": [
+      "Fontaine (nom de famille)",
+      "Fontaine",
+      "np"
+    ],
+    "people": [
+      "personnes",
+      "person",
+      "n",
+      "personne"
+    ],
+    "violin": [
+      "violon",
+      "violin",
+      "n"
+    ],
+    "mistake": [
+      "erreur",
+      "mistake",
+      "n"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "callum": [
+      "Callum (prénom)",
+      "Callum",
+      "np"
+    ],
+    "whitlock": [
+      "Whitlock (nom de famille)",
+      "Whitlock",
+      "np"
+    ],
+    "beacon": [
+      "Beacon (nom de journal)",
+      "Beacon",
+      "np"
+    ],
+    "full": [
+      "complet",
+      "full",
+      "a"
+    ],
+    "chairman": [
+      "président",
+      "chairman",
+      "n"
+    ],
+    "tamsin": [
+      "Tamsin (prénom)",
+      "Tamsin",
+      "np"
+    ],
+    "ask": [
+      "demander",
+      "ask",
+      "v"
+    ],
+    "want": [
+      "veux",
+      "want",
+      "v",
+      "vouloir"
+    ],
+    "answer": [
+      "réponse",
+      "answer",
+      "n"
+    ],
+    "evening": [
+      "soir",
+      "evening",
+      "n"
+    ],
+    "courier": [
+      "Courier (nom du journal)",
+      "courier",
+      "np"
+    ],
+    "write": [
+      "écrire",
+      "write",
+      "v"
+    ],
+    "error": [
+      "erreur",
+      "error",
+      "n"
+    ],
+    "document": [
+      "document",
+      "document",
+      "n"
+    ],
+    "name": [
+      "nom",
+      "name",
+      "n"
+    ],
+    "looked": [
+      "regarda",
+      "look",
+      "v",
+      "regarder"
+    ],
+    "teacher": [
+      "enseignante",
+      "teacher",
+      "n"
+    ],
+    "help": [
+      "aida",
+      "help",
+      "v",
+      "aider"
+    ],
+    "waited": [
+      "attendit",
+      "wait",
+      "v",
+      "attendre"
+    ],
+    "story": [
+      "histoire",
+      "story",
+      "n"
+    ],
+    "fontaine's": [
+      "de Mme Fontaine",
+      "Fontaine",
+      "np"
+    ],
+    "thing": [
+      "chose",
+      "thing",
+      "n"
+    ],
+    "thirteen": [
+      "treize",
+      "thirteen",
+      "a"
+    ],
+    "pounds": [
+      "livres (sterling)",
+      "pound",
+      "n",
+      "livre"
+    ],
+    "account": [
+      "compte",
+      "account",
+      "n"
+    ],
+    "vienna": [
+      "Vienne",
+      "Vienna",
+      "np"
+    ],
+    "laugh": [
+      "rire",
+      "laugh",
+      "v"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "small": [
+      "petite",
+      "small",
+      "a"
+    ],
+    "noon": [
+      "midi",
+      "noon",
+      "n"
+    ],
+    "written": [
+      "écrit",
+      "write",
+      "v",
+      "écrire"
+    ],
+    "rhys": [
+      "Rhys (prénom)",
+      "Rhys",
+      "np"
+    ],
+    "fourth": [
+      "quatrième",
+      "fourth",
+      "a"
+    ],
+    "red": [
+      "rouge",
+      "red",
+      "a"
+    ],
+    "facts": [
+      "faits",
+      "fact",
+      "n",
+      "fait"
+    ],
+    "desmond": [
+      "Desmond (prénom)",
+      "Desmond",
+      "np"
+    ],
+    "reading": [
+      "de lecture",
+      "reading",
+      "n"
+    ],
+    "glasses": [
+      "lunettes",
+      "glass",
+      "n",
+      "verre"
+    ],
+    "boy": [
+      "garçon",
+      "boy",
+      "n"
+    ],
+    "nineteen": [
+      "dix-neuf",
+      "nineteen",
+      "a"
+    ],
+    "desk": [
+      "bureau",
+      "desk",
+      "n"
+    ],
+    "signed": [
+      "signé",
+      "sign",
+      "v",
+      "signer"
+    ],
+    "own": [
+      "propre",
+      "own",
+      "a"
+    ],
+    "signature": [
+      "signature",
+      "signature",
+      "n"
+    ],
+    "woman's": [
+      "d'une femme",
+      "woman",
+      "n",
+      "femme"
+    ],
+    "letter": [
+      "lettre",
+      "letter",
+      "n"
+    ],
+    "word": [
+      "mot",
+      "word",
+      "n"
+    ],
+    "moment": [
+      "moment",
+      "moment",
+      "n"
+    ],
+    "journalism": [
+      "journalisme",
+      "journalism",
+      "n"
+    ],
+    "precisely": [
+      "précisément",
+      "precisely",
+      "d"
+    ],
+    "headline": [
+      "gros titre",
+      "headline",
+      "n"
+    ],
+    "letters": [
+      "lettres",
+      "letter",
+      "n",
+      "lettre"
+    ],
+    "okoye": [
+      "Okoye (nom de famille)",
+      "Okoye",
+      "np"
+    ],
+    "simply": [
+      "tout simplement",
+      "simply",
+      "d"
+    ],
+    "room": [
+      "salle",
+      "room",
+      "n"
+    ],
+    "keyboard": [
+      "clavier",
+      "keyboard",
+      "n"
+    ],
+    "cup": [
+      "tasse",
+      "cup",
+      "n"
+    ],
+    "machine": [
+      "machine",
+      "machine",
+      "n"
+    ],
+    "actually": [
+      "réellement",
+      "actually",
+      "d"
+    ],
+    "april": [
+      "avril",
+      "April",
+      "n"
+    ],
+    "concert": [
+      "concert",
+      "concert",
+      "n"
+    ],
+    "hall": [
+      "salle",
+      "hall",
+      "n"
+    ],
+    "floor": [
+      "sol, parquet",
+      "floor",
+      "n"
+    ],
+    "courier's": [
+      "du Courier",
+      "Courier",
+      "np"
+    ],
+    "reporter": [
+      "journaliste",
+      "reporter",
+      "n"
+    ],
+    "notebook": [
+      "carnet",
+      "notebook",
+      "n"
+    ],
+    "road": [
+      "chemin",
+      "road",
+      "n"
+    ],
+    "rule": [
+      "règle",
+      "rule",
+      "n"
+    ],
+    "sat": [
+      "était assis",
+      "sit",
+      "v",
+      "s'asseoir"
+    ],
+    "face": [
+      "visage",
+      "face",
+      "n"
+    ],
+    "f": [
+      "F (lettre)",
+      "F",
+      "n"
+    ],
+    "bank": [
+      "banque",
+      "bank",
+      "n"
+    ],
+    "say": [
+      "dire",
+      "say",
+      "v"
+    ],
+    "let": [
+      "laissé",
+      "let",
+      "v",
+      "laisser"
+    ],
+    "week": [
+      "semaine",
+      "week",
+      "n"
+    ],
+    "numbers": [
+      "chiffres",
+      "number",
+      "n",
+      "chiffre"
+    ],
+    "miss": [
+      "mademoiselle",
+      "Miss",
+      "n"
+    ],
+    "seat": [
+      "siège",
+      "seat",
+      "n"
+    ],
+    "old": [
+      "vieilles",
+      "old",
+      "a"
+    ],
+    "wall": [
+      "mur",
+      "wall",
+      "n"
+    ],
+    "question": [
+      "point d'interrogation (question mark)",
+      "question",
+      "n"
+    ],
+    "mark": [
+      "(question mark : point d'interrogation)",
+      "mark",
+      "n"
+    ],
+    "lights": [
+      "lumières",
+      "light",
+      "n",
+      "lumière"
+    ],
+    "young": [
+      "jeune",
+      "young",
+      "a"
+    ],
+    "instruments": [
+      "instruments",
+      "instrument",
+      "n",
+      "instrument"
+    ],
+    "long": [
+      "longtemps",
+      "long",
+      "d"
+    ],
+    "music": [
+      "musique",
+      "music",
+      "n"
+    ]
+  },
+  "pages": [
+    {
+      "p": [
+        [
+          {
+            "en": "They sat in a row on the cold steps like passengers waiting for a late train. Mrs Fontaine took charge, as people who have spent decades quelling thirty ten-year-olds with a violin bow generally do.",
+            "fr": "Ils s’assirent en rang sur les marches froides, comme des voyageurs attendant un train en retard. Mme Fontaine prit les choses en main, comme le font généralement ceux qui ont passé des décennies à calmer trente enfants de dix ans avec un archet de violon.",
+            "g": {
+              "sat": [
+                "s'assirent",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "row": [
+                "rang",
+                "row",
+                "n"
+              ],
+              "steps": [
+                "marches",
+                "step",
+                "n",
+                "marche"
+              ],
+              "cold": [
+                "froides",
+                "cold",
+                "a"
+              ],
+              "passengers": [
+                "voyageurs",
+                "passenger",
+                "n",
+                "passager"
+              ],
+              "waiting": [
+                "attendant",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "late": [
+                "en retard",
+                "late",
+                "a"
+              ],
+              "charge": [
+                "les choses en main (took charge)",
+                "charge",
+                "n"
+              ],
+              "spent": [
+                "passé",
+                "spend",
+                "v",
+                "passer"
+              ],
+              "decades": [
+                "décennies",
+                "decade",
+                "n",
+                "décennie"
+              ],
+              "quelling": [
+                "calmer",
+                "quell",
+                "v",
+                "réprimer"
+              ],
+              "thirty": [
+                "trente",
+                "thirty",
+                "a"
+              ],
+              "ten-year-olds": [
+                "enfants de dix ans",
+                "ten-year-old",
+                "n"
+              ],
+              "bow": [
+                "archet",
+                "bow",
+                "n"
+              ],
+              "generally": [
+                "généralement",
+                "generally",
+                "d"
+              ],
+              "took": [
+                "prit",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "people": [
+                "ceux (people who)",
+                "person",
+                "n",
+                "personne"
+              ],
+              "violin": [
+                "de violon",
+                "violin",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“A mistake is something one corrects,” she said. “A forgery is something one answers for. Callum, you will deal with both, and you will do it properly, in daylight, beginning tomorrow.”",
+            "fr": "« Une erreur se corrige, dit-elle. Un faux, on en répond. Callum, tu régleras les deux, et tu le feras comme il faut, au grand jour, dès demain. »",
+            "g": {
+              "corrects": [
+                "corrige",
+                "correct",
+                "v",
+                "corriger"
+              ],
+              "forgery": [
+                "faux",
+                "forgery",
+                "n"
+              ],
+              "answers": [
+                "répond (answer for)",
+                "answer",
+                "v",
+                "répondre"
+              ],
+              "for": [
+                "(answers for : en répondre)",
+                "for",
+                "x"
+              ],
+              "deal": [
+                "régleras (deal with)",
+                "deal",
+                "v"
+              ],
+              "with": [
+                "(deal with : régler)",
+                "with",
+                "x"
+              ],
+              "properly": [
+                "comme il faut",
+                "properly",
+                "d"
+              ],
+              "daylight": [
+                "au grand jour",
+                "daylight",
+                "n"
+              ],
+              "beginning": [
+                "dès",
+                "begin",
+                "v",
+                "commencer"
+              ]
+            }
+          },
+          {
+            "en": "Whitlock lifted his head. “I shall write to the Beacon tonight. A full retraction. And I shall resign as chairman.”",
+            "fr": "Whitlock leva la tête. « J’écrirai au Beacon ce soir. Un démenti complet. Et je démissionnerai de la présidence. »",
+            "g": {
+              "lifted": [
+                "leva",
+                "lift",
+                "v",
+                "lever"
+              ],
+              "shall": [
+                "écrirai, démissionnerai",
+                "shall",
+                "v"
+              ],
+              "write": [
+                "écrirai",
+                "write",
+                "v"
+              ],
+              "retraction": [
+                "démenti",
+                "retraction",
+                "n"
+              ],
+              "resign": [
+                "démissionnerai",
+                "resign",
+                "v",
+                "démissionner"
+              ],
+              "head": [
+                "tête",
+                "head",
+                "n"
+              ],
+              "chairman": [
+                "présidence",
+                "chairman",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“You will do the first,” said Mrs Fontaine. “The second we shall discuss when everyone has slept.”",
+            "fr": "« Vous ferez le premier, dit Mme Fontaine. Le second, nous en discuterons quand chacun aura dormi. »",
+            "g": {
+              "discuss": [
+                "discuterons",
+                "discuss",
+                "v",
+                "discuter"
+              ],
+              "slept": [
+                "dormi",
+                "sleep",
+                "v",
+                "dormir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Tamsin cleared her throat. “Callum, I have to ask you something, and I want you to answer it honestly. Tomorrow evening, the Courier will print what happened. I can write that a volunteer made an error, then forged a document in panic. Or I can write your name.”",
+            "fr": "Tamsin s’éclaircit la gorge. « Callum, je dois te poser une question, et je veux que tu répondes honnêtement. Demain soir, le Courier publiera ce qui s’est passé. Je peux écrire qu’un bénévole a commis une erreur, puis a falsifié un document par panique. Ou je peux écrire ton nom. »",
+            "g": {
+              "cleared": [
+                "s'éclaircit",
+                "clear",
+                "v",
+                "éclaircir"
+              ],
+              "throat": [
+                "gorge",
+                "throat",
+                "n"
+              ],
+              "honestly": [
+                "honnêtement",
+                "honestly",
+                "d"
+              ],
+              "volunteer": [
+                "bénévole",
+                "volunteer",
+                "n"
+              ],
+              "forged": [
+                "a falsifié",
+                "forge",
+                "v",
+                "falsifier"
+              ],
+              "panic": [
+                "panique",
+                "panic",
+                "n"
+              ],
+              "print": [
+                "publiera",
+                "print",
+                "v",
+                "imprimer"
+              ],
+              "happened": [
+                "s'est passé",
+                "happen",
+                "v",
+                "arriver"
+              ],
+              "made": [
+                "a commis (made an error)",
+                "make",
+                "v",
+                "faire"
+              ],
+              "ask": [
+                "poser (ask)",
+                "ask",
+                "v"
+              ],
+              "answer": [
+                "répondes",
+                "answer",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "He looked at the teacher. She did not help him; she merely waited, with the terrible patience of one who has listened to ten thousand wrong notes and believes in the eleventh thousand.",
+            "fr": "Il regarda l’enseignante. Elle ne l’aida pas ; elle attendit simplement, avec la terrible patience de qui a entendu dix mille fausses notes et croit à la dix mille et unième.",
+            "g": {
+              "merely": [
+                "simplement",
+                "merely",
+                "d"
+              ],
+              "patience": [
+                "patience",
+                "patience",
+                "n"
+              ],
+              "listened": [
+                "a entendu",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "notes": [
+                "notes",
+                "note",
+                "n",
+                "note"
+              ],
+              "wrong": [
+                "fausses",
+                "wrong",
+                "a",
+                "faux"
+              ],
+              "believes": [
+                "croit",
+                "believe",
+                "v",
+                "croire"
+              ],
+              "eleventh": [
+                "dix mille et unième (eleventh thousand)",
+                "eleventh",
+                "a"
+              ],
+              "thousand": [
+                "(eleventh thousand : dix mille et unième)",
+                "thousand",
+                "n"
+              ],
+              "terrible": [
+                "terrible",
+                "terrible",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Print it,” Callum said. “All of it. If I hide behind half a story, then I will have forged something twice.”",
+            "fr": "« Publiez-le, dit Callum. Tout. Si je me cache derrière la moitié de l’histoire, j’aurai falsifié quelque chose deux fois. »",
+            "g": {
+              "hide": [
+                "me cache",
+                "hide",
+                "v",
+                "cacher"
+              ],
+              "behind": [
+                "derrière",
+                "behind",
+                "r"
+              ],
+              "half": [
+                "moitié",
+                "half",
+                "n"
+              ],
+              "forged": [
+                "falsifié",
+                "forge",
+                "v",
+                "falsifier"
+              ],
+              "twice": [
+                "deux fois",
+                "twice",
+                "d"
+              ],
+              "print": [
+                "publiez",
+                "print",
+                "v",
+                "publier"
+              ]
+            }
+          },
+          {
+            "en": "Something in Mrs Fontaine’s posture eased, almost imperceptibly, like a string being let down a quarter-tone.",
+            "fr": "Quelque chose dans la posture de Mme Fontaine se relâcha, presque imperceptiblement, comme une corde que l’on détend d’un quart de ton.",
+            "g": {
+              "posture": [
+                "posture",
+                "posture",
+                "n"
+              ],
+              "eased": [
+                "se relâcha",
+                "ease",
+                "v",
+                "se détendre"
+              ],
+              "imperceptibly": [
+                "de façon imperceptible",
+                "imperceptibly",
+                "d"
+              ],
+              "almost": [
+                "presque",
+                "almost",
+                "d"
+              ],
+              "string": [
+                "corde",
+                "string",
+                "n"
+              ],
+              "quarter-tone": [
+                "quart de ton",
+                "quarter-tone",
+                "n"
+              ],
+              "let": [
+                "détend (let down)",
+                "let",
+                "v",
+                "laisser"
+              ],
+              "down": [
+                "(let down : détendre)",
+                "down",
+                "x"
+              ],
+              "being": [
+                "que l'on détend",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“There is one more thing,” said Tamsin. “The thirteen thousand pounds that everyone believed gone is sitting in the account tonight. Whatever else has happened, Vienna can be paid for.”",
+            "fr": "« Il y a encore une chose, dit Tamsin. Les treize mille livres que tout le monde croyait perdues sont sur le compte ce soir. Quoi qu’il se soit passé, Vienne peut être payée. »",
+            "g": {
+              "believed": [
+                "croyait",
+                "believe",
+                "v",
+                "croire"
+              ],
+              "gone": [
+                "perdues",
+                "go",
+                "v",
+                "aller"
+              ],
+              "sitting": [
+                "sont (sitting in the account)",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "whatever": [
+                "quoi que",
+                "whatever",
+                "p"
+              ],
+              "happened": [
+                "se soit passé",
+                "happen",
+                "v",
+                "arriver"
+              ],
+              "paid": [
+                "payée",
+                "pay",
+                "v",
+                "payer"
+              ],
+              "tonight": [
+                "ce soir",
+                "tonight",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Nobody spoke. Then Callum began, helplessly and almost soundlessly, to laugh, and halfway through the laugh turned into something else.",
+            "fr": "Personne ne parla. Puis Callum se mit à rire, sans pouvoir s’en empêcher et presque sans bruit, et à mi-chemin le rire se changea en autre chose.",
+            "g": {
+              "spoke": [
+                "parla",
+                "speak",
+                "v",
+                "parler"
+              ],
+              "began": [
+                "se mit à",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "helplessly": [
+                "sans pouvoir s'en empêcher",
+                "helplessly",
+                "d"
+              ],
+              "soundlessly": [
+                "sans bruit",
+                "soundlessly",
+                "d"
+              ],
+              "halfway": [
+                "à mi-chemin",
+                "halfway",
+                "d"
+              ],
+              "turned": [
+                "se changea",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "into": [
+                "en",
+                "into",
+                "r"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 8 — What Was Owed",
+      "titreFr": "Chapitre 8 — Ce qui était dû"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "The Valley Beacon declined to retract anything. At ten that morning it published a follow-up headed TEACHER “LAWYERS UP”, which was a small masterpiece of invention, since Mrs Fontaine had hired nobody.",
+            "fr": "Le Valley Beacon refusa de se rétracter. À dix heures ce matin-là, il publia une suite intitulée UNE ENSEIGNANTE « PREND DES AVOCATS », petit chef-d’œuvre d’invention, puisque Mme Fontaine n’avait engagé personne.",
+            "g": {
+              "declined": [
+                "refusa",
+                "decline",
+                "v",
+                "refuser"
+              ],
+              "retract": [
+                "se rétracter",
+                "retract",
+                "v"
+              ],
+              "published": [
+                "publia",
+                "publish",
+                "v",
+                "publier"
+              ],
+              "follow-up": [
+                "suite",
+                "follow-up",
+                "n"
+              ],
+              "headed": [
+                "intitulée",
+                "head",
+                "v",
+                "intituler"
+              ],
+              "lawyers": [
+                "prend des avocats (lawyer up)",
+                "lawyer",
+                "n",
+                "avocat"
+              ],
+              "up": [
+                "(lawyers up : prend des avocats)",
+                "up",
+                "x"
+              ],
+              "masterpiece": [
+                "chef-d'œuvre",
+                "masterpiece",
+                "n"
+              ],
+              "invention": [
+                "invention",
+                "invention",
+                "n"
+              ],
+              "hired": [
+                "engagé",
+                "hire",
+                "v",
+                "engager"
+              ],
+              "valley": [
+                "Valley (nom du journal)",
+                "Valley",
+                "np"
+              ],
+              "small": [
+                "petit",
+                "small",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "By noon Tamsin had written four drafts and thrown away three. Rhys read the fourth with a red pencil, slashing adjectives like a gardener at war with brambles.",
+            "fr": "À midi, Tamsin avait écrit quatre versions et en avait jeté trois. Rhys lut la quatrième, un crayon rouge à la main, taillant dans les adjectifs comme un jardinier en guerre contre les ronces.",
+            "g": {
+              "drafts": [
+                "versions",
+                "draft",
+                "n",
+                "version"
+              ],
+              "thrown": [
+                "jeté",
+                "throw",
+                "v",
+                "jeter"
+              ],
+              "away": [
+                "(thrown away : jeté)",
+                "away",
+                "x"
+              ],
+              "slashing": [
+                "taillant dans",
+                "slash",
+                "v",
+                "taillader"
+              ],
+              "adjectives": [
+                "adjectifs",
+                "adjective",
+                "n",
+                "adjectif"
+              ],
+              "gardener": [
+                "jardinier",
+                "gardener",
+                "n"
+              ],
+              "brambles": [
+                "ronces",
+                "bramble",
+                "n",
+                "ronce"
+              ],
+              "pencil": [
+                "crayon",
+                "pencil",
+                "n"
+              ],
+              "war": [
+                "guerre",
+                "war",
+                "n"
+              ],
+              "read": [
+                "lut",
+                "read",
+                "v",
+                "lire"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Facts shout loudly enough without help,” he muttered.",
+            "fr": "« Les faits crient assez fort sans qu’on les aide », marmonna-t-il.",
+            "g": {
+              "shout": [
+                "crient",
+                "shout",
+                "v",
+                "crier"
+              ],
+              "muttered": [
+                "marmonna",
+                "mutter",
+                "v",
+                "marmonner"
+              ],
+              "loudly": [
+                "fort",
+                "loudly",
+                "d"
+              ],
+              "enough": [
+                "assez",
+                "enough",
+                "d"
+              ],
+              "help": [
+                "aide",
+                "help",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "At half past four Desmond materialised with his reading glasses pushed up into his hair. “You mean to name the boy.”",
+            "fr": "À seize heures trente, Desmond se matérialisa, ses lunettes de lecture relevées dans les cheveux. « Vous comptez nommer ce garçon. »",
+            "g": {
+              "materialised": [
+                "se matérialisa",
+                "materialise",
+                "v",
+                "se matérialiser"
+              ],
+              "pushed": [
+                "relevées",
+                "push",
+                "v",
+                "pousser"
+              ],
+              "mean": [
+                "comptez",
+                "mean",
+                "v",
+                "avoir l'intention"
+              ],
+              "name": [
+                "nommer",
+                "name",
+                "v"
+              ],
+              "half": [
+                "trente (half past four)",
+                "half",
+                "n"
+              ],
+              "past": [
+                "(half past four : seize heures trente)",
+                "past",
+                "r"
+              ],
+              "hair": [
+                "cheveux",
+                "hair",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“He has asked me to.”",
+            "fr": "« Il me l’a demandé. »",
+            "g": {
+              "asked": [
+                "a demandé",
+                "ask",
+                "v",
+                "demander"
+              ]
+            }
+          },
+          {
+            "en": "“He is nineteen.”",
+            "fr": "« Il a dix-neuf ans. »"
+          },
+          {
+            "en": "“He is nineteen, and he has asked.” She laid a sheet on the desk. “Written consent, signed at eight this morning and witnessed by Mrs Fontaine herself. I also have a statement in his own words.”",
+            "fr": "« Il a dix-neuf ans, et il l’a demandé. » Elle posa une feuille sur le bureau. « Un consentement écrit, signé à huit heures ce matin, avec Mme Fontaine elle-même pour témoin. J’ai aussi une déclaration dans ses propres mots. »",
+            "g": {
+              "laid": [
+                "posa",
+                "lay",
+                "v",
+                "poser"
+              ],
+              "consent": [
+                "consentement",
+                "consent",
+                "n"
+              ],
+              "witnessed": [
+                "pour témoin (witnessed by)",
+                "witness",
+                "v",
+                "témoigner"
+              ],
+              "statement": [
+                "déclaration",
+                "statement",
+                "n"
+              ],
+              "sheet": [
+                "feuille",
+                "sheet",
+                "n"
+              ],
+              "written": [
+                "écrit",
+                "written",
+                "a"
+              ],
+              "herself": [
+                "elle-même",
+                "herself",
+                "p"
+              ],
+              "words": [
+                "mots",
+                "word",
+                "n",
+                "mot"
+              ],
+              "asked": [
+                "a demandé",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "own": [
+                "propres",
+                "own",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Desmond read it standing up, then read it again sitting down. “Had you stopped at the signature,” he said slowly, “a woman’s name would be in ruins this morning. And had you stopped at the sort code, we would never have known why.”",
+            "fr": "Desmond le lut debout, puis le relut assis. « Si vous vous étiez arrêtée à la signature, dit-il lentement, le nom d’une femme serait en ruine ce matin. Et si vous vous étiez arrêtée au code guichet, nous n’aurions jamais su pourquoi. »",
+            "g": {
+              "stopped": [
+                "arrêtée",
+                "stop",
+                "v",
+                "s'arrêter"
+              ],
+              "ruins": [
+                "ruine (in ruins)",
+                "ruin",
+                "n",
+                "ruine"
+              ],
+              "slowly": [
+                "lentement",
+                "slowly",
+                "d"
+              ],
+              "standing": [
+                "debout",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "sitting": [
+                "assis",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "known": [
+                "su",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "sort": [
+                "code",
+                "sort",
+                "n"
+              ],
+              "code": [
+                "(sort code : code guichet)",
+                "code",
+                "n"
+              ],
+              "read": [
+                "lut",
+                "read",
+                "v",
+                "lire"
+              ],
+              "read#2": [
+                "relut",
+                "read",
+                "v",
+                "lire"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "The headline was the last thing she had written, as Desmond had once taught her: A ZERO TOO MANY — How a typing slip and a forged letter nearly cost a teacher her name. He crossed out nothing but the word “nearly”, then, after a moment, wrote it back in.",
+            "fr": "Le titre était la dernière chose qu’elle avait écrite, comme Desmond le lui avait appris : UN ZÉRO DE TROP — Comment une faute de frappe et une fausse lettre ont failli coûter sa réputation à une enseignante. Il ne raya que le mot « failli », puis, après un instant, le rétablit.",
+            "g": {
+              "slip": [
+                "faute",
+                "slip",
+                "n"
+              ],
+              "typing": [
+                "de frappe (typing slip)",
+                "typing",
+                "n"
+              ],
+              "forged": [
+                "fausse",
+                "forged",
+                "a"
+              ],
+              "cost": [
+                "coûter",
+                "cost",
+                "v"
+              ],
+              "crossed": [
+                "raya",
+                "cross",
+                "v",
+                "rayer"
+              ],
+              "out": [
+                "(crossed out : raya)",
+                "out",
+                "x"
+              ],
+              "nearly": [
+                "failli",
+                "nearly",
+                "d"
+              ],
+              "headline": [
+                "titre",
+                "headline",
+                "n"
+              ],
+              "wrote": [
+                "rétablit (wrote back in)",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "back": [
+                "(wrote back : rétablit)",
+                "back",
+                "x"
+              ],
+              "in": [
+                "(wrote back in : rétablit)",
+                "in",
+                "x"
+              ],
+              "taught": [
+                "appris",
+                "teach",
+                "v",
+                "enseigner"
+              ],
+              "zero": [
+                "zéro",
+                "zero",
+                "n"
+              ],
+              "name": [
+                "réputation (her name)",
+                "name",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“It did cost her a week,” he said gruffly. “But journalism is permitted one small mercy.”",
+            "fr": "« Ça lui a coûté une semaine, dit-il d’un ton bourru. Mais le journalisme a droit à une petite clémence. »",
+            "g": {
+              "gruffly": [
+                "d'un ton bourru",
+                "gruffly",
+                "d"
+              ],
+              "permitted": [
+                "a droit à (is permitted)",
+                "permit",
+                "v",
+                "permettre"
+              ],
+              "mercy": [
+                "clémence",
+                "mercy",
+                "n"
+              ],
+              "week": [
+                "semaine",
+                "week",
+                "n"
+              ],
+              "cost": [
+                "a coûté",
+                "cost",
+                "v"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "At six o’clock precisely, Desmond pressed a key. Beneath the headline, in letters no bigger than any others, appeared By Tamsin Okoye.",
+            "fr": "À dix-huit heures précises, Desmond appuya sur une touche. Sous le titre, en lettres pas plus grandes que les autres, apparut : Par Tamsin Okoye.",
+            "g": {
+              "pressed": [
+                "appuya",
+                "press",
+                "v",
+                "appuyer"
+              ],
+              "key": [
+                "touche",
+                "key",
+                "n"
+              ],
+              "bigger": [
+                "plus grandes",
+                "big",
+                "a",
+                "grand"
+              ],
+              "appeared": [
+                "apparut",
+                "appear",
+                "v",
+                "apparaître"
+              ],
+              "o'clock": [
+                "heures",
+                "o'clock",
+                "d"
+              ],
+              "six": [
+                "dix-huit (six o'clock : dix-huit heures)",
+                "six",
+                "a"
+              ],
+              "headline": [
+                "titre",
+                "headline",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Nobody cheered. Rhys simply carried a mug of coffee across the room and set it beside her keyboard. It was, she realised, the first cup that machine had ever produced that she actually wanted to drink.",
+            "fr": "Personne n’applaudit. Rhys traversa simplement la pièce avec une tasse de café qu’il posa à côté de son clavier. C’était, réalisa-t-elle, la première tasse que cette machine eût jamais produite et qu’elle avait vraiment envie de boire.",
+            "g": {
+              "cheered": [
+                "applaudit",
+                "cheer",
+                "v",
+                "applaudir"
+              ],
+              "carried": [
+                "traversa avec (carried across)",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "mug": [
+                "tasse",
+                "mug",
+                "n"
+              ],
+              "set": [
+                "posa",
+                "set",
+                "v",
+                "poser"
+              ],
+              "realised": [
+                "réalisa",
+                "realise",
+                "v",
+                "réaliser"
+              ],
+              "produced": [
+                "produite",
+                "produce",
+                "v",
+                "produire"
+              ],
+              "drink": [
+                "boire",
+                "drink",
+                "v"
+              ],
+              "coffee": [
+                "café",
+                "coffee",
+                "n"
+              ],
+              "wanted": [
+                "avait envie de",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "room": [
+                "pièce",
+                "room",
+                "n"
+              ],
+              "actually": [
+                "vraiment",
+                "actually",
+                "d"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 9 — Six O’Clock",
+      "titreFr": "Chapitre 9 — Dix-huit heures"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "In April the concert hall in Vienna smelled of floor wax and nerves. Tamsin, now the Courier’s junior reporter, sat in the third row with her notebook on her knee, watching forty teenagers settle onto the stage like a flock of nervous black birds.",
+            "fr": "En avril, la salle de concert de Vienne sentait la cire à parquet et le trac. Tamsin, désormais journaliste débutante au Courier, était assise au troisième rang, son carnet sur le genou, et regardait quarante adolescents s’installer sur scène comme une volée d’oiseaux noirs et nerveux.",
+            "g": {
+              "smelled": [
+                "sentait",
+                "smell",
+                "v",
+                "sentir"
+              ],
+              "wax": [
+                "cire",
+                "wax",
+                "n"
+              ],
+              "nerves": [
+                "trac",
+                "nerve",
+                "n",
+                "nerf"
+              ],
+              "junior": [
+                "débutante",
+                "junior",
+                "a"
+              ],
+              "third": [
+                "troisième",
+                "third",
+                "a"
+              ],
+              "row": [
+                "rang",
+                "row",
+                "n"
+              ],
+              "knee": [
+                "genou",
+                "knee",
+                "n"
+              ],
+              "watching": [
+                "regardait",
+                "watch",
+                "v",
+                "regarder"
+              ],
+              "teenagers": [
+                "adolescents",
+                "teenager",
+                "n",
+                "adolescent"
+              ],
+              "settle": [
+                "s'installer",
+                "settle",
+                "v"
+              ],
+              "flock": [
+                "volée",
+                "flock",
+                "n"
+              ],
+              "nervous": [
+                "nerveux",
+                "nervous",
+                "a"
+              ],
+              "black": [
+                "noirs",
+                "black",
+                "a"
+              ],
+              "birds": [
+                "oiseaux",
+                "bird",
+                "n",
+                "oiseau"
+              ],
+              "stage": [
+                "scène",
+                "stage",
+                "n"
+              ],
+              "onto": [
+                "sur",
+                "onto",
+                "r"
+              ],
+              "sat": [
+                "était assise",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "floor": [
+                "parquet",
+                "floor",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "The road there had been short on glamour: a retraction buried on page nine of the Beacon, a rule that every payment now needed two signatures, and a Vienna fund that, to everyone’s astonishment, had never lost a penny.",
+            "fr": "Le chemin parcouru pour en arriver là avait été bien peu glamour : un démenti enterré en page 9 du Beacon, une règle exigeant désormais deux signatures pour chaque paiement, et un fonds pour Vienne qui, à la surprise générale, n’avait jamais perdu un penny.",
+            "g": {
+              "glamour": [
+                "glamour",
+                "glamour",
+                "n"
+              ],
+              "buried": [
+                "enterré",
+                "bury",
+                "v",
+                "enterrer"
+              ],
+              "retraction": [
+                "démenti",
+                "retraction",
+                "n"
+              ],
+              "payment": [
+                "paiement",
+                "payment",
+                "n"
+              ],
+              "needed": [
+                "exigeait (needed)",
+                "need",
+                "v",
+                "avoir besoin de"
+              ],
+              "signatures": [
+                "signatures",
+                "signature",
+                "n",
+                "signature"
+              ],
+              "astonishment": [
+                "surprise",
+                "astonishment",
+                "n"
+              ],
+              "penny": [
+                "penny",
+                "penny",
+                "n"
+              ],
+              "lost": [
+                "perdu",
+                "lose",
+                "v",
+                "perdre"
+              ],
+              "short": [
+                "peu (short on)",
+                "short",
+                "a"
+              ],
+              "on": [
+                "(short on : peu)",
+                "on",
+                "x"
+              ],
+              "beacon": [
+                "Beacon (nom du journal)",
+                "Beacon",
+                "np"
+              ],
+              "fund": [
+                "fonds",
+                "fund",
+                "n"
+              ],
+              "everyone's": [
+                "de tout le monde",
+                "everyone",
+                "p"
+              ],
+              "page": [
+                "page",
+                "page",
+                "n"
+              ],
+              "road": [
+                "chemin parcouru",
+                "road",
+                "n"
+              ],
+              "on#2": [
+                "en (on page nine)",
+                "on",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Callum sat among the clarinets, spine very straight. Beyond the pillars Whitlock was carrying chairs, the one job he had discovered he did superbly.",
+            "fr": "Callum était assis parmi les clarinettes, le dos très droit. Au-delà des piliers, Whitlock portait des chaises, la seule tâche dont il avait découvert qu’il s’en acquittait superbement.",
+            "g": {
+              "clarinets": [
+                "clarinettes",
+                "clarinet",
+                "n",
+                "clarinette"
+              ],
+              "spine": [
+                "dos",
+                "spine",
+                "n"
+              ],
+              "straight": [
+                "droit",
+                "straight",
+                "a"
+              ],
+              "beyond": [
+                "au-delà de",
+                "beyond",
+                "r"
+              ],
+              "pillars": [
+                "piliers",
+                "pillar",
+                "n",
+                "pilier"
+              ],
+              "carrying": [
+                "portait",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "chairs": [
+                "chaises",
+                "chair",
+                "n",
+                "chaise"
+              ],
+              "discovered": [
+                "découvert",
+                "discover",
+                "v",
+                "découvrir"
+              ],
+              "superbly": [
+                "superbement",
+                "superbly",
+                "d"
+              ],
+              "job": [
+                "tâche",
+                "job",
+                "n"
+              ],
+              "among": [
+                "parmi",
+                "among",
+                "r"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "In the interval she found Mrs Fontaine in the wings, tightening the pegs of a violin. “May I ask something, not for print?”",
+            "fr": "« Puis-je vous demander quelque chose, hors publication ? »",
+            "g": {
+              "interval": [
+                "entracte",
+                "interval",
+                "n"
+              ],
+              "wings": [
+                "coulisses",
+                "wing",
+                "n",
+                "coulisse"
+              ],
+              "tightening": [
+                "resserrer",
+                "tighten",
+                "v",
+                "serrer"
+              ],
+              "pegs": [
+                "chevilles",
+                "peg",
+                "n",
+                "cheville"
+              ],
+              "print": [
+                "publication (not for print : pas pour publication)",
+                "print",
+                "n"
+              ],
+              "found": [
+                "trouva",
+                "find",
+                "v",
+                "trouver"
+              ]
+            }
+          },
+          {
+            "en": "“You may.”",
+            "fr": "« Vous pouvez. »",
+            "g": {}
+          },
+          {
+            "en": "“When I showed you the letter, something crossed your face. You knew.”",
+            "fr": "« Quand je vous ai montré la lettre, quelque chose a traversé votre visage. Vous saviez. »",
+            "g": {
+              "showed": [
+                "ai montré",
+                "show",
+                "v",
+                "montrer"
+              ],
+              "crossed": [
+                "a traversé",
+                "cross",
+                "v",
+                "traverser"
+              ],
+              "knew": [
+                "saviez",
+                "know",
+                "v",
+                "savoir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“It was the F,” said Mrs Fontaine. “Since I broke my wrist in 2021 I have signed with a different F. The one on that letter was the old one, found only on the bank forms from before. Three people handled those forms.”",
+            "fr": "« C’était le F, dit Mme Fontaine. Depuis que je me suis cassé le poignet en 2021, je signe avec un F différent. Celui de la lettre était l’ancien, que l’on ne trouve que sur les formulaires de la banque d’avant. Trois personnes ont manipulé ces formulaires. »",
+            "g": {
+              "broke": [
+                "me suis cassé",
+                "break",
+                "v",
+                "casser"
+              ],
+              "wrist": [
+                "poignet",
+                "wrist",
+                "n"
+              ],
+              "signed": [
+                "signe",
+                "sign",
+                "v",
+                "signer"
+              ],
+              "different": [
+                "différent",
+                "different",
+                "a"
+              ],
+              "forms": [
+                "formulaires",
+                "form",
+                "n",
+                "formulaire"
+              ],
+              "handled": [
+                "ont manipulé",
+                "handle",
+                "v",
+                "manipuler"
+              ],
+              "found": [
+                "trouve",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "people": [
+                "personnes",
+                "person",
+                "n",
+                "personne"
+              ],
+              "old": [
+                "ancien",
+                "old",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Then why say nothing?”",
+            "fr": "« Alors pourquoi ne rien dire ? »"
+          },
+          {
+            "en": "“Because a name once spoken cannot be unspoken. I wanted the paper to say it first, and I wanted him to have the chance to say it himself.”",
+            "fr": "« Parce qu’un nom prononcé ne peut plus être retiré. Je voulais que le papier le dise d’abord, et que lui ait la chance de le dire lui-même. »",
+            "g": {
+              "spoken": [
+                "prononcé",
+                "speak",
+                "v",
+                "parler"
+              ],
+              "unspoken": [
+                "retiré, dédit",
+                "unspoken",
+                "a"
+              ],
+              "chance": [
+                "chance",
+                "chance",
+                "n"
+              ],
+              "wanted": [
+                "voulais",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "himself": [
+                "lui-même",
+                "himself",
+                "p"
+              ],
+              "paper": [
+                "papier",
+                "paper",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“You let them call you a thief for a week.”",
+            "fr": "« Vous les avez laissés vous traiter de voleuse pendant une semaine. »",
+            "g": {
+              "thief": [
+                "voleuse",
+                "thief",
+                "n"
+              ],
+              "call": [
+                "traiter de (call you a thief)",
+                "call",
+                "v",
+                "appeler"
+              ]
+            }
+          },
+          {
+            "en": "“I let a stranger count the numbers. Most people count the signature, Miss Okoye. You counted what was there.”",
+            "fr": "« J’ai laissé une inconnue compter les chiffres. La plupart des gens tiennent compte de la signature, mademoiselle Okoye. Vous, vous avez compté ce qui était là. »",
+            "g": {
+              "stranger": [
+                "inconnue",
+                "stranger",
+                "n"
+              ],
+              "count": [
+                "compter",
+                "count",
+                "v"
+              ],
+              "counted": [
+                "avez compté",
+                "count",
+                "v",
+                "compter"
+              ],
+              "people": [
+                "gens",
+                "person",
+                "n",
+                "personne"
+              ],
+              "count#2": [
+                "tiennent compte de",
+                "count",
+                "v",
+                "compter"
+              ]
+            }
+          },
+          {
+            "en": "Back in her seat, Tamsin took out the old wall chart, folded small, and crossed out the last question mark. Then the lights went down, forty young people raised their instruments, and at long last the numbers gave way to music.",
+            "fr": "De retour à sa place, Tamsin sortit le vieux tableau mural, plié en tout petit, et raya le dernier point d’interrogation. Puis les lumières s’éteignirent, quarante jeunes levèrent leurs instruments, et enfin les chiffres cédèrent la place à la musique.",
+            "g": {
+              "chart": [
+                "tableau",
+                "chart",
+                "n"
+              ],
+              "folded": [
+                "plié",
+                "fold",
+                "v",
+                "plier"
+              ],
+              "crossed": [
+                "raya",
+                "cross",
+                "v",
+                "rayer"
+              ],
+              "out": [
+                "(took out : sortit)",
+                "out",
+                "x"
+              ],
+              "raised": [
+                "levèrent",
+                "raise",
+                "v",
+                "lever"
+              ],
+              "gave": [
+                "cédèrent (gave way)",
+                "give",
+                "v",
+                "donner"
+              ],
+              "way": [
+                "(gave way : cédèrent la place)",
+                "way",
+                "n"
+              ],
+              "went": [
+                "s'éteignirent (went down)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "down": [
+                "(went down : s'éteignirent)",
+                "down",
+                "x"
+              ],
+              "took": [
+                "sortit (took out)",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "out#2": [
+                "(crossed out : raya)",
+                "out",
+                "x"
+              ],
+              "old": [
+                "vieux",
+                "old",
+                "a"
+              ],
+              "small": [
+                "tout petit (folded small)",
+                "small",
+                "a"
+              ],
+              "young": [
+                "jeunes",
+                "young",
+                "a",
+                "jeune"
+              ],
+              "back": [
+                "de retour (back in)",
+                "back",
+                "d"
+              ],
+              "seat": [
+                "place",
+                "seat",
+                "n"
+              ],
+              "wall": [
+                "mural (wall chart)",
+                "wall",
+                "n"
+              ],
+              "people": [
+                "jeunes (young people)",
+                "person",
+                "n",
+                "personne"
+              ],
+              "long": [
+                "enfin (at long last)",
+                "long",
+                "d"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 10 — Vienna",
+      "titreFr": "Chapitre 10 — Vienne"
+    }
+  ]
+}

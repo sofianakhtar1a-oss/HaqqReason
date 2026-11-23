@@ -1,0 +1,1787 @@
+{
+ "debut": 11,
+ "lexique": {
+  "airport": [
+   "aéroport",
+   "airport",
+   "n"
+  ],
+  "beach": [
+   "plage",
+   "beach",
+   "n"
+  ],
+  "bear": [
+   "ours",
+   "bear",
+   "n"
+  ],
+  "bell": [
+   "cloche",
+   "bell",
+   "n"
+  ],
+  "big": [
+   "grand",
+   "big",
+   "a"
+  ],
+  "blue": [
+   "bleue",
+   "blue",
+   "a",
+   "bleu"
+  ],
+  "blueberry": [
+   "de myrtilles",
+   "blueberry",
+   "n",
+   "myrtille"
+  ],
+  "camille": [
+   "Camille (prénom)",
+   "Camille",
+   "np"
+  ],
+  "canoe": [
+   "canoë",
+   "canoe",
+   "n"
+  ],
+  "car": [
+   "voiture",
+   "car",
+   "n"
+  ],
+  "chalet": [
+   "chalet",
+   "chalet",
+   "n"
+  ],
+  "class": [
+   "classe",
+   "class",
+   "n"
+  ],
+  "cloud": [
+   "nuage",
+   "cloud",
+   "n"
+  ],
+  "dad": [
+   "papa",
+   "dad",
+   "n"
+  ],
+  "day": [
+   "jour",
+   "day",
+   "n"
+  ],
+  "dear": [
+   "cher",
+   "dear",
+   "a"
+  ],
+  "december": [
+   "décembre",
+   "December",
+   "n"
+  ],
+  "ding": [
+   "ding (son de cloche)",
+   "ding",
+   "n"
+  ],
+  "dinner": [
+   "dîner",
+   "dinner",
+   "n"
+  ],
+  "envelope": [
+   "enveloppe",
+   "envelope",
+   "n"
+  ],
+  "fast": [
+   "vite",
+   "fast",
+   "d"
+  ],
+  "father": [
+   "père",
+   "father",
+   "n"
+  ],
+  "football": [
+   "football",
+   "football",
+   "n"
+  ],
+  "friend": [
+   "ami",
+   "friend",
+   "n"
+  ],
+  "gave": [
+   "donna",
+   "give",
+   "v",
+   "donner"
+  ],
+  "hands": [
+   "mains",
+   "hand",
+   "n",
+   "main"
+  ],
+  "heart": [
+   "cœur",
+   "heart",
+   "n"
+  ],
+  "hot": [
+   "chaud",
+   "hot",
+   "a"
+  ],
+  "keep": [
+   "garder",
+   "keep",
+   "v"
+  ],
+  "kitchen": [
+   "cuisine",
+   "kitchen",
+   "n"
+  ],
+  "lake": [
+   "lac",
+   "lake",
+   "n"
+  ],
+  "laughed": [
+   "rit",
+   "laugh",
+   "v",
+   "rire"
+  ],
+  "letter": [
+   "lettre",
+   "letter",
+   "n"
+  ],
+  "letters": [
+   "lettres",
+   "letter",
+   "n",
+   "lettre"
+  ],
+  "line": [
+   "ligne",
+   "line",
+   "n"
+  ],
+  "little": [
+   "petit",
+   "little",
+   "a"
+  ],
+  "long": [
+   "long",
+   "long",
+   "a"
+  ],
+  "loudly": [
+   "fort",
+   "loudly",
+   "d"
+  ],
+  "lucas": [
+   "Lucas (prénom)",
+   "Lucas",
+   "np"
+  ],
+  "make": [
+   "faire",
+   "make",
+   "v"
+  ],
+  "manchester": [
+   "Manchester (ville d'Angleterre)",
+   "Manchester",
+   "np"
+  ],
+  "minutes": [
+   "minutes",
+   "minute",
+   "n",
+   "minute"
+  ],
+  "moka": [
+   "Moka (nom du chien)",
+   "Moka",
+   "np"
+  ],
+  "morning": [
+   "matin",
+   "morning",
+   "n"
+  ],
+  "mr": [
+   "M. (monsieur)",
+   "Mr",
+   "n"
+  ],
+  "mrs": [
+   "Mme (madame)",
+   "Mrs",
+   "n"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "new": [
+   "nouveau",
+   "new",
+   "a"
+  ],
+  "night": [
+   "nuit",
+   "night",
+   "n"
+  ],
+  "notebook": [
+   "carnet",
+   "notebook",
+   "n"
+  ],
+  "opened": [
+   "ouvrit",
+   "open",
+   "v",
+   "ouvrir"
+  ],
+  "parents": [
+   "parents",
+   "parent",
+   "n",
+   "parent"
+  ],
+  "patel": [
+   "Patel (nom de famille)",
+   "Patel",
+   "np"
+  ],
+  "photos": [
+   "photos",
+   "photo",
+   "n",
+   "photo"
+  ],
+  "plane": [
+   "avion",
+   "plane",
+   "n"
+  ],
+  "project": [
+   "projet",
+   "project",
+   "n"
+  ],
+  "red": [
+   "rouge",
+   "red",
+   "a"
+  ],
+  "said": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "sat": [
+   "s'assit",
+   "sit",
+   "v",
+   "s'asseoir"
+  ],
+  "saw": [
+   "vit",
+   "see",
+   "v",
+   "voir"
+  ],
+  "sea": [
+   "mer",
+   "sea",
+   "n"
+  ],
+  "see": [
+   "voir",
+   "see",
+   "v"
+  ],
+  "september": [
+   "septembre",
+   "September",
+   "n"
+  ],
+  "shore": [
+   "rive",
+   "shore",
+   "n"
+  ],
+  "sky": [
+   "ciel",
+   "sky",
+   "n"
+  ],
+  "slowly": [
+   "lentement",
+   "slowly",
+   "d"
+  ],
+  "small": [
+   "petit",
+   "small",
+   "a"
+  ],
+  "sun": [
+   "soleil",
+   "sun",
+   "n"
+  ],
+  "take": [
+   "prendre",
+   "take",
+   "v"
+  ],
+  "thank": [
+   "merci",
+   "thank",
+   "v"
+  ],
+  "thin": [
+   "fine",
+   "thin",
+   "a",
+   "fin"
+  ],
+  "time": [
+   "fois",
+   "time",
+   "n"
+  ],
+  "trees": [
+   "arbres",
+   "tree",
+   "n",
+   "arbre"
+  ],
+  "tremblay": [
+   "Tremblay (nom de famille)",
+   "Tremblay",
+   "np"
+  ],
+  "tremblays": [
+   "les Tremblay",
+   "Tremblay",
+   "np"
+  ],
+  "umbrella": [
+   "parapluie",
+   "umbrella",
+   "n"
+  ],
+  "warm": [
+   "chaud",
+   "warm",
+   "a"
+  ],
+  "watched": [
+   "regarda",
+   "watch",
+   "v",
+   "regarder"
+  ],
+  "water": [
+   "eau",
+   "water",
+   "n"
+  ],
+  "week": [
+   "semaine",
+   "week",
+   "n"
+  ],
+  "white": [
+   "blanc",
+   "white",
+   "a"
+  ],
+  "wide": [
+   "large",
+   "wide",
+   "a"
+  ],
+  "writing": [
+   "écrire",
+   "write",
+   "v"
+  ],
+  "yusuf": [
+   "Yusuf (prénom)",
+   "Yusuf",
+   "np"
+  ],
+  "zainab": [
+   "Zainab (prénom)",
+   "Zainab",
+   "np"
+  ]
+ },
+ "pages": [
+  {
+   "titre": "Chapter 8 — Fog on the Lake",
+   "titreFr": "Chapitre 8 — Du brouillard sur le lac",
+   "p": [
+    [
+     {
+      "en": "On the fifth day, the weather was warm and calm.",
+      "fr": "Le cinquième jour, il faisait chaud et le temps était calme.",
+      "g": {
+       "fifth": [
+        "cinquième",
+        "fifth",
+        "a"
+       ],
+       "weather": [
+        "temps (météo)",
+        "weather",
+        "n"
+       ],
+       "calm": [
+        "calme",
+        "calm",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mr Tremblay let Lucas and Zainab take the small canoe to a little beach.",
+      "fr": "M. Tremblay laissa Lucas et Zainab prendre le petit canoë jusqu'à une petite plage.",
+      "g": {
+       "let": [
+        "laissa",
+        "let",
+        "v",
+        "laisser"
+       ],
+       "to": [
+        "jusqu'à",
+        "to",
+        "r"
+       ],
+       "little": [
+        "petite",
+        "little",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Stay near the shore, and wear your life jackets,” he said.",
+      "fr": "« Restez près de la rive et mettez vos gilets de sauvetage », dit-il.",
+      "g": {
+       "stay": [
+        "restez",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "wear": [
+        "mettez",
+        "wear",
+        "v",
+        "porter"
+       ],
+       "life": [
+        "(life jacket : gilet de sauvetage)",
+        "life",
+        "n"
+       ],
+       "jackets": [
+        "(gilets de sauvetage)",
+        "jacket",
+        "n",
+        "gilet"
+       ]
+      }
+     },
+     {
+      "en": "The beach was only ten minutes away.",
+      "fr": "La plage n'était qu'à dix minutes.",
+      "g": {
+       "only": [
+        "que",
+        "only",
+        "d"
+       ],
+       "away": [
+        "(à dix minutes)",
+        "away",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The sun was hot, and the lake looked like glass.",
+      "fr": "Le soleil était chaud, et le lac ressemblait à du verre.",
+      "g": {
+       "looked": [
+        "ressemblait",
+        "look",
+        "v",
+        "ressembler"
+       ],
+       "like": [
+        "(look like : ressembler à)",
+        "like",
+        "r"
+       ],
+       "glass": [
+        "verre",
+        "glass",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "They ate blueberry muffins there and talked about their project.",
+      "fr": "Ils y mangèrent des muffins aux myrtilles et parlèrent de leur projet.",
+      "g": {
+       "ate": [
+        "mangèrent",
+        "eat",
+        "v",
+        "manger"
+       ],
+       "blueberry": [
+        "aux myrtilles",
+        "blueberry",
+        "n"
+       ],
+       "muffins": [
+        "muffins",
+        "muffin",
+        "n",
+        "muffin"
+       ],
+       "talked": [
+        "parlèrent",
+        "talk",
+        "v",
+        "parler"
+       ],
+       "there": [
+        "y",
+        "there",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "They paddled back towards the chalet.",
+      "fr": "Ils repartirent en pagayant vers le chalet.",
+      "g": {
+       "paddled": [
+        "repartirent en pagayant",
+        "paddle",
+        "v",
+        "pagayer"
+       ],
+       "back": [
+        "(paddled back : repartirent)",
+        "back",
+        "d"
+       ],
+       "towards": [
+        "vers",
+        "towards",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "In the middle of the lake, Zainab saw a white cloud on the water.",
+      "fr": "Au milieu du lac, Zainab vit un nuage blanc sur l'eau.",
+      "g": {
+       "saw": [
+        "vit",
+        "see",
+        "v",
+        "voir"
+       ],
+       "white": [
+        "blanc",
+        "white",
+        "a"
+       ],
+       "cloud": [
+        "nuage",
+        "cloud",
+        "n"
+       ],
+       "in": [
+        "(in the middle of : au milieu de)",
+        "in",
+        "r"
+       ],
+       "middle": [
+        "(in the middle of : au milieu de)",
+        "middle",
+        "n"
+       ],
+       "of": [
+        "(in the middle of : au milieu de)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It was not a cloud. It was fog, and it was coming fast.",
+      "fr": "Ce n'était pas un nuage. C'était du brouillard, et il arrivait vite.",
+      "g": {
+       "fog": [
+        "brouillard",
+        "fog",
+        "n"
+       ],
+       "coming": [
+        "arrivait",
+        "come",
+        "v",
+        "venir"
+       ],
+       "fast": [
+        "vite",
+        "fast",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Within minutes, they could not see the shore, the trees or the canoe's front.",
+      "fr": "En quelques minutes, ils ne voyaient plus ni la rive, ni les arbres, ni l'avant du canoë.",
+      "g": {
+       "within": [
+        "en",
+        "within",
+        "r"
+       ],
+       "could": [
+        "(could see : voyaient)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "see": [
+        "(could see : voyaient)",
+        "see",
+        "v",
+        "voir"
+       ],
+       "shore": [
+        "rive",
+        "shore",
+        "n"
+       ],
+       "canoe's": [
+        "du canoë",
+        "canoe",
+        "n"
+       ],
+       "front": [
+        "avant",
+        "front",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Do not panic,” said Lucas, but his voice was small.",
+      "fr": "« Ne paniquons pas », dit Lucas, mais sa voix était toute petite.",
+      "g": {
+       "do": [
+        "(négation)",
+        "do",
+        "v"
+       ],
+       "panic": [
+        "paniquons",
+        "panic",
+        "v"
+       ],
+       "voice": [
+        "voix",
+        "voice",
+        "n"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“My father says: when you are lost in fog, stop and listen.”",
+      "fr": "« Mon père dit : quand on est perdu dans le brouillard, on s'arrête et on écoute. »",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "lost": [
+        "perdu",
+        "lost",
+        "a"
+       ],
+       "fog": [
+        "brouillard",
+        "fog",
+        "n"
+       ],
+       "stop": [
+        "s'arrête",
+        "stop",
+        "v",
+        "s'arrêter"
+       ],
+       "listen": [
+        "écoute",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "you": [
+        "on",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "They stopped paddling, and the lake became completely silent.",
+      "fr": "Ils arrêtèrent de pagayer, et le lac devint complètement silencieux.",
+      "g": {
+       "stopped": [
+        "arrêtèrent",
+        "stop",
+        "v",
+        "arrêter"
+       ],
+       "paddling": [
+        "pagayer",
+        "paddle",
+        "v",
+        "pagayer"
+       ],
+       "became": [
+        "devint",
+        "become",
+        "v",
+        "devenir"
+       ],
+       "completely": [
+        "complètement",
+        "completely",
+        "d"
+       ],
+       "silent": [
+        "silencieux",
+        "silent",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Zainab's hands were cold, and her heart was beating loudly.",
+      "fr": "Les mains de Zainab étaient froides, et son cœur battait fort.",
+      "g": {
+       "zainab's": [
+        "de Zainab",
+        "Zainab",
+        "np"
+       ],
+       "cold": [
+        "froides",
+        "cold",
+        "a",
+        "froid"
+       ],
+       "beating": [
+        "battait",
+        "beat",
+        "v",
+        "battre"
+       ],
+       "loudly": [
+        "fort",
+        "loudly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Then, from the right, came a faint sound: ding, ding, ding.",
+      "fr": "Puis un faible son leur parvint de la droite : ding, ding, ding.",
+      "g": {
+       "right": [
+        "droite",
+        "right",
+        "n"
+       ],
+       "came": [
+        "parvint",
+        "come",
+        "v",
+        "venir"
+       ],
+       "faint": [
+        "faible",
+        "faint",
+        "a"
+       ],
+       "sound": [
+        "son",
+        "sound",
+        "n"
+       ],
+       "ding": [
+        "ding",
+        "ding",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“It is Camille!” cried Lucas. “She is ringing the dinner bell!”",
+      "fr": "« C'est Camille ! s'écria Lucas. Elle sonne la cloche du dîner ! »",
+      "g": {
+       "cried": [
+        "s'écria",
+        "cry",
+        "v",
+        "s'écrier"
+       ],
+       "ringing": [
+        "sonne",
+        "ring",
+        "v",
+        "sonner"
+       ],
+       "dinner": [
+        "dîner",
+        "dinner",
+        "n"
+       ],
+       "bell": [
+        "cloche",
+        "bell",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 9 — Follow the Bell",
+   "titreFr": "Chapitre 9 — Suivre la cloche",
+   "p": [
+    [
+     {
+      "en": "Slowly, they paddled towards the sound.",
+      "fr": "Lentement, ils pagayèrent vers le son.",
+      "g": {
+       "slowly": [
+        "lentement",
+        "slowly",
+        "d"
+       ],
+       "paddled": [
+        "pagayèrent",
+        "paddle",
+        "v",
+        "pagayer"
+       ],
+       "sound": [
+        "son",
+        "sound",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The bell rang again, louder this time.",
+      "fr": "La cloche sonna de nouveau, plus fort cette fois.",
+      "g": {
+       "rang": [
+        "sonna",
+        "ring",
+        "v",
+        "sonner"
+       ],
+       "again": [
+        "de nouveau",
+        "again",
+        "d"
+       ],
+       "louder": [
+        "plus fort",
+        "loud",
+        "a",
+        "fort"
+       ],
+       "time": [
+        "fois",
+        "time",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Zainab listened carefully and corrected their direction twice.",
+      "fr": "Zainab écouta avec attention et corrigea deux fois leur direction.",
+      "g": {
+       "listened": [
+        "écouta",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "carefully": [
+        "avec attention",
+        "carefully",
+        "d"
+       ],
+       "corrected": [
+        "corrigea",
+        "correct",
+        "v",
+        "corriger"
+       ],
+       "direction": [
+        "direction",
+        "direction",
+        "n"
+       ],
+       "twice": [
+        "deux fois",
+        "twice",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "After ten long minutes, a dark line appeared in the white air.",
+      "fr": "Après dix longues minutes, une ligne sombre apparut dans l'air blanc.",
+      "g": {
+       "appeared": [
+        "apparut",
+        "appear",
+        "v",
+        "apparaître"
+       ],
+       "air": [
+        "air",
+        "air",
+        "n"
+       ],
+       "dark": [
+        "sombre",
+        "dark",
+        "a"
+       ],
+       "line": [
+        "ligne",
+        "line",
+        "n"
+       ],
+       "long": [
+        "longues",
+        "long",
+        "a",
+        "long"
+       ]
+      }
+     },
+     {
+      "en": "It was the beach by the chalet, and Camille stood there with Moka.",
+      "fr": "C'était la plage près du chalet, et Camille s'y tenait avec Moka.",
+      "g": {
+       "by": [
+        "près de",
+        "by",
+        "r"
+       ],
+       "stood": [
+        "s'y tenait",
+        "stand",
+        "v",
+        "se tenir"
+       ],
+       "there": [
+        "y",
+        "there",
+        "d"
+       ],
+       "with": [
+        "avec",
+        "with",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mr Tremblay ran into the water and pulled the canoe onto the sand.",
+      "fr": "M. Tremblay courut dans l'eau et tira le canoë sur le sable.",
+      "g": {
+       "ran": [
+        "courut",
+        "run",
+        "v",
+        "courir"
+       ],
+       "pulled": [
+        "tira",
+        "pull",
+        "v",
+        "tirer"
+       ],
+       "onto": [
+        "sur",
+        "onto",
+        "r"
+       ],
+       "sand": [
+        "sable",
+        "sand",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mum and Dad hugged Zainab so tightly that she could not breathe.",
+      "fr": "Maman et papa serrèrent Zainab si fort dans leurs bras qu'elle ne pouvait plus respirer.",
+      "g": {
+       "hugged": [
+        "serrèrent dans leurs bras",
+        "hug",
+        "v",
+        "serrer dans ses bras"
+       ],
+       "so": [
+        "si",
+        "so",
+        "d"
+       ],
+       "tightly": [
+        "fort",
+        "tightly",
+        "d"
+       ],
+       "that": [
+        "que",
+        "that",
+        "c"
+       ],
+       "could": [
+        "pouvait",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "breathe": [
+        "respirer",
+        "breathe",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Yusuf shouted, “You were in a cloud, Zainab!”",
+      "fr": "Yusuf cria : « Tu étais dans un nuage, Zainab ! »",
+      "g": {
+       "shouted": [
+        "cria",
+        "shout",
+        "v",
+        "crier"
+       ],
+       "cloud": [
+        "nuage",
+        "cloud",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Thank goodness,” said Mr Tremblay. “You stayed calm, and you listened. That was clever.”",
+      "fr": "« Ouf ! dit M. Tremblay. Vous êtes restés calmes, et vous avez écouté. C'était malin. »",
+      "g": {
+       "thank": [
+        "(thank goodness : ouf)",
+        "thank",
+        "v"
+       ],
+       "goodness": [
+        "(thank goodness : ouf)",
+        "goodness",
+        "n"
+       ],
+       "stayed": [
+        "êtes restés",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "calm": [
+        "calmes",
+        "calm",
+        "a"
+       ],
+       "listened": [
+        "avez écouté",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "that": [
+        "c'",
+        "that",
+        "p"
+       ],
+       "clever": [
+        "malin",
+        "clever",
+        "a"
+       ],
+       "mr": [
+        "M. (monsieur)",
+        "Mr",
+        "n"
+       ],
+       "tremblay": [
+        "Tremblay (nom de famille)",
+        "Tremblay",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "“I am sorry,” said Lucas. “We should have watched the sky.”",
+      "fr": "« Je suis désolé, dit Lucas. Nous aurions dû surveiller le ciel. »",
+      "g": {
+       "sorry": [
+        "désolé",
+        "sorry",
+        "a"
+       ],
+       "should": [
+        "aurions dû",
+        "should",
+        "v"
+       ],
+       "have": [
+        "(should have : aurions dû)",
+        "have",
+        "v"
+       ],
+       "watched": [
+        "surveiller",
+        "watch",
+        "v",
+        "surveiller"
+       ],
+       "sky": [
+        "ciel",
+        "sky",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Next time, we will,” said his father, smiling.",
+      "fr": "« La prochaine fois, nous le ferons », dit son père en souriant.",
+      "g": {
+       "next": [
+        "prochaine",
+        "next",
+        "a"
+       ],
+       "time": [
+        "fois",
+        "time",
+        "n"
+       ],
+       "will": [
+        "(futur : ferons)",
+        "will",
+        "v"
+       ],
+       "smiling": [
+        "en souriant",
+        "smile",
+        "v",
+        "sourire"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "That night, everybody sat around the fire under thousands of stars.",
+      "fr": "Cette nuit-là, tout le monde s'assit autour du feu, sous des milliers d'étoiles.",
+      "g": {
+       "that": [
+        "cette",
+        "that",
+        "t"
+       ],
+       "sat": [
+        "s'assit",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "fire": [
+        "feu",
+        "fire",
+        "n"
+       ],
+       "thousands": [
+        "milliers",
+        "thousand",
+        "n",
+        "millier"
+       ],
+       "stars": [
+        "étoiles",
+        "star",
+        "n",
+        "étoile"
+       ]
+      }
+     },
+     {
+      "en": "Zainab and Lucas opened a notebook.",
+      "fr": "Zainab et Lucas ouvrirent un carnet.",
+      "g": {
+       "opened": [
+        "ouvrirent",
+        "open",
+        "v",
+        "ouvrir"
+       ]
+      }
+     },
+     {
+      "en": "“Let's make our project,” said Zainab.",
+      "fr": "« Faisons notre projet », dit Zainab.",
+      "g": {
+       "let's": [
+        "faisons",
+        "let",
+        "v",
+        "laisser"
+       ],
+       "make": [
+        "faire",
+        "make",
+        "v",
+        "faire"
+       ]
+      }
+     },
+     {
+      "en": "“Our letters, our photos, and the story of the bear and the fog.”",
+      "fr": "« Nos lettres, nos photos, et l'histoire de l'ours et du brouillard. »",
+      "g": {
+       "story": [
+        "histoire",
+        "story",
+        "n"
+       ],
+       "fog": [
+        "brouillard",
+        "fog",
+        "n"
+       ],
+       "bear": [
+        "ours",
+        "bear",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“We should call it Letters Across the Sea,” said Lucas.",
+      "fr": "« Nous devrions l'appeler Des lettres par-delà la mer », dit Lucas.",
+      "g": {
+       "call": [
+        "appeler",
+        "call",
+        "v",
+        "appeler"
+       ],
+       "across": [
+        "par-delà",
+        "across",
+        "r"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 10 — Home Again",
+   "titreFr": "Chapitre 10 — De retour à la maison",
+   "p": [
+    [
+     {
+      "en": "On the last morning, Zainab felt sad.",
+      "fr": "Le dernier matin, Zainab se sentit triste.",
+      "g": {
+       "felt": [
+        "se sentit",
+        "feel",
+        "v",
+        "se sentir"
+       ],
+       "last": [
+        "dernier",
+        "last",
+        "a"
+       ],
+       "sad": [
+        "triste",
+        "sad",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "She gave Lucas a red football scarf, and he gave her a small wooden loon.",
+      "fr": "Elle offrit à Lucas une écharpe de football rouge, et il lui offrit un petit huard en bois.",
+      "g": {
+       "gave": [
+        "offrit",
+        "give",
+        "v",
+        "donner"
+       ],
+       "gave#2": [
+        "offrit",
+        "give",
+        "v",
+        "donner"
+       ],
+       "scarf": [
+        "écharpe",
+        "scarf",
+        "n"
+       ],
+       "wooden": [
+        "en bois",
+        "wooden",
+        "a"
+       ],
+       "loon": [
+        "huard",
+        "loon",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Do not stop writing,” said Lucas.",
+      "fr": "« Ne cesse pas d'écrire », dit Lucas.",
+      "g": {
+       "do": [
+        "(négation)",
+        "do",
+        "v"
+       ],
+       "stop": [
+        "cesse",
+        "stop",
+        "v",
+        "cesser"
+       ],
+       "writing": [
+        "d'écrire",
+        "write",
+        "v",
+        "écrire"
+       ]
+      }
+     },
+     {
+      "en": "“Never,” said Zainab.",
+      "fr": "« Jamais », dit Zainab."
+     },
+     {
+      "en": "The Tremblays waved until the car disappeared round the corner.",
+      "fr": "Les Tremblay firent signe de la main jusqu'à ce que la voiture disparaisse au coin de la rue.",
+      "g": {
+       "waved": [
+        "firent signe de la main",
+        "wave",
+        "v",
+        "faire signe"
+       ],
+       "disappeared": [
+        "disparaisse",
+        "disappear",
+        "v",
+        "disparaître"
+       ],
+       "round": [
+        "(round the corner : au coin de)",
+        "round",
+        "r"
+       ],
+       "corner": [
+        "(round the corner : au coin de)",
+        "corner",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Zainab held the little loon all the way to the airport.",
+      "fr": "Zainab serra le petit huard pendant tout le trajet jusqu'à l'aéroport.",
+      "g": {
+       "held": [
+        "serra",
+        "hold",
+        "v",
+        "tenir"
+       ],
+       "loon": [
+        "huard",
+        "loon",
+        "n"
+       ],
+       "way": [
+        "(all the way : pendant tout le trajet)",
+        "way",
+        "n"
+       ],
+       "all": [
+        "(all the way : pendant tout le trajet)",
+        "all",
+        "t"
+       ],
+       "airport": [
+        "aéroport",
+        "airport",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "On the plane, she opened the notebook and began a new letter.",
+      "fr": "Dans l'avion, elle ouvrit le carnet et commença une nouvelle lettre.",
+      "g": {
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "began": [
+        "commença",
+        "begin",
+        "v",
+        "commencer"
+       ],
+       "new": [
+        "nouvelle",
+        "new",
+        "a",
+        "nouveau"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "In September, Zainab stood in front of her class with the notebook.",
+      "fr": "En septembre, Zainab se tint devant sa classe avec le carnet.",
+      "g": {
+       "stood": [
+        "se tint",
+        "stand",
+        "v",
+        "se tenir"
+       ],
+       "front": [
+        "(in front of : devant)",
+        "front",
+        "n"
+       ],
+       "in": [
+        "(in front of : devant)",
+        "in",
+        "r"
+       ],
+       "of": [
+        "(in front of : devant)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "She showed photos of the canoe, the bear and the fog.",
+      "fr": "Elle montra des photos du canoë, de l'ours et du brouillard.",
+      "g": {
+       "showed": [
+        "montra",
+        "show",
+        "v",
+        "montrer"
+       ],
+       "fog": [
+        "brouillard",
+        "fog",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Her classmates listened with wide eyes, and Mrs Patel clapped for a long time.",
+      "fr": "Ses camarades écoutèrent les yeux grands ouverts, et Mme Patel applaudit longtemps.",
+      "g": {
+       "classmates": [
+        "camarades",
+        "classmate",
+        "n",
+        "camarade"
+       ],
+       "listened": [
+        "écoutèrent",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "wide": [
+        "grands ouverts",
+        "wide",
+        "a"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "clapped": [
+        "applaudit",
+        "clap",
+        "v",
+        "applaudir"
+       ],
+       "for": [
+        "pendant",
+        "for",
+        "r"
+       ],
+       "long": [
+        "(a long time : longtemps)",
+        "long",
+        "a"
+       ],
+       "time": [
+        "(a long time : longtemps)",
+        "time",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“This is the best project I have ever seen,” she said.",
+      "fr": "« C'est le meilleur projet que j'aie jamais vu », dit-elle.",
+      "g": {
+       "best": [
+        "meilleur",
+        "good",
+        "a",
+        "bon"
+       ],
+       "have": [
+        "ai",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "ever": [
+        "jamais",
+        "ever",
+        "d"
+       ],
+       "seen": [
+        "vu",
+        "see",
+        "v",
+        "voir"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "A week later, a thin blue envelope arrived.",
+      "fr": "Une semaine plus tard, une fine enveloppe bleue arriva.",
+      "g": {
+       "later": [
+        "plus tard",
+        "late",
+        "a",
+        "tard"
+       ],
+       "arrived": [
+        "arriva",
+        "arrive",
+        "v",
+        "arriver"
+       ]
+      }
+     },
+     {
+      "en": "“Dear Zainab, guess what? My parents have booked tickets.",
+      "fr": "« Chère Zainab, devine quoi ? Mes parents ont réservé des billets.",
+      "g": {
+       "guess": [
+        "devine",
+        "guess",
+        "v",
+        "deviner"
+       ],
+       "what": [
+        "quoi",
+        "what",
+        "p"
+       ],
+       "have": [
+        "ont",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "booked": [
+        "réservé",
+        "book",
+        "v",
+        "réserver"
+       ],
+       "tickets": [
+        "billets",
+        "ticket",
+        "n",
+        "billet"
+       ],
+       "dear": [
+        "chère",
+        "dear",
+        "a",
+        "cher"
+       ]
+      }
+     },
+     {
+      "en": "We are coming to Manchester in December!",
+      "fr": "Nous venons à Manchester en décembre !",
+      "g": {
+       "coming": [
+        "venons",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     },
+     {
+      "en": "Please keep a big umbrella for me. Your friend, Lucas”",
+      "fr": "Garde-moi un grand parapluie, s'il te plaît. Ton ami, Lucas »",
+      "g": {
+       "keep": [
+        "garde",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Zainab laughed, ran to the kitchen and shouted, “Mum! Lucas is coming!”",
+      "fr": "Zainab éclata de rire, courut à la cuisine et cria : « Maman ! Lucas vient ! »",
+      "g": {
+       "laughed": [
+        "éclata de rire",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "ran": [
+        "courut",
+        "run",
+        "v",
+        "courir"
+       ],
+       "shouted": [
+        "cria",
+        "shout",
+        "v",
+        "crier"
+       ],
+       "coming": [
+        "vient",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

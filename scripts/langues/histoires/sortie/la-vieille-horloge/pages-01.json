@@ -1,0 +1,3157 @@
+{
+ "debut": 1,
+ "lexique": {
+  "ben": [
+   "Ben (prénom)",
+   "Ben",
+   "np"
+  ],
+  "blanket": [
+   "couverture",
+   "blanket",
+   "n"
+  ],
+  "brass": [
+   "laiton",
+   "brass",
+   "n"
+  ],
+  "building": [
+   "immeuble",
+   "building",
+   "n"
+  ],
+  "clock": [
+   "horloge",
+   "clock",
+   "n"
+  ],
+  "clocks": [
+   "horloges",
+   "clock",
+   "n",
+   "horloge"
+  ],
+  "close": [
+   "proche",
+   "close",
+   "a"
+  ],
+  "cold": [
+   "froid",
+   "cold",
+   "a"
+  ],
+  "day": [
+   "jour",
+   "day",
+   "n"
+  ],
+  "door": [
+   "porte",
+   "door",
+   "n"
+  ],
+  "elias": [
+   "Elias (prénom)",
+   "Elias",
+   "np"
+  ],
+  "evening": [
+   "soir",
+   "evening",
+   "n"
+  ],
+  "exactly": [
+   "exactement",
+   "exactly",
+   "d"
+  ],
+  "eyes": [
+   "yeux",
+   "eye",
+   "n",
+   "œil"
+  ],
+  "finger": [
+   "doigt",
+   "finger",
+   "n"
+  ],
+  "flat": [
+   "appartement",
+   "flat",
+   "n"
+  ],
+  "gently": [
+   "doucement",
+   "gently",
+   "d"
+  ],
+  "glass": [
+   "verre",
+   "glass",
+   "n"
+  ],
+  "great-grandfather": [
+   "arrière-grand-père",
+   "great-grandfather",
+   "n"
+  ],
+  "great-grandfather's": [
+   "de l'arrière-grand-père",
+   "great-grandfather",
+   "n"
+  ],
+  "hole": [
+   "trou",
+   "hole",
+   "n"
+  ],
+  "key": [
+   "clé",
+   "key",
+   "n"
+  ],
+  "kitchen": [
+   "cuisine",
+   "kitchen",
+   "n"
+  ],
+  "laughed": [
+   "rit",
+   "laugh",
+   "v",
+   "rire"
+  ],
+  "looked": [
+   "regarda",
+   "look",
+   "v",
+   "regarder"
+  ],
+  "magic": [
+   "magique",
+   "magic",
+   "a"
+  ],
+  "man": [
+   "homme",
+   "man",
+   "n"
+  ],
+  "manchester": [
+   "Manchester (ville)",
+   "Manchester",
+   "np"
+  ],
+  "men": [
+   "hommes",
+   "man",
+   "n",
+   "homme"
+  ],
+  "months": [
+   "mois",
+   "month",
+   "n",
+   "mois"
+  ],
+  "morning": [
+   "matin",
+   "morning",
+   "n"
+  ],
+  "mother": [
+   "mère",
+   "mother",
+   "n"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "nadia": [
+   "Nadia (prénom)",
+   "Nadia",
+   "np"
+  ],
+  "name": [
+   "nom",
+   "name",
+   "n"
+  ],
+  "night": [
+   "nuit",
+   "night",
+   "n"
+  ],
+  "notebook": [
+   "carnet",
+   "notebook",
+   "n"
+  ],
+  "numbers": [
+   "chiffres",
+   "number",
+   "n",
+   "chiffre"
+  ],
+  "pendulum": [
+   "balancier",
+   "pendulum",
+   "n"
+  ],
+  "pocket": [
+   "poche",
+   "pocket",
+   "n"
+  ],
+  "questions": [
+   "questions",
+   "question",
+   "n",
+   "question"
+  ],
+  "quietly": [
+   "en silence",
+   "quietly",
+   "d"
+  ],
+  "room": [
+   "pièce",
+   "room",
+   "n"
+  ],
+  "round": [
+   "rond",
+   "round",
+   "a"
+  ],
+  "said": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "saturday": [
+   "samedi",
+   "Saturday",
+   "n"
+  ],
+  "school": [
+   "école",
+   "school",
+   "n"
+  ],
+  "secret": [
+   "secret",
+   "secret",
+   "n"
+  ],
+  "shouted": [
+   "cria",
+   "shout",
+   "v",
+   "crier"
+  ],
+  "slowly": [
+   "lentement",
+   "slowly",
+   "d"
+  ],
+  "small": [
+   "petit",
+   "small",
+   "a"
+  ],
+  "sofa": [
+   "canapé",
+   "sofa",
+   "n"
+  ],
+  "soft": [
+   "doux",
+   "soft",
+   "a"
+  ],
+  "softly": [
+   "doucement",
+   "softly",
+   "d"
+  ],
+  "stairs": [
+   "escalier",
+   "stairs",
+   "n"
+  ],
+  "stopped": [
+   "s'arrêta",
+   "stop",
+   "v",
+   "arrêter"
+  ],
+  "strange": [
+   "étrange",
+   "strange",
+   "a"
+  ],
+  "suddenly": [
+   "soudain",
+   "suddenly",
+   "d"
+  ],
+  "sunday": [
+   "dimanche",
+   "Sunday",
+   "n"
+  ],
+  "table": [
+   "table",
+   "table",
+   "n"
+  ],
+  "tall": [
+   "grand",
+   "tall",
+   "a"
+  ],
+  "tea": [
+   "thé",
+   "tea",
+   "n"
+  ],
+  "tick": [
+   "tic",
+   "tick",
+   "n"
+  ],
+  "tock": [
+   "tac",
+   "tock",
+   "n"
+  ],
+  "van": [
+   "camionnette",
+   "van",
+   "n"
+  ],
+  "weights": [
+   "poids",
+   "weight",
+   "n",
+   "poids"
+  ],
+  "white": [
+   "blanc",
+   "white",
+   "a"
+  ],
+  "window": [
+   "fenêtre",
+   "window",
+   "n"
+  ],
+  "winter": [
+   "hiver",
+   "winter",
+   "n"
+  ],
+  "wooden": [
+   "en bois",
+   "wooden",
+   "a"
+  ],
+  "wrapped": [
+   "enveloppé",
+   "wrap",
+   "v",
+   "envelopper"
+  ],
+  "yusuf": [
+   "Yusuf (prénom)",
+   "Yusuf",
+   "np"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Elias was twelve years old, and he lived in a small flat in Manchester.",
+      "fr": "Elias avait douze ans, et il vivait dans un petit appartement à Manchester.",
+      "g": {
+       "was": [
+        "avait",
+        "be",
+        "v",
+        "être"
+       ],
+       "lived": [
+        "vivait",
+        "live",
+        "v",
+        "vivre"
+       ],
+       "years": [
+        "ans (years old)",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "(years old : ans)",
+        "old",
+        "x"
+       ],
+       "in#2": [
+        "à",
+        "in",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "One Saturday morning, a big white van stopped outside the building.",
+      "fr": "Un samedi matin, une grande camionnette blanche s'arrêta devant l'immeuble.",
+      "g": {
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "white": [
+        "blanche",
+        "white",
+        "a"
+       ],
+       "outside": [
+        "devant",
+        "outside",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“It's here!” shouted his mother from the window.",
+      "fr": "« Elle est arrivée ! » cria sa mère depuis la fenêtre.",
+      "g": {
+       "it's": [
+        "elle est",
+        "it",
+        "p"
+       ],
+       "here": [
+        "arrivée (ici)",
+        "here",
+        "d"
+       ],
+       "from": [
+        "depuis",
+        "from",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Two men carried something very tall up the stairs.",
+      "fr": "Deux hommes montèrent un objet très grand par l'escalier.",
+      "g": {
+       "carried": [
+        "montèrent",
+        "carry",
+        "v",
+        "porter"
+       ],
+       "up": [
+        "(carried up : montèrent)",
+        "up",
+        "d"
+       ],
+       "something": [
+        "un objet",
+        "something",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "It was wrapped in a thick blue blanket.",
+      "fr": "Il était enveloppé dans une épaisse couverture bleue.",
+      "g": {
+       "thick": [
+        "épaisse",
+        "thick",
+        "a"
+       ],
+       "blue": [
+        "bleue",
+        "blue",
+        "a"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "“Be careful!” said Elias. “It is very old.”",
+      "fr": "« Faites attention ! » dit Elias. « Il est très vieux. »",
+      "g": {
+       "be": [
+        "faites (be careful : faites attention)",
+        "be",
+        "v",
+        "être"
+       ],
+       "careful": [
+        "(be careful : attention)",
+        "careful",
+        "a"
+       ],
+       "old": [
+        "vieux",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The men put it in the living room and left.",
+      "fr": "Les hommes le posèrent dans le salon et partirent.",
+      "g": {
+       "put": [
+        "posèrent",
+        "put",
+        "v",
+        "poser"
+       ],
+       "left": [
+        "partirent",
+        "leave",
+        "v",
+        "partir"
+       ],
+       "living": [
+        "salon (living room)",
+        "living",
+        "a"
+       ],
+       "room": [
+        "(living room : salon)",
+        "room",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Elias took off the blanket slowly.",
+      "fr": "Elias retira lentement la couverture.",
+      "g": {
+       "took": [
+        "retira (took off)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "off": [
+        "(took off : retira)",
+        "off",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "Under it stood a tall wooden clock with a round white face and gold numbers.",
+      "fr": "Dessous se dressait une grande horloge en bois, au cadran rond et blanc et aux chiffres dorés.",
+      "g": {
+       "stood": [
+        "se dressait",
+        "stand",
+        "v",
+        "se tenir debout"
+       ],
+       "tall": [
+        "grande",
+        "tall",
+        "a"
+       ],
+       "face": [
+        "cadran",
+        "face",
+        "n"
+       ],
+       "gold": [
+        "dorés",
+        "gold",
+        "a",
+        "doré"
+       ]
+      }
+     },
+     {
+      "en": "It was his great-grandfather's clock.",
+      "fr": "C'était l'horloge de son arrière-grand-père.",
+      "g": {
+       "it": [
+        "c'",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Great-grandfather Yusuf had died last winter, and Elias missed him very much.",
+      "fr": "L'arrière-grand-père Yusuf était mort l'hiver dernier, et il manquait beaucoup à Elias.",
+      "g": {
+       "had": [
+        "était (+ participe)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "died": [
+        "mort",
+        "die",
+        "v",
+        "mourir"
+       ],
+       "last": [
+        "dernier",
+        "last",
+        "a"
+       ],
+       "missed": [
+        "manquait",
+        "miss",
+        "v",
+        "manquer"
+       ],
+       "him": [
+        "lui",
+        "him",
+        "p"
+       ],
+       "much": [
+        "beaucoup",
+        "much",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Every Sunday, Yusuf wound the clock with a small brass key.",
+      "fr": "Chaque dimanche, Yusuf remontait l'horloge avec une petite clé en laiton.",
+      "g": {
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ],
+       "wound": [
+        "remontait",
+        "wind",
+        "v",
+        "remonter"
+       ]
+      }
+     },
+     {
+      "en": "Elias always helped him.",
+      "fr": "Elias l'aidait toujours.",
+      "g": {
+       "helped": [
+        "aidait",
+        "help",
+        "v",
+        "aider"
+       ],
+       "him": [
+        "l'",
+        "him",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“Great-grandfather wanted you to have it,” said Mum softly.",
+      "fr": "« Ton arrière-grand-père voulait que tu l'aies », dit maman doucement.",
+      "g": {
+       "wanted": [
+        "voulait",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "to": [
+        "(que tu aies)",
+        "to",
+        "x"
+       ],
+       "have": [
+        "aies",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "it": [
+        "l'",
+        "it",
+        "p"
+       ],
+       "you": [
+        "tu",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“He wrote your name in his will. He loved you so much.”",
+      "fr": "« Il a écrit ton nom dans son testament. Il t'aimait tellement. »",
+      "g": {
+       "wrote": [
+        "a écrit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "will": [
+        "testament",
+        "will",
+        "n"
+       ],
+       "loved": [
+        "aimait",
+        "love",
+        "v",
+        "aimer"
+       ],
+       "so": [
+        "tellement (so much)",
+        "so",
+        "d"
+       ],
+       "much": [
+        "(so much : tellement)",
+        "much",
+        "d"
+       ],
+       "you": [
+        "t'",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Elias touched the cold glass of the clock.",
+      "fr": "Elias toucha le verre froid de l'horloge.",
+      "g": {
+       "touched": [
+        "toucha",
+        "touch",
+        "v",
+        "toucher"
+       ]
+      }
+     },
+     {
+      "en": "His eyes were wet, but he was smiling.",
+      "fr": "Ses yeux étaient mouillés, mais il souriait.",
+      "g": {
+       "were": [
+        "étaient",
+        "be",
+        "v",
+        "être"
+       ],
+       "was": [
+        "(was smiling : souriait)",
+        "be",
+        "v",
+        "être"
+       ],
+       "smiling": [
+        "souriait",
+        "smile",
+        "v",
+        "sourire"
+       ],
+       "wet": [
+        "mouillés",
+        "wet",
+        "a"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 1 — A Big Surprise",
+   "titreFr": "Chapitre 1 — Une grande surprise"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "That evening, Elias stood in front of the clock.",
+      "fr": "Ce soir-là, Elias se tenait devant l'horloge.",
+      "g": {
+       "that": [
+        "ce",
+        "that",
+        "t"
+       ],
+       "stood": [
+        "se tenait",
+        "stand",
+        "v",
+        "se tenir debout"
+       ],
+       "front": [
+        "(in front of : devant)",
+        "front",
+        "n"
+       ],
+       "in": [
+        "devant (in front of)",
+        "in",
+        "r"
+       ],
+       "of": [
+        "(in front of : devant)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "He opened the little glass door.",
+      "fr": "Il ouvrit la petite porte vitrée.",
+      "g": {
+       "little": [
+        "petite",
+        "little",
+        "a"
+       ],
+       "glass": [
+        "vitrée",
+        "glass",
+        "a",
+        "verre"
+       ],
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ]
+      }
+     },
+     {
+      "en": "The pendulum was still, and the weights hung quietly.",
+      "fr": "Le balancier était immobile, et les poids pendaient en silence.",
+      "g": {
+       "still": [
+        "immobile",
+        "still",
+        "a"
+       ],
+       "hung": [
+        "pendaient",
+        "hang",
+        "v",
+        "pendre"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "“Where is the key?” he asked.",
+      "fr": "« Où est la clé ? » demanda-t-il.",
+      "g": {
+       "asked": [
+        "demanda-t-il",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "Mum took a small brass key from her pocket.",
+      "fr": "Maman sortit une petite clé en laiton de sa poche.",
+      "g": {
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ],
+       "took": [
+        "sortit",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "from": [
+        "de",
+        "from",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“It was on the table in his kitchen,” she said.",
+      "fr": "« Elle était sur la table dans sa cuisine », dit-elle.",
+      "g": {
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Elias put the key in the hole and turned it slowly.",
+      "fr": "Elias mit la clé dans le trou et la tourna lentement.",
+      "g": {
+       "put": [
+        "mit",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "turned": [
+        "tourna",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "it": [
+        "la",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Then he gently pushed the pendulum with one finger.",
+      "fr": "Puis il poussa doucement le balancier du bout d'un doigt.",
+      "g": {
+       "pushed": [
+        "poussa",
+        "push",
+        "v",
+        "pousser"
+       ],
+       "then": [
+        "puis",
+        "then",
+        "d"
+       ],
+       "with": [
+        "avec",
+        "with",
+        "r"
+       ],
+       "one": [
+        "un",
+        "one",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "It began to swing from side to side.",
+      "fr": "Il se mit à osciller d'un côté à l'autre.",
+      "g": {
+       "began": [
+        "se mit",
+        "begin",
+        "v",
+        "commencer"
+       ],
+       "to": [
+        "à",
+        "to",
+        "r"
+       ],
+       "swing": [
+        "osciller",
+        "swing",
+        "v",
+        "osciller"
+       ],
+       "from": [
+        "(from side to side : d'un côté à l'autre)",
+        "from",
+        "r"
+       ],
+       "side": [
+        "(from side to side)",
+        "side",
+        "n"
+       ],
+       "to#2": [
+        "(from side to side)",
+        "to",
+        "r"
+       ],
+       "side#2": [
+        "(from side to side)",
+        "side",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Tick, tock, tick, tock,” said the clock.",
+      "fr": "« Tic, tac, tic, tac », fit l'horloge.",
+      "g": {
+       "said": [
+        "fit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Nadia ran in.",
+      "fr": "Nadia entra en courant.",
+      "g": {
+       "ran": [
+        "entra en courant (ran in)",
+        "run",
+        "v",
+        "courir"
+       ],
+       "in": [
+        "(ran in : entra en courant)",
+        "in",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "She was seven years old, and she asked a thousand questions every day.",
+      "fr": "Elle avait sept ans, et elle posait mille questions par jour.",
+      "g": {
+       "years": [
+        "ans (years old)",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "(years old : ans)",
+        "old",
+        "x"
+       ],
+       "was": [
+        "avait",
+        "be",
+        "v",
+        "être"
+       ],
+       "asked": [
+        "posait",
+        "ask",
+        "v",
+        "poser"
+       ],
+       "every": [
+        "par (chaque)",
+        "every",
+        "t"
+       ],
+       "seven": [
+        "sept",
+        "seven",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Is it a magic clock?” she asked.",
+      "fr": "« C'est une horloge magique ? » demanda-t-elle.",
+      "g": {
+       "asked": [
+        "demanda-t-elle",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "is": [
+        "est",
+        "be",
+        "v",
+        "être"
+       ],
+       "it": [
+        "ce",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“No, it is only very old,” said Elias.",
+      "fr": "« Non, elle est seulement très vieille », dit Elias.",
+      "g": {
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ],
+       "old": [
+        "vieille",
+        "old",
+        "a"
+       ],
+       "only": [
+        "seulement",
+        "only",
+        "d"
+       ],
+       "no": [
+        "non",
+        "no",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Can we call it Big Ben?” asked Nadia.",
+      "fr": "« On peut l'appeler Big Ben ? » demanda Nadia.",
+      "g": {
+       "big": [
+        "Big (nom de la cloche)",
+        "Big",
+        "np"
+       ],
+       "call": [
+        "appeler",
+        "call",
+        "v",
+        "appeler"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "it": [
+        "l'",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "At seven o'clock, the clock struck seven times.",
+      "fr": "À sept heures, l'horloge sonna sept coups.",
+      "g": {
+       "struck": [
+        "sonna",
+        "strike",
+        "v",
+        "sonner"
+       ],
+       "times": [
+        "coups",
+        "time",
+        "n",
+        "fois"
+       ],
+       "o'clock": [
+        "heures",
+        "o'clock",
+        "d"
+       ],
+       "at": [
+        "à",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“It's talking!” shouted Nadia, and she jumped.",
+      "fr": "« Elle parle ! » cria Nadia, et elle sursauta.",
+      "g": {
+       "it's": [
+        "elle",
+        "it",
+        "p"
+       ],
+       "talking": [
+        "parle",
+        "talk",
+        "v",
+        "parler"
+       ],
+       "jumped": [
+        "sursauta",
+        "jump",
+        "v",
+        "sauter"
+       ]
+      }
+     },
+     {
+      "en": "Elias laughed. For the first time in months, he felt close to his great-grandfather.",
+      "fr": "Elias rit. Pour la première fois depuis des mois, il se sentit proche de son arrière-grand-père.",
+      "g": {
+       "felt": [
+        "se sentit",
+        "feel",
+        "v",
+        "sentir"
+       ],
+       "time": [
+        "fois",
+        "time",
+        "n"
+       ],
+       "in": [
+        "depuis",
+        "in",
+        "r"
+       ],
+       "to": [
+        "de (close to : proche de)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "That night, he fell asleep to the soft sound of the clock.",
+      "fr": "Cette nuit-là, il s'endormit au doux bruit de l'horloge.",
+      "g": {
+       "that": [
+        "cette",
+        "that",
+        "t"
+       ],
+       "fell": [
+        "s'endormit (fell asleep)",
+        "fall",
+        "v",
+        "tomber"
+       ],
+       "asleep": [
+        "(fell asleep : s'endormit)",
+        "asleep",
+        "a"
+       ],
+       "to": [
+        "à",
+        "to",
+        "r"
+       ],
+       "sound": [
+        "bruit",
+        "sound",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He did not know that it had a secret.",
+      "fr": "Il ne savait pas qu'elle avait un secret.",
+      "g": {
+       "did": [
+        "(did not : ne… pas)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "know": [
+        "savait",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "that": [
+        "que",
+        "that",
+        "c"
+       ],
+       "had": [
+        "avait",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "The next afternoon was Sunday, and it was raining.",
+      "fr": "Le lendemain après-midi, c'était dimanche, et il pleuvait.",
+      "g": {
+       "next": [
+        "lendemain (next afternoon : le lendemain après-midi)",
+        "next",
+        "a"
+       ],
+       "afternoon": [
+        "(next afternoon : le lendemain après-midi)",
+        "afternoon",
+        "n"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "was#2": [
+        "(was raining : pleuvait)",
+        "be",
+        "v",
+        "être"
+       ],
+       "raining": [
+        "pleuvait",
+        "rain",
+        "v",
+        "pleuvoir"
+       ],
+       "it": [
+        "il (impersonnel)",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Elias was reading on the sofa, and Nadia was drawing.",
+      "fr": "Elias lisait sur le canapé, et Nadia dessinait.",
+      "g": {
+       "was": [
+        "(was reading : lisait)",
+        "be",
+        "v",
+        "être"
+       ],
+       "reading": [
+        "lisait",
+        "read",
+        "v",
+        "lire"
+       ],
+       "was#2": [
+        "(was drawing : dessinait)",
+        "be",
+        "v",
+        "être"
+       ],
+       "drawing": [
+        "dessinait",
+        "draw",
+        "v",
+        "dessiner"
+       ]
+      }
+     },
+     {
+      "en": "Mum was making tea in the kitchen.",
+      "fr": "Maman préparait du thé dans la cuisine.",
+      "g": {
+       "was": [
+        "(was making : préparait)",
+        "be",
+        "v",
+        "être"
+       ],
+       "making": [
+        "préparait",
+        "make",
+        "v",
+        "préparer"
+       ]
+      }
+     },
+     {
+      "en": "The clock was ticking, and the room felt warm and calm.",
+      "fr": "L'horloge faisait tic-tac, et la pièce paraissait chaleureuse et calme.",
+      "g": {
+       "was": [
+        "(was ticking : faisait tic-tac)",
+        "be",
+        "v",
+        "être"
+       ],
+       "ticking": [
+        "faisait tic-tac",
+        "tick",
+        "v",
+        "faire tic-tac"
+       ],
+       "felt": [
+        "paraissait",
+        "feel",
+        "v",
+        "sentir"
+       ],
+       "warm": [
+        "chaleureuse",
+        "warm",
+        "a",
+        "chaleureux"
+       ],
+       "calm": [
+        "calme",
+        "calm",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Suddenly, the ticking stopped.",
+      "fr": "Soudain, le tic-tac s'arrêta.",
+      "g": {
+       "ticking": [
+        "tic-tac",
+        "ticking",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Elias looked up.",
+      "fr": "Elias leva les yeux.",
+      "g": {
+       "looked": [
+        "leva (looked up)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "up": [
+        "(looked up : leva les yeux)",
+        "up",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "The pendulum was not moving.",
+      "fr": "Le balancier ne bougeait plus.",
+      "g": {
+       "was": [
+        "(was not moving : ne bougeait plus)",
+        "be",
+        "v",
+        "être"
+       ],
+       "not": [
+        "(was not moving)",
+        "not",
+        "d"
+       ],
+       "moving": [
+        "bougeait",
+        "move",
+        "v",
+        "bouger"
+       ]
+      }
+     },
+     {
+      "en": "The hands of the clock showed exactly quarter past three.",
+      "fr": "Les aiguilles de l'horloge indiquaient exactement trois heures et quart.",
+      "g": {
+       "hands": [
+        "aiguilles",
+        "hand",
+        "n",
+        "aiguille"
+       ],
+       "showed": [
+        "indiquaient",
+        "show",
+        "v",
+        "indiquer"
+       ],
+       "quarter": [
+        "quart",
+        "quarter",
+        "n"
+       ],
+       "past": [
+        "(quarter past : et quart)",
+        "past",
+        "r"
+       ],
+       "three": [
+        "trois (heures)",
+        "three",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“That's strange,” he said. “I wound it last night.”",
+      "fr": "« C'est étrange », dit-il. « Je l'ai remontée hier soir. »",
+      "g": {
+       "that's": [
+        "c'",
+        "that",
+        "p"
+       ],
+       "wound": [
+        "ai remontée",
+        "wind",
+        "v",
+        "remonter"
+       ],
+       "it": [
+        "l'",
+        "it",
+        "p"
+       ],
+       "last": [
+        "(last night : hier soir)",
+        "last",
+        "a"
+       ],
+       "night": [
+        "(last night : hier soir)",
+        "night",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He opened the glass door and pushed the pendulum.",
+      "fr": "Il ouvrit la porte vitrée et poussa le balancier.",
+      "g": {
+       "glass": [
+        "vitrée",
+        "glass",
+        "a",
+        "verre"
+       ],
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "pushed": [
+        "poussa",
+        "push",
+        "v",
+        "pousser"
+       ]
+      }
+     },
+     {
+      "en": "It swung again, and the ticking started.",
+      "fr": "Il se remit à osciller, et le tic-tac repartit.",
+      "g": {
+       "swung": [
+        "se remit à osciller",
+        "swing",
+        "v",
+        "osciller"
+       ],
+       "again": [
+        "(swung again : se remit à)",
+        "again",
+        "d"
+       ],
+       "ticking": [
+        "tic-tac",
+        "ticking",
+        "n"
+       ],
+       "started": [
+        "repartit",
+        "start",
+        "v",
+        "commencer"
+       ]
+      }
+     },
+     {
+      "en": "But the time on the clock was wrong.",
+      "fr": "Mais l'heure de l'horloge était fausse.",
+      "g": {
+       "time": [
+        "heure",
+        "time",
+        "n"
+       ],
+       "wrong": [
+        "fausse",
+        "wrong",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "It was nearly four o'clock.",
+      "fr": "Il était presque quatre heures.",
+      "g": {
+       "it": [
+        "il",
+        "it",
+        "p"
+       ],
+       "nearly": [
+        "presque",
+        "nearly",
+        "d"
+       ],
+       "four": [
+        "quatre",
+        "four",
+        "a"
+       ],
+       "o'clock": [
+        "heures",
+        "o'clock",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Elias looked at his watch and moved the hands carefully.",
+      "fr": "Elias regarda sa montre et déplaça les aiguilles avec précaution.",
+      "g": {
+       "looked": [
+        "regarda",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "watch": [
+        "montre",
+        "watch",
+        "n"
+       ],
+       "moved": [
+        "déplaça",
+        "move",
+        "v",
+        "déplacer"
+       ],
+       "hands": [
+        "aiguilles",
+        "hand",
+        "n",
+        "aiguille"
+       ],
+       "carefully": [
+        "avec précaution",
+        "carefully",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Now the clock showed the right time.",
+      "fr": "Maintenant, l'horloge indiquait la bonne heure.",
+      "g": {
+       "showed": [
+        "indiquait",
+        "show",
+        "v",
+        "indiquer"
+       ],
+       "right": [
+        "bonne",
+        "right",
+        "a"
+       ],
+       "time": [
+        "heure",
+        "time",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Why did it stop?” he asked. “It's a good clock.”",
+      "fr": "« Pourquoi s'est-elle arrêtée ? » demanda-t-il. « C'est une bonne horloge. »",
+      "g": {
+       "why": [
+        "pourquoi",
+        "why",
+        "c"
+       ],
+       "did": [
+        "(did stop : s'est… arrêtée)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "stop": [
+        "s'est arrêtée",
+        "stop",
+        "v",
+        "arrêter"
+       ],
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ],
+       "asked": [
+        "demanda-t-il",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "it's": [
+        "c'est",
+        "it",
+        "p"
+       ],
+       "good": [
+        "bonne",
+        "good",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Old clocks are like old people,” said Mum, and she brought the tea.",
+      "fr": "« Les vieilles horloges sont comme les personnes âgées », dit maman, et elle apporta le thé.",
+      "g": {
+       "old": [
+        "vieilles",
+        "old",
+        "a"
+       ],
+       "like": [
+        "comme",
+        "like",
+        "r"
+       ],
+       "old#2": [
+        "âgées",
+        "old",
+        "a"
+       ],
+       "people": [
+        "personnes",
+        "person",
+        "n",
+        "personne"
+       ],
+       "brought": [
+        "apporta",
+        "bring",
+        "v",
+        "apporter"
+       ],
+       "and": [
+        "(et)",
+        "and",
+        "c"
+       ],
+       "she": [
+        "(elle)",
+        "she",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“Sometimes they need a rest.”",
+      "fr": "« Parfois, elles ont besoin de repos. »",
+      "g": {
+       "sometimes": [
+        "parfois",
+        "sometimes",
+        "d"
+       ],
+       "they": [
+        "elles",
+        "they",
+        "p"
+       ],
+       "need": [
+        "ont besoin de",
+        "need",
+        "v",
+        "avoir besoin de"
+       ],
+       "rest": [
+        "repos",
+        "rest",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Elias was not sure. He looked at the clock for a long time.",
+      "fr": "Elias n'en était pas sûr. Il regarda longuement l'horloge.",
+      "g": {
+       "sure": [
+        "sûr",
+        "sure",
+        "a"
+       ],
+       "for": [
+        "(for a long time : longuement)",
+        "for",
+        "r"
+       ],
+       "long": [
+        "(for a long time : longuement)",
+        "long",
+        "a"
+       ],
+       "time": [
+        "(for a long time : longuement)",
+        "time",
+        "n"
+       ],
+       "looked": [
+        "regarda",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "a": [
+        "(for a long time : longuement)",
+        "a",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "Why exactly quarter past three? Was it just a small accident?",
+      "fr": "Pourquoi exactement trois heures et quart ? Était-ce juste un petit accident ?",
+      "g": {
+       "why": [
+        "pourquoi",
+        "why",
+        "d"
+       ],
+       "exactly": [
+        "exactement",
+        "exactly",
+        "d"
+       ],
+       "just": [
+        "juste",
+        "just",
+        "d"
+       ],
+       "accident": [
+        "accident",
+        "accident",
+        "n"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "it": [
+        "ce",
+        "it",
+        "p"
+       ],
+       "past": [
+        "(quarter past : et quart)",
+        "past",
+        "r"
+       ],
+       "quarter": [
+        "quart",
+        "quarter",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He wasn't sure, but he wanted to know.",
+      "fr": "Il n'en était pas sûr, mais il voulait savoir.",
+      "g": {
+       "wasn't": [
+        "n'était pas",
+        "be",
+        "v",
+        "être"
+       ],
+       "sure": [
+        "sûr",
+        "sure",
+        "a"
+       ],
+       "wanted": [
+        "voulait",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "to": [
+        "(wanted to know : voulait savoir)",
+        "to",
+        "x"
+       ],
+       "know": [
+        "savoir",
+        "know",
+        "v",
+        "savoir"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 2 — Quarter Past Three",
+   "titreFr": "Chapitre 2 — Trois heures et quart"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "On Monday, Elias came home from school at four o'clock.",
+      "fr": "Le lundi, Elias rentra de l'école à quatre heures.",
+      "g": {
+       "monday": [
+        "lundi",
+        "Monday",
+        "n"
+       ],
+       "on": [
+        "(le jour)",
+        "on",
+        "r"
+       ],
+       "came": [
+        "rentra",
+        "come",
+        "v",
+        "venir"
+       ],
+       "home": [
+        "(came home : rentra)",
+        "home",
+        "d"
+       ],
+       "four": [
+        "quatre",
+        "four",
+        "a"
+       ],
+       "o'clock": [
+        "heures",
+        "o'clock",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Mum was at work, and the flat was empty.",
+      "fr": "Maman était au travail, et l'appartement était vide.",
+      "g": {
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "was#2": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "work": [
+        "travail",
+        "work",
+        "n"
+       ],
+       "empty": [
+        "vide",
+        "empty",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The clock was silent again.",
+      "fr": "L'horloge était de nouveau silencieuse.",
+      "g": {
+       "silent": [
+        "silencieuse",
+        "silent",
+        "a"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "The hands showed quarter past three.",
+      "fr": "Les aiguilles indiquaient trois heures et quart.",
+      "g": {
+       "hands": [
+        "aiguilles",
+        "hand",
+        "n",
+        "aiguille"
+       ],
+       "showed": [
+        "indiquaient",
+        "show",
+        "v",
+        "indiquer"
+       ],
+       "past": [
+        "et",
+        "past",
+        "r"
+       ],
+       "quarter": [
+        "(quarter past : et quart)",
+        "quarter",
+        "n"
+       ],
+       "three": [
+        "trois (heures)",
+        "three",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Nobody touched it,” he whispered.",
+      "fr": "« Personne n'y a touché », murmura-t-il.",
+      "g": {
+       "nobody": [
+        "personne",
+        "nobody",
+        "p"
+       ],
+       "touched": [
+        "a touché",
+        "touch",
+        "v",
+        "toucher"
+       ],
+       "it": [
+        "y",
+        "it",
+        "p"
+       ],
+       "whispered": [
+        "murmura-t-il",
+        "whisper",
+        "v",
+        "murmurer"
+       ]
+      }
+     },
+     {
+      "en": "The flat felt very quiet without the ticking.",
+      "fr": "L'appartement semblait très calme sans le tic-tac.",
+      "g": {
+       "felt": [
+        "semblait",
+        "feel",
+        "v",
+        "sentir"
+       ],
+       "quiet": [
+        "calme",
+        "quiet",
+        "a"
+       ],
+       "ticking": [
+        "tic-tac",
+        "ticking",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He moved the pendulum and set the right time again.",
+      "fr": "Il bougea le balancier et remit l'horloge à l'heure.",
+      "g": {
+       "moved": [
+        "bougea",
+        "move",
+        "v",
+        "bouger"
+       ],
+       "set": [
+        "remit (set right)",
+        "set",
+        "v",
+        "mettre"
+       ],
+       "right": [
+        "(set right : à l'heure)",
+        "right",
+        "a"
+       ],
+       "time": [
+        "(set right : à l'heure)",
+        "time",
+        "n"
+       ],
+       "again": [
+        "(set again : remit)",
+        "again",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "On Tuesday, it happened again. On Wednesday, it happened again.",
+      "fr": "Le mardi, cela se reproduisit. Le mercredi, cela se reproduisit encore.",
+      "g": {
+       "on": [
+        "(le jour)",
+        "on",
+        "r"
+       ],
+       "on#2": [
+        "(le jour)",
+        "on",
+        "r"
+       ],
+       "tuesday": [
+        "mardi",
+        "Tuesday",
+        "n"
+       ],
+       "wednesday": [
+        "mercredi",
+        "Wednesday",
+        "n"
+       ],
+       "happened": [
+        "se reproduisit",
+        "happen",
+        "v",
+        "arriver"
+       ],
+       "happened#2": [
+        "se reproduisit",
+        "happen",
+        "v",
+        "arriver"
+       ],
+       "again": [
+        "(happened again : se reproduisit)",
+        "again",
+        "d"
+       ],
+       "again#2": [
+        "encore",
+        "again",
+        "d"
+       ],
+       "it": [
+        "cela",
+        "it",
+        "p"
+       ],
+       "it#2": [
+        "cela",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Elias took a notebook and wrote: “Sunday, Monday, Tuesday, Wednesday. Same time. Quarter past three.”",
+      "fr": "Elias prit un carnet et écrivit : « Dimanche, lundi, mardi, mercredi. Même heure. Trois heures et quart. »",
+      "g": {
+       "took": [
+        "prit",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "wrote": [
+        "écrivit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "same": [
+        "même",
+        "same",
+        "a"
+       ],
+       "time": [
+        "heure",
+        "time",
+        "n"
+       ],
+       "past": [
+        "et",
+        "past",
+        "r"
+       ],
+       "quarter": [
+        "(quarter past : et quart)",
+        "quarter",
+        "n"
+       ],
+       "three": [
+        "trois (heures)",
+        "three",
+        "a"
+       ],
+       "monday": [
+        "lundi",
+        "Monday",
+        "n"
+       ],
+       "tuesday": [
+        "mardi",
+        "Tuesday",
+        "n"
+       ],
+       "wednesday": [
+        "mercredi",
+        "Wednesday",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "That evening, he showed the list to Nadia.",
+      "fr": "Ce soir-là, il montra la liste à Nadia.",
+      "g": {
+       "that": [
+        "ce",
+        "that",
+        "t"
+       ],
+       "showed": [
+        "montra",
+        "show",
+        "v",
+        "montrer"
+       ],
+       "list": [
+        "liste",
+        "list",
+        "n"
+       ],
+       "to": [
+        "à",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“I know!” she said. “There's a ghost in the clock!”",
+      "fr": "« Je sais ! » dit-elle. « Il y a un fantôme dans l'horloge ! »",
+      "g": {
+       "know": [
+        "sais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "there's": [
+        "il y a",
+        "there",
+        "d"
+       ],
+       "ghost": [
+        "fantôme",
+        "ghost",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Ghosts aren't real,” said Elias. “There's always a reason.”",
+      "fr": "« Les fantômes n'existent pas », dit Elias. « Il y a toujours une raison. »",
+      "g": {
+       "ghosts": [
+        "fantômes",
+        "ghost",
+        "n",
+        "fantôme"
+       ],
+       "aren't": [
+        "n'existent pas (aren't real)",
+        "be",
+        "v",
+        "être"
+       ],
+       "real": [
+        "(aren't real : n'existent pas)",
+        "real",
+        "a"
+       ],
+       "there's": [
+        "il y a",
+        "there",
+        "d"
+       ],
+       "reason": [
+        "raison",
+        "reason",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Then what is the reason?” asked Nadia.",
+      "fr": "« Alors, quelle est la raison ? » demanda Nadia.",
+      "g": {
+       "then": [
+        "alors",
+        "then",
+        "d"
+       ],
+       "what": [
+        "quelle",
+        "what",
+        "p"
+       ],
+       "reason": [
+        "raison",
+        "reason",
+        "n"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“I don't know yet, but I'm going to find out.”",
+      "fr": "« Je ne sais pas encore, mais je vais le découvrir. »",
+      "g": {
+       "don't": [
+        "ne… pas",
+        "do",
+        "v",
+        "faire"
+       ],
+       "know": [
+        "sais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "yet": [
+        "encore",
+        "yet",
+        "d"
+       ],
+       "i'm": [
+        "je",
+        "I",
+        "p"
+       ],
+       "going": [
+        "vais (going to)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(going to : vais)",
+        "to",
+        "x"
+       ],
+       "find": [
+        "découvrir (find out)",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "out": [
+        "(find out : découvrir)",
+        "out",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "Mum listened from the doorway. “I have an idea,” she said.",
+      "fr": "Maman écoutait depuis la porte. « J'ai une idée », dit-elle.",
+      "g": {
+       "listened": [
+        "écoutait",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "doorway": [
+        "porte (embrasure)",
+        "doorway",
+        "n"
+       ],
+       "have": [
+        "ai",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "idea": [
+        "idée",
+        "idea",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Mrs Brown says that Mr Patel mends old clocks.”",
+      "fr": "« Mme Brown dit que M. Patel répare les vieilles horloges. »",
+      "g": {
+       "mrs": [
+        "Mme",
+        "Mrs",
+        "n"
+       ],
+       "brown": [
+        "Brown (nom)",
+        "Brown",
+        "np"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "that": [
+        "que",
+        "that",
+        "c"
+       ],
+       "mr": [
+        "M.",
+        "Mr",
+        "n"
+       ],
+       "patel": [
+        "Patel (nom)",
+        "Patel",
+        "np"
+       ],
+       "mends": [
+        "répare",
+        "mend",
+        "v",
+        "réparer"
+       ],
+       "old": [
+        "vieilles",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“We should ask him to come.”",
+      "fr": "« Nous devrions lui demander de venir. »",
+      "g": {
+       "should": [
+        "devrions",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "ask": [
+        "demander",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "to": [
+        "de",
+        "to",
+        "x"
+       ],
+       "come": [
+        "venir",
+        "come",
+        "v",
+        "venir"
+       ],
+       "him": [
+        "lui",
+        "him",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "That night, Mum phoned him, and he said yes.",
+      "fr": "Cette nuit-là, maman lui téléphona, et il accepta.",
+      "g": {
+       "that": [
+        "ce",
+        "that",
+        "t"
+       ],
+       "phoned": [
+        "téléphona",
+        "phone",
+        "v",
+        "téléphoner"
+       ],
+       "him": [
+        "lui",
+        "him",
+        "p"
+       ],
+       "said": [
+        "accepta (said yes)",
+        "say",
+        "v",
+        "dire"
+       ],
+       "yes": [
+        "(said yes : accepta)",
+        "yes",
+        "d"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "On Saturday morning, the doorbell rang at nine o'clock.",
+      "fr": "Le samedi matin, la sonnette retentit à neuf heures.",
+      "g": {
+       "doorbell": [
+        "sonnette",
+        "doorbell",
+        "n"
+       ],
+       "rang": [
+        "retentit",
+        "ring",
+        "v",
+        "sonner"
+       ],
+       "nine": [
+        "neuf",
+        "nine",
+        "a"
+       ],
+       "o'clock": [
+        "heures",
+        "o'clock",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel was a tall, kind man with grey hair and round glasses.",
+      "fr": "M. Patel était un homme grand et gentil, aux cheveux gris et aux lunettes rondes.",
+      "g": {
+       "mr": [
+        "M.",
+        "Mr",
+        "n"
+       ],
+       "patel": [
+        "Patel (nom)",
+        "Patel",
+        "np"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "kind": [
+        "gentil",
+        "kind",
+        "a"
+       ],
+       "grey": [
+        "gris",
+        "grey",
+        "a"
+       ],
+       "hair": [
+        "cheveux",
+        "hair",
+        "n"
+       ],
+       "round": [
+        "rondes",
+        "round",
+        "a"
+       ],
+       "glasses": [
+        "lunettes",
+        "glasses",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He carried a heavy brown bag full of tiny tools.",
+      "fr": "Il portait un lourd sac marron plein de minuscules outils.",
+      "g": {
+       "carried": [
+        "portait",
+        "carry",
+        "v",
+        "porter"
+       ],
+       "heavy": [
+        "lourd",
+        "heavy",
+        "a"
+       ],
+       "brown": [
+        "marron",
+        "brown",
+        "a"
+       ],
+       "bag": [
+        "sac",
+        "bag",
+        "n"
+       ],
+       "full": [
+        "plein",
+        "full",
+        "a"
+       ],
+       "tiny": [
+        "minuscules",
+        "tiny",
+        "a"
+       ],
+       "tools": [
+        "outils",
+        "tool",
+        "n",
+        "outil"
+       ],
+       "of": [
+        "de",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Good morning,” he said. “I hear you have a clock with a problem.”",
+      "fr": "« Bonjour », dit-il. « J'ai entendu dire que vous aviez une horloge qui pose un problème. »",
+      "g": {
+       "good": [
+        "(good morning : bonjour)",
+        "good",
+        "a"
+       ],
+       "morning": [
+        "(good morning : bonjour)",
+        "morning",
+        "n"
+       ],
+       "hear": [
+        "ai entendu dire",
+        "hear",
+        "v",
+        "entendre"
+       ],
+       "have": [
+        "aviez",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "problem": [
+        "problème",
+        "problem",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“It always stops at quarter past three,” explained Elias.",
+      "fr": "« Elle s'arrête toujours à trois heures et quart », expliqua Elias.",
+      "g": {
+       "stops": [
+        "s'arrête",
+        "stop",
+        "v",
+        "arrêter"
+       ],
+       "quarter": [
+        "quart",
+        "quarter",
+        "n"
+       ],
+       "past": [
+        "(quarter past : et quart)",
+        "past",
+        "r"
+       ],
+       "three": [
+        "trois (heures)",
+        "three",
+        "a"
+       ],
+       "explained": [
+        "expliqua",
+        "explain",
+        "v",
+        "expliquer"
+       ],
+       "at": [
+        "à",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel's eyes opened wide.",
+      "fr": "Les yeux de M. Patel s'écarquillèrent.",
+      "g": {
+       "mr": [
+        "M.",
+        "Mr",
+        "n"
+       ],
+       "patel's": [
+        "de Patel",
+        "Patel",
+        "np"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "opened": [
+        "s'écarquillèrent",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "wide": [
+        "(opened wide : s'écarquillèrent)",
+        "wide",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Always at the same time? That is very interesting,” he said.",
+      "fr": "« Toujours à la même heure ? C'est très intéressant », dit-il.",
+      "g": {
+       "same": [
+        "même",
+        "same",
+        "a"
+       ],
+       "time": [
+        "heure",
+        "time",
+        "n"
+       ],
+       "that": [
+        "c'",
+        "that",
+        "p"
+       ],
+       "is": [
+        "est",
+        "be",
+        "v",
+        "être"
+       ],
+       "interesting": [
+        "intéressant",
+        "interesting",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "He put on white gloves and looked inside the clock for a long time.",
+      "fr": "Il enfila des gants blancs et examina l'intérieur de l'horloge pendant longtemps.",
+      "g": {
+       "put": [
+        "enfila (put on)",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "on": [
+        "(put on : enfila)",
+        "on",
+        "x"
+       ],
+       "white": [
+        "blancs",
+        "white",
+        "a"
+       ],
+       "gloves": [
+        "gants",
+        "glove",
+        "n",
+        "gant"
+       ],
+       "looked": [
+        "examina",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "inside": [
+        "l'intérieur de",
+        "inside",
+        "r"
+       ],
+       "for": [
+        "(for a long time : pendant longtemps)",
+        "for",
+        "r"
+       ],
+       "a": [
+        "(for a long time)",
+        "a",
+        "t"
+       ],
+       "long": [
+        "(for a long time)",
+        "long",
+        "a"
+       ],
+       "time": [
+        "(for a long time)",
+        "time",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He touched the weights, the wheels and the pendulum.",
+      "fr": "Il toucha les poids, les roues et le balancier.",
+      "g": {
+       "touched": [
+        "toucha",
+        "touch",
+        "v",
+        "toucher"
+       ],
+       "wheels": [
+        "roues",
+        "wheel",
+        "n",
+        "roue"
+       ]
+      }
+     },
+     {
+      "en": "Elias and Nadia watched him with great interest.",
+      "fr": "Elias et Nadia le regardaient avec beaucoup d'intérêt.",
+      "g": {
+       "watched": [
+        "regardaient",
+        "watch",
+        "v",
+        "regarder"
+       ],
+       "great": [
+        "beaucoup d' (great interest)",
+        "great",
+        "a"
+       ],
+       "interest": [
+        "intérêt",
+        "interest",
+        "n"
+       ],
+       "with": [
+        "avec",
+        "with",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Then he smiled. “Your clock is in excellent condition,” he said.",
+      "fr": "Puis il sourit. « Votre horloge est en excellent état », dit-il.",
+      "g": {
+       "then": [
+        "puis",
+        "then",
+        "d"
+       ],
+       "smiled": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ],
+       "excellent": [
+        "excellent",
+        "excellent",
+        "a"
+       ],
+       "condition": [
+        "état",
+        "condition",
+        "n"
+       ],
+       "your": [
+        "votre",
+        "your",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“It's better than most new clocks.”",
+      "fr": "« Elle est meilleure que la plupart des horloges neuves. »",
+      "g": {
+       "it's": [
+        "elle est",
+        "it",
+        "p"
+       ],
+       "better": [
+        "meilleure",
+        "good",
+        "a",
+        "bon"
+       ],
+       "than": [
+        "que",
+        "than",
+        "r"
+       ],
+       "most": [
+        "la plupart des",
+        "most",
+        "t"
+       ],
+       "new": [
+        "neuves",
+        "new",
+        "a"
+       ],
+       "clocks": [
+        "horloges",
+        "clock",
+        "n",
+        "horloge"
+       ]
+      }
+     },
+     {
+      "en": "“A good clock doesn't stop at the same minute every day by accident.”",
+      "fr": "« Une bonne horloge ne s'arrête pas par hasard à la même minute chaque jour. »",
+      "g": {
+       "good": [
+        "bonne",
+        "good",
+        "a"
+       ],
+       "doesn't": [
+        "ne… pas",
+        "do",
+        "v",
+        "faire"
+       ],
+       "stop": [
+        "s'arrête",
+        "stop",
+        "v",
+        "arrêter"
+       ],
+       "same": [
+        "même",
+        "same",
+        "a"
+       ],
+       "minute": [
+        "minute",
+        "minute",
+        "n"
+       ],
+       "by": [
+        "(by accident : par hasard)",
+        "by",
+        "r"
+       ],
+       "accident": [
+        "(by accident : par hasard)",
+        "accident",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Something is stopping it. But what?” asked Elias.",
+      "fr": "« Quelque chose l'arrête. Mais quoi ? » demanda Elias.",
+      "g": {
+       "stopping": [
+        "arrête",
+        "stop",
+        "v",
+        "arrêter"
+       ],
+       "it": [
+        "l'",
+        "it",
+        "p"
+       ],
+       "what": [
+        "quoi",
+        "what",
+        "p"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel scratched his chin and looked at the dial.",
+      "fr": "M. Patel se gratta le menton et regarda le cadran.",
+      "g": {
+       "mr": [
+        "M.",
+        "Mr",
+        "n"
+       ],
+       "patel": [
+        "Patel (nom)",
+        "Patel",
+        "np"
+       ],
+       "scratched": [
+        "se gratta",
+        "scratch",
+        "v",
+        "gratter"
+       ],
+       "chin": [
+        "menton",
+        "chin",
+        "n"
+       ],
+       "dial": [
+        "cadran",
+        "dial",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Maybe the answer is behind it,” he said slowly.",
+      "fr": "« La réponse se trouve peut-être derrière », dit-il lentement.",
+      "g": {
+       "maybe": [
+        "peut-être",
+        "maybe",
+        "d"
+       ],
+       "answer": [
+        "réponse",
+        "answer",
+        "n"
+       ],
+       "behind": [
+        "derrière",
+        "behind",
+        "r"
+       ],
+       "it": [
+        "(behind it : derrière)",
+        "it",
+        "p"
+       ],
+       "slowly": [
+        "lentement",
+        "slowly",
+        "d"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 3 — Mr Patel",
+   "titreFr": "Chapitre 3 — M. Patel"
+  }
+ ]
+}

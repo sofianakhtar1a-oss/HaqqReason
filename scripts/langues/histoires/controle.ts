@@ -35,6 +35,8 @@ export const GABARITS: Record<string, { pages: number; min: number; max: number 
   A2: { pages: 12, min: 110, max: 235 },
   B1: { pages: 13, min: 150, max: 290 },
   B2: { pages: 14, min: 180, max: 330 },
+  C1: { pages: 15, min: 220, max: 370 },
+  C2: { pages: 15, min: 240, max: 390 },
 };
 
 const estGlose = (g: unknown): g is GloseSource =>

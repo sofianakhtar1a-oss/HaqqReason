@@ -455,7 +455,7 @@ export function LiseuseHistoire({ id, onFermer, onOuvrir }: { id: string; onFerm
 function EnTete({ fiche, onFermer, texte, children }: { fiche: { titre: string; niveau: string }; onFermer: () => void; texte: string; children?: React.ReactNode }) {
   return (
     <header className="hs-entete">
-      <button type="button" className="hs-retour" onClick={onFermer}>
+      <button type="button" className="hs-retour" onClick={onFermer} aria-label="Bibliothèque">
         <ArrowLeft className="size-4" aria-hidden="true" />
         <span>Bibliothèque</span>
       </button>

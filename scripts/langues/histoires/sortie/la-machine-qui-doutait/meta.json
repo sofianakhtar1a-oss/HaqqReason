@@ -1,0 +1,91 @@
+{
+ "id": "la-machine-qui-doutait",
+ "titre": "The Machine That Learned to Doubt",
+ "titreFr": "La machine qui apprit à douter",
+ "auteur": "HaqqReason",
+ "niveau": "C1",
+ "genre": "Science-fiction",
+ "resume": "Pendant trois ans, Halcyon, le système qui épaule les médecins de l'hôpital de Marlowe, n'a jamais hésité. Puis, une nuit, il écrit pour la première fois : « Je n'en suis pas certain. » Défaut à corriger avant la fin du mois, ou qualité rare qu'il faudrait protéger ? Entre un ingénieur inflexible, une jeune ingénieure têtue et une fillette dont personne ne comprend les symptômes, le compte à rebours commence.",
+ "questions": [
+  {
+   "q": "What does Halcyon do for the first time, in the middle of the night?",
+   "o": [
+    "It writes that it is not certain about a scan",
+    "It refuses to read a scan at all",
+    "It reports ninety-nine per cent for every patient"
+   ],
+   "i": "Relis la première page : qu'écrit le rapport sous le scanner du thorax ?",
+   "e": "Pour la première fois en trois ans, Halcyon écrit « I am not certain » et avoue qu'il serait mal à l'aise si son évaluation était considérée comme définitive."
+  },
+  {
+   "q": "Why does Tobias want to get rid of the hesitations?",
+   "o": [
+    "He thinks they are a fault, and a machine that hedges is dangerous",
+    "He believes they cost the hospital too much money",
+    "He is afraid that Halcyon is becoming too clever"
+   ],
+   "i": "Pense à ce que Tobias répond à Priya : « Everything that surprises me in a machine… ».",
+   "e": "Pour Tobias, tout ce qui surprend chez une machine est un défaut. Il reste convaincu qu'une machine qui tergiverse peut faire du mal, aussi sûrement qu'une machine qui se vante."
+  },
+  {
+   "q": "What does Priya discover when she studies the logs?",
+   "o": [
+    "The doubts appear where Halcyon's training data is thin",
+    "The doubts appear at random, as drift would produce them",
+    "The doubts only appear on the night shift"
+   ],
+   "i": "Elle dessine une carte avec des poches de gris et des orages d'orange.",
+   "e": "Les doutes ne sont pas dus au hasard : ils se concentrent sur les enfants, les maladies rares et les vieux scanners, là où les données d'entraînement sont rares."
+  },
+  {
+   "q": "Why does Tobias distrust a machine that says maybe?",
+   "o": [
+    "A tool he built once gave a nurse fourteen possibilities and no advice",
+    "A hesitant machine once misdiagnosed his father",
+    "Margaret Aldous told him it was bad for business"
+   ],
+   "i": "Il raconte une histoire survenue il y a onze ans, dans les Highlands.",
+   "e": "Son ancien outil de tri avait renvoyé quatorze possibilités sans recommandation à une infirmière isolée, qui avait fixé la liste pendant onze minutes."
+  },
+  {
+   "q": "How does Halcyon help with Noor's case?",
+   "o": [
+    "It suggests asking what she has swallowed in the past three weeks",
+    "It names the rare disease at once",
+    "It orders the blood tests by itself"
+   ],
+   "i": "Dr Okoye lui demande ce qu'il demanderait, non ce qu'il diagnostiquerait.",
+   "e": "Halcyon ne donne pas de diagnostic : il propose de chercher ce que Noor a avalé, ce qui mène au médicament pour l'oreille, source de la réaction."
+  },
+  {
+   "q": "What does the old version of Halcyon say about Noor in the sandbox?",
+   "o": [
+    "Viral syndrome, ninety-six per cent, discharge",
+    "Reaction to a drug, ninety-six per cent, treatment",
+    "It says nothing, because it is frozen"
+   ],
+   "i": "Tobias teste l'ancienne version juste avant cinq heures.",
+   "e": "L'ancienne version annonce « syndrome viral, 96 % » et recommande un retour à domicile : un verdict net, mais qui aurait été désastreux."
+  },
+  {
+   "q": "What does Mr Ferreira's case show?",
+   "o": [
+    "Doubt without a sense of urgency can cost precious time",
+    "Halcyon is wrong about every old scanner",
+    "Doctors should never wait for a second opinion"
+   ],
+   "i": "Dr Watanabe dit : « I was the one who waited ».",
+   "e": "Le doute d'Halcyon était légitime, mais il a fait attendre trente-huit minutes un patient victime d'un AVC : l'incertitude doit s'accompagner d'une question sur le temps que le patient peut se permettre d'attendre."
+  },
+  {
+   "q": "How does the story end for Halcyon?",
+   "o": [
+    "It keeps its doubt, now with reasons and a warning about urgency",
+    "It is replaced by the older, more confident version",
+    "It is switched off and Noor draws a goodbye card"
+   ],
+   "i": "Relis le dernier chapitre : que note désormais Halcyon à côté de sa confiance ?",
+   "e": "Après quatre-vingt-onze jours, Halcyon note ce qu'il ignore, ce qui changerait son avis et le temps d'attente possible ; en cas d'urgence, il le dit en premier."
+  }
+ ]
+}

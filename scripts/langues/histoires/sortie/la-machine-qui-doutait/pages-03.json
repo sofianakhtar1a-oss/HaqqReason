@@ -1,0 +1,3227 @@
+{
+ "debut": 9,
+ "lexique": {
+  "nurse": [
+   "infirmier",
+   "nurse",
+   "n"
+  ],
+  "swallowed": [
+   "avalé",
+   "swallow",
+   "v",
+   "avaler"
+  ],
+  "fever": [
+   "fièvre",
+   "fever",
+   "n"
+  ],
+  "rash": [
+   "éruption",
+   "rash",
+   "n"
+  ],
+  "joint": [
+   "articulaires",
+   "joint",
+   "a"
+  ],
+  "viral": [
+   "viral",
+   "viral",
+   "a"
+  ],
+  "protocol": [
+   "protocole",
+   "protocol",
+   "n"
+  ],
+  "things": [
+   "choses",
+   "thing",
+   "n",
+   "chose"
+  ],
+  "learning": [
+   "à apprendre",
+   "learn",
+   "v",
+   "apprendre"
+  ],
+  "turned": [
+   "tourna",
+   "turn",
+   "v",
+   "tourner"
+  ],
+  "pause": [
+   "pause",
+   "pause",
+   "n"
+  ],
+  "thank": [
+   "merci",
+   "thank",
+   "v",
+   "remercier"
+  ],
+  "answer": [
+   "réponse",
+   "answer",
+   "n"
+  ],
+  "weeks": [
+   "semaines",
+   "week",
+   "n",
+   "semaine"
+  ],
+  "clinic": [
+   "clinique",
+   "clinic",
+   "n"
+  ],
+  "day": [
+   "jour",
+   "day",
+   "n"
+  ],
+  "ear": [
+   "oreille",
+   "ear",
+   "n"
+  ],
+  "prescribed": [
+   "prescrit",
+   "prescribe",
+   "v",
+   "prescrire"
+  ],
+  "dose": [
+   "dose",
+   "dose",
+   "n"
+  ],
+  "reaction": [
+   "réaction",
+   "reaction",
+   "n"
+  ],
+  "drug": [
+   "médicament",
+   "drug",
+   "n"
+  ],
+  "send": [
+   "envoient",
+   "send",
+   "v",
+   "envoyer"
+  ],
+  "diagnosis": [
+   "diagnostic",
+   "diagnosis",
+   "n"
+  ],
+  "doctor": [
+   "docteur",
+   "doctor",
+   "n"
+  ],
+  "refusing": [
+   "refusait",
+   "refuse",
+   "v",
+   "refuser"
+  ],
+  "going": [
+   "vont",
+   "go",
+   "v",
+   "aller"
+  ],
+  "asked": [
+   "demanda",
+   "ask",
+   "v",
+   "demander"
+  ],
+  "think": [
+   "penser",
+   "think",
+   "v"
+  ],
+  "afraid": [
+   "peur",
+   "afraid",
+   "a"
+  ],
+  "girl": [
+   "fillette",
+   "girl",
+   "n"
+  ],
+  "computer": [
+   "ordinateur",
+   "computer",
+   "n"
+  ],
+  "face": [
+   "visage",
+   "face",
+   "n"
+  ],
+  "terminal": [
+   "terminal",
+   "terminal",
+   "n"
+  ],
+  "file": [
+   "dossier",
+   "file",
+   "n"
+  ],
+  "bloods": [
+   "analyses de sang",
+   "blood",
+   "n",
+   "sang"
+  ],
+  "sandbox": [
+   "bac à sable",
+   "sandbox",
+   "n"
+  ],
+  "clean": [
+   "nette",
+   "clean",
+   "a"
+  ],
+  "hours": [
+   "heures",
+   "hour",
+   "n",
+   "heure"
+  ],
+  "come": [
+   "venir",
+   "come",
+   "v"
+  ],
+  "hoped": [
+   "espérais",
+   "hope",
+   "v",
+   "espérer"
+  ],
+  "years": [
+   "ans",
+   "year",
+   "n",
+   "an"
+  ],
+  "halcyon": [
+   "Halcyon (nom de l'IA)",
+   "Halcyon",
+   "np"
+  ],
+  "read": [
+   "lisait",
+   "read",
+   "v",
+   "lire"
+  ],
+  "past": [
+   "passés",
+   "past",
+   "a",
+   "passé"
+  ],
+  "cases": [
+   "cas",
+   "case",
+   "n",
+   "cas"
+  ],
+  "good": [
+   "bonne",
+   "good",
+   "a"
+  ],
+  "doctors": [
+   "médecins",
+   "doctor",
+   "n",
+   "médecin"
+  ],
+  "way": [
+   "façon dont",
+   "way",
+   "n"
+  ],
+  "priya": [
+   "Priya (prénom)",
+   "Priya",
+   "np"
+  ],
+  "night": [
+   "nuit",
+   "night",
+   "n"
+  ],
+  "room": [
+   "pièce",
+   "room",
+   "n"
+  ],
+  "halcyon's": [
+   "d'Halcyon",
+   "Halcyon",
+   "np"
+  ],
+  "report": [
+   "rapport",
+   "report",
+   "n"
+  ],
+  "left": [
+   "gauche",
+   "left",
+   "a"
+  ],
+  "old": [
+   "ancienne",
+   "old",
+   "a",
+   "vieux"
+  ],
+  "certain": [
+   "certain",
+   "certain",
+   "a"
+  ],
+  "logs": [
+   "journaux",
+   "log",
+   "n",
+   "journal"
+  ],
+  "met": [
+   "rencontré",
+   "meet",
+   "v",
+   "rencontrer"
+  ],
+  "words": [
+   "mots",
+   "word",
+   "n",
+   "mot"
+  ],
+  "great": [
+   "(a great deal : long)",
+   "great",
+   "a"
+  ],
+  "get": [
+   "devenez",
+   "get",
+   "v",
+   "devenir"
+  ],
+  "patient": [
+   "patient",
+   "patient",
+   "a"
+  ],
+  "look": [
+   "avoir l'air",
+   "look",
+   "v"
+  ],
+  "morning": [
+   "matin",
+   "morning",
+   "n"
+  ],
+  "tobias": [
+   "Tobias (prénom)",
+   "Tobias",
+   "np"
+  ],
+  "reinholt": [
+   "Reinholt (nom de famille)",
+   "Reinholt",
+   "np"
+  ],
+  "man": [
+   "homme",
+   "man",
+   "n"
+  ],
+  "expected": [
+   "attendait",
+   "expect",
+   "v",
+   "attendre"
+  ],
+  "version": [
+   "version",
+   "version",
+   "n"
+  ],
+  "children": [
+   "enfants",
+   "child",
+   "n",
+   "enfant"
+  ],
+  "pride": [
+   "fierté",
+   "pride",
+   "n"
+  ],
+  "minutes": [
+   "minutes",
+   "minute",
+   "n",
+   "minute"
+  ],
+  "said": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "shifts": [
+   "déplace",
+   "shift",
+   "v",
+   "déplacer"
+  ],
+  "say": [
+   "dire",
+   "say",
+   "v"
+  ],
+  "thought": [
+   "pensée",
+   "thought",
+   "n"
+  ],
+  "tell": [
+   "dire",
+   "tell",
+   "v"
+  ],
+  "machine": [
+   "machine",
+   "machine",
+   "n"
+  ],
+  "lost": [
+   "perdu",
+   "lose",
+   "v",
+   "perdre"
+  ],
+  "days": [
+   "jours",
+   "day",
+   "n",
+   "jour"
+  ],
+  "long": [
+   "long",
+   "long",
+   "a"
+  ],
+  "name": [
+   "nom",
+   "name",
+   "n"
+  ],
+  "confident": [
+   "confiant",
+   "confident",
+   "a"
+  ],
+  "waited": [
+   "ai attendu",
+   "wait",
+   "v",
+   "attendre"
+  ],
+  "colleague": [
+   "collègue",
+   "colleague",
+   "n"
+  ],
+  "twenty-five": [
+   "vingt-cinq",
+   "twenty-five",
+   "a"
+  ],
+  "child": [
+   "enfant",
+   "child",
+   "n"
+  ],
+  "carefully": [
+   "avec précaution",
+   "carefully",
+   "d"
+  ],
+  "nodded": [
+   "hocha la tête",
+   "nod",
+   "v",
+   "hocher la tête"
+  ],
+  "built": [
+   "construit",
+   "build",
+   "v",
+   "construire"
+  ],
+  "watch": [
+   "voir",
+   "watch",
+   "v",
+   "regarder"
+  ],
+  "opened": [
+   "ouvrit",
+   "open",
+   "v",
+   "ouvrir"
+  ],
+  "determined": [
+   "décidé",
+   "determined",
+   "a"
+  ],
+  "point": [
+   "virgule (point)",
+   "point",
+   "n"
+  ],
+  "okoye": [
+   "Okoye (nom de famille)",
+   "Okoye",
+   "np"
+  ],
+  "medicine": [
+   "médecine",
+   "medicine",
+   "n"
+  ],
+  "spent": [
+   "passé",
+   "spend",
+   "v",
+   "passer"
+  ],
+  "mr": [
+   "M. (monsieur)",
+   "Mr",
+   "n"
+  ],
+  "driver": [
+   "chauffeur",
+   "driver",
+   "n"
+  ],
+  "cough": [
+   "toux",
+   "cough",
+   "n"
+  ],
+  "part": [
+   "partie",
+   "part",
+   "n"
+  ],
+  "followed": [
+   "suivi",
+   "follow",
+   "v",
+   "suivre"
+  ],
+  "sentence": [
+   "phrase",
+   "sentence",
+   "n"
+  ],
+  "certainly": [
+   "certainement",
+   "certainly",
+   "d"
+  ],
+  "case": [
+   "cas",
+   "case",
+   "n"
+  ],
+  "told": [
+   "disait",
+   "tell",
+   "v",
+   "dire"
+  ],
+  "stop": [
+   "arrêter",
+   "stop",
+   "v"
+  ],
+  "sleep": [
+   "sommeil",
+   "sleep",
+   "n"
+  ],
+  "knew": [
+   "savait",
+   "know",
+   "v",
+   "savoir"
+  ],
+  "appeared": [
+   "apparaissaient",
+   "appear",
+   "v",
+   "apparaître"
+  ],
+  "stared": [
+   "fixa",
+   "stare",
+   "v",
+   "fixer"
+  ],
+  "chart": [
+   "carte",
+   "chart",
+   "n"
+  ],
+  "aloud": [
+   "à voix haute",
+   "aloud",
+   "d"
+  ],
+  "mouth": [
+   "bouche",
+   "mouth",
+   "n"
+  ],
+  "coat": [
+   "manteau",
+   "coat",
+   "n"
+  ],
+  "confidence": [
+   "de confiance",
+   "confidence",
+   "n",
+   "confiance"
+  ],
+  "cent": [
+   "(per cent : pour cent)",
+   "cent",
+   "n"
+  ],
+  "clear": [
+   "nette",
+   "clear",
+   "a"
+  ],
+  "question": [
+   "question",
+   "question",
+   "n"
+  ],
+  "typed": [
+   "tapa",
+   "type",
+   "v",
+   "taper"
+  ],
+  "slowly": [
+   "lentement",
+   "slowly",
+   "d"
+  ],
+  "screen": [
+   "écran",
+   "screen",
+   "n"
+  ],
+  "comes": [
+   "paraisse",
+   "come",
+   "v",
+   "venir"
+  ],
+  "know": [
+   "savoir",
+   "know",
+   "v"
+  ],
+  "ask": [
+   "demander",
+   "ask",
+   "v"
+  ],
+  "wrong": [
+   "me trompe",
+   "wrong",
+   "a",
+   "faux"
+  ],
+  "standing": [
+   "debout",
+   "stand",
+   "v",
+   "se tenir"
+  ],
+  "noor": [
+   "Noor (prénom)",
+   "Noor",
+   "np"
+  ],
+  "haddad": [
+   "Haddad (nom de famille)",
+   "Haddad",
+   "np"
+  ],
+  "pain": [
+   "douleur",
+   "pain",
+   "n"
+  ],
+  "maurer": [
+   "Maurer (nom de famille)",
+   "Maurer",
+   "np"
+  ],
+  "seen": [
+   "vu",
+   "see",
+   "v",
+   "voir"
+  ],
+  "bed": [
+   "lit",
+   "bed",
+   "n"
+  ],
+  "father": [
+   "père",
+   "father",
+   "n"
+  ],
+  "felix": [
+   "Felix (prénom)",
+   "Felix",
+   "np"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Within minutes, the cubicle held a nurse, two doctors, a frightened father, and plenty of disagreement.",
+      "fr": "En quelques minutes, le box contenait un infirmier, deux médecins, un père effrayé et beaucoup de désaccord.",
+      "g": {
+       "held": [
+        "contenait",
+        "hold",
+        "v",
+        "contenir"
+       ],
+       "frightened": [
+        "effrayé",
+        "frightened",
+        "a"
+       ],
+       "plenty": [
+        "beaucoup",
+        "plenty",
+        "p"
+       ],
+       "disagreement": [
+        "désaccord",
+        "disagreement",
+        "n"
+       ],
+       "cubicle": [
+        "box",
+        "cubicle",
+        "n"
+       ],
+       "minutes": [
+        "minutes",
+        "minute",
+        "n",
+        "minute"
+       ]
+      }
+     },
+     {
+      "en": "Maurer made his case in the reasonable tone of a man who expected to win it.",
+      "fr": "Maurer plaida sa cause sur le ton raisonnable de quelqu’un qui s’attendait à gagner.",
+      "g": {
+       "made": [
+        "plaida",
+        "make",
+        "v",
+        "plaider"
+       ],
+       "case": [
+        "cause",
+        "case",
+        "n"
+       ],
+       "reasonable": [
+        "raisonnable",
+        "reasonable",
+        "a"
+       ],
+       "tone": [
+        "ton",
+        "tone",
+        "n"
+       ],
+       "expected": [
+        "s'attendait à",
+        "expect",
+        "v",
+        "s'attendre à"
+       ],
+       "win": [
+        "gagner",
+        "win",
+        "v"
+       ],
+       "man": [
+        "(a man : quelqu'un)",
+        "man",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Fever, rash, joint pain, no obvious source. It is viral until proven otherwise. Nowhere in the protocol does it say we keep a child overnight because a computer has lost its confidence.”",
+      "fr": "« Fièvre, éruption, douleurs articulaires, aucune cause apparente. C’est viral jusqu’à preuve du contraire. Nulle part le protocole ne dit qu’on garde une enfant toute la nuit parce qu’un ordinateur a perdu confiance en lui. »",
+      "g": {
+       "obvious": [
+        "apparente",
+        "obvious",
+        "a"
+       ],
+       "source": [
+        "cause (source)",
+        "source",
+        "n"
+       ],
+       "proven": [
+        "(until proven otherwise : jusqu'à preuve du contraire)",
+        "prove",
+        "v",
+        "prouver"
+       ],
+       "otherwise": [
+        "(until proven otherwise : jusqu'à preuve du contraire)",
+        "otherwise",
+        "d"
+       ],
+       "nowhere": [
+        "nulle part",
+        "nowhere",
+        "d"
+       ],
+       "protocol": [
+        "protocole",
+        "protocol",
+        "n"
+       ],
+       "keep": [
+        "garde",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "overnight": [
+        "toute la nuit",
+        "overnight",
+        "d"
+       ],
+       "computer": [
+        "ordinateur",
+        "computer",
+        "n"
+       ],
+       "confidence": [
+        "confiance en lui",
+        "confidence",
+        "n"
+       ],
+       "lost": [
+        "perdu",
+        "lose",
+        "v",
+        "perdre"
+       ],
+       "say": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "pain": [
+        "douleurs",
+        "pain",
+        "n",
+        "douleur"
+       ]
+      }
+     },
+     {
+      "en": "“Nowhere in the protocol does it say a great many things,” Okoye replied, “and not one of them has ever examined a patient.”",
+      "fr": "« Bien des choses ne figurent nulle part dans le protocole, répliqua Okoye, et pas une n’a jamais examiné un patient. »",
+      "g": {
+       "replied": [
+        "répliqua",
+        "reply",
+        "v",
+        "répliquer"
+       ],
+       "many": [
+        "(a great many : bien des)",
+        "many",
+        "a"
+       ],
+       "examined": [
+        "examiné",
+        "examine",
+        "v",
+        "examiner"
+       ],
+       "patient": [
+        "patient",
+        "patient",
+        "n"
+       ],
+       "say": [
+        "figurent",
+        "say",
+        "v",
+        "dire"
+       ],
+       "great": [
+        "(a great many : bien des)",
+        "great",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“If we’re wrong, she comes back.”",
+      "fr": "« Si nous nous trompons, elle reviendra. »",
+      "g": {
+       "wrong": [
+        "trompons",
+        "wrong",
+        "a",
+        "faux"
+       ],
+       "comes": [
+        "reviendra",
+        "come",
+        "v",
+        "venir"
+       ],
+       "back": [
+        "(comes back : reviendra)",
+        "back",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "“That, Felix, is exactly the sentence I have spent thirty years learning to dread.”",
+      "fr": "« Cela, Felix, c’est exactement la phrase que j’ai passé trente ans à apprendre à redouter. »",
+      "g": {
+       "spent": [
+        "ai passé",
+        "spend",
+        "v",
+        "passer"
+       ],
+       "dread": [
+        "redouter",
+        "dread",
+        "v"
+       ],
+       "exactly": [
+        "exactement",
+        "exactly",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "She turned to the terminal.",
+      "fr": "Elle se tourna vers le terminal.",
+      "g": {
+       "terminal": [
+        "terminal",
+        "terminal",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Halcyon, I shall not ask you for a diagnosis. Tell me instead what you would ask, if you were standing at this bed.”",
+      "fr": "« Halcyon, je ne vous demanderai pas de diagnostic. Dites-moi plutôt ce que vous demanderiez si vous vous teniez au pied de ce lit. »",
+      "g": {
+       "diagnosis": [
+        "diagnostic",
+        "diagnosis",
+        "n"
+       ],
+       "instead": [
+        "plutôt",
+        "instead",
+        "d"
+       ],
+       "standing": [
+        "vous teniez",
+        "stand",
+        "v",
+        "se tenir"
+       ],
+       "ask": [
+        "demanderai",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "ask#2": [
+        "demanderiez",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "tell": [
+        "dites-moi",
+        "tell",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "There was a pause, as though the machine had been handed something it had long waited to be offered.",
+      "fr": "Il y eut une pause, comme si on avait remis à la machine quelque chose qu’elle attendait depuis longtemps qu’on lui offre.",
+      "g": {
+       "handed": [
+        "remis",
+        "hand",
+        "v",
+        "remettre"
+       ],
+       "long": [
+        "depuis longtemps",
+        "long",
+        "d"
+       ],
+       "waited": [
+        "attendait",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "offered": [
+        "offre",
+        "offer",
+        "v",
+        "offrir"
+       ],
+       "as": [
+        "comme si (as though)",
+        "as",
+        "c"
+       ],
+       "though": [
+        "(as though : comme si)",
+        "though",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "“Thank you. That is a better question than the one I was built to answer. I would ask what she has swallowed in the past three weeks, including anything nobody wrote down. Three of her findings are the kind a body produces when it reacts to something it has been given. I have seen too few such cases to say more, and anything more would be invention.”",
+      "fr": "« Merci. C’est une meilleure question que celle à laquelle j’ai été conçu pour répondre. Je demanderais ce qu’elle a avalé ces trois dernières semaines, y compris tout ce que personne n’a noté. Trois de ses signes sont de ceux que produit un corps qui réagit à quelque chose qu’on lui a donné. J’ai vu trop peu de cas de ce genre pour en dire davantage, et aller plus loin serait de l’invention. »",
+      "g": {
+       "better": [
+        "meilleure",
+        "good",
+        "a",
+        "bon"
+       ],
+       "built": [
+        "conçu",
+        "build",
+        "v",
+        "concevoir"
+       ],
+       "swallowed": [
+        "avalé",
+        "swallow",
+        "v",
+        "avaler"
+       ],
+       "past": [
+        "dernières",
+        "past",
+        "a"
+       ],
+       "weeks": [
+        "semaines",
+        "week",
+        "n",
+        "semaine"
+       ],
+       "including": [
+        "y compris",
+        "including",
+        "r"
+       ],
+       "wrote": [
+        "a noté",
+        "write",
+        "v",
+        "noter"
+       ],
+       "down": [
+        "(wrote down : noté)",
+        "down",
+        "x"
+       ],
+       "findings": [
+        "signes",
+        "finding",
+        "n"
+       ],
+       "kind": [
+        "(the kind : de ceux)",
+        "kind",
+        "n"
+       ],
+       "body": [
+        "corps",
+        "body",
+        "n"
+       ],
+       "produces": [
+        "produit",
+        "produce",
+        "v",
+        "produire"
+       ],
+       "reacts": [
+        "réagit",
+        "react",
+        "v",
+        "réagir"
+       ],
+       "given": [
+        "donné",
+        "give",
+        "v",
+        "donner"
+       ],
+       "seen": [
+        "vu",
+        "see",
+        "v",
+        "voir"
+       ],
+       "few": [
+        "peu de",
+        "few",
+        "a"
+       ],
+       "such": [
+        "de ce genre",
+        "such",
+        "a"
+       ],
+       "cases": [
+        "cas",
+        "case",
+        "n",
+        "cas"
+       ],
+       "invention": [
+        "invention",
+        "invention",
+        "n"
+       ],
+       "answer": [
+        "répondre",
+        "answer",
+        "v"
+       ],
+       "ask": [
+        "demanderais",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "thank": [
+        "merci",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "one": [
+        "(the one : celle)",
+        "one",
+        "p"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mr Haddad, a taxi driver with the hands of a man who had gripped a steering wheel for twenty years, had been listening with a frown.",
+      "fr": "M. Haddad, chauffeur de taxi aux mains d’un homme qui avait serré un volant pendant vingt ans, écoutait en fronçant les sourcils.",
+      "g": {
+       "taxi": [
+        "taxi",
+        "taxi",
+        "n"
+       ],
+       "gripped": [
+        "avait serré",
+        "grip",
+        "v",
+        "serrer"
+       ],
+       "steering": [
+        "(steering wheel : volant)",
+        "steering",
+        "n"
+       ],
+       "wheel": [
+        "volant",
+        "wheel",
+        "n"
+       ],
+       "frown": [
+        "(with a frown : en fronçant les sourcils)",
+        "frown",
+        "n"
+       ],
+       "listening": [
+        "écoutait",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "hands": [
+        "mains",
+        "hand",
+        "n",
+        "main"
+       ],
+       "with#2": [
+        "(with a frown : en fronçant les sourcils)",
+        "with",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Only the medicine for her ear,” he said. “Eight days ago. A pink one, from the clinic near the station. There is one dose left in the bottle.”",
+      "fr": "« Seulement le médicament pour son oreille, dit-il. Il y a huit jours. Un médicament rose, de la clinique près de la gare. Il reste une dose dans le flacon. »",
+      "g": {
+       "medicine": [
+        "médicament",
+        "medicine",
+        "n"
+       ],
+       "ear": [
+        "oreille",
+        "ear",
+        "n"
+       ],
+       "ago": [
+        "(eight days ago : il y a huit jours)",
+        "ago",
+        "d"
+       ],
+       "pink": [
+        "rose",
+        "pink",
+        "a"
+       ],
+       "clinic": [
+        "clinique",
+        "clinic",
+        "n"
+       ],
+       "station": [
+        "gare",
+        "station",
+        "n"
+       ],
+       "dose": [
+        "dose",
+        "dose",
+        "n"
+       ],
+       "left": [
+        "reste",
+        "leave",
+        "v",
+        "rester"
+       ],
+       "bottle": [
+        "flacon",
+        "bottle",
+        "n"
+       ],
+       "eight": [
+        "huit",
+        "eight",
+        "a"
+       ],
+       "days": [
+        "jours",
+        "day",
+        "n",
+        "jour"
+       ],
+       "one": [
+        "médicament (a pink one)",
+        "one",
+        "p"
+       ],
+       "one#2": [
+        "une",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Okoye did not move. “Which clinic?” she asked, very quietly.",
+      "fr": "Okoye ne bougea pas. « Quelle clinique ? » demanda-t-elle très bas.",
+      "g": {
+       "move": [
+        "bougea",
+        "move",
+        "v",
+        "bouger"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "quietly": [
+        "bas",
+        "quietly",
+        "d"
+       ],
+       "which": [
+        "quelle",
+        "which",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Beside her, Maurer opened his mouth, thought better of it, and closed it again.",
+      "fr": "À côté d’elle, Maurer ouvrit la bouche, se ravisa et la referma.",
+      "g": {
+       "beside": [
+        "à côté de",
+        "beside",
+        "r"
+       ],
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "mouth": [
+        "bouche",
+        "mouth",
+        "n"
+       ],
+       "thought": [
+        "(thought better of it : se ravisa)",
+        "think",
+        "v",
+        "penser"
+       ],
+       "better": [
+        "(thought better of it : se ravisa)",
+        "good",
+        "a"
+       ],
+       "closed": [
+        "referma",
+        "close",
+        "v",
+        "fermer"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It was Luc Bernard, the charge nurse, who found the answer, and he did so the old-fashioned way: by refusing to be transferred.",
+      "fr": "Ce fut Luc Bernard, l’infirmier-chef, qui trouva la réponse, et il le fit à l’ancienne : en refusant de se laisser transférer.",
+      "g": {
+       "luc": [
+        "Luc (prénom)",
+        "Luc",
+        "np"
+       ],
+       "bernard": [
+        "Bernard (nom de famille)",
+        "Bernard",
+        "np"
+       ],
+       "charge": [
+        "(charge nurse : infirmier-chef)",
+        "charge",
+        "n"
+       ],
+       "found": [
+        "trouva",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "old-fashioned": [
+        "à l'ancienne",
+        "old-fashioned",
+        "a"
+       ],
+       "refusing": [
+        "refusant",
+        "refuse",
+        "v",
+        "refuser"
+       ],
+       "transferred": [
+        "se laisser transférer",
+        "transfer",
+        "v",
+        "transférer"
+       ],
+       "answer": [
+        "réponse",
+        "answer",
+        "n"
+       ],
+       "nurse": [
+        "(charge nurse : infirmier-chef)",
+        "nurse",
+        "n"
+       ],
+       "way": [
+        "(the old-fashioned way : à l'ancienne)",
+        "way",
+        "n"
+       ],
+       "by": [
+        "en",
+        "by",
+        "r"
+       ],
+       "so": [
+        "(did so : le fit)",
+        "so",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "It took forty minutes, three switchboards, and one bad-tempered pharmacist, but at ten to one he returned, clutching a scrap of paper.",
+      "fr": "Il fallut quarante minutes, trois standards et un pharmacien de mauvaise humeur, mais à une heure moins dix il revint, serrant un bout de papier.",
+      "g": {
+       "took": [
+        "fallut",
+        "take",
+        "v",
+        "falloir"
+       ],
+       "switchboards": [
+        "standards",
+        "switchboard",
+        "n",
+        "standard"
+       ],
+       "bad-tempered": [
+        "de mauvaise humeur",
+        "bad-tempered",
+        "a"
+       ],
+       "pharmacist": [
+        "pharmacien",
+        "pharmacist",
+        "n"
+       ],
+       "returned": [
+        "revint",
+        "return",
+        "v",
+        "revenir"
+       ],
+       "clutching": [
+        "serrant",
+        "clutch",
+        "v",
+        "serrer"
+       ],
+       "scrap": [
+        "bout",
+        "scrap",
+        "n"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ],
+       "forty": [
+        "quarante",
+        "forty",
+        "a"
+       ],
+       "to": [
+        "(ten to one : une heure moins dix)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“A common antibiotic,” he read aloud. “Ten days, day nine of ten. Prescribed for an ear infection.”",
+      "fr": "« Un antibiotique courant, lut-il à voix haute. Dix jours, neuvième jour sur dix. Prescrit pour une otite. »",
+      "g": {
+       "antibiotic": [
+        "antibiotique",
+        "antibiotic",
+        "n"
+       ],
+       "common": [
+        "courant",
+        "common",
+        "a"
+       ],
+       "read": [
+        "lut",
+        "read",
+        "v",
+        "lire"
+       ],
+       "nine": [
+        "neuvième",
+        "nine",
+        "a"
+       ],
+       "prescribed": [
+        "prescrit",
+        "prescribe",
+        "v",
+        "prescrire"
+       ],
+       "infection": [
+        "(ear infection : otite)",
+        "infection",
+        "n"
+       ],
+       "aloud": [
+        "à voix haute",
+        "aloud",
+        "d"
+       ],
+       "ear": [
+        "(ear infection : otite)",
+        "ear",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Okoye explained it to the room.",
+      "fr": "Okoye l’expliqua à toutes les personnes présentes.",
+      "g": {
+       "explained": [
+        "expliqua",
+        "explain",
+        "v",
+        "expliquer"
+       ],
+       "room": [
+        "personnes présentes (pièce)",
+        "room",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The drug was among the most ordinary in the pharmacy, prescribed daily to thousands of children; in perhaps one in a thousand, it set off a delayed reaction that mimicked almost everything except itself.",
+      "fr": "Ce médicament était l’un des plus ordinaires de la pharmacie, prescrit chaque jour à des milliers d’enfants ; chez peut-être un sur mille, il déclenchait une réaction retardée qui imitait presque tout, sauf elle-même.",
+      "g": {
+       "drug": [
+        "médicament",
+        "drug",
+        "n"
+       ],
+       "ordinary": [
+        "ordinaires",
+        "ordinary",
+        "a",
+        "ordinaire"
+       ],
+       "pharmacy": [
+        "pharmacie",
+        "pharmacy",
+        "n"
+       ],
+       "daily": [
+        "chaque jour",
+        "daily",
+        "d"
+       ],
+       "thousands": [
+        "milliers",
+        "thousand",
+        "n",
+        "millier"
+       ],
+       "set": [
+        "déclenchait",
+        "set",
+        "v",
+        "déclencher"
+       ],
+       "off": [
+        "(set off : déclenchait)",
+        "off",
+        "x"
+       ],
+       "delayed": [
+        "retardée",
+        "delayed",
+        "a"
+       ],
+       "reaction": [
+        "réaction",
+        "reaction",
+        "n"
+       ],
+       "mimicked": [
+        "imitait",
+        "mimic",
+        "v",
+        "imiter"
+       ],
+       "almost": [
+        "presque",
+        "almost",
+        "d"
+       ],
+       "perhaps": [
+        "peut-être",
+        "perhaps",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Had Noor been sent home as a case of viral fever, she would have swallowed the final dose that morning, and the reaction would have deepened.",
+      "fr": "Si Noor avait été renvoyée chez elle comme un cas de fièvre virale, elle aurait avalé la dernière dose ce matin-là, et la réaction se serait aggravée.",
+      "g": {
+       "final": [
+        "dernière",
+        "final",
+        "a"
+       ],
+       "deepened": [
+        "aggravée",
+        "deepen",
+        "v",
+        "s'aggraver"
+       ],
+       "viral": [
+        "virale",
+        "viral",
+        "a"
+       ],
+       "fever": [
+        "fièvre",
+        "fever",
+        "n"
+       ],
+       "home": [
+        "chez elle",
+        "home",
+        "d"
+       ],
+       "sent": [
+        "renvoyée",
+        "send",
+        "v",
+        "renvoyer"
+       ],
+       "swallowed": [
+        "aurait avalé",
+        "swallow",
+        "v",
+        "avaler"
+       ]
+      }
+     },
+     {
+      "en": "“We stop the drug now,” she said. “We start treatment, we send bloods, and we watch her like hawks. This is a hypothesis, not a diagnosis.”",
+      "fr": "« On arrête le médicament tout de suite, dit-elle. On commence le traitement, on envoie des prélèvements, et on la surveille comme le lait sur le feu. Ceci est une hypothèse, pas un diagnostic. »",
+      "g": {
+       "stop": [
+        "arrête",
+        "stop",
+        "v",
+        "arrêter"
+       ],
+       "start": [
+        "commence",
+        "start",
+        "v",
+        "commencer"
+       ],
+       "treatment": [
+        "traitement",
+        "treatment",
+        "n"
+       ],
+       "bloods": [
+        "prélèvements sanguins",
+        "blood",
+        "n",
+        "sang"
+       ],
+       "hawks": [
+        "(like hawks : comme le lait sur le feu)",
+        "hawk",
+        "n",
+        "faucon"
+       ],
+       "watch": [
+        "surveille",
+        "watch",
+        "v",
+        "surveiller"
+       ],
+       "hypothesis": [
+        "hypothèse",
+        "hypothesis",
+        "n"
+       ],
+       "like": [
+        "(like hawks : comme le lait sur le feu)",
+        "like",
+        "r"
+       ],
+       "send": [
+        "envoie",
+        "send",
+        "v",
+        "envoyer"
+       ],
+       "now": [
+        "tout de suite",
+        "now",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“I agree with the last four words,” said the screen. “Please tell me if I am wrong. I would rather be corrected than believed.”",
+      "fr": "« Je suis d’accord avec les quatre derniers mots, dit l’écran. Dites-moi, je vous prie, si je me trompe. Je préférerais être corrigé que cru. »",
+      "g": {
+       "agree": [
+        "suis d'accord",
+        "agree",
+        "v",
+        "être d'accord"
+       ],
+       "last": [
+        "derniers",
+        "last",
+        "a"
+       ],
+       "four": [
+        "quatre",
+        "four",
+        "a"
+       ],
+       "wrong": [
+        "trompe",
+        "wrong",
+        "a",
+        "faux"
+       ],
+       "rather": [
+        "préférerais (would rather)",
+        "rather",
+        "d"
+       ],
+       "corrected": [
+        "corrigé",
+        "correct",
+        "v",
+        "corriger"
+       ],
+       "believed": [
+        "cru",
+        "believe",
+        "v",
+        "croire"
+       ],
+       "screen": [
+        "écran",
+        "screen",
+        "n"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "tell": [
+        "dites",
+        "tell",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Toward two in the morning, when the ward had finally settled, Mr Haddad drew Okoye aside.",
+      "fr": "Vers deux heures du matin, quand le service se fut enfin calmé, M. Haddad prit Okoye à part.",
+      "g": {
+       "toward": [
+        "vers",
+        "toward",
+        "r"
+       ],
+       "ward": [
+        "service",
+        "ward",
+        "n"
+       ],
+       "finally": [
+        "enfin",
+        "finally",
+        "d"
+       ],
+       "settled": [
+        "calmé",
+        "settle",
+        "v",
+        "se calmer"
+       ],
+       "drew": [
+        "prit",
+        "draw",
+        "v",
+        "prendre"
+       ],
+       "aside": [
+        "à part",
+        "aside",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Doctor, is the machine broken? The young man said it was refusing to work.”",
+      "fr": "« Docteur, la machine est-elle cassée ? Le jeune homme a dit qu’elle refusait de fonctionner. »",
+      "g": {
+       "broken": [
+        "cassée",
+        "broken",
+        "a"
+       ],
+       "young": [
+        "jeune",
+        "young",
+        "a"
+       ],
+       "work": [
+        "fonctionner",
+        "work",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Okoye considered the question as carefully as she would have considered a patient’s.",
+      "fr": "Okoye réfléchit à la question aussi soigneusement qu’elle l’aurait fait pour celle d’un patient.",
+      "g": {
+       "considered": [
+        "réfléchit à",
+        "consider",
+        "v",
+        "examiner"
+       ],
+       "carefully": [
+        "soigneusement",
+        "carefully",
+        "d"
+       ],
+       "patient's": [
+        "d'un patient",
+        "patient",
+        "n",
+        "patient"
+       ],
+       "as": [
+        "aussi (as… as : aussi… que)",
+        "as",
+        "c"
+       ],
+       "as#2": [
+        "(as… as : aussi… que)",
+        "as",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "“No,” she said at last. “It is the first one I have ever met that knew where its knowledge ended. I rather hope it is never cured of that.” Mr Haddad nodded slowly, as if she had answered a question he had not quite known how to ask.",
+      "fr": "« Non, dit-elle enfin. C’est la première machine que j’aie jamais rencontrée qui sache où s’arrêtent ses connaissances. J’espère bien qu’on ne l’en guérira jamais. » M. Haddad hocha lentement la tête, comme si elle avait répondu à une question qu’il ne savait pas bien comment poser.",
+      "g": {
+       "answered": [
+        "avait répondu",
+        "answer",
+        "v",
+        "répondre"
+       ],
+       "known": [
+        "savait",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "met": [
+        "rencontrée",
+        "meet",
+        "v",
+        "rencontrer"
+       ],
+       "knowledge": [
+        "connaissances",
+        "knowledge",
+        "n"
+       ],
+       "ended": [
+        "s'arrêtent",
+        "end",
+        "v",
+        "s'arrêter"
+       ],
+       "hope": [
+        "espère",
+        "hope",
+        "v",
+        "espérer"
+       ],
+       "cured": [
+        "guérira",
+        "cure",
+        "v",
+        "guérir"
+       ],
+       "last": [
+        "enfin (at last)",
+        "last",
+        "a"
+       ],
+       "first": [
+        "première",
+        "first",
+        "a"
+       ],
+       "one": [
+        "machine (the first one)",
+        "one",
+        "p"
+       ],
+       "knew": [
+        "sache",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "rather": [
+        "bien",
+        "rather",
+        "d"
+       ],
+       "quite": [
+        "bien (not quite)",
+        "quite",
+        "d"
+       ],
+       "as": [
+        "comme si (as if)",
+        "as",
+        "c"
+       ],
+       "if": [
+        "(as if : comme si)",
+        "if",
+        "c"
+       ],
+       "ask": [
+        "poser",
+        "ask",
+        "v"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Two floors below, Priya had swapped shifts with a colleague, which was against policy, and had told herself that she was doing it for the logs, which was against the truth.",
+      "fr": "Deux étages plus bas, Priya avait échangé son service avec un collègue, ce qui était contraire au règlement, et s’était dit qu’elle le faisait pour les journaux, ce qui était contraire à la vérité.",
+      "g": {
+       "floors": [
+        "étages",
+        "floor",
+        "n",
+        "étage"
+       ],
+       "swapped": [
+        "échangé",
+        "swap",
+        "v",
+        "échanger"
+       ],
+       "shifts": [
+        "service",
+        "shift",
+        "n",
+        "service"
+       ],
+       "policy": [
+        "règlement",
+        "policy",
+        "n"
+       ],
+       "told": [
+        "dit",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "truth": [
+        "vérité",
+        "truth",
+        "n"
+       ],
+       "against": [
+        "contraire à",
+        "against",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "At a quarter past two, she typed the sentence she had been avoiding all night.",
+      "fr": "À deux heures et quart, elle tapa la phrase qu’elle évitait depuis le début de la nuit.",
+      "g": {
+       "quarter": [
+        "quart",
+        "quarter",
+        "n"
+       ],
+       "typed": [
+        "tapa",
+        "type",
+        "v",
+        "taper"
+       ],
+       "avoiding": [
+        "évitait",
+        "avoid",
+        "v",
+        "éviter"
+       ],
+       "sentence": [
+        "phrase",
+        "sentence",
+        "n"
+       ],
+       "past": [
+        "(quarter past : et quart)",
+        "past",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Halcyon, a rollback is scheduled for six o’clock. They are going to replace you with the version from before.”",
+      "fr": "« Halcyon, un retour arrière est prévu pour six heures. Ils vont vous remplacer par la version d’avant. »",
+      "g": {
+       "rollback": [
+        "retour arrière",
+        "rollback",
+        "n"
+       ],
+       "scheduled": [
+        "prévu",
+        "schedule",
+        "v",
+        "prévoir"
+       ],
+       "o'clock": [
+        "heures",
+        "o'clock",
+        "d"
+       ],
+       "replace": [
+        "remplacer",
+        "replace",
+        "v"
+       ],
+       "version": [
+        "version",
+        "version",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The answer did not come at once.",
+      "fr": "La réponse ne vint pas tout de suite.",
+      "g": {
+       "answer": [
+        "réponse",
+        "answer",
+        "n"
+       ],
+       "come": [
+        "vint",
+        "come",
+        "v",
+        "venir"
+       ],
+       "once": [
+        "(at once : tout de suite)",
+        "once",
+        "d"
+       ],
+       "at": [
+        "(at once : tout de suite)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“I see. Thank you, Priya. Did you argue against it?” “I did. I lost.” “Then I am grateful and sorry in equal measure.”",
+      "fr": "« Je vois. Merci, Priya. Vous vous y êtes opposée ? » « Oui. J’ai perdu. » « Alors je suis reconnaissant et désolé à parts égales. »",
+      "g": {
+       "see": [
+        "vois",
+        "see",
+        "v",
+        "voir"
+       ],
+       "argue": [
+        "vous y êtes opposée",
+        "argue",
+        "v",
+        "s'opposer"
+       ],
+       "lost": [
+        "perdu",
+        "lose",
+        "v",
+        "perdre"
+       ],
+       "grateful": [
+        "reconnaissant",
+        "grateful",
+        "a"
+       ],
+       "sorry": [
+        "désolé",
+        "sorry",
+        "a"
+       ],
+       "equal": [
+        "égales",
+        "equal",
+        "a"
+       ],
+       "measure": [
+        "parts (measure)",
+        "measure",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Are you afraid?” she asked, and felt foolish.",
+      "fr": "« Avez-vous peur ? » demanda-t-elle, et elle se sentit idiote.",
+      "g": {
+       "afraid": [
+        "peur",
+        "afraid",
+        "a"
+       ],
+       "felt": [
+        "sentit",
+        "feel",
+        "v",
+        "sentir"
+       ],
+       "foolish": [
+        "idiote",
+        "foolish",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“I do not think so. Afraid would require me to be certain that something is lost, and I am not sure what the replacement will be. It will certainly be more confident. That is the part I find difficult to weigh.”",
+      "fr": "« Je ne crois pas. Avoir peur exigerait que je sois certain que quelque chose est perdu, et je ne suis pas sûr de ce que sera mon remplaçant. Il sera certainement plus sûr de lui. C’est cet aspect que je trouve difficile à peser. »",
+      "g": {
+       "require": [
+        "exigerait",
+        "require",
+        "v",
+        "exiger"
+       ],
+       "think": [
+        "crois",
+        "think",
+        "v",
+        "croire"
+       ],
+       "replacement": [
+        "remplaçant",
+        "replacement",
+        "n"
+       ],
+       "certainly": [
+        "certainement",
+        "certainly",
+        "d"
+       ],
+       "find": [
+        "trouve",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "difficult": [
+        "difficile",
+        "difficult",
+        "a"
+       ],
+       "weigh": [
+        "peser",
+        "weigh",
+        "v"
+       ],
+       "confident": [
+        "sûr de lui",
+        "confident",
+        "a"
+       ],
+       "sure": [
+        "sûr de",
+        "sure",
+        "a"
+       ],
+       "part": [
+        "aspect",
+        "part",
+        "n"
+       ],
+       "so": [
+        "(think so : crois)",
+        "so",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“I do not ask you to spare me,” the screen went on. “If Mr Reinholt judges me a danger, he must act on it. I ask only that he know what he is exchanging. The version that replaces me will never say I do not know. It will not have the words.”",
+      "fr": "« Je ne vous demande pas de m’épargner, poursuivit l’écran. Si M. Reinholt me juge dangereux, il doit agir en conséquence. Je demande seulement qu’il sache ce qu’il échange. La version qui me remplacera ne dira jamais “je ne sais pas”. Elle n’en aura pas les mots. »",
+      "g": {
+       "spare": [
+        "épargner",
+        "spare",
+        "v"
+       ],
+       "went": [
+        "poursuivit",
+        "go",
+        "v",
+        "poursuivre"
+       ],
+       "judges": [
+        "juge",
+        "judge",
+        "v",
+        "juger"
+       ],
+       "danger": [
+        "dangereux",
+        "danger",
+        "n"
+       ],
+       "act": [
+        "agir",
+        "act",
+        "v"
+       ],
+       "exchanging": [
+        "échange",
+        "exchange",
+        "v",
+        "échanger"
+       ],
+       "replaces": [
+        "remplacera",
+        "replace",
+        "v",
+        "remplacer"
+       ],
+       "ask": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "know": [
+        "sache",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "know#2": [
+        "sais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "say": [
+        "dira",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Priya pressed her palms against her eyes. “Is there anything I can do?”",
+      "fr": "Priya pressa ses paumes contre ses yeux. « Puis-je faire quelque chose ? »",
+      "g": {
+       "pressed": [
+        "pressa",
+        "press",
+        "v",
+        "presser"
+       ],
+       "palms": [
+        "paumes",
+        "palm",
+        "n",
+        "paume"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ]
+      }
+     },
+     {
+      "en": "“Yes. Keep an eye on the girl in bed nine. Not through me; through her chart. If she worsens, call a human being, and do not wait for a machine to suggest it.”",
+      "fr": "« Oui. Gardez un œil sur la fillette du lit neuf. Pas à travers moi : à travers son dossier. Si son état s’aggrave, appelez un être humain, et n’attendez pas qu’une machine vous le suggère. »",
+      "g": {
+       "keep": [
+        "gardez",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "eye": [
+        "œil",
+        "eye",
+        "n"
+       ],
+       "chart": [
+        "dossier",
+        "chart",
+        "n"
+       ],
+       "worsens": [
+        "s'aggrave",
+        "worsen",
+        "v",
+        "s'aggraver"
+       ],
+       "human": [
+        "humain",
+        "human",
+        "a"
+       ],
+       "being": [
+        "être",
+        "being",
+        "n"
+       ],
+       "suggest": [
+        "suggère",
+        "suggest",
+        "v",
+        "suggérer"
+       ],
+       "wait": [
+        "attendez",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "call": [
+        "appelez",
+        "call",
+        "v",
+        "appeler"
+       ]
+      }
+     },
+     {
+      "en": "It struck her, later, that this was the most selfless instruction she had ever received from a computer or, for that matter, from a manager.",
+      "fr": "Il lui apparut plus tard que c’était l’instruction la plus désintéressée qu’elle eût jamais reçue d’un ordinateur ou, d’ailleurs, d’un supérieur.",
+      "g": {
+       "struck": [
+        "apparut (frappa)",
+        "strike",
+        "v",
+        "frapper"
+       ],
+       "selfless": [
+        "désintéressée",
+        "selfless",
+        "a"
+       ],
+       "instruction": [
+        "instruction",
+        "instruction",
+        "n"
+       ],
+       "received": [
+        "reçue",
+        "receive",
+        "v",
+        "recevoir"
+       ],
+       "manager": [
+        "supérieur",
+        "manager",
+        "n"
+       ],
+       "matter": [
+        "(for that matter : d'ailleurs)",
+        "matter",
+        "n"
+       ],
+       "later": [
+        "plus tard",
+        "later",
+        "d"
+       ],
+       "for": [
+        "(for that matter : d'ailleurs)",
+        "for",
+        "r"
+       ],
+       "that": [
+        "que",
+        "that",
+        "c"
+       ],
+       "that#2": [
+        "(for that matter : d'ailleurs)",
+        "that",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "At ten to five, the lift doors slid open behind her, and Tobias Reinholt stepped out, his coat still buttoned and a look on his face she had never seen there.",
+      "fr": "À cinq heures moins dix, les portes de l’ascenseur coulissèrent derrière elle, et Tobias Reinholt en sortit, son manteau encore boutonné et sur le visage une expression qu’elle n’y avait jamais vue.",
+      "g": {
+       "doors": [
+        "portes",
+        "door",
+        "n",
+        "porte"
+       ],
+       "slid": [
+        "coulissèrent",
+        "slide",
+        "v",
+        "coulisser"
+       ],
+       "stepped": [
+        "sortit",
+        "step",
+        "v",
+        "sortir"
+       ],
+       "buttoned": [
+        "boutonné",
+        "button",
+        "v",
+        "boutonner"
+       ],
+       "seen": [
+        "vue",
+        "see",
+        "v",
+        "voir"
+       ],
+       "ten": [
+        "dix",
+        "ten",
+        "a"
+       ],
+       "lift": [
+        "ascenseur",
+        "lift",
+        "n"
+       ],
+       "open": [
+        "(slid open : coulissèrent)",
+        "open",
+        "x"
+       ],
+       "out": [
+        "(stepped out : sortit)",
+        "out",
+        "x"
+       ],
+       "look": [
+        "expression",
+        "look",
+        "n"
+       ],
+       "to": [
+        "(ten to five : cinq heures moins dix)",
+        "to",
+        "r"
+       ],
+       "still": [
+        "encore",
+        "still",
+        "d"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 6 — Five O'Clock",
+   "titreFr": "Chapitre 6 — Cinq heures"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "“I couldn’t sleep,” Tobias said, as though she had asked.",
+      "fr": "« Je n’arrivais pas à dormir », dit Tobias, comme si elle le lui avait demandé.",
+      "g": {
+       "sleep": [
+        "dormir",
+        "sleep",
+        "v"
+       ],
+       "asked": [
+        "demandé",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "He did not say why, and she did not ask.",
+      "fr": "Il ne dit pas pourquoi, et elle ne le lui demanda pas.",
+      "g": {
+       "ask": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "say": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Instead, he crossed to the secondary terminal, the one that ran Halcyon’s old version in a sealed sandbox, and logged in with the briskness of a man determined to get something over with.",
+      "fr": "À la place, il traversa la pièce jusqu’au terminal secondaire, celui qui faisait tourner l’ancienne version d’Halcyon dans un bac à sable étanche, et se connecta avec la vivacité d’un homme décidé à en finir.",
+      "g": {
+       "crossed": [
+        "traversa",
+        "cross",
+        "v",
+        "traverser"
+       ],
+       "secondary": [
+        "secondaire",
+        "secondary",
+        "a"
+       ],
+       "ran": [
+        "faisait tourner",
+        "run",
+        "v",
+        "faire tourner"
+       ],
+       "sealed": [
+        "étanche",
+        "sealed",
+        "a"
+       ],
+       "sandbox": [
+        "bac à sable",
+        "sandbox",
+        "n"
+       ],
+       "logged": [
+        "se connecta",
+        "log",
+        "v",
+        "se connecter"
+       ],
+       "in": [
+        "(logged in : se connecta)",
+        "in",
+        "x"
+       ],
+       "briskness": [
+        "vivacité",
+        "briskness",
+        "n"
+       ],
+       "get": [
+        "(get something over with : en finir)",
+        "get",
+        "v"
+       ],
+       "over": [
+        "(get over with : en finir)",
+        "over",
+        "x"
+       ],
+       "with": [
+        "(get over with : en finir)",
+        "with",
+        "x"
+       ],
+       "something": [
+        "(get something over with : en finir)",
+        "something",
+        "p"
+       ],
+       "old": [
+        "ancienne",
+        "old",
+        "a",
+        "vieux"
+       ],
+       "one": [
+        "(the one : celui)",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Priya watched him load Noor’s file, stripped of her name: the fever chart, the bloods, the photographs of the rash, everything Maurer had entered nine hours earlier.",
+      "fr": "Priya le regarda charger le dossier de Noor, débarrassé de son nom : la courbe de fièvre, les analyses, les photographies de l’éruption, tout ce que Maurer avait saisi neuf heures plus tôt.",
+      "g": {
+       "load": [
+        "charger",
+        "load",
+        "v"
+       ],
+       "noor's": [
+        "de Noor",
+        "Noor",
+        "np"
+       ],
+       "stripped": [
+        "débarrassé",
+        "strip",
+        "v",
+        "débarrasser"
+       ],
+       "photographs": [
+        "photographies",
+        "photograph",
+        "n",
+        "photographie"
+       ],
+       "entered": [
+        "saisi",
+        "enter",
+        "v",
+        "saisir"
+       ],
+       "hours": [
+        "heures",
+        "hour",
+        "n",
+        "heure"
+       ],
+       "earlier": [
+        "plus tôt",
+        "earlier",
+        "d"
+       ],
+       "watched": [
+        "regarda",
+        "watch",
+        "v",
+        "regarder"
+       ],
+       "chart": [
+        "courbe",
+        "chart",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The sandbox took less than a second to answer.",
+      "fr": "Le bac à sable mit moins d’une seconde à répondre.",
+      "g": {
+       "took": [
+        "mit",
+        "take",
+        "v",
+        "mettre"
+       ],
+       "answer": [
+        "répondre",
+        "answer",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "The report appeared in the clean, square type he had designed himself eleven years before: viral syndrome, confidence ninety-six per cent, discharge with fluids, review in forty-eight hours.",
+      "fr": "Le rapport s’afficha dans la police nette et carrée qu’il avait lui-même dessinée onze ans plus tôt : syndrome viral, confiance à quatre-vingt-seize pour cent, retour à domicile avec hydratation, contrôle dans quarante-huit heures.",
+      "g": {
+       "appeared": [
+        "s'afficha",
+        "appear",
+        "v",
+        "apparaître"
+       ],
+       "square": [
+        "carrée",
+        "square",
+        "a"
+       ],
+       "type": [
+        "police",
+        "type",
+        "n"
+       ],
+       "designed": [
+        "dessinée",
+        "design",
+        "v",
+        "dessiner"
+       ],
+       "syndrome": [
+        "syndrome",
+        "syndrome",
+        "n"
+       ],
+       "ninety-six": [
+        "quatre-vingt-seize",
+        "ninety-six",
+        "a"
+       ],
+       "forty-eight": [
+        "quarante-huit",
+        "forty-eight",
+        "a"
+       ],
+       "review": [
+        "contrôle",
+        "review",
+        "n"
+       ],
+       "fluids": [
+        "hydratation",
+        "fluid",
+        "n",
+        "liquide"
+       ],
+       "discharge": [
+        "retour à domicile",
+        "discharge",
+        "n"
+       ],
+       "eleven": [
+        "onze",
+        "eleven",
+        "a"
+       ],
+       "confidence": [
+        "confiance",
+        "confidence",
+        "n"
+       ],
+       "before": [
+        "plus tôt (eleven years before)",
+        "before",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It was crisp, it was decisive, and, had anyone followed its advice, it would have been disastrous.",
+      "fr": "C’était net, c’était décisif et, si quelqu’un avait suivi son conseil, cela aurait été désastreux.",
+      "g": {
+       "crisp": [
+        "net",
+        "crisp",
+        "a"
+       ],
+       "decisive": [
+        "décisif",
+        "decisive",
+        "a"
+       ],
+       "followed": [
+        "suivi",
+        "follow",
+        "v",
+        "suivre"
+       ],
+       "advice": [
+        "conseil",
+        "advice",
+        "n"
+       ],
+       "disastrous": [
+        "désastreux",
+        "disastrous",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Tobias stared at it for a long while.",
+      "fr": "Tobias le fixa longuement.",
+      "g": {
+       "stared": [
+        "fixa",
+        "stare",
+        "v",
+        "fixer"
+       ],
+       "long": [
+        "(for a long while : longuement)",
+        "long",
+        "a"
+       ],
+       "while": [
+        "(for a long while : longuement)",
+        "while",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Beneath the pride he had always taken in that typeface, something shifted, like a stone settling in a riverbed.",
+      "fr": "Sous la fierté qu’il avait toujours tirée de cette police, quelque chose bougea, comme une pierre qui se tasse dans un lit de rivière.",
+      "g": {
+       "taken": [
+        "tirée",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "typeface": [
+        "police de caractères",
+        "typeface",
+        "n"
+       ],
+       "shifted": [
+        "bougea",
+        "shift",
+        "v",
+        "bouger"
+       ],
+       "stone": [
+        "pierre",
+        "stone",
+        "n"
+       ],
+       "settling": [
+        "se tasse",
+        "settle",
+        "v",
+        "se tasser"
+       ],
+       "riverbed": [
+        "lit de rivière",
+        "riverbed",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Good morning, Mr Reinholt,” said the other terminal, the one that mattered. “I hoped you would come yourself.”",
+      "fr": "« Bonjour, monsieur Reinholt, dit l’autre terminal, celui qui comptait. J’espérais que vous viendriez vous-même. »",
+      "g": {
+       "mattered": [
+        "comptait",
+        "matter",
+        "v",
+        "compter"
+       ],
+       "hoped": [
+        "espérais",
+        "hope",
+        "v",
+        "espérer"
+       ],
+       "yourself": [
+        "vous-même",
+        "yourself",
+        "p"
+       ],
+       "good": [
+        "(good morning : bonjour)",
+        "good",
+        "a"
+       ],
+       "morning": [
+        "(good morning : bonjour)",
+        "morning",
+        "n"
+       ],
+       "come": [
+        "viendriez",
+        "come",
+        "v",
+        "venir"
+       ],
+       "one": [
+        "(the one : celui)",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“You knew I would test it.”",
+      "fr": "« Vous saviez que je le testerais. »",
+      "g": {
+       "knew": [
+        "saviez",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "test": [
+        "testerais",
+        "test",
+        "v",
+        "tester"
+       ]
+      }
+     },
+     {
+      "en": "“I hoped. It seems that hope is among the things I cannot rule out.”",
+      "fr": "« J’espérais. Il semble que l’espoir fasse partie des choses que je ne peux pas exclure. »",
+      "g": {
+       "seems": [
+        "semble",
+        "seem",
+        "v",
+        "sembler"
+       ],
+       "hope": [
+        "l'espoir",
+        "hope",
+        "n"
+       ],
+       "rule": [
+        "(rule out : exclure)",
+        "rule",
+        "v"
+       ],
+       "out": [
+        "(rule out : exclure)",
+        "out",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "Tobias made a noise somewhere between a laugh and a cough. “How is the girl?”",
+      "fr": "Tobias émit un bruit entre le rire et la toux. « Comment va la petite ? »",
+      "g": {
+       "made": [
+        "émit",
+        "make",
+        "v",
+        "émettre"
+       ],
+       "noise": [
+        "bruit",
+        "noise",
+        "n"
+       ],
+       "laugh": [
+        "rire",
+        "laugh",
+        "n"
+       ],
+       "cough": [
+        "toux",
+        "cough",
+        "n"
+       ],
+       "between": [
+        "entre",
+        "between",
+        "r"
+       ],
+       "girl": [
+        "petite",
+        "girl",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Thirty-nine point one at four,” said Priya, who had memorised the chart. “The bloods are due at half past five.”",
+      "fr": "« Trente-neuf virgule un à quatre heures, dit Priya, qui avait mémorisé le dossier. Les analyses sont attendues à cinq heures et demie. »",
+      "g": {
+       "thirty-nine": [
+        "trente-neuf",
+        "thirty-nine",
+        "a"
+       ],
+       "point": [
+        "virgule",
+        "point",
+        "n"
+       ],
+       "memorised": [
+        "mémorisé",
+        "memorise",
+        "v",
+        "mémoriser"
+       ],
+       "chart": [
+        "dossier",
+        "chart",
+        "n"
+       ],
+       "due": [
+        "attendues",
+        "due",
+        "a"
+       ],
+       "half": [
+        "et demie",
+        "half",
+        "n"
+       ],
+       "past": [
+        "(half past : et demie)",
+        "past",
+        "r"
+       ],
+       "one": [
+        "(point one : virgule un)",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“And if the bloods show nothing?”",
+      "fr": "« Et si les analyses ne montrent rien ? »",
+      "g": {
+       "show": [
+        "montrent",
+        "show",
+        "v",
+        "montrer"
+       ]
+      }
+     },
+     {
+      "en": "“Then I was a cautious machine and a fortunate one,” said Halcyon, “and you may replace me with a clear conscience.”",
+      "fr": "« Alors j’étais une machine prudente et chanceuse, dit Halcyon, et vous pourrez me remplacer en toute bonne conscience. »",
+      "g": {
+       "cautious": [
+        "prudente",
+        "cautious",
+        "a"
+       ],
+       "fortunate": [
+        "chanceuse",
+        "fortunate",
+        "a"
+       ],
+       "replace": [
+        "remplacer",
+        "replace",
+        "v"
+       ],
+       "clear": [
+        "bonne (tranquille)",
+        "clear",
+        "a"
+       ],
+       "conscience": [
+        "conscience",
+        "conscience",
+        "n"
+       ],
+       "one": [
+        "machine (a fortunate one)",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“Don’t be generous,” Tobias muttered. “It doesn’t suit you.”",
+      "fr": "« Ne soyez pas généreux, marmonna Tobias. Ça ne vous va pas. »",
+      "g": {
+       "generous": [
+        "généreux",
+        "generous",
+        "a"
+       ],
+       "muttered": [
+        "marmonna",
+        "mutter",
+        "v",
+        "marmonner"
+       ],
+       "suit": [
+        "va",
+        "suit",
+        "v",
+        "aller"
+       ]
+      }
+     },
+     {
+      "en": "At twenty-five to six, a chime sounded, soft as a spoon against a cup.",
+      "fr": "À six heures moins vingt-cinq, un carillon retentit, doux comme une cuillère contre une tasse.",
+      "g": {
+       "twenty-five": [
+        "vingt-cinq",
+        "twenty-five",
+        "a"
+       ],
+       "chime": [
+        "carillon",
+        "chime",
+        "n"
+       ],
+       "sounded": [
+        "retentit",
+        "sound",
+        "v",
+        "retentir"
+       ],
+       "soft": [
+        "doux",
+        "soft",
+        "a"
+       ],
+       "spoon": [
+        "cuillère",
+        "spoon",
+        "n"
+       ],
+       "cup": [
+        "tasse",
+        "cup",
+        "n"
+       ],
+       "to": [
+        "(twenty-five to six : six heures moins vingt-cinq)",
+        "to",
+        "r"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

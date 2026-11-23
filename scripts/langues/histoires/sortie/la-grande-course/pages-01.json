@@ -1,0 +1,2267 @@
+{
+  "debut": 1,
+  "lexique": {
+    "asks": [
+      "demande",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "big": [
+      "grand, gros",
+      "big",
+      "a"
+    ],
+    "bilal": [
+      "Bilal (prénom)",
+      "Bilal",
+      "np"
+    ],
+    "boy": [
+      "garçon",
+      "boy",
+      "n"
+    ],
+    "boys": [
+      "garçons",
+      "boy",
+      "n",
+      "garçon"
+    ],
+    "called": [
+      "appelée, qui s'appelle",
+      "call",
+      "v",
+      "appeler"
+    ],
+    "day": [
+      "jour",
+      "day",
+      "n"
+    ],
+    "evening": [
+      "soir",
+      "evening",
+      "n"
+    ],
+    "family": [
+      "famille",
+      "family",
+      "n"
+    ],
+    "friday": [
+      "vendredi",
+      "Friday",
+      "n"
+    ],
+    "friend": [
+      "ami",
+      "friend",
+      "n"
+    ],
+    "friends": [
+      "amis",
+      "friend",
+      "n",
+      "ami"
+    ],
+    "help": [
+      "aider",
+      "help",
+      "v"
+    ],
+    "kitchen": [
+      "cuisine",
+      "kitchen",
+      "n"
+    ],
+    "lives": [
+      "vit",
+      "live",
+      "v",
+      "vivre"
+    ],
+    "loves": [
+      "adore",
+      "love",
+      "v",
+      "aimer, adorer"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "o'clock": [
+      "heures",
+      "o'clock",
+      "d"
+    ],
+    "park": [
+      "parc",
+      "park",
+      "n"
+    ],
+    "playground": [
+      "cour de récréation",
+      "playground",
+      "n"
+    ],
+    "practice": [
+      "entraînement, pratique",
+      "practice",
+      "n"
+    ],
+    "problem": [
+      "problème",
+      "problem",
+      "n"
+    ],
+    "quick": [
+      "rapide",
+      "quick",
+      "a"
+    ],
+    "race": [
+      "course",
+      "race",
+      "n"
+    ],
+    "races": [
+      "courses",
+      "race",
+      "n",
+      "course"
+    ],
+    "relay": [
+      "relais",
+      "relay",
+      "n"
+    ],
+    "sad": [
+      "triste",
+      "sad",
+      "a"
+    ],
+    "says": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "school": [
+      "école",
+      "school",
+      "n"
+    ],
+    "sister": [
+      "sœur",
+      "sister",
+      "n"
+    ],
+    "slow": [
+      "lent",
+      "slow",
+      "a"
+    ],
+    "small": [
+      "petite",
+      "small",
+      "a",
+      "petit"
+    ],
+    "smiles": [
+      "sourit",
+      "smile",
+      "v",
+      "sourire"
+    ],
+    "sport": [
+      "sport",
+      "sport",
+      "n"
+    ],
+    "sports": [
+      "sport",
+      "sport",
+      "n"
+    ],
+    "talks": [
+      "parle",
+      "talk",
+      "v",
+      "parler"
+    ],
+    "tom": [
+      "Tom (prénom)",
+      "Tom",
+      "np"
+    ],
+    "town": [
+      "ville",
+      "town",
+      "n"
+    ],
+    "want": [
+      "veux",
+      "want",
+      "v",
+      "vouloir"
+    ],
+    "wants": [
+      "veut",
+      "want",
+      "v",
+      "vouloir"
+    ],
+    "worry": [
+      "t'inquiète (don't worry : ne t'inquiète pas)",
+      "worry",
+      "v",
+      "s'inquiéter"
+    ],
+    "yasmin": [
+      "Yasmin (prénom)",
+      "Yasmin",
+      "np"
+    ],
+    "arms": [
+      "bras",
+      "arm",
+      "n",
+      "bras"
+    ],
+    "bag": [
+      "sac",
+      "bag",
+      "n"
+    ],
+    "birds": [
+      "oiseaux",
+      "bird",
+      "n",
+      "oiseau"
+    ],
+    "breathe": [
+      "respire",
+      "breathe",
+      "v",
+      "respirer"
+    ],
+    "bridge": [
+      "pont",
+      "bridge",
+      "n"
+    ],
+    "brown": [
+      "bruns",
+      "brown",
+      "a",
+      "brun"
+    ],
+    "champions": [
+      "champions",
+      "champion",
+      "n",
+      "champion"
+    ],
+    "children": [
+      "enfants",
+      "child",
+      "n",
+      "enfant"
+    ],
+    "cold": [
+      "froid",
+      "cold",
+      "a"
+    ],
+    "dad": [
+      "papa",
+      "dad",
+      "n"
+    ],
+    "door": [
+      "porte",
+      "door",
+      "n"
+    ],
+    "emily": [
+      "Emily (prénom)",
+      "Emily",
+      "np"
+    ],
+    "feet": [
+      "pieds",
+      "foot",
+      "n",
+      "pied"
+    ],
+    "girl": [
+      "fille",
+      "girl",
+      "n"
+    ],
+    "grass": [
+      "herbe",
+      "grass",
+      "n"
+    ],
+    "grey": [
+      "gris",
+      "grey",
+      "a"
+    ],
+    "hair": [
+      "cheveux",
+      "hair",
+      "n"
+    ],
+    "jumper": [
+      "pull",
+      "jumper",
+      "n"
+    ],
+    "laughs": [
+      "rit",
+      "laugh",
+      "v",
+      "rire"
+    ],
+    "legs": [
+      "jambes",
+      "leg",
+      "n",
+      "jambe"
+    ],
+    "minutes": [
+      "minutes",
+      "minute",
+      "n",
+      "minute"
+    ],
+    "monday": [
+      "lundi",
+      "Monday",
+      "n"
+    ],
+    "move": [
+      "bouge",
+      "move",
+      "v",
+      "bouger"
+    ],
+    "mum": [
+      "maman",
+      "mum",
+      "n"
+    ],
+    "nervous": [
+      "nerveux",
+      "nervous",
+      "a"
+    ],
+    "parents": [
+      "parents",
+      "parent",
+      "n",
+      "parent"
+    ],
+    "pond": [
+      "étang",
+      "pond",
+      "n"
+    ],
+    "runner": [
+      "coureur",
+      "runner",
+      "n"
+    ],
+    "sky": [
+      "ciel",
+      "sky",
+      "n"
+    ],
+    "snacks": [
+      "goûters",
+      "snack",
+      "n",
+      "goûter"
+    ],
+    "steps": [
+      "pas",
+      "step",
+      "n",
+      "pas"
+    ],
+    "stopwatch": [
+      "chronomètre",
+      "stopwatch",
+      "n"
+    ],
+    "sun": [
+      "soleil",
+      "sun",
+      "n"
+    ],
+    "team": [
+      "équipe",
+      "team",
+      "n"
+    ],
+    "trainers": [
+      "baskets",
+      "trainer",
+      "n",
+      "basket"
+    ],
+    "tree": [
+      "arbre",
+      "tree",
+      "n"
+    ],
+    "tuesday": [
+      "mardi",
+      "Tuesday",
+      "n"
+    ],
+    "warm": [
+      "chaud",
+      "warm",
+      "a"
+    ],
+    "wednesday": [
+      "mercredi",
+      "Wednesday",
+      "n"
+    ],
+    "arm": [
+      "bras",
+      "arm",
+      "n"
+    ],
+    "crowd": [
+      "foule",
+      "crowd",
+      "n"
+    ],
+    "evans": [
+      "Evans (nom de famille)",
+      "Evans",
+      "np"
+    ],
+    "game": [
+      "jeu",
+      "game",
+      "n"
+    ],
+    "heart": [
+      "cœur",
+      "heart",
+      "n"
+    ],
+    "lunch": [
+      "déjeuner",
+      "lunch",
+      "n"
+    ],
+    "mr": [
+      "M.",
+      "Mr",
+      "n"
+    ],
+    "runners": [
+      "coureurs",
+      "runner",
+      "n",
+      "coureur"
+    ],
+    "shouts": [
+      "crie",
+      "shout",
+      "v",
+      "crier"
+    ],
+    "smile": [
+      "sourire",
+      "smile",
+      "n"
+    ],
+    "steady": [
+      "attention (ready, steady, go : à vos marques, prêts, partez)",
+      "steady",
+      "a"
+    ],
+    "teams": [
+      "équipes",
+      "team",
+      "n",
+      "équipe"
+    ],
+    "track": [
+      "piste",
+      "track",
+      "n"
+    ],
+    "welcome": [
+      "bienvenue",
+      "welcome",
+      "n"
+    ],
+    "whistle": [
+      "sifflet",
+      "whistle",
+      "n"
+    ],
+    "wind": [
+      "vent",
+      "wind",
+      "n"
+    ],
+    "zara": [
+      "Zara (prénom)",
+      "Zara",
+      "np"
+    ],
+    "bad": [
+      "mal (not bad : pas mal)",
+      "bad",
+      "a",
+      "mauvais"
+    ],
+    "lifts": [
+      "lève",
+      "lift",
+      "v",
+      "lever"
+    ],
+    "gives": [
+      "donne",
+      "give",
+      "v",
+      "donner"
+    ],
+    "look": [
+      "regarde",
+      "look",
+      "v",
+      "regarder"
+    ]
+  },
+  "pages": [
+    {
+      "titre": "Chapter 1 — Sports Day is coming",
+      "titreFr": "Chapitre 1 — La fête du sport approche",
+      "p": [
+        [
+          {
+            "en": "Bilal is ten years old.",
+            "fr": "Bilal a dix ans.",
+            "g": {
+              "is": [
+                "a (is … years old : a … ans)",
+                "be",
+                "v",
+                "être"
+              ],
+              "years": [
+                "(is … years old : ans)",
+                "year",
+                "n",
+                "an"
+              ],
+              "old": [
+                "(is … years old : a … ans)",
+                "old",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "He lives in a small town with his family.",
+            "fr": "Il vit dans une petite ville avec sa famille."
+          },
+          {
+            "en": "His family loves sport.",
+            "fr": "Sa famille adore le sport."
+          }
+        ],
+        [
+          {
+            "en": "Bilal loves school, but he is not fast.",
+            "fr": "Bilal adore l'école, mais il n'est pas rapide.",
+            "g": {
+              "fast": [
+                "rapide",
+                "fast",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "Every day, the boys run in the playground.",
+            "fr": "Tous les jours, les garçons courent dans la cour.",
+            "g": {
+              "run": [
+                "courent",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "Bilal is always the last boy.",
+            "fr": "Bilal est toujours le dernier garçon.",
+            "g": {
+              "last": [
+                "dernier",
+                "last",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "His friends are very quick.",
+            "fr": "Ses amis sont très rapides.",
+            "g": {
+              "quick": [
+                "rapides",
+                "quick",
+                "a",
+                "rapide"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Don't worry, Bilal,” says his friend Tom.",
+            "fr": "« Ne t'inquiète pas, Bilal », dit son ami Tom."
+          },
+          {
+            "en": "“Running is not everything!”",
+            "fr": "« Courir, ce n'est pas tout ! »",
+            "g": {
+              "running": [
+                "courir",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "Bilal smiles, but he is a little sad.",
+            "fr": "Bilal sourit, mais il est un peu triste.",
+            "g": {
+              "a": [
+                "un (a little : un peu)",
+                "a",
+                "t"
+              ],
+              "little": [
+                "peu (a little : un peu)",
+                "little",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Next Friday is Sports Day at school.",
+            "fr": "Vendredi prochain, c'est la fête du sport à l'école.",
+            "g": {
+              "next": [
+                "prochain",
+                "next",
+                "a"
+              ],
+              "sports": [
+                "fête du sport (Sports Day)",
+                "sport",
+                "n"
+              ],
+              "day": [
+                "(Sports Day : fête du sport)",
+                "day",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "There are many races on Sports Day.",
+            "fr": "Il y a beaucoup de courses à la fête du sport.",
+            "g": {
+              "there": [
+                "(there are : il y a)",
+                "there",
+                "x"
+              ],
+              "are": [
+                "il y a (there are)",
+                "be",
+                "v",
+                "être"
+              ],
+              "sports": [
+                "fête du sport (Sports Day)",
+                "sport",
+                "n"
+              ],
+              "day": [
+                "(Sports Day : fête du sport)",
+                "day",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "There is a big relay race too.",
+            "fr": "Il y a aussi une grande course de relais.",
+            "g": {
+              "there": [
+                "(there is : il y a)",
+                "there",
+                "x"
+              ],
+              "is": [
+                "il y a (there is)",
+                "be",
+                "v",
+                "être"
+              ],
+              "big": [
+                "grande",
+                "big",
+                "a",
+                "grand"
+              ]
+            }
+          },
+          {
+            "en": "Bilal wants to run in the relay.",
+            "fr": "Bilal veut courir dans le relais.",
+            "g": {
+              "run": [
+                "courir",
+                "run",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“I can run,” he thinks, “but I am slow.”",
+            "fr": "« Je sais courir, pense-t-il, mais je suis lent. »",
+            "g": {
+              "can": [
+                "sais",
+                "can",
+                "v"
+              ],
+              "run": [
+                "courir",
+                "run",
+                "v"
+              ],
+              "thinks": [
+                "pense",
+                "think",
+                "v",
+                "penser, réfléchir"
+              ]
+            }
+          },
+          {
+            "en": "“How can I get better?”",
+            "fr": "« Comment puis-je m'améliorer ? »",
+            "g": {
+              "get": [
+                "m'améliorer (get better)",
+                "get",
+                "v",
+                "devenir"
+              ],
+              "better": [
+                "(get better : m'améliorer)",
+                "good",
+                "a",
+                "bon"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Bilal has a big sister called Yasmin.",
+            "fr": "Bilal a une grande sœur qui s'appelle Yasmin.",
+            "g": {
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "big": [
+                "grande",
+                "big",
+                "a",
+                "grand"
+              ],
+              "called": [
+                "qui s'appelle",
+                "call",
+                "v",
+                "appeler"
+              ]
+            }
+          },
+          {
+            "en": "Yasmin is fifteen and she runs for her school.",
+            "fr": "Yasmin a quinze ans et elle court pour son école.",
+            "g": {
+              "is": [
+                "a (is fifteen : a quinze ans)",
+                "be",
+                "v",
+                "être"
+              ],
+              "fifteen": [
+                "quinze (ans)",
+                "fifteen",
+                "a"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "That evening, Bilal talks to Yasmin in the kitchen.",
+            "fr": "Ce soir-là, Bilal parle à Yasmin dans la cuisine.",
+            "g": {
+              "that": [
+                "ce (that evening : ce soir-là)",
+                "that",
+                "t"
+              ]
+            }
+          },
+          {
+            "en": "“Yasmin, can you help me?” he asks.",
+            "fr": "« Yasmin, peux-tu m'aider ? » demande-t-il."
+          },
+          {
+            "en": "“Of course,” says Yasmin. “What is the problem?”",
+            "fr": "« Bien sûr, dit Yasmin. Quel est le problème ? »",
+            "g": {
+              "of": [
+                "sûr (of course : bien sûr)",
+                "of",
+                "r"
+              ],
+              "course": [
+                "(of course : bien sûr)",
+                "course",
+                "n",
+                "cours"
+              ]
+            }
+          },
+          {
+            "en": "“I am slow,” says Bilal. “I want to be faster.”",
+            "fr": "« Je suis lent, dit Bilal. Je veux être plus rapide. »",
+            "g": {
+              "faster": [
+                "plus rapide",
+                "fast",
+                "a",
+                "rapide"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Yasmin smiles and looks at him.",
+            "fr": "Yasmin sourit et le regarde.",
+            "g": {
+              "looks": [
+                "regarde (looks at)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looks at : regarde)",
+                "at",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“You are not slow,” she says. “You just need practice.”",
+            "fr": "« Tu n'es pas lent, dit-elle. Tu as juste besoin d'entraînement. »",
+            "g": {
+              "just": [
+                "juste",
+                "just",
+                "d"
+              ],
+              "need": [
+                "as besoin de",
+                "need",
+                "v",
+                "avoir besoin de"
+              ],
+              "practice": [
+                "entraînement",
+                "practice",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Every morning, we can train in the park.”",
+            "fr": "« Tous les matins, nous pouvons nous entraîner au parc. »",
+            "g": {
+              "can": [
+                "pouvons",
+                "can",
+                "v"
+              ],
+              "train": [
+                "nous entraîner",
+                "train",
+                "v",
+                "s'entraîner"
+              ]
+            }
+          },
+          {
+            "en": "“Is that okay?”",
+            "fr": "« Ça te va ? »",
+            "g": {
+              "that": [
+                "ça",
+                "that",
+                "p"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Yes, please!” says Bilal. “Thank you, Yasmin!”",
+            "fr": "« Oui, s'il te plaît ! dit Bilal. Merci, Yasmin ! »",
+            "g": {
+              "thank": [
+                "merci (thank you)",
+                "thank",
+                "v",
+                "remercier"
+              ],
+              "you": [
+                "(thank you : merci)",
+                "you",
+                "p"
+              ],
+              "please": [
+                "s'il te plaît",
+                "please",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“We start tomorrow at six o'clock,” she says.",
+            "fr": "« On commence demain à six heures », dit-elle.",
+            "g": {
+              "start": [
+                "commence",
+                "start",
+                "v",
+                "commencer"
+              ],
+              "at": [
+                "à",
+                "at",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“Six o'clock?” says Bilal. “That is very early!”",
+            "fr": "« Six heures ? dit Bilal. C'est très tôt ! »",
+            "g": {
+              "early": [
+                "tôt",
+                "early",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Yasmin laughs. “Champions get up early,” she says.",
+            "fr": "Yasmin rit. « Les champions se lèvent tôt », dit-elle.",
+            "g": {
+              "get": [
+                "se lèvent (get up)",
+                "get",
+                "v",
+                "se lever"
+              ],
+              "up": [
+                "(get up : se lèvent)",
+                "up",
+                "d"
+              ],
+              "early": [
+                "tôt",
+                "early",
+                "d"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "titre": "Chapter 2 — Training in the park",
+      "titreFr": "Chapitre 2 — L'entraînement au parc",
+      "p": [
+        [
+          {
+            "en": "The next morning, it is cold and grey.",
+            "fr": "Le lendemain matin, il fait froid et gris.",
+            "g": {
+              "next": [
+                "lendemain (the next morning : le lendemain matin)",
+                "next",
+                "a"
+              ],
+              "it": [
+                "il (it is cold : il fait froid)",
+                "it",
+                "p"
+              ],
+              "is": [
+                "fait (it is cold : il fait froid)",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "Bilal puts on his trainers and a warm jumper.",
+            "fr": "Bilal enfile ses baskets et un pull chaud.",
+            "g": {
+              "puts": [
+                "enfile (puts on)",
+                "put",
+                "v",
+                "mettre"
+              ],
+              "on": [
+                "(puts on : enfile)",
+                "on",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Yasmin is waiting at the door.",
+            "fr": "Yasmin attend à la porte.",
+            "g": {
+              "is": [
+                "(is waiting : attend)",
+                "be",
+                "v",
+                "être"
+              ],
+              "waiting": [
+                "attend",
+                "wait",
+                "v",
+                "attendre"
+              ]
+            }
+          },
+          {
+            "en": "They walk to the park together.",
+            "fr": "Ils vont à pied au parc ensemble.",
+            "g": {
+              "walk": [
+                "vont à pied",
+                "walk",
+                "v",
+                "marcher"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "There is nobody in the park.",
+            "fr": "Il n'y a personne dans le parc.",
+            "g": {
+              "there": [
+                "(there is : il y a)",
+                "there",
+                "x"
+              ],
+              "is": [
+                "il y a (there is)",
+                "be",
+                "v",
+                "être"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "The grass is wet and the birds are singing.",
+            "fr": "L'herbe est mouillée et les oiseaux chantent.",
+            "g": {
+              "are": [
+                "(are singing : chantent)",
+                "be",
+                "v",
+                "être"
+              ],
+              "singing": [
+                "chantent",
+                "sing",
+                "v",
+                "chanter"
+              ],
+              "wet": [
+                "mouillée",
+                "wet",
+                "a",
+                "mouillé"
+              ]
+            }
+          },
+          {
+            "en": "“First, we stretch,” says Yasmin.",
+            "fr": "« D'abord, on s'étire », dit Yasmin.",
+            "g": {
+              "first": [
+                "d'abord",
+                "first",
+                "d"
+              ],
+              "stretch": [
+                "on s'étire",
+                "stretch",
+                "v",
+                "s'étirer"
+              ]
+            }
+          },
+          {
+            "en": "They stretch their arms and their legs.",
+            "fr": "Ils étirent leurs bras et leurs jambes.",
+            "g": {
+              "stretch": [
+                "étirent",
+                "stretch",
+                "v",
+                "s'étirer"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Now, let's jog,” she says. “Slowly!”",
+            "fr": "« Maintenant, faisons un petit jogging, dit-elle. Doucement ! »",
+            "g": {
+              "let's": [
+                "(let's jog : faisons un petit jogging)",
+                "let",
+                "v"
+              ],
+              "jog": [
+                "faisons un petit jogging (let's jog)",
+                "jog",
+                "v",
+                "faire du jogging"
+              ],
+              "slowly": [
+                "doucement",
+                "slowly",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "They jog around the big pond.",
+            "fr": "Ils font du jogging autour du grand étang.",
+            "g": {
+              "jog": [
+                "font du jogging",
+                "jog",
+                "v",
+                "faire du jogging"
+              ],
+              "around": [
+                "autour de",
+                "around",
+                "r"
+              ],
+              "big": [
+                "grand",
+                "big",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "After five minutes, Bilal is tired.",
+            "fr": "Au bout de cinq minutes, Bilal est fatigué.",
+            "g": {
+              "after": [
+                "au bout de",
+                "after",
+                "r"
+              ],
+              "tired": [
+                "fatigué",
+                "tired",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“I can't run any more,” he says.",
+            "fr": "« Je ne peux plus courir », dit-il.",
+            "g": {
+              "can't": [
+                "ne peux pas",
+                "can't",
+                "v"
+              ],
+              "any": [
+                "(any more : plus)",
+                "any",
+                "d"
+              ],
+              "more": [
+                "plus (not any more : ne … plus)",
+                "more",
+                "d"
+              ],
+              "run": [
+                "courir",
+                "run",
+                "v"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Yes, you can,” says Yasmin. “Breathe and keep going.”",
+            "fr": "« Si, tu peux, dit Yasmin. Respire et continue. »",
+            "g": {
+              "can": [
+                "peux",
+                "can",
+                "v"
+              ],
+              "keep": [
+                "continue (keep going)",
+                "keep",
+                "v",
+                "continuer"
+              ],
+              "going": [
+                "(keep going : continue)",
+                "go",
+                "v",
+                "aller"
+              ]
+            }
+          },
+          {
+            "en": "“Look at the tree. Run to the tree!”",
+            "fr": "« Regarde l'arbre. Cours jusqu'à l'arbre ! »",
+            "g": {
+              "look": [
+                "regarde (look at)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(look at : regarde)",
+                "at",
+                "r"
+              ],
+              "to": [
+                "jusqu'à",
+                "to",
+                "r"
+              ],
+              "run": [
+                "cours",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "Bilal runs to the tree and stops.",
+            "fr": "Bilal court jusqu'à l'arbre et s'arrête.",
+            "g": {
+              "to": [
+                "jusqu'à",
+                "to",
+                "r"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ],
+              "stops": [
+                "s'arrête",
+                "stop",
+                "v",
+                "s'arrêter"
+              ]
+            }
+          },
+          {
+            "en": "“Well done!” says Yasmin.",
+            "fr": "« Bien joué ! » dit Yasmin.",
+            "g": {
+              "well": [
+                "bien (well done : bien joué)",
+                "well",
+                "d"
+              ],
+              "done": [
+                "joué (well done : bien joué)",
+                "do",
+                "v",
+                "faire"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Every morning, they go to the park.",
+            "fr": "Tous les matins, ils vont au parc.",
+            "g": {
+              "go": [
+                "vont",
+                "go",
+                "v",
+                "aller"
+              ]
+            }
+          },
+          {
+            "en": "On Monday, Bilal runs to the tree.",
+            "fr": "Lundi, Bilal court jusqu'à l'arbre.",
+            "g": {
+              "on": [
+                "(on Monday : lundi)",
+                "on",
+                "r"
+              ],
+              "to": [
+                "jusqu'à",
+                "to",
+                "r"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "On Tuesday, he runs to the bridge.",
+            "fr": "Mardi, il court jusqu'au pont.",
+            "g": {
+              "on": [
+                "(on Tuesday : mardi)",
+                "on",
+                "r"
+              ],
+              "to": [
+                "jusqu'à",
+                "to",
+                "r"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "On Wednesday, he runs around the pond.",
+            "fr": "Mercredi, il court autour de l'étang.",
+            "g": {
+              "on": [
+                "(on Wednesday : mercredi)",
+                "on",
+                "r"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "His legs hurt, but he does not stop.",
+            "fr": "Ses jambes lui font mal, mais il ne s'arrête pas.",
+            "g": {
+              "hurt": [
+                "font mal",
+                "hurt",
+                "v",
+                "faire mal"
+              ],
+              "stop": [
+                "s'arrête",
+                "stop",
+                "v",
+                "s'arrêter"
+              ]
+            }
+          },
+          {
+            "en": "“Take short steps and look in front,” says Yasmin.",
+            "fr": "« Fais de petits pas et regarde devant toi », dit Yasmin.",
+            "g": {
+              "take": [
+                "fais",
+                "take",
+                "v",
+                "prendre, faire"
+              ],
+              "in": [
+                "(in front : devant)",
+                "in",
+                "r"
+              ],
+              "front": [
+                "devant (in front)",
+                "front",
+                "n",
+                "avant"
+              ],
+              "short": [
+                "petits",
+                "short",
+                "a",
+                "court, petit"
+              ]
+            }
+          },
+          {
+            "en": "“Move your arms. Don't look at your feet!”",
+            "fr": "« Bouge les bras. Ne regarde pas tes pieds ! »",
+            "g": {
+              "look": [
+                "regarde (look at)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(look at : regarde)",
+                "at",
+                "r"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Bilal listens to his sister and he tries hard.",
+            "fr": "Bilal écoute sa sœur et il fait de son mieux.",
+            "g": {
+              "listens": [
+                "écoute (listens to)",
+                "listen",
+                "v",
+                "écouter"
+              ],
+              "to": [
+                "(listens to : écoute)",
+                "to",
+                "r"
+              ],
+              "tries": [
+                "fait de son mieux (tries hard)",
+                "try",
+                "v",
+                "essayer"
+              ],
+              "hard": [
+                "(tries hard : fait de son mieux)",
+                "hard",
+                "d",
+                "dur"
+              ]
+            }
+          },
+          {
+            "en": "Slowly, he gets faster.",
+            "fr": "Peu à peu, il devient plus rapide.",
+            "g": {
+              "slowly": [
+                "peu à peu",
+                "slowly",
+                "d",
+                "lentement"
+              ],
+              "gets": [
+                "devient",
+                "get",
+                "v",
+                "devenir"
+              ],
+              "faster": [
+                "plus rapide",
+                "fast",
+                "a",
+                "rapide"
+              ]
+            }
+          },
+          {
+            "en": "One morning, Yasmin has a stopwatch.",
+            "fr": "Un matin, Yasmin a un chronomètre.",
+            "g": {
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Ready? Go!” she says.",
+            "fr": "« Prêt ? Partez ! » dit-elle.",
+            "g": {
+              "go": [
+                "partez",
+                "go",
+                "v",
+                "aller"
+              ],
+              "ready": [
+                "prêt",
+                "ready",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "Bilal runs to the big tree and back.",
+            "fr": "Bilal court jusqu'au grand arbre et revient.",
+            "g": {
+              "to": [
+                "jusqu'à",
+                "to",
+                "r"
+              ],
+              "back": [
+                "(and back : et revient)",
+                "back",
+                "d"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "“Look! That is your best time!”",
+            "fr": "« Regarde ! C'est ton meilleur temps ! »",
+            "g": {
+              "best": [
+                "meilleur",
+                "good",
+                "a",
+                "bon"
+              ],
+              "time": [
+                "temps (chrono)",
+                "time",
+                "n"
+              ],
+              "look": [
+                "regarde",
+                "look",
+                "v",
+                "regarder"
+              ]
+            }
+          },
+          {
+            "en": "Bilal is very happy.",
+            "fr": "Bilal est très heureux.",
+            "g": {
+              "happy": [
+                "heureux",
+                "happy",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“Thank you, Yasmin. You are a great teacher!”",
+            "fr": "« Merci, Yasmin. Tu es une super prof ! »",
+            "g": {
+              "thank": [
+                "merci (thank you)",
+                "thank",
+                "v",
+                "remercier"
+              ],
+              "you": [
+                "(thank you : merci)",
+                "you",
+                "p"
+              ],
+              "great": [
+                "super",
+                "great",
+                "a"
+              ],
+              "teacher": [
+                "prof",
+                "teacher",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“And you are a great runner,” she says.",
+            "fr": "« Et toi, tu es un super coureur », dit-elle.",
+            "g": {
+              "great": [
+                "super",
+                "great",
+                "a"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "titre": "Chapter 3 — Sports Day",
+      "titreFr": "Chapitre 3 — La fête du sport",
+      "p": [
+        [
+          {
+            "en": "At last, it is Friday. It is Sports Day!",
+            "fr": "Enfin, c'est vendredi. C'est la fête du sport !",
+            "g": {
+              "at": [
+                "enfin (at last)",
+                "at",
+                "r"
+              ],
+              "last": [
+                "(at last : enfin)",
+                "last",
+                "a",
+                "dernier"
+              ],
+              "sports": [
+                "fête du sport (Sports Day)",
+                "sport",
+                "n"
+              ],
+              "day": [
+                "(Sports Day : fête du sport)",
+                "day",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "The sun is bright and the sky is blue.",
+            "fr": "Le soleil est éclatant et le ciel est bleu.",
+            "g": {
+              "bright": [
+                "éclatant",
+                "bright",
+                "a"
+              ],
+              "blue": [
+                "bleu",
+                "blue",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "The playground is full of children and parents.",
+            "fr": "La cour est pleine d'enfants et de parents.",
+            "g": {
+              "full": [
+                "pleine",
+                "full",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "Mum and Dad are there, and so is Yasmin.",
+            "fr": "Maman et papa sont là, et Yasmin aussi.",
+            "g": {
+              "so": [
+                "aussi (and so is : et … aussi)",
+                "so",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Mum has a big bag of snacks.",
+            "fr": "Maman a un grand sac de goûters.",
+            "g": {
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Bilal is in the green team with Tom.",
+            "fr": "Bilal est dans l'équipe verte avec Tom.",
+            "g": {
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ]
+            }
+          },
+          {
+            "en": "Emily is in the green team too.",
+            "fr": "Emily est aussi dans l'équipe verte.",
+            "g": {
+              "too": [
+                "aussi",
+                "too",
+                "d"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ]
+            }
+          },
+          {
+            "en": "She is a fast girl with long brown hair.",
+            "fr": "C'est une fille rapide aux longs cheveux bruns.",
+            "g": {
+              "fast": [
+                "rapide",
+                "fast",
+                "a"
+              ],
+              "long": [
+                "longs",
+                "long",
+                "a",
+                "long"
+              ]
+            }
+          },
+          {
+            "en": "“Hello, Bilal,” she says. “Are you ready?”",
+            "fr": "« Bonjour, Bilal, dit-elle. Tu es prêt ? »",
+            "g": {
+              "ready": [
+                "prêt",
+                "ready",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“I am a little nervous,” says Bilal.",
+            "fr": "« Je suis un peu nerveux », dit Bilal.",
+            "g": {
+              "a": [
+                "un (a little : un peu)",
+                "a",
+                "t"
+              ],
+              "little": [
+                "peu (a little : un peu)",
+                "little",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Me too,” says Emily. “But it is only a game.”",
+            "fr": "« Moi aussi, dit Emily. Mais ce n'est qu'un jeu. »",
+            "g": {
+              "too": [
+                "aussi",
+                "too",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Mr Evans, the teacher, blows his whistle.",
+            "fr": "M. Evans, le professeur, souffle dans son sifflet.",
+            "g": {
+              "blows": [
+                "souffle dans",
+                "blow",
+                "v",
+                "souffler"
+              ],
+              "teacher": [
+                "professeur",
+                "teacher",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Welcome to Sports Day!” he says.",
+            "fr": "« Bienvenue à la fête du sport ! » dit-il.",
+            "g": {
+              "sports": [
+                "fête du sport (Sports Day)",
+                "sport",
+                "n"
+              ],
+              "day": [
+                "(Sports Day : fête du sport)",
+                "day",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "First, there are short races and a long jump.",
+            "fr": "D'abord, il y a des courses courtes et un saut en longueur.",
+            "g": {
+              "first": [
+                "d'abord",
+                "first",
+                "d"
+              ],
+              "there": [
+                "(there are : il y a)",
+                "there",
+                "x"
+              ],
+              "are": [
+                "il y a (there are)",
+                "be",
+                "v",
+                "être"
+              ],
+              "short": [
+                "courtes",
+                "short",
+                "a",
+                "court"
+              ],
+              "long": [
+                "longueur (long jump : saut en longueur)",
+                "long",
+                "a",
+                "long"
+              ],
+              "jump": [
+                "saut (long jump : saut en longueur)",
+                "jump",
+                "n",
+                "saut"
+              ]
+            }
+          },
+          {
+            "en": "Bilal comes fourth in the short race.",
+            "fr": "Bilal arrive quatrième à la course courte.",
+            "g": {
+              "comes": [
+                "arrive",
+                "come",
+                "v",
+                "venir"
+              ],
+              "fourth": [
+                "quatrième",
+                "fourth",
+                "a"
+              ],
+              "short": [
+                "courte",
+                "short",
+                "a",
+                "court"
+              ]
+            }
+          },
+          {
+            "en": "“Not bad!” says Yasmin with a big smile.",
+            "fr": "« Pas mal ! » dit Yasmin avec un grand sourire.",
+            "g": {
+              "with": [
+                "avec",
+                "with",
+                "r"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "After lunch, it is time for the relay.",
+            "fr": "Après le déjeuner, c'est l'heure du relais.",
+            "g": {
+              "time": [
+                "heure",
+                "time",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Each team has four runners.",
+            "fr": "Chaque équipe a quatre coureurs.",
+            "g": {
+              "has": [
+                "a",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          },
+          {
+            "en": "Each runner runs once around the track.",
+            "fr": "Chaque coureur fait un tour de piste.",
+            "g": {
+              "runs": [
+                "fait (runs … around : fait un tour)",
+                "run",
+                "v",
+                "courir"
+              ],
+              "around": [
+                "(runs around : fait un tour de)",
+                "around",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Then he or she gives the baton to a friend.",
+            "fr": "Puis il ou elle donne le témoin à un ami.",
+            "g": {
+              "baton": [
+                "témoin (bâton du relais)",
+                "baton",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Tom runs first. Zara runs second.",
+            "fr": "Tom court en premier. Zara court en deuxième.",
+            "g": {
+              "first": [
+                "en premier",
+                "first",
+                "d"
+              ],
+              "second": [
+                "en deuxième",
+                "second",
+                "d"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ],
+              "runs#2": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "Emily runs third. Bilal runs last.",
+            "fr": "Emily court en troisième. Bilal court en dernier.",
+            "g": {
+              "third": [
+                "en troisième",
+                "third",
+                "d"
+              ],
+              "last": [
+                "en dernier",
+                "last",
+                "d"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ],
+              "runs#2": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          },
+          {
+            "en": "Bilal stands at the end of the track.",
+            "fr": "Bilal se tient au bout de la piste.",
+            "g": {
+              "stands": [
+                "se tient",
+                "stand",
+                "v",
+                "se tenir debout"
+              ],
+              "end": [
+                "bout",
+                "end",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "His heart is beating fast.",
+            "fr": "Son cœur bat vite.",
+            "g": {
+              "beating": [
+                "bat",
+                "beat",
+                "v",
+                "battre"
+              ],
+              "fast": [
+                "vite",
+                "fast",
+                "d",
+                "rapide"
+              ]
+            }
+          },
+          {
+            "en": "“You can do it, Bilal!” shouts Yasmin.",
+            "fr": "« Tu peux le faire, Bilal ! » crie Yasmin.",
+            "g": {
+              "can": [
+                "peux",
+                "can",
+                "v"
+              ],
+              "do": [
+                "faire",
+                "do",
+                "v",
+                "faire"
+              ],
+              "it": [
+                "le",
+                "it",
+                "p"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Mr Evans lifts his arm. “Ready? Steady? Go!”",
+            "fr": "M. Evans lève le bras. « Prêts ? Attention ? Partez ! »",
+            "g": {
+              "go": [
+                "partez",
+                "go",
+                "v",
+                "aller"
+              ],
+              "ready": [
+                "prêts",
+                "ready",
+                "a",
+                "prêt"
+              ],
+              "steady": [
+                "attention",
+                "steady",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "The four teams start and the crowd shouts.",
+            "fr": "Les quatre équipes partent et la foule crie.",
+            "g": {
+              "start": [
+                "partent",
+                "start",
+                "v",
+                "partir, commencer"
+              ]
+            }
+          },
+          {
+            "en": "Tom is very fast and the green team is second.",
+            "fr": "Tom est très rapide et l'équipe verte est deuxième.",
+            "g": {
+              "fast": [
+                "rapide",
+                "fast",
+                "a"
+              ],
+              "second": [
+                "deuxième",
+                "second",
+                "a"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ]
+            }
+          },
+          {
+            "en": "Zara runs well and the green team is first!",
+            "fr": "Zara court bien et l'équipe verte est première !",
+            "g": {
+              "well": [
+                "bien",
+                "well",
+                "d"
+              ],
+              "first": [
+                "première",
+                "first",
+                "a"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ]
+            }
+          },
+          {
+            "en": "Then Emily takes the baton and runs like the wind.",
+            "fr": "Puis Emily prend le témoin et court comme le vent.",
+            "g": {
+              "takes": [
+                "prend",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "like": [
+                "comme",
+                "like",
+                "r"
+              ],
+              "baton": [
+                "témoin (bâton du relais)",
+                "baton",
+                "n"
+              ],
+              "runs": [
+                "court",
+                "run",
+                "v",
+                "courir"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ]
+}

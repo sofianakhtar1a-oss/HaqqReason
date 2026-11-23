@@ -1,0 +1,2263 @@
+{
+ "debut": 11,
+ "lexique": {
+  "aunt": [
+   "tante",
+   "aunt",
+   "n"
+  ],
+  "box": [
+   "boîte",
+   "box",
+   "n"
+  ],
+  "clock": [
+   "horloge",
+   "clock",
+   "n"
+  ],
+  "elias": [
+   "Elias (prénom)",
+   "Elias",
+   "np"
+  ],
+  "great-grandfather": [
+   "arrière-grand-père",
+   "great-grandfather",
+   "n"
+  ],
+  "key": [
+   "clé",
+   "key",
+   "n"
+  ],
+  "leila": [
+   "Leila (prénom)",
+   "Leila",
+   "np"
+  ],
+  "manchester": [
+   "Manchester (ville)",
+   "Manchester",
+   "np"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "nadia": [
+   "Nadia (prénom)",
+   "Nadia",
+   "np"
+  ],
+  "neighbour": [
+   "voisin",
+   "neighbour",
+   "n"
+  ],
+  "photo": [
+   "photo",
+   "photo",
+   "n"
+  ],
+  "said": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "tiny": [
+   "minuscule",
+   "tiny",
+   "a"
+  ],
+  "yusuf": [
+   "Yusuf (prénom)",
+   "Yusuf",
+   "np"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Aunt Leila went to her bedroom and came back with a wooden box.",
+      "fr": "Tante Leila alla dans sa chambre et revint avec une boîte en bois.",
+      "g": {
+       "to": [
+        "dans",
+        "to",
+        "r"
+       ],
+       "aunt": [
+        "tante",
+        "aunt",
+        "n"
+       ],
+       "went": [
+        "alla",
+        "go",
+        "v",
+        "aller"
+       ],
+       "bedroom": [
+        "chambre",
+        "bedroom",
+        "n"
+       ],
+       "came": [
+        "revint (came back)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "back": [
+        "(came back : revint)",
+        "back",
+        "x"
+       ],
+       "wooden": [
+        "en bois",
+        "wooden",
+        "a"
+       ],
+       "box": [
+        "boîte",
+        "box",
+        "n"
+       ],
+       "with": [
+        "avec",
+        "with",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It was painted blue, and it was smaller than Elias expected.",
+      "fr": "Elle était peinte en bleu, et elle était plus petite qu'Elias ne le pensait.",
+      "g": {
+       "painted": [
+        "peinte",
+        "paint",
+        "v",
+        "peindre"
+       ],
+       "blue": [
+        "bleu",
+        "blue",
+        "a"
+       ],
+       "smaller": [
+        "plus petite",
+        "small",
+        "a",
+        "petit"
+       ],
+       "than": [
+        "que",
+        "than",
+        "c"
+       ],
+       "expected": [
+        "pensait",
+        "expect",
+        "v",
+        "s'attendre à"
+       ]
+      }
+     },
+     {
+      "en": "There was a tiny lock on the front.",
+      "fr": "Il y avait une minuscule serrure sur le devant.",
+      "g": {
+       "there": [
+        "(there was : il y avait)",
+        "there",
+        "d"
+       ],
+       "was": [
+        "il y avait",
+        "be",
+        "v",
+        "être"
+       ],
+       "tiny": [
+        "minuscule",
+        "tiny",
+        "a"
+       ],
+       "lock": [
+        "serrure",
+        "lock",
+        "n"
+       ],
+       "front": [
+        "devant",
+        "front",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Go on,” said Aunt Leila. “It has waited a long time.”",
+      "fr": "« Vas-y », dit tante Leila. « Elle attend depuis longtemps. »",
+      "g": {
+       "go": [
+        "vas-y (go on)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "on": [
+        "(go on : vas-y)",
+        "on",
+        "x"
+       ],
+       "has": [
+        "(has waited : attend depuis)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "waited": [
+        "attend",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "a": [
+        "(a long time : longtemps)",
+        "a",
+        "t"
+       ],
+       "long": [
+        "(a long time : longtemps)",
+        "long",
+        "a"
+       ],
+       "time": [
+        "(a long time : longtemps)",
+        "time",
+        "n"
+       ],
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Elias put the key in the lock, and it turned with a soft click.",
+      "fr": "Elias mit la clé dans la serrure, et elle tourna avec un doux déclic.",
+      "g": {
+       "put": [
+        "mit",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "lock": [
+        "serrure",
+        "lock",
+        "n"
+       ],
+       "turned": [
+        "tourna",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "soft": [
+        "doux",
+        "soft",
+        "a"
+       ],
+       "click": [
+        "déclic",
+        "click",
+        "n"
+       ],
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Everybody looked into the box.",
+      "fr": "Tout le monde regarda dans la boîte.",
+      "g": {
+       "everybody": [
+        "tout le monde",
+        "everybody",
+        "p"
+       ],
+       "looked": [
+        "regarda",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "into": [
+        "dans",
+        "into",
+        "r"
+       ],
+       "box": [
+        "boîte",
+        "box",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "On top, there was an old black and white photo.",
+      "fr": "Dessus, il y avait une vieille photo en noir et blanc.",
+      "g": {
+       "top": [
+        "(on top : dessus)",
+        "top",
+        "n"
+       ],
+       "on": [
+        "(on top : dessus)",
+        "on",
+        "r"
+       ],
+       "there": [
+        "(there was : il y avait)",
+        "there",
+        "d"
+       ],
+       "was": [
+        "il y avait",
+        "be",
+        "v",
+        "être"
+       ],
+       "old": [
+        "vieille",
+        "old",
+        "a"
+       ],
+       "black": [
+        "noir",
+        "black",
+        "a"
+       ],
+       "white": [
+        "blanc",
+        "white",
+        "a"
+       ],
+       "photo": [
+        "photo",
+        "photo",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It showed a young man, a young woman and a baby.",
+      "fr": "Elle montrait un jeune homme, une jeune femme et un bébé.",
+      "g": {
+       "showed": [
+        "montrait",
+        "show",
+        "v",
+        "montrer"
+       ],
+       "young": [
+        "jeune",
+        "young",
+        "a"
+       ],
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "woman": [
+        "femme",
+        "woman",
+        "n"
+       ],
+       "baby": [
+        "bébé",
+        "baby",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Behind them, a big clock showed quarter past three.",
+      "fr": "Derrière eux, une grande horloge indiquait trois heures et quart.",
+      "g": {
+       "behind": [
+        "derrière",
+        "behind",
+        "r"
+       ],
+       "them": [
+        "eux",
+        "them",
+        "p"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "showed": [
+        "indiquait",
+        "show",
+        "v",
+        "montrer"
+       ],
+       "quarter": [
+        "quart",
+        "quarter",
+        "n"
+       ],
+       "past": [
+        "(quarter past : et quart)",
+        "past",
+        "r"
+       ],
+       "three": [
+        "trois (heures)",
+        "three",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“That is the clock from the port!” said Elias.",
+      "fr": "« C'est l'horloge du port ! » dit Elias.",
+      "g": {
+       "that": [
+        "c'",
+        "that",
+        "p"
+       ],
+       "is": [
+        "est",
+        "be",
+        "v",
+        "être"
+       ],
+       "port": [
+        "port",
+        "port",
+        "n"
+       ],
+       "from": [
+        "de",
+        "from",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Yes,” said Aunt Leila. “A stranger took this photo for them. I am the baby!”",
+      "fr": "« Oui », dit tante Leila. « Un inconnu a pris cette photo pour eux. Le bébé, c'est moi ! »",
+      "g": {
+       "stranger": [
+        "inconnu",
+        "stranger",
+        "n"
+       ],
+       "took": [
+        "a pris",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "this": [
+        "cette",
+        "this",
+        "t"
+       ],
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ],
+       "them": [
+        "eux",
+        "them",
+        "p"
+       ],
+       "am": [
+        "c'est (am)",
+        "be",
+        "v",
+        "être"
+       ],
+       "baby": [
+        "bébé",
+        "baby",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“You were so tiny!” laughed Nadia.",
+      "fr": "« Tu étais tellement minuscule ! » rit Nadia.",
+      "g": {
+       "were": [
+        "étais",
+        "be",
+        "v",
+        "être"
+       ],
+       "so": [
+        "tellement",
+        "so",
+        "d"
+       ],
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ]
+      }
+     },
+     {
+      "en": "Under the photo, Elias found a small blue notebook.",
+      "fr": "Sous la photo, Elias trouva un petit carnet bleu.",
+      "g": {
+       "found": [
+        "trouva",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "blue": [
+        "bleu",
+        "blue",
+        "a"
+       ],
+       "notebook": [
+        "carnet",
+        "notebook",
+        "n"
+       ],
+       "under": [
+        "sous",
+        "under",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "On the first page, there were four words: “Good morning. Thank you. Please. Neighbour.”",
+      "fr": "Sur la première page, il y avait quatre mots : « Bonjour. Merci. S'il vous plaît. Voisin. »",
+      "g": {
+       "first": [
+        "première",
+        "first",
+        "a"
+       ],
+       "page": [
+        "page",
+        "page",
+        "n"
+       ],
+       "there": [
+        "(there were : il y avait)",
+        "there",
+        "d"
+       ],
+       "were": [
+        "il y avait",
+        "be",
+        "v",
+        "être"
+       ],
+       "four": [
+        "quatre",
+        "four",
+        "a"
+       ],
+       "words": [
+        "mots",
+        "word",
+        "n",
+        "mot"
+       ],
+       "good": [
+        "(good morning : bonjour)",
+        "good",
+        "a"
+       ],
+       "morning": [
+        "(good morning : bonjour)",
+        "morning",
+        "n"
+       ],
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ],
+       "please": [
+        "s'il vous plaît",
+        "please",
+        "d"
+       ],
+       "neighbour": [
+        "voisin",
+        "neighbour",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“These are his first English lessons,” whispered Mum.",
+      "fr": "« Ce sont ses premières leçons d'anglais », murmura maman.",
+      "g": {
+       "these": [
+        "ce",
+        "these",
+        "p"
+       ],
+       "are": [
+        "sont",
+        "be",
+        "v",
+        "être"
+       ],
+       "first": [
+        "premières",
+        "first",
+        "a"
+       ],
+       "english": [
+        "d'anglais",
+        "English",
+        "a"
+       ],
+       "lessons": [
+        "leçons",
+        "lesson",
+        "n",
+        "leçon"
+       ],
+       "whispered": [
+        "murmura",
+        "whisper",
+        "v",
+        "murmurer"
+       ]
+      }
+     },
+     {
+      "en": "Next to “neighbour”, he wrote the same word twenty times.",
+      "fr": "À côté de « neighbour », il avait écrit le même mot vingt fois.",
+      "g": {
+       "next": [
+        "(next to : à côté de)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ],
+       "wrote": [
+        "avait écrit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "same": [
+        "même",
+        "same",
+        "a"
+       ],
+       "word": [
+        "mot",
+        "word",
+        "n"
+       ],
+       "twenty": [
+        "vingt",
+        "twenty",
+        "a"
+       ],
+       "times": [
+        "fois",
+        "time",
+        "n",
+        "fois"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 6 — The Blue Box",
+   "titreFr": "Chapitre 6 — La boîte bleue"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Aunt Leila picked up an old postcard with a red bus on it.",
+      "fr": "Tante Leila prit une vieille carte postale ornée d'un bus rouge.",
+      "g": {
+       "picked": [
+        "prit (picked up)",
+        "pick",
+        "v",
+        "prendre"
+       ],
+       "up": [
+        "(picked up : prit)",
+        "up",
+        "x"
+       ],
+       "old": [
+        "vieille",
+        "old",
+        "a"
+       ],
+       "postcard": [
+        "carte postale",
+        "postcard",
+        "n"
+       ],
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "bus": [
+        "bus",
+        "bus",
+        "n"
+       ],
+       "with": [
+        "ornée d'",
+        "with",
+        "r"
+       ],
+       "on": [
+        "(ornée de)",
+        "on",
+        "r"
+       ],
+       "it": [
+        "(ornée)",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“This is from Mrs Hughes,” she said.",
+      "fr": "« Elle est de Mme Hughes », dit-elle.",
+      "g": {
+       "this": [
+        "elle",
+        "this",
+        "p"
+       ],
+       "is": [
+        "est",
+        "be",
+        "v",
+        "être"
+       ],
+       "from": [
+        "de",
+        "from",
+        "r"
+       ],
+       "mrs": [
+        "Mme",
+        "Mrs",
+        "n"
+       ],
+       "hughes": [
+        "Hughes (nom)",
+        "Hughes",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "“It says, ‘Come to our house for tea on Sunday.’”",
+      "fr": "« Elle dit : “Venez prendre le thé chez nous dimanche.” »",
+      "g": {
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "come": [
+        "venez",
+        "come",
+        "v",
+        "venir"
+       ],
+       "house": [
+        "chez nous (our house)",
+        "house",
+        "n"
+       ],
+       "tea": [
+        "thé",
+        "tea",
+        "n"
+       ],
+       "for": [
+        "(for tea : prendre le thé)",
+        "for",
+        "r"
+       ],
+       "on": [
+        "(le jour)",
+        "on",
+        "r"
+       ],
+       "sunday": [
+        "dimanche",
+        "Sunday",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“She became like a grandmother to me.”",
+      "fr": "« Elle est devenue comme une grand-mère pour moi. »",
+      "g": {
+       "became": [
+        "est devenue",
+        "become",
+        "v",
+        "devenir"
+       ],
+       "like": [
+        "comme",
+        "like",
+        "r"
+       ],
+       "grandmother": [
+        "grand-mère",
+        "grandmother",
+        "n"
+       ],
+       "to": [
+        "pour",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Her daughter Margaret was my best friend at school.”",
+      "fr": "« Sa fille Margaret était ma meilleure amie à l'école. »",
+      "g": {
+       "daughter": [
+        "fille",
+        "daughter",
+        "n"
+       ],
+       "margaret": [
+        "Margaret (prénom)",
+        "Margaret",
+        "np"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "best": [
+        "meilleure",
+        "good",
+        "a",
+        "bon"
+       ],
+       "friend": [
+        "amie",
+        "friend",
+        "n"
+       ],
+       "school": [
+        "école",
+        "school",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Every year, on the fourteenth of March, we drink tea at quarter past three.”",
+      "fr": "« Chaque année, le quatorze mars, nous buvons du thé à trois heures et quart. »",
+      "g": {
+       "every": [
+        "chaque",
+        "every",
+        "t"
+       ],
+       "year": [
+        "année",
+        "year",
+        "n"
+       ],
+       "on": [
+        "(le jour)",
+        "on",
+        "r"
+       ],
+       "fourteenth": [
+        "quatorze",
+        "fourteenth",
+        "a"
+       ],
+       "march": [
+        "mars",
+        "March",
+        "n"
+       ],
+       "drink": [
+        "buvons",
+        "drink",
+        "v",
+        "boire"
+       ],
+       "tea": [
+        "thé",
+        "tea",
+        "n"
+       ],
+       "quarter": [
+        "quart",
+        "quarter",
+        "n"
+       ],
+       "past": [
+        "(quarter past : et quart)",
+        "past",
+        "r"
+       ],
+       "three": [
+        "trois (heures)",
+        "three",
+        "a"
+       ],
+       "at": [
+        "à",
+        "at",
+        "r"
+       ],
+       "of": [
+        "(le quatorze mars)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Your great-grandfather said it was the best minute of his life.”",
+      "fr": "« Ton arrière-grand-père disait que c'était la meilleure minute de sa vie. »",
+      "g": {
+       "said": [
+        "disait",
+        "say",
+        "v",
+        "dire"
+       ],
+       "best": [
+        "meilleure",
+        "good",
+        "a",
+        "bon"
+       ],
+       "minute": [
+        "minute",
+        "minute",
+        "n"
+       ],
+       "life": [
+        "vie",
+        "life",
+        "n"
+       ],
+       "it": [
+        "c'",
+        "it",
+        "p"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "his": [
+        "sa",
+        "his",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Elias touched the bottom of the box.",
+      "fr": "Elias toucha le fond de la boîte.",
+      "g": {
+       "touched": [
+        "toucha",
+        "touch",
+        "v",
+        "toucher"
+       ],
+       "bottom": [
+        "fond",
+        "bottom",
+        "n"
+       ],
+       "box": [
+        "boîte",
+        "box",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "There was a folded paper with bright crayon colours.",
+      "fr": "Il y avait un papier plié aux couleurs vives de crayons de cire.",
+      "g": {
+       "there": [
+        "(there was : il y avait)",
+        "there",
+        "d"
+       ],
+       "was": [
+        "il y avait",
+        "be",
+        "v",
+        "être"
+       ],
+       "folded": [
+        "plié",
+        "folded",
+        "a"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ],
+       "bright": [
+        "vives",
+        "bright",
+        "a"
+       ],
+       "crayon": [
+        "crayons de cire",
+        "crayon",
+        "n"
+       ],
+       "colours": [
+        "couleurs",
+        "colour",
+        "n",
+        "couleur"
+       ],
+       "with": [
+        "aux",
+        "with",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It was a drawing of a big clock with a smiling face.",
+      "fr": "C'était un dessin d'une grande horloge au visage souriant.",
+      "g": {
+       "it": [
+        "c'",
+        "it",
+        "p"
+       ],
+       "drawing": [
+        "dessin",
+        "drawing",
+        "n"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "smiling": [
+        "souriant",
+        "smiling",
+        "a"
+       ],
+       "face": [
+        "visage",
+        "face",
+        "n"
+       ],
+       "with": [
+        "au",
+        "with",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "A child's writing said, “For Great-Grandad, from Elias.”",
+      "fr": "Une écriture d'enfant disait : « Pour Arrière-Papi, de la part d'Elias. »",
+      "g": {
+       "child's": [
+        "d'enfant",
+        "child",
+        "n"
+       ],
+       "writing": [
+        "écriture",
+        "writing",
+        "n"
+       ],
+       "said": [
+        "disait",
+        "say",
+        "v",
+        "dire"
+       ],
+       "great-grandad": [
+        "Arrière-Papi",
+        "great-grandad",
+        "n"
+       ],
+       "from": [
+        "de la part de",
+        "from",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Elias was only five years old when he drew it.",
+      "fr": "Elias n'avait que cinq ans quand il l'a dessiné.",
+      "g": {
+       "was": [
+        "avait",
+        "be",
+        "v",
+        "être"
+       ],
+       "only": [
+        "ne… que",
+        "only",
+        "d"
+       ],
+       "five": [
+        "cinq",
+        "five",
+        "a"
+       ],
+       "years": [
+        "ans (years old)",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "(years old : ans)",
+        "old",
+        "x"
+       ],
+       "drew": [
+        "a dessiné",
+        "draw",
+        "v",
+        "dessiner"
+       ],
+       "it": [
+        "l'",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Under it, Yusuf wrote in shaky letters, “Elias listens to the clock better than anyone.”",
+      "fr": "Dessous, Yusuf avait écrit en lettres tremblantes : « Elias écoute l'horloge mieux que personne. »",
+      "g": {
+       "under": [
+        "dessous",
+        "under",
+        "r"
+       ],
+       "it": [
+        "(under it : dessous)",
+        "it",
+        "p"
+       ],
+       "wrote": [
+        "avait écrit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "shaky": [
+        "tremblantes",
+        "shaky",
+        "a"
+       ],
+       "letters": [
+        "lettres",
+        "letter",
+        "n",
+        "lettre"
+       ],
+       "listens": [
+        "écoute",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "better": [
+        "mieux",
+        "well",
+        "d",
+        "bien"
+       ],
+       "than": [
+        "que",
+        "than",
+        "c"
+       ],
+       "anyone": [
+        "personne",
+        "anyone",
+        "p"
+       ],
+       "to": [
+        "(listens to : écoute)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“He will keep it alive.”",
+      "fr": "« Il la gardera vivante. »",
+      "g": {
+       "will": [
+        "(futur)",
+        "will",
+        "v"
+       ],
+       "keep": [
+        "gardera",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "it": [
+        "la",
+        "it",
+        "p"
+       ],
+       "alive": [
+        "vivante",
+        "alive",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Elias could not speak. Tears ran down his face.",
+      "fr": "Elias ne pouvait plus parler. Des larmes coulaient sur son visage.",
+      "g": {
+       "could": [
+        "(could not : ne pouvait pas)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "not": [
+        "(could not : ne pouvait pas)",
+        "not",
+        "d"
+       ],
+       "speak": [
+        "parler",
+        "speak",
+        "v",
+        "parler"
+       ],
+       "tears": [
+        "larmes",
+        "tear",
+        "n",
+        "larme"
+       ],
+       "ran": [
+        "coulaient",
+        "run",
+        "v",
+        "courir"
+       ],
+       "down": [
+        "(ran down : coulaient)",
+        "down",
+        "x"
+       ],
+       "face": [
+        "visage",
+        "face",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Aunt Leila hugged him tightly.",
+      "fr": "Tante Leila le serra fort dans ses bras.",
+      "g": {
+       "aunt": [
+        "tante",
+        "aunt",
+        "n"
+       ],
+       "hugged": [
+        "serra dans ses bras",
+        "hug",
+        "v",
+        "serrer dans ses bras"
+       ],
+       "him": [
+        "le",
+        "him",
+        "p"
+       ],
+       "tightly": [
+        "fort",
+        "tightly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“This is the best treasure in the box,” she said.",
+      "fr": "« C'est le plus beau trésor de la boîte », dit-elle.",
+      "g": {
+       "this": [
+        "c'",
+        "this",
+        "p"
+       ],
+       "best": [
+        "plus beau",
+        "good",
+        "a",
+        "bon"
+       ],
+       "treasure": [
+        "trésor",
+        "treasure",
+        "n"
+       ],
+       "box": [
+        "boîte",
+        "box",
+        "n"
+       ],
+       "in": [
+        "de",
+        "in",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“The box has waited for you. It should go home with the clock.”",
+      "fr": "« La boîte t'attendait. Elle devrait rentrer avec l'horloge. »",
+      "g": {
+       "has": [
+        "(has waited : attendait)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "waited": [
+        "attendait",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "for": [
+        "(waited for : attendait)",
+        "for",
+        "r"
+       ],
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ],
+       "should": [
+        "devrait",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "go": [
+        "rentrer",
+        "go",
+        "v",
+        "aller"
+       ],
+       "home": [
+        "(go home : rentrer)",
+        "home",
+        "d"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "On Monday, Mr Patel came back and put the dial on again.",
+      "fr": "Le lundi, M. Patel revint et remit le cadran en place.",
+      "g": {
+       "on": [
+        "(le jour)",
+        "on",
+        "r"
+       ],
+       "monday": [
+        "lundi",
+        "Monday",
+        "n"
+       ],
+       "came": [
+        "revint (came back)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "back": [
+        "(came back : revint)",
+        "back",
+        "x"
+       ],
+       "put": [
+        "remit (put on again)",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "on#2": [
+        "(put on again : remit en place)",
+        "on",
+        "x"
+       ],
+       "again": [
+        "(put on again : remit)",
+        "again",
+        "d"
+       ],
+       "dial": [
+        "cadran",
+        "dial",
+        "n"
+       ],
+       "mr": [
+        "M.",
+        "Mr",
+        "n"
+       ],
+       "patel": [
+        "Patel (nom)",
+        "Patel",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "“Do you want to keep the letter inside?” he asked.",
+      "fr": "« Voulez-vous garder la lettre à l'intérieur ? » demanda-t-il.",
+      "g": {
+       "do": [
+        "(question)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "want": [
+        "voulez",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "to": [
+        "(want to : voulez)",
+        "to",
+        "x"
+       ],
+       "keep": [
+        "garder",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "letter": [
+        "lettre",
+        "letter",
+        "n"
+       ],
+       "inside": [
+        "à l'intérieur",
+        "inside",
+        "d"
+       ],
+       "asked": [
+        "demanda-t-il",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“No,” said Elias. “It is going to stay in the blue box.”",
+      "fr": "« Non », dit Elias. « Elle va rester dans la boîte bleue. »",
+      "g": {
+       "no": [
+        "non",
+        "no",
+        "d"
+       ],
+       "it": [
+        "elle",
+        "it",
+        "p"
+       ],
+       "is": [
+        "va (is going to)",
+        "be",
+        "v",
+        "être"
+       ],
+       "going": [
+        "(is going to : va)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(is going to : va)",
+        "to",
+        "x"
+       ],
+       "stay": [
+        "rester",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "blue": [
+        "bleue",
+        "blue",
+        "a"
+       ],
+       "box": [
+        "boîte",
+        "box",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The next Sunday, Aunt Leila came to Manchester with a bag full of cakes.",
+      "fr": "Le dimanche suivant, tante Leila vint à Manchester avec un sac plein de gâteaux.",
+      "g": {
+       "next": [
+        "suivant",
+        "next",
+        "a"
+       ],
+       "sunday": [
+        "dimanche",
+        "Sunday",
+        "n"
+       ],
+       "aunt": [
+        "tante",
+        "aunt",
+        "n"
+       ],
+       "came": [
+        "vint",
+        "come",
+        "v",
+        "venir"
+       ],
+       "bag": [
+        "sac",
+        "bag",
+        "n"
+       ],
+       "full": [
+        "plein",
+        "full",
+        "a"
+       ],
+       "cakes": [
+        "gâteaux",
+        "cake",
+        "n",
+        "gâteau"
+       ],
+       "with": [
+        "avec",
+        "with",
+        "r"
+       ],
+       "to": [
+        "à",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "A new family has moved into the flat next door.",
+      "fr": "Une nouvelle famille avait emménagé dans l'appartement d'à côté.",
+      "g": {
+       "new": [
+        "nouvelle",
+        "new",
+        "a"
+       ],
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "has": [
+        "avait (+ participe)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "moved": [
+        "emménagé (moved into)",
+        "move",
+        "v",
+        "déménager"
+       ],
+       "into": [
+        "dans",
+        "into",
+        "r"
+       ],
+       "flat": [
+        "appartement",
+        "flat",
+        "n"
+       ],
+       "next": [
+        "(next door : d'à côté)",
+        "next",
+        "a"
+       ],
+       "door": [
+        "(next door : d'à côté)",
+        "door",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Elias knocked on their door. “Hello, I am Elias. Welcome, neighbours!”",
+      "fr": "Elias frappa à leur porte. « Bonjour, je suis Elias. Bienvenue, voisins ! »",
+      "g": {
+       "knocked": [
+        "frappa",
+        "knock",
+        "v",
+        "frapper"
+       ],
+       "on": [
+        "à",
+        "on",
+        "r"
+       ],
+       "door": [
+        "porte",
+        "door",
+        "n"
+       ],
+       "am": [
+        "suis",
+        "be",
+        "v",
+        "être"
+       ],
+       "welcome": [
+        "bienvenue",
+        "welcome",
+        "n"
+       ],
+       "neighbours": [
+        "voisins",
+        "neighbour",
+        "n",
+        "voisin"
+       ]
+      }
+     },
+     {
+      "en": "“Would you like to come for tea this afternoon?”",
+      "fr": "« Voulez-vous venir prendre le thé cet après-midi ? »",
+      "g": {
+       "would": [
+        "(conditionnel)",
+        "would",
+        "v"
+       ],
+       "like": [
+        "voulez (would like)",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "to": [
+        "(would like to : voulez)",
+        "to",
+        "x"
+       ],
+       "come": [
+        "venir",
+        "come",
+        "v",
+        "venir"
+       ],
+       "for": [
+        "(for tea : prendre le thé)",
+        "for",
+        "r"
+       ],
+       "tea": [
+        "thé",
+        "tea",
+        "n"
+       ],
+       "this": [
+        "cet",
+        "this",
+        "t"
+       ],
+       "afternoon": [
+        "après-midi",
+        "afternoon",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "At three o'clock, the flat was full of people.",
+      "fr": "À trois heures, l'appartement était plein de monde.",
+      "g": {
+       "three": [
+        "trois",
+        "three",
+        "a"
+       ],
+       "o'clock": [
+        "heures",
+        "o'clock",
+        "d"
+       ],
+       "flat": [
+        "appartement",
+        "flat",
+        "n"
+       ],
+       "was": [
+        "était",
+        "be",
+        "v",
+        "être"
+       ],
+       "full": [
+        "plein",
+        "full",
+        "a"
+       ],
+       "people": [
+        "monde (people)",
+        "people",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mum, Nadia, Aunt Leila, Mr Patel and the new family stood around the clock.",
+      "fr": "Maman, Nadia, tante Leila, M. Patel et la nouvelle famille se tenaient autour de l'horloge.",
+      "g": {
+       "aunt": [
+        "tante",
+        "aunt",
+        "n"
+       ],
+       "mr": [
+        "M.",
+        "Mr",
+        "n"
+       ],
+       "patel": [
+        "Patel (nom)",
+        "Patel",
+        "np"
+       ],
+       "new": [
+        "nouvelle",
+        "new",
+        "a"
+       ],
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "stood": [
+        "se tenaient",
+        "stand",
+        "v",
+        "se tenir debout"
+       ],
+       "around": [
+        "autour de",
+        "around",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Elias looked at his watch. “Three fourteen,” he whispered.",
+      "fr": "Elias regarda sa montre. « Trois heures quatorze », murmura-t-il.",
+      "g": {
+       "looked": [
+        "regarda",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "watch": [
+        "montre",
+        "watch",
+        "n"
+       ],
+       "three": [
+        "trois",
+        "three",
+        "a"
+       ],
+       "fourteen": [
+        "quatorze",
+        "fourteen",
+        "a"
+       ],
+       "whispered": [
+        "murmura-t-il",
+        "whisper",
+        "v",
+        "murmurer"
+       ]
+      }
+     },
+     {
+      "en": "Everybody held their breath. The pendulum kept swinging.",
+      "fr": "Tout le monde retint son souffle. Le balancier continuait d'osciller.",
+      "g": {
+       "everybody": [
+        "tout le monde",
+        "everybody",
+        "p"
+       ],
+       "held": [
+        "retint",
+        "hold",
+        "v",
+        "tenir"
+       ],
+       "their": [
+        "son",
+        "their",
+        "p"
+       ],
+       "breath": [
+        "souffle",
+        "breath",
+        "n"
+       ],
+       "pendulum": [
+        "balancier",
+        "pendulum",
+        "n"
+       ],
+       "kept": [
+        "continuait",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "swinging": [
+        "d'osciller",
+        "swing",
+        "v",
+        "osciller"
+       ]
+      }
+     },
+     {
+      "en": "Tick, tock, tick, tock. Then the long hand reached quarter past three.",
+      "fr": "Tic, tac, tic, tac. Puis la grande aiguille atteignit trois heures et quart.",
+      "g": {
+       "tick": [
+        "tic",
+        "tick",
+        "n"
+       ],
+       "tock": [
+        "tac",
+        "tock",
+        "n"
+       ],
+       "then": [
+        "puis",
+        "then",
+        "d"
+       ],
+       "long": [
+        "grande",
+        "long",
+        "a"
+       ],
+       "hand": [
+        "aiguille",
+        "hand",
+        "n"
+       ],
+       "reached": [
+        "atteignit",
+        "reach",
+        "v",
+        "atteindre"
+       ],
+       "quarter": [
+        "quart",
+        "quarter",
+        "n"
+       ],
+       "past": [
+        "(quarter past : et quart)",
+        "past",
+        "r"
+       ],
+       "three": [
+        "trois (heures)",
+        "three",
+        "a"
+       ],
+       "tick#2": [
+        "tic",
+        "tick",
+        "n"
+       ],
+       "tock#2": [
+        "tac",
+        "tock",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The clock did not stop. It passed the minute!",
+      "fr": "L'horloge ne s'arrêta pas. Elle dépassa la minute !",
+      "g": {
+       "did": [
+        "(did not stop : ne s'arrêta pas)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "stop": [
+        "(did not stop : ne s'arrêta pas)",
+        "stop",
+        "v",
+        "arrêter"
+       ],
+       "passed": [
+        "dépassa",
+        "pass",
+        "v",
+        "passer"
+       ],
+       "minute": [
+        "minute",
+        "minute",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Everybody cheered, and Aunt Leila laughed through her happy tears.",
+      "fr": "Tout le monde applaudit, et tante Leila rit à travers ses larmes de joie.",
+      "g": {
+       "everybody": [
+        "tout le monde",
+        "everybody",
+        "p"
+       ],
+       "cheered": [
+        "applaudit",
+        "cheer",
+        "v",
+        "applaudir"
+       ],
+       "aunt": [
+        "tante",
+        "aunt",
+        "n"
+       ],
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "through": [
+        "à travers",
+        "through",
+        "r"
+       ],
+       "happy": [
+        "de joie",
+        "happy",
+        "a"
+       ],
+       "tears": [
+        "larmes",
+        "tear",
+        "n",
+        "larme"
+       ]
+      }
+     },
+     {
+      "en": "“Welcome, neighbours!” she told the new family.",
+      "fr": "« Bienvenue, voisins ! » dit-elle à la nouvelle famille.",
+      "g": {
+       "welcome": [
+        "bienvenue",
+        "welcome",
+        "n"
+       ],
+       "neighbours": [
+        "voisins",
+        "neighbour",
+        "n",
+        "voisin"
+       ],
+       "told": [
+        "dit",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "new": [
+        "nouvelle",
+        "new",
+        "a"
+       ],
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“A kind woman said those words to us long ago.”",
+      "fr": "« Une femme gentille nous a dit ces mots il y a longtemps. »",
+      "g": {
+       "kind": [
+        "gentille",
+        "kind",
+        "a"
+       ],
+       "woman": [
+        "femme",
+        "woman",
+        "n"
+       ],
+       "said": [
+        "a dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "those": [
+        "ces",
+        "those",
+        "t"
+       ],
+       "words": [
+        "mots",
+        "word",
+        "n",
+        "mot"
+       ],
+       "long": [
+        "(long ago : il y a longtemps)",
+        "long",
+        "a"
+       ],
+       "ago": [
+        "il y a (long ago)",
+        "ago",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "That night, Elias wrote his own letter and put it in the blue box.",
+      "fr": "Cette nuit-là, Elias écrivit sa propre lettre et la mit dans la boîte bleue.",
+      "g": {
+       "that": [
+        "cette",
+        "that",
+        "t"
+       ],
+       "night": [
+        "nuit",
+        "night",
+        "n"
+       ],
+       "wrote": [
+        "écrivit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "own": [
+        "propre",
+        "own",
+        "a"
+       ],
+       "letter": [
+        "lettre",
+        "letter",
+        "n"
+       ],
+       "put": [
+        "mit",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "it": [
+        "la",
+        "it",
+        "p"
+       ],
+       "blue": [
+        "bleue",
+        "blue",
+        "a"
+       ],
+       "box": [
+        "boîte",
+        "box",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Some minutes are too important to forget.",
+      "fr": "Certaines minutes sont trop importantes pour être oubliées.",
+      "g": {
+       "some": [
+        "certaines",
+        "some",
+        "t"
+       ],
+       "minutes": [
+        "minutes",
+        "minute",
+        "n",
+        "minute"
+       ],
+       "important": [
+        "importantes",
+        "important",
+        "a"
+       ],
+       "forget": [
+        "oubliées (to forget)",
+        "forget",
+        "v",
+        "oublier"
+       ],
+       "too": [
+        "trop",
+        "too",
+        "d"
+       ],
+       "to": [
+        "pour",
+        "to",
+        "r"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 7 — Quarter Past Three",
+   "titreFr": "Chapitre 7 — Trois heures et quart"
+  }
+ ]
+}

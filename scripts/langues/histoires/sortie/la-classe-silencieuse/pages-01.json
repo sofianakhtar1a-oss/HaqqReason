@@ -1,0 +1,4021 @@
+{
+  "debut": 1,
+  "lexique": {
+    "week": [
+      "semaine",
+      "week",
+      "n"
+    ],
+    "september": [
+      "septembre",
+      "September",
+      "n"
+    ],
+    "classroom": [
+      "salle de classe",
+      "classroom",
+      "n"
+    ],
+    "hartley": [
+      "Hartley (nom de lieu)",
+      "Hartley",
+      "np"
+    ],
+    "school": [
+      "collège",
+      "school",
+      "n"
+    ],
+    "smelled": [
+      "sentait",
+      "smell",
+      "v",
+      "sentir"
+    ],
+    "floor": [
+      "sol",
+      "floor",
+      "n"
+    ],
+    "polish": [
+      "encaustique",
+      "polish",
+      "n"
+    ],
+    "notebooks": [
+      "cahiers",
+      "notebook",
+      "n",
+      "cahier"
+    ],
+    "adam": [
+      "Adam (prénom)",
+      "Adam",
+      "np"
+    ],
+    "clarke": [
+      "Clarke (nom de famille)",
+      "Clarke",
+      "np"
+    ],
+    "sat": [
+      "était assis",
+      "sit",
+      "v",
+      "s'asseoir"
+    ],
+    "window": [
+      "fenêtre",
+      "window",
+      "n"
+    ],
+    "drawing": [
+      "dessinant",
+      "draw",
+      "v",
+      "dessiner"
+    ],
+    "cameras": [
+      "caméras",
+      "camera",
+      "n",
+      "caméra"
+    ],
+    "margin": [
+      "marge",
+      "margin",
+      "n"
+    ],
+    "planner": [
+      "agenda",
+      "planner",
+      "n"
+    ],
+    "loved": [
+      "adorait",
+      "love",
+      "v",
+      "adorer"
+    ],
+    "films": [
+      "films",
+      "film",
+      "n",
+      "film"
+    ],
+    "dreamed": [
+      "rêvait",
+      "dream",
+      "v",
+      "rêver"
+    ],
+    "making": [
+      "réaliser",
+      "make",
+      "v",
+      "faire"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "mrs": [
+      "Madame",
+      "Mrs",
+      "n"
+    ],
+    "okafor": [
+      "Okafor (nom de famille)",
+      "Okafor",
+      "np"
+    ],
+    "form": [
+      "(form tutor : professeure principale)",
+      "form",
+      "n"
+    ],
+    "tutor": [
+      "professeure principale (form tutor)",
+      "tutor",
+      "n"
+    ],
+    "new": [
+      "nouveau",
+      "new",
+      "a"
+    ],
+    "student": [
+      "élève",
+      "student",
+      "n"
+    ],
+    "kind": [
+      "gentils",
+      "kind",
+      "a",
+      "gentil"
+    ],
+    "door": [
+      "porte",
+      "door",
+      "n"
+    ],
+    "opened": [
+      "s'ouvrit",
+      "open",
+      "v",
+      "ouvrir"
+    ],
+    "tall": [
+      "grand",
+      "tall",
+      "a"
+    ],
+    "boy": [
+      "garçon",
+      "boy",
+      "n"
+    ],
+    "short": [
+      "courts",
+      "short",
+      "a",
+      "court"
+    ],
+    "dark": [
+      "bruns",
+      "dark",
+      "a",
+      "brun"
+    ],
+    "hair": [
+      "cheveux",
+      "hair",
+      "n"
+    ],
+    "followed": [
+      "suivi",
+      "follow",
+      "v",
+      "suivre"
+    ],
+    "young": [
+      "jeune",
+      "young",
+      "a"
+    ],
+    "woman": [
+      "femme",
+      "woman",
+      "n"
+    ],
+    "carrying": [
+      "portant",
+      "carry",
+      "v",
+      "porter"
+    ],
+    "folder": [
+      "chemise cartonnée",
+      "folder",
+      "n"
+    ],
+    "tom": [
+      "Tom (prénom)",
+      "Tom",
+      "np"
+    ],
+    "fletcher": [
+      "Fletcher (nom de famille)",
+      "Fletcher",
+      "np"
+    ],
+    "continued": [
+      "poursuivit",
+      "continue",
+      "v",
+      "poursuivre"
+    ],
+    "deaf": [
+      "sourd",
+      "Deaf",
+      "a"
+    ],
+    "uses": [
+      "utilise",
+      "use",
+      "v",
+      "utiliser"
+    ],
+    "british": [
+      "britannique",
+      "British",
+      "a"
+    ],
+    "bsl": [
+      "BSL (langue des signes britannique)",
+      "BSL",
+      "np"
+    ],
+    "reyes": [
+      "Reyes (nom de famille)",
+      "Reyes",
+      "np"
+    ],
+    "lesson": [
+      "cours",
+      "lesson",
+      "n"
+    ],
+    "lifted": [
+      "leva",
+      "lift",
+      "v",
+      "lever"
+    ],
+    "hands": [
+      "mains",
+      "hand",
+      "n",
+      "main"
+    ],
+    "moved": [
+      "bougèrent",
+      "move",
+      "v",
+      "bouger"
+    ],
+    "quickly": [
+      "vite",
+      "quickly",
+      "d"
+    ],
+    "hardly": [
+      "à peine",
+      "hardly",
+      "d"
+    ],
+    "nodded": [
+      "hocha la tête",
+      "nod",
+      "v",
+      "hocher la tête"
+    ],
+    "smiled": [
+      "sourit",
+      "smile",
+      "v",
+      "sourire"
+    ],
+    "told": [
+      "dit à",
+      "tell",
+      "v",
+      "dire"
+    ],
+    "class": [
+      "classe",
+      "class",
+      "n"
+    ],
+    "bit": [
+      "peu",
+      "bit",
+      "n"
+    ],
+    "nervous": [
+      "nerveux",
+      "nervous",
+      "a"
+    ],
+    "lucas": [
+      "Lucas (prénom)",
+      "Lucas",
+      "np"
+    ],
+    "maths": [
+      "maths",
+      "maths",
+      "n"
+    ],
+    "muttered": [
+      "marmonna",
+      "mutter",
+      "v",
+      "marmonner"
+    ],
+    "free": [
+      "libre",
+      "free",
+      "a"
+    ],
+    "chair": [
+      "chaise",
+      "chair",
+      "n"
+    ],
+    "crossed": [
+      "traversa",
+      "cross",
+      "v",
+      "traverser"
+    ],
+    "room": [
+      "salle",
+      "room",
+      "n"
+    ],
+    "hi": [
+      "salut",
+      "hi",
+      "d"
+    ],
+    "watched": [
+      "observa",
+      "watch",
+      "v",
+      "observer"
+    ],
+    "lips": [
+      "lèvres",
+      "lip",
+      "n",
+      "lèvre"
+    ],
+    "carefully": [
+      "avec attention",
+      "carefully",
+      "d"
+    ],
+    "turned": [
+      "se tourna",
+      "turn",
+      "v",
+      "se tourner"
+    ],
+    "board": [
+      "tableau",
+      "board",
+      "n"
+    ],
+    "felt": [
+      "se sentit",
+      "feel",
+      "v",
+      "sentir"
+    ],
+    "strangely": [
+      "étrangement",
+      "strangely",
+      "d"
+    ],
+    "disappointed": [
+      "déçu",
+      "disappointed",
+      "a"
+    ],
+    "wednesday": [
+      "mercredi",
+      "Wednesday",
+      "n"
+    ],
+    "decided": [
+      "décidé",
+      "decide",
+      "v",
+      "décider"
+    ],
+    "become": [
+      "devenir",
+      "become",
+      "v",
+      "devenir"
+    ],
+    "tom's": [
+      "de Tom",
+      "Tom",
+      "np"
+    ],
+    "friend": [
+      "ami",
+      "friend",
+      "n"
+    ],
+    "term": [
+      "trimestre",
+      "term",
+      "n"
+    ],
+    "problem": [
+      "problème",
+      "problem",
+      "n"
+    ],
+    "idea": [
+      "idée",
+      "idea",
+      "n"
+    ],
+    "begin": [
+      "commencer",
+      "begin",
+      "v",
+      "commencer"
+    ],
+    "science": [
+      "sciences",
+      "science",
+      "n"
+    ],
+    "leaned": [
+      "se pencha",
+      "lean",
+      "v",
+      "se pencher"
+    ],
+    "loudly": [
+      "fort",
+      "loudly",
+      "d"
+    ],
+    "slowly": [
+      "lentement",
+      "slowly",
+      "d"
+    ],
+    "half": [
+      "moitié",
+      "half",
+      "n"
+    ],
+    "long": [
+      "long",
+      "long",
+      "a"
+    ],
+    "moment": [
+      "moment",
+      "moment",
+      "n"
+    ],
+    "took": [
+      "prit",
+      "take",
+      "v",
+      "prendre"
+    ],
+    "pen": [
+      "stylo",
+      "pen",
+      "n"
+    ],
+    "wrote": [
+      "écrivit",
+      "write",
+      "v",
+      "écrire"
+    ],
+    "notepad": [
+      "bloc-notes",
+      "notepad",
+      "n"
+    ],
+    "stupid": [
+      "idiot",
+      "stupid",
+      "a"
+    ],
+    "written": [
+      "écrit",
+      "write",
+      "v",
+      "écrire"
+    ],
+    "speak": [
+      "parle",
+      "speak",
+      "v",
+      "parler"
+    ],
+    "normally": [
+      "normalement",
+      "normally",
+      "d"
+    ],
+    "shouting": [
+      "crier",
+      "shout",
+      "v",
+      "crier"
+    ],
+    "help": [
+      "aide",
+      "help",
+      "n"
+    ],
+    "adam's": [
+      "d'Adam",
+      "Adam",
+      "np"
+    ],
+    "face": [
+      "visage",
+      "face",
+      "n"
+    ],
+    "red": [
+      "rouge",
+      "red",
+      "a"
+    ],
+    "tomato": [
+      "tomate",
+      "tomato",
+      "n"
+    ],
+    "sorry": [
+      "désolé",
+      "sorry",
+      "a"
+    ],
+    "whispered": [
+      "chuchota",
+      "whisper",
+      "v",
+      "chuchoter"
+    ],
+    "word": [
+      "mot",
+      "word",
+      "n"
+    ],
+    "break": [
+      "récréation",
+      "break",
+      "n"
+    ],
+    "things": [
+      "choses",
+      "thing",
+      "n",
+      "chose"
+    ],
+    "bad": [
+      "mal",
+      "bad",
+      "a"
+    ],
+    "worse": [
+      "pis",
+      "bad",
+      "a",
+      "mauvais"
+    ],
+    "crossing": [
+      "traversait",
+      "cross",
+      "v",
+      "traverser"
+    ],
+    "playground": [
+      "cour de récréation",
+      "playground",
+      "n"
+    ],
+    "called": [
+      "appela",
+      "call",
+      "v",
+      "appeler"
+    ],
+    "walking": [
+      "marcher",
+      "walk",
+      "v",
+      "marcher"
+    ],
+    "shouted": [
+      "cria",
+      "shout",
+      "v",
+      "crier"
+    ],
+    "louder": [
+      "plus fort",
+      "loud",
+      "d",
+      "fort"
+    ],
+    "rude": [
+      "impoli",
+      "rude",
+      "a"
+    ],
+    "kicking": [
+      "donnait des coups de pied dans",
+      "kick",
+      "v",
+      "donner un coup de pied"
+    ],
+    "ball": [
+      "ballon",
+      "ball",
+      "n"
+    ],
+    "nearby": [
+      "non loin de là",
+      "nearby",
+      "d"
+    ],
+    "wanted": [
+      "voulais",
+      "want",
+      "v",
+      "vouloir"
+    ],
+    "thinks": [
+      "se croit",
+      "think",
+      "v",
+      "penser"
+    ],
+    "shrug": [
+      "haussement d'épaules",
+      "shrug",
+      "n"
+    ],
+    "sure": [
+      "sûr",
+      "sure",
+      "a"
+    ],
+    "night": [
+      "nuit",
+      "night",
+      "n"
+    ],
+    "awake": [
+      "éveillé",
+      "awake",
+      "a"
+    ],
+    "wrong": [
+      "de travers",
+      "wrong",
+      "d"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "front": [
+      "devant",
+      "front",
+      "n"
+    ],
+    "tired": [
+      "fatigué",
+      "tired",
+      "a"
+    ],
+    "smile": [
+      "sourire",
+      "smile",
+      "n"
+    ],
+    "suddenly": [
+      "soudain",
+      "suddenly",
+      "d"
+    ],
+    "realised": [
+      "comprit",
+      "realise",
+      "v",
+      "se rendre compte"
+    ],
+    "lunchtime": [
+      "heure du déjeuner",
+      "lunchtime",
+      "n"
+    ],
+    "corridor": [
+      "couloir",
+      "corridor",
+      "n"
+    ],
+    "minute": [
+      "minute",
+      "minute",
+      "n"
+    ],
+    "asked": [
+      "demanda",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "talk": [
+      "parler",
+      "talk",
+      "v",
+      "parler"
+    ],
+    "shoes": [
+      "chaussures",
+      "shoe",
+      "n",
+      "chaussure"
+    ],
+    "know": [
+      "sais",
+      "know",
+      "v",
+      "savoir"
+    ],
+    "explained": [
+      "expliqua",
+      "explain",
+      "v",
+      "expliquer"
+    ],
+    "people": [
+      "personnes",
+      "person",
+      "n",
+      "personne"
+    ],
+    "shout": [
+      "crient",
+      "shout",
+      "v",
+      "crier"
+    ],
+    "someone's": [
+      "de quelqu'un",
+      "someone",
+      "p"
+    ],
+    "attention": [
+      "attention",
+      "attention",
+      "n"
+    ],
+    "wave": [
+      "font signe de la main",
+      "wave",
+      "v",
+      "faire signe"
+    ],
+    "shoulder": [
+      "épaule",
+      "shoulder",
+      "n"
+    ],
+    "stamp": [
+      "frappent du pied",
+      "stamp",
+      "v",
+      "frapper du pied"
+    ],
+    "vibration": [
+      "vibration",
+      "vibration",
+      "n"
+    ],
+    "travels": [
+      "se propage",
+      "travel",
+      "v",
+      "voyager"
+    ],
+    "lip-reading": [
+      "lecture labiale",
+      "lip-reading",
+      "n"
+    ],
+    "magic": [
+      "magique",
+      "magic",
+      "a"
+    ],
+    "added": [
+      "ajouta",
+      "add",
+      "v",
+      "ajouter"
+    ],
+    "lip-readers": [
+      "lecteurs sur les lèvres",
+      "lip-reader",
+      "n",
+      "lecteur sur les lèvres"
+    ],
+    "catch": [
+      "saisissent",
+      "catch",
+      "v",
+      "attraper"
+    ],
+    "part": [
+      "partie",
+      "part",
+      "n"
+    ],
+    "words": [
+      "mots",
+      "word",
+      "n",
+      "mot"
+    ],
+    "listened": [
+      "écoutait",
+      "listen",
+      "v",
+      "écouter"
+    ],
+    "mouth": [
+      "bouche",
+      "mouth",
+      "n"
+    ],
+    "open": [
+      "ouverte",
+      "open",
+      "a"
+    ],
+    "english": [
+      "anglais",
+      "English",
+      "n"
+    ],
+    "real": [
+      "vraie",
+      "real",
+      "a"
+    ],
+    "language": [
+      "langue",
+      "language",
+      "n"
+    ],
+    "grammar": [
+      "grammaire",
+      "grammar",
+      "n"
+    ],
+    "faces": [
+      "visages",
+      "face",
+      "n",
+      "visage"
+    ],
+    "bodies": [
+      "corps",
+      "body",
+      "n",
+      "corps"
+    ],
+    "space": [
+      "espace",
+      "space",
+      "n"
+    ],
+    "want": [
+      "veux",
+      "want",
+      "v",
+      "vouloir"
+    ],
+    "learn": [
+      "apprendre",
+      "learn",
+      "v",
+      "apprendre"
+    ],
+    "difficult": [
+      "difficile",
+      "difficult",
+      "a"
+    ],
+    "tried": [
+      "essayais",
+      "try",
+      "v",
+      "essayer"
+    ],
+    "evening": [
+      "soir",
+      "evening",
+      "n"
+    ],
+    "mother": [
+      "mère",
+      "mother",
+      "n"
+    ],
+    "laptop": [
+      "ordinateur portable",
+      "laptop",
+      "n"
+    ],
+    "found": [
+      "trouva",
+      "find",
+      "v",
+      "trouver"
+    ],
+    "beginners": [
+      "débutants",
+      "beginner",
+      "n",
+      "débutant"
+    ],
+    "course": [
+      "cours",
+      "course",
+      "n"
+    ],
+    "community": [
+      "communauté",
+      "community",
+      "n"
+    ],
+    "centre": [
+      "centre",
+      "centre",
+      "n"
+    ],
+    "saturday": [
+      "samedi",
+      "Saturday",
+      "n"
+    ],
+    "promise": [
+      "promets",
+      "promise",
+      "v",
+      "promettre"
+    ],
+    "practise": [
+      "t'entraîner",
+      "practise",
+      "v",
+      "s'entraîner"
+    ],
+    "smiling": [
+      "en souriant",
+      "smile",
+      "v",
+      "sourire"
+    ],
+    "hopeful": [
+      "plein d'espoir",
+      "hopeful",
+      "a"
+    ],
+    "arrived": [
+      "arriva",
+      "arrive",
+      "v",
+      "arriver"
+    ],
+    "riverside": [
+      "Riverside (nom de lieu)",
+      "Riverside",
+      "np"
+    ],
+    "minutes": [
+      "minutes",
+      "minute",
+      "n",
+      "minute"
+    ],
+    "adults": [
+      "adultes",
+      "adult",
+      "n",
+      "adulte"
+    ],
+    "exactly": [
+      "précises",
+      "exactly",
+      "d"
+    ],
+    "o'clock": [
+      "heures",
+      "o'clock",
+      "d"
+    ],
+    "man": [
+      "homme",
+      "man",
+      "n"
+    ],
+    "bright": [
+      "vif",
+      "bright",
+      "a"
+    ],
+    "yellow": [
+      "jaune",
+      "yellow",
+      "a"
+    ],
+    "jumper": [
+      "pull",
+      "jumper",
+      "n"
+    ],
+    "whiteboard": [
+      "tableau blanc",
+      "whiteboard",
+      "n"
+    ],
+    "samuel": [
+      "Samuel (prénom)",
+      "Samuel",
+      "np"
+    ],
+    "voices": [
+      "voix",
+      "voice",
+      "n",
+      "voix"
+    ],
+    "stomach": [
+      "estomac",
+      "stomach",
+      "n"
+    ],
+    "teach": [
+      "enseigner",
+      "teach",
+      "v",
+      "enseigner"
+    ],
+    "speaking": [
+      "parler",
+      "speak",
+      "v",
+      "parler"
+    ],
+    "beautifully": [
+      "à merveille",
+      "beautifully",
+      "d"
+    ],
+    "pictures": [
+      "images",
+      "picture",
+      "n",
+      "image"
+    ],
+    "mime": [
+      "mime",
+      "mime",
+      "n"
+    ],
+    "expressive": [
+      "expressif",
+      "expressive",
+      "a"
+    ],
+    "whole": [
+      "entière",
+      "whole",
+      "a"
+    ],
+    "laughing": [
+      "riait",
+      "laugh",
+      "v",
+      "rire"
+    ],
+    "silently": [
+      "en silence",
+      "silently",
+      "d"
+    ],
+    "eye": [
+      "regard",
+      "eye",
+      "n"
+    ],
+    "contact": [
+      "échange",
+      "contact",
+      "n"
+    ],
+    "fingerspelling": [
+      "dactylologie",
+      "fingerspelling",
+      "n"
+    ],
+    "alphabet": [
+      "alphabet",
+      "alphabet",
+      "n"
+    ],
+    "vowels": [
+      "voyelles",
+      "vowel",
+      "n",
+      "voyelle"
+    ],
+    "fingers": [
+      "doigts",
+      "finger",
+      "n",
+      "doigt"
+    ],
+    "samuel's": [
+      "de Samuel",
+      "Samuel",
+      "np"
+    ],
+    "notes": [
+      "notes",
+      "note",
+      "n",
+      "note"
+    ],
+    "spelled": [
+      "épela",
+      "spell",
+      "v",
+      "épeler"
+    ],
+    "name": [
+      "nom",
+      "name",
+      "n"
+    ],
+    "a-d-a-m": [
+      "A-D-A-M (nom épelé)",
+      "Adam",
+      "np"
+    ],
+    "fast": [
+      "vite",
+      "fast",
+      "d"
+    ],
+    "signs": [
+      "signes",
+      "sign",
+      "n",
+      "signe"
+    ],
+    "thank": [
+      "merci",
+      "thank",
+      "v",
+      "remercier"
+    ],
+    "eyebrows": [
+      "sourcils",
+      "eyebrow",
+      "n",
+      "sourcil"
+    ],
+    "question": [
+      "question",
+      "question",
+      "n"
+    ],
+    "fatima": [
+      "Fatima (prénom)",
+      "Fatima",
+      "np"
+    ],
+    "nurse": [
+      "infirmière",
+      "nurse",
+      "n"
+    ],
+    "paper": [
+      "feuille",
+      "paper",
+      "n"
+    ],
+    "understand": [
+      "comprendre",
+      "understand",
+      "v",
+      "comprendre"
+    ],
+    "patients": [
+      "patients",
+      "patient",
+      "n",
+      "patient"
+    ],
+    "homework": [
+      "devoirs",
+      "homework",
+      "n"
+    ],
+    "fifteen": [
+      "quinze",
+      "fifteen",
+      "a"
+    ],
+    "practice": [
+      "entraînement",
+      "practice",
+      "n"
+    ],
+    "day": [
+      "jour",
+      "day",
+      "n"
+    ],
+    "person": [
+      "personne",
+      "person",
+      "n"
+    ],
+    "gift": [
+      "cadeau",
+      "gift",
+      "n"
+    ],
+    "practised": [
+      "s'entraîna",
+      "practise",
+      "v",
+      "s'entraîner"
+    ],
+    "bathroom": [
+      "salle de bains",
+      "bathroom",
+      "n"
+    ],
+    "mirror": [
+      "miroir",
+      "mirror",
+      "n"
+    ],
+    "laughed": [
+      "rit",
+      "laugh",
+      "v",
+      "rire"
+    ],
+    "invisible": [
+      "invisibles",
+      "invisible",
+      "a"
+    ],
+    "butterflies": [
+      "papillons",
+      "butterfly",
+      "n",
+      "papillon"
+    ],
+    "monday": [
+      "lundi",
+      "Monday",
+      "n"
+    ],
+    "sentence": [
+      "phrase",
+      "sentence",
+      "n"
+    ],
+    "registration": [
+      "appel",
+      "registration",
+      "n"
+    ],
+    "waited": [
+      "attendit",
+      "wait",
+      "v",
+      "attendre"
+    ],
+    "raised": [
+      "leva",
+      "raise",
+      "v",
+      "lever"
+    ],
+    "hand": [
+      "main",
+      "hand",
+      "n"
+    ],
+    "say": [
+      "dire",
+      "say",
+      "v",
+      "dire"
+    ],
+    "unfortunately": [
+      "malheureusement",
+      "unfortunately",
+      "d"
+    ],
+    "eyes": [
+      "yeux",
+      "eye",
+      "n",
+      "œil"
+    ],
+    "shoulders": [
+      "épaules",
+      "shoulder",
+      "n",
+      "épaule"
+    ],
+    "shake": [
+      "trembler",
+      "shake",
+      "v",
+      "trembler"
+    ],
+    "apologised": [
+      "t'excuser",
+      "apologise",
+      "v",
+      "s'excuser"
+    ],
+    "lunch": [
+      "déjeuner",
+      "lunch",
+      "n"
+    ],
+    "box": [
+      "boîte",
+      "box",
+      "n"
+    ],
+    "child": [
+      "enfant",
+      "child",
+      "n"
+    ],
+    "translating": [
+      "en traduisant",
+      "translate",
+      "v",
+      "traduire"
+    ],
+    "grinned": [
+      "sourit jusqu'aux oreilles",
+      "grin",
+      "v",
+      "sourire largement"
+    ],
+    "friendly": [
+      "amicale",
+      "friendly",
+      "a"
+    ],
+    "tap": [
+      "tape",
+      "tap",
+      "n"
+    ],
+    "silence": [
+      "silence",
+      "silence",
+      "n"
+    ],
+    "wall": [
+      "mur",
+      "wall",
+      "n"
+    ]
+  },
+  "pages": [
+    {
+      "titre": "Chapter 1 — The New Boy",
+      "titreFr": "Chapitre 1 — Le nouveau",
+      "p": [
+        [
+          {
+            "en": "It was the second week of September, and the Year 8 classroom at Hartley School smelled of floor polish and new notebooks.",
+            "fr": "C'était la deuxième semaine de septembre, et la salle de classe de 5e du collège de Hartley sentait l'encaustique et les cahiers neufs.",
+            "g": {
+              "of#2": [
+                "(smelled of : sentait)",
+                "of",
+                "r"
+              ],
+              "second": [
+                "deuxième",
+                "second",
+                "a"
+              ],
+              "new": [
+                "neufs",
+                "new",
+                "a",
+                "neuf"
+              ],
+              "year": [
+                "année (Year 8 : 5e)",
+                "year",
+                "n"
+              ],
+              "floor": [
+                "(floor polish : encaustique)",
+                "floor",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Adam Clarke sat by the window, drawing little cameras in the margin of his planner.",
+            "fr": "Adam Clarke était assis près de la fenêtre et dessinait de petites caméras dans la marge de son agenda.",
+            "g": {
+              "by": [
+                "près de",
+                "by",
+                "r"
+              ],
+              "little": [
+                "petites",
+                "little",
+                "a",
+                "petit"
+              ],
+              "drawing": [
+                "dessinait",
+                "draw",
+                "v",
+                "dessiner"
+              ]
+            }
+          },
+          {
+            "en": "He loved films more than anything, and he dreamed of making one of his own.",
+            "fr": "Il adorait les films plus que tout, et il rêvait d'en réaliser un à lui.",
+            "g": {
+              "more": [
+                "(more than anything : plus que tout)",
+                "more",
+                "d"
+              ],
+              "than": [
+                "(more than anything : plus que tout)",
+                "than",
+                "c"
+              ],
+              "anything": [
+                "(more than anything : plus que tout)",
+                "anything",
+                "p"
+              ],
+              "of": [
+                "(dreamed of : rêvait de)",
+                "of",
+                "r"
+              ],
+              "of#2": [
+                "(of his own : à lui)",
+                "of",
+                "r"
+              ],
+              "own": [
+                "(of his own : à lui)",
+                "own",
+                "a"
+              ],
+              "one": [
+                "un (film)",
+                "one",
+                "p"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“Settle down, everyone,” said Mrs Okafor, their form tutor.",
+            "fr": "« Calmez-vous, tout le monde », dit Mme Okafor, leur professeure principale.",
+            "g": {
+              "settle": [
+                "calmez-vous (settle down)",
+                "settle",
+                "v",
+                "se calmer"
+              ],
+              "down": [
+                "(settle down : calmez-vous)",
+                "down",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“We have a new student today, so please be kind.”",
+            "fr": "« Nous avons un nouvel élève aujourd'hui, alors soyez gentils, s'il vous plaît. »",
+            "g": {
+              "have": [
+                "avons",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ],
+              "new": [
+                "nouvel",
+                "new",
+                "a",
+                "nouveau"
+              ]
+            }
+          },
+          {
+            "en": "The door opened, and a tall boy with short dark hair came in, followed by a young woman carrying a folder.",
+            "fr": "La porte s'ouvrit, et un grand garçon aux cheveux courts et bruns entra, suivi d'une jeune femme qui portait une chemise cartonnée.",
+            "g": {
+              "in": [
+                "(came in : entra)",
+                "in",
+                "d"
+              ],
+              "came": [
+                "entra (came in)",
+                "come",
+                "v",
+                "venir"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“This is Tom Fletcher,” Mrs Okafor continued.",
+            "fr": "« Voici Tom Fletcher », poursuivit Mme Okafor.",
+            "g": {
+              "this": [
+                "voici",
+                "this",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“Tom is Deaf, and he uses British Sign Language, or BSL.”",
+            "fr": "« Tom est sourd, et il utilise la langue des signes britannique, la BSL. »",
+            "g": {
+              "or": [
+                "autrement dit",
+                "or",
+                "c"
+              ],
+              "sign": [
+                "(Sign Language : langue des signes)",
+                "sign",
+                "n"
+              ],
+              "language": [
+                "(Sign Language : langue des signes)",
+                "language",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Mrs Reyes will sign what I say, so that Tom can follow the lesson.”",
+            "fr": "« Mme Reyes signera ce que je dis, afin que Tom puisse suivre le cours. »",
+            "g": {
+              "will": [
+                "(futur)",
+                "will",
+                "v"
+              ],
+              "sign": [
+                "signera",
+                "sign",
+                "v",
+                "signer"
+              ],
+              "what": [
+                "ce que",
+                "what",
+                "p"
+              ],
+              "so": [
+                "(so that : afin que)",
+                "so",
+                "c"
+              ],
+              "that": [
+                "(so that : afin que)",
+                "that",
+                "c"
+              ],
+              "follow": [
+                "suivre",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "say": [
+                "dis",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Mrs Reyes lifted her hands, and they moved so quickly that Adam could hardly follow them.",
+            "fr": "Mme Reyes leva les mains, et elles bougèrent si vite qu'Adam arrivait à peine à les suivre.",
+            "g": {
+              "so": [
+                "si",
+                "so",
+                "d"
+              ],
+              "that": [
+                "(so quickly that : si vite que)",
+                "that",
+                "c"
+              ],
+              "follow": [
+                "suivre (du regard)",
+                "follow",
+                "v",
+                "suivre"
+              ],
+              "could": [
+                "arrivait à",
+                "can",
+                "v",
+                "pouvoir"
+              ]
+            }
+          },
+          {
+            "en": "Tom nodded and signed something back, and Mrs Reyes smiled.",
+            "fr": "Tom hocha la tête et répondit par quelques signes, et Mme Reyes sourit.",
+            "g": {
+              "back": [
+                "(signed back : répondit par signes)",
+                "back",
+                "d"
+              ],
+              "signed": [
+                "répondit par signes",
+                "sign",
+                "v",
+                "signer"
+              ]
+            }
+          },
+          {
+            "en": "“Tom says hello,” she told the class, “and he says he is a bit nervous.”",
+            "fr": "« Tom dit bonjour », dit-elle à la classe, « et il dit qu'il est un peu nerveux. »",
+            "g": {
+              "says": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "says#2": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Behind Adam, Lucas leaned forward.",
+            "fr": "Derrière Adam, Lucas se pencha en avant.",
+            "g": {
+              "forward": [
+                "(leaned forward : se pencha en avant)",
+                "forward",
+                "d"
+              ],
+              "leaned": [
+                "se pencha (leaned forward)",
+                "lean",
+                "v",
+                "se pencher"
+              ]
+            }
+          },
+          {
+            "en": "“How will he do maths if he can't hear?” he muttered.",
+            "fr": "« Comment va-t-il faire des maths s'il n'entend pas ? » marmonna-t-il.",
+            "g": {
+              "will": [
+                "(futur)",
+                "will",
+                "v"
+              ],
+              "do": [
+                "faire",
+                "do",
+                "v",
+                "faire"
+              ],
+              "hear": [
+                "entendre",
+                "hear",
+                "v",
+                "entendre"
+              ]
+            }
+          },
+          {
+            "en": "The only free chair was next to his, so Tom crossed the room and sat down.",
+            "fr": "La seule chaise libre était à côté de la sienne, alors Tom traversa la salle et s'assit.",
+            "g": {
+              "only": [
+                "seule",
+                "only",
+                "a"
+              ],
+              "his": [
+                "la sienne",
+                "his",
+                "p"
+              ],
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ],
+              "sat": [
+                "s'assit (sat down)",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sat down : s'assit)",
+                "down",
+                "d"
+              ],
+              "next": [
+                "(next to : à côté de)",
+                "next",
+                "d"
+              ],
+              "to": [
+                "(next to : à côté de)",
+                "to",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Adam smiled and said, “Hi. I'm Adam.”",
+            "fr": "Adam sourit et dit : « Salut. Moi, c'est Adam. »"
+          },
+          {
+            "en": "Tom watched his lips carefully, nodded once, and turned to face the board.",
+            "fr": "Tom observa ses lèvres avec attention, hocha la tête une fois, et se tourna vers le tableau.",
+            "g": {
+              "once": [
+                "une fois",
+                "once",
+                "d"
+              ],
+              "to": [
+                "(turned to face : se tourna vers)",
+                "to",
+                "x"
+              ],
+              "face": [
+                "(turned to face : se tourna vers)",
+                "face",
+                "v",
+                "faire face à"
+              ]
+            }
+          },
+          {
+            "en": "Adam felt strangely disappointed, as if he had knocked on a door that nobody was going to open.",
+            "fr": "Adam se sentit étrangement déçu, comme s'il avait frappé à une porte que personne n'allait ouvrir.",
+            "g": {
+              "as": [
+                "(as if : comme si)",
+                "as",
+                "c"
+              ],
+              "if": [
+                "(as if : comme si)",
+                "if",
+                "c"
+              ],
+              "knocked": [
+                "frappé",
+                "knock",
+                "v",
+                "frapper"
+              ],
+              "on": [
+                "à",
+                "on",
+                "r"
+              ],
+              "that": [
+                "que",
+                "that",
+                "p"
+              ],
+              "to": [
+                "(going to : allait)",
+                "to",
+                "x"
+              ],
+              "going": [
+                "(going to open : allait ouvrir)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "open": [
+                "ouvrir",
+                "open",
+                "v"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "By Wednesday, Adam had decided that he would become Tom's friend, even if it took all term.",
+            "fr": "Dès le mercredi, Adam avait décidé qu'il deviendrait l'ami de Tom, même si cela devait lui prendre tout le trimestre.",
+            "g": {
+              "by": [
+                "dès",
+                "by",
+                "r"
+              ],
+              "would": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "even": [
+                "même",
+                "even",
+                "d"
+              ],
+              "if": [
+                "si",
+                "if",
+                "c"
+              ],
+              "took": [
+                "devait prendre",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "all": [
+                "tout",
+                "all",
+                "t"
+              ],
+              "become": [
+                "deviendrait",
+                "become",
+                "v",
+                "devenir"
+              ]
+            }
+          },
+          {
+            "en": "The problem was that he had no idea how to begin.",
+            "fr": "Le problème, c'était qu'il n'avait aucune idée de la façon de commencer.",
+            "g": {
+              "no": [
+                "aucune",
+                "no",
+                "t"
+              ],
+              "how": [
+                "(how to : comment)",
+                "how",
+                "d"
+              ],
+              "to": [
+                "(how to begin : comment commencer)",
+                "to",
+                "x"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "During science, he leaned towards Tom and said, very loudly and very slowly, “DO. YOU. LIKE. SCIENCE?”",
+            "fr": "Pendant le cours de sciences, il se pencha vers Tom et dit, très fort et très lentement : « EST-CE. QUE. TU. AIMES. LES. SCIENCES ? »",
+            "g": {
+              "like": [
+                "aimes",
+                "like",
+                "v",
+                "aimer"
+              ],
+              "do": [
+                "(question : est-ce que)",
+                "do",
+                "v",
+                "faire"
+              ],
+              "you": [
+                "tu",
+                "you",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Half the class turned round.",
+            "fr": "La moitié de la classe se retourna.",
+            "g": {
+              "turned": [
+                "se retourna (turned round)",
+                "turn",
+                "v",
+                "se tourner"
+              ],
+              "round": [
+                "(turned round : se retourna)",
+                "round",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Tom looked at him for a long moment, then took a pen and wrote on his notepad.",
+            "fr": "Tom le regarda un long moment, puis prit un stylo et écrivit sur son bloc-notes.",
+            "g": {
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "looked": [
+                "regarda",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(looked at : regarda)",
+                "at",
+                "r"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“I'm Deaf, not stupid,” he had written.",
+            "fr": "« Je suis sourd, pas idiot », avait-il écrit.",
+            "g": {
+              "had": [
+                "avait (+ participe)",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          },
+          {
+            "en": "“Please look at me and speak normally. Shouting doesn't help.”",
+            "fr": "« Regarde-moi et parle normalement, s'il te plaît. Crier n'aide pas. »",
+            "g": {
+              "look": [
+                "regarde",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "at": [
+                "(look at : regarde)",
+                "at",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Adam's face turned as red as a tomato.",
+            "fr": "Le visage d'Adam devint rouge comme une tomate.",
+            "g": {
+              "as": [
+                "(as red as : rouge comme)",
+                "as",
+                "d"
+              ],
+              "as#2": [
+                "(as red as : rouge comme)",
+                "as",
+                "c"
+              ],
+              "turned": [
+                "devint",
+                "turn",
+                "v",
+                "devenir"
+              ]
+            }
+          },
+          {
+            "en": "“Sorry,” he whispered, and he wrote the word down as well, just to be sure.",
+            "fr": "« Désolé », chuchota-t-il, et il écrivit aussi le mot, juste pour être sûr.",
+            "g": {
+              "down": [
+                "(wrote down : écrivit)",
+                "down",
+                "d"
+              ],
+              "wrote": [
+                "écrivit (wrote down)",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "just": [
+                "juste",
+                "just",
+                "d"
+              ],
+              "as": [
+                "(as well : aussi)",
+                "as",
+                "c"
+              ],
+              "well": [
+                "(as well : aussi)",
+                "well",
+                "d"
+              ],
+              "sure": [
+                "sûr",
+                "sure",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "At break, things went from bad to worse.",
+            "fr": "À la récréation, les choses allèrent de mal en pis.",
+            "g": {
+              "at": [
+                "à",
+                "at",
+                "r"
+              ],
+              "from": [
+                "de",
+                "from",
+                "r"
+              ],
+              "went": [
+                "allèrent",
+                "go",
+                "v",
+                "aller"
+              ]
+            }
+          },
+          {
+            "en": "Tom was crossing the playground with his back to Adam, so Adam called, “Tom! Tom! Wait for me!”",
+            "fr": "Tom traversait la cour, le dos tourné à Adam, alors Adam l'appela : « Tom ! Tom ! Attends-moi ! »",
+            "g": {
+              "back": [
+                "dos",
+                "back",
+                "n"
+              ],
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ],
+              "wait": [
+                "attends",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "for": [
+                "(wait for : attendre)",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Tom kept walking, and when Adam shouted again, louder, he still didn't turn round.",
+            "fr": "Tom continua de marcher, et quand Adam cria de nouveau, plus fort, il ne se retourna toujours pas.",
+            "g": {
+              "kept": [
+                "continua (kept walking)",
+                "keep",
+                "v",
+                "continuer"
+              ],
+              "again": [
+                "de nouveau",
+                "again",
+                "d"
+              ],
+              "still": [
+                "toujours",
+                "still",
+                "d"
+              ],
+              "turn": [
+                "se retourner (turn round)",
+                "turn",
+                "v",
+                "se tourner"
+              ],
+              "round": [
+                "(turn round : se retourner)",
+                "round",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Well, that's rude,” Adam told Lucas, who was kicking a ball nearby.",
+            "fr": "« Eh bien, c'est impoli », dit Adam à Lucas, qui donnait des coups de pied dans un ballon non loin de là.",
+            "g": {
+              "well": [
+                "eh bien",
+                "well",
+                "d"
+              ],
+              "that's": [
+                "c'est",
+                "be",
+                "v",
+                "être"
+              ],
+              "told": [
+                "dit à",
+                "tell",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "“I only wanted to say hello.”",
+            "fr": "« Je voulais juste lui dire bonjour. »",
+            "g": {
+              "only": [
+                "juste",
+                "only",
+                "d"
+              ],
+              "say": [
+                "dire",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "“He thinks he's better than us,” Lucas said with a shrug.",
+            "fr": "« Il se croit meilleur que nous », dit Lucas en haussant les épaules.",
+            "g": {
+              "better": [
+                "meilleur",
+                "good",
+                "a",
+                "bon"
+              ],
+              "than": [
+                "que",
+                "than",
+                "c"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Adam wasn't so sure.",
+            "fr": "Adam n'en était pas si sûr.",
+            "g": {
+              "so": [
+                "si",
+                "so",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "That night, he lay awake, wondering what he had done wrong.",
+            "fr": "Cette nuit-là, il resta éveillé, à se demander ce qu'il avait fait de travers.",
+            "g": {
+              "lay": [
+                "resta (couché)",
+                "lie",
+                "v",
+                "être couché"
+              ],
+              "wondering": [
+                "se demandant",
+                "wonder",
+                "v",
+                "se demander"
+              ],
+              "what": [
+                "ce que",
+                "what",
+                "p"
+              ],
+              "done": [
+                "fait",
+                "do",
+                "v",
+                "faire"
+              ],
+              "had": [
+                "avait (+ participe)",
+                "have",
+                "v",
+                "avoir"
+              ]
+            }
+          },
+          {
+            "en": "The next morning, he walked up to Tom, stood right in front of him, and waved.",
+            "fr": "Le lendemain matin, il s'approcha de Tom, se plaça juste devant lui et lui fit un signe de la main.",
+            "g": {
+              "next": [
+                "lendemain",
+                "next",
+                "a"
+              ],
+              "up": [
+                "(walked up to : s'approcha de)",
+                "up",
+                "d"
+              ],
+              "walked": [
+                "s'approcha (walked up to)",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "to": [
+                "(walked up to : s'approcha de)",
+                "to",
+                "r"
+              ],
+              "right": [
+                "juste",
+                "right",
+                "d"
+              ],
+              "waved": [
+                "fit un signe de la main",
+                "wave",
+                "v",
+                "faire signe"
+              ],
+              "stood": [
+                "se plaça",
+                "stand",
+                "v",
+                "se tenir debout"
+              ]
+            }
+          },
+          {
+            "en": "This time, Tom smiled, but it was a tired smile, as if he had been waiting for someone to understand.",
+            "fr": "Cette fois, Tom sourit, mais c'était un sourire fatigué, comme s'il avait attendu que quelqu'un comprenne.",
+            "g": {
+              "this": [
+                "cette",
+                "this",
+                "t"
+              ],
+              "as": [
+                "(as if : comme si)",
+                "as",
+                "c"
+              ],
+              "if": [
+                "(as if : comme si)",
+                "if",
+                "c"
+              ],
+              "been": [
+                "(had been waiting : avait attendu)",
+                "be",
+                "v",
+                "être"
+              ],
+              "waiting": [
+                "attendu",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "for": [
+                "(waiting for : attendre)",
+                "for",
+                "r"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "time": [
+                "fois",
+                "time",
+                "n"
+              ],
+              "understand": [
+                "comprenne",
+                "understand",
+                "v",
+                "comprendre"
+              ]
+            }
+          },
+          {
+            "en": "Adam suddenly realised that he had been the one who didn't understand.",
+            "fr": "Adam comprit soudain que c'était lui qui n'avait pas compris.",
+            "g": {
+              "one": [
+                "(the one who : celui qui)",
+                "one",
+                "p"
+              ],
+              "had": [
+                "(had been : avait été)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(had been : avait été)",
+                "be",
+                "v",
+                "être"
+              ],
+              "who": [
+                "qui",
+                "who",
+                "p"
+              ],
+              "understand": [
+                "compris",
+                "understand",
+                "v",
+                "comprendre"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "At lunchtime, Mrs Reyes found Adam in the corridor.",
+            "fr": "À l'heure du déjeuner, Mme Reyes trouva Adam dans le couloir.",
+            "g": {
+              "found": [
+                "trouva",
+                "find",
+                "v",
+                "trouver"
+              ]
+            }
+          },
+          {
+            "en": "“Have you got a minute?” she asked. “I think we should talk about yesterday.”",
+            "fr": "« Tu as une minute ? » demanda-t-elle. « Je crois que nous devrions parler d'hier. »",
+            "g": {
+              "have": [
+                "as",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "got": [
+                "(have got : avoir)",
+                "get",
+                "v",
+                "avoir"
+              ],
+              "should": [
+                "devrions",
+                "should",
+                "v",
+                "devoir"
+              ],
+              "about": [
+                "de",
+                "about",
+                "r"
+              ],
+              "think": [
+                "crois",
+                "think",
+                "v",
+                "penser"
+              ]
+            }
+          },
+          {
+            "en": "Adam stared at his shoes. “I didn't mean to be rude,” he said.",
+            "fr": "Adam fixa ses chaussures. « Je ne voulais pas être impoli », dit-il.",
+            "g": {
+              "stared": [
+                "fixa",
+                "stare",
+                "v",
+                "fixer"
+              ],
+              "mean": [
+                "voulais",
+                "mean",
+                "v",
+                "vouloir dire"
+              ],
+              "to": [
+                "(mean to : voulais)",
+                "to",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "“I know,” she said gently. “Tom didn't hear you calling, that's all.”",
+            "fr": "« Je sais », dit-elle avec douceur. « Tom ne t'a pas entendu l'appeler, c'est tout. »",
+            "g": {
+              "gently": [
+                "avec douceur",
+                "gently",
+                "d"
+              ],
+              "calling": [
+                "appeler",
+                "call",
+                "v",
+                "appeler"
+              ],
+              "that's": [
+                "c'est",
+                "be",
+                "v",
+                "être"
+              ],
+              "all": [
+                "(that's all : c'est tout)",
+                "all",
+                "p"
+              ],
+              "hear": [
+                "entendu",
+                "hear",
+                "v",
+                "entendre"
+              ]
+            }
+          },
+          {
+            "en": "She explained that Deaf people don't shout to get someone's attention.",
+            "fr": "Elle expliqua que les personnes sourdes ne crient pas pour attirer l'attention de quelqu'un.",
+            "g": {
+              "get": [
+                "attirer",
+                "get",
+                "v",
+                "obtenir"
+              ],
+              "to": [
+                "pour",
+                "to",
+                "x"
+              ],
+              "deaf": [
+                "sourdes",
+                "Deaf",
+                "a",
+                "sourd"
+              ]
+            }
+          },
+          {
+            "en": "They wave, tap a shoulder, or stamp on the floor so that the vibration travels through the boards.",
+            "fr": "Elles font signe de la main, tapotent une épaule ou frappent du pied sur le sol pour que la vibration se propage dans le plancher.",
+            "g": {
+              "tap": [
+                "tapotent",
+                "tap",
+                "v",
+                "tapoter"
+              ],
+              "so": [
+                "(so that : pour que)",
+                "so",
+                "c"
+              ],
+              "that": [
+                "(so that : pour que)",
+                "that",
+                "c"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "floor": [
+                "sol",
+                "floor",
+                "n"
+              ],
+              "boards": [
+                "planches du plancher",
+                "board",
+                "n",
+                "planche"
+              ]
+            }
+          },
+          {
+            "en": "“And lip-reading isn't magic,” she added.",
+            "fr": "« Et la lecture labiale n'a rien de magique », ajouta-t-elle.",
+            "g": {
+              "isn't": [
+                "n'est pas",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "“Even the best lip-readers catch only part of what is said, because many words look the same on the lips.”",
+            "fr": "« Même les meilleurs lecteurs sur les lèvres ne saisissent qu'une partie de ce qui se dit, parce que beaucoup de mots se ressemblent sur les lèvres. »",
+            "g": {
+              "even": [
+                "même",
+                "even",
+                "d"
+              ],
+              "best": [
+                "meilleurs",
+                "good",
+                "a",
+                "bon"
+              ],
+              "only": [
+                "ne… que",
+                "only",
+                "d"
+              ],
+              "what": [
+                "ce qui",
+                "what",
+                "p"
+              ],
+              "is": [
+                "(is said : se dit)",
+                "be",
+                "v",
+                "être"
+              ],
+              "said": [
+                "se dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "look": [
+                "se ressemblent (look the same)",
+                "look",
+                "v",
+                "avoir l'air"
+              ],
+              "same": [
+                "(look the same : se ressemblent)",
+                "same",
+                "a"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Adam listened with his mouth open.",
+            "fr": "Adam écoutait, la bouche ouverte.",
+            "g": {
+              "with": [
+                "la bouche ouverte (with his mouth open)",
+                "with",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“BSL isn't English on the hands,” Mrs Reyes went on.",
+            "fr": "« La BSL, ce n'est pas de l'anglais sur les mains », poursuivit Mme Reyes.",
+            "g": {
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "went": [
+                "poursuivit (went on)",
+                "go",
+                "v",
+                "aller"
+              ],
+              "on#2": [
+                "(went on : poursuivit)",
+                "on",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“It's a real language with its own grammar, and it uses faces, bodies and space as well as hands.”",
+            "fr": "« C'est une vraie langue, avec sa propre grammaire, et elle utilise les visages, les corps et l'espace autant que les mains. »",
+            "g": {
+              "own": [
+                "propre",
+                "own",
+                "a"
+              ],
+              "as": [
+                "(as well as : autant que)",
+                "as",
+                "c"
+              ],
+              "well": [
+                "(as well as : autant que)",
+                "well",
+                "d"
+              ],
+              "as#2": [
+                "(as well as : autant que)",
+                "as",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "“If you want to talk to Tom, you could learn some of it. It would be difficult, but he would notice.”",
+            "fr": "« Si tu veux parler à Tom, tu pourrais en apprendre un peu. Ce serait difficile, mais il le remarquerait. »",
+            "g": {
+              "could": [
+                "pourrais",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "some": [
+                "un peu",
+                "some",
+                "p"
+              ],
+              "of": [
+                "(some of it : un peu)",
+                "of",
+                "r"
+              ],
+              "would": [
+                "(would be : serait)",
+                "would",
+                "v"
+              ],
+              "would#2": [
+                "(would notice : remarquerait)",
+                "would",
+                "v"
+              ],
+              "notice": [
+                "(would notice : remarquerait)",
+                "notice",
+                "v",
+                "remarquer"
+              ]
+            }
+          },
+          {
+            "en": "“What if I get it wrong?” Adam asked.",
+            "fr": "« Et si je me trompe ? » demanda Adam.",
+            "g": {
+              "what": [
+                "(what if : et si)",
+                "what",
+                "p"
+              ],
+              "if": [
+                "(what if : et si)",
+                "if",
+                "c"
+              ],
+              "get": [
+                "(get it wrong : se tromper)",
+                "get",
+                "v",
+                "obtenir"
+              ],
+              "it": [
+                "(get it wrong : se tromper)",
+                "it",
+                "p"
+              ],
+              "wrong": [
+                "(get it wrong : se tromper)",
+                "wrong",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "“He would mind much more if you never tried.”",
+            "fr": "« Lui, cela le dérangerait bien plus si tu n'essayais jamais. »",
+            "g": {
+              "would": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "mind": [
+                "dérangerait",
+                "mind",
+                "v",
+                "déranger"
+              ],
+              "much": [
+                "bien",
+                "much",
+                "d"
+              ],
+              "more": [
+                "plus",
+                "more",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "That evening, Adam told his mother everything.",
+            "fr": "Ce soir-là, Adam raconta tout à sa mère.",
+            "g": {
+              "told": [
+                "raconta",
+                "tell",
+                "v",
+                "raconter"
+              ]
+            }
+          },
+          {
+            "en": "She searched on her laptop and found a beginners' course at the community centre.",
+            "fr": "Elle fit une recherche sur son ordinateur et trouva un cours pour débutants au centre communautaire.",
+            "g": {
+              "searched": [
+                "fit une recherche",
+                "search",
+                "v",
+                "chercher"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "community": [
+                "communautaire",
+                "community",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "It started on Saturday and was taught by a Deaf tutor.",
+            "fr": "Il commençait le samedi et était animé par un professeur sourd.",
+            "g": {
+              "started": [
+                "commençait",
+                "start",
+                "v",
+                "commencer"
+              ],
+              "taught": [
+                "animé",
+                "teach",
+                "v",
+                "enseigner"
+              ],
+              "by": [
+                "par",
+                "by",
+                "r"
+              ],
+              "tutor": [
+                "professeur",
+                "tutor",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Only if you promise to practise,” she said, smiling.",
+            "fr": "« À condition que tu promettes de t'entraîner », dit-elle en souriant.",
+            "g": {
+              "only": [
+                "(only if : à condition que)",
+                "only",
+                "d"
+              ],
+              "if": [
+                "(only if : à condition que)",
+                "if",
+                "c"
+              ],
+              "promise": [
+                "promettes",
+                "promise",
+                "v",
+                "promettre"
+              ]
+            }
+          },
+          {
+            "en": "“I promise,” said Adam, and for the first time that week, he felt hopeful.",
+            "fr": "« Je promets », dit Adam, et pour la première fois cette semaine-là, il se sentit plein d'espoir.",
+            "g": {
+              "first": [
+                "première",
+                "first",
+                "a"
+              ],
+              "that": [
+                "cette",
+                "that",
+                "t"
+              ],
+              "felt": [
+                "se sentit",
+                "feel",
+                "v",
+                "sentir"
+              ],
+              "time": [
+                "fois",
+                "time",
+                "n"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "titre": "Chapter 2 — Learning to Sign",
+      "titreFr": "Chapitre 2 — Apprendre à signer",
+      "p": [
+        [
+          {
+            "en": "On Saturday morning, Adam arrived at the Riverside Community Centre ten minutes early.",
+            "fr": "Le samedi matin, Adam arriva au centre communautaire de Riverside avec dix minutes d'avance.",
+            "g": {
+              "early": [
+                "d'avance",
+                "early",
+                "d"
+              ],
+              "community": [
+                "communautaire",
+                "community",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "There were twelve adults in the room, and he was by far the youngest.",
+            "fr": "Il y avait douze adultes dans la salle, et il était de loin le plus jeune.",
+            "g": {
+              "by": [
+                "(by far : de loin)",
+                "by",
+                "r"
+              ],
+              "far": [
+                "(by far : de loin)",
+                "far",
+                "d"
+              ],
+              "youngest": [
+                "le plus jeune",
+                "young",
+                "a",
+                "jeune"
+              ]
+            }
+          },
+          {
+            "en": "At exactly ten o'clock, a man in a bright yellow jumper walked in, smiled at everyone, and wrote on the whiteboard: “Hello. I am Samuel. I am Deaf. This class has no voices.”",
+            "fr": "À dix heures précises, un homme en pull jaune vif entra, sourit à tout le monde et écrivit sur le tableau blanc : « Bonjour. Je m'appelle Samuel. Je suis sourd. Ce cours se fait sans voix. »",
+            "g": {
+              "at": [
+                "à",
+                "at",
+                "r"
+              ],
+              "walked": [
+                "entra (walked in)",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "in": [
+                "(walked in : entra)",
+                "in",
+                "d"
+              ],
+              "smiled": [
+                "sourit",
+                "smile",
+                "v",
+                "sourire"
+              ],
+              "at#2": [
+                "(smiled at : sourit à)",
+                "at",
+                "r"
+              ],
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "no": [
+                "sans",
+                "no",
+                "t"
+              ],
+              "class": [
+                "cours",
+                "class",
+                "n"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Adam's stomach turned over.",
+            "fr": "L'estomac d'Adam se noua.",
+            "g": {
+              "turned": [
+                "se noua (turned over)",
+                "turn",
+                "v",
+                "se retourner"
+              ],
+              "over": [
+                "(turned over : se noua)",
+                "over",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "How could anybody teach a language without speaking?",
+            "fr": "Comment pouvait-on enseigner une langue sans parler ?",
+            "g": {
+              "could": [
+                "pouvait",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "anybody": [
+                "quelqu'un",
+                "anybody",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "But Samuel did it beautifully.",
+            "fr": "Mais Samuel y parvenait à merveille.",
+            "g": {
+              "did": [
+                "y parvenait",
+                "do",
+                "v",
+                "faire"
+              ]
+            }
+          },
+          {
+            "en": "He used pictures, mime and his expressive face, and within minutes the whole room was laughing silently.",
+            "fr": "Il utilisait des images, du mime et son visage expressif, et en quelques minutes la salle entière riait en silence.",
+            "g": {
+              "used": [
+                "utilisait",
+                "use",
+                "v",
+                "utiliser"
+              ],
+              "within": [
+                "en",
+                "within",
+                "r"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "First, he taught them to wait for eye contact before they started to sign.",
+            "fr": "D'abord, il leur apprit à attendre un échange de regards avant de commencer à signer.",
+            "g": {
+              "first": [
+                "d'abord",
+                "first",
+                "d"
+              ],
+              "taught": [
+                "apprit",
+                "teach",
+                "v",
+                "enseigner"
+              ],
+              "wait": [
+                "attendre",
+                "wait",
+                "v",
+                "attendre"
+              ],
+              "for": [
+                "(wait for : attendre)",
+                "for",
+                "r"
+              ],
+              "sign": [
+                "signer",
+                "sign",
+                "v",
+                "signer"
+              ],
+              "started": [
+                "commencer",
+                "start",
+                "v",
+                "commencer"
+              ]
+            }
+          },
+          {
+            "en": "Then he showed them the fingerspelling alphabet, which uses both hands.",
+            "fr": "Puis il leur montra l'alphabet dactylologique, qui utilise les deux mains.",
+            "g": {
+              "showed": [
+                "montra",
+                "show",
+                "v",
+                "montrer"
+              ],
+              "uses": [
+                "utilise",
+                "use",
+                "v",
+                "utiliser"
+              ]
+            }
+          },
+          {
+            "en": "“The vowels are made by touching the tips of the fingers,” Samuel's notes explained.",
+            "fr": "« Les voyelles se font en touchant le bout des doigts », expliquaient les notes de Samuel.",
+            "g": {
+              "made": [
+                "se font",
+                "make",
+                "v",
+                "faire"
+              ],
+              "by": [
+                "en",
+                "by",
+                "r"
+              ],
+              "touching": [
+                "touchant",
+                "touch",
+                "v",
+                "toucher"
+              ],
+              "tips": [
+                "bout",
+                "tip",
+                "n",
+                "bout"
+              ],
+              "explained": [
+                "expliquaient",
+                "explain",
+                "v",
+                "expliquer"
+              ]
+            }
+          },
+          {
+            "en": "Adam spelled his own name, A-D-A-M, and was amazed by how fast his hands got tired.",
+            "fr": "Adam épela son propre nom, A-D-A-M, et fut stupéfait de voir à quelle vitesse ses mains se fatiguaient.",
+            "g": {
+              "own": [
+                "propre",
+                "own",
+                "a"
+              ],
+              "amazed": [
+                "stupéfait",
+                "amazed",
+                "a"
+              ],
+              "by": [
+                "(amazed by : stupéfait de)",
+                "by",
+                "r"
+              ],
+              "how": [
+                "à quelle vitesse (how fast)",
+                "how",
+                "d"
+              ],
+              "got": [
+                "se fatiguaient (got tired)",
+                "get",
+                "v",
+                "devenir"
+              ],
+              "tired": [
+                "(got tired : se fatiguaient)",
+                "tired",
+                "a"
+              ],
+              "fast": [
+                "(how fast : à quelle vitesse)",
+                "fast",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Next came the signs for “hello”, “thank you” and “my name is”.",
+            "fr": "Ensuite vinrent les signes pour « bonjour », « merci » et « je m'appelle ».",
+            "g": {
+              "next": [
+                "ensuite",
+                "next",
+                "d"
+              ],
+              "came": [
+                "vinrent",
+                "come",
+                "v",
+                "venir"
+              ],
+              "name": [
+                "(my name is : je m'appelle)",
+                "name",
+                "n"
+              ],
+              "my": [
+                "(my name is : je m'appelle)",
+                "my",
+                "t"
+              ],
+              "is": [
+                "(my name is : je m'appelle)",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "Samuel raised his eyebrows to show that he was asking a question, and then he relaxed his face to show that he was not.",
+            "fr": "Samuel leva les sourcils pour montrer qu'il posait une question, puis il détendit son visage pour montrer qu'il n'en posait pas.",
+            "g": {
+              "raised": [
+                "leva",
+                "raise",
+                "v",
+                "lever"
+              ],
+              "show": [
+                "montrer",
+                "show",
+                "v",
+                "montrer"
+              ],
+              "asking": [
+                "posait",
+                "ask",
+                "v",
+                "poser"
+              ],
+              "not": [
+                "pas",
+                "not",
+                "d"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "relaxed": [
+                "détendit",
+                "relax",
+                "v",
+                "détendre"
+              ]
+            }
+          },
+          {
+            "en": "Fatima, a nurse who sat next to Adam, wrote on his paper: “I want to understand my patients.”",
+            "fr": "Fatima, une infirmière assise à côté d'Adam, écrivit sur sa feuille : « Je veux comprendre mes patients. »",
+            "g": {
+              "sat": [
+                "assise",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "next": [
+                "(next to : à côté de)",
+                "next",
+                "d"
+              ],
+              "to": [
+                "(next to : à côté de)",
+                "to",
+                "r"
+              ],
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "want": [
+                "veux",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "to#2": [
+                "(want to : vouloir)",
+                "to",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "Finally, Samuel gave them homework: fifteen minutes of practice every single day.",
+            "fr": "Pour finir, Samuel leur donna des devoirs : quinze minutes d'entraînement chaque jour sans exception.",
+            "g": {
+              "finally": [
+                "pour finir",
+                "finally",
+                "d"
+              ],
+              "gave": [
+                "donna",
+                "give",
+                "v",
+                "donner"
+              ],
+              "single": [
+                "(every single day : chaque jour sans exception)",
+                "single",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "He explained, in writing, that a name sign is not usually chosen by the person who wears it.",
+            "fr": "Il expliqua, par écrit, qu'un signe-prénom n'est généralement pas choisi par la personne qui le porte.",
+            "g": {
+              "explained": [
+                "expliqua",
+                "explain",
+                "v",
+                "expliquer"
+              ],
+              "chosen": [
+                "choisi",
+                "choose",
+                "v",
+                "choisir"
+              ],
+              "wears": [
+                "porte",
+                "wear",
+                "v",
+                "porter"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "writing": [
+                "par écrit",
+                "writing",
+                "n"
+              ],
+              "in": [
+                "(in writing : par écrit)",
+                "in",
+                "r"
+              ],
+              "name": [
+                "(name sign : signe-prénom)",
+                "name",
+                "n"
+              ],
+              "sign": [
+                "(name sign : signe-prénom)",
+                "sign",
+                "n"
+              ],
+              "usually": [
+                "généralement",
+                "usually",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“It's a gift from the Deaf community,” he wrote.",
+            "fr": "« C'est un cadeau de la communauté sourde », écrivit-il.",
+            "g": {
+              "wrote": [
+                "écrivit",
+                "write",
+                "v",
+                "écrire"
+              ],
+              "deaf": [
+                "sourde",
+                "Deaf",
+                "a",
+                "sourd"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "All week, Adam practised in front of the bathroom mirror.",
+            "fr": "Toute la semaine, Adam s'entraîna devant le miroir de la salle de bains.",
+            "g": {
+              "all": [
+                "toute",
+                "all",
+                "t"
+              ],
+              "in": [
+                "(in front of : devant)",
+                "in",
+                "r"
+              ],
+              "front": [
+                "(in front of : devant)",
+                "front",
+                "n"
+              ],
+              "of": [
+                "(in front of : devant)",
+                "of",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "His mother laughed when she saw him, because he looked like a man trying to catch invisible butterflies.",
+            "fr": "Sa mère rit en le voyant, parce qu'il avait l'air d'un homme qui essayait d'attraper des papillons invisibles.",
+            "g": {
+              "saw": [
+                "voyait",
+                "see",
+                "v",
+                "voir"
+              ],
+              "looked": [
+                "avait l'air",
+                "look",
+                "v",
+                "avoir l'air"
+              ],
+              "like": [
+                "(looked like : avait l'air d')",
+                "like",
+                "r"
+              ],
+              "trying": [
+                "essayant",
+                "try",
+                "v",
+                "essayer"
+              ],
+              "catch": [
+                "attraper",
+                "catch",
+                "v",
+                "attraper"
+              ]
+            }
+          },
+          {
+            "en": "But he didn't give up, and by Monday he knew his first sentence by heart.",
+            "fr": "Mais il n'abandonna pas, et le lundi il connaissait sa première phrase par cœur.",
+            "g": {
+              "give": [
+                "abandonna (give up)",
+                "give",
+                "v",
+                "abandonner"
+              ],
+              "up": [
+                "(give up : abandonna)",
+                "up",
+                "d"
+              ],
+              "by": [
+                "dès",
+                "by",
+                "r"
+              ],
+              "knew": [
+                "connaissait",
+                "know",
+                "v",
+                "connaître"
+              ],
+              "first": [
+                "première",
+                "first",
+                "a"
+              ],
+              "heart": [
+                "(by heart : par cœur)",
+                "heart",
+                "n"
+              ],
+              "by#2": [
+                "(by heart : par cœur)",
+                "by",
+                "r"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "Before registration, he waited by the classroom door.",
+            "fr": "Avant l'appel, il attendit près de la porte de la salle.",
+            "g": {
+              "before": [
+                "avant",
+                "before",
+                "r"
+              ],
+              "by": [
+                "près de",
+                "by",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "When Tom arrived with Mrs Reyes, Adam raised a hand, waited until Tom looked at him, and began to sign.",
+            "fr": "Quand Tom arriva avec Mme Reyes, Adam leva la main, attendit que Tom le regarde, et commença à signer.",
+            "g": {
+              "until": [
+                "que (jusqu'à ce que)",
+                "until",
+                "c"
+              ],
+              "looked": [
+                "regarde",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "began": [
+                "commença",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "to": [
+                "(began to : commença à)",
+                "to",
+                "x"
+              ],
+              "sign": [
+                "signer",
+                "sign",
+                "v",
+                "signer"
+              ]
+            }
+          },
+          {
+            "en": "He wanted to say, “Hello, I'm Adam, and I'm sorry about last week.”",
+            "fr": "Il voulait dire : « Bonjour, je suis Adam, et je suis désolé pour la semaine dernière. »",
+            "g": {
+              "wanted": [
+                "voulait",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "last": [
+                "dernière",
+                "last",
+                "a"
+              ],
+              "about": [
+                "pour",
+                "about",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Unfortunately, he mixed up two signs that looked almost the same.",
+            "fr": "Malheureusement, il confondit deux signes qui se ressemblaient presque.",
+            "g": {
+              "mixed": [
+                "confondit (mixed up)",
+                "mix",
+                "v",
+                "mélanger"
+              ],
+              "up": [
+                "(mixed up : confondit)",
+                "up",
+                "d"
+              ],
+              "looked": [
+                "se ressemblaient",
+                "look",
+                "v",
+                "avoir l'air"
+              ],
+              "same": [
+                "(looked the same : se ressemblaient)",
+                "same",
+                "a"
+              ]
+            }
+          },
+          {
+            "en": "Tom's eyes opened wide. Then his shoulders began to shake, and he laughed so hard that he had to sit down.",
+            "fr": "Les yeux de Tom s'écarquillèrent. Puis ses épaules se mirent à trembler, et il rit si fort qu'il dut s'asseoir.",
+            "g": {
+              "opened": [
+                "s'écarquillèrent",
+                "open",
+                "v",
+                "ouvrir"
+              ],
+              "wide": [
+                "(opened wide : s'écarquillèrent)",
+                "wide",
+                "d"
+              ],
+              "began": [
+                "se mirent",
+                "begin",
+                "v",
+                "commencer"
+              ],
+              "to": [
+                "(began to : se mirent à)",
+                "to",
+                "x"
+              ],
+              "so": [
+                "si",
+                "so",
+                "d"
+              ],
+              "hard": [
+                "fort",
+                "hard",
+                "d"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "had": [
+                "(had to : dut)",
+                "have",
+                "v",
+                "devoir"
+              ],
+              "to#2": [
+                "(had to : dut)",
+                "to",
+                "x"
+              ],
+              "sit": [
+                "s'asseoir (sit down)",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sit down : s'asseoir)",
+                "down",
+                "d"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "“What did he say?” Adam asked Mrs Reyes in a panic.",
+            "fr": "« Qu'est-ce qu'il a dit ? » demanda Adam à Mme Reyes, paniqué.",
+            "g": {
+              "what": [
+                "qu'est-ce que",
+                "what",
+                "p"
+              ],
+              "say": [
+                "a dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "in": [
+                "(in a panic : paniqué)",
+                "in",
+                "r"
+              ],
+              "panic": [
+                "(in a panic : paniqué)",
+                "panic",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "She was trying not to smile. “He says you've just apologised for your lunch box.”",
+            "fr": "Elle essayait de ne pas sourire. « Il dit que tu viens de t'excuser pour ta boîte à déjeuner. »",
+            "g": {
+              "trying": [
+                "essayait",
+                "try",
+                "v",
+                "essayer"
+              ],
+              "says": [
+                "dit",
+                "say",
+                "v",
+                "dire"
+              ],
+              "just": [
+                "(have just : venir de)",
+                "just",
+                "d"
+              ],
+              "you've": [
+                "tu as",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "for": [
+                "pour",
+                "for",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Adam covered his face with both hands.",
+            "fr": "Adam se cacha le visage dans les deux mains.",
+            "g": {
+              "covered": [
+                "cacha",
+                "cover",
+                "v",
+                "couvrir"
+              ],
+              "with": [
+                "avec",
+                "with",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "But when he looked up, Tom was signing back, slowly and carefully, as if he were talking to a much younger child.",
+            "fr": "Mais quand il leva les yeux, Tom lui répondait par signes, lentement et avec soin, comme s'il parlait à un enfant bien plus jeune.",
+            "g": {
+              "looked": [
+                "leva les yeux (looked up)",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "up": [
+                "(looked up : leva les yeux)",
+                "up",
+                "d"
+              ],
+              "back": [
+                "(signing back : répondait par signes)",
+                "back",
+                "d"
+              ],
+              "signing": [
+                "(signing back : répondait par signes)",
+                "sign",
+                "v",
+                "signer"
+              ],
+              "as": [
+                "(as if : comme si)",
+                "as",
+                "c"
+              ],
+              "if": [
+                "(as if : comme si)",
+                "if",
+                "c"
+              ],
+              "were": [
+                "(subjonctif)",
+                "be",
+                "v",
+                "être"
+              ],
+              "talking": [
+                "parlait",
+                "talk",
+                "v",
+                "parler"
+              ],
+              "to": [
+                "à",
+                "to",
+                "r"
+              ],
+              "much": [
+                "bien",
+                "much",
+                "d"
+              ],
+              "younger": [
+                "plus jeune",
+                "young",
+                "a",
+                "jeune"
+              ],
+              "carefully": [
+                "avec soin",
+                "carefully",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Slower is fine,” said Mrs Reyes, translating. “He says: you are learning?”",
+            "fr": "« Plus lent, c'est très bien », dit Mme Reyes en traduisant. « Il demande : tu apprends ? »",
+            "g": {
+              "slower": [
+                "plus lent",
+                "slow",
+                "a",
+                "lent"
+              ],
+              "fine": [
+                "très bien",
+                "fine",
+                "a"
+              ],
+              "says": [
+                "demande",
+                "say",
+                "v",
+                "dire"
+              ],
+              "learning": [
+                "apprends",
+                "learn",
+                "v",
+                "apprendre"
+              ]
+            }
+          },
+          {
+            "en": "“Yes,” Adam signed. “Little.”",
+            "fr": "« Oui », signa Adam. « Un peu. »",
+            "g": {
+              "little": [
+                "un peu",
+                "little",
+                "d"
+              ],
+              "signed": [
+                "signa",
+                "sign",
+                "v",
+                "signer"
+              ]
+            }
+          },
+          {
+            "en": "Tom grinned and gave Adam a friendly tap on the shoulder, and Adam understood that it meant, “Good try.”",
+            "fr": "Tom sourit jusqu'aux oreilles et donna à Adam une tape amicale sur l'épaule, et Adam comprit que cela voulait dire : « Bien essayé. »",
+            "g": {
+              "gave": [
+                "donna",
+                "give",
+                "v",
+                "donner"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "understood": [
+                "comprit",
+                "understand",
+                "v",
+                "comprendre"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "meant": [
+                "voulait dire",
+                "mean",
+                "v",
+                "vouloir dire"
+              ],
+              "try": [
+                "(good try : bien essayé)",
+                "try",
+                "n",
+                "essai"
+              ],
+              "good": [
+                "(good try : bien essayé)",
+                "good",
+                "a",
+                "bon"
+              ]
+            }
+          },
+          {
+            "en": "For the first time, the silence between them did not feel like a wall.",
+            "fr": "Pour la première fois, le silence entre eux n'avait plus l'air d'un mur.",
+            "g": {
+              "first": [
+                "première",
+                "first",
+                "a"
+              ],
+              "feel": [
+                "avoir l'air",
+                "feel",
+                "v",
+                "sembler"
+              ],
+              "like": [
+                "(feel like : avoir l'air de)",
+                "like",
+                "r"
+              ],
+              "time": [
+                "fois",
+                "time",
+                "n"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ]
+}

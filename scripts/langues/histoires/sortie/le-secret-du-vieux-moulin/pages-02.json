@@ -1,0 +1,3859 @@
+{
+  "debut": 6,
+  "lexique": {
+    "school": [
+      "école",
+      "school",
+      "n"
+    ],
+    "friends": [
+      "amis",
+      "friend",
+      "n",
+      "ami"
+    ],
+    "village": [
+      "village",
+      "village",
+      "n"
+    ],
+    "slowly": [
+      "lentement",
+      "slowly",
+      "d"
+    ],
+    "window": [
+      "fenêtre",
+      "window",
+      "n"
+    ],
+    "long": [
+      "longue",
+      "long",
+      "a"
+    ],
+    "said": [
+      "dit",
+      "say",
+      "v",
+      "dire"
+    ],
+    "amara": [
+      "Amara (prénom)",
+      "Amara",
+      "np"
+    ],
+    "cable": [
+      "câble",
+      "cable",
+      "n"
+    ],
+    "priya": [
+      "Priya (prénom)",
+      "Priya",
+      "np"
+    ],
+    "looked": [
+      "regarda",
+      "look",
+      "v",
+      "regarder"
+    ],
+    "field": [
+      "champ",
+      "field",
+      "n"
+    ],
+    "mill": [
+      "moulin",
+      "mill",
+      "n"
+    ],
+    "hall": [
+      "salle",
+      "hall",
+      "n"
+    ],
+    "notebook": [
+      "carnet",
+      "notebook",
+      "n"
+    ],
+    "wheel": [
+      "roue",
+      "wheel",
+      "n"
+    ],
+    "turns": [
+      "tourne",
+      "turn",
+      "v",
+      "tourner"
+    ],
+    "electricity": [
+      "électricité",
+      "electricity",
+      "n"
+    ],
+    "little": [
+      "petite",
+      "little",
+      "a"
+    ],
+    "mr": [
+      "monsieur (M.)",
+      "Mr",
+      "n"
+    ],
+    "dray": [
+      "Dray (nom de famille)",
+      "Dray",
+      "np"
+    ],
+    "know": [
+      "savoir",
+      "know",
+      "v"
+    ],
+    "minutes": [
+      "minutes",
+      "minute",
+      "n",
+      "minute"
+    ],
+    "tom": [
+      "Tom (prénom)",
+      "Tom",
+      "np"
+    ],
+    "door": [
+      "porte",
+      "door",
+      "n"
+    ],
+    "sun": [
+      "soleil",
+      "sun",
+      "n"
+    ],
+    "light": [
+      "lumière",
+      "light",
+      "n"
+    ],
+    "whispered": [
+      "murmura",
+      "whisper",
+      "v",
+      "murmurer"
+    ],
+    "old": [
+      "vieux",
+      "old",
+      "a"
+    ],
+    "slow": [
+      "lent",
+      "slow",
+      "a"
+    ],
+    "tap": [
+      "toc",
+      "tap",
+      "n"
+    ],
+    "tall": [
+      "grand",
+      "tall",
+      "a"
+    ],
+    "man": [
+      "homme",
+      "man",
+      "n"
+    ],
+    "hand": [
+      "main",
+      "hand",
+      "n"
+    ],
+    "good": [
+      "bon",
+      "good",
+      "a"
+    ],
+    "evening": [
+      "soir",
+      "evening",
+      "n"
+    ],
+    "asked": [
+      "demanda",
+      "ask",
+      "v",
+      "demander"
+    ],
+    "smile": [
+      "sourire",
+      "smile",
+      "n"
+    ],
+    "tuesday": [
+      "mardi",
+      "Tuesday",
+      "n"
+    ],
+    "night": [
+      "nuit",
+      "night",
+      "n"
+    ],
+    "moon": [
+      "lune",
+      "moon",
+      "n"
+    ],
+    "name": [
+      "nom",
+      "name",
+      "n"
+    ],
+    "years": [
+      "ans, années",
+      "year",
+      "n",
+      "an"
+    ],
+    "yellow": [
+      "jaune",
+      "yellow",
+      "a"
+    ],
+    "room": [
+      "pièce",
+      "room",
+      "n"
+    ],
+    "machine": [
+      "machine",
+      "machine",
+      "n"
+    ],
+    "thick": [
+      "épais",
+      "thick",
+      "a"
+    ],
+    "penhale": [
+      "Penhale (nom de famille)",
+      "Penhale",
+      "np"
+    ],
+    "dark": [
+      "sombre",
+      "dark",
+      "a"
+    ],
+    "people": [
+      "gens, on",
+      "people",
+      "n"
+    ],
+    "march": [
+      "mars",
+      "March",
+      "n"
+    ],
+    "harrow": [
+      "Harrow (nom de famille)",
+      "Harrow",
+      "np"
+    ],
+    "family": [
+      "famille",
+      "family",
+      "n"
+    ],
+    "weeks": [
+      "semaines",
+      "week",
+      "n",
+      "semaine"
+    ],
+    "ashby": [
+      "Ashby (nom du village)",
+      "Ashby",
+      "np"
+    ],
+    "cross": [
+      "Cross (nom du village)",
+      "Cross",
+      "np"
+    ],
+    "water": [
+      "eau",
+      "water",
+      "n"
+    ],
+    "saturday": [
+      "samedi",
+      "Saturday",
+      "n"
+    ],
+    "white": [
+      "blanc",
+      "white",
+      "a"
+    ],
+    "van": [
+      "camionnette",
+      "van",
+      "n"
+    ],
+    "green": [
+      "vert",
+      "green",
+      "a"
+    ],
+    "jacket": [
+      "veste",
+      "jacket",
+      "n"
+    ],
+    "morning": [
+      "matin",
+      "morning",
+      "n"
+    ],
+    "arthur": [
+      "Arthur (prénom)",
+      "Arthur",
+      "np"
+    ],
+    "ask": [
+      "demander",
+      "ask",
+      "v"
+    ],
+    "questions": [
+      "questions",
+      "question",
+      "n",
+      "question"
+    ],
+    "december": [
+      "décembre",
+      "December",
+      "n"
+    ],
+    "o'clock": [
+      "heures",
+      "o'clock",
+      "d"
+    ],
+    "tom's": [
+      "de Tom",
+      "Tom",
+      "np"
+    ],
+    "phone": [
+      "téléphone",
+      "phone",
+      "n"
+    ],
+    "river": [
+      "rivière",
+      "river",
+      "n"
+    ],
+    "terrible": [
+      "terrible",
+      "terrible",
+      "a"
+    ],
+    "line": [
+      "ligne",
+      "line",
+      "n"
+    ],
+    "shaft": [
+      "arbre (axe)",
+      "shaft",
+      "n"
+    ],
+    "crack": [
+      "craquement",
+      "crack",
+      "n"
+    ],
+    "winter": [
+      "hiver",
+      "winter",
+      "n"
+    ],
+    "year": [
+      "année",
+      "year",
+      "n"
+    ],
+    "head": [
+      "tête",
+      "head",
+      "n"
+    ]
+  },
+  "pages": [
+    {
+      "p": [
+        [
+          {
+            "en": "On Wednesday after school, the friends hurried to the village hall. Nobody was there, so they walked slowly round the building.",
+            "fr": "Le mercredi après l'école, les amis se dépêchèrent d'aller à la salle des fêtes. Il n'y avait personne, alors ils firent lentement le tour du bâtiment.",
+            "g": {
+              "wednesday": [
+                "mercredi",
+                "Wednesday",
+                "n"
+              ],
+              "hurried": [
+                "se dépêchèrent",
+                "hurry",
+                "v",
+                "se dépêcher"
+              ],
+              "to": [
+                "à",
+                "to",
+                "r"
+              ],
+              "hall": [
+                "salle des fêtes",
+                "hall",
+                "n"
+              ],
+              "nobody": [
+                "personne",
+                "nobody",
+                "p"
+              ],
+              "was": [
+                "il y avait",
+                "be",
+                "v",
+                "être"
+              ],
+              "there": [
+                "(nobody was there : il n'y avait personne)",
+                "there",
+                "d"
+              ],
+              "so": [
+                "alors",
+                "so",
+                "c"
+              ],
+              "walked": [
+                "firent (le tour)",
+                "walk",
+                "v",
+                "marcher"
+              ],
+              "round": [
+                "(walked round : firent le tour de)",
+                "round",
+                "r"
+              ],
+              "building": [
+                "bâtiment",
+                "building",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "At the back, below the kitchen window, the grass looked different. A long, narrow strip of earth had been dug up and carefully filled in again.",
+            "fr": "À l'arrière, sous la fenêtre de la cuisine, l'herbe semblait différente. Une longue et étroite bande de terre avait été creusée, puis soigneusement rebouchée.",
+            "g": {
+              "back": [
+                "arrière",
+                "back",
+                "n"
+              ],
+              "below": [
+                "sous",
+                "below",
+                "r"
+              ],
+              "kitchen": [
+                "cuisine",
+                "kitchen",
+                "n"
+              ],
+              "grass": [
+                "herbe",
+                "grass",
+                "n"
+              ],
+              "looked": [
+                "semblait",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "different": [
+                "différente",
+                "different",
+                "a"
+              ],
+              "narrow": [
+                "étroite",
+                "narrow",
+                "a"
+              ],
+              "strip": [
+                "bande",
+                "strip",
+                "n"
+              ],
+              "earth": [
+                "terre",
+                "earth",
+                "n"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(had been dug : avait été)",
+                "be",
+                "v",
+                "être"
+              ],
+              "dug": [
+                "creusée",
+                "dig",
+                "v",
+                "creuser"
+              ],
+              "up": [
+                "(dug up : creusée)",
+                "up",
+                "x"
+              ],
+              "carefully": [
+                "soigneusement",
+                "carefully",
+                "d"
+              ],
+              "filled": [
+                "rebouchée (filled in)",
+                "fill",
+                "v",
+                "remplir"
+              ],
+              "in": [
+                "(filled in : rebouchée)",
+                "in",
+                "x"
+              ],
+              "again": [
+                "(filled in again : rebouchée)",
+                "again",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“Someone has buried something here,” said Amara, kneeling down. She pushed her fingers into the soft soil and pulled out a bright piece of blue plastic.",
+            "fr": "« Quelqu'un a enterré quelque chose ici », dit Amara en s'agenouillant. Elle enfonça ses doigts dans la terre meuble et en sortit un morceau de plastique bleu vif.",
+            "g": {
+              "buried": [
+                "enterré",
+                "bury",
+                "v",
+                "enterrer"
+              ],
+              "kneeling": [
+                "s'agenouillant",
+                "kneel",
+                "v",
+                "s'agenouiller"
+              ],
+              "down": [
+                "(kneeling down : s'agenouillant)",
+                "down",
+                "x"
+              ],
+              "pushed": [
+                "enfonça",
+                "push",
+                "v",
+                "pousser"
+              ],
+              "fingers": [
+                "doigts",
+                "finger",
+                "n",
+                "doigt"
+              ],
+              "soft": [
+                "meuble",
+                "soft",
+                "a"
+              ],
+              "soil": [
+                "terre",
+                "soil",
+                "n"
+              ],
+              "pulled": [
+                "sortit (pulled out)",
+                "pull",
+                "v",
+                "tirer"
+              ],
+              "out": [
+                "(pulled out : sortit)",
+                "out",
+                "x"
+              ],
+              "bright": [
+                "vif",
+                "bright",
+                "a"
+              ],
+              "piece": [
+                "morceau",
+                "piece",
+                "n"
+              ],
+              "blue": [
+                "bleu",
+                "blue",
+                "a"
+              ],
+              "plastic": [
+                "plastique",
+                "plastic",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“It's the cover of a cable,” she said. “A thick one, designed to be buried underground.”",
+            "fr": "« C'est la gaine d'un câble, dit-elle. Un câble épais, conçu pour être enterré sous terre. »",
+            "g": {
+              "it's": [
+                "c'est",
+                "be",
+                "v",
+                "être"
+              ],
+              "cover": [
+                "gaine",
+                "cover",
+                "n"
+              ],
+              "thick": [
+                "épais",
+                "thick",
+                "a"
+              ],
+              "one": [
+                "câble",
+                "one",
+                "p"
+              ],
+              "designed": [
+                "conçu",
+                "design",
+                "v",
+                "concevoir"
+              ],
+              "to": [
+                "pour",
+                "to",
+                "x"
+              ],
+              "be": [
+                "être",
+                "be",
+                "v",
+                "être"
+              ],
+              "buried": [
+                "enterré",
+                "bury",
+                "v",
+                "enterrer"
+              ],
+              "underground": [
+                "sous terre",
+                "underground",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "Priya looked along the strip. It ran straight across the car park, under a hedge and into the field beyond.",
+            "fr": "Priya regarda le long de la bande. Elle traversait tout droit le parking, passait sous une haie et continuait dans le champ au-delà.",
+            "g": {
+              "along": [
+                "le long de",
+                "along",
+                "r"
+              ],
+              "strip": [
+                "bande",
+                "strip",
+                "n"
+              ],
+              "ran": [
+                "traversait",
+                "run",
+                "v",
+                "courir"
+              ],
+              "straight": [
+                "tout droit",
+                "straight",
+                "d"
+              ],
+              "across": [
+                "(ran across : traversait)",
+                "across",
+                "r"
+              ],
+              "car": [
+                "de voitures (car park : parking)",
+                "car",
+                "n"
+              ],
+              "park": [
+                "parking",
+                "park",
+                "n"
+              ],
+              "under": [
+                "sous",
+                "under",
+                "r"
+              ],
+              "hedge": [
+                "haie",
+                "hedge",
+                "n"
+              ],
+              "beyond": [
+                "au-delà",
+                "beyond",
+                "d"
+              ]
+            }
+          },
+          {
+            "en": "“If I'm right,” she said slowly, “this line leads back to the mill. Somebody is laying a cable from the mill to the hall.”",
+            "fr": "« Si j'ai raison, dit-elle lentement, cette ligne remonte jusqu'au moulin. Quelqu'un pose un câble du moulin jusqu'à la salle. »",
+            "g": {
+              "i'm": [
+                "j'ai (I'm right : j'ai raison)",
+                "be",
+                "v",
+                "être"
+              ],
+              "right": [
+                "raison",
+                "right",
+                "a"
+              ],
+              "line": [
+                "ligne",
+                "line",
+                "n"
+              ],
+              "leads": [
+                "remonte",
+                "lead",
+                "v",
+                "mener"
+              ],
+              "back": [
+                "(leads back to : remonte jusqu'à)",
+                "back",
+                "d"
+              ],
+              "laying": [
+                "pose",
+                "lay",
+                "v",
+                "poser"
+              ],
+              "to": [
+                "jusqu'à",
+                "to",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "Amara drew a quick diagram in the notebook. “The wheel turns, it drives a machine, the machine makes electricity, and the cable carries it to the hall. It's a little power station!”",
+            "fr": "Amara dessina un schéma rapide dans le carnet. « La roue tourne, elle entraîne une machine, la machine produit de l'électricité, et le câble l'amène jusqu'à la salle. C'est une petite centrale électrique ! »",
+            "g": {
+              "drew": [
+                "dessina",
+                "draw",
+                "v",
+                "dessiner"
+              ],
+              "quick": [
+                "rapide",
+                "quick",
+                "a"
+              ],
+              "diagram": [
+                "schéma",
+                "diagram",
+                "n"
+              ],
+              "drives": [
+                "entraîne",
+                "drive",
+                "v",
+                "entraîner"
+              ],
+              "machine": [
+                "machine",
+                "machine",
+                "n"
+              ],
+              "makes": [
+                "produit",
+                "make",
+                "v",
+                "fabriquer"
+              ],
+              "carries": [
+                "amène",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "it": [
+                "elle (la roue)",
+                "it",
+                "p"
+              ],
+              "it#2": [
+                "l' (l'électricité)",
+                "it",
+                "p"
+              ],
+              "it's": [
+                "c'est",
+                "be",
+                "v",
+                "être"
+              ],
+              "power": [
+                "(power station : centrale)",
+                "power",
+                "n"
+              ],
+              "station": [
+                "centrale électrique",
+                "station",
+                "n"
+              ],
+              "hall": [
+                "salle",
+                "hall",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“But who is it? A kind ghost, or someone with something to hide?” wondered Priya, thinking of Mr Dray. “We still don't know who we can trust.”",
+            "fr": "« Mais qui est-ce ? Un fantôme bienveillant, ou quelqu'un qui a quelque chose à cacher ? » se demanda Priya en pensant à M. Dray. « On ne sait toujours pas à qui on peut faire confiance. »",
+            "g": {
+              "who": [
+                "qui",
+                "who",
+                "p"
+              ],
+              "is": [
+                "est",
+                "be",
+                "v",
+                "être"
+              ],
+              "it": [
+                "ce",
+                "it",
+                "p"
+              ],
+              "kind": [
+                "bienveillant",
+                "kind",
+                "a"
+              ],
+              "ghost": [
+                "fantôme",
+                "ghost",
+                "n"
+              ],
+              "hide": [
+                "cacher",
+                "hide",
+                "v",
+                "cacher"
+              ],
+              "wondered": [
+                "se demanda",
+                "wonder",
+                "v",
+                "se demander"
+              ],
+              "thinking": [
+                "pensant",
+                "think",
+                "v",
+                "penser"
+              ],
+              "of": [
+                "(thinking of : pensant à)",
+                "of",
+                "x"
+              ],
+              "still": [
+                "toujours",
+                "still",
+                "d"
+              ],
+              "trust": [
+                "faire confiance",
+                "trust",
+                "v",
+                "faire confiance à"
+              ],
+              "who#2": [
+                "à qui",
+                "who",
+                "p"
+              ],
+              "know": [
+                "sait",
+                "know",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "They argued for ten minutes. In the end, Tom suggested the simplest plan of all: “We can't solve it from here. Why don't we just knock on the door?”",
+            "fr": "Ils discutèrent pendant dix minutes. À la fin, Tom proposa le plan le plus simple de tous : « On ne peut pas résoudre ça d'ici. Pourquoi ne pas simplement frapper à la porte ? »",
+            "g": {
+              "argued": [
+                "discutèrent",
+                "argue",
+                "v",
+                "se disputer"
+              ],
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "end": [
+                "fin",
+                "end",
+                "n"
+              ],
+              "suggested": [
+                "proposa",
+                "suggest",
+                "v",
+                "proposer"
+              ],
+              "simplest": [
+                "le plus simple",
+                "simple",
+                "a",
+                "simple"
+              ],
+              "plan": [
+                "plan",
+                "plan",
+                "n"
+              ],
+              "solve": [
+                "résoudre",
+                "solve",
+                "v",
+                "résoudre"
+              ],
+              "it": [
+                "ça",
+                "it",
+                "p"
+              ],
+              "why": [
+                "pourquoi",
+                "why",
+                "d"
+              ],
+              "don't": [
+                "(proposition)",
+                "do",
+                "v"
+              ],
+              "just": [
+                "simplement",
+                "just",
+                "d"
+              ],
+              "knock": [
+                "frapper",
+                "knock",
+                "v",
+                "frapper"
+              ]
+            }
+          },
+          {
+            "en": "“Tomorrow at dusk,” Priya decided. “All three of us, together, and we'll be polite.”",
+            "fr": "« Demain au crépuscule, décida Priya. Tous les trois ensemble, et nous serons polis. »",
+            "g": {
+              "dusk": [
+                "crépuscule",
+                "dusk",
+                "n"
+              ],
+              "decided": [
+                "décida",
+                "decide",
+                "v",
+                "décider"
+              ],
+              "all": [
+                "tous",
+                "all",
+                "t"
+              ],
+              "three": [
+                "trois",
+                "three",
+                "a"
+              ],
+              "of": [
+                "(all three of us : tous les trois)",
+                "of",
+                "r"
+              ],
+              "us": [
+                "(tous les trois)",
+                "us",
+                "p"
+              ],
+              "polite": [
+                "polis",
+                "polite",
+                "a"
+              ],
+              "we'll": [
+                "nous (futur)",
+                "will",
+                "v"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 4 — The Secret Trench",
+      "titreFr": "Chapitre 4 — La tranchée secrète"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "On Thursday, the sun set early, and the mill stood black against a pink and grey sky. The wheel was not turning.",
+            "fr": "Le jeudi, le soleil se coucha tôt, et le moulin se dressait, tout noir, contre un ciel rose et gris. La roue ne tournait pas.",
+            "g": {
+              "thursday": [
+                "jeudi",
+                "Thursday",
+                "n"
+              ],
+              "set": [
+                "se coucha",
+                "set",
+                "v",
+                "se coucher"
+              ],
+              "early": [
+                "tôt",
+                "early",
+                "d"
+              ],
+              "stood": [
+                "se dressait",
+                "stand",
+                "v",
+                "se dresser"
+              ],
+              "black": [
+                "noir",
+                "black",
+                "a"
+              ],
+              "against": [
+                "contre",
+                "against",
+                "r"
+              ],
+              "pink": [
+                "rose",
+                "pink",
+                "a"
+              ],
+              "grey": [
+                "gris",
+                "grey",
+                "a"
+              ],
+              "sky": [
+                "ciel",
+                "sky",
+                "n"
+              ],
+              "was": [
+                "(was turning : tournait)",
+                "be",
+                "v",
+                "être"
+              ],
+              "turning": [
+                "tournait",
+                "turn",
+                "v",
+                "tourner"
+              ]
+            }
+          },
+          {
+            "en": "“There's a light in the window,” whispered Amara. “And I can hear something. Listen.”",
+            "fr": "« Il y a de la lumière à la fenêtre, murmura Amara. Et j'entends quelque chose. Écoutez. »",
+            "g": {
+              "there's": [
+                "il y a",
+                "be",
+                "v",
+                "être"
+              ],
+              "hear": [
+                "entends",
+                "hear",
+                "v",
+                "entendre"
+              ],
+              "listen": [
+                "écoutez",
+                "listen",
+                "v",
+                "écouter"
+              ]
+            }
+          },
+          {
+            "en": "From inside came the sound of metal on metal: tap, tap, tap. Then a tired voice muttered, “Come on, you stubborn old thing.”",
+            "fr": "De l'intérieur venait un bruit de métal contre métal : toc, toc, toc. Puis une voix fatiguée marmonna : « Allez, vieux machin têtu. »",
+            "g": {
+              "inside": [
+                "l'intérieur",
+                "inside",
+                "n"
+              ],
+              "came": [
+                "venait",
+                "come",
+                "v",
+                "venir"
+              ],
+              "sound": [
+                "bruit",
+                "sound",
+                "n"
+              ],
+              "metal": [
+                "métal",
+                "metal",
+                "n"
+              ],
+              "tap": [
+                "toc",
+                "tap",
+                "n"
+              ],
+              "tired": [
+                "fatiguée",
+                "tired",
+                "a"
+              ],
+              "voice": [
+                "voix",
+                "voice",
+                "n"
+              ],
+              "muttered": [
+                "marmonna",
+                "mutter",
+                "v",
+                "marmonner"
+              ],
+              "come": [
+                "allez",
+                "come",
+                "v",
+                "venir"
+              ],
+              "on": [
+                "contre",
+                "on",
+                "r"
+              ],
+              "stubborn": [
+                "têtu",
+                "stubborn",
+                "a"
+              ],
+              "thing": [
+                "machin",
+                "thing",
+                "n"
+              ],
+              "old": [
+                "vieux",
+                "old",
+                "a",
+                "vieux"
+              ],
+              "on#2": [
+                "(come on : allez)",
+                "on",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "Priya took a deep breath and knocked three times.",
+            "fr": "Priya prit une profonde inspiration et frappa trois fois.",
+            "g": {
+              "took": [
+                "prit",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "deep": [
+                "profonde",
+                "deep",
+                "a"
+              ],
+              "breath": [
+                "inspiration",
+                "breath",
+                "n"
+              ],
+              "knocked": [
+                "frappa",
+                "knock",
+                "v",
+                "frapper"
+              ],
+              "times": [
+                "fois",
+                "time",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "The hammering stopped. Slow footsteps came towards the door, with the tap of a stick. A key turned, and the door opened.",
+            "fr": "Les coups de marteau cessèrent. Des pas lents s'approchèrent de la porte, avec le tapotement d'une canne. Une clé tourna, et la porte s'ouvrit.",
+            "g": {
+              "hammering": [
+                "coups de marteau",
+                "hammering",
+                "n"
+              ],
+              "stopped": [
+                "cessèrent",
+                "stop",
+                "v",
+                "arrêter"
+              ],
+              "footsteps": [
+                "pas",
+                "footstep",
+                "n",
+                "pas"
+              ],
+              "came": [
+                "s'approchèrent",
+                "come",
+                "v",
+                "venir"
+              ],
+              "towards": [
+                "vers",
+                "towards",
+                "r"
+              ],
+              "stick": [
+                "canne",
+                "stick",
+                "n"
+              ],
+              "key": [
+                "clé",
+                "key",
+                "n"
+              ],
+              "turned": [
+                "tourna",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "opened": [
+                "s'ouvrit",
+                "open",
+                "v",
+                "ouvrir"
+              ],
+              "slow": [
+                "lents",
+                "slow",
+                "a",
+                "lent"
+              ],
+              "tap": [
+                "tapotement",
+                "tap",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "A tall, thin old man stood there. He had white hair, thick glasses and brown overalls covered in oil. In one hand, he held a spanner.",
+            "fr": "Un vieil homme grand et maigre se tenait là. Il avait des cheveux blancs, d'épaisses lunettes et une salopette marron couverte d'huile. Dans une main, il tenait une clé à molette.",
+            "g": {
+              "thin": [
+                "maigre",
+                "thin",
+                "a"
+              ],
+              "stood": [
+                "se tenait",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "white": [
+                "blancs",
+                "white",
+                "a"
+              ],
+              "hair": [
+                "cheveux",
+                "hair",
+                "n"
+              ],
+              "thick": [
+                "épaisses",
+                "thick",
+                "a"
+              ],
+              "glasses": [
+                "lunettes",
+                "glass",
+                "n",
+                "verre"
+              ],
+              "brown": [
+                "marron",
+                "brown",
+                "a"
+              ],
+              "overalls": [
+                "salopette",
+                "overalls",
+                "n"
+              ],
+              "covered": [
+                "couverte",
+                "cover",
+                "v",
+                "couvrir"
+              ],
+              "oil": [
+                "huile",
+                "oil",
+                "n"
+              ],
+              "held": [
+                "tenait",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "spanner": [
+                "clé plate",
+                "spanner",
+                "n"
+              ],
+              "old": [
+                "vieil",
+                "old",
+                "a",
+                "vieux"
+              ]
+            }
+          },
+          {
+            "en": "“Good evening,” he said calmly. “I wondered how long it would take you.”",
+            "fr": "« Bonsoir, dit-il calmement. Je me demandais combien de temps il vous faudrait. »",
+            "g": {
+              "calmly": [
+                "calmement",
+                "calmly",
+                "d"
+              ],
+              "wondered": [
+                "me demandais",
+                "wonder",
+                "v",
+                "se demander"
+              ],
+              "how": [
+                "combien de temps",
+                "how",
+                "c"
+              ],
+              "long": [
+                "(how long : combien de temps)",
+                "long",
+                "d"
+              ],
+              "would": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "take": [
+                "faudrait",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "good": [
+                "(good evening : bonsoir)",
+                "good",
+                "a"
+              ],
+              "evening": [
+                "bonsoir (good evening)",
+                "evening",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "The friends stared at him. “You knew we were coming?” asked Priya.",
+            "fr": "Les amis le dévisagèrent. « Vous saviez que nous venions ? » demanda Priya.",
+            "g": {
+              "stared": [
+                "dévisagèrent",
+                "stare",
+                "v",
+                "dévisager"
+              ],
+              "at": [
+                "(stared at : dévisagèrent)",
+                "at",
+                "x"
+              ],
+              "knew": [
+                "saviez",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "were": [
+                "venions (were coming)",
+                "be",
+                "v",
+                "être"
+              ],
+              "coming": [
+                "venions",
+                "come",
+                "v",
+                "venir"
+              ]
+            }
+          },
+          {
+            "en": "“Of course,” he said with a smile. “On Tuesday night, the moon was shining on a pair of binoculars in an attic window. Binoculars shine, you know.”",
+            "fr": "« Bien sûr, dit-il avec un sourire. Dans la nuit de mardi, la lune brillait sur une paire de jumelles à une fenêtre de grenier. Les jumelles brillent, vous savez. »",
+            "g": {
+              "of": [
+                "(of course : bien sûr)",
+                "of",
+                "r"
+              ],
+              "course": [
+                "(of course : bien sûr)",
+                "course",
+                "n"
+              ],
+              "on": [
+                "(on Tuesday night : dans la nuit de mardi)",
+                "on",
+                "r"
+              ],
+              "was": [
+                "(was shining : brillait)",
+                "be",
+                "v",
+                "être"
+              ],
+              "shining": [
+                "brillait",
+                "shine",
+                "v",
+                "briller"
+              ],
+              "pair": [
+                "paire",
+                "pair",
+                "n"
+              ],
+              "binoculars": [
+                "jumelles",
+                "binoculars",
+                "n"
+              ],
+              "attic": [
+                "grenier",
+                "attic",
+                "n"
+              ],
+              "shine": [
+                "brillent",
+                "shine",
+                "v",
+                "briller"
+              ],
+              "on#2": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "of#2": [
+                "(pair of : paire de)",
+                "of",
+                "r"
+              ],
+              "know": [
+                "savez",
+                "know",
+                "v"
+              ],
+              "night": [
+                "nuit",
+                "night",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Tom went red. “We're sorry,” he said. “We only wanted to know who was living here.”",
+            "fr": "Tom devint rouge. « Nous sommes désolés, dit-il. Nous voulions seulement savoir qui vivait ici. »",
+            "g": {
+              "went": [
+                "devint",
+                "go",
+                "v",
+                "aller"
+              ],
+              "red": [
+                "rouge",
+                "red",
+                "a"
+              ],
+              "we're": [
+                "nous sommes",
+                "be",
+                "v",
+                "être"
+              ],
+              "sorry": [
+                "désolés",
+                "sorry",
+                "a"
+              ],
+              "only": [
+                "seulement",
+                "only",
+                "d"
+              ],
+              "wanted": [
+                "voulions",
+                "want",
+                "v",
+                "vouloir"
+              ],
+              "to": [
+                "(wanted to : voulions)",
+                "to",
+                "x"
+              ],
+              "know": [
+                "savoir",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "was": [
+                "(was living : vivait)",
+                "be",
+                "v",
+                "être"
+              ],
+              "living": [
+                "vivait",
+                "live",
+                "v",
+                "vivre"
+              ]
+            }
+          },
+          {
+            "en": "“Nobody lives here. I only work here,” the old man replied. “My name is Arthur Penhale, and I was an engineer for fifty years. Come in. It's getting cold.”",
+            "fr": "« Personne n'habite ici. J'y travaille seulement, répondit le vieil homme. Je m'appelle Arthur Penhale, et j'ai été ingénieur pendant cinquante ans. Entrez. Il commence à faire froid. »",
+            "g": {
+              "lives": [
+                "habite",
+                "live",
+                "v",
+                "habiter"
+              ],
+              "work": [
+                "travaille",
+                "work",
+                "v",
+                "travailler"
+              ],
+              "replied": [
+                "répondit",
+                "reply",
+                "v",
+                "répondre"
+              ],
+              "arthur": [
+                "Arthur (prénom)",
+                "Arthur",
+                "np"
+              ],
+              "penhale": [
+                "Penhale (nom de famille)",
+                "Penhale",
+                "np"
+              ],
+              "was": [
+                "ai été",
+                "be",
+                "v",
+                "être"
+              ],
+              "engineer": [
+                "ingénieur",
+                "engineer",
+                "n"
+              ],
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "fifty": [
+                "cinquante",
+                "fifty",
+                "a"
+              ],
+              "it's": [
+                "il (impersonnel)",
+                "be",
+                "v",
+                "être"
+              ],
+              "getting": [
+                "commence à faire (getting cold)",
+                "get",
+                "v",
+                "obtenir"
+              ],
+              "cold": [
+                "froid",
+                "cold",
+                "a"
+              ],
+              "come": [
+                "entrez",
+                "come",
+                "v",
+                "venir"
+              ],
+              "in": [
+                "(come in : entrez)",
+                "in",
+                "x"
+              ],
+              "old": [
+                "vieil",
+                "old",
+                "a",
+                "vieux"
+              ],
+              "name": [
+                "m'appelle (my name is)",
+                "name",
+                "n",
+                "nom"
+              ]
+            }
+          },
+          {
+            "en": "He stepped back and held the door open. Behind him, a warm yellow light filled the old room.",
+            "fr": "Il recula d'un pas et tint la porte ouverte. Derrière lui, une chaude lumière jaune remplissait la vieille pièce.",
+            "g": {
+              "stepped": [
+                "recula d'un pas (stepped back)",
+                "step",
+                "v",
+                "faire un pas"
+              ],
+              "back": [
+                "(stepped back : recula)",
+                "back",
+                "d"
+              ],
+              "held": [
+                "tint",
+                "hold",
+                "v",
+                "tenir"
+              ],
+              "open": [
+                "ouverte",
+                "open",
+                "a"
+              ],
+              "behind": [
+                "derrière",
+                "behind",
+                "r"
+              ],
+              "warm": [
+                "chaude",
+                "warm",
+                "a"
+              ],
+              "filled": [
+                "remplissait",
+                "fill",
+                "v",
+                "remplir"
+              ],
+              "room": [
+                "pièce",
+                "room",
+                "n"
+              ],
+              "old": [
+                "vieille",
+                "old",
+                "a",
+                "vieux"
+              ]
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "Inside the mill, the air smelled of oil, wood and hot metal.",
+            "fr": "À l'intérieur du moulin, l'air sentait l'huile, le bois et le métal chaud.",
+            "g": {
+              "inside": [
+                "à l'intérieur de",
+                "inside",
+                "r"
+              ],
+              "air": [
+                "air",
+                "air",
+                "n"
+              ],
+              "smelled": [
+                "sentait",
+                "smell",
+                "v",
+                "sentir"
+              ],
+              "of": [
+                "(smelled of : sentait)",
+                "of",
+                "x"
+              ],
+              "wood": [
+                "bois",
+                "wood",
+                "n"
+              ],
+              "hot": [
+                "chaud",
+                "hot",
+                "a"
+              ],
+              "metal": [
+                "métal",
+                "metal",
+                "n"
+              ],
+              "oil": [
+                "huile",
+                "oil",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "In the middle of the room stood a large green machine, connected to the wheel by a thick shaft. A tangle of cables ran from it to a grey box.",
+            "fr": "Au milieu de la pièce se dressait une grande machine verte, reliée à la roue par un épais arbre de métal. Un enchevêtrement de câbles allait de la machine à un boîtier gris.",
+            "g": {
+              "middle": [
+                "milieu",
+                "middle",
+                "n"
+              ],
+              "stood": [
+                "se dressait",
+                "stand",
+                "v",
+                "se dresser"
+              ],
+              "large": [
+                "grande",
+                "large",
+                "a"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a"
+              ],
+              "connected": [
+                "reliée",
+                "connect",
+                "v",
+                "relier"
+              ],
+              "shaft": [
+                "arbre (axe)",
+                "shaft",
+                "n"
+              ],
+              "tangle": [
+                "enchevêtrement",
+                "tangle",
+                "n"
+              ],
+              "cables": [
+                "câbles",
+                "cable",
+                "n",
+                "câble"
+              ],
+              "ran": [
+                "allait",
+                "run",
+                "v",
+                "courir"
+              ],
+              "it": [
+                "elle (la machine)",
+                "it",
+                "p"
+              ],
+              "grey": [
+                "gris",
+                "grey",
+                "a"
+              ],
+              "box": [
+                "boîtier",
+                "box",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“This is my generator,” said Mr Penhale proudly. “When the wheel turns, it makes enough electricity to light a hall.”",
+            "fr": "« Voici mon générateur, dit M. Penhale avec fierté. Quand la roue tourne, il produit assez d'électricité pour éclairer une salle. »",
+            "g": {
+              "generator": [
+                "générateur",
+                "generator",
+                "n"
+              ],
+              "proudly": [
+                "avec fierté",
+                "proudly",
+                "d"
+              ],
+              "turns": [
+                "tourne",
+                "turn",
+                "v",
+                "tourner"
+              ],
+              "it": [
+                "il (le générateur)",
+                "it",
+                "p"
+              ],
+              "makes": [
+                "produit",
+                "make",
+                "v",
+                "fabriquer"
+              ],
+              "enough": [
+                "assez",
+                "enough",
+                "d"
+              ],
+              "light": [
+                "éclairer",
+                "light",
+                "v"
+              ]
+            }
+          },
+          {
+            "en": "“Yes, the cable goes to the village hall,” he said. “You found my trench, did you? I should have dug deeper.”",
+            "fr": "« Oui, le câble va jusqu'à la salle des fêtes, dit-il. Vous avez trouvé ma tranchée, n'est-ce pas ? J'aurais dû creuser plus profond. »",
+            "g": {
+              "goes": [
+                "va",
+                "go",
+                "v",
+                "aller"
+              ],
+              "hall": [
+                "salle des fêtes",
+                "hall",
+                "n"
+              ],
+              "trench": [
+                "tranchée",
+                "trench",
+                "n"
+              ],
+              "did": [
+                "n'est-ce pas",
+                "do",
+                "v",
+                "faire"
+              ],
+              "should": [
+                "aurais dû",
+                "shall",
+                "v"
+              ],
+              "have": [
+                "(should have : aurais dû)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "dug": [
+                "creuser",
+                "dig",
+                "v",
+                "creuser"
+              ],
+              "deeper": [
+                "plus profond",
+                "deep",
+                "a",
+                "profond"
+              ],
+              "found": [
+                "avez trouvé",
+                "find",
+                "v",
+                "trouver"
+              ]
+            }
+          },
+          {
+            "en": "“My sister Margaret ran the lunch club for twenty years,” he said, pouring the tea. “When she told me about the dark hall and the old people singing by candlelight, I knew I had to help.”",
+            "fr": "« Ma sœur Margaret a dirigé le club du déjeuner pendant vingt ans, dit-il en versant le thé. Quand elle m'a parlé de la salle plongée dans le noir et des personnes âgées qui chantaient à la bougie, j'ai su que je devais aider. »",
+            "g": {
+              "sister": [
+                "sœur",
+                "sister",
+                "n"
+              ],
+              "ran": [
+                "a dirigé",
+                "run",
+                "v",
+                "diriger"
+              ],
+              "lunch": [
+                "déjeuner",
+                "lunch",
+                "n"
+              ],
+              "club": [
+                "club",
+                "club",
+                "n"
+              ],
+              "years": [
+                "ans",
+                "year",
+                "n",
+                "an"
+              ],
+              "pouring": [
+                "versant",
+                "pour",
+                "v",
+                "verser"
+              ],
+              "tea": [
+                "thé",
+                "tea",
+                "n"
+              ],
+              "told": [
+                "a parlé",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "about": [
+                "de",
+                "about",
+                "r"
+              ],
+              "hall": [
+                "salle",
+                "hall",
+                "n"
+              ],
+              "singing": [
+                "chantaient",
+                "sing",
+                "v",
+                "chanter"
+              ],
+              "by": [
+                "à la lumière de",
+                "by",
+                "r"
+              ],
+              "candlelight": [
+                "bougie",
+                "candlelight",
+                "n"
+              ],
+              "knew": [
+                "ai su",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "had": [
+                "devais (had to)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "to": [
+                "(had to : devais)",
+                "to",
+                "x"
+              ],
+              "help": [
+                "aider",
+                "help",
+                "v",
+                "aider"
+              ],
+              "margaret": [
+                "Margaret (prénom)",
+                "Margaret",
+                "np"
+              ],
+              "dark": [
+                "plongée dans le noir",
+                "dark",
+                "a"
+              ],
+              "old": [
+                "âgées (old people)",
+                "old",
+                "a"
+              ],
+              "people": [
+                "(old people : personnes âgées)",
+                "people",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Mr Penhale explained that he had bought the mill in March from the Harrow family. He kept it secret because, if he told the council, they would ask for forms, plans and meetings, and it would take two years.",
+            "fr": "M. Penhale expliqua qu'il avait acheté le moulin en mars à la famille Harrow. Il le gardait secret parce que, s'il en parlait à la mairie, on lui demanderait des formulaires, des plans et des réunions, et cela prendrait deux ans.",
+            "g": {
+              "explained": [
+                "expliqua",
+                "explain",
+                "v",
+                "expliquer"
+              ],
+              "that": [
+                "que",
+                "that",
+                "c"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "bought": [
+                "acheté",
+                "buy",
+                "v",
+                "acheter"
+              ],
+              "kept": [
+                "gardait",
+                "keep",
+                "v",
+                "garder"
+              ],
+              "because": [
+                "parce que",
+                "because",
+                "c"
+              ],
+              "told": [
+                "en parlait",
+                "tell",
+                "v",
+                "dire"
+              ],
+              "council": [
+                "mairie",
+                "council",
+                "n"
+              ],
+              "would": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "would#2": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "ask": [
+                "demanderait",
+                "ask",
+                "v",
+                "demander"
+              ],
+              "for": [
+                "(ask for : demander)",
+                "for",
+                "x"
+              ],
+              "forms": [
+                "formulaires",
+                "form",
+                "n",
+                "formulaire"
+              ],
+              "plans": [
+                "plans",
+                "plan",
+                "n",
+                "plan"
+              ],
+              "meetings": [
+                "réunions",
+                "meeting",
+                "n",
+                "réunion"
+              ],
+              "take": [
+                "prendrait",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "it": [
+                "le",
+                "it",
+                "p"
+              ],
+              "two": [
+                "deux",
+                "two",
+                "a"
+              ],
+              "years": [
+                "ans",
+                "year",
+                "n",
+                "an"
+              ],
+              "secret": [
+                "secret",
+                "secret",
+                "a"
+              ],
+              "it#2": [
+                "cela",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "“I'm seventy-eight,” he added. “And if I promise something and fail, everybody will be disappointed. It's better to give a gift than to make a promise.”",
+            "fr": "« J'ai soixante-dix-huit ans, ajouta-t-il. Et si je promets quelque chose et que j'échoue, tout le monde sera déçu. Mieux vaut offrir un cadeau que faire une promesse. »",
+            "g": {
+              "i'm": [
+                "j'ai (I'm seventy-eight : j'ai soixante-dix-huit ans)",
+                "be",
+                "v",
+                "être"
+              ],
+              "seventy-eight": [
+                "soixante-dix-huit ans",
+                "seventy-eight",
+                "a"
+              ],
+              "added": [
+                "ajouta-t-il",
+                "add",
+                "v",
+                "ajouter"
+              ],
+              "promise": [
+                "promets",
+                "promise",
+                "v",
+                "promettre"
+              ],
+              "promise#2": [
+                "promesse",
+                "promise",
+                "n"
+              ],
+              "fail": [
+                "échoue",
+                "fail",
+                "v",
+                "échouer"
+              ],
+              "everybody": [
+                "tout le monde",
+                "everybody",
+                "p"
+              ],
+              "disappointed": [
+                "déçu",
+                "disappointed",
+                "a"
+              ],
+              "better": [
+                "mieux",
+                "good",
+                "a",
+                "bon"
+              ],
+              "give": [
+                "offrir",
+                "give",
+                "v",
+                "donner"
+              ],
+              "gift": [
+                "cadeau",
+                "gift",
+                "n"
+              ],
+              "make": [
+                "faire",
+                "make",
+                "v",
+                "faire"
+              ],
+              "than": [
+                "que",
+                "than",
+                "c"
+              ],
+              "it's": [
+                "mieux vaut (it's better)",
+                "be",
+                "v",
+                "être"
+              ]
+            }
+          },
+          {
+            "en": "“It must be ready for Winter Evening on the twentieth of December, six weeks from now,” he said. “If everything goes well, I'll finish in time. But I can't do it alone.”",
+            "fr": "« Il doit être prêt pour la Soirée d'hiver, le vingt décembre, dans six semaines, dit-il. Si tout se passe bien, je finirai à temps. Mais je ne peux pas y arriver seul. »",
+            "g": {
+              "must": [
+                "doit",
+                "must",
+                "v"
+              ],
+              "ready": [
+                "prêt",
+                "ready",
+                "a"
+              ],
+              "winter": [
+                "d'hiver",
+                "winter",
+                "n"
+              ],
+              "twentieth": [
+                "vingt",
+                "twentieth",
+                "a"
+              ],
+              "december": [
+                "décembre",
+                "December",
+                "n"
+              ],
+              "weeks": [
+                "semaines",
+                "week",
+                "n",
+                "semaine"
+              ],
+              "from": [
+                "dans (six weeks from now)",
+                "from",
+                "r"
+              ],
+              "goes": [
+                "se passe",
+                "go",
+                "v",
+                "aller"
+              ],
+              "well": [
+                "bien",
+                "well",
+                "d"
+              ],
+              "i'll": [
+                "je (futur)",
+                "will",
+                "v"
+              ],
+              "finish": [
+                "finirai",
+                "finish",
+                "v",
+                "finir"
+              ],
+              "time": [
+                "temps",
+                "time",
+                "n"
+              ],
+              "in": [
+                "(in time : à temps)",
+                "in",
+                "r"
+              ],
+              "do": [
+                "y arriver",
+                "do",
+                "v",
+                "faire"
+              ],
+              "alone": [
+                "seul",
+                "alone",
+                "a"
+              ],
+              "evening": [
+                "soirée",
+                "evening",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“We'll help!” said three voices at once.",
+            "fr": "« Nous vous aiderons ! » dirent trois voix en même temps.",
+            "g": {
+              "we'll": [
+                "nous (futur)",
+                "will",
+                "v"
+              ],
+              "help": [
+                "aiderons",
+                "help",
+                "v",
+                "aider"
+              ],
+              "voices": [
+                "voix",
+                "voice",
+                "n",
+                "voix"
+              ],
+              "once": [
+                "même temps (at once)",
+                "once",
+                "d"
+              ],
+              "at": [
+                "(at once : en même temps)",
+                "at",
+                "x"
+              ],
+              "said": [
+                "dirent",
+                "say",
+                "v",
+                "dire"
+              ]
+            }
+          },
+          {
+            "en": "“Then promise me one thing,” he said. “Not a word to anyone.” They shook hands on it.",
+            "fr": "« Alors promettez-moi une chose, dit-il. Pas un mot à personne. » Ils se serrèrent la main là-dessus.",
+            "g": {
+              "promise": [
+                "promettez",
+                "promise",
+                "v",
+                "promettre"
+              ],
+              "thing": [
+                "chose",
+                "thing",
+                "n"
+              ],
+              "word": [
+                "mot",
+                "word",
+                "n"
+              ],
+              "anyone": [
+                "personne",
+                "anyone",
+                "p"
+              ],
+              "shook": [
+                "se serrèrent",
+                "shake",
+                "v",
+                "serrer"
+              ],
+              "hands": [
+                "main",
+                "hand",
+                "n",
+                "main"
+              ],
+              "on": [
+                "(shook hands on it : se serrèrent la main là-dessus)",
+                "on",
+                "r"
+              ],
+              "it": [
+                "là-dessus",
+                "it",
+                "p"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 5 — Inside the Mill",
+      "titreFr": "Chapitre 5 — À l'intérieur du moulin"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "For the next two weeks, the old mill became the busiest place in Ashby Cross, although nobody in the village knew it.",
+            "fr": "Pendant les deux semaines suivantes, le vieux moulin devint l'endroit le plus animé d'Ashby Cross, bien que personne au village ne le sache.",
+            "g": {
+              "for": [
+                "pendant",
+                "for",
+                "r"
+              ],
+              "next": [
+                "suivantes",
+                "next",
+                "a"
+              ],
+              "became": [
+                "devint",
+                "become",
+                "v",
+                "devenir"
+              ],
+              "busiest": [
+                "le plus animé",
+                "busy",
+                "a",
+                "occupé"
+              ],
+              "place": [
+                "endroit",
+                "place",
+                "n"
+              ],
+              "although": [
+                "bien que",
+                "although",
+                "c"
+              ],
+              "knew": [
+                "sache",
+                "know",
+                "v",
+                "savoir"
+              ],
+              "it": [
+                "(le)",
+                "it",
+                "p"
+              ]
+            }
+          },
+          {
+            "en": "Amara measured how fast the water flowed and calculated how much power the wheel could produce. “If we open the gate by half,” she explained, “we'll have enough electricity for the lights.”",
+            "fr": "Amara mesura à quelle vitesse l'eau coulait et calcula quelle puissance la roue pouvait produire. « Si nous ouvrons la vanne à moitié, expliqua-t-elle, nous aurons assez d'électricité pour les lampes. »",
+            "g": {
+              "measured": [
+                "mesura",
+                "measure",
+                "v",
+                "mesurer"
+              ],
+              "how": [
+                "à quelle vitesse (how fast)",
+                "how",
+                "c"
+              ],
+              "fast": [
+                "(how fast : à quelle vitesse)",
+                "fast",
+                "d"
+              ],
+              "flowed": [
+                "coulait",
+                "flow",
+                "v",
+                "couler"
+              ],
+              "calculated": [
+                "calcula",
+                "calculate",
+                "v",
+                "calculer"
+              ],
+              "much": [
+                "quelle",
+                "much",
+                "t"
+              ],
+              "power": [
+                "puissance",
+                "power",
+                "n"
+              ],
+              "could": [
+                "pouvait",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "produce": [
+                "produire",
+                "produce",
+                "v",
+                "produire"
+              ],
+              "open": [
+                "ouvrons",
+                "open",
+                "v",
+                "ouvrir"
+              ],
+              "gate": [
+                "vanne",
+                "gate",
+                "n"
+              ],
+              "by": [
+                "à",
+                "by",
+                "r"
+              ],
+              "half": [
+                "moitié",
+                "half",
+                "n"
+              ],
+              "explained": [
+                "expliqua",
+                "explain",
+                "v",
+                "expliquer"
+              ],
+              "we'll": [
+                "nous (futur)",
+                "will",
+                "v"
+              ],
+              "have": [
+                "aurons",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "lights": [
+                "lampes",
+                "light",
+                "n",
+                "lumière"
+              ],
+              "how#2": [
+                "(how much : quelle)",
+                "how",
+                "c"
+              ]
+            }
+          },
+          {
+            "en": "Tom, who had learned woodwork from his uncle, cut and fitted new paddles for the wheel. His hands were soon covered in splinters, and he had never been happier.",
+            "fr": "Tom, qui avait appris la menuiserie avec son oncle, découpa et posa de nouvelles pales pour la roue. Ses mains furent bientôt couvertes d'échardes, et il n'avait jamais été aussi heureux.",
+            "g": {
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "learned": [
+                "appris",
+                "learn",
+                "v",
+                "apprendre"
+              ],
+              "woodwork": [
+                "menuiserie",
+                "woodwork",
+                "n"
+              ],
+              "uncle": [
+                "oncle",
+                "uncle",
+                "n"
+              ],
+              "cut": [
+                "découpa",
+                "cut",
+                "v",
+                "découper"
+              ],
+              "fitted": [
+                "posa",
+                "fit",
+                "v",
+                "poser"
+              ],
+              "new": [
+                "nouvelles",
+                "new",
+                "a"
+              ],
+              "paddles": [
+                "pales",
+                "paddle",
+                "n",
+                "pale"
+              ],
+              "hands": [
+                "mains",
+                "hand",
+                "n",
+                "main"
+              ],
+              "covered": [
+                "couvertes",
+                "cover",
+                "v",
+                "couvrir"
+              ],
+              "in": [
+                "(covered in : couvertes de)",
+                "in",
+                "x"
+              ],
+              "splinters": [
+                "échardes",
+                "splinter",
+                "n",
+                "écharde"
+              ],
+              "had#2": [
+                "(had never been : n'avait jamais été)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "été",
+                "be",
+                "v",
+                "être"
+              ],
+              "happier": [
+                "aussi heureux",
+                "happy",
+                "a",
+                "heureux"
+              ]
+            }
+          },
+          {
+            "en": "Priya kept the diary. She invented excuses for their parents: “We're working on a project about water power,” which was perfectly true.",
+            "fr": "Priya tenait l'agenda. Elle inventait des excuses pour leurs parents : « Nous travaillons sur un projet à propos de l'énergie de l'eau », ce qui était parfaitement vrai.",
+            "g": {
+              "kept": [
+                "tenait",
+                "keep",
+                "v",
+                "tenir"
+              ],
+              "diary": [
+                "agenda",
+                "diary",
+                "n"
+              ],
+              "invented": [
+                "inventait",
+                "invent",
+                "v",
+                "inventer"
+              ],
+              "excuses": [
+                "excuses",
+                "excuse",
+                "n",
+                "excuse"
+              ],
+              "parents": [
+                "parents",
+                "parent",
+                "n",
+                "parent"
+              ],
+              "working": [
+                "travaillons",
+                "work",
+                "v",
+                "travailler"
+              ],
+              "on": [
+                "sur",
+                "on",
+                "r"
+              ],
+              "project": [
+                "projet",
+                "project",
+                "n"
+              ],
+              "power": [
+                "énergie",
+                "power",
+                "n"
+              ],
+              "which": [
+                "ce qui",
+                "which",
+                "p"
+              ],
+              "perfectly": [
+                "parfaitement",
+                "perfectly",
+                "d"
+              ],
+              "true": [
+                "vrai",
+                "true",
+                "a"
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "en": "On the second Saturday, a white van stopped outside the mill.",
+            "fr": "Le deuxième samedi, une camionnette blanche s'arrêta devant le moulin.",
+            "g": {
+              "second": [
+                "deuxième",
+                "second",
+                "a"
+              ],
+              "stopped": [
+                "s'arrêta",
+                "stop",
+                "v",
+                "arrêter"
+              ],
+              "outside": [
+                "devant",
+                "outside",
+                "r"
+              ],
+              "white": [
+                "blanche",
+                "white",
+                "a",
+                "blanc"
+              ]
+            }
+          },
+          {
+            "en": "The big man in the green jacket stepped out, carrying a heavy box. “Morning, Arthur! Your gears have arrived!” he shouted.",
+            "fr": "Le grand homme à la veste verte descendit, portant une lourde caisse. « Bonjour, Arthur ! Vos engrenages sont arrivés ! » cria-t-il.",
+            "g": {
+              "big": [
+                "grand",
+                "big",
+                "a"
+              ],
+              "stepped": [
+                "descendit (stepped out)",
+                "step",
+                "v",
+                "faire un pas"
+              ],
+              "out": [
+                "(stepped out : descendit)",
+                "out",
+                "x"
+              ],
+              "carrying": [
+                "portant",
+                "carry",
+                "v",
+                "porter"
+              ],
+              "heavy": [
+                "lourde",
+                "heavy",
+                "a"
+              ],
+              "box": [
+                "caisse",
+                "box",
+                "n"
+              ],
+              "gears": [
+                "engrenages",
+                "gear",
+                "n",
+                "engrenage"
+              ],
+              "have": [
+                "sont",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "arrived": [
+                "arrivés",
+                "arrive",
+                "v",
+                "arriver"
+              ],
+              "shouted": [
+                "cria",
+                "shout",
+                "v",
+                "crier"
+              ],
+              "green": [
+                "verte",
+                "green",
+                "a",
+                "vert"
+              ],
+              "morning": [
+                "bonjour",
+                "morning",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Don't look so worried,” said Mr Penhale. “Mr Dray has been selling me parts for two months. He thinks I'm building a machine for a museum.”",
+            "fr": "« Ne prenez pas cet air inquiet, dit M. Penhale. M. Dray me vend des pièces depuis deux mois. Il croit que je construis une machine pour un musée. »",
+            "g": {
+              "look": [
+                "prenez l'air",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "worried": [
+                "inquiet",
+                "worried",
+                "a"
+              ],
+              "has": [
+                "(has been selling : vend)",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(has been selling : vend)",
+                "be",
+                "v",
+                "être"
+              ],
+              "selling": [
+                "vend",
+                "sell",
+                "v",
+                "vendre"
+              ],
+              "parts": [
+                "pièces",
+                "part",
+                "n",
+                "pièce"
+              ],
+              "months": [
+                "mois",
+                "month",
+                "n",
+                "mois"
+              ],
+              "thinks": [
+                "croit",
+                "think",
+                "v",
+                "penser"
+              ],
+              "building": [
+                "construis (I'm building)",
+                "build",
+                "v",
+                "construire"
+              ],
+              "museum": [
+                "musée",
+                "museum",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“And aren't you?” laughed Mr Dray. “I don't ask questions. A man who pays on time is a friend of mine.”",
+            "fr": "« Et ce n'est pas le cas ? rit M. Dray. Moi, je ne pose pas de questions. Un homme qui paie à temps est un ami. »",
+            "g": {
+              "laughed": [
+                "rit",
+                "laugh",
+                "v",
+                "rire"
+              ],
+              "pays": [
+                "paie",
+                "pay",
+                "v",
+                "payer"
+              ],
+              "on": [
+                "(on time : à temps)",
+                "on",
+                "r"
+              ],
+              "time": [
+                "temps",
+                "time",
+                "n"
+              ],
+              "friend": [
+                "ami",
+                "friend",
+                "n"
+              ],
+              "ask": [
+                "pose",
+                "ask",
+                "v",
+                "demander"
+              ]
+            }
+          },
+          {
+            "en": "Priya felt her cheeks turn hot. “I think we owe Mr Dray an apology,” she whispered, and she crossed out the word “thief” in her notebook.",
+            "fr": "Priya sentit ses joues devenir brûlantes. « Je crois que nous devons des excuses à M. Dray », murmura-t-elle, et elle raya le mot « voleur » dans son carnet.",
+            "g": {
+              "felt": [
+                "sentit",
+                "feel",
+                "v",
+                "sentir"
+              ],
+              "cheeks": [
+                "joues",
+                "cheek",
+                "n",
+                "joue"
+              ],
+              "turn": [
+                "devenir",
+                "turn",
+                "v",
+                "devenir"
+              ],
+              "hot": [
+                "brûlantes",
+                "hot",
+                "a"
+              ],
+              "think": [
+                "crois",
+                "think",
+                "v",
+                "penser"
+              ],
+              "owe": [
+                "devons",
+                "owe",
+                "v",
+                "devoir"
+              ],
+              "apology": [
+                "excuses",
+                "apology",
+                "n"
+              ],
+              "whispered": [
+                "murmura",
+                "whisper",
+                "v",
+                "murmurer"
+              ],
+              "crossed": [
+                "raya (crossed out)",
+                "cross",
+                "v",
+                "barrer"
+              ],
+              "out": [
+                "(crossed out : raya)",
+                "out",
+                "x"
+              ],
+              "word": [
+                "mot",
+                "word",
+                "n"
+              ],
+              "thief": [
+                "voleur",
+                "thief",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Week by week, the cable grew longer. In the evenings, they dug the trench, laid the cable and put the grass back on top, so that nobody would notice.",
+            "fr": "Semaine après semaine, le câble s'allongeait. Le soir, ils creusaient la tranchée, posaient le câble et remettaient l'herbe par-dessus, pour que personne ne remarque rien.",
+            "g": {
+              "week": [
+                "semaine",
+                "week",
+                "n"
+              ],
+              "grew": [
+                "s'allongeait (grew longer)",
+                "grow",
+                "v",
+                "grandir"
+              ],
+              "longer": [
+                "(grew longer : s'allongeait)",
+                "long",
+                "a",
+                "long"
+              ],
+              "evenings": [
+                "le soir",
+                "evening",
+                "n",
+                "soir"
+              ],
+              "dug": [
+                "creusaient",
+                "dig",
+                "v",
+                "creuser"
+              ],
+              "trench": [
+                "tranchée",
+                "trench",
+                "n"
+              ],
+              "laid": [
+                "posaient",
+                "lay",
+                "v",
+                "poser"
+              ],
+              "put": [
+                "remettaient",
+                "put",
+                "v",
+                "mettre"
+              ],
+              "grass": [
+                "herbe",
+                "grass",
+                "n"
+              ],
+              "top": [
+                "(on top : par-dessus)",
+                "top",
+                "n"
+              ],
+              "so": [
+                "pour que",
+                "so",
+                "c"
+              ],
+              "that": [
+                "(so that : pour que)",
+                "that",
+                "c"
+              ],
+              "would": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "notice": [
+                "remarque",
+                "notice",
+                "v",
+                "remarquer"
+              ],
+              "back": [
+                "(put back : remettaient)",
+                "back",
+                "d"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 6 — The Secret Team",
+      "titreFr": "Chapitre 6 — L'équipe secrète"
+    },
+    {
+      "p": [
+        [
+          {
+            "en": "On the first Sunday of December, a storm blew in from the west. All night, the rain hammered on the windows.",
+            "fr": "Le premier dimanche de décembre, une tempête souffla de l'ouest. Toute la nuit, la pluie martelait les fenêtres.",
+            "g": {
+              "first": [
+                "premier",
+                "first",
+                "a"
+              ],
+              "sunday": [
+                "dimanche",
+                "Sunday",
+                "n"
+              ],
+              "storm": [
+                "tempête",
+                "storm",
+                "n"
+              ],
+              "blew": [
+                "souffla",
+                "blow",
+                "v",
+                "souffler"
+              ],
+              "in": [
+                "(blew in : souffla)",
+                "in",
+                "x"
+              ],
+              "west": [
+                "ouest",
+                "west",
+                "n"
+              ],
+              "night": [
+                "nuit",
+                "night",
+                "n"
+              ],
+              "rain": [
+                "pluie",
+                "rain",
+                "n"
+              ],
+              "hammered": [
+                "martelait",
+                "hammer",
+                "v",
+                "marteler"
+              ],
+              "on": [
+                "(On the first Sunday : le premier dimanche)",
+                "on",
+                "x"
+              ],
+              "windows": [
+                "fenêtres",
+                "window",
+                "n",
+                "fenêtre"
+              ],
+              "on#2": [
+                "(hammered on : martelait)",
+                "on",
+                "x"
+              ]
+            }
+          },
+          {
+            "en": "At six o'clock, Tom's phone rang. “Come to the mill at once,” said Amara. “Something terrible has happened.”",
+            "fr": "À six heures, le téléphone de Tom sonna. « Viens tout de suite au moulin, dit Amara. Il s'est passé quelque chose de terrible. »",
+            "g": {
+              "rang": [
+                "sonna",
+                "ring",
+                "v",
+                "sonner"
+              ],
+              "come": [
+                "viens",
+                "come",
+                "v",
+                "venir"
+              ],
+              "at": [
+                "(at once : tout de suite)",
+                "at",
+                "x"
+              ],
+              "once": [
+                "tout de suite",
+                "once",
+                "d"
+              ],
+              "terrible": [
+                "terrible",
+                "terrible",
+                "a"
+              ],
+              "has": [
+                "est",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "happened": [
+                "passé (s'est passé)",
+                "happen",
+                "v",
+                "se passer"
+              ]
+            }
+          },
+          {
+            "en": "They found Mr Penhale standing in the mud with his hat in his hand. A huge branch had been carried down the river and had jammed in the wheel.",
+            "fr": "Ils trouvèrent M. Penhale debout dans la boue, son chapeau à la main. Une énorme branche avait été emportée par la rivière et s'était coincée dans la roue.",
+            "g": {
+              "found": [
+                "trouvèrent",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "standing": [
+                "debout",
+                "stand",
+                "v",
+                "se tenir"
+              ],
+              "mud": [
+                "boue",
+                "mud",
+                "n"
+              ],
+              "hat": [
+                "chapeau",
+                "hat",
+                "n"
+              ],
+              "huge": [
+                "énorme",
+                "huge",
+                "a"
+              ],
+              "branch": [
+                "branche",
+                "branch",
+                "n"
+              ],
+              "had": [
+                "avait",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "been": [
+                "(had been carried : avait été)",
+                "be",
+                "v",
+                "être"
+              ],
+              "carried": [
+                "emportée",
+                "carry",
+                "v",
+                "emporter"
+              ],
+              "down": [
+                "(carried down : emportée par)",
+                "down",
+                "r"
+              ],
+              "had#2": [
+                "s'était",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "jammed": [
+                "coincée",
+                "jam",
+                "v",
+                "coincer"
+              ]
+            }
+          },
+          {
+            "en": "The wheel had stopped with a terrible crack. Mr Penhale pointed to the iron shaft, where a thin line, as fine as a hair, ran across the metal.",
+            "fr": "La roue s'était arrêtée dans un craquement terrible. M. Penhale montra l'arbre de fer, où une mince ligne, fine comme un cheveu, traversait le métal.",
+            "g": {
+              "had": [
+                "s'était",
+                "have",
+                "v",
+                "avoir"
+              ],
+              "stopped": [
+                "arrêtée",
+                "stop",
+                "v",
+                "arrêter"
+              ],
+              "crack": [
+                "craquement",
+                "crack",
+                "n"
+              ],
+              "pointed": [
+                "montra du doigt",
+                "point",
+                "v",
+                "montrer du doigt"
+              ],
+              "to": [
+                "(pointed to : montra)",
+                "to",
+                "x"
+              ],
+              "iron": [
+                "fer",
+                "iron",
+                "n"
+              ],
+              "shaft": [
+                "arbre",
+                "shaft",
+                "n"
+              ],
+              "where": [
+                "où",
+                "where",
+                "c"
+              ],
+              "thin": [
+                "mince",
+                "thin",
+                "a"
+              ],
+              "fine": [
+                "fine",
+                "fine",
+                "a"
+              ],
+              "hair": [
+                "cheveu",
+                "hair",
+                "n"
+              ],
+              "ran": [
+                "traversait",
+                "run",
+                "v",
+                "courir"
+              ],
+              "across": [
+                "(ran across : traversait)",
+                "across",
+                "r"
+              ],
+              "metal": [
+                "métal",
+                "metal",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“It's cracked,” he said quietly. “If we start the wheel again, the shaft will break, and the wheel will fall into the river.”",
+            "fr": "« Il est fissuré, dit-il à voix basse. Si nous relançons la roue, l'arbre cassera, et la roue tombera dans la rivière. »",
+            "g": {
+              "it's": [
+                "il est",
+                "be",
+                "v",
+                "être"
+              ],
+              "cracked": [
+                "fissuré",
+                "crack",
+                "v",
+                "fissurer"
+              ],
+              "quietly": [
+                "à voix basse",
+                "quietly",
+                "d"
+              ],
+              "start": [
+                "relançons (start again)",
+                "start",
+                "v",
+                "démarrer"
+              ],
+              "again": [
+                "(start again : relançons)",
+                "again",
+                "d"
+              ],
+              "break": [
+                "cassera",
+                "break",
+                "v",
+                "casser"
+              ],
+              "fall": [
+                "tombera",
+                "fall",
+                "v",
+                "tomber"
+              ],
+              "into": [
+                "dans",
+                "into",
+                "r"
+              ]
+            }
+          },
+          {
+            "en": "“Can't it be repaired?” asked Tom. “Not a crack like this. A new shaft would cost two thousand pounds, and it would take eight weeks to make.”",
+            "fr": "« On ne peut pas le réparer ? demanda Tom. — Pas avec une fissure pareille. Un nouvel arbre coûterait deux mille livres, et sa fabrication prendrait huit semaines. »",
+            "g": {
+              "can't": [
+                "ne peut pas",
+                "can",
+                "v",
+                "pouvoir"
+              ],
+              "repaired": [
+                "réparer",
+                "repair",
+                "v",
+                "réparer"
+              ],
+              "like": [
+                "pareille",
+                "like",
+                "r"
+              ],
+              "new": [
+                "nouvel",
+                "new",
+                "a"
+              ],
+              "would": [
+                "(conditionnel)",
+                "would",
+                "v"
+              ],
+              "cost": [
+                "coûterait",
+                "cost",
+                "v",
+                "coûter"
+              ],
+              "thousand": [
+                "mille",
+                "thousand",
+                "a"
+              ],
+              "pounds": [
+                "livres (sterling)",
+                "pound",
+                "n",
+                "livre"
+              ],
+              "take": [
+                "prendrait",
+                "take",
+                "v",
+                "prendre"
+              ],
+              "eight": [
+                "huit",
+                "eight",
+                "a"
+              ],
+              "weeks": [
+                "semaines",
+                "week",
+                "n",
+                "semaine"
+              ],
+              "make": [
+                "fabrication (to make : fabriquer)",
+                "make",
+                "v",
+                "faire"
+              ],
+              "crack": [
+                "fissure",
+                "crack",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "“Eight weeks?” said Amara. “But Winter Evening is in two weeks!”",
+            "fr": "« Huit semaines ? dit Amara. Mais la Soirée d'hiver est dans deux semaines ! »",
+            "g": {
+              "in": [
+                "dans",
+                "in",
+                "r"
+              ],
+              "two": [
+                "deux",
+                "two",
+                "a"
+              ],
+              "weeks": [
+                "semaines",
+                "week",
+                "n",
+                "semaine"
+              ],
+              "evening": [
+                "soirée",
+                "evening",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "Mr Penhale sat down heavily on an old box. “I was foolish to make such a plan,” he said. “We'll have candles again this year.”",
+            "fr": "M. Penhale s'assit lourdement sur une vieille caisse. « J'ai été bête de faire un tel projet, dit-il. Nous aurons encore des bougies cette année. »",
+            "g": {
+              "sat": [
+                "s'assit",
+                "sit",
+                "v",
+                "s'asseoir"
+              ],
+              "down": [
+                "(sat down : s'assit)",
+                "down",
+                "x"
+              ],
+              "heavily": [
+                "lourdement",
+                "heavily",
+                "d"
+              ],
+              "box": [
+                "caisse",
+                "box",
+                "n"
+              ],
+              "foolish": [
+                "bête",
+                "foolish",
+                "a"
+              ],
+              "make": [
+                "faire",
+                "make",
+                "v",
+                "faire"
+              ],
+              "plan": [
+                "projet",
+                "plan",
+                "n"
+              ],
+              "we'll": [
+                "nous (futur)",
+                "will",
+                "v"
+              ],
+              "candles": [
+                "bougies",
+                "candle",
+                "n",
+                "bougie"
+              ],
+              "old": [
+                "vieille",
+                "old",
+                "a",
+                "vieux"
+              ]
+            }
+          },
+          {
+            "en": "Priya shook her head. “No. This mill was built in 1840, and people always kept a spare. There must be records, photographs, something. If we look, we will find it.”",
+            "fr": "Priya secoua la tête. « Non. Ce moulin a été construit en 1840, et on gardait toujours une pièce de rechange. Il doit y avoir des registres, des photos, quelque chose. Si nous cherchons, nous le trouverons. »",
+            "g": {
+              "shook": [
+                "secoua",
+                "shake",
+                "v",
+                "secouer"
+              ],
+              "was": [
+                "a été (was built)",
+                "be",
+                "v",
+                "être"
+              ],
+              "built": [
+                "construit",
+                "build",
+                "v",
+                "construire"
+              ],
+              "kept": [
+                "gardait",
+                "keep",
+                "v",
+                "garder"
+              ],
+              "spare": [
+                "pièce de rechange",
+                "spare",
+                "n"
+              ],
+              "must": [
+                "doit",
+                "must",
+                "v"
+              ],
+              "records": [
+                "registres",
+                "record",
+                "n",
+                "registre"
+              ],
+              "photographs": [
+                "photos",
+                "photograph",
+                "n",
+                "photo"
+              ],
+              "look": [
+                "cherchons",
+                "look",
+                "v",
+                "regarder"
+              ],
+              "find": [
+                "trouverons",
+                "find",
+                "v",
+                "trouver"
+              ],
+              "it": [
+                "le",
+                "it",
+                "p"
+              ],
+              "people": [
+                "on",
+                "people",
+                "n"
+              ]
+            }
+          },
+          {
+            "en": "She sounded more confident than she felt. Mr Penhale smiled in spite of himself. “Very well,” he said. “But the clock is ticking.”",
+            "fr": "Elle paraissait plus sûre d'elle qu'elle ne l'était. M. Penhale sourit malgré lui. « Très bien, dit-il. Mais le temps presse. »",
+            "g": {
+              "sounded": [
+                "paraissait",
+                "sound",
+                "v",
+                "sembler"
+              ],
+              "confident": [
+                "sûre d'elle",
+                "confident",
+                "a"
+              ],
+              "felt": [
+                "ne l'était (qu'elle ne se sentait)",
+                "feel",
+                "v",
+                "sentir"
+              ],
+              "smiled": [
+                "sourit",
+                "smile",
+                "v",
+                "sourire"
+              ],
+              "in": [
+                "(in spite of : malgré)",
+                "in",
+                "r"
+              ],
+              "spite": [
+                "malgré (in spite of)",
+                "spite",
+                "n"
+              ],
+              "of": [
+                "(in spite of himself : malgré lui)",
+                "of",
+                "r"
+              ],
+              "himself": [
+                "lui",
+                "himself",
+                "p"
+              ],
+              "very": [
+                "très",
+                "very",
+                "d"
+              ],
+              "well": [
+                "bien",
+                "well",
+                "d"
+              ],
+              "clock": [
+                "le temps (the clock is ticking)",
+                "clock",
+                "n",
+                "horloge"
+              ],
+              "ticking": [
+                "presse",
+                "tick",
+                "v",
+                "tictaquer"
+              ]
+            }
+          }
+        ]
+      ],
+      "titre": "Chapter 7 — The Broken Shaft",
+      "titreFr": "Chapitre 7 — L'arbre fissuré"
+    }
+  ]
+}

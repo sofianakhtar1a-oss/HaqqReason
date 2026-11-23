@@ -1,0 +1,1915 @@
+{
+ "debut": 1,
+ "lexique": {
+  "act": [
+   "agis",
+   "act",
+   "v",
+   "agir"
+  ],
+  "angry": [
+   "fâché",
+   "angry",
+   "a"
+  ],
+  "arms": [
+   "bras",
+   "arm",
+   "n",
+   "bras"
+  ],
+  "asks": [
+   "demande",
+   "ask",
+   "v",
+   "demander"
+  ],
+  "aunt": [
+   "tante",
+   "aunt",
+   "n"
+  ],
+  "beep": [
+   "bip",
+   "beep",
+   "n"
+  ],
+  "bip": [
+   "Bip (prénom)",
+   "Bip",
+   "np"
+  ],
+  "bip's": [
+   "de Bip",
+   "Bip",
+   "np"
+  ],
+  "box": [
+   "boîte",
+   "box",
+   "n"
+  ],
+  "brings": [
+   "apporte",
+   "bring",
+   "v",
+   "apporter"
+  ],
+  "cat": [
+   "chat",
+   "cat",
+   "n"
+  ],
+  "cats": [
+   "chats",
+   "cat",
+   "n",
+   "chat"
+  ],
+  "cereal": [
+   "céréales",
+   "cereal",
+   "n"
+  ],
+  "cheese": [
+   "fromage",
+   "cheese",
+   "n"
+  ],
+  "claps": [
+   "applaudit",
+   "clap",
+   "v",
+   "applaudir"
+  ],
+  "come": [
+   "viens",
+   "come",
+   "v",
+   "venir"
+  ],
+  "cup": [
+   "tasse",
+   "cup",
+   "n"
+  ],
+  "dad": [
+   "papa",
+   "dad",
+   "n"
+  ],
+  "desk": [
+   "bureau",
+   "desk",
+   "n"
+  ],
+  "doorbell": [
+   "sonnette",
+   "doorbell",
+   "n"
+  ],
+  "drawer": [
+   "tiroir",
+   "drawer",
+   "n"
+  ],
+  "dries": [
+   "sèche",
+   "dry",
+   "v",
+   "sécher"
+  ],
+  "eats": [
+   "mange",
+   "eat",
+   "v",
+   "manger"
+  ],
+  "eyes": [
+   "yeux",
+   "eye",
+   "n",
+   "œil"
+  ],
+  "falls": [
+   "tombe",
+   "fall",
+   "v",
+   "tomber"
+  ],
+  "family": [
+   "famille",
+   "family",
+   "n"
+  ],
+  "fast": [
+   "vite",
+   "fast",
+   "d"
+  ],
+  "fine": [
+   "bien",
+   "fine",
+   "a"
+  ],
+  "fish": [
+   "poisson",
+   "fish",
+   "n"
+  ],
+  "food": [
+   "nourriture",
+   "food",
+   "n"
+  ],
+  "fridge": [
+   "frigo",
+   "fridge",
+   "n"
+  ],
+  "give": [
+   "donne",
+   "give",
+   "v",
+   "donner"
+  ],
+  "head": [
+   "tête",
+   "head",
+   "n"
+  ],
+  "hides": [
+   "se cache",
+   "hide",
+   "v",
+   "cacher"
+  ],
+  "hugo": [
+   "Hugo (prénom)",
+   "Hugo",
+   "np"
+  ],
+  "hugo's": [
+   "de Hugo",
+   "Hugo",
+   "np"
+  ],
+  "idea": [
+   "idée",
+   "idea",
+   "n"
+  ],
+  "important": [
+   "importante",
+   "important",
+   "a"
+  ],
+  "jug": [
+   "cruche",
+   "jug",
+   "n"
+  ],
+  "kind": [
+   "gentil",
+   "kind",
+   "a"
+  ],
+  "kitchen": [
+   "cuisine",
+   "kitchen",
+   "n"
+  ],
+  "knows": [
+   "connaît",
+   "know",
+   "v",
+   "connaître"
+  ],
+  "label": [
+   "étiquette",
+   "label",
+   "n"
+  ],
+  "laughs": [
+   "rit",
+   "laugh",
+   "v",
+   "rire"
+  ],
+  "lazy": [
+   "paresseux",
+   "lazy",
+   "a"
+  ],
+  "learns": [
+   "apprend",
+   "learn",
+   "v",
+   "apprendre"
+  ],
+  "legs": [
+   "jambes",
+   "leg",
+   "n",
+   "jambe"
+  ],
+  "light": [
+   "lumière",
+   "light",
+   "n"
+  ],
+  "lights": [
+   "lumières",
+   "light",
+   "n",
+   "lumière"
+  ],
+  "loves": [
+   "adore",
+   "love",
+   "v",
+   "aimer, adorer"
+  ],
+  "man": [
+   "homme",
+   "man",
+   "n"
+  ],
+  "memory": [
+   "mémoire",
+   "memory",
+   "n"
+  ],
+  "meow": [
+   "miaou",
+   "meow",
+   "n"
+  ],
+  "milk": [
+   "lait",
+   "milk",
+   "n"
+  ],
+  "minute": [
+   "minute",
+   "minute",
+   "n"
+  ],
+  "morning": [
+   "matin",
+   "morning",
+   "n"
+  ],
+  "mouth": [
+   "bouche",
+   "mouth",
+   "n"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "nadia": [
+   "Nadia (prénom)",
+   "Nadia",
+   "np"
+  ],
+  "nougat": [
+   "Nougat (prénom du chat)",
+   "Nougat",
+   "np"
+  ],
+  "nougat's": [
+   "de Nougat",
+   "Nougat",
+   "np"
+  ],
+  "opens": [
+   "ouvre",
+   "open",
+   "v",
+   "ouvrir"
+  ],
+  "paper": [
+   "papier",
+   "paper",
+   "n"
+  ],
+  "pen": [
+   "stylo",
+   "pen",
+   "n"
+  ],
+  "pile": [
+   "pile",
+   "pile",
+   "n"
+  ],
+  "plant": [
+   "plante",
+   "plant",
+   "n"
+  ],
+  "plants": [
+   "plantes",
+   "plant",
+   "n",
+   "plante"
+  ],
+  "present": [
+   "cadeau",
+   "present",
+   "n"
+  ],
+  "radio": [
+   "radio",
+   "radio",
+   "n"
+  ],
+  "reads": [
+   "lit",
+   "read",
+   "v",
+   "lire"
+  ],
+  "right": [
+   "bien",
+   "right",
+   "a"
+  ],
+  "rings": [
+   "sonne",
+   "ring",
+   "v",
+   "sonner"
+  ],
+  "robot": [
+   "robot",
+   "robot",
+   "n"
+  ],
+  "rolls": [
+   "roule",
+   "roll",
+   "v",
+   "rouler"
+  ],
+  "rule": [
+   "règle",
+   "rule",
+   "n"
+  ],
+  "rules": [
+   "règles",
+   "rule",
+   "n",
+   "règle"
+  ],
+  "saturday": [
+   "samedi",
+   "Saturday",
+   "np"
+  ],
+  "says": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "shine": [
+   "brillent",
+   "shine",
+   "v",
+   "briller"
+  ],
+  "shouts": [
+   "crie",
+   "shout",
+   "v",
+   "crier"
+  ],
+  "sleeps": [
+   "dort",
+   "sleep",
+   "v",
+   "dormir"
+  ],
+  "slowly": [
+   "doucement",
+   "slowly",
+   "d"
+  ],
+  "smiles": [
+   "sourit",
+   "smile",
+   "v",
+   "sourire"
+  ],
+  "socks": [
+   "chaussettes",
+   "sock",
+   "n",
+   "chaussette"
+  ],
+  "sofa": [
+   "canapé",
+   "sofa",
+   "n"
+  ],
+  "softly": [
+   "doucement",
+   "softly",
+   "d"
+  ],
+  "splash": [
+   "plouf",
+   "splash",
+   "n"
+  ],
+  "table": [
+   "table",
+   "table",
+   "n"
+  ],
+  "tail": [
+   "queue",
+   "tail",
+   "n"
+  ],
+  "taller": [
+   "plus haute",
+   "tall",
+   "a",
+   "grand"
+  ],
+  "tea": [
+   "thé",
+   "tea",
+   "n"
+  ],
+  "teach": [
+   "apprendre",
+   "teach",
+   "v"
+  ],
+  "teaches": [
+   "apprend",
+   "teach",
+   "v",
+   "apprendre"
+  ],
+  "thinks": [
+   "réfléchit",
+   "think",
+   "v",
+   "réfléchir"
+  ],
+  "toast": [
+   "toasts",
+   "toast",
+   "n"
+  ],
+  "towel": [
+   "serviette",
+   "towel",
+   "n"
+  ],
+  "try": [
+   "essayer",
+   "try",
+   "v"
+  ],
+  "tv": [
+   "télé",
+   "TV",
+   "n"
+  ],
+  "voice": [
+   "voix",
+   "voice",
+   "n"
+  ],
+  "watches": [
+   "regarde",
+   "watch",
+   "v",
+   "regarder"
+  ],
+  "wet": [
+   "mouillé",
+   "wet",
+   "a"
+  ],
+  "wheels": [
+   "roues",
+   "wheel",
+   "n",
+   "roue"
+  ],
+  "window": [
+   "fenêtre",
+   "window",
+   "n"
+  ],
+  "words": [
+   "mots",
+   "word",
+   "n",
+   "mot"
+  ],
+  "wow": [
+   "waouh",
+   "wow",
+   "x"
+  ],
+  "writes": [
+   "écrit",
+   "write",
+   "v",
+   "écrire"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Hugo is nine years old.",
+      "fr": "Hugo a neuf ans.",
+      "g": {
+       "years": [
+        "ans (nine years old : a neuf ans)",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "(nine years old : a neuf ans)",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "It is Saturday morning.",
+      "fr": "C'est samedi matin."
+     },
+     {
+      "en": "Hugo is in the kitchen with Mum and Dad.",
+      "fr": "Hugo est dans la cuisine avec maman et papa."
+     },
+     {
+      "en": "Mum has a cup of tea.",
+      "fr": "Maman a une tasse de thé."
+     },
+     {
+      "en": "Dad makes toast.",
+      "fr": "Papa fait des toasts.",
+      "g": {
+       "makes": [
+        "fait",
+        "make",
+        "v",
+        "faire"
+       ]
+      }
+     },
+     {
+      "en": "Hugo eats his cereal.",
+      "fr": "Hugo mange ses céréales."
+     }
+    ],
+    [
+     {
+      "en": "The doorbell rings.",
+      "fr": "On sonne à la porte."
+     },
+     {
+      "en": "A man brings a big box.",
+      "fr": "Un homme apporte une grande boîte.",
+      "g": {
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The box is very big.",
+      "fr": "La boîte est très grande.",
+      "g": {
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "It is taller than Hugo!",
+      "fr": "Elle est plus haute que Hugo !"
+     },
+     {
+      "en": "“This is for you,” he says.",
+      "fr": "« C'est pour vous », dit-il."
+     },
+     {
+      "en": "“Thank you!” says Mum.",
+      "fr": "« Merci ! » dit maman.",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "She reads the label.",
+      "fr": "Elle lit l'étiquette."
+     },
+     {
+      "en": "“It is a present from Aunt Nadia.”",
+      "fr": "« C'est un cadeau de tante Nadia. »"
+     }
+    ],
+    [
+     {
+      "en": "“What is in the box?” asks Hugo.",
+      "fr": "« Qu'y a-t-il dans la boîte ? » demande Hugo."
+     },
+     {
+      "en": "Dad opens it.",
+      "fr": "Papa l'ouvre."
+     },
+     {
+      "en": "Two blue lights shine inside.",
+      "fr": "Deux lumières bleues brillent à l'intérieur.",
+      "g": {
+       "blue": [
+        "bleues",
+        "blue",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Hello!” says a small voice.",
+      "fr": "« Bonjour ! » dit une petite voix.",
+      "g": {
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“I am Bip.”",
+      "fr": "« Je suis Bip. »"
+     },
+     {
+      "en": "“I am a robot.”",
+      "fr": "« Je suis un robot. »"
+     },
+     {
+      "en": "“I help at home.”",
+      "fr": "« J'aide à la maison. »",
+      "g": {
+       "help": [
+        "aide",
+        "help",
+        "v",
+        "aider"
+       ]
+      }
+     },
+     {
+      "en": "Hugo's mouth is open.",
+      "fr": "Hugo a la bouche ouverte.",
+      "g": {
+       "open": [
+        "ouverte",
+        "open",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Wow!” he says.",
+      "fr": "« Waouh ! » dit-il."
+     }
+    ]
+   ],
+   "titre": "Chapter 1 — The big box",
+   "titreFr": "Chapitre 1 — La grande boîte"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Bip is small and round.",
+      "fr": "Bip est petit et rond.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "round": [
+        "rond",
+        "round",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "He has a blue head and two long arms.",
+      "fr": "Il a une tête bleue et deux longs bras.",
+      "g": {
+       "blue": [
+        "bleue",
+        "blue",
+        "a"
+       ],
+       "long": [
+        "longs",
+        "long",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "He has wheels, not legs.",
+      "fr": "Il a des roues, pas des jambes."
+     },
+     {
+      "en": "His eyes are two round lights.",
+      "fr": "Ses yeux sont deux lumières rondes.",
+      "g": {
+       "round": [
+        "rondes",
+        "round",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Can you really help us?” asks Hugo.",
+      "fr": "« Tu peux vraiment nous aider ? » demande Hugo.",
+      "g": {
+       "help": [
+        "aider",
+        "help",
+        "v",
+        "aider"
+       ]
+      }
+     },
+     {
+      "en": "“Yes, I can,” says Bip.",
+      "fr": "« Oui, je peux », dit Bip."
+     },
+     {
+      "en": "“Give me a job, please.”",
+      "fr": "« Donne-moi une tâche, s'il te plaît. »",
+      "g": {
+       "job": [
+        "tâche",
+        "job",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mum smiles.",
+      "fr": "Maman sourit."
+     },
+     {
+      "en": "She has a pile of clean socks.",
+      "fr": "Elle a une pile de chaussettes propres.",
+      "g": {
+       "clean": [
+        "propres",
+        "clean",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Bip, please put the socks away,” she says.",
+      "fr": "« Bip, range les chaussettes, s'il te plaît », dit-elle.",
+      "g": {
+       "put": [
+        "range (put away)",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "away": [
+        "(put away : range)",
+        "away",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Yes, Mum!” says Bip.",
+      "fr": "« Oui, maman ! » dit Bip."
+     },
+     {
+      "en": "He takes the socks and rolls to the kitchen.",
+      "fr": "Il prend les chaussettes et roule jusqu'à la cuisine.",
+      "g": {
+       "takes": [
+        "prend",
+        "take",
+        "v",
+        "prendre"
+       ]
+      }
+     },
+     {
+      "en": "He opens the fridge.",
+      "fr": "Il ouvre le frigo."
+     },
+     {
+      "en": "He puts the socks next to the milk and the cheese.",
+      "fr": "Il pose les chaussettes à côté du lait et du fromage.",
+      "g": {
+       "puts": [
+        "pose",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "next": [
+        "(next to : à côté de)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Job done!” says Bip.",
+      "fr": "« Travail terminé ! » dit Bip.",
+      "g": {
+       "job": [
+        "travail",
+        "job",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Dad laughs and laughs.",
+      "fr": "Papa rit à n'en plus finir."
+     },
+     {
+      "en": "“Bip, the socks go in a drawer, not in the fridge!”",
+      "fr": "« Bip, les chaussettes vont dans un tiroir, pas dans le frigo ! »",
+      "g": {
+       "go": [
+        "vont",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
+     },
+     {
+      "en": "Hugo laughs too.",
+      "fr": "Hugo rit aussi."
+     },
+     {
+      "en": "Bip does not understand.",
+      "fr": "Bip ne comprend pas.",
+      "g": {
+       "understand": [
+        "comprend",
+        "understand",
+        "v",
+        "comprendre"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Nougat is the family cat.",
+      "fr": "Nougat est le chat de la famille."
+     },
+     {
+      "en": "He is orange and very lazy.",
+      "fr": "Il est roux et très paresseux.",
+      "g": {
+       "orange": [
+        "roux",
+        "orange",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "He loves milk and fish.",
+      "fr": "Il adore le lait et le poisson."
+     },
+     {
+      "en": "He sleeps on the sofa, next to a green plant.",
+      "fr": "Il dort sur le canapé, à côté d'une plante verte.",
+      "g": {
+       "next": [
+        "(next to : à côté de)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ],
+       "green": [
+        "verte",
+        "green",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Bip, please water the plant,” says Dad.",
+      "fr": "« Bip, arrose la plante, s'il te plaît », dit papa.",
+      "g": {
+       "water": [
+        "arrose",
+        "water",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Yes, Dad!” says Bip.",
+      "fr": "« Oui, papa ! » dit Bip."
+     },
+     {
+      "en": "He takes a jug of water and rolls to the sofa.",
+      "fr": "Il prend une cruche d'eau et roule jusqu'au canapé.",
+      "g": {
+       "takes": [
+        "prend",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "water": [
+        "eau",
+        "water",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He looks at the plant.",
+      "fr": "Il regarde la plante.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "He looks at Nougat.",
+      "fr": "Il regarde Nougat.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“This plant is orange and soft,” says Bip.",
+      "fr": "« Cette plante est orange et douce », dit Bip.",
+      "g": {
+       "orange": [
+        "orange",
+        "orange",
+        "a"
+       ],
+       "soft": [
+        "douce",
+        "soft",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“It has a tail. It is a funny plant.”",
+      "fr": "« Elle a une queue. C'est une drôle de plante. »",
+      "g": {
+       "funny": [
+        "drôle",
+        "funny",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Splash!",
+      "fr": "Plouf !"
+     },
+     {
+      "en": "Nougat opens his eyes wide.",
+      "fr": "Nougat ouvre grand les yeux.",
+      "g": {
+       "opens": [
+        "ouvre (opens wide : ouvre grand)",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "wide": [
+        "(opens wide : ouvre grand)",
+        "wide",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The water falls on Nougat's head.",
+      "fr": "L'eau tombe sur la tête de Nougat.",
+      "g": {
+       "water": [
+        "eau",
+        "water",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Meow!” Nougat jumps up and runs away.",
+      "fr": "« Miaou ! » Nougat bondit et s'enfuit en courant.",
+      "g": {
+       "jumps": [
+        "bondit (jumps up)",
+        "jump",
+        "v",
+        "sauter"
+       ],
+       "up": [
+        "(jumps up : bondit)",
+        "up",
+        "d"
+       ],
+       "runs": [
+        "s'enfuit (runs away)",
+        "run",
+        "v",
+        "courir"
+       ],
+       "away": [
+        "(runs away : s'enfuit)",
+        "away",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Bip, that is not a plant!” shouts Hugo.",
+      "fr": "« Bip, ce n'est pas une plante ! » crie Hugo.",
+      "g": {
+       "that": [
+        "ce",
+        "that",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "“That is Nougat, our cat!”",
+      "fr": "« C'est Nougat, notre chat ! »",
+      "g": {
+       "that": [
+        "ce",
+        "that",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "“Sorry, Nougat,” says Bip in a small voice.",
+      "fr": "« Pardon, Nougat », dit Bip d'une petite voix.",
+      "g": {
+       "sorry": [
+        "pardon",
+        "sorry",
+        "a"
+       ],
+       "in": [
+        "d'(in a small voice : d'une petite voix)",
+        "in",
+        "r"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 2 — Bip's mistakes",
+   "titreFr": "Chapitre 2 — Les erreurs de Bip"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Nougat hides under the table.",
+      "fr": "Nougat se cache sous la table."
+     },
+     {
+      "en": "He is wet, but he is fine.",
+      "fr": "Il est mouillé, mais il va bien."
+     },
+     {
+      "en": "He is not happy.",
+      "fr": "Il n'est pas content.",
+      "g": {
+       "happy": [
+        "content",
+        "happy",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Hugo comes with a big towel.",
+      "fr": "Hugo arrive avec une grande serviette.",
+      "g": {
+       "comes": [
+        "arrive",
+        "come",
+        "v",
+        "venir"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Come here, Nougat,” he says softly.",
+      "fr": "« Viens ici, Nougat », dit-il doucement."
+     },
+     {
+      "en": "He dries the cat.",
+      "fr": "Il sèche le chat."
+     },
+     {
+      "en": "Bip watches and says nothing.",
+      "fr": "Bip regarde et ne dit rien."
+     },
+     {
+      "en": "Nougat looks at Bip with big round eyes.",
+      "fr": "Nougat regarde Bip avec de grands yeux ronds.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ],
+       "big": [
+        "grands",
+        "big",
+        "a"
+       ],
+       "round": [
+        "ronds",
+        "round",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Then Mum says, “Bip, please turn off the light.”",
+      "fr": "Puis maman dit : « Bip, éteins la lumière, s'il te plaît. »",
+      "g": {
+       "turn": [
+        "éteins (turn off)",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "off": [
+        "(turn off : éteins)",
+        "off",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Bip turns off the light.",
+      "fr": "Bip éteint la lumière.",
+      "g": {
+       "turns": [
+        "éteint (turns off)",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "off": [
+        "(turns off : éteint)",
+        "off",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "He turns off the TV and the radio too.",
+      "fr": "Il éteint aussi la télé et la radio.",
+      "g": {
+       "turns": [
+        "éteint (turns off)",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "off": [
+        "(turns off : éteint)",
+        "off",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Then he turns off the fridge!",
+      "fr": "Puis il éteint le frigo !",
+      "g": {
+       "turns": [
+        "éteint (turns off)",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "off": [
+        "(turns off : éteint)",
+        "off",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The kitchen is dark and quiet.",
+      "fr": "La cuisine est sombre et silencieuse.",
+      "g": {
+       "dark": [
+        "sombre",
+        "dark",
+        "a"
+       ],
+       "quiet": [
+        "silencieuse",
+        "quiet",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Oh dear,” says Mum.",
+      "fr": "« Oh là là », dit maman.",
+      "g": {
+       "oh": [
+        "oh là là (oh dear)",
+        "oh",
+        "d"
+       ],
+       "dear": [
+        "(oh dear : oh là là)",
+        "dear",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Bip is kind, but he does not understand us.”",
+      "fr": "« Bip est gentil, mais il ne nous comprend pas. »",
+      "g": {
+       "understand": [
+        "comprend",
+        "understand",
+        "v",
+        "comprendre"
+       ]
+      }
+     },
+     {
+      "en": "Hugo thinks for a minute.",
+      "fr": "Hugo réfléchit une minute."
+     },
+     {
+      "en": "“I have an idea,” he says.",
+      "fr": "« J'ai une idée », dit-il."
+     },
+     {
+      "en": "“I can teach him.”",
+      "fr": "« Je peux lui apprendre. »"
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Hugo takes a pen and a big piece of paper.",
+      "fr": "Hugo prend un stylo et une grande feuille de papier.",
+      "g": {
+       "takes": [
+        "prend",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "piece": [
+        "feuille",
+        "piece",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Bip rolls into Hugo's room.",
+      "fr": "Bip roule jusque dans la chambre de Hugo.",
+      "g": {
+       "room": [
+        "chambre",
+        "room",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "There is a desk by the window.",
+      "fr": "Il y a un bureau près de la fenêtre."
+     },
+     {
+      "en": "He writes “Bip's rules” at the top.",
+      "fr": "Il écrit « Les règles de Bip » en haut.",
+      "g": {
+       "at": [
+        "en (at the top : en haut)",
+        "at",
+        "r"
+       ],
+       "top": [
+        "haut (at the top : en haut)",
+        "top",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Come here, Bip,” he says.",
+      "fr": "« Viens ici, Bip », dit-il."
+     },
+     {
+      "en": "“Sit down and listen.”",
+      "fr": "« Assieds-toi et écoute. »",
+      "g": {
+       "sit": [
+        "assieds-toi (sit down)",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "down": [
+        "(sit down : assieds-toi)",
+        "down",
+        "d"
+       ],
+       "listen": [
+        "écoute",
+        "listen",
+        "v",
+        "écouter"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Rule one,” says Hugo.",
+      "fr": "« Règle numéro un », dit Hugo.",
+      "g": {
+       "one": [
+        "numéro un (rule one)",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Rule one is very important.",
+      "fr": "La règle numéro un est très importante."
+     },
+     {
+      "en": "“Listen to the words.”",
+      "fr": "« Écoute bien les mots. »",
+      "g": {
+       "listen": [
+        "écoute",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "to": [
+        "(listen to : écoute)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "He says each rule slowly.",
+      "fr": "Il dit chaque règle lentement.",
+      "g": {
+       "slowly": [
+        "lentement",
+        "slowly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“A plant is green. A cat is not a plant.”",
+      "fr": "« Une plante est verte. Un chat n'est pas une plante. »",
+      "g": {
+       "green": [
+        "verte",
+        "green",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Rule two. Ask, 'Is this right?'”",
+      "fr": "« Règle numéro deux. Demande : “C'est bien ça ?” »",
+      "g": {
+       "two": [
+        "numéro deux (rule two)",
+        "two",
+        "a"
+       ],
+       "ask": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“Rule three. Look first, then act.”",
+      "fr": "« Règle numéro trois. Regarde d'abord, puis agis. »",
+      "g": {
+       "three": [
+        "numéro trois (rule three)",
+        "three",
+        "a"
+       ],
+       "look": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "first": [
+        "d'abord",
+        "first",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Bip's eyes go green.",
+      "fr": "Les yeux de Bip deviennent verts.",
+      "g": {
+       "go": [
+        "deviennent",
+        "go",
+        "v",
+        "aller"
+       ],
+       "green": [
+        "verts",
+        "green",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Listen. Ask. Look,” says Bip.",
+      "fr": "« Écouter. Demander. Regarder », dit Bip.",
+      "g": {
+       "listen": [
+        "écouter",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "ask": [
+        "demander",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "look": [
+        "regarder",
+        "look",
+        "v",
+        "regarder"
+       ]
+      }
+     },
+     {
+      "en": "“I understand!”",
+      "fr": "« Je comprends ! »",
+      "g": {
+       "understand": [
+        "comprends",
+        "understand",
+        "v",
+        "comprendre"
+       ]
+      }
+     },
+     {
+      "en": "Beep, beep.",
+      "fr": "Bip, bip."
+     },
+     {
+      "en": "He puts the rules in his memory.",
+      "fr": "Il met les règles dans sa mémoire.",
+      "g": {
+       "puts": [
+        "met",
+        "put",
+        "v",
+        "mettre"
+       ]
+      }
+     },
+     {
+      "en": "“Can you do it?” asks Hugo.",
+      "fr": "« Tu peux y arriver ? » demande Hugo.",
+      "g": {
+       "do": [
+        "y arriver (do it)",
+        "do",
+        "v"
+       ],
+       "it": [
+        "(do it : y arriver)",
+        "it",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“I can try,” says Bip.",
+      "fr": "« Je peux essayer », dit Bip."
+     }
+    ]
+   ],
+   "titre": "Chapter 3 — Hugo's rules",
+   "titreFr": "Chapitre 3 — Les règles de Hugo"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Hugo teaches Bip more words.",
+      "fr": "Hugo apprend d'autres mots à Bip.",
+      "g": {
+       "more": [
+        "d'autres",
+        "more",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "Bip learns fast.",
+      "fr": "Bip apprend vite."
+     },
+     {
+      "en": "“Socks go in the drawer,” he says.",
+      "fr": "« Les chaussettes vont dans le tiroir », dit-il.",
+      "g": {
+       "go": [
+        "vont",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
+     },
+     {
+      "en": "“Food goes in the fridge.”",
+      "fr": "« La nourriture va dans le frigo. »",
+      "g": {
+       "goes": [
+        "va",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
+     },
+     {
+      "en": "“Water is for plants, not for cats.”",
+      "fr": "« L'eau est pour les plantes, pas pour les chats. »",
+      "g": {
+       "water": [
+        "eau",
+        "water",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Bip says the words again and again.",
+      "fr": "Bip répète les mots encore et encore.",
+      "g": {
+       "says": [
+        "répète",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Soon he knows ten new words.",
+      "fr": "Bientôt, il connaît dix nouveaux mots.",
+      "g": {
+       "new": [
+        "nouveaux",
+        "new",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Bip's lights are bright and happy.",
+      "fr": "Les lumières de Bip sont vives et joyeuses.",
+      "g": {
+       "bright": [
+        "vives",
+        "bright",
+        "a"
+       ],
+       "happy": [
+        "joyeuses",
+        "happy",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mum comes in with more socks.",
+      "fr": "Maman entre avec d'autres chaussettes.",
+      "g": {
+       "comes": [
+        "entre (comes in)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "in": [
+        "(comes in : entre)",
+        "in",
+        "r"
+       ],
+       "more": [
+        "d'autres",
+        "more",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "Bip looks at the socks.",
+      "fr": "Bip regarde les chaussettes.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "He looks at the drawer.",
+      "fr": "Il regarde le tiroir.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Is this right, Mum?” he asks.",
+      "fr": "« C'est bien ça, maman ? » demande-t-il."
+     },
+     {
+      "en": "“Yes, Bip. That is right!” says Mum.",
+      "fr": "« Oui, Bip. C'est bien ça ! » dit maman.",
+      "g": {
+       "that": [
+        "c'",
+        "that",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "Bip puts the socks in the drawer.",
+      "fr": "Bip met les chaussettes dans le tiroir.",
+      "g": {
+       "puts": [
+        "met",
+        "put",
+        "v",
+        "mettre"
+       ]
+      }
+     },
+     {
+      "en": "Everybody claps.",
+      "fr": "Tout le monde applaudit."
+     },
+     {
+      "en": "Slowly, Nougat comes into the room.",
+      "fr": "Doucement, Nougat entre dans la pièce.",
+      "g": {
+       "comes": [
+        "entre",
+        "come",
+        "v",
+        "venir"
+       ],
+       "room": [
+        "pièce",
+        "room",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He jumps on Bip's head and goes to sleep.",
+      "fr": "Il saute sur la tête de Bip et s'endort.",
+      "g": {
+       "jumps": [
+        "saute",
+        "jump",
+        "v",
+        "sauter"
+       ],
+       "goes": [
+        "s'endort (goes to sleep)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(goes to sleep : s'endort)",
+        "to",
+        "r"
+       ],
+       "sleep": [
+        "(goes to sleep : s'endort)",
+        "sleep",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Nougat is not angry now,” says Hugo.",
+      "fr": "« Nougat n'est plus fâché maintenant », dit Hugo."
+     }
+    ]
+   ]
+  }
+ ]
+}
