@@ -29,12 +29,12 @@ const ok = (n: string, c: boolean, x: unknown = "") => {
 };
 
 // ---------------------------------------------------------------- outils et familles
-ok("treize outils, chacun dans une famille", TOUS_LES_OUTILS.length === 13 && TOUS_LES_OUTILS.every((o) => GROUPES.some((g) => g.id === GROUPE_DE[o])));
+ok("quatorze outils, chacun dans une famille", TOUS_LES_OUTILS.length === 14 && TOUS_LES_OUTILS.every((o) => GROUPES.some((g) => g.id === GROUPE_DE[o])));
 ok("le mode créateur connaît chaque outil", TOUS_LES_OUTILS.every((o) => MODULES.alambic.listes[0].elements.some((x) => x.id === o)));
 const parDefaut = resoudre("alambic", null).listes.outils.map((x) => x.id);
 const ranges = parGroupes(parDefaut.map((id) => ({ id: id as (typeof TOUS_LES_OUTILS)[number] }))).flatMap((g) => g.outils.map((o) => o.id));
 ok("le menu commence par Convertir et finit par Nettoyer", ranges[0] === "convertir" && ranges[ranges.length - 1] === "nettoyer", ranges);
-ok("Transcrire ferme la famille « Transformer »", ranges.indexOf("transcrire") === 3, ranges);
+ok("Transcrire puis Rassembler ferment la famille « Transformer »", ranges.indexOf("transcrire") === 3 && ranges.indexOf("rassembler") === 4, ranges);
 ok("un PDF passe à Organiser, Signer, Déverrouiller, Alléger, Filigraner, Reconnaître", ["organiser", "signer", "deverrouiller", "alleger", "filigraner", "reconnaitre", "nettoyer"].every((o) => accepte(o as never, "pdf")));
 ok("une vidéo ne passe ni à Organiser ni à Signer", !accepte("organiser", "mp4") && !accepte("signer", "mp4") && accepte("transcrire", "mp4") && accepte("alleger", "mp4"));
 ok("un PowerPoint (vu comme un ZIP) s'allège et se nettoie", accepte("alleger", "zip", "cours.pptx") && accepte("nettoyer", "zip", "cours.pptx") && !accepte("nettoyer", "zip", "photos.zip"));

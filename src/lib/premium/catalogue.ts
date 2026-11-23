@@ -75,6 +75,7 @@ export const FONCTIONS: DefFonction[] = [
   { id: "alambic.organiser", module: "alambic", nom: "Organiser les pages", unite: u("document", "documents"), defaut: L(3, "jour"), verrou: "appareil" },
   { id: "alambic.alleger", module: "alambic", nom: "Alléger un fichier", unite: u("fichier", "fichiers"), defaut: L(3, "jour"), verrou: "appareil" },
   { id: "alambic.reconnaitre", module: "alambic", nom: "Reconnaître le texte d'une image ou d'un scan", unite: u("document", "documents"), defaut: L(2, "jour"), verrou: "appareil" },
+  { id: "alambic.rassembler", module: "alambic", nom: "Rassembler le texte de plusieurs documents", unite: u("rassemblement", "rassemblements"), defaut: L(3, "jour"), verrou: "appareil" },
   { id: "alambic.transcrire", module: "alambic", nom: "Transcrire et traduire une vidéo ou un son", unite: u("transcription", "transcriptions"), defaut: L(1, "semaine"), verrou: "appareil" },
   { id: "alambic.proteger", module: "alambic", nom: "Protéger un PDF par mot de passe", unite: u("fichier", "fichiers"), defaut: L(3, "jour"), verrou: "appareil" },
   { id: "alambic.deverrouiller", module: "alambic", nom: "Déverrouiller un PDF", unite: u("fichier", "fichiers"), defaut: L(3, "jour"), verrou: "appareil" },

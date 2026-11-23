@@ -219,6 +219,7 @@ const ALAMBIC: DefModule = {
         { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "L'Alambic" },
         { cle: "badge.local", libelle: "Pastille « rien n'est envoyé »", defaut: "Rien ne quitte ton appareil" },
         { cle: "badge.nuage", libelle: "Pastille de l'outil Transcrire", defaut: "Le son passe par Groq" },
+        { cle: "badge.mixte", libelle: "Pastille de l'outil Rassembler", defaut: "Lu ici, sauf les sons" },
       ],
     },
     {
@@ -229,6 +230,8 @@ const ALAMBIC: DefModule = {
         { cle: "local.texte", libelle: "Carte « tout se fait ici » : texte", defaut: "Tes fichiers sont lus et transformés par ton propre appareil. Rien n'est envoyé, rien n'est gardé : ferme la page, il ne reste rien.", long: true },
         { cle: "nuage.titre", libelle: "Carte de Transcrire : titre", defaut: "Une exception, annoncée" },
         { cle: "nuage.texte", libelle: "Carte de Transcrire : texte", defaut: "Pour transcrire, le son est allégé ici puis envoyé à Groq, qui l'écoute avec Whisper. Les textes et leurs traductions sont rangés dans ta bibliothèque, qui te suit avec ton compte.", long: true },
+        { cle: "mixte.titre", libelle: "Carte de Rassembler : titre", defaut: "Presque tout se fait ici" },
+        { cle: "mixte.texte", libelle: "Carte de Rassembler : texte", defaut: "Les documents, les tableurs, les présentations, les photos et les scans sont lus par ton appareil. Seuls les sons et les vidéos partent à la transcription (Groq), comme dans « Transcrire ».", long: true },
       ],
     },
     {
@@ -270,6 +273,7 @@ const ALAMBIC: DefModule = {
         { id: "alleger", valeurs: { nom: "Alléger", aide: "Un PDF, une photo, une vidéo moins lourds" } },
         { id: "reconnaitre", valeurs: { nom: "Reconnaître", aide: "Le texte d'une photo ou d'un scan" } },
         { id: "transcrire", valeurs: { nom: "Transcrire", aide: "Un son ou une vidéo devient un livre à lire" } },
+        { id: "rassembler", valeurs: { nom: "Rassembler", aide: "Le texte de tous tes documents, copié d'un coup" } },
         { id: "organiser", valeurs: { nom: "Organiser", aide: "Pivoter, déplacer, retirer des pages" } },
         { id: "filigraner", valeurs: { nom: "Filigraner", aide: "Un filigrane, des numéros de page" } },
         { id: "signer", valeurs: { nom: "Signer", aide: "Signer, dater, remplir un formulaire" } },

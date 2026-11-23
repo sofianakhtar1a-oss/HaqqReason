@@ -1196,3 +1196,220 @@ textarea.alambic-signe-champ {
     text-align: center;
   }
 }
+
+/* ---------- Rassembler : tous ses documents, un seul texte ---------- */
+.rs-depot > span:last-child {
+  max-width: none;
+}
+.rs-depot-boutons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+.rs-depot.alambic-depot-compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.9rem;
+}
+.rs-depot.alambic-depot-compact > .text-sm {
+  display: none;
+}
+.rs-depot.alambic-depot-compact .rs-depot-boutons {
+  margin-top: 0;
+}
+
+/* Le texte rassemblé : ce qu'on vient chercher, en haut, toujours à portée */
+.rs-barre {
+  position: sticky;
+  top: 0.75rem;
+  z-index: 4;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1.3rem;
+  border: 1px solid color-mix(in srgb, var(--or) 40%, var(--trait));
+  background: color-mix(in srgb, var(--fond-haut) 90%, transparent);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1.2rem 2.5rem -1.8rem rgba(0, 0, 0, 0.55);
+}
+@media (min-width: 720px) {
+  .rs-barre {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  .rs-barre-suite {
+    grid-column: 1 / -1;
+  }
+}
+.rs-barre-bilan {
+  font-size: 1.05rem;
+}
+.rs-copier {
+  min-height: 3.25rem;
+  padding-inline: 1.4rem;
+  font-size: 1.05rem;
+}
+.rs-barre-suite {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+.rs-case {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.rs-case input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--or);
+}
+
+/* L'avancement de l'ensemble */
+.rs-avance {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 0.9rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rs-progres {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  margin-top: 0.4rem;
+  border: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--surface-forte);
+  accent-color: var(--or);
+  appearance: none;
+}
+.rs-progres::-webkit-progress-bar {
+  background: var(--surface-forte);
+}
+.rs-progres::-webkit-progress-value {
+  background: var(--or);
+  border-radius: 999px;
+}
+.rs-progres::-moz-progress-bar {
+  background: var(--or);
+  border-radius: 999px;
+}
+
+/* La liste, dans l'ordre du texte copié */
+.rs-liste {
+  display: grid;
+  gap: 0.45rem;
+}
+.rs-piece {
+  padding: 0.5rem 0.55rem 0.5rem 0.6rem;
+  border-radius: 1.05rem;
+  border: 1px solid var(--trait);
+  background: var(--surface-forte);
+}
+.rs-piece[data-etat="erreur"],
+.rs-piece[data-etat="reserve"] {
+  border-color: color-mix(in srgb, var(--danger, #e5484d) 45%, var(--trait));
+}
+.rs-piece[data-etat="deballee"],
+.rs-piece[data-etat="vide"] {
+  opacity: 0.7;
+}
+.rs-piece-ligne {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.rs-rang {
+  flex: none;
+  min-width: 1.6rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.rs-piece-detail {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.rs-etat {
+  font-weight: 700;
+  color: var(--encre);
+}
+.rs-piece[data-etat="pret"] .rs-etat {
+  color: var(--or);
+}
+.rs-piece-actions {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.15rem;
+}
+.rs-texte {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+  background: var(--fond);
+  color: var(--encre);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  resize: vertical;
+}
+.rs-note {
+  margin: 0.35rem 0 0 2.2rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.rs-pied {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+}
+.rs-langues {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+}
+.rs-langues legend {
+  float: left;
+  margin-right: 0.5rem;
+}
+/* Sur téléphone, la barre ne suit pas le défilement (elle prendrait le tiers de l'écran),
+   et les flèches et la croix passent sous le nom. */
+@media (max-width: 559px) {
+  .rs-barre {
+    position: static;
+  }
+  .rs-piece-ligne {
+    flex-wrap: wrap;
+  }
+  .rs-piece-ligne > .min-w-0 {
+    flex-basis: calc(100% - 4.5rem);
+  }
+  .rs-piece-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rs-avance .animate-spin {
+    animation: none;
+  }
+}

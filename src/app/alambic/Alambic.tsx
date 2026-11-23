@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Captions, Cloud, Eraser, EyeOff, Layers, LayoutGrid, LockOpen, ScanText, Scissors, ShieldCheck, Shrink, Shuffle, Signature, Stamp, WifiOff, type LucideIcon } from "lucide-react";
+import { Captions, Cloud, Eraser, EyeOff, FileStack, Layers, LayoutGrid, LockOpen, ScanText, Scissors, ShieldCheck, Shrink, Shuffle, Signature, Stamp, WifiOff, type LucideIcon } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
@@ -27,6 +27,7 @@ import { Nettoyage } from "./outils/Nettoyage";
 import { Organisation } from "./outils/Organisation";
 import { Protection } from "./Protection";
 import type { Abonner } from "./reception";
+import { Rassembler } from "./outils/Rassembler";
 import { Reconnaissance } from "./outils/Reconnaissance";
 import { ICONES } from "./SelecteurFormat";
 import { Signature as OutilSignature } from "./outils/Signature";
@@ -47,6 +48,7 @@ const ICONES_OUTILS: Record<Outil, LucideIcon> = {
   nettoyer: Eraser,
   reconnaitre: ScanText,
   masquer: EyeOff,
+  rassembler: FileStack,
 };
 
 /** Outils encore en préparation : présents dans le code, pas encore dans le menu. */
@@ -173,6 +175,11 @@ export function Alambic() {
               <Cloud className="size-4" aria-hidden="true" />
               {t("badge.nuage")}
             </span>
+          ) : outil === "rassembler" ? (
+            <span className="alambic-local" title="Les documents, les photos et les scans sont lus sur ton appareil ; seuls les sons et les vidéos partent à la transcription (Groq).">
+              <WifiOff className="size-4" aria-hidden="true" />
+              {t("badge.mixte")}
+            </span>
           ) : (
             <span className="alambic-local" title="Aucun fichier n'est envoyé : tout est calculé par ton appareil.">
               <WifiOff className="size-4" aria-hidden="true" />
@@ -207,6 +214,7 @@ export function Alambic() {
             {outil === "nettoyer" && <Nettoyage abonner={abonner} />}
             {outil === "masquer" && <Masquage abonner={abonner} />}
             {outil === "reconnaitre" && !EN_PREPARATION.has("reconnaitre") && <Reconnaissance abonner={abonner} />}
+            {outil === "rassembler" && <Rassembler abonner={abonner} />}
           </div>
 
           <aside className="alambic-cotes" aria-label="À propos">
@@ -237,6 +245,11 @@ export function Alambic() {
               <div className="alambic-carte verre">
                 <p className="font-display text-lg font-bold">{t("nuage.titre")}</p>
                 <p className="text-sm text-encre-douce">{t("nuage.texte")}</p>
+              </div>
+            ) : outil === "rassembler" ? (
+              <div className="alambic-carte verre">
+                <p className="font-display text-lg font-bold">{t("mixte.titre")}</p>
+                <p className="text-sm text-encre-douce">{t("mixte.texte")}</p>
               </div>
             ) : (
               <div className="alambic-carte verre">

@@ -20,7 +20,8 @@ export type Outil =
   | "deverrouiller"
   | "nettoyer"
   | "reconnaitre"
-  | "masquer";
+  | "masquer"
+  | "rassembler";
 
 /** Tous les outils, dans l'ordre d'origine (le créateur peut les renommer, les déplacer, les masquer). */
 export const TOUS_LES_OUTILS: Outil[] = [
@@ -37,6 +38,7 @@ export const TOUS_LES_OUTILS: Outil[] = [
   "masquer",
   "nettoyer",
   "reconnaitre",
+  "rassembler",
 ];
 
 export const estOutil = (x: string): x is Outil => (TOUS_LES_OUTILS as string[]).includes(x);
@@ -55,6 +57,7 @@ export const GROUPE_DE: Record<Outil, Groupe> = {
   alleger: "transformer",
   reconnaitre: "transformer",
   transcrire: "transformer",
+  rassembler: "transformer",
   fusionner: "pages",
   decouper: "pages",
   organiser: "pages",
@@ -116,5 +119,8 @@ export function accepte(outil: Outil, id: string, nom = ""): boolean {
       return id === "pdf" || ["png", "jpg", "webp", "bmp", "tiff", "gif", "heic", "avif"].includes(id);
     case "masquer":
       return id === "pdf" || ["png", "jpg", "webp", "heic", "avif"].includes(id);
+    case "rassembler":
+      // Tout ce qui contient du texte à lire, reconnaître ou transcrire (pas l'AVI, que le navigateur ne lit pas).
+      return id === "pdf" || DOCUMENTS.has(id) || famille(id) === "donnees" || (IMAGES.has(id) && id !== "ico") || sonOuVideo(id) || ["zip", "tar", "gz"].includes(id) || bureautique(id, nom) !== null;
   }
 }

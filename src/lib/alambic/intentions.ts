@@ -52,6 +52,8 @@ export const INTENTIONS: Intention[] = [
   { id: "cacher-capture", titre: "Cacher une partie d'une photo ou d'une capture d'écran", outil: "masquer", mots: "cacher masquer flouter noircir partie zone visage plaque capture ecran screenshot photo image" },
   { id: "gps", titre: "Retirer le lieu (GPS) et l'appareil d'une photo", outil: "nettoyer", mots: "gps localisation lieu position exif metadonnees appareil photo vie privee confidentialite" },
   { id: "auteur", titre: "Effacer l'auteur et l'historique d'un Word ou d'un PDF", outil: "nettoyer", mots: "auteur nom metadonnees proprietes traces historique word docx pdf anonymiser anonyme" },
+  { id: "rassembler", titre: "Copier le texte de tous mes documents d'un coup", outil: "rassembler", mots: "rassembler reunir regrouper copier extraire recuperer texte tous plusieurs documents fichiers pdf word dossier ensemble coller chatgpt ia resume" },
+  { id: "rassembler-transcrire", titre: "Mettre par écrit plusieurs enregistrements et documents", outil: "rassembler", mots: "transcrire plusieurs audios sons videos vocaux enregistrements cours documents texte ecrit tout" },
   { id: "ocr", titre: "Copier le texte d'une photo ou d'un scan", outil: "reconnaitre", mots: "ocr texte photo image scan scanner copier recopier extraire lire reconnaitre numeriser" },
   { id: "pdf-cherchable", titre: "Rendre un PDF scanné cherchable", outil: "reconnaitre", reglage: "pdf", mots: "ocr pdf scanne scan cherchable recherche selectionnable texte" },
   { id: "transcrire", titre: "Obtenir le texte ou les sous-titres d'une vidéo", outil: "transcrire", mots: "transcrire transcription retranscrire sous titres srt texte parole video audio youtube cours conference" },
